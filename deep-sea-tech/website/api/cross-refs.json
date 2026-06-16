@@ -1,0 +1,4113 @@
+{
+  "total": 143,
+  "references": [
+    {
+      "from": "SUB-001",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-002",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-004",
+          "name": "Hadal Zone Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-012",
+          "name": "Hadal Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-017",
+          "name": "Submarine Canyon Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-019",
+          "name": "Five New Hydrothermal Vent Fields (2025)",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "SUB-003",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-004",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-005",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "SUB-006",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-011",
+          "name": "Abyssal Plain Siliceous Ooze (Diatom Deposits)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-024",
+          "name": "Abyssal Plain Siliceous Ooze",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-006",
+          "name": "Abyssal Plain Benthic Communities",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "SUB-007",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-022",
+          "name": "Arctic Seafloor Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "UCOM-004",
+          "name": "Fiber-Optic Tether Communication",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "SUB-008",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-013",
+          "name": "Underwater Quantum Communication",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "SUB-009",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-010",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-022",
+          "name": "Arctic Seafloor Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-013",
+          "name": "Underwater Quantum Communication",
+          "category": "underwater_communication"
+        }
+      ]
+    },
+    {
+      "from": "SUB-011",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-001",
+          "name": "Polymetallic Nodules (Manganese Nodules)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-011",
+          "name": "Abyssal Plain Siliceous Ooze (Diatom Deposits)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-012",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-013",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "SUB-014",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-017",
+          "name": "Submarine Canyon Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "SUB-015",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-001",
+          "name": "Polymetallic Nodules (Manganese Nodules)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-016",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSEC-004",
+          "name": "Hadal Zone Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-012",
+          "name": "Hadal Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        }
+      ]
+    },
+    {
+      "from": "SUB-017",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-018",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-019",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "SUB-020",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-021",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-022",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-023",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSEC-004",
+          "name": "Hadal Zone Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-012",
+          "name": "Hadal Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        }
+      ]
+    },
+    {
+      "from": "SUB-024",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-025",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-002",
+          "name": "Ring of Fire Expedition",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "SUB-026",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-027",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UTEC-001",
+          "name": "Autonomous Underwater Glider Network",
+          "category": "underwater_tech"
+        },
+        {
+          "id": "UTEC-007",
+          "name": "Autonomous Surface Vehicles (ASV) for Ocean Mapping",
+          "category": "underwater_tech"
+        },
+        {
+          "id": "UTEC-010",
+          "name": "Autonomous Underwater Construction",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "SUB-028",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "SUB-029",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-030",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-031",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-032",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-017",
+          "name": "Deep-Sea Phosphorite Deposits",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-033",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-003",
+          "name": "Wave Energy Converters",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-012",
+          "name": "Wave Energy Converters (WEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "SUB-034",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-022",
+          "name": "Arctic Seafloor Resources",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "SUB-035",
+      "from_category": "submersibles",
+      "references": [
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSR-001",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-006",
+          "name": "Abyssal Plain Benthic Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-011",
+          "name": "Abyssal Plain Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSR-002",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-005",
+          "name": "Nautilus (E/V Nautilus)",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-003",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-007",
+          "name": "Seamount Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-013",
+          "name": "Seamount Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSR-004",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OEXP-010",
+          "name": "China COMRA Deep-Sea Exploration",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "UTEC-002",
+          "name": "Seafloor Observatory Networks",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "DSR-005",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-020",
+          "name": "Deep-Sea Microbiome Diversity",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-006",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-008",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-009",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSR-010",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OEXP-003",
+          "name": "Seabed 2030",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "OEXP-008",
+          "name": "Seabed 2030 Progress Update",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "UTEC-002",
+          "name": "Seafloor Observatory Networks",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "DSR-011",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-006",
+          "name": "Abyssal Plain Benthic Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-011",
+          "name": "Abyssal Plain Communities",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-012",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-016",
+          "name": "Brine Pool Communities",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-013",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-017",
+          "name": "Submarine Canyon Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSR-014",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-030",
+          "name": "Russian Mir-1/Mir-2",
+          "category": "submersibles"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "DSR-015",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-016",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-007",
+          "name": "Seamount Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-013",
+          "name": "Seamount Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSR-017",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-020",
+          "name": "Deep-Sea Microbiome Diversity",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-018",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-008",
+          "name": "Offshore Floating Wind (Deep Water)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-010",
+          "name": "China COMRA Deep-Sea Exploration",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "UTEC-002",
+          "name": "Seafloor Observatory Networks",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "DSR-019",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-020",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSR-021",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-020",
+          "name": "Deep-Sea Microbiome Diversity",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-022",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UTEC-002",
+          "name": "Seafloor Observatory Networks",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "DSR-023",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-005",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-010",
+          "name": "Deep-Sea Sponge Grounds",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-015",
+          "name": "Deep-Sea Coral Gardens",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-016",
+          "name": "Brine Pool Communities",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "DSR-024",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "DSEC-006",
+          "name": "Abyssal Plain Benthic Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-011",
+          "name": "Abyssal Plain Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSR-025",
+      "from_category": "deep_sea_resources",
+      "references": [
+        {
+          "id": "UCOM-012",
+          "name": "Seafloor Fiber Optic Observatories",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-008",
+          "name": "Offshore Floating Wind (Deep Water)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-001",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-003",
+          "name": "Alvin (DSV-2)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-002",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-018",
+          "name": "Methane Hydrates (Clathrates)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-003",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-004",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "MBIO-003",
+          "name": "Hadal Snailfish (Pseudoliparis swirei)",
+          "category": "marine_biology"
+        },
+        {
+          "id": "OEXP-004",
+          "name": "Hadal Zone Exploration (Fendouzhe)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-005",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-006",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-011",
+          "name": "Abyssal Plain Siliceous Ooze (Diatom Deposits)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-007",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-009",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-010",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-011",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "DSR-011",
+          "name": "Abyssal Plain Siliceous Ooze (Diatom Deposits)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-024",
+          "name": "Abyssal Plain Siliceous Ooze",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "MBIO-015",
+          "name": "Abyssal Sea Cucumber (Scotoplanes globosa)",
+          "category": "marine_biology"
+        },
+        {
+          "id": "OEXP-002",
+          "name": "Ring of Fire Expedition",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-012",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "MBIO-003",
+          "name": "Hadal Snailfish (Pseudoliparis swirei)",
+          "category": "marine_biology"
+        },
+        {
+          "id": "OEXP-004",
+          "name": "Hadal Zone Exploration (Fendouzhe)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-013",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-003",
+          "name": "Cobalt-Rich Ferromanganese Crusts",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-014",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-015",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-016",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-017",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-018",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-020",
+          "name": "NOAA Okeanos Explorer ROV (Deep Discoverer)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-019",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OEXP-001",
+          "name": "Five Deeps Expedition",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "DSEC-020",
+      "from_category": "deep_sea_ecology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-001",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-003",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-005",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-006",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "UTEC-006",
+          "name": "Acoustic Communication Networks",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-007",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "UTEC-006",
+          "name": "Acoustic Communication Networks",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-008",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "UTEC-006",
+          "name": "Acoustic Communication Networks",
+          "category": "underwater_tech"
+        },
+        {
+          "id": "UTEC-012",
+          "name": "Underwater Wireless Power Transfer",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-009",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-020",
+          "name": "NOAA Okeanos Explorer ROV (Deep Discoverer)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-010",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "UTEC-012",
+          "name": "Underwater Wireless Power Transfer",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-011",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "UTEC-012",
+          "name": "Underwater Wireless Power Transfer",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-012",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-013",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "OEXP-010",
+          "name": "China COMRA Deep-Sea Exploration",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "UTEC-012",
+          "name": "Underwater Wireless Power Transfer",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-014",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "UTEC-006",
+          "name": "Acoustic Communication Networks",
+          "category": "underwater_tech"
+        },
+        {
+          "id": "UTEC-012",
+          "name": "Underwater Wireless Power Transfer",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "UCOM-015",
+      "from_category": "underwater_communication",
+      "references": [
+        {
+          "id": "SUB-017",
+          "name": "Saildrone Surveyor",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-033",
+          "name": "Wave Glider",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-034",
+          "name": "Saildrone",
+          "category": "submersibles"
+        },
+        {
+          "id": "OENG-003",
+          "name": "Wave Energy Converters",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-012",
+          "name": "Wave Energy Converters (WEC)",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "OENG-001",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "DSEC-002",
+          "name": "Cold Seep Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OEXP-002",
+          "name": "Ring of Fire Expedition",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "OENG-002",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-014",
+          "name": "Deep-Water Ferromanganese Nodules (Arctic)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OENG-003",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "SUB-033",
+          "name": "Wave Glider",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-014",
+          "name": "Deep-Water Ferromanganese Nodules (Arctic)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "OENG-004",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "OENG-006",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-013",
+          "name": "Underwater Quantum Communication",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UTEC-012",
+          "name": "Underwater Wireless Power Transfer",
+          "category": "underwater_tech"
+        }
+      ]
+    },
+    {
+      "from": "OENG-007",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OENG-008",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "DSR-014",
+          "name": "Deep-Water Ferromanganese Nodules (Arctic)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "OEXP-002",
+          "name": "Ring of Fire Expedition",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "OENG-010",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OENG-011",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-013",
+          "name": "Underwater Quantum Communication",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "OENG-012",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "SUB-033",
+          "name": "Wave Glider",
+          "category": "submersibles"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "OENG-013",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OENG-014",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OENG-015",
+      "from_category": "ocean_energy",
+      "references": [
+        {
+          "id": "OEXP-002",
+          "name": "Ring of Fire Expedition",
+          "category": "ocean_exploration"
+        },
+        {
+          "id": "OEXP-012",
+          "name": "Ocean Decade (UN 2021-2030)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-001",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-002",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-003",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-001",
+          "name": "Fendouzhe (奋斗者号)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSEC-004",
+          "name": "Hadal Zone Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-012",
+          "name": "Hadal Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OEXP-004",
+          "name": "Hadal Zone Exploration (Fendouzhe)",
+          "category": "ocean_exploration"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-004",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-011",
+          "name": "Abyssal Plain Siliceous Ooze (Diatom Deposits)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-005",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-008",
+          "name": "Oxygen Minimum Zone Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-006",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-007",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-008",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-009",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-010",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-011",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-025",
+          "name": "Seafloor Basalt (Carbon Sequestration)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-012",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-013",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "DSEC-004",
+          "name": "Hadal Zone Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-012",
+          "name": "Hadal Trench Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-014",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "DSEC-007",
+          "name": "Seamount Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-013",
+          "name": "Seamount Communities",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "MBIO-015",
+      "from_category": "marine_biology",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-011",
+          "name": "Abyssal Plain Siliceous Ooze (Diatom Deposits)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-001",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-014",
+          "name": "Triton 36000/2 (Production Model)",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-035",
+          "name": "Triton XLR (Next-Gen)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-002",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-020",
+          "name": "NOAA Okeanos Explorer ROV (Deep Discoverer)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-017",
+          "name": "Submarine Canyon Communities",
+          "category": "deep_sea_ecology"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-003",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "DSEC-007",
+          "name": "Seamount Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-013",
+          "name": "Seamount Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-004",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-001",
+          "name": "Fendouzhe (奋斗者号)",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-005",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-006",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-001",
+          "name": "Polymetallic Nodules (Manganese Nodules)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-007",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-020",
+          "name": "Seafloor Sulfide Mounds (Inactive)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-008",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "DSEC-007",
+          "name": "Seamount Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "DSEC-013",
+          "name": "Seamount Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-009",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-010",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-001",
+          "name": "Polymetallic Nodules (Manganese Nodules)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-003",
+          "name": "Cobalt-Rich Ferromanganese Crusts",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-011",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-020",
+          "name": "NOAA Okeanos Explorer ROV (Deep Discoverer)",
+          "category": "submersibles"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "OEXP-012",
+      "from_category": "ocean_exploration",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-001",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "DSEC-008",
+          "name": "Oxygen Minimum Zone Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-013",
+          "name": "Underwater Quantum Communication",
+          "category": "underwater_communication"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-002",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-003",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-008",
+          "name": "HUGIN AUV (Kongsberg)",
+          "category": "submersibles"
+        },
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-013",
+          "name": "Underwater Quantum Communication",
+          "category": "underwater_communication"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-004",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-020",
+          "name": "NOAA Okeanos Explorer ROV (Deep Discoverer)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-005",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-014",
+          "name": "Triton 36000/2 (Production Model)",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-035",
+          "name": "Triton XLR (Next-Gen)",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-010",
+          "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-017",
+          "name": "Submarine Canyon Communities",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-006",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-007",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-017",
+          "name": "Saildrone Surveyor",
+          "category": "submersibles"
+        },
+        {
+          "id": "SUB-034",
+          "name": "Saildrone",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-009",
+          "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-013",
+          "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-008",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "DSR-015",
+          "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSEC-001",
+          "name": "Hydrothermal Vent Ecosystems",
+          "category": "deep_sea_ecology"
+        },
+        {
+          "id": "OENG-001",
+          "name": "Ocean Thermal Energy Conversion (OTEC)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-011",
+          "name": "Ocean Current Energy (Gulf Stream)",
+          "category": "ocean_energy"
+        },
+        {
+          "id": "OENG-015",
+          "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-009",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-012",
+          "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-010",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-013",
+          "name": "Underwater Quantum Communication",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "OENG-006",
+          "name": "Subsea Compressed Air Energy Storage (CAES)",
+          "category": "ocean_energy"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-011",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "SUB-015",
+          "name": "Deep-Sea Mining Collector Vehicles",
+          "category": "submersibles"
+        },
+        {
+          "id": "DSR-002",
+          "name": "Seafloor Massive Sulfides (SMS)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-005",
+          "name": "Deep-Sea Rare Earth Elements (Mud)",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-006",
+          "name": "Deep-Sea Lithium Resources",
+          "category": "deep_sea_resources"
+        },
+        {
+          "id": "DSR-008",
+          "name": "Deep-Sea Scandium and Tellurium",
+          "category": "deep_sea_resources"
+        }
+      ]
+    },
+    {
+      "from": "UTEC-012",
+      "from_category": "underwater_tech",
+      "references": [
+        {
+          "id": "UCOM-005",
+          "name": "Underwater Acoustic Networks (UAN)",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-006",
+          "name": "Magnetic Induction Communication",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-009",
+          "name": "Underwater IoT Sensor Networks",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-010",
+          "name": "Magnetic Induction Communication",
+          "category": "underwater_communication"
+        },
+        {
+          "id": "UCOM-011",
+          "name": "Underwater Delay-Tolerant Networking (DTN)",
+          "category": "underwater_communication"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+[
+  {
+    "id": "QNET-001",
+    "name": "Quantum Key Distribution (QKD)",
+    "type": "Secure communication",
+    "protocol": "BB84, E91, continuous-variable QKD",
+    "range": "Up to 254 km in existing telecom fiber (2025 demonstration)",
+    "status": "Commercially available (ID Quantique, Toshiba); national QKD networks in China",
+    "description": "QKD uses quantum mechanics to distribute encryption keys with information-theoretic security. In 2025, researchers demonstrated secure quantum communication over 254 km of existing telecom fiber using a coherence-based protocol. China has deployed the world's largest QKD network (Beijing-Shanghai backbone, 2,000+ km). QKD is the most mature quantum networking technology, though debate continues about its practical advantages over post-quantum cryptography."
+  },
+  {
+    "id": "QNET-002",
+    "name": "Long Island Quantum Network Testbed",
+    "type": "Quantum network testbed",
+    "protocol": "Multiple protocols over existing telecom fiber",
+    "range": "Long Island, New York",
+    "status": "$300M investment announced September 2025",
+    "description": "In September 2025, state and university leaders announced a $300 million investment to turn Long Island's existing telecom fiber into a quantum network testbed. This is one of the largest quantum networking investments globally and will test quantum communication protocols, quantum repeaters, and network architectures in a real-world environment using existing fiber infrastructure."
+  },
+  {
+    "id": "QNET-003",
+    "name": "Quantum Internet (Staged Development)",
+    "type": "Future quantum internet architecture",
+    "protocol": "Progressive stages: QKD → quantum teleportation → quantum repeaters → full quantum internet",
+    "range": "Global (long-term vision)",
+    "status": "Stage 1-2 (QKD and teleportation) demonstrated; Stages 3-4 (repeaters and full internet) in research",
+    "description": "The quantum internet is being developed in stages, as outlined by the quantum networking community. Stage 1: trusted-repeater QKD networks (deployed). Stage 2: prepare-and-measure with end-to-end QKD (demonstrated). Stage 3: entanglement distribution with quantum repeaters (in research). Stage 4: full quantum internet with arbitrary quantum state transmission (long-term). As of mid-2025, the quantum internet has transitioned from theory to early-stage pilot deployments."
+  },
+  {
+    "id": "QNET-004",
+    "name": "Quantum Repeaters",
+    "type": "Network infrastructure",
+    "protocol": "Entanglement swapping, quantum memory, error-corrected repeaters",
+    "range": "Required for >500 km quantum communication",
+    "status": "Laboratory demonstrations; not yet field-deployable",
+    "description": "Quantum repeaters are the key enabling technology for long-distance quantum communication. They overcome the exponential signal loss in optical fibers by creating entanglement in segments and then 'swapping' entanglement to extend the range. Current demonstrations use quantum memories (trapped atoms, rare-earth crystals) but are not yet robust enough for field deployment. Error-corrected quantum repeaters would enable global quantum networking."
+  },
+  {
+    "id": "QNET-005",
+    "name": "Micius Satellite (China)",
+    "type": "Satellite-based quantum communication",
+    "protocol": "QKD via satellite downlink; inter-satellite quantum links",
+    "range": "1,200 km (satellite-to-ground); 7,600 km (intercontinental via two satellites)",
+    "status": "Operational since 2016; demonstrated intercontinental QKD",
+    "description": "China's Micius (Mozi) satellite is the world's first quantum science satellite. It has demonstrated satellite-to-ground QKD over 1,200 km and intercontinental QKD between China and Austria over 7,600 km. Micius proves that satellite-based quantum communication is viable for global quantum networking, complementing fiber-based networks for long-distance links."
+  },
+  {
+    "id": "QNET-006",
+    "name": "DARPA Quantum Network",
+    "type": "Government quantum network testbed",
+    "protocol": "Multiple QKD and entanglement protocols",
+    "range": "Boston metropolitan area",
+    "status": "Operational; one of the first quantum networks (2004-present)",
+    "description": "DARPA's quantum network was one of the world's first operational quantum networks, running in the Boston metropolitan area since 2004. It has tested multiple QKD protocols and hardware from different vendors. The network continues to serve as a testbed for quantum networking research and interoperability testing."
+  },
+  {
+    "id": "QNET-007",
+    "name": "EU Quantum Internet Alliance",
+    "type": "European quantum internet initiative",
+    "protocol": "Full quantum internet stack development",
+    "range": "Pan-European (planned)",
+    "status": "Active; building European quantum network infrastructure",
+    "description": "The Quantum Internet Alliance (QIA) is a European initiative building the quantum internet in Europe. It brings together research institutions and companies to develop quantum networking hardware, software, and protocols. QIA is working on quantum repeaters, quantum memories, and network architectures with the goal of creating a pan-European quantum network."
+  },
+  {
+    "id": "QNET-008",
+    "name": "Photonic Interconnects for Quantum Processors",
+    "type": "Intra-datacenter quantum networking",
+    "protocol": "Photonic interconnects between quantum processors",
+    "range": "Datacenter-scale (meters to kilometers)",
+    "status": "Active research; PsiQuantum and others developing photonic interconnects",
+    "description": "Photonic interconnects use light to connect multiple quantum processors within a datacenter, enabling distributed quantum computing. This is critical for scaling quantum computers beyond single-chip limitations. PsiQuantum's photonic approach naturally supports networking, and other companies are developing photonic interconnects for superconducting and trapped-ion systems."
+  },
+  {
+    "id": "QNET-009",
+    "name": "Toshiba QKD System",
+    "type": "Commercial QKD",
+    "protocol": "BB84 with decoy states; continuous-variable QKD",
+    "range": "Up to 100+ km fiber",
+    "status": "Commercially available; deployed in multiple countries",
+    "description": "Toshiba is a leading commercial QKD vendor, offering both discrete-variable (BB84) and continuous-variable QKD systems. Their systems have been deployed in financial institutions, government networks, and critical infrastructure. Toshiba has demonstrated record-breaking QKD transmission rates and is working on network management software for multi-user QKD networks."
+  },
+  {
+    "id": "QNET-010",
+    "name": "ID Quantique (IDQ) QKD",
+    "type": "Commercial QKD",
+    "protocol": "BB84 with decoy states",
+    "range": "Up to 100 km fiber",
+    "status": "Commercially available; first QKD company (founded 2001)",
+    "description": "ID Quantique is the world's first and most established QKD company, founded in Geneva in 2001. Their Cerberis QKD system is deployed globally for government, financial, and enterprise security. IDQ also provides quantum random number generators (QRNGs) used in mobile phones (Samsung Galaxy) and automotive applications."
+  },
+  {
+    "id": "QNET-011",
+    "name": "German Quantum Repeater Project (€12.4M)",
+    "type": "Quantum repeater / Infrastructure",
+    "protocol": "Quantum repeater for long-distance quantum communication",
+    "range": "Targeting quantum internet development by 2028",
+    "status": "Launched 2025-2026; €12.4M investment",
+    "description": "Germany launched a €12.4 million quantum repeater project to advance quantum networks and accelerate quantum internet development by 2028. Quantum repeaters are essential for long-distance quantum communication, as they overcome the distance limitation of photon transmission. This project is one of the largest national investments in quantum networking infrastructure in Europe."
+  },
+  {
+    "id": "QNET-012",
+    "name": "Long Island Quantum Testbed ($300M)",
+    "type": "Quantum network testbed / Infrastructure",
+    "protocol": "Existing telecom fiber converted to quantum testbed",
+    "range": "Long Island, New York; existing telecom infrastructure",
+    "status": "Announced September 2025; $300M investment",
+    "description": "In September 2025, state and university leaders announced a $300 million investment to turn Long Island's existing telecom fiber into a quantum testbed. This is one of the largest quantum networking investments in the US, leveraging existing infrastructure rather than building new fiber. The testbed will enable research into QKD, quantum repeaters, and distributed quantum computing."
+  },
+  {
+    "id": "QNET-013",
+    "name": "IEEE Quantum Communication and Networking Standard (2026)",
+    "type": "Standardization / Protocol",
+    "protocol": "IEEE standards for quantum communication and networking",
+    "range": "Global standardization effort",
+    "status": "Published IEEE Computer Society February 2026",
+    "description": "IEEE published a comprehensive overview of quantum communication and networking standards in February 2026, covering fundamental technologies, challenges, and research directions. This standardization effort is critical for interoperability between different quantum networking implementations and for establishing common protocols for the future quantum internet."
+  },
+  {
+    "id": "QNET-014",
+    "name": "Quantum Internet Alliance (QIA) European Testbed",
+    "type": "Quantum internet / Multi-node network",
+    "protocol": "Multi-node quantum network with quantum repeaters",
+    "range": "Pan-European; connecting multiple cities",
+    "status": "Active development; transitioning from theory to pilot deployments",
+    "description": "The Quantum Internet Alliance is building a pan-European quantum internet testbed that has transitioned from theory to early-stage pilot deployments as of mid-2025. Driven by advancements in quantum hardware and demand for secure communication, the testbed connects multiple European cities and tests quantum repeater technology, QKD, and distributed quantum computing protocols."
+  },
+  {
+    "id": "QNET-015",
+    "name": "254km Telecom Fiber QKD (Coherence-Based Protocol)",
+    "type": "Long-distance QKD / Existing infrastructure",
+    "protocol": "Coherence-based QKD protocol",
+    "range": "254 km in existing telecom fiber",
+    "status": "Demonstrated 2025",
+    "description": "Researchers demonstrated secure quantum communication over 254 kilometers of existing telecom fiber using a coherence-based protocol. This is significant because it uses existing telecommunications infrastructure rather than dedicated quantum fiber, dramatically reducing deployment costs. The coherence-based approach is more robust against environmental noise than traditional QKD protocols."
+  },
+  {
+    "id": "QNET-016",
+    "name": "Quantum Network Testbeds Global Progress",
+    "type": "Quantum network infrastructure / Testbed review",
+    "protocol": "Multiple protocols across global testbeds",
+    "range": "Various (national and international)",
+    "status": "Active development globally; review published 2025-2026",
+    "description": "A comprehensive review of quantum network testbeds summarizes recent progress and major demonstrations worldwide. Multiple countries including China, US, EU, and Japan are building quantum network testbeds that go beyond QKD to test quantum repeaters, distributed quantum computing, and quantum internet protocols. These testbeds are the foundation for the future quantum internet."
+  },
+  {
+    "id": "QNET-017",
+    "name": "APNIC Quantum Internet Framework",
+    "type": "Quantum internet / Networking standards",
+    "protocol": "Quantum internet protocol stack",
+    "range": "Global (standards framework)",
+    "status": "Published October 2025",
+    "description": "APNIC published a framework for the quantum internet as a new frontier for networking in October 2025. The framework addresses the unique challenges of quantum networking, including the no-cloning theorem, quantum entanglement distribution, and the integration of quantum and classical network layers. It provides a roadmap for network operators preparing for quantum internet infrastructure."
+  },
+  {
+    "id": "QNET-018",
+    "name": "Quantum Repeater Breakthrough (2025-2026)",
+    "type": "Quantum repeater / Long-distance entanglement",
+    "protocol": "Quantum memory-based repeater",
+    "range": "Targeting 500+ km with quantum repeaters",
+    "status": "Laboratory demonstrations; approaching practical deployment",
+    "description": "Quantum repeaters made significant progress in 2025-2026, with multiple groups demonstrating entanglement swapping and quantum memory storage times sufficient for practical repeater operation. Quantum repeaters are essential for extending quantum communication beyond the ~250km limit of direct fiber QKD. The combination of improved quantum memories and efficient entanglement swapping protocols brings the quantum internet closer to reality."
+  },
+  {
+    "id": "QNET-019",
+    "name": "Long Island Entanglement Swapping Experiment",
+    "type": "Quantum network experiment / Entanglement swapping",
+    "protocol": "Entanglement swapping on existing telecom fiber",
+    "range": "Long Island, New York",
+    "status": "Experiment reported April 2026",
+    "description": "Scientists took a step toward a quantum internet using New York's existing telecom fiber in April 2026, demonstrating entanglement swapping on the Long Island quantum testbed. Entanglement swapping is one of the keys to making a quantum network into the vision of a quantum internet, allowing quantum states to be teleported between distant nodes without physical transmission. This experiment validates that existing fiber infrastructure can support quantum networking protocols.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://phys.org/news/2026-04-scientists-quantum-internet-york-city.html",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-020",
+    "name": "DOE Quantum Leadership Act ($500M for Quantum Networking)",
+    "type": "Government investment / Quantum networking infrastructure",
+    "protocol": "Multiple; $500M specifically for quantum networking",
+    "range": "United States",
+    "status": "Authorized 2025; $2.5B total ($500M for quantum networking) for 2026-2030",
+    "description": "The DOE Quantum Leadership Act authorizes $2.5 billion in quantum funding for 2026-2030, including $500 million specifically for quantum networking. This is one of the largest government investments in quantum networking globally and will fund the development of quantum repeaters, quantum internet testbeds, and quantum communication infrastructure across the United States. The Act positions the US to compete with China's ambitious quantum networking plans.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.linkedin.com/pulse/quantum-internet-next-frontier-global-connectivity-bellinghausen--exipf",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-021",
+    "name": "Quantum Networking Market $42B Report (2026)",
+    "type": "Market analysis / Industry forecast",
+    "protocol": "Multiple quantum networking technologies",
+    "range": "Global market forecast",
+    "status": "Research report published 2026; market projected to reach $42 billion",
+    "description": "A 2026 research report projects the quantum networking market to reach $42 billion, driven by demand for secure communication leveraging quantum entanglement to surpass traditional encryption. The market includes quantum key distribution, quantum repeaters, quantum network management software, and quantum internet infrastructure. Key growth drivers include government investment, financial sector demand for quantum-safe communication, and the development of quantum network testbeds globally.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://finance.yahoo.com/sectors/technology/articles/quantum-networking-research-report-2026-092900937.html",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-022",
+    "name": "QNetworks 2026 (UK Integrated Quantum Networks Hub)",
+    "type": "Conference / Research hub",
+    "protocol": "Full quantum networking stack",
+    "range": "UK and international",
+    "status": "Held May 12-13, 2026 in Bristol, UK",
+    "description": "QNetworks 2026, organized by the UK Integrated Quantum Networks Hub (IQN Hub), was held in Bristol on May 12-13, 2026. The event brought together researchers, industry, and government to discuss progress in quantum networking, including quantum repeaters, QKD networks, and quantum internet architectures. The IQN Hub is a major UK investment in quantum networking research, positioning the UK as a leader in the quantum internet development.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://iqnhub.org/qnetworks-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-023",
+    "name": "First Operational Quantum Internet Segments (2026)",
+    "type": "Quantum internet / Operational deployment",
+    "protocol": "Secure quantum communication between government labs, central banks, and research institutions",
+    "range": "Government and financial infrastructure",
+    "status": "First operational segments securing communications in 2026",
+    "description": "In 2026, the first operational quantum internet segments are securing communications between government labs, central banks, and research institutions. These early deployments use QKD and quantum-safe protocols to protect sensitive communications. While not yet a full quantum internet with entanglement distribution, these operational segments represent the transition from experimental quantum networking to practical deployment for critical infrastructure protection.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "article_url": "https://www.youtube.com/watch?v=iUZSMUof36Y",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-024",
+    "name": "Nature Review: Quantum Internet Coming Online",
+    "type": "Scientific review / Quantum internet assessment",
+    "protocol": "Multiple; comprehensive review of quantum internet progress",
+    "range": "Global assessment",
+    "status": "Published in Nature 2025",
+    "description": "Nature published a comprehensive review titled 'The quantum internet is coming online,' documenting the transition from theoretical quantum networking to operational deployments. The review covers the $300 million Long Island testbed, European quantum internet initiatives, and China's QKD network expansion. It concludes that the quantum internet has moved from an abstract research idea to a developing technology with clear applications in secure communication, distributed quantum computing, and quantum sensing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/d42473-025-00289-2",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-025",
+    "name": "Quantum Networking and the Quantum Internet (2026 Overview)",
+    "type": "Technology overview / Quantum networking",
+    "protocol": "Multiple; comprehensive overview of quantum networking",
+    "range": "Global (evolving technology)",
+    "status": "Published 2026; radical shift in information transmission",
+    "description": "A 2026 overview published by Open Source For You describes quantum networking as representing a radical shift in how information is transmitted, processed, and secured. Unlike classical networking, quantum networking leverages quantum entanglement and the no-cloning theorem to provide fundamentally new capabilities including information-theoretic security and distributed quantum computing. The overview covers QKD, quantum repeaters, and the staged development of the quantum internet.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "article_url": "https://www.opensourceforu.com/2026/05/quantum-networking-and-the-quantum-intern",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-026",
+    "name": "Long Island Entanglement Swapping (April 2026)",
+    "type": "Quantum network experiment / Entanglement swapping",
+    "protocol": "Entanglement swapping on existing telecom fiber",
+    "range": "Long Island, New York",
+    "status": "Experiment reported April 2026",
+    "description": "Scientists took a step toward a quantum internet using New York City existing telecom fiber in April 2026, demonstrating entanglement swapping on the Long Island quantum testbed. Entanglement swapping is one of the keys to making a quantum network into the vision of a quantum internet, allowing quantum states to be teleported between distant nodes without physical transmission. This experiment validates that existing fiber infrastructure can support quantum networking protocols.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://phys.org/news/2026-04-scientists-quantum-internet-york-city.html",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QN-27",
+    "name": "Long Island Quantum Network Entanglement Swapping",
+    "type": "Quantum network testbed / Entanglement distribution",
+    "protocol": "Entanglement swapping for quantum internet",
+    "distance": "Long Island, New York fiber network",
+    "key_rate": "Multi-node entanglement distribution demonstrated",
+    "description": "Scientists took a step toward a quantum internet using New York's existing fiber infrastructure on Long Island. In September 2025, state and university leaders announced a US$300 million investment to turn Long Island's existing telecom fiber into a quantum network. The key innovation is entanglement swapping — a process that extends quantum connections beyond direct line-of-sight, which is essential for building a true quantum internet.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/quantum-internet-coming-online",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QN-28",
+    "name": "First Operational Quantum Internet Segments (2026)",
+    "type": "Quantum internet / Secure communication",
+    "protocol": "QKD + entanglement-based networking",
+    "distance": "Government labs, central banks, military installations",
+    "key_rate": "Securing real communications between government and financial institutions",
+    "description": "In 2026, the first operational quantum internet segments went live, securing communications between government labs, central banks, and military installations. These segments use a combination of quantum key distribution (QKD) and entanglement-based networking to provide information-theoretically secure communication. This marks the transition from quantum networking research to operational deployment.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.technologyreview.com/quantum-internet-went-live-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QN-29",
+    "name": "IEEE Quantum Networking Standards (2026)",
+    "type": "Quantum networking standards / Industry specification",
+    "protocol": "IEEE P1913 / P1930 quantum networking standards",
+    "distance": "Global standardization effort",
+    "key_rate": "Standards for interoperability of quantum networking equipment",
+    "description": "IEEE published new quantum networking standards in February 2026, establishing specifications for quantum networking equipment interoperability, entanglement distribution protocols, and quantum key distribution interfaces. These standards are critical for building a scalable quantum internet and enabling multi-vendor quantum networking deployments.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://standards.ieee.org/quantum-networking-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QN-30",
+    "name": "APNIC Quantum Internet Framework (2025)",
+    "type": "Quantum internet architecture / Regional framework",
+    "protocol": "Asia-Pacific quantum internet architecture",
+    "distance": "Asia-Pacific regional network planning",
+    "key_rate": "Framework for integrating quantum networking into existing internet infrastructure",
+    "description": "APNIC (Asia-Pacific Network Information Centre) published a quantum internet framework in October 2025, outlining how networking professionals in the Asia-Pacific region can prepare for the quantum internet. The framework addresses the integration of quantum networking into existing internet infrastructure, quantum-safe cryptography migration, and the development of quantum networking talent in the region.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://blog.apnic.net/2025/10/quantum-internet-new-frontier",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QN-31",
+    "name": "Quantum Networking Market $42B Report (2026)",
+    "type": "Market analysis / Industry forecast",
+    "protocol": "Quantum networking market projection",
+    "distance": "Global market",
+    "key_rate": "Market expected to reach $42 billion; CAGR driven by secure communication demand",
+    "description": "A 2026 research report projects the global quantum networking market to reach $42 billion, driven by demand for secure communication, quantum key distribution, and entanglement-based networking. The report highlights that quantum networking offers vast opportunities in secure communication, leveraging quantum entanglement to surpass traditional encryption methods. Government and defense sectors are the primary early adopters.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.researchandmarkets.com/quantum-networking-42bn-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QN-32",
+    "name": "Nature Review: Quantum Internet Coming Online (2025)",
+    "type": "Scientific review / State of quantum internet",
+    "protocol": "Comprehensive review of quantum internet progress",
+    "distance": "Global perspective on quantum internet testbeds",
+    "key_rate": "Major quantum network testbeds and demonstrations catalogued",
+    "description": "Nature published a comprehensive review of progress in quantum network testbeds and major demonstrations in 2025. The review catalogs the state of quantum internet development worldwide, including the US$300 million Long Island investment, European quantum network initiatives, and Asian quantum communication projects. The review concludes that the quantum internet is transitioning from research to early deployment.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/quantum-internet-coming-online",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-033",
+    "name": "New York City Quantum Network Testbed",
+    "type": "Metropolitan quantum network",
+    "protocol": "Entanglement swapping, quantum repeater",
+    "range": "Metropolitan area (New York City)",
+    "status": "Active testbed 2026; US$300M investment",
+    "description": "Scientists have taken a significant step toward a quantum internet using New York City's existing fiber infrastructure. The testbed demonstrates entanglement swapping — a key process for extending quantum communication beyond point-to-point links. The project represents a US$300 million investment in quantum networking infrastructure and is one of the most advanced metropolitan quantum network testbeds in the world.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://phys.org/news/2026-04-scientists-quantum-internet-york-city.html",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-034",
+    "name": "Quantum Networking Market Report 2026",
+    "type": "Market analysis",
+    "protocol": "All quantum networking protocols",
+    "range": "Global market projected at $42 billion",
+    "status": "Published 2026",
+    "description": "A 2026 market research report projects the global quantum networking market to reach $42 billion, driven by demand for secure communication, quantum-safe cryptography, and quantum internet infrastructure. The report highlights quantum networking's vast opportunities in secure communication, leveraging quantum entanglement to surpass traditional encryption methods. Key growth areas include QKD networks, quantum repeaters, and satellite-based quantum communication.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://finance.yahoo.com/sectors/technology/articles/quantum-networking-research",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-035",
+    "name": "APNIC Quantum Internet Architecture",
+    "type": "Architecture / Standards",
+    "protocol": "Quantum internet protocol stack",
+    "range": "Global standards development",
+    "status": "Published 2025; ongoing standards work",
+    "description": "APNIC published a comprehensive analysis of the quantum internet as a new frontier for networking, arguing that it is not an abstract research idea but a developing technology with clear implications for networking professionals. The article outlines the quantum internet protocol stack, including quantum link layer, network layer, and application layer protocols. This work contributes to the development of standards for the quantum internet.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://blog.apnic.net/2025/10/02/the-quantum-internet-a-new-frontier-for-networking",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-036",
+    "name": "Quantum Networking Roadmap (OpenSourceForU)",
+    "type": "Technology roadmap",
+    "protocol": "QKD, quantum repeaters, entanglement distribution",
+    "range": "Comprehensive technology overview",
+    "status": "Published 2026",
+    "description": "A comprehensive 2026 roadmap for quantum networking outlines the path from current QKD systems to a full quantum internet. The roadmap identifies key milestones: short-distance QKD networks (current), metropolitan quantum networks (2025-2027), inter-city quantum networks with repeaters (2027-2030), and global quantum internet (2030+). Key challenges include developing practical quantum repeaters, improving single-photon source efficiency, and standardizing quantum network protocols.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.opensourceforu.com/2026/05/quantum-networking-and-the-quantum-intern",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QNET-037",
+    "name": "Satellite-Based Quantum Communication",
+    "type": "Space-based quantum network",
+    "protocol": "Satellite QKD, entanglement distribution from space",
+    "range": "Global (satellite-to-ground and inter-satellite)",
+    "status": "China's Micius satellite demonstrated; ESA's SAGA planned",
+    "description": "Satellite-based quantum communication is advancing rapidly, with China's Micius satellite having demonstrated intercontinental QKD and entanglement distribution. The European Space Agency's SAGA mission and other national programs are developing next-generation quantum satellites. In 2025-2026, new satellite QKD demonstrations achieved higher key rates and longer distances, moving toward a global quantum communication network that combines fiber and satellite links.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.opensourceforu.com/2026/05/quantum-networking-and-the-quantum-intern",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

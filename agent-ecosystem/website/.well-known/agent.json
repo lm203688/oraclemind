@@ -1,0 +1,122 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "Agent Ecosystem DB",
+  "description": "AI Agent ecosystem knowledge base - MCP servers, SDKs, protocols, memory systems, benchmarks",
+  "url": "https://agent.genetech.tools",
+  "category": "AI Agent生态",
+  "api": {
+    "type": "rest",
+    "base_url": "https://agent.genetech.tools/api",
+    "openapi": "https://agent.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/mcp_servers.json",
+        "method": "GET",
+        "description": "Get mcp servers data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/agent_sdks.json",
+        "method": "GET",
+        "description": "Get agent sdks data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/protocols.json",
+        "method": "GET",
+        "description": "Get protocols data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/memory_systems.json",
+        "method": "GET",
+        "description": "Get memory systems data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/benchmarks.json",
+        "method": "GET",
+        "description": "Get benchmarks data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/model_apis.json",
+        "method": "GET",
+        "description": "Get model apis data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/vector_dbs.json",
+        "method": "GET",
+        "description": "Get vector dbs data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/agent_frameworks.json",
+        "method": "GET",
+        "description": "Get agent frameworks data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/tool_platforms.json",
+        "method": "GET",
+        "description": "Get tool platforms data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://robot.genetech.tools",
+      "title": "Agent驱动机器人"
+    },
+    {
+      "rel": "related",
+      "href": "https://brain.genetech.tools",
+      "title": "脑启发AI"
+    },
+    {
+      "rel": "related",
+      "href": "https://quantum.genetech.tools",
+      "title": "量子机器学习"
+    },
+    {
+      "rel": "related",
+      "href": "https://genetech.tools",
+      "title": "AI辅助基因设计"
+    }
+  ]
+}

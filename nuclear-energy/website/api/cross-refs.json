@@ -1,0 +1,35 @@
+{
+  "source": "NuclearDB",
+  "url": "https://nuclear.genetech.tools",
+  "cross_references": {
+    "quantum": {
+      "name": "QuantumDB",
+      "url": "https://quantum.genetech.tools",
+      "api_url": "https://quantum.genetech.tools/api/data.json",
+      "description": "量子计算核模拟",
+      "category": "量子计算"
+    },
+    "energy": {
+      "name": "NuclearDB",
+      "url": "https://nuclear.genetech.tools",
+      "api_url": "https://nuclear.genetech.tools/api/data.json",
+      "description": "核能与新能源对比",
+      "category": "核能"
+    },
+    "deepsea": {
+      "name": "DeepSeaDB",
+      "url": "https://deepsea.genetech.tools",
+      "api_url": "https://deepsea.genetech.tools/api/data.json",
+      "description": "深海核能应用",
+      "category": "深海科技"
+    },
+    "mineral": {
+      "name": "MineralDB",
+      "url": "https://mineral.genetech.tools",
+      "api_url": "https://mineral.genetech.tools/api/data.json",
+      "description": "核燃料矿物",
+      "category": "外星矿物"
+    }
+  },
+  "ecosystem_index": "nuclear.genetech.tools"
+}

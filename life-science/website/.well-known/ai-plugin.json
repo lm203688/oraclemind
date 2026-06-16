@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "LifeDB",
+  "name_for_model": "lifedb",
+  "description_for_human": "Life science knowledge base covering synthetic biology, longevity tech, cell therapy, bioinformatics, and biomanufacturing",
+  "description_for_model": "Life science knowledge base covering synthetic biology, longevity tech, cell therapy, bioinformatics, and biomanufacturing. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://life.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://life.genetech.tools/"
+}

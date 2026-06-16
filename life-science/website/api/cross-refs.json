@@ -1,0 +1,35 @@
+{
+  "source": "LifeDB",
+  "url": "https://life.genetech.tools",
+  "cross_references": {
+    "genetech": {
+      "name": "GeneTech Tools",
+      "url": "https://genetech.tools",
+      "api_url": "https://genetech.tools/api/data.json",
+      "description": "基因工程合成生物",
+      "category": "基因技术"
+    },
+    "tcm": {
+      "name": "TCMDB",
+      "url": "https://tcm.genetech.tools",
+      "api_url": "https://tcm.genetech.tools/api/data.json",
+      "description": "中药长寿研究",
+      "category": "中药方剂"
+    },
+    "brain": {
+      "name": "BrainDB",
+      "url": "https://brain.genetech.tools",
+      "api_url": "https://brain.genetech.tools/api/data.json",
+      "description": "神经再生",
+      "category": "脑科学"
+    },
+    "energy": {
+      "name": "NuclearDB",
+      "url": "https://nuclear.genetech.tools",
+      "api_url": "https://nuclear.genetech.tools/api/data.json",
+      "description": "生物能源",
+      "category": "核能"
+    }
+  },
+  "ecosystem_index": "life.genetech.tools"
+}

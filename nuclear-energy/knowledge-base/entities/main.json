@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-06-05T14:00:00Z",
+  "description": "核能裂变聚变实体库",
+  "entities": [
+    {
+      "type": "reactors",
+      "file": "reactors.json",
+      "count": 77,
+      "description": "反应堆"
+    },
+    {
+      "type": "fusion",
+      "file": "fusion.json",
+      "count": 59,
+      "description": "聚变路线"
+    },
+    {
+      "type": "smr",
+      "file": "smr.json",
+      "count": 38,
+      "description": "小型模块化反应堆"
+    },
+    {
+      "type": "nuclear_fuel",
+      "file": "nuclear_fuel.json",
+      "count": 30,
+      "description": "核燃料"
+    },
+    {
+      "type": "radiation_applications",
+      "file": "radiation_applications.json",
+      "count": 34,
+      "description": "辐射应用"
+    }
+  ]
+}

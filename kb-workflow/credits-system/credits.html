@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>积分充值 - GeneTech Tools</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0e17;color:#e2e8f0;line-height:1.6}
+.container{max-width:800px;margin:0 auto;padding:20px}
+h1{color:#06b6d4;text-align:center;margin:20px 0}
+.balance-card{background:linear-gradient(135deg,#1e3a5f,#0a2540);border-radius:16px;padding:30px;text-align:center;margin:20px 0;position:relative;overflow:hidden}
+.balance-card::before{content:'';position:absolute;top:-50%;right:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(6,182,212,0.1) 0%,transparent 70%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.balance-number{font-size:3em;font-weight:800;color:#06b6d4;position:relative}
+.balance-label{color:#94a3b8;font-size:.9rem;margin-top:4px;position:relative}
+.plan-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.8rem;font-weight:600;margin-top:8px;position:relative}
+.plan-free{background:#374151;color:#9ca3af}
+.plan-pro{background:#06b6d420;color:#06b6d4}
+.section{margin:30px 0}
+.section h2{color:#f59e0b;font-size:1.2rem;margin-bottom:12px}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.pack{background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:20px;cursor:pointer;transition:all .2s;position:relative}
+.pack:hover{border-color:#06b6d4;transform:translateY(-2px)}
+.pack.popular{border-color:#f59e0b}
+.pack.popular::after{content:'热门';position:absolute;top:-8px;right:12px;background:#f59e0b;color:#000;font-size:.7rem;padding:2px 8px;border-radius:10px;font-weight:700}
+.pack .credits{font-size:1.8em;font-weight:800;color:#06b6d4}
+.pack .credits span{font-size:.4em;color:#94a3b8;font-weight:400}
+.pack .price{font-size:1.1em;color:#f59e0b;font-weight:700;margin-top:4px}
+.pack .bonus{font-size:.8rem;color:#10b981;margin-top:4px}
+.pack .per-credit{font-size:.75rem;color:#64748b}
+.pay-methods{display:flex;gap:12px;margin:20px 0;flex-wrap:wrap}
+.pay-btn{padding:12px 24px;border-radius:10px;border:1px solid #1e2d4a;background:#111827;color:#e2e8f0;cursor:pointer;font-size:.9rem;transition:all .2s;display:flex;align-items:center;gap:8px}
+.pay-btn:hover{border-color:#06b6d4}
+.pay-btn.active{border-color:#06b6d4;background:#06b6d415}
+.pay-btn img{height:20px}
+.history{margin-top:20px}
+.history-item{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #1e2d4a;font-size:.85rem}
+.history-item .credit{color:#10b981}
+.history-item .debit{color:#ef4444}
+.history-item .time{color:#64748b;font-size:.8rem}
+.crypto-addr{background:#111827;border:1px solid #1e2d4a;border-radius:10px;padding:16px;margin:12px 0;font-family:monospace;font-size:.85rem;word-break:break-all;color:#06b6d4}
+.crypto-addr .label{color:#94a3b8;font-size:.75rem;margin-bottom:4px;font-family:sans-serif}
+.note{background:#1a2236;border-radius:10px;padding:16px;margin:20px 0;font-size:.85rem;color:#94a3b8}
+.note a{color:#06b6d4}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>💎 积分充值中心</h1>
+
+<div class="balance-card">
+  <div class="balance-number" id="balance">--</div>
+  <div class="balance-label">可用积分</div>
+  <div class="plan-badge plan-free" id="planBadge">免费版</div>
+</div>
+
+<div class="section">
+<h2>💰 充值套餐</h2>
+<div class="packs">
+  <div class="pack" onclick="selectPack(500,'$4.99')">
+    <div class="credits">500 <span>积分</span></div>
+    <div class="price">$4.99</div>
+    <div class="per-credit">≈ $0.01/积分</div>
+  </div>
+  <div class="pack popular" onclick="selectPack(2000,'$17.99')">
+    <div class="credits">2,000 <span>积分</span></div>
+    <div class="price">$17.99</div>
+    <div class="bonus">🎉 赠送200积分</div>
+    <div class="per-credit">≈ $0.009/积分</div>
+  </div>
+  <div class="pack" onclick="selectPack(5000,'$39.99')">
+    <div class="credits">5,000 <span>积分</span></div>
+    <div class="price">$39.99</div>
+    <div class="bonus">🎉 赠送1000积分</div>
+    <div class="per-credit">≈ $0.008/积分</div>
+  </div>
+  <div class="pack" onclick="selectPack(10000,'$69.99')">
+    <div class="credits">10,000 <span>积分</span></div>
+    <div class="price">$69.99</div>
+    <div class="bonus">🎉 赠送3000积分</div>
+    <div class="per-credit">≈ $0.007/积分</div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h2>📋 订阅方案</h2>
+<div class="packs">
+  <div class="pack" onclick="selectPlan('monthly')">
+    <div class="credits">Pro 月付</div>
+    <div class="price">$9.90/月</div>
+    <div style="font-size:.8rem;color:#94a3b8;margin-top:4px">990积分/月 + Pro权限</div>
+  </div>
+  <div class="pack popular" onclick="selectPlan('annual')">
+    <div class="credits">Pro 年付</div>
+    <div class="price">$99/年</div>
+    <div style="font-size:.8rem;color:#10b981;margin-top:4px">省17% + 9900积分 + Pro权限</div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h2>💳 支付方式</h2>
+<div class="pay-methods">
+  <button class="pay-btn active" onclick="selectPay('lemonsqueezy')">
+    🌍 信用卡/PayPal (LemonSqueezy)
+  </button>
+  <button class="pay-btn" onclick="selectPay('crypto')">
+    ₿ 加密货币 (USDT/USDC)
+  </button>
+  <button class="pay-btn" onclick="selectPay('alipay')">
+    🇨🇳 支付宝
+  </button>
+</div>
+
+<div id="payLemonSqueezy">
+  <p style="color:#94a3b8;font-size:.85rem;margin:12px 0">点击下方按钮跳转安全支付页面，支持Visa/Mastercard/PayPal/Apple Pay</p>
+  <button class="pay-btn" style="background:#06b6d415;border-color:#06b6d4;width:100%;justify-content:center;font-size:1rem;padding:16px" onclick="payLemonSqueezy()">
+    🔒 安全支付 (LemonSqueezy)
+  </button>
+</div>
+
+<div id="payCrypto" style="display:none">
+  <p style="color:#94a3b8;font-size:.85rem;margin:12px 0">转账USDT(TRC20)到以下地址，付款后填写确认表单：</p>
+  <div class="crypto-addr">
+    <div class="label">USDT (TRC20) 收款地址</div>
+    <span id="cryptoAddr">TQn9Y2khE...（待配置）</span>
+  </div>
+  <div style="margin:12px 0">
+    <input type="email" placeholder="你的邮箱" id="cryptoEmail" style="width:100%;padding:10px;background:#111827;border:1px solid #1e2d4a;border-radius:8px;color:#e2e8f0;margin:4px 0">
+    <input type="text" placeholder="交易哈希 (TxID)" id="cryptoTxId" style="width:100%;padding:10px;background:#111827;border:1px solid #1e2d4a;border-radius:8px;color:#e2e8f0;margin:4px 0">
+    <input type="number" placeholder="转账金额 (USDT)" id="cryptoAmount" style="width:100%;padding:10px;background:#111827;border:1px solid #1e2d4a;border-radius:8px;color:#e2e8f0;margin:4px 0">
+    <button class="pay-btn" style="background:#06b6d415;border-color:#06b6d4;width:100%;justify-content:center;margin-top:8px;padding:12px" onclick="confirmCrypto()">
+      ✅ 确认转账
+    </button>
+  </div>
+</div>
+
+<div id="payAlipay" style="display:none">
+  <p style="color:#94a3b8;font-size:.85rem;margin:12px 0">扫码支付后，发送付款截图到 463102527@qq.com，注明邮箱和套餐</p>
+  <div style="text-align:center;margin:12px 0">
+    <img src="/alipay-qr.jpeg" alt="支付宝二维码" style="max-width:200px;border-radius:12px;border:1px solid #1e2d4a">
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h2>📜 交易记录</h2>
+<div class="history" id="history">
+  <div style="color:#64748b;text-align:center;padding:20px">登录后查看交易记录</div>
+</div>
+</div>
+
+<div class="note">
+  <p>💡 积分说明：1积分≈$0.01，用于API调用、数据导出、Pro功能</p>
+  <p>🔒 资金安全：LemonSqueezy/加密货币均为中间账户，你随时可提款</p>
+  <p>⏰ 到账时间：信用卡即时到账 | 加密货币5-10分钟 | 支付宝24小时内</p>
+  <p>🔄 退款政策：7天无理由退款，积分未使用部分全额退还</p>
+  <p><a href="https://genetech.tools">← 返回首页</a></p>
+</div>
+</div>
+
+<script>
+const API_BASE = 'https://credits.genetech.tools';
+let selectedPack = null;
+let selectedPlan = null;
+let payMethod = 'lemonsqueezy';
+
+function selectPack(credits, price) {
+  selectedPack = { credits, price };
+  selectedPlan = null;
+  document.querySelectorAll('.pack').forEach(p => p.style.borderColor = '');
+  event.currentTarget.style.borderColor = '#06b6d4';
+}
+
+function selectPlan(plan) {
+  selectedPlan = plan;
+  selectedPack = null;
+  document.querySelectorAll('.pack').forEach(p => p.style.borderColor = '');
+  event.currentTarget.style.borderColor = '#06b6d4';
+}
+
+function selectPay(method) {
+  payMethod = method;
+  document.querySelectorAll('.pay-btn').forEach(b => b.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.getElementById('payLemonSqueezy').style.display = method === 'lemonsqueezy' ? '' : 'none';
+  document.getElementById('payCrypto').style.display = method === 'crypto' ? '' : 'none';
+  document.getElementById('payAlipay').style.display = method === 'alipay' ? '' : 'none';
+}
+
+function payLemonSqueezy() {
+  if (!selectedPack && !selectedPlan) {
+    alert('请先选择套餐或订阅方案');
+    return;
+  }
+  // Redirect to LemonSqueezy checkout
+  // URL will be configured after LS store setup
+  alert('LemonSqueezy支付即将上线！请暂时使用加密货币或支付宝');
+}
+
+async function confirmCrypto() {
+  const email = document.getElementById('cryptoEmail').value;
+  const txId = document.getElementById('cryptoTxId').value;
+  const amount = document.getElementById('cryptoAmount').value;
+  if (!email || !txId || !amount) {
+    alert('请填写完整信息');
+    return;
+  }
+  // Submit to webhook for manual verification
+  const subject = encodeURIComponent(`Crypto Payment: ${amount} USDT`);
+  const body = encodeURIComponent(`Email: ${email}\nTxID: ${txId}\nAmount: ${amount} USDT\nPack: ${selectedPack ? selectedPack.credits + ' credits' : selectedPlan}`);
+  window.open(`mailto:463102527@qq.com?subject=${subject}&body=${body}`);
+}
+
+// Check balance if email in URL params
+const params = new URLSearchParams(window.location.search);
+const email = params.get('email');
+if (email) {
+  fetch(`${API_BASE}/api/credits/${encodeURIComponent(email)}`)
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('balance').textContent = data.credits;
+      const badge = document.getElementById('planBadge');
+      badge.textContent = data.plan === 'free' ? '免费版' : 'Pro';
+      badge.className = `plan-badge ${data.plan === 'free' ? 'plan-free' : 'plan-pro'}`;
+      // Show history
+      const hist = document.getElementById('history');
+      if (data.recent_transactions && data.recent_transactions.length > 0) {
+        hist.innerHTML = data.recent_transactions.reverse().map(t => `
+          <div class="history-item">
+            <span>${t.reason}</span>
+            <span class="${t.type}">${t.type === 'credit' ? '+' : '-'}${t.amount}</span>
+            <span class="time">${new Date(t.time).toLocaleDateString()}</span>
+          </div>
+        `).join('');
+      }
+    })
+    .catch(() => {
+      document.getElementById('balance').textContent = '0';
+    });
+}
+</script>
+</body>
+</html>

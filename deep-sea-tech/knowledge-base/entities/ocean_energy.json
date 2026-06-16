@@ -1,0 +1,385 @@
+[
+  {
+    "id": "OENG-001",
+    "name": "Ocean Thermal Energy Conversion (OTEC)",
+    "type": "Thermal gradient",
+    "depth": "Surface to 1,000 m (cold water pipe)",
+    "power_potential": "Theoretical: 10+ TW globally; practical: 100+ MW per plant",
+    "trl": "TRL 6-7 (demonstrated at 100+ kW scale)",
+    "organization": "Makai Ocean Engineering, OTE Corporation, Japan",
+    "status": "Pilot plants operational; commercial scale not yet achieved",
+    "description": "OTEC uses the temperature difference between warm surface water and cold deep water to generate electricity. The deep cold water intake also brings nutrient-rich water to the surface, enabling mariculture. Makai Ocean Engineering operates a 100 kW OTEC plant in Hawaii."
+  },
+  {
+    "id": "OENG-002",
+    "name": "Tidal Energy (Deep Water)",
+    "type": "Tidal current",
+    "depth": "30-100 m (tidal stream turbines)",
+    "power_potential": "Global: ~3 TW theoretical; best sites: Pentland Firth, Bay of Fundy",
+    "trl": "TRL 7-8 (MeyGen operational in Scotland)",
+    "organization": "SIMEC Atlantis, Orbital Marine, Nova Innovation",
+    "status": "Commercial arrays operational; MeyGen 6 MW array in Scotland",
+    "description": "Tidal stream turbines extract energy from tidal currents. The MeyGen project in Scotland's Pentland Firth is the world's largest tidal array at 6 MW. Deep-water tidal sites offer more consistent and powerful currents than shallow sites."
+  },
+  {
+    "id": "OENG-003",
+    "name": "Wave Energy Converters",
+    "type": "Wave motion",
+    "depth": "Surface to 100 m (moored devices)",
+    "power_potential": "Global: ~2-3 TW theoretical; highly variable by location",
+    "trl": "TRL 5-7 (multiple prototypes; no commercial scale)",
+    "organization": "Ocean Power Technologies, CorPower, Wello",
+    "status": "Multiple prototypes deployed; commercial viability not yet proven",
+    "description": "Wave energy converters extract energy from surface wave motion. Various designs include point absorbers, oscillating water columns, and attenuators. Despite decades of development, no design has achieved commercial viability. Deep-water deployments offer more consistent wave energy."
+  },
+  {
+    "id": "OENG-004",
+    "name": "Deep-Current (Thermohaline) Energy",
+    "type": "Ocean current",
+    "depth": "500-2,000 m (deep ocean currents)",
+    "power_potential": "Theoretical: significant but poorly quantified; Florida Current: ~25 GW",
+    "trl": "TRL 2-3 (concept and early testing)",
+    "organization": "Various research groups",
+    "status": "Research phase; no deployed systems",
+    "description": "Deep ocean currents (thermohaline circulation) carry enormous energy. Unlike surface currents, deep currents are steady and predictable. Turbines deployed in deep currents could provide baseload power for offshore or subsea facilities. The Florida Current alone carries an estimated 25 GW."
+  },
+  {
+    "id": "OENG-005",
+    "name": "Salinity Gradient Power (Blue Energy)",
+    "type": "Osmotic pressure",
+    "depth": "Surface (river-sea interface)",
+    "power_potential": "Global: ~2.6 TW theoretical; best at river mouths",
+    "trl": "TRL 4-5 (pilot plants demonstrated)",
+    "organization": "Statkraft (Norway), REDstack (Netherlands)",
+    "status": "Pilot plants operated; not yet commercially viable",
+    "description": "Salinity gradient power exploits the osmotic pressure difference between freshwater and seawater. Pressure-retarded osmosis (PRO) and reverse electrodialysis (RED) are the main approaches. Statkraft operated a PRO pilot plant in Norway. The energy potential is enormous but membrane costs remain prohibitive."
+  },
+  {
+    "id": "OENG-006",
+    "name": "Subsea Compressed Air Energy Storage (CAES)",
+    "type": "Energy storage",
+    "depth": "100-600 m (hydrostatic pressure)",
+    "power_potential": "Scalable; 100+ MWh per installation",
+    "trl": "TRL 4-5 (demonstrated at pilot scale)",
+    "organization": "Hydrostor (Canada), StEnSEA (Germany)",
+    "status": "Hydrostor building 5 MW commercial plant; StEnSEA tested in Lake Constance",
+    "description": "Underwater compressed air energy storage uses hydrostatic pressure at depth to store compressed air in flexible bags or rigid vessels. When electricity is needed, the compressed air is released through turbines. Hydrostor is building a 5 MW commercial plant in Australia."
+  },
+  {
+    "id": "OENG-007",
+    "name": "Deep-Sea Geothermal Energy",
+    "type": "Geothermal",
+    "depth": "1,000-4,000 m (near hydrothermal vents)",
+    "power_potential": "Individual vent fields: 1-100 MW thermal; mid-ocean ridges: enormous",
+    "trl": "TRL 1-2 (concept only)",
+    "organization": "Various research groups (conceptual)",
+    "status": "Conceptual; no development due to extreme environment and distance from shore",
+    "description": "Hydrothermal vents release enormous thermal energy from Earth's interior. While the energy potential is vast, the extreme depth, corrosive environment, and distance from shore make extraction impractical with current technology. Could become relevant for powering deep-sea research stations or mining operations."
+  },
+  {
+    "id": "OENG-008",
+    "name": "Offshore Floating Wind (Deep Water)",
+    "type": "Wind (deep-water floating platforms)",
+    "depth": "60-1,000 m (floating platforms)",
+    "power_potential": "Global deep-water wind: 10+ TW; individual turbines: 15+ MW",
+    "trl": "TRL 7-8 (Hywind operational since 2017)",
+    "organization": "Equinor (Hywind), Principle Power (WindFloat), BW Ideol",
+    "status": "Commercial arrays operational; rapidly expanding globally",
+    "description": "Floating wind platforms enable wind energy generation in deep waters beyond the reach of fixed-bottom turbines. Equinor's Hywind Scotland has been operational since 2017. The technology is rapidly maturing with 15+ MW turbines now being deployed on floating platforms."
+  },
+  {
+    "id": "OENG-009",
+    "name": "Salinity Gradient Power (Blue Energy)",
+    "type": "Osmotic pressure",
+    "depth": "Surface (river-sea interface)",
+    "power_potential": "Theoretical: 2.6 TW globally; practical: 10+ MW per plant",
+    "trl": "TRL 4-5 (pilot demonstrated)",
+    "organization": "Statkraft (Norway), REDstack (Netherlands)",
+    "status": "Pilot plants demonstrated; commercial scale not yet achieved",
+    "description": "Blue energy harnesses the osmotic pressure difference between freshwater and seawater. Statkraft operated a 4 kW pilot plant in Norway. The technology could provide baseload power at river mouths. Advances in membrane technology are improving efficiency."
+  },
+  {
+    "id": "OENG-010",
+    "name": "Deep-Sea Geothermal Energy",
+    "type": "Geothermal (submarine)",
+    "depth": "2,000-4,000 m (mid-ocean ridge hydrothermal)",
+    "power_potential": "Theoretical: enormous at MOR; practical: not yet quantified",
+    "trl": "TRL 1-2 (concept only)",
+    "organization": "Various research groups",
+    "status": "Concept; no field testing",
+    "description": "Geothermal energy from submarine hydrothermal systems at mid-ocean ridges. The heat flux from hydrothermal vents represents a vast untapped energy source. Concept involves placing heat exchangers near vent systems to generate electricity for deep-sea operations."
+  },
+  {
+    "id": "OENG-011",
+    "name": "Ocean Current Energy (Gulf Stream)",
+    "type": "Ocean current turbine",
+    "depth": "100-300 m (in current)",
+    "power_potential": "Gulf Stream: theoretical 20+ GW; practical: 1-5 GW",
+    "trl": "TRL 3-4 (prototype tested)",
+    "organization": "Florida Atlantic University, Ocean Renewable Power",
+    "status": "Prototype testing; no commercial deployment",
+    "description": "Underwater turbines placed in major ocean currents like the Gulf Stream to generate electricity. Unlike tidal energy, ocean currents flow continuously. FAU has tested prototypes. The consistent flow of the Gulf Stream could provide reliable baseload power."
+  },
+  {
+    "id": "OENG-012",
+    "name": "Wave Energy Converters (WEC)",
+    "type": "Wave",
+    "depth": "Surface (nearshore and offshore)",
+    "power_potential": "Global: 2+ TW theoretical; practical: 100+ MW arrays",
+    "trl": "TRL 5-7 (multiple designs tested)",
+    "organization": "Carnegie Clean Energy (CETO), CorPower Ocean, Ocean Energy (OE Buoy)",
+    "status": "Multiple pilot projects; approaching commercial viability",
+    "description": "Wave energy converters extract energy from surface waves. Multiple designs exist: point absorbers, oscillating water columns, and attenuators. CorPower Ocean and Carnegie Clean Energy are leading developers. 2025-2026 seeing increased investment and pilot deployments."
+  },
+  {
+    "id": "OENG-013",
+    "name": "Subsea Battery Storage",
+    "type": "Energy storage",
+    "depth": "100-3,000 m",
+    "power_potential": "MWh scale; complements intermittent ocean energy",
+    "trl": "TRL 4-5",
+    "organization": "Ocean Battery (Bluelift), various",
+    "status": "Pilot testing; first commercial units 2025-2026",
+    "description": "Underwater battery systems that store energy from ocean renewable sources on the seafloor. Ocean Battery uses hydrostatic pressure for pumped storage. Subsea storage eliminates surface footprint and can be co-located with subsea equipment."
+  },
+  {
+    "id": "OENG-014",
+    "name": "Microbial Fuel Cells (Benthic)",
+    "type": "Bioelectrochemical",
+    "depth": "Any (seafloor sediment)",
+    "power_potential": "Milliwatts to watts per m²; useful for low-power sensors",
+    "trl": "TRL 4-5",
+    "organization": "NASA JPL, various universities",
+    "status": "Field tested; powering low-power sensors",
+    "description": "Benthic microbial fuel cells generate electricity from organic matter in seafloor sediments using electrogenic bacteria. Can power low-power ocean sensors indefinitely without batteries. NASA JPL has tested these for long-duration ocean monitoring."
+  },
+  {
+    "id": "OENG-015",
+    "name": "Ocean Thermal Energy - Advanced Closed Cycle",
+    "type": "Thermal gradient (advanced)",
+    "depth": "Surface to 1,000 m",
+    "power_potential": "100+ MW per plant (commercial scale)",
+    "trl": "TRL 6-7",
+    "organization": "Makai Ocean Engineering, OTE Corporation, Japan",
+    "status": "Makai 100kW operational; 10MW design complete",
+    "description": "Advanced closed-cycle OTEC using ammonia working fluid in compact heat exchangers. Makai Ocean Engineering operates a 100 kW facility in Hawaii and has completed 10 MW commercial design. Co-products include desalinated water, air conditioning, and mariculture."
+  },
+  {
+    "id": "OENG-016",
+    "name": "Deep-Sea Mining Energy Infrastructure",
+    "type": "Offshore power for mining operations",
+    "depth": "Surface to 6,000 m (power transmission to seafloor)",
+    "power_potential": "10-100 MW required for commercial mining operations",
+    "trl": "TRL 4-5",
+    "organization": "TMC, Allseas, GSR (mining); power system design ongoing",
+    "status": "Power requirements defined; systems under development",
+    "description": "Commercial deep-sea mining operations require significant power for seafloor collectors, riser systems, and surface processing. Power must be transmitted from surface vessels to seafloor mining vehicles at depths of 4,000-6,000m. This drives innovation in deep-water power transmission, subsea electrical systems, and energy-efficient mining equipment."
+  },
+  {
+    "id": "OENG-017",
+    "name": "Seabed 2030 Mapping Energy Requirements",
+    "type": "Mapping infrastructure power",
+    "depth": "Surface to 11,000 m (mapping sonar power)",
+    "power_potential": "Saildrone and ASV mapping systems: 100W-1kW; ship-based: 10-100 kW",
+    "trl": "TRL 7-8 (operational)",
+    "organization": "Seabed 2030, Nippon Foundation, GEBCO",
+    "status": "Active mapping campaign; 25% of ocean floor mapped as of 2025",
+    "description": "The Seabed 2030 project aims to map the entire ocean floor by 2030. As of 2025, approximately 25% has been mapped to modern standards. The project drives innovation in low-power autonomous mapping systems (Saildrone, Wave Glider) and high-power ship-based multibeam systems. Energy efficiency of mapping systems is critical for achieving the 2030 goal."
+  },
+  {
+    "id": "OENG-018",
+    "name": "Seabed 2030 Mapping Progress (28.7% - Energy Implications)",
+    "type": "Mapping infrastructure energy",
+    "depth": "Surface to 11,000 m",
+    "power_potential": "Autonomous vehicles: 100W-1kW; ship-based: 10-100 kW; total program energy demand significant",
+    "trl": "TRL 7-8 (operational)",
+    "organization": "Seabed 2030, Nippon Foundation, GEBCO",
+    "status": "28.7% mapped as of April 2026; 5M km² added in one year",
+    "description": "The Seabed 2030 project reached 28.7% ocean floor mapping in April 2026, adding 5 million km² in one year. This acceleration is driven by energy-efficient autonomous vehicles (Saildrone, Wave Glider) that can map for months on minimal power. The energy efficiency of these platforms is key to achieving the 2030 goal."
+  },
+  {
+    "id": "OENG-019",
+    "name": "Deep-Sea Mining Energy Systems",
+    "type": "Mining operation power",
+    "depth": "4,000-6,000 m",
+    "power_potential": "Collector vehicles: 500 kW-2 MW; riser systems: 5-10 MW; surface support: 10-50 MW",
+    "trl": "TRL 5-6 (pilot scale)",
+    "organization": "TMC, China Minmetals, Lockheed Martin",
+    "status": "Pilot operations; commercial scale energy requirements defined",
+    "description": "Deep-sea mining operations require significant energy: collector vehicles on the seafloor (500 kW-2 MW), riser systems to lift nodules (5-10 MW), and surface processing (10-50 MW). Energy supply and management are critical challenges for commercial viability. Hybrid diesel-electric and potentially nuclear power systems are being evaluated."
+  },
+  {
+    "id": "OENG-020",
+    "name": "Autonomous Underwater Vehicle Energy Harvesting",
+    "type": "AUV energy harvesting",
+    "depth": "0-6,000 m",
+    "power_potential": "Thermal gradient: 1-10 W; wave energy: 10-100 W; solar (surface): 100-500 W",
+    "trl": "TRL 3-5",
+    "organization": "Teledyne, WHOI, university research",
+    "status": "Thermal recharging demonstrated; solar and wave harvesting in development",
+    "description": "AUV energy harvesting technologies allow vehicles to recharge batteries without human intervention. Thermal gradient harvesting uses ocean temperature differences, wave energy harvesting captures surface motion, and solar panels charge during surface intervals. These technologies extend AUV mission duration from days to months."
+  },
+  {
+    "id": "OENG-021",
+    "name": "Ocean Thermal Energy Conversion (OTEC) 2026 Status",
+    "type": "Thermal gradient",
+    "depth": "Surface to 1,000 m (cold water pipe)",
+    "power_potential": "Theoretical: 10+ TW globally; practical: 100+ MW per plant",
+    "trl": "TRL 6-7",
+    "organization": "Makai Ocean Engineering, OTE Corporation, Japan",
+    "status": "Pilot plants operational; commercial scale advancing; new projects in tropics",
+    "description": "OTEC technology in 2026 is advancing toward commercial viability, with pilot plants in Hawaii and Japan demonstrating reliable operation. New projects in tropical island nations are being developed for both power generation and freshwater production. The deep cold water intake also enables mariculture and air conditioning."
+  },
+  {
+    "id": "OENG-022",
+    "name": "Wave Energy Converters (2026 Status)",
+    "type": "Wave energy",
+    "depth": "Surface",
+    "power_potential": "Theoretical: 2-3 TW globally; practical: 10-100 MW per installation",
+    "trl": "TRL 5-7",
+    "organization": "CorPower Ocean, Ocean Power Technologies, Wello",
+    "status": "Multiple demonstration projects; CorPower reaching commercial scale",
+    "description": "Wave energy converter technology is advancing in 2026, with several companies reaching commercial demonstration scale. CorPower Ocean's resonant wave energy converters have shown promising survivability in harsh conditions. Wave energy provides more consistent power than solar or wind, making it attractive for offshore and island applications."
+  },
+  {
+    "id": "OENG-023",
+    "name": "Deep-Sea Geothermal Energy",
+    "type": "Geothermal (submarine)",
+    "depth": "2,000-4,000 m (vent locations)",
+    "power_potential": "Theoretical: significant at vent fields; practical: not yet demonstrated",
+    "trl": "TRL 2-3",
+    "organization": "Research concept; no commercial development",
+    "status": "Conceptual; no pilot projects",
+    "description": "Deep-sea hydrothermal vents release enormous amounts of geothermal energy. While not currently harnessed, the concept of submarine geothermal energy extraction has been proposed. The extreme temperatures (up to 400°C) and chemical energy at vents represent a theoretical energy resource, though extraction would face enormous engineering challenges."
+  },
+  {
+    "id": "OENG-024",
+    "name": "Salinity Gradient Power (Blue Energy)",
+    "type": "Osmotic power",
+    "depth": "River-ocean interfaces",
+    "power_potential": "Theoretical: 2.6 TW globally; practical: 1-5 MW per plant",
+    "trl": "TRL 4-5",
+    "organization": "Statkraft (Norway), Wetsus (Netherlands)",
+    "status": "Pilot plant operated; scaling challenges remain",
+    "description": "Salinity gradient power harnesses the energy released when freshwater mixes with seawater across a semi-permeable membrane. Statkraft operated a prototype in Norway. While theoretically significant, the technology faces membrane cost and fouling challenges. New membrane materials in 2025-2026 are improving efficiency."
+  },
+  {
+    "id": "OENG-025",
+    "name": "Offshore Floating Nuclear Power for Deep Operations",
+    "type": "Nuclear (floating)",
+    "depth": "Surface (power for deep-sea operations)",
+    "power_potential": "50-300 MW per unit",
+    "trl": "TRL 3-4 (concept for ocean use)",
+    "organization": "Various (concept stage)",
+    "status": "Concept development; regulatory and safety challenges",
+    "description": "Floating nuclear power plants could provide the massive energy needed for deep-sea mining and large-scale ocean operations. While land-based small modular reactors are advancing, adapting them for ocean use introduces additional safety and regulatory challenges. This remains a long-term concept for enabling energy-intensive deep-sea operations."
+  },
+  {
+    "id": "OENG-026",
+    "name": "ICOE/OEE 2026 Joint Conference",
+    "type": "Industry conference / market milestone",
+    "location": "The Hague, Netherlands",
+    "description": "The largest ocean energy conference in 2026, jointly organized by Ocean Energy Europe and the Dutch Energy from Water Association. Key data point: the largest tidal turbines now reach ~2MW capacity, and the most powerful wave energy converters reach ~1MW — comparable to a medium wind turbine. The conference focuses on wave, tidal, ocean current, OTEC, and salinity gradient technologies.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-027",
+    "name": "Makai Ocean Engineering OTEC",
+    "type": "Ocean Thermal Energy Conversion",
+    "location": "Hawaii, USA",
+    "description": "Makai Ocean Engineering is one of only two surviving OTEC startups in 2026. OTEC exploits the temperature difference between warm surface water and cold deep water to generate electricity. Makai operates a test facility in Hawaii and has demonstrated the core thermodynamic cycle. The main challenge remains the large capital cost of cold water pipes and the relatively low thermal efficiency.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-028",
+    "name": "Bluerise OTEC",
+    "type": "Ocean Thermal Energy Conversion",
+    "location": "Netherlands / Caribbean",
+    "description": "Bluerise is the other surviving OTEC startup in 2026, focusing on smaller-scale OTEC systems for island communities. Their approach uses a hybrid OTEC cycle that also produces fresh water — a critical co-product for tropical islands. The company has secured funding for a pilot plant in the Caribbean.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-029",
+    "name": "AWTEC 2026 (Asian Wave/Tidal Conference)",
+    "type": "Industry conference",
+    "location": "Kaohsiung, Taiwan",
+    "description": "The 8th Asian Offshore Wind, Wave and Tidal Energy Conference (AWTEC 2026) will be held September 6-10, 2026 in Kaohsiung, Taiwan. The conference features technical sessions on wave energy, tidal energy, and offshore wind integration, fostering collaboration across the Asian marine energy sector.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-030",
+    "name": "OTC 2026 Marine Renewable Energy Session",
+    "type": "Technical conference session",
+    "location": "Houston, USA",
+    "description": "The 2026 Offshore Technology Conference features a dedicated session on innovations driving the future of wave, tidal, and OTEC technologies. Key topics include advanced materials for marine energy converters, grid integration challenges, and hybrid systems combining multiple ocean energy technologies.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-031",
+    "name": "ICOE/OEE 2026 Joint Conference (The Hague)",
+    "type": "Industry conference / market milestone",
+    "location": "The Hague, Netherlands",
+    "description": "Largest ocean energy conference in 2026. Key data: largest tidal turbines now reach ~2MW capacity, most powerful wave energy converters reach ~1MW. Focuses on wave, tidal, ocean current, OTEC, and salinity gradient technologies. Industry consensus: ocean energy approaching commercial viability for niche applications (islands, offshore platforms) but needs policy support to scale.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-032",
+    "name": "AWTEC 2026 (Asian Wave/Tidal Conference)",
+    "type": "Industry conference",
+    "location": "Kaohsiung, Taiwan",
+    "description": "8th Asian Offshore Wind, Wave and Tidal Energy Conference (AWTEC 2026) September 6-10, 2026 in Kaohsiung, Taiwan. Technical sessions on wave energy, tidal energy, and offshore wind integration. Asia emerging as major market for ocean energy with Japan, South Korea, and China all investing in tidal and wave energy demonstration projects.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-033",
+    "name": "Bluerise OTEC Caribbean Pilot (2026)",
+    "type": "OTEC pilot plant",
+    "location": "Caribbean (Netherlands Antilles)",
+    "description": "Bluerise, a Dutch OTEC company, secured funding in 2026 for a pilot OTEC plant in the Caribbean. The plant will use the temperature difference between warm surface water and cold deep water to generate electricity and produce freshwater. OTEC is particularly suited to tropical islands that import expensive fossil fuels. The Bluerise pilot represents one of the few active OTEC projects globally, alongside Makai in Hawaii.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-034",
+    "name": "OTC 2026 Marine Renewable Energy Session",
+    "type": "Technical conference session",
+    "location": "Houston, USA",
+    "description": "The 2026 Offshore Technology Conference features a dedicated session on innovations driving the future of wave, tidal, and OTEC technologies. Key topics include advanced materials for marine energy converters, grid integration challenges, and hybrid systems combining multiple ocean energy technologies. The inclusion of ocean energy at the premier offshore technology conference signals growing industry recognition.",
+    "year": 2026
+  },
+  {
+    "id": "OENG-035",
+    "name": "Seabed 2030 Milestone 28.7%",
+    "type": "mapping_milestone",
+    "year": 2026,
+    "key_finding": "Seabed 2030项目2026年4月达到28.7%海底测绘覆盖率，一年增加500万km²。相当于地球陆地面积三分之二以上。目标2030年完成100%测绘。",
+    "source": "Seabed 2030/UNESCO IOC 2026",
+    "category": "mapping_progress"
+  },
+  {
+    "id": "OENG-036",
+    "name": "China Systematic Seafloor Mapping Program",
+    "type": "national_program",
+    "year": 2026,
+    "key_finding": "Reuters 2026年3月报道中国系统性海底测绘计划。大规模海底调查活动引发地缘政治关注。",
+    "source": "Reuters 2026",
+    "category": "national_mapping"
+  },
+  {
+    "id": "OENG-037",
+    "name": "University of Delaware Deep-Sea Robotics 2026",
+    "type": "research_program",
+    "year": 2026,
+    "key_finding": "特拉华大学海洋机器人研究2025-2026年深海探索贡献。开发新型海洋机器人和自主系统用于深海调查。",
+    "source": "UDel UDaily 2026",
+    "category": "research"
+  },
+  {
+    "id": "OENG-038",
+    "name": "NOAA Ocean Exploration 2025-2026 Campaign",
+    "type": "government_program",
+    "year": 2026,
+    "key_finding": "NOAA海洋探索2025年领导和支持多次考察，测试新兴技术。Okeanos Explorer号ROV和测绘考察持续进行。",
+    "source": "NOAA Ocean Explorer 2026",
+    "category": "government_exploration"
+  }
+]

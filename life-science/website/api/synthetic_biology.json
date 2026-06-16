@@ -1,0 +1,78 @@
+{
+  "count": 8,
+  "updated": "2026-05-29T02:27:01.447Z",
+  "data": [
+    {
+      "id": "SYNBIO-001",
+      "name": "CRISPR Gene Drives",
+      "type": "Gene editing application",
+      "description": "Self-propagating genetic modifications that spread through wild populations. Can potentially eliminate malaria-carrying mosquitoes or invasive species.",
+      "organization": "Target Malaria, UC San Diego (Esvelt lab), Imperial College",
+      "status": "Lab demonstrated; field trials pending; regulatory and ethical concerns significant",
+      "breakthrough": "Target Malaria's gene drive mosquitoes reduced population 90%+ in lab; first confined field study in Burkina Faso"
+    },
+    {
+      "id": "SYNBIO-002",
+      "name": "Cell-Free Protein Synthesis",
+      "type": "Biomanufacturing",
+      "description": "Producing proteins without living cells, using cell extracts containing ribosomes and enzymes. Enables rapid prototyping and production of toxic or difficult proteins.",
+      "organization": "Sutro Biopharma, Tierra Biosciences, Cell-Free Tech",
+      "status": "Commercial; Sutro's ovarian cancer drug (luvelta) in Phase 3",
+      "breakthrough": "CFPS enables 24-hour design-to-protein cycles vs weeks with cell-based systems"
+    },
+    {
+      "id": "SYNBIO-003",
+      "name": "Minimal Synthetic Cell (JCVI-syn3.0)",
+      "type": "Synthetic organism",
+      "description": "A bacterium with the smallest known genome (473 genes) that can self-replicate. Built by systematically removing genes from Mycoplasma mycoides to identify essential functions.",
+      "organization": "J. Craig Venter Institute",
+      "status": "2016 milestone; syn3A (493 genes) with corrected division published 2021",
+      "breakthrough": "Defined the minimal gene set for cellular life; foundation for custom synthetic organisms"
+    },
+    {
+      "id": "SYNBIO-004",
+      "name": "Xenobots / Anthrobots",
+      "type": "Living machines",
+      "description": "Self-assembling biological robots made from frog (Xenobots) or human (Anthrobots) cells. Can move, heal, and carry payloads without genetic modification.",
+      "organization": "Tufts University (Michael Levin), University of Vermont",
+      "status": "Lab demonstrated; Xenobot 3.0 (2021) can self-replicate; Anthrobots (2023) from human lung cells",
+      "breakthrough": "First living, self-replicating robots; Anthrobots can heal damaged neural tissue in vitro"
+    },
+    {
+      "id": "SYNBIO-005",
+      "name": "Precision Fermentation",
+      "type": "Food/biomanufacturing",
+      "description": "Using engineered microbes to produce specific food proteins, fats, and molecules identical to animal-derived versions. Can replace animal agriculture.",
+      "organization": "Perfect Day (dairy), Motif FoodWorks, Geltor, EVERY Company",
+      "status": "Commercial; Perfect Day's animal-free whey protein in products since 2020",
+      "breakthrough": "Animal-identical dairy proteins from engineered yeast at competitive costs"
+    },
+    {
+      "id": "SYNBIO-006",
+      "name": "DNA Data Storage",
+      "type": "Information technology",
+      "description": "Encoding digital data in synthetic DNA molecules. Theoretical density: 215 petabytes per gram. Potential solution for long-term archival storage.",
+      "organization": "Microsoft/UW (Molecular Information Systems Lab), Catalog, Iridia",
+      "status": "Demonstrated; Microsoft stored 200MB in DNA (2019); read/write speed is bottleneck",
+      "breakthrough": "Automated DNA storage system demonstrated (2021); Iridia developing chip-scale DNA writer"
+    },
+    {
+      "id": "SYNBIO-007",
+      "name": "Engineered Living Materials",
+      "type": "Materials science",
+      "description": "Materials made from living cells that can grow, self-repair, and respond to environmental stimuli. Applications in construction, medicine, and sensing.",
+      "organization": "MIT (Lu lab), Imperial College, Wyss Institute",
+      "status": "Research; self-healing concrete (Basilisk) commercial; living sensors in development",
+      "breakthrough": "Bacteria-based self-healing concrete reduces crack formation by 80%"
+    },
+    {
+      "id": "SYNBIO-008",
+      "name": "Metabolic Engineering for Chemicals",
+      "type": "Industrial biotechnology",
+      "description": "Engineering microbes to produce chemicals, fuels, and materials from sugar or CO₂ feedstocks, replacing petroleum-derived processes.",
+      "organization": "Ginkgo Bioworks, Zymergen (now Ginkgo), LanzaTech, Genomatica",
+      "status": "Commercial; LanzaTech converts industrial waste gas to ethanol; Genomatica produces bio-BDO at scale",
+      "breakthrough": "LanzaTech's gas fermentation plants operating in China, producing fuel-grade ethanol from steel mill waste gas"
+    }
+  ]
+}

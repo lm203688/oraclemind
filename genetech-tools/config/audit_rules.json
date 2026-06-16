@@ -1,0 +1,29 @@
+{
+  "stale_threshold_days": 90,
+  "confidence_decay": {
+    "high_to_medium_days": 60,
+    "medium_to_low_days": 180
+  },
+  "cross_validation": {
+    "min_sources_for_high": 2,
+    "min_sources_for_medium": 1
+  },
+  "orphan_detection": {
+    "enabled": true,
+    "min_relations": 1
+  },
+  "contradiction_detection": {
+    "enabled": true,
+    "fields_to_check": ["development_stage", "efficacy_rate", "safety_profile"]
+  },
+  "source_url_check": {
+    "enabled": true,
+    "timeout_ms": 5000
+  },
+  "human_review_triggers": [
+    "new_therapy_approval",
+    "existing_knowledge_overturned",
+    "low_confidence_affecting_tool_output",
+    "user_reported_error"
+  ]
+}

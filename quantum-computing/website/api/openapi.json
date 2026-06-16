@@ -1,0 +1,40 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "QuantumDB",
+    "description": "Quantum computing knowledge base covering processors, algorithms, error correction, quantum software, and quantum networking",
+    "version": "1.0.0",
+    "contact": {
+      "email": "61960005@qq.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://quantum.genetech.tools"
+    }
+  ],
+  "paths": {
+    "/api/data.json": {
+      "get": {
+        "summary": "Get all QuantumDB data",
+        "description": "Returns complete structured data for 量子计算知识引擎",
+        "responses": {
+          "200": {
+            "description": "Structured knowledge base data"
+          }
+        }
+      }
+    },
+    "/api/entities.json": {
+      "get": {
+        "summary": "Get all entities",
+        "description": "Returns flat list of all entities across categories",
+        "responses": {
+          "200": {
+            "description": "Entity list"
+          }
+        }
+      }
+    }
+  }
+}

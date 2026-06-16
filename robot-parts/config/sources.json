@@ -1,0 +1,18 @@
+{
+  "pubmed": {
+    "enabled": true,
+    "search_terms": [
+      "robot parts chips protocols"
+    ],
+    "max_results": 100,
+    "rate_limit_ms": 500
+  },
+  "news": {
+    "enabled": true,
+    "search_terms": [
+      "robot parts chips protocols news",
+      "robot parts chips protocols latest"
+    ],
+    "rate_limit_ms": 2000
+  }
+}

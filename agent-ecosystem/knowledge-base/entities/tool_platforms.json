@@ -1,0 +1,37 @@
+[
+  {
+    "id": "TPLAT-001",
+    "name": "Composio",
+    "description": "Integration platform providing 250+ pre-built tools for AI agents (GitHub, Slack, Salesforce, Gmail, etc.). Handles authentication and API management.",
+    "type": "Tool integration platform",
+    "features": "250+ tools, managed auth, function calling format, observability"
+  },
+  {
+    "id": "TPLAT-002",
+    "name": "Toolhouse",
+    "description": "Cloud-based tool execution platform for AI agents. Provides a universal tool API that works with any LLM.",
+    "type": "Tool execution platform",
+    "features": "Universal tool API, cloud execution, no local setup, browser automation, code execution"
+  },
+  {
+    "id": "TPLAT-003",
+    "name": "Browserbase",
+    "description": "Headless browser infrastructure for AI agents. Provides scalable browser sessions for web automation, scraping, and testing.",
+    "type": "Browser infrastructure",
+    "features": "Scalable headless browsers, stealth mode, CAPTCHA handling, session persistence"
+  },
+  {
+    "id": "TPLAT-004",
+    "name": "E2B (Code Interpreter SDK)",
+    "description": "Secure sandboxed cloud environments for AI agents to execute code. Provides isolated compute with filesystem, process, and network access.",
+    "type": "Code execution sandbox",
+    "features": "Sandboxed Python/JS execution, filesystem access, package installation, 100ms startup"
+  },
+  {
+    "id": "TPLAT-005",
+    "name": "MCP Hub / Smithery",
+    "description": "Directories and registries for MCP (Model Context Protocol) servers. Discover and install tools for AI agents.",
+    "type": "MCP registry",
+    "features": "MCP server discovery, one-click install, community ratings, compatibility info"
+  }
+]

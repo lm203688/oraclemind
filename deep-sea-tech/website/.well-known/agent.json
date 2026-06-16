@@ -1,0 +1,104 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "DeepSeaDB",
+  "description": "Deep sea technology knowledge base - submersibles, resources, marine biology, underwater tech",
+  "url": "https://deepsea.genetech.tools",
+  "category": "深海科技",
+  "api": {
+    "type": "rest",
+    "base_url": "https://deepsea.genetech.tools/api",
+    "openapi": "https://deepsea.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/submersibles.json",
+        "method": "GET",
+        "description": "Get submersibles data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/deep_sea_resources.json",
+        "method": "GET",
+        "description": "Get deep sea resources data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/marine_biology.json",
+        "method": "GET",
+        "description": "Get marine biology data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/underwater_tech.json",
+        "method": "GET",
+        "description": "Get underwater tech data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/deep_sea_ecology.json",
+        "method": "GET",
+        "description": "Get deep sea ecology data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/ocean_exploration.json",
+        "method": "GET",
+        "description": "Get ocean exploration data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://mineral.genetech.tools",
+      "title": "深海矿物vs太空矿物"
+    },
+    {
+      "rel": "related",
+      "href": "https://robot.genetech.tools",
+      "title": "水下机器人"
+    },
+    {
+      "rel": "related",
+      "href": "https://nuclear.genetech.tools",
+      "title": "海洋能源"
+    },
+    {
+      "rel": "related",
+      "href": "https://exo.genetech.tools",
+      "title": "极端环境类比"
+    }
+  ]
+}

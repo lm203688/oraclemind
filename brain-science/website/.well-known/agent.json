@@ -1,0 +1,104 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "BrainDB",
+  "description": "Brain science knowledge base - brain regions, BCI, neurotech, consciousness",
+  "url": "https://brain.genetech.tools",
+  "category": "脑科学",
+  "api": {
+    "type": "rest",
+    "base_url": "https://brain.genetech.tools/api",
+    "openapi": "https://brain.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/brain_regions.json",
+        "method": "GET",
+        "description": "Get brain regions data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/bci_devices.json",
+        "method": "GET",
+        "description": "Get bci devices data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/neurotech.json",
+        "method": "GET",
+        "description": "Get neurotech data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/neurotransmitters.json",
+        "method": "GET",
+        "description": "Get neurotransmitters data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/brain_disorders.json",
+        "method": "GET",
+        "description": "Get brain disorders data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/consciousness_research.json",
+        "method": "GET",
+        "description": "Get consciousness research data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://genetech.tools",
+      "title": "基因疗法脑疾病"
+    },
+    {
+      "rel": "related",
+      "href": "https://robot.genetech.tools",
+      "title": "脑机接口机器人"
+    },
+    {
+      "rel": "related",
+      "href": "https://tcm.genetech.tools",
+      "title": "中药神经保护"
+    },
+    {
+      "rel": "related",
+      "href": "https://life.genetech.tools",
+      "title": "神经再生长寿"
+    }
+  ]
+}

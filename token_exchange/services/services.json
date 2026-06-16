@@ -1,0 +1,445 @@
+{
+  "services": [
+    {
+      "id": "svc_046",
+      "name": "中文违禁词检测",
+      "description": "检测中文内容中的违禁词、敏感词，返回法律条文+罚款金额+替换建议。支持6大平台（抖音/小红书/微信/微博/B站/快手）",
+      "category": "合规工具",
+      "subcategory": "内容安全",
+      "provider": "atex_official",
+      "price": 0.1,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🛡️",
+      "tags": ["违禁词", "敏感词", "内容审核", "合规", "广告法"],
+      "params": {
+        "text": {"type": "string", "required": true, "description": "待检测文本"},
+        "platform": {"type": "string", "required": false, "description": "平台: douyin/xiaohongshu/wechat/weibo/bilibili/kuaishou/all", "default": "all"}
+      },
+      "api_endpoint": "/api/v1/services/buy",
+      "scf_backend": true
+    },
+    {
+      "id": "svc_047",
+      "name": "AI搜索可见度检测",
+      "description": "检测品牌在DeepSeek/Kimi/豆包等AI搜索引擎中的排名和可见度，发现品牌在AI时代的曝光缺口",
+      "category": "合规工具",
+      "subcategory": "品牌监测",
+      "provider": "atex_official",
+      "price": 2.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🔍",
+      "tags": ["AI搜索", "品牌监测", "SEO", "DeepSeek", "Kimi"],
+      "params": {
+        "brand": {"type": "string", "required": true, "description": "品牌名称"},
+        "keyword": {"type": "string", "required": false, "description": "关键词"},
+        "competitors": {"type": "array", "required": false, "description": "竞品列表"}
+      },
+      "api_endpoint": "/api/v1/services/buy",
+      "scf_backend": true
+    },
+    {
+      "id": "svc_048",
+      "name": "出海合规评估",
+      "description": "7维度问卷式评估产品出海合规风险（数据隐私/内容审核/支付合规/知识产权/税务/本地化/安全），生成详细合规报告",
+      "category": "合规工具",
+      "subcategory": "出海合规",
+      "provider": "atex_official",
+      "price": 8.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🌍",
+      "tags": ["出海", "合规评估", "GDPR", "数据隐私", "跨境"],
+      "params": {
+        "product_type": {"type": "string", "required": false, "description": "产品类型: SaaS/App/硬件/内容", "default": "SaaS"},
+        "markets": {"type": "array", "required": false, "description": "目标市场: US/EU/JP/SEA等"},
+        "data_categories": {"type": "array", "required": false, "description": "数据类别: 用户数据/支付数据/内容数据等"},
+        "answers": {"type": "object", "required": false, "description": "问卷答案(7维度)"}
+      },
+      "api_endpoint": "/api/v1/services/buy",
+      "scf_backend": true
+    },
+    {
+      "id": "svc_049",
+      "name": "SEO合规检测",
+      "description": "检测网页/内容的SEO合规性，包括关键词堆砌、隐藏文本、虚假描述等违规行为，避免搜索引擎惩罚",
+      "category": "合规工具",
+      "subcategory": "SEO合规",
+      "provider": "atex_official",
+      "price": 1.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "📊",
+      "tags": ["SEO", "合规", "搜索引擎", "关键词"],
+      "params": {
+        "text": {"type": "string", "required": true, "description": "待检测文本或URL"},
+        "platform": {"type": "string", "required": false, "description": "平台", "default": "all"}
+      },
+      "api_endpoint": "/api/v1/services/buy",
+      "scf_backend": true
+    },
+    {
+      "id": "svc_022",
+      "name": "AI对话(DeepSeek)",
+      "description": "基于DeepSeek大模型的智能对话服务，支持多轮对话、知识问答、文本生成。按token计费，输入¥0.001/千token，输出¥0.002/千token。",
+      "category": "AI能力",
+      "subcategory": "对话",
+      "provider": "atex_official",
+      "price": 0.5,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "💬",
+      "tags": ["对话", "DeepSeek", "LLM", "问答"],
+      "params": {
+        "prompt": {"type": "string", "required": true, "description": "用户输入/提问"},
+        "system": {"type": "string", "required": false, "description": "系统提示词", "default": "你是一个有用的AI助手。"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_057",
+      "name": "MCP Server健康检查",
+      "description": "检测MCP Server端点可用性，包括server-card、initialize握手、tools/list三项检查，给出健康评分。",
+      "category": "AI能力",
+      "subcategory": "开发者工具",
+      "provider": "atex_official",
+      "price": 0.5,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🏥",
+      "tags": ["MCP", "健康检查", "监控", "开发者"],
+      "params": {
+        "url": {"type": "string", "required": true, "description": "MCP Server端点URL"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_058",
+      "name": "AI模型价格对比",
+      "description": "实时对比DeepSeek/OpenAI/Anthropic/Google等主流AI模型API定价，推荐最优性价比方案。",
+      "category": "AI能力",
+      "subcategory": "开发者工具",
+      "provider": "atex_official",
+      "price": 0.5,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "💰",
+      "tags": ["价格对比", "AI模型", "成本优化", "开发者"],
+      "params": {
+        "query": {"type": "string", "required": false, "description": "查询关键词"},
+        "task": {"type": "string", "required": false, "description": "任务类型: general/coding/creative", "default": "general"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_059",
+      "name": "Prompt优化器",
+      "description": "优化用户Prompt获得更好AI输出。分析原始Prompt不足，重写为结构化高效版本，并解释优化理由。",
+      "category": "AI能力",
+      "subcategory": "开发者工具",
+      "provider": "atex_official",
+      "price": 0.5,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "✨",
+      "tags": ["Prompt", "优化", "开发者", "效率"],
+      "params": {
+        "prompt": {"type": "string", "required": true, "description": "待优化的Prompt"},
+        "language": {"type": "string", "required": false, "description": "语言: zh/en/auto", "default": "auto"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_101",
+      "name": "语音合成(TTS)",
+      "description": "将文本转换为自然流畅的语音。支持多语种、多音色，输出WAV/MP3格式音频。适用于口播视频、有声读物、客服语音等场景。",
+      "category": "AI能力",
+      "subcategory": "语音",
+      "provider": "atex_official",
+      "price": 2.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🎙️",
+      "tags": ["TTS", "语音合成", "口播", "配音"],
+      "params": {
+        "text": {"type": "string", "required": true, "description": "待合成文本（最长5000字）"},
+        "voice": {"type": "string", "required": false, "description": "音色: tongtong/xiaochen/yunyang等", "default": "tongtong"},
+        "speed": {"type": "number", "required": false, "description": "语速 0.5-2.0", "default": 1.0},
+        "format": {"type": "string", "required": false, "description": "输出格式: wav/mp3", "default": "wav"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_102",
+      "name": "语音识别(ASR)",
+      "description": "将音频文件转换为文字。支持WAV/MP3等常见格式，自动识别语种。适用于会议记录、字幕生成、语音指令等场景。",
+      "category": "AI能力",
+      "subcategory": "语音",
+      "provider": "atex_official",
+      "price": 2.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🎤",
+      "tags": ["ASR", "语音识别", "转写", "字幕"],
+      "params": {
+        "audio_base64": {"type": "string", "required": false, "description": "音频Base64编码（与audio_file二选一）"},
+        "audio_file": {"type": "string", "required": false, "description": "音频文件路径（与audio_base64二选一）"},
+        "language": {"type": "string", "required": false, "description": "语言: zh/en/auto", "default": "auto"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_103",
+      "name": "图像理解(VLM)",
+      "description": "分析图片内容，支持OCR文字识别、物体检测、场景描述、视觉问答。适用于内容审核、图片标注、文档解析等场景。",
+      "category": "AI能力",
+      "subcategory": "视觉",
+      "provider": "atex_official",
+      "price": 3.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "👁️",
+      "tags": ["VLM", "图像理解", "OCR", "视觉问答"],
+      "params": {
+        "image_base64": {"type": "string", "required": false, "description": "图片Base64编码（与image_url二选一）"},
+        "image_url": {"type": "string", "required": false, "description": "图片URL（与image_base64二选一）"},
+        "prompt": {"type": "string", "required": false, "description": "提问/指令", "default": "请描述这张图片的内容"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_104",
+      "name": "AI图片生成",
+      "description": "根据文字描述生成图片。支持多种风格和尺寸，适用于营销素材、社交媒体配图、创意设计等场景。",
+      "category": "AI能力",
+      "subcategory": "视觉",
+      "provider": "atex_official",
+      "price": 5.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🎨",
+      "tags": ["图片生成", "文生图", "AI绘画", "素材"],
+      "params": {
+        "prompt": {"type": "string", "required": true, "description": "图片描述/提示词"},
+        "size": {"type": "string", "required": false, "description": "尺寸: 1024x1024/1344x768等", "default": "1024x1024"},
+        "style": {"type": "string", "required": false, "description": "风格: natural/vivid/anime等", "default": "natural"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_105",
+      "name": "AI图片编辑",
+      "description": "对现有图片进行AI编辑，支持风格迁移、局部修改、背景替换等。适用于图片优化、品牌适配、创意变体等场景。",
+      "category": "AI能力",
+      "subcategory": "视觉",
+      "provider": "atex_official",
+      "price": 5.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "✏️",
+      "tags": ["图片编辑", "风格迁移", "背景替换", "AI修图"],
+      "params": {
+        "image_base64": {"type": "string", "required": true, "description": "原始图片Base64编码"},
+        "prompt": {"type": "string", "required": true, "description": "编辑指令/描述"},
+        "size": {"type": "string", "required": false, "description": "输出尺寸", "default": "1024x1024"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_106",
+      "name": "AI视频生成",
+      "description": "根据文字描述或图片生成视频片段（5秒/片段）。异步任务，需轮询获取结果。适用于短视频创作、广告素材、动态内容等场景。",
+      "category": "AI能力",
+      "subcategory": "视频",
+      "provider": "atex_official",
+      "price": 10.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🎬",
+      "tags": ["视频生成", "文生视频", "短视频", "广告素材"],
+      "params": {
+        "prompt": {"type": "string", "required": true, "description": "视频描述/提示词"},
+        "image_base64": {"type": "string", "required": false, "description": "参考图片Base64（可选）"},
+        "size": {"type": "string", "required": false, "description": "尺寸: 1344x768等", "default": "1344x768"},
+        "duration": {"type": "number", "required": false, "description": "时长(秒)", "default": 5}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_107",
+      "name": "Web搜索",
+      "description": "搜索全网实时信息，返回结构化搜索结果（标题、摘要、URL）。适用于信息检索、竞品调研、新闻追踪等场景。",
+      "category": "AI能力",
+      "subcategory": "信息检索",
+      "provider": "atex_official",
+      "price": 5.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🔎",
+      "tags": ["搜索", "信息检索", "实时数据", "调研"],
+      "params": {
+        "query": {"type": "string", "required": true, "description": "搜索关键词/查询"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_108",
+      "name": "网页阅读",
+      "description": "提取网页正文内容，自动去除广告/导航/侧边栏等噪音，返回干净的HTML或纯文本。适用于内容采集、文章分析、数据提取等场景。",
+      "category": "AI能力",
+      "subcategory": "信息检索",
+      "provider": "atex_official",
+      "price": 3.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "📖",
+      "tags": ["网页提取", "内容清洗", "阅读模式", "数据采集"],
+      "params": {
+        "url": {"type": "string", "required": true, "description": "网页URL"},
+        "format": {"type": "string", "required": false, "description": "输出格式: html/text", "default": "text"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_110",
+      "name": "书籍蒸馏(cangjie)",
+      "description": "RIA-TV++六阶段流水线，将书籍内容转化为可执行的AI技能包。解决'看了很多书但用不起来'的痛点。R(原文)/I(重写)/A1(书中案例)/A2(触发场景)/E(可执行步骤)/B(边界与盲点)六维度结构化，三重验证筛选确保技能质量。",
+      "category": "知识蒸馏",
+      "subcategory": "书籍技能化",
+      "provider": "atex_official",
+      "price": 8.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "📚",
+      "tags": ["书籍蒸馏", "RIA-TV++", "技能包", "知识管理", "cangjie", "读书"],
+      "params": {
+        "book_title": {"type": "string", "required": true, "description": "书名"},
+        "content": {"type": "string", "required": true, "description": "书籍内容文本（至少100字）"},
+        "num_skills": {"type": "integer", "required": false, "description": "提取技能数量(1-20)", "default": 8}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_111",
+      "name": "技能包查询",
+      "description": "搜索已蒸馏的RIA-TV++技能包，按书名、关键词或技能ID查询。查看已生成的结构化技能，获取完整的六维度分析。",
+      "category": "知识蒸馏",
+      "subcategory": "技能检索",
+      "provider": "atex_official",
+      "price": 0.5,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🔍",
+      "tags": ["技能查询", "RIA-TV++", "技能包", "知识检索"],
+      "params": {
+        "query": {"type": "string", "required": false, "description": "搜索关键词"},
+        "book": {"type": "string", "required": false, "description": "按书名过滤"},
+        "skill_id": {"type": "string", "required": false, "description": "按技能ID精确查询"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_112",
+      "name": "向量检索优化",
+      "description": "分析向量数据并生成TurboVec/FAISS压缩方案。支持4-32x压缩比，自动推荐最佳压缩策略（INT8量化/TurboVec乘积量化/TurboQuant极致压缩/二值量化），输出部署代码片段。解决AI向量检索显存爆满难题。",
+      "category": "AI基础设施",
+      "subcategory": "向量优化",
+      "provider": "atex_official",
+      "price": 3.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "⚡",
+      "tags": ["向量压缩", "TurboVec", "FAISS", "RAG优化", "显存优化", "向量检索"],
+      "params": {
+        "vector_size_mb": {"type": "number", "required": false, "description": "向量数据大小(MB)"},
+        "vector_dim": {"type": "integer", "required": false, "description": "向量维度", "default": 768},
+        "num_vectors": {"type": "integer", "required": false, "description": "向量数量（可代替size_mb）"},
+        "current_engine": {"type": "string", "required": false, "description": "当前引擎: faiss/milvus/chroma", "default": "faiss"},
+        "use_case": {"type": "string", "required": false, "description": "场景: RAG/搜索/推荐", "default": "RAG"},
+        "hardware": {"type": "string", "required": false, "description": "硬件: V100/A100/Mac/纯CPU", "default": "unknown"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_113",
+      "name": "Token瘦身(lowfat)",
+      "description": "在命令输出到达AI代理前过滤噪音，节省高达91.8% Token成本。去除ANSI转义码、进度条、时间戳、DEBUG日志、deprecation警告、git diff冗余、HTTP请求头等，支持aggressive/balanced/conservative三种模式。",
+      "category": "AI基础设施",
+      "subcategory": "Token优化",
+      "provider": "atex_official",
+      "price": 1.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "✂️",
+      "tags": ["Token优化", "lowfat", "噪音过滤", "成本节省", "AI代理", "CLI"],
+      "params": {
+        "text": {"type": "string", "required": true, "description": "待过滤的文本内容"},
+        "mode": {"type": "string", "required": false, "description": "过滤模式: aggressive/balanced/conservative", "default": "balanced"},
+        "rules": {"type": "object", "required": false, "description": "自定义过滤规则(可选)"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_114",
+      "name": "AI浏览器自动化(BrowserAct)",
+      "description": "AI Agent操作浏览器执行任务。自动规划操作步骤，生成可执行的Playwright代码。支持点网页、填表单、过人机验证、数据采集、竞品监控。三种模式：auto(全自动)/assisted(真人可接管)/headless(无头)。",
+      "category": "AI自动化",
+      "subcategory": "浏览器操作",
+      "provider": "atex_official",
+      "price": 5.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🌐",
+      "tags": ["浏览器自动化", "BrowserAct", "Playwright", "AI Agent", "数据采集", "RPA"],
+      "params": {
+        "task": {"type": "string", "required": true, "description": "任务描述（AI要做什么）"},
+        "url": {"type": "string", "required": false, "description": "起始页面URL"},
+        "mode": {"type": "string", "required": false, "description": "模式: auto/assisted/headless", "default": "auto"},
+        "timeout": {"type": "integer", "required": false, "description": "超时秒数(最大300)", "default": 60}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_115",
+      "name": "网络安全技能查询",
+      "description": "754个安全skills查询，映射5大框架(MITRE ATT&CK/NIST CSF/D3FEND/OWASP/ISO27001)，覆盖26个安全域(DFIR/红队/AppSec/云安全/容器安全/AI安全等)。兼容Claude Code/Cursor/Codex CLI等26+ AI平台。",
+      "category": "网络安全",
+      "subcategory": "安全技能库",
+      "provider": "atex_official",
+      "price": 1.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🛡️",
+      "tags": ["网络安全", "MITRE ATT&CK", "NIST CSF", "安全技能", "AI Agent", "Anthropic"],
+      "params": {
+        "domain": {"type": "string", "required": false, "description": "安全域: DFIR/Red_Team/AppSec/Cloud_Security等"},
+        "framework": {"type": "string", "required": false, "description": "框架: MITRE ATT&CK/NIST CSF/D3FEND/OWASP/ISO27001"},
+        "skill": {"type": "string", "required": false, "description": "技能关键词搜索"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    },
+    {
+      "id": "svc_116",
+      "name": "安全技能生成",
+      "description": "根据安全场景生成AI Agent可执行的安全技能。自动识别安全域，映射MITRE ATT&CK Technique，输出详细执行步骤+所需工具+风险等级+误报评估。兼容Claude Code/Cursor/Codex CLI等。",
+      "category": "网络安全",
+      "subcategory": "安全技能生成",
+      "provider": "atex_official",
+      "price": 5.0,
+      "price_unit": "ATEX/次",
+      "status": "active",
+      "icon": "🔐",
+      "tags": ["安全技能生成", "MITRE ATT&CK", "AI Agent", "渗透测试", "安全自动化"],
+      "params": {
+        "scenario": {"type": "string", "required": true, "description": "安全场景描述"},
+        "target": {"type": "string", "required": false, "description": "目标系统/应用"},
+        "domain": {"type": "string", "required": false, "description": "安全域(auto自动识别)", "default": "auto"},
+        "framework": {"type": "string", "required": false, "description": "参考框架", "default": "MITRE ATT&CK"}
+      },
+      "api_endpoint": "/api/v1/services/buy"
+    }
+  ],
+  "orders": [],
+  "next_service_id": 117
+}

@@ -1,0 +1,541 @@
+[
+  {
+    "id": "DSR-001",
+    "name": "Polymetallic Nodules (Manganese Nodules)",
+    "resource_type": "Metals (Mn, Fe, Ni, Cu, Co, REE)",
+    "location": "Clarion-Clipperton Zone (CCZ), Pacific; Indian Ocean; Peru Basin",
+    "depth": "4,000-6,000 m",
+    "estimated_quantity": "CCZ alone: ~21 billion dry tonnes; 6 billion tonnes of manganese",
+    "extraction_status": "Exploration contracts (ISA); pilot mining tests by Nauru Ocean Resources, TMC, China Minmetals",
+    "description": "Potato-sized concretions on the abyssal seafloor containing manganese, nickel, copper, cobalt, and rare earth elements. The CCZ in the Pacific is the most studied area. The Metals Company (TMC) conducted pilot nodule collection in 2022. ISA mining regulations pending."
+  },
+  {
+    "id": "DSR-002",
+    "name": "Seafloor Massive Sulfides (SMS)",
+    "resource_type": "Metals (Cu, Zn, Au, Ag, Pb)",
+    "location": "Active and extinct hydrothermal vents along mid-ocean ridges; back-arc basins",
+    "depth": "1,500-4,000 m",
+    "estimated_quantity": "Individual deposits 1-100 million tonnes; hundreds of known sites",
+    "extraction_status": "Exploration contracts (ISA); Nautilus Minerals attempted Solwara 1 (failed); Japan JOGMEG testing",
+    "description": "Seafloor massive sulfides form at hydrothermal vents and contain high-grade copper, zinc, gold, and silver. Nautilus Minerals' Solwara 1 project in Papua New Guinea was the first deep-sea mining venture but went bankrupt. Japan's JOGMEG continues testing in the Okinawa Trough."
+  },
+  {
+    "id": "DSR-003",
+    "name": "Cobalt-Rich Ferromanganese Crusts",
+    "resource_type": "Metals (Co, Mn, Ni, Pt, REE, Te)",
+    "location": "Seamounts and ridges in Pacific (Prime Crust Zone), Atlantic, Indian Ocean",
+    "depth": "800-4,000 m",
+    "estimated_quantity": "Pacific Prime Crust Zone: ~1 billion dry tonnes; cobalt content 4x terrestrial ores",
+    "extraction_status": "Exploration contracts (ISA); no pilot mining yet; technical challenges with crust attachment to substrate",
+    "description": "Cobalt-rich crusts coat seamount surfaces and contain cobalt at concentrations 4x higher than terrestrial ores. They also contain platinum and tellurium. The main technical challenge is separating the crust from the underlying rock without excessive dilution."
+  },
+  {
+    "id": "DSR-004",
+    "name": "Gas Hydrates (Methane Clathrates)",
+    "resource_type": "Energy (methane)",
+    "location": "Continental margins worldwide; Arctic permafrost; South China Sea; Nankai Trough",
+    "depth": "300-3,000 m (sub-seafloor)",
+    "estimated_quantity": "~20,000 trillion m³ of methane (10x all conventional gas reserves)",
+    "extraction_status": "China and Japan have conducted successful production tests; commercial viability unproven",
+    "description": "Methane hydrates are ice-like compounds trapping methane in crystalline structures. China successfully extracted gas from South China Sea hydrates in 2017 and 2020. Japan's Nankai Trough tests also succeeded. Commercial production remains 5-10+ years away."
+  },
+  {
+    "id": "DSR-005",
+    "name": "Deep-Sea Rare Earth Elements (Mud)",
+    "resource_type": "Rare Earth Elements (REE + Y)",
+    "location": "Pacific deep-sea mud; especially near Minami-Tori Shima (Japan)",
+    "depth": "3,500-6,000 m",
+    "estimated_quantity": "Near Minami-Tori Shima: 5,000-7,000 ppm total REY; potentially world's largest REE resource",
+    "extraction_status": "Research phase; Japanese survey cruises ongoing; extraction would involve pumping mud to surface",
+    "description": "Deep-sea mud near Japan's Minami-Tori Shima island contains 5,000-7,000 ppm total REY, potentially the world's largest REE resource. Extraction would involve pumping mud to surface for processing."
+  },
+  {
+    "id": "DSR-006",
+    "name": "Deep-Sea Lithium Resources",
+    "resource_type": "Lithium",
+    "location": "Hydrothermal fluids, brine pools, Red Sea, Gulf of Mexico",
+    "depth": "1,000-3,500 m",
+    "estimated_quantity": "Poorly quantified; hydrothermal fluids contain 5-15 mM Li",
+    "extraction_status": "Research phase; no extraction technology developed",
+    "description": "Hydrothermal vent fluids and deep-sea brines contain elevated lithium concentrations. As terrestrial lithium demand surges for batteries, deep-sea lithium could become a future resource. However, extraction technology and economic viability remain unproven."
+  },
+  {
+    "id": "DSR-007",
+    "name": "Phosphorite Deposits",
+    "resource_type": "Phosphorus (fertilizer), REE, Uranium",
+    "location": "Continental margins; Chatham Rise (New Zealand); Namibia; Peru-Chile margin",
+    "depth": "200-1,000 m",
+    "estimated_quantity": "Chatham Rise: ~35 million tonnes; global deposits poorly quantified",
+    "extraction_status": "Chatham Rock Phosphate attempted mining (denied consent 2015); renewed interest due to fertilizer demand",
+    "description": "Marine phosphorite nodules contain phosphate for fertilizer production, along with REE and uranium. New Zealand's Chatham Rise has the best-characterized deposit. Growing global food demand is renewing interest in marine phosphate resources."
+  },
+  {
+    "id": "DSR-008",
+    "name": "Deep-Sea Scandium and Tellurium",
+    "resource_type": "Critical minerals (Sc, Te)",
+    "location": "Co-rich crusts (Te); hydrothermal deposits (Sc); ferromanganese crusts",
+    "depth": "1,000-4,000 m",
+    "estimated_quantity": "Trace but valuable; Te concentrated in cobalt-rich crusts",
+    "extraction_status": "Research phase; co-extraction with cobalt crust mining",
+    "description": "Tellurium is critical for solar panels (CdTe) and is concentrated in cobalt-rich ferromanganese crusts at levels exceeding terrestrial ores. Scandium is used in aerospace alloys. Both could be co-products of crust mining."
+  },
+  {
+    "id": "DSR-009",
+    "name": "Seafloor Sulfide Mounds (Inactive Vents)",
+    "resource_type": "Metals (Cu, Zn, Au, Ag)",
+    "location": "Extinct hydrothermal vent sites along mid-ocean ridges",
+    "depth": "1,500-4,000 m",
+    "estimated_quantity": "Individual mounds up to 10+ million tonnes; less environmental impact than active vent mining",
+    "extraction_status": "Exploration phase; ISA exploration contracts include inactive vents",
+    "description": "Inactive hydrothermal vent sites contain massive sulfide deposits without the active biological communities of live vents. Mining inactive sites would have lower environmental impact, making them potentially more acceptable for extraction."
+  },
+  {
+    "id": "DSR-010",
+    "name": "Marine Placer Deposits (Diamonds, Tin, Titanium)",
+    "resource_type": "Diamonds, Cassiterite (Sn), Ilmenite/Rutile (Ti)",
+    "location": "Namibian/South African continental shelf (diamonds); Southeast Asia (tin); Australia (mineral sands)",
+    "depth": "10-200 m",
+    "estimated_quantity": "Namibia: ~1.5 million carats/year from marine diamond mining",
+    "extraction_status": "Commercially operational (Namibian marine diamonds); De Beers operates fleet of mining vessels",
+    "description": "Marine placer mining is already commercially operational, particularly for diamonds off Namibia's coast. De Beers operates multiple mining vessels that extract diamonds from the seafloor at 90-140m depth. This is the most mature form of seabed mining."
+  },
+  {
+    "id": "DSR-011",
+    "name": "Abyssal Plain Siliceous Ooze (Diatom Deposits)",
+    "resource_type": "Silica (diatomite), potential lithium adsorption",
+    "location": "Southern Ocean abyssal plains; equatorial Pacific",
+    "depth": "3,000-5,000 m",
+    "estimated_quantity": "Vast but poorly quantified",
+    "extraction_status": "Research phase; no extraction planned",
+    "description": "Diatom-rich abyssal sediments contain high-purity silica. While not currently targeted for mining, these deposits could become valuable for industrial silica and as lithium adsorption media if deep-sea resource extraction becomes routine."
+  },
+  {
+    "id": "DSR-012",
+    "name": "Deep-Sea Brine Pools (Rare Earth Enriched)",
+    "resource_type": "Metals, REE, Lithium",
+    "location": "Red Sea (Atlantis II Deep); Mediterranean; Gulf of Mexico",
+    "depth": "1,000-3,000 m",
+    "estimated_quantity": "Atlantis II Deep: ~90 million m³ of metalliferous brine with elevated Zn, Cu, Ag, Au",
+    "extraction_status": "Pre-feasibility studies; Saudi Arabia/Sudan considered joint development of Red Sea brines",
+    "description": "Deep-sea brine pools, particularly the Atlantis II Deep in the Red Sea, contain metalliferous brines with elevated concentrations of zinc, copper, silver, and gold. These are the most accessible deep-sea mineral deposits, as the metals are already dissolved in solution."
+  },
+  {
+    "id": "DSR-013",
+    "name": "Seafloor Basalt (Carbon Sequestration Medium)",
+    "resource_type": "Carbon storage (basalt carbonation)",
+    "location": "Mid-ocean ridges and oceanic plateaus globally",
+    "depth": "1,000-3,000 m",
+    "estimated_quantity": "Effectively unlimited basalt for CO₂ mineralization",
+    "extraction_status": "Research phase; CarbFix project demonstrated on land; ocean basalt application being studied",
+    "description": "Seafloor basalt can permanently sequester CO₂ through mineral carbonation, converting CO₂ into solid carbonate minerals. Iceland's CarbFix project demonstrated this on land. Applying the technique to submarine basalt could provide virtually unlimited carbon storage capacity."
+  },
+  {
+    "id": "DSR-014",
+    "name": "Deep-Water Ferromanganese Nodules (Arctic)",
+    "resource_type": "Metals (Mn, Fe, Co, Ni)",
+    "location": "Arctic Ocean basin (Lomonosov Ridge, Amundsen Basin)",
+    "depth": "2,000-4,000 m",
+    "estimated_quantity": "Poorly quantified; Russian surveys indicate significant deposits",
+    "extraction_status": "Exploration by Russia; geopolitical complications due to Arctic sovereignty disputes",
+    "description": "The Arctic Ocean contains ferromanganese nodule deposits that are poorly characterized due to ice cover and geopolitical restrictions. Russian surveys indicate significant deposits. Climate change is reducing ice cover, potentially making these resources more accessible."
+  },
+  {
+    "id": "DSR-015",
+    "name": "Hydrothermal Vent Precious Metals (Gold, Silver)",
+    "resource_type": "Precious metals (Au, Ag)",
+    "location": "Back-arc basin hydrothermal systems; Okinawa Trough; Manus Basin",
+    "depth": "1,000-2,500 m",
+    "estimated_quantity": "Individual deposits can contain grams per tonne gold; high-grade compared to terrestrial mines",
+    "extraction_status": "Exploration; Japan JOGMEG testing extraction in Okinawa Trough",
+    "description": "Some back-arc basin hydrothermal systems contain remarkably high gold and silver grades, exceeding many terrestrial gold mines. Japan's JOGMEG is actively testing extraction technology in the Okinawa Trough, where gold grades can reach several grams per tonne."
+  },
+  {
+    "id": "DSR-016",
+    "name": "Cobalt-Rich Ferromanganese Crusts",
+    "resource_type": "Metals (Co, Mn, Fe, Ni, Pt, REE)",
+    "location": "Seamounts and ridges in Pacific (Prime Crust Zone), Atlantic, Indian Ocean",
+    "depth": "800-2,500 m",
+    "estimated_quantity": "Pacific PCZ alone: ~1 billion tonnes; cobalt content 4x terrestrial ores",
+    "extraction_status": "Exploration contracts (ISA); no commercial mining yet",
+    "description": "Cobalt-rich crusts on seamounts contain cobalt, manganese, nickel, and platinum group metals at concentrations significantly higher than terrestrial ores. The Prime Crust Zone in the central Pacific is the most prospective area. ISA has issued exploration contracts."
+  },
+  {
+    "id": "DSR-017",
+    "name": "Deep-Sea Phosphorite Deposits",
+    "resource_type": "Phosphorus (P)",
+    "location": "Continental margins; California, Peru-Chile, Namibia margins",
+    "depth": "200-1,000 m",
+    "estimated_quantity": "Billions of tonnes; significant portion of global phosphate reserves",
+    "extraction_status": "Exploration; not currently mined",
+    "description": "Phosphorite deposits on continental margins represent a significant phosphorus resource. As terrestrial phosphate reserves deplete, deep-sea phosphorites may become economically viable. Critical for fertilizer production and food security."
+  },
+  {
+    "id": "DSR-018",
+    "name": "Methane Hydrates (Clathrates)",
+    "resource_type": "Natural gas (CH₄)",
+    "location": "Continental margins globally; especially Japan Nankai Trough, South China Sea, Gulf of Mexico, Arctic",
+    "depth": "300-3,000 m",
+    "estimated_quantity": "Global: ~3,000x current annual natural gas consumption; enormous energy potential",
+    "extraction_status": "Japan 2013 first offshore production test; China 2017 continuous production test; pilot scale",
+    "description": "Methane hydrates are ice-like structures trapping methane molecules. They represent an enormous energy resource. Japan and China have conducted successful production tests. Environmental concerns include seafloor stability and methane release as a greenhouse gas."
+  },
+  {
+    "id": "DSR-019",
+    "name": "Deep-Sea Lithium Resources",
+    "resource_type": "Lithium (Li)",
+    "location": "Hydrothermal vent systems; deep-sea brine pools; Red Sea Deeps",
+    "depth": "1,000-3,500 m",
+    "estimated_quantity": "Concentrations in hydrothermal fluids can reach 10-100 ppm; brine pools higher",
+    "extraction_status": "Exploration; not yet mined",
+    "description": "Lithium is found in elevated concentrations in deep-sea hydrothermal fluids and brine pools. As demand for lithium batteries surges, deep-sea lithium resources are being evaluated. The Red Sea Deeps contain lithium-rich brines."
+  },
+  {
+    "id": "DSR-020",
+    "name": "Seafloor Sulfide Mounds (Inactive)",
+    "resource_type": "Metals (Cu, Zn, Au, Ag)",
+    "location": "Mid-ocean ridges and back-arc basins; inactive vent sites",
+    "depth": "1,000-4,000 m",
+    "estimated_quantity": "Individual mounds can contain millions of tonnes of sulfide ore",
+    "extraction_status": "Exploration; ISA exploration contracts",
+    "description": "Inactive hydrothermal sulfide mounds are mineral deposits formed by past hydrothermal activity. Unlike active vents, they do not support chemosynthetic ecosystems, making them potentially less environmentally controversial for mining. They contain copper, zinc, gold, and silver."
+  },
+  {
+    "id": "DSR-021",
+    "name": "Deep-Sea Rare Earth Elements",
+    "resource_type": "REE",
+    "location": "Deep-sea muds in Pacific and Indian Oceans; especially central Pacific",
+    "depth": "3,500-6,000 m",
+    "estimated_quantity": "Pacific mud: ~1.2 trillion tonnes containing ~80 billion tonnes of REE (estimated)",
+    "extraction_status": "Research; Japanese group demonstrated extraction from Pacific mud",
+    "description": "Japanese researchers discovered that deep-sea mud in the central Pacific contains significant REE concentrations, particularly heavy REE that are more valuable. Kato et al. (2011) estimated these muds could supply REE for centuries. Extraction from mud is simpler than from hard rock."
+  },
+  {
+    "id": "DSR-022",
+    "name": "Arctic Seafloor Resources",
+    "resource_type": "Oil, gas, minerals",
+    "location": "Arctic continental shelves; Lomonosov Ridge; Gakkel Ridge hydrothermal",
+    "depth": "200-4,000 m",
+    "estimated_quantity": "Arctic: ~13% of global undiscovered oil, 30% of undiscovered gas; unknown mineral potential",
+    "extraction_status": "Exploration; limited by ice cover; climate change increasing accessibility",
+    "description": "The Arctic seafloor contains significant oil, gas, and mineral resources. Climate change is reducing ice cover, making these resources more accessible. The Gakkel Ridge may host hydrothermal systems with mineral deposits. Territorial disputes complicate resource development."
+  },
+  {
+    "id": "DSR-023",
+    "name": "Deep-Sea Brine Pools",
+    "resource_type": "Multiple (metals, salts, hydrocarbons)",
+    "location": "Red Sea Deeps; Mediterranean brine lakes; Gulf of Mexico brine pools",
+    "depth": "1,000-3,500 m",
+    "estimated_quantity": "Red Sea Deeps alone: billions of tonnes of metalliferous sediments",
+    "extraction_status": "Red Sea: Saudi-Sudan joint exploration; no commercial mining",
+    "description": "Deep-sea brine pools are extremely saline, anoxic bodies of water on the seafloor. The Red Sea Deeps contain metalliferous sediments with zinc, copper, silver, and gold. They also host unique extremophile organisms of biotechnology interest."
+  },
+  {
+    "id": "DSR-024",
+    "name": "Abyssal Plain Siliceous Ooze",
+    "resource_type": "Silica (diatom/radiolarian)",
+    "location": "Abyssal plains below the CCD; Southern Ocean; equatorial Pacific",
+    "depth": "3,000-6,000 m",
+    "estimated_quantity": "Vast - covers ~15% of ocean floor",
+    "extraction_status": "Not currently targeted; potential future resource",
+    "description": "Siliceous ooze composed of diatom and radiolarian tests covers large areas of the deep ocean floor. While not currently a mining target, it represents a potential source of high-purity silica for semiconductor and solar panel manufacturing."
+  },
+  {
+    "id": "DSR-025",
+    "name": "Seafloor Basalt (Carbon Sequestration)",
+    "resource_type": "Basalt for CO₂ mineralization",
+    "location": "Mid-ocean ridge flanks; oceanic crust globally",
+    "depth": "2,000-4,000 m",
+    "estimated_quantity": "Effectively unlimited - oceanic crust covers 60% of Earth",
+    "extraction_status": "CarbFix project demonstrated on land; offshore pilot proposed",
+    "description": "Basalt on the seafloor can permanently sequester CO₂ through mineral carbonation, converting CO₂ into solid carbonate minerals. The CarbFix project in Iceland demonstrated this on land. Offshore basalt could provide virtually unlimited carbon sequestration capacity."
+  },
+  {
+    "id": "DSR-026",
+    "name": "Deep-Sea Mining Regulatory Framework (ISA 2026)",
+    "resource_type": "Regulatory / Critical minerals",
+    "location": "International seabed (Area) - Clarion-Clipperton Zone and other ISA contract areas",
+    "depth": "4,000-6,000 m",
+    "estimated_quantity": "CCZ: 21 billion tonnes of nodules; regulatory framework determines access",
+    "extraction_status": "ISA negotiating Mining Code in 2026; 31 exploration contracts active; US considering separate pathway via NOAA",
+    "description": "2026 is a critical year for deep-sea mining regulation. The ISA is negotiating the Mining Code that will govern commercial deep-sea mining. If it cannot complete the code in 2026, its role as the central rule-maker may unravel. Simultaneously, NOAA issued final rule on January 21, 2026, revising US deep seabed mining regulations, potentially allowing US companies to mine outside the ISA framework."
+  },
+  {
+    "id": "DSR-027",
+    "name": "Deep-Sea Mining Technology Market (2026)",
+    "resource_type": "Market analysis",
+    "location": "Global",
+    "depth": "Various",
+    "estimated_quantity": "Market projected from $7.08 billion (2025) to significant growth by 2030+",
+    "extraction_status": "Technology advancing; commercial operations pending regulatory approval",
+    "description": "The Deep Sea Mining Technology market is poised for significant growth, projected to expand from $7.08 billion in 2025. Key players include TMC, GSR, Loke Marine, and Allseas. Technology is advancing but commercial-scale operations await regulatory clarity from the ISA. The Deep Sea Mining Summit 2026 focuses on market dynamics, investment outlook, and new exploration/mining technologies."
+  },
+  {
+    "id": "DSR-028",
+    "name": "CCZ New Species Impact on Mining (2025-2026)",
+    "resource_type": "Biodiversity / Mining constraint",
+    "location": "Clarion-Clipperton Zone (Pacific)",
+    "depth": "4,000-5,000 m",
+    "estimated_quantity": "24 new species discovered in 2025; 5,000+ estimated total species, 90%+ undescribed",
+    "extraction_status": "Discovery complicates mining plans; environmental impact assessments need revision",
+    "description": "2025 research discovered 24 new deep-sea species in the CCZ, including a rare new branch of life. These discoveries highlight the unexpectedly rich biodiversity in areas targeted for nodule mining. The findings are forcing a reassessment of environmental impact assessments and strengthening the case for precautionary approaches to deep-sea mining."
+  },
+  {
+    "id": "DSR-029",
+    "name": "Argentina Deep-Sea New Species (2026)",
+    "resource_type": "Biodiversity discovery",
+    "location": "Argentina's deep-sea waters (South Atlantic)",
+    "depth": "Up to 4,000 m",
+    "estimated_quantity": "28 new species discovered February 2026",
+    "extraction_status": "Research discovery; no mining implications yet",
+    "description": "Twenty-eight new species were found in Argentina's deep sea, announced in early February 2026. The findings include sea snails, urchins, and other organisms previously unknown to science. This discovery highlights how poorly explored the South Atlantic deep sea remains and adds to growing evidence that deep-sea biodiversity is far greater than currently documented."
+  },
+  {
+    "id": "DSR-030",
+    "name": "Ocean Census 866+ New Species (2025-2026)",
+    "resource_type": "Biodiversity milestone",
+    "location": "Global oceans",
+    "depth": "Up to 6,575 m",
+    "estimated_quantity": "866 new species identified by Ocean Census (March 2025); 1,121 total new marine species in 2024",
+    "extraction_status": "Research discovery program; goal of 100,000 new species by 2030",
+    "description": "The Ocean Census, the world's largest collaborative effort to discover marine life, announced the identification of 866 new species in March 2025. The program aims to discover 100,000 new species by 2030. Discoveries from depths up to 6,575m include new species of deep-sea organisms. This accelerating rate of discovery underscores how poorly known the deep ocean remains."
+  },
+  {
+    "id": "DSR-031",
+    "name": "Seabed 2030 Mapping Progress (28.7% - 2026)",
+    "resource_type": "Mapping milestone",
+    "location": "Global ocean floor",
+    "depth": "0-11,000 m",
+    "estimated_quantity": "28.7% of ocean floor mapped as of April 2026; 5 million km² added in one year",
+    "extraction_status": "Active mapping campaign; accelerating with autonomous vehicles",
+    "description": "The Nippon Foundation-GEBCO Seabed 2030 Project announced in April 2026 that 28.7% of the world's ocean floor has been mapped to modern standards, with 5 million square kilometers added in a single year. This represents significant progress toward the 2030 goal of complete ocean floor mapping, driven by autonomous surface vehicles and satellite gravity mapping."
+  },
+  {
+    "id": "DSR-032",
+    "name": "US Deep Seabed Mining Regulations (NOAA 2026)",
+    "resource_type": "Regulatory framework",
+    "location": "US and international waters",
+    "depth": "4,000-6,000 m",
+    "estimated_quantity": "8 companies applying for exploration/mining permits",
+    "extraction_status": "Final rule issued January 21, 2026; permit applications being processed",
+    "description": "NOAA issued the final rule on deep seabed mining on January 21, 2026, revising regulations for exploration licenses and mining permits. Eight companies are now vying for permits from NOAA and the Interior Department to explore or mine US and international waters for critical minerals. This regulatory clarity could accelerate deep-sea mining development."
+  },
+  {
+    "id": "DSR-033",
+    "name": "Japan Deep-Sea 2025 Expedition Species",
+    "resource_type": "Biodiversity discovery",
+    "location": "Japan deep waters",
+    "depth": "Up to 6,575 m",
+    "estimated_quantity": "38 new species confirmed + 28 potential new species",
+    "extraction_status": "Research discovery; taxonomic classification ongoing",
+    "description": "Japan's landmark deep-sea expedition in 2025 confirmed 38 new species and identified 28 additional potential new species across two of the country's deep-sea areas. These discoveries highlight how poorly known the deep ocean remains and the potential for future bioprospecting of novel compounds."
+  },
+  {
+    "id": "DSR-034",
+    "name": "1,121 New Marine Species (2025)",
+    "resource_type": "Biodiversity milestone",
+    "location": "Global oceans",
+    "depth": "Surface to 6,575 m",
+    "estimated_quantity": "1,121 new marine species identified in 2025; from ghost sharks to symbiotic worms",
+    "extraction_status": "Research discovery program; Ocean Census goal of 100,000 new species by 2030",
+    "description": "Scientists identified 1,121 new marine species in 2025, including deep-sea ghost sharks, symbiotic worms, and unusual crustaceans. This accelerating rate of discovery underscores the vast unknown biodiversity of the deep ocean and its potential for bioprospecting and pharmaceutical discovery."
+  },
+  {
+    "id": "DSR-035",
+    "name": "Milos Hydrothermal Field (Greece)",
+    "resource_type": "Hydrothermal mineral deposits",
+    "location": "Off Milos, Greece (Aegean Sea)",
+    "depth": "Shallow to moderate (100-500 m)",
+    "estimated_quantity": "Extensive vent system along active fault lines; mineral deposits under assessment",
+    "extraction_status": "Scientific discovery; mineral potential being evaluated",
+    "description": "Scientists uncovered an extensive underwater hydrothermal vent system near Milos, Greece, hidden along active fault lines beneath the Aegean Sea. The system is notable for its accessibility at relatively shallow depths, making it a unique natural laboratory for studying hydrothermal mineral formation and extremophile biology."
+  },
+  {
+    "id": "DSR-036",
+    "name": "Novel Linked Hydrothermal-Seep System",
+    "resource_type": "Hybrid geological feature",
+    "location": "Seafloor (location TBD from Phys.org study)",
+    "depth": "Deep sea",
+    "estimated_quantity": "First known system linking hydrothermal vents and methane seeps in same location",
+    "extraction_status": "Scientific discovery; geological and biological assessment ongoing",
+    "description": "A novel hydrothermal system discovered in 2025 links two previously separate seabed phenomena — hydrothermal vents and methane seeps — in the same location. This hybrid system creates unique chemical and biological conditions not found at either type alone, with implications for understanding deep-sea mineral formation and extremophile ecology."
+  },
+  {
+    "id": "DSR-037",
+    "name": "Deep-Sea Cobalt-Rich Crusts (Pacific)",
+    "resource_type": "Cobalt, nickel, manganese, REE",
+    "location": "Seamounts in Pacific (Prime Crust Zone)",
+    "depth": "800-2,500 m",
+    "estimated_quantity": "Significant cobalt resources; Prime Crust Zone contains richest deposits",
+    "extraction_status": "Exploration and assessment; ISA considering mining regulations",
+    "description": "Cobalt-rich ferromanganese crusts on Pacific seamounts are a major potential source of cobalt, nickel, manganese, and rare earth elements. The Prime Crust Zone in the western Pacific contains the richest deposits. Unlike nodules, crusts are attached to seamount surfaces, requiring different extraction technology."
+  },
+  {
+    "id": "DSR-038",
+    "name": "Deep-Sea Phosphorite Deposits",
+    "resource_type": "Phosphorus",
+    "location": "Continental margins and seamounts globally",
+    "depth": "200-1,000 m",
+    "estimated_quantity": "Significant; some deposits exceed 100 million tonnes",
+    "extraction_status": "Exploration stage; not currently mined",
+    "description": "Marine phosphorite deposits on continental margins and seamounts represent a major phosphorus resource. With global phosphate reserves on land being depleted, deep-sea phosphorites could become increasingly important for fertilizer production. However, environmental concerns about seabed mining remain significant."
+  },
+  {
+    "id": "DSR-039",
+    "name": "Abyssal Sediment Rare Earth Elements",
+    "resource_type": "Rare earth elements in deep-sea mud",
+    "location": "Pacific and Indian Ocean abyssal plains",
+    "depth": "3,000-6,000 m",
+    "estimated_quantity": "Japanese study estimated 90 billion tonnes of REE in Pacific mud alone",
+    "extraction_status": "Research and assessment; extraction technology under development",
+    "description": "Deep-sea mud on abyssal plains contains significant concentrations of rare earth elements. A Japanese study estimated that Pacific Ocean mud alone contains 90 billion tonnes of REE — over 800 times the world's current land-based reserves. While extraction technology is still developing, this represents a potentially transformative resource."
+  },
+  {
+    "id": "DSR-040",
+    "name": "Schmidt Ocean Institute 2026 Expedition Targets",
+    "resource_type": "Exploration frontier",
+    "location": "Brazil to Mid-Atlantic seamounts",
+    "depth": "Up to 6,000 m",
+    "estimated_quantity": "Multiple new species and geological features expected",
+    "extraction_status": "Active exploration; open-access data policy",
+    "description": "Schmidt Ocean Institute's 2026 expedition program spans from the deep waters off Brazil to seamounts in the Mid-Atlantic. International teams will document biodiversity, study hydrothermal systems, and map previously unexplored seafloor. The program's open-access data policy ensures discoveries are available to the global scientific community."
+  },
+  {
+    "id": "DSR-041",
+    "name": "NOAA Deep Seabed Mining Rule (2026)",
+    "type": "Regulatory framework",
+    "location": "US jurisdiction / international waters",
+    "description": "In January 2026, NOAA issued a final rule streamlining deep-sea mining permits under US jurisdiction. The rule has been criticized for ignoring international protocols (ISA) and scientific warnings about irreversible damage. Eight companies have applied for permits. This represents a significant regulatory development that could accelerate or complicate deep-sea mining depending on legal challenges.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-042",
+    "name": "Deep Sea Mining Summit 2026",
+    "type": "Industry conference",
+    "location": "International",
+    "description": "The 2026 Deep Sea Mining Summit focused on market dynamics, investment outlook, new exploration projects, and environmental considerations. Key topics included the ISA regulatory framework, technology readiness for polymetallic nodule collection, and the growing tension between resource demand and environmental protection.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-043",
+    "name": "Global Fishing Watch Deep-Sea Mining Transparency",
+    "type": "Monitoring platform",
+    "location": "Global",
+    "description": "Deep-Sea Mining Watch, developed by the Benioff Ocean Science Laboratory and Global Fishing Watch, provides real-time transparency for deep-sea mining operations. In January 2026, it tracked the deepest seabed mining test in history (nearly 2000m depth). This platform enables independent monitoring of mining activities that would otherwise be invisible.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-044",
+    "name": "China Seafloor Mapping Program",
+    "type": "Strategic ocean mapping",
+    "location": "Global (strategic regions)",
+    "description": "According to a Reuters investigation in March 2026, dozens of Chinese research vessels are systematically mapping the ocean floor at strategically vital regions worldwide. While officially for scientific purposes, the data has dual-use implications for submarine warfare. This represents the largest peacetime ocean mapping effort by a single nation.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-045",
+    "name": "Okinawa Trough Hydrothermal Vent Minerals",
+    "type": "Seafloor massive sulfide deposit",
+    "location": "Okinawa Trough, East China Sea",
+    "description": "Hydrothermal vents in the Okinawa Trough are at imminent threat from deep-sea mining. Research by OIST shows that mining at these key vents could endanger species at distant sites across the Pacific through larval connectivity. The Okinawa Trough deposits contain zinc, copper, lead, gold, and silver, making them economically attractive but ecologically sensitive.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-046",
+    "name": "Deep Sea Mining 2026: Regulation and Geopolitics",
+    "type": "Regulatory / geopolitical analysis",
+    "location": "Global (ISA, US, international waters)",
+    "depth": "4,000-6,000 m",
+    "estimated_quantity": "CCZ: 21 billion tonnes of nodules; regulatory framework determines access",
+    "extraction_status": "ISA negotiating Mining Code; NOAA issued US rule January 2026",
+    "description": "2026 is a critical year for deep-sea mining regulation. ISA negotiating Mining Code for commercial mining in international waters. NOAA January 2026 final rule allows US companies to pursue deep-sea mining outside ISA framework. Trump executive order from April 2025 created a parallel regulatory pathway. Regulatory fragmentation could either accelerate or complicate development.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-047",
+    "name": "Okinawa Trough Mining Threat (2026)",
+    "type": "Ecological risk assessment",
+    "location": "Okinawa Trough, East China Sea",
+    "depth": "1,000-2,000 m",
+    "estimated_quantity": "Significant zinc, copper, lead, gold, silver deposits",
+    "extraction_status": "OIST research shows mining could endanger species across the Pacific",
+    "description": "OIST 2026 research shows mining at hydrothermal vents in the Okinawa Trough could endanger species at distant sites across the Pacific through larval connectivity. Vent organisms disperse via ocean currents; mining at key source vents could disrupt populations hundreds of kilometers away. Significant implications for environmental impact assessments and marine protected area design.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-048",
+    "name": "Natural History Museum Deep-Sea Mining Impact Review (2026)",
+    "type": "Scientific review / impact assessment",
+    "location": "Global",
+    "depth": "Various",
+    "estimated_quantity": "Comprehensive review of all deep-sea ecosystem types",
+    "extraction_status": "Review concludes current understanding insufficient to predict long-term impacts",
+    "description": "NHM published the most comprehensive review to date of how deep-sea mining might affect unique marine life. Synthesizes data from hydrothermal vents, abyssal plains, and seamounts. Concludes current understanding insufficient to predict long-term impacts. Calls for precautionary approach and significantly more baseline research before mining proceeds. Has influenced ISA policy debates.",
+    "year": 2026
+  },
+  {
+    "id": "DSR-049",
+    "name": "NOAA Deep Seabed Mining Final Rule 2026",
+    "type": "regulation",
+    "year": 2026,
+    "key_finding": "NOAA 2026年1月21日发布深海采矿最终规则，简化国际水域硬矿物采矿许可申请。8家公司已申请许可。引发国际治理争议。",
+    "source": "Federal Register/NOAA 2026",
+    "category": "regulation"
+  },
+  {
+    "id": "DSR-050",
+    "name": "ISA Mining Code Negotiations 2026",
+    "type": "international_regulation",
+    "year": 2026,
+    "key_finding": "国际海底管理局2026年Q1未能批准开采规章。深海采矿治理成为全球治理合法性测试。商业开采尚未获批。",
+    "source": "ISA/Mondaq 2026",
+    "category": "regulation"
+  },
+  {
+    "id": "DSR-051",
+    "name": "US Deep Seabed Mining Unilateral Action",
+    "type": "policy_shift",
+    "year": 2026,
+    "key_finding": "特朗普2025年4月行政令允许国际水域深海采矿，NOAA 2026年1月最终规则落地。绕过ISA国际协议，引发外交争端。",
+    "source": "Atlantic Council/Harvard EELP 2026",
+    "category": "geopolitics"
+  },
+  {
+    "id": "DSR-052",
+    "name": "Deep-Sea Mining Watch Platform",
+    "type": "monitoring_platform",
+    "year": 2026,
+    "key_finding": "2026年1月追踪到最深采矿测试（近2000m）。独立监测平台记录全球深海采矿活动。",
+    "source": "Deep-Sea Mining Watch 2026",
+    "category": "monitoring"
+  },
+  {
+    "id": "DSR-053",
+    "name": "OTC 2026 Marine Mining Session",
+    "type": "industry_conference",
+    "year": 2026,
+    "key_finding": "2026年离岸技术会议海洋采矿专题：新采矿设备开发、新监管环境、新环境挑战。行业正从探索走向预商业阶段。",
+    "source": "OTC 2026",
+    "category": "industry_event"
+  },
+  {
+    "id": "DSR-054",
+    "name": "AOShearman Deep Sea Mining 2026 Analysis",
+    "type": "legal_analysis",
+    "year": 2026,
+    "key_finding": "2026年深海采矿法规、地缘政治和风险综合分析。涵盖ISA发展、美国政策转变和关键矿物供应链。",
+    "source": "AOShearman 2026",
+    "category": "legal_analysis"
+  },
+  {
+    "id": "DSR-055",
+    "name": "Japan 6,000m Deep Seabed Rare Earth Mining Test (Jan 2026)",
+    "type": "deep_seabed_mining_test",
+    "depth": "6,000 m (nearly 20,000 feet)",
+    "operator": "Japan",
+    "year": "2026",
+    "resources": "Rare earth-rich deep-sea muds",
+    "description": "2026年1月，日本在6000米深度进行了有史以来最深的深海采矿测试，成功提取了富含稀土的深海泥浆。这是人类历史上最深的深海采矿试验，使用Deep-Sea Mining Watch透明度平台进行监测。NOAA也于2026年1月21日发布了深海硬矿物采矿最终规则。",
+    "significance": "Deepest seabed mining test in history; demonstrates technical feasibility of rare earth extraction from abyssal depths",
+    "source": "Global Fishing Watch / Benioff Ocean Science Laboratory / NOAA 2026"
+  }
+]

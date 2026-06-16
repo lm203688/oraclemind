@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "EnergyDB",
+  "name_for_model": "energydb",
+  "description_for_human": "Renewable energy knowledge base covering solar, storage, hydrogen, wind, grid technology, and clean energy",
+  "description_for_model": "Renewable energy knowledge base covering solar, storage, hydrogen, wind, grid technology, and clean energy. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://energy.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://energy.genetech.tools/"
+}

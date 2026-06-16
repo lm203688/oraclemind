@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Knowledge Graph — GeneTech Tools</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0e17;color:#e2e8f0;line-height:1.6;overflow:hidden}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,23,0.92);backdrop-filter:blur(12px);border-bottom:1px solid #1e2d4a;height:56px;display:flex;align-items:center;padding:0 20px;gap:16px}
+.nav-logo{font-size:18px;font-weight:700;color:#06b6d4;cursor:pointer;text-decoration:none}
+.nav-logo span{background:linear-gradient(135deg,#06b6d4,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:16px;margin-left:auto}
+.nav-links a{color:#94a3b8;font-size:13px;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#06b6d4}
+
+#graph-container{position:fixed;top:56px;left:0;right:0;bottom:0}
+svg{width:100%;height:100%}
+
+/* Tooltip */
+.tooltip{position:fixed;background:rgba(17,24,39,0.95);border:1px solid #1e2d4a;border-radius:10px;padding:14px;pointer-events:none;z-index:200;max-width:320px;backdrop-filter:blur(8px);display:none;font-size:13px}
+.tooltip h3{color:#06b6d4;margin-bottom:6px;font-size:14px}
+.tooltip .cat{color:#8b5cf6;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.tooltip .trl{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;margin-right:4px}
+.tooltip .signal{font-size:14px}
+.tooltip .desc{color:#94a3b8;margin-top:6px;font-size:12px}
+
+/* Side panel */
+.side-panel{position:fixed;top:56px;right:0;width:360px;bottom:0;background:rgba(17,24,39,0.95);border-left:1px solid #1e2d4a;z-index:150;transform:translateX(100%);transition:transform .3s;overflow-y:auto;padding:20px}
+.side-panel.open{transform:translateX(0)}
+.side-panel h2{color:#06b6d4;font-size:18px;margin-bottom:12px}
+.side-panel .close{position:absolute;top:12px;right:12px;background:none;border:none;color:#94a3b8;font-size:20px;cursor:pointer}
+.side-panel .meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.side-panel .meta-item{background:#0a0e17;border-radius:8px;padding:10px;text-align:center}
+.side-panel .meta-item .label{color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:1px}
+.side-panel .meta-item .value{color:#e2e8f0;font-size:16px;font-weight:700;margin-top:2px}
+.side-panel .connections{margin-top:16px}
+.side-panel .conn-item{display:flex;align-items:center;gap:8px;padding:8px;border-radius:6px;background:#0a0e17;margin-bottom:4px;font-size:12px;cursor:pointer;transition:background .2s}
+.side-panel .conn-item:hover{background:#1e2d4a}
+.side-panel .conn-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+/* Controls */
+.controls{position:fixed;bottom:20px;left:20px;z-index:150;display:flex;flex-direction:column;gap:8px}
+.controls button{background:rgba(17,24,39,0.9);border:1px solid #1e2d4a;color:#e2e8f0;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:12px;transition:all .2s;backdrop-filter:blur(8px)}
+.controls button:hover{border-color:#06b6d4;color:#06b6d4}
+.controls button.active{background:#06b6d4;color:#000;border-color:#06b6d4}
+
+/* Legend */
+.legend{position:fixed;bottom:20px;right:20px;z-index:150;background:rgba(17,24,39,0.9);border:1px solid #1e2d4a;border-radius:10px;padding:14px;backdrop-filter:blur(8px);font-size:11px}
+.legend h4{color:#94a3b8;margin-bottom:8px;font-size:10px;text-transform:uppercase;letter-spacing:1px}
+.legend-item{display:flex;align-items:center;gap:6px;margin:4px 0}
+.legend-dot{width:10px;height:10px;border-radius:50%}
+
+/* Stats bar */
+.stats-bar{position:fixed;top:56px;left:0;right:0;height:36px;background:rgba(10,14,23,0.8);border-bottom:1px solid #1e2d4a;display:flex;align-items:center;justify-content:center;gap:24px;font-size:12px;color:#94a3b8;z-index:140}
+.stats-bar .stat{display:flex;align-items:center;gap:4px}
+.stats-bar .stat .num{color:#06b6d4;font-weight:700}
+
+/* Search */
+.search-box{position:fixed;top:100px;left:50%;transform:translateX(-50%);z-index:160}
+.search-box input{background:rgba(17,24,39,0.9);border:1px solid #1e2d4a;border-radius:20px;padding:8px 16px;color:#e2e8f0;font-size:13px;width:260px;outline:none;backdrop-filter:blur(8px)}
+.search-box input:focus{border-color:#06b6d4}
+.search-box input::placeholder{color:#64748b}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .side-panel{width:100%}
+  .legend{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://genetech.tools" class="nav-logo">🧬 <span>GeneTech</span> Knowledge Graph</a>
+  <div class="nav-links">
+    <a href="https://genetech.tools">Home</a>
+    <a href="https://genetech.tools/intelligence.html">Intelligence</a>
+    <a href="https://genetech.tools/outlook.html">Outlook</a>
+    <a href="https://genetech.tools/credits.html" style="color:#f59e0b;font-weight:600">💎 Pro</a>
+  </div>
+</nav>
+
+<div class="stats-bar">
+  <div class="stat">Nodes: <span class="num" id="nodeCount">0</span></div>
+  <div class="stat">Edges: <span class="num" id="edgeCount">0</span></div>
+  <div class="stat">Domains: <span class="num" id="domainCount">0</span></div>
+  <div class="stat">Zoom: <span class="num" id="zoomLevel">100%</span></div>
+</div>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search entities..." autocomplete="off">
+</div>
+
+<div id="graph-container">
+  <svg id="graph"></svg>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div class="side-panel" id="sidePanel">
+  <button class="close" onclick="closePanel()">✕</button>
+  <div id="panelContent"></div>
+</div>
+
+<div class="controls">
+  <button onclick="zoomIn()">＋ Zoom In</button>
+  <button onclick="zoomOut()">－ Zoom Out</button>
+  <button onclick="resetView()">⟲ Reset</button>
+  <button id="btnPhysics" class="active" onclick="togglePhysics()">⏸ Physics</button>
+  <button onclick="filterCategory('all')">◉ All</button>
+</div>
+
+<div class="legend">
+  <h4>Categories</h4>
+  <div id="legendItems"></div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const COLORS = {
+  genes: '#06b6d4',
+  diseases: '#ef4444',
+  gene_therapies: '#10b981',
+  crispr_applications: '#8b5cf6',
+  gene_delivery: '#f59e0b',
+  genomic_diagnostics: '#ec4899',
+  regenerative_medicine: '#14b8a6',
+  biotech_companies: '#6366f1',
+  default: '#64748b'
+};
+
+const CATEGORY_LABELS = {
+  genes: 'Genes',
+  diseases: 'Diseases',
+  gene_therapies: 'Gene Therapies',
+  crispr_applications: 'CRISPR',
+  gene_delivery: 'Delivery',
+  genomic_diagnostics: 'Diagnostics',
+  regenerative_medicine: 'Regen Med',
+  biotech_companies: 'Companies'
+};
+
+let graphData, intelData, simulation, svg, g;
+let width, height;
+let physicsEnabled = true;
+let currentZoom = d3.zoomIdentity;
+
+async function init() {
+  width = window.innerWidth;
+  height = window.innerHeight - 56;
+
+  svg = d3.select('#graph')
+    .attr('width', width)
+    .attr('height', height);
+
+  g = svg.append('g');
+
+  // Zoom
+  const zoom = d3.zoom()
+    .scaleExtent([0.1, 8])
+    .on('zoom', (event) => {
+      currentZoom = event.transform;
+      g.attr('transform', event.transform);
+      document.getElementById('zoomLevel').textContent = Math.round(event.transform.k * 100) + '%';
+    });
+  svg.call(zoom);
+
+  // Load data
+  const [graphRes, intelRes] = await Promise.all([
+    fetch('/api/knowledge-graph.json').then(r => r.json()),
+    fetch('/api/intelligence.json').then(r => r.json()).catch(() => null)
+  ]);
+
+  graphData = graphRes;
+  intelData = intelRes;
+
+  // Build intelligence lookup
+  const intelMap = {};
+  if (intelData && intelData.entities) {
+    // Use entity-intelligence.json
+  }
+
+  // Process nodes - add colors and sizes
+  const categories = new Set();
+  graphData.nodes.forEach(n => {
+    n.category = n.category || 'default';
+    categories.add(n.category);
+    n.color = COLORS[n.category] || COLORS.default;
+    n.radius = n.category === 'gene_therapies' ? 8 : n.category === 'crispr_applications' ? 7 : 5;
+  });
+
+  // Update stats
+  document.getElementById('nodeCount').textContent = graphData.nodes.length;
+  document.getElementById('edgeCount').textContent = graphData.edges?.length || 0;
+  document.getElementById('domainCount').textContent = categories.size;
+
+  // Build legend
+  const legendEl = document.getElementById('legendItems');
+  categories.forEach(cat => {
+    const label = CATEGORY_LABELS[cat] || cat;
+    legendEl.innerHTML += `<div class="legend-item"><div class="legend-dot" style="background:${COLORS[cat]||COLORS.default}"></div>${label}</div>`;
+  });
+
+  // Build cross-domain edges from existing data
+  const edges = graphData.edges || [];
+  
+  // Also build implicit edges from gene_therapies (target_genes, target_diseases)
+  // Load richer data for connections
+  try {
+    const dataRes = await fetch('/api/data.json').then(r => r.json());
+    const therapies = dataRes.data?.gene_therapies || [];
+    const crisprApps = dataRes.data?.crispr_applications || [];
+    
+    // Add therapy→gene and therapy→disease edges
+    therapies.forEach(t => {
+      if (t.target_genes) t.target_genes.forEach(gene => {
+        const sourceNode = graphData.nodes.find(n => n.id === t.id);
+        const targetNode = graphData.nodes.find(n => n.symbol === gene || n.name === gene);
+        if (sourceNode && targetNode) {
+          edges.push({ source: sourceNode.id, target: targetNode.id, relation: 'targets', label: 'targets gene' });
+        }
+      });
+      if (t.target_diseases) t.target_diseases.forEach(dis => {
+        const sourceNode = graphData.nodes.find(n => n.id === t.id);
+        const targetNode = graphData.nodes.find(n => n.name === dis);
+        if (sourceNode && targetNode) {
+          edges.push({ source: sourceNode.id, target: targetNode.id, relation: 'treats', label: 'treats' });
+        }
+      });
+    });
+  } catch(e) {}
+
+  document.getElementById('edgeCount').textContent = edges.length;
+
+  // Create force simulation
+  simulation = d3.forceSimulation(graphData.nodes)
+    .force('link', d3.forceLink(edges).id(d => d.id).distance(60).strength(0.3))
+    .force('charge', d3.forceManyBody().strength(-80))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(d => d.radius + 2));
+
+  // Draw edges
+  const link = g.append('g')
+    .selectAll('line')
+    .data(edges)
+    .join('line')
+    .attr('stroke', '#1e2d4a')
+    .attr('stroke-width', 1)
+    .attr('stroke-opacity', 0.6);
+
+  // Draw nodes
+  const node = g.append('g')
+    .selectAll('circle')
+    .data(graphData.nodes)
+    .join('circle')
+    .attr('r', d => d.radius)
+    .attr('fill', d => d.color)
+    .attr('fill-opacity', 0.8)
+    .attr('stroke', d => d.color)
+    .attr('stroke-width', 1.5)
+    .attr('stroke-opacity', 0.3)
+    .style('cursor', 'pointer')
+    .on('mouseover', showTooltip)
+    .on('mouseout', hideTooltip)
+    .on('click', showPanel)
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag', dragging)
+      .on('end', dragEnd));
+
+  // Tick
+  simulation.on('tick', () => {
+    link
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+    node
+      .attr('cx', d => d.x)
+      .attr('cy', d => d.y);
+  });
+
+  // Search
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    const q = e.target.value.toLowerCase();
+    node.attr('fill-opacity', d => {
+      const name = (d.name || d.symbol || d.id).toLowerCase();
+      return name.includes(q) ? 1 : 0.15;
+    }).attr('r', d => {
+      const name = (d.name || d.symbol || d.id).toLowerCase();
+      return name.includes(q) ? d.radius * 2 : d.radius;
+    });
+  });
+}
+
+function showTooltip(event, d) {
+  const tooltip = document.getElementById('tooltip');
+  const cat = CATEGORY_LABELS[d.category] || d.category;
+  tooltip.innerHTML = `
+    <div class="cat">${cat}</div>
+    <h3>${d.name || d.symbol || d.id}</h3>
+  `;
+  tooltip.style.display = 'block';
+  tooltip.style.left = (event.pageX + 12) + 'px';
+  tooltip.style.top = (event.pageY - 12) + 'px';
+}
+
+function hideTooltip() {
+  document.getElementById('tooltip').style.display = 'none';
+}
+
+function showPanel(event, d) {
+  const panel = document.getElementById('sidePanel');
+  const content = document.getElementById('panelContent');
+  const cat = CATEGORY_LABELS[d.category] || d.category;
+  const color = COLORS[d.category] || COLORS.default;
+  
+  content.innerHTML = `
+    <h2>${d.name || d.symbol || d.id}</h2>
+    <div class="meta">
+      <div class="meta-item"><div class="label">Category</div><div class="value" style="color:${color}">${cat}</div></div>
+      <div class="meta-item"><div class="label">Domain</div><div class="value">${d.domain || '—'}</div></div>
+    </div>
+    <div class="connections">
+      <h3 style="color:#94a3b8;font-size:12px;margin-bottom:8px">CONNECTIONS</h3>
+      <div style="color:#64748b;font-size:12px">Click nodes to explore relationships</div>
+    </div>
+  `;
+  panel.classList.add('open');
+}
+
+function closePanel() {
+  document.getElementById('sidePanel').classList.remove('open');
+}
+
+function dragStart(event, d) {
+  if (!event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragging(event, d) {
+  d.fx = event.x;
+  d.fy = event.y;
+}
+
+function dragEnd(event, d) {
+  if (!event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+function zoomIn() {
+  svg.transition().duration(300).call(zoom.scaleBy, 1.5);
+}
+
+function zoomOut() {
+  svg.transition().duration(300).call(zoom.scaleBy, 0.67);
+}
+
+function resetView() {
+  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+}
+
+function togglePhysics() {
+  physicsEnabled = !physicsEnabled;
+  const btn = document.getElementById('btnPhysics');
+  if (physicsEnabled) {
+    simulation.alpha(0.3).restart();
+    btn.textContent = '⏸ Physics';
+    btn.classList.add('active');
+  } else {
+    simulation.stop();
+    btn.textContent = '▶ Physics';
+    btn.classList.remove('active');
+  }
+}
+
+function filterCategory(cat) {
+  // TODO: filter nodes by category
+}
+
+let zoom;
+init().then(() => {
+  zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', (e) => {
+    currentZoom = e.transform;
+    g.attr('transform', e.transform);
+    document.getElementById('zoomLevel').textContent = Math.round(e.transform.k * 100) + '%';
+  });
+});
+
+window.addEventListener('resize', () => {
+  width = window.innerWidth;
+  height = window.innerHeight - 56;
+  svg.attr('width', width).attr('height', height);
+  simulation.force('center', d3.forceCenter(width / 2, height / 2));
+  simulation.alpha(0.3).restart();
+});
+</script>
+</body>
+</html>

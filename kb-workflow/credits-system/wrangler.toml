@@ -1,0 +1,14 @@
+name = "credits-system"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "CREDITS_KV"
+id = "d65741656f644de1a3f1ea346fd453a2"
+
+[vars]
+ADMIN_SECRET = "gt-admin-2026-secure"
+
+[[routes]]
+pattern = "credits.genetech.tools/*"
+zone_name = "genetech.tools"

@@ -1,0 +1,861 @@
+[
+  {
+    "id": "QALG-001",
+    "name": "Shor's Algorithm",
+    "type": "Number theory / Cryptography",
+    "complexity": "O((log N)³) vs classical O(exp((log N)^(1/3)))",
+    "application": "Integer factorization - breaks RSA, ECC encryption",
+    "description": "Shor's algorithm (1994) can factor large integers exponentially faster than any known classical algorithm. This threatens RSA-2048 and ECC, the backbone of internet security. Requires ~4,000 logical qubits (millions of physical qubits with error correction). NIST has standardized post-quantum cryptography (CRYSTALS-Kyber, CRYSTALS-Dilithium) in response."
+  },
+  {
+    "id": "QALG-002",
+    "name": "Grover's Algorithm",
+    "type": "Search / Optimization",
+    "complexity": "O(√N) vs classical O(N)",
+    "application": "Unstructured search, cryptographic key search, database search",
+    "description": "Grover's algorithm (1996) provides quadratic speedup for unstructured search problems. While less dramatic than Shor's exponential speedup, it's more broadly applicable. For a 256-bit key, Grover reduces effective security to 128 bits. This motivates AES-256 as the post-quantum symmetric encryption standard."
+  },
+  {
+    "id": "QALG-003",
+    "name": "VQE (Variational Quantum Eigensolver)",
+    "type": "Chemistry / Materials",
+    "complexity": "Heuristic - no proven speedup; practical advantage on NISQ devices",
+    "application": "Molecular ground state energy, drug discovery, catalyst design, materials science",
+    "description": "VQE is the most widely used NISQ-era quantum algorithm. It uses a hybrid quantum-classical loop: a quantum circuit prepares a trial state, measures the energy, and a classical optimizer updates parameters. IBM, Google, and others have used VQE to simulate small molecules (H₂, LiH, BeH₂). The key question is whether VQE scales to chemically relevant systems."
+  },
+  {
+    "id": "QALG-004",
+    "name": "QAOA (Quantum Approximate Optimization Algorithm)",
+    "type": "Combinatorial Optimization",
+    "complexity": "Heuristic - no proven speedup; competitive with classical for some problems",
+    "application": "Max-Cut, portfolio optimization, scheduling, logistics, vehicle routing",
+    "description": "QAOA (Farhi et al., 2014) is a hybrid quantum-classical algorithm for combinatorial optimization. It alternates between problem and mixer Hamiltonians, with parameters optimized classically. At p→∞, QAOA converges to the optimal solution. In practice, low-depth QAOA (p=1-10) is used on NISQ devices. Whether QAOA provides practical advantage over classical heuristics remains open."
+  },
+  {
+    "id": "QALG-005",
+    "name": "Quantum Phase Estimation (QPE)",
+    "type": "Algebraic / Eigenvalue",
+    "complexity": "O(poly(n)) - exponential speedup for eigenvalue problems",
+    "application": "Chemistry (exact energy levels), factoring (part of Shor's), quantum simulation",
+    "description": "QPE is a fundamental quantum subroutine that estimates the eigenvalue (phase) of a unitary operator. It's the core of Shor's algorithm and the most promising approach for exact quantum chemistry simulation. QPE requires fault-tolerant quantum computers (not NISQ), but when available, it can simulate molecular energies with exponential speedup over classical methods."
+  },
+  {
+    "id": "QALG-006",
+    "name": "Quantum Machine Learning (QML)",
+    "type": "Machine Learning",
+    "complexity": "Varies - most QML algorithms lack proven speedup",
+    "application": "Classification, generative models, anomaly detection, reinforcement learning",
+    "description": "QML explores whether quantum computers can accelerate machine learning tasks. Approaches include quantum kernel methods, variational quantum circuits as neural network layers, and quantum Boltzmann machines. While theoretical speedups exist for specific problems (HHL for linear systems), practical QML advantage remains unproven. Hybrid quantum-classical ML is the current focus."
+  },
+  {
+    "id": "QALG-007",
+    "name": "Quantum Error Correction (Surface Code)",
+    "type": "Error Correction",
+    "complexity": "O(d²) physical qubits per logical qubit (d = code distance)",
+    "application": "Enabling fault-tolerant quantum computation",
+    "description": "The surface code is the leading quantum error correction scheme. It arranges physical qubits on a 2D lattice where each logical qubit requires d² physical qubits for code distance d. Google's Willow demonstrated below-threshold error correction with the surface code in 2024. At ~1,000 physical qubits per logical qubit, a million-qubit machine could support ~1,000 logical qubits."
+  },
+  {
+    "id": "QALG-008",
+    "name": "Quantum Echoes (Google 2025)",
+    "type": "Computational Advantage / Benchmark",
+    "complexity": "13,000x faster than best classical supercomputer",
+    "application": "Demonstrating quantum computational advantage beyond random circuit sampling",
+    "description": "Google's 'Quantum Echoes' algorithm, demonstrated in October 2025, performed a computational task 13,000 times faster than the most sophisticated classical supercomputers. Unlike previous quantum advantage demonstrations based on random circuit sampling, Quantum Echoes represents a more structured computational task, moving quantum advantage closer to practical applications. This was hailed as a landmark breakthrough in quantum computing."
+  },
+  {
+    "id": "QALG-009",
+    "name": "HHL Algorithm (Quantum Linear System)",
+    "type": "Linear Algebra / Systems of Equations",
+    "complexity": "O(log(N)s²κ²) vs classical O(Nsκ) - exponential speedup for sparse systems",
+    "application": "Solving linear systems, machine learning (quantum recommendation systems), differential equations",
+    "description": "The HHL algorithm (Harrow, Hassidim, Lloyd 2009) solves linear systems of equations Ax=b exponentially faster than classical algorithms for sparse, well-conditioned matrices. It's a foundational subroutine for many QML algorithms. However, practical challenges include data loading (quantum RAM) and readout limitations. Despite these caveats, HHL remains one of the most important quantum algorithms."
+  },
+  {
+    "id": "QALG-010",
+    "name": "Quantum Simulation (Feynman)",
+    "type": "Physics / Chemistry Simulation",
+    "complexity": "O(poly(n)) vs classical O(exp(n)) - exponential speedup for quantum systems",
+    "application": "Molecular dynamics, materials design, drug discovery, fundamental physics",
+    "description": "Quantum simulation, originally proposed by Feynman (1982), uses quantum computers to naturally simulate quantum mechanical systems. This is arguably the most natural application of quantum computing. Applications include simulating molecular properties for drug discovery, designing new materials (superconductors, catalysts), and studying fundamental physics (quantum field theory, condensed matter)."
+  },
+  {
+    "id": "QALG-011",
+    "name": "Quantum Amplitude Estimation (QAE)",
+    "type": "Monte Carlo / Estimation",
+    "complexity": "O(1/ε) vs classical O(1/ε²) - quadratic speedup",
+    "application": "Financial risk analysis, option pricing, particle physics, statistical estimation",
+    "description": "QAE provides a quadratic speedup over classical Monte Carlo methods for estimating expected values. This is particularly valuable in finance (option pricing, risk analysis) where Monte Carlo simulations are computationally expensive. QAE generalizes Grover's algorithm and is a key subroutine in many quantum finance algorithms."
+  },
+  {
+    "id": "QALG-012",
+    "name": "Variational Quantum Classifier (VQC)",
+    "type": "Machine Learning / Classification",
+    "complexity": "Heuristic; depends on data encoding and circuit depth",
+    "application": "Image classification, medical diagnosis, fraud detection, pattern recognition",
+    "description": "VQC uses parameterized quantum circuits as classifiers, where quantum features (entanglement, superposition) may capture patterns inaccessible to classical models. The quantum circuit maps input data to a quantum state, processes it, and measures the output. VQC is a key NISQ-era algorithm for quantum machine learning, though whether it provides genuine advantage over classical ML remains debated."
+  },
+  {
+    "id": "QALG-013",
+    "name": "Quantum Approximate Counting",
+    "type": "Counting / Estimation",
+    "complexity": "O(√N) vs classical O(N) - quadratic speedup",
+    "application": "Database queries, combinatorial counting, statistical sampling",
+    "description": "Quantum approximate counting estimates the number of items satisfying a given condition in an unstructured database. It combines Grover's search with phase estimation to provide a quadratic speedup over classical counting. Applications include estimating solution spaces in optimization and statistical sampling."
+  },
+  {
+    "id": "QALG-014",
+    "name": "Quantum Walk Algorithms",
+    "type": "Graph / Network Analysis",
+    "complexity": "O(√N) for search; exponential speedup for some graph problems",
+    "application": "Graph traversal, network analysis, element distinctness, search on graphs",
+    "description": "Quantum walks are the quantum analog of classical random walks, providing algorithmic speedups for graph problems. They underpin several important algorithms including element distinctness and spatial search. Quantum walks can achieve exponential speedups for specific graph structures and are a fundamental primitive in quantum algorithm design."
+  },
+  {
+    "id": "QALG-015",
+    "name": "Quantum Generative Adversarial Network (qGAN)",
+    "type": "Machine Learning / Generative",
+    "complexity": "Heuristic; potential advantage in high-dimensional distributions",
+    "application": "Financial modeling, data augmentation, distribution learning, anomaly detection",
+    "description": "qGANs combine quantum circuits with the GAN framework, using a quantum generator (parameterized circuit) and either quantum or classical discriminator. They can learn and generate complex probability distributions, with potential advantages in modeling high-dimensional quantum states. IBM has demonstrated qGANs for financial data loading and distribution learning."
+  },
+  {
+    "id": "QALG-016",
+    "name": "Quantum Support Vector Machine (QSVM)",
+    "type": "Machine Learning / Classification",
+    "complexity": "O(log(N)) for kernel computation with quantum advantage",
+    "application": "Classification, pattern recognition, medical imaging, text classification",
+    "description": "QSVM uses quantum computers to compute kernel functions that are classically intractable, potentially enabling classification of data in exponentially larger feature spaces. The quantum kernel trick maps data into a high-dimensional quantum Hilbert space. IBM and others have demonstrated QSVM on real quantum hardware, though practical advantage over classical SVMs with custom kernels remains to be proven."
+  },
+  {
+    "id": "QALG-017",
+    "name": "Quantum Teleportation Protocol",
+    "type": "Communication / Information",
+    "complexity": "Classical communication cost: 2 bits per qubit; requires pre-shared entanglement",
+    "application": "Quantum networking, distributed quantum computing, quantum repeaters",
+    "description": "Quantum teleportation transfers an unknown quantum state from one location to another using pre-shared entanglement and classical communication. While not 'teleportation' in the sci-fi sense, it's a fundamental protocol for quantum networking and distributed quantum computing. It's essential for building quantum repeaters and the future quantum internet."
+  },
+  {
+    "id": "QALG-018",
+    "name": "Quantum Annealing (D-Wave)",
+    "type": "Optimization / Annealing",
+    "complexity": "Heuristic; no proven speedup but practical for specific problems",
+    "application": "Combinatorial optimization, scheduling, logistics, portfolio optimization, protein folding",
+    "description": "Quantum annealing uses quantum fluctuations to find low-energy states of optimization problems. D-Wave's implementation with 7,000+ qubits is the most mature quantum optimization platform. While no proven exponential speedup exists, practical advantages have been demonstrated for specific problems in logistics, finance, and materials science. Hybrid quantum-classical annealing is the current focus."
+  },
+  {
+    "id": "QALG-019",
+    "name": "Quantum Digital Signatures",
+    "type": "Cryptography / Security",
+    "complexity": "Information-theoretic security; requires quantum channels",
+    "application": "Unforgeable digital signatures, post-quantum authentication, secure messaging",
+    "description": "Quantum digital signatures provide information-theoretically secure digital signatures using quantum states, unlike classical signatures that rely on computational hardness assumptions. They are immune to attacks by quantum computers and offer a fundamentally different approach to authentication. Research is advancing toward practical implementations compatible with quantum networks."
+  },
+  {
+    "id": "QALG-020",
+    "name": "Quantum Boltzmann Machine",
+    "type": "Machine Learning / Probabilistic",
+    "complexity": "Potential exponential speedup for sampling from Boltzmann distributions",
+    "application": "Generative modeling, unsupervised learning, quantum state tomography, physics simulation",
+    "description": "Quantum Boltzmann Machines (QBMs) use quantum systems to naturally sample from Boltzmann distributions, potentially providing exponential speedups over classical Boltzmann machines. QBMs can model quantum states directly and may be particularly useful for quantum state tomography and learning quantum Hamiltonians. They represent a natural intersection of quantum computing and machine learning."
+  },
+  {
+    "id": "QALG-021",
+    "name": "Quantum Hamiltonian Descent",
+    "type": "Optimization",
+    "complexity": "Potential speedup over gradient descent for non-convex optimization",
+    "application": "Non-convex optimization, training neural networks, molecular geometry optimization",
+    "description": "Quantum Hamiltonian Descent is a recently proposed algorithm that uses quantum tunneling to escape local minima in non-convex optimization landscapes. Unlike classical gradient descent, which can get stuck in local minima, quantum tunneling allows the algorithm to pass through energy barriers. This could be particularly useful for training deep neural networks and molecular geometry optimization."
+  },
+  {
+    "id": "QALG-022",
+    "name": "Quantum Error Mitigation (Zero-Noise Extrapolation)",
+    "type": "Error Mitigation (not correction)",
+    "complexity": "O(poly(1/ε)) overhead; no additional qubits needed",
+    "application": "Improving NISQ-era quantum computation without full error correction",
+    "description": "Zero-Noise Extrapolation (ZNE) is a leading quantum error mitigation technique that runs circuits at multiple noise levels and extrapolates to the zero-noise limit. Unlike full quantum error correction, ZNE requires no additional qubits and is applicable to current NISQ devices. IBM and others use ZNE as a bridge between current hardware and future fault-tolerant machines."
+  },
+  {
+    "id": "QALG-023",
+    "name": "Quantum-Inspired Materials Algorithm (2026)",
+    "type": "Materials Science / Quantum-Inspired",
+    "complexity": "Solves problems intractable for conventional supercomputers",
+    "application": "Massive materials science simulations beyond classical capability",
+    "description": "A new quantum-inspired algorithm cracked a materials science problem so massive that conventional supercomputers struggle to even approach it. Published in May 2026, this algorithm demonstrates that quantum-inspired approaches can deliver practical advantages even before fault-tolerant quantum computers are available, bridging the gap between current hardware and future quantum advantage."
+  },
+  {
+    "id": "QALG-024",
+    "name": "Quantum Echoes Algorithm",
+    "type": "Computational Advantage Demonstration",
+    "complexity": "13,000x faster than best classical supercomputers",
+    "application": "Demonstrating quantum computational advantage beyond random circuit sampling",
+    "description": "Google's 'Quantum Echoes' algorithm, demonstrated in October 2025, performed a computational task 13,000 times faster than the most sophisticated classical supercomputers. Unlike previous quantum advantage demonstrations based on random circuit sampling, Quantum Echoes represents a more meaningful computational task, marking a significant milestone in practical quantum computational advantage."
+  },
+  {
+    "id": "QALG-025",
+    "name": "Hybrid Quantum-Classical VQE for Drug Discovery",
+    "type": "Quantum Chemistry / Hybrid",
+    "complexity": "Polynomial speedup for molecular ground state estimation",
+    "application": "Drug molecule simulation, protein folding, catalyst design",
+    "description": "Variational Quantum Eigensolver (VQE) in hybrid quantum-classical mode is being applied to drug discovery problems. In 2025-2026, IonQ and Ansys ran medical device simulations on IonQ's 36-qubit system, demonstrating early quantum advantage in specialized business problems. VQE is the leading near-term algorithm for quantum chemistry, combining quantum hardware for energy estimation with classical optimization."
+  },
+  {
+    "id": "QALG-026",
+    "name": "Quantum Machine Learning (QML) Hybrid Algorithms",
+    "type": "Machine Learning / Hybrid",
+    "complexity": "Potential quadratic speedup for specific ML tasks",
+    "application": "Pattern recognition, generative modeling, optimization in AI",
+    "description": "The deepening marriage between quantum computing and AI in 2026 has produced new hybrid QML algorithms. These algorithms run primarily on classical hardware while outsourcing the most computationally intensive subroutines to quantum processors. This hybrid approach is the gold standard in 2026, making quantum computing accessible without requiring full fault tolerance. Applications include quantum-enhanced neural network training and quantum kernel methods."
+  },
+  {
+    "id": "QALG-027",
+    "name": "Low-Overhead Quantum Error Correction Algorithm",
+    "type": "Error Correction / Algorithm",
+    "complexity": "5 physical qubits per logical qubit (vs 1000+ for surface code)",
+    "application": "Dramatically reducing qubit overhead for fault-tolerant computing",
+    "description": "A breakthrough scheme published in April 2026 shows that each logical qubit could be encoded with as few as five physical qubits, compared to the ~1,000 needed with traditional surface codes. This 200x reduction in overhead could accelerate the timeline to practical fault-tolerant quantum computing by years, making useful quantum computers achievable with far fewer physical qubits than previously thought."
+  },
+  {
+    "id": "QALG-028",
+    "name": "Quantum Optimization for Supply Chain",
+    "type": "Optimization / Industry Application",
+    "complexity": "Quadratic speedup for combinatorial optimization",
+    "application": "Supply chain optimization, scheduling, logistics, portfolio optimization",
+    "description": "In 2025-2026, quantum optimization algorithms achieved early quantum advantage in specialized business problems like optimization and scheduling. Companies including IBM, D-Wave, and IonQ are deploying quantum optimization solutions for real enterprise use cases. Quantum-as-a-Service platforms are expanding access, allowing businesses to test quantum optimization without owning hardware."
+  },
+  {
+    "id": "QALG-029",
+    "name": "Quantum Echoes Algorithm (Google)",
+    "type": "Quantum simulation / Quantum advantage demonstration",
+    "complexity": "13,000x faster than leading supercomputers for specific simulation tasks",
+    "application": "Quantum simulation, materials science, quantum chemistry",
+    "description": "In October 2025, Google claimed quantum advantage with the Quantum Echoes algorithm, running 13,000 times faster than leading supercomputers for specific simulation tasks. This algorithm represents a new class of quantum simulation approaches that leverage the unique properties of the Willow processor to achieve dramatic speedups in modeling quantum mechanical systems."
+  },
+  {
+    "id": "QALG-030",
+    "name": "Quantum-Inspired Materials Algorithm",
+    "type": "Quantum-inspired classical algorithm / Materials science",
+    "complexity": "Solves problems previously considered impossible for classical computers",
+    "application": "Materials discovery, molecular simulation, condensed matter physics",
+    "description": "A new quantum-inspired algorithm cracked a materials science problem so massive that conventional supercomputers struggle to even approach it (reported May 2026). The algorithm uses techniques derived from quantum computing theory but runs on classical hardware, demonstrating that quantum computing research is already yielding practical benefits even before large-scale fault-tolerant quantum computers exist."
+  },
+  {
+    "id": "QALG-031",
+    "name": "Hybrid Quantum-Classical Variational Algorithms (VQA 2.0)",
+    "type": "Hybrid quantum-classical / Near-term quantum computing",
+    "complexity": "Problem-dependent; quantum subroutine accelerates bottleneck steps",
+    "application": "Optimization, machine learning, chemistry, finance",
+    "description": "In 2026, Hybrid Quantum-Classical Computing has become the gold standard for practical quantum computing. Algorithms run on standard supercomputers and outsource only the most computationally intensive steps to quantum processors. This approach maximizes the utility of current noisy quantum hardware while classical computers handle the bulk of computation. VQA 2.0 algorithms feature improved error mitigation and adaptive circuit construction."
+  },
+  {
+    "id": "QALG-032",
+    "name": "Low-Overhead QEC-Aware Algorithms",
+    "type": "Fault-tolerant quantum algorithms / Error-corrected execution",
+    "complexity": "Optimized for 5-10x physical qubit overhead (vs traditional 1000x)",
+    "application": "Any fault-tolerant quantum computation; early fault-tolerant regime",
+    "description": "New algorithmic approaches in 2025-2026 take advantage of breakthroughs showing that each logical qubit could be encoded with as few as five physical qubits (vs the traditional ~1,000). These QEC-aware algorithms are designed for the early fault-tolerant regime, where error correction overhead is minimized but not zero. They represent a new algorithmic paradigm that bridges the NISQ and fault-tolerant eras."
+  },
+  {
+    "id": "QALG-033",
+    "name": "Quantum Machine Learning (QML) for Drug Discovery",
+    "type": "Quantum machine learning / Pharmaceutical applications",
+    "complexity": "Potential exponential speedup for molecular property prediction",
+    "application": "Drug discovery, molecular property prediction, protein folding",
+    "description": "Quantum machine learning algorithms are being applied to drug discovery with increasing sophistication in 2025-2026. IonQ and Ansys ran a medical device simulation on IonQs 36-qubit system, demonstrating practical quantum-classical workflows for pharmaceutical and medical applications. QML approaches combine quantum feature maps with classical machine learning to identify promising drug candidates faster than purely classical methods."
+  },
+  {
+    "id": "QALG-034",
+    "name": "Quantum Security Algorithms (Post-Quantum Transition)",
+    "type": "Cryptographic / Security",
+    "complexity": "Classical algorithms resistant to quantum attacks",
+    "application": "Data protection, financial security, national security, blockchain",
+    "description": "In 2026, the focus has shifted to quantum security as quantum computers approach the capability to break current encryption. NIST has standardized post-quantum cryptography (CRYSTALS-Kyber, CRYSTALS-Dilithium), and organizations are racing to implement quantum-resistant algorithms before quantum computers can break RSA-2048 and ECC. The banking sector is particularly focused on quantum-safe infrastructure in 2026."
+  },
+  {
+    "id": "QALG-035",
+    "name": "Quantum-as-a-Service (QaaS) Algorithm Libraries",
+    "type": "Cloud quantum computing / Algorithm marketplace",
+    "complexity": "Varies by algorithm; optimized for cloud quantum hardware",
+    "application": "Enterprise optimization, scheduling, financial modeling, logistics",
+    "description": "Quantum-as-a-Service platforms expanded significantly in 2026, with IBM, Amazon Braket, Azure Quantum, and Google offering pre-built algorithm libraries. These QaaS libraries allow businesses to test quantum optimization without owning hardware. The expansion of QaaS represents the commercialization of quantum algorithms, making them accessible to non-quantum-experts through cloud APIs and integrated development environments."
+  },
+  {
+    "id": "QA-036",
+    "name": "Quantum-Inspired Materials Simulation Algorithm",
+    "type": "Hybrid quantum-classical algorithm",
+    "complexity": "Solves problems intractable for classical supercomputers",
+    "application": "Materials science, molecular simulation",
+    "key_result": "May 2026: cracked 'impossible' materials problem that conventional supercomputers cannot approach",
+    "description": "A new quantum-inspired algorithm has cracked a materials science problem so massive that conventional supercomputers struggle to even approach it. Reported by ScienceDaily in May 2026, this algorithm combines quantum computing principles with classical high-performance computing to tackle previously intractable materials simulation problems. It represents the practical value of quantum-inspired computing even before full fault-tolerant quantum computers are available.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.sciencedaily.com/releases/2026/05/260512202355.htm",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-037",
+    "name": "Hybrid Quantum-Classical Computing Paradigm (2026 Standard)",
+    "type": "Computing paradigm / Algorithm framework",
+    "complexity": "Optimizes workload distribution between quantum and classical resources",
+    "application": "General-purpose quantum computing; optimization, simulation, ML",
+    "key_result": "2026 gold standard: algorithms run on supercomputers, outsource only most quantum-suited portions to QPUs",
+    "description": "In 2026, the absolute gold standard is Hybrid Quantum-Classical Computing. Algorithms run on standard supercomputers and outsource only the most computationally intensive, quantum-suited portions to quantum processors. This paradigm maximizes the value of current noisy quantum hardware while leveraging the maturity of classical computing, and is the foundation for IBM's quantum-centric supercomputing vision.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://medium.com/@reactjsbd/the-state-of-quantum-computing-in-2026-real-breakthroughs-lingering-hype-and-commercial-reality-081b5d14fb28",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-038",
+    "name": "Quantum Echoes Algorithm",
+    "type": "Quantum advantage demonstration algorithm",
+    "complexity": "13,000x faster than best classical supercomputers",
+    "application": "Benchmarking quantum computational advantage",
+    "key_result": "October 2025: 13,000x speedup over classical on Google Willow-architecture processor",
+    "description": "Google demonstrated the Quantum Echoes algorithm in October 2025, running on an enhanced Willow-architecture processor. The algorithm performed a computational task 13,000 times faster than the most sophisticated classical supercomputers, marking a significant milestone in quantum computational advantage beyond random circuit sampling. This demonstrates that quantum advantage extends beyond synthetic benchmarks to more structured computational tasks.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.networkworld.com/article/4088709/top-quantum-breakthroughs-of-2025.html",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-039",
+    "name": "IonQ-Ansys Medical Device Simulation",
+    "type": "Quantum simulation / Industry application",
+    "complexity": "Practical quantum advantage in specialized simulation",
+    "application": "Medical device design and simulation",
+    "key_result": "2025: IonQ and Ansys ran medical device simulation on IonQ's 36-qubit system",
+    "description": "IonQ and Ansys collaborated to run a medical device simulation on IonQ's 36-qubit trapped-ion quantum computer. This represents one of the first practical applications of quantum computing in the medical device industry, demonstrating early quantum advantage for specific engineering simulations. The collaboration shows how quantum computing can provide value in regulated industries even with current-generation hardware.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.spinquanta.com/news-detail/quantum-computers-the-revolutionary-technology-transforming-computing-in-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-040",
+    "name": "Sustainable Quantum Workload Distribution",
+    "type": "Resource optimization algorithm",
+    "complexity": "Balanced stack of CPUs, GPUs, and QPUs for intelligent workload distribution",
+    "application": "Energy-efficient quantum computing; data center optimization",
+    "key_result": "2026 trend: leveraging balanced CPU+GPU+QPU stack to distribute workloads intelligently",
+    "description": "A more sustainable path for quantum computing in 2026 involves leveraging a balanced stack of CPUs, GPUs, and emerging qubit technologies to distribute workloads intelligently. Rather than forcing all computation onto quantum processors, this approach identifies the optimal quantum-classical split for each problem, reducing energy consumption and maximizing the practical value of quantum hardware. This aligns with the broader trend of quantum-centric supercomputing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.forbes.com/sites/bernardmarr/2025/12/11/7-quantum-computing-trends-that-will-shape-every-industry-in-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-041",
+    "name": "Quantum Security Algorithms (Post-Quantum Cryptography)",
+    "type": "Cryptographic algorithm / Security",
+    "complexity": "Resistant to quantum computer attacks",
+    "application": "Data protection, financial security, national security",
+    "key_result": "2026 designated 'Year of Quantum Security'; PQC migration frameworks published",
+    "description": "2026 has been designated the 'Year of Quantum Security' by The Quantum Insider, emphasizing the urgency of post-quantum cryptography (PQC) adoption. Quantum computers could break current encryption (RSA, ECC), making PQC migration critical. NIST PQC standards are being implemented, and the Applied Quantum PQC Migration Framework v1.1 (March 2026) provides enterprise guidance. The focus has shifted from 'if' to 'when' for PQC migration.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://thequantuminsider.com/2026/01/06/after-a-year-of-quantum-awareness-2026-becomes-the-year-of-quantum-security",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-042",
+    "name": "Quantum Machine Learning (QML) Advancement 2026",
+    "type": "Quantum machine learning algorithm",
+    "complexity": "Potential quantum advantage for specific ML tasks",
+    "application": "Drug discovery, financial modeling, pattern recognition",
+    "key_result": "2026: QML moves from theoretical promise to early practical demonstrations",
+    "description": "Quantum machine learning is advancing in 2026 from theoretical promise to early practical demonstrations. QML algorithms leverage quantum superposition and entanglement to process high-dimensional data more efficiently than classical ML for specific tasks. Key application areas include drug discovery (molecular property prediction), financial modeling (portfolio optimization), and pattern recognition. The hybrid quantum-classical approach is the dominant paradigm, with classical ML handling data preprocessing and quantum processors accelerating core computations.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.wissenresearch.com/quantum-computing-in-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-043",
+    "name": "Quantum Optimization for Business Problems",
+    "type": "Quantum optimization algorithm",
+    "complexity": "Early quantum advantage in specialized business optimization",
+    "application": "Supply chain, scheduling, logistics, financial optimization",
+    "key_result": "2025: early quantum advantage in specialized business problems like optimization and scheduling",
+    "description": "Quantum computing is showing early advantage in specialized business optimization problems including scheduling, supply chain optimization, and financial portfolio management. In 2025, the first commercial quantum advantage demonstrations in business contexts were reported. By 2026, Quantum-as-a-Service platforms are expanding access to these optimization capabilities, enabling enterprises to test quantum solutions without owning hardware. D-Wave's annealing processors and gate-based systems from IBM are both being used for business optimization.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.usdsi.org/data-science-insights/latest-developments-in-quantum-computing-2026-edition",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-044",
+    "name": "Quantum Error-Corrected Algorithm Execution",
+    "type": "Fault-tolerant quantum algorithm",
+    "complexity": "Algorithms designed for error-corrected logical qubits",
+    "application": "Any quantum algorithm requiring high fidelity",
+    "key_result": "2026: first error-corrected algorithm executions on logical qubits",
+    "description": "With the demonstration of below-threshold error correction and logical qubit operations in 2025-2026, the first error-corrected quantum algorithm executions are being performed. These algorithms run on logical qubits (encoded in multiple physical qubits) rather than raw physical qubits, providing much higher fidelity results. Quantinuum's Helios and IBM's Nighthawk are among the first systems to support error-corrected algorithm execution, marking the transition from NISQ to fault-tolerant quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.permutations.app/research/quantum-computing-2026.html",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-045",
+    "name": "Quantum Natural Language Processing (QNLP)",
+    "type": "Quantum NLP algorithm",
+    "complexity": "Quantum-enhanced language processing",
+    "application": "Natural language understanding, semantic analysis",
+    "key_result": "2026: QNLP research advances with compositional quantum semantics",
+    "description": "Quantum Natural Language Processing (QNLP) is advancing in 2026, leveraging the compositional structure of quantum mechanics to process natural language semantics. Unlike classical NLP which treats language statistically, QNLP uses quantum-like compositional structures to represent meaning. Cambridge Quantum (now Quantinuum) pioneered lambeq, an open-source QNLP toolkit. While still early-stage, QNLP could eventually provide advantages for understanding ambiguous or compositional language structures.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "article_url": "https://www.wearetfd.com/warning-disruption-likely/2025-was-the-year-quantum-went-mainstream-experts-predict-what-comes-next",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-046",
+    "name": "Quantinuum HoloQUADS Algorithm",
+    "type": "Quantum simulation / Scientific computing",
+    "complexity": "Efficient simulation of previously intractable scientific problems",
+    "application": "Scientific simulation, quantum dynamics, materials science",
+    "key_result": "Demonstrated accurate simulation of scientific problem on H2 hardware (2025-2026)",
+    "description": "The holoQUADS (Holomorphic Quantum Dynamics Simulation) algorithm is a new quantum algorithm developed by Quantinuum/Honeywell Quantum Solutions. It leverages the mathematical structure of holomorphic functions to efficiently simulate quantum dynamics that were previously intractable for classical computers. Demonstrated on the H2 trapped-ion system, holoQUADS represents a new paradigm in quantum algorithm design that moves beyond variational approaches.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.quantinuum.com/blog/how-a-new-quantum-algorithm-could-help-solve-real-world",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-047",
+    "name": "Post-Quantum Cryptography Migration Framework (2026)",
+    "type": "Cryptographic / Security migration",
+    "complexity": "NIST recommends migration now; deprecation of quantum-vulnerable algorithms by 2035",
+    "application": "Enterprise security, banking, government, blockchain",
+    "key_result": "2026: NIST PQC standards being implemented; CRYSTALS-Kyber/Dilithium deployment accelerating",
+    "description": "Post-quantum cryptography migration is accelerating in 2026 as NIST recommends organizations begin migration immediately, with plans to deprecate quantum-vulnerable algorithms by 2035. Key developments include CRYSTALS-Kyber and CRYSTALS-Dilithium deployment, hybrid classical-PQC approaches, and the Applied Quantum PQC Migration Framework v1.1. The banking sector is particularly focused on quantum-safe infrastructure.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://mickaelcanu.medium.com/post-quantum-algorithm-updates-early-2026-9c7b2af",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-048",
+    "name": "ASC Quantum Computing Strategy 2026 (LLNL)",
+    "type": "Government strategy / Advanced simulation computing",
+    "complexity": "Comprehensive QC strategy for stockpile stewardship and scientific computing",
+    "application": "National security, stockpile stewardship, scientific simulation",
+    "key_result": "Published October 2025; Lawrence Livermore National Laboratory quantum strategy",
+    "description": "The ASC (Advanced Simulation and Computing) Quantum Computing Strategy 2026, published by Lawrence Livermore National Laboratory, outlines the role of quantum computing in national security and stockpile stewardship. The strategy focuses on developing more efficient algorithms with guaranteed speedups for future fault-tolerant quantum computers, and identifies priority applications where quantum computing can provide strategic advantage.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.osti.gov/biblio/3000356",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-49",
+    "name": "PennyLane Top Quantum Algorithms (Winter 2026 Edition)",
+    "type": "Algorithm survey / Community resource",
+    "complexity": "Comprehensive survey of top quantum algorithms from Q1 2026",
+    "application": "Quantum algorithm development, research tracking, education",
+    "key_result": "PennyLane published curated selection of top quantum algorithms papers from Q1 2026",
+    "description": "PennyLane (Xanadu) published their Winter 2026 edition of top quantum algorithms papers, curating the most significant algorithmic advances from the first quarter of 2026. This regular survey tracks the rapidly evolving landscape of quantum algorithm development and highlights breakthroughs in optimization, simulation, machine learning, and error correction algorithms.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://pennylane.ai/blog/top-quantum-algorithms-papers-winter-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-50",
+    "name": "CQT Improved Quantum Ground State Algorithm",
+    "type": "Quantum algorithm / Ground state finding",
+    "complexity": "Improved efficiency over existing quantum ground state methods",
+    "application": "Quantum chemistry, materials science, condensed matter physics",
+    "key_result": "International team including CQT researchers report improved algorithm for finding quantum ground states",
+    "description": "An international team including researchers from the Centre for Quantum Technologies (CQT) reported an improved algorithm for finding quantum ground states, crafted from old mathematics. The algorithm offers better efficiency for determining the lowest energy states of quantum systems, which is fundamental to quantum chemistry and materials science applications.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://quantumcomputingreport.com/new-algorithm-crafted-from-old-maths",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-51",
+    "name": "IBM Fault-Tolerant Quantum Algorithm Path (2026)",
+    "type": "Algorithm framework / Fault-tolerant execution",
+    "complexity": "Optimized for IBM Nighthawk processor capabilities",
+    "application": "Delivering quantum advantage by end of 2026 with classical HPC support",
+    "key_result": "IBM lays out clear path: fault-tolerant quantum computers will deliver quantum advantage by end of 2026",
+    "description": "IBM laid out a clear path to fault-tolerant quantum computing, stating that their quantum computers will be able to deliver quantum advantage by the end of 2026 with the help of classical high-performance computing. The algorithm framework leverages the Nighthawk processor family and Qiskit Runtime for optimized fault-tolerant execution, combining quantum and classical resources for maximum impact.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.ibm.com/quantum/blog/large-scale-ftqc",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-52",
+    "name": "Google Quantum Echoes Algorithm (Verified Advantage)",
+    "type": "Quantum advantage demonstration / Verified computational advantage",
+    "complexity": "13,000x faster than best classical supercomputers; first verifiable quantum advantage",
+    "application": "Demonstrating verifiable quantum computational advantage beyond random circuit sampling",
+    "key_result": "First algorithm to achieve verifiable quantum advantage on real hardware (Willow chip)",
+    "description": "Google's Quantum Echoes algorithm, demonstrated on the Willow processor, is the first to achieve verifiable quantum advantage on real hardware. Unlike previous random circuit sampling demonstrations that cannot be easily verified, Quantum Echoes produces results that can be independently checked. The algorithm ran 13,000 times faster than the best classical supercomputers, marking a significant milestone in moving quantum advantage from synthetic benchmarks to verifiable computation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://blog.google/technology/ai/quantum-echoes-algorithm/",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-53",
+    "name": "LLNL ASC Quantum Computing Strategy Algorithms (2026)",
+    "type": "Government strategy / Priority algorithm identification",
+    "complexity": "Focus on algorithms with guaranteed speedups for fault-tolerant systems",
+    "application": "National security, stockpile stewardship, scientific simulation",
+    "key_result": "Published October 2025; identifies priority algorithms for future fault-tolerant quantum computers",
+    "description": "The ASC (Advanced Simulation and Computing) Quantum Computing Strategy 2026, published by Lawrence Livermore National Laboratory, identifies priority quantum algorithms for national security applications. The strategy focuses on developing more efficient algorithms with guaranteed speedups for future fault-tolerant quantum computers, moving beyond heuristic NISQ-era approaches to algorithms with provable advantages.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.osti.gov/biblio/asc-quantum-computing-strategy-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QA-54",
+    "name": "Quantum Computing Market Doubling to $3B (QED-C 2026)",
+    "type": "Market analysis / Industry milestone",
+    "complexity": "Quantum market doubled to $3B; QaaS expanding rapidly",
+    "application": "Quantum industry tracking, investment decisions, market forecasting",
+    "key_result": "QED-C report: quantum computing market doubled to $3 billion in 2025-2026",
+    "description": "The QED-C (Quantum Economic Development Consortium) report shows the quantum computing market doubled to $3 billion, with Quantum-as-a-Service platforms expanding access significantly. The market growth is driven by early quantum advantage demonstrations, increasing enterprise adoption, and government investment. This milestone signals the transition from pure R&D to commercial quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://quantumconsortium.org/report/",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-055",
+    "name": "Quantum-Inspired Materials Algorithm (QIMA)",
+    "type": "Materials science / Simulation",
+    "complexity": "Solves problems intractable for classical supercomputers",
+    "application": "Materials property prediction, crystal structure analysis",
+    "description": "A new quantum-inspired algorithm cracked a materials science problem so massive that conventional supercomputers struggle to even approach it, as reported by ScienceDaily in May 2026. The algorithm uses tensor network methods inspired by quantum computing to efficiently represent and manipulate high-dimensional quantum states. This demonstrates that quantum-inspired classical algorithms can deliver practical advantages even before fault-tolerant quantum computers are available.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.sciencedaily.com/releases/2026/05/260512202355.htm",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-056",
+    "name": "Regev's Factoring Algorithm",
+    "type": "Number theory / Cryptography",
+    "complexity": "O(n^{1.5}) qubit complexity vs Shor's O(n^2)",
+    "application": "Integer factorization with fewer qubits",
+    "description": "Oded Regev proposed a new quantum factoring algorithm that reduces the number of qubits needed compared to Shor's algorithm, from O(n^2) to O(n^{1.5}) for n-bit integers. While the circuit depth increases, the reduced qubit count makes factoring potentially achievable on nearer-term quantum hardware. This has significant implications for cryptography, as it lowers the hardware threshold for breaking RSA.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.quantamagazine.org/new-advances-bring-the-era-of-quantum-computers-closer-than-ever/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-057",
+    "name": "Quantum Hamiltonian Descent (QHD)",
+    "type": "Optimization",
+    "complexity": "Quadratic speedup for non-convex optimization",
+    "application": "Non-convex optimization, machine learning training",
+    "description": "Quantum Hamiltonian Descent is a quantum optimization algorithm that simulates Hamiltonian dynamics on a quantum computer to solve non-convex optimization problems. Unlike classical gradient descent, which can get trapped in local minima, QHD leverages quantum tunneling to escape local optima. The algorithm provides provable quadratic speedups for certain classes of non-convex problems, making it potentially useful for training machine learning models.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.wissenresearch.com/quantum-computing-in-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-058",
+    "name": "Quantum Singular Value Transformation (QSVT) Applications",
+    "type": "Linear algebra / Framework",
+    "complexity": "Near-optimal for many linear algebra problems",
+    "application": "Matrix operations, quantum simulation, machine learning",
+    "description": "QSVT has emerged as a unifying framework for designing quantum algorithms. It provides a systematic way to apply polynomial transformations to the singular values of a matrix encoded in a quantum state. QSVT unifies and simplifies many previously known quantum algorithms, including quantum phase estimation, Hamiltonian simulation, and linear systems. New applications in 2025-2026 include quantum machine learning kernels and quantum chemistry simulations with improved efficiency.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.usdsi.org/data-science-insights/latest-developments-in-quantum-computing",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-059",
+    "name": "Variational Quantum Simulation (VQS) Enhanced",
+    "type": "Quantum simulation / Variational",
+    "complexity": "Efficient for near-term hardware; shallow circuits",
+    "application": "Quantum chemistry, condensed matter physics, drug discovery",
+    "description": "Enhanced Variational Quantum Simulation algorithms have shown improved performance on NISQ devices in 2025-2026. New techniques include adaptive ansatz construction, symmetry-preserving circuits, and error mitigation strategies that allow VQS to achieve chemical accuracy for larger molecular systems than previously possible. These advances make quantum simulation one of the most promising near-term applications of quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.spinquanta.com/news-detail/quantum-computers-the-revolutionary-technology",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-060",
+    "name": "Quantum-Enhanced Reinforcement Learning (QERL)",
+    "type": "Machine learning / Reinforcement learning",
+    "complexity": "Quadratic speedup for exploration in large state spaces",
+    "application": "Autonomous systems, game AI, robotics control",
+    "description": "Quantum-Enhanced Reinforcement Learning combines quantum amplitude amplification with classical RL algorithms to accelerate exploration of large state-action spaces. In 2025-2026, several groups demonstrated quantum advantages for RL benchmarks using both gate-model and quantum annealing hardware. The approach is particularly promising for applications with exponentially large state spaces where classical exploration is intractable.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.wissenresearch.com/quantum-computing-in-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-061",
+    "name": "Quantum Natural Language Processing (QNLP)",
+    "type": "NLP / Compositional",
+    "complexity": "Potential exponential advantage for compositional semantics",
+    "application": "Language understanding, compositional reasoning, dialogue systems",
+    "description": "Quantum Natural Language Processing uses the mathematical framework of compositional distributional semantics, where the compositional structure of language maps naturally to quantum circuits. In 2025-2026, Cambridge Quantum (now Quantinuum) and others demonstrated QNLP models that can learn compositional meaning from text data using quantum hardware. The approach leverages the tensor product structure of quantum mechanics to represent how words combine to form meanings.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.spinquanta.com/news-detail/quantum-computers-the-revolutionary-technology",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-062",
+    "name": "Quantum Finance Optimization (QFO) Suite",
+    "type": "Finance / Optimization",
+    "complexity": "Quadratic speedup for portfolio optimization; exponential for risk analysis",
+    "application": "Portfolio optimization, risk analysis, derivative pricing, fraud detection",
+    "description": "A suite of quantum algorithms specifically designed for financial applications has been developed and tested on quantum hardware in 2025-2026. The suite includes quantum algorithms for Monte Carlo simulation (quadratic speedup), portfolio optimization (QAOA-based), and derivative pricing (quantum amplitude estimation). Major financial institutions including JPMorgan, Goldman Sachs, and HSBC have published results showing quantum advantages for specific financial calculations.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://banking.vision/en/the-year-of-quantum-computing",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-063",
+    "name": "Quantum Error-Mitigated VQE (EM-VQE)",
+    "type": "Chemistry / Error mitigation",
+    "complexity": "Achieves chemical accuracy with fewer qubits than fault-tolerant methods",
+    "application": "Molecular energy calculation, catalyst design, drug discovery",
+    "description": "Error-Mitigated VQE combines variational quantum eigensolver with advanced error mitigation techniques including zero-noise extrapolation, probabilistic error cancellation, and symmetry verification. In 2025-2026, this approach achieved chemical accuracy for molecules with up to 20 atoms on NISQ hardware, a significant improvement over standard VQE. The technique bridges the gap between current noisy hardware and future fault-tolerant quantum computers.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-064",
+    "name": "Quantum Generative Adversarial Network (QGAN)",
+    "type": "Machine learning / Generative",
+    "complexity": "Exponential advantage for high-dimensional distributions",
+    "application": "Data generation, anomaly detection, financial modeling",
+    "description": "Quantum GANs use quantum circuits as generators and/or discriminators to learn and generate data distributions. In 2025-2026, QGANs demonstrated the ability to learn high-dimensional probability distributions with exponentially fewer parameters than classical GANs. Applications include generating realistic financial market scenarios, molecular structures for drug design, and training data augmentation for machine learning.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.usdsi.org/data-science-insights/latest-developments-in-quantum-computing",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-065",
+    "name": "Quantum Approximate Counting Algorithm",
+    "type": "Counting / Estimation",
+    "complexity": "O(√N) vs classical O(N)",
+    "application": "Database queries, statistical estimation, combinatorial counting",
+    "description": "An improved quantum approximate counting algorithm provides a quadratic speedup over classical counting methods. The algorithm estimates the number of items in a database that satisfy a given property using quantum amplitude estimation. New variants in 2025-2026 improve the practical performance on noisy hardware by reducing circuit depth and incorporating error mitigation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.wissenresearch.com/quantum-computing-in-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-066",
+    "name": "Quantum Topological Data Analysis (QTDA)",
+    "type": "Data analysis / Topology",
+    "complexity": "Exponential speedup for Betti number estimation",
+    "application": "Shape analysis, data clustering, network analysis",
+    "description": "Quantum Topological Data Analysis uses quantum algorithms to compute topological features (Betti numbers) of data sets. The quantum algorithm provides an exponential speedup for estimating Betti numbers, which characterize the shape and connectivity of data. In 2025-2026, QTDA has been applied to analyze complex networks, protein structures, and financial time series data, demonstrating practical utility on near-term quantum hardware.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.spinquanta.com/news-detail/quantum-computers-the-revolutionary-technology",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-067",
+    "name": "Quantum Boltzmann Machine (QBM)",
+    "type": "Machine learning / Probabilistic",
+    "complexity": "Efficient sampling from quantum Boltzmann distributions",
+    "application": "Generative modeling, optimization, quantum state tomography",
+    "description": "Quantum Boltzmann Machines use quantum systems to represent and sample from probability distributions that are classically intractable. In 2025-2026, QBMs demonstrated improved performance on generative modeling tasks compared to classical Boltzmann machines. The quantum advantage comes from the ability to efficiently sample from quantum thermal states, which can represent more expressive distributions than classical models.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.usdsi.org/data-science-insights/latest-developments-in-quantum-computing",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-068",
+    "name": "Quantum Linear Systems Algorithm (HHL Enhanced)",
+    "type": "Linear algebra",
+    "complexity": "O(log N) vs classical O(N) for sparse systems",
+    "application": "Solving linear equations, machine learning, differential equations",
+    "description": "Enhanced versions of the HHL algorithm for solving linear systems Ax=b on quantum computers have been developed in 2025-2026. Improvements include better condition number dependence, variable-time amplitude amplification, and quantum preconditioning techniques. These enhancements make the algorithm more practical for real-world problems where the condition number of the matrix is large. Applications include quantum machine learning, scientific computing, and engineering simulations.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.wissenresearch.com/quantum-computing-in-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-069",
+    "name": "Quantum Cryptographic Attack: Reduced RSA Threshold",
+    "type": "Cryptography / Attack",
+    "complexity": "Reduced qubit count for factoring; 2-3x fewer than Shor's original",
+    "application": "RSA vulnerability assessment, post-quantum migration urgency",
+    "description": "Two research groups in 2025-2026 significantly reduced the number of qubits and time required to crack common online encryption using quantum computers. The new approaches combine Regev's algorithm with improved circuit synthesis and error correction techniques, reducing the qubit count needed to factor RSA-2048 from millions to hundreds of thousands. This accelerates the timeline for when quantum computers could break current encryption, increasing urgency for post-quantum cryptography migration.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.quantamagazine.org/new-advances-bring-the-era-of-quantum-computers-closer-than-ever/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QALG-070",
+    "name": "Quantum Support Vector Machine (QSVM) Kernel",
+    "type": "Machine learning / Classification",
+    "complexity": "Exponential advantage for kernel evaluation in feature space",
+    "application": "Classification, pattern recognition, anomaly detection",
+    "description": "Quantum Support Vector Machines use quantum kernels that map data into exponentially large feature spaces that are classically intractable. In 2025-2026, QSVMs demonstrated quantum advantage on specific classification tasks where the quantum kernel captures data structure that classical kernels cannot. IBM and others have developed quantum kernel alignment techniques that automatically optimize the quantum feature map for a given dataset.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.usdsi.org/data-science-insights/latest-developments-in-quantum-computing",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

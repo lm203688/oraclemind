@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "DeepSeaDB",
+  "name_for_model": "deepseadb",
+  "description_for_human": "Deep sea technology knowledge base covering submersibles, resources, ecology, underwater communication, ocean energy, marine biology, ocean exploration, and underwater tech",
+  "description_for_model": "Deep sea technology knowledge base covering submersibles, resources, ecology, underwater communication, ocean energy, marine biology, ocean exploration, and underwater tech. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://deepsea.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://deepsea.genetech.tools/"
+}

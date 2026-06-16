@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Outlook — GeneTech Tools</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0e17;color:#e2e8f0;line-height:1.6}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,23,0.92);backdrop-filter:blur(12px);border-bottom:1px solid #1e2d4a;height:56px;display:flex;align-items:center;padding:0 20px;gap:16px}
+.nav-logo{font-size:18px;font-weight:700;color:#06b6d4;cursor:pointer;text-decoration:none}
+.nav-logo span{background:linear-gradient(135deg,#06b6d4,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:16px;margin-left:auto}
+.nav-links a{color:#94a3b8;font-size:13px;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#06b6d4}
+
+.container{max-width:1100px;margin:80px auto 40px;padding:0 20px}
+h1{font-size:1.8rem;margin-bottom:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:#94a3b8;margin-bottom:30px}
+
+/* Timeline */
+.timeline{position:relative;padding-left:30px;margin:30px 0}
+.timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,#06b6d4,#8b5cf6,#f59e0b)}
+.timeline-item{position:relative;margin-bottom:24px;padding:16px 20px;background:#111827;border:1px solid #1e2d4a;border-radius:12px}
+.timeline-item::before{content:'';position:absolute;left:-24px;top:20px;width:12px;height:12px;border-radius:50%;border:2px solid #06b6d4;background:#0a0e17}
+.timeline-item.hot::before{border-color:#ef4444;box-shadow:0 0 8px rgba(239,68,68,0.4)}
+.timeline-item.warm::before{border-color:#f59e0b;box-shadow:0 0 8px rgba(245,158,11,0.4)}
+.timeline-item.cool::before{border-color:#06b6d4;box-shadow:0 0 8px rgba(6,182,212,0.4)}
+.timeline-item .tl-time{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.timeline-item .tl-title{font-weight:700;font-size:15px;margin-bottom:4px}
+.timeline-item .tl-desc{color:#94a3b8;font-size:13px;line-height:1.5}
+.timeline-item .tl-tags{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.timeline-item .tl-tag{padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;background:rgba(6,182,212,0.15);color:#06b6d4}
+
+/* Signal Dashboard */
+.signal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin:30px 0}
+.signal-card{background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:20px;position:relative;overflow:hidden}
+.signal-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.signal-card.buy::after{background:#10b981}
+.signal-card.watch::after{background:#f59e0b}
+.signal-card.caution::after{background:#ef4444}
+.signal-card .sc-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.signal-card .sc-title{font-weight:700;font-size:15px}
+.signal-card .sc-signal{font-size:24px}
+.signal-card .sc-desc{color:#94a3b8;font-size:13px;line-height:1.5;margin-bottom:12px}
+.signal-card .sc-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.signal-card .sc-metric{text-align:center;padding:8px;background:#0a0e17;border-radius:6px}
+.signal-card .sc-metric .label{color:#64748b;font-size:9px;text-transform:uppercase;letter-spacing:1px}
+.signal-card .sc-metric .value{font-size:14px;font-weight:700;margin-top:2px}
+
+/* Radar */
+.radar-section{background:#111827;border:1px solid #1e2d4a;border-radius:16px;padding:24px;margin:30px 0}
+.radar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px}
+.radar-item{padding:12px;border-radius:8px;background:#0a0e17;border:1px solid #1e2d4a;transition:all .2s;cursor:pointer}
+.radar-item:hover{border-color:#06b6d4;transform:translateY(-2px)}
+.radar-item .ri-name{font-weight:600;font-size:13px;margin-bottom:4px}
+.radar-item .ri-status{font-size:11px;display:flex;align-items:center;gap:4px}
+.radar-item .ri-dot{width:6px;height:6px;border-radius:50%;display:inline-block}
+.radar-item .ri-change{font-size:11px;color:#64748b;margin-top:2px}
+
+/* Inflection Points */
+.inflection-list{display:flex;flex-direction:column;gap:12px;margin:30px 0}
+.inflection-item{display:flex;gap:16px;background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:16px;transition:all .2s}
+.inflection-item:hover{border-color:#f59e0b}
+.inflection-item .if-icon{font-size:28px;flex-shrink:0}
+.inflection-item .if-content{flex:1}
+.inflection-item .if-title{font-weight:700;font-size:14px;margin-bottom:4px}
+.inflection-item .if-desc{color:#94a3b8;font-size:13px;line-height:1.5}
+.inflection-item .if-meta{display:flex;gap:12px;margin-top:8px;font-size:11px;color:#64748b}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .signal-grid{grid-template-columns:1fr}
+  .radar-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+<script src="/pro-paywall.js"></script></head>
+<body>
+
+<nav class="nav">
+  <a href="https://genetech.tools" class="nav-logo">🧬 <span>GeneTech</span> Outlook</a>
+  <div class="nav-links">
+    <a href="https://genetech.tools">Home</a>
+    <a href="https://genetech.tools/knowledge-graph.html">Graph</a>
+    <a href="https://genetech.tools/intelligence.html">Intelligence</a>
+    <a href="https://genetech.tools/credits.html" style="color:#f59e0b;font-weight:600">💎 Pro</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Outlook & Predictions</h1>
+  <p class="subtitle">6-12 month technology forecasts, investment signals, and inflection point alerts</p>
+
+  <!-- Investment Signal Dashboard -->
+  <div class="section">
+    <h2 style="font-size:1.2rem;margin-bottom:16px">📈 Investment Signal Dashboard</h2>
+    <div class="signal-grid" id="signalGrid"></div>
+  </div>
+
+  <!-- Inflection Points -->
+  <div class="section">
+    <h2 style="font-size:1.2rem;margin-bottom:16px">⚡ Inflection Point Alerts</h2>
+    <div class="inflection-list" id="inflectionList"></div>
+  </div>
+
+  <!-- Technology Radar -->
+  <div class="section">
+    <h2 style="font-size:1.2rem;margin-bottom:16px">📡 Technology Radar</h2>
+    <div class="radar-section">
+      <p style="color:#94a3b8;font-size:13px">Technologies positioned by maturity and momentum. Click to explore.</p>
+      <div class="radar-grid" id="radarGrid"></div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="section">
+    <h2 style="font-size:1.2rem;margin-bottom:16px">📅 Predicted Timeline</h2>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</div>
+
+<script>
+const SIGNALS = [
+  { title:'In Vivo CAR-T Gene Delivery', signal:'🟢', class:'buy', desc:'Feasibility demonstrated in clinical reports. This is the biggest paradigm shift in cell therapy — manufacturing at the point of care instead of ex vivo.', metrics:{trl:'5',momentum:'85%',timeframe:'12-18mo'}},
+  { title:'Prime Editing', signal:'🟢', class:'buy', desc:'Prime editing efficiency breakthroughs in 2026 make this the successor to CRISPR-Cas9 for therapeutic applications. Higher precision, fewer off-targets.', metrics:{trl:'5',momentum:'88%',timeframe:'6-12mo'}},
+  { title:'Epigenome Editing (CRISPRa/i)', signal:'🟢', class:'buy', desc:'No DNA cuts, reversible, entering Phase 1. The "dark horse" of gene editing — could dominate for chronic conditions where permanent edits are unnecessary.', metrics:{trl:'4',momentum:'82%',timeframe:'12-24mo'}},
+  { title:'AAV Manufacturing Scale-up', signal:'🟢', class:'buy', desc:'Manufacturing partnerships are rapidly reducing per-patient cost. The $500K/patient threshold is the inflection point for commercial viability.', metrics:{trl:'7',momentum:'78%',timeframe:'6-12mo'}},
+  { title:'Liquid Biopsy MCED', signal:'🟢', class:'buy', desc:'Multi-cancer early detection blood tests approaching $99 price points. Population-level screening becomes economically viable.', metrics:{trl:'7',momentum:'80%',timeframe:'12-18mo'}},
+  { title:'LNP Non-Viral Delivery', signal:'🟡', class:'watch', desc:'Challenging AAV dominance for systemic delivery. Organ-targeting LNPs show promise but clinical data still early.', metrics:{trl:'6',momentum:'75%',timeframe:'12-18mo'}},
+  { title:'Base Editing Therapeutics', signal:'🟡', class:'watch', desc:'Clinical trials expanding but delivery remains a bottleneck. Strong for point mutations, limited for larger edits.', metrics:{trl:'6',momentum:'72%',timeframe:'12-18mo'}},
+  { title:'N-of-1 Personalized CRISPR', signal:'🟡', class:'watch', desc:'Baby KJ validated the paradigm but regulatory frameworks and manufacturing economics need work before scaling.', metrics:{trl:'4',momentum:'68%',timeframe:'18-36mo'}},
+  { title:'Exosome-Based Delivery', signal:'🔴', class:'caution', desc:'Early clinical data emerging but manufacturing consistency and loading efficiency remain unsolved. High risk, high reward.', metrics:{trl:'3',momentum:'55%',timeframe:'24-48mo'}},
+  { title:'Germline Gene Editing', signal:'🔴', class:'caution', desc:'Regulatory and ethical barriers remain insurmountable in most jurisdictions. Technical capability exists but social license does not.', metrics:{trl:'3',momentum:'30%',timeframe:'5+ years'}},
+];
+
+const INFLECTIONS = [
+  { icon:'⚡', title:'AAV Cost Below $500K/Patient', desc:'When AAV manufacturing cost drops below $500K per patient, gene therapy transitions from experimental to commercially viable. Multiple manufacturers are on track for this threshold by 2027.', meta:['Manufacturing','12-18 months','High Impact'] },
+  { icon:'⚡', title:'In Vivo CAR-T First Approval', desc:'The first in vivo CAR-T approval will fundamentally change cell therapy — from complex ex vivo manufacturing to a simple injection. This is the "iPhone moment" for CAR-T.', meta:['Regulatory','18-24 months','Transformative'] },
+  { icon:'⚡', title:'Prime Editing Overtakes Cas9 in New Trials', desc:'When prime editing accounts for >50% of new CRISPR clinical trials, it signals the technology transition from first-gen to second-gen gene editing.', meta:['Clinical','12-18 months','High Impact'] },
+  { icon:'⚡', title:'MCED Test at $99 Price Point', desc:'When multi-cancer early detection blood tests hit $99, they become viable for population-level screening — a $100B+ market opportunity.', meta:['Diagnostics','12-18 months','Massive Market'] },
+  { icon:'⚡', title:'First Epigenome Editing Phase 1 Results', desc:'Positive Phase 1 data for CRISPRa/CRISPRi would validate the "no-cut" approach and open a new therapeutic modality for chronic diseases.', meta:['Clinical','6-12 months','Paradigm Shift'] },
+];
+
+const RADAR = [
+  { name:'Prime Editing', status:'Adopt', color:'#10b981', change:'↑↑ Accelerating' },
+  { name:'In Vivo CAR-T', status:'Adopt', color:'#10b981', change:'↑↑ Accelerating' },
+  { name:'AAV Scale-up', status:'Adopt', color:'#10b981', change:'↑ Growing' },
+  { name:'Liquid Biopsy', status:'Adopt', color:'#10b981', change:'↑ Growing' },
+  { name:'Base Editing', status:'Trial', color:'#f59e0b', change:'↑ Growing' },
+  { name:'LNP Delivery', status:'Trial', color:'#f59e0b', change:'↑ Growing' },
+  { name:'Epigenome Edit', status:'Trial', color:'#f59e0b', change:'↑↑ Accelerating' },
+  { name:'N-of-1 CRISPR', status:'Assess', color:'#06b6d4', change:'→ Emerging' },
+  { name:'Exosome Delivery', status:'Assess', color:'#06b6d4', change:'→ Early' },
+  { name:'RNA Editing', status:'Assess', color:'#06b6d4', change:'→ Early' },
+  { name:'Germline Edit', status:'Hold', color:'#ef4444', change:'↓ Blocked' },
+  { name:'Xenotransplant', status:'Hold', color:'#ef4444', change:'→ Slow' },
+];
+
+const TIMELINE = [
+  { time:'Q3 2026', title:'First Epigenome Editing Phase 1 Results', desc:'CRISPRa/CRISPRi programs report initial safety and efficacy data. If positive, triggers wave of new programs.', tags:['Clinical','CRISPR','Phase 1'], heat:'hot' },
+  { time:'Q4 2026', title:'Prime Editing Efficiency Milestone', desc:'Expected >50% efficiency in primary human cells, making prime editing competitive with Cas9 for most applications.', tags:['CRISPR','Efficiency'], heat:'hot' },
+  { time:'Q1 2027', title:'AAV Manufacturing Cost Threshold', desc:'Multiple manufacturers expected to achieve <$500K/patient production cost, enabling commercial viability.', tags:['Manufacturing','AAV'], heat:'warm' },
+  { time:'Q2 2027', title:'MCED $99 Price Point', desc:'Multi-cancer early detection tests reach consumer-accessible pricing, enabling population screening programs.', tags:['Diagnostics','Screening'], heat:'warm' },
+  { time:'H2 2027', title:'In Vivo CAR-T Regulatory Filing', desc:'First in vivo CAR-T therapy expected to submit for regulatory approval, pending Phase 1/2 results.', tags:['Regulatory','CAR-T'], heat:'hot' },
+  { time:'2028', title:'Gene Therapy Commercialization Wave', desc:'3+ new gene therapy approvals expected, marking the transition from breakthrough to standard of care.', tags:['Commercial','Multiple'], heat:'cool' },
+];
+
+// Render
+const signalGrid = document.getElementById('signalGrid');
+SIGNALS.forEach(s => {
+  signalGrid.innerHTML += `
+    <div class="signal-card ${s.class}">
+      <div class="sc-header"><span class="sc-title">${s.title}</span><span class="sc-signal">${s.signal}</span></div>
+      <div class="sc-desc">${s.desc}</div>
+      <div class="sc-metrics">
+        <div class="sc-metric"><div class="label">TRL</div><div class="value">${s.metrics.trl}</div></div>
+        <div class="sc-metric"><div class="label">Momentum</div><div class="value">${s.metrics.momentum}</div></div>
+        <div class="sc-metric"><div class="label">Timeframe</div><div class="value" style="font-size:11px">${s.metrics.timeframe}</div></div>
+      </div>
+    </div>`;
+});
+
+const infList = document.getElementById('inflectionList');
+INFLECTIONS.forEach(i => {
+  infList.innerHTML += `
+    <div class="inflection-item">
+      <span class="if-icon">${i.icon}</span>
+      <div class="if-content">
+        <div class="if-title">${i.title}</div>
+        <div class="if-desc">${i.desc}</div>
+        <div class="if-meta">${i.meta.map(m => `<span>${m}</span>`).join('')}</div>
+      </div>
+    </div>`;
+});
+
+const radarGrid = document.getElementById('radarGrid');
+RADAR.forEach(r => {
+  radarGrid.innerHTML += `
+    <div class="radar-item">
+      <div class="ri-name">${r.name}</div>
+      <div class="ri-status"><span class="ri-dot" style="background:${r.color}"></span>${r.status}</div>
+      <div class="ri-change">${r.change}</div>
+    </div>`;
+});
+
+const timeline = document.getElementById('timeline');
+TIMELINE.forEach(t => {
+  timeline.innerHTML += `
+    <div class="timeline-item ${t.heat}">
+      <div class="tl-time">${t.time}</div>
+      <div class="tl-title">${t.title}</div>
+      <div class="tl-desc">${t.desc}</div>
+      <div class="tl-tags">${t.tags.map(tag => `<span class="tl-tag">${tag}</span>`).join('')}</div>
+    </div>`;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "RobotParts DB",
+  "description": "Robot parts & protocols database - actuators, chips, protocols, LLMs, interfaces",
+  "url": "https://robot.genetech.tools",
+  "category": "机器人配件",
+  "api": {
+    "type": "rest",
+    "base_url": "https://robot.genetech.tools/api",
+    "openapi": "https://robot.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/actuators.json",
+        "method": "GET",
+        "description": "Get actuators data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/chips.json",
+        "method": "GET",
+        "description": "Get chips data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/protocols.json",
+        "method": "GET",
+        "description": "Get protocols data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/llms.json",
+        "method": "GET",
+        "description": "Get llms data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/interfaces.json",
+        "method": "GET",
+        "description": "Get interfaces data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/sensors.json",
+        "method": "GET",
+        "description": "Get sensors data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/platforms.json",
+        "method": "GET",
+        "description": "Get platforms data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://brain.genetech.tools",
+      "title": "脑机接口机器人控制"
+    },
+    {
+      "rel": "related",
+      "href": "https://agent.genetech.tools",
+      "title": "AI Agent机器人集成"
+    },
+    {
+      "rel": "related",
+      "href": "https://quantum.genetech.tools",
+      "title": "量子传感器机器人"
+    },
+    {
+      "rel": "related",
+      "href": "https://deepsea.genetech.tools",
+      "title": "深海机器人"
+    }
+  ]
+}

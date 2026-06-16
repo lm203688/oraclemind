@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-26T06:16:26.793Z",
+  "description": "benchmarks库",
+  "entities": [
+    {
+      "id": "BENCH-001",
+      "name": "SWE-bench",
+      "focus": "代码修复",
+      "description": "真实GitHub issue自动修复",
+      "top_score": "Claude 3.5 Sonnet ~49%",
+      "adoption": "广泛"
+    },
+    {
+      "id": "BENCH-002",
+      "name": "WebArena",
+      "focus": "网页操作",
+      "description": "真实网页环境任务完成",
+      "top_score": "~35%",
+      "adoption": "学术"
+    },
+    {
+      "id": "BENCH-003",
+      "name": "AgentBench",
+      "focus": "多任务",
+      "description": "多场景Agent能力评估",
+      "top_score": "GPT-4 ~36.9",
+      "adoption": "学术"
+    },
+    {
+      "id": "BENCH-004",
+      "name": "BFCL v3",
+      "focus": "函数调用",
+      "description": "多语言函数调用评估",
+      "top_score": "GPT-4o ~90%",
+      "adoption": "广泛"
+    },
+    {
+      "id": "BENCH-005",
+      "name": "MCP兼容性测试",
+      "focus": "MCP",
+      "description": "MCP Server兼容性验证",
+      "top_score": "N/A",
+      "adoption": "新兴"
+    },
+    {
+      "id": "BENCH-006",
+      "name": "LoCoMo",
+      "type": "memory_benchmark",
+      "description": "LoCoMo，2026年Agent记忆评估标准基准，用于比较不同记忆架构的长期对话能力",
+      "category": "memory",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "BENCH-007",
+      "name": "LongMemEval",
+      "type": "memory_benchmark",
+      "description": "LongMemEval，2026年Agent长期记忆评估基准，测试Agent跨会话记忆召回和推理能力",
+      "category": "memory",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "BENCH-008",
+      "name": "BEAM",
+      "type": "memory_benchmark",
+      "description": "BEAM，2026年Agent记忆评估基准，标准化Agent记忆系统性能比较框架",
+      "category": "memory",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    }
+  ]
+}

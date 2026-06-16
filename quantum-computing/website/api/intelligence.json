@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "generated_at": "2026-06-04T02:06:54.610Z",
+    "domain": "quantum-computing.genetech.tools",
+    "version": "1.0",
+    "total_entities": 194
+  },
+  "categories": {
+    "processors": {
+      "count": 63,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 63
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "algorithms": {
+      "count": 48,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 48
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "error_correction": {
+      "count": 28,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 28
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "quantum_software": {
+      "count": 29,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 29
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "quantum_networking": {
+      "count": 26,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 26
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    }
+  },
+  "predictions": {},
+  "top_signals": [],
+  "maturity_distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 77,
+    "4": 58,
+    "5": 29,
+    "6": 15,
+    "7": 7,
+    "8": 3,
+    "9": 1
+  },
+  "cross_domain_insights": []
+}

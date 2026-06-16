@@ -1,0 +1,40 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "NuclearDB",
+    "description": "Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclear fuel, and radiation applications",
+    "version": "1.0.0",
+    "contact": {
+      "email": "61960005@qq.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://nuclear.genetech.tools"
+    }
+  ],
+  "paths": {
+    "/api/data.json": {
+      "get": {
+        "summary": "Get all NuclearDB data",
+        "description": "Returns complete structured data for 核能知识引擎",
+        "responses": {
+          "200": {
+            "description": "Structured knowledge base data"
+          }
+        }
+      }
+    },
+    "/api/entities.json": {
+      "get": {
+        "summary": "Get all entities",
+        "description": "Returns flat list of all entities across categories",
+        "responses": {
+          "200": {
+            "description": "Entity list"
+          }
+        }
+      }
+    }
+  }
+}

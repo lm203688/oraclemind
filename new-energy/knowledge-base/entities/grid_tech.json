@@ -1,0 +1,1037 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-06-05T14:16:40.000Z",
+  "description": "电网技术库 - 深度扩展版",
+  "entities": [
+    {
+      "id": "GRID-001",
+      "name": "特高压直流输电HVDC",
+      "type": "输电",
+      "capability": "1100kV/12GW/回路；<3%损耗/1000km",
+      "maturity": "商用",
+      "description": "远距离低损耗输电，连接偏远可再生能源与负荷中心",
+      "trend": "中国30+GW HVDC线路领先全球；欧洲氢骨干网/海上风电送出需求驱动"
+    },
+    {
+      "id": "GRID-002",
+      "name": "构网型逆变器Grid-Forming",
+      "type": "电力电子",
+      "capability": "替代同步发电机功能(惯量/电压/频率控制)",
+      "maturity": "部署中",
+      "description": "不依赖同步发电机即可建立电网电压和频率，100%可再生能源电网的关键",
+      "trend": "澳大利亚/英国率先要求构网型；Tesla/SMA/Sungrow产品线"
+    },
+    {
+      "id": "GRID-003",
+      "name": "虚拟电厂VPP",
+      "type": "分布式能源管理",
+      "capability": "GW级聚合/实时调度/1秒响应",
+      "maturity": "快速扩张",
+      "description": "聚合分布式资源(屋顶光伏/电池/EV/需求响应)为可调度资源",
+      "trend": "Tesla VPP德州/南澳；Sunrun+National Grid；中国虚拟电厂试点"
+    },
+    {
+      "id": "GRID-004",
+      "name": "动态线路评级DLR",
+      "type": "电网优化",
+      "capability": "现有线路容量提升15-30%",
+      "maturity": "部署中",
+      "description": "基于气象条件(风冷/温度)实时监控线路容量，无需新建线路即可增容",
+      "trend": "FERC美国强制要求；Ampacimon/Lindsey Manufacturing领先"
+    },
+    {
+      "id": "GRID-005",
+      "name": "柔性直流VSC-HVDC",
+      "type": "输电",
+      "capability": "可向无源网络供电/黑启动/多端直流",
+      "maturity": "商用",
+      "description": "电压源换流器HVDC，比传统LCC-HVDC更灵活，适合海上风电送出",
+      "trend": "张北柔直/如东柔直运营；欧洲Dogger Bank等海上风电项目标配"
+    },
+    {
+      "id": "GRID-006",
+      "name": "微电网Microgrid",
+      "type": "分布式电网",
+      "capability": "kW-MW级/孤岛/并网双模式",
+      "maturity": "商用",
+      "description": "本地化发配用电系统，可孤岛运行，提高供电韧性",
+      "trend": "偏远地区/校园/工业园区/军事基地应用；AI优化调度"
+    },
+    {
+      "id": "GRID-007",
+      "name": "车网互动V2G",
+      "type": "需求侧管理",
+      "capability": "EV电池作为分布式储能/GW级潜力",
+      "maturity": "示范运营",
+      "description": "电动车向电网反向送电，EV电池成为移动储能资源",
+      "trend": "Nissan Leaf/比亚迪试点；日本/英国/中国V2G示范项目"
+    },
+    {
+      "id": "GRID-008",
+      "name": "智能电表与AMI",
+      "type": "计量与感知",
+      "capability": "实时数据采集/双向通信",
+      "maturity": "大规模部署",
+      "description": "高级计量基础设施，为需求响应和动态电价提供数据基础",
+      "trend": "全球部署超10亿只；中国/欧洲/北美基本全覆盖"
+    },
+    {
+      "id": "GRID-009",
+      "name": "电力现货市场",
+      "type": "市场机制",
+      "capability": "5-15分钟级交易/实时价格信号",
+      "maturity": "区域运营",
+      "description": "短期电力交易市场，价格反映实时供需，激励灵活资源",
+      "trend": "中国8个现货试点运行；欧洲/美国成熟市场；储能盈利核心渠道"
+    },
+    {
+      "id": "GRID-010",
+      "name": "AI电网调度",
+      "type": "数字化",
+      "capability": "预测精度提升30%+/调度优化",
+      "maturity": "商用",
+      "description": "AI驱动的负荷预测/新能源出力预测/最优调度",
+      "trend": "Google DeepMind风电预测/国家电网AI调度；数字孪生电网"
+    },
+    {
+      "id": "GRID-011",
+      "name": "高压交流海底电缆",
+      "type": "输电",
+      "capability": "220-500kV/数百MW-GW",
+      "maturity": "商用",
+      "description": "近海风电和跨海联网的主要输电方式",
+      "trend": "Prysmian/Nexans/中天科技；欧洲北海互联需求旺盛"
+    },
+    {
+      "id": "GRID-012",
+      "name": "需求响应DR",
+      "type": "需求侧管理",
+      "capability": "GW级可调负荷",
+      "maturity": "商用",
+      "description": "用户侧调节用电行为响应电网信号，削峰填谷",
+      "trend": "工业/商业用户为主；AI自动化需求响应；与VPP协同"
+    },
+    {
+      "id": "GRID-013",
+      "name": "AI电力需求挑战",
+      "type": "需求侧挑战",
+      "capability": "数据中心电力需求激增",
+      "maturity": "紧迫问题",
+      "description": "AI/数据中心电力需求快速增长，对电网构成新挑战，需要灵活调度和新增容量",
+      "trend": "BloombergNEF预测AI电力需求将重塑电网投资；与可再生能源增长协同",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.privatebank.bankofamerica.com/articles/renewable-energy-investments.html",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-014",
+      "name": "分布式能源管理DERMS",
+      "type": "数字化",
+      "capability": "管理百万级分布式资源",
+      "maturity": "商用",
+      "description": "分布式能源(光伏/储能/EV/负荷)管理系统，实现电网与分布式资源的协调优化",
+      "trend": "与VPP/DR协同；AI驱动实时优化；Sunrun/Enel X/Lockheed Martin方案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-015",
+      "name": "电网级储能调度优化",
+      "type": "数字化",
+      "capability": "储能充放电最优调度",
+      "maturity": "商用",
+      "description": "AI优化电网级储能系统的充放电策略，最大化套利和辅助服务收益",
+      "trend": "Fluence IQ/特斯拉Autobidder/Wartsila GEMS；2026年标配",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-016",
+      "name": "柔性直流配电网",
+      "type": "配电",
+      "capability": "±10kV-±30kV/数十MW",
+      "maturity": "示范项目",
+      "description": "直流配电网适应高比例分布式光伏和EV充电，减少AC/DC转换损耗",
+      "trend": "中国张北柔直/深圳柔直配网示范；数据中心直流供电趋势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-017",
+      "name": "美国2026新增电力100%可再生能源",
+      "type": "市场数据",
+      "capability": "41.5GW光伏+风电",
+      "maturity": "行业趋势",
+      "description": "EIA报告：2026年美国新增电力装机100%来自可再生能源，41.5GW公用事业级光伏+风电",
+      "trend": "可再生能源从增量到主导；化石能源新增装机归零",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.solarpowerworldonline.com/2026/03/us-government-report-the-only-new-energy-coming-online-in-2026-is-renewables",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-018",
+      "name": "Deloitte 2026可再生能源展望",
+      "type": "行业报告",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "Deloitte 2026可再生能源行业展望：政策变化压缩项目时间线，但长期增长趋势不变",
+      "trend": "2025年前9月58笔可再生能源交易60亿美元；政策风险是主要挑战",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-019",
+      "name": "能源转型2026趋势",
+      "type": "行业趋势",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "2026年能源转型五大趋势：政策分化、储能爆发、绿氢关键年、电网现代化、AI赋能",
+      "trend": "全球能源政策分化加剧；但技术和经济性驱动转型不可逆",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://earth.org/energy-transition-where-are-we-headed-in-2026",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-020",
+      "name": "IEA能源创新状态2026",
+      "type": "行业报告",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "IEA State of Energy Innovation 2026报告：清洁能源创新逆风与顺风并存",
+      "trend": "创新投资从化石转向清洁；但政策不确定性增加风险",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.iea.org/events/the-state-of-energy-innovation-2026",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-021",
+      "name": "动态线路额定DLR",
+      "type": "输电",
+      "capability": "提升20-40%输电容量",
+      "maturity": "商用初期",
+      "description": "实时监测导线温度/弧垂/风速，动态调整输电线路容量，无需新建线路即可提升输电能力",
+      "trend": "Ampacimon/Lindsey/Valmont；2026年欧洲/北美加速部署",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-022",
+      "name": "分布式能源资源管理DERMS",
+      "type": "配电",
+      "capability": "管理GW级分布式资源",
+      "maturity": "商用",
+      "description": "分布式光伏/储能/EV/可调负荷的统一调度管理平台，实现配电网级优化",
+      "trend": "Oracle/GE/Itron；2026年配电网智能化标配",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-023",
+      "name": "高压半导体SiC/GaN",
+      "type": "电力电子",
+      "capability": "提升2-5%转换效率",
+      "maturity": "量产扩张",
+      "description": "碳化硅/氮化镓功率器件替代硅基IGBT，提升逆变器/变换器效率和功率密度",
+      "trend": "Wolfspeed/Infineon/STMicroelectronics；2026年光伏逆变器SiC渗透率超50%",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-024",
+      "name": "微电网控制器",
+      "type": "配电",
+      "capability": "孤岛/并网无缝切换",
+      "maturity": "商用",
+      "description": "微电网中央控制器，协调分布式电源/储能/负荷，实现并网和孤岛模式无缝切换",
+      "trend": "Schneider Electric/ABB/GE；关键设施(医院/数据中心)标配",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-025",
+      "name": "电力市场数字化交易",
+      "type": "数字化",
+      "capability": "实时竞价/智能合约",
+      "maturity": "示范/商用",
+      "description": "区块链/AI驱动的电力市场交易平台，实现点对点电力交易和实时竞价",
+      "trend": "Power Ledger/LO3 Energy；2026年试点项目扩展",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-026",
+      "name": "电网网络安全",
+      "type": "安全",
+      "capability": "威胁检测/防御",
+      "maturity": "快速提升",
+      "description": "智能电网网络安全防护，应对数字化电网日益增长的网络安全威胁",
+      "trend": "NERC CIP标准趋严；AI驱动威胁检测；2026年投资快速增长",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-027",
+      "name": "BloombergNEF NEO 2026电网展望",
+      "type": "行业报告",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "BloombergNEF NEO 2026: 储能到2050年增长17倍至3.8TW，电网现代化投资需求巨大",
+      "trend": "电网约束成为可再生能源增长瓶颈；AI电力需求重塑电网投资",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://about.bnef.com/insights/clean-energy/bloombergnefs-new-energy-outlook-2026",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-028",
+      "name": "Canary Media美国清洁电力2026",
+      "type": "市场数据",
+      "capability": "太阳能51%+储能28%",
+      "maturity": "行业趋势",
+      "description": "Canary Media: 2026年美国新增电力太阳能占51%、储能28%、风电占其余，清洁能源压倒性主导",
+      "trend": "清洁能源新增容量远超化石能源；储能成为第二大新增来源",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.canarymedia.com/articles/clean-energy/chart-us-overwhelmingly-build-clean-power-in-2026",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-029",
+      "name": "BDO 2026能源行业预测",
+      "type": "行业报告",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "BDO 2026自然资源与能源行业预测：2025年新增电力主要来自可再生能源，2026年进一步加速",
+      "trend": "可再生能源从增量到主导；政策不确定性是短期挑战",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.bdo.com/insights/industries/natural-resources/2026-natural-resources",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-030",
+      "name": "Forbes 2026清洁能源展望",
+      "type": "行业报告",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "Forbes 2026展望：IEA预测可再生能源特别是太阳能将增长最快，持续到2035年",
+      "trend": "清洁能源/自然/水驱动全球投资；太阳能增长最快",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.forbes.com/sites/mindylubber/2026/01/12/2026-outlook-clean-energy-nature-and-water-drive-global",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-031",
+      "name": "Atwell七大电力能源趋势2026",
+      "type": "行业趋势",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "Atwell 2026年七大电力能源趋势：储能是新电力市场骨干，电网现代化和数字化转型加速",
+      "trend": "电网从输电到智能平台；储能+数字化重塑电力市场",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://atwell.com/news-and-insights/seven-megatrends-shaping-power-and-energy-in-2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-032",
+      "name": "BloombergNEF储能3.8TW预测",
+      "type": "行业预测",
+      "capability": "3.8TW到2050年",
+      "maturity": "参考",
+      "description": "BloombergNEF NEO 2026: 储能到2050年增长17倍至3.8TW，电网级储能成为最大增长点",
+      "trend": "电网级储能需求爆发式增长；长时储能技术多元化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://about.bnef.com/insights/clean-energy/bloombergnefs-new-energy-outlook-2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-033",
+      "name": "Deloitte 2026可再生能源电网展望",
+      "type": "行业报告",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "Deloitte 2026可再生能源行业展望：电网现代化和储能部署是可再生能源大规模并网的关键",
+      "trend": "电网升级成为可再生能源发展瓶颈和机遇",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-034",
+      "name": "Earth.org能源转型电网2026",
+      "type": "行业展望",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "Earth.org 2026年能源转型展望：海上风电140GW+抽水蓄能16.5GW支撑电网灵活性和稳定性",
+      "trend": "电网灵活性需求增长；多技术组合保障稳定",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://earth.org/energy-transition-where-are-we-headed-in-2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-035",
+      "name": "虚拟电厂VPP 2026进展",
+      "type": "虚拟电厂",
+      "capability": "GW级聚合",
+      "maturity": "商用扩张",
+      "description": "虚拟电厂VPP 2026年进展：聚合分布式储能/电动车/可调负荷参与电网调度，规模达GW级",
+      "trend": "VPP从试点到规模化；AI优化调度效率提升",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-036",
+      "name": "AI电网调度优化2026",
+      "type": "数字化",
+      "capability": "提升5-15%效率",
+      "maturity": "商用初期",
+      "description": "AI驱动的电网调度优化：实时预测/智能调度/故障自愈，提升电网运行效率5-15%",
+      "trend": "AI+电网从辅助到核心；数字孪生电网应用扩展",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-037",
+      "name": "微电网和离网系统2026",
+      "type": "微电网",
+      "capability": "kW-MW级",
+      "maturity": "商用扩张",
+      "description": "微电网和离网系统2026年进展：偏远地区/岛屿/工商业园区微电网项目快速增长",
+      "trend": "微电网从应急到常态；可再生能源+储能微电网经济性改善",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-038",
+      "name": "车网互动V2G 2026",
+      "type": "V2G",
+      "capability": "双向充放电",
+      "maturity": "示范项目",
+      "description": "车网互动V2G技术2026年进展：电动车作为分布式储能参与电网调度，双向充放电技术成熟",
+      "trend": "V2G从概念到示范；电动车储能潜力巨大",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-039",
+      "name": "电网安全与网络防护2026",
+      "type": "安全",
+      "capability": "N/A",
+      "maturity": "持续加强",
+      "description": "电网网络安全防护2026年进展：智能电网面临网络攻击风险增加，安全防护体系持续完善",
+      "trend": "电网安全从物理到网络；AI驱动的威胁检测和响应",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-040",
+      "name": "柔性直流输电VSC-HVDC",
+      "type": "输电",
+      "capability": "±525kV/2GW+",
+      "maturity": "商用扩张",
+      "description": "柔性直流输电VSC-HVDC技术进展：可构建直流电网，适合海上风电送出和异步互联",
+      "trend": "VSC-HVDC成为海上风电送出标配；直流电网概念验证",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-041",
+      "name": "电力市场改革2026",
+      "type": "市场改革",
+      "capability": "N/A",
+      "maturity": "推进中",
+      "description": "全球电力市场改革2026年进展：容量市场/辅助服务市场/现货市场改革适应高比例可再生能源",
+      "trend": "电力市场从计划到市场；可再生能源参与市场交易机制完善",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-042",
+      "name": "分布式能源管理DERMS",
+      "type": "管理系统",
+      "capability": "MW级管理",
+      "maturity": "商用",
+      "description": "分布式能源管理系统DERMS 2026年进展：管理屋顶光伏/储能/电动车等分布式资源，优化电网运行",
+      "trend": "DERMS从单一到综合；AI优化分布式资源调度",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-043",
+      "name": "IEA全球能源回顾2026电网",
+      "type": "行业报告",
+      "capability": "N/A",
+      "maturity": "参考",
+      "description": "IEA Global Energy Review 2026: 电网基础设施投资需要翻倍以支撑可再生能源并网和电气化",
+      "trend": "电网投资严重不足；输电扩容成为可再生能源发展瓶颈",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.iea.org/reports/global-energy-review-2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-044",
+      "name": "美国电网现代化2026",
+      "type": "政策",
+      "capability": "N/A",
+      "maturity": "政策驱动",
+      "description": "美国电网现代化2026年进展：IRA/IIJA资金推动输电扩容和智能电网升级，许可改革加速",
+      "trend": "电网现代化投资创纪录；许可改革是关键加速器",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-045",
+      "name": "VPP市场2026-2034预测",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "低",
+      "maturity": "市场增长",
+      "companies": [
+        "全行业"
+      ],
+      "description": "全球虚拟电厂市场2026年估值49.6亿美元，预计2034年达324.9亿美元，CAGR 26.49%",
+      "trend": "VPP市场高速增长；从概念到规模化部署",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://straitsresearch.com/report/virtual-power-plant-market",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-046",
+      "name": "DOE VPP项目计划",
+      "type": "政策/研发",
+      "efficiency": "N/A",
+      "cost": "政府资助",
+      "maturity": "推进中",
+      "companies": [
+        "DOE"
+      ],
+      "description": "美国能源部VPP项目：开发VPP建模和规划工具，支持示范项目，提供电网现代化指导",
+      "trend": "联邦政府推动VPP标准化和规模化；示范项目加速部署",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.energy.gov/edf/virtual-power-plants-projects",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-047",
+      "name": "RMI电网级VPP已到来",
+      "type": "行业分析",
+      "efficiency": "N/A",
+      "cost": "低",
+      "maturity": "商用扩张",
+      "companies": [
+        "RMI"
+      ],
+      "description": "RMI分析：电网级虚拟电厂已经到来，可替代新建发电容量，但需纳入公用事业规划",
+      "trend": "VPP从辅助到替代新建发电；公用事业公司需更新规划模型",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://rmi.org/grid-scale-virtual-power-plants-are-here-have-utilities-noticed",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-048",
+      "name": "Smart Grids USA 2026 VPP加速",
+      "type": "行业趋势",
+      "efficiency": "N/A",
+      "cost": "低",
+      "maturity": "商用扩张",
+      "companies": [
+        "全行业"
+      ],
+      "description": "Smart Grids USA 2026报告：美国各州加速虚拟电厂部署，通过电池/EV/智能设备提升电网可靠性",
+      "trend": "VPP成为电网可靠性核心工具；州级政策推动加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.usa.smart-grids-conference.com/news/americas-grid-finds-new-muscle-in-virtual-power-plants",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-049",
+      "name": "Tesla VPP社区能源网络",
+      "type": "商业模式",
+      "efficiency": "N/A",
+      "cost": "低",
+      "maturity": "商用",
+      "companies": [
+        "Tesla"
+      ],
+      "description": "Tesla VPP：社区电力用户网络化能源资源(太阳能/储能/EV)，集体参与电力市场调度",
+      "trend": "Tesla引领VPP商业化；Powerwall+EV成为VPP核心资产",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.tesla.com/learn/what-is-a-virtual-power-plant",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-050",
+      "name": "SolaX VPP智能电网解决方案",
+      "type": "技术方案",
+      "efficiency": "N/A",
+      "cost": "低",
+      "maturity": "商用",
+      "companies": [
+        "SolaX Power"
+      ],
+      "description": "SolaX VPP和智能电网解决方案：提升能源效率/稳定性/可再生能源集成",
+      "trend": "逆变器厂商集成VPP功能；储能+VPP一体化方案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.solaxpower.com/blogs/virtual-power-plant-vpp-and-smart-grid-powering-the-future-of-energy.html",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-052",
+      "name": "VPP市场2026-2034预测2.5B",
+      "type": "市场数据",
+      "capability": "GW级聚合",
+      "maturity": "市场增长",
+      "companies": [
+        "全行业"
+      ],
+      "description": "全球虚拟电厂市场2026年估值49.6亿美元，预计2034年达324.9亿美元，CAGR 26.49%",
+      "trend": "VPP市场高速增长；从概念到规模化部署",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-054",
+      "name": "美国2026年新增电力100%可再生能源",
+      "type": "市场数据",
+      "capability": "100%清洁新增",
+      "maturity": "行业里程碑",
+      "description": "EIA数据：2026年美国新增电力容量100%来自可再生能源，太阳能占51%，电池储能占26%",
+      "trend": "美国新增电力全面清洁化；太阳能+储能主导",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-055",
+      "name": "BDO 2026自然资源能源行业预测",
+      "type": "行业分析",
+      "capability": "全行业",
+      "maturity": "参考",
+      "description": "BDO 2026预测：2025年美国新增电力容量大部分来自可再生能源，2026年发展将进一步加速",
+      "trend": "可再生能源从增量到主导；行业整合加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.bdo.com/insights/natural-resources/2026-natural-resources-energy-industry-predictions",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-055",
+      "name": "2026年VPP必须规模化否则被淘汰",
+      "type": "行业趋势",
+      "capability": "GW级聚合",
+      "maturity": "关键转折",
+      "description": "2026年VPP必须规模化否则被淘汰：AI数据中心狂热正将公用事业焦点转向大规模灵活解决方案",
+      "trend": "VPP从试点到规模化；AI数据中心需求推动",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-056",
+      "name": "RMI VPP帮助美国赢得AI竞赛",
+      "type": "政策分析",
+      "capability": "满足十年电网需求",
+      "maturity": "战略建议",
+      "description": "RMI研究：未来十年几乎所有预测电网需求可通过快速/可负担/灵活解决方案如储能和VPP满足",
+      "trend": "VPP是AI时代电网解决方案；无需新建传统发电",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-057",
+      "name": "AI驱动VPP综合综述MDPI 2026",
+      "type": "学术综述",
+      "capability": "AI优化",
+      "maturity": "参考",
+      "description": "MDPI 2026综合综述AI驱动虚拟电厂：Siemens Grid Edge智能能源管理和VPP解决方案",
+      "trend": "AI+VPP深度融合；从概念到系统化解决方案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-058",
+      "name": "VPP USA 2026电网创新趋势",
+      "type": "行业会议",
+      "capability": "实时优化",
+      "maturity": "参考",
+      "description": "VPP USA 2026聚焦电网技术趋势：实时优化/智能电网/可持续能源管理",
+      "trend": "VPP从辅助到核心电网基础设施",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-059",
+      "name": "AI智能电网驱动2026能源转型",
+      "capability": "AI驱动",
+      "maturity": "转型期",
+      "type": "行业分析",
+      "description": "AI和智能电网驱动2026能源转型：智能电网技术架构从发电到用电全链条优化",
+      "trend": "AI+智能电网深度融合；能源转型加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-060",
+      "name": "抽水蓄能2026翻倍至16.5GW",
+      "type": "抽水蓄能",
+      "capacity": "16.5GW",
+      "cost": "N/A",
+      "maturity": "建设中",
+      "description": "Earth.Org: 全球抽水蓄能装机预计2026年翻倍至16.5GW，支撑系统灵活性",
+      "trend": "抽水蓄能翻倍增长；支撑电网灵活性",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://earth.org/energy-transition-where-are-we-headed-in-2026",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-061",
+      "name": "智能电网AI调度2026进展",
+      "type": "智能电网",
+      "capacity": "N/A",
+      "cost": "N/A",
+      "maturity": "部署中",
+      "description": "2026年智能电网AI调度技术进展：实时优化、需求响应、分布式资源管理",
+      "trend": "AI从辅助到核心电网调度；实时优化提高效率",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-062",
+      "name": "高压直流输电(HVDC)2026扩展",
+      "type": "输电技术",
+      "capacity": "N/A",
+      "cost": "高",
+      "maturity": "建设中",
+      "description": "2026年高压直流输电(HVDC)项目扩展：远距离大容量输电需求推动HVDC建设",
+      "trend": "HVDC从特例到常规；远距离可再生能源输送关键",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-063",
+      "name": "微电网2026离网与并网双模式",
+      "type": "微电网",
+      "capacity": "N/A",
+      "cost": "中",
+      "maturity": "商业化",
+      "description": "2026年微电网技术支持离网与并网双模式运行，提高供电韧性和可靠性",
+      "trend": "微电网从应急到常态；双模式提高韧性",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-064",
+      "name": "电网级储能调度优化2026",
+      "type": "储能调度",
+      "capacity": "N/A",
+      "cost": "N/A",
+      "maturity": "部署中",
+      "description": "2026年电网级储能调度优化：AI算法优化充放电策略，最大化储能经济价值",
+      "trend": "储能调度从规则到AI优化；经济价值最大化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-065",
+      "name": "OBBBA法案对可再生能源电网影响",
+      "type": "政策影响",
+      "capacity": "N/A",
+      "cost": "N/A",
+      "maturity": "政策",
+      "description": "One Big Beautiful Bill Act (OBBBA)对可再生能源项目设定建设截止期，影响电网规划",
+      "trend": "政策截止期驱动项目抢装；电网规划面临不确定性",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.youtube.com/watch?v=cTvBJPF7EYM",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-066",
+      "name": "需求响应2026规模化部署",
+      "type": "需求响应",
+      "capacity": "N/A",
+      "cost": "低",
+      "maturity": "规模化",
+      "description": "2026年需求响应规模化部署：智能电表、可中断负荷、价格信号驱动用电优化",
+      "trend": "需求响应从试点到规模；用户侧灵活性价值显现",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "GRID-067",
+      "name": "配电网数字化2026升级",
+      "type": "配电网",
+      "capacity": "N/A",
+      "cost": "中",
+      "maturity": "升级中",
+      "description": "2026年配电网数字化升级：传感器、通信、自动化技术提高配电网可见性和可控性",
+      "trend": "配电网从黑箱到透明；数字化提高运营效率",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    }
+  ]
+}

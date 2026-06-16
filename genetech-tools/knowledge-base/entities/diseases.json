@@ -1,0 +1,1487 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-05T14:17:33.931Z",
+  "description": "疾病实体库",
+  "entities": [
+    {
+      "id": "DIS-mpkp8lda-pl1t68",
+      "name": "Adenosine Deaminase Severe Combined Immunodeficiency (ADA-SCID)",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-qta6il",
+      "name": "Rheumatoid Arthritis",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-mmjh32",
+      "name": "Rheumatic Diseases",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-hu9f91",
+      "name": "Breast Cancer Triple Negative",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-irrv61",
+      "name": "Breast Cancer Stage II",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-7rm3a1",
+      "name": "Breast Cancer Stage III",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-xkliwx",
+      "name": "Breast Cancer Invasive",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-ti7mpm",
+      "name": "Diabetic Macular Edema",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-x6xvxa",
+      "name": "Diabetic Retinopathy",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-5es53b",
+      "name": "Squamous Cell Cancer of Head and Neck",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8lda-yaahi9",
+      "name": "Triple Negative Breast Cancer",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-0qxlby",
+      "name": "Epithelial Ovarian Cancer",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-hgeyoj",
+      "name": "Malignant Melanoma",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-2autlf",
+      "name": "Advanced Solid Tumors",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-0zllzx",
+      "name": "Ovarian Cancer",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-hvu9z1",
+      "name": "Prostate Cancer",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-vrypoa",
+      "name": "Pompe Disease (Late-onset)",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-6ucl2h",
+      "name": "Granuloma",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-zu0ei0",
+      "name": "Granulomatous Disease, Chronic",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-p6y77n",
+      "name": "Leukocyte Disease",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-0t7zkj",
+      "name": "Genetic Disease, X-Linked",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-219nn4",
+      "name": "Genetic Disease, Inborn",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-nl20ra",
+      "name": "Carcinoma, Non-Small-Cell Lung",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-l5t3vb",
+      "name": "Breast Cancer",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkp8ldb-xkai0j",
+      "name": "HER2-low Breast Cancer",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslv-38ohoi",
+      "name": "epilepsy",
+      "first_seen": "2026-05-25T04:23:06.067Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslv-xowagu",
+      "name": "SLC6A1-related neurodevelopmental disorder",
+      "first_seen": "2026-05-25T04:23:06.067Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 6,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslv-gqbjxv",
+      "name": "developmental and epileptic encephalopathy",
+      "first_seen": "2026-05-25T04:23:06.067Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 6,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-k9cuo3",
+      "name": "Danon disease",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-24slzw",
+      "name": "hypertrophic cardiomyopathy",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-3ghyot",
+      "name": "myopathy",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-yg0mjn",
+      "name": "intellectual disability",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-8jukr6",
+      "name": "retinopathy",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-7mvje5",
+      "name": "Fabry disease",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 8,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-rqtwdq",
+      "name": "PRKAG2",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpaslw-kh3vxf",
+      "name": "Pompe disease",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e2-or75fl",
+      "name": "oral lesions",
+      "first_seen": "2026-05-25T04:27:21.098Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e2-d7lf3z",
+      "name": "cold sores",
+      "first_seen": "2026-05-25T04:27:21.098Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e2-wocbhw",
+      "name": "oral Kaposi's sarcoma (KS)",
+      "first_seen": "2026-05-25T04:27:21.098Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e2-6a694g",
+      "name": "HIV-positive",
+      "first_seen": "2026-05-25T04:27:21.098Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-vszfmk",
+      "name": "lymphoid hematologic malignancies",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-savbcd",
+      "name": "diabetic wounds",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-6gcs1i",
+      "name": "chronic diabetic wounds",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-qyekfu",
+      "name": "cardiovascular diseases",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-4colse",
+      "name": "CVDs",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-ixdccm",
+      "name": "triple-negative breast cancer",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-0we8i9",
+      "name": "TNBC",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-vygf1z",
+      "name": "glioma",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e3-145gfy",
+      "name": "glioblastoma",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-gcei6n",
+      "name": "cancer",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 6,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-1u48k2",
+      "name": "Chronic granulomatous disease",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-vhlt11",
+      "name": "inborn error of immunity",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-5yr5pf",
+      "name": "invasive bacterial infections",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-vkn1h4",
+      "name": "fungal infections",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-cycg6s",
+      "name": "inflammatory complications",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-hqrtod",
+      "name": "lung adenocarcinoma",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-oxvia7",
+      "name": "respiratory infections",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-mis7p8",
+      "name": "ocular infections",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-mpwkw5",
+      "name": "urinary tract infections",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-h4xuw6",
+      "name": "gastrointestinal infections",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-et55vi",
+      "name": "Glycogen storage disease type 15",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-6pu28c",
+      "name": "cardiomyopathy",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-6x52o4",
+      "name": "congestive heart failure",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-nmzn5d",
+      "name": "Haemophilia",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-5ywn67",
+      "name": "Haemophilia A",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-mg8r96",
+      "name": "Haemophilia B",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-cole0k",
+      "name": "familial LPL deficiency",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-n28qo1",
+      "name": "chylomicronemia",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-cna1f3",
+      "name": "acute pancreatitis",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpg9e4-k9anwz",
+      "name": "hepatic steatosis",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyed-wfbhud",
+      "name": "immune-related adverse events",
+      "first_seen": "2026-05-25T04:32:33.445Z",
+      "last_updated": "2026-05-25T04:49:18.581Z",
+      "source_count": 3,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-ngq6ym",
+      "name": "intestinal injury",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:49:18.581Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-15ln2m",
+      "name": "Juvenile neuronal ceroid lipofuscinosis",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:32:33.446Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-loadne",
+      "name": "JNCL",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:32:33.446Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-ss0xv2",
+      "name": "Batten Disease",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:32:33.446Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-x08n0a",
+      "name": "Bladder Cancer",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-dome79",
+      "name": "Hb Bart's hydrops fetalis syndrome",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-6mzft9",
+      "name": "BHFS",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-8oc9nb",
+      "name": "α-thalassemia",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-0vlxf4",
+      "name": "β-thalassemia",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 6,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyee-n4xo8z",
+      "name": "HbH disease",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-9ijue6",
+      "name": "Duchenne Muscular Dystrophy",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-u2v51q",
+      "name": "Becker muscular dystrophy",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-t3lldi",
+      "name": "dystrophinopathies",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-wdqfwt",
+      "name": "GM1 gangliosidosis",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-1wmzzi",
+      "name": "lysosomal storage disorder",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-06m9j8",
+      "name": "genetic disorders",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 3,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-950mhl",
+      "name": "oncology",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-g0hpbi",
+      "name": "Alpha-1 antitrypsin deficiency",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-tilhp7",
+      "name": "AATD",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-jispj6",
+      "name": "lung disease",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-rnm78u",
+      "name": "liver disease",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpmyef-ahjg56",
+      "name": "serious paediatric diseases",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpvwp2-oue8u2",
+      "name": "blindness",
+      "first_seen": "2026-05-25T04:39:31.142Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpvwp2-1f5ehs",
+      "name": "sickle cell disease",
+      "first_seen": "2026-05-25T04:39:31.142Z",
+      "last_updated": "2026-05-25T06:26:07.843Z",
+      "source_count": 3,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpvwp2-devt82",
+      "name": "rare inherited eye",
+      "first_seen": "2026-05-25T04:39:31.142Z",
+      "last_updated": "2026-05-25T04:39:31.142Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpvwp3-u2p5k6",
+      "name": "ALS",
+      "first_seen": "2026-05-25T04:39:31.143Z",
+      "last_updated": "2026-05-25T06:26:07.843Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpvwp3-m347ut",
+      "name": "inherited blindness",
+      "first_seen": "2026-05-25T04:39:31.143Z",
+      "last_updated": "2026-05-25T06:26:07.843Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpvwp3-hm5tew",
+      "name": "Wiskott-Aldrich syndrome",
+      "first_seen": "2026-05-25T04:39:31.143Z",
+      "last_updated": "2026-05-25T06:26:07.843Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkpvwp3-dbdy30",
+      "name": "genetic disease",
+      "first_seen": "2026-05-25T04:39:31.143Z",
+      "last_updated": "2026-05-25T04:39:31.143Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzr-uq02s9",
+      "name": "irAEs",
+      "first_seen": "2026-05-25T04:46:27.543Z",
+      "last_updated": "2026-05-25T04:49:18.581Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzs-s0df3a",
+      "name": "GSD15",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzt-nt6cml",
+      "name": "Osteoporosis",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzt-7mczrn",
+      "name": "postmenopausal osteoporosis (PMOP)",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzt-wkitvl",
+      "name": "Blue cone monochromacy",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzt-ku2vus",
+      "name": "BCM",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzt-t25igc",
+      "name": "spinal muscular atrophy (SMA)",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzt-qsmhx3",
+      "name": "Friedreich's Ataxia",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq4tzt-8iljvh",
+      "name": "FA",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq8hyu-bnzkxy",
+      "name": "metabolic",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq8hyu-nzsdwl",
+      "name": "muscle disease",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq8hyu-qqi1di",
+      "name": "Parkinson's disease",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkq8hyu-uh5g5q",
+      "name": "parkinsonism",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9l-e5vdcr",
+      "name": "breast cancer",
+      "first_seen": "2026-05-25T04:54:17.049Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-vykga1",
+      "name": "inherited disorders",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-l2nrv8",
+      "name": "Gaucher disease",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-cl07hk",
+      "name": "Parkinson disease",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-81v1ox",
+      "name": "GBA1-related Parkinson disease",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-uk6uiv",
+      "name": "neuronopathic GD",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-w7mvvk",
+      "name": "neurodegenerative diseases",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-4gsihs",
+      "name": "selective neurodegeneration",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-rkmq50",
+      "name": "Parkinson's Disease (PD)",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-crix9y",
+      "name": "neurological diseases",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-nwh7fe",
+      "name": "muscular dystrophy",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-ji6kam",
+      "name": "white spot disease",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-8st8x0",
+      "name": "WSD",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-7hnov8",
+      "name": "white spot syndrome virus",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-4ypnv0",
+      "name": "WSSV",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-xq0mfp",
+      "name": "Glioblastoma",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpkqew9m-biindc",
+      "name": "GBM",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f5-49cfv6",
+      "name": "hemoglobinopathies",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f5-ee4ksm",
+      "name": "rod-cone dystrophies",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f5-cua3gj",
+      "name": "centripetal retinal degeneration",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f5-hrfzcg",
+      "name": "inherited retinal degenerations",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f6-o8e6d1",
+      "name": "rare inherited eye disease",
+      "first_seen": "2026-05-25T06:26:07.842Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f6-av34ob",
+      "name": "autoimmune conditions",
+      "first_seen": "2026-05-25T06:26:07.842Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f6-bxem7b",
+      "name": "rare diseases",
+      "first_seen": "2026-05-25T06:26:07.842Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f6-2f2yp3",
+      "name": "hereditary retinal dystrophy",
+      "first_seen": "2026-05-25T06:26:07.842Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f7-ypj5ez",
+      "name": "beta-thalassemia",
+      "first_seen": "2026-05-25T06:26:07.843Z",
+      "last_updated": "2026-05-25T06:26:07.843Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-mpktp0f7-1m167n",
+      "name": "frontotemporal dementia",
+      "first_seen": "2026-05-25T06:26:07.843Z",
+      "last_updated": "2026-05-25T06:26:07.843Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "DIS-glh55ppj2i",
+      "name": "Thymidine kinase 2 deficiency",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Very rare mitochondrial disease, first drug approved 2025"
+    },
+    {
+      "id": "DIS-e0lzj0n52f",
+      "name": "Rett syndrome",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Neurodevelopmental disorder caused by MECP2 mutations"
+    },
+    {
+      "id": "DIS-30fzbdqafz",
+      "name": "Cystic fibrosis",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Genetic disorder affecting CFTR, active gene therapy research"
+    },
+    {
+      "id": "DIS-96j2zl8h2r",
+      "name": "Huntington disease",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Neurodegenerative disorder caused by HTT CAG repeat expansion"
+    },
+    {
+      "id": "DIS-6hsnfw2m2p",
+      "name": "Hypertriglyceridemia",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Target of CRISPR Therapeutics CTX310 editing ANGPTL3"
+    },
+    {
+      "id": "DIS-zysz5zaap1",
+      "name": "Hereditary transthyretin amyloidosis",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Target of in vivo CRISPR editing by Intellia/Verve"
+    },
+    {
+      "id": "DIS-iisqqqaub4",
+      "name": "Metachromatic leukodystrophy",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Lysosomal storage disorder, gene therapy in clinical trials"
+    },
+    {
+      "id": "DIS-31emls6skc",
+      "name": "Cerebral adrenoleukodystrophy",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "X-linked peroxisomal disorder, gene therapy approved"
+    },
+    {
+      "id": "DIS-lgixfmygvn",
+      "name": "Hemophilia B",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Factor IX deficiency, multiple gene therapy programs in trials"
+    },
+    {
+      "id": "DIS-rk0r4kdqnm",
+      "name": "Leber congenital amaurosis",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Inherited retinal dystrophy, treated by Luxturna gene therapy"
+    },
+    {
+      "id": "DIS-nf2k8d1a",
+      "name": "p47phox-deficient chronic granulomatous disease",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "p47-CGD treated by PM359 prime editing, first-ever clinical prime editing results"
+    },
+    {
+      "id": "DIS-nf2k8d2b",
+      "name": "urea cycle disorders",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Group of 7 genes targeted by CHOP/Penn/Broad customizable in vivo prime editing platform"
+    },
+    {
+      "id": "DIS-nf2k8d3c",
+      "name": "heterozygous familial hypercholesterolemia",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "HeFH treated by YOLT-101 in vivo base editing (YolTech), 74.4% PCSK9 reduction"
+    },
+    {
+      "id": "DIS-nf2k8d4d",
+      "name": "familial hypercholesterolemia",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Target of Verve VERVE-101 base editing of PCSK9, Phase Ib HEART-1 trial"
+    },
+    {
+      "id": "DIS-nf2k8d5e",
+      "name": "cardiovascular disease",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Target of CRISPR Therapeutics CTX112 editing PCSK9 for CVD prevention"
+    },
+    {
+      "id": "DIS-nf2k8d6f",
+      "name": "OTOF-related hearing loss",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Treated by FDA-approved Otarmeni OTOF gene therapy (2025)"
+    },
+    {
+      "id": "DIS-nf2k8d7g",
+      "name": "spinal muscular atrophy",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "SMA treated by Zolgensma gene therapy, SMN1 gene replacement"
+    },
+    {
+      "id": "DIS-gt53100",
+      "name": "Stargardt disease",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Inherited retinal disease caused by ABCA4 mutations, gene therapy in development"
+    },
+    {
+      "id": "DIS-gt53101",
+      "name": "Usher syndrome type 1B",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Genetic disorder causing deafness and progressive vision loss, MYO7A gene therapy target"
+    },
+    {
+      "id": "DIS-gt53102",
+      "name": "multiple myeloma",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Hematologic malignancy, CRISPR allogeneic CAR-T (CTX112) targeting BCMA and PD-1"
+    },
+    {
+      "id": "DIS-gt53103",
+      "name": "B-cell lymphoma",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Hematologic malignancy, CRISPR allogeneic CAR-T therapy target"
+    },
+    {
+      "id": "DIS-gt53104",
+      "name": "ultra-rare diseases",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "FDA 2026 framework for accelerating individualized gene therapy development"
+    },
+    {
+      "id": "DIS-0601-was",
+      "name": "Wiskott-Aldrich syndrome",
+      "first_seen": "2026-06-01T13:50:39.243Z",
+      "last_updated": "2026-06-01T13:50:39.243Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "X-linked primary immunodeficiency, first gene therapy approved by FDA 2025-2026"
+    },
+    {
+      "id": "DIS-0601-bcell-malignancies",
+      "name": "B-cell malignancies",
+      "first_seen": "2026-06-01T13:50:39.243Z",
+      "last_updated": "2026-06-01T13:50:39.243Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Target of in vivo CAR gene delivery approaches in clinical development"
+    },
+    {
+      "id": "DIS-0601-attr-wildtype",
+      "name": "Wild-type ATTR amyloidosis",
+      "first_seen": "2026-06-01T13:50:39.243Z",
+      "last_updated": "2026-06-01T13:50:39.243Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Non-hereditary form of transthyretin amyloidosis, emerging CRISPR therapy target"
+    },
+    {
+      "id": "DIS-0602-tk2d",
+      "name": "Thymidine kinase 2 deficiency",
+      "first_seen": "2026-06-02T13:52:58.820Z",
+      "last_updated": "2026-06-02T13:52:58.820Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Very rare mitochondrial disease, first drug (Kygevvi) approved 2025"
+    },
+    {
+      "id": "DIS-0602-cps1d",
+      "name": "CPS1 deficiency",
+      "first_seen": "2026-06-02T13:52:58.820Z",
+      "last_updated": "2026-06-02T13:52:58.820Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Ultra-rare urea cycle disorder, treated by personalized CRISPR base editing (Baby KJ)"
+    },
+    {
+      "id": "DIS-0602-dfnb9",
+      "name": "DFNB9 autosomal recessive deafness",
+      "first_seen": "2026-06-02T13:52:58.820Z",
+      "last_updated": "2026-06-02T13:52:58.820Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "OTOF-related hearing loss, treated by FDA-approved Otarmeni gene therapy"
+    },
+    {
+      "id": "DIS-0603-hefh-update",
+      "name": "Heterozygous familial hypercholesterolemia (HeFH)",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "HeFH treated by multiple in vivo gene editing approaches: YOLT-101 (base editing), VERVE-101, and Editas EDIT-401 (>90% LDL-C reduction preclinical)"
+    },
+    {
+      "id": "DIS-0603-lca10",
+      "name": "Leber congenital amaurosis type 10",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Inherited retinal dystrophy caused by CEP290 mutations, antisense and gene therapy approaches in clinical development"
+    },
+    {
+      "id": "DIS-0603-scd-update",
+      "name": "Sickle cell disease (2026 update)",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "CASGEVY gaining commercial momentum in 2026 with expanded manufacturing capacity and new treatment centers"
+    },
+    {
+      "id": "DIS-0603-attr-update",
+      "name": "ATTR amyloidosis (2026 update)",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "NTLA-2001 in vivo CRISPR therapy continues to show durable >90% TTR reduction; Nature named this a 2025 Breakthrough of the Year"
+    },
+    {
+      "id": "DIS-0604-head-neck-cancer",
+      "name": "Head and neck squamous cell carcinoma",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "CRISPR gene editing restores chemotherapy sensitivity in head and neck cancer (2026)"
+    },
+    {
+      "id": "DIS-0604-xscid",
+      "name": "X-linked severe combined immunodeficiency",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "IL2RG gene therapy target, Strimvelis approved in EU for ADA-SCID and X-SCID"
+    },
+    {
+      "id": "DIS-0604-arrhythmogenic-cm",
+      "name": "Arrhythmogenic cardiomyopathy",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Emerging CRISPR gene editing target for cardiac genetic disorders"
+    },
+    {
+      "id": "DIS-0604-sickle-cell-2026",
+      "name": "Sickle cell disease (gene editing)",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Gene editing therapy shows success against severe sickle cell disease in 2026 clinical trial"
+    },
+    {
+      "id": "DIS-0604-viral-infection-crispr",
+      "name": "Viral infections (CRISPR-destructive)",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "New CRISPR variant destroys virus-infected cells rather than editing genes, potential for cancer and viral therapy"
+    },
+    {
+      "id": "DIS-0605-pediatric-solid-tumor",
+      "name": "pediatric solid tumors",
+      "first_seen": "2026-06-05T14:17:33.931Z",
+      "last_updated": "2026-06-05T14:17:33.931Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "First gene therapy (Encelto) approved for pediatric solid tumors in 2025"
+    },
+    {
+      "id": "DIS-0605-tk2-deficiency",
+      "name": "thymidine kinase 2 deficiency",
+      "first_seen": "2026-06-05T14:17:33.931Z",
+      "last_updated": "2026-06-05T14:17:33.931Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Very rare mitochondrial disease, first drug (Kygevvi) approved by FDA in 2025"
+    },
+    {
+      "id": "DIS-0605-mld",
+      "name": "metachromatic leukodystrophy",
+      "first_seen": "2026-06-05T14:17:33.931Z",
+      "last_updated": "2026-06-05T14:17:33.931Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Rare metabolic disease treated by LENMELDY one-time gene therapy using lentiviral vector"
+    }
+  ]
+}

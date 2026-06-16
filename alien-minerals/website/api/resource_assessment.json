@@ -1,0 +1,79 @@
+[
+  {
+    "id": "RASS-001",
+    "name": "Lunar South Pole Ice Assessment",
+    "body": "Moon",
+    "resource": "Water ice",
+    "assessment_method": "LCROSS impact, LRO LEND, Chandrayaan-1 M³, Mini-SAR",
+    "confidence": "High - confirmed presence; quantity estimates vary ±50%",
+    "estimated_value": "Enabling resource for lunar and cislunar operations",
+    "description": "Multiple orbital and impact missions have confirmed water ice in PSR craters. LCROSS detected ~5.6% water by mass in Cabeus ejecta. LRO data suggests ice deposits in multiple south pole craters. Artemis III will provide ground truth."
+  },
+  {
+    "id": "RASS-002",
+    "name": "16 Psyche Metal Assessment",
+    "body": "16 Psyche",
+    "resource": "Iron-nickel-platinum group metals",
+    "assessment_method": "Ground-based spectroscopy, radar, Hubble UV observations",
+    "confidence": "Medium - metal surface confirmed; interior composition uncertain until Psyche mission arrives",
+    "estimated_value": "Potentially largest metal resource in solar system",
+    "description": "Spectroscopic and radar data strongly suggest a metallic surface composition. However, the interior structure (solid metal vs. rubble pile with metal fragments) remains unknown. The NASA Psyche mission (arrival 2029) will provide definitive composition data."
+  },
+  {
+    "id": "RASS-003",
+    "name": "Bennu/Ryugu Water Assessment",
+    "body": "Bennu, Ryugu",
+    "resource": "Hydrated minerals (bound water)",
+    "assessment_method": "Sample return analysis (OSIRIS-REx, Hayabusa2), orbital spectroscopy",
+    "confidence": "Very High - direct sample analysis confirms hydrated minerals",
+    "estimated_value": "5-10% water by mass extractable at moderate temperatures",
+    "description": "Direct sample analysis from both missions confirmed phyllosilicate minerals containing structurally bound water. This represents a validated water resource that can be extracted by heating to 300-800°C."
+  },
+  {
+    "id": "RASS-004",
+    "name": "Lunar KREEP REE Assessment",
+    "body": "Moon",
+    "resource": "Rare Earth Elements",
+    "assessment_method": "Apollo sample analysis, orbital gamma-ray spectroscopy (Lunar Prospector)",
+    "confidence": "Medium - REE enrichment confirmed in KREEP terrains; economic viability uncertain",
+    "estimated_value": "Significant but lower grade than terrestrial deposits",
+    "description": "Apollo samples from KREEP-rich regions show elevated REE concentrations. Lunar Prospector gamma-ray data mapped thorium (a KREEP proxy) distribution globally. However, detailed REE distribution and extractability remain poorly characterized."
+  },
+  {
+    "id": "RASS-005",
+    "name": "Mars Subsurface Ice Assessment",
+    "body": "Mars",
+    "resource": "Water ice",
+    "assessment_method": "MRO SHARAD radar, Mars Odyssey neutron spectrometer, HiRISE imagery",
+    "confidence": "High - ice confirmed at multiple mid-latitude locations within 1-2m of surface",
+    "estimated_value": "Essential for human missions; millions of km³ total",
+    "description": "MRO discovered extensive subsurface ice at mid-latitudes, with pure ice exposed at eroding scarps. This ice is accessible with simple excavation equipment and represents the key resource for Mars ISRU."
+  },
+  {
+    "id": "RA-004",
+    "name": "Asteroid Mining Economic Viability 2025",
+    "assessment_type": "Economic",
+    "description": "Asteroid mining market valued at $2.05B in 2025, projected to reach $5.42B by 2035 at 10.2% CAGR. Key drivers: PGM demand, water for space propellant, critical mineral supply chain diversification.",
+    "key_metrics": "Market CAGR 10.2%; AstroForge WEF Technology Pioneer; Vestri first private asteroid mission",
+    "risk_level": "High - technology risk, regulatory uncertainty, capital intensity",
+    "timeline": "2025-2035 commercial demonstration phase"
+  },
+  {
+    "id": "RA-005",
+    "name": "Lunar ISRU Readiness Assessment 2025",
+    "assessment_type": "Technology readiness",
+    "description": "Lunar oxygen extraction at TRL 4-6; lunar water extraction at TRL 3-4. 18 months of ISRU hardware on lunar surface has changed the conversation. Fission surface power (40-100 kW) advancing for year-round operations.",
+    "key_metrics": "Lunar oxygen: TRL 4-6; Lunar water: TRL 3-4; ISRU market: $2.18B (2025)",
+    "risk_level": "Medium - technology maturing; water extraction still challenging",
+    "timeline": "2025-2030 initial ISRU operations on Moon"
+  },
+  {
+    "id": "RA-006",
+    "name": "Deep-Sea Mining Regulatory Status 2025-2026",
+    "assessment_type": "Regulatory",
+    "description": "ISA negotiating exploitation regulations for international waters. 31 exploration contracts issued. 2025 deadline for framework extended. Environmental concerns vs. critical mineral needs driving debate.",
+    "key_metrics": "31 exploration contracts; 0 exploitation contracts; regulations pending",
+    "risk_level": "Very High - regulatory uncertainty; environmental opposition; legal challenges",
+    "timeline": "2025-2027 potential exploitation regulations; 2028+ earliest commercial mining"
+  }
+]

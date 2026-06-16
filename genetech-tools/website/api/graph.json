@@ -1,0 +1,1953 @@
+{
+  "nodes": [
+    {
+      "id": "CR-mpkpg9e3-6ad71j",
+      "name": "CR-mpkpg9e3-6ad71j",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-mpkpg9e3-6ad71j.html"
+    },
+    {
+      "id": "CR-mpkpg9e4-mmdrqv",
+      "name": "CR-mpkpg9e4-mmdrqv",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-mpkpg9e4-mmdrqv.html"
+    },
+    {
+      "id": "CR-mpkpmyef-os0rvq",
+      "name": "CR-mpkpmyef-os0rvq",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-mpkpmyef-os0rvq.html"
+    },
+    {
+      "id": "CR-mpkqew9m-9xqkdm",
+      "name": "CR-mpkqew9m-9xqkdm",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-mpkqew9m-9xqkdm.html"
+    },
+    {
+      "id": "CR-mpkqew9m-5s6sfl",
+      "name": "CR-mpkqew9m-5s6sfl",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-mpkqew9m-5s6sfl.html"
+    },
+    {
+      "id": "CR-mpkqew9m-kfmtle",
+      "name": "CR-mpkqew9m-kfmtle",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-mpkqew9m-kfmtle.html"
+    },
+    {
+      "id": "CR-isvfvntxfm",
+      "name": "CR-isvfvntxfm",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-isvfvntxfm.html"
+    },
+    {
+      "id": "CR-tgida5ygo1",
+      "name": "CR-tgida5ygo1",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-tgida5ygo1.html"
+    },
+    {
+      "id": "CR-pucvb2b02n",
+      "name": "CR-pucvb2b02n",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-pucvb2b02n.html"
+    },
+    {
+      "id": "CR-ei0cu60kl5",
+      "name": "CR-ei0cu60kl5",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-ei0cu60kl5.html"
+    },
+    {
+      "id": "CR-yolt101-base-edit",
+      "name": "CR-yolt101-base-edit",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-yolt101-base-edit.html"
+    },
+    {
+      "id": "CR-pm359-prime-edit",
+      "name": "CR-pm359-prime-edit",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-pm359-prime-edit.html"
+    },
+    {
+      "id": "CR-chop-prime-edit-ucd",
+      "name": "CR-chop-prime-edit-ucd",
+      "category": "crispr_applications",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/cr-chop-prime-edit-ucd.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-pl1t68",
+      "name": "Adenosine Deaminase Severe Combined Immunodeficiency (ADA-SCID)",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-pl1t68.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-qta6il",
+      "name": "Rheumatoid Arthritis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-qta6il.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-mmjh32",
+      "name": "Rheumatic Diseases",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-mmjh32.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-hu9f91",
+      "name": "Breast Cancer Triple Negative",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-hu9f91.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-irrv61",
+      "name": "Breast Cancer Stage II",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-irrv61.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-7rm3a1",
+      "name": "Breast Cancer Stage III",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-7rm3a1.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-xkliwx",
+      "name": "Breast Cancer Invasive",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-xkliwx.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-ti7mpm",
+      "name": "Diabetic Macular Edema",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-ti7mpm.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-x6xvxa",
+      "name": "Diabetic Retinopathy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-x6xvxa.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-5es53b",
+      "name": "Squamous Cell Cancer of Head and Neck",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-5es53b.html"
+    },
+    {
+      "id": "DIS-mpkp8lda-yaahi9",
+      "name": "Triple Negative Breast Cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8lda-yaahi9.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-0qxlby",
+      "name": "Epithelial Ovarian Cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-0qxlby.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-hgeyoj",
+      "name": "Malignant Melanoma",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-hgeyoj.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-2autlf",
+      "name": "Advanced Solid Tumors",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-2autlf.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-0zllzx",
+      "name": "Ovarian Cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-0zllzx.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-hvu9z1",
+      "name": "Prostate Cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-hvu9z1.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-vrypoa",
+      "name": "Pompe Disease (Late-onset)",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-vrypoa.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-6ucl2h",
+      "name": "Granuloma",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-6ucl2h.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-zu0ei0",
+      "name": "Granulomatous Disease, Chronic",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-zu0ei0.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-p6y77n",
+      "name": "Leukocyte Disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-p6y77n.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-0t7zkj",
+      "name": "Genetic Disease, X-Linked",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-0t7zkj.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-219nn4",
+      "name": "Genetic Disease, Inborn",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-219nn4.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-nl20ra",
+      "name": "Carcinoma, Non-Small-Cell Lung",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-nl20ra.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-l5t3vb",
+      "name": "Breast Cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-l5t3vb.html"
+    },
+    {
+      "id": "DIS-mpkp8ldb-xkai0j",
+      "name": "HER2-low Breast Cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkp8ldb-xkai0j.html"
+    },
+    {
+      "id": "DIS-mpkpaslv-38ohoi",
+      "name": "epilepsy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslv-38ohoi.html"
+    },
+    {
+      "id": "DIS-mpkpaslv-xowagu",
+      "name": "SLC6A1-related neurodevelopmental disorder",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslv-xowagu.html"
+    },
+    {
+      "id": "DIS-mpkpaslv-gqbjxv",
+      "name": "developmental and epileptic encephalopathy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslv-gqbjxv.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-k9cuo3",
+      "name": "Danon disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-k9cuo3.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-24slzw",
+      "name": "hypertrophic cardiomyopathy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-24slzw.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-3ghyot",
+      "name": "myopathy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-3ghyot.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-yg0mjn",
+      "name": "intellectual disability",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-yg0mjn.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-8jukr6",
+      "name": "retinopathy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-8jukr6.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-7mvje5",
+      "name": "Fabry disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-7mvje5.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-rqtwdq",
+      "name": "PRKAG2",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-rqtwdq.html"
+    },
+    {
+      "id": "DIS-mpkpaslw-kh3vxf",
+      "name": "Pompe disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpaslw-kh3vxf.html"
+    },
+    {
+      "id": "DIS-mpkpg9e2-or75fl",
+      "name": "oral lesions",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e2-or75fl.html"
+    },
+    {
+      "id": "DIS-mpkpg9e2-d7lf3z",
+      "name": "cold sores",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e2-d7lf3z.html"
+    },
+    {
+      "id": "DIS-mpkpg9e2-wocbhw",
+      "name": "oral Kaposi's sarcoma (KS)",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e2-wocbhw.html"
+    },
+    {
+      "id": "DIS-mpkpg9e2-6a694g",
+      "name": "HIV-positive",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e2-6a694g.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-vszfmk",
+      "name": "lymphoid hematologic malignancies",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-vszfmk.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-savbcd",
+      "name": "diabetic wounds",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-savbcd.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-6gcs1i",
+      "name": "chronic diabetic wounds",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-6gcs1i.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-qyekfu",
+      "name": "cardiovascular diseases",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-qyekfu.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-4colse",
+      "name": "CVDs",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-4colse.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-ixdccm",
+      "name": "triple-negative breast cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-ixdccm.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-0we8i9",
+      "name": "TNBC",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-0we8i9.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-vygf1z",
+      "name": "glioma",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-vygf1z.html"
+    },
+    {
+      "id": "DIS-mpkpg9e3-145gfy",
+      "name": "glioblastoma",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e3-145gfy.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-gcei6n",
+      "name": "cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-gcei6n.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-1u48k2",
+      "name": "Chronic granulomatous disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-1u48k2.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-vhlt11",
+      "name": "inborn error of immunity",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-vhlt11.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-5yr5pf",
+      "name": "invasive bacterial infections",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-5yr5pf.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-vkn1h4",
+      "name": "fungal infections",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-vkn1h4.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-cycg6s",
+      "name": "inflammatory complications",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-cycg6s.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-hqrtod",
+      "name": "lung adenocarcinoma",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-hqrtod.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-oxvia7",
+      "name": "respiratory infections",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-oxvia7.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-mis7p8",
+      "name": "ocular infections",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-mis7p8.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-mpwkw5",
+      "name": "urinary tract infections",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-mpwkw5.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-h4xuw6",
+      "name": "gastrointestinal infections",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-h4xuw6.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-et55vi",
+      "name": "Glycogen storage disease type 15",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-et55vi.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-6pu28c",
+      "name": "cardiomyopathy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-6pu28c.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-6x52o4",
+      "name": "congestive heart failure",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-6x52o4.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-nmzn5d",
+      "name": "Haemophilia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-nmzn5d.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-5ywn67",
+      "name": "Haemophilia A",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-5ywn67.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-mg8r96",
+      "name": "Haemophilia B",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-mg8r96.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-cole0k",
+      "name": "familial LPL deficiency",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-cole0k.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-n28qo1",
+      "name": "chylomicronemia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-n28qo1.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-cna1f3",
+      "name": "acute pancreatitis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-cna1f3.html"
+    },
+    {
+      "id": "DIS-mpkpg9e4-k9anwz",
+      "name": "hepatic steatosis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpg9e4-k9anwz.html"
+    },
+    {
+      "id": "DIS-mpkpmyed-wfbhud",
+      "name": "immune-related adverse events",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyed-wfbhud.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-ngq6ym",
+      "name": "intestinal injury",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-ngq6ym.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-15ln2m",
+      "name": "Juvenile neuronal ceroid lipofuscinosis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-15ln2m.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-loadne",
+      "name": "JNCL",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-loadne.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-ss0xv2",
+      "name": "Batten Disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-ss0xv2.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-x08n0a",
+      "name": "Bladder Cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-x08n0a.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-dome79",
+      "name": "Hb Bart's hydrops fetalis syndrome",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-dome79.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-6mzft9",
+      "name": "BHFS",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-6mzft9.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-8oc9nb",
+      "name": "α-thalassemia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-8oc9nb.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-0vlxf4",
+      "name": "β-thalassemia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-0vlxf4.html"
+    },
+    {
+      "id": "DIS-mpkpmyee-n4xo8z",
+      "name": "HbH disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyee-n4xo8z.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-9ijue6",
+      "name": "Duchenne Muscular Dystrophy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-9ijue6.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-u2v51q",
+      "name": "Becker muscular dystrophy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-u2v51q.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-t3lldi",
+      "name": "dystrophinopathies",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-t3lldi.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-wdqfwt",
+      "name": "GM1 gangliosidosis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-wdqfwt.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-1wmzzi",
+      "name": "lysosomal storage disorder",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-1wmzzi.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-06m9j8",
+      "name": "genetic disorders",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-06m9j8.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-950mhl",
+      "name": "oncology",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-950mhl.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-g0hpbi",
+      "name": "Alpha-1 antitrypsin deficiency",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-g0hpbi.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-tilhp7",
+      "name": "AATD",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-tilhp7.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-jispj6",
+      "name": "lung disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-jispj6.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-rnm78u",
+      "name": "liver disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-rnm78u.html"
+    },
+    {
+      "id": "DIS-mpkpmyef-ahjg56",
+      "name": "serious paediatric diseases",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpmyef-ahjg56.html"
+    },
+    {
+      "id": "DIS-mpkpvwp2-oue8u2",
+      "name": "blindness",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpvwp2-oue8u2.html"
+    },
+    {
+      "id": "DIS-mpkpvwp2-1f5ehs",
+      "name": "sickle cell disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpvwp2-1f5ehs.html"
+    },
+    {
+      "id": "DIS-mpkpvwp2-devt82",
+      "name": "rare inherited eye",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpvwp2-devt82.html"
+    },
+    {
+      "id": "DIS-mpkpvwp3-u2p5k6",
+      "name": "ALS",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpvwp3-u2p5k6.html"
+    },
+    {
+      "id": "DIS-mpkpvwp3-m347ut",
+      "name": "inherited blindness",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpvwp3-m347ut.html"
+    },
+    {
+      "id": "DIS-mpkpvwp3-hm5tew",
+      "name": "Wiskott-Aldrich syndrome",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpvwp3-hm5tew.html"
+    },
+    {
+      "id": "DIS-mpkpvwp3-dbdy30",
+      "name": "genetic disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkpvwp3-dbdy30.html"
+    },
+    {
+      "id": "DIS-mpkq4tzr-uq02s9",
+      "name": "irAEs",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzr-uq02s9.html"
+    },
+    {
+      "id": "DIS-mpkq4tzs-s0df3a",
+      "name": "GSD15",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzs-s0df3a.html"
+    },
+    {
+      "id": "DIS-mpkq4tzt-nt6cml",
+      "name": "Osteoporosis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzt-nt6cml.html"
+    },
+    {
+      "id": "DIS-mpkq4tzt-7mczrn",
+      "name": "postmenopausal osteoporosis (PMOP)",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzt-7mczrn.html"
+    },
+    {
+      "id": "DIS-mpkq4tzt-wkitvl",
+      "name": "Blue cone monochromacy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzt-wkitvl.html"
+    },
+    {
+      "id": "DIS-mpkq4tzt-ku2vus",
+      "name": "BCM",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzt-ku2vus.html"
+    },
+    {
+      "id": "DIS-mpkq4tzt-t25igc",
+      "name": "spinal muscular atrophy (SMA)",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzt-t25igc.html"
+    },
+    {
+      "id": "DIS-mpkq4tzt-qsmhx3",
+      "name": "Friedreich's Ataxia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzt-qsmhx3.html"
+    },
+    {
+      "id": "DIS-mpkq4tzt-8iljvh",
+      "name": "FA",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq4tzt-8iljvh.html"
+    },
+    {
+      "id": "DIS-mpkq8hyu-bnzkxy",
+      "name": "metabolic",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq8hyu-bnzkxy.html"
+    },
+    {
+      "id": "DIS-mpkq8hyu-nzsdwl",
+      "name": "muscle disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq8hyu-nzsdwl.html"
+    },
+    {
+      "id": "DIS-mpkq8hyu-qqi1di",
+      "name": "Parkinson's disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq8hyu-qqi1di.html"
+    },
+    {
+      "id": "DIS-mpkq8hyu-uh5g5q",
+      "name": "parkinsonism",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkq8hyu-uh5g5q.html"
+    },
+    {
+      "id": "DIS-mpkqew9l-e5vdcr",
+      "name": "breast cancer",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9l-e5vdcr.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-vykga1",
+      "name": "inherited disorders",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-vykga1.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-l2nrv8",
+      "name": "Gaucher disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-l2nrv8.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-cl07hk",
+      "name": "Parkinson disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-cl07hk.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-81v1ox",
+      "name": "GBA1-related Parkinson disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-81v1ox.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-uk6uiv",
+      "name": "neuronopathic GD",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-uk6uiv.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-w7mvvk",
+      "name": "neurodegenerative diseases",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-w7mvvk.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-4gsihs",
+      "name": "selective neurodegeneration",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-4gsihs.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-rkmq50",
+      "name": "Parkinson's Disease (PD)",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-rkmq50.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-crix9y",
+      "name": "neurological diseases",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-crix9y.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-nwh7fe",
+      "name": "muscular dystrophy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-nwh7fe.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-ji6kam",
+      "name": "white spot disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-ji6kam.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-8st8x0",
+      "name": "WSD",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-8st8x0.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-7hnov8",
+      "name": "white spot syndrome virus",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-7hnov8.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-4ypnv0",
+      "name": "WSSV",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-4ypnv0.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-xq0mfp",
+      "name": "Glioblastoma",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-xq0mfp.html"
+    },
+    {
+      "id": "DIS-mpkqew9m-biindc",
+      "name": "GBM",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpkqew9m-biindc.html"
+    },
+    {
+      "id": "DIS-mpktp0f5-49cfv6",
+      "name": "hemoglobinopathies",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f5-49cfv6.html"
+    },
+    {
+      "id": "DIS-mpktp0f5-ee4ksm",
+      "name": "rod-cone dystrophies",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f5-ee4ksm.html"
+    },
+    {
+      "id": "DIS-mpktp0f5-cua3gj",
+      "name": "centripetal retinal degeneration",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f5-cua3gj.html"
+    },
+    {
+      "id": "DIS-mpktp0f5-hrfzcg",
+      "name": "inherited retinal degenerations",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f5-hrfzcg.html"
+    },
+    {
+      "id": "DIS-mpktp0f6-o8e6d1",
+      "name": "rare inherited eye disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f6-o8e6d1.html"
+    },
+    {
+      "id": "DIS-mpktp0f6-av34ob",
+      "name": "autoimmune conditions",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f6-av34ob.html"
+    },
+    {
+      "id": "DIS-mpktp0f6-bxem7b",
+      "name": "rare diseases",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f6-bxem7b.html"
+    },
+    {
+      "id": "DIS-mpktp0f6-2f2yp3",
+      "name": "hereditary retinal dystrophy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f6-2f2yp3.html"
+    },
+    {
+      "id": "DIS-mpktp0f7-ypj5ez",
+      "name": "beta-thalassemia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f7-ypj5ez.html"
+    },
+    {
+      "id": "DIS-mpktp0f7-1m167n",
+      "name": "frontotemporal dementia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-mpktp0f7-1m167n.html"
+    },
+    {
+      "id": "DIS-glh55ppj2i",
+      "name": "Thymidine kinase 2 deficiency",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-glh55ppj2i.html"
+    },
+    {
+      "id": "DIS-e0lzj0n52f",
+      "name": "Rett syndrome",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-e0lzj0n52f.html"
+    },
+    {
+      "id": "DIS-30fzbdqafz",
+      "name": "Cystic fibrosis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-30fzbdqafz.html"
+    },
+    {
+      "id": "DIS-96j2zl8h2r",
+      "name": "Huntington disease",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-96j2zl8h2r.html"
+    },
+    {
+      "id": "DIS-6hsnfw2m2p",
+      "name": "Hypertriglyceridemia",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-6hsnfw2m2p.html"
+    },
+    {
+      "id": "DIS-zysz5zaap1",
+      "name": "Hereditary transthyretin amyloidosis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-zysz5zaap1.html"
+    },
+    {
+      "id": "DIS-iisqqqaub4",
+      "name": "Metachromatic leukodystrophy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-iisqqqaub4.html"
+    },
+    {
+      "id": "DIS-31emls6skc",
+      "name": "Cerebral adrenoleukodystrophy",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-31emls6skc.html"
+    },
+    {
+      "id": "DIS-lgixfmygvn",
+      "name": "Hemophilia B",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-lgixfmygvn.html"
+    },
+    {
+      "id": "DIS-rk0r4kdqnm",
+      "name": "Leber congenital amaurosis",
+      "category": "diseases",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/dis-rk0r4kdqnm.html"
+    },
+    {
+      "id": "GT-mpkp8lda-hi3fa1",
+      "name": "GT-mpkp8lda-hi3fa1",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkp8lda-hi3fa1.html"
+    },
+    {
+      "id": "GT-mpkpaslw-a25iqs",
+      "name": "GT-mpkpaslw-a25iqs",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpaslw-a25iqs.html"
+    },
+    {
+      "id": "GT-mpkpaslw-nwk9i9",
+      "name": "GT-mpkpaslw-nwk9i9",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpaslw-nwk9i9.html"
+    },
+    {
+      "id": "GT-mpkpg9e3-2tktn5",
+      "name": "GT-mpkpg9e3-2tktn5",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpg9e3-2tktn5.html"
+    },
+    {
+      "id": "GT-mpkpg9e4-6v3fr3",
+      "name": "GT-mpkpg9e4-6v3fr3",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpg9e4-6v3fr3.html"
+    },
+    {
+      "id": "GT-mpkpg9e4-q1u85k",
+      "name": "GT-mpkpg9e4-q1u85k",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpg9e4-q1u85k.html"
+    },
+    {
+      "id": "GT-mpkpmyee-loh176",
+      "name": "GT-mpkpmyee-loh176",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpmyee-loh176.html"
+    },
+    {
+      "id": "GT-mpkpmyef-bj5sic",
+      "name": "GT-mpkpmyef-bj5sic",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpmyef-bj5sic.html"
+    },
+    {
+      "id": "GT-mpkpmyef-rqvtbz",
+      "name": "GT-mpkpmyef-rqvtbz",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpmyef-rqvtbz.html"
+    },
+    {
+      "id": "GT-mpkpmyef-31akmn",
+      "name": "GT-mpkpmyef-31akmn",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpmyef-31akmn.html"
+    },
+    {
+      "id": "GT-mpkpvwp3-mokzta",
+      "name": "GT-mpkpvwp3-mokzta",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkpvwp3-mokzta.html"
+    },
+    {
+      "id": "GT-mpkq4tzt-nsr9im",
+      "name": "GT-mpkq4tzt-nsr9im",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkq4tzt-nsr9im.html"
+    },
+    {
+      "id": "GT-mpkq4tzt-4uyva5",
+      "name": "GT-mpkq4tzt-4uyva5",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkq4tzt-4uyva5.html"
+    },
+    {
+      "id": "GT-mpkq8hyu-tjy5mx",
+      "name": "GT-mpkq8hyu-tjy5mx",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkq8hyu-tjy5mx.html"
+    },
+    {
+      "id": "GT-mpkq8hyu-88hf1t",
+      "name": "GT-mpkq8hyu-88hf1t",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkq8hyu-88hf1t.html"
+    },
+    {
+      "id": "GT-mpkqew9m-l94834",
+      "name": "GT-mpkqew9m-l94834",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkqew9m-l94834.html"
+    },
+    {
+      "id": "GT-mpkqew9m-ci0r15",
+      "name": "GT-mpkqew9m-ci0r15",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpkqew9m-ci0r15.html"
+    },
+    {
+      "id": "GT-mpktp0f6-kd739y",
+      "name": "GT-mpktp0f6-kd739y",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpktp0f6-kd739y.html"
+    },
+    {
+      "id": "GT-mpktp0f6-a9fwfj",
+      "name": "GT-mpktp0f6-a9fwfj",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-mpktp0f6-a9fwfj.html"
+    },
+    {
+      "id": "GT-f98bgwp0l6",
+      "name": "GT-f98bgwp0l6",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-f98bgwp0l6.html"
+    },
+    {
+      "id": "GT-4hbmciufjq",
+      "name": "GT-4hbmciufjq",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-4hbmciufjq.html"
+    },
+    {
+      "id": "GT-qg1nsmhccw",
+      "name": "GT-qg1nsmhccw",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-qg1nsmhccw.html"
+    },
+    {
+      "id": "GT-1mcimbiuyi",
+      "name": "GT-1mcimbiuyi",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-1mcimbiuyi.html"
+    },
+    {
+      "id": "GT-tg1kkqwogf",
+      "name": "GT-tg1kkqwogf",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-tg1kkqwogf.html"
+    },
+    {
+      "id": "GT-kresladi-lad1",
+      "name": "GT-kresladi-lad1",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-kresladi-lad1.html"
+    },
+    {
+      "id": "GT-cps1-crispr-personalized",
+      "name": "GT-cps1-crispr-personalized",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-cps1-crispr-personalized.html"
+    },
+    {
+      "id": "GT-novaiscB-compact",
+      "name": "GT-novaiscB-compact",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-novaiscb-compact.html"
+    },
+    {
+      "id": "GT-intellia-ttr-phase3",
+      "name": "GT-intellia-ttr-phase3",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-intellia-ttr-phase3.html"
+    },
+    {
+      "id": "GT-casgevy-expanded",
+      "name": "GT-casgevy-expanded",
+      "category": "gene_therapies",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gt-casgevy-expanded.html"
+    },
+    {
+      "id": "GENE-mpkp8lda-e2pwnv",
+      "name": "GENE-mpkp8lda-e2pwnv",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkp8lda-e2pwnv.html"
+    },
+    {
+      "id": "GENE-mpkp8lda-4td3uu",
+      "name": "GENE-mpkp8lda-4td3uu",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkp8lda-4td3uu.html"
+    },
+    {
+      "id": "GENE-mpkp8lda-0kvohs",
+      "name": "GENE-mpkp8lda-0kvohs",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkp8lda-0kvohs.html"
+    },
+    {
+      "id": "GENE-mpkp8lda-davw6o",
+      "name": "GENE-mpkp8lda-davw6o",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkp8lda-davw6o.html"
+    },
+    {
+      "id": "GENE-mpkp8ldb-8dncxy",
+      "name": "GENE-mpkp8ldb-8dncxy",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkp8ldb-8dncxy.html"
+    },
+    {
+      "id": "GENE-mpkp8ldb-tt87n6",
+      "name": "GENE-mpkp8ldb-tt87n6",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkp8ldb-tt87n6.html"
+    },
+    {
+      "id": "GENE-mpkp8ldb-ztdjwq",
+      "name": "GENE-mpkp8ldb-ztdjwq",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkp8ldb-ztdjwq.html"
+    },
+    {
+      "id": "GENE-mpkpaslv-yx524q",
+      "name": "GENE-mpkpaslv-yx524q",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpaslv-yx524q.html"
+    },
+    {
+      "id": "GENE-mpkpaslv-b1y3l9",
+      "name": "GENE-mpkpaslv-b1y3l9",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpaslv-b1y3l9.html"
+    },
+    {
+      "id": "GENE-mpkpaslw-1jvfxq",
+      "name": "GENE-mpkpaslw-1jvfxq",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpaslw-1jvfxq.html"
+    },
+    {
+      "id": "GENE-mpkpaslw-5kp8lw",
+      "name": "GENE-mpkpaslw-5kp8lw",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpaslw-5kp8lw.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-o1wzt2",
+      "name": "GENE-mpkpg9e3-o1wzt2",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-o1wzt2.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-4c67cl",
+      "name": "GENE-mpkpg9e3-4c67cl",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-4c67cl.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-0yiddu",
+      "name": "GENE-mpkpg9e3-0yiddu",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-0yiddu.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-wcoz9i",
+      "name": "GENE-mpkpg9e3-wcoz9i",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-wcoz9i.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-9l89t7",
+      "name": "GENE-mpkpg9e3-9l89t7",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-9l89t7.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-447xmw",
+      "name": "GENE-mpkpg9e3-447xmw",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-447xmw.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-rpz7do",
+      "name": "GENE-mpkpg9e3-rpz7do",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-rpz7do.html"
+    },
+    {
+      "id": "GENE-mpkpg9e3-5i9ptd",
+      "name": "GENE-mpkpg9e3-5i9ptd",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e3-5i9ptd.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-d4g4wc",
+      "name": "GENE-mpkpg9e4-d4g4wc",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-d4g4wc.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-3qdbe5",
+      "name": "GENE-mpkpg9e4-3qdbe5",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-3qdbe5.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-xw22up",
+      "name": "GENE-mpkpg9e4-xw22up",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-xw22up.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-u5cq2x",
+      "name": "GENE-mpkpg9e4-u5cq2x",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-u5cq2x.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-bfxq5o",
+      "name": "GENE-mpkpg9e4-bfxq5o",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-bfxq5o.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-wzfsrc",
+      "name": "GENE-mpkpg9e4-wzfsrc",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-wzfsrc.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-80xxny",
+      "name": "GENE-mpkpg9e4-80xxny",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-80xxny.html"
+    },
+    {
+      "id": "GENE-mpkpg9e4-m738wd",
+      "name": "GENE-mpkpg9e4-m738wd",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpg9e4-m738wd.html"
+    },
+    {
+      "id": "GENE-mpkpmyed-b7d5yv",
+      "name": "GENE-mpkpmyed-b7d5yv",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyed-b7d5yv.html"
+    },
+    {
+      "id": "GENE-mpkpmyed-lpdq3i",
+      "name": "GENE-mpkpmyed-lpdq3i",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyed-lpdq3i.html"
+    },
+    {
+      "id": "GENE-mpkpmyed-x4sseb",
+      "name": "GENE-mpkpmyed-x4sseb",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyed-x4sseb.html"
+    },
+    {
+      "id": "GENE-mpkpmyed-qzmf0c",
+      "name": "GENE-mpkpmyed-qzmf0c",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyed-qzmf0c.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-iloyzt",
+      "name": "GENE-mpkpmyee-iloyzt",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-iloyzt.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-yfym4h",
+      "name": "GENE-mpkpmyee-yfym4h",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-yfym4h.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-q9932g",
+      "name": "GENE-mpkpmyee-q9932g",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-q9932g.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-c7whw6",
+      "name": "GENE-mpkpmyee-c7whw6",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-c7whw6.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-yyw2av",
+      "name": "GENE-mpkpmyee-yyw2av",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-yyw2av.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-3j1fua",
+      "name": "GENE-mpkpmyee-3j1fua",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-3j1fua.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-ot7hw3",
+      "name": "GENE-mpkpmyee-ot7hw3",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-ot7hw3.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-4kf18o",
+      "name": "GENE-mpkpmyee-4kf18o",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-4kf18o.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-nablds",
+      "name": "GENE-mpkpmyee-nablds",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-nablds.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-94l4x4",
+      "name": "GENE-mpkpmyee-94l4x4",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-94l4x4.html"
+    },
+    {
+      "id": "GENE-mpkpmyee-drp2od",
+      "name": "GENE-mpkpmyee-drp2od",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyee-drp2od.html"
+    },
+    {
+      "id": "GENE-mpkpmyef-ocgc0e",
+      "name": "GENE-mpkpmyef-ocgc0e",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyef-ocgc0e.html"
+    },
+    {
+      "id": "GENE-mpkpmyef-zevojb",
+      "name": "GENE-mpkpmyef-zevojb",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpmyef-zevojb.html"
+    },
+    {
+      "id": "GENE-mpkpqyhr-234enb",
+      "name": "GENE-mpkpqyhr-234enb",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpqyhr-234enb.html"
+    },
+    {
+      "id": "GENE-mpkpvwp2-3dwa3t",
+      "name": "GENE-mpkpvwp2-3dwa3t",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkpvwp2-3dwa3t.html"
+    },
+    {
+      "id": "GENE-mpkq4tzs-01ltsx",
+      "name": "GENE-mpkq4tzs-01ltsx",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzs-01ltsx.html"
+    },
+    {
+      "id": "GENE-mpkq4tzs-mx1zdr",
+      "name": "GENE-mpkq4tzs-mx1zdr",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzs-mx1zdr.html"
+    },
+    {
+      "id": "GENE-mpkq4tzs-gfuup9",
+      "name": "GENE-mpkq4tzs-gfuup9",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzs-gfuup9.html"
+    },
+    {
+      "id": "GENE-mpkq4tzs-e04emq",
+      "name": "GENE-mpkq4tzs-e04emq",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzs-e04emq.html"
+    },
+    {
+      "id": "GENE-mpkq4tzs-tq12n9",
+      "name": "GENE-mpkq4tzs-tq12n9",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzs-tq12n9.html"
+    },
+    {
+      "id": "GENE-mpkq4tzs-flgd9n",
+      "name": "GENE-mpkq4tzs-flgd9n",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzs-flgd9n.html"
+    },
+    {
+      "id": "GENE-mpkq4tzs-7psoz0",
+      "name": "GENE-mpkq4tzs-7psoz0",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzs-7psoz0.html"
+    },
+    {
+      "id": "GENE-mpkq4tzt-8v2jip",
+      "name": "GENE-mpkq4tzt-8v2jip",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzt-8v2jip.html"
+    },
+    {
+      "id": "GENE-mpkq4tzt-3j1jbb",
+      "name": "GENE-mpkq4tzt-3j1jbb",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzt-3j1jbb.html"
+    },
+    {
+      "id": "GENE-mpkq4tzt-guzm48",
+      "name": "GENE-mpkq4tzt-guzm48",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzt-guzm48.html"
+    },
+    {
+      "id": "GENE-mpkq4tzt-9uk4i1",
+      "name": "GENE-mpkq4tzt-9uk4i1",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzt-9uk4i1.html"
+    },
+    {
+      "id": "GENE-mpkq4tzt-27bxs3",
+      "name": "GENE-mpkq4tzt-27bxs3",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq4tzt-27bxs3.html"
+    },
+    {
+      "id": "GENE-mpkq8hyu-zhr2tz",
+      "name": "GENE-mpkq8hyu-zhr2tz",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq8hyu-zhr2tz.html"
+    },
+    {
+      "id": "GENE-mpkq8hyu-wgz0lz",
+      "name": "GENE-mpkq8hyu-wgz0lz",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq8hyu-wgz0lz.html"
+    },
+    {
+      "id": "GENE-mpkq8hyu-mgmfll",
+      "name": "GENE-mpkq8hyu-mgmfll",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq8hyu-mgmfll.html"
+    },
+    {
+      "id": "GENE-mpkq8hyu-k8ywja",
+      "name": "GENE-mpkq8hyu-k8ywja",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq8hyu-k8ywja.html"
+    },
+    {
+      "id": "GENE-mpkq8hyu-hmlciy",
+      "name": "GENE-mpkq8hyu-hmlciy",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkq8hyu-hmlciy.html"
+    },
+    {
+      "id": "GENE-mpkqew9m-cjhhq9",
+      "name": "GENE-mpkqew9m-cjhhq9",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkqew9m-cjhhq9.html"
+    },
+    {
+      "id": "GENE-mpkqew9m-c4fxxg",
+      "name": "GENE-mpkqew9m-c4fxxg",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkqew9m-c4fxxg.html"
+    },
+    {
+      "id": "GENE-mpkqew9m-pncncz",
+      "name": "GENE-mpkqew9m-pncncz",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkqew9m-pncncz.html"
+    },
+    {
+      "id": "GENE-mpkqew9m-ybqhmg",
+      "name": "GENE-mpkqew9m-ybqhmg",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkqew9m-ybqhmg.html"
+    },
+    {
+      "id": "GENE-mpkqew9m-nw5jjh",
+      "name": "GENE-mpkqew9m-nw5jjh",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkqew9m-nw5jjh.html"
+    },
+    {
+      "id": "GENE-mpkqew9m-ya46jj",
+      "name": "GENE-mpkqew9m-ya46jj",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkqew9m-ya46jj.html"
+    },
+    {
+      "id": "GENE-mpkqew9m-piizfa",
+      "name": "GENE-mpkqew9m-piizfa",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpkqew9m-piizfa.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-qgdgi1",
+      "name": "GENE-mpktp0f5-qgdgi1",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-qgdgi1.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-nnw25y",
+      "name": "GENE-mpktp0f5-nnw25y",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-nnw25y.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-r0005z",
+      "name": "GENE-mpktp0f5-r0005z",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-r0005z.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-q9isgl",
+      "name": "GENE-mpktp0f5-q9isgl",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-q9isgl.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-853m32",
+      "name": "GENE-mpktp0f5-853m32",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-853m32.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-psv76w",
+      "name": "GENE-mpktp0f5-psv76w",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-psv76w.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-8jfeij",
+      "name": "GENE-mpktp0f5-8jfeij",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-8jfeij.html"
+    },
+    {
+      "id": "GENE-mpktp0f5-lro2eo",
+      "name": "GENE-mpktp0f5-lro2eo",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f5-lro2eo.html"
+    },
+    {
+      "id": "GENE-mpktp0f6-xh2qaa",
+      "name": "GENE-mpktp0f6-xh2qaa",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-mpktp0f6-xh2qaa.html"
+    },
+    {
+      "id": "GENE-dhnepfhb5m",
+      "name": "GENE-dhnepfhb5m",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-dhnepfhb5m.html"
+    },
+    {
+      "id": "GENE-if721guqyz",
+      "name": "GENE-if721guqyz",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-if721guqyz.html"
+    },
+    {
+      "id": "GENE-80ukzywvtx",
+      "name": "GENE-80ukzywvtx",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-80ukzywvtx.html"
+    },
+    {
+      "id": "GENE-casyufzxqk",
+      "name": "GENE-casyufzxqk",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-casyufzxqk.html"
+    },
+    {
+      "id": "GENE-l7fkq48o8f",
+      "name": "GENE-l7fkq48o8f",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-l7fkq48o8f.html"
+    },
+    {
+      "id": "GENE-xx9c6qy2u",
+      "name": "GENE-xx9c6qy2u",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-xx9c6qy2u.html"
+    },
+    {
+      "id": "GENE-jj88ij34ea",
+      "name": "GENE-jj88ij34ea",
+      "category": "genes",
+      "domain": "genetech.tools",
+      "url": "https://genetech.tools/entity/gene-jj88ij34ea.html"
+    }
+  ],
+  "edges": [],
+  "domain": "genetech.tools",
+  "name": "基因技术知识引擎"
+}

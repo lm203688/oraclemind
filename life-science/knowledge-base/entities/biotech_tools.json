@@ -1,0 +1,42 @@
+[
+  {
+    "id": "BTOOL-001",
+    "name": "AlphaFold / AlphaFold3",
+    "type": "Protein structure prediction",
+    "description": "DeepMind's AI that predicts 3D protein structures from amino acid sequences. AlphaFold2 solved the 50-year protein folding problem; AlphaFold3 predicts protein-ligand, DNA, RNA interactions.",
+    "application": "Drug design, enzyme engineering, understanding disease mutations",
+    "developer": "Google DeepMind / Isomorphic Labs"
+  },
+  {
+    "id": "BTOOL-002",
+    "name": "CRISPR-Cas13 (RNA Editing)",
+    "type": "Gene editing tool",
+    "description": "Targets RNA instead of DNA, enabling transient gene regulation without permanent genome changes. Safer for therapeutic use as effects are reversible.",
+    "application": "Viral infection, RNA splicing disorders, transient gene knockdown",
+    "developer": "Astellas (acquired Editas RNA program), Aera Therapeutics"
+  },
+  {
+    "id": "BTOOL-003",
+    "name": "Base Editing",
+    "type": "Gene editing tool",
+    "description": "Precise single-nucleotide changes without double-strand breaks. Converts C→T or A→G with minimal off-target effects. Verve Therapeutics using base editing to permanently lower cholesterol.",
+    "application": "Point mutation diseases, cardiovascular risk reduction, sickle cell disease",
+    "developer": "Beam Therapeutics, Verve Therapeutics, Prime Medicine"
+  },
+  {
+    "id": "BTOOL-004",
+    "name": "Prime Editing",
+    "type": "Gene editing tool",
+    "description": "Search-and-replace genome editing that can make any small edit (substitutions, insertions, deletions) without double-strand breaks or donor DNA templates.",
+    "application": "Precise correction of disease-causing mutations",
+    "developer": "Prime Medicine (IPO 2022); David Liu lab (Broad Institute)"
+  },
+  {
+    "id": "BTOOL-005",
+    "name": "Spatial Transcriptomics",
+    "type": "Analytical tool",
+    "description": "Measuring gene expression while preserving spatial location in tissue. Reveals cellular neighborhoods and tissue organization at unprecedented resolution.",
+    "application": "Cancer microenvironment, brain cell atlas, developmental biology",
+    "developer": "10x Genomics (Visium, Xenium), Vizgen (MERFISH), NanoString (CosMx)"
+  }
+]

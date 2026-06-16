@@ -1,0 +1,362 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-30T13:38:30.808Z",
+  "description": "vector_dbs库",
+  "entities": [
+    {
+      "id": "VDB-001",
+      "name": "Pinecone",
+      "type": "托管向量数据库",
+      "pricing": "免费/Starter$25/月",
+      "features": [
+        "自动扩缩",
+        "元数据过滤",
+        "命名空间",
+        "稀疏向量"
+      ],
+      "open_source": false,
+      "maturity": "生产可用",
+      "language": "Python/Node.js"
+    },
+    {
+      "id": "VDB-002",
+      "name": "Weaviate",
+      "type": "向量+图谱数据库",
+      "pricing": "免费/Cloud付费",
+      "features": [
+        "混合搜索",
+        "多模态",
+        "RAG模块",
+        "GraphQL"
+      ],
+      "open_source": true,
+      "license": "BSD-3",
+      "maturity": "生产可用",
+      "language": "Python/Node.js/Go/Java"
+    },
+    {
+      "id": "VDB-003",
+      "name": "Qdrant",
+      "type": "向量数据库",
+      "pricing": "免费/Cloud付费",
+      "features": [
+        "高性嫩过滤",
+        "量化压缩",
+        "命名空间",
+        "Payload过滤"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "language": "Python/Node.js/Rust"
+    },
+    {
+      "id": "VDB-004",
+      "name": "ChromaDB",
+      "type": "嵌入式向量数据库",
+      "pricing": "免费",
+      "features": [
+        "嵌入式/Server",
+        "自动嵌入",
+        "元数据",
+        "相似度搜索"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "language": "Python/JS"
+    },
+    {
+      "id": "VDB-005",
+      "name": "Milvus",
+      "type": "分布式向量数据库",
+      "pricing": "免费/Cloud付费",
+      "features": [
+        "十亿级向量",
+        "GPU加速",
+        "多索引",
+        "标量过滤"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "language": "Python/Node.js/Go/Java/C++"
+    },
+    {
+      "id": "VDB-006",
+      "name": "pgvector",
+      "type": "PostgreSQL扩展",
+      "pricing": "免费",
+      "features": [
+        "SQL集成",
+        "IVFFlat/HNSW索引",
+        "无需新基础设施"
+      ],
+      "open_source": true,
+      "license": "PostgreSQL",
+      "maturity": "生产可用",
+      "language": "SQL"
+    },
+    {
+      "id": "VDB-007",
+      "name": "LanceDB",
+      "type": "Serverless向量数据库",
+      "pricing": "免费",
+      "features": [
+        "嵌入式",
+        "列存储",
+        "版本管理",
+        "零拷贝"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "早期",
+      "language": "Python/Node.js/Rust"
+    },
+    {
+      "id": "VDB-008",
+      "name": "Neo4j + Vector",
+      "type": "图+向量数据库",
+      "pricing": "免费/Enterprise",
+      "features": [
+        "知识图谱+向量",
+        "Cypher查询",
+        "GDS算法"
+      ],
+      "open_source": true,
+      "license": "GPLv3(社区)",
+      "maturity": "生产可用",
+      "language": "Python/JS/Java/Go"
+    },
+    {
+      "id": "VDB-pinecone-v2",
+      "name": "Pinecone Serverless v2",
+      "type": "managed",
+      "company": "Pinecone",
+      "language": "Cloud API",
+      "license": "Commercial",
+      "key_features": [
+        "Serverless架构",
+        "数十亿向量存储",
+        "新定价模型",
+        "命名空间隔离"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-chroma-cloud",
+      "name": "Chroma Cloud",
+      "type": "managed",
+      "company": "Chroma",
+      "language": "Python/Cloud API",
+      "license": "Commercial",
+      "key_features": [
+        "Chroma Cloud分布式模式",
+        "2026年初发布",
+        "嵌入式优先",
+        "开发者友好"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-qdrant-hybrid",
+      "name": "Qdrant Hybrid Search v2",
+      "type": "open_source",
+      "company": "Qdrant",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "key_features": [
+        "混合搜索升级",
+        "稀疏+密集向量",
+        "Rust高性能",
+        "过滤优化"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-weaviate-v2",
+      "name": "Weaviate v2",
+      "type": "open_source",
+      "company": "Weaviate",
+      "language": "Go",
+      "license": "BSD-3",
+      "key_features": [
+        "多模态搜索",
+        "生成式搜索",
+        "模块化架构",
+        "GraphQL API"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-milvus-v3",
+      "name": "Milvus v3",
+      "type": "open_source",
+      "company": "Zilliz",
+      "language": "Go/C++",
+      "license": "Apache-2.0",
+      "key_features": [
+        "云原生架构",
+        "十亿级向量",
+        "GPU加速",
+        "多索引支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-pgvector-v2",
+      "name": "pgvector v2 (PostgreSQL)",
+      "type": "extension",
+      "company": "社区",
+      "language": "C",
+      "license": "PostgreSQL",
+      "key_features": [
+        "PostgreSQL扩展",
+        "HNSW索引",
+        "IVFFlat索引",
+        "半精度向量"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-vald",
+      "name": "Vald",
+      "type": "open_source",
+      "company": "Yahoo Japan",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "key_features": [
+        "云原生",
+        "自动索引",
+        "高可用",
+        "gRPC接口"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-vespa",
+      "name": "Vespa",
+      "type": "open_source",
+      "company": "Yahoo/Vespa.ai",
+      "language": "Java/C++",
+      "license": "Apache-2.0",
+      "key_features": [
+        "实时向量+文本搜索",
+        "低延迟",
+        "自动缩放",
+        "内容推荐"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-typesense",
+      "name": "Typesense",
+      "type": "open_source",
+      "company": "Typesense",
+      "language": "C++",
+      "license": "GPL-3.0",
+      "key_features": [
+        "即时搜索",
+        "向量搜索集成",
+        "拼写纠错",
+        "嵌入式"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-marqo",
+      "name": "Marqo",
+      "type": "open_source",
+      "company": "Marqo",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "端到端向量搜索",
+        "内置嵌入模型",
+        "多模态",
+        "张量搜索"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    }
+  ]
+}

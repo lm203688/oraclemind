@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Intelligence — GeneTech Tools</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0e17;color:#e2e8f0;line-height:1.6}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,23,0.92);backdrop-filter:blur(12px);border-bottom:1px solid #1e2d4a;height:56px;display:flex;align-items:center;padding:0 20px;gap:16px}
+.nav-logo{font-size:18px;font-weight:700;color:#06b6d4;cursor:pointer;text-decoration:none}
+.nav-logo span{background:linear-gradient(135deg,#06b6d4,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:16px;margin-left:auto}
+.nav-links a{color:#94a3b8;font-size:13px;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#06b6d4}
+
+.container{max-width:1100px;margin:80px auto 40px;padding:0 20px}
+h1{font-size:1.8rem;margin-bottom:8px;background:linear-gradient(135deg,#06b6d4,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:#94a3b8;margin-bottom:30px}
+
+/* Maturity Curve */
+.section{margin:30px 0}
+.section-header{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.section-header h2{font-size:1.2rem;color:#e2e8f0}
+.section-header .icon{font-size:1.3rem}
+
+.maturity-curve{background:#111827;border:1px solid #1e2d4a;border-radius:16px;padding:24px;position:relative}
+.maturity-bar{display:flex;align-items:flex-end;gap:4px;height:120px;margin:16px 0}
+.maturity-bar .bar{flex:1;border-radius:4px 4px 0 0;transition:height .5s;position:relative;cursor:pointer;min-width:20px}
+.maturity-bar .bar:hover{opacity:0.8}
+.maturity-bar .bar .bar-label{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);font-size:10px;color:#64748b;white-space:nowrap}
+.maturity-bar .bar .bar-value{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:11px;color:#94a3b8;font-weight:600}
+.maturity-labels{display:flex;justify-content:space-between;margin-top:28px;font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:1px}
+
+/* Category Cards */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.cat-card{background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:20px;transition:all .2s;cursor:pointer}
+.cat-card:hover{border-color:#06b6d4;transform:translateY(-2px)}
+.cat-card .cat-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.cat-card .cat-name{font-weight:700;font-size:14px}
+.cat-card .cat-signal{font-size:18px}
+.cat-card .cat-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cat-card .stat-item{text-align:center;padding:8px;background:#0a0e17;border-radius:6px}
+.cat-card .stat-item .label{color:#64748b;font-size:9px;text-transform:uppercase;letter-spacing:1px}
+.cat-card .stat-item .value{font-size:16px;font-weight:700;margin-top:2px}
+.cat-card .signal-bar{display:flex;gap:4px;margin-top:10px}
+.cat-card .signal-bar .seg{height:4px;border-radius:2px;flex:1}
+
+/* Top Signals */
+.signal-list{display:flex;flex-direction:column;gap:8px}
+.signal-item{display:flex;align-items:center;gap:12px;background:#111827;border:1px solid #1e2d4a;border-radius:10px;padding:14px 16px;transition:all .2s;cursor:pointer}
+.signal-item:hover{border-color:#06b6d4}
+.signal-item .signal-icon{font-size:20px;flex-shrink:0}
+.signal-item .signal-info{flex:1}
+.signal-item .signal-name{font-weight:600;font-size:14px}
+.signal-item .signal-reason{color:#94a3b8;font-size:12px;margin-top:2px}
+.signal-item .signal-meta{display:flex;gap:12px;margin-top:6px;font-size:11px}
+.signal-item .momentum-bar{width:60px;height:4px;background:#1e2d4a;border-radius:2px;overflow:hidden;flex-shrink:0;margin-top:2px}
+.signal-item .momentum-fill{height:100%;border-radius:2px;transition:width .5s}
+.signal-item .trl-badge{padding:2px 6px;border-radius:3px;font-size:10px;font-weight:600}
+
+/* Predictions */
+.pred-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.pred-card{background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:20px;position:relative;overflow:hidden}
+.pred-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.pred-card.green::before{background:#10b981}
+.pred-card.yellow::before{background:#f59e0b}
+.pred-card .pred-title{font-weight:700;font-size:14px;margin-bottom:8px}
+.pred-card .pred-text{color:#94a3b8;font-size:13px;line-height:1.5;margin-bottom:12px}
+.pred-card .pred-meta{display:flex;gap:12px;font-size:11px;color:#64748b}
+.pred-card .pred-meta span{display:flex;align-items:center;gap:4px}
+.pred-card .pred-signals{margin-top:12px;padding-top:12px;border-top:1px solid #1e2d4a}
+.pred-card .pred-signals h4{color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.pred-card .pred-signal{display:flex;align-items:center;gap:6px;font-size:12px;color:#94a3b8;margin:4px 0}
+.pred-card .pred-signal::before{content:'→';color:#06b6d4}
+
+/* Cross-domain */
+.cross-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.cross-card{background:linear-gradient(135deg,#111827,#0f172a);border:1px solid #1e2d4a;border-radius:12px;padding:20px}
+.cross-card .cross-domains{display:flex;gap:6px;margin-bottom:10px}
+.cross-card .cross-domain{padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;background:rgba(6,182,212,0.15);color:#06b6d4}
+.cross-card .cross-title{font-weight:700;font-size:14px;margin-bottom:6px}
+.cross-card .cross-desc{color:#94a3b8;font-size:13px;line-height:1.5}
+.cross-card .cross-confidence{margin-top:10px;display:flex;align-items:center;gap:8px;font-size:11px;color:#64748b}
+.cross-card .conf-bar{width:60px;height:4px;background:#1e2d4a;border-radius:2px;overflow:hidden}
+.cross-card .conf-fill{height:100%;border-radius:2px;background:#06b6d4}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .cat-grid{grid-template-columns:1fr}
+  .pred-grid{grid-template-columns:1fr}
+  .cross-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://genetech.tools" class="nav-logo">🧬 <span>GeneTech</span> Intelligence</a>
+  <div class="nav-links">
+    <a href="https://genetech.tools">Home</a>
+    <a href="https://genetech.tools/knowledge-graph.html">Graph</a>
+    <a href="https://genetech.tools/outlook.html">Outlook</a>
+    <a href="https://genetech.tools/credits.html" style="color:#f59e0b;font-weight:600">💎 Pro</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Intelligence Dashboard</h1>
+  <p class="subtitle">Technology maturity, trend vectors, and investment signals across gene technology</p>
+
+  <!-- Maturity Distribution -->
+  <div class="section">
+    <div class="section-header"><span class="icon">📊</span><h2>Technology Maturity Distribution</h2></div>
+    <div class="maturity-curve">
+      <div class="maturity-bar" id="maturityBar"></div>
+      <div class="maturity-labels">
+        <span>TRL 1 Concept</span><span>TRL 3 Research</span><span>TRL 5 Development</span><span>TRL 7 Clinical</span><span>TRL 9 Commercial</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Analysis -->
+  <div class="section">
+    <div class="section-header"><span class="icon">🔬</span><h2>Category Analysis</h2></div>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+
+  <!-- Top Investment Signals -->
+  <div class="section pro-blur" data-pro-preview="true" onclick="if(!window.__fkbPro.isPro())window.__fkbPro.showPaywall()">
+    <div class="section-header"><span class="icon">🟢</span><h2>Top Investment Signals</h2><span class="pro-badge-slot"></span></div>
+    <div class="signal-list" id="signalList"></div>
+    <div class="pro-lock" style="position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(transparent,#0a0e17);display:flex;align-items:flex-end;justify-content:center;padding-bottom:12px">
+      <button onclick="window.__fkbPro.showPaywall()" style="background:linear-gradient(135deg,#06b6d4,#8b5cf6);color:#fff;border:none;padding:8px 20px;border-radius:8px;font-weight:700;cursor:pointer;font-size:.85rem">🔓 Unlock with Pro</button>
+    </div>
+  </div>
+
+  <!-- Predictions -->
+  <div class="section pro-content" style="position:relative">
+    <div class="section-header"><span class="icon">🔮</span><h2>AI Predictions</h2><span class="pro-badge-slot"></span></div>
+    <div class="pred-grid" id="predGrid"></div>
+  </div>
+
+  <!-- Cross-Domain Insights -->
+  <div class="section pro-content" style="position:relative">
+    <div class="section-header"><span class="icon">🌐</span><h2>Cross-Domain Insights</h2><span class="pro-badge-slot"></span></div>
+    <div class="cross-grid" id="crossGrid"></div>
+  </div>
+</div>
+
+<script src="/pro-paywall.js"></script>
+
+<script>
+const TRL_COLORS = ['#ef4444','#f97316','#f59e0b','#eab308','#84cc16','#22c55e','#10b981','#06b6d4','#8b5cf6'];
+const SIGNAL_COLORS = {'🟢':'#10b981','🟡':'#f59e0b','🔴':'#ef4444'};
+const CAT_LABELS = {
+  genes:'Genes',diseases:'Diseases',gene_therapies:'Gene Therapies',
+  crispr_applications:'CRISPR',gene_delivery:'Delivery',
+  genomic_diagnostics:'Diagnostics',regenerative_medicine:'Regen Med',
+  biotech_companies:'Companies'
+};
+
+fetch('/api/intelligence.json')
+  .then(r => r.json())
+  .then(data => {
+    renderMaturity(data.maturity_distribution);
+    renderCategories(data.categories);
+    renderSignals(data.top_signals);
+    renderPredictions(data.predictions);
+    renderCrossDomain(data.cross_domain_insights);
+  })
+  .catch(err => console.error('Failed to load intelligence data:', err));
+
+function renderMaturity(dist) {
+  const bar = document.getElementById('maturityBar');
+  const maxVal = Math.max(...Object.values(dist), 1);
+  for (let i = 1; i <= 9; i++) {
+    const val = dist[i] || 0;
+    const pct = (val / maxVal) * 100;
+    bar.innerHTML += `
+      <div class="bar" style="height:${Math.max(pct,2)}%;background:${TRL_COLORS[i-1]}" title="TRL ${i}: ${val} entities">
+        <span class="bar-value">${val}</span>
+        <span class="bar-label">TRL${i}</span>
+      </div>`;
+  }
+}
+
+function renderCategories(cats) {
+  const grid = document.getElementById('catGrid');
+  Object.entries(cats).forEach(([key, cat]) => {
+    const label = CAT_LABELS[key] || key;
+    const total = cat.signals['🟢'] + cat.signals['🟡'] + cat.signals['🔴'];
+    grid.innerHTML += `
+      <div class="cat-card">
+        <div class="cat-header">
+          <span class="cat-name">${label}</span>
+          <span class="cat-signal">${cat.dominant_signal}</span>
+        </div>
+        <div class="cat-stats">
+          <div class="stat-item"><div class="label">Entities</div><div class="value">${cat.count}</div></div>
+          <div class="stat-item"><div class="label">Avg TRL</div><div class="value">${cat.avg_trl}</div></div>
+          <div class="stat-item"><div class="label">Momentum</div><div class="value">${cat.avg_momentum}</div></div>
+          <div class="stat-item"><div class="label">Stage</div><div class="value" style="font-size:12px">${cat.trl_label}</div></div>
+        </div>
+        <div class="signal-bar">
+          <div class="seg" style="background:#10b981;flex:${cat.signals['🟢']}"></div>
+          <div class="seg" style="background:#f59e0b;flex:${cat.signals['🟡']}"></div>
+          <div class="seg" style="background:#ef4444;flex:${cat.signals['🔴']}"></div>
+        </div>
+      </div>`;
+  });
+}
+
+function renderSignals(signals) {
+  const list = document.getElementById('signalList');
+  signals.forEach(s => {
+    const color = SIGNAL_COLORS[s.signal] || '#64748b';
+    const trlColor = s.trl >= 7 ? '#10b981' : s.trl >= 5 ? '#f59e0b' : '#ef4444';
+    list.innerHTML += `
+      <div class="signal-item">
+        <span class="signal-icon">${s.signal}</span>
+        <div class="signal-info">
+          <div class="signal-name">${s.name}</div>
+          <div class="signal-reason">${s.reason}</div>
+          <div class="signal-meta">
+            <span>TRL <span class="trl-badge" style="background:${trlColor}20;color:${trlColor}">${s.trl}</span></span>
+            <span>Momentum ${s.momentum}%</span>
+            <div class="momentum-bar"><div class="momentum-fill" style="width:${s.momentum}%;background:${color}"></div></div>
+          </div>
+        </div>
+      </div>`;
+  });
+}
+
+function renderPredictions(preds) {
+  const grid = document.getElementById('predGrid');
+  Object.entries(preds).forEach(([key, p]) => {
+    const cls = p.confidence >= 0.75 ? 'green' : 'yellow';
+    grid.innerHTML += `
+      <div class="pred-card ${cls}">
+        <div class="pred-title">${p.title}</div>
+        <div class="pred-text">${p.prediction}</div>
+        <div class="pred-meta">
+          <span>⏱ ${p.timeframe}</span>
+          <span>🎯 ${Math.round(p.confidence * 100)}% confidence</span>
+        </div>
+        <div class="pred-signals">
+          <h4>Key Signals</h4>
+          ${p.signals.map(s => `<div class="pred-signal">${s}</div>`).join('')}
+        </div>
+      </div>`;
+  });
+}
+
+function renderCrossDomain(insights) {
+  const grid = document.getElementById('crossGrid');
+  insights.forEach(i => {
+    grid.innerHTML += `
+      <div class="cross-card">
+        <div class="cross-domains">${i.domains.map(d => `<span class="cross-domain">${d.replace('.genetech.tools','')}</span>`).join('')}</div>
+        <div class="cross-title">${i.title}</div>
+        <div class="cross-desc">${i.description}</div>
+        <div class="cross-confidence">
+          Confidence: ${Math.round(i.confidence * 100)}%
+          <div class="conf-bar"><div class="conf-fill" style="width:${i.confidence * 100}%"></div></div>
+        </div>
+      </div>`;
+  });
+}
+</script>
+</body>
+</html>

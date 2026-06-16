@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-05-31T22:05:17.921Z",
+  "domain": "agent-ecosystem",
+  "total_entities": 264,
+  "categories": [
+    {
+      "id": "agent_frameworks",
+      "entity_count": 0,
+      "file": "agent_frameworks.json"
+    },
+    {
+      "id": "agent_sdks",
+      "entity_count": 8,
+      "file": "agent_sdks.json"
+    },
+    {
+      "id": "benchmarks",
+      "entity_count": 5,
+      "file": "benchmarks.json"
+    },
+    {
+      "id": "mcp_servers",
+      "entity_count": 108,
+      "file": "mcp_servers.json"
+    },
+    {
+      "id": "memory_systems",
+      "entity_count": 12,
+      "file": "memory_systems.json"
+    },
+    {
+      "id": "model_apis",
+      "entity_count": 12,
+      "file": "model_apis.json"
+    },
+    {
+      "id": "protocols",
+      "entity_count": 40,
+      "file": "protocols.json"
+    },
+    {
+      "id": "sdks",
+      "entity_count": 61,
+      "file": "sdks.json"
+    },
+    {
+      "id": "tool_platforms",
+      "entity_count": 0,
+      "file": "tool_platforms.json"
+    },
+    {
+      "id": "vector_dbs",
+      "entity_count": 18,
+      "file": "vector_dbs.json"
+    }
+  ]
+}

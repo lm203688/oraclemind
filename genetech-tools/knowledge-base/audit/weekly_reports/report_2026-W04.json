@@ -1,0 +1,84 @@
+{
+  "period": "2026-W04",
+  "generated_at": "2026-05-25T04:54:52.494Z",
+  "summary": {
+    "incomplete_entities": 6,
+    "broken_relations": 0,
+    "unresolved_controversies": 9,
+    "aged_controversies": 0,
+    "stale_areas": 0,
+    "duplicate_pairs": 0
+  },
+  "knowledge_base_stats": {
+    "genes": 70,
+    "diseases": 130,
+    "gene_therapies": 17,
+    "crispr_applications": 6,
+    "relations": 378,
+    "sources": 1,
+    "controversies": 9,
+    "pending_audits": 1
+  },
+  "details": {
+    "completeness": [
+      {
+        "entity_id": "GT-mpkpg9e3-2tktn5",
+        "entity_file": "gene_therapies.json",
+        "missing_fields": [
+          "target_genes"
+        ],
+        "severity": "medium"
+      },
+      {
+        "entity_id": "GT-mpkqew9m-ci0r15",
+        "entity_file": "gene_therapies.json",
+        "missing_fields": [
+          "target_diseases"
+        ],
+        "severity": "medium"
+      },
+      {
+        "entity_id": "CR-mpkpg9e4-mmdrqv",
+        "entity_file": "crispr_applications.json",
+        "missing_fields": [
+          "target_genes"
+        ],
+        "severity": "medium"
+      },
+      {
+        "entity_id": "CR-mpkpmyef-os0rvq",
+        "entity_file": "crispr_applications.json",
+        "missing_fields": [
+          "target_genes"
+        ],
+        "severity": "medium"
+      },
+      {
+        "entity_id": "CR-mpkqew9m-9xqkdm",
+        "entity_file": "crispr_applications.json",
+        "missing_fields": [
+          "target_genes"
+        ],
+        "severity": "medium"
+      },
+      {
+        "entity_id": "CR-mpkqew9m-kfmtle",
+        "entity_file": "crispr_applications.json",
+        "missing_fields": [
+          "target_diseases"
+        ],
+        "severity": "medium"
+      }
+    ],
+    "relations": [],
+    "controversies": {
+      "unresolved": 9,
+      "aged": 0
+    },
+    "freshness": [],
+    "duplicates": []
+  },
+  "recommendations": [
+    "有6个实体字段不完整，需要补充数据"
+  ]
+}

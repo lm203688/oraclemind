@@ -1,0 +1,544 @@
+[
+  {
+    "id": "SMR-001",
+    "name": "NuScale Power Module",
+    "type": "Integral PWR SMR",
+    "capacity": "50 MWe per module; up to 12 modules = 600 MWe",
+    "status": "NRC Design Certified (first SMR to receive certification); first project (UAMPS) cancelled due to cost",
+    "location": "Planned: Utah/Idaho (cancelled); Romania (new target)",
+    "operator": "NuScale Power",
+    "technology": "Integral PWR; natural circulation cooling; steel containment; underground installation; factory-built",
+    "description": "NuScale is the first SMR to receive NRC design certification (2022). Each 50 MWe module is factory-built and transported to site. However, the flagship UAMPS project in Utah/Idaho was cancelled in 2023 due to rising costs and insufficient subscriber commitments. NuScale is now targeting projects in Romania and elsewhere. The UAMPS cancellation highlighted the economic challenges facing first-of-a-kind SMR deployments."
+  },
+  {
+    "id": "SMR-002",
+    "name": "GE Hitachi BWRX-300",
+    "type": "Boiling water reactor SMR",
+    "capacity": "300 MWe per unit",
+    "status": "Under construction (Darlington, Ontario, Canada); NRC pre-application review",
+    "location": "Darlington, Ontario (Canada); potential US sites",
+    "operator": "GE Hitachi Nuclear Energy / OPG",
+    "technology": "BWR; natural circulation; simplified systems; 10th generation BWR design; below-ground containment",
+    "description": "The BWRX-300 is currently the most advanced SMR project in the Western world. OPG (Ontario Power Generation) is building the first unit at Darlington, with grid connection targeted for 2028. It leverages 60+ years of BWR operating experience and uses natural circulation (no recirculation pumps). The BWRX-300 has strong commercial momentum with interest from multiple countries."
+  },
+  {
+    "id": "SMR-003",
+    "name": "Linglong One (ACP100)",
+    "type": "Integral PWR SMR",
+    "capacity": "125 MWe per unit",
+    "status": "Under construction (Changjiang, Hainan, China)",
+    "location": "Changjiang, Hainan, China",
+    "operator": "CNNC",
+    "technology": "Integral PWR; passive safety; modular construction; integrated steam generators",
+    "description": "Linglong One is China's first domestic SMR and the world's first land-based commercial SMR under construction. It features an integrated design with steam generators inside the pressure vessel, reducing piping and potential leak points. Construction began in 2021 at Changjiang, Hainan. China plans to export the Linglong One as part of its nuclear export strategy."
+  },
+  {
+    "id": "SMR-004",
+    "name": "Rolls-Royce SMR",
+    "type": "PWR SMR",
+    "capacity": "470 MWe per unit",
+    "status": "Entering UK Generic Design Assessment; factory approach",
+    "location": "Planned UK sites",
+    "operator": "Rolls-Royce SMR",
+    "technology": "3-loop PWR; factory-built modules; road-transportable; 60-year design life",
+    "description": "Rolls-Royce's SMR is a 470 MWe pressurized water reactor designed for factory construction and on-site assembly. Unlike smaller SMRs, it aims for economies of scale while maintaining modular construction benefits. The UK government has invested significantly in the project. Rolls-Royce brings decades of nuclear submarine reactor experience. The design is entering the UK's Generic Design Assessment process."
+  },
+  {
+    "id": "SMR-005",
+    "name": "Holtec SMR-160",
+    "type": "PWR SMR",
+    "capacity": "160 MWe per unit",
+    "status": "NRC pre-application review; DOE award recipient",
+    "location": "Planned: Palisades, Michigan (repowering coal site)",
+    "operator": "Holtec International",
+    "technology": "PWR; passive safety; external steam generators; 160 MWe; compact design",
+    "description": "Holtec's SMR-160 is a 160 MWe pressurized water reactor with passive safety systems. Holtec received a DOE award and plans to deploy the SMR-160 at the site of the retired Palisades nuclear plant in Michigan. The design uses external steam generators (unlike integral designs) and can be factory-built in modules."
+  },
+  {
+    "id": "SMR-006",
+    "name": "Oklo Aurora",
+    "type": "Fast neutron microreactor/SMR",
+    "capacity": "15 MWe per unit (scalable to 50 MWe)",
+    "status": "NRC design review; first license application submitted",
+    "location": "Planned: Idaho National Laboratory; Alaska",
+    "operator": "Oklo",
+    "technology": "Metal-fueled fast reactor; passive safety; 20-year refueling cycle; HALEU fuel",
+    "description": "Oklo's Aurora is a compact fast neutron reactor using metal fuel (HALEU) with passive safety. It's designed for remote locations and can operate for 20 years without refueling. Oklo was the first company to submit a combined license application to the NRC (initially denied, resubmitted). Sam Altman is a major investor. The Aurora targets off-grid communities, data centers, and industrial sites."
+  },
+  {
+    "id": "SMR-007",
+    "name": "TerraPower Natrium (SMR variant)",
+    "type": "Sodium-cooled fast reactor with storage",
+    "capacity": "345 MWe base / 500 MWe peak",
+    "status": "Under construction (Kemmerer, Wyoming)",
+    "location": "Kemmerer, Wyoming, USA",
+    "operator": "TerraPower",
+    "technology": "Sodium-cooled fast reactor; molten salt thermal storage; HALEU fuel; load-following capable",
+    "description": "While larger than typical SMRs, Natrium's modular design and load-following capability (345-500 MWe via thermal storage) make it relevant to the SMR market. The molten salt storage allows it to store energy and boost output during peak demand, making it ideal for grids with high renewable penetration. Under construction at a retiring coal plant site in Wyoming."
+  },
+  {
+    "id": "SMR-008",
+    "name": "Rosatom RITM-200 / ASMM",
+    "type": "Integral PWR SMR",
+    "capacity": "50 MWe (RITM-200); 100 MWe (ASMM-100)",
+    "status": "RITM-200 operational on icebreakers; land-based version planned; ASMM-100 in development",
+    "location": "Arctic icebreakers (operational); Yakutia (planned land-based)",
+    "operator": "Rosatom",
+    "technology": "Integral PWR; compact design; proven in Arctic icebreaker fleet",
+    "description": "Rosatom's RITM-200 is one of the few SMRs with operational experience, powering Russia's Arctic icebreaker fleet since 2020. A land-based version is planned for Yakutia (remote Siberia). The ASMM-100 is a larger variant. Russia's operational SMR experience gives it a significant advantage in SMR deployment, particularly for remote and Arctic applications."
+  },
+  {
+    "id": "SMR-009",
+    "name": "X-energy Xe-100 (SMR)",
+    "type": "HTGR SMR",
+    "capacity": "80 MWe per module; 4-module plant = 320 MWe",
+    "status": "Under development; DOE ARDP recipient; NRC pre-application",
+    "location": "Planned: Dow chemical facility, Texas",
+    "operator": "X-energy",
+    "technology": "TRISO pebble bed; helium coolant; 750°C outlet; modular; process heat capable",
+    "description": "The Xe-100 is a modular HTGR using TRISO fuel in a pebble bed design. Each 80 MWe module can be combined into multi-module plants. The high outlet temperature (750°C) enables industrial process heat applications beyond electricity generation. Dow Chemical plans to install Xe-100 at their Texas facility for industrial heat and power."
+  },
+  {
+    "id": "SMR-010",
+    "name": "Westinghouse eVinci",
+    "type": "Heat pipe microreactor",
+    "capacity": "5 MWe per unit (scalable to 25 MWe)",
+    "status": "Under development; NRC pre-application",
+    "location": "Planned: remote sites, military bases",
+    "operator": "Westinghouse",
+    "technology": "Heat pipe cooling; TRISO fuel; solid core; no moving parts; 8+ year refueling cycle",
+    "description": "The eVinci is a microreactor using heat pipes (no pumps or coolant) for heat removal from a solid TRISO fuel core. With no moving parts, it's designed for extreme reliability and minimal maintenance. Target applications include remote communities, military bases, mining operations, and data centers. The 8+ year refueling cycle and transportability make it ideal for off-grid deployment."
+  },
+  {
+    "id": "SMR-011",
+    "name": "Ultra Safe Nuclear MMR (Micro Modular Reactor)",
+    "type": "HTGR microreactor",
+    "capacity": "5 MWe / 15 MWth per unit",
+    "status": "Under development; Canadian Nuclear Safety Commission review",
+    "location": "Planned: Chalk River, Ontario (Global First Power project)",
+    "operator": "Ultra Safe Nuclear Corporation (USNC)",
+    "technology": "FCM™ (Fully Ceramic Micro-encapsulated) fuel; helium coolant; passive safety; 20-year core life",
+    "description": "USNC's MMR uses their proprietary FCM™ fuel (Fully Ceramic Micro-encapsulated), which encases TRISO particles in a silicon carbide matrix for additional safety. The MMR is designed for remote communities and industrial applications with a 20-year core life and passive safety. The Global First Power project at Chalk River is targeting the first MMR deployment in Canada."
+  },
+  {
+    "id": "SMR-012",
+    "name": "Copenhagen Atomics Molten Salt Reactor",
+    "type": "Molten salt reactor (MSR)",
+    "capacity": "100 MWth per unit (modular and mass-producible)",
+    "status": "Active development; testing in Copenhagen; targeting 2028 first deployment",
+    "location": "Copenhagen, Denmark (development); targeting deployment in multiple countries",
+    "operator": "Copenhagen Atomics",
+    "technology": "Thorium molten salt reactor; liquid fuel; 700°C outlet; factory mass production; thorium breeding",
+    "description": "Copenhagen Atomics is developing a thorium-fueled molten salt reactor designed for factory mass production. The liquid fuel eliminates fuel fabrication costs and allows online refueling. Thorium is more abundant than uranium and produces less long-lived waste. Copenhagen Atomics is building and testing prototypes in Copenhagen and aims for first deployment by 2028."
+  },
+  {
+    "id": "SMR-013",
+    "name": "OPG Darlington BWRX-300",
+    "type": "SMR (BWR)",
+    "capacity": "300 MWe per unit; 4 units planned",
+    "status": "Construction approved May 2025; first SMR construction in North America",
+    "location": "Darlington, Ontario, Canada",
+    "operator": "Ontario Power Generation (OPG)",
+    "technology": "BWRX-300 (GE Hitachi); boiling water SMR; simplified design; underground containment",
+    "description": "OPG received approval in May 2025 to begin construction on the first of four BWRX-300 SMRs at Darlington, Ontario. This is the first SMR construction project in North America and a landmark for the global SMR industry. The BWRX-300 uses simplified boiling water reactor technology with underground containment for enhanced safety. OPG targets first unit operation by 2028-2029."
+  },
+  {
+    "id": "SMR-014",
+    "name": "UK SMR Program (£2.5B Investment)",
+    "type": "SMR (multiple designs under consideration)",
+    "capacity": "Various (targeting mid-2030s deployment)",
+    "status": "£2.5 billion government package announced; targeting mid-2030s for first SMR",
+    "location": "Multiple sites, United Kingdom",
+    "operator": "Great British Nuclear (GBN)",
+    "technology": "Competitive selection process; multiple SMR designs under evaluation",
+    "description": "The UK announced a £2.5 billion package to accelerate SMR deployment, targeting the mid-2030s for the first operational SMR. Great British Nuclear (GBN) is running a competitive selection process evaluating multiple SMR designs. The UK program is one of the most ambitious government-backed SMR initiatives globally, aiming to revitalize the UK's nuclear supply chain while decarbonizing the grid."
+  },
+  {
+    "id": "SMR-015",
+    "name": "SMR Market Growth (2024-2035 Forecast)",
+    "type": "Market analysis",
+    "capacity": "N/A - market projection",
+    "status": "Market expected to surge from $159.4M (2024) to $5.17B by 2035 (42.31% CAGR)",
+    "location": "Global",
+    "operator": "Multiple developers",
+    "technology": "Various SMR technologies; market entering 'Golden Age of Nuclear'",
+    "description": "The global SMR market is projected to surge from $159.4 million in 2024 to $5.17 billion by 2035, driven by a 42.31% CAGR. Industry analysts call 2025-2026 the 'Golden Age of Nuclear,' with SMRs at the forefront. Key growth drivers include data center power demand, decarbonization targets, and government support. NuScale, GE Hitachi, and Rolls-Royce are leading market contenders."
+  },
+  {
+    "id": "SMR-016",
+    "name": "UK GBP 2.5 Billion SMR Package",
+    "type": "Government investment / Policy",
+    "capacity": "N/A - funding package for SMR deployment",
+    "status": "Announced 2025; targeting mid-2030s for first SMRs",
+    "location": "United Kingdom",
+    "operator": "UK Government / Multiple vendors (GE Hitachi BWRX-300, Rolls-Royce SMR)",
+    "technology": "Various SMR designs; government backing for rapid deployment",
+    "description": "The United Kingdom announced a GBP 2.5 billion package to speed up SMR deployment, targeting the mid-2030s for the first SMRs. The UK is positioning itself as a leader in SMR technology, with both GE Hitachi BWRX-300 and Rolls-Royce SMR competing for deployment. This investment represents one of the largest government commitments to SMR technology globally."
+  },
+  {
+    "id": "SMR-017",
+    "name": "US 400 GW Nuclear Target by 2050",
+    "type": "National policy / Strategic target",
+    "capacity": "400 GW nuclear capacity target by 2050",
+    "status": "US policy target; backed by 0 billion in committed projects",
+    "location": "United States",
+    "operator": "Multiple utilities and developers",
+    "technology": "Mix of large reactors, SMRs, and microreactors",
+    "description": "The US has set a 400 GW nuclear capacity target by 2050, backed by the landmark 0 billion in committed projects. The global SMR pipeline now exceeds 22 GW and 76 billion in committed projects. This ambitious target requires tripling current US nuclear capacity and depends heavily on successful SMR deployment. The target was announced at the 4th World Nuclear SMR and Advanced Reactor Congress 2026."
+  },
+  {
+    "id": "SMR-018",
+    "name": "Canada SMR Roadmap Progress",
+    "type": "National SMR program / Policy",
+    "capacity": "Multiple SMR deployments planned",
+    "status": "First G7 nation to approve commercial SMR construction (Darlington)",
+    "location": "Canada (Ontario, Saskatchewan, Alberta, New Brunswick)",
+    "operator": "OPG, SaskPower, NB Power, Alberta utilities",
+    "technology": "BWRX-300, microreactors, and other SMR designs",
+    "description": "Canada is the first G7 nation to approve commercial SMR construction with the Darlington BWRX-300 project. The Canadian SMR Roadmap encompasses deployments across multiple provinces, with Ontario leading. A CEDAR Project assessment published in March 2026 evaluates SMR progress in Canada, noting both the pioneering Darlington project and challenges in Western Canada deployment."
+  },
+  {
+    "id": "SMR-019",
+    "name": "NEI 2026: 8 Reactors Building, 90 in Development",
+    "type": "Industry status report",
+    "capacity": "8 reactors under construction; 90 in development pipeline",
+    "status": "State of the Nuclear Industry 2026 report",
+    "location": "United States",
+    "operator": "Multiple utilities",
+    "technology": "Mix of large reactors and SMRs",
+    "description": "NEI CEO Maria Korsnick reported that US nuclear is strong, with 8 reactors building and 90 in development, but scaling up is the real test. The 2026 State of the Nuclear Industry report highlights that while the pipeline is robust, the challenge is executing projects on time and on budget. SMRs are a key part of the strategy to scale nuclear deployment efficiently."
+  },
+  {
+    "id": "SMR-020",
+    "name": "MIT Technology Review: Next-Gen Nuclear (10 Breakthrough Technologies 2026)",
+    "type": "Technology recognition / Industry milestone",
+    "capacity": "Various next-gen designs",
+    "status": "Featured in MIT Technology Review 10 Breakthrough Technologies 2026",
+    "location": "Global",
+    "operator": "Multiple developers",
+    "technology": "Novel materials and compact designs for safer, cheaper nuclear power",
+    "description": "MIT Technology Review named next-gen nuclear as one of 10 Breakthrough Technologies of 2026. New reactors use novel materials and compact designs to make nuclear power safer and cheaper. This recognition from a leading technology publication signals that advanced nuclear energy, particularly SMRs, has entered the mainstream technology conversation as a viable climate solution."
+  },
+  {
+    "id": "SMR-021",
+    "name": "4th World Nuclear SMR & Advanced Reactor Congress 2026",
+    "type": "Industry conference / SMR commercialization",
+    "capacity": "N/A - conference",
+    "status": "Held 2026; industry transitions from licensing to construction",
+    "location": "Global",
+    "operator": "Multiple vendors and utilities",
+    "technology": "Full SMR and advanced reactor value chain",
+    "description": "The 4th World Nuclear SMR & Advanced Reactor Congress 2026 is the only global event uniting the entire SMR and advanced reactor value chain at the moment the industry transitions from licensing to construction. The congress highlights that the global SMR pipeline now exceeds 22 GW and $76 billion in committed projects, with the US setting a 400 GW nuclear capacity target by 2050.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.szwgroup.com/america-nuclear-industry-congress-smr-ar",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-022",
+    "name": "NuScale VOYGR SMR (80+ SMR Designs Landscape)",
+    "type": "Integral PWR SMR",
+    "capacity": "77 MWe per module (VOYGR); up to 12 modules",
+    "status": "NRC Design Certified; leading 80+ diverse SMR designs globally",
+    "location": "Romania (new target after Utah cancellation)",
+    "operator": "NuScale Power",
+    "technology": "Integral PWR; natural circulation; steel containment; factory-built; 77 MW per module",
+    "description": "The SMR landscape in 2025-2026 showcases over 80 diverse designs, with NuScale's VOYGR leading the pack at 77 MW per module. Despite the cancellation of the UAMPS project in Utah, NuScale is targeting projects in Romania and elsewhere. The 80+ SMR designs represent an unprecedented diversity of approaches including PWR, BWR, HTGR, MSR, fast spectrum, and microreactor designs, signaling a maturing but still fragmented market.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nuclearbusiness-platform.com/media/insights/10-major-nuclear-energy-developments-to-watch-in-2025",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-023",
+    "name": "IDTechEx SMR Market Report 2026-2046",
+    "type": "Market analysis / SMR forecasting",
+    "capacity": "N/A - market report",
+    "status": "Published 2026; granular forecasting for 5 regions",
+    "location": "Global (5 regions)",
+    "operator": "Multiple developers",
+    "technology": "Various SMR technologies; volume, capacity, and construction revenue forecasts",
+    "description": "IDTechEx published a comprehensive Nuclear Small Modular Reactors (SMRs) Market report for 2026-2046, breaking down trends for SMRs deployed across 5 different regions with granular forecasting for volume, capacity, and construction revenues. The report provides the most detailed SMR market analysis available, covering technology readiness, regulatory progress, and commercial deployment timelines for each major SMR design.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.idtechex.com/en/research-report/nuclear-small-modular-reactors-smrs-market/1153",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-024",
+    "name": "GIS Reports: What Is Holding Up SMR Progress?",
+    "type": "Industry analysis / SMR challenges",
+    "capacity": "N/A - analysis report",
+    "status": "Published 2026; identifies key barriers to SMR deployment",
+    "location": "Global",
+    "operator": "Multiple stakeholders",
+    "technology": "Cross-cutting analysis of SMR deployment challenges",
+    "description": "GIS Reports published an analysis of what is holding up progress on small modular reactors, identifying key barriers including: regulatory uncertainty, first-of-a-kind cost premiums, supply chain immaturity, and competition from cheap natural gas and renewables. The UK announced a GBP 2.5 billion package to speed up SMR deployment, targeting the mid-2030s for the first SMRs. The report provides a realistic assessment of the challenges facing the SMR industry despite growing enthusiasm.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.gisreportsonline.com/r/smrs",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-025",
+    "name": "CEDAR Project: SMRs in Canada Assessment (March 2026)",
+    "type": "National assessment / SMR progress in Canada",
+    "capacity": "Multiple SMR deployments across provinces",
+    "status": "Published March 2026; evaluates SMR progress in Western Canada",
+    "location": "Canada (Ontario, Saskatchewan, Alberta, New Brunswick)",
+    "operator": "OPG, SaskPower, NB Power, Alberta utilities",
+    "technology": "BWRX-300, microreactors, and other SMR designs",
+    "description": "The CEDAR Project published an assessment of SMRs in Canada in March 2026, evaluating progress across Western Canada. Canada is the first G7 nation to approve commercial SMR construction with the Darlington BWRX-300 project. The assessment notes both the pioneering Darlington project and challenges in Western Canada deployment, including regulatory frameworks, First Nations engagement, and economic viability in regions with abundant natural gas.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://cedar-project.org/wp-content/uploads/2026/03/SMRs-in-Canada-March-2026.pdf",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-026",
+    "name": "Reuters Events SMR & Advanced Reactor 2027",
+    "type": "Industry conference / SMR commercialization",
+    "capacity": "N/A - conference",
+    "status": "Scheduled May 11-12, 2027 in Austin, TX",
+    "location": "Austin, Texas, USA",
+    "operator": "Reuters Events",
+    "technology": "Full SMR and advanced reactor value chain",
+    "description": "Reuters Events: SMR & Advanced Reactor 2027 (May 11-12, Austin) will serve as the worldwide hub for new nuclear, uniting the entire SMR and advanced reactor value chain. The conference reflects the industrys transition from licensing to construction, with the global SMR pipeline exceeding 22 GW and $76 billion in committed projects.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://events.reutersevents.com/nuclear/smr-usa",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-027",
+    "name": "Siemens Energy SMR Partnership",
+    "type": "Corporate partnership / SMR development",
+    "capacity": "Various SMR designs",
+    "status": "Active partnership 2026; nuclear as critical energy pillar",
+    "location": "Global",
+    "operator": "Siemens Energy",
+    "technology": "Small Modular and Advanced Reactors; 24/7 clean energy",
+    "description": "Siemens Energy has positioned nuclear, including Small Modular and Advanced Reactors, as a critical pillar in its energy strategy for 2026. The company is partnering with SMR developers to provide conventional island equipment, instrumentation and control systems, and balance of plant solutions. Siemens Energy involvement signals major industrial support for SMR commercialization.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.siemens-energy.com/us/en/home/events/smr-advanced-reactor.html",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-028",
+    "name": "GE Vernova BWRX-300 Construction Update (2026)",
+    "type": "SMR / BWR construction progress",
+    "capacity": "300 MWe per unit; 4 units planned at Darlington",
+    "status": "Construction began May 2025; first BWRX-300 unit scheduled for operation",
+    "location": "Darlington, Ontario, Canada",
+    "operator": "Ontario Power Generation (OPG)",
+    "technology": "BWRX-300; factory-built modules; natural circulation; below-grade containment",
+    "description": "GE Vernova reports that construction began in May 2025 at Ontarios Darlington New Nuclear Project site for the first BWRX-300 SMR. The first unit is scheduled for operation, making it the first commercial SMR in the G7. GE Vernova emphasizes that SMRs are no longer just a concept but are entering construction reality. The BWRX-300 uses natural circulation cooling and can be factory-built, reducing construction time and cost.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.youtube.com/watch?v=s1sdClieTh8",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-29",
+    "name": "Siemens Energy SMR Partnership",
+    "type": "Corporate partnership / SMR development",
+    "design": "Collaboration for SMR deployment in European markets",
+    "power": "Various SMR designs",
+    "status": "Announced 2026; Siemens entering SMR market through partnerships",
+    "description": "Siemens Energy announced a strategic partnership to enter the SMR market, leveraging its expertise in power plant engineering and turbine manufacturing. The partnership aims to deploy SMRs in European markets where Siemens has established relationships with utilities and grid operators. This entry by a major conventional power company signals the mainstreaming of SMR technology.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.siemens-energy.com/smr-partnership",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-30",
+    "name": "GE Vernova BWRX-300 Construction Update (May 2026)",
+    "type": "BWR SMR / Construction milestone",
+    "design": "Boiling water reactor; 300 MWe",
+    "power": "300 MWe",
+    "status": "Construction to begin May 2026 at OPG Darlington site",
+    "description": "GE Vernova's BWRX-300 reached a major milestone with construction scheduled to begin in May 2026 at Ontario Power Generation's Darlington site. The BWRX-300 is the first grid-scale SMR to begin construction in the G7 nations. OPG received provincial approval on May 8, 2025, and the project is on track for first power in the late 2020s. This is the most advanced grid-scale SMR project in the Western world.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.opg.com/darlington-smr",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-31",
+    "name": "CEDAR Project: Canada SMR Assessment (March 2026)",
+    "type": "National assessment / SMR deployment study",
+    "design": "Multi-design assessment for Canadian SMR deployment",
+    "power": "Various; assessment covers multiple SMR designs",
+    "status": "Published March 2026; comprehensive Canadian SMR readiness assessment",
+    "description": "The CEDAR Project published a comprehensive assessment of Canada's SMR readiness in March 2026, evaluating regulatory frameworks, supply chain capabilities, and market conditions for SMR deployment. The assessment identifies key barriers and enablers for SMR commercialization in Canada and provides recommendations for accelerating deployment. Canada is positioning itself as a global leader in SMR technology and deployment.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.cedar-project.ca/smr-assessment-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-32",
+    "name": "GIS Reports: SMR Deployment Barriers Analysis",
+    "type": "Industry analysis / SMR deployment challenges",
+    "design": "Cross-design analysis of SMR deployment barriers",
+    "power": "Various; focuses on regulatory and economic barriers",
+    "status": "Published 2026; identifies key obstacles to SMR commercialization",
+    "description": "GIS Reports published an analysis of barriers holding up progress on small modular reactors. Key obstacles include regulatory uncertainty, first-of-a-kind construction costs, supply chain immaturity, and workforce shortages. The report notes that the UK announced a GBP 2.5 billion package to speed up SMR deployment, and the US DOE announced the Energy Reactor Pilot Program to expedite advanced reactor testing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.gisreports.co/smr-barriers-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-33",
+    "name": "IDTechEx SMR Market Report 2026-2046",
+    "type": "Market forecast / SMR industry analysis",
+    "design": "Comprehensive market analysis covering 80+ SMR designs",
+    "power": "Various; market sizing for all SMR segments",
+    "status": "Published 2026; 20-year market forecast for SMR technology",
+    "description": "IDTechEx published a comprehensive SMR market report covering 2026-2046, analyzing over 80 SMR designs worldwide. The report provides market sizing, technology comparisons, and deployment timelines for the SMR industry. It identifies NuScale's VOYGR as the leading design in terms of regulatory progress, while noting that the SMR landscape in 2025 showcases over 80 diverse designs at various stages of development.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.idtechex.com/en/research-report/smr-market-2026-2046",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-034",
+    "name": "74 SMR Designs Under Development",
+    "type": "Industry overview",
+    "technology": "Various SMR technologies",
+    "power": "Various (1-300 MWe)",
+    "status": "74 SMR designs under active development worldwide (2025-2026)",
+    "description": "Nuclear experts report that 74 SMR designs are under active development worldwide, reflecting the global interest in small modular reactors as a key technology for nuclear energy expansion. The designs span multiple technologies including water-cooled, gas-cooled, liquid metal-cooled, and molten salt reactors. While the number of designs is impressive, the key challenge is moving from design to deployment — only a handful of SMRs are currently under construction.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.canarymedia.com/articles/nuclear/small-modular-reactors-are-having-a",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-035",
+    "name": "SMR Global Project Tracker (World Nuclear Association)",
+    "type": "Database / Tracker",
+    "technology": "All SMR technologies",
+    "power": "Various",
+    "status": "Interactive tracker maintained by World Nuclear Association",
+    "description": "The World Nuclear Association maintains an interactive Small Modular Reactor Global Project Tracker that provides an overview of the development and deployment of SMRs worldwide. The tracker includes information on design status, licensing progress, construction timelines, and deployment locations. It is the most comprehensive publicly available resource for tracking SMR development globally.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://world-nuclear.org/information-library/nuclear-power-reactors/small-modul",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-036",
+    "name": "GE Hitachi BWRX-300",
+    "type": "Boiling Water SMR",
+    "technology": "Boiling Water Reactor (BWR)",
+    "power": "300 MWe",
+    "status": "NRC pre-application review; OPG Darlington construction approved",
+    "description": "The GE Hitachi BWRX-300 is a 300 MWe boiling water SMR that uses natural circulation and passive safety systems. It is the first SMR to receive construction approval in North America (OPG Darlington, May 2025). The design leverages the proven BWR technology while incorporating innovative features like natural circulation cooling (no recirculation pumps) and passive containment cooling. The BWRX-300 is designed for 60-year operation and can be factory-built in modules.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-037",
+    "name": "Floating SMR (ACPR50S / China)",
+    "type": "Marine SMR",
+    "technology": "Pressurized Water Reactor (PWR) / Offshore",
+    "power": "60 MWe per unit",
+    "status": "Under development by CGN; offshore platform design",
+    "description": "China General Nuclear Power Group (CGN) is developing the ACPR50S, a 60 MWe floating SMR designed for deployment on offshore platforms. The reactor would provide power and desalination for island communities and offshore oil/gas platforms. The marine environment provides an infinite heat sink for passive safety systems. This represents a unique application of SMR technology for maritime and remote coastal applications.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://world-nuclear.org/information-library/nuclear-power-reactors/small-modul",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "SMR-038",
+    "name": "SMR Supply Chain Challenges",
+    "type": "Industry challenge / Analysis",
+    "technology": "All SMR technologies",
+    "power": "N/A",
+    "status": "Ongoing challenge; identified as key bottleneck (2025-2026)",
+    "description": "While 74 SMR designs are under development, supply chain challenges remain a key bottleneck for deployment. Issues include: limited manufacturing capacity for nuclear-grade components, shortage of skilled nuclear workers, regulatory frameworks not yet adapted for SMR licensing, and the need for first-of-a-kind cost overruns to be absorbed. The GIS Reports analysis notes that progress on SMRs is real but slower than proponents hope, with the question being 'will any actually get built?'",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.gisreportsonline.com/r/smrs",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

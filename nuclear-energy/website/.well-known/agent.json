@@ -1,0 +1,104 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "NuclearDB",
+  "description": "Nuclear energy knowledge base - reactors, fusion, fission, nuclear policy",
+  "url": "https://nuclear.genetech.tools",
+  "category": "核能",
+  "api": {
+    "type": "rest",
+    "base_url": "https://nuclear.genetech.tools/api",
+    "openapi": "https://nuclear.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/reactors.json",
+        "method": "GET",
+        "description": "Get reactors data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/fusion_projects.json",
+        "method": "GET",
+        "description": "Get fusion projects data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/fission_tech.json",
+        "method": "GET",
+        "description": "Get fission tech data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/nuclear_fuel.json",
+        "method": "GET",
+        "description": "Get nuclear fuel data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/nuclear_policy.json",
+        "method": "GET",
+        "description": "Get nuclear policy data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/radiation_safety.json",
+        "method": "GET",
+        "description": "Get radiation safety data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://quantum.genetech.tools",
+      "title": "量子计算核模拟"
+    },
+    {
+      "rel": "related",
+      "href": "https://nuclear.genetech.tools",
+      "title": "核能与新能源对比"
+    },
+    {
+      "rel": "related",
+      "href": "https://deepsea.genetech.tools",
+      "title": "深海核能应用"
+    },
+    {
+      "rel": "related",
+      "href": "https://mineral.genetech.tools",
+      "title": "核燃料矿物"
+    }
+  ]
+}

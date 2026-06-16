@@ -1,0 +1,565 @@
+{
+  "collection_date": "2026-05-25",
+  "source": "news",
+  "total_articles": 39,
+  "total_entities_extracted": 10,
+  "articles": [
+    {
+      "title": "Gene Therapy Pioneers Win 2026 Breakthrough Prize | The Scientist",
+      "url": "https://www.the-scientist.com/gene-therapy-pioneers-win-2026-breakthrough-prize-74376",
+      "snippet": "The Breakthrough Prize Foundation awarded researchers involved in developing gene therapies for blindness and sickle cell disease.",
+      "source": "www.the-scientist.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "The State of Cell and Gene Therapy 2026",
+      "url": "https://www.genengnews.com/multimedia/the-state-of-cell-and-gene-therapy-2026",
+      "snippet": "The potential of gene writing to address genetic disorders · Expanding access to cell and gene therapies worldwide · The promise of in vivo CAR T ...",
+      "source": "www.genengnews.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Cell Therapy Enters 2026 with Potential for Curative Medicine",
+      "url": "https://www.linkedin.com/posts/brianbuntz_50-cell-and-gene-therapy-leaders-to-watch-activity-7414439879444627456-h6u0",
+      "snippet": "Cell and gene therapy enters 2026 as a field of potentially curative medicine with a stubbornly small customer base.",
+      "source": "www.linkedin.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "How a vision-restoring gene therapy proved that we can treat",
+      "url": "https://www.scientificamerican.com/article/how-a-vision-restoring-gene-therapy-proved-that-we-can-treat-inherited-diseases",
+      "snippet": "Three 2026 Breakthrough Prize winners reflect on developing Luxturna, a gene therapy that treats blindness caused by rare inherited eye ...",
+      "source": "www.scientificamerican.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "2026 cell and gene therapy predictions | Cellgenetherapyreview.com",
+      "url": "https://www.cellgenetherapyreview.com/3975-Featured-Articles/624038-2026-cell-and-gene-therapy-predictions",
+      "snippet": "In 2026, we will see the cell and gene therapy field broaden beyond oncology and rare diseases, with growing focus on autoimmune conditions.",
+      "source": "www.cellgenetherapyreview.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Breakthroughs in Targeted In Vivo Gene Editing | ASGCT",
+      "url": "https://www.asgct.org/events-meetings/breakthroughs-in-targeted-in-vivo-gene-editing",
+      "snippet": "Explore the full event program featuring the latest breakthroughs in targeted in vivo gene editing, with presentations from leading experts and in-depth Q&A ...",
+      "source": "www.asgct.org",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "About Gene Forum 2026 - Human Gene Therapy Conference",
+      "url": "https://genetherapyconference.com/about",
+      "snippet": "Gene therapy is experiencing significant breakthroughs, with therapies such as Luxturna, which targets hereditary retinal dystrophy, and Zolgensma, a ...",
+      "source": "genetherapyconference.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Philadelphia scientists win 2026 Breakthrough Prize for gene therapy",
+      "url": "https://www.facebook.com/philadelphiatoday/posts/three-philadelphia-scientists-have-won-the-2026-breakthrough-prize-for-developin/895433483594627",
+      "snippet": "Historic milestone: FDA approves first nonprofit- developed gene therapy, transforming treatment for life -threatening Wiskott-Aldrich syndrome.",
+      "source": "www.facebook.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Breakthrough Prize 2026 went to Philadelphia gene therapy pioneers",
+      "url": "https://www.inquirer.com/health/breakthrough-prize-2026-philadelphia-scientists-gene-therapy-blindness-20260418.html",
+      "snippet": "Three Philadelphia scientists won a $3 million Breakthrough Prize for developing the first FDA-approved gene therapy for a genetic disease, ...",
+      "source": "www.inquirer.com",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Breakthrough Prize Announces 2026 Laureates",
+      "url": "https://breakthroughprize.org/News/98",
+      "snippet": "In the Life Sciences, their work has led to gene therapies for three devastating diseases – inherited blindness, sickle cell disease and beta-thalassemia, and identified a key genetic cause of two more – ALS and frontotemporal dementia.",
+      "source": "breakthroughprize.org",
+      "collected_at": "2026-05-25T06:22:56.729Z",
+      "source_type": "news"
+    },
+    {
+      "title": "CRISPR Clinical Trials: A 2026 Update - Innovative Genomics Institute",
+      "url": "https://innovativegenomics.org/news/crispr-clinical-trials-2026",
+      "snippet": "An update on the progress of CRISPR clinical trials with the latest data and a survey of the CRISPR landscape in 2026.",
+      "source": "innovativegenomics.org",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "CRISPR Therapeutics Highlights Strategic Priorities and Anticipated",
+      "url": "https://crisprtx.com/about-us/press-releases-and-presentations/crispr-therapeutics-highlights-strategic-priorities-and-anticipated-2026-milestones",
+      "snippet": "The Company expects to initiate a clinical trial for CTX460 in mid-2026. ... Clinical data generated from CTX211™ were promising ...",
+      "source": "crisprtx.com",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Overview CRISPR Clinical Trials 2026 - Learn | Innovate | Access",
+      "url": "https://crisprmedicinenews.com/clinical-trials",
+      "snippet": "As of February 2025, CRISPR Medicine News monitors approximately 250 clinical trials involving gene-editing therapeutic candidates, with more than 150 trials ...",
+      "source": "crisprmedicinenews.com",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "CRISPR-Cas9-mediated therapeutics: Current clinical trials and",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2162253126000302",
+      "snippet": "A recent clinical trial used CRISPR-Cas9 for patients with transthyretin amyloidosis-related cardiomyopathy where hATTR amyloidosis was treated ...",
+      "source": "www.sciencedirect.com",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "10 CRISPR Companies to Watch in 2026 - Cure.",
+      "url": "https://wewillcure.com/insights/news/crispr-companies-to-watch",
+      "snippet": "Financial Snapshot: In March 2026, CRISPR announced it would raise an upsized $550 million through a convertible senior notes offering. Key ...",
+      "source": "wewillcure.com",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Editas Medicine Announces First Quarter 2026 Results and",
+      "url": "https://ir.editasmedicine.com/news-releases/news-release-details/editas-medicine-announces-first-quarter-2026-results-and",
+      "snippet": "EDIT-401, which demonstrated >90% mean LDL-C reduction in preclinical studies, on track to achieve early human proof-of-concept data by ...",
+      "source": "ir.editasmedicine.com",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "CRISPR Clinical Trials to Follow - Synthego",
+      "url": "https://www.synthego.com/blog/crispr-clinical-trials",
+      "snippet": "The phase I/II CRISPR clinical trial of safety and efficacy expects to test the therapy in up to 40 patients and is estimated to be completed in August 2025.",
+      "source": "www.synthego.com",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "CRISPR/CAS9-based gene editing in cancer therapy - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12795076",
+      "snippet": "CRISPR/Cas9 shows promising results in cancer gene therapy research before clinical applications but translation to clinical success continues ...",
+      "source": "pmc.ncbi.nlm.nih.gov",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "CRISPR Clinical Trials: Navigating The Landscape in 2026 - Co-Labb",
+      "url": "https://www.co-labb.co.uk/post/crispr-clinical-trials",
+      "snippet": "CRISPR clinical trials are rapidly advancing in 2026. Explore the latest insights shaping the future of gene-editing therapies.",
+      "source": "www.co-labb.co.uk",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Cleveland Clinic First-In-Human Trial of CRISPR Gene-Editing",
+      "url": "https://newsroom.clevelandclinic.org/2025/11/08/cleveland-clinic-first-in-human-trial-of-crispr-gene-editing-therapy-shown-to-safely-lower-cholesterol-and-triglycerides",
+      "snippet": "One-time infusion of investigational CRISPR-Cas9 therapy found to safely reduce LDL cholesterol by 50% and triglycerides by about 55% in ...",
+      "source": "newsroom.clevelandclinic.org",
+      "collected_at": "2026-05-25T06:23:00.161Z",
+      "source_type": "news"
+    },
+    {
+      "title": "How are Gene Editing companies allowed to operate in 2026?",
+      "url": "https://www.reddit.com/r/genetics/comments/1qj9adu/how_are_gene_editing_companies_allowed_to_operate",
+      "snippet": "They aren't editing genomes in human embryos that would be used for IVF now, they're doing research with the hopes of eventually getting it ...",
+      "source": "www.reddit.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Global status of genome editing versus transgenesis legislation in",
+      "url": "https://www.nature.com/articles/s44383-025-00016-2",
+      "snippet": "Precise breeding programs using new genome editing techniques have been developed to create plant varieties adapted to climate change.",
+      "source": "www.nature.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Gene editing takes centre stage in FDA's new rare disease approval",
+      "url": "https://www.clinicaltrialsarena.com/news/gene-editing-takes-centre-stage-in-fdas-new-rare-disease-approval-pathway",
+      "snippet": "AZD3470 at ASCO 2026: a promising new drug for Hodgkin lymphoma? ... Gene editing takes centre stage in FDA's new rare disease approval pathway.",
+      "source": "www.clinicaltrialsarena.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "7th Genome Editing Therapeutics Summit 2026",
+      "url": "https://genome-editing-therapeutics-summit.com",
+      "snippet": "This summit represents an important forum to align on how we collectively move genome editing therapies forward, from scientific innovation to safe, scalable ...",
+      "source": "genome-editing-therapeutics-summit.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "The FDA issued draft guidance for sponsors seeking approval of",
+      "url": "https://www.instagram.com/p/DXJtVF6jsV4",
+      "snippet": "On April 15, 2026, the FDA released a landmark draft guidance establishing — for the first time — a clear, standardized safety framework for ...",
+      "source": "www.instagram.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "FDA illuminates new approval pathway for bespoke gene therapies",
+      "url": "https://www.fiercebiotech.com/biotech/fda-illuminates-new-approval-pathway-bespoke-gene-therapies",
+      "snippet": "The new pathway—for now—focuses on genome editing and RNA-based methods that target the underlying cause of a rare disease.\nUPDATED: FDA illuminates new approval pathway for bespoke gene editing therapies By Angus Liu, Darren Incorvaia Feb 23, 2026 11:30am",
+      "source": "www.fiercebiotech.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "FDA Issues Draft Guidance on Genome Editing Safety  - GovDelivery",
+      "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/412df78",
+      "snippet": "The U.S. Food and Drug Administration today issued a draft guidance for sponsors seeking approval of human gene therapy products involving ...",
+      "source": "content.govdelivery.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Report Projects Global Gene Editing Market Trends 2022-2026",
+      "url": "https://www.isaaa.org/kc/cropbiotechupdate/ged/article/default.asp?ID=19417",
+      "snippet": "The gene editing market is projected to grow from US$5.41 billion in 2021 to US$6.35 billion in 2022 at a compound annual growth rate (CAGR) of 17.2%.",
+      "source": "www.isaaa.org",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "CRISPR Gene Editing 2026: New Treatments and What They Mean",
+      "url": "https://3zebras.com/science/crispr-gene-editing-2026-treatments-approved/15388",
+      "snippet": "CRISPR gene editing treatments approved and in clinical trials as of 2026. Sickle cell cure results, cancer immunotherapy progress, cholesterol gene editing, and what the technology still cannot do.",
+      "source": "3zebras.com",
+      "collected_at": "2026-05-25T06:23:04.795Z",
+      "source_type": "news"
+    },
+    {
+      "title": "What Is Happening with AAV Gene Therapy for GM1? (2026 Update)",
+      "url": "https://www.curegm1.org/aav-gene-therapy-for-gm1",
+      "snippet": "Get the latest 2026 updates on AAV gene therapy for GM1 gangliosidosis. Explore NIH clinical trial enrollment, RareTx program status, ...",
+      "source": "www.curegm1.org",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "AAV gene therapy manufacturing tech landscape 2026 | PatSnap",
+      "url": "https://www.patsnap.com/resources/blog/articles/aav-gene-therapy-manufacturing-tech-landscape-2026",
+      "snippet": "A deep-dive into AAV gene therapy manufacturing: upstream production platforms, capsid engineering, downstream purification, and 2026 patent ...",
+      "source": "www.patsnap.com",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "ASGCT 2026: Rare Instance of AAV Integration into Human Genome",
+      "url": "https://www.genengnews.com/topics/cancer/asgct-2026-rare-instance-of-aav-integration-into-human-genome-linked-to-brain-tumor",
+      "snippet": "The CHOP's research team findings support the hypothesis that rare AAV integration can contribute to human oncogenesis, which emphasizes the ...",
+      "source": "www.genengnews.com",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Industry Insights: Long-term follow-up data and clinical holds define",
+      "url": "https://www.insights.bio/cell-and-gene-therapy-insights/journal/article/3760/longterm-followup-data-and-clinical-holds-define-the-start-of-2026",
+      "snippet": "Siren Biotechnology received FDA IND clearance for AAV-based immuno-gene therapy in glioma. Siren Biotechnology announced that the FDA cleared ...",
+      "source": "www.insights.bio",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "AAV Gene Therapy Market Size and YoY Growth Rate, 2026-2033",
+      "url": "https://www.coherentmarketinsights.com/industry-reports/aav-gene-therapy-market",
+      "snippet": "AAV Gene Therapy Market size is expected to reach USD 21.57 Bn by 2033, from USD 4.35 Bn in 2026, exhibiting a CAGR of 25.7% during the ...",
+      "source": "www.coherentmarketinsights.com",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Articles in 2026 | Gene Therapy - Nature",
+      "url": "https://www.nature.com/gt/articles?type=article&year=2026",
+      "snippet": "Article (24). Year. 2026 (24). All; 2026 (24). Clinical response to systemic AAV gene therapy in a large animal model of late-stage lysosomal storage disease.",
+      "source": "www.nature.com",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Riding the Gene Therapy Rollercoaster Into 2026",
+      "url": "https://www.insideprecisionmedicine.com/topics/translational-research/riding-the-gene-therapy-rollercoaster-into-2026",
+      "snippet": "February saw Pfizer announce that it was discontinuing production of Beqvez, its hemophilia B adeno-associated virus (AAV)-based gene therapy.",
+      "source": "www.insideprecisionmedicine.com",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "Overcoming Challenges in AAV Based Gene Therapy",
+      "url": "https://cellgenetherapyconference.com/program/scientific-sessions/Overcoming-Challenges-in-AAV-Based-Gene-Therapy",
+      "snippet": "The 2nd Edition of Cell & Gene Therapy World Conference (CGTWC 2026) is one of those leading events that would stand high in biology and medical science. CGTWC ...",
+      "source": "cellgenetherapyconference.com",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "ASGCT 2026: Rare Instance of AAV Integration into Human Genome",
+      "url": "https://www.facebook.com/gennews/posts/asgct-2026-rare-instance-of-aav-integration-into-human-genome-linked-to-brain-tu/1423629049808442",
+      "snippet": "ASGCT 2026: Rare Instance of AAV Integration into Human Genome Linked to Brain Tumor The CHOP's research team findings support the hypothesis ...",
+      "source": "www.facebook.com",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    },
+    {
+      "title": "AAV-based gene therapies for neovascular AMD - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41688763",
+      "snippet": "Collectively, these developments position AAV-based gene therapy as a promising strategy to redefine the therapeutic landscape of nAMD. © 2026.",
+      "source": "pubmed.ncbi.nlm.nih.gov",
+      "collected_at": "2026-05-25T06:23:11.213Z",
+      "source_type": "news"
+    }
+  ],
+  "entities": [
+    {
+      "article_title": "Gene Therapy Pioneers Win 2026 Breakthrough Prize | The Scientist",
+      "article_url": "https://www.the-scientist.com/gene-therapy-pioneers-win-2026-breakthrough-prize-74376",
+      "article_source": "www.the-scientist.com",
+      "genes": [],
+      "diseases": [
+        "blindness",
+        "sickle cell disease"
+      ],
+      "therapy_types": [
+        "gene therapy"
+      ],
+      "companies": [],
+      "key_event": "breakthrough",
+      "event_summary": "The Breakthrough Prize Foundation awarded researchers for developing gene therapies for blindness and sickle cell disease.",
+      "development_stage": "unknown",
+      "credibility_indicators": [
+        "named_sources"
+      ],
+      "hype_signals": [],
+      "relevance_score": "8",
+      "extracted_at": "2026-05-25T06:23:15.797Z"
+    },
+    {
+      "article_title": "The State of Cell and Gene Therapy 2026",
+      "article_url": "https://www.genengnews.com/multimedia/the-state-of-cell-and-gene-therapy-2026",
+      "article_source": "www.genengnews.com",
+      "genes": [],
+      "diseases": [
+        "genetic disorders"
+      ],
+      "therapy_types": [
+        "gene writing",
+        "cell and gene therapies",
+        "in vivo CAR T"
+      ],
+      "companies": [],
+      "key_event": "other",
+      "event_summary": "The article discusses the future state of cell and gene therapies in 2026, highlighting advancements in gene writing, expanding access globally, and the promise of in vivo CAR T.",
+      "development_stage": "unknown",
+      "credibility_indicators": [],
+      "hype_signals": [
+        "vague_claims",
+        "no_specific_data"
+      ],
+      "relevance_score": "7",
+      "extracted_at": "2026-05-25T06:23:22.282Z"
+    },
+    {
+      "article_title": "Cell Therapy Enters 2026 with Potential for Curative Medicine",
+      "article_url": "https://www.linkedin.com/posts/brianbuntz_50-cell-and-gene-therapy-leaders-to-watch-activity-7414439879444627456-h6u0",
+      "article_source": "www.linkedin.com",
+      "genes": [],
+      "diseases": [],
+      "therapy_types": [
+        "cell therapy",
+        "gene therapy"
+      ],
+      "companies": [],
+      "key_event": "other",
+      "event_summary": "Cell and gene therapy enters 2026 as a field of potentially curative medicine with a stubbornly small customer base.",
+      "development_stage": "unknown",
+      "credibility_indicators": [],
+      "hype_signals": [
+        "vague_claims",
+        "no_specific_data"
+      ],
+      "relevance_score": "5",
+      "extracted_at": "2026-05-25T06:23:28.070Z"
+    },
+    {
+      "article_title": "How a vision-restoring gene therapy proved that we can treat",
+      "article_url": "https://www.scientificamerican.com/article/how-a-vision-restoring-gene-therapy-proved-that-we-can-treat-inherited-diseases",
+      "article_source": "www.scientificamerican.com",
+      "genes": [
+        "RPE65"
+      ],
+      "diseases": [
+        "blindness",
+        "rare inherited eye disease"
+      ],
+      "therapy_types": [
+        "gene therapy"
+      ],
+      "companies": [
+        "Spark Therapeutics"
+      ],
+      "key_event": "approval",
+      "event_summary": "Luxturna, a gene therapy targeting the RPE65 gene, received FDA approval for treating blindness caused by rare inherited eye diseases.",
+      "development_stage": "approved",
+      "credibility_indicators": [
+        "Breakthrough Prize",
+        "FDA approval"
+      ],
+      "hype_signals": [],
+      "relevance_score": "9",
+      "extracted_at": "2026-05-25T06:23:34.739Z"
+    },
+    {
+      "article_title": "2026 cell and gene therapy predictions | Cellgenetherapyreview.com",
+      "article_url": "https://www.cellgenetherapyreview.com/3975-Featured-Articles/624038-2026-cell-and-gene-therapy-predictions",
+      "article_source": "www.cellgenetherapyreview.com",
+      "genes": [],
+      "diseases": [
+        "autoimmune conditions",
+        "oncology",
+        "rare diseases"
+      ],
+      "therapy_types": [
+        "cell therapy",
+        "gene therapy"
+      ],
+      "companies": [],
+      "key_event": "other",
+      "event_summary": "In 2026, the cell and gene therapy field is expected to expand beyond oncology and rare diseases, with a growing focus on autoimmune conditions.",
+      "development_stage": "unknown",
+      "credibility_indicators": [],
+      "hype_signals": [
+        "vague_claims",
+        "no_specific_data"
+      ],
+      "relevance_score": "5",
+      "extracted_at": "2026-05-25T06:24:01.422Z"
+    },
+    {
+      "article_title": "Breakthroughs in Targeted In Vivo Gene Editing | ASGCT",
+      "article_url": "https://www.asgct.org/events-meetings/breakthroughs-in-targeted-in-vivo-gene-editing",
+      "article_source": "www.asgct.org",
+      "genes": [],
+      "diseases": [],
+      "therapy_types": [
+        "targeted in vivo gene editing"
+      ],
+      "companies": [
+        "ASGCT"
+      ],
+      "key_event": "breakthrough",
+      "event_summary": "The event highlights the latest breakthroughs in targeted in vivo gene editing with presentations from leading experts.",
+      "development_stage": "unknown",
+      "credibility_indicators": [
+        "named_sources"
+      ],
+      "hype_signals": [
+        "vague_claims"
+      ],
+      "relevance_score": "7",
+      "extracted_at": "2026-05-25T06:24:13.139Z"
+    },
+    {
+      "article_title": "About Gene Forum 2026 - Human Gene Therapy Conference",
+      "article_url": "https://genetherapyconference.com/about",
+      "article_source": "genetherapyconference.com",
+      "genes": [],
+      "diseases": [
+        "hereditary retinal dystrophy"
+      ],
+      "therapy_types": [
+        "gene therapy"
+      ],
+      "companies": [],
+      "key_event": "breakthrough",
+      "event_summary": "Gene therapy is experiencing significant breakthroughs, with therapies such as Luxturna and Zolgensma.",
+      "development_stage": "approved",
+      "credibility_indicators": [
+        "specific_data_points"
+      ],
+      "hype_signals": [],
+      "relevance_score": "8",
+      "extracted_at": "2026-05-25T06:24:22.173Z"
+    },
+    {
+      "article_title": "Philadelphia scientists win 2026 Breakthrough Prize for gene therapy",
+      "article_url": "https://www.facebook.com/philadelphiatoday/posts/three-philadelphia-scientists-have-won-the-2026-breakthrough-prize-for-developin/895433483594627",
+      "article_source": "www.facebook.com",
+      "genes": [],
+      "diseases": [
+        "Wiskott-Aldrich syndrome"
+      ],
+      "therapy_types": [
+        "gene therapy"
+      ],
+      "companies": [
+        "FDA",
+        "nonprofit"
+      ],
+      "key_event": "approval",
+      "event_summary": "The FDA approved the first nonprofit-developed gene therapy for the treatment of life-threatening Wiskott-Aldrich syndrome.",
+      "development_stage": "approved",
+      "credibility_indicators": [
+        "specific_data_points",
+        "named_sources"
+      ],
+      "hype_signals": [],
+      "relevance_score": "9",
+      "extracted_at": "2026-05-25T06:24:28.499Z"
+    },
+    {
+      "article_title": "Breakthrough Prize 2026 went to Philadelphia gene therapy pioneers",
+      "article_url": "https://www.inquirer.com/health/breakthrough-prize-2026-philadelphia-scientists-gene-therapy-blindness-20260418.html",
+      "article_source": "www.inquirer.com",
+      "genes": [],
+      "diseases": [],
+      "therapy_types": [
+        "gene therapy"
+      ],
+      "companies": [],
+      "key_event": "approval",
+      "event_summary": "Three Philadelphia scientists won a $3 million Breakthrough Prize for developing the first FDA-approved gene therapy for a genetic disease.",
+      "development_stage": "approved",
+      "credibility_indicators": [
+        "specific_data_points",
+        "named_sources"
+      ],
+      "hype_signals": [],
+      "relevance_score": "9",
+      "extracted_at": "2026-05-25T06:24:34.814Z"
+    },
+    {
+      "article_title": "Breakthrough Prize Announces 2026 Laureates",
+      "article_url": "https://breakthroughprize.org/News/98",
+      "article_source": "breakthroughprize.org",
+      "genes": [],
+      "diseases": [
+        "inherited blindness",
+        "sickle cell disease",
+        "beta-thalassemia",
+        "ALS",
+        "frontotemporal dementia"
+      ],
+      "therapy_types": [
+        "gene therapies"
+      ],
+      "companies": [],
+      "key_event": "breakthrough",
+      "event_summary": "The Breakthrough Prize has recognized scientists for developing gene therapies for inherited blindness, sickle cell disease, and beta-thalassemia, and identifying a key genetic cause of ALS and frontotemporal dementia.",
+      "development_stage": "approved",
+      "credibility_indicators": [
+        "named_sources"
+      ],
+      "hype_signals": [],
+      "relevance_score": "9",
+      "extracted_at": "2026-05-25T06:24:42.198Z"
+    }
+  ]
+}

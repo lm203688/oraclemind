@@ -1,0 +1,66 @@
+{
+  "count": 6,
+  "updated": "2026-05-29T02:27:01.437Z",
+  "data": [
+    {
+      "id": "FUS-001",
+      "name": "Tokamak (Magnetic Confinement)",
+      "approach": "Toroidal magnetic confinement - donut-shaped chamber with helical magnetic fields confining plasma",
+      "organization": "ITER, CFS/SPARC, EAST, KSTAR, JET, DIII-D",
+      "status": "Most mature fusion approach; ITER under construction; CFS targeting Q≥2 by 2027",
+      "milestone": "JET 69 MJ (2023); ITER targeting Q≥10 by 2035",
+      "timeline": "First commercial tokamak power plant: 2040s (DEMO)",
+      "description": "The most studied and funded fusion approach. A tokamak uses strong toroidal and poloidal magnetic fields to confine a donut-shaped plasma at 100-200 million°C. ITER is the flagship project. CFS's compact tokamak using HTS magnets could accelerate the timeline. The main challenges are plasma disruptions, divertor heat loads, and tritium breeding."
+    },
+    {
+      "id": "FUS-002",
+      "name": "Stellarator",
+      "approach": "Twisted toroidal magnetic confinement - inherently stable 3D magnetic field geometry",
+      "organization": "Max Planck IPP (Wendelstein 7-X), University of Wisconsin (HSX)",
+      "status": "W7-X demonstrating improved confinement; proof-of-principle for stellarator optimization",
+      "milestone": "W7-X achieved 1.3 GJ energy turnover and 8-minute plasmas (2023)",
+      "timeline": "Commercial stellarator: 2050s (longer than tokamak but potentially more reliable)",
+      "description": "Stellarators use complex 3D magnetic field shapes that are inherently stable (no plasma current needed), eliminating disruption risk. Wendelstein 7-X in Germany is the world's largest stellarator and has demonstrated that optimized designs can achieve tokamak-like confinement. Stellarators are harder to build but potentially more reliable for steady-state power plants."
+    },
+    {
+      "id": "FUS-003",
+      "name": "Inertial Confinement Fusion (ICF)",
+      "approach": "Compress and heat tiny fuel pellets with lasers or X-rays to achieve fusion conditions",
+      "organization": "LLNL/NIF, Omega (LLE), LMJ (France), First Light Fusion",
+      "status": "Ignition achieved at NIF (2022); not yet a viable power plant approach",
+      "milestone": "NIF: 5.2 MJ fusion yield, Q~1.5 (2024)",
+      "timeline": "IFE power plant: 2040s-2050s; significant engineering challenges remain",
+      "description": "ICF uses powerful lasers to compress a DT fuel capsule to extreme density and temperature. NIF achieved ignition in 2022, proving the physics works. However, converting this to a power plant requires: 10 Hz repetition rate (NIF fires once/day), efficient laser drivers, target manufacturing at scale, and chamber design. IFE research is expanding with new driver approaches."
+    },
+    {
+      "id": "FUS-004",
+      "name": "Field-Reversed Configuration (FRC)",
+      "approach": "Compact self-organized plasma structure with closed magnetic field lines; no central penetration needed",
+      "organization": "TAE Technologies, Helion Energy",
+      "status": "TAE Norman at 30M°C; Helion building Polaris; Microsoft PPA signed for 2028",
+      "milestone": "Helion: first commercial fusion PPA; TAE: sustained FRC plasmas",
+      "timeline": "Helion targeting 2028; TAE targeting 2030s",
+      "description": "FRC creates a self-contained plasma ring with its own magnetic field, requiring minimal external magnets. This enables compact, potentially much cheaper fusion devices. Helion uses pulsed FRC with direct energy conversion (no steam). TAE targets aneutronic p-B11 fusion. Both are high-risk, high-reward approaches with aggressive timelines."
+    },
+    {
+      "id": "FUS-005",
+      "name": "Z-Pinch / Magneto-Inertial",
+      "approach": "Use electrical current through plasma to create self-confining magnetic field; or compress magnetized plasma with imploding liner",
+      "organization": "Zap Energy, Shiva Star (AFRL), MagLIF (Sandia)",
+      "status": "Zap Energy at 37M°C; Sandia MagLIF demonstrating significant neutron yields",
+      "milestone": "Zap: sheared-flow Z-pinch at fusion-relevant conditions; Sandia: MagLIF scaling favorably",
+      "timeline": "Zap Energy targeting 2030s commercialization",
+      "description": "Z-pinch is the simplest fusion concept: run a large current through plasma, and the resulting magnetic field confines it. The challenge is instability. Zap Energy solves this with sheared flow (differential plasma velocity). Sandia's MagLIF uses a laser to preheat magnetized fuel before Z-pinch compression. Both approaches avoid expensive magnetic coils."
+    },
+    {
+      "id": "FUS-006",
+      "name": "Aneutronic Fusion (p-B11)",
+      "approach": "Proton-boron fusion produces charged particles (no neutrons), enabling direct energy conversion",
+      "organization": "TAE Technologies, HB11 Energy, LPP Fusion",
+      "status": "Research phase; requires 10x higher temperature than D-T fusion (~1 billion°C)",
+      "milestone": "TAE: 30M°C achieved; need ~1 billion°C for p-B11",
+      "timeline": "Earliest 2035-2040; significant physics challenges remain",
+      "description": "Aneutronic fusion using hydrogen and boron-11 produces only charged alpha particles, eliminating neutron damage and activation. This enables direct energy conversion (electricity from charged particles, no steam cycle) with potential >80% efficiency. The catch: it requires temperatures of ~1 billion°C, 10x higher than D-T fusion. TAE and HB11 are pursuing different approaches to reach these conditions."
+    }
+  ]
+}

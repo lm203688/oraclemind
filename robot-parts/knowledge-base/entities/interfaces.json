@@ -1,0 +1,146 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-26T04:02:14.972Z",
+  "description": "接口标准库",
+  "entities": [
+    {
+      "id": "IF-001",
+      "name": "USB 3.0",
+      "category": "interface",
+      "type": "wired",
+      "speed": "5 Gbps",
+      "power": "5V/900mA",
+      "connector": "Type-A/Type-C/Micro-B",
+      "applications": [
+        "camera",
+        "lidar",
+        "compute_module",
+        "debug"
+      ],
+      "pros": [
+        "universal",
+        "hot_plug",
+        "power_delivery"
+      ],
+      "cons": [
+        "not_deterministic",
+        "cable_length_limited"
+      ],
+      "compatibility": [
+        "almost_all_devices"
+      ]
+    },
+    {
+      "id": "IF-002",
+      "name": "MIPI CSI-2",
+      "category": "interface",
+      "type": "camera_serial",
+      "speed": "2.5 Gbps/lane (up to 4 lanes)",
+      "power": "low",
+      "connector": "FFC/FPC",
+      "applications": [
+        "camera_module",
+        "depth_sensor"
+      ],
+      "pros": [
+        "high_bandwidth",
+        "low_power",
+        "standard_in_mobile"
+      ],
+      "cons": [
+        "short_cable",
+        "fragile_connector"
+      ],
+      "compatibility": [
+        "Jetson",
+        "RK3588",
+        "Qualcomm"
+      ]
+    },
+    {
+      "id": "IF-003",
+      "name": "PCIe 3.0/4.0",
+      "category": "interface",
+      "type": "high_speed_bus",
+      "speed": "8/16 GT/s per lane",
+      "power": "depends on slot",
+      "connector": "M.2/PCIe slot",
+      "applications": [
+        "GPU",
+        "NVMe",
+        "FPGA",
+        "high_speed_capture"
+      ],
+      "pros": [
+        "very_high_bandwidth",
+        "low_latency"
+      ],
+      "cons": [
+        "complex",
+        "expensive_connectors"
+      ],
+      "compatibility": [
+        "Jetson",
+        "x86_SBC",
+        "RK3588"
+      ]
+    },
+    {
+      "id": "IF-004",
+      "name": "GPIO",
+      "category": "interface",
+      "type": "digital_I/O",
+      "speed": "low",
+      "power": "3.3V/5V",
+      "connector": "pin_header",
+      "applications": [
+        "button",
+        "LED",
+        "relay",
+        "simple_sensor"
+      ],
+      "pros": [
+        "simple",
+        "universal"
+      ],
+      "cons": [
+        "slow",
+        "no_standardization"
+      ],
+      "compatibility": [
+        "Raspberry_Pi",
+        "STM32",
+        "ESP32"
+      ]
+    },
+    {
+      "id": "IF-005",
+      "name": "Ethernet (GbE)",
+      "category": "interface",
+      "type": "network",
+      "speed": "1 Gbps",
+      "power": "PoE optional",
+      "connector": "RJ45",
+      "applications": [
+        "robot_communication",
+        "ROS2",
+        "remote_control"
+      ],
+      "pros": [
+        "standard",
+        "long_range",
+        "PoE"
+      ],
+      "cons": [
+        "bulky_connector",
+        "EMI_sensitive"
+      ],
+      "compatibility": [
+        "Jetson",
+        "Pi5",
+        "RK3588",
+        "x86"
+      ]
+    }
+  ]
+}

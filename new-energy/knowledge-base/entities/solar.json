@@ -1,0 +1,2303 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-06-05T14:16:40.000Z",
+  "description": "光伏技术库 - 深度扩展版",
+  "entities": [
+    {
+      "id": "SE-001",
+      "name": "PERC",
+      "type": "晶硅",
+      "efficiency": "23.5%",
+      "cost": "低",
+      "maturity": "大规模量产",
+      "companies": [
+        "隆基",
+        "通威",
+        "晶科"
+      ],
+      "description": "钝化发射极和背面电池技术，当前主流但接近效率极限",
+      "trend": "逐步被TOPCon替代，新产能不再投资PERC"
+    },
+    {
+      "id": "SE-002",
+      "name": "TOPCon",
+      "type": "晶硅",
+      "efficiency": "25.5-26.5%",
+      "cost": "中低",
+      "maturity": "快速扩产",
+      "companies": [
+        "晶科",
+        "天合",
+        "晶澳"
+      ],
+      "description": "隧穿氧化层钝化接触技术，2024-2025年占新增产能60%以上",
+      "trend": "2025年量产效率突破26%，成为绝对主流技术路线"
+    },
+    {
+      "id": "SE-003",
+      "name": "HJT异质结",
+      "type": "晶硅",
+      "efficiency": "26.5-27%",
+      "cost": "中高",
+      "maturity": "小规模量产",
+      "companies": [
+        "华晟",
+        "东方日升",
+        "隆基"
+      ],
+      "description": "本征薄膜异质结电池，低温系数优势，适合高温地区",
+      "trend": "隆基HIBC效率达27.81%，创硅基单结世界纪录(2025)"
+    },
+    {
+      "id": "SE-004",
+      "name": "钙钛矿单结",
+      "type": "薄膜",
+      "efficiency": "27.3%",
+      "cost": "潜在极低",
+      "maturity": "实验室/中试",
+      "companies": [
+        "协鑫",
+        "纤纳",
+        "Oxford PV"
+      ],
+      "description": "有机-无机杂化钙钛矿材料，溶液法可加工，理论效率极限33%",
+      "trend": "2025-2026年NREL认证效率27.3%；西安交大2026年Science论文n-i-p结构达26.5%"
+    },
+    {
+      "id": "SE-005",
+      "name": "BC背接触",
+      "type": "晶硅",
+      "efficiency": "25.5-27%",
+      "cost": "中",
+      "maturity": "量产初期",
+      "companies": [
+        "隆基",
+        "爱旭"
+      ],
+      "description": "所有电极位于背面，正面无遮挡，美观高效",
+      "trend": "隆基HPBC 2.0量产效率突破26%；与HJT结合的HIBC路线前景广阔"
+    },
+    {
+      "id": "SE-006",
+      "name": "钙钛矿-硅叠层",
+      "type": "叠层",
+      "efficiency": "34.85%",
+      "cost": "中高",
+      "maturity": "实验室/中试",
+      "companies": [
+        "隆基",
+        "Oxford PV",
+        "Hanwha Qcells",
+        "CubicPV"
+      ],
+      "description": "钙钛矿顶电池+硅底电池叠层，突破硅单结效率极限29.4%",
+      "trend": "隆基2025年4月宣布34.85%效率；Oxford PV已开始商业发货；2026年量产化加速"
+    },
+    {
+      "id": "SE-007",
+      "name": "全钙钛矿叠层",
+      "type": "叠层",
+      "efficiency": "29.3%+",
+      "cost": "潜在极低",
+      "maturity": "实验室",
+      "companies": [
+        "Caelux",
+        "南京大学",
+        "EPFL",
+        "UNC"
+      ],
+      "description": "两种不同带隙钙钛矿叠层，全溶液法加工，成本潜力最大",
+      "trend": "窄带隙锡铅钙钛矿稳定性持续改善；商业化仍需5+年"
+    },
+    {
+      "id": "SE-008",
+      "name": "CIGS薄膜",
+      "type": "薄膜",
+      "efficiency": "23.6%",
+      "cost": "高",
+      "maturity": "利基市场",
+      "companies": [
+        "Solar Frontier",
+        "Avancis",
+        "Manz AG",
+        "Flisom"
+      ],
+      "description": "铜铟镓硒薄膜电池，柔性轻量，适合BIPV和便携应用",
+      "trend": "铟供应受限，成本难以下降；被钙钛矿薄膜路线挤压"
+    },
+    {
+      "id": "SE-009",
+      "name": "有机光伏OPV",
+      "type": "薄膜",
+      "efficiency": "19.4%",
+      "cost": "极低",
+      "maturity": "利基应用",
+      "companies": [
+        "Heliatek",
+        "Epishine",
+        "ASCA",
+        "Hyper PV"
+      ],
+      "description": "碳基半导体，超轻柔性半透明，可印刷在塑料薄膜上",
+      "trend": "Hyper PV 2026年1cm²有机电池效率达19.4%；IoT供电和BIPV利基市场"
+    },
+    {
+      "id": "SE-010",
+      "name": "聚光光伏CPV",
+      "type": "聚光",
+      "efficiency": "47.6%(四结)",
+      "cost": "高",
+      "maturity": "利基市场",
+      "companies": [
+        "Azur Space",
+        "Spectrolab",
+        "Soitec"
+      ],
+      "description": "透镜聚光+多结III-V族电池，效率极高但需直射光和追日系统",
+      "trend": "成本下降缓慢，被廉价平板PV挤压；仅在超高辐照地区有优势"
+    },
+    {
+      "id": "SE-011",
+      "name": "双面组件",
+      "type": "组件架构",
+      "efficiency": "比单面高5-25%",
+      "cost": "低",
+      "maturity": "主流",
+      "companies": [
+        "所有主流厂商"
+      ],
+      "description": "正反两面均可发电，利用地面反射光提升输出",
+      "trend": "2024年大型地面电站双面占比超70%，已成为标准配置"
+    },
+    {
+      "id": "SE-012",
+      "name": "光热发电CSP",
+      "type": "光热",
+      "efficiency": "15-25%",
+      "cost": "高",
+      "maturity": "商用",
+      "companies": [
+        "ACWA Power",
+        "BrightSource",
+        "首航高科"
+      ],
+      "description": "聚光加热熔盐储热，可提供10+小时可调度电力",
+      "trend": "摩洛哥/阿联酋/中国/西班牙运营中；成本仍高于PV+电池方案"
+    },
+    {
+      "id": "SE-013",
+      "name": "钙钛矿p-i-n架构",
+      "type": "钙钛矿架构",
+      "efficiency": "26%+",
+      "cost": "低",
+      "maturity": "快速崛起",
+      "companies": [
+        "多家实验室和初创"
+      ],
+      "description": "正式结构(p-i-n)替代传统反正式(n-i-p)，稳定性更好，适合叠层集成",
+      "trend": "2025年Nature综述指出p-i-n架构成为钙钛矿主流转型方向"
+    },
+    {
+      "id": "SE-014",
+      "name": "无铅钙钛矿",
+      "type": "钙钛矿变体",
+      "efficiency": "12-14%",
+      "cost": "中",
+      "maturity": "实验室",
+      "companies": [
+        "多所大学研究组"
+      ],
+      "description": "用锡/铋/锗替代铅，解决毒性问题，但效率差距大",
+      "trend": "效率仍远低于含铅版本；环保法规推动持续研究"
+    },
+    {
+      "id": "SE-015",
+      "name": "半片/叠瓦组件",
+      "type": "组件架构",
+      "efficiency": "提升2-5%",
+      "cost": "低",
+      "maturity": "主流",
+      "companies": [
+        "所有主流厂商"
+      ],
+      "description": "半片切割降低电阻损耗，叠瓦无缝拼接提升面积利用率",
+      "trend": "已成为组件标准工艺，配合大尺寸硅片(182/210mm)"
+    },
+    {
+      "id": "SE-016",
+      "name": "薄膜硅HJT-BC",
+      "type": "晶硅",
+      "efficiency": "27.81%",
+      "cost": "中高",
+      "maturity": "量产初期",
+      "companies": [
+        "隆基"
+      ],
+      "description": "HJT与背接触技术结合，隆基2025年创造硅基单结效率世界纪录",
+      "trend": "商业化面积350cm²效率27.03%；硅基技术天花板持续突破"
+    },
+    {
+      "id": "SE-017",
+      "name": "光伏建筑一体化BIPV",
+      "type": "应用场景",
+      "efficiency": "视技术而定",
+      "cost": "中高",
+      "maturity": "成长期",
+      "companies": [
+        "隆基",
+        "天合",
+        "中信博",
+        "Hanergy"
+      ],
+      "description": "光伏组件直接作为建筑材料(幕墙/屋顶/遮阳)，兼具发电和建筑功能",
+      "trend": "政策驱动增长；钙钛矿半透明组件将打开新市场"
+    },
+    {
+      "id": "SE-018",
+      "name": "水上光伏Floating PV",
+      "type": "应用场景",
+      "efficiency": "比地面高5-10%",
+      "cost": "中",
+      "maturity": "快速扩张",
+      "companies": [
+        "Sungrow",
+        "Ciel & Terre",
+        "华为"
+      ],
+      "description": "水面漂浮光伏，利用水面冷却效应提升效率，节约土地",
+      "trend": "全球装机超6GW；中国/日本/韩国/东南亚领先"
+    },
+    {
+      "id": "SE-019",
+      "name": "农业光伏Agrivoltaics",
+      "type": "应用场景",
+      "efficiency": "视设计而定",
+      "cost": "中",
+      "maturity": "示范推广",
+      "companies": [
+        "BayWa r.e.",
+        "Enel Green Power",
+        "中信博"
+      ],
+      "description": "光伏与农业结合，上方发电下方种植，土地双重利用",
+      "trend": "欧洲/日本政策支持；半透明钙钛矿组件特别适合"
+    },
+    {
+      "id": "SE-020",
+      "name": "钙钛矿/硅三结叠层",
+      "type": "叠层",
+      "efficiency": "目标35%+",
+      "cost": "高",
+      "maturity": "实验室早期",
+      "companies": [
+        "FhG-ISE/AMOLF",
+        "多家研究机构"
+      ],
+      "description": "三结叠层(两钙钛矿+一硅)，理论效率极限超40%",
+      "trend": "FhG-ISE/AMOLF 2026年报道36.1%效率；远期终极路线"
+    },
+    {
+      "id": "SE-021",
+      "name": "光伏制氢P2H",
+      "type": "耦合应用",
+      "efficiency": "15-20%(光到氢)",
+      "cost": "中高",
+      "maturity": "示范项目",
+      "companies": [
+        "隆基氢能",
+        "阳光氢能",
+        "Siemens"
+      ],
+      "description": "光伏直连电解槽制绿氢，省去电网环节，提高整体效率",
+      "trend": "中东/澳洲大规模项目规划；光伏成本下降推动经济性改善"
+    },
+    {
+      "id": "SE-022",
+      "name": "微光/室内光伏",
+      "type": "利基应用",
+      "efficiency": "10-20%(室内光)",
+      "cost": "低",
+      "maturity": "商业化初期",
+      "companies": [
+        "Epishine",
+        "Powerfoyle",
+        "Ricoh"
+      ],
+      "description": "专为室内/弱光环境设计的光伏，为IoT设备供电",
+      "trend": "IoT爆发驱动需求；有机和钙钛矿室内效率表现优异"
+    },
+    {
+      "id": "SE-023",
+      "name": "大尺寸硅片(182/210mm)",
+      "type": "硅片规格",
+      "efficiency": "间接提升",
+      "cost": "降低",
+      "maturity": "主流",
+      "companies": [
+        "中环",
+        "隆基",
+        "晶科",
+        "天合"
+      ],
+      "description": "从156mm升级到182/210mm，降低单瓦制造成本",
+      "trend": "210mm矩形片成为新标准；与TOPCon/HJT配合"
+    },
+    {
+      "id": "SE-024",
+      "name": "智能光伏运维AI",
+      "type": "数字化",
+      "efficiency": "提升1-3%",
+      "cost": "低",
+      "maturity": "商用",
+      "companies": [
+        "华为智能光伏",
+        "阳光电源",
+        "Aurora Solar"
+      ],
+      "description": "AI驱动的光伏电站监控、故障诊断、清洁调度优化",
+      "trend": "无人机巡检+AI诊断成为标配；数字孪生技术应用"
+    },
+    {
+      "id": "SE-025",
+      "name": "光伏回收技术",
+      "type": "循环经济",
+      "efficiency": "N/A",
+      "cost": "中",
+      "maturity": "起步期",
+      "companies": [
+        "Veolia",
+        "First Solar",
+        "RCirca"
+      ],
+      "description": "退役光伏组件的材料回收，回收硅/银/玻璃/铝等有价值材料",
+      "trend": "首批大规模退役潮2030年到来；欧盟WEEE指令推动；钙钛矿回收更简单"
+    },
+    {
+      "id": "SOL-huarou-27.98",
+      "name": "Huarou PV 27.98% Perovskite Cell",
+      "type": "perovskite_single_junction",
+      "company": "Huarou PV",
+      "efficiency": 27.98,
+      "area_cm2": null,
+      "certification": "NPVM",
+      "key_findings": [
+        "World record for single-junction perovskite solar cell at 27.98%",
+        "Innovations in crystallization quality and interface defect regulation",
+        "Three-layer protection strategy for stability",
+        "Also developing flexible perovskite cells >25% efficiency"
+      ],
+      "status": "lab_record",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SOL-solaeon-27.87",
+      "name": "SolaEon 27.87% Perovskite Cell",
+      "type": "perovskite_single_junction",
+      "company": "SolaEon",
+      "efficiency": 27.87,
+      "area_cm2": 0.076,
+      "certification": "NPVM",
+      "key_findings": [
+        "Shenzhen-based startup achieved 27.87% efficiency",
+        "Fill factor of 87.61%",
+        "Also achieved 20.7% efficiency on 0.72m² module (June 2025)"
+      ],
+      "status": "lab_record",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SOL-longi-tandem-35",
+      "name": "LONGi 35.0% Perovskite-Silicon Tandem",
+      "type": "perovskite_silicon_tandem",
+      "company": "LONGi Solar",
+      "efficiency": 35,
+      "area_cm2": 1,
+      "certification": "NREL",
+      "key_findings": [
+        "World record for perovskite-silicon tandem cell at 35.0% (1cm²)",
+        "Also holds large-area record: 33.0% on 260.9cm² (June 2025)",
+        "Certified by NREL April 2025"
+      ],
+      "status": "lab_record",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SOL-nankai-27.17",
+      "name": "Nankai University 27.17% n-i-p Perovskite",
+      "type": "perovskite_single_junction",
+      "company": "Nankai University",
+      "efficiency": 27.17,
+      "area_cm2": null,
+      "certification": "International authority",
+      "key_findings": [
+        "World record for n-i-p perovskite solar cells at 27.17% steady-state",
+        "Continuously gradient-doped SnO2 electron transport layer",
+        "Open-circuit voltage loss reduced to 295mV",
+        "Published in Nature April 2026"
+      ],
+      "status": "lab_record",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SOL-korea-china-27.6",
+      "name": "Korea-China Joint 27.6% Perovskite",
+      "type": "perovskite_single_junction",
+      "company": "Sungkyunkwan University / Huazhong University",
+      "efficiency": 27.6,
+      "area_cm2": null,
+      "certification": "International",
+      "key_findings": [
+        "27.6% efficiency via molecular design strategy (3-PMPCl additive)",
+        "Intrinsic crystal stabilization instead of external reinforcement",
+        "Bismuth electrode variant: 26.8% efficiency with 93% retention after 1011 hours",
+        "Published in Science May 2026"
+      ],
+      "status": "lab_record",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-026",
+      "name": "LONGi HIBC 28.13%硅电池",
+      "type": "晶硅",
+      "efficiency": "28.13%",
+      "cost": "中高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "隆基"
+      ],
+      "description": "隆基2026年4月宣布HIBC(异质结背接触)硅电池效率达28.13%，刷新硅基单结世界纪录",
+      "trend": "同时宣布组件效率26.4%的纪录；硅基技术天花板持续突破",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.pv-magazine.com/2026/04/28/longi-announces-world-record-efficiency-of-28-13-for-silicon-solar-cell",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-027",
+      "name": "西安交大n-i-p钙钛矿26.5%",
+      "type": "钙钛矿",
+      "efficiency": "26.5%(0.08cm²)/24.9%(1cm²)",
+      "cost": "低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "西安交通大学"
+      ],
+      "description": "西安交大2026年1月Science论文，n-i-p结构钙钛矿电池效率突破26.5%，1cm²面积达24.9%",
+      "trend": "n-i-p架构效率快速追赶p-i-n；大面积器件效率差距缩小",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://en.xjtu.edu.cn/2026-01/09/c_1153935.htm",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-028",
+      "name": "钙钛矿单结>30%突破",
+      "type": "钙钛矿",
+      "efficiency": ">30%",
+      "cost": "低",
+      "maturity": "实验室突破",
+      "companies": [
+        "中国研究团队"
+      ],
+      "description": "2026年5月报道中国团队开发新方法使钙钛矿电池效率突破30%，为低成本太阳能加速铺路",
+      "trend": "单结钙钛矿突破30%是里程碑；叠层路线之外的新选择",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://knowridge.com/2026/05/new-perovskite-solar-cell-breakthrough-pushes-efficiency-beyond-30",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-029",
+      "name": "FhG-ISE/AMOLF三结36.1%",
+      "type": "叠层",
+      "efficiency": "36.1%",
+      "cost": "极高",
+      "maturity": "实验室早期",
+      "companies": [
+        "Fraunhofer ISE",
+        "AMOLF"
+      ],
+      "description": "三结叠层(两钙钛矿+一硅)效率达36.1%，NREL 2026年5月更新认证",
+      "trend": "三结路线理论极限超40%；远期终极光伏技术路线",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://nrel.gov/media/docs/libraries/pv/cell-pv-eff.pdf",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-030",
+      "name": "LONGi 34.6%钙钛矿-硅叠层",
+      "type": "叠层",
+      "efficiency": "34.6%",
+      "cost": "中高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "隆基"
+      ],
+      "description": "隆基钙钛矿-硅叠层电池效率达34.6%，继34.85%认证后又一突破",
+      "trend": "叠层路线2025-2026年快速推进；Oxford PV已开始商业发货",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.youtube.com/watch?v=eMgjRNKNxlg",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-031",
+      "name": "Solar Cell Efficiency Tables v67",
+      "type": "效率认证",
+      "efficiency": "综合参考",
+      "cost": "N/A",
+      "maturity": "权威发布",
+      "companies": [
+        "NREL",
+        "Martin Green团队"
+      ],
+      "description": "2026年Solar Cell Efficiency Tables第67版发布，有机电池1cm²效率达19.4%(Hyper PV)，叠层认证效率持续更新",
+      "trend": "效率认证体系持续完善；各类电池效率纪录快速刷新",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/pip.70068",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-032",
+      "name": "JinkoSolar TOPCon 27.79%",
+      "type": "晶硅",
+      "efficiency": "27.79%",
+      "cost": "中低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "晶科"
+      ],
+      "description": "JinkoSolar TOPCon电池效率达27.79%，Elon Musk在社交媒体点赞认可",
+      "trend": "TOPCon量产效率持续突破；2026年量产线效率向27%逼近",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://link.springer.com/article/10.1007/s11708-026-1050-8",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-033",
+      "name": "LONGi HIBC组件26.4%",
+      "type": "晶硅组件",
+      "efficiency": "26.4%",
+      "cost": "中高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "隆基"
+      ],
+      "description": "隆基HIBC组件效率达26.4%，获美国国家落基山实验室(NLR)认证，为组件效率世界纪录",
+      "trend": "组件效率突破26%是量产化关键里程碑；HIBC路线商业化加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.solarpowerworldonline.com/2026/04/longi-exceeds-26-efficiency-on-solar-panel-with-hjt-ibc-cells",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-034",
+      "name": "SolaEon 27.87%钙钛矿单结",
+      "type": "钙钛矿",
+      "efficiency": "27.87%",
+      "cost": "低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "SolaEon(深圳)"
+      ],
+      "description": "深圳初创公司SolaEon单结钙钛矿电池效率27.87%，填充因子87.61%，2026年1月NPVM认证",
+      "trend": "中国钙钛矿初创公司效率快速追赶；0.72m²组件效率20.7%(2025年6月)",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.perovskite-info.com/archive/202601",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-035",
+      "name": "Huarou PV 27.98%钙钛矿单结",
+      "type": "钙钛矿",
+      "efficiency": "27.98%",
+      "cost": "低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "Huarou PV"
+      ],
+      "description": "Huarou PV单结钙钛矿电池效率27.98%，NPVM认证，三层保护策略提升稳定性",
+      "trend": "单结钙钛矿效率逼近28%；柔性钙钛矿>25%效率同步推进",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-036",
+      "name": "南开大学n-i-p钙钛矿27.17%",
+      "type": "钙钛矿",
+      "efficiency": "27.17%",
+      "cost": "低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "南开大学"
+      ],
+      "description": "南开大学n-i-p结构钙钛矿稳态效率27.17%，连续梯度掺杂SnO2电子传输层，开路电压损失仅295mV，Nature 2026年4月发表",
+      "trend": "n-i-p架构效率快速提升；梯度掺杂策略成为新方向",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-037",
+      "name": "韩中联合27.6%钙钛矿",
+      "type": "钙钛矿",
+      "efficiency": "27.6%",
+      "cost": "低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "成均馆大学/华中科技大学"
+      ],
+      "description": "韩中联合团队分子设计策略(3-PMPCl添加剂)实现27.6%效率，铋电极变体26.8%且1011小时保持93%，Science 2026年5月发表",
+      "trend": "本征晶体稳定化替代外部加固；铋电极替代银/金降低成本",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-038",
+      "name": "钙钛矿商业化路线图2026",
+      "type": "产业趋势",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "量产化加速",
+      "companies": [
+        "Oxford PV",
+        "协鑫",
+        "纤纳",
+        "极电光能"
+      ],
+      "description": "2026年钙钛矿太阳能电池商业化加速：Oxford PV已商业发货，中国多家企业中试线投产，全球市场2026-2033年CAGR预测超30%",
+      "trend": "从实验室纪录到量产化过渡关键年；稳定性/大面积/成本三重挑战逐步解决",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.greenfueljournal.com/post/perovskite-solar-cell-revolution-2026-part-i",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-039",
+      "name": "双面智能光伏系统",
+      "type": "组件架构",
+      "efficiency": "综合提升15-30%",
+      "cost": "中低",
+      "maturity": "商用扩张",
+      "companies": [
+        "所有主流厂商"
+      ],
+      "description": "2026年双面组件+智能追踪+AI优化成为大型地面电站标配，综合发电量提升15-30%",
+      "trend": "双面+单轴追踪+AI优化三位一体；2026年新建项目标配",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunhub.com/blog/solar-panel-technology-2026",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-040",
+      "name": "美国2025年43GW光伏装机",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "行业趋势",
+      "companies": [
+        "全行业"
+      ],
+      "description": "美国2025年新增43GW光伏装机，连续第五年太阳能领先所有新增电力装机，2026年预计41.5GW公用事业级新增",
+      "trend": "EIA预测2026年新增电力100%来自可再生能源；太阳能主导地位持续",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.renewableinstitute.org/us-renewable-growth-continues-into-2026",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-041",
+      "name": "NREL效率图2026年5月更新",
+      "type": "效率认证",
+      "efficiency": "综合参考",
+      "cost": "N/A",
+      "maturity": "权威发布",
+      "companies": [
+        "NREL"
+      ],
+      "description": "NREL Best Research-Cell Efficiency Chart 2026年5月12日更新，三结钙钛矿-硅36.1%为最高非聚光效率",
+      "trend": "各类电池效率纪录持续刷新；钙钛矿叠层路线效率领先",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://nrel.gov/media/docs/libraries/pv/cell-pv-eff.pdf",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-042",
+      "name": "BloombergNEF新能源展望2026",
+      "type": "行业报告",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "BloombergNEF"
+      ],
+      "description": "BloombergNEF New Energy Outlook 2026发布，长期能源转型和气候情景分析，可再生能源主导地位进一步确认",
+      "trend": "全球能源转型加速；太阳能+储能成为最经济的新建电力方案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://about.bnef.com/insights/clean-energy/new-energy-outlook",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-043",
+      "name": "BloombergNEF NEO 2026太阳能展望",
+      "type": "行业报告",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "参考",
+      "companies": [
+        "BloombergNEF"
+      ],
+      "description": "BloombergNEF New Energy Outlook 2026: 太阳能2032年成为全球最大发电来源，储能到2050年增长17倍至3.8TW",
+      "trend": "太阳能+储能成为最经济新建电力方案；化石能源新增装机归零",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://about.bnef.com/insights/clean-energy/bloombergnefs-new-energy-outlook-2026",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-044",
+      "name": "EIA 2026美国新增电力100%清洁能源",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "行业趋势",
+      "companies": [
+        "EIA"
+      ],
+      "description": "EIA报告：2026年美国新增电力装机100%来自可再生能源，太阳能占51%，储能28%，风电占其余",
+      "trend": "化石能源新增装机归零；太阳能+储能主导新增容量",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.canarymedia.com/articles/clean-energy/chart-us-overwhelmingly-build-clean-power-in-2026",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-045",
+      "name": "CAS钙钛矿太阳能板前景分析",
+      "type": "行业分析",
+      "efficiency": "27-35%",
+      "cost": "持续下降",
+      "maturity": "商业化加速",
+      "companies": [
+        "CAS"
+      ],
+      "description": "CAS.org 2026年分析：钙钛矿太阳能板效率持续提升，稳定性和大规模制造挑战逐步解决",
+      "trend": "钙钛矿从实验室到商业化的关键过渡期；稳定性突破是核心",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.cas.org/resources/cas-insights/perovskite-solar-panels",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-046",
+      "name": "2026太阳能板技术趋势",
+      "type": "技术趋势",
+      "efficiency": "综合提升",
+      "cost": "持续下降",
+      "maturity": "商用扩张",
+      "companies": [
+        "全行业"
+      ],
+      "description": "2026年太阳能板技术趋势：叠层电池+双面组件+智能系统+高效设计四位一体",
+      "trend": "叠层电池商业化加速；双面+追踪+AI优化成为标配",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunhub.com/blog/solar-panel-technology-2026",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-047",
+      "name": "Nature钙钛矿策略综述2025-2026",
+      "type": "学术综述",
+      "efficiency": "27%+",
+      "cost": "持续下降",
+      "maturity": "研究前沿",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "Nature Reviews发表钙钛矿太阳能电池最新策略综述：无铅化/大面积/稳定性多路线并行",
+      "trend": "无铅钙钛矿效率提升；大面积组件稳定性改善；商业化路径多元化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s44296-025-00073-9",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-048",
+      "name": "Fluxim钙钛矿效率追踪2026",
+      "type": "效率认证",
+      "efficiency": "34.85%叠层",
+      "cost": "N/A",
+      "maturity": "权威追踪",
+      "companies": [
+        "Fluxim AG"
+      ],
+      "description": "Fluxim AG 2026年钙钛矿效率追踪更新：LONGi 34.85%叠层仍为最高，单结逼近28%",
+      "trend": "叠层效率持续领先；单结效率快速追赶；认证体系完善",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.fluxim.com/research-blogs/perovskite-silicon-tandem-pv-record-update",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-049",
+      "name": "Fraunhofer ISE 36.1%三结叠层确认",
+      "type": "叠层",
+      "efficiency": "36.1%",
+      "cost": "极高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "Fraunhofer ISE",
+        "AMOLF"
+      ],
+      "description": "Fraunhofer ISE确认三结叠层(两钙钛矿+一硅)效率36.1%，2026年最新认证",
+      "trend": "三结叠层理论极限超40%；远期终极光伏技术路线",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.ise.fraunhofer.de/en/press-media/press-releases/2026/fraunhoferise-achieves-record-efficiencies-for-tandem",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-050",
+      "name": "EurekAlert 2025太阳能效率突破回顾",
+      "type": "年度回顾",
+      "efficiency": "综合参考",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "全行业"
+      ],
+      "description": "2025年太阳能效率纪录全面突破：硅基/钙钛矿/叠层/有机多路线同时刷新",
+      "trend": "2025年是太阳能效率突破之年；2026年商业化加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.eurekalert.org/news-releases/1118253",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-051",
+      "name": "LONGi HIBC 28.13%硅电池ISFH认证",
+      "type": "晶硅",
+      "efficiency": "28.13%",
+      "cost": "中高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "隆基"
+      ],
+      "description": "隆基2026年4月28日宣布HIBC硅电池效率28.13%，获ISFH认证，刷新硅基单结世界纪录",
+      "trend": "硅基电池效率天花板持续突破；28%+效率为叠层商业化铺路",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.pv-magazine.com/2026/04/28/longi-announces-world-record-efficiency-of-28-13-for-silicon-solar-cell",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-052",
+      "name": "Nature 27.03%大面积硅电池世界纪录",
+      "type": "晶硅",
+      "efficiency": "27.03%",
+      "cost": "中",
+      "maturity": "实验室纪录",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "Nature论文报道350cm²商用尺寸单结硅电池效率27.03%的世界纪录，基于TBC器件结构",
+      "trend": "大面积商用尺寸效率突破27%；实验室纪录向量产转化加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s41467-025-61128-y",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-053",
+      "name": "Trina Solar钙钛矿单结30.6%",
+      "type": "钙钛矿",
+      "efficiency": "30.6%",
+      "cost": "低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "天合光能"
+      ],
+      "description": "天合光能2025年6月创造钙钛矿单结电池30.6%效率纪录，为钙钛矿单结最高效率",
+      "trend": "钙钛矿单结突破30%是重大里程碑；天合在钙钛矿领域领先",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunsave.energy/solar-panels-advice/solar-technology/perovskite",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-054",
+      "name": "美国钙钛矿初创CubicPV量产推进",
+      "type": "钙钛矿",
+      "efficiency": "N/A",
+      "cost": "中",
+      "maturity": "量产初期",
+      "companies": [
+        "CubicPV",
+        "美国初创"
+      ],
+      "description": "2026年美国钙钛矿太阳能电池初创公司加速量产化推进，成本仍高于硅但快速下降",
+      "trend": "美国钙钛矿产业化起步；成本竞争力是关键挑战",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://cleantechnica.com/2026/03/12/us-perovskite-solar-cell-startup-hits-the-ground-running",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-055",
+      "name": "钙钛矿太阳能板市场2026-2034",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "市场增长",
+      "companies": [
+        "全行业"
+      ],
+      "description": "全球钙钛矿太阳能板市场2024年2.71亿美元，预计2034年达4.88亿美元，CAGR 8.9%",
+      "trend": "钙钛矿市场稳步增长；效率提升和成本下降驱动商业化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.intelmarketresearch.com/perovskite-solar-panels-market-30943",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-056",
+      "name": "2026最效率太阳能板Top15排名",
+      "type": "市场排名",
+      "efficiency": "22-24.5%",
+      "cost": "N/A",
+      "maturity": "商用",
+      "companies": [
+        "全行业"
+      ],
+      "description": "2026年最效率商用太阳能板排名：电池级效率从27.3%到28.13%(ISFH认证)，超越HPBC和TOPCon",
+      "trend": "商用面板效率持续攀升；HIBC路线效率领先",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.solar-stack.com/en/blog/most-efficient-solar-panels-2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-057",
+      "name": "Springer 2025主流太阳能电池效率亮点",
+      "type": "学术综述",
+      "efficiency": "综合参考",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "多机构"
+      ],
+      "description": "Springer 2026年2月发表2025年主流太阳能电池效率亮点综述，JinkoSolar TOPCon 27.79%被Elon Musk点赞",
+      "trend": "TOPCon量产效率持续突破；2025年各类电池效率全面刷新",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://link.springer.com/article/10.1007/s11708-026-1050-8",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-058",
+      "name": "NLR光伏效率认证图2026",
+      "type": "效率认证",
+      "efficiency": "综合参考",
+      "cost": "N/A",
+      "maturity": "权威发布",
+      "companies": [
+        "NLR"
+      ],
+      "description": "NLR(National Renewable Energy Laboratory)维护的最佳研究电池效率图，2026年持续更新各类电池效率纪录",
+      "trend": "效率认证体系持续完善；各类电池效率纪录快速刷新",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nlr.gov/pv/cell-efficiency",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-059",
+      "name": "Hyper PV有机电池19.4%",
+      "type": "有机光伏",
+      "efficiency": "19.4%",
+      "cost": "极低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "Hyper PV Technology"
+      ],
+      "description": "Hyper PV Technology 1cm²有机太阳能电池效率达19.4%，为有机光伏最大面积效率纪录",
+      "trend": "有机光伏效率持续突破；大面积器件效率差距缩小",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/pip.70068",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-060",
+      "name": "钙钛矿-硅叠层效率34.85% LONGi认证",
+      "type": "叠层",
+      "efficiency": "34.85%",
+      "cost": "中高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "隆基"
+      ],
+      "description": "LONGi 2025年4月钙钛矿-硅叠层电池效率34.85%获认证，为当前叠层效率最高纪录",
+      "trend": "叠层效率持续领先；LONGi在叠层路线保持领先地位",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.fluxim.com/research-blogs/perovskite-silicon-tandem-pv-record-updates",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-061",
+      "name": "钙钛矿面板是否值得等待2026分析",
+      "type": "行业分析",
+      "efficiency": "27-35%",
+      "cost": "持续下降",
+      "maturity": "商业化加速",
+      "companies": [
+        "Oxford PV",
+        "协鑫",
+        "纤纳"
+      ],
+      "description": "Sunsave 2026年分析：钙钛矿面板效率高达30.6%(天合纪录)，但稳定性和成本仍是商业化关键挑战",
+      "trend": "钙钛矿面板商业化前景乐观但挑战仍存；2026-2028年关键窗口期",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunsave.energy/solar-panels-advice/solar-technology/perovskite",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-062",
+      "name": "XJTU n-i-p钙钛矿Science论文",
+      "type": "钙钛矿",
+      "efficiency": "26.5%",
+      "cost": "低",
+      "maturity": "实验室纪录",
+      "companies": [
+        "西安交通大学"
+      ],
+      "description": "西安交大2026年首篇Science论文：n-i-p结构钙钛矿电池0.08cm²效率26.5%，1cm²效率24.9%",
+      "trend": "n-i-p架构效率快速追赶p-i-n；大面积器件效率差距缩小",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://en.xjtu.edu.cn/2026-01/09/c_1153935.htm",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-063",
+      "name": "Nature钙钛矿技术发展综述",
+      "type": "学术综述",
+      "efficiency": "27%+",
+      "cost": "持续下降",
+      "maturity": "研究前沿",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "Nature发表钙钛矿太阳能电池技术发展综述：高性能PSCs最新策略包括无铅化/大面积/稳定性",
+      "trend": "钙钛矿技术路线多元化；无铅化和稳定性是研究重点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s44296-025-00073-9",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-064",
+      "name": "太阳能板改进速度2026分析",
+      "type": "行业分析",
+      "efficiency": "持续提升",
+      "cost": "持续下降",
+      "maturity": "商用扩张",
+      "companies": [
+        "全行业"
+      ],
+      "description": "Sunsave 2026年分析：太阳能板效率持续快速提升，LONGi 2025年4月34.85%叠层效率为里程碑",
+      "trend": "太阳能板效率每年提升0.5-1%；成本每年下降5-10%",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunsave.energy/solar-panels-advice/solar-technology/improving",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-065",
+      "name": "GreenFuel钙钛矿革命2026",
+      "type": "行业趋势",
+      "efficiency": "27-36%",
+      "cost": "持续下降",
+      "maturity": "商业化加速",
+      "companies": [
+        "全行业"
+      ],
+      "description": "GreenFuel Journal 2026年钙钛矿革命系列：效率纪录/稳定性突破/全球市场增长三大主题",
+      "trend": "钙钛矿从实验室到商业化关键过渡；2026年量产化加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.greenfueljournal.com/post/perovskite-solar-cell-revolution-2026-part-i",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-066",
+      "name": "LONGi HIBC 28.04%前纪录",
+      "type": "晶硅",
+      "efficiency": "28.04%",
+      "cost": "中高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "隆基"
+      ],
+      "description": "隆基2026年1月创造HIBC硅电池28.04%效率纪录，4月被自身28.13%刷新",
+      "trend": "硅基电池效率在4个月内两次刷新；HIBC路线持续突破",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.theenergymix.com/two-chinese-companies-set-new-world-records-for-solar-cell-efficiency",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-067",
+      "name": "三结钙钛矿23.3%大面积认证",
+      "type": "叠层",
+      "efficiency": "23.3%(16cm²)",
+      "cost": "高",
+      "maturity": "实验室纪录",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "16cm²三结钙钛矿电池独立认证稳态效率23.3%，为大面积三结最高效率",
+      "trend": "大面积三结钙钛矿效率持续提升；从实验室小面积向实用面积过渡",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://techxplore.com/news/2025-10-global-efficiency-large-triple-junction.html",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-068",
+      "name": "钙钛矿市场2026-2033预测",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "市场增长",
+      "companies": [
+        "全行业"
+      ],
+      "description": "全球钙钛矿太阳能电池市场2026年估值4.65亿美元，预计2033年达110.3亿美元，CAGR超30%",
+      "trend": "钙钛矿市场爆发式增长预期；2026-2028年商业化关键窗口",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.coherentmarketinsights.com/industry-reports/perovskite-solar-cell-market",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-069",
+      "name": "Deloitte 2026可再生能源行业展望",
+      "type": "行业报告",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "参考",
+      "companies": [
+        "Deloitte"
+      ],
+      "description": "Deloitte 2026可再生能源展望：压缩时间线和激烈竞争定义2026年，加速近期部署以获取税收抵免",
+      "trend": "政策驱动可再生能源加速部署；供应链多元化成为关键",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-070",
+      "name": "Environment America 2026清洁能源破纪录",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "行业趋势",
+      "companies": [
+        "全行业"
+      ],
+      "description": "Environment America: 2026年清洁能源新增将破纪录，太阳能占新增51%，德州/亚利桑那/加州/密歇根领先",
+      "trend": "太阳能主导新增电力装机；清洁能源增长势头不可逆转",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://environmentamerica.org/center/updates/clean-energy-additions-to-break-records-in-2026",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-071",
+      "name": "Invenergy 2026太阳能项目",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "建设中",
+      "companies": [
+        "Invenergy",
+        "Meta"
+      ],
+      "description": "Invenergy 2026年多个太阳能项目：Tip Top Solar(新墨西哥110MW为Meta供电)、Chalk Bluff Solar(亚利桑那350MW)",
+      "trend": "科技巨头大规模采购可再生能源；企业PPA驱动太阳能增长",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.buildcentral.com/invenergy-projects-in-2026-how-to-track-where-theyre-building-and-whos-involved",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-072",
+      "name": "Atwell七大能源趋势2026",
+      "type": "行业趋势",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "Atwell"
+      ],
+      "description": "Atwell 2026七大电力能源趋势：负荷增长真实但地理/时间更重要；互联成为主要价值驱动；太阳能+储能主导",
+      "trend": "电网互联瓶颈成为核心问题；太阳能+储能成为最经济方案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://atwell.com/news-and-insights/seven-megatrends-shaping-power-and-energy-in-2026",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-073",
+      "name": "Sunsave钙钛矿面板30.6%效率评估",
+      "type": "行业分析",
+      "efficiency": "30.6%(天合纪录)",
+      "cost": "持续下降",
+      "maturity": "商业化评估",
+      "companies": [
+        "Trina Solar",
+        "Oxford PV"
+      ],
+      "description": "Sunsave 2026年6月评估：钙钛矿面板效率高达30.6%(天合纪录)，但稳定性和成本仍是商业化关键挑战",
+      "trend": "钙钛矿面板商业化前景乐观但挑战仍存；2026-2028年关键窗口期",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunsave.energy/solar-panels-advice/solar-technology/perovskite",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-074",
+      "name": "2025太阳能突破回顾及2026展望",
+      "type": "年度回顾",
+      "efficiency": "综合参考",
+      "cost": "持续下降",
+      "maturity": "参考",
+      "companies": [
+        "全行业"
+      ],
+      "description": "2025年太阳能突破回顾：LONGi HIBC 28.13%/钙钛矿叠层34.85%/有机电池19.4%等纪录刷新，2026年商业化加速",
+      "trend": "2025年是太阳能效率突破之年；2026年从纪录到量产转化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-075",
+      "name": "NREL最佳研究电池效率图2026版",
+      "type": "效率认证",
+      "efficiency": "综合参考",
+      "cost": "N/A",
+      "maturity": "权威追踪",
+      "companies": [
+        "NREL"
+      ],
+      "description": "NREL 2026年6月更新最佳研究电池效率图，涵盖所有光伏技术路线最新认证效率",
+      "trend": "全技术路线效率持续提升",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nrel.gov/pv/cell-efficiency.html",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-076",
+      "name": "Green太阳能效率表Version 67",
+      "type": "效率认证",
+      "efficiency": "综合参考",
+      "cost": "N/A",
+      "maturity": "权威追踪",
+      "companies": [
+        "UNSW"
+      ],
+      "description": "Martin Green团队发布Solar Cell Efficiency Tables Version 67：有机电池19.4%大突破，钙钛矿/叠层多项纪录更新",
+      "trend": "效率表持续更新；有机电池效率突破性进展",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://onlinelibrary.wiley.com/doi/10.1002/pip.3844",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-077",
+      "name": "XJTU 2026首篇Science钙钛矿突破",
+      "type": "学术突破",
+      "efficiency": "26.5%认证(n-i-p)",
+      "cost": "N/A",
+      "maturity": "实验室突破",
+      "companies": [
+        "西安交通大学"
+      ],
+      "description": "西安交通大学2026年首篇Science：n-i-p结构钙钛矿电池0.08cm²认证26.5%，大面积25.1%效率",
+      "trend": "n-i-p结构钙钛矿效率突破；中国高校持续领先",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-078",
+      "name": "Huarou PV钙钛矿27.98%纪录",
+      "type": "效率纪录",
+      "efficiency": "27.98%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "Huarou PV"
+      ],
+      "description": "Huarou PV创造钙钛矿单结电池27.98%效率新纪录，接近硅电池理论极限",
+      "trend": "钙钛矿单结效率逼近28%；超越多晶硅纪录",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-079",
+      "name": "SolaEon钙钛矿27.87%效率",
+      "type": "效率纪录",
+      "efficiency": "27.87%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "SolaEon"
+      ],
+      "description": "SolaEon创造钙钛矿单结电池27.87%效率纪录，钙钛矿单结效率竞赛白热化",
+      "trend": "钙钛矿效率纪录频繁刷新；多家公司竞争",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-080",
+      "name": "南开大学n-i-p钙钛矿26.17%",
+      "type": "学术突破",
+      "efficiency": "26.17%",
+      "cost": "N/A",
+      "maturity": "实验室突破",
+      "companies": [
+        "南开大学"
+      ],
+      "description": "南开大学在n-i-p结构钙钛矿电池实现26.17%效率，推动n-i-p路线效率提升",
+      "trend": "n-i-p结构效率持续提升；与p-i-n路线竞争",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-081",
+      "name": "韩中联合钙钛矿27.6%效率",
+      "type": "效率纪录",
+      "efficiency": "27.6%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "韩国/中国联合团队"
+      ],
+      "description": "韩中联合研究团队创造钙钛矿单结电池27.6%效率，国际合作推动效率突破",
+      "trend": "国际合作加速钙钛矿效率提升",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-082",
+      "name": "LONGi三结叠层36.1%效率",
+      "type": "效率纪录",
+      "efficiency": "36.1%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "LONGi"
+      ],
+      "description": "LONGi创造三结叠层电池36.1%效率新纪录，远超双结叠层，多结路线效率优势明显",
+      "trend": "三结叠层效率突破36%；多结路线是终极效率方案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-083",
+      "name": "Solar Cell Efficiency Tables V67发布",
+      "type": "效率纪录",
+      "efficiency": "27.7%",
+      "cost": "N/A",
+      "maturity": "参考标准",
+      "companies": [
+        "NREL"
+      ],
+      "description": "Green et al.发布Solar Cell Efficiency Tables Version 67，新纪录27.7%大面积单结电池(2025年10月认证)",
+      "trend": "效率表持续更新；V67确认多个新纪录",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/pip.70068",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-084",
+      "name": "LONGi HIBC晶硅电池28.13%世界纪录",
+      "type": "效率纪录",
+      "efficiency": "28.13%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "LONGi"
+      ],
+      "description": "LONGi宣布HIBC(混合叉指背接触)晶硅电池效率28.13%世界纪录，同时模块效率26.4%",
+      "trend": "HIBC路线效率突破28%；晶硅电池接近理论极限",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.longi.com/en/news/hybrid-interdigitated-back-contact-cell-record",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-085",
+      "name": "Nature: 商业尺寸硅电池27.03%总面效率纪录",
+      "type": "效率纪录",
+      "efficiency": "27.03%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "Nature发表350cm²商业尺寸单结硅电池总面效率27.03%纪录，发表于2025年7月",
+      "trend": "商业尺寸电池效率追赶小面积电池；量产化效率提升",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s41467-025-61128-y",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-086",
+      "name": "JinkoSolar TOPCon 27.79%效率世界纪录",
+      "type": "效率纪录",
+      "efficiency": "27.79%",
+      "cost": "中低",
+      "maturity": "快速扩产",
+      "companies": [
+        "JinkoSolar"
+      ],
+      "description": "JinkoSolar TOPCon电池效率达27.79%世界纪录，Elon Musk在社交媒体点赞认可",
+      "trend": "TOPCon效率持续突破；主流技术路线效率天花板不断上移",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://link.springer.com/article/10.1007/s11708-026-1050-8",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-087",
+      "name": "有机太阳能电池20%效率突破",
+      "type": "有机光伏",
+      "efficiency": "20%+",
+      "cost": "中",
+      "maturity": "实验室阶段",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "2025年有机太阳能电池效率突破20%大关，Chen H, Huang Y等发表在Springer",
+      "trend": "有机光伏从低效到实用化；柔性应用场景优势明显",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://link.springer.com/article/10.1007/s11708-026-1050-8",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-088",
+      "name": "LONGi钙钛矿-硅叠层34.85%效率纪录",
+      "type": "钙钛矿叠层",
+      "efficiency": "34.85%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "LONGi"
+      ],
+      "description": "LONGi 2025年4月创造钙钛矿-硅叠层电池34.85%效率纪录，为当前叠层电池最高效率",
+      "trend": "叠层电池效率逼近35%；钙钛矿-硅叠层是下一代光伏方向",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.fluxim.com/research-blogs/perovskite-silicon-tandem-pv-record-updates",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-089",
+      "name": "SolaEon单结钙钛矿27.87%效率纪录",
+      "type": "钙钛矿",
+      "efficiency": "27.87%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "SolaEon"
+      ],
+      "description": "SolaEon宣布单结钙钛矿太阳能电池效率27.87%世界纪录，2026年1月发布",
+      "trend": "单结钙钛矿效率逼近28%；商业化进程加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.perovskite-info.com/archive/202601",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-090",
+      "name": "天合光能钙钛矿30.6%效率纪录",
+      "type": "钙钛矿",
+      "efficiency": "30.6%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "Trina Solar"
+      ],
+      "description": "天合光能(Trina Solar)2025年6月创造钙钛矿电池30.6%效率纪录，为钙钛矿面板最高效率",
+      "trend": "钙钛矿面板效率突破30%；中国企业在钙钛矿领域领先",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.sunsave.energy/solar-panels-advice/solar-technology/perovskite",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-091",
+      "name": "XJTU n-i-p钙钛矿26.5%效率突破",
+      "type": "钙钛矿",
+      "efficiency": "26.5%",
+      "cost": "N/A",
+      "maturity": "实验室纪录",
+      "companies": [
+        "西安交通大学"
+      ],
+      "description": "西安交通大学n-i-p结构钙钛矿电池认证效率26.5%(0.08cm²)，24.9%(1cm²)，发表于Science 2026",
+      "trend": "n-i-p结构效率突破；小面积到大面积效率衰减问题",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://en.xjtu.edu.cn/2026-01/09/c_1153935.htm",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-092",
+      "name": "钙钛矿太阳能电池市场465M→11B预测",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "快速下降",
+      "maturity": "市场预测",
+      "companies": [
+        "Coherent Market Insights"
+      ],
+      "description": "钙钛矿太阳能电池市场2026年估值4.65亿美元，预计2033年达110.3亿美元，CAGR 57.7%",
+      "trend": "钙钛矿市场爆发式增长预期；从实验室到量产的关键窗口期",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.coherentmarketinsights.com/industry-reports/perovskite-solar-cell-market",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-093",
+      "name": "Nature: 钙钛矿高性能策略综述",
+      "type": "学术综述",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "Nature发表钙钛矿高性能策略综述：包括无铅化、稳定性提升、界面工程等最新策略",
+      "trend": "钙钛矿从效率突破到稳定性解决；无铅化是长期方向",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s44296-025-00073-9",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-094",
+      "name": "钙钛矿35%效率可行性分析",
+      "type": "技术展望",
+      "efficiency": "35%",
+      "cost": "N/A",
+      "maturity": "展望",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "2026年分析：钙钛矿叠层已达到34.85%，35%效率触手可及，但商业化仍面临耐久性和成本挑战",
+      "trend": "35%效率近在咫尺；耐久性和成本是商业化关键瓶颈",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://energy-solutions.co/articles/sub/perovskite-solar-cells-breakthrough.html",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-095",
+      "name": "Sunhub 2026太阳能面板技术趋势",
+      "type": "行业分析",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "参考",
+      "companies": [
+        "Sunhub"
+      ],
+      "description": "Sunhub 2026太阳能面板技术趋势：钙钛矿低温加工、简单制造方法、效率持续突破",
+      "trend": "低温加工降低制造成本；钙钛矿制造工艺简化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunhub.com/blog/solar-panel-technology-2026/",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-096",
+      "name": "GreenFuelJournal钙钛矿革命2026",
+      "type": "行业分析",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "多公司"
+      ],
+      "description": "GreenFuelJournal 2026钙钛矿太阳能电池革命：效率纪录、稳定性突破、全球市场增长",
+      "trend": "钙钛矿从实验室纪录到产业革命；全球投资加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.greenfueljournal.com/post/perovskite-solar-cell-revolution-2026-part-i",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-097",
+      "name": "2025年太阳能突破对2026的影响",
+      "type": "行业分析",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "多公司"
+      ],
+      "description": "2025年太阳能技术突破总结及2026展望：效率纪录、钙钛矿进展、叠层电池突破",
+      "trend": "2025突破为2026奠定基础；技术迭代加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.youtube.com/watch?v=FffKMMnisu4",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-098",
+      "name": "NREL最佳研究电池效率图2026更新",
+      "type": "参考标准",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "NREL"
+      ],
+      "description": "NREL维护的最佳研究电池效率图持续更新，涵盖所有光伏技术最高确认转换效率",
+      "trend": "效率图是行业标准参考；各技术路线效率持续攀升",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nlr.gov/pv/cell-efficiency",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-099",
+      "name": "JRC太阳能电池效率表V67欧洲版",
+      "type": "参考标准",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "JRC"
+      ],
+      "description": "欧盟JRC发布Solar Cell Efficiency Tables V67，汇总所有技术最高独立确认效率",
+      "trend": "欧洲独立确认效率数据；与NREL互补",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC144305",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-100",
+      "name": "2025年主流太阳能电池效率亮点",
+      "type": "行业回顾",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "JinkoSolar",
+        "LONGi"
+      ],
+      "description": "2025年主流太阳能电池效率亮点：JinkoSolar TOPCon 27.79%、LONGi HIBC 28.13%等",
+      "trend": "主流技术效率全面突破；TOPCon和HIBC竞争激烈",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://link.springer.com/article/10.1007/s11708-026-1050-8",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-101",
+      "name": "Fluxim钙钛矿叠层效率追踪2026更新",
+      "type": "效率追踪",
+      "efficiency": "34.85%",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "Fluxim",
+        "LONGi"
+      ],
+      "description": "Fluxim 2026更新钙钛矿叠层效率追踪：LONGi 34.85%为当前最高，叠层效率持续攀升",
+      "trend": "叠层效率追踪显示持续进步；Fluxim提供专业分析工具",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.fluxim.com/research-blogs/perovskite-silicon-tandem-pv-record-updates",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-102",
+      "name": "Sunsave钙钛矿面板2026购买指南",
+      "type": "消费者指南",
+      "efficiency": "30.6%",
+      "cost": "高于晶硅",
+      "maturity": "早期商业化",
+      "companies": [
+        "Trina Solar"
+      ],
+      "description": "Sunsave 2026钙钛矿面板购买指南：当前最高效率30.6%(天合光能)，但住宅应用仍需等待",
+      "trend": "钙钛矿面板从实验室到消费者；效率优势明显但成本仍高",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.sunsave.energy/solar-panels-advice/solar-technology/perovskite",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-103",
+      "name": "IDTechEx钙钛矿光伏2016-2026报告",
+      "type": "行业报告",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "IDTechEx"
+      ],
+      "description": "IDTechEx钙钛矿光伏技术、市场和参与者详细报告：从技术到商业的全面分析",
+      "trend": "钙钛矿从技术到商业的过渡期；市场参与者增多",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.idtechex.com/en/research-report/perovskite-photovoltaics-2016-2026-technologies-markets-players/493",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-104",
+      "name": "美国2026年清洁能源新增51%为太阳能",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "市场数据",
+      "companies": [
+        "多公司"
+      ],
+      "description": "2026年美国新增公用事业电力容量51%为太阳能，德州、亚利桑那、加州、密歇根领先",
+      "trend": "太阳能占新增电力容量过半；美国太阳能增长强劲",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://environmentamerica.org/center/updates/clean-energy-additions-to-break-records-in-2026",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-105",
+      "name": "Canary Media: 美国2026清洁电力建设",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "市场数据",
+      "companies": [
+        "多公司"
+      ],
+      "description": "Canary Media: 2026年太阳能51%、电池28%、风电占新增电力容量绝大部分",
+      "trend": "清洁能源全面主导新增电力；化石能源新增接近零",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.canarymedia.com/articles/clean-energy/chart-us-overwhelmingly-build-clean-power",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-106",
+      "name": "BloombergNEF新能源展望2026",
+      "type": "行业报告",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "BloombergNEF"
+      ],
+      "description": "BloombergNEF NEO 2026：评估电力、交通、工业、建筑和农业部门能源转型路径，新技术扩展电气化增强能源安全",
+      "trend": "电气化+新技术=能源安全；新能源从替代到主流",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://about.bnef.com/insights/clean-energy/bloombergnefs-new-energy-outlook-2026-transition-to-newer-technologies-expanded-electrification-to-strengthen-nations-energy-security",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-107",
+      "name": "Earth.Org 2026能源转型展望",
+      "type": "行业分析",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "多机构"
+      ],
+      "description": "Earth.Org 2026能源转型：海上风电预计新增140GW，抽水蓄能翻倍至16.5GW，支撑系统灵活性",
+      "trend": "海上风电和抽水蓄能支撑电网灵活性；多技术协同转型",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://earth.org/energy-transition-where-are-we-headed-in-2026",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-108",
+      "name": "New Energy Nexus 2026四大清洁能源趋势",
+      "type": "行业分析",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "New Energy Nexus"
+      ],
+      "description": "New Energy Nexus 2026四大清洁能源趋势：可再生能源将成为全球最大电力来源",
+      "trend": "可再生能源从增长到主导；创业者关注四大趋势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.newenergynexus.com/blog/4-clean-energy-trends-entrepreneurs-should-watch-in-2026",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-109",
+      "name": "BDO 2026自然资源与能源行业预测",
+      "type": "行业预测",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "BDO"
+      ],
+      "description": "BDO 2026自然资源与能源行业预测：政策变化下可再生能源可能下滑，但长期趋势不变",
+      "trend": "短期政策波动vs长期趋势；可再生能源韧性测试",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.bdo.com/insights/industries/natural-resources/2026-natural-resources-energy-predictions",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-110",
+      "name": "ITC税收抵免2026年7月4日截止影响",
+      "type": "政策影响",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "政策",
+      "companies": [
+        "多公司"
+      ],
+      "description": "美国ITC投资税收抵免：项目须在2026年7月4日前开工或2027年底投运才能享受优惠",
+      "trend": "税收抵免截止日驱动项目抢装；政策不确定性影响投资",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://greeninnovationindex.org/2025-edition/renewable-energy",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "SE-111",
+      "name": "美国可再生能源增长持续到2026",
+      "type": "市场数据",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "市场数据",
+      "companies": [
+        "多公司"
+      ],
+      "description": "Renewable Energy Institute: 美国可再生能源增长持续到2026，关键项目开发和进展塑造能源转型",
+      "trend": "美国可再生能源增长势头不减；项目开发加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.renewableinstitute.org/us-renewable-growth-continues-into-2026",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    }
+  ]
+}

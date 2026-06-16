@@ -1,0 +1,49 @@
+{
+  "version": "1.0.01",
+  "last_updated": "2026-05-30T13:52:03.082Z",
+  "description": "关系库",
+  "relations": [
+    {
+      "from": "minerals",
+      "to": "asteroids",
+      "type": "found_in",
+      "desc": "Minerals found in asteroids"
+    },
+    {
+      "from": "minerals",
+      "to": "lunar_resources",
+      "type": "source_of",
+      "desc": "Minerals are sources of lunar resources"
+    },
+    {
+      "from": "minerals",
+      "to": "processing_methods",
+      "type": "extracted_by",
+      "desc": "Minerals extracted by processing methods"
+    },
+    {
+      "from": "asteroids",
+      "to": "mining_tech",
+      "type": "mined_by",
+      "desc": "Asteroids mined by mining technology"
+    },
+    {
+      "from": "lunar_resources",
+      "to": "mining_tech",
+      "type": "extracted_by",
+      "desc": "Lunar resources extracted by mining technology"
+    },
+    {
+      "from": "mining_tech",
+      "to": "processing_methods",
+      "type": "uses",
+      "desc": "Mining tech uses processing methods"
+    },
+    {
+      "from": "resource_assessment",
+      "to": "space_resources",
+      "type": "evaluates",
+      "desc": "Resource assessment evaluates space resources"
+    }
+  ]
+}

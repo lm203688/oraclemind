@@ -1,0 +1,96 @@
+{
+  "count": 10,
+  "updated": "2026-05-29T02:27:01.435Z",
+  "data": [
+    {
+      "id": "BREG-001",
+      "name": "Prefrontal Cortex",
+      "location": "Anterior frontal lobe",
+      "function": "Executive function, planning, decision-making, working memory, impulse control, social behavior",
+      "associated_disorders": "ADHD, schizophrenia, depression, frontotemporal dementia, antisocial behavior",
+      "neurotransmitters": "Dopamine, glutamate, GABA, serotonin",
+      "description": "The prefrontal cortex is the most recently evolved brain region and is responsible for higher cognitive functions. It comprises ~30% of the human cerebral cortex. Damage (e.g., Phineas Gage case) profoundly alters personality and decision-making. It is the last region to fully mature (~age 25) and is implicated in most psychiatric disorders."
+    },
+    {
+      "id": "BREG-002",
+      "name": "Hippocampus",
+      "location": "Medial temporal lobe",
+      "function": "Memory formation (episodic and spatial), memory consolidation, navigation",
+      "associated_disorders": "Alzheimer's disease (earliest affected region), PTSD, epilepsy, depression",
+      "neurotransmitters": "Glutamate, GABA, acetylcholine",
+      "description": "Critical for forming new memories and spatial navigation. Patient H.M. (Henry Molaison), whose hippocampi were surgically removed, revealed its essential role in memory formation while preserving procedural memory. Adult neurogenesis occurs in the dentate gyrus, one of the few brain regions with this capacity."
+    },
+    {
+      "id": "BREG-003",
+      "name": "Amygdala",
+      "location": "Medial temporal lobe, anterior to hippocampus",
+      "function": "Emotional processing (especially fear and threat detection), emotional memory formation, social cognition",
+      "associated_disorders": "Anxiety disorders, PTSD, phobias, autism spectrum disorder, aggression",
+      "neurotransmitters": "Glutamate, GABA, norepinephrine, serotonin, dopamine",
+      "description": "The amygdala is the brain's threat detection center, rapidly processing fearful stimuli before conscious awareness. It enhances memory consolidation for emotionally significant events. Hyperactivity is linked to anxiety and PTSD; hypoactivity to risk-taking and impaired social cognition. It contains ~13 nuclei with distinct functions."
+    },
+    {
+      "id": "BREG-004",
+      "name": "Basal Ganglia",
+      "location": "Deep forebrain structures (caudate, putamen, globus pallidus, subthalamic nucleus, substantia nigra)",
+      "function": "Motor control, habit formation, reward processing, action selection, procedural learning",
+      "associated_disorders": "Parkinson's disease, Huntington's disease, OCD, Tourette syndrome, addiction",
+      "neurotransmitters": "Dopamine (primary), GABA, glutamate, acetylcholine",
+      "description": "A group of interconnected nuclei critical for voluntary movement and habit learning. The substantia nigra's dopamine-producing neurons degenerate in Parkinson's disease. The direct and indirect pathways through basal ganglia facilitate and suppress movement respectively. Deep brain stimulation of the subthalamic nucleus is an effective Parkinson's treatment."
+    },
+    {
+      "id": "BREG-005",
+      "name": "Cerebellum",
+      "location": "Posterior fossa, behind brainstem",
+      "function": "Motor coordination, balance, motor learning, precision timing; increasingly recognized for cognitive and emotional functions",
+      "associated_disorders": "Ataxia, tremor, autism, schizophrenia, dyslexia",
+      "neurotransmitters": "Glutamate, GABA (cerebellar cortex is purely glutamatergic/GABAergic)",
+      "description": "Contains more neurons than the rest of the brain combined (~69 billion). Long considered purely motor, recent research reveals roles in cognition, language, and emotion. The cerebellum's uniform circuit architecture (Purkinje cells) makes it computationally elegant. Damage causes ataxia but not paralysis."
+    },
+    {
+      "id": "BREG-006",
+      "name": "Thalamus",
+      "location": "Central brain, above brainstem",
+      "function": "Sensory relay station, consciousness regulation, sleep-wake cycle, motor signal integration",
+      "associated_disorders": "Thalamic pain syndrome, coma, sleep disorders, memory impairment",
+      "neurotransmitters": "Glutamate, GABA",
+      "description": "The brain's central relay hub - nearly all sensory information passes through the thalamus before reaching the cortex. Different thalamic nuclei process different sensory modalities. The intralaminar nuclei are critical for consciousness. Thalamic strokes can cause devastating central pain syndrome."
+    },
+    {
+      "id": "BREG-007",
+      "name": "Hypothalamus",
+      "location": "Below thalamus, at base of brain",
+      "function": "Homeostasis, hormone regulation, body temperature, hunger, thirst, circadian rhythm, sexual behavior",
+      "associated_disorders": "Diabetes insipidus, hypothalamic obesity, sleep disorders, endocrine disorders",
+      "neurotransmitters": "GABA, glutamate, dopamine, serotonin, histamine, orexin/hypocretin",
+      "description": "The master regulator of the body's internal environment. Controls the pituitary gland and thus the entire endocrine system. The suprachiasmatic nucleus (SCN) is the body's master clock. Orexin neurons in the lateral hypothalamus regulate wakefulness; their loss causes narcolepsy."
+    },
+    {
+      "id": "BREG-008",
+      "name": "Insular Cortex",
+      "location": "Deep within lateral sulcus, hidden by opercula",
+      "function": "Interoception (body awareness), emotion, taste, pain processing, empathy, risk prediction",
+      "associated_disorders": "Alexithymia, anxiety, addiction, eating disorders, interoceptive dysfunction",
+      "neurotransmitters": "Glutamate, GABA, serotonin, dopamine",
+      "description": "The insula integrates bodily sensations with emotional and cognitive processing. The anterior insula is activated during disgust, empathy, and uncertainty. The posterior insula processes physical sensations including pain and temperature. It's a key hub in the 'salience network' that detects important stimuli."
+    },
+    {
+      "id": "BREG-009",
+      "name": "Default Mode Network (DMN)",
+      "location": "Medial prefrontal cortex, posterior cingulate, angular gyrus, hippocampus",
+      "function": "Self-referential thinking, mind-wandering, episodic memory, future planning, social cognition",
+      "associated_disorders": "Alzheimer's disease, depression, ADHD, schizophrenia, autism",
+      "neurotransmitters": "Multiple (distributed network)",
+      "description": "A large-scale brain network active during rest and internally-directed thought. Discovered through fMRI, the DMN is suppressed during goal-directed tasks. Its dysfunction is implicated in numerous psychiatric and neurological conditions. DMN connectivity is increasingly used as a biomarker for brain health."
+    },
+    {
+      "id": "BREG-010",
+      "name": "Ventral Tegmental Area (VTA)",
+      "location": "Midbrain, near substantia nigra",
+      "function": "Reward processing, motivation, addiction, prediction error signaling",
+      "associated_disorders": "Addiction, depression, schizophrenia, Parkinson's disease",
+      "neurotransmitters": "Dopamine (primary), GABA, glutamate",
+      "description": "The VTA contains the brain's primary reward circuit dopamine neurons. These neurons signal prediction error - the difference between expected and received rewards - forming the basis of reinforcement learning. VTA dopamine release is hijacked by addictive drugs, making it central to addiction neuroscience."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "pubmed": {
+    "enabled": true,
+    "search_terms": [
+      "外星矿物"
+    ],
+    "max_results": 100,
+    "rate_limit_ms": 500
+  },
+  "news": {
+    "enabled": true,
+    "search_terms": [
+      "外星矿物 news",
+      "外星矿物 latest"
+    ],
+    "rate_limit_ms": 2000
+  }
+}

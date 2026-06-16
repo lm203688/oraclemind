@@ -1,0 +1,914 @@
+[
+  {
+    "id": "BREG-001",
+    "name": "Prefrontal Cortex",
+    "location": "Anterior frontal lobe",
+    "function": "Executive function, planning, decision-making, working memory, impulse control, social behavior",
+    "associated_disorders": "ADHD, schizophrenia, depression, frontotemporal dementia, antisocial behavior",
+    "neurotransmitters": "Dopamine, glutamate, GABA, serotonin",
+    "description": "The prefrontal cortex is the most recently evolved brain region and is responsible for higher cognitive functions. It comprises ~30% of the human cerebral cortex. Damage (e.g., Phineas Gage case) profoundly alters personality and decision-making. It is the last region to fully mature (~age 25) and is implicated in most psychiatric disorders."
+  },
+  {
+    "id": "BREG-002",
+    "name": "Hippocampus",
+    "location": "Medial temporal lobe",
+    "function": "Memory formation (episodic and spatial), memory consolidation, navigation",
+    "associated_disorders": "Alzheimer's disease (earliest affected region), PTSD, epilepsy, depression",
+    "neurotransmitters": "Glutamate, GABA, acetylcholine",
+    "description": "The hippocampus is critical for forming new episodic and spatial memories. London taxi drivers famously have larger posterior hippocampi from navigation experience. It's one of the first regions damaged in Alzheimer's disease, explaining why memory loss is an early symptom. Adult neurogenesis occurs in the dentate gyrus, one of the few brain regions where new neurons are born throughout life."
+  },
+  {
+    "id": "BREG-003",
+    "name": "Amygdala",
+    "location": "Medial temporal lobe, anterior to hippocampus",
+    "function": "Fear processing, emotional memory, threat detection, aggression, reward learning",
+    "associated_disorders": "Anxiety disorders, PTSD, phobias, autism spectrum disorder, aggression",
+    "neurotransmitters": "Glutamate, GABA, norepinephrine, serotonin, dopamine",
+    "description": "The amygdala is the brain's threat detection center, rapidly processing fear and danger signals before conscious awareness. It tags emotional memories, making them more vivid and lasting. Hyperactivity is linked to anxiety disorders and PTSD; hypoactivity to risk-taking and psychopathy. The amygdala is a key target for PTSD treatments including exposure therapy and MDMA-assisted therapy."
+  },
+  {
+    "id": "BREG-004",
+    "name": "Cerebellum",
+    "location": "Posterior fossa, below occipital lobe",
+    "function": "Motor coordination, balance, motor learning, procedural memory, cognitive functions",
+    "associated_disorders": "Ataxia, autism, schizophrenia, dyslexia, essential tremor",
+    "neurotransmitters": "Glutamate, GABA (Purkinje cells)",
+    "description": "The cerebellum contains more neurons than the rest of the brain combined (~69 billion) despite being only 10% of brain volume. While traditionally associated with motor control, recent research reveals major roles in cognition, language, and emotion. Cerebellar abnormalities are found in autism, schizophrenia, and dyslexia. It's a target for non-invasive brain stimulation therapies."
+  },
+  {
+    "id": "BREG-005",
+    "name": "Basal Ganglia",
+    "location": "Deep within cerebral hemispheres",
+    "function": "Voluntary motor control, habit formation, reward processing, action selection",
+    "associated_disorders": "Parkinson's disease, Huntington's disease, OCD, Tourette syndrome, addiction",
+    "neurotransmitters": "Dopamine (primary), GABA, glutamate, acetylcholine",
+    "description": "The basal ganglia are a group of subcortical nuclei critical for selecting and initiating voluntary movements. Dopamine from the substantia nigra modulates basal ganglia circuits. Parkinson's disease results from loss of these dopamine neurons. The basal ganglia also drive habit formation and reward-based learning, making them central to addiction neuroscience."
+  },
+  {
+    "id": "BREG-006",
+    "name": "Thalamus",
+    "location": "Central brain, above brainstem",
+    "function": "Sensory relay station, consciousness regulation, sleep-wake cycle, attention",
+    "associated_disorders": "Thalamic pain syndrome, coma, insomnia, epilepsy",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "The thalamus is the brain's sensory relay station, routing nearly all sensory information (except olfaction) to the appropriate cortical areas. It also plays a crucial role in consciousness and the sleep-wake cycle. Thalamic lesions can cause severe chronic pain (thalamic pain syndrome) or disorders of consciousness. Deep brain stimulation of the thalamus treats essential tremor and some forms of epilepsy."
+  },
+  {
+    "id": "BREG-007",
+    "name": "Hypothalamus",
+    "location": "Below thalamus, at base of brain",
+    "function": "Homeostasis, hormone regulation, body temperature, hunger, thirst, circadian rhythm, sexual behavior",
+    "associated_disorders": "Hypothalamic obesity, diabetes insipidus, sleep disorders, endocrine disorders",
+    "neurotransmitters": "Multiple neuropeptides, dopamine, serotonin, GABA, glutamate",
+    "description": "The hypothalamus is the brain's master regulator of homeostasis, controlling the autonomic nervous system and pituitary gland. It regulates body temperature, hunger, thirst, sleep, and hormonal balance. The suprachiasmatic nucleus (SCN) is the body's master clock. Hypothalamic dysfunction can cause obesity, diabetes insipidus, and sleep disorders."
+  },
+  {
+    "id": "BREG-008",
+    "name": "Insular Cortex (Insula)",
+    "location": "Deep within lateral sulcus, hidden by opercula",
+    "function": "Interoception, emotion, self-awareness, taste, pain processing, empathy, addiction craving",
+    "associated_disorders": "Addiction, anxiety, eating disorders, chronic pain, alexithymia",
+    "neurotransmitters": "Glutamate, GABA, serotonin, dopamine",
+    "description": "The insula is a hidden cortical region critical for interoception (sensing internal body states) and emotional self-awareness. It integrates bodily sensations with emotional and cognitive processing. The anterior insula is activated during empathy, disgust, and craving. The insula is increasingly recognized as a key hub in addiction (craving), anxiety, and chronic pain."
+  },
+  {
+    "id": "BREG-009",
+    "name": "Default Mode Network (DMN)",
+    "location": "Medial prefrontal cortex, posterior cingulate, angular gyrus, hippocampus",
+    "function": "Self-referential thinking, mind-wandering, episodic memory, social cognition, creativity",
+    "associated_disorders": "Depression, Alzheimer's, ADHD, schizophrenia, autism",
+    "neurotransmitters": "Multiple (distributed network)",
+    "description": "The DMN is a large-scale brain network active during rest and mind-wandering, deactivated during goal-directed tasks. It's critical for self-reflection, memory retrieval, and creative thinking. DMN dysfunction is implicated in numerous psychiatric and neurological conditions. DMN connectivity is increasingly used as a biomarker for brain health."
+  },
+  {
+    "id": "BREG-010",
+    "name": "Ventral Tegmental Area (VTA)",
+    "location": "Midbrain, near substantia nigra",
+    "function": "Reward processing, motivation, addiction, prediction error signaling",
+    "associated_disorders": "Addiction, depression, schizophrenia, Parkinson's disease",
+    "neurotransmitters": "Dopamine (primary), GABA, glutamate",
+    "description": "The VTA contains the brain's primary reward circuit dopamine neurons. These neurons signal prediction error - the difference between expected and received rewards - forming the basis of reinforcement learning. VTA dopamine release is hijacked by addictive drugs, making it central to addiction neuroscience."
+  },
+  {
+    "id": "BREG-011",
+    "name": "Anterior Cingulate Cortex (ACC)",
+    "location": "Medial frontal lobe, surrounding corpus callosum",
+    "function": "Error monitoring, conflict resolution, pain affect, empathy, decision-making, effort allocation",
+    "associated_disorders": "Depression, OCD, chronic pain, ADHD",
+    "neurotransmitters": "Serotonin, dopamine, glutamate, GABA",
+    "description": "The ACC monitors for errors and conflicts, signaling when adjustments are needed. It's crucial for the emotional component of pain (how much pain bothers you). The ACC is a target for deep brain stimulation in treatment-resistant depression and OCD. Damage can cause akinetic mutism (awake but unresponsive)."
+  },
+  {
+    "id": "BREG-012",
+    "name": "Substantia Nigra",
+    "location": "Midbrain, adjacent to VTA",
+    "function": "Motor control (pars compacta: dopamine to basal ganglia), reward (pars reticulata)",
+    "associated_disorders": "Parkinson's disease (degeneration of pars compacta dopamine neurons)",
+    "neurotransmitters": "Dopamine (pars compacta), GABA (pars reticulata)",
+    "description": "The substantia nigra contains dopamine neurons that project to the basal ganglia (nigrostriatal pathway). Loss of these neurons causes Parkinson's disease, with symptoms appearing after ~60% have died. The dark pigment (neuromelanin) gives it its name ('black substance'). Deep brain stimulation of downstream targets can alleviate Parkinson's motor symptoms."
+  },
+  {
+    "id": "BREG-013",
+    "name": "Visual Cortex (V1-V5)",
+    "location": "Occipital lobe and extending into temporal and parietal lobes",
+    "function": "Visual processing: V1 (edge detection), V2 (orientation), V4 (color/form), V5/MT (motion), IT (object recognition)",
+    "associated_disorders": "Blindsight, visual agnosia, prosopagnosia (face blindness), cortical blindness",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "The visual cortex processes visual information in a hierarchical stream. V1 performs basic feature extraction; higher areas process increasingly complex features (motion, color, faces, objects). The ventral stream (what) identifies objects; the dorsal stream (where/how) processes spatial relationships. Visual prostheses target V1 to restore vision in blindness."
+  },
+  {
+    "id": "BREG-014",
+    "name": "Auditory Cortex",
+    "location": "Superior temporal gyrus (Heschl's gyrus)",
+    "function": "Sound processing, speech comprehension, music perception, auditory memory",
+    "associated_disorders": "Tinnitus, auditory hallucinations (schizophrenia), auditory agnosia, amusia",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "The auditory cortex processes sound features from basic frequencies to complex speech and music. The left auditory cortex specializes in speech processing; the right in music and prosody. Cochlear implants stimulate the auditory nerve to bypass damaged hair cells. Auditory cortex abnormalities are linked to tinnitus and auditory hallucinations in schizophrenia."
+  },
+  {
+    "id": "BREG-015",
+    "name": "Somatosensory Cortex",
+    "location": "Postcentral gyrus (parietal lobe)",
+    "function": "Touch, temperature, pain, proprioception (body position sense)",
+    "associated_disorders": "Sensory loss, phantom limb pain, neuropathic pain, neglect syndrome",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "The somatosensory cortex processes tactile and proprioceptive information from the body. It's organized as a 'homunculus' (body map) with disproportionate representation of hands and face. Phantom limb pain after amputation is related to cortical reorganization. Somatosensory BCIs are being developed to restore touch sensation in paralysis."
+  },
+  {
+    "id": "BREG-016",
+    "name": "Motor Cortex (M1)",
+    "location": "Precentral gyrus (frontal lobe)",
+    "function": "Voluntary motor control, movement execution, fine motor skills",
+    "associated_disorders": "Paralysis, stroke, ALS, cerebral palsy",
+    "neurotransmitters": "Glutamate (excitatory), GABA (inhibitory)",
+    "description": "The primary motor cortex (M1) generates neural signals that drive voluntary movement. It's organized as a motor homunculus with large representations for hands and face (fine motor control). M1 is the primary target for brain-computer interfaces that decode movement intentions for paralysis patients. Neuralink, BrainGate, and others record from M1 to restore communication and movement."
+  },
+  {
+    "id": "BREG-017",
+    "name": "Broca's Area",
+    "location": "Left inferior frontal gyrus (Brodmann areas 44, 45)",
+    "function": "Speech production, language processing, grammar, articulation planning",
+    "associated_disorders": "Broca's aphasia (expressive aphasia), stuttering, specific language impairment",
+    "neurotransmitters": "Glutamate, GABA, dopamine",
+    "description": "Broca's area is critical for speech production and grammatical processing. Damage causes Broca's aphasia: patients understand language but cannot produce fluent speech (telegraphic speech). Named after Paul Broca who studied patient 'Tan' in 1861. TMS to Broca's area can temporarily disrupt speech production, confirming its role."
+  },
+  {
+    "id": "BREG-018",
+    "name": "Wernicke's Area",
+    "location": "Left posterior superior temporal gyrus (Brodmann area 22)",
+    "function": "Language comprehension, semantic processing, reading",
+    "associated_disorders": "Wernicke's aphasia (receptive aphasia), alexia, semantic dementia",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "Wernicke's area is essential for understanding spoken and written language. Damage causes Wernicke's aphasia: patients produce fluent but meaningless speech (word salad) and cannot comprehend language. The arcuate fasciculus connects Broca's and Wernicke's areas; damage to this pathway causes conduction aphasia (can speak and understand but cannot repeat)."
+  },
+  {
+    "id": "BREG-019",
+    "name": "Corpus Callosum",
+    "location": "Midline, connecting left and right hemispheres",
+    "function": "Interhemispheric communication, integrating left and right brain processing",
+    "associated_disorders": "Split-brain syndrome, agenesis of corpus callosum, multiple sclerosis",
+    "neurotransmitters": "Glutamate (excitatory interhemispheric connections)",
+    "description": "The corpus callosum is the largest white matter tract, containing ~200 million axons connecting the two cerebral hemispheres. Split-brain patients (corpus callosotomy for epilepsy) revealed that each hemisphere has independent consciousness and specialized functions. The corpus callosum is affected early in multiple sclerosis and Alzheimer's disease."
+  },
+  {
+    "id": "BREG-020",
+    "name": "Brainstem (Midbrain, Pons, Medulla)",
+    "location": "Base of brain, connecting to spinal cord",
+    "function": "Vital functions: breathing, heart rate, blood pressure, consciousness, sleep-wake cycle",
+    "associated_disorders": "Locked-in syndrome, coma, brain death, sleep apnea, sudden infant death syndrome",
+    "neurotransmitters": "Multiple (serotonin, norepinephrine, dopamine, acetylcholine, GABA)",
+    "description": "The brainstem controls vital autonomic functions necessary for survival. The reticular activating system (RAS) in the brainstem regulates consciousness and arousal. Damage to specific brainstem regions causes locked-in syndrome (conscious but paralyzed except eye movements). The brainstem is the last region to lose function in brain death."
+  },
+  {
+    "id": "BREG-021",
+    "name": "Locus Coeruleus",
+    "location": "Pons (brainstem)",
+    "function": "Norepinephrine production, arousal, attention, stress response, cognitive flexibility",
+    "associated_disorders": "ADHD, PTSD, depression, Alzheimer's (early degeneration), anxiety",
+    "neurotransmitters": "Norepinephrine (primary - sole source in the brain)",
+    "description": "The locus coeruleus is a tiny nucleus in the pons that is the brain's sole source of norepinephrine. Despite its small size (~50,000 neurons), it projects throughout the brain and modulates arousal, attention, and stress responses. It's one of the first regions affected by Alzheimer's tau pathology, potentially explaining early attention deficits. LC-norepinephrine system is a target for ADHD and PTSD treatments."
+  },
+  {
+    "id": "BREG-022",
+    "name": "Claustrum",
+    "location": "Between insula and putamen (thin sheet of neurons)",
+    "function": "Consciousness integration? - proposed hub for binding diverse cortical information into unified experience",
+    "associated_disorders": "Consciousness disorders, epilepsy (high density of 5-HT2A receptors)",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "The claustrum is a thin, sheet-like structure that Francis Crick proposed as the 'conductor of consciousness' - integrating information from diverse cortical regions into unified conscious experience. It has connections with virtually all cortical areas. High density of 5-HT2A receptors (the target of psychedelics) suggests a role in altered states of consciousness. Its exact function remains one of neuroscience's biggest mysteries."
+  },
+  {
+    "id": "BREG-023",
+    "name": "Nucleus Accumbens",
+    "location": "Ventral striatum, at junction of caudate and putamen",
+    "function": "Reward processing, pleasure, motivation, addiction, reinforcement learning",
+    "associated_disorders": "Addiction, depression (anhedonia), obesity, gambling disorder",
+    "neurotransmitters": "Dopamine (primary), GABA, glutamate, endocannabinoids, opioids",
+    "description": "The nucleus accumbens is the brain's pleasure center, integrating dopamine signals from the VTA with glutamate inputs from the prefrontal cortex and amygdala. It's central to reward-seeking behavior and addiction. All addictive drugs increase dopamine in the nucleus accumbens. Deep brain stimulation of the nucleus accumbens is being tested for treatment-resistant depression and addiction."
+  },
+  {
+    "id": "BREG-024",
+    "name": "Entorhinal Cortex",
+    "location": "Medial temporal lobe, adjacent to hippocampus",
+    "function": "Main gateway to hippocampus; grid cells for spatial navigation; memory consolidation",
+    "associated_disorders": "Alzheimer's disease (very early affected region), epilepsy, schizophrenia",
+    "neurotransmitters": "Glutamate, GABA, acetylcholine",
+    "description": "The entorhinal cortex is the primary interface between the neocortex and hippocampus. Grid cells here create a hexagonal coordinate system for spatial navigation (Nobel Prize 2014). It's one of the first regions affected by Alzheimer's tau pathology, years before symptoms appear. This makes it a target for early Alzheimer's detection and intervention."
+  },
+  {
+    "id": "BREG-025",
+    "name": "Pineal Gland",
+    "location": "Midline, posterior to third ventricle",
+    "function": "Melatonin production, circadian rhythm regulation, sleep-wake cycle",
+    "associated_disorders": "Sleep disorders, seasonal affective disorder, circadian rhythm disruptions",
+    "neurotransmitters": "Melatonin (hormone), serotonin (precursor)",
+    "description": "The pineal gland produces melatonin from serotonin in response to darkness, regulating the circadian rhythm. Descartes famously called it the 'seat of the soul.' Pineal calcification increases with age and is visible on CT scans. Melatonin supplements are widely used for jet lag and insomnia. The pineal gland's role in circadian health is increasingly recognized as critical for overall wellbeing."
+  },
+  {
+    "id": "BREG-026",
+    "name": "Ventromedial Prefrontal Cortex (vmPFC)",
+    "location": "Medial frontal lobe, below the dorsomedial prefrontal cortex",
+    "function": "Emotional decision-making, risk assessment, moral judgment, value-based choice, fear extinction",
+    "associated_disorders": "Anxiety disorders, addiction, impaired social judgment, antisocial behavior",
+    "neurotransmitters": "Serotonin, dopamine, GABA",
+    "description": "The vmPFC is critical for integrating emotional signals into decision-making. Patients with vmPFC damage (e.g., Phineas Gage) show impaired judgment despite intact intellect. The vmPFC is central to fear extinction learning and is a target for anxiety disorder treatments. In 2025-2026, BCI research has explored vmPFC stimulation for treatment-resistant depression and anxiety."
+  },
+  {
+    "id": "BREG-027",
+    "name": "Posterior Parietal Cortex (PPC)",
+    "location": "Posterior parietal lobe",
+    "function": "Sensorimotor integration, spatial awareness, attention, movement planning, coordinate transformation",
+    "associated_disorders": "Neglect syndrome, apraxia, spatial disorientation",
+    "neurotransmitters": "Glutamate, GABA, acetylcholine",
+    "description": "The PPC integrates sensory information to create spatial representations and guide movement. It's a key BCI target for prosthetic control, as PPC neurons encode movement intentions before execution. BrainGate and other BCI groups have demonstrated that PPC recordings can decode intended reach directions, enabling thought-controlled robotic arms. The PPC is also central to attention networks."
+  },
+  {
+    "id": "BREG-028",
+    "name": "Ventral Tegmental Area (VTA)",
+    "location": "Midbrain, medial to substantia nigra",
+    "function": "Dopamine production, reward processing, motivation, addiction, learning",
+    "associated_disorders": "Addiction, depression, schizophrenia, Parkinson's disease",
+    "neurotransmitters": "Dopamine (primary), GABA, glutamate",
+    "description": "The VTA is the brain's primary source of dopamine neurons projecting to the nucleus accumbens (mesolimbic pathway) and prefrontal cortex (mesocortical pathway). It's central to reward prediction error and reinforcement learning. VTA dysfunction underlies addiction (drugs hijack VTA dopamine signaling) and depression (reduced reward sensitivity). Deep brain stimulation of VTA-connected circuits is being explored for treatment-resistant depression."
+  },
+  {
+    "id": "BREG-029",
+    "name": "Retrosplenial Cortex",
+    "location": "Posterior cingulate region, behind the splenium of the corpus callosum",
+    "function": "Spatial navigation, episodic memory, scene construction, orientation",
+    "associated_disorders": "Alzheimer's disease (early atrophy), spatial disorientation, topographic amnesia",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "The retrosplenial cortex is critical for spatial navigation and converting between egocentric and allocentric reference frames. It's one of the first regions to show atrophy in Alzheimer's disease, often before hippocampal degeneration. This makes it a potential early biomarker for AD. The retrosplenial cortex works closely with the hippocampus and entorhinal cortex in the brain's navigation and memory system."
+  },
+  {
+    "id": "BREG-030",
+    "name": "Claustrum",
+    "location": "Thin sheet of neurons between insular cortex and putamen",
+    "function": "Consciousness integration, cross-modal sensory binding, attention switching, cognitive control",
+    "associated_disorders": "Consciousness disorders, epilepsy, disrupted sensory integration",
+    "neurotransmitters": "Glutamate, GABA, acetylcholine",
+    "description": "The claustrum is a thin, sheet-like structure that Francis Crick famously proposed as the 'conductor of consciousness' due to its extensive connectivity with nearly all cortical areas. Recent research (2025-2026) supports its role in integrating information across brain regions and coordinating conscious experience. Electrical stimulation of the claustrum can disrupt consciousness, and claustrum dysfunction is implicated in epilepsy and disorders of consciousness."
+  },
+  {
+    "id": "BREG-031",
+    "name": "Ventromedial Prefrontal Cortex (vmPFC)",
+    "location": "Medial frontal lobe, ventral to the genu of the corpus callosum",
+    "function": "Emotion regulation, decision-making under risk, moral judgment, value-based choice, fear extinction",
+    "associated_disorders": "Anxiety disorders, depression, addiction, impaired decision-making, antisocial behavior",
+    "neurotransmitters": "Serotonin, dopamine, GABA, glutamate",
+    "description": "The vmPFC is critical for integrating emotional signals into decision-making. It plays a central role in fear extinction (the basis of exposure therapy for anxiety disorders) and value-based decision-making. Damage to the vmPFC results in impaired emotional decision-making (as seen in patient Elliot, studied by Damasio). The vmPFC is a key target for neuromodulation therapies for depression and anxiety in 2025-2026."
+  },
+  {
+    "id": "BREG-032",
+    "name": "Posterior Parietal Cortex (PPC)",
+    "location": "Posterior parietal lobe (Brodmann areas 5, 7, 39, 40)",
+    "function": "Spatial attention, sensorimotor integration, motor planning, spatial reasoning, navigation",
+    "associated_disorders": "Spatial neglect, apraxia, BCI motor decoding target",
+    "neurotransmitters": "Glutamate, GABA, acetylcholine",
+    "description": "The PPC integrates sensory information to construct spatial representations and guide motor actions. It is a key brain region for BCI applications, as it encodes motor intention and spatial goals. In 2025-2026, the PPC has become an important target for BCI decoding of movement intention, complementing motor cortex signals for more naturalistic prosthetic control."
+  },
+  {
+    "id": "BREG-033",
+    "name": "Ventral Tegmental Area (VTA)",
+    "location": "Midbrain, medial to substantia nigra",
+    "function": "Reward processing, motivation, addiction, dopamine signaling, prediction error",
+    "associated_disorders": "Addiction, depression, schizophrenia, Parkinson disease (non-motor symptoms)",
+    "neurotransmitters": "Dopamine (primary), GABA, glutamate",
+    "description": "The VTA is the origin of the mesolimbic dopamine pathway, the brains reward circuit. VTA dopamine neurons fire in response to unexpected rewards (prediction error), driving learning and motivation. Dysregulation of VTA signaling is central to addiction (drugs hijack this pathway) and depression (reduced reward sensitivity). In 2025-2026, VTA-targeted neuromodulation is being explored for treatment-resistant addiction."
+  },
+  {
+    "id": "BREG-034",
+    "name": "Mammillary Bodies",
+    "location": "Posterior hypothalamus, at the caudal end of the fornix",
+    "function": "Memory consolidation, spatial memory, episodic memory recall, Papez circuit relay",
+    "associated_disorders": "Wernicke-Korsakoff syndrome (thiamine deficiency), amnesia, alcohol-related brain damage",
+    "neurotransmitters": "Glutamate, GABA, acetylcholine",
+    "description": "The mammillary bodies are key relay stations in the Papez circuit for episodic memory. Damage causes profound amnesia, most famously in Wernicke-Korsakoff syndrome from thiamine deficiency (often alcohol-related). In 2025-2026, deep brain stimulation of the mammillary bodies and fornix is being explored for memory enhancement in Alzheimers disease, with early clinical trials showing modest improvements."
+  },
+  {
+    "id": "BREG-035",
+    "name": "Pineal Gland",
+    "location": "Midline, posterior to the third ventricle, near the corpora quadrigemina",
+    "function": "Melatonin production, circadian rhythm regulation, sleep-wake cycle, seasonal timing",
+    "associated_disorders": "Sleep disorders, circadian rhythm disruption, seasonal affective disorder, pineal tumors",
+    "neurotransmitters": "Melatonin (hormone), serotonin (precursor)",
+    "description": "The pineal gland produces melatonin from serotonin in response to darkness, regulating the circadian rhythm. In 2025-2026, pineal gland research has gained attention due to the growing recognition of circadian disruption in mental health, neurodegeneration, and cancer. Novel melatonin receptor agonists and light therapy protocols targeting pineal function are being developed for sleep and mood disorders."
+  },
+  {
+    "id": "BREG-036",
+    "name": "MICrONS Project Connectome Map (Mouse Visual Cortex)",
+    "location": "Mouse visual cortex (V1 to higher visual areas)",
+    "function": "Most detailed brain wiring diagram ever created; 500 million synapses mapped",
+    "disorders": "Understanding cortical computation; basis for AI-inspired neural architectures",
+    "description": "The MICrONS (Machine Intelligence from Cortical Networks) project, involving 150+ scientists, created the most detailed brain connectome map ever — a full wiring diagram of a piece of mouse visual cortex with 500 million synapses. Published in April 2025, this map reveals how neurons are connected and communicate, providing unprecedented insight into cortical computation. The dataset is publicly available and is being used to develop brain-inspired AI algorithms.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.princeton.edu/news/2025/04/09/princeton-scientists-map-half-billion-connections-tiny-piece-mouse-brain",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-037",
+    "name": "Princeton Mouse Visual Connectome (500M Synapses)",
+    "location": "Mouse visual cortex",
+    "function": "Detailed synaptic-level connectome of visual processing circuits",
+    "disorders": "Understanding visual processing disorders; basis for computational neuroscience models",
+    "description": "Princeton scientists mapped half a billion connections in a tiny piece of mouse brain, creating one of the most detailed connectome maps ever produced. Published in April 2025, the map reveals the intricate wiring patterns of visual cortex neurons at synaptic resolution. This achievement demonstrates that comprehensive brain wiring diagrams are achievable and provides a foundation for understanding how neural circuits process information.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.princeton.edu/news/2025/04/09/princeton-scientists-map-half-billion-connections-tiny-piece-mouse-brain",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-038",
+    "name": "Hopkins High-Resolution Developing Human Brain Atlas",
+    "location": "Whole brain (developmental stages)",
+    "function": "High-resolution atlas of the developing human brain",
+    "disorders": "Neurodevelopmental disorders (autism, ADHD, schizophrenia origins)",
+    "description": "Johns Hopkins researchers created a high-resolution atlas of the developing human brain, published in March 2026. This atlas maps brain development at unprecedented resolution, revealing how different brain regions form and connect during gestation and early life. It is critical for understanding the origins of neurodevelopmental disorders like autism, ADHD, and schizophrenia, which are increasingly understood as disorders of brain development.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.hopkinsmedicine.org/news/media/releases/high_resolution_atlas_of_developing_human_brain",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-039",
+    "name": "Human Brain Project Digital Brain Atlas",
+    "location": "Whole brain (digital reconstruction)",
+    "function": "Comprehensive digital atlas integrating multimodal brain data",
+    "disorders": "Reference for neurological and psychiatric research",
+    "description": "The Human Brain Project's digital brain atlas integrates multimodal data (structural, functional, molecular) into a comprehensive 3D reference of the human brain. The atlas enables researchers to navigate brain data across scales (from molecules to systems) and modalities (MRI, histology, gene expression). It serves as a foundational resource for neuroscience research and clinical applications, providing a common coordinate framework for brain data integration.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.humanbrainproject.eu/en/medicine/atlas",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-040",
+    "name": "Brain Entorhinal Cortex-Navigation System",
+    "location": "Entorhinal cortex (medial temporal lobe)",
+    "function": "Spatial navigation, grid cells, head direction cells, memory encoding",
+    "disorders": "Alzheimer's disease (entorhinal cortex is first affected region); spatial disorientation",
+    "description": "The entorhinal cortex contains grid cells that create an internal coordinate system for spatial navigation, discovered by May-Britt and Edvard Moser (2014 Nobel Prize). This region is the primary gateway for information flowing into the hippocampus and is the first brain area affected by Alzheimer's disease pathology. Understanding entorhinal cortex function is critical for both spatial navigation research and early Alzheimer's detection.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/nrn3957",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-041",
+    "name": "Insular Cortex (Interoception and Emotion Hub)",
+    "location": "Insular cortex (deep within lateral sulcus)",
+    "function": "Interoception (body awareness), emotion, taste, pain processing, risk prediction",
+    "disorders": "Anxiety disorders, addiction, interoceptive dysfunction, eating disorders",
+    "description": "The insular cortex is a hidden brain region deep within the lateral sulcus that serves as a hub for interoception — the brain's ability to sense the body's internal states. It integrates bodily signals with emotional and cognitive processing, playing a key role in anxiety, addiction, and decision-making under uncertainty. The insula's role in interoception makes it a target for neuromodulation therapies for anxiety and addiction.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/nrn3243",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-042",
+    "name": "Cerebellum (Beyond Motor Control)",
+    "location": "Cerebellum (posterior fossa)",
+    "function": "Motor coordination, balance, cognitive processing, language, emotional regulation",
+    "disorders": "Ataxia, autism (cerebellar abnormalities), schizophrenia, dyslexia",
+    "description": "The cerebellum, long known for motor coordination, is increasingly recognized for its role in cognitive processing, language, and emotional regulation. Research shows cerebellar abnormalities in autism, schizophrenia, and dyslexia, expanding its significance beyond motor control. The cerebellum contains more neurons than the rest of the brain combined and its computational architecture (uniform parallel processing) makes it a model for understanding neural computation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/s41583-019-0182-7",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-043",
+    "name": "Default Mode Network (DMN)",
+    "location": "Medial prefrontal cortex, posterior cingulate, angular gyrus (distributed network)",
+    "function": "Self-referential thinking, mind-wandering, episodic memory, social cognition",
+    "disorders": "Depression (rumination), ADHD (reduced DMN suppression), Alzheimer's (DMN connectivity loss), schizophrenia",
+    "description": "The Default Mode Network (DMN) is a large-scale brain network active during rest and self-referential thinking. DMN dysfunction is implicated in depression (excessive rumination), ADHD (failure to suppress DMN during tasks), and Alzheimer's disease (early connectivity loss in DMN). The DMN is a key target for neurofeedback and meditation-based interventions, and its study has transformed our understanding of brain function at rest.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/nn1102-1159",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-044",
+    "name": "Ventral Tegmental Area (VTA) Reward Circuit",
+    "location": "Ventral tegmental area (midbrain)",
+    "function": "Dopamine production, reward processing, motivation, addiction",
+    "disorders": "Addiction (dopamine dysregulation), depression (anhedonia), Parkinson's disease (dopamine neuron loss)",
+    "description": "The Ventral Tegmental Area (VTA) is a key dopamine-producing region in the midbrain that drives reward processing, motivation, and reinforcement learning. VTA dopamine neurons project to the nucleus accumbens (mesolimbic pathway) and prefrontal cortex (mesocortical pathway). VTA dysfunction is central to addiction (dopamine hijacking), depression (reduced reward sensitivity), and Parkinson's disease (dopamine neuron degeneration). It is a target for DBS in treatment-resistant depression.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/nn1102-1159",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-045",
+    "name": "Hypothalamus (Homeostatic Control Center)",
+    "location": "Hypothalamus (diencephalon, below thalamus)",
+    "function": "Temperature regulation, hunger, thirst, sleep, hormone release, circadian rhythm",
+    "disorders": "Obesity, sleep disorders, thermoregulatory dysfunction, endocrine disorders",
+    "description": "The hypothalamus is the brain's master regulatory center for homeostasis, controlling body temperature, hunger, thirst, sleep-wake cycles, and hormone release via the pituitary gland. It contains the suprachiasmatic nucleus (the body's master clock) and orexin-producing neurons that regulate wakefulness. Hypothalamic dysfunction contributes to obesity, narcolepsy, and endocrine disorders. Its small size belies its critical role in maintaining physiological balance.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/nrn2917",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-046",
+    "name": "Subgenual Cingulate (Area 25)",
+    "location": "Ventral medial prefrontal cortex, below the genu of the corpus callosum",
+    "function": "Depression circuit hub, emotional regulation, autonomic control, sadness processing",
+    "associated_disorders": "Treatment-resistant depression (DBS target), bipolar disorder, OCD",
+    "neurotransmitters": "Serotonin, dopamine, GABA, glutamate",
+    "description": "The subgenual cingulate (Area 25) is a key hub in the depression circuit and the primary target for deep brain stimulation in treatment-resistant depression. Helen Mayberg identified Area 25 as hyperactive in depression, and DBS of this region has shown dramatic improvement in severely treatment-resistant patients. In 2025-2026, closed-loop DBS of Area 25 is advancing through clinical trials, with UCSF demonstrating biomarker-guided stimulation that adapts to the patients neural state.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/s41591-021-01480-w",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-047",
+    "name": "Fusiform Gyrus (Fusiform Face Area)",
+    "location": "Temporal lobe, lateral fusiform gyrus",
+    "function": "Face recognition, visual expertise, word recognition, object categorization",
+    "associated_disorders": "Prosopagnosia (face blindness), autism (atypical face processing), Capgras syndrome",
+    "neurotransmitters": "Glutamate, GABA",
+    "description": "The fusiform gyrus contains the Fusiform Face Area (FFA), a specialized region for face recognition. Damage causes prosopagnosia (inability to recognize faces). In autism, the FFA shows atypical activation patterns, potentially explaining social cognition difficulties. 2025-2026 connectomics research reveals that the FFA is part of a broader social brain network that includes the amygdala, temporoparietal junction, and medial prefrontal cortex.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/s41583-022-00626-9",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-048",
+    "name": "Temporoparietal Junction (TPJ)",
+    "location": "Junction of temporal and parietal lobes, near the angular gyrus",
+    "function": "Theory of mind, self-other distinction, attention reorienting, moral reasoning, agency detection",
+    "associated_disorders": "Autism (theory of mind deficits), schizophrenia (agency confusion), spatial neglect",
+    "neurotransmitters": "Glutamate, GABA, acetylcholine",
+    "description": "The temporoparietal junction (TPJ) is critical for theory of mind (understanding others mental states) and self-other distinction. It activates when we reason about others beliefs, intentions, and emotions. In autism, TPJ dysfunction may underlie theory of mind deficits. In schizophrenia, TPJ abnormalities may contribute to misattributing internal thoughts to external agents. The TPJ is also involved in attention reorienting and is a target for TMS in spatial neglect rehabilitation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/s41583-022-00626-9",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-049",
+    "name": "Periaqueductal Gray (PAG)",
+    "location": "Midbrain, surrounding the cerebral aqueduct",
+    "function": "Pain modulation, defensive behaviors (fight-flight-freeze), fear processing, opioid analgesia",
+    "associated_disorders": "Chronic pain, PTSD, panic disorder, migraine",
+    "neurotransmitters": "Opioid peptides, serotonin, GABA, glutamate, substance P",
+    "description": "The periaqueductal gray (PAG) is the brains pain control center and a key structure in defensive behavior circuits. It mediates opioid analgesia and the fight-flight-freeze response. The PAG coordinates with the amygdala and prefrontal cortex in fear processing. In 2025-2026, DBS targeting the PAG is being explored for chronic neuropathic pain, and focused ultrasound targeting the PAG is being tested for PTSD and chronic pain without surgery.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/nrn2917",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BREG-050",
+    "name": "Olfactory Bulb",
+    "location": "Anterior cranial fossa, above the nasal cavity",
+    "function": "Olfaction (smell), sensory gateway to the brain, neurogenesis in adults",
+    "associated_disorders": "Alzheimers (early smell loss), Parkinsons (early smell loss), Long COVID (anosmia), depression",
+    "neurotransmitters": "Glutamate, GABA, dopamine",
+    "description": "The olfactory bulb is the brains first relay station for smell information and one of the few brain regions where adult neurogenesis occurs. Early smell loss is one of the earliest symptoms of both Alzheimers and Parkinsons disease, often preceding motor or cognitive symptoms by years. Long COVID frequently causes anosmia through olfactory bulb damage. The olfactory bulbs unique access to the brain makes it a potential route for drug delivery and a biomarker for neurodegeneration.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/s41583-019-0182-7",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-51",
+    "name": "Subgenual Cingulate Area 25 (Brodmann Area 25)",
+    "location": "Medial prefrontal cortex, subgenual region",
+    "function": "Mood regulation, emotional processing; target for deep brain stimulation in treatment-resistant depression",
+    "connectivity": "Connected to amygdala, hypothalamus, orbitofrontal cortex, and brainstem monoamine centers",
+    "description": "Brodmann Area 25 (subgenual cingulate) is a critical hub in the mood regulation network. UCSF researchers demonstrated that closed-loop deep brain stimulation (DBS) of Area 25 can produce sustained remission in treatment-resistant depression (published in Nature 2021). This finding has made Area 25 the primary target for next-generation neuromodulation therapies for depression, with multiple clinical trials ongoing in 2025-2026.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/area-25-dbs-depression",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-52",
+    "name": "Fusiform Gyrus (Face Recognition Area)",
+    "location": "Ventral temporal lobe; fusiform face area (FFA)",
+    "function": "Face perception, facial recognition, visual expertise for categories",
+    "connectivity": "Connected to occipital face area, superior temporal sulcus, amygdala, and prefrontal cortex",
+    "description": "The fusiform gyrus contains the Fusiform Face Area (FFA), a specialized region for face perception. BCI research is increasingly targeting the fusiform gyrus for visual prosthetics and face recognition augmentation. Understanding FFA connectivity patterns is critical for developing BCIs that can restore or enhance visual processing, particularly for patients with prosopagnosia (face blindness).",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/fusiform-gyrus-bci-research",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-53",
+    "name": "Entorhinal Cortex (Navigation System)",
+    "location": "Medial temporal lobe; bordering the hippocampus",
+    "function": "Spatial navigation, grid cell formation, memory consolidation, path integration",
+    "connectivity": "Major input pathway to hippocampus; connected to presubiculum, parasubiculum, perirhinal cortex",
+    "description": "The entorhinal cortex contains grid cells that create an internal coordinate system for spatial navigation, a discovery that earned the 2014 Nobel Prize. This region is critical for BCI applications in navigation and spatial memory restoration. Grid cell patterns are being studied for their potential to inform neural coding strategies in brain-computer interfaces, and entorhinal degeneration is an early marker for Alzheimer's disease.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/entorhinal-grid-cells-navigation",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-54",
+    "name": "Hopkins Developing Human Brain Atlas (March 2026)",
+    "location": "Comprehensive brain atlas covering developmental stages",
+    "function": "Reference atlas for brain development research; mapping developmental trajectories",
+    "connectivity": "Full-brain connectivity mapping across developmental stages",
+    "description": "Johns Hopkins University published a developing human brain atlas in March 2026, providing the most detailed map of brain development from conception through adolescence. The atlas documents how brain regions form, connect, and mature over time, offering unprecedented insights into neurodevelopmental disorders and normal brain development. This resource is invaluable for BCI research targeting pediatric populations.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.hopkins.edu/brain-atlas-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-55",
+    "name": "MICrONS 500 Billion Synapse Connectome Map (April 2025)",
+    "location": "1 cubic millimeter of mouse visual cortex; 500 billion synaptic connections mapped",
+    "function": "Most detailed synaptic-level connectome ever created; functional and structural mapping",
+    "connectivity": "200,000+ brain cells, 500 million synapses in 1mm³ of visual cortex",
+    "description": "The MICrONS project published the most detailed connectome map ever created in April 2025, capturing over 200,000 brain cells and approximately 500 million synapses in a cubic millimeter of mouse visual cortex. This map reveals the wiring diagram at synaptic resolution, enabling researchers to understand how neural circuits process visual information. The dataset is freely available and has become a foundational resource for computational neuroscience and BCI development.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.microns-explorer.org/connectome-2025",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-56",
+    "name": "Princeton Mouse Visual Connectome (500M Synapses)",
+    "location": "Mouse visual cortex; cubic millimeter volume",
+    "function": "Complete synaptic-level map of mouse visual processing circuits",
+    "connectivity": "Every neuron and synapse mapped in the visual processing pathway",
+    "description": "Princeton researchers mapped every neuron in a cubic millimeter of mouse brain, creating a connectome that promises to accelerate the study of normal brain function and disease. The map captures over 200,000 brain cells and approximately four kilometers of neural wiring. This achievement represents a new era in neuroscience where complete circuit diagrams can be used to understand information processing in the brain.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/princeton-mouse-connectome",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-57",
+    "name": "Human Brain Project Digital Brain Atlas",
+    "location": "Whole-brain digital reconstruction; European flagship project",
+    "function": "Multi-scale digital reconstruction of the human brain for research and clinical applications",
+    "connectivity": "Multi-resolution connectivity data from molecular to systems level",
+    "description": "The Human Brain Project created a comprehensive digital brain atlas as part of its legacy, providing multi-scale reconstruction of the human brain. The atlas integrates data from molecular, cellular, and systems-level neuroscience into a unified digital framework. This resource supports BCI research by providing detailed anatomical and functional reference data for electrode placement and neural circuit targeting.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.humanbrainproject.eu/digital-brain-atlas",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-058",
+    "name": "Locus Coeruleus (蓝斑核)",
+    "location": "Pons (脑桥)",
+    "function": "Primary source of norepinephrine in the brain; arousal, attention, stress response",
+    "connections": "Widespread projections to cortex, hippocampus, cerebellum, spinal cord",
+    "description": "The locus coeruleus is a small nucleus in the pons that is the brain's primary source of norepinephrine (noradrenaline). Despite containing only about 50,000 neurons in humans, it has widespread projections throughout the brain and plays a critical role in arousal, attention, cognitive flexibility, and the stress response. Recent research has highlighted its role in Alzheimer's disease — it is one of the first brain regions to show tau pathology, potentially decades before cognitive symptoms appear.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/locus-coeruleus-norepinephrine",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-059",
+    "name": "Claustrum (屏状核)",
+    "location": "Between insular cortex and putamen",
+    "function": "Integration of cross-modal information; potential role in consciousness",
+    "connections": "Reciprocal connections with nearly all cortical areas",
+    "description": "The claustrum is a thin sheet of neurons located between the insular cortex and the putamen. It has reciprocal connections with nearly every region of the cerebral cortex, making it a potential hub for integrating information across different sensory modalities. Francis Crick proposed that the claustrum could be the 'conductor of the cortical orchestra' — the structure that binds together disparate neural processes into unified conscious experience. Recent optogenetic studies have shown that claustrum activation can globally suppress cortical activity.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/claustrum-consciousness",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-060",
+    "name": "Ventral Tegmental Area (VTA, 腹侧被盖区)",
+    "location": "Midbrain (中脑)",
+    "function": "Dopamine production; reward, motivation, addiction",
+    "connections": "Nucleus accumbens (mesolimbic), prefrontal cortex (mesocortical), amygdala",
+    "description": "The ventral tegmental area (VTA) is a group of dopamine-producing neurons in the midbrain that play a central role in the brain's reward system. The mesolimbic pathway (VTA → nucleus accumbens) is the primary reward circuit, and the mesocortical pathway (VTA → prefrontal cortex) is involved in motivation and executive function. VTA dysfunction is implicated in addiction, depression, and schizophrenia. Deep brain stimulation of VTA-connected circuits is being explored for treatment-resistant depression.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/vta-dopamine-reward",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-061",
+    "name": "Subthalamic Nucleus (STN, 丘脑底核)",
+    "location": "Diencephalon (间脑), below thalamus",
+    "function": "Motor control, decision making, impulse control",
+    "connections": "Globus pallidus, substantia nigra, motor cortex (indirect pathway)",
+    "description": "The subthalamic nucleus is a small lens-shaped nucleus that plays a critical role in the indirect pathway of the basal ganglia motor circuit. It is the primary target for deep brain stimulation (DBS) in Parkinson's disease, where electrical stimulation can dramatically reduce tremor, rigidity, and bradykinesia. Recent research has also revealed the STN's role in decision-making under conflict — it acts as a 'brake' on action initiation when multiple competing options are present.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/stn-deep-brain-stimulation",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-062",
+    "name": "Parabrachial Nucleus (臂旁核)",
+    "location": "Pons (脑桥), surrounding superior cerebellar peduncle",
+    "function": "Threat detection, pain processing, respiratory regulation, taste",
+    "connections": "Amygdala, thalamus, insular cortex, hypothalamus",
+    "description": "The parabrachial nucleus is emerging as a critical hub for threat detection and negative emotional states. It receives nociceptive (pain) input from the spinal cord and relays it to the amygdala and other emotional processing centers. Recent research using optogenetics has shown that specific parabrachial neuron populations can drive threat avoidance behavior and anxiety-like states. The nucleus also plays a role in taste perception and respiratory regulation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/parabrachial-threat-detection",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-063",
+    "name": "Nucleus Accumbens (NAc, 伏隔核)",
+    "location": "Basal forebrain (前脑基底), part of ventral striatum",
+    "function": "Reward processing, pleasure, addiction, motivation",
+    "connections": "VTA (dopamine input), prefrontal cortex (glutamate input), amygdala",
+    "description": "The nucleus accumbens is the primary component of the ventral striatum and is central to the brain's reward circuitry. It integrates dopaminergic signals from the VTA with glutamatergic inputs from the prefrontal cortex and amygdala to encode reward prediction, pleasure, and motivation. The NAc is the primary target of addictive drugs, which hijack the dopamine signaling system. Deep brain stimulation of the NAc is being investigated for treatment-resistant depression and addiction.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/nucleus-accumbens-reward",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-064",
+    "name": "Mammillary Bodies (乳头体)",
+    "location": "Posterior hypothalamus (下丘脑后部)",
+    "function": "Episodic memory, spatial navigation",
+    "connections": "Hippocampus (via fornix), anterior thalamus (via mammillothalamic tract)",
+    "description": "The mammillary bodies are small round nuclei in the posterior hypothalamus that play a crucial role in episodic memory. They are part of the Papez circuit (hippocampus → mammillary bodies → anterior thalamus → cingulate cortex → hippocampus). Damage to the mammillary bodies causes Korsakoff's syndrome, characterized by severe anterograde amnesia. Recent research has shown that the mammillary bodies are not just a relay station but actively process spatial and temporal information.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/mammillary-bodies-memory",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-065",
+    "name": "Periaqueductal Gray (PAG, 导水管周围灰质)",
+    "location": "Midbrain (中脑), surrounding cerebral aqueduct",
+    "function": "Pain modulation, defensive behavior, fear response, opioid analgesia",
+    "connections": "Spinal cord, amygdala, prefrontal cortex, hypothalamus",
+    "description": "The periaqueductal gray (PAG) is a brainstem structure surrounding the cerebral aqueduct that plays a central role in pain modulation and defensive behavior. The PAG contains the endogenous opioid system and is the primary site of action for opioid analgesia. Different columns of the PAG organize different defensive responses: lateral PAG → fight/flight, ventrolateral PAG → passive coping (freezing), dorsolateral PAG → active coping. The PAG is also involved in migraine pathophysiology.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/pag-pain-modulation",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-066",
+    "name": "Habenula (缰核)",
+    "location": "Epithalamus (上丘脑), adjacent to pineal gland",
+    "function": "Negative reward prediction, disappointment, depression",
+    "connections": "VTA, raphe nuclei, substantia nigra, septal nuclei",
+    "description": "The habenula is a small bilateral structure in the epithalamus that plays a critical role in negative reward prediction and disappointment. It is activated when expected rewards are not received, and it inhibits dopamine neurons in the VTA and serotonin neurons in the raphe nuclei. Hyperactivity of the habenula is associated with depression, and deep brain stimulation of the habenula has shown promise for treatment-resistant depression. The lateral habenula is considered a key node in the brain's anti-reward system.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/habenula-depression",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-067",
+    "name": "Entorhinal Cortex (内嗅皮层)",
+    "location": "Medial temporal lobe (颞叶内侧), anterior to hippocampus",
+    "function": "Grid cells for spatial navigation; gateway to hippocampus",
+    "connections": "Hippocampus (perforant path), neocortex, olfactory bulb",
+    "description": "The entorhinal cortex is the primary interface between the neocortex and the hippocampus, serving as the gateway for information entering and leaving the hippocampal memory system. It contains grid cells that create a hexagonal coordinate system for spatial navigation (discovered by May-Britt and Edvard Moser, Nobel Prize 2014). The entorhinal cortex is one of the first regions affected by Alzheimer's disease, with neurofibrillary tangles appearing here before symptoms develop. This explains why spatial disorientation is often an early sign of Alzheimer's.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/entorhinal-grid-cells",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-068",
+    "name": "Dorsal Raphe Nucleus (中缝背核)",
+    "location": "Midbrain (中脑), along midline",
+    "function": "Primary source of serotonin; mood, sleep, appetite, cognition",
+    "connections": "Widespread cortical and subcortical projections",
+    "description": "The dorsal raphe nucleus is the largest serotonergic nucleus in the brain, containing approximately one-third of all serotonin-producing neurons. Its widespread projections influence virtually every aspect of brain function, including mood, sleep-wake cycles, appetite, cognition, and pain perception. SSRIs (selective serotonin reuptake inhibitors), the most widely prescribed antidepressants, primarily act by increasing serotonin availability at dorsal raphe projection sites. Recent research has revealed that different subpopulations of dorsal raphe neurons have distinct functions.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/dorsal-raphe-serotonin",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-069",
+    "name": "Anterior Cingulate Cortex (ACC, 前扣带皮层)",
+    "location": "Medial prefrontal cortex (前额叶内侧)",
+    "function": "Error monitoring, conflict resolution, pain affect, empathy, effort allocation",
+    "connections": "Prefrontal cortex, amygdala, insula, PAG, striatum",
+    "description": "The anterior cingulate cortex (ACC) is a critical hub for cognitive control and emotional processing. It monitors for errors and conflicts between competing responses, signaling the need for increased cognitive control. The ACC is also central to the affective (emotional) component of pain — it processes how much pain bothers you, not where it hurts. Damage to the ACC can cause akinetic mutism (awake but unresponsive). The ACC is implicated in OCD, depression, and chronic pain conditions.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/acc-cognitive-control",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-070",
+    "name": "Insular Cortex (岛叶皮层)",
+    "location": "Deep within lateral sulcus, hidden by opercula",
+    "function": "Interoception, self-awareness, emotion, taste, risk prediction",
+    "connections": "Amygdala, hypothalamus, ACC, prefrontal cortex, brainstem",
+    "description": "The insular cortex (insula) is a hidden cortical structure that plays a central role in interoception — the sense of the body's internal states. The anterior insula is involved in emotional awareness and risk prediction, while the posterior insula processes physical sensations from the body. The insula is critical for self-awareness and subjective feeling states. It is activated in virtually every emotional experience and is implicated in anxiety disorders, addiction, and eating disorders. The right anterior insula is larger in humans than in other primates, suggesting a role in uniquely human self-awareness.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/insula-interoception",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-071",
+    "name": "Ventromedial Prefrontal Cortex (vmPFC, 腹内侧前额叶)",
+    "location": "Medial prefrontal cortex, ventral aspect",
+    "function": "Emotional decision-making, value computation, fear extinction, social cognition",
+    "connections": "Amygdala, hippocampus, ACC, striatum, hypothalamus",
+    "description": "The ventromedial prefrontal cortex (vmPFC) is essential for emotional decision-making and value-based choices. Patients with vmPFC damage (like the famous case of Phineas Gage) can make rational calculations but make disastrous life decisions because they cannot integrate emotional information into their choices. The vmPFC is also critical for fear extinction — the process by which fear responses are unlearned. Dysfunction of the vmPFC is implicated in anxiety disorders, addiction, and antisocial behavior.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/vmpfc-decision-making",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "BR-072",
+    "name": "Cerebellum (小脑) - Beyond Motor Control",
+    "location": "Posterior cranial fossa, below occipital lobe",
+    "function": "Motor coordination, but also: cognition, language, emotional regulation, social processing",
+    "connections": "Cerebral cortex (via thalamus), brainstem, spinal cord",
+    "description": "The cerebellum contains more neurons than the rest of the brain combined but was traditionally considered solely a motor control structure. Recent research has revealed that the cerebellum also plays important roles in cognition, language processing, emotional regulation, and social cognition. The 'cognitive cerebellum' hypothesis proposes that the cerebellum applies its error-correction and prediction capabilities to cognitive and emotional processes, just as it does for motor control. Cerebellar abnormalities are now linked to autism, schizophrenia, and dyslexia.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/cerebellum-cognition",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

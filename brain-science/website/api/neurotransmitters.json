@@ -1,0 +1,86 @@
+{
+  "count": 8,
+  "updated": "2026-05-29T02:27:01.435Z",
+  "data": [
+    {
+      "id": "NT-001",
+      "name": "Dopamine",
+      "type": "Catecholamine",
+      "function": "Reward, motivation, motor control, attention, reinforcement learning",
+      "associated_regions": "VTA, substantia nigra, nucleus accumbens, prefrontal cortex, striatum",
+      "disorders": "Parkinson's (deficiency), schizophrenia (excess), addiction (dysregulation), ADHD (deficiency)",
+      "drugs_targeting": "L-DOPA, antipsychotics (D2 antagonists), methylphenidate, amphetamines, bupropion",
+      "description": "Dopamine is the brain's primary reward signal. VTA dopamine neurons fire in response to unexpected rewards (prediction error), forming the basis of reinforcement learning. In the nigrostriatal pathway, dopamine enables smooth motor control; its loss causes Parkinson's disease. Dopamine has 5 receptor subtypes (D1-D5) with distinct functions."
+    },
+    {
+      "id": "NT-002",
+      "name": "Serotonin (5-HT)",
+      "type": "Indolamine",
+      "function": "Mood regulation, sleep, appetite, pain, social behavior, impulsivity",
+      "associated_regions": "Raphe nuclei (brainstem), widespread projections to cortex, limbic system, spinal cord",
+      "disorders": "Depression, anxiety, OCD, PTSD, migraine, irritable bowel syndrome",
+      "drugs_targeting": "SSRIs (fluoxetine, sertraline), SNRIs, triptans, LSD/psilocybin, ondansetron",
+      "description": "Serotonin modulates virtually every brain function. 95% of the body's serotonin is in the gut. SSRIs are the most prescribed psychiatric drugs. Recent research shows psilocybin (5-HT2A agonist) produces rapid antidepressant effects. 14 serotonin receptor subtypes mediate diverse effects from mood to gut motility."
+    },
+    {
+      "id": "NT-003",
+      "name": "Glutamate",
+      "type": "Amino acid",
+      "function": "Primary excitatory neurotransmitter; learning, memory, synaptic plasticity (LTP/LTD), development",
+      "associated_regions": "Ubiquitous - present in >80% of brain synapses",
+      "disorders": "Excitotoxicity (stroke, ALS), epilepsy, schizophrenia, anxiety",
+      "drugs_targeting": "Ketamine (NMDA antagonist), memantine, riluzole, perampanel (AMPA antagonist)",
+      "description": "The brain's most abundant neurotransmitter, present in over 80% of synapses. Glutamate mediates long-term potentiation (LTP), the cellular basis of learning and memory. Excessive glutamate causes excitotoxic cell death in stroke and neurodegenerative diseases. Ketamine's rapid antidepressant effect works through glutamate modulation."
+    },
+    {
+      "id": "NT-004",
+      "name": "GABA (Gamma-aminobutyric acid)",
+      "type": "Amino acid",
+      "function": "Primary inhibitory neurotransmitter; anxiety regulation, muscle relaxation, sleep, neural circuit balance",
+      "associated_regions": "Ubiquitous - present in ~25% of brain synapses; cerebellar Purkinje cells, basal ganglia",
+      "disorders": "Anxiety, epilepsy, insomnia, Huntington's disease (GABA neuron loss)",
+      "drugs_targeting": "Benzodiazepines, barbiturates, gabapentin, vigabatrin, tiagabine, valproate",
+      "description": "The brain's primary brake system. GABA counterbalances glutamate excitation to maintain neural circuit stability. GABA-A receptors are the target of benzodiazepines and alcohol. Impaired GABA function leads to seizures and anxiety. GABA neurons (interneurons) are critical for timing and coordination of neural activity."
+    },
+    {
+      "id": "NT-005",
+      "name": "Acetylcholine",
+      "type": "Amine",
+      "function": "Attention, learning, memory, arousal, muscle contraction (at neuromuscular junction)",
+      "associated_regions": "Basal forebrain (nucleus basalis), hippocampus, cortex, neuromuscular junctions",
+      "disorders": "Alzheimer's disease (cholinergic neuron loss), myasthenia gravis, Lewy body dementia",
+      "drugs_targeting": "Donepezil, rivastigmine, galantamine (AChE inhibitors), nicotine, varenicline, atropine",
+      "description": "The first neurotransmitter discovered (Loewi, 1921). In the brain, acetylcholine from the basal forebrain is essential for attention and memory; its loss is a hallmark of Alzheimer's disease. At the neuromuscular junction, it triggers muscle contraction. AChE inhibitors are first-line Alzheimer's treatments."
+    },
+    {
+      "id": "NT-006",
+      "name": "Norepinephrine (Noradrenaline)",
+      "type": "Catecholamine",
+      "function": "Arousal, attention, stress response, vigilance, mood, blood pressure regulation",
+      "associated_regions": "Locus coeruleus (brainstem), widespread cortical and subcortical projections",
+      "disorders": "ADHD, depression, anxiety, PTSD, panic disorder",
+      "drugs_targeting": "Atomoxetine, clonidine, SNRIs, propranolol, prazosin",
+      "description": "The brain's alertness system. The locus coeruleus contains only ~15,000 neurons but projects throughout the brain, modulating attention and arousal. Norepinephrine is also the primary neurotransmitter of the sympathetic nervous system ('fight or flight'). Its role in PTSD has led to prazosin trials for nightmares."
+    },
+    {
+      "id": "NT-007",
+      "name": "Endorphins (Endogenous Opioids)",
+      "type": "Neuropeptide",
+      "function": "Pain relief, reward, euphoria, stress response, social bonding",
+      "associated_regions": "Periaqueductal gray, nucleus accumbens, amygdala, pituitary",
+      "disorders": "Chronic pain, addiction, depression",
+      "drugs_targeting": "Naloxone, naltrexone, buprenorphine, morphine (exogenous opioids)",
+      "description": "Endogenous opioid peptides that are the body's natural painkillers. Three receptor types: mu (pain relief, euphoria), kappa (dysphoria), delta (emotional regulation). Exercise-induced endorphin release creates 'runner's high.' Opioid drugs hijack this system, leading to addiction. Naloxone reverses opioid overdose."
+    },
+    {
+      "id": "NT-008",
+      "name": "Oxytocin",
+      "type": "Neuropeptide",
+      "function": "Social bonding, trust, empathy, childbirth, lactation, pair bonding",
+      "associated_regions": "Hypothalamus (paraventricular and supraoptic nuclei), posterior pituitary, amygdala",
+      "disorders": "Autism spectrum disorder, social anxiety, PTSD, borderline personality disorder",
+      "drugs_targeting": "Intranasal oxytocin (investigational), pitocin (synthetic, for labor)",
+      "description": "Called the 'love hormone' but more accurately a social salience modulator. Oxytocin enhances trust and in-group bonding but can increase out-group hostility. Intranasal oxytocin trials for autism have shown mixed results. It's essential for childbirth and lactation. Recent work shows it modulates fear extinction, relevant for PTSD treatment."
+    }
+  ]
+}

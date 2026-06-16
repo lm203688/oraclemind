@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-05-29T13:30:00.000Z",
+  "description": "深海资源库",
+  "entities": [
+    {"id": "DR-001", "name": "多金属结核", "location": "深海4-6km", "composition": "Mn/Co/Ni/Cu", "abundance": "~210亿吨", "mining_status": "勘探阶段"},
+    {"id": "DR-002", "name": "富钴结壳", "location": "海山", "composition": "Co/Mn/Ni", "abundance": "丰富", "mining_status": "勘探阶段"},
+    {"id": "DR-003", "name": "海底硫化物", "location": "热液喷口", "composition": "Cu/Zn/Au/Ag", "abundance": "分散", "mining_status": "勘探阶段"},
+    {"id": "DR-004", "name": "天然气水合物", "location": "大陆坡", "composition": "CH4·nH2O", "abundance": "~2万万亿m³", "mining_status": "试采成功"},
+    {"id": "DR-005", "name": "深海稀土泥", "location": "太平洋深海泥", "composition": "REE+Y", "abundance": "5000-7000ppm", "mining_status": "研究阶段"},
+    {"id": "DR-006", "name": "深海锂资源", "location": "热液流体/卤水池", "composition": "Li", "abundance": "5-15mM", "mining_status": "研究阶段"},
+    {"id": "DR-007", "name": "磷灰岩", "location": "大陆边缘", "composition": "P/REE/U", "abundance": "~3500万吨", "mining_status": "申请被拒"},
+    {"id": "DR-008", "name": "钪和碲", "location": "富钴结壳/热液", "composition": "Sc/Te", "abundance": "微量高值", "mining_status": "研究阶段"},
+    {"id": "DR-009", "name": "不活跃热液硫化物", "location": "死热液喷口", "composition": "Cu/Zn/Au/Ag", "abundance": "1000万吨+", "mining_status": "勘探阶段"},
+    {"id": "DR-010", "name": "海洋砂矿(钻石/锡/钛)", "location": "纳米比亚/东南亚", "composition": "金刚石/锡石/钛铁矿", "abundance": "150万克拉/年", "mining_status": "商业运营"},
+    {"id": "DR-011", "name": "硅质软泥", "location": "南大洋深海平原", "composition": "SiO₂", "abundance": "巨大", "mining_status": "研究阶段"},
+    {"id": "DR-012", "name": "深海卤水池", "location": "红海/地中海", "composition": "Zn/Cu/Ag/Au/REE", "abundance": "9000万m³", "mining_status": "预可行性研究"},
+    {"id": "DR-013", "name": "海底玄武岩(碳封存)", "location": "大洋中脊", "composition": "CO₂矿物化", "abundance": "无限", "mining_status": "研究阶段"},
+    {"id": "DR-014", "name": "北极铁锰结核", "location": "北冰洋", "composition": "Mn/Fe/Co/Ni", "abundance": "待量化", "mining_status": "俄罗斯勘探"},
+    {"id": "DR-015", "name": "热液贵金属(金/银)", "location": "冲绳海槽/马努斯海盆", "composition": "Au/Ag", "abundance": "数克/吨", "mining_status": "JOGMEG测试中"}
+  ]
+}

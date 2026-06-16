@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head><title>抖音视频上传助手</title></head>
+<body>
+<h2>抖音视频上传助手</h2>
+<p>请在已登录的 creator.douyin.com 发布页面使用此工具</p>
+<p>步骤：</p>
+<ol>
+<li>打开 <a href="https://creator.douyin.com/creator-micro/content/publish/video/" target="_blank">抖音发布页</a></li>
+<li>在发布页按F12打开控制台</li>
+<li>粘贴下面的代码并回车</li>
+</ol>
+
+<h3>复制以下代码：</h3>
+<textarea id="code" style="width:100%;height:200px;font-size:12px;">
+(async()=>{
+  // Step 1: 点击上传区域触发file input创建
+  const uploadArea = document.querySelector('[class*="upload"]') || document.querySelector('[class*="card-"]') || document.querySelector('[class*="container-"]');
+  if(uploadArea) {
+    uploadArea.click();
+    await new Promise(r=>setTimeout(r,2000));
+  }
+  
+  // Step 2: 找到file input
+  let fileInput = document.querySelector('input[type="file"]');
+  if(!fileInput) {
+    // 尝试查找所有input
+    const allInputs = document.querySelectorAll('input');
+    console.log('所有inputs:', allInputs.length);
+    for(const inp of allInputs) {
+      console.log('input:', inp.type, inp.accept, inp.name);
+    }
+    console.log('❌ 没找到file input，请手动上传视频');
+    return;
+  }
+  
+  // Step 3: 下载视频
+  console.log('⏳ 下载视频中...');
+  const resp = await fetch('https://litter.catbox.moe/r415nl.mp4');
+  if(!resp.ok) { console.log('❌ 下载失败'); return; }
+  const blob = await resp.blob();
+  const file = new File([blob], 'gene_tech_daily.mp4', {type: 'video/mp4'});
+  
+  // Step 4: 设置文件
+  const dt = new DataTransfer();
+  dt.items.add(file);
+  fileInput.files = dt.files;
+  fileInput.dispatchEvent(new Event('change', {bubbles: true}));
+  fileInput.dispatchEvent(new Event('input', {bubbles: true}));
+  console.log('⏳ 视频上传中，请等待约2分钟...');
+  
+  // Step 5: 等待上传完成
+  await new Promise(r=>setTimeout(r,120000));
+  
+  // Step 6: 填写标题
+  const titleInput = document.querySelector('input[placeholder*="标题"]');
+  if(titleInput) {
+    const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+    nativeInputValueSetter.call(titleInput, '基因技术前沿速递｜2025年5月19日');
+    titleInput.dispatchEvent(new Event('input', {bubbles: true}));
+    titleInput.dispatchEvent(new Event('change', {bubbles: true}));
+  }
+  
+  // Step 7: 填写描述
+  const descEl = document.querySelector('div[contenteditable=true]');
+  if(descEl) {
+    descEl.focus();
+    document.execCommand('insertText', false, '基因技术前沿速递｜2025年5月19日 #基因技术 #科技前沿 #基因编辑 #生物科技');
+  }
+  
+  console.log('✅ 标题和描述已填写！请关闭弹窗后点击【发布】按钮');
+})()
+</textarea>
+<br><br>
+<button onclick="document.getElementById('code').select();document.execCommand('copy')">复制代码</button>
+</body>
+</html>

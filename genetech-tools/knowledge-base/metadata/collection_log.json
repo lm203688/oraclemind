@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-25T06:26:07.831Z",
+  "description": "采集日志",
+  "runs": [
+    {
+      "source": "pubmed",
+      "started_at": "2026-05-24T06:16:53.884Z",
+      "completed_at": "2026-05-24T06:17:05.959Z",
+      "papers_found": 296,
+      "papers_collected": 296,
+      "entities_extracted": 0,
+      "output_file": "/home/z/my-project/genetech-tools/knowledge-base/raw/pubmed_2026-05-24.json",
+      "status": "completed",
+      "errors": 0
+    },
+    {
+      "source": "pubmed",
+      "started_at": "2026-05-24T06:17:38.987Z",
+      "completed_at": "2026-05-24T06:18:10.190Z",
+      "papers_found": 296,
+      "papers_collected": 296,
+      "entities_extracted": 0,
+      "output_file": "/home/z/my-project/genetech-tools/knowledge-base/raw/pubmed_2026-05-24.json",
+      "status": "completed",
+      "errors": 0
+    },
+    {
+      "source": "pubmed",
+      "started_at": "2026-05-25T06:22:53.949Z",
+      "completed_at": "2026-05-25T06:26:07.831Z",
+      "papers_found": 297,
+      "papers_collected": 297,
+      "entities_extracted": 6,
+      "output_file": "/home/z/my-project/genetech-tools/knowledge-base/raw/pubmed_2026-05-25.json",
+      "status": "completed",
+      "errors": 0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "BrainDB",
+  "name_for_model": "braindb",
+  "description_for_human": "Brain science knowledge base covering brain regions, BCI, neural implants, brain disorders, and neuropharmacology",
+  "description_for_model": "Brain science knowledge base covering brain regions, BCI, neural implants, brain disorders, and neuropharmacology. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://brain.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://brain.genetech.tools/"
+}

@@ -1,0 +1,392 @@
+[
+  {
+    "id": "PROC-001",
+    "name": "Vacuum Distillation",
+    "method_type": "Separation",
+    "description": "Using the natural vacuum of space to distill and separate metals by their different boiling points, without need for containment vessels",
+    "input_material": "Mixed asteroid metal",
+    "output": "Separated pure metals (Fe, Ni, Co, PGMs)",
+    "efficiency": "High for volatile metals; PGMs require very high temperatures",
+    "space_viability": "Excellent - vacuum is free in space; no atmosphere to manage"
+  },
+  {
+    "id": "PROC-002",
+    "name": "Carbothermal Reduction",
+    "method_type": "Chemical Reduction",
+    "description": "Reduction of metal oxides using carbon (from CO₂ or methane) at high temperature to produce metals and CO/CO₂ gas",
+    "input_material": "Metal oxide ores (ilmenite, regolith)",
+    "output": "Metal + CO/CO₂ gas",
+    "efficiency": "Moderate; requires carbon source and high temperature",
+    "space_viability": "Good - carbon can be sourced from CO₂ (Mars) or imported; demonstrated with lunar simulant"
+  },
+  {
+    "id": "PROC-003",
+    "name": "Molten Salt Electrolysis (FFC Cambridge Process)",
+    "method_type": "Electrochemical",
+    "description": "Electrolysis of metal oxides dissolved in molten CaCl₂ to produce pure metals and oxygen",
+    "input_material": "Metal oxide ores (TiO₂, lunar regolith)",
+    "output": "Pure metal + oxygen gas",
+    "efficiency": "High for titanium; lower energy than Kroll process",
+    "space_viability": "Good - demonstrated for titanium from ilmenite; oxygen co-product valuable"
+  },
+  {
+    "id": "PROC-004",
+    "name": "Aqueous Processing (Leaching)",
+    "method_type": "Chemical Dissolution",
+    "description": "Dissolving target minerals in acid or base solutions to extract specific elements",
+    "input_material": "Regolith or asteroid material",
+    "output": "Dissolved target elements + residue",
+    "efficiency": "High selectivity; requires water and chemicals",
+    "space_viability": "Challenging - requires water recycling and chemical management in microgravity"
+  },
+  {
+    "id": "PROC-005",
+    "name": "Solar Thermal Processing",
+    "method_type": "Thermal",
+    "description": "Using concentrated sunlight to heat materials to extreme temperatures for sintering, melting, or vaporization",
+    "input_material": "Regolith, asteroid material",
+    "output": "Sintered/melted products, volatilized gases",
+    "efficiency": "Limited by solar flux and concentrator size; free energy source",
+    "space_viability": "Excellent - abundant solar energy; demonstrated for regolith sintering"
+  },
+  {
+    "id": "PROC-006",
+    "name": "Plasma Smelting",
+    "method_type": "Thermal/Electrical",
+    "description": "Using plasma arcs to achieve extreme temperatures (>10,000°C) for rapid metal extraction and refining",
+    "input_material": "Raw asteroid or regolith material",
+    "output": "Refined metals, slag, gases",
+    "efficiency": "Very high temperatures achievable; energy intensive",
+    "space_viability": "Moderate - requires significant electrical power; compact equipment"
+  },
+  {
+    "id": "PROC-007",
+    "name": "Molten Regolith Electrolysis (MRE)",
+    "method_type": "Electrochemical",
+    "description": "Direct electrolysis of molten lunar regolith at 1600°C to simultaneously produce oxygen gas and metal alloy (Fe, Al, Si, Ti)",
+    "input_material": "Bulk lunar regolith (no beneficiation needed)",
+    "output": "O₂ gas + metal alloy ingot",
+    "efficiency": "Moderate - handles raw regolith but requires high temperature",
+    "space_viability": "Good - demonstrated by Metalysis/ESA; produces both O₂ and useful metals"
+  },
+  {
+    "id": "PROC-008",
+    "name": "Hydrogen Reduction",
+    "method_type": "Chemical Reduction",
+    "description": "Reduction of metal oxides (especially ilmenite) with hydrogen gas at 900-1100°C to produce water and metals",
+    "input_material": "Ilmenite-rich regolith (beneficiated preferred)",
+    "output": "H₂O (→ O₂ + H₂ via electrolysis) + metallic iron + TiO₂",
+    "efficiency": "High for ilmenite; moderate for bulk regolith",
+    "space_viability": "Excellent - hydrogen is recyclable; demonstrated with Apollo samples"
+  },
+  {
+    "id": "PROC-009",
+    "name": "Magnetic/Electrostatic Beneficiation",
+    "method_type": "Physical Separation",
+    "description": "Pre-processing step using magnetic fields and/or triboelectric charging to concentrate target minerals before extraction",
+    "input_material": "Raw lunar regolith",
+    "output": "Concentrated mineral fractions (ilmenite, anorthite, etc.)",
+    "efficiency": "5-10x concentration achievable; low energy input",
+    "space_viability": "Excellent - no reagents needed; works in vacuum; demonstrated with simulants"
+  },
+  {
+    "id": "PROC-010",
+    "name": "Sulfur Concrete Casting",
+    "method_type": "Construction",
+    "description": "Mixing molten sulfur (130-140°C) with regolith aggregate to produce structural concrete without water",
+    "input_material": "Sulfur (from troilite) + regolith aggregate",
+    "output": "Structural concrete elements",
+    "efficiency": "Rapid setting; compressive strength comparable to Portland cement",
+    "space_viability": "Excellent - no water needed; sulfur available from regolith; low temperature process"
+  },
+  {
+    "id": "PROC-011",
+    "name": "Laser/Regolith 3D Printing",
+    "method_type": "Construction",
+    "description": "Using laser or concentrated solar energy to sinter regolith layer-by-layer into structural elements",
+    "input_material": "Bulk lunar regolith",
+    "output": "3D-printed structures (walls, shelters, infrastructure)",
+    "efficiency": "Slow but autonomous; no additives needed",
+    "space_viability": "Good - demonstrated by ICON and ESA; requires significant power"
+  },
+  {
+    "id": "PROC-012",
+    "name": "Optical Mining (TransAstra)",
+    "method_type": "Asteroid Extraction",
+    "description": "Using concentrated sunlight to fracture and volatilize asteroid material, capturing released water and other volatiles",
+    "input_material": "Whole small asteroid (captured)",
+    "output": "Water, volatiles, and concentrated mineral residue",
+    "efficiency": "Concept - eliminates need for drilling; whole-asteroid processing",
+    "space_viability": "Good concept - uses free solar energy; no heavy excavation equipment needed"
+  },
+  {
+    "id": "PROC-013",
+    "name": "FFC Cambridge Process (Metalysis)",
+    "method_type": "Electrochemical reduction",
+    "description": "Electrolysis of metal oxides dissolved in molten CaCl₂ to produce pure metals, adapted for lunar regolith processing",
+    "input_material": "Lunar regolith (metal oxides)",
+    "output": "Pure metals (Ti, Fe, Al, Si) + oxygen gas",
+    "efficiency": "High - demonstrated for titanium; co-produces oxygen",
+    "space_viability": "Excellent - lower temperature than molten regolith; proven at commercial scale on Earth"
+  },
+  {
+    "id": "PROC-014",
+    "name": "Selective Laser Melting (SLM)",
+    "method_type": "Additive manufacturing",
+    "description": "Using laser power to melt and fuse lunar regolith simulant layer by layer for precision component manufacturing",
+    "input_material": "Lunar regolith (sieved)",
+    "output": "Precision metal/ceramic parts and tools",
+    "efficiency": "High precision; minimal waste; can produce complex geometries",
+    "space_viability": "Good - demonstrated with lunar simulant; requires significant power but enables on-demand manufacturing"
+  },
+  {
+    "id": "PROC-015",
+    "name": "Aqueous Processing (Water Extraction)",
+    "method_type": "Chemical leaching",
+    "description": "Using water to dissolve and extract soluble minerals and volatiles from asteroid and lunar material at moderate temperatures",
+    "input_material": "Carbonaceous asteroid material or lunar regolith",
+    "output": "Dissolved minerals, soluble salts, organic compounds",
+    "efficiency": "Moderate - selective extraction; requires water recycling",
+    "space_viability": "Good for carbonaceous asteroids; water can be recycled; low temperature process"
+  },
+  {
+    "id": "PROC-016",
+    "name": "Magma Electrolysis (High-Temperature)",
+    "method_type": "Electrolysis",
+    "description": "Direct electrolysis of molten lunar regolith at 1600°C+ to simultaneously produce oxygen gas and metal alloy",
+    "input_material": "Bulk lunar regolith (unprocessed)",
+    "output": "Oxygen gas + ferrous metal alloy (Fe, Si, Al, Ti)",
+    "efficiency": "High - processes raw regolith without beneficiation; co-produces oxygen",
+    "space_viability": "Good - demonstrated with Apollo samples; requires high power but produces both metals and oxygen"
+  },
+  {
+    "id": "PROC-017",
+    "name": "Centrifugal Separation (Molten Metal)",
+    "method_type": "Density separation",
+    "description": "Using centrifugal force in microgravity to separate molten metals by density, exploiting natural density differences",
+    "input_material": "Molten asteroid or lunar metal",
+    "output": "Separated metal fractions (Fe, Ni, PGMs by density)",
+    "efficiency": "Good for large density differences; PGMs require multiple passes",
+    "space_viability": "Excellent - microgravity actually aids centrifugal separation; no gravity needed"
+  },
+  {
+    "id": "PROC-018",
+    "name": "Solar Concentrator Smelting",
+    "method_type": "Thermal processing",
+    "description": "Using large solar concentrator mirrors to achieve smelting temperatures (>1500°C) for metal extraction from regolith without electrical power",
+    "input_material": "Lunar or asteroid regolith",
+    "output": "Molten metal and slag; volatilized elements captured by cold traps",
+    "efficiency": "Good - free energy source; limited to sunlit periods without storage",
+    "space_viability": "Excellent on Moon - 14 days of continuous sunlight; no fuel or power infrastructure needed"
+  },
+  {
+    "id": "PROC-019",
+    "name": "Ion Exchange Separation",
+    "method_type": "Chemical separation",
+    "description": "Using ion exchange resins to selectively separate rare earth elements and other valuable metals from leach solutions",
+    "input_material": "Leach solution from regolith processing",
+    "output": "Separated REE fractions and other valuable metals",
+    "efficiency": "High selectivity for REE; well-established terrestrial technology",
+    "space_viability": "Moderate - requires resin resupply or in-situ resin production; water recycling needed"
+  },
+  {
+    "id": "PROC-020",
+    "name": "Cold Trap Volatile Capture",
+    "method_type": "Volatile capture",
+    "description": "Using cold surfaces in the vacuum of space or permanently shadowed craters to condense and capture volatiles released during regolith processing",
+    "input_material": "Volatilized gases from heated regolith",
+    "output": "Water ice, CO₂, CO, CH₄, H₂S, NH₃, and other volatiles",
+    "efficiency": "High in vacuum - natural condensation; passive operation possible",
+    "space_viability": "Excellent - uses natural cold of space or PSRs; passive operation; no power needed for condensation"
+  },
+  {
+    "id": "PROC-021",
+    "name": "Non-Destructive Meteorite Analysis",
+    "method_type": "Characterization",
+    "description": "New non-destructive analysis methods developed for rare meteorite samples, preserving material for future study while extracting mineralogical and structural data",
+    "input_material": "Rare meteorite samples (Ribbeck, El Ali, etc.)",
+    "output": "Mineral composition, crystal structure, formation conditions without sample destruction",
+    "efficiency": "High - preserves irreplaceable samples while extracting maximum data",
+    "space_viability": "Excellent - techniques can be adapted for in-situ asteroid characterization without sample return"
+  },
+  {
+    "id": "PROC-022",
+    "name": "AI-Optimized Asteroid Composition Assessment",
+    "method_type": "Data analysis",
+    "description": "Machine learning algorithms that combine spectroscopic data with meteorite chemistry databases to predict asteroid composition and mining viability with higher accuracy",
+    "input_material": "Spectroscopic observations + meteorite chemistry databases",
+    "output": "Predicted asteroid composition, element abundance estimates, mining viability scores",
+    "efficiency": "High - data-driven approach replaces theoretical models with empirical chemistry",
+    "space_viability": "Excellent - enables remote asteroid assessment before committing to expensive rendezvous missions"
+  },
+  {
+    "id": "PROC-023",
+    "name": "Lunar Surface Oxygen Production (Demonstrated 2026)",
+    "method_type": "ISRU extraction",
+    "description": "Molten regolith electrolysis and hydrogen reduction demonstrated on the lunar surface through CLPS missions, confirming oxygen production viability",
+    "input_material": "Lunar regolith (in-situ)",
+    "output": "Oxygen gas + metal alloy byproducts",
+    "efficiency": "Proven viable - 18 months of surface hardware operation confirms readiness",
+    "space_viability": "Excellent - first ISRU product ready for production-scale implementation on the Moon"
+  },
+  {
+    "id": "PROC-024",
+    "name": "Optical Mining (Concentrated Solar)",
+    "method_type": "Extraction",
+    "description": "Uses large inflatable reflectors to concentrate sunlight onto asteroid surfaces, vaporizing material and capturing released volatiles and metals in a containment system",
+    "input_material": "Asteroid surface material",
+    "output": "Water vapor, metal vapors, volatile gases",
+    "efficiency": "High for volatiles; moderate for metals; uses free solar energy",
+    "space_viability": "Excellent - no power source needed beyond sunlight; scalable with reflector size"
+  },
+  {
+    "id": "PROC-025",
+    "name": "Electrostatic Mineral Separation",
+    "method_type": "Beneficiation",
+    "description": "Separates mineral grains by exploiting their different triboelectric charging properties in vacuum. Charged particles follow different trajectories in an electric field, enabling dry separation without water.",
+    "input_material": "Crushed regolith",
+    "output": "Separated mineral fractions (e.g., ilmenite concentrate)",
+    "efficiency": "Effective for minerals with strong charge differences; ilmenite separation demonstrated at >90% purity",
+    "space_viability": "Excellent - requires no water or chemicals; ideal for lunar vacuum environment"
+  },
+  {
+    "id": "PROC-026",
+    "name": "Microwave Selective Heating",
+    "method_type": "Selective extraction",
+    "description": "Exploits differential microwave absorption of minerals to selectively heat and extract specific components. Ilmenite absorbs microwaves strongly while other minerals remain cool.",
+    "input_material": "Lunar regolith (ilmenite-bearing)",
+    "output": "Heated ilmenite for oxygen/water extraction; unheated residue",
+    "efficiency": "High selectivity for microwave-absorbing minerals; energy-efficient compared to bulk heating",
+    "space_viability": "Good - requires electrical power but enables targeted extraction without bulk processing"
+  },
+  {
+    "id": "PROC-027",
+    "name": "Sulfur Concrete Production",
+    "method_type": "Construction material processing",
+    "description": "Mixes molten sulfur (extracted from troilite) with regolith aggregate to produce sulfur concrete that sets by cooling. Eliminates need for water and Portland cement.",
+    "input_material": "Lunar sulfur + regolith aggregate",
+    "output": "Sulfur concrete structural elements",
+    "efficiency": "Compressive strength comparable to Portland cement concrete; sets in minutes on cooling",
+    "space_viability": "Excellent - no water needed; sulfur available from troilite; simple mixing process"
+  },
+  {
+    "id": "PROC-028",
+    "name": "Solar Sintering (3D Printing)",
+    "method_type": "Construction",
+    "description": "Uses concentrated sunlight or laser to sinter regolith layer by layer, effectively 3D printing solid structures from local material without binder",
+    "input_material": "Lunar regolith",
+    "output": "Sintered structural elements (walls, floors, launch pads)",
+    "efficiency": "Moderate - layer-by-layer process is slow but autonomous; structural strength adequate for compression loads",
+    "space_viability": "Excellent - uses free solar energy; 100% local material; can operate autonomously"
+  },
+  {
+    "id": "PROC-029",
+    "name": "Bioleaching (Microbial Metal Extraction)",
+    "method_type": "Biological extraction",
+    "description": "Uses acidophilic bacteria (e.g., Acidithiobacillus ferrooxidans) to dissolve metal sulfides and oxides from regolith and asteroid material, extracting metals in solution",
+    "input_material": "Metal-bearing regolith or asteroid material",
+    "output": "Metal-rich leachate solution for further purification",
+    "efficiency": "Low to moderate; very slow but requires minimal energy input",
+    "space_viability": "Challenging - requires maintaining biological systems in space; microgravity effects on bacteria under study on ISS"
+  },
+  {
+    "id": "PROC-030",
+    "name": "Cryogenic Sublimation Mining",
+    "method_type": "Ice extraction",
+    "description": "Directs thermal energy (laser, heater, or sunlight) at ice deposits in permanently shadowed regions, capturing sublimated water vapor with cold traps. Must operate at -230°C to -170°C.",
+    "input_material": "Lunar PSR water ice",
+    "output": "Captured water ice/vapor for purification and storage",
+    "efficiency": "Moderate - sublimation is energy-intensive at cryogenic temperatures; capture efficiency depends on cold trap design",
+    "space_viability": "Challenging - extreme cold complicates equipment; but the resource value justifies the difficulty"
+  },
+  {
+    "id": "PROC-031",
+    "name": "Molten Regolith Electrolysis (MRE)",
+    "type": "ISRU oxygen extraction",
+    "input": "Lunar regolith (bulk)",
+    "output": "Oxygen gas + metal/silicon slag",
+    "description": "Electrolysis of molten lunar regolith at 1600-1700C to produce oxygen and a mixed metal-silicon byproduct. This is the most versatile ISRU process as it works with any regolith composition without beneficiation. Recent advances in crucible materials and electrode design have improved efficiency and longevity. The metal-silicon slag can potentially be used for construction or further refining.",
+    "year": 2026
+  },
+  {
+    "id": "PROC-032",
+    "name": "Hydrogen Reduction of Ilmenite",
+    "type": "ISRU oxygen extraction",
+    "input": "Ilmenite-rich regolith",
+    "output": "Oxygen + reduced iron/titanium",
+    "description": "Hydrogen gas reduces ilmenite (FeTiO3) at 800-1000C to produce water, which is then electrolyzed to yield oxygen and recycled hydrogen. This is the most mature lunar ISRU process, with extensive laboratory and some field testing. It requires ilmenite beneficiation but operates at lower temperatures than MRE, reducing energy requirements.",
+    "year": 2026
+  },
+  {
+    "id": "PROC-033",
+    "name": "Regolith Additive Manufacturing (3D Printing)",
+    "type": "In-situ construction",
+    "input": "Lunar regolith (processed or raw)",
+    "output": "Structural components, habitats",
+    "description": "Using lunar regolith as feedstock for 3D printing structures on the Moon. Approaches include sintering (laser or microwave), binder jetting with polymer binders, and extrusion of regolith-based concrete. Metal AM research in 2026 demonstrated that regolith processing for oxygen extraction can simultaneously produce metal-rich residue suitable for additive manufacturing.",
+    "year": 2026
+  },
+  {
+    "id": "PROC-034",
+    "name": "Carbothermal Reduction",
+    "type": "ISRU oxygen and metal extraction",
+    "input": "Lunar regolith + methane",
+    "output": "Oxygen + silicon/iron + recycled methane",
+    "description": "Methane is used to reduce metal oxides in regolith at high temperatures, producing water (for oxygen) and carbon monoxide (recycled to methane via Sabatier reaction). This closed-loop process is attractive because it can be integrated with life support systems. NASA has demonstrated carbothermal reduction of simulated lunar regolith at TRL 4-5.",
+    "year": 2026
+  },
+  {
+    "id": "PROC-035",
+    "name": "Volatile Thermal Desorption from PSR Ice",
+    "type": "Water extraction from polar ice",
+    "input": "PSR ice-bearing regolith",
+    "output": "Water + other volatiles (CO2, NH3, CH4)",
+    "description": "Controlled heating of ice-bearing regolith from permanently shadowed regions to sublimate and capture water and other volatiles. Challenges include operating at 25-50K ambient temperatures, unknown ice crystalline form, and preventing re-deposition of sublimated volatiles. This process is 3-5 years behind regolith oxygen extraction in technology readiness.",
+    "year": 2026
+  },
+  {
+    "id": "PROC-036",
+    "name": "Solar-Driven Additive Sintering (Lunar Regolith)",
+    "type": "In-situ construction",
+    "input": "Lunar regolith (bulk)",
+    "output": "Sintered structural components (walls, slabs, launch pads)",
+    "description": "2026 proof-of-concept demonstrated solar-based additive manufacturing using lunar regolith simulant. Solar concentrator focuses sunlight onto moving print head, sintering regolith layer by layer. Unlike laser sintering, requires no electrical power for sintering process itself. Particularly suited to lunar environment where 14 days of continuous sunlight provide ample energy for autonomous construction.",
+    "year": 2026
+  },
+  {
+    "id": "PROC-037",
+    "name": "Regolith Flow Assurance System (Lunar Mining)",
+    "type": "Material handling and transport",
+    "input": "Excavated lunar regolith",
+    "output": "Controlled feedstock for ISRU processing",
+    "description": "2026 research addresses critical gap between regolith excavation and processing: reliable material transport. Lunar regolith unique properties make conventional terrestrial handling approaches ineffective. New systems use vibratory conveyors, electrostatic transport, and pneumatic methods adapted for vacuum conditions. Standard metrics for regolith flow characterization proposed.",
+    "year": 2026
+  },
+  {
+    "id": "PROC-038",
+    "name": "Carbothermal Reduction for Lunar Oxygen",
+    "type": "oxygen_extraction",
+    "year": 2026,
+    "key_finding": "NASA ISRU Pilot Plant Element使用Carbothermal Reduction工艺从月壤提取氧气：CH4气体与月壤反应。TRL 5-6，最成熟的月壤氧提取路线。",
+    "source": "NASA/Global Space Exploration 2026",
+    "category": "oxygen_production"
+  },
+  {
+    "id": "PROC-039",
+    "name": "Lunar Regolith Granular Material Handling",
+    "type": "material_handling",
+    "year": 2026,
+    "key_finding": "Springer 2026研究：ISRU关键但常被忽视的环节是月球独特环境下颗粒材料（月壤）的有效处理。提出载荷和任务场景方案。",
+    "source": "Springer 2026",
+    "category": "material_handling"
+  },
+  {
+    "id": "PROC-040",
+    "name": "3-Step Lunar ISRU Development Plan",
+    "type": "development_roadmap",
+    "year": 2026,
+    "key_finding": "研究者提出未来十年月球ISRU技术3步发展计划：1)验证阶段 2)示范阶段 3)运营阶段。含技术路线图建议。",
+    "source": "EurekAlert 2026",
+    "category": "roadmap"
+  }
+]

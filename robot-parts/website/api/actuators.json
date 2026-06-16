@@ -1,0 +1,2351 @@
+[
+  {
+    "id": "ACT-001",
+    "name": "DYNAMIXEL XM540-W270-T",
+    "category": "servo",
+    "manufacturer": "ROBOTIS",
+    "type": "smart_servo",
+    "torque": "9.2 Nm @ 12V",
+    "speed": "0.222 sec/60° @ 12V",
+    "weight": "82g",
+    "voltage": "10.0~14.8V",
+    "protocol": "DYNAMIXEL Protocol 2.0",
+    "interface": "TTL/RS485",
+    "position_resolution": "4096",
+    "applications": [
+      "humanoid",
+      "manipulator",
+      "quadruped"
+    ],
+    "price_range": "0-100",
+    "compatibility": [
+      "U2D2",
+      "OpenCM",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-002",
+    "name": "DYNAMIXEL XM430-W350-T",
+    "category": "servo",
+    "manufacturer": "ROBOTIS",
+    "type": "smart_servo",
+    "torque": "4.1 Nm @ 12V",
+    "speed": "0.16 sec/60° @ 12V",
+    "weight": "82g",
+    "voltage": "10.0~14.8V",
+    "protocol": "DYNAMIXEL Protocol 2.0",
+    "interface": "TTL/RS485",
+    "position_resolution": "4096",
+    "applications": [
+      "humanoid",
+      "manipulator",
+      "quadruped"
+    ],
+    "price_range": "0-100",
+    "compatibility": [
+      "U2D2",
+      "OpenCM",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-003",
+    "name": "DYNAMIXEL PH54-200-S500-R",
+    "category": "servo",
+    "manufacturer": "ROBOTIS",
+    "type": "smart_servo",
+    "torque": "44.7 Nm @ 48V",
+    "speed": "0.613 sec/60° @ 48V",
+    "weight": "840g",
+    "voltage": "24.0~48.0V",
+    "protocol": "DYNAMIXEL Protocol 2.0",
+    "interface": "RS485",
+    "position_resolution": "501900",
+    "applications": [
+      "humanoid_hip",
+      "industrial",
+      "large_manipulator"
+    ],
+    "price_range": "300-500",
+    "compatibility": [
+      "U2D2",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-004",
+    "name": "Odrive D6374",
+    "category": "motor_controller",
+    "manufacturer": "Odrive",
+    "type": "BLDC_controller",
+    "torque": "depends on motor",
+    "speed": "depends on motor",
+    "weight": "N/A",
+    "voltage": "12-48V",
+    "protocol": "UART/CAN",
+    "interface": "UART/USB/CAN",
+    "position_resolution": "encoder dependent",
+    "applications": [
+      "humanoid",
+      "quadruped",
+      "robot_arm"
+    ],
+    "price_range": "100-200",
+    "compatibility": [
+      "Odrive GUI",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-005",
+    "name": "SimpleFOC Shield",
+    "category": "motor_controller",
+    "manufacturer": "SimpleFOC",
+    "type": "BLDC_controller",
+    "torque": "depends on motor",
+    "speed": "depends on motor",
+    "weight": "30g",
+    "voltage": "5-30V",
+    "protocol": "UART/I2C",
+    "interface": "UART/I2C/SPI",
+    "position_resolution": "encoder dependent",
+    "applications": [
+      "hobby_robot",
+      "gimbal",
+      "small_arm"
+    ],
+    "price_range": "0-50",
+    "compatibility": [
+      "Arduino",
+      "ESP32",
+      "STM32"
+    ],
+    "ros_support": false
+  },
+  {
+    "id": "ACT-006",
+    "name": "T-Motor AK80-64",
+    "category": "actuator",
+    "manufacturer": "T-Motor",
+    "type": "integrated_actuator",
+    "torque": "17 Nm",
+    "speed": "6.3 rad/s",
+    "weight": "475g",
+    "voltage": "24V",
+    "protocol": "CAN bus",
+    "interface": "CAN",
+    "position_resolution": "14-bit encoder",
+    "applications": [
+      "quadruped",
+      "humanoid_knee",
+      "robot_arm"
+    ],
+    "price_range": "200-400",
+    "compatibility": [
+      "Custom CAN",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-007",
+    "name": "T-Motor AK10-9",
+    "category": "actuator",
+    "manufacturer": "T-Motor",
+    "type": "integrated_actuator",
+    "torque": "9 Nm",
+    "speed": "23 rad/s",
+    "weight": "260g",
+    "voltage": "24V",
+    "protocol": "CAN bus",
+    "interface": "CAN",
+    "position_resolution": "14-bit encoder",
+    "applications": [
+      "quadruped",
+      "humanoid_ankle",
+      "drone_gimbal"
+    ],
+    "price_range": "150-300",
+    "compatibility": [
+      "Custom CAN",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-008",
+    "name": "Maxon EC Flat 60",
+    "category": "motor",
+    "manufacturer": "Maxon",
+    "type": "BLDC_motor",
+    "torque": "0.677 Nm",
+    "speed": "4780 rpm",
+    "weight": "300g",
+    "voltage": "24V",
+    "protocol": "ESCON controller",
+    "interface": "analog/digital",
+    "position_resolution": "external encoder",
+    "applications": [
+      "precision_arm",
+      "surgical_robot",
+      "space"
+    ],
+    "price_range": "500-1000",
+    "compatibility": [
+      "ESCON",
+      "EPOS4",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-009",
+    "name": "Kollmorgen TBM2G",
+    "category": "motor",
+    "manufacturer": "Kollmorgen",
+    "type": "frameless_torque_motor",
+    "torque": "varies (up to 100+ Nm)",
+    "speed": "varies",
+    "weight": "varies",
+    "voltage": "48-400V",
+    "protocol": "AKD drive",
+    "interface": "EtherCAT/EthernetIP",
+    "position_resolution": "external encoder",
+    "applications": [
+      "humanoid_joint",
+      "industrial_robot",
+      "collaborative_robot"
+    ],
+    "price_range": "1000+",
+    "compatibility": [
+      "AKD",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-010",
+    "name": "Focbox Unity",
+    "category": "controller",
+    "manufacturer": "Enertion/VESC",
+    "type": "motor_controller",
+    "torque": "depends on motor",
+    "speed": "depends on motor",
+    "weight": "180g",
+    "voltage": "8-60V",
+    "protocol": "VESC/UART",
+    "interface": "UART/USB/CAN",
+    "position_resolution": "N/A",
+    "applications": [
+      "mobile_robot",
+      "electric_vehicle",
+      "robot_arm"
+    ],
+    "price_range": "00-150",
+    "compatibility": [
+      "VESC Tool"
+    ],
+    "ros_support": false
+  },
+  {
+    "id": "ACT-011",
+    "name": "Unitree B2 Motor",
+    "category": "actuator",
+    "manufacturer": "Unitree",
+    "type": "integrated_actuator",
+    "torque": "23.7 Nm",
+    "speed": "16.4 rad/s",
+    "weight": "530g",
+    "voltage": "24V",
+    "protocol": "custom CAN",
+    "interface": "CAN",
+    "position_resolution": "14-bit",
+    "applications": [
+      "humanoid",
+      "quadruped"
+    ],
+    "price_range": "200-400",
+    "compatibility": [
+      "Unitree SDK",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-012",
+    "name": "Unitree A1 Motor",
+    "category": "actuator",
+    "manufacturer": "Unitree",
+    "type": "integrated_actuator",
+    "torque": "9.1 Nm",
+    "speed": "21.4 rad/s",
+    "weight": "240g",
+    "voltage": "21.6V",
+    "protocol": "custom CAN",
+    "interface": "CAN",
+    "position_resolution": "14-bit",
+    "applications": [
+      "quadruped",
+      "small_humanoid"
+    ],
+    "price_range": "100-200",
+    "compatibility": [
+      "Unitree SDK",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-013",
+    "name": "Tesla M107 Joint Motor",
+    "category": "actuator",
+    "manufacturer": "Tesla",
+    "type": "custom_actuator",
+    "torque": "classified",
+    "speed": "classified",
+    "weight": "classified",
+    "voltage": "classified",
+    "protocol": "Tesla proprietary",
+    "interface": "proprietary bus",
+    "position_resolution": "classified",
+    "applications": [
+      "Tesla Optimus Gen 2/3"
+    ],
+    "price_range": "N/A (internal)",
+    "compatibility": [
+      "Tesla Optimus only"
+    ],
+    "ros_support": false
+  },
+  {
+    "id": "ACT-014",
+    "name": "Figure Custom Actuator",
+    "category": "actuator",
+    "manufacturer": "Figure AI",
+    "type": "custom_actuator",
+    "torque": "classified",
+    "speed": "classified",
+    "weight": "classified",
+    "voltage": "classified",
+    "protocol": "proprietary",
+    "interface": "proprietary bus",
+    "position_resolution": "classified",
+    "applications": [
+      "Figure 01/02/03"
+    ],
+    "price_range": "N/A (internal)",
+    "compatibility": [
+      "Figure robots only"
+    ],
+    "ros_support": false
+  },
+  {
+    "id": "ACT-015",
+    "name": "CubeMars GL40",
+    "category": "actuator",
+    "manufacturer": "CubeMars",
+    "type": "integrated_actuator",
+    "torque": "7.2 Nm",
+    "speed": "24.5 rad/s",
+    "weight": "215g",
+    "voltage": "24V",
+    "protocol": "CAN bus",
+    "interface": "CAN",
+    "position_resolution": "14-bit",
+    "applications": [
+      "quadruped",
+      "humanoid_wrist",
+      "drone"
+    ],
+    "price_range": "100-200",
+    "compatibility": [
+      "ROS2",
+      "custom CAN"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-016",
+    "name": "CubeMars AK80-9",
+    "category": "actuator",
+    "manufacturer": "CubeMars",
+    "type": "integrated_actuator",
+    "torque": "17 Nm",
+    "speed": "25.5 rad/s",
+    "weight": "490g",
+    "voltage": "24V",
+    "protocol": "CAN bus",
+    "interface": "CAN",
+    "position_resolution": "14-bit",
+    "applications": [
+      "humanoid",
+      "quadruped",
+      "robot_arm"
+    ],
+    "price_range": "200-400",
+    "compatibility": [
+      "ROS2",
+      "custom CAN"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-017",
+    "name": "Anybotics ANYdrive 3.0",
+    "category": "actuator",
+    "manufacturer": "Anybotics",
+    "type": "SEA_actuator",
+    "torque": "120 Nm",
+    "speed": "12 rad/s",
+    "weight": "2.1 kg",
+    "voltage": "48V",
+    "protocol": "EtherCAT",
+    "interface": "EtherCAT",
+    "position_resolution": "19-bit",
+    "applications": [
+      "quadruped_ANYmal",
+      "industrial_inspection"
+    ],
+    "price_range": "1000+",
+    "compatibility": [
+      "ANYmal SDK",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-018",
+    "name": "MIT Mini Cheetah Actuator",
+    "category": "actuator",
+    "manufacturer": "MIT/Custom",
+    "type": "integrated_actuator",
+    "torque": "17 Nm",
+    "speed": "40.2 rad/s",
+    "weight": "260g",
+    "voltage": "24V",
+    "protocol": "CAN bus",
+    "interface": "CAN",
+    "position_resolution": "14-bit",
+    "applications": [
+      "quadruped",
+      "research"
+    ],
+    "price_range": "200-400",
+    "compatibility": [
+      "custom firmware",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-019",
+    "name": "Faulhaber 3268 BP4",
+    "category": "motor",
+    "manufacturer": "Faulhaber",
+    "type": "DC_micro_motor",
+    "torque": "0.108 Nm",
+    "speed": "6000 rpm",
+    "weight": "280g",
+    "voltage": "24V",
+    "protocol": "MCDC controller",
+    "interface": "RS232/CAN",
+    "position_resolution": "external encoder",
+    "applications": [
+      "precision_arm",
+      "medical_robot",
+      "micro_positioning"
+    ],
+    "price_range": "500-1000",
+    "compatibility": [
+      "Faulhaber MCDC",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-020",
+    "name": "Moog SmartMotor",
+    "category": "actuator",
+    "manufacturer": "Moog",
+    "type": "integrated_servo",
+    "torque": "varies (up to 50 Nm)",
+    "speed": "varies",
+    "weight": "varies",
+    "voltage": "48-400V",
+    "protocol": "EtherCAT/CANopen",
+    "interface": "EtherCAT/CAN/EthernetIP",
+    "position_resolution": "20-bit",
+    "applications": [
+      "industrial_robot",
+      "simulator",
+      "defense"
+    ],
+    "price_range": "1000+",
+    "compatibility": [
+      "Moog SDK",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-021",
+    "name": "Hebi X5 Actuator",
+    "category": "actuator",
+    "manufacturer": "Hebi Robotics",
+    "type": "integrated_actuator",
+    "torque": "15 Nm",
+    "speed": "10 rad/s",
+    "weight": "325g",
+    "voltage": "24V",
+    "protocol": "UDP/TCP",
+    "interface": "Ethernet/WiFi",
+    "position_resolution": "14-bit",
+    "applications": [
+      "modular_robot",
+      "research",
+      "education"
+    ],
+    "price_range": "300-600",
+    "compatibility": [
+      "Hebi API",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-022",
+    "name": "Hebi X8 Actuator",
+    "category": "actuator",
+    "manufacturer": "Hebi Robotics",
+    "type": "integrated_actuator",
+    "torque": "40 Nm",
+    "speed": "6 rad/s",
+    "weight": "660g",
+    "voltage": "24V",
+    "protocol": "UDP/TCP",
+    "interface": "Ethernet/WiFi",
+    "position_resolution": "14-bit",
+    "applications": [
+      "humanoid",
+      "large_manipulator",
+      "research"
+    ],
+    "price_range": "500-800",
+    "compatibility": [
+      "Hebi API",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-023",
+    "name": "Kinova Gen3 Actuator",
+    "category": "actuator",
+    "manufacturer": "Kinova",
+    "type": "integrated_actuator",
+    "torque": "varies per joint",
+    "speed": "varies",
+    "weight": "integrated",
+    "voltage": "24V",
+    "protocol": "EtherCAT/proprietary",
+    "interface": "EtherCAT",
+    "position_resolution": "high-res",
+    "applications": [
+      "robot_arm",
+      "assistive_robot",
+      "research"
+    ],
+    "price_range": "1000+",
+    "compatibility": [
+      "Kinova API",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-024",
+    "name": "RoboDrive ILM 70",
+    "category": "motor",
+    "manufacturer": "RoboDrive/Kollmorgen",
+    "type": "frameless_torque_motor",
+    "torque": "3.5 Nm continuous",
+    "speed": "3000 rpm",
+    "weight": "0.7 kg",
+    "voltage": "48V",
+    "protocol": "external drive",
+    "interface": "EtherCAT/CANopen",
+    "position_resolution": "external encoder",
+    "applications": [
+      "collaborative_robot",
+      "humanoid_joint",
+      "surgical"
+    ],
+    "price_range": "500-1000",
+    "compatibility": [
+      "various drives",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-025",
+    "name": "Innodisk Flexidrive",
+    "category": "actuator",
+    "manufacturer": "Innodisk",
+    "type": "linear_actuator",
+    "torque": "varies",
+    "speed": "varies",
+    "weight": "varies",
+    "voltage": "12-24V",
+    "protocol": "PWM/UART",
+    "interface": "UART/PWM",
+    "position_resolution": "potentiometer",
+    "applications": [
+      "gripper",
+      "linear_motion",
+      "industrial"
+    ],
+    "price_range": "50-200",
+    "compatibility": [
+      "Arduino",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-026",
+    "name": "Festo DSBC",
+    "category": "actuator",
+    "manufacturer": "Festo",
+    "type": "pneumatic_cylinder",
+    "torque": "varies (pneumatic)",
+    "speed": "varies",
+    "weight": "varies",
+    "voltage": "24V (valve)",
+    "protocol": "IO-Link/EtherNetIP",
+    "interface": "IO-Link/EtherNetIP/PROFINET",
+    "position_resolution": "analog/digital",
+    "applications": [
+      "industrial_automation",
+      "gripper",
+      "pick_place"
+    ],
+    "price_range": "200-1000",
+    "compatibility": [
+      "Festo CPX",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-027",
+    "name": "Schunk EGP Gripper",
+    "category": "gripper",
+    "manufacturer": "Schunk",
+    "type": "electric_gripper",
+    "torque": "gripping force 25-250N",
+    "speed": "0.05-0.3s",
+    "weight": "0.9 kg",
+    "voltage": "24V",
+    "protocol": "PROFINET/EtherCAT",
+    "interface": "PROFINET/EtherCAT/IO-Link",
+    "position_resolution": "adjustable",
+    "applications": [
+      "pick_place",
+      "assembly",
+      "collaborative_robot"
+    ],
+    "price_range": "500-1500",
+    "compatibility": [
+      "various robot arms",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-028",
+    "name": "Robotiq 2F-85 Gripper",
+    "category": "gripper",
+    "manufacturer": "Robotiq",
+    "type": "adaptive_gripper",
+    "torque": "gripping force 20-235N",
+    "speed": "0.15-1.2s",
+    "weight": "0.9 kg",
+    "voltage": "24V",
+    "protocol": "Modbus TCP",
+    "interface": "Ethernet/USB/RS485",
+    "position_resolution": "4 positions",
+    "applications": [
+      "pick_place",
+      "machine_tending",
+      "collaborative_robot"
+    ],
+    "price_range": "300-600",
+    "compatibility": [
+      "UR",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-029",
+    "name": "Dexai Allegro Hand v4",
+    "category": "dexterous_hand",
+    "manufacturer": "Dexai/Wonik Robotics",
+    "type": "dexterous_hand",
+    "torque": "varies per joint",
+    "speed": "varies",
+    "weight": "1.1 kg",
+    "voltage": "24V",
+    "protocol": "EtherCAT",
+    "interface": "EtherCAT",
+    "position_resolution": "16-bit per joint",
+    "applications": [
+      "dexterous_manipulation",
+      "research",
+      "humanoid_hand"
+    ],
+    "price_range": "5000+",
+    "compatibility": [
+      "ROS2",
+      "custom SDK"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-030",
+    "name": "Shadow Dexterous Hand",
+    "category": "dexterous_hand",
+    "manufacturer": "Shadow Robot",
+    "type": "dexterous_hand",
+    "torque": "varies per joint",
+    "speed": "varies",
+    "weight": "4.3 kg",
+    "voltage": "24V",
+    "protocol": "EtherCAT/proprietary",
+    "interface": "EtherCAT/USB",
+    "position_resolution": "high-res per joint",
+    "applications": [
+      "dexterous_manipulation",
+      "research",
+      "teleoperation"
+    ],
+    "price_range": "10000+",
+    "compatibility": [
+      "Shadow SDK",
+      "ROS2"
+    ],
+    "ros_support": true
+  },
+  {
+    "id": "ACT-031",
+    "name": "Lynxmotion LSS Arm",
+    "category": "servo",
+    "manufacturer": "Lynxmotion",
+    "type": "smart_servo",
+    "torque": "3.2 Nm",
+    "speed": "0.18 sec/60°",
+    "weight": "56g",
+    "voltage": "6-12V",
+    "protocol": "UART",
+    "interface": "UART/daisy-chain",
+    "position_resolution": "10-bit",
+    "applications": [
+      "education",
+      "hobby_robot",
+      "small_arm"
+    ],
+    "price_range": "0-50",
+    "compatibility": [
+      "LSS API",
+      "Arduino"
+    ],
+    "ros_support": false
+  },
+  {
+    "id": "ACT-032",
+    "name": "Agility Robotics Digit Actuator",
+    "category": "actuator",
+    "manufacturer": "Agility Robotics",
+    "type": "custom_actuator",
+    "torque": "classified",
+    "speed": "classified",
+    "weight": "classified",
+    "voltage": "classified",
+    "protocol": "proprietary",
+    "interface": "proprietary bus",
+    "position_resolution": "classified",
+    "applications": [
+      "Digit humanoid"
+    ],
+    "price_range": "N/A (internal)",
+    "compatibility": [
+      "Digit SDK"
+    ],
+    "ros_support": false
+  },
+  {
+    "id": "ACT-mit-electrofluidic",
+    "name": "MIT Electrofluidic Fiber Muscles",
+    "type": "artificial_muscle",
+    "company": "MIT Media Lab / Politecnico di Bari",
+    "key_features": [
+      "Electrically driven artificial muscle fibers",
+      "Combines thin McKibben actuator with miniaturized EHD pump",
+      "No moving parts, silent operation",
+      "Compliant enough for human body interface",
+      "Can be packed densely and distributed throughout robot structure",
+      "Published in Science Robotics 2026",
+      "Weighs just a few grams per pump, not much thicker than a toothpick"
+    ],
+    "status": "research",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-29T14:25:59.103Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-hyundai-gripper",
+    "name": "Hyundai Custom Robot Gripper",
+    "type": "gripper",
+    "company": "Hyundai Motor Group Robotics LAB",
+    "key_features": [
+      "In-house developed gripper for humanoid robots",
+      "Can stably lift heavy components (battery packs, body parts, glass, seats)",
+      "Tied to Smart Factory strategy (E-FOREST platform)",
+      "Hyundai Mobis supplying mass-production actuators for Boston Dynamics Atlas"
+    ],
+    "status": "development",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-29T14:25:59.103Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-schaeffler-planetary",
+    "name": "Schaeffler Planetary Gear Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "Schaeffler",
+    "type": "planetary_gear_actuator",
+    "description": "舍弗勒CES 2026首发人形机器人关节行星齿轮执行器，精确扭矩传递，支持连续运行",
+    "torque": "高扭矩密度",
+    "features": [
+      "行星齿轮传动",
+      "精确扭矩传递",
+      "连续运行",
+      "紧凑设计"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88156672",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-lg-actuator",
+    "name": "LG Electronics Robotics Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "LG Electronics",
+    "type": "smart_actuator",
+    "description": "LG电子CES 2026发布人形机器人Cloid配套执行器品牌",
+    "features": [
+      "LG官方品牌",
+      "Cloid机器人配套",
+      "高精度控制",
+      "消费级定位"
+    ],
+    "applications": [
+      "humanoid",
+      "home_service"
+    ],
+    "price_range": "consumer",
+    "status": "development",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-tesla-optimus-hand",
+    "name": "Tesla Optimus Gen 3 Hand Actuator",
+    "category": "hand_actuator",
+    "manufacturer": "Tesla",
+    "type": "dexterous_hand",
+    "description": "Tesla Optimus Gen 3手部执行器，50个执行器实现精密操控",
+    "torque": "精密力控",
+    "features": [
+      "50个执行器",
+      "精密操控",
+      "仿人手设计",
+      "触觉反馈"
+    ],
+    "applications": [
+      "humanoid",
+      "manipulation"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-robotis-20dof-hand",
+    "name": "ROBOTIS 20-DOF Robot Hand",
+    "category": "hand_actuator",
+    "manufacturer": "ROBOTIS",
+    "type": "dexterous_hand",
+    "description": "ROBOTIS 20自由度机器人手，2026年新品",
+    "features": [
+      "20自由度",
+      "DYNAMIXEL驱动",
+      "仿人手设计",
+      "高精度控制"
+    ],
+    "applications": [
+      "humanoid",
+      "research",
+      "manipulation"
+    ],
+    "price_range": "500-2000",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-first-a301",
+    "name": "FIRST A301 Motor",
+    "category": "servo",
+    "manufacturer": "FIRST",
+    "type": "standard_motor",
+    "description": "FIRST Tech Challenge标准化电机，简化机器人设计",
+    "features": [
+      "标准化设计",
+      "简化集成",
+      "高可靠性",
+      "竞赛级性能"
+    ],
+    "applications": [
+      "education",
+      "competition",
+      "hobby"
+    ],
+    "price_range": "0-100",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-high-torque-mini-hi",
+    "name": "High Torque Robotics Mini Hi",
+    "category": "joint_actuator",
+    "manufacturer": "High Torque Robotics",
+    "type": "high_torque_actuator",
+    "description": "高扭矩密度小型执行器，人形机器人专用",
+    "features": [
+      "高扭矩密度",
+      "小型化",
+      "人形机器人优化",
+      "高效散热"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-high-torque-pi",
+    "name": "High Torque Robotics Pi",
+    "category": "joint_actuator",
+    "manufacturer": "High Torque Robotics",
+    "type": "compact_actuator",
+    "description": "High Torque Robotics Pi系列紧凑型执行器",
+    "features": [
+      "紧凑设计",
+      "高功率密度",
+      "模块化",
+      "精密控制"
+    ],
+    "applications": [
+      "humanoid",
+      "manipulator"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-hyundai-mobis-atlas",
+    "name": "Hyundai Mobis Atlas Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "Hyundai Mobis",
+    "type": "mass_production_actuator",
+    "description": "现代摩比斯为Boston Dynamics Atlas量产供应的执行器",
+    "features": [
+      "量产供应",
+      "Atlas专用",
+      "汽车级质量",
+      "高可靠性"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-unitree-b2-motor-v2",
+    "name": "Unitree B2 Motor v2",
+    "category": "joint_actuator",
+    "manufacturer": "Unitree",
+    "type": "smart_actuator",
+    "description": "Unitree B2电机升级版，用于Unitree H2人形机器人",
+    "features": [
+      "高扭矩输出",
+      "集成驱动器",
+      "CAN总线通信",
+      "人形机器人优化"
+    ],
+    "applications": [
+      "humanoid",
+      "quadruped"
+    ],
+    "price_range": "200-500",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-figure-03-actuator",
+    "name": "Figure 03 Custom Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "Figure AI",
+    "type": "custom_actuator",
+    "description": "Figure 03人形机器人定制执行器",
+    "features": [
+      "定制设计",
+      "高动态响应",
+      "力控优化",
+      "集成传感器"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-atlas-electric-actuator",
+    "name": "Boston Dynamics Electric Atlas Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "Boston Dynamics",
+    "type": "electric_actuator",
+    "description": "电动版Atlas专用执行器，高动态性能",
+    "features": [
+      "电动驱动",
+      "高动态响应",
+      "液压替代",
+      "精密力控"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-kai-humanoid-actuator",
+    "name": "KAI Humanoid Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "KAI Robotics",
+    "type": "humanoid_actuator",
+    "description": "KAI人形机器人专用执行器",
+    "features": [
+      "人形机器人专用",
+      "高扭矩密度",
+      "模块化设计",
+      "AI优化控制"
+    ],
+    "applications": [
+      "humanoid"
+    ],
+    "price_range": "enterprise",
+    "status": "development",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-omni-humanoid-actuator",
+    "name": "OMNI Humanoid Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "OMNI Robotics",
+    "type": "humanoid_actuator",
+    "description": "OMNI人形机器人执行器系统",
+    "features": [
+      "全身体执行器",
+      "高自由度",
+      "仿生设计",
+      "自适应控制"
+    ],
+    "applications": [
+      "humanoid",
+      "service"
+    ],
+    "price_range": "enterprise",
+    "status": "development",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-1x-neo-actuator",
+    "name": "1X NEO Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "1X Technologies",
+    "type": "humanoid_actuator",
+    "description": "1X NEO人形机器人执行器",
+    "features": [
+      "仿人运动",
+      "柔顺控制",
+      "低功耗设计",
+      "家庭场景优化"
+    ],
+    "applications": [
+      "humanoid",
+      "home_service"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-schaeffler-hexagon",
+    "name": "Schaeffler-Hexagon Joint Module",
+    "category": "joint_actuator",
+    "manufacturer": "Schaeffler/Hexagon Robotics",
+    "type": "joint_module",
+    "description": "舍弗勒与Hexagon Robotics合作开发的人形机器人关节模块",
+    "features": [
+      "战略合作",
+      "1000+机器人订单",
+      "关节模块化",
+      "汽车级供应链"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-roland-berger-hd-actuator",
+    "name": "Roland Berger HD Actuator Series",
+    "category": "joint_actuator",
+    "manufacturer": "多家",
+    "type": "high_density_actuator",
+    "description": "人形机器人高密度执行器系列，市场预测2026-2036",
+    "features": [
+      "高功率密度",
+      "成本下降趋势",
+      "规模化生产",
+      "多供应商"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial",
+      "service"
+    ],
+    "price_range": "varies",
+    "status": "market_trend",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-tmotor-ak80-9-v2",
+    "name": "T-Motor AK80-9 v2",
+    "category": "joint_actuator",
+    "manufacturer": "T-Motor",
+    "type": "smart_actuator",
+    "description": "T-Motor AK80-9升级版，人形机器人关节电机",
+    "torque": "17.8 Nm",
+    "speed": "8.1 rad/s",
+    "features": [
+      "高扭矩",
+      "集成驱动器",
+      "CAN通信",
+      "紧凑设计"
+    ],
+    "applications": [
+      "humanoid",
+      "quadruped",
+      "manipulator"
+    ],
+    "price_range": "200-500",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-cubemars-gl40-v2",
+    "name": "CubeMars GL40 v2",
+    "category": "joint_actuator",
+    "manufacturer": "CubeMars",
+    "type": "smart_actuator",
+    "description": "CubeMars GL40升级版，人形机器人关节执行器",
+    "features": [
+      "高扭矩密度",
+      "集成FOC驱动",
+      "多协议支持",
+      "IP65防护"
+    ],
+    "applications": [
+      "humanoid",
+      "quadruped"
+    ],
+    "price_range": "200-500",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-faulhaber-3274",
+    "name": "Faulhaber 3274 BP4",
+    "category": "micro_actuator",
+    "manufacturer": "Faulhaber",
+    "type": "micro_motor",
+    "description": "Faulhaber新一代微型精密电机，机器人关节和精密控制",
+    "features": [
+      "微型精密",
+      "高效率",
+      "低齿槽",
+      "长寿命"
+    ],
+    "applications": [
+      "humanoid",
+      "medical",
+      "precision"
+    ],
+    "price_range": "500-1000",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-moog-smartmotor-v2",
+    "name": "Moog SmartMotor v2",
+    "category": "servo",
+    "manufacturer": "Moog",
+    "type": "smart_servo",
+    "description": "Moog SmartMotor升级版，工业级智能伺服",
+    "features": [
+      "集成控制器",
+      "高精度",
+      "工业级可靠性",
+      "EtherCAT支持"
+    ],
+    "applications": [
+      "industrial_robot",
+      "CNC",
+      "humanoid"
+    ],
+    "price_range": "1000-5000",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-30T13:38:30.808Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-schaeffler-compact",
+    "name": "Schaeffler Compact Actuator (CES 2026)",
+    "category": "joint_actuator",
+    "manufacturer": "Schaeffler",
+    "type": "integrated_actuator",
+    "description": "舍弗勒CES 2026首发紧凑型执行器，集成齿轮箱+电机+编码器+控制器",
+    "torque": "高扭矩密度",
+    "features": [
+      "集成4合1设计",
+      "精确扭矩传递",
+      "连续运行",
+      "紧凑设计",
+      "CES 2026首发"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-05-31T13:41:37.338Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-kpower-servo",
+    "name": "Kpower Humanoid Servo",
+    "category": "servo",
+    "manufacturer": "Kpower (广东)",
+    "type": "smart_servo",
+    "description": "广东Kpower人形机器人关节舵机，提供完整选型指南",
+    "features": [
+      "人形机器人专用",
+      "关节电机选型指南",
+      "高扭矩输出",
+      "多规格可选"
+    ],
+    "applications": [
+      "humanoid",
+      "education"
+    ],
+    "price_range": "50-300",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-31T13:41:37.338Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-welling-joint",
+    "name": "Welling Parts Joint Module",
+    "category": "joint_actuator",
+    "manufacturer": "Welling Parts",
+    "type": "integrated_actuator",
+    "description": "Welling新一代关节模块系列，谐波+行星两条路线",
+    "features": [
+      "谐波减速器路线",
+      "行星减速器路线",
+      "集成驱动器",
+      "多规格覆盖"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-31T13:41:37.338Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-mosrac-whg240",
+    "name": "Mosrac WHG-240 Frameless BLDC",
+    "category": "motor",
+    "manufacturer": "Mosrac",
+    "type": "frameless_torque_motor",
+    "description": "Mosrac WHG-240 48V无框BLDC力矩电机，人形机器人关节专用",
+    "torque": "高扭矩密度",
+    "speed": "低转速高扭矩",
+    "weight": "轻量化",
+    "voltage": "48V",
+    "features": [
+      "48V无框设计",
+      "BLDC力矩电机",
+      "高扭矩密度",
+      "人形机器人优化"
+    ],
+    "applications": [
+      "humanoid",
+      "collaborative_robot"
+    ],
+    "price_range": "200-500",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-31T13:41:37.338Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-honpine-hpjm-v2",
+    "name": "HONPINE HPJM v2 Joint Module",
+    "category": "joint_actuator",
+    "manufacturer": "HONPINE",
+    "type": "integrated_actuator",
+    "description": "HONPINE HPJM升级版，6合1深度集成关节模块，31.5mm中空轴",
+    "features": [
+      "6合1深度集成",
+      "31.5mm中空轴穿线",
+      "24位双编码器",
+      "多圈绝对值断电记忆",
+      "凸极磁路永磁制动"
+    ],
+    "applications": [
+      "humanoid",
+      "manipulator"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-31T13:41:37.338Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-ct-unite-gan-encoder-actuator",
+    "name": "CT-Unite GaN Encoder Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "CT-Unite",
+    "type": "smart_actuator",
+    "description": "CT-Unite首款GaN磁编码器芯片驱动的执行器，180°C稳定运行",
+    "features": [
+      "GaN磁编码器",
+      "180°C稳定运行",
+      "21位超高分辨率",
+      "响应延迟<2μs",
+      "2026 Q3量产"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "development",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-05-31T13:41:37.338Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-optimus-gen3-hand",
+    "name": "Tesla Optimus Gen 3 Hand (50 Actuators)",
+    "category": "hand_actuator",
+    "manufacturer": "Tesla",
+    "type": "dexterous_hand",
+    "description": "Tesla Optimus Gen 3手部50个执行器，22自由度，精密力控，2026夏季量产",
+    "torque": "精密力控",
+    "features": [
+      "50个执行器",
+      "22自由度",
+      "仿人手设计",
+      "触觉反馈",
+      "精密操控",
+      "2026夏季量产"
+    ],
+    "applications": [
+      "humanoid",
+      "manipulation",
+      "assembly"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-neura-dyna-hand",
+    "name": "Neura Dyna Dexterous Hand",
+    "category": "hand_actuator",
+    "manufacturer": "Neura Robotics",
+    "type": "dexterous_hand",
+    "description": "Neura Robotics灵巧手，2026年人形机器人突破性执行器",
+    "features": [
+      "灵巧操控",
+      "力感知",
+      "多指协调",
+      "自适应抓取"
+    ],
+    "applications": [
+      "humanoid",
+      "manipulation"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-lg-cloid-actuator",
+    "name": "LG Cloid Robotics Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "LG Electronics",
+    "type": "smart_actuator",
+    "description": "LG电子CES 2026发布Cloid人形机器人配套执行器品牌，消费级定位",
+    "features": [
+      "LG官方品牌",
+      "Cloid机器人配套",
+      "消费级定位",
+      "高精度控制",
+      "CES 2026发布"
+    ],
+    "applications": [
+      "humanoid",
+      "home_service"
+    ],
+    "price_range": "consumer",
+    "status": "development",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-keyirobot-hand",
+    "name": "KeyiRobot Dexterous Hand Actuator",
+    "category": "hand_actuator",
+    "manufacturer": "KeyiRobot",
+    "type": "dexterous_hand",
+    "description": "2026年人形机器人灵巧手执行器突破，驱动精密操控",
+    "features": [
+      "灵巧手突破",
+      "精密操控",
+      "力反馈",
+      "多指协调"
+    ],
+    "applications": [
+      "humanoid",
+      "manipulation"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-schaeffler-4in1-compact",
+    "name": "Schaeffler 4-in-1 Compact Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "Schaeffler",
+    "type": "integrated_actuator",
+    "description": "舍弗勒CES 2026紧凑型4合1执行器，集成齿轮箱+电机+编码器+控制器",
+    "torque": "高扭矩密度",
+    "features": [
+      "4合1集成",
+      "齿轮箱+电机+编码器+控制器",
+      "精确扭矩传递",
+      "连续运行",
+      "紧凑设计"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-unitree-g1-hand",
+    "name": "Unitree G1 Dexterous Hand",
+    "category": "hand_actuator",
+    "manufacturer": "Unitree",
+    "type": "dexterous_hand",
+    "description": "Unitree G1人形机器人灵巧手，2026年5500+台出货",
+    "features": [
+      "灵巧操控",
+      "力感知",
+      "3指/5指版本",
+      "5500+台出货"
+    ],
+    "applications": [
+      "humanoid",
+      "manipulation"
+    ],
+    "price_range": "200-500",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-robozaps-actuator",
+    "name": "RoboZaps Humanoid Actuator Kit",
+    "category": "joint_actuator",
+    "manufacturer": "RoboZaps",
+    "type": "actuator_kit",
+    "description": "RoboZaps人形机器人执行器套件，2026年可购买方案",
+    "features": [
+      "完整套件",
+      "可购买",
+      "多规格",
+      "开源兼容"
+    ],
+    "applications": [
+      "humanoid",
+      "education",
+      "research"
+    ],
+    "price_range": "500-2000",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-humanoid-1000-deal",
+    "name": "Humanoid-Schaeffler 1000+ Robot Actuator",
+    "category": "joint_actuator",
+    "manufacturer": "Humanoid/Schaeffler",
+    "type": "mass_production_actuator",
+    "description": "Humanoid与Schaeffler合作1000+台人形机器人执行器订单，Forbes报道",
+    "features": [
+      "1000+订单",
+      "战略合作",
+      "汽车级供应链",
+      "量产执行器"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "enterprise",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-01T13:52:31.849Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-inspire-linear-servo",
+    "name": "INSPIRE Micro Linear Servo Actuator",
+    "type": "linear_servo",
+    "description": "INSPIRE微线性伺服执行器，微型尺寸、高精度力控，适用于人形机器人手指和精密关节",
+    "vendor": "INSPIRE",
+    "release_date": "2026",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "ACT-inspire-dexterous-hand",
+    "name": "INSPIRE Dexterous Hand",
+    "type": "dexterous_hand",
+    "description": "INSPIRE灵巧手，微线性伺服驱动，高精度力控，适用于人形机器人精密操作",
+    "vendor": "INSPIRE",
+    "release_date": "2026",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "ACT-dea-soft",
+    "name": "Dielectric Elastomer Actuator (DEA)",
+    "type": "artificial_muscle",
+    "description": "介电弹性体执行器，软体机器人新型驱动技术，材料创新突破，仿生肌肉驱动",
+    "vendor": "Various",
+    "release_date": "2026",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "ACT-iai-robot-lineup",
+    "name": "IAI America Robot Actuator Lineup",
+    "type": "smart_actuator",
+    "description": "IAI America 2026年机器人执行器产品线更新，覆盖多种执行器类型",
+    "vendor": "IAI America",
+    "release_date": "2026",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "ACT-bd-atlas-electric-v2",
+    "name": "Boston Dynamics Atlas Electric Actuator v2",
+    "type": "integrated_actuator",
+    "description": "Boston Dynamics Atlas产品版电动执行器v2，CES 2026与Hyundai联合发布",
+    "vendor": "Boston Dynamics/Hyundai",
+    "release_date": "2026-01",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "ACT-tesla-optimus-v2",
+    "name": "Tesla Optimus Gen 3 Actuator Suite",
+    "type": "integrated_actuator",
+    "description": "Tesla Optimus Gen 3执行器套件，50+执行器，2026年商业化部署",
+    "vendor": "Tesla",
+    "release_date": "2026",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "ACT-first-a301-v2",
+    "name": "FIRST A301 Motor v2",
+    "type": "smart_servo",
+    "description": "FIRST A301电机v2，标准化和简化FTC机器人设计，增强性能和可靠性",
+    "vendor": "FIRST",
+    "release_date": "2026",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "ACT-hyundai-bd-atlas-prod",
+    "name": "Hyundai/Boston Dynamics Atlas Production Actuator",
+    "type": "integrated_actuator",
+    "description": "Hyundai与Boston Dynamics联合发布的Atlas产品版执行器，CES 2026亮相",
+    "vendor": "Hyundai/Boston Dynamics",
+    "release_date": "2026-01",
+    "source": "web_search_2026"
+  },
+  {
+    "id": "act-schaeffler-modular",
+    "name": "Schaeffler Modular Joint System",
+    "type": "modular_actuator",
+    "description": "舍弗勒模块化关节系统，支持齿轮箱+电机+编码器+控制器4合1集成，模块化设计适配不同人形机器人",
+    "company": "Schaeffler",
+    "key_features": [
+      "4合1集成",
+      "模块化设计",
+      "行星齿轮",
+      "多规格适配"
+    ],
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "act-kpower-fullbody",
+    "name": "Kpower Full-Body Servo Kit",
+    "type": "servo_kit",
+    "description": "Kpower人形机器人全身舵机套件，广东Kpower发布完整选型指南，覆盖关节/手部/腰部",
+    "company": "Kpower Servo",
+    "key_features": [
+      "全身舵机套件",
+      "选型指南",
+      "关节/手部/腰部",
+      "48V系统"
+    ],
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "act-welling-harmonic",
+    "name": "Welling Parts Harmonic Drive Module",
+    "type": "harmonic_drive_joint",
+    "description": "威灵部件谐波驱动关节模块，高精度谐波减速器+无框力矩电机集成方案",
+    "company": "Welling Parts (美的集团)",
+    "key_features": [
+      "谐波减速器",
+      "无框力矩电机",
+      "高精度",
+      "紧凑设计"
+    ],
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "act-welling-planetary",
+    "name": "Welling Parts Planetary Drive Module",
+    "type": "planetary_drive_joint",
+    "description": "威灵部件行星驱动关节模块，大扭矩行星减速器+无框力矩电机集成方案",
+    "company": "Welling Parts (美的集团)",
+    "key_features": [
+      "行星减速器",
+      "大扭矩输出",
+      "无框力矩电机",
+      "高可靠性"
+    ],
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "act-mosrac-48v-series",
+    "name": "Mosrac 48V BLDC Motor Series",
+    "type": "frameless_bldc",
+    "description": "Mosrac 48V无框BLDC力矩电机系列，WHG系列完整产品线，覆盖人形机器人各关节需求",
+    "company": "Mosrac",
+    "key_features": [
+      "48V系统",
+      "无框BLDC",
+      "力矩电机",
+      "完整产品线"
+    ],
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "act-ct-unite-gan-production",
+    "name": "CT-Unite GaN Encoder Actuator (Production)",
+    "type": "gan_encoder_actuator",
+    "description": "CT-Unite GaN磁编码器执行器量产版，180°C稳定，21位分辨率，<2μs延迟，2026 Q3量产",
+    "company": "CT-Unite",
+    "key_features": [
+      "GaN磁编码器",
+      "180°C稳定",
+      "21位分辨率",
+      "<2μs延迟",
+      "2026 Q3量产"
+    ],
+    "status": "pre_production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "act-agility-digit-v2",
+    "name": "Agility Robotics Digit v2 Actuator",
+    "type": "bipedal_actuator",
+    "description": "Agility Robotics Digit v2执行器，Amazon部署的双足人形机器人执行器升级版",
+    "company": "Agility Robotics",
+    "key_features": [
+      "双足执行器",
+      "Amazon部署",
+      "物流场景",
+      "高可靠性"
+    ],
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "act-patsnap-analysis",
+    "name": "Humanoid Actuator Patent Landscape",
+    "type": "patent_analysis",
+    "description": "人形机器人执行器专利全景分析，530,554+专利分析，执行器占人形机器人总生产成本70%",
+    "company": "PatSnap",
+    "key_features": [
+      "530K+专利分析",
+      "成本占比70%",
+      "商业化阶段",
+      "运动控制技术"
+    ],
+    "status": "research",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "collected_at": "2026-06-03T13:52:48.985531Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-iai-robot",
+    "name": "IAI Intelligent Actuator Robot",
+    "category": "actuator",
+    "manufacturer": "IAI America",
+    "type": "integrated_actuator",
+    "description": "IAI智能执行器机器人系列，2026年更新产品线指南",
+    "features": [
+      "产品线更新",
+      "多类型执行器",
+      "高精度",
+      "工业级"
+    ],
+    "applications": [
+      "industrial_robot",
+      "pick_place",
+      "assembly"
+    ],
+    "price_range": "200-2000",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-04T14:03:15.064Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-patsnap-actuator",
+    "name": "PatSnap Humanoid Actuator Analysis",
+    "category": "market_analysis",
+    "manufacturer": "多家",
+    "type": "market_report",
+    "description": "人形机器人执行器530554+专利分析，2026年进入关键商业化阶段",
+    "features": [
+      "530K+专利",
+      "商业化阶段",
+      "运动控制",
+      "技术趋势"
+    ],
+    "applications": [
+      "humanoid",
+      "industrial"
+    ],
+    "price_range": "varies",
+    "status": "market_trend",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-04T14:03:15.064Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-iai-new-lineup",
+    "name": "IAI New Robot Lineup",
+    "category": "actuator",
+    "manufacturer": "IAI",
+    "type": "robot_actuator",
+    "description": "IAI 2026年更新机器人产品线指南，按执行器类型组织",
+    "features": [
+      "产品线指南",
+      "按类型组织",
+      "简化选型",
+      "更新规格"
+    ],
+    "applications": [
+      "industrial_robot",
+      "assembly",
+      "pick_place"
+    ],
+    "price_range": "100-2000",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-04T14:03:15.064Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-cubemars-ak45-36",
+    "name": "CubeMars AK45-36",
+    "category": "integrated_actuator",
+    "manufacturer": "CubeMars",
+    "type": "integrated_actuator",
+    "description": "CubeMars AK45-36超高压扭矩执行器，36:1齿轮比，集成无刷直流电机+行星齿轮箱+驱动板",
+    "features": [
+      "36:1齿轮比",
+      "超高扭矩",
+      "集成设计",
+      "KV80"
+    ],
+    "applications": [
+      "humanoid",
+      "quadruped",
+      "industrial"
+    ],
+    "price_range": "500-1500",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-04T14:05:21.771Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-cubemars-ak70-10",
+    "name": "CubeMars AK70-10",
+    "category": "integrated_actuator",
+    "manufacturer": "CubeMars",
+    "type": "integrated_actuator",
+    "description": "CubeMars AK70-10人形机器人执行器，紧凑设计，高扭矩密度",
+    "features": [
+      "人形机器人专用",
+      "高扭矩密度",
+      "紧凑设计",
+      "集成驱动"
+    ],
+    "applications": [
+      "humanoid",
+      "exoskeleton"
+    ],
+    "price_range": "400-1200",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-04T14:05:21.771Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-cubemars-qdd",
+    "name": "CubeMars QDD Motor Series",
+    "category": "qdd_actuator",
+    "manufacturer": "CubeMars",
+    "type": "qdd_actuator",
+    "description": "CubeMars QDD电机系列，人形和四足机器人专用，高扭矩控制精度和响应速度",
+    "features": [
+      "QDD直驱",
+      "高扭矩控制",
+      "快速响应",
+      "人形/四足专用"
+    ],
+    "applications": [
+      "humanoid",
+      "quadruped",
+      "exoskeleton"
+    ],
+    "price_range": "300-2000",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-04T14:05:21.771Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-cubemars-frameless",
+    "name": "CubeMars Frameless Torque Motor",
+    "category": "frameless_motor",
+    "manufacturer": "CubeMars",
+    "type": "frameless_motor",
+    "description": "CubeMars无框扭矩电机，高扭矩密度+可控转子惯量，外转子设计",
+    "features": [
+      "无框设计",
+      "高扭矩密度",
+      "外转子",
+      "可控惯量"
+    ],
+    "applications": [
+      "humanoid",
+      "gimbal",
+      "exoskeleton"
+    ],
+    "price_range": "200-800",
+    "status": "production",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "collected_at": "2026-06-04T14:05:21.771Z"
+      }
+    ]
+  },
+  {
+    "id": "ACT-bonsystems-bcsa",
+    "name": "Bonsystems BCSA (Cycloidal Smart Actuator)",
+    "category": "smart-actuator",
+    "description": "New cycloidal smart actuator designed specifically for humanoid robots, launching August 2026. Features integrated intelligence and cycloidal drive.",
+    "features": [
+      "cycloidal drive",
+      "integrated intelligence",
+      "humanoid-optimized",
+      "smart actuator",
+      "high torque density"
+    ],
+    "status": "upcoming",
+    "year": 2026,
+    "sources": [
+      "https://en.bonsystems.com/newsletter/smart-humanoid-robot-actuator"
+    ]
+  },
+  {
+    "id": "ACT-agility-digit-v2",
+    "name": "Agility Robotics Digit New Actuators",
+    "category": "humanoid-actuator",
+    "description": "New actuator innovations for Agility Robotics Digit humanoid robot with expanded work capabilities.",
+    "features": [
+      "humanoid locomotion",
+      "work capabilities",
+      "advanced actuation",
+      "bipedal motion"
+    ],
+    "status": "active",
+    "year": 2026,
+    "sources": [
+      "https://www.agilityrobotics.com/content/agility-robotics-announces-new-innovations-for-market-leading-humanoid-robot-digit"
+    ]
+  },
+  {
+    "id": "ACT-figure-03-helix",
+    "name": "Figure 03 Helix Actuator System",
+    "category": "humanoid_actuator",
+    "manufacturer": "Figure AI",
+    "type": "Integrated humanoid actuator suite",
+    "torque": "28 joint actuators + 50+ hand actuators (Gen 3 hands)",
+    "speed": "Human-reflex-level visual-to-motion response",
+    "weight": "Full-body integrated",
+    "voltage": "N/A",
+    "protocol": "Proprietary Helix AI control",
+    "interface": "Helix neural interface",
+    "position_resolution": "N/A",
+    "applications": [
+      "humanoid",
+      "home",
+      "industrial",
+      "logistics"
+    ],
+    "price_range": "N/A (commercial platform)",
+    "compatibility": [
+      "Figure 03 platform",
+      "Helix AI"
+    ],
+    "description": "Figure AI第三代人形机器人Figure 03的执行器系统，集成28个关节执行器和Gen 3手中50+个执行器。专为Helix AI设计，实现人类反射级别的视觉到运动响应。Figure AI已交付超过350台机器人，BotQ生产线已从蓝图转为高产量制造环境。"
+  },
+  {
+    "id": "ACT-tienkung-ultra",
+    "name": "Tien Kung Ultra Actuator System",
+    "category": "humanoid_actuator",
+    "manufacturer": "X-Humanoid",
+    "type": "High-performance humanoid actuator suite",
+    "torque": "Full-size humanoid joint actuators",
+    "speed": "Fully autonomous half-marathon in 1:15:00 (21.0975km)",
+    "weight": "Full-size humanoid",
+    "voltage": "N/A",
+    "protocol": "X-Humanoid proprietary",
+    "interface": "Embodied AI control",
+    "position_resolution": "N/A",
+    "applications": [
+      "humanoid",
+      "marathon",
+      "industrial sorting",
+      "competition"
+    ],
+    "price_range": "N/A",
+    "compatibility": [
+      "Tien Kung platform"
+    ],
+    "description": "X-Humanoid天工Ultra执行器系统，实现了全自主半程马拉松（21.0975公里，1小时15分），零人工干预。Embodied天工2.0在CES 2026上展示了全自主零件分拣和与观众互动。天工3.0赢得北京机器人勇士赛。执行器系统实现了人类反射级别的视觉到运动响应时间。"
+  }
+]

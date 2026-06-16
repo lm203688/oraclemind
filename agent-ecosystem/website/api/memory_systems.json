@@ -1,0 +1,247 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-30T13:38:54.619Z",
+  "description": "memory_systems库",
+  "entities": [
+    {
+      "id": "MEM-001",
+      "name": "mem0",
+      "type": "向量+图谱",
+      "architecture": "混合",
+      "features": [
+        "自动记忆提取",
+        "用户画像",
+        "时间衰减"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/Pro$29/月",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-002",
+      "name": "Zep",
+      "type": "向量+图谱",
+      "architecture": "混合",
+      "features": [
+        "对话记忆",
+        "实体提取",
+        "知识图谱"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "pricing": "免费/Cloud付费",
+      "language": "Python/TS"
+    },
+    {
+      "id": "MEM-003",
+      "name": "Letta (MemGPT)",
+      "type": "分层记忆",
+      "architecture": "上下文+归档",
+      "features": [
+        "虚拟上下文管理",
+        "自动分页",
+        "无限上下文"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "pricing": "免费/Cloud付费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-004",
+      "name": "Cognee",
+      "type": "知识图谱",
+      "architecture": "Graph RAG",
+      "features": [
+        "自动知识图谱构建",
+        "实体关系推理"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "早期",
+      "pricing": "免费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-005",
+      "name": "Graphiti",
+      "type": "知识图谱",
+      "architecture": "时序图谱",
+      "features": [
+        "自动演化图谱",
+        "时间推理",
+        "非结构化输入"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "早期",
+      "pricing": "免费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-006",
+      "name": "Hindsight",
+      "type": "对话记忆",
+      "architecture": "向量",
+      "features": [
+        "对话摘要",
+        "关键信息提取",
+        "上下文窗口"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "早期",
+      "pricing": "免费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-007",
+      "name": "LangMem",
+      "type": "工作流记忆",
+      "architecture": "LangGraph集成",
+      "features": [
+        "LangGraph原生记忆",
+        "工作流编排集成",
+        "记忆工具链",
+        "语义搜索"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费",
+      "language": "Python",
+      "benchmarks": "LangGraph生态",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-008",
+      "name": "Memvid",
+      "type": "多模态记忆",
+      "architecture": "视频编码",
+      "features": [
+        "视频记忆编码",
+        "多模态记忆检索",
+        "视觉上下文保存"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "实验性",
+      "pricing": "免费",
+      "language": "Python",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-009",
+      "name": "MemoClaw",
+      "type": "跨平台记忆",
+      "architecture": "分布式",
+      "features": [
+        "Agent记忆管理",
+        "跨平台记忆同步",
+        "结构化记忆存储"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/付费",
+      "language": "Python/TS",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-010",
+      "name": "EverMind",
+      "type": "长期记忆",
+      "architecture": "个性化",
+      "features": [
+        "Zep替代方案",
+        "长期记忆管理",
+        "对话理解",
+        "个性化记忆"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/付费",
+      "language": "Python",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-011",
+      "name": "Pinecone Memory",
+      "type": "向量记忆",
+      "architecture": "托管向量",
+      "features": [
+        "Pinecone托管向量",
+        "Serverless部署",
+        "命名空间隔离",
+        "高可用"
+      ],
+      "open_source": false,
+      "license": "Commercial",
+      "maturity": "生产可用",
+      "pricing": "按用量付费",
+      "language": "Cloud API",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-012",
+      "name": "Mem0 v2 (Graph Memory)",
+      "type": "向量+图谱",
+      "architecture": "图记忆增强",
+      "features": [
+        "图记忆功能",
+        "自动记忆提取",
+        "跨会话持久化",
+        "55K+ Stars",
+        "LoCoMo/LongMemEval/BEAM基准测试领先"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/Pro$29/月/图记忆$249/月",
+      "language": "Python/TS",
+      "benchmarks": "LoCoMo/LongMemEval/BEAM标准",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    }
+  ]
+}

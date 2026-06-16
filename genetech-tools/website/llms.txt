@@ -1,0 +1,161 @@
+# GeneTech Tools - 基因技术知识引擎
+
+> Comprehensive gene technology knowledge base covering genes, diseases, therapies, and CRISPR applications
+
+## API Endpoints (JSON)
+
+- `GET /api/data.json` - Complete structured data
+- `GET /api/entities.json` - All entities flat list
+- `GET /api/openapi.json` - OpenAPI 3.1 specification
+
+## Stats
+
+- Total entities: 402
+- genes: 122
+- diseases: 180
+- gene_therapies: 59
+- crispr_applications: 41
+
+## Categories
+
+### genes
+
+- GENE-mpkp8lda-e2pwnv
+- GENE-mpkp8lda-4td3uu
+- GENE-mpkp8lda-0kvohs
+- GENE-mpkp8lda-davw6o
+- GENE-mpkp8ldb-8dncxy
+- GENE-mpkp8ldb-tt87n6
+- GENE-mpkp8ldb-ztdjwq
+- GENE-mpkpaslv-yx524q
+- GENE-mpkpaslv-b1y3l9
+- GENE-mpkpaslw-1jvfxq
+- GENE-mpkpaslw-5kp8lw
+- GENE-mpkpg9e3-o1wzt2
+- GENE-mpkpg9e3-4c67cl
+- GENE-mpkpg9e3-0yiddu
+- GENE-mpkpg9e3-wcoz9i
+- GENE-mpkpg9e3-9l89t7
+- GENE-mpkpg9e3-447xmw
+- GENE-mpkpg9e3-rpz7do
+- GENE-mpkpg9e3-5i9ptd
+- GENE-mpkpg9e4-d4g4wc
+- GENE-mpkpg9e4-3qdbe5
+- GENE-mpkpg9e4-xw22up
+- GENE-mpkpg9e4-u5cq2x
+- GENE-mpkpg9e4-bfxq5o
+- GENE-mpkpg9e4-wzfsrc
+- GENE-mpkpg9e4-80xxny
+- GENE-mpkpg9e4-m738wd
+- GENE-mpkpmyed-b7d5yv
+- GENE-mpkpmyed-lpdq3i
+- GENE-mpkpmyed-x4sseb
+- ... and 92 more
+
+### diseases
+
+- Adenosine Deaminase Severe Combined Immunodeficiency (ADA-SCID)
+- Rheumatoid Arthritis
+- Rheumatic Diseases
+- Breast Cancer Triple Negative
+- Breast Cancer Stage II
+- Breast Cancer Stage III
+- Breast Cancer Invasive
+- Diabetic Macular Edema
+- Diabetic Retinopathy
+- Squamous Cell Cancer of Head and Neck
+- Triple Negative Breast Cancer
+- Epithelial Ovarian Cancer
+- Malignant Melanoma
+- Advanced Solid Tumors
+- Ovarian Cancer
+- Prostate Cancer
+- Pompe Disease (Late-onset)
+- Granuloma
+- Granulomatous Disease, Chronic
+- Leukocyte Disease
+- Genetic Disease, X-Linked
+- Genetic Disease, Inborn
+- Carcinoma, Non-Small-Cell Lung
+- Breast Cancer
+- HER2-low Breast Cancer
+- epilepsy
+- SLC6A1-related neurodevelopmental disorder
+- developmental and epileptic encephalopathy
+- Danon disease
+- hypertrophic cardiomyopathy
+- ... and 150 more
+
+### gene_therapies
+
+- GT-mpkp8lda-hi3fa1
+- GT-mpkpaslw-a25iqs
+- GT-mpkpaslw-nwk9i9
+- GT-mpkpg9e3-2tktn5
+- GT-mpkpg9e4-6v3fr3
+- GT-mpkpg9e4-q1u85k
+- GT-mpkpmyee-loh176
+- GT-mpkpmyef-bj5sic
+- GT-mpkpmyef-rqvtbz
+- GT-mpkpmyef-31akmn
+- GT-mpkpvwp3-mokzta
+- GT-mpkq4tzt-nsr9im
+- GT-mpkq4tzt-4uyva5
+- GT-mpkq8hyu-tjy5mx
+- GT-mpkq8hyu-88hf1t
+- GT-mpkqew9m-l94834
+- GT-mpkqew9m-ci0r15
+- GT-mpktp0f6-kd739y
+- GT-mpktp0f6-a9fwfj
+- GT-f98bgwp0l6
+- GT-4hbmciufjq
+- GT-qg1nsmhccw
+- GT-1mcimbiuyi
+- GT-tg1kkqwogf
+- GT-kresladi-lad1
+- GT-cps1-crispr-personalized
+- GT-novaiscB-compact
+- GT-intellia-ttr-phase3
+- GT-casgevy-expanded
+- GT-nf2k8g1a
+- ... and 29 more
+
+### crispr_applications
+
+- CR-mpkpg9e3-6ad71j
+- CR-mpkpg9e4-mmdrqv
+- CR-mpkpmyef-os0rvq
+- CR-mpkqew9m-9xqkdm
+- CR-mpkqew9m-5s6sfl
+- CR-mpkqew9m-kfmtle
+- CR-isvfvntxfm
+- CR-tgida5ygo1
+- CR-pucvb2b02n
+- CR-ei0cu60kl5
+- CR-yolt101-base-edit
+- CR-pm359-prime-edit
+- CR-chop-prime-edit-ucd
+- CR-nf2k8c1a
+- CR-nf2k8c2b
+- CR-gt53100
+- CR-gt53101
+- CR-gt53102
+- CR-0601-base-editing-advances
+- CR-0601-crispr-10-companies
+- CR-0601-250-trials
+- CR-0601-nature-breakthrough
+- CR-0601-fda-rare-disease
+- CR-0602-fda-ultra-rare-pathway
+- CR-0602-personalized-crispr
+- CR-0602-250-trials-update
+- CR-0602-yale-immune-crispr
+- CR-0603-destructive-crispr
+- CR-0603-in-vivo-advances
+- CR-0603-fda-plausible-mechanism
+- ... and 11 more
+
+## Related Knowledge Bases
+
+- [TCMDB](https://tcm.genetech.tools) - Pharmacogenomics bridges gene therapy with TCM
+- [LifeDB](https://life.genetech.tools) - Gene editing enables synthetic biology
+- [BrainDB](https://brain.genetech.tools) - Gene therapy for neurological disorders

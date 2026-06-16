@@ -1,0 +1,1169 @@
+{
+  "nodes": [
+    {
+      "id": "AFW-001",
+      "name": "LangGraph",
+      "category": "agent_frameworks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/afw-001.html"
+    },
+    {
+      "id": "AFW-002",
+      "name": "CrewAI",
+      "category": "agent_frameworks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/afw-002.html"
+    },
+    {
+      "id": "AFW-003",
+      "name": "AutoGen (AG2)",
+      "category": "agent_frameworks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/afw-003.html"
+    },
+    {
+      "id": "AFW-004",
+      "name": "OpenAI Agents SDK",
+      "category": "agent_frameworks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/afw-004.html"
+    },
+    {
+      "id": "AFW-005",
+      "name": "Google Agent Development Kit (ADK)",
+      "category": "agent_frameworks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/afw-005.html"
+    },
+    {
+      "id": "AFW-006",
+      "name": "Anthropic Claude Agent Pattern",
+      "category": "agent_frameworks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/afw-006.html"
+    },
+    {
+      "id": "ASDK-001",
+      "name": "Vercel AI SDK",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-001.html"
+    },
+    {
+      "id": "ASDK-002",
+      "name": "LangChain",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-002.html"
+    },
+    {
+      "id": "ASDK-003",
+      "name": "LlamaIndex",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-003.html"
+    },
+    {
+      "id": "ASDK-004",
+      "name": "Haystack",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-004.html"
+    },
+    {
+      "id": "ASDK-005",
+      "name": "Semantic Kernel",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-005.html"
+    },
+    {
+      "id": "ASDK-006",
+      "name": "Rig",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-006.html"
+    },
+    {
+      "id": "ASDK-007",
+      "name": "Portkey AI Gateway",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-007.html"
+    },
+    {
+      "id": "ASDK-008",
+      "name": "Helicone",
+      "category": "agent_sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/asdk-008.html"
+    },
+    {
+      "id": "BENCH-001",
+      "name": "SWE-bench",
+      "category": "benchmarks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/bench-001.html"
+    },
+    {
+      "id": "BENCH-002",
+      "name": "WebArena",
+      "category": "benchmarks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/bench-002.html"
+    },
+    {
+      "id": "BENCH-003",
+      "name": "AgentBench",
+      "category": "benchmarks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/bench-003.html"
+    },
+    {
+      "id": "BENCH-004",
+      "name": "BFCL v3",
+      "category": "benchmarks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/bench-004.html"
+    },
+    {
+      "id": "BENCH-005",
+      "name": "MCP兼容性测试",
+      "category": "benchmarks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/bench-005.html"
+    },
+    {
+      "id": "MCP-001",
+      "name": "server-filesystem",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-001.html"
+    },
+    {
+      "id": "MCP-002",
+      "name": "server-postgres",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-002.html"
+    },
+    {
+      "id": "MCP-003",
+      "name": "server-github",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-003.html"
+    },
+    {
+      "id": "MCP-004",
+      "name": "server-puppeteer",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-004.html"
+    },
+    {
+      "id": "MCP-005",
+      "name": "server-sqlite",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-005.html"
+    },
+    {
+      "id": "MCP-006",
+      "name": "server-brave-search",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-006.html"
+    },
+    {
+      "id": "MCP-007",
+      "name": "server-memory",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-007.html"
+    },
+    {
+      "id": "MCP-008",
+      "name": "firecrawl-mcp-server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-008.html"
+    },
+    {
+      "id": "MCP-009",
+      "name": "server-sequential-thinking",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-009.html"
+    },
+    {
+      "id": "MCP-010",
+      "name": "notion-mcp-server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-010.html"
+    },
+    {
+      "id": "MCP-011",
+      "name": "server-slack",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-011.html"
+    },
+    {
+      "id": "MCP-012",
+      "name": "supabase-mcp-server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-012.html"
+    },
+    {
+      "id": "MCP-013",
+      "name": "Context7",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-013.html"
+    },
+    {
+      "id": "MCP-014",
+      "name": "Exa MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-014.html"
+    },
+    {
+      "id": "MCP-015",
+      "name": "Browserbase",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-015.html"
+    },
+    {
+      "id": "MCP-016",
+      "name": "server-docker",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-016.html"
+    },
+    {
+      "id": "MCP-017",
+      "name": "server-git",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-017.html"
+    },
+    {
+      "id": "MCP-018",
+      "name": "server-google-maps",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-018.html"
+    },
+    {
+      "id": "MCP-019",
+      "name": "server-fetch",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-019.html"
+    },
+    {
+      "id": "MCP-020",
+      "name": "server-time",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-020.html"
+    },
+    {
+      "id": "MCP-021",
+      "name": "Figma MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-021.html"
+    },
+    {
+      "id": "MCP-022",
+      "name": "Linear MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-022.html"
+    },
+    {
+      "id": "MCP-023",
+      "name": "Jira MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-023.html"
+    },
+    {
+      "id": "MCP-024",
+      "name": "server-sentry",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-024.html"
+    },
+    {
+      "id": "MCP-025",
+      "name": "Stripe MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-025.html"
+    },
+    {
+      "id": "MCP-026",
+      "name": "Shopify MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-026.html"
+    },
+    {
+      "id": "MCP-027",
+      "name": "MongoDB MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-027.html"
+    },
+    {
+      "id": "MCP-028",
+      "name": "Redis MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-028.html"
+    },
+    {
+      "id": "MCP-029",
+      "name": "Anki MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-029.html"
+    },
+    {
+      "id": "MCP-030",
+      "name": "server-google-drive",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-030.html"
+    },
+    {
+      "id": "MCP-031",
+      "name": "server-aws",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-031.html"
+    },
+    {
+      "id": "MCP-032",
+      "name": "server-kubernetes",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-032.html"
+    },
+    {
+      "id": "MCP-033",
+      "name": "Terraform MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-033.html"
+    },
+    {
+      "id": "MCP-034",
+      "name": "Playwright MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-034.html"
+    },
+    {
+      "id": "MCP-035",
+      "name": "server-echosign",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-035.html"
+    },
+    {
+      "id": "MCP-036",
+      "name": "Sysdig MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-036.html"
+    },
+    {
+      "id": "MCP-037",
+      "name": "server-twitter",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-037.html"
+    },
+    {
+      "id": "MCP-038",
+      "name": "server-discord",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-038.html"
+    },
+    {
+      "id": "MCP-039",
+      "name": "server-email (IMAP/SMTP)",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-039.html"
+    },
+    {
+      "id": "MCP-040",
+      "name": "server-calendar (Google Calendar)",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-040.html"
+    },
+    {
+      "id": "MCP-041",
+      "name": "server-airtable",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-041.html"
+    },
+    {
+      "id": "MCP-042",
+      "name": "server-snowflake",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-042.html"
+    },
+    {
+      "id": "MCP-043",
+      "name": "server-elasticsearch",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-043.html"
+    },
+    {
+      "id": "MCP-044",
+      "name": "server-langchain",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-044.html"
+    },
+    {
+      "id": "MCP-045",
+      "name": "server-computer-use",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-045.html"
+    },
+    {
+      "id": "MCP-046",
+      "name": "Vercel MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-046.html"
+    },
+    {
+      "id": "MCP-047",
+      "name": "Neon MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-047.html"
+    },
+    {
+      "id": "MCP-048",
+      "name": "Cloudflare MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-048.html"
+    },
+    {
+      "id": "MCP-049",
+      "name": "server-huggingface",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-049.html"
+    },
+    {
+      "id": "MCP-050",
+      "name": "server-openapi",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-050.html"
+    },
+    {
+      "id": "MCP-051",
+      "name": "server-mysql",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-051.html"
+    },
+    {
+      "id": "MCP-052",
+      "name": "server-zapier",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-052.html"
+    },
+    {
+      "id": "MCP-google-cloud-db",
+      "name": "Google Cloud Database MCP Servers",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-google-cloud-db.html"
+    },
+    {
+      "id": "MCP-oracle-sqlcl",
+      "name": "Oracle SQLcl MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-oracle-sqlcl.html"
+    },
+    {
+      "id": "MCP-database-mcp",
+      "name": "@cocaxcode/database-mcp",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-database-mcp.html"
+    },
+    {
+      "id": "MCP-universal-db",
+      "name": "universal-db-mcp",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-universal-db.html"
+    },
+    {
+      "id": "MCP-data-commons",
+      "name": "Google Data Commons MCP Server",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-data-commons.html"
+    },
+    {
+      "id": "MCP-truefoundry-gateway",
+      "name": "TrueFoundry MCP Gateway",
+      "category": "mcp_servers",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mcp-truefoundry-gateway.html"
+    },
+    {
+      "id": "MEM-001",
+      "name": "mem0",
+      "category": "memory_systems",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mem-001.html"
+    },
+    {
+      "id": "MEM-002",
+      "name": "Zep",
+      "category": "memory_systems",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mem-002.html"
+    },
+    {
+      "id": "MEM-003",
+      "name": "Letta (MemGPT)",
+      "category": "memory_systems",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mem-003.html"
+    },
+    {
+      "id": "MEM-004",
+      "name": "Cognee",
+      "category": "memory_systems",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mem-004.html"
+    },
+    {
+      "id": "MEM-005",
+      "name": "Graphiti",
+      "category": "memory_systems",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mem-005.html"
+    },
+    {
+      "id": "MEM-006",
+      "name": "Hindsight",
+      "category": "memory_systems",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/mem-006.html"
+    },
+    {
+      "id": "API-001",
+      "name": "OpenAI API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-001.html"
+    },
+    {
+      "id": "API-002",
+      "name": "Anthropic API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-002.html"
+    },
+    {
+      "id": "API-003",
+      "name": "Google Gemini API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-003.html"
+    },
+    {
+      "id": "API-004",
+      "name": "DeepSeek API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-004.html"
+    },
+    {
+      "id": "API-005",
+      "name": "智谱AI API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-005.html"
+    },
+    {
+      "id": "API-006",
+      "name": "Mistral API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-006.html"
+    },
+    {
+      "id": "API-007",
+      "name": "Cohere API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-007.html"
+    },
+    {
+      "id": "API-008",
+      "name": "Groq API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-008.html"
+    },
+    {
+      "id": "API-009",
+      "name": "Together AI API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-009.html"
+    },
+    {
+      "id": "API-010",
+      "name": "Fireworks AI API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-010.html"
+    },
+    {
+      "id": "API-011",
+      "name": "Perplexity API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-011.html"
+    },
+    {
+      "id": "API-012",
+      "name": "ElevenLabs API",
+      "category": "model_apis",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/api-012.html"
+    },
+    {
+      "id": "PROTO-001",
+      "name": "MCP (Model Context Protocol)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-001.html"
+    },
+    {
+      "id": "PROTO-002",
+      "name": "A2A (Agent-to-Agent)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-002.html"
+    },
+    {
+      "id": "PROTO-003",
+      "name": "ACP (Agent Communication Protocol)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-003.html"
+    },
+    {
+      "id": "PROTO-004",
+      "name": "OpenClaw Skill Protocol",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-004.html"
+    },
+    {
+      "id": "PROTO-005",
+      "name": "LSP (Language Server Protocol)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-005.html"
+    },
+    {
+      "id": "PROTO-006",
+      "name": "AG-UI (Agent User Interaction Protocol)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-006.html"
+    },
+    {
+      "id": "PROTO-007",
+      "name": "ANP (Agent Network Protocol)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-007.html"
+    },
+    {
+      "id": "PROTO-008",
+      "name": "OpenAPI/Swagger",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-008.html"
+    },
+    {
+      "id": "PROTO-009",
+      "name": "gRPC",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-009.html"
+    },
+    {
+      "id": "PROTO-010",
+      "name": "GraphQL",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-010.html"
+    },
+    {
+      "id": "PROTO-011",
+      "name": "WASM Component Model",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-011.html"
+    },
+    {
+      "id": "PROTO-012",
+      "name": "JSON-RPC 2.0",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-012.html"
+    },
+    {
+      "id": "PROTO-013",
+      "name": "Server-Sent Events (SSE)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-013.html"
+    },
+    {
+      "id": "PROTO-014",
+      "name": "DAP (Debug Adapter Protocol)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-014.html"
+    },
+    {
+      "id": "PROTO-015",
+      "name": "OpenTelemetry",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-015.html"
+    },
+    {
+      "id": "PROTO-016",
+      "name": "FHIR (Healthcare API)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-016.html"
+    },
+    {
+      "id": "PROTO-017",
+      "name": "Stainless API Standard",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-017.html"
+    },
+    {
+      "id": "PROTO-018",
+      "name": "Semantic Protocol (SP)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-018.html"
+    },
+    {
+      "id": "PROTO-019",
+      "name": "OAuth 2.1 / DPoP",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-019.html"
+    },
+    {
+      "id": "PROTO-020",
+      "name": "Tool Call Protocol (OpenAI)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-020.html"
+    },
+    {
+      "id": "PROTO-021",
+      "name": "Agent Gateway Protocol (AGP)",
+      "category": "protocols",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/proto-021.html"
+    },
+    {
+      "id": "SDK-001",
+      "name": "Claude Agent SDK",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-001.html"
+    },
+    {
+      "id": "SDK-002",
+      "name": "OpenAI Agents SDK",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-002.html"
+    },
+    {
+      "id": "SDK-003",
+      "name": "Google ADK",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-003.html"
+    },
+    {
+      "id": "SDK-004",
+      "name": "LangGraph",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-004.html"
+    },
+    {
+      "id": "SDK-005",
+      "name": "CrewAI",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-005.html"
+    },
+    {
+      "id": "SDK-006",
+      "name": "AutoGen/AG2",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-006.html"
+    },
+    {
+      "id": "SDK-007",
+      "name": "Smolagents",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-007.html"
+    },
+    {
+      "id": "SDK-008",
+      "name": "Pydantic AI",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-008.html"
+    },
+    {
+      "id": "SDK-009",
+      "name": "Mastra",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-009.html"
+    },
+    {
+      "id": "SDK-010",
+      "name": "Dify",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-010.html"
+    },
+    {
+      "id": "SDK-011",
+      "name": "Semantic Kernel",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-011.html"
+    },
+    {
+      "id": "SDK-012",
+      "name": "Phidata",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-012.html"
+    },
+    {
+      "id": "SDK-013",
+      "name": "LlamaIndex",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-013.html"
+    },
+    {
+      "id": "SDK-014",
+      "name": "Haystack",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-014.html"
+    },
+    {
+      "id": "SDK-015",
+      "name": "Agency Swarm",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-015.html"
+    },
+    {
+      "id": "SDK-016",
+      "name": "TaskWeaver",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-016.html"
+    },
+    {
+      "id": "SDK-017",
+      "name": "Camel-AI",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-017.html"
+    },
+    {
+      "id": "SDK-018",
+      "name": "Vercel AI SDK",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-018.html"
+    },
+    {
+      "id": "SDK-019",
+      "name": "Rig",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-019.html"
+    },
+    {
+      "id": "SDK-020",
+      "name": "Portkey AI Gateway",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-020.html"
+    },
+    {
+      "id": "SDK-021",
+      "name": "Coze",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-021.html"
+    },
+    {
+      "id": "SDK-022",
+      "name": "Flowise",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-022.html"
+    },
+    {
+      "id": "SDK-023",
+      "name": "n8n AI Agent",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-023.html"
+    },
+    {
+      "id": "SDK-024",
+      "name": "AgentScope",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-024.html"
+    },
+    {
+      "id": "SDK-025",
+      "name": "Bee Agent Framework",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-025.html"
+    },
+    {
+      "id": "SDK-026",
+      "name": "AutoGen Studio",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-026.html"
+    },
+    {
+      "id": "SDK-027",
+      "name": "Instructor",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-027.html"
+    },
+    {
+      "id": "SDK-028",
+      "name": "Mirage",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-028.html"
+    },
+    {
+      "id": "SDK-029",
+      "name": "DSPy",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-029.html"
+    },
+    {
+      "id": "SDK-030",
+      "name": "Fixpoint/Wordware",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-030.html"
+    },
+    {
+      "id": "SDK-031",
+      "name": "Letta (MemGPT)",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-031.html"
+    },
+    {
+      "id": "SDK-032",
+      "name": "OpenRouter SDK",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-032.html"
+    },
+    {
+      "id": "SDK-openai-agents",
+      "name": "OpenAI Agents SDK",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-openai-agents.html"
+    },
+    {
+      "id": "SDK-ms-agent-framework",
+      "name": "Microsoft Agent Framework 1.0",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-ms-agent-framework.html"
+    },
+    {
+      "id": "SDK-mastra",
+      "name": "Mastra",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-mastra.html"
+    },
+    {
+      "id": "SDK-pydantic-ai",
+      "name": "Pydantic AI",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-pydantic-ai.html"
+    },
+    {
+      "id": "SDK-smolagents",
+      "name": "Smolagents",
+      "category": "sdks",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/sdk-smolagents.html"
+    },
+    {
+      "id": "TPLAT-001",
+      "name": "Composio",
+      "category": "tool_platforms",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/tplat-001.html"
+    },
+    {
+      "id": "TPLAT-002",
+      "name": "Toolhouse",
+      "category": "tool_platforms",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/tplat-002.html"
+    },
+    {
+      "id": "TPLAT-003",
+      "name": "Browserbase",
+      "category": "tool_platforms",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/tplat-003.html"
+    },
+    {
+      "id": "TPLAT-004",
+      "name": "E2B (Code Interpreter SDK)",
+      "category": "tool_platforms",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/tplat-004.html"
+    },
+    {
+      "id": "TPLAT-005",
+      "name": "MCP Hub / Smithery",
+      "category": "tool_platforms",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/tplat-005.html"
+    },
+    {
+      "id": "VDB-001",
+      "name": "Pinecone",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-001.html"
+    },
+    {
+      "id": "VDB-002",
+      "name": "Weaviate",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-002.html"
+    },
+    {
+      "id": "VDB-003",
+      "name": "Qdrant",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-003.html"
+    },
+    {
+      "id": "VDB-004",
+      "name": "ChromaDB",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-004.html"
+    },
+    {
+      "id": "VDB-005",
+      "name": "Milvus",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-005.html"
+    },
+    {
+      "id": "VDB-006",
+      "name": "pgvector",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-006.html"
+    },
+    {
+      "id": "VDB-007",
+      "name": "LanceDB",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-007.html"
+    },
+    {
+      "id": "VDB-008",
+      "name": "Neo4j + Vector",
+      "category": "vector_dbs",
+      "domain": "agent.genetech.tools",
+      "url": "https://agent.genetech.tools/entity/vdb-008.html"
+    }
+  ],
+  "edges": [],
+  "domain": "agent.genetech.tools",
+  "name": "AI Agent生态知识引擎"
+}

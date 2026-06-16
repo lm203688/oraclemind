@@ -1,0 +1,95 @@
+[
+  {
+    "id": "RPLAT-001",
+    "name": "Boston Dynamics Atlas",
+    "type": "Humanoid robot platform",
+    "description": "The most advanced humanoid robot, capable of parkour, backflips, and dynamic manipulation. Fully electric 2024 version with whole-body mobility.",
+    "manufacturer": "Boston Dynamics (Hyundai)",
+    "application": "Research, industrial inspection, logistics"
+  },
+  {
+    "id": "RPLAT-002",
+    "name": "Tesla Optimus (Bot)",
+    "type": "Humanoid robot platform",
+    "description": "Tesla's humanoid robot designed for mass production. Uses Tesla's FSD AI and actuator technology. Gen 2 walks 30% faster and has improved hand dexterity.",
+    "manufacturer": "Tesla",
+    "application": "Manufacturing, household tasks, logistics"
+  },
+  {
+    "id": "RPLAT-003",
+    "name": "Figure 02",
+    "type": "Humanoid robot platform",
+    "description": "General-purpose humanoid with OpenAI-powered intelligence. Deployed at BMW Spartanburg plant for body shop tasks. Features end-to-end neural network control.",
+    "manufacturer": "Figure AI",
+    "application": "Manufacturing, logistics, elder care"
+  },
+  {
+    "id": "RPLAT-004",
+    "name": "Unitree G1/H1",
+    "type": "Humanoid robot platform",
+    "description": "Affordable humanoid robots from China. G1 ($116K) targets research; H1 ($90K) targets industrial. G1 demonstrated cooking and martial arts moves.",
+    "manufacturer": "Unitree Robotics",
+    "application": "Research, industrial, entertainment"
+  },
+  {
+    "id": "RPLAT-005",
+    "name": "ANYmal (ANYbotics)",
+    "type": "Quadruped robot platform",
+    "description": "Industrial quadruped for autonomous inspection in hazardous environments (oil rigs, mines, nuclear plants). Waterproof, self-righting, AI-powered navigation.",
+    "manufacturer": "ANYbotics (ETH Zurich spinoff)",
+    "application": "Industrial inspection, monitoring, hazardous environments"
+  },
+  {
+    "id": "RPLAT-006",
+    "name": "DJI Matrice 350 RTK",
+    "type": "Aerial robot platform",
+    "description": "Enterprise drone platform for inspection, mapping, and public safety. 55-min flight time, IP55 rating, multi-payload support.",
+    "manufacturer": "DJI",
+    "application": "Infrastructure inspection, surveying, emergency response"
+  },
+  {
+    "id": "RPLAT-007",
+    "name": "Figure 03",
+    "type": "General-purpose humanoid robot",
+    "manufacturer": "Figure AI",
+    "year": "2026",
+    "description": "Figure AI第三代人形机器人，专为Helix AI、家庭和大规模部署设计。集成28个关节执行器和Gen 3手中50+个执行器。BotQ生产线已交付超过350台。被Robozaps评为2026年最佳人形机器人第一名。",
+    "key_features": [
+      "Helix AI integration",
+      "Gen 3 hands with 50+ actuators",
+      "Home and industrial capable",
+      "Mass production at BotQ"
+    ],
+    "price_range": "N/A (commercial)"
+  },
+  {
+    "id": "RPLAT-008",
+    "name": "Embodied Tien Kung 3.0",
+    "type": "Full-size general-purpose humanoid robot",
+    "manufacturer": "X-Humanoid",
+    "year": "2026",
+    "description": "X-Humanoid天工3.0全尺寸通用人形机器人，赢得北京机器人勇士赛，完全自主完成多项竞赛任务。天工Ultra完成了全自主半程马拉松（21.0975公里，1小时15分）。天工2.0在CES 2026展示了全自主零件分拣。",
+    "key_features": [
+      "Fully autonomous competition",
+      "Half-marathon capable",
+      "Autonomous parts sorting",
+      "Human-reflex response"
+    ],
+    "price_range": "N/A"
+  },
+  {
+    "id": "RPLAT-009",
+    "name": "Tesla Optimus Gen 3",
+    "type": "General-purpose humanoid robot",
+    "manufacturer": "Tesla",
+    "year": "2026 (planned commercial rollout)",
+    "description": "特斯拉Optimus第三代人形机器人，计划2026年商业化部署。2025年开始内部测试，主要在特斯拉工厂内运行。被Robozaps评为2026年人形机器人第二名。",
+    "key_features": [
+      "Commercial deployment 2026",
+      "Factory-tested",
+      "Tesla AI integration",
+      "Mass production planned"
+    ],
+    "price_range": "N/A (targeting affordable)"
+  }
+]

@@ -1,0 +1,225 @@
+# EnergyDB - 新能源知识引擎
+
+> Renewable energy knowledge base covering solar, storage, hydrogen, wind, grid technology, and clean energy
+
+## API Endpoints (JSON)
+
+- `GET /api/data.json` - Complete structured data
+- `GET /api/entities.json` - All entities flat list
+- `GET /api/openapi.json` - OpenAPI 3.1 specification
+
+## Stats
+
+- Total entities: 430
+- solar: 116
+- storage: 93
+- hydrogen_energy: 74
+- wind_energy: 63
+- grid_tech: 66
+- solar_tech: 8
+- energy_storage: 8
+- nuclear_renewable: 2
+
+## Categories
+
+### solar
+
+- **PERC**: 钝化发射极和背面电池技术，当前主流但接近效率极限
+- **TOPCon**: 隧穿氧化层钝化接触技术，2024-2025年占新增产能60%以上
+- **HJT异质结**: 本征薄膜异质结电池，低温系数优势，适合高温地区
+- **钙钛矿单结**: 有机-无机杂化钙钛矿材料，溶液法可加工，理论效率极限33%
+- **BC背接触**: 所有电极位于背面，正面无遮挡，美观高效
+- **钙钛矿-硅叠层**: 钙钛矿顶电池+硅底电池叠层，突破硅单结效率极限29.4%
+- **全钙钛矿叠层**: 两种不同带隙钙钛矿叠层，全溶液法加工，成本潜力最大
+- **CIGS薄膜**: 铜铟镓硒薄膜电池，柔性轻量，适合BIPV和便携应用
+- **有机光伏OPV**: 碳基半导体，超轻柔性半透明，可印刷在塑料薄膜上
+- **聚光光伏CPV**: 透镜聚光+多结III-V族电池，效率极高但需直射光和追日系统
+- **双面组件**: 正反两面均可发电，利用地面反射光提升输出
+- **光热发电CSP**: 聚光加热熔盐储热，可提供10+小时可调度电力
+- **钙钛矿p-i-n架构**: 正式结构(p-i-n)替代传统反正式(n-i-p)，稳定性更好，适合叠层集成
+- **无铅钙钛矿**: 用锡/铋/锗替代铅，解决毒性问题，但效率差距大
+- **半片/叠瓦组件**: 半片切割降低电阻损耗，叠瓦无缝拼接提升面积利用率
+- **薄膜硅HJT-BC**: HJT与背接触技术结合，隆基2025年创造硅基单结效率世界纪录
+- **光伏建筑一体化BIPV**: 光伏组件直接作为建筑材料(幕墙/屋顶/遮阳)，兼具发电和建筑功能
+- **水上光伏Floating PV**: 水面漂浮光伏，利用水面冷却效应提升效率，节约土地
+- **农业光伏Agrivoltaics**: 光伏与农业结合，上方发电下方种植，土地双重利用
+- **钙钛矿/硅三结叠层**: 三结叠层(两钙钛矿+一硅)，理论效率极限超40%
+- **光伏制氢P2H**: 光伏直连电解槽制绿氢，省去电网环节，提高整体效率
+- **微光/室内光伏**: 专为室内/弱光环境设计的光伏，为IoT设备供电
+- **大尺寸硅片(182/210mm)**: 从156mm升级到182/210mm，降低单瓦制造成本
+- **智能光伏运维AI**: AI驱动的光伏电站监控、故障诊断、清洁调度优化
+- **光伏回收技术**: 退役光伏组件的材料回收，回收硅/银/玻璃/铝等有价值材料
+- **Huarou PV 27.98% Perovskite Cell**: perovskite_single_junction
+- **SolaEon 27.87% Perovskite Cell**: perovskite_single_junction
+- **LONGi 35.0% Perovskite-Silicon Tandem**: perovskite_silicon_tandem
+- **Nankai University 27.17% n-i-p Perovskite**: perovskite_single_junction
+- **Korea-China Joint 27.6% Perovskite**: perovskite_single_junction
+- ... and 86 more
+
+### storage
+
+- **磷酸铁锂LFP**: 储能和EV主流化学体系，无钴无镍，成本低循环寿命长
+- **钠离子电池**: 用钠替代锂，资源丰富成本低，低温性能优异
+- **全固态电池**: 固态电解质替代液态电解液，锂金属负极实现2倍能量密度
+- **钒液流电池**: 液态电解质储能，功率和容量独立扩展，零衰减
+- **压缩空气储能CAES**: 压缩空气储存于地下洞穴，先进绝热CAES效率可达70%+
+- **铁-空气电池**: 铁氧化(生锈)反应储能，超低成本长时储能，目标100+小时
+- **抽水蓄能**: 最成熟的储能技术，占全球储能容量95%，中国50+GW装机
+- **重力储能**: 提升重物储存势能，简单可靠无衰减
+- **锂硫电池**: 硫正极+锂金属负极，理论能量密度极高，但循环寿命差
+- **液态金属电池**: 液态金属电极+熔盐电解质，自分层，低成本长寿命
+- **氢储能**: 电解制氢→储存→燃料电池/燃烧发电，适合季节性储能
+- **超级电容器**: 秒级充放电，功率密度极高，用于功率型应用和能量回收
+- **热储能(熔盐/相变)**: 储存热能用于发电或工业供热，熔盐/相变材料/热砖等
+- **锌溴液流电池**: 锌溴化学体系，比钒液流能量密度高，材料成本低
+- **有机液流电池**: 有机分子替代钒作为活性物质，成本更低，可设计性强
+- **电池回收技术**: 退役锂电池的锂/钴/镍/锰回收，湿法/火法/直接回收
+- **电池管理系统BMS**: 电池状态监控/均衡/安全保护，AI驱动优化
+- **飞轮储能**: 高速旋转飞轮储存动能，秒-分钟级响应，用于调频
+- **固态钠电池**: 固态电解质+钠化学体系，兼具钠的低成本和固态的安全性
+- **储能系统集成ESS**: 电池+PCS+BMS+EMS+温控+消防的一体化储能系统
+- **Solar Battery On-Demand Hydrogen**: storage_technology
+- **2025全球储能108GW里程碑**: IEA Global Energy Review 2026: 2025年全球新增电池储能108GW，同比增长40%，储能成为增长最快电力技术
+- **固态电池创新趋势2026**: GreyB 2026储能创新趋势Top5：固态电池、智能电网、虚拟电厂、混合储能、长时储能
+- **虚拟电厂VPP**: 聚合分布式储能/电动车/可调负荷形成虚拟电厂，参与电力市场调度
+- **混合储能系统HESS**: 功率型(超级电容/飞轮)+能量型(锂电池/液流)混合，兼顾功率和能量需求
+- **长时储能LDES**: 10-100+小时长时储能，铁-空气/液流/压缩空气/热储能等路线，解决可再生能源间歇性
+- **2025全球储能110GW新增**: 2025年全球新增电池储能容量约110GW，成为增长最快电力技术，同比增长40%以上
+- **120+吉瓦级储能项目2026**: 2026年全球120+吉瓦级储能项目规划，储能技术成本持续下降，融资渠道更广泛
+- **Vattenfall 200MW储能租赁**: Vattenfall 2025年签署三项协议，租赁超200MW电池储能容量并优化运营，储能租赁模式兴起
+- **DOE下一代电池计划**: 美国能源部DOE Breaking It Down系列推动下一代电池技术：固态/锂硫/钠离子/铁-空气等多路线并行
+- ... and 63 more
+
+### hydrogen_energy
+
+- **PEM电解水制氢**: 质子交换膜电解，响应速度快，适合与波动性可再生能源耦合
+- **固体氧化物电解SOEC**: 高温电解(700-850°C)，有废热时电效率最高
+- **碱性电解水AEL**: 传统碱性电解，技术成熟成本最低，但响应速度慢
+- **PEM燃料电池**: 氢气发电，仅排放水，用于交通/固定式发电
+- **固体氧化物燃料电池SOFC**: 高温燃料电池，可使用天然气/氢气/氨等多种燃料
+- **地下储氢**: 盐穴/枯竭气田/含水层大规模储氢，适合季节性储能
+- **高压气态储氢**: 35/70MPa高压容器储氢，加氢站和车载主流方案
+- **液态储氢**: -253°C低温液化，密度最高，但液化能耗大
+- **有机液体储氢LOHC**: 氢与有机载体化学结合，常温常压储运，可利用现有油品基础设施
+- **氨作为氢载体**: 氨含氢量17.6wt%，-33°C液化，已有全球储运基础设施
+- **氢燃气轮机**: 燃氢燃气轮机发电，可掺氢或纯氢运行
+- **光催化制氢**: 半导体光催化剂直接分解水制氢，一步法太阳能到氢气
+- **生物质制氢**: 生物质气化/重整制氢，碳中性或负碳
+- **氢能重卡**: 燃料电池重卡，长续航快加注，适合长途货运
+- **管道输氢**: 专用氢管道或天然气管网掺氢，大规模低成本输运
+- **2026氢能清算之年**: Wood Mackenzie称2026年为氢能'清算之年'，项目落地与淘汰并行，EU政策摇摆和中东雄心受挫
+- **美国国家氢能战略**: DOE 2025年发布氢能进展报告，目标年产5000万吨氢，覆盖多部门需求
+- **IEA全球氢能回顾2025**: IEA Global Hydrogen Review 2025: 低碳氢项目从少数示范增长到200+已承诺投资
+- **氢燃料电池车市场**: 氢燃料电池车(FCEV)市场增长，亚太地区领先，但与BEV竞争激烈
+- **加州氢能交通规划**: UC Davis研究加州氢能和燃料电池车在交通各领域的潜力映射
+- **2026氢能清算之年**: Wood Mackenzie称2026年为氢能'清算之年'，欧盟mandates动摇，中东雄心受挫，项目落地面临考验
+- **美国国家氢能战略**: DOE 2025年发布美国国家氢能战略，识别5000万吨低碳氢潜在需求和供应源
+- **cellcentric NextGen燃料电池**: cellcentric 2026年推出NextGen燃料电池系统，专为重卡设计，全球巡展推广
+- **IEA全球氢能回顾2025**: IEA Global Hydrogen Review 2025：低碳氢项目从少数示范扩展到200+承诺投资项目
+- **氢能航空HAS 2026**: HAS 2026大会：氢能航空技术从实验室走向商业化，首条氢能航空技术路线图发布
+- **氢能理事会全球氢能指南针2025**: Hydrogen Council首份Global Hydrogen Compass报告，五年详细数据追踪
+- **加州FCEV年度评估2025**: 加州ARB 2025年FCEV部署年度评估：加氢站网络现状和2031年FCEV销量预测
+- **美国氢能2026前景**: FCHEA总裁Frank Wolak认为美国氢能2026年仍可取得实质进展，尽管2025年政策剧烈波动
+- **绿氢电解槽成本下降**: 电解槽规模化生产推动绿氢成本下降，2026年目标$3-4/kg，2030年目标$1-2/kg
+- **氢能管道基础设施**: 欧洲氢骨干网(EHB)规划53000km氢能管道，连接各国供需；美国/中东同步规划
+- ... and 44 more
+
+### wind_energy
+
+- **海上浮式风电**: 深水(>60m)浮式平台风电，解锁80%固定式无法到达的海上风资源
+- **高空风能AWE**: 风筝/无人机在200-800m高空采集风能，材料用量减少90%
+- **垂直轴风力机VAWT**: 垂直轴旋转，接受任意方向来风，噪音低适合城市环境
+- **超大型海上风机(15-20MW)**: 单机容量持续突破，降低度电成本，中国/欧洲引领
+- **陆上大兆瓦风机**: 陆上风机大型化，6MW+成为主流，降低度电成本
+- **风电制氢Wind-to-Hydrogen**: 风电直接制绿氢，解决弃风问题，提供可调度能源
+- **风电叶片回收**: 退役玻璃钢叶片的回收处理，热解/机械粉碎/化学回收
+- **风电AI运维**: AI驱动的风机预测性维护、偏航优化、功率预测
+- **无塔架风电(Airborne/笼式)**: 无传统塔筒的风力发电方案，降低材料和安装成本
+- **海上风电柔直送出**: 远海风电通过VSC-HVDC柔直输电送出，降低线路损耗
+- **美国2025年43GW光伏+风电增长**: 2025年美国新增43GW光伏装机，连续第五年光伏领跑新增电力；可再生能源占新增容量93%
+- **全球清洁能源投资$2.2万亿**: 2025年全球清洁能源投资达$2.2万亿，政策明朗+利率下降推动增长
+- **超大型海上风机20MW+**: 单机容量突破20MW，降低海上风电度电成本，减少基础和安装数量
+- **风电+储能混合电站**: 风电场配套储能系统，平滑出力波动，提高可调度性
+- **风电叶片回收技术**: 退役风电叶片的玻璃纤维/碳纤维回收再利用，解决环保难题
+- **20MW+海上风机**: 中国/欧洲竞相开发20MW+超大型海上风机，单机扫风面积超25000m²
+- **美国2025风电装机放缓**: Deloitte 2026可再生能源展望：2025年上半年风电和太阳能投资下降18%至350亿美元
+- **海上风电深水化**: 固定式海上风电向60m+深水扩展，浮式风电技术成熟度提升，解锁80%海上风资源
+- **风电AI预测维护**: AI驱动的风机预测性维护，减少非计划停机，优化运维策略
+- **陆上风电repowering**: 老旧风电场用更大更高效风机替换，提升发电量30-50%，延长项目寿命
+- **风电制氢Wind-to-Hydrogen**: 海上风电直连电解槽制绿氢，省去电网输送环节，提高整体效率
+- **碳纤维风电叶片**: 碳纤维替代玻璃纤维减轻叶片重量30%+，使80m+超长叶片成为可能
+- **风电场尾流优化**: AI优化风机布局和运行策略，减少尾流效应损失，提升风电场整体发电量
+- **分布式风电**: 小型风机为工业园区/农村/离网区域供电，与光伏/储能组成微电网
+- **风电+制氨Wind-to-Ammonia**: 风电制氢→合成绿氨，氨作为氢载体和零碳燃料，便于储运
+- **BloombergNEF NEO 2026风电展望**: BloombergNEF New Energy Outlook 2026: 风电持续增长，但增速低于太阳能
+- **Levin 7大可再生能源趋势2026**: Levin Talent 2026年7大可再生能源趋势：太阳能主导/储能必选/安全+许可是瓶颈
+- **EIA 2026风电+太阳能55GW+**: EIA: 2025年太阳能+风电+储能新增超55GW，2026年预计更强劲增长
+- **Airswift美国10大风电项目2026**: Airswift盘点2026年起美国10大风电项目，涵盖陆上和海上风电增长趋势及政策影响
+- **Earth.org海上风电140GW展望**: Earth.org: 海上风电预计新增约140GW，抽水蓄能翻倍至16.5GW，支撑系统灵活性和电网稳定
+- ... and 33 more
+
+### grid_tech
+
+- **特高压直流输电HVDC**: 远距离低损耗输电，连接偏远可再生能源与负荷中心
+- **构网型逆变器Grid-Forming**: 不依赖同步发电机即可建立电网电压和频率，100%可再生能源电网的关键
+- **虚拟电厂VPP**: 聚合分布式资源(屋顶光伏/电池/EV/需求响应)为可调度资源
+- **动态线路评级DLR**: 基于气象条件(风冷/温度)实时监控线路容量，无需新建线路即可增容
+- **柔性直流VSC-HVDC**: 电压源换流器HVDC，比传统LCC-HVDC更灵活，适合海上风电送出
+- **微电网Microgrid**: 本地化发配用电系统，可孤岛运行，提高供电韧性
+- **车网互动V2G**: 电动车向电网反向送电，EV电池成为移动储能资源
+- **智能电表与AMI**: 高级计量基础设施，为需求响应和动态电价提供数据基础
+- **电力现货市场**: 短期电力交易市场，价格反映实时供需，激励灵活资源
+- **AI电网调度**: AI驱动的负荷预测/新能源出力预测/最优调度
+- **高压交流海底电缆**: 近海风电和跨海联网的主要输电方式
+- **需求响应DR**: 用户侧调节用电行为响应电网信号，削峰填谷
+- **AI电力需求挑战**: AI/数据中心电力需求快速增长，对电网构成新挑战，需要灵活调度和新增容量
+- **分布式能源管理DERMS**: 分布式能源(光伏/储能/EV/负荷)管理系统，实现电网与分布式资源的协调优化
+- **电网级储能调度优化**: AI优化电网级储能系统的充放电策略，最大化套利和辅助服务收益
+- **柔性直流配电网**: 直流配电网适应高比例分布式光伏和EV充电，减少AC/DC转换损耗
+- **美国2026新增电力100%可再生能源**: EIA报告：2026年美国新增电力装机100%来自可再生能源，41.5GW公用事业级光伏+风电
+- **Deloitte 2026可再生能源展望**: Deloitte 2026可再生能源行业展望：政策变化压缩项目时间线，但长期增长趋势不变
+- **能源转型2026趋势**: 2026年能源转型五大趋势：政策分化、储能爆发、绿氢关键年、电网现代化、AI赋能
+- **IEA能源创新状态2026**: IEA State of Energy Innovation 2026报告：清洁能源创新逆风与顺风并存
+- **动态线路额定DLR**: 实时监测导线温度/弧垂/风速，动态调整输电线路容量，无需新建线路即可提升输电能力
+- **分布式能源资源管理DERMS**: 分布式光伏/储能/EV/可调负荷的统一调度管理平台，实现配电网级优化
+- **高压半导体SiC/GaN**: 碳化硅/氮化镓功率器件替代硅基IGBT，提升逆变器/变换器效率和功率密度
+- **微电网控制器**: 微电网中央控制器，协调分布式电源/储能/负荷，实现并网和孤岛模式无缝切换
+- **电力市场数字化交易**: 区块链/AI驱动的电力市场交易平台，实现点对点电力交易和实时竞价
+- **电网网络安全**: 智能电网网络安全防护，应对数字化电网日益增长的网络安全威胁
+- **BloombergNEF NEO 2026电网展望**: BloombergNEF NEO 2026: 储能到2050年增长17倍至3.8TW，电网现代化投资需求巨大
+- **Canary Media美国清洁电力2026**: Canary Media: 2026年美国新增电力太阳能占51%、储能28%、风电占其余，清洁能源压倒性主导
+- **BDO 2026能源行业预测**: BDO 2026自然资源与能源行业预测：2025年新增电力主要来自可再生能源，2026年进一步加速
+- **Forbes 2026清洁能源展望**: Forbes 2026展望：IEA预测可再生能源特别是太阳能将增长最快，持续到2035年
+- ... and 36 more
+
+### solar_tech
+
+- **Perovskite-Silicon Tandem Cell**: Stacking a perovskite top cell (wide bandgap) on a silicon bottom cell captures more of the solar spectrum. This is the fastest path to exceeding the silicon single-junction limit (29.4%).
+- **All-Perovskite Tandem Cell**: Two perovskite layers with different bandgaps stacked together. Potentially cheaper than perovskite-silicon tandems since both layers are solution-processable. Key challenge: stable narrow-bandgap perovskite (tin-lead).
+- **HJT (Heterojunction Technology)**: Combines crystalline silicon with amorphous silicon layers for high efficiency and low temperature coefficient. Better performance in hot climates than PERC.
+- **TOPCon (Tunnel Oxide Passivated Contact)**: The current mainstream upgrade from PERC, adding a tunnel oxide layer for better surface passivation. Dominating new capacity additions globally.
+- **CIGS Thin Film**: Copper indium gallium selenide thin-film solar cells. Flexible, lightweight, and good performance in low-light and high-temperature conditions. Used in BIPV and portable applications.
+- **Organic Photovoltaics (OPV)**: Carbon-based semiconductors enabling ultra-lightweight, flexible, semi-transparent solar cells. Can be printed on plastic films. Very low cost potential but limited efficiency and stability.
+- **Concentrated Solar Power (CSP) with Thermal Storage**: Mirrors concentrate sunlight to heat molten salt, which stores energy for 10+ hours of dispatchable power. Provides baseload solar without batteries.
+- **Bifacial Solar Modules**: Modules that capture light from both sides, using ground-reflected light to boost output. Now standard for utility-scale installations.
+
+### energy_storage
+
+- **Lithium Iron Phosphate (LFP) Battery**: The dominant battery chemistry for grid storage and EVs (especially in China). No cobalt or nickel, lower cost, longer cycle life (3,000-10,000 cycles), but lower energy density than NMC.
+- **Sodium-Ion Battery**: Uses abundant sodium instead of lithium. Lower energy density but excellent low-temperature performance and zero lithium dependency. CATL and HiNa are leading commercialization.
+- **Solid-State Battery**: Replaces liquid electrolyte with solid ceramic or polymer, enabling lithium metal anodes for 2x energy density and improved safety. The holy grail of battery technology.
+- **Iron-Air Battery**: Uses iron oxidation (rusting) for ultra-cheap, long-duration energy storage. Target cost: <$20/kWh. Ideal for multi-day grid storage. Form Energy's first plant is building 10MW/1GWh system for Xcel Energy.
+- **Redox Flow Battery (Vanadium)**: Stores energy in liquid electrolyte tanks. Power and energy scale independently. Vanadium flow batteries offer 20,000+ cycles with no degradation. Ideal for long-duration grid storage.
+- **Pumped Hydro Storage**: The most mature and widely deployed grid storage technology (95% of global storage capacity). Pumps water uphill when excess power is available, releases through turbines when needed. China leads with 50+ GW installed.
+- **Compressed Air Energy Storage (CAES)**: Compresses air into underground caverns or tanks. Advanced adiabatic CAES captures heat during compression for higher efficiency. Hydrostor is building 500MW projects in Australia and California.
+- **Gravity Energy Storage**: Raises heavy blocks or masses using excess electricity, then lowers them to generate power. Energy Vault's EVx uses composite blocks in a tower. Simple, long-life, no degradation.
+
+### nuclear_renewable
+
+- **Small Modular Reactor (SMR) Integration**: SMRs providing baseload power that complements variable renewables. SMRs can load-follow and provide process heat for industrial applications.
+- **Nuclear Hydrogen Production**: Using nuclear heat and electricity for high-temperature electrolysis or thermochemical hydrogen production. More efficient than using variable renewables alone.
+
+## Related Knowledge Bases
+
+- [NuclearDB](https://nuclear.genetech.tools) - Nuclear as clean energy source
+- [LifeDB](https://life.genetech.tools) - Biofuels and bioenergy

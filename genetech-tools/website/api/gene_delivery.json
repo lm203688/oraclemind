@@ -1,0 +1,345 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-31T15:38:09.017Z",
+  "description": "Gene delivery systems and vectors including viral vectors, lipid nanoparticles, and emerging delivery platforms",
+  "entities": [
+    {
+      "id": "GDL-aav",
+      "name": "Adeno-Associated Virus (AAV) Vectors",
+      "category": "gene_delivery",
+      "delivery_type": "viral vector",
+      "mechanism": "Non-integrating viral vector for gene delivery",
+      "key_features": [
+        "Low immunogenicity",
+        "Long-term expression",
+        "Multiple serotypes for tissue targeting",
+        "Non-integrating"
+      ],
+      "applications": [
+        "Gene therapy (Luxturna, Zolgensma)",
+        "In vivo gene delivery",
+        "Retinal diseases",
+        "Neuromuscular disorders"
+      ],
+      "development_stage": "clinical/commercial",
+      "companies": [
+        "Spark Therapeutics",
+        "Novartis",
+        "RegenxBio"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-lnp",
+      "name": "Lipid Nanoparticles (LNPs)",
+      "category": "gene_delivery",
+      "delivery_type": "non-viral",
+      "mechanism": "Lipid-based nanoparticle encapsulation for nucleic acid delivery",
+      "key_features": [
+        "Low immunogenicity",
+        "High delivery efficiency",
+        "Scalable manufacturing",
+        "Validated by mRNA vaccines"
+      ],
+      "applications": [
+        "mRNA vaccine delivery",
+        "CRISPR component delivery",
+        "siRNA delivery",
+        "In vivo gene editing"
+      ],
+      "development_stage": "clinical/commercial",
+      "companies": [
+        "Moderna",
+        "Pfizer",
+        "Intellia Therapeutics"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-lnp-extrahepatic",
+      "name": "Extrahepatic LNP Targeting",
+      "category": "gene_delivery",
+      "delivery_type": "non-viral",
+      "mechanism": "Engineered LNPs for delivery beyond the liver",
+      "key_features": [
+        "Organ-specific targeting",
+        "Modified lipid composition",
+        "Ligand conjugation"
+      ],
+      "applications": [
+        "Lung delivery",
+        "Brain delivery",
+        "Spleen targeting",
+        "Tumor targeting"
+      ],
+      "development_stage": "preclinical",
+      "companies": [],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-lnp-precision",
+      "name": "Precision LNP Design (Penn Engineering)",
+      "category": "gene_delivery",
+      "delivery_type": "non-viral",
+      "mechanism": "Redesigned LNP components for improved mRNA delivery precision",
+      "key_features": [
+        "Redesigned ionizable lipids",
+        "Improved tissue specificity",
+        "Enhanced expression control"
+      ],
+      "applications": [
+        "Targeted gene therapy",
+        "Precision medicine delivery"
+      ],
+      "development_stage": "preclinical",
+      "companies": [
+        "University of Pennsylvania"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-adenoviral",
+      "name": "Adenoviral Vectors",
+      "category": "gene_delivery",
+      "delivery_type": "viral vector",
+      "mechanism": "DNA virus vector for transient gene expression",
+      "key_features": [
+        "High transduction efficiency",
+        "Large cargo capacity",
+        "Transient expression",
+        "Pre-existing immunity concern"
+      ],
+      "applications": [
+        "Vaccines (J&J COVID)",
+        "Cancer gene therapy",
+        "Oncolytic virotherapy"
+      ],
+      "development_stage": "clinical/commercial",
+      "companies": [
+        "Janssen",
+        "AstraZeneca"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-lentiviral",
+      "name": "Lentiviral Vectors",
+      "category": "gene_delivery",
+      "delivery_type": "viral vector",
+      "mechanism": "Integrating retroviral vector for stable gene expression",
+      "key_features": [
+        "Stable integration",
+        "Large cargo capacity (~8kb)",
+        "Infects dividing and non-dividing cells"
+      ],
+      "applications": [
+        "CAR-T cell engineering",
+        "Ex vivo gene therapy",
+        "Stem cell modification"
+      ],
+      "development_stage": "clinical/commercial",
+      "companies": [
+        "Kite Pharma",
+        "Novartis",
+        "Bluebird Bio"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-lnp-vs-aav",
+      "name": "LNP vs AAV Debate (2026)",
+      "category": "gene_delivery",
+      "delivery_type": "comparison",
+      "mechanism": "Emerging comparison of LNP and AAV for in vivo gene therapy",
+      "key_features": [
+        "LNPs gaining ground for in vivo editing",
+        "AAV established for gene addition",
+        "Redosing possible with LNPs",
+        "AAV has durability advantage"
+      ],
+      "applications": [
+        "In vivo gene therapy",
+        "Gene editing delivery"
+      ],
+      "development_stage": "evolving",
+      "companies": [],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-nonviral-diabetes",
+      "name": "Non-Viral LNP Diabetes Gene Therapy (Genprex)",
+      "category": "gene_delivery",
+      "delivery_type": "non-viral",
+      "mechanism": "LNP delivery of genes for diabetes treatment without viral vectors",
+      "key_features": [
+        "Non-viral approach",
+        "Diabetes gene therapy",
+        "LNP-mediated delivery"
+      ],
+      "applications": [
+        "Type 1 diabetes",
+        "Type 2 diabetes",
+        "Insulin regulation"
+      ],
+      "development_stage": "preclinical",
+      "companies": [
+        "Genprex"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-exosome",
+      "name": "Exosome-Based Delivery",
+      "category": "gene_delivery",
+      "delivery_type": "non-viral",
+      "mechanism": "Natural extracellular vesicles for nucleic acid and protein delivery",
+      "key_features": [
+        "Natural biocompatibility",
+        "Cross biological barriers",
+        "Low immunogenicity",
+        "BBB penetration potential"
+      ],
+      "applications": [
+        "Brain delivery",
+        "Cancer therapy",
+        "RNA delivery"
+      ],
+      "development_stage": "preclinical",
+      "companies": [
+        "Codiak BioSciences",
+        "Evox Therapeutics"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-polymer",
+      "name": "Polymer-Based Nanoparticles",
+      "category": "gene_delivery",
+      "delivery_type": "non-viral",
+      "mechanism": "Synthetic polymer carriers for nucleic acid delivery",
+      "key_features": [
+        "Tunable properties",
+        "Biodegradable options",
+        "Multiple formulations"
+      ],
+      "applications": [
+        "DNA delivery",
+        "RNA delivery",
+        "CRISPR delivery"
+      ],
+      "development_stage": "preclinical",
+      "companies": [],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-aav-serotypes",
+      "name": "AAV Serotype Engineering",
+      "category": "gene_delivery",
+      "delivery_type": "viral vector",
+      "mechanism": "Engineered AAV capsids for enhanced tissue specificity",
+      "key_features": [
+        "Directed evolution",
+        "Tissue-specific tropism",
+        "Immune evasion",
+        "Improved transduction"
+      ],
+      "applications": [
+        "CNS delivery",
+        "Muscle targeting",
+        "Liver targeting",
+        "Retinal delivery"
+      ],
+      "development_stage": "clinical",
+      "companies": [
+        "RegenxBio",
+        "Dyno Therapeutics",
+        "4D Molecular Therapeutics"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "GDL-lnp-rna-therapeutics",
+      "name": "LNP for RNA Therapeutics",
+      "category": "gene_delivery",
+      "delivery_type": "non-viral",
+      "mechanism": "LNP delivery enabling RNA therapeutic revolution",
+      "key_features": [
+        "Clinically validated platform",
+        "Enables mRNA, siRNA, saRNA delivery",
+        "Scalable manufacturing"
+      ],
+      "applications": [
+        "mRNA vaccines",
+        "RNA therapeutics",
+        "Gene editing components"
+      ],
+      "development_stage": "commercial",
+      "companies": [
+        "Moderna",
+        "Pfizer",
+        "Alnylam"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    }
+  ]
+}

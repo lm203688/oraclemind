@@ -1,0 +1,104 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "MineralDB",
+  "description": "Extraterrestrial mineral & asteroid mining knowledge base - minerals, asteroids, mining tech",
+  "url": "https://mineral.genetech.tools",
+  "category": "外星矿物",
+  "api": {
+    "type": "rest",
+    "base_url": "https://mineral.genetech.tools/api",
+    "openapi": "https://mineral.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/minerals.json",
+        "method": "GET",
+        "description": "Get minerals data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/asteroids.json",
+        "method": "GET",
+        "description": "Get asteroids data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/mining_tech.json",
+        "method": "GET",
+        "description": "Get mining tech data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/space_resources.json",
+        "method": "GET",
+        "description": "Get space resources data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/processing_methods.json",
+        "method": "GET",
+        "description": "Get processing methods data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/resource_assessment.json",
+        "method": "GET",
+        "description": "Get resource assessment data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://exo.genetech.tools",
+      "title": "小行星探测任务"
+    },
+    {
+      "rel": "related",
+      "href": "https://nuclear.genetech.tools",
+      "title": "核燃料太空矿物"
+    },
+    {
+      "rel": "related",
+      "href": "https://nuclear.genetech.tools",
+      "title": "太空太阳能"
+    },
+    {
+      "rel": "related",
+      "href": "https://deepsea.genetech.tools",
+      "title": "深海矿物对比"
+    }
+  ]
+}

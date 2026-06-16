@@ -1,0 +1,1568 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-31T22:02:40.222Z",
+  "description": "sdks库",
+  "entities": [
+    {
+      "id": "SDK-001",
+      "name": "Claude Agent SDK",
+      "vendor": "Anthropic",
+      "language": "Python",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "原生MCP支持",
+        "多步骤agent",
+        "guardrails"
+      ],
+      "pros": [
+        "Anthropic官方",
+        "MCP原生集成",
+        "安全护栏"
+      ],
+      "cons": [
+        "仅Claude模型",
+        "较新生态小"
+      ]
+    },
+    {
+      "id": "SDK-002",
+      "name": "OpenAI Agents SDK",
+      "vendor": "OpenAI",
+      "language": "Python",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "Agent交接",
+        "guardrails",
+        "tracing"
+      ],
+      "pros": [
+        "OpenAI官方",
+        "Agent交接优雅",
+        "内置tracing"
+      ],
+      "cons": [
+        "仅OpenAI模型",
+        "无内置记忆"
+      ]
+    },
+    {
+      "id": "SDK-003",
+      "name": "Google ADK",
+      "vendor": "Google",
+      "language": "Python",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "A2A协议原生",
+        "多Agent编排",
+        "内置评估"
+      ],
+      "pros": [
+        "A2A原生",
+        "Google生态",
+        "多模型支持"
+      ],
+      "cons": [
+        "非常新",
+        "文档少",
+        "生态小"
+      ]
+    },
+    {
+      "id": "SDK-004",
+      "name": "LangGraph",
+      "vendor": "LangChain",
+      "language": "Python/JS",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "状态图",
+        "持久化",
+        "人机协作",
+        "时间旅行调试"
+      ],
+      "pros": [
+        "最成熟",
+        "社区大",
+        "可视化调试"
+      ],
+      "cons": [
+        "学习曲线陡",
+        "复杂度高",
+        "性能开销大"
+      ]
+    },
+    {
+      "id": "SDK-005",
+      "name": "CrewAI",
+      "vendor": "CrewAI",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "角色定义",
+        "任务委派",
+        "流程编排",
+        "记忆系统"
+      ],
+      "pros": [
+        "概念直观",
+        "上手快",
+        "角色扮演模式"
+      ],
+      "cons": [
+        "灵活性有限",
+        "调试困难",
+        "企业版收费"
+      ]
+    },
+    {
+      "id": "SDK-006",
+      "name": "AutoGen/AG2",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "对话式多Agent",
+        "代码执行",
+        "人机协作"
+      ],
+      "pros": [
+        "微软背书",
+        "研究导向",
+        "灵活对话模式"
+      ],
+      "cons": [
+        "API不稳定",
+        "文档混乱",
+        "版本迁移痛苦"
+      ]
+    },
+    {
+      "id": "SDK-007",
+      "name": "Smolagents",
+      "vendor": "HuggingFace",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "轻量级",
+        "代码Agent",
+        "HF模型集成"
+      ],
+      "pros": [
+        "极简",
+        "HF生态",
+        "代码优先"
+      ],
+      "cons": [
+        "单Agent",
+        "功能少",
+        "生态小"
+      ]
+    },
+    {
+      "id": "SDK-008",
+      "name": "Pydantic AI",
+      "vendor": "Pydantic",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "类型安全",
+        "依赖注入",
+        "多模型支持"
+      ],
+      "pros": [
+        "类型安全",
+        "Pydantic生态",
+        "模型无关"
+      ],
+      "cons": [
+        "单Agent",
+        "无记忆",
+        "新项目"
+      ]
+    },
+    {
+      "id": "SDK-009",
+      "name": "Mastra",
+      "vendor": "Mastra",
+      "language": "TypeScript",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "TypeScript原生",
+        "工作流",
+        "RAG集成"
+      ],
+      "pros": [
+        "TS开发者友好",
+        "全栈方案"
+      ],
+      "cons": [
+        "TS only",
+        "新项目",
+        "社区小"
+      ]
+    },
+    {
+      "id": "SDK-010",
+      "name": "Dify",
+      "vendor": "LangGenius",
+      "language": "Python/TS",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "可视化编排",
+        "插件市场",
+        "RAG",
+        "工作流"
+      ],
+      "pros": [
+        "低代码",
+        "可视化",
+        "插件生态",
+        "中文友好"
+      ],
+      "cons": [
+        "定制性差",
+        "性能开销",
+        "复杂场景受限"
+      ]
+    },
+    {
+      "id": "SDK-011",
+      "name": "Semantic Kernel",
+      "vendor": "Microsoft",
+      "language": "C#/Python/Java",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "企业级",
+        "多语言",
+        "插件系统",
+        "流程编排"
+      ],
+      "pros": [
+        "企业级支持",
+        "多语言",
+        "Azure集成",
+        "成熟稳定"
+      ],
+      "cons": [
+        "C#优先",
+        "学习曲线陡",
+        "Python支持弱于C#"
+      ]
+    },
+    {
+      "id": "SDK-012",
+      "name": "Phidata",
+      "vendor": "Phidata",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "Agent类",
+        "工具集成",
+        "知识库",
+        "多模型"
+      ],
+      "pros": [
+        "简单易用",
+        "内置知识库",
+        "快速原型"
+      ],
+      "cons": [
+        "社区小",
+        "定制性有限",
+        "文档不完善"
+      ]
+    },
+    {
+      "id": "SDK-013",
+      "name": "LlamaIndex",
+      "vendor": "LlamaIndex",
+      "language": "Python/TS",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "RAG专精",
+        "数据连接器",
+        "Agent工作流",
+        "查询引擎"
+      ],
+      "pros": [
+        "RAG最强",
+        "数据连接器丰富",
+        "文档好"
+      ],
+      "cons": [
+        "RAG偏重",
+        "Agent功能较新",
+        "性能开销"
+      ]
+    },
+    {
+      "id": "SDK-014",
+      "name": "Haystack",
+      "vendor": "deepset",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "Pipeline架构",
+        "RAG",
+        "搜索",
+        "Agent"
+      ],
+      "pros": [
+        "Pipeline灵活",
+        "生产就绪",
+        "搜索专精"
+      ],
+      "cons": [
+        "Agent功能较新",
+        "社区小于LangChain",
+        "学习曲线"
+      ]
+    },
+    {
+      "id": "SDK-015",
+      "name": "Agency Swarm",
+      "vendor": "VRSEN",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "Agent层级",
+        "角色化",
+        "自动工具创建"
+      ],
+      "pros": [
+        "层级结构清晰",
+        "自动工具生成",
+        "OpenAI原生"
+      ],
+      "cons": [
+        "仅OpenAI",
+        "社区小",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-016",
+      "name": "TaskWeaver",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "代码解释器",
+        "数据分析",
+        "插件系统"
+      ],
+      "pros": [
+        "数据分析专精",
+        "代码执行安全",
+        "微软支持"
+      ],
+      "cons": [
+        "单Agent",
+        "数据分析偏重",
+        "社区小"
+      ]
+    },
+    {
+      "id": "SDK-017",
+      "name": "Camel-AI",
+      "vendor": "Camel-AI",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "角色扮演",
+        "多Agent协作",
+        "社会模拟"
+      ],
+      "pros": [
+        "角色扮演创新",
+        "研究导向",
+        "多Agent交互"
+      ],
+      "cons": [
+        "研究阶段",
+        "生产就绪度低",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-018",
+      "name": "Vercel AI SDK",
+      "vendor": "Vercel",
+      "language": "TypeScript",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "全栈AI",
+        "流式UI",
+        "多模型",
+        "工具调用"
+      ],
+      "pros": [
+        "Next.js集成",
+        "流式渲染",
+        "多模型支持",
+        "生产就绪"
+      ],
+      "cons": [
+        "TS only",
+        "前端偏重",
+        "复杂Agent逻辑受限"
+      ]
+    },
+    {
+      "id": "SDK-019",
+      "name": "Rig",
+      "vendor": "0xPlaygrounds",
+      "language": "Rust",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "Rust原生",
+        "高性能",
+        "Agent编排"
+      ],
+      "pros": [
+        "极致性能",
+        "类型安全",
+        "Rust生态"
+      ],
+      "cons": [
+        "Rust only",
+        "极新",
+        "社区极小"
+      ]
+    },
+    {
+      "id": "SDK-020",
+      "name": "Portkey AI Gateway",
+      "vendor": "Portkey",
+      "language": "Python/TS",
+      "type": "Agent网关",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "多模型路由",
+        "可观测性",
+        "Fallback",
+        "缓存"
+      ],
+      "pros": [
+        "模型无关",
+        "生产级网关",
+        "监控完善"
+      ],
+      "cons": [
+        "网关非框架",
+        "无Agent逻辑",
+        "付费功能"
+      ]
+    },
+    {
+      "id": "SDK-021",
+      "name": "Coze",
+      "vendor": "字节跳动",
+      "language": "Python/TS",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "可视化编排",
+        "插件市场",
+        "多模型",
+        "工作流"
+      ],
+      "pros": [
+        "中文友好",
+        "低代码",
+        "字节生态",
+        "免费额度"
+      ],
+      "cons": [
+        "定制性差",
+        "平台锁定",
+        "复杂场景受限"
+      ]
+    },
+    {
+      "id": "SDK-022",
+      "name": "Flowise",
+      "vendor": "FlowiseAI",
+      "language": "TypeScript",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "拖拽式编排",
+        "LangChain集成",
+        "API导出"
+      ],
+      "pros": [
+        "零代码",
+        "可视化",
+        "快速原型"
+      ],
+      "cons": [
+        "定制性差",
+        "性能开销",
+        "复杂逻辑受限"
+      ]
+    },
+    {
+      "id": "SDK-023",
+      "name": "n8n AI Agent",
+      "vendor": "n8n",
+      "language": "TypeScript",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "工作流自动化",
+        "AI节点",
+        "400+集成",
+        "自托管"
+      ],
+      "pros": [
+        "集成最多",
+        "自托管",
+        "可视化",
+        "开源"
+      ],
+      "cons": [
+        "Agent功能新",
+        "AI深度有限",
+        "复杂推理受限"
+      ]
+    },
+    {
+      "id": "SDK-024",
+      "name": "AgentScope",
+      "vendor": "Alibaba",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "分布式Agent",
+        "消息机制",
+        "服务集成"
+      ],
+      "pros": [
+        "分布式设计",
+        "阿里背书",
+        "中文文档"
+      ],
+      "cons": [
+        "新项目",
+        "社区小",
+        "文档不完善"
+      ]
+    },
+    {
+      "id": "SDK-025",
+      "name": "Bee Agent Framework",
+      "vendor": "IBM",
+      "language": "TypeScript",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "企业级",
+        "可观测性",
+        "多模型",
+        "工具集成"
+      ],
+      "pros": [
+        "IBM背书",
+        "企业级设计",
+        "TypeScript"
+      ],
+      "cons": [
+        "极新",
+        "社区小",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-026",
+      "name": "AutoGen Studio",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "可视化AutoGen",
+        "拖拽编排",
+        "Web UI"
+      ],
+      "pros": [
+        "AutoGen可视化",
+        "微软支持",
+        "快速原型"
+      ],
+      "cons": [
+        "功能有限",
+        "不稳定",
+        "生产就绪度低"
+      ]
+    },
+    {
+      "id": "SDK-027",
+      "name": "Instructor",
+      "vendor": "Jason Liu",
+      "language": "Python/TS",
+      "type": "Agent工具库",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "结构化输出",
+        "Pydantic验证",
+        "重试机制"
+      ],
+      "pros": [
+        "结构化输出最强",
+        "简单可靠",
+        "多模型支持"
+      ],
+      "cons": [
+        "非Agent框架",
+        "无编排",
+        "工具库定位"
+      ]
+    },
+    {
+      "id": "SDK-028",
+      "name": "Mirage",
+      "vendor": "Mirage",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "多Agent沙箱",
+        "安全执行",
+        "代码Agent"
+      ],
+      "pros": [
+        "安全沙箱",
+        "代码执行安全",
+        "多Agent"
+      ],
+      "cons": [
+        "极新",
+        "社区小",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-029",
+      "name": "DSPy",
+      "vendor": "Stanford",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "声明式编程",
+        "自动优化",
+        "模块化"
+      ],
+      "pros": [
+        "学术前沿",
+        "自动Prompt优化",
+        "模块化设计"
+      ],
+      "cons": [
+        "学习曲线陡",
+        "生产就绪度低",
+        "社区小"
+      ]
+    },
+    {
+      "id": "SDK-030",
+      "name": "Fixpoint/Wordware",
+      "vendor": "Fixpoint",
+      "language": "Python/TS",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "可视化编排",
+        "自然语言编程",
+        "API导出"
+      ],
+      "pros": [
+        "自然语言编程",
+        "可视化",
+        "快速迭代"
+      ],
+      "cons": [
+        "新项目",
+        "社区小",
+        "定制性有限"
+      ]
+    },
+    {
+      "id": "SDK-031",
+      "name": "Letta (MemGPT)",
+      "vendor": "Letta",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "虚拟上下文管理",
+        "无限记忆",
+        "自动分页",
+        "状态管理"
+      ],
+      "pros": [
+        "记忆管理最强",
+        "无限上下文",
+        "研究背书"
+      ],
+      "cons": [
+        "复杂度高",
+        "部署要求高",
+        "社区中等"
+      ]
+    },
+    {
+      "id": "SDK-032",
+      "name": "OpenRouter SDK",
+      "vendor": "OpenRouter",
+      "language": "Python/TS",
+      "type": "Agent网关",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "100+模型路由",
+        "统一API",
+        "价格比较"
+      ],
+      "pros": [
+        "模型最多",
+        "统一接口",
+        "价格透明"
+      ],
+      "cons": [
+        "网关非框架",
+        "延迟较高",
+        "无Agent逻辑"
+      ]
+    },
+    {
+      "id": "SDK-openai-agents",
+      "name": "OpenAI Agents SDK",
+      "type": "agent_framework",
+      "company": "OpenAI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "Released March 2025, replaced experimental Swarm framework",
+        "Production-grade toolkit with handoff pattern",
+        "Tight integration with OpenAI Responses API and function calling",
+        "Native MCP support",
+        "Guardrails and tracing built-in",
+        "Best for OpenAI-native workloads"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-ms-agent-framework",
+      "name": "Microsoft Agent Framework 1.0",
+      "type": "agent_framework",
+      "company": "Microsoft",
+      "language": "Python/.NET",
+      "license": "MIT",
+      "key_features": [
+        "GA release April 3, 2026",
+        "Unified AutoGen + Semantic Kernel into single production SDK",
+        "Stable APIs across .NET and Python",
+        "GraphFlow for explicit workflow control",
+        "AgentSession for persistent conversation state",
+        "MCP server support for standardized tool integration",
+        "Hosted tools for Azure-native execution"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-mastra",
+      "name": "Mastra",
+      "type": "agent_framework",
+      "company": "Mastra",
+      "language": "TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "TypeScript-first AI agent framework",
+        "Built-in RAG, evals, and observability",
+        "Production-ready with deployment tooling"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-pydantic-ai",
+      "name": "Pydantic AI",
+      "type": "agent_framework",
+      "company": "Pydantic Team",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "Type-safe agent framework built on Pydantic",
+        "Model-agnostic with structured output",
+        "Zero overhead (0-10ms per call)",
+        "Best for teams wanting minimal framework lock-in"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-smolagents",
+      "name": "Smolagents",
+      "type": "agent_framework",
+      "company": "Hugging Face",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "Lightweight agent framework from Hugging Face",
+        "Code-based agent actions (not just tool calls)",
+        "Minimal abstraction, easy to understand"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-hermes",
+      "name": "Hermes Agent",
+      "type": "agent_framework",
+      "company": "Hermes AI",
+      "language": "Python/TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "从经验中创建技能",
+        "使用中改进技能",
+        "构建用户模型",
+        "长期自主运行",
+        "安全架构"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-openclaw",
+      "name": "OpenClaw",
+      "type": "agent_framework",
+      "company": "开源社区",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "最广泛的集成支持",
+        "社区构建技能",
+        "多渠道支持",
+        "开源Agent平台"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-deerflow",
+      "name": "DeerFlow",
+      "type": "agent_framework",
+      "company": "ByteDance",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "多Agent协作",
+        "研究导向",
+        "深度搜索集成",
+        "报告生成"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-agno",
+      "name": "AGNO (Phidata v2)",
+      "type": "agent_framework",
+      "company": "AGNO",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "轻量级Agent框架",
+        "多模型支持",
+        "工具集成",
+        "Agent团队协作"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-mem0",
+      "name": "Mem0 SDK",
+      "type": "memory_sdk",
+      "company": "Mem0",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "AI Agent记忆层",
+        "图记忆",
+        "自动记忆提取",
+        "跨会话持久化",
+        "55K+ GitHub Stars"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-zep",
+      "name": "Zep",
+      "type": "memory_sdk",
+      "company": "Zep",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "时序关系记忆",
+        "知识图谱",
+        "对话历史管理",
+        "结构化记忆提取"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-langmem",
+      "name": "LangMem",
+      "type": "memory_sdk",
+      "company": "LangChain",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "LangGraph原生记忆",
+        "工作流编排集成",
+        "记忆工具链",
+        "语义搜索"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-hindsight",
+      "name": "Hindsight",
+      "type": "memory_sdk",
+      "company": "Hindsight AI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "记忆准确率91.4%",
+        "自动记忆管理",
+        "上下文感知检索",
+        "轻量级部署"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-cognee",
+      "name": "Cognee",
+      "type": "memory_sdk",
+      "company": "Cognee",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "认知记忆架构",
+        "知识图谱构建",
+        "多模态记忆",
+        "可扩展存储"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-memvid",
+      "name": "Memvid",
+      "type": "memory_sdk",
+      "company": "开源社区",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "视频记忆编码",
+        "多模态记忆检索",
+        "视觉上下文保存"
+      ],
+      "status": "experimental",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-memoclaw",
+      "name": "MemoClaw",
+      "type": "memory_sdk",
+      "company": "MemoClaw",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "Agent记忆管理",
+        "跨平台记忆同步",
+        "结构化记忆存储"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-evermind",
+      "name": "EverMind",
+      "type": "memory_sdk",
+      "company": "EverMind AI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "Zep替代方案",
+        "长期记忆管理",
+        "对话理解",
+        "个性化记忆"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-fastmcp",
+      "name": "FastMCP SDK",
+      "type": "mcp_sdk",
+      "company": "FastMCP",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "快速MCP Server开发",
+        "类型安全",
+        "自动文档生成",
+        "热重载"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-crewai-v2",
+      "name": "CrewAI v2",
+      "type": "agent_framework",
+      "company": "CrewAI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "多Agent协作",
+        "角色定义",
+        "任务委派",
+        "流程编排",
+        "企业版支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-autogen-v2",
+      "name": "AutoGen v0.5 (AG2)",
+      "type": "agent_framework",
+      "company": "Microsoft",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "多Agent对话",
+        "代码执行",
+        "人机协作",
+        "可组合Agent"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-semantic-kernel-v2",
+      "name": "Semantic Kernel v2",
+      "type": "agent_sdk",
+      "company": "Microsoft",
+      "language": "C#/Python/Java",
+      "license": "MIT",
+      "key_features": [
+        "企业级Agent SDK",
+        "多语言支持",
+        "插件架构",
+        "AI编排"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-bee-v2",
+      "name": "Bee Agent Framework v2",
+      "type": "agent_framework",
+      "company": "IBM",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "IBM官方Agent框架",
+        "TypeScript原生",
+        "企业集成",
+        "ACP协议支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-inngest",
+      "name": "Inngest",
+      "type": "agent_orchestration",
+      "company": "Inngest",
+      "language": "TypeScript/Python",
+      "license": "MIT",
+      "key_features": [
+        "Durable execution for AI agents",
+        "Event-driven workflow orchestration",
+        "Automatic retries and timeouts",
+        "Step functions for long-running agents",
+        "Production-grade reliability"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-trigger-dev",
+      "name": "Trigger.dev",
+      "type": "agent_orchestration",
+      "company": "Trigger.dev",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "TypeScript-native AI workflow platform",
+        "Durable tasks with automatic retries",
+        "Background AI jobs",
+        "Real-time streaming",
+        "Integration with OpenAI/Anthropic"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-temporal-agents",
+      "name": "Temporal Agent Workflow",
+      "type": "agent_orchestration",
+      "company": "Temporal",
+      "language": "TypeScript/Go/Python",
+      "license": "MIT",
+      "key_features": [
+        "Stateful workflow engine for AI agents",
+        "Durable execution with exact-once semantics",
+        "Long-running agent orchestration",
+        "Built-in observability and debugging",
+        "Scales to millions of concurrent workflows"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-google-a2a",
+      "name": "Google A2A SDK",
+      "type": "agent_protocol_sdk",
+      "company": "Google",
+      "language": "Python/TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "Official SDK for Agent-to-Agent protocol",
+        "Agent Card discovery and registration",
+        "Task-based communication",
+        "150+ organizations adopted",
+        "Native integration with Google ADK"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-openai-responses",
+      "name": "OpenAI Responses API SDK",
+      "type": "agent_sdk",
+      "company": "OpenAI",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "New Responses API for agent interactions",
+        "Built-in tool use and function calling",
+        "Streaming support",
+        "MCP integration",
+        "Replaces Chat Completions for agents"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-langgraph-platform",
+      "name": "LangGraph Platform",
+      "type": "agent_platform",
+      "company": "LangChain",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "Managed LangGraph deployment platform",
+        "Built-in persistence and memory",
+        "Cron triggers and webhooks",
+        "Real-time streaming",
+        "Human-in-the-loop support"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-scrapling",
+      "name": "Scrapling",
+      "category": "sdks",
+      "type": "Web Scraping Framework",
+      "language": "Python",
+      "version": "0.4.8",
+      "github": "https://github.com/D4Vinci/Scrapling",
+      "pypi": "scrapling",
+      "description": "Adaptive web scraping framework with anti-bot bypass, smart element tracking, and AI agent integration",
+      "key_features": [
+        "Adaptive element selection (no fragile selectors)",
+        "Native Cloudflare/anti-bot bypass",
+        "Three-tier fetcher system",
+        "Built-in Spider framework",
+        "MCP Server for AI agents",
+        "Auto-resuming crawls"
+      ],
+      "installation": "pip install scrapling",
+      "license": "BSD-3",
+      "sources": [
+        "web_search",
+        "github"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T22:02:40.222Z",
+      "last_updated": "2026-05-31T22:02:40.222Z"
+    }
+  ]
+}

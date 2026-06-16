@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "ExoDB",
+  "name_for_model": "exodb",
+  "description_for_human": "Exoplanet and space exploration knowledge base covering exoplanets, missions, telescopes, astrobiology, space mining, planetary science, and space habitats",
+  "description_for_model": "Exoplanet and space exploration knowledge base covering exoplanets, missions, telescopes, astrobiology, space mining, planetary science, and space habitats. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://exo.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://exo.genetech.tools/"
+}

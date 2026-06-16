@@ -1,0 +1,1438 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-05T14:16:40.000Z",
+  "description": "生物制造库 - 新增类别",
+  "entities": [
+    {
+      "id": "BM-001",
+      "name": "生物铸造厂Biofoundry",
+      "type": "自动化平台",
+      "description": "自动化设计-构建-测试-学习(DBTL)循环的生物实验平台",
+      "application": "菌株工程/酶优化/代谢通路设计",
+      "companies": [
+        "Ginkgo Bioworks",
+        "Amyris",
+        "Zymergen(Ginkgo)",
+        "Emerald Cloud Lab"
+      ],
+      "maturity": "商用",
+      "trend": "Ginkgo Bioworks全球最大生物铸造厂；自动化降低合成生物学开发门槛"
+    },
+    {
+      "id": "BM-002",
+      "name": "精密发酵Precision Fermentation",
+      "type": "发酵工程",
+      "description": "工程微生物精确生产目标分子(蛋白/脂肪/化学品)",
+      "application": "无动物乳蛋白/特殊脂肪/食品原料/工业化学品",
+      "companies": [
+        "Perfect Day",
+        "Motif FoodWorks",
+        "Geltor",
+        "EVERY Company"
+      ],
+      "maturity": "商用",
+      "trend": "Perfect Day无动物乳清蛋白已上市；成本持续下降；替代蛋白市场增长"
+    },
+    {
+      "id": "BM-003",
+      "name": "气体发酵Gas Fermentation",
+      "type": "碳利用",
+      "description": "工程微生物利用CO/CO₂/H₂等气体为碳源/能源生产化学品",
+      "application": "废气制乙醇/碳回收/可持续航空燃料",
+      "companies": [
+        "LanzaTech",
+        "Arcadia eFuels",
+        "Cemvita Factory"
+      ],
+      "maturity": "商用(乙醇)/开发中(其他产品)",
+      "trend": "LanzaTech中国钢厂废气制乙醇运营中；扩展到航空燃料和化学品"
+    },
+    {
+      "id": "BM-004",
+      "name": "细胞培养肉Cultured Meat",
+      "type": "食品生物制造",
+      "description": "动物细胞体外培养生产肉类，无需屠宰",
+      "application": "牛肉/鸡肉/海鲜/宠物食品",
+      "companies": [
+        "Upside Foods",
+        "GOOD Meat",
+        "Mosa Meat",
+        "Believer Meats"
+      ],
+      "maturity": "商用初期",
+      "trend": "美国/新加坡批准销售；成本从$330K/汉堡降至$10-50范围；规模化挑战"
+    },
+    {
+      "id": "BM-005",
+      "name": "生物基材料Biobased Materials",
+      "type": "材料生物制造",
+      "description": "生物法生产塑料/纤维/橡胶等材料替代石油基产品",
+      "application": "生物塑料(PHA/PLA)/生物纤维/生物橡胶",
+      "companies": [
+        "Genomatica",
+        "Zymergen",
+        "Newlight Technologies",
+        "Danimer Scientific"
+      ],
+      "maturity": "商用/扩产",
+      "trend": "Genomatica生物BDO规模化生产；PHA可生物降解塑料需求增长"
+    },
+    {
+      "id": "BM-006",
+      "name": "无细胞生物制造Cell-Free Biomanufacturing",
+      "type": "无细胞合成",
+      "description": "无活细胞条件下的生化合成，避免细胞生长限制",
+      "application": "药物蛋白/有毒蛋白/快速原型/按需生产",
+      "companies": [
+        "Sutro Biopharma",
+        "Tierra Biosciences",
+        "Synthex"
+      ],
+      "maturity": "商用",
+      "trend": "Sutro卵巢癌药luvelta III期；24小时设计到蛋白；与AI蛋白设计结合"
+    },
+    {
+      "id": "BM-007",
+      "name": "酶工程Enzyme Engineering",
+      "type": "催化剂设计",
+      "description": "AI/定向进化设计高效稳定酶催化剂",
+      "application": "工业催化/药物合成/食品加工/洗涤剂",
+      "companies": [
+        "Codexis",
+        "Arzeda",
+        "Novozymes(诺维信)",
+        "BASF"
+      ],
+      "maturity": "商用",
+      "trend": "AI设计酶加速；Codexis CodeEvolver平台；定向进化(Nobel 2018)与AI结合"
+    },
+    {
+      "id": "BM-008",
+      "name": "合成生物学规模化放大",
+      "type": "工艺工程",
+      "description": "从实验室到工业规模的生物工艺放大",
+      "application": "发酵放大/下游纯化/连续生物工艺",
+      "companies": [
+        "Ginkgo Bioworks",
+        "DSM",
+        "Lonza",
+        "Catalent"
+      ],
+      "maturity": "商用",
+      "trend": "连续生物工艺替代批次生产；数字化/自动化工厂；AI工艺优化"
+    },
+    {
+      "id": "BM-009",
+      "name": "生物制造法规与标准",
+      "type": "政策/标准",
+      "description": "生物制造产品的安全评估/质量标准/监管框架",
+      "application": "食品安全/环境释放/药品GMP",
+      "companies": [
+        "FDA/EFSA/各国监管机构"
+      ],
+      "maturity": "持续演进",
+      "trend": "培养肉监管框架建立中；生物基产品认证标准；合成生物学产品审批路径"
+    },
+    {
+      "id": "BM-010",
+      "name": "AI+生物制造",
+      "type": "跨领域融合",
+      "description": "AI驱动的生物制造全流程优化，从设计到生产",
+      "application": "代谢通路设计/发酵优化/质量控制/供应链",
+      "companies": [
+        "Ginkgo Bioworks",
+        "Recursion",
+        "Asimov"
+      ],
+      "maturity": "快速崛起",
+      "trend": "Asimov AI设计基因电路；Ginkgo AI优化菌株；2025-2026年最热趋势"
+    },
+    {
+      "id": "BM-011",
+      "name": "Nature BME 2025年度回顾",
+      "type": "行业趋势",
+      "description": "Nature BME 2025年终编辑：生物医学工程在广泛学科取得进展，2026年趋势展望",
+      "application": "再生医学/组织工程/神经工程/纳米医学",
+      "companies": [
+        "学术界"
+      ],
+      "maturity": "参考",
+      "trend": "跨学科融合加速；AI+生物工程成为核心驱动力",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s41551-026-01611-z",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-012",
+      "name": "JHU BME 2026突破",
+      "type": "研究突破",
+      "description": "JHU生物医学工程2026年3月突破：VR假肢训练/解码癌症转移/3D骨成像/可靠AI",
+      "application": "假肢/癌症/骨科/AI",
+      "companies": [
+        "Johns Hopkins University"
+      ],
+      "maturity": "研究阶段",
+      "trend": "VR+神经接口/单细胞追踪转移/3D成像诊断",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.bme.jhu.edu/news-events/news/the-research-buzz-bmes-latest-discoveries-2",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-013",
+      "name": "生物制造规模化2000L+",
+      "type": "产能扩展",
+      "description": "生物制造产能扩展，2000L+生物反应器安装，从实验室到工业规模",
+      "application": "生物制药/工业酶/食品蛋白",
+      "companies": [
+        "各生物制造企业"
+      ],
+      "maturity": "商用扩张",
+      "trend": "连续生物工艺替代批次；数字化/自动化工厂；模块化生物工厂",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://omanhealthexpo.com/newfront/news/the-future-of-bioengineering",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-014",
+      "name": "基因驱动技术进展",
+      "type": "基因驱动",
+      "description": "基因驱动技术快速推进，为公共卫生和生物保护提供新工具",
+      "application": "疟疾控制/入侵物种/农业害虫",
+      "companies": [
+        "Target Malaria/ISAAA"
+      ],
+      "maturity": "野外试验/监管审查",
+      "trend": "Gene Drive Monitor追踪2025-2026进展；非洲疟疾基因驱动试验推进",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.isaaa.org/webinars/2025/genedrive/default.asp",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-015",
+      "name": "2026细胞基因治疗预测",
+      "type": "行业趋势",
+      "description": "2026年细胞和基因治疗领域预测：可衡量的进展和成熟化",
+      "application": "基因治疗/细胞治疗/体内编辑",
+      "companies": [
+        "全行业"
+      ],
+      "maturity": "参考",
+      "trend": "从突破到成熟的过渡期；监管路径清晰化；制造工艺标准化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.cellgenetherapyreview.com",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-016",
+      "name": "AI驱动生物工艺优化",
+      "type": "数字化",
+      "description": "AI优化发酵/纯化/放大工艺参数，减少实验次数，加速工艺开发",
+      "application": "发酵优化/纯化工艺/放大生产",
+      "companies": [
+        "AspenTech",
+        "Sartorius",
+        "Cytiva"
+      ],
+      "maturity": "商用初期",
+      "trend": "数字孪生+AI优化成为生物工艺标配；2026年快速渗透"
+    },
+    {
+      "id": "BM-017",
+      "name": "连续生物制造CBM",
+      "type": "制造模式",
+      "description": "从批次生产到连续生产，提高产率/降低成本/减少占地面积",
+      "application": "生物药/疫苗/细胞治疗",
+      "companies": [
+        "Cytiva",
+        "Sartorius",
+        "Merck KGaA"
+      ],
+      "maturity": "示范/早期商用",
+      "trend": "FDA鼓励连续制造；2026年生物药连续生产项目增多"
+    },
+    {
+      "id": "BM-018",
+      "name": "mRNA制造平台",
+      "type": "制造平台",
+      "description": "mRNA疫苗/药物规模化制造平台，体外转录+LNP封装",
+      "application": "mRNA疫苗/mRNA治疗/个性化新抗原疫苗",
+      "companies": [
+        "Moderna",
+        "BioNTech",
+        "CureVac"
+      ],
+      "maturity": "大规模商用",
+      "trend": "从COVID疫苗到肿瘤/罕见病mRNA疗法；2026年产能持续扩张"
+    },
+    {
+      "id": "BM-019",
+      "name": "基因治疗载体制造AAV",
+      "type": "制造平台",
+      "description": "腺相关病毒(AAV)载体大规模制造，基因治疗的核心瓶颈",
+      "application": "基因治疗/体内基因编辑递送",
+      "companies": [
+        "Catalent",
+        "Thermo Fisher",
+        "Lonza",
+        "Andelyn"
+      ],
+      "maturity": "商用扩张",
+      "trend": "AAV产能2026年大幅扩张；新载体设计降低剂量需求"
+    },
+    {
+      "id": "BM-020",
+      "name": "3D生物打印",
+      "type": "制造技术",
+      "description": "生物3D打印组织/器官模型，用于药物筛选和再生医学",
+      "application": "药物筛选/组织工程/个性化医疗",
+      "companies": [
+        "Organovo",
+        "CELLINK",
+        "Aspect Biosystems"
+      ],
+      "maturity": "研究/早期商用",
+      "trend": "2026年3D打印组织模型替代动物实验；器官打印仍需5+年"
+    },
+    {
+      "id": "BM-021",
+      "name": "类器官Organoid制造",
+      "type": "制造技术",
+      "description": "体外培养3D微型器官，模拟人体器官结构和功能",
+      "application": "药物筛选/疾病模型/个性化治疗",
+      "companies": [
+        "Hubrecht Organoid Technology",
+        "Emulate",
+        "Cellesce"
+      ],
+      "maturity": "研究/商业化初期",
+      "trend": "2026年类器官从研究到药物开发标准工具；Baby KJ CRISPR治疗验证类器官价值",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://capitalcell.com/it/decoding-2035",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-022",
+      "name": "合成生物学规模化放大",
+      "type": "工艺",
+      "description": "从实验室摇瓶到工业发酵罐的规模化放大，AI辅助缩小实验与生产差距",
+      "application": "生物制造/精密发酵/工业生物技术",
+      "companies": [
+        "Ginkgo Bioworks",
+        "Amyris",
+        "Zymergen"
+      ],
+      "maturity": "商用",
+      "trend": "AI+自动化缩小放大差距；2026年DBTL循环时间缩短50%+"
+    },
+    {
+      "id": "BM-023",
+      "name": "细胞治疗GMP制造",
+      "type": "制造平台",
+      "description": "CAR-T/TCR-T等细胞治疗的GMP级制造，自动化封闭系统降低成本",
+      "application": "CAR-T/TCR-T/TIL细胞治疗",
+      "companies": [
+        "Lonza",
+        "Catalent",
+        "Thermo Fisher",
+        "Miltenyi"
+      ],
+      "maturity": "商用",
+      "trend": "自动化封闭系统替代开放操作；2026年制造成本下降30%+"
+    },
+    {
+      "id": "BM-024",
+      "name": "生物制造市场$295B→$347B",
+      "type": "市场数据",
+      "description": "全球生物工程市场规模2025年2952.8亿美元，2026年预计3470.4亿美元，CAGR约17.5%",
+      "application": "全行业",
+      "companies": [
+        "全行业"
+      ],
+      "maturity": "参考",
+      "trend": "生物制造从利基到主流制造范式；AI+自动化驱动增长",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.precedenceresearch.com/bioengineering-market",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-025",
+      "name": "生物医学工程Nature 2026展望",
+      "type": "行业报告",
+      "description": "Nature BME 2026展望：2025年生物医学工程各领域进展，2026年前沿方向",
+      "application": "生物医学工程全领域",
+      "companies": [
+        "Nature"
+      ],
+      "maturity": "参考",
+      "trend": "跨学科融合加速；AI+生物+工程三位一体",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s41551-026-01611-z",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-026",
+      "name": "Baby Kj CRISPR首例婴儿治疗",
+      "type": "里程碑",
+      "description": "全球首例婴儿CRISPR基因编辑治疗成功案例，标志基因治疗新纪元",
+      "application": "遗传病/基因编辑治疗",
+      "companies": [
+        "多机构合作"
+      ],
+      "maturity": "里程碑",
+      "trend": "从成人到婴儿的基因治疗扩展；2026年更多儿科基因编辑治疗",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://capitalcell.com/it/decoding-2035",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-027",
+      "name": "单克隆抗体AI设计",
+      "type": "AI+生物制造",
+      "description": "AI从头设计单克隆抗体，Chai-2实现16%成功率，大幅缩短抗体药物开发周期",
+      "application": "抗体药物/蛋白治疗/诊断试剂",
+      "companies": [
+        "Chai Discovery",
+        "Absci",
+        "Generate Biomedicines"
+      ],
+      "maturity": "实验室/早期开发",
+      "trend": "AI抗体设计从概念到管线；2026年AI设计抗体进入临床",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://setr.stanford.edu/sites/default/files/2026-01/SETR2026_02-Biotech_web-260109.pdf",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-028",
+      "name": "生物制造ESG与可持续性",
+      "type": "可持续性",
+      "description": "生物制造的ESG维度：低碳足迹/绿色化学/循环经济，替代石化路线的环保优势",
+      "application": "全行业",
+      "companies": [
+        "全行业"
+      ],
+      "maturity": "持续改进",
+      "trend": "ESG驱动生物制造投资决策；2026年碳足迹量化标准化"
+    },
+    {
+      "id": "BM-029",
+      "name": "CellGS 2026生物医学趋势",
+      "type": "行业趋势",
+      "description": "CellGS: 2026年生物医学由成熟平台碰撞驱动：工程细胞因子/细胞外囊泡/基因治疗",
+      "application": "全行业",
+      "companies": [
+        "CellGS"
+      ],
+      "maturity": "参考",
+      "trend": "成熟平台碰撞产生新机会；基因治疗制造平台化"
+    },
+    {
+      "id": "BM-030",
+      "name": "2026生物技术制造展望",
+      "type": "行业展望",
+      "description": "2026年生物技术制造展望：Resilience新制造平台服务基因治疗/细胞治疗/疫苗/蛋白质药物",
+      "application": "基因治疗/细胞治疗/疫苗",
+      "companies": [
+        "Resilience"
+      ],
+      "maturity": "扩张期",
+      "trend": "CDMO平台化制造；模块化工厂降低门槛"
+    },
+    {
+      "id": "BM-031",
+      "name": "JHU BME 2026突破",
+      "type": "学术突破",
+      "description": "JHU BME 2026年3月突破：VR假肢训练/解码癌症转移/3D骨成像/可靠AI",
+      "application": "假肢/癌症/骨科/AI",
+      "companies": [
+        "Johns Hopkins"
+      ],
+      "maturity": "研究前沿",
+      "trend": "VR+假肢训练改善康复；AI解码癌症转移机制"
+    },
+    {
+      "id": "BM-032",
+      "name": "BMES 2026年会",
+      "type": "学术会议",
+      "description": "BMES 2026年会10月21-24日Orlando，主题：工程师赋能人类健康",
+      "application": "全行业",
+      "companies": [
+        "BMES"
+      ],
+      "maturity": "参考",
+      "trend": "生物医学工程从学科到产业；跨学科合作加速"
+    },
+    {
+      "id": "BM-033",
+      "name": "Nature BME 2026生物医学工程前沿",
+      "type": "学术综述",
+      "description": "Nature BME: 生物医学工程前沿快速重塑转化研究和医学",
+      "application": "全行业",
+      "companies": [
+        "多机构"
+      ],
+      "maturity": "参考",
+      "trend": "生物医学工程从辅助到主导；跨学科融合加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s41551-026-01611-z",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-034",
+      "name": "2026生物技术10大突破趋势制造",
+      "type": "行业趋势",
+      "description": "Atlantis Bioscience: 2026年10大生物技术趋势，体内编辑/RNA疗法/空间组学/再生医学创新",
+      "application": "全行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "多阶段",
+      "trend": "体内编辑/RNA疗法/空间组学/再生医学四大热点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.atlantisbioscience.com/blog/2026-biotech-outlook-10-breakthrough-trends-scientists-need-to-watch",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-035",
+      "name": "BIOENG-2026 AI时代生物工程制造",
+      "type": "学术会议",
+      "description": "BIOENG-2026: AI时代的生物工程，推动生物制造研究前沿",
+      "application": "生物制造",
+      "companies": [
+        "多机构"
+      ],
+      "maturity": "参考",
+      "trend": "AI+生物制造深度融合；自动化和智能化加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://sciforum.net/event/BIOENG2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-036",
+      "name": "NEBEC2026东北生物工程会议",
+      "type": "学术会议",
+      "description": "NEBEC2026: 癌症工程/生物材料和组织工程/神经工程等议题",
+      "application": "多领域",
+      "companies": [
+        "Temple University"
+      ],
+      "maturity": "参考",
+      "trend": "生物工程从学科到产业；跨学科合作加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://sites.temple.edu/nebec2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-037",
+      "name": "连续生物制造Continuous Bioprocessing",
+      "type": "制造技术",
+      "description": "连续生物制造2026年进展：从批次到连续生产，提升产率和质量一致性",
+      "application": "生物药/疫苗/细胞治疗",
+      "companies": [
+        "Cytiva/Sartorius/Pall"
+      ],
+      "maturity": "商用初期",
+      "trend": "连续制造从概念到实施；监管框架逐步完善",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-038",
+      "name": "AI驱动生物工艺优化",
+      "type": "数字化",
+      "description": "AI驱动生物工艺优化2026年进展：机器学习优化发酵条件/纯化工艺/质量控制",
+      "application": "生物药/酶/化学品",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "商用初期",
+      "trend": "AI+生物工艺从试点到规模化；数据驱动决策",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-039",
+      "name": "模块化生物工厂2026",
+      "type": "工厂设计",
+      "description": "模块化生物工厂2026年进展：预制模块化生物制造设施，缩短建设周期降低投资门槛",
+      "application": "生物药/疫苗/细胞治疗",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "示范项目",
+      "trend": "模块化从概念到落地；分布式制造模式兴起",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-040",
+      "name": "无细胞合成生物学制造",
+      "type": "无细胞系统",
+      "description": "无细胞合成生物学制造2026年进展：无需活细胞的蛋白质/化学品生产，速度更快灵活性更高",
+      "application": "蛋白质/疫苗/化学品",
+      "companies": [
+        "Sutro Biopharma/Tierra Biosciences"
+      ],
+      "maturity": "商用初期",
+      "trend": "无细胞系统从利基到主流；快速响应和灵活性优势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-041",
+      "name": "3D生物打印组织2026",
+      "type": "生物打印",
+      "description": "3D生物打印组织2026年进展：从简单结构到功能性组织，血管化和成熟度提升",
+      "application": "组织工程/药物筛选/移植",
+      "companies": [
+        "Organovo/CELLINK/Bioprinting Solutions"
+      ],
+      "maturity": "研发/中试",
+      "trend": "3D生物打印从结构到功能；血管化是关键突破",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-042",
+      "name": "合成生物学规模化放大2026",
+      "type": "工艺放大",
+      "description": "合成生物学规模化放大2026年进展：从实验室到工业规模的挑战和解决方案",
+      "application": "化学品/材料/食品",
+      "companies": [
+        "Ginkgo Bioworks/Amyris/LanzaTech"
+      ],
+      "maturity": "商用扩张",
+      "trend": "规模化从经验到工程；DBTL循环加速放大",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-043",
+      "name": "生物制造质量控制PAT",
+      "type": "质量控制",
+      "description": "生物制造过程分析技术PAT 2026年进展：实时监测和控制生物制造过程，提升产品质量",
+      "application": "生物药/疫苗",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "商用",
+      "trend": "PAT从可选到必须；实时放行检测趋势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-044",
+      "name": "细胞治疗GMP制造2026",
+      "type": "GMP制造",
+      "description": "细胞治疗GMP制造2026年进展：自动化封闭系统/模块化洁净室/数字化批次记录",
+      "application": "CAR-T/TCR-T/TIL",
+      "companies": [
+        "Lonza/Catalent/Thermo Fisher"
+      ],
+      "maturity": "商用扩张",
+      "trend": "GMP制造从手工到自动化；成本下降推动可及性",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-045",
+      "name": "生物制造供应链韧性2026",
+      "type": "供应链",
+      "description": "生物制造供应链韧性2026年进展：地缘政治影响/本土化生产/多元化供应策略",
+      "application": "全行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "战略调整",
+      "trend": "供应链从全球化到区域化；韧性优先于成本",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-046",
+      "name": "mRNA制造平台2026",
+      "type": "mRNA制造",
+      "description": "mRNA制造平台2026年进展：从疫苗到药物，mRNA制造工艺标准化和产能扩张",
+      "application": "疫苗/药物/基因治疗",
+      "companies": [
+        "Moderna/BioNTech/CureVac"
+      ],
+      "maturity": "商用扩张",
+      "trend": "mRNA制造从应急到常态；平台化生产模式成熟",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-047",
+      "name": "基因治疗载体制造2026",
+      "type": "载体制造",
+      "description": "基因治疗载体(AAV/慢病毒)制造2026年进展：产量提升/成本下降/新型载体开发",
+      "application": "基因治疗",
+      "companies": [
+        "Spark/Bluebird Bio/UniQure"
+      ],
+      "maturity": "商用扩张",
+      "trend": "载体制造从瓶颈到产能；新型载体平台涌现",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-048",
+      "name": "生物制造可持续发展2026",
+      "type": "可持续发展",
+      "description": "生物制造可持续发展2026年进展：绿色工艺/碳中和工厂/循环经济模式",
+      "application": "全行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "战略目标",
+      "trend": "可持续发展从口号到行动；碳中和生物工厂兴起",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-049",
+      "name": "2026精密发酵工业化元年",
+      "type": "产业趋势",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "量产加速",
+      "companies": [
+        "全行业"
+      ],
+      "description": "2026年 poised to be the year of industrialization in the food sector，精密发酵从潜力到现实转化",
+      "trend": "精密发酵从实验室到工厂；2026年工业化关键年",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.linkedin.com/posts/henrikmgh_2026-is-poised-to-be-the-year-of-industrialization-activity-7440396353131806720-Vion",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-050",
+      "name": "iFAB生物制造峰会2026",
+      "type": "行业会议",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "iFAB Tech Hub"
+      ],
+      "description": "2026 iFAB生物制造峰会：聚焦生物制造和精密发酵，动态小组讨论/创新展示/产业对接",
+      "trend": "生物制造从分散到集群化；iFAB Tech Hub推动区域生态",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.imec.org/event/2026-ifab-biomanufacturing-summit",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-051",
+      "name": "Eden Brew无动物酪蛋白",
+      "type": "产品创新",
+      "efficiency": "N/A",
+      "cost": "中",
+      "maturity": "商业化",
+      "companies": [
+        "Eden Brew"
+      ],
+      "description": "Eden Brew通过精密发酵生产无动物酪蛋白，创造与牛奶功能相同的乳制品，无需奶牛",
+      "trend": "精密发酵乳蛋白从概念到产品；无动物乳制品市场开启",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://futurefoodtechsf.com/articles/breakthrough-innovators-shaping-s-next",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-052",
+      "name": "精密发酵2026趋势/初创/专利",
+      "type": "行业分析",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "参考",
+      "companies": [
+        "Linknovate"
+      ],
+      "description": "Linknovate 2026精密发酵分析：不再是小众实验室实验，而是跨多行业的生物铸造厂规模化平台",
+      "trend": "精密发酵从食品到多行业扩展；生物铸造厂模式兴起",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://blog.linknovate.com/precision-fermentation-trends-startups-patents",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-053",
+      "name": "精密发酵肽化妆品生物技术2026",
+      "type": "产品创新",
+      "efficiency": "N/A",
+      "cost": "中",
+      "maturity": "商业化",
+      "companies": [
+        "Grand Ingredients"
+      ],
+      "description": "精密发酵肽快速变革化妆品生物技术，2026年角色持续扩展",
+      "trend": "精密发酵从食品到化妆品跨界；肽类活性成分定制化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://grandingredients.com/precision-fermentation-peptides-2026",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-054",
+      "name": "上海精密发酵论坛",
+      "type": "行业会议",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "SynBioBeta"
+      ],
+      "description": "上海精密发酵论坛：先进生物技术和AI集成有潜力通过精密发酵革命化工业流程",
+      "trend": "中国精密发酵产业加速；AI+发酵优化成为热点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.synbiobeta.com/read/a-vision-for-the-future-of-biomanufacturing-highlights-from-shanghais-precision-fermentation-forum",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-055",
+      "name": "ScienceDirect精密发酵下一代食品配料",
+      "type": "学术综述",
+      "efficiency": "N/A",
+      "cost": "持续下降",
+      "maturity": "参考",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "ScienceDirect综述：精密发酵是传统发酵的先进形式，微生物(细菌/真菌/酵母)经基因工程改造生产特定配料",
+      "trend": "精密发酵技术从概念到标准化；下一代食品配料多样化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.sciencedirect.com/science/article/pii/S2666833525002096",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-056",
+      "name": "基因驱动逆转杀虫剂抗性",
+      "type": "基因驱动",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "实验室",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "新基因驱动技术可逆转害虫的杀虫剂抗性，有潜力保护作物并大幅减少化学农药使用",
+      "trend": "基因驱动从灭蚊到农业应用扩展；可持续农业新工具",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21109",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-057",
+      "name": "Science基因驱动监管挑战",
+      "type": "政策/伦理",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "政策讨论",
+      "companies": [
+        "Science"
+      ],
+      "description": "Science探讨如何监管争议性基因驱动技术：基因扩散方法旨在消灭入侵害虫或减少疾病传播，但风险需审慎评估",
+      "trend": "基因驱动技术监管框架建设；科学界呼吁审慎推进",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.science.org/content/article/how-will-we-keep-controversial-gene-drive-technology-check",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-058",
+      "name": "基因驱动抗疟疾应用非洲",
+      "type": "应用场景",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "政策推进",
+      "companies": [
+        "MESA"
+      ],
+      "description": "MESA为政策制定者提供基因驱动技术应用于非洲疟疾消除的建议，指导基因驱动技术用于疟疾控制",
+      "trend": "基因驱动从实验室到非洲实地应用；公共卫生驱动政策推进",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://mesamalaria.org/resource-hub/application-of-gene-drive-technology-for-malaria-elimination-in-africa",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-059",
+      "name": "2026精密发酵工业化元年确认",
+      "type": "产业趋势",
+      "description": "2026年被确认为精密发酵工业化元年：从潜力到现实转化，食品行业大规模应用启动",
+      "application": "食品/材料/化学品",
+      "companies": [
+        "全行业"
+      ],
+      "maturity": "量产加速",
+      "trend": "精密发酵从实验室到工厂；2026年工业化关键年",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-060",
+      "name": "Eden Brew无动物酪蛋白商业化",
+      "type": "产品创新",
+      "description": "Eden Brew通过精密发酵生产无动物酪蛋白，创造与牛奶功能相同的乳制品，无需奶牛",
+      "application": "乳制品替代",
+      "companies": [
+        "Eden Brew"
+      ],
+      "maturity": "商业化",
+      "trend": "精密发酵乳蛋白从概念到产品；无动物乳制品市场开启",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://futurefoodtechsf.com/articles/breakthrough-innovators-shaping-s-next",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-061",
+      "name": "Linknovate精密发酵趋势/初创/专利分析",
+      "type": "行业分析",
+      "description": "Linknovate 2026精密发酵分析：不再是小众实验室实验，而是跨多行业的生物铸造厂规模化平台",
+      "application": "多行业",
+      "companies": [
+        "Linknovate"
+      ],
+      "maturity": "参考",
+      "trend": "精密发酵从食品到多行业扩展；生物铸造厂模式兴起",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://blog.linknovate.com/precision-fermentation-trends-startups-patents",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-062",
+      "name": "Nature BME 2026生物制造前沿",
+      "type": "学术综述",
+      "description": "Nature BME 2026生物制造前沿：生物工程前沿快速重塑转化研究和制造",
+      "application": "多行业",
+      "companies": [
+        "多机构"
+      ],
+      "maturity": "参考",
+      "trend": "生物制造从实验室到工业化；Nature关注领域",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-063",
+      "name": "BMES 2026生物医学工程年会",
+      "type": "行业会议",
+      "description": "BMES 2026年会：展示前沿工程和转化研究，推动下一代生物制造技术发展",
+      "application": "多行业",
+      "companies": [
+        "BMES"
+      ],
+      "maturity": "参考",
+      "trend": "生物医学工程年会聚焦转化；制造技术是重点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.bmes.org/bmes2026",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-064",
+      "name": "生物工程市场95B→47B增长",
+      "type": "市场数据",
+      "description": "全球生物工程市场规模2025年2952.8亿美元，预计2026年增至3470亿美元，持续高速增长",
+      "application": "全行业",
+      "companies": [
+        "全行业"
+      ],
+      "maturity": "市场增长",
+      "trend": "生物工程市场持续扩大；2026年突破3470亿美元",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-064",
+      "name": "下一代精密发酵食品配料",
+      "type": "技术突破",
+      "description": "精密发酵是传统发酵的先进版本，微生物被基因工程改造生产特定食品配料",
+      "application": "食品配料",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "量产加速",
+      "trend": "精密发酵从概念到食品配料量产",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-065",
+      "name": "低成本原料下一代生物制造",
+      "type": "技术突破",
+      "description": "下一代生物制造从低成本原料到无细胞方法：精密发酵原料成本降低/无细胞合成新路径",
+      "application": "多行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "技术突破",
+      "trend": "生物制造从高成本原料到低成本替代；无细胞方法兴起",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-066",
+      "name": "EPA 2026食品生物制造细胞农业会议",
+      "type": "行业会议",
+      "description": "EPA 2026细胞农业会议：培养肉/精密发酵/生物工艺规模化",
+      "application": "食品/农业",
+      "companies": [
+        "EPA"
+      ],
+      "maturity": "参考",
+      "trend": "细胞农业从实验室到规模化；监管框架完善",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-067",
+      "name": "iFAB 2026生物制造峰会",
+      "type": "行业会议",
+      "description": "iFAB Tech Hub 2026生物制造峰会：聚焦生物制造和精密发酵，动态小组/创新展示",
+      "application": "多行业",
+      "companies": [
+        "iFAB"
+      ],
+      "maturity": "参考",
+      "trend": "生物制造峰会从学术到产业；精密发酵是焦点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-068",
+      "name": "GFI精密发酵微生物制造食品",
+      "type": "行业分析",
+      "description": "GFI分析：细胞农业通过微生物精密发酵生产真正的动物蛋白，无需动物参与",
+      "application": "食品",
+      "companies": [
+        "GFI"
+      ],
+      "maturity": "参考",
+      "trend": "精密发酵从替代到主流；GFI推动行业认知",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-069",
+      "name": "生物工程市场295B→347B 2026增长",
+      "type": "市场数据",
+      "description": "全球生物工程市场2025年2952.8亿美元，2026年预计3470.4亿美元，持续高速增长",
+      "application": "多行业",
+      "companies": [
+        "Precedence Research"
+      ],
+      "maturity": "市场数据",
+      "trend": "生物工程市场持续高速增长；多行业应用扩展",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.precedenceresearch.com/bioengineering-market",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-070",
+      "name": "BMES 2026年会: 下一代治疗和设备",
+      "type": "行业会议",
+      "description": "BMES 2026年会：前沿工程和转化研究驱动下一代治疗、医疗设备开发",
+      "application": "多领域",
+      "companies": [
+        "BMES"
+      ],
+      "maturity": "参考",
+      "trend": "BME从研究到转化；下一代治疗和设备是焦点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.bmes.org/2026/annualmeeting",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-071",
+      "name": "精密发酵2026规模化生产",
+      "type": "精密发酵",
+      "description": "2026年精密发酵规模化生产：从替代蛋白到特种化学品，产能大幅扩张",
+      "application": "食品/化工",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "规模化",
+      "trend": "精密发酵从替代到规模化；产能扩张降低成本",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-072",
+      "name": "细胞农业2026商业化里程碑",
+      "type": "细胞农业",
+      "description": "2026年细胞农业商业化里程碑：培养肉从实验室到小规模生产，监管批准增加",
+      "application": "食品",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "早期商业化",
+      "trend": "细胞农业从实验室到市场；监管批准是关键推动力",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-073",
+      "name": "生物制造自动化2026进展",
+      "type": "自动化",
+      "description": "2026年生物制造自动化进展：实验室自动化、AI优化发酵参数、数字孪生工厂",
+      "application": "多行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "部署中",
+      "trend": "生物制造从手工到自动化；AI和数字孪生提升效率",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-074",
+      "name": "NEBEC 2026: 癌症材料与太空生物新生物材料",
+      "type": "学术会议",
+      "description": "NEBEC 2026(4月16-17日)：研究癌症新生物材料和太空生物组织材料",
+      "application": "生物材料",
+      "companies": [
+        "多机构"
+      ],
+      "maturity": "参考",
+      "trend": "生物材料从医疗到太空；新应用场景拓展",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://sites.temple.edu/nebec2026",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-075",
+      "name": "合成生物学规模化制造2026挑战",
+      "type": "行业分析",
+      "description": "2026年合成生物学规模化制造挑战：从实验室到工厂的放大难题、一致性控制、成本优化",
+      "application": "多行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "参考",
+      "trend": "规模化是合成生物学最大挑战；从克级到吨级",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-076",
+      "name": "生物制造连续生产2026趋势",
+      "type": "生产模式",
+      "description": "2026年生物制造连续生产趋势：从批次到连续，提高产率和降低成本",
+      "application": "生物制药",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "转型中",
+      "trend": "生物制造从批次到连续；产率提升成本下降",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-077",
+      "name": "微生物细胞工厂2026设计优化",
+      "type": "细胞工厂",
+      "description": "2026年微生物细胞工厂设计优化：AI辅助代谢通路设计、高通量筛选、动态调控",
+      "application": "多行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "研发中",
+      "trend": "细胞工厂从试错到设计；AI辅助代谢工程",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "BM-078",
+      "name": "生物制造供应链2026韧性建设",
+      "type": "供应链",
+      "description": "2026年生物制造供应链韧性建设：多元化原料来源、本地化生产、库存优化",
+      "application": "多行业",
+      "companies": [
+        "多公司"
+      ],
+      "maturity": "建设中",
+      "trend": "供应链从效率到韧性；本地化和多元化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "pubmed": {
+    "enabled": true,
+    "search_terms": [
+      "AI agent MCP SDK framework protocol"
+    ],
+    "max_results": 100,
+    "rate_limit_ms": 500
+  },
+  "news": {
+    "enabled": true,
+    "search_terms": [
+      "AI agent MCP SDK framework protocol news",
+      "AI agent MCP SDK framework protocol latest"
+    ],
+    "rate_limit_ms": 2000
+  }
+}

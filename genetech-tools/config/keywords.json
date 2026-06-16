@@ -1,0 +1,47 @@
+{
+  "primary_keywords": [
+    "gene therapy",
+    "CRISPR",
+    "gene editing",
+    "AAV",
+    "mRNA therapy",
+    "base editing",
+    "prime editing",
+    "CAR-T",
+    "gene silencing",
+    "RNAi therapy",
+    "zinc finger nuclease",
+    "TALEN",
+    "epigenome editing",
+    "gene replacement",
+    "antisense oligonucleotide"
+  ],
+  "target_genes": [
+    "RPE65", "HBB", "CFTR", "DMD", "SMN1", "HEM", "F8", "F9",
+    "PAH", "GAA", "IDS", "SGSH", "CLN3", "TERT", "PCSK9",
+    "VEGF", "DMD", "LMNA", "MYBPC3", "TMC1", "CEP290",
+    "GUCY2D", "ABCA4", "RS1", "OTC", "ARG1", "CYP27A1"
+  ],
+  "target_diseases": [
+    "Leber congenital amaurosis",
+    "sickle cell disease",
+    "beta-thalassemia",
+    "Duchenne muscular dystrophy",
+    "spinal muscular atrophy",
+    "hemophilia A",
+    "hemophilia B",
+    "cystic fibrosis",
+    "Huntington disease",
+    "amyotrophic lateral sclerosis",
+    "Parkinson disease",
+    "age-related macular degeneration",
+    "inherited retinal dystrophy",
+    "Fabry disease",
+    "Gaucher disease"
+  ],
+  "vector_types": [
+    "AAV1", "AAV2", "AAV3", "AAV4", "AAV5", "AAV6", "AAV7", "AAV8", "AAV9",
+    "AAVrh10", "lentivirus", "adenovirus", "retrovirus", "lipid nanoparticle",
+    "non-viral"
+  ]
+}

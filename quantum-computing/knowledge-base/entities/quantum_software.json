@@ -1,0 +1,564 @@
+[
+  {
+    "id": "QSW-001",
+    "name": "Qiskit (IBM)",
+    "type": "Full-stack quantum software framework",
+    "language": "Python",
+    "features": "Circuit construction, transpilation, noise simulation, hardware execution, Qiskit Runtime, Qiskit Nature/Finance/ML",
+    "status": "Most widely used quantum software framework; open source",
+    "description": "Qiskit is IBM's open-source quantum computing SDK and the most widely used quantum software framework. It provides tools for circuit construction, compilation (transpilation), noise-aware simulation, and execution on IBM Quantum hardware. Qiskit Runtime enables efficient execution of quantum programs with server-side processing. Domain-specific modules (Qiskit Nature, Finance, ML, Optimization) target specific application areas."
+  },
+  {
+    "id": "QSW-002",
+    "name": "Cirq (Google)",
+    "type": "Quantum circuit framework",
+    "language": "Python",
+    "features": "Circuit construction, noise modeling, near-term algorithm development, hardware execution on Google processors",
+    "status": "Open source; primary framework for Google Quantum AI research",
+    "description": "Cirq is Google's open-source framework for designing and running quantum circuits, particularly for NISQ devices. It provides fine-grained control over quantum circuits and is the primary tool used by Google Quantum AI for their research. Cirq supports Google's Willow and other processors and integrates with quantum error correction research."
+  },
+  {
+    "id": "QSW-003",
+    "name": "PennyLane (Xanadu)",
+    "type": "Quantum machine learning framework",
+    "language": "Python",
+    "features": "Differentiable quantum circuits, automatic differentiation, ML integration (PyTorch/TensorFlow/JAX), multi-backend support",
+    "status": "Open source; leading QML framework; supports 30+ quantum backends",
+    "description": "PennyLane is Xanadu's open-source framework for quantum machine learning and differentiable quantum computing. Its key innovation is automatic differentiation through quantum circuits, enabling gradient-based optimization of variational algorithms. PennyLane integrates with classical ML frameworks (PyTorch, TensorFlow, JAX) and supports 30+ quantum hardware backends, making it the most portable QML framework."
+  },
+  {
+    "id": "QSW-004",
+    "name": "Q# (Microsoft)",
+    "type": "Quantum programming language",
+    "language": "Q# (domain-specific language)",
+    "features": "High-level quantum programming, type system for quantum operations, Azure Quantum integration",
+    "status": "Open source; part of Microsoft Quantum Development Kit",
+    "description": "Q# is Microsoft's domain-specific programming language for quantum computing. Unlike Python-based frameworks, Q# is designed from the ground up for quantum programming with a type system that enforces quantum mechanics constraints (e.g., no cloning). It integrates with Azure Quantum and supports multiple hardware backends. Q# is particularly suited for algorithm development and education."
+  },
+  {
+    "id": "QSW-005",
+    "name": "ProjectQ",
+    "type": "Open-source quantum computing framework",
+    "language": "Python",
+    "features": "Compiler framework, circuit optimization, multiple backends, resource estimation",
+    "status": "Open source; academic-focused",
+    "description": "ProjectQ is an open-source quantum computing framework that started at ETH Zurich. It features a compiler framework capable of targeting various types of hardware backends, from simulators to actual quantum chips. ProjectQ's strength is its advanced compilation and optimization passes, which can significantly reduce circuit depth and gate count."
+  },
+  {
+    "id": "QSW-006",
+    "name": "Amazon Braket SDK",
+    "type": "Cloud quantum computing platform",
+    "language": "Python",
+    "features": "Multi-hardware access (IonQ, Rigetti, OQC, QuEra), managed simulators, hybrid jobs",
+    "status": "Operational; AWS cloud service",
+    "description": "Amazon Braket is AWS's fully managed quantum computing service that provides access to multiple quantum hardware providers (IonQ, Rigetti, OQC, QuEra) through a unified API. The Braket SDK enables circuit construction and execution across different hardware platforms. Braket also offers managed simulators and hybrid job execution for quantum-classical algorithms."
+  },
+  {
+    "id": "QSW-007",
+    "name": "Qiskit Runtime (IBM)",
+    "type": "Quantum execution environment",
+    "language": "Python",
+    "features": "Server-side execution, Primitives API (Sampler, Estimator), session management, error mitigation",
+    "status": "Operational; core of IBM Quantum platform",
+    "description": "Qiskit Runtime is IBM's execution environment that runs quantum programs server-side on IBM Quantum hardware. It introduces the Primitives API (Sampler for sampling, Estimator for expectation values) that abstracts away hardware details and provides built-in error mitigation. Sessions enable efficient multi-circuit execution. Qiskit Runtime is central to IBM's quantum-centric supercomputing vision."
+  },
+  {
+    "id": "QSW-008",
+    "name": "ORNL Quantum-HPC Software Stack",
+    "type": "Quantum-classical integration architecture",
+    "language": "Multiple",
+    "features": "Integration of quantum computers with supercomputing, workflow management, resource scheduling",
+    "status": "Proposed architecture (2025); under development at Oak Ridge National Laboratory",
+    "description": "ORNL researchers proposed a software architecture in 2025 that would integrate emerging quantum computers with the world's fastest supercomputers. This quantum-HPC software stack defines how quantum and classical resources should be co-scheduled, how data should flow between them, and how to manage the heterogeneous computing environment. This is critical for IBM's quantum-centric supercomputing vision."
+  },
+  {
+    "id": "QSW-009",
+    "name": "tket (Quantinuum)",
+    "type": "Quantum compiler",
+    "language": "Python/C++",
+    "features": "Advanced circuit optimization, multi-backend compilation, routing algorithms",
+    "status": "Open source; used in Quantinuum's full-stack platform",
+    "description": "tket is Quantinuum's open-source quantum compiler that provides advanced circuit optimization and compilation for multiple quantum hardware backends. It includes sophisticated qubit routing algorithms that minimize SWAP gate overhead, and optimization passes that reduce circuit depth. tket is particularly effective for trapped-ion architectures with all-to-all connectivity."
+  },
+  {
+    "id": "QSW-010",
+    "name": "Stim (Google)",
+    "type": "Quantum error correction simulator",
+    "language": "Python/C++",
+    "features": "Fast Clifford circuit simulation, QEC decoder development, circuit-level noise modeling",
+    "status": "Open source; standard tool for QEC research",
+    "description": "Stim is Google's open-source tool for fast simulation of quantum error correction circuits. It can simulate Clifford circuits (the basis of most QEC schemes) orders of magnitude faster than general-purpose simulators. Stim is the standard tool for developing and testing QEC decoders and was used in Google's Willow below-threshold demonstration."
+  },
+  {
+    "id": "QSW-011",
+    "name": "Quantum Computing Software Market",
+    "type": "Market/Industry",
+    "language": "N/A",
+    "features": "Global market valued at USD 1.25 Bn in 2026; expected to reach USD 4.75 Bn by 2033",
+    "status": "Rapidly growing; CAGR ~21%",
+    "description": "The global quantum computing software market is estimated at USD 1.25 billion in 2026 and expected to reach USD 4.75 billion by 2033, growing at a CAGR of approximately 21%. The market includes quantum development platforms, compilers, simulators, and application-specific software. Key drivers include increasing quantum hardware availability and enterprise adoption."
+  },
+  {
+    "id": "QSW-012",
+    "name": "National Quantum Initiative Reauthorization Act (US 2026)",
+    "type": "Policy/Legislation",
+    "language": "N/A",
+    "features": "Reauthorizes and expands US quantum computing R&D funding; focuses on workforce and security",
+    "status": "Introduced in US Senate (S.3597, 2025-2026)",
+    "description": "The National Quantum Initiative Reauthorization Act of 2026 (S.3597) reauthorizes and expands US investment in quantum computing research and development. The act focuses on workforce development, quantum networking, post-quantum cryptography, and maintaining US competitiveness in quantum technology. Japan leads public quantum investment with nearly $8 billion committed, while the US and EU are also increasing funding significantly."
+  },
+  {
+    "id": "QSW-013",
+    "name": "Applied Quantum PQC Migration Framework v1.1",
+    "type": "Security framework / Post-quantum cryptography",
+    "language": "N/A (methodology)",
+    "features": "Enterprise post-quantum cryptography migration methodology; practitioner's guide for PQC transition",
+    "status": "Published March 2026; Version 1.1",
+    "description": "The Applied Quantum PQC Migration Framework (v1.1, March 2026) provides a practitioner's methodology for enterprise post-quantum cryptography migration. 2026 has been designated the 'Year of Quantum Security' by The Quantum Insider, emphasizing the urgency of PQC adoption. The framework addresses the critical gap between NIST PQC standards and practical enterprise implementation."
+  },
+  {
+    "id": "QSW-014",
+    "name": "NVIDIA NVQLink",
+    "type": "Hybrid quantum-classical computing framework",
+    "language": "CUDA / Python",
+    "features": "Quantum-classical computing integration; GPU-accelerated quantum simulation; hybrid workload distribution",
+    "status": "Announced GTC 2026; quantum computing inflection point",
+    "description": "NVIDIA's NVQLink, announced at GTC 2026, represents a quantum computing inflection point by enabling seamless integration of quantum processors with NVIDIA GPU clusters. NVQLink allows hybrid workloads where classical computation runs on GPUs while quantum subroutines execute on QPUs. Compatible with QuantWare VIO-40K and other quantum hardware, NVQLink is the gold standard for hybrid quantum-classical computing in 2026."
+  },
+  {
+    "id": "QSW-015",
+    "name": "Quantum Software Alliance Global Research Agenda",
+    "type": "Research framework / Community initiative",
+    "language": "N/A (framework)",
+    "features": "Connects fundamental research with hardware realities; forward-looking research priorities; data and end-user integration",
+    "status": "Published 2025-2026; international collaboration",
+    "description": "The Quantum Software Alliance published a Global Research Agenda that connects fundamental quantum software research with current hardware realities, data, and end-users while remaining forward-looking. The agenda embraces the full quantum software stack from low-level control to high-level applications, and establishes priorities for international collaboration in quantum software development."
+  },
+  {
+    "id": "QSW-016",
+    "name": "IBM Qiskit Runtime with Error Correction",
+    "type": "Quantum software platform with integrated QEC",
+    "language": "Python",
+    "features": "Integrated error correction decoder; server-side processing; Qiskit Runtime primitives; fault-tolerant execution path",
+    "status": "2026 release with 120-qubit error correction decoder",
+    "description": "IBM's 2026 Qiskit Runtime release integrates error correction decoding directly into the execution pipeline. Combined with the 120-qubit error correction decoder, this enables developers to write quantum programs that automatically benefit from error correction without manual QEC implementation. This represents a critical step toward making fault-tolerant quantum computing accessible to software developers."
+  },
+  {
+    "id": "QSW-017",
+    "name": "Microsoft QDK with AI-Assisted Programming",
+    "type": "Quantum development kit with AI features",
+    "language": "Q# / Python",
+    "features": "AI-assisted quantum programming, code generation, circuit optimization, error-aware compilation",
+    "status": "Released January 2026",
+    "description": "Microsoft expanded its quantum software stack in January 2026, upgrading the Quantum Development Kit (QDK) with AI-assisted programming features. The AI assistant can generate quantum circuits from natural language descriptions, optimize circuit layouts for specific hardware, and suggest error mitigation strategies. This represents Microsofts strategic shift toward software and developer tools in the quantum ecosystem."
+  },
+  {
+    "id": "QSW-018",
+    "name": "IonQ ARLIS Zero Trust Quantum Framework",
+    "type": "Quantum security framework",
+    "language": "Multi-language / Platform-agnostic",
+    "features": "Zero Trust security for quantum systems, secure quantum computation, hardware attestation, data integrity verification",
+    "status": "In development (2026)",
+    "description": "IonQ partnered with ARLIS (Applied Research Laboratory for Intelligence and Security) to develop a Zero Trust security framework for quantum computing systems. The framework ensures that as quantum computers like the forthcoming IonQ Tempo scale in performance, they maintain a secure ecosystem. This addresses the growing concern about quantum system security beyond just post-quantum cryptography."
+  },
+  {
+    "id": "QSW-019",
+    "name": "Quantum Software Alliance Global Research Agenda",
+    "type": "Community framework / Research coordination",
+    "language": "Multi-language",
+    "features": "Connects fundamental research with hardware realities, data, and end-users; forward-looking framework",
+    "status": "Published 2025-2026",
+    "description": "The Quantum Software Alliance published a Global Research Agenda that connects fundamental quantum software research with current hardware realities, data, and end-users while remaining forward-looking. The framework embraces the diversity of quantum computing approaches and provides a structured path for quantum software development from theory to practical deployment."
+  },
+  {
+    "id": "QSW-020",
+    "name": "Quantum Network Software Stack",
+    "type": "Quantum networking software / Three-plane architecture",
+    "language": "Various",
+    "features": "Three-plane abstraction (data, control, management); quantum network simulation; protocol implementation",
+    "status": "Research paper published 2025-2026",
+    "description": "A comprehensive review of software for designing and operating quantum networks was published, organized around a three-plane abstraction of quantum network architecture. This software stack enables the design, simulation, and operation of quantum networks including QKD, quantum repeaters, and distributed quantum computing. It represents the maturation of quantum networking from hardware experiments to software-defined infrastructure."
+  },
+  {
+    "id": "QSW-021",
+    "name": "SpinQ Quantum Application Development Platform",
+    "type": "Quantum application development / Commercial platform",
+    "language": "Python / Visual programming",
+    "features": "Quantum application development tools, visual circuit design, hardware-agnostic compilation, educational modules",
+    "status": "Active development 2026",
+    "description": "SpinQ is developing a quantum application development platform targeting the 2026-2030 timeframe. The platform focuses on making quantum computing accessible to application developers rather than quantum physicists, with visual programming interfaces, automated circuit optimization, and educational modules. This represents the democratization trend in quantum software, lowering the barrier to entry for quantum computing."
+  },
+  {
+    "id": "QSW-022",
+    "name": "IBM Quantum-Centric Supercomputing Software Stack",
+    "type": "Quantum-centric supercomputing / Integrated HPC-QC software",
+    "language": "Python / Qiskit",
+    "features": "Quantum-classical workload orchestration, Qiskit Runtime integration, HPC-quantum job scheduling, error-corrected execution",
+    "status": "Development roadmap 2025-2028",
+    "description": "IBM is developing the software stack for the worlds first quantum-centric supercomputer. This integrated platform orchestrates workloads across classical HPC and quantum processors, using Qiskit Runtime for quantum execution and intelligent job scheduling to maximize quantum hardware utilization. The software stack is critical for making quantum-centric supercomputing practical and accessible."
+  },
+  {
+    "id": "QSW-023",
+    "name": "IBM Quantum 2026 Profiling Tools",
+    "type": "Quantum software development tools / Profiling",
+    "language": "Python / Qiskit",
+    "features": "Monitor, verify, and debug workloads across quantum and classical resources; quantum-classical profiling",
+    "status": "Announced for 2026 IBM Quantum roadmap",
+    "description": "IBM announced new profiling tools for 2026 that help users monitor, verify, and debug workloads across both quantum and classical resources. These tools are essential for the quantum-centric supercomputing paradigm, where applications seamlessly distribute computation between QPUs and classical processors. The profiling tools enable developers to identify performance bottlenecks, optimize quantum-classical workload splits, and verify correctness of hybrid computations.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.ibm.com/roadmaps/quantum/2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-024",
+    "name": "Q2NS Quantum Network Simulation Framework",
+    "type": "Quantum network simulation / ns-3 integration",
+    "language": "C++ / Python (ns-3 framework)",
+    "features": "Modular framework for quantum network simulation in ns-3; quantum protocol testing; network architecture design",
+    "status": "Presented at 2026 International Conference on Quantum Communications",
+    "description": "Q2NS is a modular framework for quantum network simulation integrated into the ns-3 network simulator, presented at the 2026 International Conference on Quantum Communications by Caleffi and Cacciapuoti. Q2NS enables researchers to simulate quantum network protocols, test quantum repeater algorithms, and design quantum internet architectures within the established ns-3 ecosystem. This tool is critical for the quantum networking community to validate designs before hardware deployment.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.quantuminternet.it/publications/conferences",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-025",
+    "name": "Year of Quantum Security (2026 Designation)",
+    "type": "Industry designation / Security focus",
+    "language": "N/A - industry initiative",
+    "features": "Post-quantum cryptography migration, quantum IP protection, quantum-resilient infrastructure",
+    "status": "Designated January 2026 by The Quantum Insider",
+    "description": "The Quantum Insider designated 2026 as the 'Year of Quantum Security,' emphasizing post-quantum cryptography, quantum IP, and resilience. After a year of quantum awareness in 2025, 2026 shifts focus to practical security measures against quantum computing threats. Key priorities include PQC migration for enterprises, quantum-safe key management, and protecting intellectual property from future quantum attacks. Multiple frameworks and standards are being published to guide organizations through the transition.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://thequantuminsider.com/2026/01/06/after-a-year-of-quantum-awareness-2026-becomes-the-year-of-quantum-security",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-026",
+    "name": "Quantum Computing Workforce Development Programs",
+    "type": "Education / Workforce",
+    "language": "Multiple",
+    "features": "Quantum computing curricula, professional certification, industry-academia partnerships",
+    "status": "Expanding rapidly in 2026; major focus of National Quantum Initiative Reauthorization",
+    "description": "Quantum computing workforce development is a major focus of the National Quantum Initiative Reauthorization Act of 2026 and industry initiatives. Key programs include university quantum computing curricula, professional certification programs, and industry-academia partnerships. The quantum industry faces a significant talent shortage, particularly in quantum error correction, quantum algorithm development, and quantum hardware engineering. Multiple countries are investing in quantum education to build competitive workforces.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.wearetfd.com/warning-disruption-likely/2025-was-the-year-quantum-went-mainstream-experts-predict-what-comes-next",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-027",
+    "name": "Q-SE 2026 (7th International Workshop on Quantum Software Engineering)",
+    "type": "Academic workshop / Software engineering",
+    "language": "Multiple",
+    "features": "Quantum software engineering research; ICSE 2026 affiliated workshop",
+    "status": "Held 2026; 7th edition of Q-SE workshop series",
+    "description": "The 7th International Workshop on Quantum Software Engineering (Q-SE 2026), affiliated with ICSE 2026, brings together researchers working on quantum software engineering challenges. Topics include quantum software development lifecycle, testing and verification of quantum programs, quantum software architectures, and hybrid quantum-classical software systems. The workshop highlights the growing recognition that software engineering is a critical bottleneck for quantum computing adoption.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://conf.researchr.org/home/icse-2026/q-se-2026",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-028",
+    "name": "Quantum Fringe 2026 (Scotland)",
+    "type": "Industry event / Quantum software and applications",
+    "language": "Multiple",
+    "features": "Challenge-led workshops in quantum computing hardware, software, and applications",
+    "status": "Held 2026 in Scotland; organized by Quantum Software Lab",
+    "description": "Quantum Fringe 2026 is a day of challenge-led workshops in quantum computing hardware, software, and applications, organized by the Quantum Software Lab in Scotland. The event brings together industry leaders and researchers to tackle real-world quantum computing challenges through collaborative workshops. It represents the growing focus on practical quantum software development and application-driven quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.quantumsoftwarelab.com/quantum-fringe-scotland",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-029",
+    "name": "SpinQ Quantum Application Development Platform (2026 Update)",
+    "type": "Quantum application development / Commercial platform",
+    "language": "Python / Visual programming",
+    "features": "Quantum application development tools, visual circuit design, hardware-agnostic compilation, educational modules, 2026 updates",
+    "status": "Active development 2026; expanded application development capabilities",
+    "description": "SpinQ updated its quantum application development platform in 2026 with expanded capabilities for making quantum computing accessible to application developers. The platform focuses on bridging the gap between quantum hardware and practical applications, with visual programming interfaces, automated circuit optimization, and educational modules. The 2026 update emphasizes the shift from quantum programming to quantum application development.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "article_url": "https://www.spinquanta.com/news-detail/the-future-of-quantum-application-develop",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QS-30",
+    "name": "NVIDIA NVQLink (GTC 2026)",
+    "type": "Hybrid quantum-classical software framework",
+    "language": "CUDA-Q / Python",
+    "features": [
+      "GPU-accelerated quantum simulation",
+      "Hybrid quantum-classical workflow",
+      "Integration with QuantWare VIO-40K",
+      "Multi-QPU backend support"
+    ],
+    "description": "NVIDIA announced NVQLink at GTC 2026, a software framework that bridges quantum and classical computing using GPU acceleration. NVQLink enables hybrid quantum-classical workflows where NVIDIA GPUs handle the classical computation while quantum processors handle the quantum portions. The framework is compatible with multiple QPU backends including QuantWare's VIO-40K and supports CUDA-Q for seamless integration.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nvidia.com/gtc/2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QS-31",
+    "name": "Microsoft QDK AI-Assisted Quantum Programming (2026)",
+    "type": "Quantum development kit with AI assistance",
+    "language": "Q# / Python",
+    "features": [
+      "AI-assisted quantum circuit design",
+      "Automated error mitigation strategies",
+      "Natural language to quantum code",
+      "Integration with Azure Quantum"
+    ],
+    "description": "Microsoft enhanced its Quantum Development Kit (QDK) with AI-assisted quantum programming capabilities in January 2026. The update allows developers to describe quantum algorithms in natural language, with AI generating optimized Q# code. The system also suggests error mitigation strategies and circuit optimizations, significantly lowering the barrier to quantum software development.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://learn.microsoft.com/quantum",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QS-32",
+    "name": "IonQ ARLIS Zero-Trust Quantum Security Framework",
+    "type": "Quantum security software framework",
+    "language": "Python / REST API",
+    "features": [
+      "Zero-trust security model for quantum computing",
+      "Post-quantum cryptography integration",
+      "Secure quantum key distribution",
+      "Enterprise-grade access control"
+    ],
+    "description": "IonQ launched ARLIS, a zero-trust security framework for quantum computing environments. As quantum computing moves toward commercial deployment, ARLIS addresses the security challenges of quantum-as-a-service platforms. The framework integrates post-quantum cryptography and provides enterprise-grade access control for quantum computing resources.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://ionq.com/news/irlis-zero-trust-framework",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QS-33",
+    "name": "Quantum Software Alliance Global Research Agenda (2026-2036)",
+    "type": "Research roadmap / Community initiative",
+    "language": "Multi-language / Platform-agnostic",
+    "features": [
+      "10-year research agenda for quantum software",
+      "Translating quantum algorithms to practical software",
+      "Community-driven standards",
+      "Workforce development programs"
+    ],
+    "description": "The Quantum Software Alliance published its Global Research Agenda defining a scientific plan to advance quantum software capabilities over the next decade (2026-2036). The agenda aims to translate quantum algorithms into practical, production-quality software, establish community-driven standards, and develop workforce training programs. This represents the first coordinated global effort to systematically address the quantum software gap.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://quantumsoftwarealliance.org/research-agenda",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QS-34",
+    "name": "ORNL Quantum-HPC Software Stack Architecture",
+    "type": "Software architecture / HPC integration",
+    "language": "C++ / Python / MPI",
+    "features": [
+      "Integration of quantum computers with exascale HPC",
+      "Hybrid quantum-classical scheduling",
+      "Resource management for quantum-HPC workflows",
+      "Open-source reference implementation"
+    ],
+    "description": "Oak Ridge National Laboratory (ORNL) researchers proposed a software architecture that integrates emerging quantum computers with the world's fastest supercomputers. The proposed stack handles hybrid quantum-classical scheduling, resource management, and data flow between quantum and classical systems. This architecture is critical for realizing the full potential of quantum computing in scientific applications that require both quantum and exascale classical resources.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.ornl.gov/article/quantum-hpc-software-stack",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QS-35",
+    "name": "Q2NS Quantum Network Simulation Framework",
+    "type": "Quantum network simulator / ns-3 integration",
+    "language": "C++ / Python (ns-3 framework)",
+    "features": [
+      "Modular quantum network simulation",
+      "Integration with ns-3 network simulator",
+      "Entanglement distribution modeling",
+      "Quantum repeater simulation"
+    ],
+    "description": "Q2NS is a modular framework for quantum network simulation integrated with the ns-3 network simulator, presented at the 2026 International Conference on Quantum Computing and Engineering. The framework enables researchers to model entanglement distribution, quantum repeater networks, and quantum internet protocols within the established ns-3 ecosystem, bridging the gap between quantum networking research and classical network simulation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://quantum-internet.it/conferences",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-036",
+    "name": "Quantum Software Alliance Global Research Agenda",
+    "type": "Research roadmap / Framework",
+    "language": "Multi-language",
+    "features": "10-year research plan (2026-2036), quantum software engineering standards, verification and validation",
+    "status": "Published 2026; international collaboration",
+    "description": "The Quantum Software Alliance published a Global Research Agenda defining a scientific plan to advance quantum software capabilities over the next decade (2026-2036). The agenda aims to translate quantum algorithmic advances into practical, reliable software systems. Key research areas include quantum software engineering, verification and validation of quantum programs, quantum compiler optimization, and quantum-classical hybrid programming models.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://quantumsoftwarealliance.org/documents/global-research-agenda",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-037",
+    "name": "Q-SE 2026 Workshop (Quantum Software Engineering)",
+    "type": "Conference / Workshop",
+    "language": "Multi-language",
+    "features": "Seventh International Workshop on Quantum Software at ICSE 2026",
+    "status": "Held at ICSE 2026",
+    "description": "The Seventh International Workshop on Quantum Software Engineering (Q-SE 2026) was held at ICSE 2026, highlighting the growing maturity of quantum software as a discipline. Topics included high-level quantum programming languages, quantum software testing, quantum circuit optimization, and hybrid quantum-classical software architectures. The workshop reflects the industry's recognition that quantum software engineering is as important as quantum hardware for achieving practical quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://conf.researchr.org/home/icse-2026/q-se-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-038",
+    "name": "Classiq Quantum Software Platform",
+    "type": "High-level quantum synthesis platform",
+    "language": "Python / Qmod (Classiq modeling language)",
+    "features": "Automated circuit synthesis, high-level functional modeling, hardware-aware optimization",
+    "status": "Commercially available; growing enterprise adoption",
+    "description": "Classiq provides a high-level quantum software platform that automatically synthesizes optimized quantum circuits from functional descriptions. Instead of manually designing gate-level circuits, users specify what the quantum program should do at a high level, and the Classiq synthesis engine generates an optimized circuit for the target hardware. This approach dramatically reduces the expertise barrier for quantum programming and enables more efficient use of quantum hardware.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.classiq.io/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-039",
+    "name": "PennyLane 0.40+ (Quantum ML Framework)",
+    "type": "Quantum machine learning framework",
+    "language": "Python",
+    "features": "Quantum differentiable programming, QML models, hardware integration, quantum gradients",
+    "status": "Open source; actively developed by Xanadu",
+    "description": "PennyLane is Xanadu's open-source quantum machine learning framework that enables training quantum circuits like neural networks using automatic differentiation. The 2025-2026 versions include improved support for quantum kernels, quantum GANs, and quantum transfer learning. PennyLane integrates with all major quantum hardware platforms and provides tools for quantum-classical hybrid ML workflows. It has become the de facto standard for quantum machine learning research.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://pennylane.ai/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-040",
+    "name": "SpinQ Quantum Application Development Platform",
+    "type": "Quantum application development platform",
+    "language": "Python / Visual",
+    "features": "Drag-and-drop circuit design, educational tools, cloud access, industry-specific templates",
+    "status": "Commercially available; targeting education and enterprise",
+    "description": "SpinQ provides a quantum application development platform that combines visual circuit design tools with Python programming. The platform targets both educational users and enterprise customers, with industry-specific templates for finance, chemistry, and optimization. SpinQ's approach lowers the barrier to quantum computing by providing intuitive visual tools alongside traditional programming interfaces.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.spinquanta.com/news-detail/the-future-of-quantum-application-develop",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-041",
+    "name": "Quantum-as-a-Service (QaaS) Platforms 2026",
+    "type": "Cloud quantum computing service",
+    "language": "Multi-language (REST API, Python SDKs)",
+    "features": "Multi-hardware access, job scheduling, hybrid execution, pay-per-use",
+    "status": "Available from IBM, Amazon Braket, Azure Quantum, Google CQC, IonQ Cloud",
+    "description": "Quantum-as-a-Service platforms have matured significantly in 2025-2026, offering access to multiple quantum hardware technologies through unified cloud interfaces. Key developments include improved job scheduling for shared quantum resources, hybrid quantum-classical execution frameworks, and pay-per-use pricing models that make quantum computing accessible to smaller organizations. The 2026 focus is shifting from potential technology to practical products, with QaaS platforms offering industry-specific solutions.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.usdsi.org/data-science-insights/latest-developments-in-quantum-computing",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QSW-042",
+    "name": "Qiskit 2.0 (IBM Quantum SDK)",
+    "type": "Full-stack quantum software framework",
+    "language": "Python / Rust (transpiler core)",
+    "features": "Rust-based transpiler for 100x speedup, Qiskit Runtime, Serverless execution, error suppression",
+    "status": "Released 2025; major architecture overhaul",
+    "description": "Qiskit 2.0 represents a major architectural overhaul of IBM's quantum SDK, with the transpiler core rewritten in Rust for 100x faster circuit compilation. The new version introduces serverless quantum execution, improved error suppression techniques, and better integration with IBM's Quantum System Two hardware. Qiskit 2.0 also includes improved support for dynamic circuits (mid-circuit measurement and feed-forward), which are essential for quantum error correction.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.ibm.com/quantum/qiskit",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

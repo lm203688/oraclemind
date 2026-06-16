@@ -1,0 +1,3411 @@
+{
+  "total": 141,
+  "references": [
+    {
+      "from": "EXO-001",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-002",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-003",
+          "name": "Spitzer Space Telescope",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-003",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-004",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-005",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-003",
+          "name": "Spitzer Space Telescope",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "EXO-006",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-012",
+          "name": "Hycean Worlds",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-007",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        }
+      ]
+    },
+    {
+      "from": "EXO-008",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-009",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-003",
+          "name": "Biosignature Detection",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-010",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-011",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-012",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-013",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-003",
+          "name": "Spitzer Space Telescope",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-014",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-015",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-016",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-017",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-018",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-019",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "EXO-020",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-021",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-022",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "EXO-023",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-011",
+          "name": "Molten Planet Class (2026 Discovery)",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-024",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        }
+      ]
+    },
+    {
+      "from": "EXO-025",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        }
+      ]
+    },
+    {
+      "from": "EXO-026",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "EXO-027",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-028",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "EXO-029",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-030",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-031",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-032",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EX-toi199b-methane",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EX-gj3378b-revised",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "EX-2025-exoplanets",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "EXO-033",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-034",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-035",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-036",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-037",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-038",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-039",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-040",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-041",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-042",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-043",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "EXO-044",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "EX-2026-10k-candidates",
+      "from_category": "exoplanets",
+      "references": [
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-001",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "EXO-013",
+          "name": "TRAPPIST-1 d",
+          "category": "exoplanets"
+        },
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-003",
+          "name": "Biosignature Detection",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-002",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "STEL-006",
+          "name": "PLATO",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-015",
+          "name": "PLATO Payload",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-003",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "STEL-007",
+          "name": "Nancy Grace Roman Space Telescope",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-004",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "EXO-012",
+          "name": "Ross 128 b",
+          "category": "exoplanets"
+        },
+        {
+          "id": "STEL-010",
+          "name": "ARIEL",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-005",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-003",
+          "name": "Biosignature Detection",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-006",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "EXO-007",
+          "name": "TOI-700 d",
+          "category": "exoplanets"
+        },
+        {
+          "id": "EXO-024",
+          "name": "TOI-715 b",
+          "category": "exoplanets"
+        },
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "STEL-008",
+          "name": "TESS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-007",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "STEL-009",
+          "name": "CHEOPS",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-008",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "ASTRO-007",
+          "name": "Technosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-016",
+          "name": "Technosignature Search",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-009",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "ASTRO-008",
+          "name": "Europa Ocean Habitability",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "PLSC-004",
+          "name": "Europa Ice Shell Structure",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-010",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "EXO-012",
+          "name": "Ross 128 b",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "PLSC-003",
+          "name": "Titan Methane Cycle",
+          "category": "planetary_science"
+        },
+        {
+          "id": "PLSC-008",
+          "name": "Titan Kraken Mare",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-011",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-003",
+          "name": "Lunar Gateway",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-012",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-003",
+          "name": "Lunar Gateway",
+          "category": "space_habitats"
+        },
+        {
+          "id": "SHAB-010",
+          "name": "Lunar Lava Tube Habitats",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-013",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-003",
+          "name": "Lunar Gateway",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-014",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-009",
+          "name": "Orbital Reef",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-015",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-001",
+          "name": "Asteroid Water Extraction",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-007",
+          "name": "Asteroid Mining Market",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-013",
+          "name": "Asteroid Mining Market 2025-2035",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-016",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-001",
+          "name": "Asteroid Water Extraction",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-007",
+          "name": "Asteroid Mining Market",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-013",
+          "name": "Asteroid Mining Market 2025-2035",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-017",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-001",
+          "name": "Asteroid Water Extraction",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-007",
+          "name": "Asteroid Mining Market",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-013",
+          "name": "Asteroid Mining Market 2025-2035",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-018",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-019",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-020",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "ASTRO-003",
+          "name": "Biosignature Detection",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-005",
+          "name": "Mars Biosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-017",
+          "name": "Mars Subsurface Biosignature Preservation",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-021",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-022",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "ASTRO-009",
+          "name": "Venus Cloud Life Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-013",
+          "name": "Venus Cloud Microbiome Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "PLSC-005",
+          "name": "Venus Cloud Layer Habitability",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-023",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "ASTRO-009",
+          "name": "Venus Cloud Life Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-013",
+          "name": "Venus Cloud Microbiome Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        },
+        {
+          "id": "PLSC-005",
+          "name": "Venus Cloud Layer Habitability",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-024",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "ASTRO-009",
+          "name": "Venus Cloud Life Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-013",
+          "name": "Venus Cloud Microbiome Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "PLSC-005",
+          "name": "Venus Cloud Layer Habitability",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-025",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "ASTRO-009",
+          "name": "Venus Cloud Life Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-013",
+          "name": "Venus Cloud Microbiome Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "PLSC-005",
+          "name": "Venus Cloud Layer Habitability",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-027",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-012",
+          "name": "ISRU Market 2025-2035",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-028",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-003",
+          "name": "Lunar Gateway",
+          "category": "space_habitats"
+        },
+        {
+          "id": "SHAB-010",
+          "name": "Lunar Lava Tube Habitats",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-029",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIN-001",
+          "name": "Asteroid Water Extraction",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-007",
+          "name": "Asteroid Mining Market",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SMIS-030",
+      "from_category": "space_missions",
+      "references": [
+        {
+          "id": "STEL-001",
+          "name": "Hubble Space Telescope",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-013",
+          "name": "Xuntian",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SHAB-002",
+          "name": "Tiangong Space Station",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "STEL-001",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "STEL-002",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "EXO-013",
+          "name": "TRAPPIST-1 d",
+          "category": "exoplanets"
+        },
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "STEL-003",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "EXO-013",
+          "name": "TRAPPIST-1 d",
+          "category": "exoplanets"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "STEL-004",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "EXO-013",
+          "name": "TRAPPIST-1 d",
+          "category": "exoplanets"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "STEL-005",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "SMIS-022",
+          "name": "Venus Life Finder",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-009",
+          "name": "Venus Cloud Life Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-013",
+          "name": "Venus Cloud Microbiome Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "PLSC-005",
+          "name": "Venus Cloud Layer Habitability",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "STEL-006",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "SMIS-002",
+          "name": "PLATO (PLAnetary Transits and Oscillations of stars)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "STEL-007",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "SMIS-003",
+          "name": "Nancy Grace Roman Space Telescope",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "STEL-008",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-006",
+          "name": "TESS (Transiting Exoplanet Survey Satellite)",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "STEL-009",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "SMIS-007",
+          "name": "CHEOPS (CHaracterising ExOPlanet Satellite)",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "STEL-010",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "SMIS-004",
+          "name": "ARIEL (Atmospheric Remote-sensing Infrared Exoplanet Large-survey)",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "STEL-011",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "STEL-012",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-003",
+          "name": "Biosignature Detection",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "STEL-013",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "STEL-014",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        }
+      ]
+    },
+    {
+      "from": "STEL-015",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "SMIS-002",
+          "name": "PLATO (PLAnetary Transits and Oscillations of stars)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "STEL-016",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "STEL-017",
+      "from_category": "space_telescopes",
+      "references": [
+        {
+          "id": "ASTRO-010",
+          "name": "Exoplanet Atmosphere Characterization",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-001",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-009",
+          "name": "Europa Clipper",
+          "category": "space_missions"
+        },
+        {
+          "id": "PLSC-001",
+          "name": "Enceladus Ocean Chemistry",
+          "category": "planetary_science"
+        },
+        {
+          "id": "PLSC-004",
+          "name": "Europa Ice Shell Structure",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-002",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-026",
+          "name": "Comet Interceptor",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "PLSC-002",
+          "name": "Mars Jezero Carbonates",
+          "category": "planetary_science"
+        },
+        {
+          "id": "PLSC-006",
+          "name": "Mars Subsurface Liquid Water",
+          "category": "planetary_science"
+        },
+        {
+          "id": "SHAB-005",
+          "name": "Mars Base Camp (Lockheed Martin concept)",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-003",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-004",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "PLSC-001",
+          "name": "Enceladus Ocean Chemistry",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-005",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "PLSC-002",
+          "name": "Mars Jezero Carbonates",
+          "category": "planetary_science"
+        },
+        {
+          "id": "PLSC-006",
+          "name": "Mars Subsurface Liquid Water",
+          "category": "planetary_science"
+        },
+        {
+          "id": "SHAB-005",
+          "name": "Mars Base Camp (Lockheed Martin concept)",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-007",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-008",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-009",
+          "name": "Europa Clipper",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-001",
+          "name": "Hubble Space Telescope",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "PLSC-004",
+          "name": "Europa Ice Shell Structure",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-009",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-022",
+          "name": "Venus Life Finder",
+          "category": "space_missions"
+        },
+        {
+          "id": "PLSC-005",
+          "name": "Venus Cloud Layer Habitability",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-010",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-011",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-018",
+          "name": "Vast Haven-1",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-012",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "EXO-006",
+          "name": "K2-18 b",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-018",
+          "name": "Vast Haven-1",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-013",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-022",
+          "name": "Venus Life Finder",
+          "category": "space_missions"
+        },
+        {
+          "id": "PLSC-005",
+          "name": "Venus Cloud Layer Habitability",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-014",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "PLSC-001",
+          "name": "Enceladus Ocean Chemistry",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-015",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-009",
+          "name": "Europa Clipper",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-018",
+          "name": "Vast Haven-1",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "PLSC-001",
+          "name": "Enceladus Ocean Chemistry",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-016",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "STEL-002",
+          "name": "JWST",
+          "category": "space_telescopes"
+        }
+      ]
+    },
+    {
+      "from": "ASTRO-017",
+      "from_category": "astrobiology",
+      "references": [
+        {
+          "id": "SMIS-005",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-020",
+          "name": "ExoMars Rosalind Franklin",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-012",
+          "name": "Habitable Worlds Observatory (HWO)",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "PLSC-002",
+          "name": "Mars Jezero Carbonates",
+          "category": "planetary_science"
+        },
+        {
+          "id": "PLSC-006",
+          "name": "Mars Subsurface Liquid Water",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-001",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-002",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-012",
+          "name": "Chang'e-7",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-028",
+          "name": "VIPER",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-003",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-017",
+          "name": "Psyche",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-004",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-013",
+          "name": "Blue Ghost Mission 2",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-011",
+          "name": "Molten Planet Class (2026 Discovery)",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-005",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "SHAB-003",
+          "name": "Lunar Gateway",
+          "category": "space_habitats"
+        },
+        {
+          "id": "SHAB-010",
+          "name": "Lunar Lava Tube Habitats",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-006",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-011",
+          "name": "Artemis II",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "SHAB-003",
+          "name": "Lunar Gateway",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-007",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "EXO-012",
+          "name": "Ross 128 b",
+          "category": "exoplanets"
+        },
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-008",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-029",
+          "name": "IM-3 (Intuitive Machines)",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-009",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-010",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-011",
+          "name": "Molten Planet Class (2026 Discovery)",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-011",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-012",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "EXO-012",
+          "name": "Ross 128 b",
+          "category": "exoplanets"
+        },
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "SMIN-013",
+      "from_category": "space_mining",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-008",
+          "name": "Breakthrough Listen",
+          "category": "space_missions"
+        }
+      ]
+    },
+    {
+      "from": "PLSC-001",
+      "from_category": "planetary_science",
+      "references": [
+        {
+          "id": "ASTRO-001",
+          "name": "Hydrothermal Vent Origin Theory",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-004",
+          "name": "Enceladus Plume Analysis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-014",
+          "name": "Enceladus Biosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "PLSC-002",
+      "from_category": "planetary_science",
+      "references": [
+        {
+          "id": "ASTRO-003",
+          "name": "Biosignature Detection",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-005",
+          "name": "Mars Biosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-017",
+          "name": "Mars Subsurface Biosignature Preservation",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-005",
+          "name": "Mars Base Camp (Lockheed Martin concept)",
+          "category": "space_habitats"
+        },
+        {
+          "id": "SHAB-011",
+          "name": "Mars Ice House",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "PLSC-004",
+      "from_category": "planetary_science",
+      "references": [
+        {
+          "id": "SMIS-009",
+          "name": "Europa Clipper",
+          "category": "space_missions"
+        },
+        {
+          "id": "STEL-001",
+          "name": "Hubble Space Telescope",
+          "category": "space_telescopes"
+        },
+        {
+          "id": "ASTRO-008",
+          "name": "Europa Ocean Habitability",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "PLSC-005",
+      "from_category": "planetary_science",
+      "references": [
+        {
+          "id": "SMIS-022",
+          "name": "Venus Life Finder",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-009",
+          "name": "Venus Cloud Life Hypothesis",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-013",
+          "name": "Venus Cloud Microbiome Hypothesis",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "PLSC-006",
+      "from_category": "planetary_science",
+      "references": [
+        {
+          "id": "ASTRO-005",
+          "name": "Mars Biosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-017",
+          "name": "Mars Subsurface Biosignature Preservation",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SHAB-005",
+          "name": "Mars Base Camp (Lockheed Martin concept)",
+          "category": "space_habitats"
+        },
+        {
+          "id": "SHAB-011",
+          "name": "Mars Ice House",
+          "category": "space_habitats"
+        }
+      ]
+    },
+    {
+      "from": "PLSC-009",
+      "from_category": "planetary_science",
+      "references": [
+        {
+          "id": "ASTRO-001",
+          "name": "Hydrothermal Vent Origin Theory",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "PLSC-010",
+      "from_category": "planetary_science",
+      "references": [
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-001",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-002",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIS-030",
+          "name": "Tiangong + Xuntian",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-003",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "EX-2025-exoplanets",
+          "name": "2025 Exoplanet Discoveries Summary",
+          "category": "exoplanets"
+        },
+        {
+          "id": "SMIS-011",
+          "name": "Artemis II",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-005",
+          "name": "Mars Biosignature Search",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-004",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIS-011",
+          "name": "Artemis II",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-005",
+          "name": "Mars Biosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-017",
+          "name": "Mars Subsurface Biosignature Preservation",
+          "category": "astrobiology"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-005",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "ASTRO-005",
+          "name": "Mars Biosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-017",
+          "name": "Mars Subsurface Biosignature Preservation",
+          "category": "astrobiology"
+        },
+        {
+          "id": "PLSC-002",
+          "name": "Mars Jezero Carbonates",
+          "category": "planetary_science"
+        },
+        {
+          "id": "PLSC-006",
+          "name": "Mars Subsurface Liquid Water",
+          "category": "planetary_science"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-006",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIN-001",
+          "name": "Asteroid Water Extraction",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-007",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-008",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIS-021",
+          "name": "Voyager 3 Concept",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIN-006",
+          "name": "Space Manufacturing from Regolith",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-009",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIS-013",
+          "name": "Blue Ghost Mission 2",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-010",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "SMIS-019",
+          "name": "Lunar Gateway (PPE + HALO)",
+          "category": "space_missions"
+        },
+        {
+          "id": "SMIS-027",
+          "name": "Lunar Trailblazer",
+          "category": "space_missions"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-002",
+          "name": "Lunar Polar Ice Mining",
+          "category": "space_mining"
+        },
+        {
+          "id": "SMIN-004",
+          "name": "Lunar Regolith Oxygen Production (ISRU)",
+          "category": "space_mining"
+        }
+      ]
+    },
+    {
+      "from": "SHAB-011",
+      "from_category": "space_habitats",
+      "references": [
+        {
+          "id": "ASTRO-005",
+          "name": "Mars Biosignature Search",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-015",
+          "name": "Subsurface Ocean Worlds Habitability",
+          "category": "astrobiology"
+        },
+        {
+          "id": "ASTRO-017",
+          "name": "Mars Subsurface Biosignature Preservation",
+          "category": "astrobiology"
+        },
+        {
+          "id": "SMIN-010",
+          "name": "NASA ISRU 2025-2026",
+          "category": "space_mining"
+        },
+        {
+          "id": "PLSC-002",
+          "name": "Mars Jezero Carbonates",
+          "category": "planetary_science"
+        }
+      ]
+    }
+  ]
+}

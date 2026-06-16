@@ -1,0 +1,63 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-06-01T13:51:04.117Z",
+  "domain": "genetech-tools",
+  "description": "Gene Technology Tools Knowledge Base - CRISPR, gene therapy, diagnostics, delivery systems, and regenerative medicine",
+  "total_entities": 332,
+  "categories": [
+    {
+      "id": "biotech_companies",
+      "name": "Leading biotech companies in gene therapy, gene editing, and genomic medicine",
+      "entity_count": 16,
+      "file": "biotech_companies.json"
+    },
+    {
+      "id": "crispr_applications",
+      "name": "CRISPR应用库",
+      "entity_count": 18,
+      "file": "crispr_applications.json"
+    },
+    {
+      "id": "diseases",
+      "name": "疾病实体库",
+      "entity_count": 162,
+      "file": "diseases.json"
+    },
+    {
+      "id": "gene_delivery",
+      "name": "Gene delivery systems and vectors including viral vectors, lipid nanoparticles, and emerging delivery platforms",
+      "entity_count": 12,
+      "file": "gene_delivery.json"
+    },
+    {
+      "id": "gene_editing_tools",
+      "name": "Gene editing tools and platforms including CRISPR variants, base editors, prime editors, and emerging technologies",
+      "entity_count": 15,
+      "file": "gene_editing_tools.json"
+    },
+    {
+      "id": "gene_therapies",
+      "name": "基因疗法库",
+      "entity_count": 35,
+      "file": "gene_therapies.json"
+    },
+    {
+      "id": "genes",
+      "name": "基因实体库",
+      "entity_count": 101,
+      "file": "genes.json"
+    },
+    {
+      "id": "genomic_diagnostics",
+      "name": "Genomic diagnostic technologies including NGS, liquid biopsy, whole genome sequencing, and clinical genomics platforms",
+      "entity_count": 12,
+      "file": "genomic_diagnostics.json"
+    },
+    {
+      "id": "regenerative_medicine",
+      "name": "Regenerative medicine technologies including stem cell therapy, organoids, tissue engineering, and iPSC applications",
+      "entity_count": 13,
+      "file": "regenerative_medicine.json"
+    }
+  ]
+}

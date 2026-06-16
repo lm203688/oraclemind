@@ -1,0 +1,514 @@
+[
+  {
+    "id": "QEC-001",
+    "name": "Surface Code",
+    "type": "Stabilizer code (2D)",
+    "overhead": "~1,000 physical qubits per logical qubit (code distance d=31)",
+    "threshold": "~1% error rate per gate",
+    "key_result": "Google Willow demonstrated below-threshold error correction (Dec 2024); exponential error suppression achieved",
+    "description": "The surface code is the leading quantum error correction scheme. Physical qubits are arranged on a 2D lattice; each logical qubit requires d² physical qubits for code distance d. Google's Willow processor demonstrated below-threshold surface code operation in 2024, where adding more qubits reduced errors exponentially. This was the first experimental proof that quantum error correction works as theory predicts."
+  },
+  {
+    "id": "QEC-002",
+    "name": "Color Code",
+    "type": "Stabilizer code (2D, topological)",
+    "overhead": "Similar to surface code but enables transversal non-Clifford gates",
+    "threshold": "~0.1-0.5% (lower than surface code)",
+    "key_result": "Enables more efficient implementation of logical T-gates",
+    "description": "Color codes are topological codes like surface codes but with a different lattice structure (triangular/hexagonal). Their key advantage is enabling transversal implementation of non-Clifford gates (like the T-gate), which surface codes cannot do. This could reduce the overhead for universal fault-tolerant quantum computing, though they have lower error thresholds."
+  },
+  {
+    "id": "QEC-003",
+    "name": "Cat Qubit Error Correction (Alice & Bob)",
+    "type": "Bosonic code (biased-noise)",
+    "overhead": "10-100x fewer physical qubits per logical qubit than surface code",
+    "threshold": "Bit-flip errors exponentially suppressed by cat qubit design",
+    "key_result": "Alice & Bob demonstrated cat qubits with exponential bit-flip suppression",
+    "description": "Cat qubits use bosonic encoding in superconducting resonators to create a 'biased-noise' qubit where bit-flip errors are exponentially suppressed while phase-flip errors are tolerated. This dramatically reduces error correction overhead: instead of ~1,000 physical qubits per logical qubit, cat qubits may need only 10-100. Alice & Bob is the leading company developing this approach."
+  },
+  {
+    "id": "QEC-004",
+    "name": "Bacon-Shor Code",
+    "type": "Subsystem code (2D)",
+    "overhead": "O(d) physical qubits per logical qubit (better than surface code's O(d²))",
+    "threshold": "~0.2% (lower than surface code)",
+    "key_result": "Lower qubit overhead than surface code; demonstrated on small systems",
+    "description": "Bacon-Shor codes are subsystem codes that use fewer physical qubits than surface codes for the same code distance. They achieve O(d) overhead instead of O(d²) by using gauge qubits that don't need to be corrected. This makes them attractive for near-term systems with limited qubit counts, though their lower threshold means they require higher-fidelity gates."
+  },
+  {
+    "id": "QEC-005",
+    "name": "LDPC (Low-Density Parity-Check) Codes",
+    "type": "Quantum LDPC codes",
+    "overhead": "Potentially O(1) physical qubits per logical qubit (constant overhead)",
+    "threshold": "Varies by construction; some achieve ~0.5%",
+    "key_result": "IBM and others showing LDPC codes can dramatically reduce overhead vs surface codes",
+    "description": "Quantum LDPC codes are a family of error-correcting codes that promise constant overhead (O(1) physical qubits per logical qubit) compared to the surface code's O(d²). This could reduce the total qubit count needed for fault-tolerant quantum computing by orders of magnitude. IBM's 2025 roadmap explicitly targets LDPC codes for their future fault-tolerant architecture."
+  },
+  {
+    "id": "QEC-006",
+    "name": "Topological Error Correction (Microsoft)",
+    "type": "Topological protection (inherent)",
+    "overhead": "Potentially minimal; topological qubits are inherently protected",
+    "threshold": "N/A - topological protection eliminates need for active correction",
+    "key_result": "Microsoft demonstrated first topological qubit (Feb 2025); Majorana zero modes confirmed",
+    "description": "Microsoft's approach uses Majorana zero modes in topological superconductors to create qubits that are inherently protected from local noise. If successful, topological qubits would need dramatically less error correction overhead than conventional approaches. Microsoft demonstrated the first topological qubit in February 2025, though scaling to many qubits remains a major challenge."
+  },
+  {
+    "id": "QEC-007",
+    "name": "XZZX Surface Code",
+    "type": "Modified surface code (biased-noise)",
+    "overhead": "Similar to surface code but optimized for biased noise",
+    "threshold": "~0.5% for depolarizing noise; much higher for biased noise",
+    "key_result": "Significantly outperforms standard surface code when noise is biased",
+    "description": "The XZZX surface code is a modification of the standard surface code that performs much better when qubit noise is biased (e.g., when phase-flip errors dominate over bit-flip errors). Since many physical qubit platforms have naturally biased noise, XZZX codes can achieve much higher effective thresholds and lower overhead, making them a promising near-term approach."
+  },
+  {
+    "id": "QEC-008",
+    "name": "Gottesman-Kitaev-Preskill (GKP) Code",
+    "type": "Bosonic code (continuous variable)",
+    "overhead": "Encodes logical qubit in oscillator; reduces physical qubit count",
+    "threshold": "~1-3% for Gaussian noise",
+    "key_result": "Demonstrated in superconducting and photonic systems",
+    "description": "GKP codes encode a logical qubit in a continuous-variable quantum system (like a microwave resonator or optical mode). They provide protection against small displacement errors and can be concatenated with outer codes for full fault tolerance. GKP codes have been demonstrated experimentally in both superconducting and photonic systems and are a key component of several proposed fault-tolerant architectures."
+  },
+  {
+    "id": "QEC-009",
+    "name": "Riverlane QEC Stack (Software)",
+    "type": "QEC decoder software",
+    "overhead": "Software layer; must run faster than error accumulation",
+    "threshold": "Must match hardware threshold for chosen code",
+    "key_result": "Riverlane's 2025 QEC Report identifies decoder speed as critical bottleneck",
+    "description": "Riverlane is a leading QEC software company developing fast decoders for quantum error correction. Their 2025 QEC Report highlighted that the QEC ecosystem isn't ready: decoder speed is a critical bottleneck, and the industry must solve the 'decoding problem' (processing error syndromes faster than errors accumulate) before fault-tolerant quantum computing can scale. Riverlane's Deltaflow decoder is designed to address this challenge."
+  },
+  {
+    "id": "QEC-010",
+    "name": "Quantinuum Logical Qubit Demonstrations",
+    "type": "Logical qubit experiments",
+    "overhead": "20+ logical qubits demonstrated on H2 hardware",
+    "threshold": "Using H2's 99.8% gate fidelity",
+    "key_result": "20+ logical qubits with error correction on trapped-ion system",
+    "description": "Quantinuum has demonstrated 20+ logical qubits with active error correction on their H2 trapped-ion processor. This is the largest number of logical qubits demonstrated on any quantum computer. The high native gate fidelity (99.8%) and all-to-all connectivity of trapped ions make them particularly well-suited for error correction experiments. These demonstrations are key milestones on the path to fault-tolerant quantum computing."
+  },
+  {
+    "id": "QEC-011",
+    "name": "Riverlane QEC Roadmap (2026)",
+    "type": "Industry roadmap / Technology framework",
+    "overhead": "Accelerates utility-scale quantum by 3-5 years per Riverlane estimates",
+    "threshold": "Focuses on decoder speed and hardware-software co-design",
+    "key_result": "Published comprehensive QEC technology roadmap March 2026",
+    "description": "Riverlane published a technology roadmap in March 2026 outlining how advances in quantum error correction could accelerate quantum computing utility by 3-5 years. The roadmap addresses the critical gap between QEC theory and practical implementation, focusing on decoder speed, real-time processing, and hardware-software co-design."
+  },
+  {
+    "id": "QEC-012",
+    "name": "5-Physical-Qubit Logical Encoding Scheme",
+    "type": "Low-overhead error correction code",
+    "overhead": "~5 physical qubits per logical qubit (200x reduction from surface code)",
+    "threshold": "New encoding scheme with reduced overhead",
+    "key_result": "Published April 2026; could make useful quantum computers achievable with far fewer qubits",
+    "description": "A breakthrough encoding scheme published in April 2026 demonstrates that each logical qubit could be encoded with as few as five physical qubits, compared to the ~1,000 needed with traditional surface codes. This 200x reduction in overhead could fundamentally change the timeline for practical fault-tolerant quantum computing."
+  },
+  {
+    "id": "QEC-013",
+    "name": "IBM 120-Qubit Error Correction Decoder",
+    "type": "Hardware-software QEC implementation",
+    "overhead": "120 physical qubits dedicated to error correction",
+    "threshold": "IBM predicts fault tolerance by 2029",
+    "key_result": "IBM plans to release error correction decoder with 120 physical qubits in 2026",
+    "description": "IBM announced plans to release an error correction decoder using 120 physical qubits in 2026, as part of their roadmap to fault-tolerant quantum computing by 2029. The decoder integrates with IBM Nighthawk processor family and represents a critical step from theoretical QEC to practical implementation."
+  },
+  {
+    "id": "QEC-014",
+    "name": "QEC-Hardware Architecture Co-Design (2025-2026 Trend)",
+    "type": "Co-design methodology",
+    "overhead": "Varies by hardware; optimized for specific qubit technologies",
+    "threshold": "Tight alignment between QEC codes and hardware architectures",
+    "key_result": "2025-2026 trend: QEC codes increasingly designed for specific hardware platforms",
+    "description": "A major trend in 2025-2026 is the tight alignment between QEC codes and specific hardware architectures. The field is moving away from one-size-fits-all QEC toward co-designed solutions. Different qubit technologies each have unique error profiles that benefit from tailored correction schemes."
+  },
+  {
+    "id": "QEC-015",
+    "name": "QEC25 Conference Outcomes",
+    "type": "Community milestone / Research synthesis",
+    "overhead": "N/A - conference proceedings",
+    "threshold": "Multiple approaches converging on practical QEC",
+    "key_result": "7th International Conference on Quantum Error Correction (QEC25) at Yale",
+    "description": "QEC25, the 7th International Conference on Quantum Error Correction held at Yale, marked a pivotal moment for the field. The conference highlighted converging approaches to practical QEC, including low-overhead codes, hardware-software co-design, and real-time decoding."
+  },
+  {
+    "id": "QEC-016",
+    "name": "Low-Overhead QEC (5-Physical-Qubit Logical Qubit)",
+    "type": "Breakthrough in QEC overhead reduction",
+    "overhead": "~5 physical qubits per logical qubit (vs traditional ~1,000)",
+    "threshold": "New encoding scheme enables practical fault tolerance with minimal overhead",
+    "key_result": "April 2026: team demonstrates logical qubit encoding with only ~5 physical qubits",
+    "description": "A breakthrough reported in April 2026 shows that each logical qubit could be encoded with as few as five physical qubits, as opposed to the ~1,000 needed with traditional surface codes. This dramatic reduction in overhead could accelerate practical fault-tolerant quantum computing by years, making useful quantum computers achievable with far fewer physical qubits than previously thought. The scheme uses a new type of quantum error-correcting code with encoding rates above 1/2."
+  },
+  {
+    "id": "QEC-017",
+    "name": "Hardware-Tailored QEC Codes",
+    "type": "Hardware-software co-design for QEC",
+    "overhead": "Varies by hardware platform; optimized for specific error profiles",
+    "threshold": "Tailored to specific qubit technology error characteristics",
+    "key_result": "2025-2026: tight alignment between QEC codes and hardware architectures",
+    "description": "The tight alignment between QEC codes and specific hardware architectures became increasingly evident throughout 2025. Following IBMs hardware-specific QEC approach, multiple groups developed error correction schemes tailored to the unique error profiles of different qubit technologies (superconducting, trapped-ion, neutral atom, photonic). This hardware-software co-design approach yields significantly better performance than generic QEC codes."
+  },
+  {
+    "id": "QEC-018",
+    "name": "Riverlane QEC Roadmap",
+    "type": "Industry roadmap / Technology roadmap",
+    "overhead": "Roadmap targets 3-5 year acceleration of utility-scale quantum computing",
+    "threshold": "Progressive milestones toward practical QEC",
+    "key_result": "March 2026: Riverlane publishes comprehensive QEC technology roadmap",
+    "description": "Riverlane published a technology roadmap in March 2026 outlining how advances in quantum error correction could accelerate utility-scale quantum computing by 3-5 years. The roadmap covers QEC decoder development, real-time error correction feedback loops, and the integration of QEC into quantum software stacks. Riverlane also released The Quantum Error Correction Report 2025, a comprehensive industry analysis."
+  },
+  {
+    "id": "QEC-019",
+    "name": "Neutral Atom QEC at Record Efficiency",
+    "type": "Neutral atom QEC / High-rate quantum codes",
+    "overhead": "Encoding rates above 1/2 (Kasai 2026 theory breakthrough)",
+    "threshold": "Record efficiency for neutral atom platforms",
+    "key_result": "QuEra demonstrates QEC at record efficiency using neutral atoms with high-rate codes",
+    "description": "Building on a recent theory breakthrough (Kasai, 2026), QuEra demonstrated quantum error-correcting codes with encoding rates above 1/2 on neutral atom hardware. This means more than half of the physical qubits contribute to logical information, dramatically improving efficiency. Neutral atoms all-to-all connectivity enables QEC codes that are impractical on other platforms, making them a leading candidate for efficient error correction."
+  },
+  {
+    "id": "QEC-020",
+    "name": "Real-Time QEC Decoding at Scale",
+    "type": "Decoding technology / Real-time processing",
+    "overhead": "Enables practical QEC by processing syndrome measurements in real-time",
+    "threshold": "Decoding speed must match qubit operation speed",
+    "key_result": "2025-2026: multiple groups achieve real-time decoding for 100+ qubit systems",
+    "description": "A critical challenge for practical QEC is decoding syndrome measurements fast enough to correct errors before they accumulate. In 2025-2026, multiple groups achieved real-time decoding for systems with 100+ qubits, using FPGA-based decoders and machine learning approaches. Quantinuum Helios and IBM Nighthawk both integrate real-time QEC decoders, marking the transition from theoretical QEC to practical implementation."
+  },
+  {
+    "id": "QEC-021",
+    "name": "QEC Error Suppression via New Mechanism",
+    "type": "Error suppression / Novel QEC mechanism",
+    "overhead": "Eliminates specific error source entirely",
+    "threshold": "Pushes computational accuracy beyond previous limits",
+    "key_result": "January 2026: research team develops new mechanism eliminating a key error source",
+    "description": "In January 2026, a research team developed a new mechanism that eliminates a specific source of quantum error, successfully pushing the computational accuracy of quantum computers beyond previous limits. Rather than correcting errors after they occur, this approach prevents certain errors from happening in the first place, complementing traditional QEC approaches and reducing the overall error correction burden."
+  },
+  {
+    "id": "QEC-022",
+    "name": "Kasai 2026 High-Rate QEC Code Theory",
+    "type": "Theoretical breakthrough / High-rate quantum code",
+    "overhead": "Encoding rates above 1/2 (more than half of physical qubits contribute to logical information)",
+    "threshold": "High-rate codes with practical thresholds",
+    "key_result": "Kasai (2026) theory breakthrough enables QEC codes with encoding rates above 1/2",
+    "description": "The Kasai 2026 theory breakthrough enables quantum error-correcting codes with encoding rates above 1/2, meaning more than half of the physical qubits contribute to logical information rather than being overhead. This dramatically improves the efficiency of quantum error correction and is being implemented on neutral atom platforms by QuEra. High-rate codes could reduce the total qubit count needed for fault-tolerant quantum computing by orders of magnitude.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.quera.com/blog-posts/quantum-error-correction-at-record-efficiency-why-neutral-atoms-are-leading-the-way",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-023",
+    "name": "QEC Workforce Development (2025-2026)",
+    "type": "Industry challenge / Workforce",
+    "overhead": "N/A - human capital",
+    "threshold": "Critical shortage of QEC-trained engineers and researchers",
+    "key_result": "Riverlane QEC Report 2025 identifies QEC workforce as critical bottleneck",
+    "description": "The Riverlane QEC Report 2025 identified the QEC workforce as a critical bottleneck for the quantum computing industry. There is a significant shortage of engineers and researchers trained in quantum error correction theory and implementation. The report calls for dedicated QEC education programs, cross-training of classical error correction experts, and industry-academia partnerships to build the workforce needed for fault-tolerant quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.pasqal.com/resources/the-quantum-error-correction-report-2025",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-024",
+    "name": "qLDPC Codes on IBM Loon Processor",
+    "type": "Quantum LDPC code implementation",
+    "overhead": "Multi-layer routing for long-range on-chip connections (c-couplers)",
+    "threshold": "Real-time classical error decoding <480ns",
+    "key_result": "IBM Loon demonstrates qLDPC codes with real-time decoding, achieved 1 year ahead of schedule",
+    "description": "IBM's experimental Loon processor demonstrates all key components for fault-tolerant quantum computing using quantum LDPC (qLDPC) codes. The processor features multi-layer routing for long-range on-chip connections (c-couplers) and achieves real-time classical error decoding in under 480 nanoseconds. This milestone was achieved one year ahead of schedule, demonstrating the rapid progress in practical QEC implementation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-025",
+    "name": "Shocking QEC Breakthroughs (2026 Roundup)",
+    "type": "Multiple QEC breakthroughs / Industry review",
+    "overhead": "Multiple approaches converging",
+    "threshold": "Multiple codes achieving practical thresholds",
+    "key_result": "2026: QEC breakthroughs reshaping computing future, enabling reliable quantum machines",
+    "description": "Quantum error correction breakthroughs in 2026 are reshaping the future of computing, enabling reliable quantum machines that outperform classical computers for specific tasks. Key developments include: below-threshold error correction on multiple platforms, high-rate QEC codes, real-time decoding at scale, and hardware-software co-design for QEC. The convergence of these advances suggests that practical fault-tolerant quantum computing may arrive sooner than previously expected.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "article_url": "https://medium.com/@meisshaily/shocking-breakthroughs-in-quantum-error-correction-b10946b37c36",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-026",
+    "name": "Riverlane QEC 2025 Trends and 2026 Predictions",
+    "type": "Industry analysis / QEC roadmap",
+    "overhead": "Three key trends identified for 2025; three predictions for 2026",
+    "threshold": "QEC emerged as defining industry challenge in 2025",
+    "key_result": "Riverlane: QEC is now the industry defining challenge; three 2026 predictions published",
+    "description": "Riverlane published their analysis of QEC trends from 2025 and predictions for 2026. Key 2025 trends: (1) QEC emerged as the defining industry challenge, (2) below-threshold error correction demonstrated on multiple platforms, (3) real-time decoding advancing. 2026 predictions: (1) QEC codes will be increasingly hardware-tailored, (2) decoder speed will become a critical bottleneck, (3) first commercial QEC-integrated systems will emerge.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-027",
+    "name": "QEC as Industry Defining Challenge (2025 Report)",
+    "type": "Industry report / QEC priority assessment",
+    "overhead": "Japan leads public quantum investment with nearly $8 billion",
+    "threshold": "Error correction now the defining challenge for the quantum industry",
+    "key_result": "November 2025 report: QEC is the industry defining challenge; Japan leads investment",
+    "description": "A November 2025 report from The Quantum Insider identified quantum error correction as the industry defining challenge. The report estimates Japan leads public quantum investment with nearly $8 billion committed, much of it allocated to QEC research. The shift from NISQ-era approaches to QEC-focused development represents a fundamental change in the quantum computing industry strategy.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://thequantuminsider.com/2025/11/19/quantum-report-says-error-correction-now",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-028",
+    "name": "Brownstone Research: Scaling Quantum Computing 2026",
+    "type": "Industry analysis / Scaling roadmap",
+    "overhead": "2025 significant for quantum technology; 2026 poised to carry momentum",
+    "threshold": "Progress in qubit coherence, error correction, and system integration",
+    "key_result": "2025 was significant for quantum technology; 2026 carries momentum into scaling phase",
+    "description": "Brownstone Research published a comprehensive analysis of scaling quantum computing in 2026, noting that 2025 was a significant year for quantum technology and 2026 is poised to carry that momentum. Key findings include progress in qubit coherence, error correction, and system integration combined with growing industry investment. The report identifies scaling as the next major challenge after QEC demonstrations.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.brownstoneresearch.com/bleeding-edge/scaling-quantum-computing-2026",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-29",
+    "name": "Microsoft Majorana 2 Topological Protection (1,000x Improvement)",
+    "type": "Topological error protection / Hardware-level",
+    "overhead": "Qubits survive ~20 seconds vs milliseconds; 1,000x improvement reduces correction needs",
+    "threshold": "Topological protection inherently reduces errors at hardware level",
+    "key_result": "Microsoft Majorana 2: qubit lifetime improved 1,000x from milliseconds to ~20 seconds",
+    "description": "Microsoft's Majorana 2 chip achieved a 1,000x improvement in topological qubit lifetime, with qubits surviving for approximately 20 seconds compared to milliseconds on the first Majorana chip. This dramatic improvement in coherence time means that topological qubits need far less active error correction, potentially reducing the total qubit overhead for fault-tolerant quantum computing by orders of magnitude.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.networkworld.com/article/4088709/top-quantum-breakthroughs-of-2025.html",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-30",
+    "name": "IonQ 99.99% Gate Fidelity Impact on QEC",
+    "type": "Gate fidelity milestone / QEC efficiency",
+    "overhead": "99.99% fidelity dramatically reduces QEC overhead; fewer physical qubits per logical qubit",
+    "threshold": "Approaching threshold where many QEC codes become highly efficient",
+    "key_result": "IonQ achieves 99.99% two-qubit gate fidelity; approaching QEC efficiency threshold",
+    "description": "IonQ's achievement of 99.99% two-qubit gate fidelity on its Forte Enterprise platform has major implications for quantum error correction. At this fidelity level, many QEC codes become significantly more efficient, requiring far fewer physical qubits per logical qubit. This milestone brings trapped-ion systems closer to practical fault-tolerant quantum computing with manageable overhead.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://ionq.com/news",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-31",
+    "name": "IBM New QEC Architecture (Reduced Qubit Requirements)",
+    "type": "QEC architecture / Overhead reduction",
+    "overhead": "New architecture slashes number of qubits required for error correction",
+    "threshold": "IBM claims significant reduction in QEC overhead with new approach",
+    "key_result": "IBM unveiled new quantum computing architecture that slashes qubits required for error correction",
+    "description": "IBM unveiled a new quantum computing architecture that significantly reduces the number of qubits required for quantum error correction. This approach, combined with IBM's qLDPC code implementations on the Loon processor and the Nighthawk family roadmap, represents a fundamental shift in how QEC overhead is managed. If successful, this could accelerate the timeline to practical fault-tolerant quantum computing by years.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-32",
+    "name": "Google Below-Threshold Surface Code (Nature Publication)",
+    "type": "Experimental QEC milestone / Surface code",
+    "overhead": "Below-threshold operation: adding more qubits reduces errors exponentially",
+    "threshold": "Below critical threshold achieved on Willow processor",
+    "key_result": "Google demonstrates below-threshold surface code error correction on Willow (Nature 2025)",
+    "description": "Google Quantum AI demonstrated below-threshold surface code error correction on its Willow processor, published in Nature. Two below-threshold surface code memories were shown on the newest generation of superconducting processors. This is the first experimental proof that adding more qubits actually reduces errors exponentially, as theory predicts. This landmark result validates the fundamental premise of quantum error correction.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/s41586-024-08449-1",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-033",
+    "name": "Riverlane QEC Decoder (Real-Time)",
+    "type": "Real-time decoder for surface codes",
+    "overhead": "Sub-microsecond decoding latency",
+    "threshold": "Matches surface code threshold (~1%)",
+    "key_result": "Real-time decoding demonstrated on FPGA at scale (2025)",
+    "description": "Riverlane developed a real-time quantum error correction decoder that runs on FPGA hardware and achieves sub-microsecond decoding latency for surface codes. This is critical because error correction must keep pace with the quantum computation — if decoding is too slow, errors accumulate faster than they can be corrected. Riverlane's decoder is a key enabling technology for fault-tolerant quantum computing, as it bridges the gap between theoretical QEC and practical implementation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-034",
+    "name": "QLDPC (Quantum Low-Density Parity-Check) Codes",
+    "type": "Stabilizer code (high-rate)",
+    "overhead": "~10-100x lower overhead than surface code per logical qubit",
+    "threshold": "~0.2-0.5% error rate per gate (varies by code family)",
+    "key_result": "Multiple groups demonstrated QLDPC codes with better rate-distance tradeoff than surface code (2025-2026)",
+    "description": "Quantum Low-Density Parity-Check (QLDPC) codes have emerged as a major alternative to the surface code for quantum error correction. QLDPC codes achieve much higher encoding rates (more logical qubits per physical qubit) than the surface code, potentially reducing the overhead for fault-tolerant quantum computing by 10-100x. Key families include bivariate bicycle codes, Tanner codes, and lifted product codes. In 2025-2026, several groups demonstrated QLDPC codes with favorable properties on quantum hardware.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-035",
+    "name": "Bivariate Bicycle Code",
+    "type": "QLDPC code",
+    "overhead": "~10x lower overhead than surface code",
+    "threshold": "~0.2-0.3% error rate",
+    "key_result": "IBM demonstrated bivariate bicycle codes with improved encoding rate (2025)",
+    "description": "Bivariate bicycle codes are a family of QLDPC codes that achieve better rate-distance tradeoffs than the surface code. IBM demonstrated these codes on their quantum hardware in 2025, showing that they can encode more logical qubits per physical qubit while maintaining good error suppression. The name comes from the mathematical structure of the parity-check matrices, which are based on bivariate polynomials over cyclic groups.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-036",
+    "name": "Cryogenic QEC Controller",
+    "type": "Hardware-based error correction",
+    "overhead": "Eliminates room-temperature control bottleneck",
+    "threshold": "Enables real-time feedback at cryogenic temperatures",
+    "key_result": "Cryogenic CMOS controllers demonstrated for real-time QEC (2025-2026)",
+    "description": "Cryogenic CMOS controllers operating at 4K have been developed to perform real-time quantum error correction inside the cryostat, eliminating the need to send measurement data to room-temperature electronics for decoding. This dramatically reduces the latency of the error correction feedback loop and simplifies the wiring complexity that is a major scaling bottleneck. Intel and others have demonstrated cryogenic controller chips that can manage multiple qubits simultaneously.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://thequantuminsider.com/2025/11/19/quantum-report-says-error-correction-now-the-industrys-defining",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-037",
+    "name": "Japan's $8B Quantum Investment (QEC Focus)",
+    "type": "National QEC initiative",
+    "overhead": "Nearly $8 billion committed, much allocated to QEC",
+    "threshold": "National-scale effort targeting fault-tolerant QC",
+    "key_result": "Japan leads global public quantum investment with QEC as priority (2025)",
+    "description": "A 2025 quantum industry report estimates that Japan now leads global public quantum investment with nearly $8 billion committed, much of it allocated to quantum error correction. This reflects the industry-wide shift from simply building more qubits to making those qubits reliable through error correction. Japan's investment focuses on developing fault-tolerant quantum computing platforms, including both hardware and software for QEC.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://thequantuminsider.com/2025/11/19/quantum-report-says-error-correction-now-the-industrys-defining",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-038",
+    "name": "Autonomous Quantum Error Correction",
+    "type": "Continuous QEC (no measurement)",
+    "overhead": "Eliminates measurement-based feedback loop",
+    "threshold": "Demonstrated on cat qubits and bosonic codes",
+    "key_result": "Autonomous QEC demonstrated on cat qubit systems (2025-2026)",
+    "description": "Autonomous quantum error correction uses engineered dissipation to continuously correct errors without the need for measurement and feedback. This approach has been demonstrated on cat qubits (bosonic codes) where the quantum state is stabilized by a driven-dissipative process. Autonomous QEC eliminates the latency and hardware overhead of measurement-based error correction, potentially simplifying the path to fault-tolerant quantum computing. Alice & Bob and others are developing hardware based on this approach.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://medium.com/@meisshaily/shocking-breakthroughs-in-quantum-error-correction",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-039",
+    "name": "Error-Corrected Quantum Memory (Logical Qubit Lifetime)",
+    "type": "QEC benchmark",
+    "overhead": "Surface code with increasing code distance",
+    "threshold": "Below-threshold operation demonstrated on Willow",
+    "key_result": "Logical qubit lifetime exceeds physical qubit lifetime by 2x+ (2025)",
+    "description": "A key milestone in quantum error correction is demonstrating that a logical qubit (protected by error correction) has a longer lifetime than the underlying physical qubits. In 2025, Google's Willow processor achieved this milestone, showing that surface code error correction extends qubit lifetime beyond the physical qubit T1 time. This 'break-even' result is essential for building quantum computers that can run long computations without errors accumulating.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/s41586-024-08449-y",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QEC-040",
+    "name": "Quantum Error Correction as Industry Priority (2025-2026)",
+    "type": "Industry trend / Strategy",
+    "overhead": "Shift from qubit count to qubit quality",
+    "threshold": "Industry consensus: QEC is the defining challenge",
+    "key_result": "QEC emerged as the industry's defining priority in 2025 (Riverlane report)",
+    "description": "In 2025, Quantum Error Correction emerged as the unambiguous defining priority of the quantum computing industry. Riverlane declared 'the QEC era is here' at the end of 2024, and 2025 confirmed this with multiple QEC milestones: Google's below-threshold demonstration, Quantinuum's logical qubit experiments, and IBM's QLDPC code demonstrations. The industry has shifted focus from simply increasing qubit counts to making qubits reliable through error correction. This transition is critical for achieving practical quantum advantage.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

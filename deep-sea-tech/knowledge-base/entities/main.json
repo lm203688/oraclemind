@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-06-04",
+  "categories": [
+    "submersibles",
+    "deep_sea_resources",
+    "deep_sea_ecology",
+    "underwater_communication",
+    "ocean_energy",
+    "marine_biology",
+    "ocean_exploration",
+    "underwater_tech"
+  ],
+  "total_categories": 8,
+  "description": "Knowledge base entity categories for deep-sea-tech",
+  "total_entities": 316
+}

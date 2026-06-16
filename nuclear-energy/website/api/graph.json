@@ -1,0 +1,630 @@
+{
+  "nodes": [
+    {
+      "id": "FUS-001",
+      "name": "Tokamak (Magnetic Confinement)",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-001.html"
+    },
+    {
+      "id": "FUS-002",
+      "name": "Stellarator",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-002.html"
+    },
+    {
+      "id": "FUS-003",
+      "name": "Inertial Confinement Fusion (ICF)",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-003.html"
+    },
+    {
+      "id": "FUS-004",
+      "name": "Field-Reversed Configuration (FRC)",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-004.html"
+    },
+    {
+      "id": "FUS-005",
+      "name": "Z-Pinch / Magneto-Inertial Fusion",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-005.html"
+    },
+    {
+      "id": "FUS-006",
+      "name": "Aneutronic Fusion (p-B11)",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-006.html"
+    },
+    {
+      "id": "FUS-007",
+      "name": "Magnetized Target Fusion (MTF)",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-007.html"
+    },
+    {
+      "id": "FUS-008",
+      "name": "Direct-Drive ICF",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-008.html"
+    },
+    {
+      "id": "FUS-009",
+      "name": "Spherical Tokamak",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-009.html"
+    },
+    {
+      "id": "FUS-010",
+      "name": "Fusion-Fission Hybrid",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-010.html"
+    },
+    {
+      "id": "FUS-011",
+      "name": "Pulser-Driven Inertial Fusion (Pacific Fusion)",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-011.html"
+    },
+    {
+      "id": "FUS-012",
+      "name": "Muon-Catalyzed Fusion",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-012.html"
+    },
+    {
+      "id": "FUS-013",
+      "name": "Dense Plasma Focus (DPF)",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-013.html"
+    },
+    {
+      "id": "FUS-014",
+      "name": "Helion's Pulsed FRC with Direct Conversion",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-014.html"
+    },
+    {
+      "id": "FUS-015",
+      "name": "Laser-Driven Shock Ignition",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/fus-015.html"
+    },
+    {
+      "id": "NE-tae-norm",
+      "name": "TAE Technologies Norm",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/ne-tae-norm.html"
+    },
+    {
+      "id": "NE-cfs-sparc-75pct",
+      "name": "CFS SPARC 75% Complete",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/ne-cfs-sparc-75pct.html"
+    },
+    {
+      "id": "NE-helion-polaris-dt",
+      "name": "Helion Polaris D-T Fusion",
+      "category": "fusion",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/ne-helion-polaris-dt.html"
+    },
+    {
+      "id": "NFUEL-001",
+      "name": "HALEU (High-Assay Low-Enriched Uranium)",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-001.html"
+    },
+    {
+      "id": "NFUEL-002",
+      "name": "TRISO (Tri-structural Isotropic) Fuel",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-002.html"
+    },
+    {
+      "id": "NFUEL-003",
+      "name": "Molten Salt Fuel",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-003.html"
+    },
+    {
+      "id": "NFUEL-004",
+      "name": "Metal Fuel (Sodium-cooled Fast Reactor)",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-004.html"
+    },
+    {
+      "id": "NFUEL-005",
+      "name": "Thorium Fuel Cycle",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-005.html"
+    },
+    {
+      "id": "NFUEL-006",
+      "name": "Accident Tolerant Fuel (ATF)",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-006.html"
+    },
+    {
+      "id": "NFUEL-007",
+      "name": "FCM™ Fuel (Fully Ceramic Micro-encapsulated)",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-007.html"
+    },
+    {
+      "id": "NFUEL-008",
+      "name": "Tritium Breeding",
+      "category": "nuclear_fuel",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/nfuel-008.html"
+    },
+    {
+      "id": "RAD-001",
+      "name": "Medical Radioisotopes (Mo-99/Tc-99m)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-001.html"
+    },
+    {
+      "id": "RAD-002",
+      "name": "Targeted Alpha Therapy (TAT)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-002.html"
+    },
+    {
+      "id": "RAD-003",
+      "name": "Theranostics (Lu-177 / Y-90)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-003.html"
+    },
+    {
+      "id": "RAD-004",
+      "name": "Boron Neutron Capture Therapy (BNCT)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-004.html"
+    },
+    {
+      "id": "RAD-005",
+      "name": "Food Irradiation",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-005.html"
+    },
+    {
+      "id": "RAD-006",
+      "name": "Sterilization (Medical Devices)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-006.html"
+    },
+    {
+      "id": "RAD-007",
+      "name": "Space Nuclear Power (RTGs and Fission Reactors)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-007.html"
+    },
+    {
+      "id": "RAD-008",
+      "name": "Nuclear Desalination",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-008.html"
+    },
+    {
+      "id": "RAD-009",
+      "name": "Radiation Processing (Polymer Cross-linking)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-009.html"
+    },
+    {
+      "id": "RAD-010",
+      "name": "Neutron Activation Analysis (NAA)",
+      "category": "radiation_applications",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/rad-010.html"
+    },
+    {
+      "id": "REACT-001",
+      "name": "ITER (International Thermonuclear Experimental Reactor)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-001.html"
+    },
+    {
+      "id": "REACT-002",
+      "name": "SPARC (Commonwealth Fusion Systems)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-002.html"
+    },
+    {
+      "id": "REACT-003",
+      "name": "NIF (National Ignition Facility)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-003.html"
+    },
+    {
+      "id": "REACT-004",
+      "name": "JET (Joint European Torus)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-004.html"
+    },
+    {
+      "id": "REACT-005",
+      "name": "KSTAR (Korea Superconducting Tokamak Advanced Research)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-005.html"
+    },
+    {
+      "id": "REACT-006",
+      "name": "EAST (Experimental Advanced Superconducting Tokamak)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-006.html"
+    },
+    {
+      "id": "REACT-007",
+      "name": "TAE Technologies Norman",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-007.html"
+    },
+    {
+      "id": "REACT-008",
+      "name": "Helion Energy Polaris",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-008.html"
+    },
+    {
+      "id": "REACT-009",
+      "name": "APOLLO (Zap Energy)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-009.html"
+    },
+    {
+      "id": "REACT-010",
+      "name": "Hualong One (HPR1000)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-010.html"
+    },
+    {
+      "id": "REACT-011",
+      "name": "Pacific Fusion Pulser",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-011.html"
+    },
+    {
+      "id": "REACT-012",
+      "name": "Wendelstein 7-X (Stellarator)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-012.html"
+    },
+    {
+      "id": "REACT-013",
+      "name": "Sandia MagLIF (Magnetized Liner Inertial Fusion)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-013.html"
+    },
+    {
+      "id": "REACT-014",
+      "name": "AP1000 (Westinghouse)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-014.html"
+    },
+    {
+      "id": "REACT-015",
+      "name": "EPR (Areva/Framatome)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-015.html"
+    },
+    {
+      "id": "REACT-016",
+      "name": "TerraPower Natrium",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-016.html"
+    },
+    {
+      "id": "REACT-017",
+      "name": "Kairos Power Hermes",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-017.html"
+    },
+    {
+      "id": "REACT-018",
+      "name": "CFETR (China Fusion Engineering Test Reactor)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-018.html"
+    },
+    {
+      "id": "REACT-019",
+      "name": "VVER-1200 (Rosatom)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-019.html"
+    },
+    {
+      "id": "REACT-020",
+      "name": "X-energy Xe-100",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-020.html"
+    },
+    {
+      "id": "REACT-021",
+      "name": "CFS ARC (Affordable Robust Compact)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-021.html"
+    },
+    {
+      "id": "REACT-022",
+      "name": "First Light Fusion",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-022.html"
+    },
+    {
+      "id": "REACT-023",
+      "name": "General Fusion (Magnetized Target Fusion)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-023.html"
+    },
+    {
+      "id": "REACT-024",
+      "name": "TAE Copernicus",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-024.html"
+    },
+    {
+      "id": "REACT-025",
+      "name": "China's Huanlong Two (HPR1000+) / Linglong One (ACP100)",
+      "category": "reactors",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/react-025.html"
+    },
+    {
+      "id": "SMR-001",
+      "name": "NuScale Power Module",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-001.html"
+    },
+    {
+      "id": "SMR-002",
+      "name": "GE Hitachi BWRX-300",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-002.html"
+    },
+    {
+      "id": "SMR-003",
+      "name": "Linglong One (ACP100)",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-003.html"
+    },
+    {
+      "id": "SMR-004",
+      "name": "Rolls-Royce SMR",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-004.html"
+    },
+    {
+      "id": "SMR-005",
+      "name": "Holtec SMR-160",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-005.html"
+    },
+    {
+      "id": "SMR-006",
+      "name": "Oklo Aurora",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-006.html"
+    },
+    {
+      "id": "SMR-007",
+      "name": "TerraPower Natrium (SMR variant)",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-007.html"
+    },
+    {
+      "id": "SMR-008",
+      "name": "Rosatom RITM-200 / ASMM",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-008.html"
+    },
+    {
+      "id": "SMR-009",
+      "name": "X-energy Xe-100 (SMR)",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-009.html"
+    },
+    {
+      "id": "SMR-010",
+      "name": "Westinghouse eVinci",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-010.html"
+    },
+    {
+      "id": "SMR-011",
+      "name": "Ultra Safe Nuclear MMR (Micro Modular Reactor)",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-011.html"
+    },
+    {
+      "id": "SMR-012",
+      "name": "Copenhagen Atomics Molten Salt Reactor",
+      "category": "smr",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-012.html"
+    },
+    {
+      "id": "SMR-001",
+      "name": "NuScale Power Module",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-001.html"
+    },
+    {
+      "id": "SMR-002",
+      "name": "GE Hitachi BWRX-300",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-002.html"
+    },
+    {
+      "id": "SMR-003",
+      "name": "Linglong One (ACP100)",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-003.html"
+    },
+    {
+      "id": "SMR-004",
+      "name": "Rolls-Royce SMR",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-004.html"
+    },
+    {
+      "id": "SMR-005",
+      "name": "Holtec SMR-160",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-005.html"
+    },
+    {
+      "id": "SMR-006",
+      "name": "Oklo Aurora",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-006.html"
+    },
+    {
+      "id": "SMR-007",
+      "name": "TerraPower Natrium (SMR variant)",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-007.html"
+    },
+    {
+      "id": "SMR-008",
+      "name": "Rosatom RITM-200 / ASMM",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-008.html"
+    },
+    {
+      "id": "SMR-009",
+      "name": "X-energy Xe-100 (SMR)",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-009.html"
+    },
+    {
+      "id": "SMR-010",
+      "name": "Westinghouse eVinci",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-010.html"
+    },
+    {
+      "id": "SMR-011",
+      "name": "Ultra Safe Nuclear MMR (Micro Modular Reactor)",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-011.html"
+    },
+    {
+      "id": "SMR-012",
+      "name": "Copenhagen Atomics Molten Salt Reactor",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/smr-012.html"
+    },
+    {
+      "id": "NE-tva-bwrx300",
+      "name": "TVA Clinch River BWRX-300",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/ne-tva-bwrx300.html"
+    },
+    {
+      "id": "NE-holtec-smr300",
+      "name": "Holtec SMR-300 Pioneer",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/ne-holtec-smr300.html"
+    },
+    {
+      "id": "NE-helion-orion",
+      "name": "Helion Energy Orion",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/ne-helion-orion.html"
+    },
+    {
+      "id": "NE-cfs-virginia",
+      "name": "CFS Virginia Commercial Fusion Plant",
+      "category": "smr_new",
+      "domain": "nuclear.genetech.tools",
+      "url": "https://nuclear.genetech.tools/entity/ne-cfs-virginia.html"
+    }
+  ],
+  "edges": [],
+  "domain": "nuclear.genetech.tools",
+  "name": "核能知识引擎"
+}

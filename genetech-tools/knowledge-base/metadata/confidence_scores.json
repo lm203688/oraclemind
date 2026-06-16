@@ -1,0 +1,439 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-25T06:26:07.845Z",
+  "description": "置信度评分",
+  "scores": {
+    "ADA|Adenosine Deaminase Severe Combined Immunodeficiency (ADA-SCID)": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "DHFR|Rheumatoid Arthritis+Rheumatic Diseases": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "|Breast Cancer Triple Negative+Breast Cancer Stage II+Breast Cancer Stage III+Breast Cancer Invasive": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "VEGF|Diabetic Macular Edema+Diabetic Retinopathy": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "PD-L1|Squamous Cell Cancer of Head and Neck+Triple Negative Breast Cancer+Epithelial Ovarian Cancer+Malignant Melanoma+Advanced Solid Tumors": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "|Ovarian Cancer": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "Cell Cycle Progression Gene Profile|Prostate Cancer": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "GAA|Pompe Disease (Late-onset)": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "|Granuloma+Granulomatous Disease, Chronic+Leukocyte Disease+Genetic Disease, X-Linked+Genetic Disease, Inborn": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "PIK3CA|Carcinoma, Non-Small-Cell Lung": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "|Breast Cancer+HER2-low Breast Cancer": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:21:23.372Z"
+    },
+    "GAT-1+SLC6A1|epilepsy+SLC6A1-related neurodevelopmental disorder+developmental and epileptic encephalopathy": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "LAMP2+OTOF|Danon disease+hypertrophic cardiomyopathy+myopathy+intellectual disability+retinopathy+Fabry disease+PRKAG2+Pompe disease": {
+      "level": "low",
+      "score": 5,
+      "source_count": 2,
+      "last_validated": "2026-05-25T04:23:06.066Z"
+    },
+    "|oral lesions+cold sores+oral Kaposi's sarcoma (KS)+HIV-positive": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "|lymphoid hematologic malignancies": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "Keap1+PHD2+Nrf2+HIF-1α|diabetic wounds+chronic diabetic wounds": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "|cardiovascular diseases+CVDs": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "PNP|triple-negative breast cancer+TNBC": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "IDH1+TK+Flt3L|glioma+glioblastoma": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "|cancer": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "GLA+GB3|Fabry disease": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "|Chronic granulomatous disease+inborn error of immunity+invasive bacterial infections+fungal infections+inflammatory complications": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "|": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "TurboYFP|lung adenocarcinoma": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "DBP|respiratory infections+ocular infections+urinary tract infections+gastrointestinal infections": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "GYG1+p62|Glycogen storage disease type 15+cardiomyopathy+congestive heart failure": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:32:33.443Z"
+    },
+    "|Haemophilia+Haemophilia A+Haemophilia B": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "LPL+Furin|familial LPL deficiency+chylomicronemia+acute pancreatitis+hepatic steatosis": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "PNP+PD-1+PD-L1+Claudin-1+Occludin+ZO-1|triple-negative breast cancer+TNBC+immune-related adverse events+intestinal injury": {
+      "level": "low",
+      "score": 5,
+      "source_count": 2,
+      "last_validated": "2026-05-25T04:32:33.443Z"
+    },
+    "GLA+GBA|Fabry disease": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:42:37.070Z"
+    },
+    "CLN3|Juvenile neuronal ceroid lipofuscinosis+JNCL+Batten Disease": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:32:33.443Z"
+    },
+    "Bcl-2|Bladder Cancer": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "HBB+HBA1+HBA2+HBG1+HBG2|Hb Bart's hydrops fetalis syndrome+BHFS+α-thalassemia+β-thalassemia+HbH disease": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "DMD+CK8+μDys5|Duchenne Muscular Dystrophy+Becker muscular dystrophy+dystrophinopathies": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:32:33.444Z"
+    },
+    "GLB1|GM1 gangliosidosis+lysosomal storage disorder": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:32:33.444Z"
+    },
+    "|genetic disorders+oncology": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:32:33.444Z"
+    },
+    "SERPINA1|Alpha-1 antitrypsin deficiency+AATD+lung disease+liver disease": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:32:33.444Z"
+    },
+    "|serious paediatric diseases": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "GYG1+p62+desmin|Glycogen storage disease type 15+cardiomyopathy+congestive heart failure": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "Luxturna|blindness+sickle cell disease+rare inherited eye": {
+      "level": "low",
+      "score": 0,
+      "source_count": 2,
+      "last_validated": "2026-05-25T04:39:31.139Z"
+    },
+    "|genetic disorders": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "|cancer+ALS": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:39:31.139Z"
+    },
+    "|inherited blindness": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:39:31.139Z"
+    },
+    "|Wiskott-Aldrich syndrome": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "|genetic disease": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:39:31.139Z"
+    },
+    "PNP+PD-1+PD-L1+Claudin-1+Occludin+ZO-1|triple-negative breast cancer+TNBC+immune-related adverse events+irAEs": {
+      "level": "low",
+      "score": 5,
+      "source_count": 2,
+      "last_validated": "2026-05-25T04:46:27.541Z"
+    },
+    "|Chronic granulomatous disease+inborn error of immunity+inflammatory complications": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "GYG1+GLY1+GYS+UGP2+PYGL+AGL+SQSTM1+DES|Glycogen storage disease type 15+GSD15+cardiomyopathy+congestive heart failure": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:46:27.541Z"
+    },
+    "|Osteoporosis+postmenopausal osteoporosis (PMOP)": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:46:27.541Z"
+    },
+    "OPN1MW+OPN1SW+NRL+L-opsin|Blue cone monochromacy+BCM": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:46:27.541Z"
+    },
+    "|spinal muscular atrophy (SMA)": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:46:27.541Z"
+    },
+    "FXN|Friedreich's Ataxia+FA": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:46:27.541Z"
+    },
+    "PNP+PD-1+PD-L1+Claudin-1+Occludin+ZO-1|triple-negative breast cancer+TNBC+immune-related adverse events+irAEs+intestinal injury": {
+      "level": "low",
+      "score": 5,
+      "source_count": 2,
+      "last_validated": "2026-05-25T04:49:18.579Z"
+    },
+    "GFP|": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:49:18.579Z"
+    },
+    "miR122+miR208a|metabolic+muscle disease": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:49:18.579Z"
+    },
+    "IGF-1+TH|Parkinson's disease+parkinsonism": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:49:18.579Z"
+    },
+    "PNP+PD-1+PD-L1+Claudin-1+Occludin+ZO-1|triple-negative breast cancer+TNBC+breast cancer": {
+      "level": "low",
+      "score": 5,
+      "source_count": 2,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "GFP|inherited disorders": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "GBA1|Gaucher disease+Parkinson disease+GBA1-related Parkinson disease+neuronopathic GD": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "IGF1+IGFBP3|neurodegenerative diseases+selective neurodegeneration": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "|Parkinson's Disease (PD)": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "|cancer+neurological diseases+β-thalassemia+muscular dystrophy": {
+      "level": "low",
+      "score": 5,
+      "source_count": 2,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "|white spot disease+WSD+white spot syndrome virus+WSSV": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "CD133|Glioblastoma+GBM": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "CLTA1+HBB+AIFM1+ABL|": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T04:54:17.046Z"
+    },
+    "β-globin+γ-globin+BCL11A+FOG1+HDAC1+HDAC2+CHD4|β-thalassemia+hemoglobinopathies": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "RPGR|rod-cone dystrophies+centripetal retinal degeneration+inherited retinal degenerations": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "SLC6A1|SLC6A1-related neurodevelopmental disorder+developmental and epileptic encephalopathy": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "RPE65|blindness+sickle cell disease+rare inherited eye disease": {
+      "level": "low",
+      "score": 0,
+      "source_count": 2,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "|autoimmune conditions+oncology+rare diseases": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "|hereditary retinal dystrophy": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    },
+    "|inherited blindness+sickle cell disease+beta-thalassemia+ALS+frontotemporal dementia": {
+      "level": "low",
+      "score": 15,
+      "source_count": 1,
+      "last_validated": "2026-05-25T06:26:07.835Z"
+    }
+  }
+}

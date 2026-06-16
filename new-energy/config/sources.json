@@ -1,0 +1,18 @@
+{
+  "pubmed": {
+    "enabled": true,
+    "search_terms": [
+      "新能源"
+    ],
+    "max_results": 100,
+    "rate_limit_ms": 500
+  },
+  "news": {
+    "enabled": true,
+    "search_terms": [
+      "新能源 news",
+      "新能源 latest"
+    ],
+    "rate_limit_ms": 2000
+  }
+}

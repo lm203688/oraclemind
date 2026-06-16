@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-06-05T14:00:00Z",
+  "description": "脑科学实体库",
+  "entities": [
+    {
+      "type": "brain_regions",
+      "file": "brain_regions.json",
+      "count": 72,
+      "description": "脑区"
+    },
+    {
+      "type": "bci",
+      "file": "bci.json",
+      "count": 68,
+      "description": "脑机接口"
+    },
+    {
+      "type": "neural_implants",
+      "file": "neural_implants.json",
+      "count": 37,
+      "description": "神经植入物"
+    },
+    {
+      "type": "brain_disorders",
+      "file": "brain_disorders.json",
+      "count": 38,
+      "description": "脑疾病"
+    },
+    {
+      "type": "neuropharmacology",
+      "file": "neuropharmacology.json",
+      "count": 37,
+      "description": "神经药理学"
+    },
+    {
+      "type": "neurotech",
+      "file": "neurotech.json",
+      "count": 20,
+      "description": "神经技术设备"
+    },
+    {
+      "type": "consciousness_research",
+      "file": "consciousness_research.json",
+      "count": 15,
+      "description": "意识研究"
+    },
+    {
+      "type": "neurotransmitters",
+      "file": "neurotransmitters.json",
+      "count": 16,
+      "description": "神经递质"
+    },
+    {
+      "type": "bci_devices",
+      "file": "bci_devices.json",
+      "count": 22,
+      "description": "BCI设备"
+    }
+  ]
+}

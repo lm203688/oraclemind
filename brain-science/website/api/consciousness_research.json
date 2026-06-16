@@ -1,0 +1,51 @@
+{
+  "count": 5,
+  "updated": "2026-05-29T02:27:01.435Z",
+  "data": [
+    {
+      "id": "CONSC-001",
+      "name": "Global Workspace Theory (GWT)",
+      "theory": "Consciousness arises when information is broadcast widely across the brain via a 'global workspace'",
+      "proponent": "Bernard Baars (1988), Stanislas Dehaene (neuronal GWT)",
+      "evidence": "fMRI shows 'ignition' - sudden widespread activation when stimuli become conscious; P300 ERP component correlates with conscious access",
+      "status": "Leading theory; supported by neuroimaging and electrophysiology",
+      "description": "GWT proposes that unconscious processing occurs in parallel across specialized modules, and consciousness emerges when information is 'broadcast' to all modules simultaneously via long-range neural connections. Dehaene's neuronal GWT specifies prefrontal-parietal networks as the workspace. This theory predicts the 'attentional blink' and inattentional blindness."
+    },
+    {
+      "id": "CONSC-002",
+      "name": "Integrated Information Theory (IIT)",
+      "theory": "Consciousness is identical to integrated information (Φ); any system with Φ>0 has some degree of consciousness",
+      "proponent": "Giulio Tononi (2004, 2008, 2012, 2024)",
+      "evidence": "Predicts consciousness in cerebellum (low Φ, low consciousness) vs. cortex (high Φ, high consciousness); explains why certain brain lesions affect consciousness",
+      "status": "Controversial; mathematically rigorous but computationally intractable for real brains; criticized as panpsychist",
+      "description": "IIT is the most mathematically formalized consciousness theory. It defines consciousness as integrated information (Φ) - a measure of how much information a system generates as a whole beyond its parts. IIT 4.0 (2024) refined the mathematical framework. Critics argue it implies panpsychism (everything has some consciousness) and that Φ is uncomputable for complex systems."
+    },
+    {
+      "id": "CONSC-003",
+      "name": "Higher-Order Theory (HOT)",
+      "theory": "A mental state is conscious when it is the object of a higher-order representation (a thought about a thought)",
+      "proponent": "David Rosenthal, Richard Brown, Hakwan Lau",
+      "evidence": "Explains why prefrontal cortex activity correlates with consciousness; accounts for dissociations between perception and awareness",
+      "status": "Active research; competing with GWT and IIT",
+      "description": "HOT proposes that consciousness requires meta-cognition - a higher-order thought that represents a first-order state. You're conscious of seeing red because you have a thought about seeing red. This explains why prefrontal cortex lesions can affect awareness without eliminating perception. Higher-Order theories predict that metacognitive accuracy should correlate with consciousness."
+    },
+    {
+      "id": "CONSC-004",
+      "name": "Predictive Processing / Free Energy Principle",
+      "theory": "Consciousness arises from the brain's predictive models; we experience our predictions, not raw sensory data",
+      "proponent": "Karl Friston (free energy), Andy Clark (predictive mind), Anil Seth (controlled hallucination)",
+      "evidence": "Explains perceptual illusions, placebo effects, and hallucinations as prediction errors; supported by visual cortex predictive coding",
+      "status": "Influential framework; unifies perception, action, and consciousness",
+      "description": "The brain is a prediction machine that constantly generates models of the world and updates them based on prediction errors. Anil Seth argues consciousness is a 'controlled hallucination' - our experience is the brain's best guess, not a direct representation of reality. Friston's free energy principle provides a mathematical framework: the brain minimizes surprise (free energy)."
+    },
+    {
+      "id": "CONSC-005",
+      "name": "Recurrent Processing Theory",
+      "theory": "Consciousness requires recurrent (feedback) processing between cortical areas, not just feedforward processing",
+      "proponent": "Victor Lamme (2006, 2020)",
+      "evidence": "Feedforward processing (V1→V2→V4→IT) occurs without consciousness; recurrent loops correlate with conscious perception",
+      "status": "Supported by visual neuroscience; complementary to GWT",
+      "description": "Lamme argues that feedforward processing through the visual hierarchy is unconscious. Consciousness requires recurrent (feedback) connections that create loops between cortical areas. This explains why TMS disruption of feedback abolishes visual awareness while leaving feedforward processing intact. It's more local than GWT - recurrent processing in a single cortical area may be sufficient for basic consciousness."
+    }
+  ]
+}

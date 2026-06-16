@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-05T14:17:56.656Z",
+  "entity_counts": {
+    "gene_therapies": 56,
+    "crispr_applications": 39,
+    "genes": 122,
+    "diseases": 180
+  },
+  "development_stages": {
+    "approved": 21,
+    "clinical": 15,
+    "preclinical": 19,
+    "regulatory": 1
+  }
+}

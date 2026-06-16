@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "QuantumDB",
+  "name_for_model": "quantumdb",
+  "description_for_human": "Quantum computing knowledge base covering processors, algorithms, error correction, quantum software, and quantum networking",
+  "description_for_model": "Quantum computing knowledge base covering processors, algorithms, error correction, quantum software, and quantum networking. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://quantum.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://quantum.genetech.tools/"
+}

@@ -1,0 +1,749 @@
+{
+  "nodes": [
+    {
+      "id": "ESTO-001",
+      "name": "Lithium Iron Phosphate (LFP) Battery",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-001.html"
+    },
+    {
+      "id": "ESTO-002",
+      "name": "Sodium-Ion Battery",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-002.html"
+    },
+    {
+      "id": "ESTO-003",
+      "name": "Solid-State Battery",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-003.html"
+    },
+    {
+      "id": "ESTO-004",
+      "name": "Iron-Air Battery",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-004.html"
+    },
+    {
+      "id": "ESTO-005",
+      "name": "Redox Flow Battery (Vanadium)",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-005.html"
+    },
+    {
+      "id": "ESTO-006",
+      "name": "Pumped Hydro Storage",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-006.html"
+    },
+    {
+      "id": "ESTO-007",
+      "name": "Compressed Air Energy Storage (CAES)",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-007.html"
+    },
+    {
+      "id": "ESTO-008",
+      "name": "Gravity Energy Storage",
+      "category": "energy_storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/esto-008.html"
+    },
+    {
+      "id": "GRID-001",
+      "name": "特高压直流输电HVDC",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-001.html"
+    },
+    {
+      "id": "GRID-002",
+      "name": "构网型逆变器Grid-Forming",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-002.html"
+    },
+    {
+      "id": "GRID-003",
+      "name": "虚拟电厂VPP",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-003.html"
+    },
+    {
+      "id": "GRID-004",
+      "name": "动态线路评级DLR",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-004.html"
+    },
+    {
+      "id": "GRID-005",
+      "name": "柔性直流VSC-HVDC",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-005.html"
+    },
+    {
+      "id": "GRID-006",
+      "name": "微电网Microgrid",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-006.html"
+    },
+    {
+      "id": "GRID-007",
+      "name": "车网互动V2G",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-007.html"
+    },
+    {
+      "id": "GRID-008",
+      "name": "智能电表与AMI",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-008.html"
+    },
+    {
+      "id": "GRID-009",
+      "name": "电力现货市场",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-009.html"
+    },
+    {
+      "id": "GRID-010",
+      "name": "AI电网调度",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-010.html"
+    },
+    {
+      "id": "GRID-011",
+      "name": "高压交流海底电缆",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-011.html"
+    },
+    {
+      "id": "GRID-012",
+      "name": "需求响应DR",
+      "category": "grid_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/grid-012.html"
+    },
+    {
+      "id": "HYD-001",
+      "name": "PEM电解水制氢",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-001.html"
+    },
+    {
+      "id": "HYD-002",
+      "name": "固体氧化物电解SOEC",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-002.html"
+    },
+    {
+      "id": "HYD-003",
+      "name": "碱性电解水AEL",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-003.html"
+    },
+    {
+      "id": "HYD-004",
+      "name": "PEM燃料电池",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-004.html"
+    },
+    {
+      "id": "HYD-005",
+      "name": "固体氧化物燃料电池SOFC",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-005.html"
+    },
+    {
+      "id": "HYD-006",
+      "name": "地下储氢",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-006.html"
+    },
+    {
+      "id": "HYD-007",
+      "name": "高压气态储氢",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-007.html"
+    },
+    {
+      "id": "HYD-008",
+      "name": "液态储氢",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-008.html"
+    },
+    {
+      "id": "HYD-009",
+      "name": "有机液体储氢LOHC",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-009.html"
+    },
+    {
+      "id": "HYD-010",
+      "name": "氨作为氢载体",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-010.html"
+    },
+    {
+      "id": "HYD-011",
+      "name": "氢燃气轮机",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-011.html"
+    },
+    {
+      "id": "HYD-012",
+      "name": "光催化制氢",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-012.html"
+    },
+    {
+      "id": "HYD-013",
+      "name": "生物质制氢",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-013.html"
+    },
+    {
+      "id": "HYD-014",
+      "name": "氢能重卡",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-014.html"
+    },
+    {
+      "id": "HYD-015",
+      "name": "管道输氢",
+      "category": "hydrogen_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/hyd-015.html"
+    },
+    {
+      "id": "NUKR-001",
+      "name": "Small Modular Reactor (SMR) Integration",
+      "category": "nuclear_renewable",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/nukr-001.html"
+    },
+    {
+      "id": "NUKR-002",
+      "name": "Nuclear Hydrogen Production",
+      "category": "nuclear_renewable",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/nukr-002.html"
+    },
+    {
+      "id": "SE-001",
+      "name": "PERC",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-001.html"
+    },
+    {
+      "id": "SE-002",
+      "name": "TOPCon",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-002.html"
+    },
+    {
+      "id": "SE-003",
+      "name": "HJT异质结",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-003.html"
+    },
+    {
+      "id": "SE-004",
+      "name": "钙钛矿单结",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-004.html"
+    },
+    {
+      "id": "SE-005",
+      "name": "BC背接触",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-005.html"
+    },
+    {
+      "id": "SE-006",
+      "name": "钙钛矿-硅叠层",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-006.html"
+    },
+    {
+      "id": "SE-007",
+      "name": "全钙钛矿叠层",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-007.html"
+    },
+    {
+      "id": "SE-008",
+      "name": "CIGS薄膜",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-008.html"
+    },
+    {
+      "id": "SE-009",
+      "name": "有机光伏OPV",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-009.html"
+    },
+    {
+      "id": "SE-010",
+      "name": "聚光光伏CPV",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-010.html"
+    },
+    {
+      "id": "SE-011",
+      "name": "双面组件",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-011.html"
+    },
+    {
+      "id": "SE-012",
+      "name": "光热发电CSP",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-012.html"
+    },
+    {
+      "id": "SE-013",
+      "name": "钙钛矿p-i-n架构",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-013.html"
+    },
+    {
+      "id": "SE-014",
+      "name": "无铅钙钛矿",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-014.html"
+    },
+    {
+      "id": "SE-015",
+      "name": "半片/叠瓦组件",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-015.html"
+    },
+    {
+      "id": "SE-016",
+      "name": "薄膜硅HJT-BC",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-016.html"
+    },
+    {
+      "id": "SE-017",
+      "name": "光伏建筑一体化BIPV",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-017.html"
+    },
+    {
+      "id": "SE-018",
+      "name": "水上光伏Floating PV",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-018.html"
+    },
+    {
+      "id": "SE-019",
+      "name": "农业光伏Agrivoltaics",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-019.html"
+    },
+    {
+      "id": "SE-020",
+      "name": "钙钛矿/硅三结叠层",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-020.html"
+    },
+    {
+      "id": "SE-021",
+      "name": "光伏制氢P2H",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-021.html"
+    },
+    {
+      "id": "SE-022",
+      "name": "微光/室内光伏",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-022.html"
+    },
+    {
+      "id": "SE-023",
+      "name": "大尺寸硅片(182/210mm)",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-023.html"
+    },
+    {
+      "id": "SE-024",
+      "name": "智能光伏运维AI",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-024.html"
+    },
+    {
+      "id": "SE-025",
+      "name": "光伏回收技术",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/se-025.html"
+    },
+    {
+      "id": "SOL-huarou-27.98",
+      "name": "Huarou PV 27.98% Perovskite Cell",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-huarou-27-98.html"
+    },
+    {
+      "id": "SOL-solaeon-27.87",
+      "name": "SolaEon 27.87% Perovskite Cell",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-solaeon-27-87.html"
+    },
+    {
+      "id": "SOL-longi-tandem-35",
+      "name": "LONGi 35.0% Perovskite-Silicon Tandem",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-longi-tandem-35.html"
+    },
+    {
+      "id": "SOL-nankai-27.17",
+      "name": "Nankai University 27.17% n-i-p Perovskite",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-nankai-27-17.html"
+    },
+    {
+      "id": "SOL-korea-china-27.6",
+      "name": "Korea-China Joint 27.6% Perovskite",
+      "category": "solar",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-korea-china-27-6.html"
+    },
+    {
+      "id": "SOL-001",
+      "name": "Perovskite-Silicon Tandem Cell",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-001.html"
+    },
+    {
+      "id": "SOL-002",
+      "name": "All-Perovskite Tandem Cell",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-002.html"
+    },
+    {
+      "id": "SOL-003",
+      "name": "HJT (Heterojunction Technology)",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-003.html"
+    },
+    {
+      "id": "SOL-004",
+      "name": "TOPCon (Tunnel Oxide Passivated Contact)",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-004.html"
+    },
+    {
+      "id": "SOL-005",
+      "name": "CIGS Thin Film",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-005.html"
+    },
+    {
+      "id": "SOL-006",
+      "name": "Organic Photovoltaics (OPV)",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-006.html"
+    },
+    {
+      "id": "SOL-007",
+      "name": "Concentrated Solar Power (CSP) with Thermal Storage",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-007.html"
+    },
+    {
+      "id": "SOL-008",
+      "name": "Bifacial Solar Modules",
+      "category": "solar_tech",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/sol-008.html"
+    },
+    {
+      "id": "ST-001",
+      "name": "磷酸铁锂LFP",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-001.html"
+    },
+    {
+      "id": "ST-002",
+      "name": "钠离子电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-002.html"
+    },
+    {
+      "id": "ST-003",
+      "name": "全固态电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-003.html"
+    },
+    {
+      "id": "ST-004",
+      "name": "钒液流电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-004.html"
+    },
+    {
+      "id": "ST-005",
+      "name": "压缩空气储能CAES",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-005.html"
+    },
+    {
+      "id": "ST-006",
+      "name": "铁-空气电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-006.html"
+    },
+    {
+      "id": "ST-007",
+      "name": "抽水蓄能",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-007.html"
+    },
+    {
+      "id": "ST-008",
+      "name": "重力储能",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-008.html"
+    },
+    {
+      "id": "ST-009",
+      "name": "锂硫电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-009.html"
+    },
+    {
+      "id": "ST-010",
+      "name": "液态金属电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-010.html"
+    },
+    {
+      "id": "ST-011",
+      "name": "氢储能",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-011.html"
+    },
+    {
+      "id": "ST-012",
+      "name": "超级电容器",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-012.html"
+    },
+    {
+      "id": "ST-013",
+      "name": "热储能(熔盐/相变)",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-013.html"
+    },
+    {
+      "id": "ST-014",
+      "name": "锌溴液流电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-014.html"
+    },
+    {
+      "id": "ST-015",
+      "name": "有机液流电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-015.html"
+    },
+    {
+      "id": "ST-016",
+      "name": "电池回收技术",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-016.html"
+    },
+    {
+      "id": "ST-017",
+      "name": "电池管理系统BMS",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-017.html"
+    },
+    {
+      "id": "ST-018",
+      "name": "飞轮储能",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-018.html"
+    },
+    {
+      "id": "ST-019",
+      "name": "固态钠电池",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-019.html"
+    },
+    {
+      "id": "ST-020",
+      "name": "储能系统集成ESS",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/st-020.html"
+    },
+    {
+      "id": "NE-solar-battery-hydrogen",
+      "name": "Solar Battery On-Demand Hydrogen",
+      "category": "storage",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/ne-solar-battery-hydrogen.html"
+    },
+    {
+      "id": "WIND-001",
+      "name": "海上浮式风电",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-001.html"
+    },
+    {
+      "id": "WIND-002",
+      "name": "高空风能AWE",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-002.html"
+    },
+    {
+      "id": "WIND-003",
+      "name": "垂直轴风力机VAWT",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-003.html"
+    },
+    {
+      "id": "WIND-004",
+      "name": "超大型海上风机(15-20MW)",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-004.html"
+    },
+    {
+      "id": "WIND-005",
+      "name": "陆上大兆瓦风机",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-005.html"
+    },
+    {
+      "id": "WIND-006",
+      "name": "风电制氢Wind-to-Hydrogen",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-006.html"
+    },
+    {
+      "id": "WIND-007",
+      "name": "风电叶片回收",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-007.html"
+    },
+    {
+      "id": "WIND-008",
+      "name": "风电AI运维",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-008.html"
+    },
+    {
+      "id": "WIND-009",
+      "name": "无塔架风电(Airborne/笼式)",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-009.html"
+    },
+    {
+      "id": "WIND-010",
+      "name": "海上风电柔直送出",
+      "category": "wind_energy",
+      "domain": "energy.genetech.tools",
+      "url": "https://energy.genetech.tools/entity/wind-010.html"
+    }
+  ],
+  "edges": [],
+  "domain": "energy.genetech.tools",
+  "name": "新能源知识引擎"
+}

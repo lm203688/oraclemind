@@ -1,0 +1,766 @@
+[
+  {
+    "id": "SMIS-001",
+    "name": "James Webb Space Telescope (JWST)",
+    "agency": "NASA / ESA / CSA",
+    "type": "Infrared space telescope",
+    "target": "Exoplanet atmospheres, early universe, solar system",
+    "launch_year": "2021",
+    "status": "Operational - transforming exoplanet science",
+    "description": "JWST is revolutionizing exoplanet characterization through transmission spectroscopy. It has detected CO₂, water, SO₂, and possible biosignatures in exoplanet atmospheres. 2025: directly imaged Saturn-mass exoplanet (first JWST exoplanet discovery), observed TRAPPIST-1 d atmospheric signals, and found exoplanet with composition defying explanation."
+  },
+  {
+    "id": "SMIS-002",
+    "name": "PLATO (PLAnetary Transits and Oscillations of stars)",
+    "agency": "ESA",
+    "type": "Transit survey telescope",
+    "target": "Habitable zone Earth-size planets around Sun-like stars",
+    "launch_year": "2026",
+    "status": "On track for 2026 launch",
+    "description": "ESA's PLATO will survey ~1 million stars for transiting planets, with a specific focus on finding Earth-size planets in the habitable zones of Sun-like stars (G and K type). First exoplanet deliveries expected December 2026. Will also perform asteroseismology to precisely measure host star properties."
+  },
+  {
+    "id": "SMIS-003",
+    "name": "Nancy Grace Roman Space Telescope",
+    "agency": "NASA",
+    "type": "Wide-field infrared survey + coronagraph",
+    "target": "Direct imaging of exoplanets; dark energy; galaxy surveys",
+    "launch_year": "2027",
+    "status": "Under development; coronagraph technology demonstrator",
+    "description": "Roman's coronagraph will be the first space-based high-contrast imager, capable of directly imaging Jupiter-size exoplanets and possibly super-Earths. Its wide-field instrument will also discover thousands of exoplanets via microlensing, including free-floating planets."
+  },
+  {
+    "id": "SMIS-004",
+    "name": "ARIEL (Atmospheric Remote-sensing Infrared Exoplanet Large-survey)",
+    "agency": "ESA",
+    "type": "Dedicated exoplanet atmosphere survey",
+    "target": "1,000+ exoplanet atmospheres (statistical survey)",
+    "launch_year": "2029",
+    "status": "Under development; Phase C/D",
+    "description": "ARIEL will be the first space mission dedicated entirely to exoplanet atmosphere characterization. It will survey ~1,000 exoplanets to build a statistical picture of atmospheric chemistry across planet types, temperatures, and stellar environments."
+  },
+  {
+    "id": "SMIS-005",
+    "name": "Habitable Worlds Observatory (HWO)",
+    "agency": "NASA",
+    "type": "Direct imaging telescope (6m class, UV/Optical/IR)",
+    "target": "Direct imaging and spectroscopy of ~25 Earth-like habitable zone planets",
+    "launch_year": "~2040s",
+    "status": "Early planning; 2020 Astrophysics Decadal Survey top recommendation",
+    "description": "The ultimate exoplanet mission - designed to directly image Earth-size planets in the habitable zones of Sun-like stars and search for biosignatures. Requires 10⁻¹⁰ contrast ratio. Technology development is underway for ultra-stable optics, coronagraphs, and starshades."
+  },
+  {
+    "id": "SMIS-006",
+    "name": "TESS (Transiting Exoplanet Survey Satellite)",
+    "agency": "NASA",
+    "type": "All-sky transit survey",
+    "target": "Nearby bright stars (planet discovery for follow-up characterization)",
+    "launch_year": "2018",
+    "status": "Operational; extended mission ongoing; 400+ confirmed planets, 7,000+ candidates",
+    "description": "TESS surveys the entire sky for transiting planets around nearby bright stars. 2025: revealed most complete look at the night sky yet. Key discoveries include TOI-700 d, TOI-715 b, and numerous sub-Neptunes. Its extended mission continues discovering planets around previously unsurveyed stars."
+  },
+  {
+    "id": "SMIS-007",
+    "name": "CHEOPS (CHaracterising ExOPlanet Satellite)",
+    "agency": "ESA (Switzerland-led)",
+    "type": "Follow-up photometry",
+    "target": "Precise radius measurements of known exoplanets",
+    "launch_year": "2019",
+    "status": "Operational; improving density measurements for hundreds of planets",
+    "description": "CHEOPS provides ultra-precise transit photometry for known exoplanets to measure their radii precisely. Combined with radial velocity mass measurements, this yields bulk densities that reveal whether planets are rocky, water-rich, or gas-dominated."
+  },
+  {
+    "id": "SMIS-008",
+    "name": "Breakthrough Listen",
+    "agency": "Breakthrough Initiatives (Yuri Milner)",
+    "type": "SETI search - radio and optical",
+    "target": "1 million nearby stars + 100 galaxies for technosignatures",
+    "launch_year": "2016",
+    "status": "Ongoing; most comprehensive SETI search in history; 1+ PB of data collected",
+    "description": "The most comprehensive search for extraterrestrial intelligence ever conducted. Using the Green Bank Telescope, Parkes, MeerKAT, and automated pipelines, surveys 1 million nearby stars and 100 galaxies. No confirmed technosignatures but several 'signals of interest' detected."
+  },
+  {
+    "id": "SMIS-009",
+    "name": "Europa Clipper",
+    "agency": "NASA",
+    "type": "Planetary orbiter (ice-penetrating radar, ocean detection)",
+    "target": "Jupiter's moon Europa - subsurface ocean and habitability",
+    "launch_year": "2024",
+    "status": "Launched Oct 2024; Jupiter arrival 2030",
+    "description": "Europa Clipper will determine whether Europa's subsurface ocean could support life. It carries 9 instruments including ice-penetrating radar (REASON) to map the ice shell and detect water, a magnetometer to measure ocean properties, and mass spectrometers to study surface chemistry."
+  },
+  {
+    "id": "SMIS-010",
+    "name": "Dragonfly (Titan rotorcraft)",
+    "agency": "NASA",
+    "type": "Rotorcraft lander (aerial exploration)",
+    "target": "Saturn's moon Titan - prebiotic chemistry and habitability",
+    "launch_year": "2028",
+    "status": "Under development; launch 2028, arrival 2034",
+    "description": "A nuclear-powered octocopter that will fly across Titan's surface, landing at multiple sites to study prebiotic chemistry. Titan has a thick nitrogen atmosphere, hydrocarbon lakes, and complex organic chemistry that may resemble early Earth."
+  },
+  {
+    "id": "SMIS-011",
+    "name": "Artemis II",
+    "agency": "NASA",
+    "type": "Crewed lunar flyby",
+    "target": "Moon - crewed deep space flight test",
+    "launch_year": "2026",
+    "status": "Launched April 2026 - first crewed lunar flyby in 50+ years",
+    "description": "Artemis II launched on April 1, 2026, sending four astronauts around the Moon on a 10-day mission aboard the Space Launch System. This is the first crewed mission beyond low Earth orbit since Apollo 17 in 1972, testing deep space life support and Orion spacecraft systems."
+  },
+  {
+    "id": "SMIS-012",
+    "name": "Chang'e-7",
+    "agency": "CNSA (China)",
+    "type": "Lunar south pole orbiter/lander/rover/hopper",
+    "target": "Lunar south pole - water ice detection and surface analysis",
+    "launch_year": "2026",
+    "status": "Targeting August 2026 launch",
+    "description": "China's ambitious lunar south pole mission with orbiter, lander, rover, and a flying hopper to explore permanently shadowed craters. Will search for water ice and characterize the polar environment. Part of China's plan for a lunar research station."
+  },
+  {
+    "id": "SMIS-013",
+    "name": "Blue Ghost Mission 2",
+    "agency": "Firefly Aerospace",
+    "type": "Commercial lunar lander",
+    "target": "Moon - technology and science payloads",
+    "launch_year": "2026",
+    "status": "Targeting 2026 launch",
+    "description": "Firefly Aerospace's second Blue Ghost lunar lander mission, carrying NASA and commercial payloads to the lunar surface as part of the CLPS (Commercial Lunar Payload Services) program. Demonstrates commercial lunar delivery capability."
+  },
+  {
+    "id": "SMIS-014",
+    "name": "Gaganyaan-1",
+    "agency": "ISRO (India)",
+    "type": "Crewed orbital flight test",
+    "target": "Low Earth Orbit - India's first crewed spaceflight",
+    "launch_year": "2026",
+    "status": "Under development; targeting 2026",
+    "description": "India's first crewed space mission. Gaganyaan will carry Indian astronauts (Gaganauts) to low Earth orbit for up to 7 days. If successful, India becomes the 4th nation to independently launch humans into space."
+  },
+  {
+    "id": "SMIS-015",
+    "name": "Hera",
+    "agency": "ESA",
+    "type": "Asteroid rendezvous",
+    "target": "Didymos/Dimorphos binary asteroid - post-DART impact study",
+    "launch_year": "2024",
+    "status": "Launched Oct 2024; arrival at Didymos 2026",
+    "description": "ESA's Hera mission will study the DART impact crater on Dimorphos in detail, measuring the asteroid's mass, structure, and crater morphology. Arriving in 2026, it will make this the best-characterized binary asteroid system."
+  },
+  {
+    "id": "SMIS-016",
+    "name": "OSIRIS-APEX",
+    "agency": "NASA",
+    "type": "Asteroid rendezvous (extended OSIRIS-REx mission)",
+    "target": "Apophis - close Earth approach study",
+    "launch_year": "2023 (redirected from Bennu)",
+    "status": "En route to Apophis; encounter April 2029",
+    "description": "The OSIRIS-REx spacecraft, after returning Bennu samples, was redirected to study Apophis during its extremely close Earth approach on April 13, 2029 (within 31,000 km). Will provide detailed composition and structure data for this accessible near-Earth asteroid."
+  },
+  {
+    "id": "SMIS-017",
+    "name": "Psyche",
+    "agency": "NASA",
+    "type": "Asteroid orbiter",
+    "target": "16 Psyche - metallic asteroid core study",
+    "launch_year": "2023",
+    "status": "En route; arrival August 2029",
+    "description": "NASA's Psyche mission will orbit the metallic asteroid 16 Psyche, potentially the exposed core of a protoplanet. Will map its composition, gravity field, and surface features. Critical for understanding planetary cores and asteroid mining potential."
+  },
+  {
+    "id": "SMIS-018",
+    "name": "Vast Haven-1",
+    "agency": "Vast Space",
+    "type": "Commercial space station",
+    "target": "LEO - first commercial space station",
+    "launch_year": "2026",
+    "status": "Under development; targeting 2026 launch",
+    "description": "Vast Space's Haven-1 aims to be the first commercial space station in orbit, launched by a SpaceX Falcon 9. Will host crew and research payloads, representing the beginning of the post-ISS commercial space station era."
+  },
+  {
+    "id": "SMIS-019",
+    "name": "Lunar Gateway (PPE + HALO)",
+    "agency": "NASA / ESA / CSA / JAXA",
+    "type": "Cislunar space station modules",
+    "target": "Near-rectilinear halo orbit around Moon",
+    "launch_year": "2025-2026",
+    "status": "First modules (PPE + HALO) launching 2025-2026",
+    "description": "The Power and Propulsion Element (PPE) and Habitation and Logistics Outpost (HALO) form the core of the Lunar Gateway. PPE provides solar electric propulsion; HALO provides living space. Together they enable Artemis lunar operations and serve as a staging point for deep space missions."
+  },
+  {
+    "id": "SMIS-020",
+    "name": "ExoMars Rosalind Franklin",
+    "agency": "ESA",
+    "type": "Mars rover",
+    "target": "Mars - Oxia Planum; subsurface biosignature search",
+    "launch_year": "2028",
+    "status": "Under development; launch 2028 after NASA lander partnership",
+    "description": "ESA's Mars rover carrying a drill capable of reaching 2m below the surface to search for preserved biosignatures. After the suspension of Russian partnership, NASA is providing the lander. Oxia Planum was selected for its clay-rich terrain with high biosignature preservation potential."
+  },
+  {
+    "id": "SMIS-021",
+    "name": "Voyager 3 Concept",
+    "agency": "NASA",
+    "type": "Interstellar probe",
+    "target": "Beyond heliosphere",
+    "launch_year": "~2035-2040",
+    "status": "Concept",
+    "description": "Proposed interstellar probe reaching 1000 AU in 50 years using solar sail or nuclear propulsion."
+  },
+  {
+    "id": "SMIS-022",
+    "name": "Venus Life Finder",
+    "agency": "Rocket Lab/MIT",
+    "type": "Venus atmospheric probe",
+    "target": "Venus clouds",
+    "launch_year": "~2026-2027",
+    "status": "Under development",
+    "description": "Privately funded mission to search for life in Venus cloud layer. First privately funded planetary science mission."
+  },
+  {
+    "id": "SMIS-023",
+    "name": "EnVision",
+    "agency": "ESA",
+    "type": "Venus orbiter",
+    "target": "Venus",
+    "launch_year": "~2031",
+    "status": "Under development",
+    "description": "ESA Venus orbiter with subsurface radar, spectrometers, and radar mapper for geological activity studies."
+  },
+  {
+    "id": "SMIS-024",
+    "name": "DAVINCI",
+    "agency": "NASA",
+    "type": "Venus atmospheric probe",
+    "target": "Venus atmosphere",
+    "launch_year": "~2029-2031",
+    "status": "Under development",
+    "description": "NASA Venus atmospheric probe measuring noble gases and cloud chemistry. Determines if Venus ever had oceans."
+  },
+  {
+    "id": "SMIS-025",
+    "name": "VERITAS",
+    "agency": "NASA",
+    "type": "Venus orbiter",
+    "target": "Venus geology",
+    "launch_year": "~2031",
+    "status": "Under development; budget delayed",
+    "description": "NASA Venus orbiter mapping surface composition and searching for active volcanism using SAR and NIR spectroscopy."
+  },
+  {
+    "id": "SMIS-026",
+    "name": "Comet Interceptor",
+    "agency": "ESA/JAXA",
+    "type": "Comet flyby",
+    "target": "Pristine Oort Cloud comet",
+    "launch_year": "2029",
+    "status": "Under development",
+    "description": "ESA mission to L2 that waits for a pristine long-period comet to intercept. Studies pristine solar system material."
+  },
+  {
+    "id": "SMIS-027",
+    "name": "Lunar Trailblazer",
+    "agency": "NASA",
+    "type": "Lunar orbiter (smallsat)",
+    "target": "Moon water mapping",
+    "launch_year": "2025",
+    "status": "Launched 2025",
+    "description": "Small NASA mission mapping water on the Moon. Critical for ISRU planning."
+  },
+  {
+    "id": "SMIS-028",
+    "name": "VIPER",
+    "agency": "NASA",
+    "type": "Lunar rover",
+    "target": "Lunar south pole water ice",
+    "launch_year": "2024 (cancelled)",
+    "status": "Cancelled; elements revived commercially",
+    "description": "Would have been first rover to directly sample lunar water ice in permanently shadowed regions."
+  },
+  {
+    "id": "SMIS-029",
+    "name": "IM-3 (Intuitive Machines)",
+    "agency": "Intuitive Machines/NASA CLPS",
+    "type": "Commercial lunar lander",
+    "target": "Moon",
+    "launch_year": "2025",
+    "status": "Launched 2025",
+    "description": "Third CLPS mission carrying Vestri asteroid mining demo - first private asteroid mining mission."
+  },
+  {
+    "id": "SMIS-030",
+    "name": "Tiangong + Xuntian",
+    "agency": "CNSA",
+    "type": "Space station + telescope",
+    "target": "LEO",
+    "launch_year": "~2026-2028",
+    "status": "Under development",
+    "description": "China expanding Tiangong station. Xuntian co-orbiting telescope: 2m mirror, 300x Hubble FOV, surveys 40% of sky in 10 years."
+  },
+  {
+    "id": "SMIS-031",
+    "name": "PLATO Launch (ESA)",
+    "agency": "ESA",
+    "type": "Transit survey telescope (26 cameras)",
+    "target": "Earth-size habitable zone planets around Sun-like stars",
+    "launch_year": "2026",
+    "status": "Launching December 2026",
+    "description": "ESA's PLATO mission launches in December 2026 with 26 cameras to survey ~1 million stars. Specifically designed to find Earth-size planets in habitable zones of Sun-like (G and K type) stars. Will also perform asteroseismology to precisely measure host star properties. First exoplanet deliveries expected December 2026."
+  },
+  {
+    "id": "SMIS-032",
+    "name": "Artemis II (Crewed Lunar Flyby)",
+    "agency": "NASA",
+    "type": "Crewed lunar flyby",
+    "target": "Moon - first crewed deep space mission in 50+ years",
+    "launch_year": "2026",
+    "status": "Launched April 1, 2026 - completed 10-day lunar flyby",
+    "description": "Artemis II launched on April 1, 2026, sending four astronauts around the Moon on a 10-day mission. First crewed mission beyond low Earth orbit since Apollo 17 in 1972. Successfully tested deep space life support and Orion spacecraft systems. Paves the way for Artemis III lunar landing."
+  },
+  {
+    "id": "SMIS-033",
+    "name": "Chang'e-7 (Lunar South Pole)",
+    "agency": "CNSA (China)",
+    "type": "Lunar south pole orbiter/lander/rover/hopper",
+    "target": "Lunar south pole - water ice detection and surface analysis",
+    "launch_year": "2026",
+    "status": "Targeting August 2026 launch",
+    "description": "China's ambitious lunar south pole mission with orbiter, lander, rover, and a flying hopper to explore permanently shadowed craters. Will search for water ice and characterize the polar environment. Part of China's plan for a lunar research station. The hopper can access PSRs that rovers cannot reach."
+  },
+  {
+    "id": "SMIS-034",
+    "name": "Hera (Asteroid Rendezvous)",
+    "agency": "ESA",
+    "type": "Asteroid rendezvous",
+    "target": "Didymos/Dimorphos - post-DART impact study",
+    "launch_year": "2024",
+    "status": "Arriving at Didymos 2026",
+    "description": "ESA's Hera mission arrives at the Didymos/Dimorphos binary asteroid system in 2026 to study the DART impact crater in detail. Will measure the asteroid's mass, structure, and crater morphology. This will make Didymos the best-characterized binary asteroid system, providing critical data for both planetary defense and asteroid mining."
+  },
+  {
+    "id": "SMIS-035",
+    "name": "Gaganyaan-1 (India Crewed Flight)",
+    "agency": "ISRO (India)",
+    "type": "Crewed orbital flight test",
+    "target": "Low Earth Orbit - India's first crewed spaceflight",
+    "launch_year": "2026",
+    "status": "Under development; targeting 2026",
+    "description": "India's first crewed space mission. Will carry Indian astronauts (Gaganauts) to low Earth orbit for up to 7 days. If successful, India becomes the 4th nation to independently launch humans into space. Represents a major milestone in India's growing space program."
+  },
+  {
+    "id": "SMIS-036",
+    "name": "Vast Haven-1 (Commercial Station)",
+    "agency": "Vast Space",
+    "type": "Commercial space station",
+    "target": "LEO - first commercial space station",
+    "launch_year": "2026",
+    "status": "Under development; targeting 2026 launch via SpaceX Falcon 9",
+    "description": "Vast Space's Haven-1 aims to be the first commercial space station in orbit. Will host crew and research payloads, representing the beginning of the post-ISS commercial space station era. Launched by SpaceX Falcon 9."
+  },
+  {
+    "id": "SMIS-037",
+    "name": "Blue Ghost Mission 2 (Firefly)",
+    "agency": "Firefly Aerospace / NASA CLPS",
+    "type": "Commercial lunar lander",
+    "target": "Moon - technology and science payloads",
+    "launch_year": "2026",
+    "status": "Targeting 2026 launch",
+    "description": "Firefly Aerospace's second Blue Ghost lunar lander mission, carrying NASA and commercial payloads to the lunar surface as part of the CLPS program. Demonstrates commercial lunar delivery capability and supports Artemis program infrastructure."
+  },
+  {
+    "id": "SMIS-038",
+    "name": "Relativity Space Terran R Debut",
+    "agency": "Relativity Space",
+    "type": "Reusable launch vehicle",
+    "target": "Orbital launch - 3D printed rocket",
+    "launch_year": "2026",
+    "status": "Under development; debut launch planned 2026",
+    "description": "Relativity Space's Terran R is a fully reusable, largely 3D-printed orbital rocket. Making progress toward debut launch in 2026. Represents a new paradigm in rocket manufacturing using additive manufacturing at scale."
+  },
+  {
+    "id": "SMIS-039",
+    "name": "Venus Life Finder (Rocket Lab/MIT)",
+    "agency": "Rocket Lab / MIT",
+    "type": "Venus atmospheric probe",
+    "target": "Venus cloud layer - life detection",
+    "launch_year": "~2026-2027",
+    "status": "Under development",
+    "description": "Privately funded mission to search for life in Venus's cloud layer. First privately funded planetary science mission. Will use a small probe on a Rocket Lab Electron rocket to descend through Venus's atmosphere and search for organic chemistry and signs of microbial life in the temperate cloud layer."
+  },
+  {
+    "id": "SMIS-040",
+    "name": "Lunar Gateway PPE+HALO",
+    "agency": "NASA / ESA / CSA / JAXA",
+    "type": "Cislunar space station modules",
+    "target": "Near-rectilinear halo orbit around Moon",
+    "launch_year": "2025-2026",
+    "status": "First modules launching 2025-2026",
+    "description": "The Power and Propulsion Element (PPE) and Habitation and Logistics Outpost (HALO) form the core of the Lunar Gateway. PPE provides solar electric propulsion; HALO provides living space. Together they enable Artemis lunar operations and serve as a staging point for deep space missions."
+  },
+  {
+    "id": "SMIS-041",
+    "name": "Artemis II",
+    "agency": "NASA",
+    "type": "Crewed lunar flyby",
+    "target": "Lunar orbit (flyby)",
+    "launch_year": "2026",
+    "status": "Scheduled 2026 - first crewed lunar mission in 50+ years",
+    "description": "Artemis II will send four astronauts on a 10-day journey around the Moon, marking the first human presence in lunar space since Apollo 17 in 1972. The crew includes NASA astronauts Reid Wiseman, Victor Glover, Christina Koch, and CSA astronaut Jeremy Hansen. This mission tests deep space life support and Orion spacecraft systems before Artemis III lunar landing."
+  },
+  {
+    "id": "SMIS-042",
+    "name": "Blue Ghost Mission 1 (Firefly Aerospace)",
+    "agency": "Firefly Aerospace / NASA CLPS",
+    "type": "Lunar lander",
+    "target": "Mare Crisium, Moon",
+    "launch_year": "2025",
+    "status": "Completed - landed March 2, 2025; operated for one lunar day",
+    "description": "Firefly Aerospace's Blue Ghost Mission 1 successfully landed on the Moon on March 2, 2025, in Mare Crisium. It delivered 10 NASA science and technology payloads. The lander operated for a full lunar day, demonstrating commercial lunar delivery capability and returning valuable science data including regolith interaction and radiation measurements."
+  },
+  {
+    "id": "SMIS-043",
+    "name": "Athena (Intuitive Machines IM-2)",
+    "agency": "Intuitive Machines / NASA CLPS",
+    "type": "Lunar lander",
+    "target": "Lunar South Pole",
+    "launch_year": "2025",
+    "status": "Landed 2025 - attempted south pole landing with drill and hopper",
+    "description": "Intuitive Machines' second lunar mission (IM-2) carried the NASA PRIME-1 drill and a micro-nova hopper to the lunar south pole. The mission aimed to search for water ice and demonstrate subsurface sampling technology critical for future ISRU operations."
+  },
+  {
+    "id": "SMIS-044",
+    "name": "VIPER (Volatiles Investigating Polar Exploration Rover)",
+    "agency": "NASA",
+    "type": "Lunar rover",
+    "target": "Lunar South Pole (Nobile Crater region)",
+    "launch_year": "Cancelled 2024 (replaced by commercial partnerships)",
+    "status": "Cancelled by NASA; commercial partners taking over water-hunting mission",
+    "description": "VIPER was designed to explore the lunar south pole for water ice and other volatiles using a neutron spectrometer, near-infrared spectrometer, and drill. NASA cancelled VIPER in 2024 due to cost overruns but is seeking commercial partners to continue the water-hunting mission using CLPS flights."
+  },
+  {
+    "id": "SMIS-045",
+    "name": "BepiColombo Mercury Orbit",
+    "agency": "ESA / JAXA",
+    "type": "Mercury orbiter (dual spacecraft)",
+    "target": "Mercury orbit",
+    "launch_year": "2018 (Mercury orbit insertion 2025)",
+    "status": "Entered Mercury orbit November 2025",
+    "description": "ESA's BepiColombo mission successfully entered Mercury orbit in November 2025 after a 7-year journey with multiple gravity assists. The mission consists of two orbiters: the Mercury Planetary Orbiter (MPO) and the Mercury Magnetospheric Orbiter (MMO). It will study Mercury's composition, geophysics, and magnetosphere in unprecedented detail."
+  },
+  {
+    "id": "SMIS-046",
+    "name": "Europa Clipper",
+    "agency": "NASA",
+    "type": "Jupiter moon orbiter (flyby)",
+    "target": "Europa (Jupiter moon)",
+    "launch_year": "2024",
+    "status": "En route; Jupiter arrival 2030",
+    "description": "Launched October 2024 on a Falcon Heavy, Europa Clipper will conduct 49 close flybys of Europa to investigate its ice shell, subsurface ocean, and habitability. Carries 9 instruments including ice-penetrating radar and a mass spectrometer. The largest planetary mission NASA has ever built."
+  },
+  {
+    "id": "SMIS-047",
+    "name": "Hera (ESA Asteroid Mission)",
+    "agency": "ESA",
+    "type": "Asteroid rendezvous",
+    "target": "Didymos/Dimorphos binary asteroid",
+    "launch_year": "2024",
+    "status": "En route; arrival 2026",
+    "description": "ESA's Hera mission will rendezvous with the Didymos/Dimorphos binary asteroid system in 2026 to conduct a detailed post-impact survey following NASA's DART mission. Hera will map Dimorphos in detail, characterize its mass and internal structure, and validate kinetic impact deflection as a planetary defense technique."
+  },
+  {
+    "id": "SMIS-048",
+    "name": "AstroForge Odin (Asteroid Flyby)",
+    "agency": "AstroForge (commercial)",
+    "type": "Asteroid flyby/characterization",
+    "target": "Near-Earth asteroid (2022 OB5 candidate)",
+    "launch_year": "2025",
+    "status": "Launched 2025; en route to asteroid flyby",
+    "description": "AstroForge's Odin spacecraft launched in 2025 on a mission to fly by a near-Earth asteroid (candidate 2022 OB5) and characterize its composition. This is a precursor to AstroForge's planned asteroid mining mission. If successful, it would be the first commercial deep-space asteroid flyby."
+  },
+  {
+    "id": "SMIS-049",
+    "name": "IM-3 (Intuitive Machines)",
+    "agency": "Intuitive Machines / NASA CLPS",
+    "type": "Lunar lander + rover",
+    "target": "Lunar South Pole (Reiner Gamma region)",
+    "launch_year": "2026",
+    "status": "Planned 2026",
+    "description": "Intuitive Machines' third CLPS mission will deliver a NASA rover and multiple payloads to the Reiner Gamma region of the Moon. The mission includes a mobile payload for surface exploration and technology demonstrations for future Artemis operations."
+  },
+  {
+    "id": "SMIS-050",
+    "name": "Dragonfly (Titan Rotorcraft)",
+    "agency": "NASA",
+    "type": "Rotorcraft lander",
+    "target": "Titan (Saturn moon)",
+    "launch_year": "2028 (delayed from 2027)",
+    "status": "In development; launch 2028, arrival 2034",
+    "description": "Dragonfly is a rotorcraft lander that will explore Saturn's moon Titan, the only moon with a dense atmosphere and surface liquids. It will hop between locations to study Titan's prebiotic chemistry, organic dunes, and subsurface ocean. The mission leverages Titan's thick atmosphere for powered flight."
+  },
+  {
+    "id": "SMIS-051",
+    "name": "NISAR (NASA-ISRO Synthetic Aperture Radar)",
+    "agency": "NASA / ISRO",
+    "type": "Earth science radar satellite",
+    "target": "Earth surface deformation monitoring",
+    "launch_year": "2025",
+    "status": "Launched 2025; operational",
+    "description": "A joint NASA-ISRO mission carrying L-band and S-band synthetic aperture radar to measure Earth's surface changes with millimeter precision. While primarily an Earth science mission, NISAR's radar technology has direct applications for planetary surface mapping and resource detection on other worlds."
+  },
+  {
+    "id": "SMIS-052",
+    "name": "Voyager Mission Updates (2025-2026)",
+    "agency": "NASA JPL",
+    "type": "Interstellar space probes",
+    "target": "Interstellar space",
+    "launch_year": "1977 (ongoing)",
+    "status": "Voyager 1: transmitting from 24+ billion km; Voyager 2: 20+ billion km",
+    "description": "Both Voyager probes continue operating in interstellar space in 2026. Voyager 1 resumed full science operations after a 2024 communication glitch. The probes are providing the only direct measurements of the interstellar medium and heliosphere boundary. Power management continues to extend their lifetimes."
+  },
+  {
+    "id": "SMIS-053",
+    "name": "OSIRIS-APEX (Post-Bennu Mission)",
+    "agency": "NASA",
+    "type": "Asteroid rendezvous",
+    "target": "Apophis (99942)",
+    "launch_year": "2023 (redirected after Bennu sample return)",
+    "status": "En route; Apophis flyby 2029",
+    "description": "After successfully delivering the Bennu sample in 2023, the OSIRIS-REx spacecraft was redirected as OSIRIS-APEX to study asteroid Apophis during its extremely close Earth approach in 2029. Apophis will pass within 32,000 km of Earth, and OSIRIS-APEX will study how the flyby reshapes the asteroid."
+  },
+  {
+    "id": "SMIS-054",
+    "name": "Lunar Trailblazer",
+    "agency": "NASA",
+    "type": "Lunar orbiter (water mapping)",
+    "target": "Lunar orbit",
+    "launch_year": "2025",
+    "status": "Launched 2025; mapping lunar water distribution",
+    "description": "A smallsat mission designed to map the distribution and form of water on the Moon. Uses a high-resolution thermal mapper and lunar mapper to detect water/OH on the surface. Critical for identifying the best locations for future ISRU water extraction operations."
+  },
+  {
+    "id": "SMIS-055",
+    "name": "Comet Interceptor",
+    "agency": "ESA / JAXA",
+    "type": "Comet flyby (multi-spacecraft)",
+    "target": "Pristine comet (target TBD at discovery)",
+    "launch_year": "2029",
+    "status": "In development; will wait at L2 for a suitable target",
+    "description": "ESA's Comet Interceptor will be the first mission to visit a truly pristine comet entering the inner solar system for the first time. It consists of a main spacecraft and two probes that will fly by the comet from different angles. Will launch with Ariel and wait at Sun-Earth L2 until a suitable long-period comet is discovered."
+  },
+  {
+    "id": "SMIS-056",
+    "name": "Artemis II (Crewed Lunar Flyby)",
+    "type": "Crewed deep space mission",
+    "agency": "NASA",
+    "launch_date": "2026 (Q1-Q2)",
+    "destination": "Lunar orbit (flyby)",
+    "status": "Preparing for launch",
+    "description": "NASA first crewed lunar mission in over 50 years. Four astronauts will fly around the Moon on a 10-day mission aboard the Orion spacecraft, testing deep space life support and navigation systems. The crew includes the first woman and first person of color to fly to the Moon. This mission validates SLS and Orion for crewed deep space operations before the Artemis III landing.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-057",
+    "name": "Blue Moon Mark 1 Pathfinder",
+    "type": "Lunar lander (uncrewed)",
+    "agency": "Blue Origin",
+    "launch_date": "2026 Q1",
+    "destination": "Lunar surface",
+    "status": "Preparing for launch",
+    "description": "Blue Origin first lunar lander mission, launching on a New Glenn rocket. The Mark 1 Pathfinder is an uncrewed demonstration flight to validate Blue Moon landing technology and precision delivery capabilities. This is a precursor to the larger Mark 2 lander planned for NASA HLS missions. Success would establish Blue Origin as a second lunar delivery provider alongside SpaceX.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-058",
+    "name": "SpaceX Starship V2",
+    "type": "Fully reusable super-heavy launch vehicle",
+    "agency": "SpaceX",
+    "launch_date": "2026",
+    "destination": "Orbital / deep space",
+    "status": "In development",
+    "description": "The upgraded version of SpaceX Starship featuring redesigned thermal protection, extended fuel capacity, and improved Raptor engines. Starship V2 aims for full reusability — both Super Heavy booster and ship — with rapid turnaround times. If successful, it will dramatically reduce launch costs and enable large-scale cargo delivery to orbit, the Moon, and eventually Mars.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-059",
+    "name": "ESA HENON (Deep Space CubeSat)",
+    "type": "Space weather CubeSat",
+    "agency": "ESA",
+    "launch_date": "Late 2026",
+    "destination": "Deep space (heliocentric)",
+    "status": "In development",
+    "description": "ESA first stand-alone deep space CubeSat mission. HENON will monitor space weather from a heliocentric orbit, providing early warning of solar storms and radiation events. As a 6U CubeSat, it demonstrates that small satellites can operate in deep space — a paradigm shift from traditional large spacecraft. Technology validated here will inform future low-cost deep space missions.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-060",
+    "name": "Gaganyaan-1 (India Crewed Flight)",
+    "type": "Crewed orbital mission",
+    "agency": "ISRO",
+    "launch_date": "2026",
+    "destination": "Low Earth Orbit",
+    "status": "Preparing for launch",
+    "description": "India first crewed spaceflight mission. Gaganyaan-1 will carry Indian astronauts (Gaganauts) to low Earth orbit for several days, making India the fourth nation to independently launch humans into space. The mission uses an indigenous crew module and launch vehicle (LVM3), representing a major milestone in India space program.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-061",
+    "name": "Griffin-1 / VIPER (Astrobotic)",
+    "type": "Lunar rover mission",
+    "agency": "Astrobotic Technology / NASA",
+    "launch_date": "2026",
+    "destination": "Lunar south pole",
+    "status": "Preparing for launch",
+    "description": "Astrobotic Griffin-1 lander carrying NASA VIPER (Volatiles Investigating Polar Exploration Rover) to the lunar south pole. VIPER will map water ice distribution in permanently shadowed regions — critical data for future ISRU operations. The rover carries a neutron spectrometer and drill to sample subsurface volatiles. This mission directly supports Artemis planning for lunar water resource utilization.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-062",
+    "name": "PExT (Proximity Extensible Telecommunications)",
+    "type": "Communications technology demonstration",
+    "agency": "NASA JPL",
+    "launch_date": "2026",
+    "destination": "Deep space",
+    "status": "In development",
+    "description": "NASA new deep space communications protocol designed to replace legacy Deep Space Network capabilities. PExT enables higher bandwidth, lower latency communications for multiple simultaneous deep space missions. The technology will be built into a wide range of future missions, fundamentally upgrading humanity ability to communicate across the solar system.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-063",
+    "name": "NASA Spinoff 2026 Program",
+    "type": "Technology transfer program",
+    "agency": "NASA",
+    "launch_date": "2026 (ongoing)",
+    "destination": "Earth applications",
+    "status": "Active",
+    "description": "NASA 2026 Spinoff program features 20 technologies ready for commercialization, marking 50 years of NASA technology transfer. Key areas include advanced materials, medical devices, environmental monitoring, and manufacturing processes originally developed for space. The program demonstrates how space technology investment creates terrestrial economic value.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-064",
+    "name": "Blue Origin Blue Moon Mark 1 Pathfinder",
+    "type": "Lunar lander (uncrewed)",
+    "agency": "Blue Origin",
+    "launch_date": "2026",
+    "destination": "Lunar surface",
+    "status": "Preparing for launch on New Glenn",
+    "description": "Blue Origin first lunar lander mission on New Glenn rocket. Uncrewed demonstration flight to validate Blue Moon landing technology and precision delivery capabilities. Precursor to the larger Mark 2 lander for NASA HLS missions. Success would establish Blue Origin as a second lunar delivery provider alongside SpaceX.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-065",
+    "name": "China Xuntian Co-Orbiting Telescope",
+    "type": "Space station + co-orbiting telescope",
+    "agency": "CNSA",
+    "launch_date": "2026-2028",
+    "destination": "LEO (Tiangong co-orbit)",
+    "status": "Under development",
+    "description": "China Xuntian space telescope will co-orbit with Tiangong space station, featuring a 2-meter mirror with 300x Hubble field of view. Designed to survey 40% of the sky over 10 years. Will contribute to exoplanet science through microlensing and transit detection. Can dock with Tiangong for servicing.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-066",
+    "name": "Artemis II Return (April 2026)",
+    "type": "Crewed deep space mission completion",
+    "agency": "NASA",
+    "launch_date": "April 10, 2026 (splashdown)",
+    "destination": "Lunar orbit flyby",
+    "status": "Completed",
+    "description": "Artemis II successfully completed its 10-day mission with splashdown on April 10, 2026. Crew of four flew around the Moon, testing Orion deep space life support, navigation, and heat shield systems. First crewed mission beyond LEO since Apollo 17 in 1972. Validated SLS and Orion for crewed deep space operations, paving the way for Artemis III lunar landing.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-067",
+    "name": "NASA Lunar Base Plan (3 Landers by End of 2026)",
+    "type": "Lunar infrastructure program",
+    "agency": "NASA / CLPS partners",
+    "launch_date": "2026",
+    "destination": "Lunar south pole region",
+    "status": "Active",
+    "description": "NASA announced accelerated plan to build permanent presence near lunar south pole, with three commercial lander missions planned by end of 2026. Landers will deliver ISRU demonstration equipment, power systems, and habitat components. Shift from individual missions to sustained infrastructure buildup via CLPS program.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-068",
+    "name": "China 2026 Space Breakthroughs",
+    "type": "National space program milestone",
+    "agency": "CNSA / CASC",
+    "launch_date": "2026",
+    "destination": "Multiple",
+    "status": "Active",
+    "description": "China space program targeting new breakthroughs in 2026: expanded Tiangong operations, Change-7 lunar south pole mission, new Long March variants, and increased deep-space capabilities. CASC announced record launch cadence for 2026, reflecting accelerating space ambitions.",
+    "year": 2026
+  },
+  {
+    "id": "SMIS-069",
+    "name": "Artemis III",
+    "type": "crewed_lunar_landing",
+    "agency": "NASA",
+    "launch_year": "2028+",
+    "key_finding": "NASA公布初步任务计划：SLS发射Orion飞船，使用Starship HLS登月。Artemis II成功后推进时间表。",
+    "source": "NASA 2026",
+    "status": "planned"
+  },
+  {
+    "id": "SMIS-070",
+    "name": "Hera Asteroid Survey",
+    "type": "asteroid_reconnaissance",
+    "agency": "ESA",
+    "launch_year": 2024,
+    "arrival_year": 2026,
+    "key_finding": "ESA Hera任务2026年11月抵达Dimorphos小行星，评估DART撞击效果，为小行星偏转技术提供数据。",
+    "source": "Science Focus 2026",
+    "status": "en_route"
+  },
+  {
+    "id": "SMIS-071",
+    "name": "NASA Moon Base Program",
+    "type": "lunar_infrastructure",
+    "agency": "NASA",
+    "launch_year": "2026-2028",
+    "key_finding": "2026年5月NASA新闻发布会公布月球基地计划：2026年底前3个月球着陆器，2028年发射月球无人机。新工业合作伙伴加入。",
+    "source": "NASA/Reddit 2026",
+    "status": "planned"
+  },
+  {
+    "id": "SMIS-072",
+    "name": "China Space Station Telescope (CSST)",
+    "type": "space_telescope_mission",
+    "agency": "CNSA",
+    "launch_year": "2026-2028",
+    "key_finding": "中国天宫巡天望远镜，2米主镜，视场为哈勃300倍，将与天宫空间站共轨飞行，开展大规模巡天观测。",
+    "source": "CASC/CCTV+ 2026",
+    "status": "planned"
+  },
+  {
+    "id": "SMIS-073",
+    "name": "Blue Origin Blue Moon Mark 1",
+    "type": "lunar_lander",
+    "agency": "Blue Origin",
+    "launch_year": 2026,
+    "key_finding": "Blue Origin月球着陆器Pathfinder版本，为Artemis载人登月任务提供货物运送能力。",
+    "source": "Space Nexus 2026",
+    "status": "planned"
+  },
+  {
+    "id": "SMIS-074",
+    "name": "Vera C. Rubin Observatory (LSST)",
+    "type": "wide_field_survey",
+    "agency": "NSF/DOE",
+    "launch_year": "2025 (first light June 23, 2025)",
+    "key_finding": "2025年6月首次亮光，开始10年巡天任务。配备世界最大数码相机LSST Camera，将拍摄约1000张夜空图像，预计发现数百万颗小行星和彗星、超新星及变星。将成为有史以来最高效的太阳系发现机器。",
+    "source": "NSF-DOE Rubin Observatory 2025",
+    "status": "operational"
+  },
+  {
+    "id": "SMIS-075",
+    "name": "SETI Technosignature Science Grants Program",
+    "type": "technosignature_search",
+    "agency": "SETI Institute",
+    "launch_year": "2024-2026 (ongoing)",
+    "key_finding": "SETI研究所启动了开创性的技术签名科学资助计划，专门推进技术签名探测。2026年5月，SETI科学家设计了最先进的技术来检测多种可能指示地外文明存在的签名，包括戴森球搜索和分子复杂性模式分析。",
+    "source": "SETI Institute / Astrobiology.com 2024-2026",
+    "status": "active"
+  }
+]

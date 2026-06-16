@@ -1,0 +1,312 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-05-30T13:30:00Z",
+  "description": "合成生物学库 - 深度扩展版",
+  "entities": [
+    {
+      "id": "SB-001",
+      "name": "CRISPR-Cas9",
+      "type": "基因编辑",
+      "applications": ["基因治疗", "作物改良", "基因驱动"],
+      "companies": ["Editas", "CRISPR Therapeutics", "Intellia"],
+      "maturity": "临床阶段/已上市(Casgevy)",
+      "description": "第三代基因编辑工具，2020年诺贝尔奖，Casgevy成为首个FDA批准CRISPR疗法",
+      "trend": "2025年7款FDA批准CAR-T/基因编辑产品；递送系统(LNP)持续改进"
+    },
+    {
+      "id": "SB-002",
+      "name": "碱基编辑Base Editing",
+      "type": "基因编辑",
+      "applications": ["遗传病治疗", "心血管风险降低"],
+      "companies": ["Beam Therapeutics", "Verve Therapeutics"],
+      "maturity": "临床阶段",
+      "description": "精确单碱基替换(C→T/A→G)，无需双链断裂，脱靶效应极低",
+      "trend": "Verve碱基编辑降胆固醇进入临床；Beam多款管线推进"
+    },
+    {
+      "id": "SB-003",
+      "name": "先导编辑Prime Editing",
+      "type": "基因编辑",
+      "applications": ["复杂突变修复", "精准基因校正"],
+      "companies": ["Prime Medicine"],
+      "maturity": "临床前/临床早期",
+      "description": "搜索-替换式编辑，可做任意小编辑(替换/插入/删除)，无需供体DNA",
+      "trend": "效率持续提升；Prime Medicine多管线进入临床"
+    },
+    {
+      "id": "SB-004",
+      "name": "mRNA疗法",
+      "type": "核酸药物",
+      "applications": ["疫苗", "蛋白替代", "癌症", "罕见病"],
+      "companies": ["Moderna", "BioNTech", "CureVac"],
+      "maturity": "已上市(疫苗)/临床(其他)",
+      "description": "mRNA编码治疗性蛋白，LNP递送，COVID疫苗验证平台",
+      "trend": "RSV疫苗/流感疫苗/个性化癌症疫苗推进；LNP肝外递送突破"
+    },
+    {
+      "id": "SB-005",
+      "name": "CRISPR基因驱动",
+      "type": "基因编辑应用",
+      "applications": ["疟疾防控", "入侵物种控制", "农业害虫"],
+      "companies": ["Target Malaria", "UC San Diego"],
+      "maturity": "实验室/受限田间试验",
+      "description": "自传播基因修饰，可在野生种群中扩散，实验室蚊子种群减少90%+",
+      "trend": "2025年基因驱动研究取得重要进展；监管和伦理争议显著；布基纳法索首次受限田间研究"
+    },
+    {
+      "id": "SB-006",
+      "name": "无细胞蛋白合成CFPS",
+      "type": "生物制造",
+      "applications": ["药物蛋白", "有毒蛋白", "快速原型"],
+      "companies": ["Sutro Biopharma", "Tierra Biosciences"],
+      "maturity": "商用",
+      "description": "无活细胞条件下合成蛋白，24小时设计到蛋白，Sutro卵巢癌药luvelta进入III期",
+      "trend": "快速原型周期是核心优势；与AI蛋白设计结合"
+    },
+    {
+      "id": "SB-007",
+      "name": "最小合成细胞",
+      "type": "合成生物体",
+      "applications": ["定制微生物", "基础生物学研究"],
+      "companies": ["J. Craig Venter Institute"],
+      "maturity": "实验室里程碑",
+      "description": "JCVI-syn3.0仅473基因的最小基因组细菌，定义了细胞生命最小基因集",
+      "trend": "syn3A(493基因)修正版2021年发表；定制合成生物体基础"
+    },
+    {
+      "id": "SB-008",
+      "name": "Xenobots/Anthrobots",
+      "type": "活体机器人",
+      "applications": ["药物递送", "组织修复", "环境清理"],
+      "companies": ["Tufts University", "UVM"],
+      "maturity": "实验室",
+      "description": "青蛙(Xenobots)或人类(Anthrobots)细胞自组装活体机器人，可运动/愈合/载物",
+      "trend": "Xenobot 3.0可自我复制；Anthrobots可修复受损神经组织"
+    },
+    {
+      "id": "SB-009",
+      "name": "精密发酵Precision Fermentation",
+      "type": "食品/生物制造",
+      "applications": ["无动物乳蛋白", "特殊脂肪", "食品原料"],
+      "companies": ["Perfect Day", "Motif FoodWorks", "Geltor", "EVERY Company"],
+      "maturity": "商用",
+      "description": "工程微生物生产与动物源完全相同的食品蛋白/脂肪",
+      "trend": "Perfect Day无动物乳清蛋白2020年上市；成本持续下降"
+    },
+    {
+      "id": "SB-010",
+      "name": "DNA数据存储",
+      "type": "信息技术",
+      "applications": ["长期归档存储", "高密度数据存储"],
+      "companies": ["Microsoft/UW MISL", "Catalog", "Iridia"],
+      "maturity": "概念验证",
+      "description": "数字数据编码入合成DNA，理论密度215PB/克",
+      "trend": "Microsoft 2019年存储200MB；Iridia开发芯片级DNA写入器；读写速度是瓶颈"
+    },
+    {
+      "id": "SB-011",
+      "name": "工程活体材料ELM",
+      "type": "材料科学",
+      "applications": ["自修复混凝土", "活体传感器", "智能材料"],
+      "companies": ["MIT Lu Lab", "Wyss Institute", "Basilisk"],
+      "maturity": "研究/部分商用",
+      "description": "活细胞制成的材料，可生长/自修复/响应环境",
+      "trend": "Basilisk自修复混凝土减少80%裂缝；活体传感器开发中"
+    },
+    {
+      "id": "SB-012",
+      "name": "代谢工程/气体发酵",
+      "type": "工业生物技术",
+      "applications": ["生物燃料", "生物化学品", "碳回收"],
+      "companies": ["LanzaTech", "Ginkgo Bioworks", "Genomatica"],
+      "maturity": "商用",
+      "description": "工程微生物从糖或CO₂生产化学品/燃料/材料，替代石油路线",
+      "trend": "LanzaTech中国钢厂废气制乙醇运营中；Genomatica生物BDO规模化生产"
+    },
+    {
+      "id": "SB-013",
+      "name": "AI设计酶/蛋白",
+      "type": "计算生物设计",
+      "applications": ["新酶设计", "药物蛋白优化", "工业催化剂"],
+      "companies": ["Arzeda", "Cyrus Biotechnology", "Absci"],
+      "maturity": "商用初期",
+      "description": "AI/ML驱动的蛋白质从头设计，创造自然界不存在的功能蛋白",
+      "trend": "SynBioBeta 2026聚焦AI设计酶和蛋白；蛋白质设计语言模型快速发展"
+    },
+    {
+      "id": "SB-014",
+      "name": "可编程RNA药物",
+      "type": "核酸药物",
+      "applications": ["遗传病", "癌症", "传染病"],
+      "companies": ["AstraZeneca", "Moderna", "多个初创"],
+      "maturity": "临床阶段",
+      "description": "可编程RNA平台，快速设计针对不同靶点的RNA疗法",
+      "trend": "SynBioBeta 2026展示可编程RNA药物初创；AI+RNA设计结合"
+    },
+    {
+      "id": "SB-015",
+      "name": "虚拟细胞模型",
+      "type": "计算生物学",
+      "applications": ["药物筛选", "疾病建模", "生物学预测"],
+      "companies": ["多个AI生物初创"],
+      "maturity": "研究/早期开发",
+      "description": "AI驱动的完整细胞计算模型，可模拟细胞行为和药物反应",
+      "trend": "2025-2026年AI增强生物科学热点；减少实验试错成本"
+    },
+    {
+      "id": "SB-016",
+      "name": "合成生物学市场平台",
+      "type": "基础设施",
+      "applications": ["生物铸造厂", "自动化实验", "设计-构建-测试-学习"],
+      "companies": ["Ginkgo Bioworks", "Twist Bioscience", "Synthego"],
+      "maturity": "商用",
+      "description": "自动化生物铸造厂和DNA合成平台，降低合成生物学开发门槛",
+      "trend": "2026年合成生物学市场$26.87Bn，预计2033年$112.51Bn(CAGR 22.7%)"
+    },
+    {
+      "id": "SB-017",
+      "name": "生物传感器/诊断",
+      "type": "检测技术",
+      "applications": ["环境监测", "疾病诊断", "食品安全"],
+      "companies": ["Synlogic", "Zymergen(Ginkgo)"],
+      "maturity": "临床/商用",
+      "description": "工程微生物作为活体传感器，检测和报告特定分子",
+      "trend": "Synlogic工程益生菌进入临床；与可穿戴设备结合"
+    },
+    {
+      "id": "SB-018",
+      "name": "合成基因组学",
+      "type": "基因组工程",
+      "applications": ["合成染色体", "基因组最小化", "密码子重编码"],
+      "companies": ["Synthego", "Ginkgo Bioworks"],
+      "maturity": "研究",
+      "description": "从头合成完整基因组或染色体，Sc2.0项目合成酵母基因组",
+      "trend": "Sc2.0合成酵母染色体项目持续进展；密码子重编码创造抗病毒细胞"
+    },
+    {
+      "id": "SB-019",
+      "name": "生物计算/生物电路",
+      "type": "生物信息处理",
+      "applications": ["智能疗法", "条件性药物释放", "生物逻辑门"],
+      "companies": ["多个学术实验室"],
+      "maturity": "研究",
+      "description": "在细胞内构建基因电路/逻辑门，实现可编程生物行为",
+      "trend": "智能CAR-T(条件激活)应用；合成生物学与计算科学交叉"
+    },
+    {
+      "id": "SB-020",
+      "name": "替代蛋白/细胞培养肉",
+      "type": "食品科技",
+      "applications": ["培养肉", "植物蛋白", "发酵蛋白"],
+      "companies": ["Upside Foods", "GOOD Meat", "Beyond Meat", "Impossible Foods"],
+      "maturity": "商用初期",
+      "description": "细胞培养或植物基替代传统动物蛋白，减少环境影响",
+      "trend": "美国/新加坡批准培养肉销售；成本下降但规模化挑战大"
+    },
+    {
+      "id": "SB-021",
+      "name": "生物固碳/碳利用",
+      "type": "气候技术",
+      "applications": ["CO₂转化", "生物燃料", "生物材料"],
+      "companies": ["LanzaTech", "Novomer", "Zymergen"],
+      "maturity": "示范/商用",
+      "description": "工程微生物将CO₂转化为有价值产品，碳负排放路径",
+      "trend": "与碳捕集(DAC)结合；LanzaTech气体发酵平台商业化"
+    },
+    {
+      "id": "SB-022",
+      "name": "合成生物学监管框架",
+      "type": "政策/伦理",
+      "applications": ["安全评估", "生物安全", "公众接受"],
+      "companies": ["WHO", "各国监管机构"],
+      "maturity": "持续演进",
+      "description": "合成生物学产品的安全评估和监管框架，平衡创新与风险",
+      "trend": "2025年DNA合成筛查指南更新；生物安全与开放科学持续博弈"
+    },
+    {
+      "id": "SB-023",
+      "name": "无糖甜蛋白",
+      "type": "食品科技",
+      "applications": ["代糖", "食品饮料", "健康"],
+      "companies": ["多个SynBioBeta 2026展示初创"],
+      "maturity": "开发中",
+      "description": "AI设计的蛋白质替代糖，提供甜味但零热量",
+      "trend": "SynBioBeta 2026重点展示方向；健康饮食趋势驱动"
+    },
+    {
+      "id": "SB-024",
+      "name": "工程噬菌体疗法",
+      "type": "抗菌治疗",
+      "applications": ["超级细菌感染", "农业", "食品防腐"],
+      "companies": ["Adaptive Phage Therapeutics", "PhagoMed", "Locus Biosciences"],
+      "maturity": "临床阶段",
+      "description": "工程化噬菌体精准杀灭耐药细菌，应对AMR危机",
+      "trend": "AMR全球威胁加剧；CRISPR-Cas13武装噬菌体增强杀伤力"
+    },
+    {
+      "id": "SB-025",
+      "name": "合成生物学与AI融合",
+      "type": "跨领域融合",
+      "applications": ["全流程AI设计", "自动化DBTL循环", "预测性生物学"],
+      "companies": ["Ginkgo Bioworks", "Recursion", "Insilico Medicine"],
+      "maturity": "快速崛起",
+      "description": "AI+合成生物学深度融合，从基因设计到实验优化的全流程智能化",
+      "trend": "2025-2026年最热趋势；AI设计→自动化实验→数据反馈闭环"
+    },
+    {
+      "id": "SB-026",
+      "name": "Chai-2抗体设计AI",
+      "type": "AI+蛋白质设计",
+      "applications": ["抗体工程", "药物发现"],
+      "companies": ["Chai Discovery"],
+      "maturity": "快速崛起",
+      "description": "2025年7月Chai-2实现从头设计抗体16%成功率，Stanford SETR 2026报告重点提及",
+      "trend": "AI抗体设计变革药物发现流程；从筛选到设计的范式转变",
+      "sources": [{"source_type": "web", "source_credibility": "A", "article_url": "https://setr.stanford.edu/sites/default/files/2026-01/SETR2026_02-Biotech_web-260109.pdf", "collected_at": "2026-05-30T13:30:00Z"}]
+    },
+    {
+      "id": "SB-027",
+      "name": "通用抗蛇毒血清",
+      "type": "合成生物应用",
+      "applications": ["抗蛇毒", "热带医学"],
+      "companies": ["SynBioBeta社区"],
+      "maturity": "研究阶段",
+      "description": "合成生物学和抗体工程指向通用抗蛇毒血清，可中和多种蛇毒",
+      "trend": "SynBioBeta 2026重点议题；从物种特异性到广谱抗毒",
+      "sources": [{"source_type": "web", "source_credibility": "B", "article_url": "https://www.syntheticbiologysummit.com/human-health-2", "collected_at": "2026-05-30T13:30:00Z"}]
+    },
+    {
+      "id": "SB-028",
+      "name": "iGEM塑料降解生物",
+      "type": "环境生物技术",
+      "applications": ["塑料降解", "环境修复"],
+      "companies": ["iGEM社区"],
+      "maturity": "研究/原型",
+      "description": "iGEM 2025亮点：工程微生物降解塑料，合成生物学应对塑料污染",
+      "trend": "从实验室到环境应用；PETase/MHETase工程化改进",
+      "sources": [{"source_type": "web", "source_credibility": "B", "article_url": "https://www.labiotech.eu/in-depth/igem-2025-highlights/", "collected_at": "2026-05-30T13:30:00Z"}]
+    },
+    {
+      "id": "SB-029",
+      "name": "AI对齐监管框架",
+      "type": "政策/标准",
+      "applications": ["生物安全", "AI监管"],
+      "companies": ["各国监管机构"],
+      "maturity": "制定中",
+      "description": "2026年生物技术突破包括AI对齐监管框架、人源化测试模型、下一代生物制造",
+      "trend": "AI+生物安全交叉；DNA合成筛查强制化；双用途研究管控",
+      "sources": [{"source_type": "web", "source_credibility": "B", "article_url": "https://go.zageno.com/blog/whats-new-in-biotech-2026", "collected_at": "2026-05-30T13:30:00Z"}]
+    },
+    {
+      "id": "SB-030",
+      "name": "SynbiTECH 2026趋势",
+      "type": "行业趋势",
+      "applications": ["全行业"],
+      "companies": ["SynbiCITE"],
+      "maturity": "参考",
+      "description": "SynbiTECH 2025揭示2026年合成生物学趋势：工程化、规模化、AI融合",
+      "trend": "从概念验证到工业规模；自动化DBTL循环成为标配",
+      "sources": [{"source_type": "web", "source_credibility": "B", "article_url": "https://www.synbicite.com/news/2026-trends-in-synthetic-biology", "collected_at": "2026-05-30T13:30:00Z"}]
+    }
+  ]
+}

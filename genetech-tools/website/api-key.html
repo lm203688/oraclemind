@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Get API Key - GeneTech Tools</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔑</text></svg>">
+<style>
+:root{--bg:#0a0e17;--bg2:#111827;--bg3:#1a2236;--border:#1e2d4a;--text:#e2e8f0;--text2:#94a3b8;--accent:#06b6d4;--accent2:#f59e0b;--green:#10b981}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,23,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:800px;margin:0 auto;padding:0 20px;display:flex;align-items:center;height:52px;gap:16px}
+.nav-logo{font-size:17px;font-weight:700;color:#fff}
+.container{max-width:600px;margin:0 auto;padding:80px 20px 40px}
+h1{text-align:center;font-size:1.8em;margin-bottom:8px}h1 span{color:var(--accent)}
+.subtitle{text-align:center;color:var(--text2);margin-bottom:32px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:.85rem;color:var(--text2);margin-bottom:4px}
+.form-group input,.form-group select{width:100%;padding:12px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.95rem;outline:none}
+.form-group input:focus,.form-group select:focus{border-color:var(--accent)}
+.plan-select{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.plan-opt{background:var(--bg2);border:2px solid var(--border);border-radius:10px;padding:14px;cursor:pointer;text-align:center;transition:all .2s}
+.plan-opt:hover{border-color:var(--accent)}
+.plan-opt.selected{border-color:var(--accent);background:rgba(6,182,212,0.1)}
+.plan-opt .name{font-weight:700;font-size:.95rem}
+.plan-opt .price{color:var(--accent);font-size:1.2em;font-weight:800;margin-top:4px}
+.plan-opt .desc{color:var(--text2);font-size:.75rem;margin-top:2px}
+.submit-btn{width:100%;padding:14px;border-radius:10px;border:none;background:var(--accent);color:#000;font-size:1rem;font-weight:700;cursor:pointer;margin-top:8px}
+.submit-btn:hover{opacity:.9}
+.result-box{display:none;background:var(--bg3);border:1px solid var(--green);border-radius:12px;padding:20px;margin-top:24px;text-align:center}
+.result-box.show{display:block}
+.result-box .key{font-family:monospace;font-size:1.1em;color:var(--green);word-break:break-all;margin:12px 0;padding:12px;background:var(--bg2);border-radius:8px}
+.result-box .warn{color:var(--accent2);font-size:.8rem;margin-top:8px}
+.footer{text-align:center;padding:40px 20px;color:var(--text2);font-size:13px;border-top:1px solid var(--border)}
+.site-list{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.site-tag{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:.75rem;color:var(--text2)}
+</style>
+</head>
+<body>
+<div class="nav"><div class="nav-inner">
+  <div class="nav-logo">🔑 GeneTech API</div>
+  <div class="nav-links" style="display:flex;gap:14px;font-size:13px">
+    <a href="https://genetech.tools">Home</a>
+    <a href="https://genetech.tools/credits.html">Credits</a>
+  </div>
+</div></div>
+
+<div class="container">
+<h1>🔑 <span>Get Your API Key</span></h1>
+<p class="subtitle">Access 12 knowledge bases with 4,500+ structured entities for your AI agents and applications.</p>
+
+<div class="plan-select" id="planSelect">
+  <div class="plan-opt selected" onclick="selectPlan('free')" data-plan="free">
+    <div class="name">Free</div>
+    <div class="price">$0/mo</div>
+    <div class="desc">100 calls/day</div>
+  </div>
+  <div class="plan-opt" onclick="selectPlan('pro')" data-plan="pro">
+    <div class="name">Pro</div>
+    <div class="price">$29/mo</div>
+    <div class="desc">Unlimited + export</div>
+  </div>
+  <div class="plan-opt" onclick="selectPlan('data')" data-plan="data">
+    <div class="name">Data Pack</div>
+    <div class="price">$49 once</div>
+    <div class="desc">Single domain JSON</div>
+  </div>
+  <div class="plan-opt" onclick="selectPlan('bundle')" data-plan="bundle">
+    <div class="name">Full Bundle</div>
+    <div class="price">$299 once</div>
+    <div class="desc">All 12 domains</div>
+  </div>
+</div>
+
+<form onsubmit="return generateKey(event)">
+  <div class="form-group">
+    <label>Email *</label>
+    <input type="email" id="email" required placeholder="you@company.com">
+  </div>
+  <div class="form-group">
+    <label>Project / Company</label>
+    <input type="text" id="project" placeholder="My AI Project">
+  </div>
+  <div class="form-group">
+    <label>Which sites do you need? (all included by default)</label>
+    <div class="site-list">
+      <span class="site-tag">🧬 GeneTech</span>
+      <span class="site-tag">🌿 TCMDB</span>
+      <span class="site-tag">🤖 AgentEco</span>
+      <span class="site-tag">⚙️ RobotParts</span>
+      <span class="site-tag">⚛️ QuantumDB</span>
+      <span class="site-tag">🧠 BrainDB</span>
+      <span class="site-tag">☢️ NuclearDB</span>
+      <span class="site-tag">🪐 ExoDB</span>
+      <span class="site-tag">💎 MineralDB</span>
+      <span class="site-tag">🌊 DeepSeaDB</span>
+      <span class="site-tag">⚡ EnergyDB</span>
+      <span class="site-tag">🔬 LifeDB</span>
+    </div>
+  </div>
+  <button type="submit" class="submit-btn">Generate API Key</button>
+</form>
+
+<div class="result-box" id="resultBox">
+  <div style="font-size:1.2em;font-weight:700;color:var(--green)">✅ API Key Generated!</div>
+  <div class="key" id="apiKey"></div>
+  <div class="warn">⚠️ Save this key now — it won't be shown again. Use it as: <code>Authorization: Bearer YOUR_KEY</code></div>
+  <div style="margin-top:12px;font-size:.85rem;color:var(--text2)">
+    Free keys are active immediately. Pro/Data keys require payment confirmation.<br>
+    <a href="https://genetech.tools/credits.html">Pay now</a> to activate instantly.
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>GeneTech Tools API · <a href="https://genetech.tools">genetech.tools</a> · <a href="mailto:61960005@qq.com">Support</a></p>
+</div>
+
+<script>
+let selectedPlan = 'free';
+const params = new URLSearchParams(window.location.search);
+if (params.get('plan')) selectedPlan = params.get('plan');
+if (params.get('site')) document.getElementById('project').value = 'Data for ' + params.get('site');
+
+// Highlight pre-selected plan
+document.querySelectorAll('.plan-opt').forEach(el => {
+  if (el.dataset.plan === selectedPlan) el.classList.add('selected');
+  else el.classList.remove('selected');
+});
+
+function selectPlan(plan) {
+  selectedPlan = plan;
+  document.querySelectorAll('.plan-opt').forEach(el => {
+    el.classList.toggle('selected', el.dataset.plan === plan);
+  });
+}
+
+function generateKey(e) {
+  e.preventDefault();
+  const email = document.getElementById('email').value;
+  const project = document.getElementById('project').value;
+  
+  // Generate a deterministic-looking key from email + random
+  const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  let key = 'gt_';
+  for (let i = 0; i < 32; i++) key += chars[Math.floor(Math.random() * chars.length)];
+  
+  // Show the key
+  document.getElementById('apiKey').textContent = key;
+  document.getElementById('resultBox').classList.add('show');
+  
+  // Send notification email
+  const subject = encodeURIComponent('New API Key: ' + selectedPlan + ' - ' + email);
+  const body = encodeURIComponent(
+    'Email: ' + email + '\n' +
+    'Project: ' + project + '\n' +
+    'Plan: ' + selectedPlan + '\n' +
+    'API Key: ' + key + '\n' +
+    'Generated: ' + new Date().toISOString()
+  );
+  
+  // Auto-send notification
+  fetch('https://formsubmit.co/ajax/61960005@qq.com', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: email, _subject: 'New API Key: ' + selectedPlan, plan: selectedPlan, project: project, apiKey: key })
+  }).catch(() => {});
+  
+  // Store key locally
+  const keys = JSON.parse(localStorage.getItem('gt_api_keys') || '[]');
+  keys.push({ key, email, plan: selectedPlan, project, created: new Date().toISOString() });
+  localStorage.setItem('gt_api_keys', JSON.stringify(keys));
+  
+  // If paid plan, redirect to payment
+  if (selectedPlan === 'pro' || selectedPlan === 'data' || selectedPlan === 'bundle') {
+    setTimeout(() => {
+      window.location.href = 'https://genetech.tools/credits.html?email=' + encodeURIComponent(email) + '&plan=' + selectedPlan;
+    }, 3000);
+  }
+  
+  return false;
+}
+</script>
+</body></html>

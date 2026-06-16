@@ -1,0 +1,1004 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-05",
+  "description": "protocols库",
+  "entities": [
+    {
+      "id": "PROTO-001",
+      "name": "MCP (Model Context Protocol)",
+      "vendor": "Anthropic",
+      "version": "2026-07-28-rc",
+      "layer": "Agent-Tool",
+      "description": "让AI Agent连接外部工具和数据源的开放协议，2026年最大版本更新",
+      "architecture": "Client-Server",
+      "transport": "stdio/SSE/StreamableHTTP",
+      "security": "进程隔离/权限控制/OAuth",
+      "adoption": "广泛（13000+ MCP Server）",
+      "github_stars": "30000+",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-002",
+      "name": "A2A (Agent-to-Agent)",
+      "vendor": "Google",
+      "version": "0.1",
+      "layer": "Agent-Agent",
+      "description": "让不同框架的AI Agent互相通信和协作",
+      "architecture": "P2P/Hub",
+      "transport": "HTTP/JSON-RPC",
+      "security": "Agent Card认证",
+      "adoption": "快速增长(50+合作伙伴)",
+      "github_stars": "5000+",
+      "status": "快速增长"
+    },
+    {
+      "id": "PROTO-003",
+      "name": "ACP (Agent Communication Protocol)",
+      "vendor": "IBM/BEA",
+      "version": "0.1",
+      "layer": "Agent-Agent",
+      "description": "IBM主导的Agent通信协议",
+      "architecture": "Hub-Spoke",
+      "transport": "HTTP/gRPC",
+      "security": "企业级安全",
+      "adoption": "IBM生态",
+      "github_stars": "500",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-004",
+      "name": "OpenClaw Skill Protocol",
+      "vendor": "OpenClaw",
+      "version": "1.0",
+      "layer": "Agent-Skill",
+      "description": "Agent技能描述和分发协议",
+      "architecture": "Registry",
+      "transport": "npm/git",
+      "security": "沙箱执行/权限声明",
+      "adoption": "OpenClaw生态",
+      "github_stars": "2000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-005",
+      "name": "LSP (Language Server Protocol)",
+      "vendor": "Microsoft",
+      "version": "3.17",
+      "layer": "Editor-Language",
+      "description": "编辑器与语言服务通信协议",
+      "architecture": "Client-Server",
+      "transport": "stdio/HTTP",
+      "security": "进程隔离",
+      "adoption": "广泛",
+      "github_stars": "11000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-006",
+      "name": "AG-UI (Agent User Interaction Protocol)",
+      "vendor": "CopilotKit",
+      "version": "0.1",
+      "layer": "Agent-UI",
+      "description": "Agent与前端UI交互的开放协议，定义Agent事件流到UI组件的映射",
+      "architecture": "Event Stream",
+      "transport": "SSE/WebSocket",
+      "security": "CORS/认证",
+      "adoption": "CopilotKit生态",
+      "github_stars": "8000+",
+      "status": "快速增长"
+    },
+    {
+      "id": "PROTO-007",
+      "name": "ANP (Agent Network Protocol)",
+      "vendor": "ANP社区",
+      "version": "0.2",
+      "layer": "Agent-Network",
+      "description": "去中心化Agent网络协议，支持Agent发现和互操作",
+      "architecture": "P2P/DID",
+      "transport": "HTTP/DID Comm",
+      "security": "DID认证/加密",
+      "adoption": "W3C DID生态",
+      "github_stars": "3000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-008",
+      "name": "OpenAPI/Swagger",
+      "vendor": "Linux Foundation",
+      "version": "3.1",
+      "layer": "API-Description",
+      "description": "REST API描述标准，MCP Server可从OpenAPI自动生成",
+      "architecture": "Specification",
+      "transport": "HTTP",
+      "security": "OAuth/API Key",
+      "adoption": "广泛",
+      "github_stars": "29000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-009",
+      "name": "gRPC",
+      "vendor": "Google",
+      "version": "1.6x",
+      "layer": "RPC",
+      "description": "高性能RPC框架，Agent间低延迟通信",
+      "architecture": "Client-Server/Streaming",
+      "transport": "HTTP/2",
+      "security": "TLS/Token",
+      "adoption": "广泛",
+      "github_stars": "41000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-010",
+      "name": "GraphQL",
+      "vendor": "GraphQL Foundation",
+      "version": "October 2021",
+      "layer": "API-Query",
+      "description": "灵活的API查询语言，Agent按需获取数据",
+      "architecture": "Client-Server",
+      "transport": "HTTP/WebSocket",
+      "security": "查询深度限制/认证",
+      "adoption": "广泛",
+      "github_stars": "14000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-011",
+      "name": "WASM Component Model",
+      "vendor": "Bytecode Alliance",
+      "version": "0.2",
+      "layer": "Agent-Sandbox",
+      "description": "WebAssembly组件模型，Agent安全沙箱执行",
+      "architecture": "Component",
+      "transport": "WASM Runtime",
+      "security": "沙箱隔离/能力控制",
+      "adoption": "增长中",
+      "github_stars": "1000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-012",
+      "name": "JSON-RPC 2.0",
+      "vendor": "JSON-RPC社区",
+      "version": "2.0",
+      "layer": "RPC",
+      "description": "轻量级远程过程调用协议，MCP底层传输之一",
+      "architecture": "Client-Server",
+      "transport": "HTTP/WebSocket/stdio",
+      "security": "传输层安全",
+      "adoption": "广泛",
+      "github_stars": "N/A",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-013",
+      "name": "Server-Sent Events (SSE)",
+      "vendor": "W3C",
+      "version": "Living Standard",
+      "layer": "Transport",
+      "description": "服务器推送事件流，MCP远程传输方式",
+      "architecture": "Server-Push",
+      "transport": "HTTP",
+      "security": "CORS/认证",
+      "adoption": "广泛",
+      "github_stars": "N/A",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-014",
+      "name": "DAP (Debug Adapter Protocol)",
+      "vendor": "Microsoft",
+      "version": "1.6x",
+      "layer": "Agent-Debug",
+      "description": "调试适配器协议，Agent调试和可观测性",
+      "architecture": "Client-Server",
+      "transport": "stdio/HTTP",
+      "security": "进程隔离",
+      "adoption": "IDE广泛",
+      "github_stars": "2000",
+      "status": "成熟"
+    },
+    {
+      "id": "PROTO-015",
+      "name": "OpenTelemetry",
+      "vendor": "CNCF",
+      "version": "1.x",
+      "layer": "Observability",
+      "description": "可观测性标准，Agent tracing/metrics/logs",
+      "architecture": "Collector/Export",
+      "transport": "OTLP/gRPC/HTTP",
+      "security": "TLS/Token",
+      "adoption": "广泛",
+      "github_stars": "4500",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-016",
+      "name": "FHIR (Healthcare API)",
+      "vendor": "HL7",
+      "version": "R4B/R5",
+      "layer": "Domain-API",
+      "description": "医疗健康数据交换标准，医疗Agent场景",
+      "architecture": "RESTful",
+      "transport": "HTTP",
+      "security": "OAuth2/SMART",
+      "adoption": "医疗行业广泛",
+      "github_stars": "2000",
+      "status": "行业标准"
+    },
+    {
+      "id": "PROTO-017",
+      "name": "Stainless API Standard",
+      "vendor": "Stainless",
+      "version": "1.0",
+      "layer": "API-SDK-Gen",
+      "description": "API到SDK自动生成标准，MCP Server SDK生成",
+      "architecture": "Generator",
+      "transport": "HTTP",
+      "security": "规范定义",
+      "adoption": "增长中",
+      "github_stars": "3000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-018",
+      "name": "Semantic Protocol (SP)",
+      "vendor": "W3C",
+      "version": "Draft",
+      "layer": "Agent-Semantic",
+      "description": "语义网协议栈，Agent知识表示和推理",
+      "architecture": "RDF/OWL/SPARQL",
+      "transport": "HTTP",
+      "security": "访问控制",
+      "adoption": "知识图谱领域",
+      "github_stars": "N/A",
+      "status": "标准草案"
+    },
+    {
+      "id": "PROTO-019",
+      "name": "OAuth 2.1 / DPoP",
+      "vendor": "IETF",
+      "version": "RFC 9449",
+      "layer": "Auth",
+      "description": "Agent认证和授权标准，MCP远程安全基础",
+      "architecture": "Token-based",
+      "transport": "HTTP",
+      "security": "PKCE/DPoP",
+      "adoption": "广泛",
+      "github_stars": "N/A",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-020",
+      "name": "Tool Call Protocol (OpenAI)",
+      "vendor": "OpenAI",
+      "version": "2024-12",
+      "layer": "Agent-Tool",
+      "description": "OpenAI定义的函数调用协议，事实上的工具调用标准",
+      "architecture": "Request-Response",
+      "transport": "HTTP API",
+      "security": "API Key",
+      "adoption": "广泛（OpenAI兼容模型）",
+      "github_stars": "N/A",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-021",
+      "name": "Agent Gateway Protocol (AGP)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Gateway",
+      "description": "Agent网关协议，统一多Agent系统的入口和路由",
+      "architecture": "Gateway",
+      "transport": "HTTP/gRPC",
+      "security": "mTLS/RBAC",
+      "adoption": "早期",
+      "github_stars": "1500",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-022",
+      "name": "x402 (HTTP 402 Payment Protocol)",
+      "vendor": "Coinbase/社区",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "基于HTTP 402状态码的机器对机器微支付协议，已处理7500万+交易",
+      "architecture": "HTTP-native",
+      "transport": "HTTP/HTTPS",
+      "security": "加密签名/区块链",
+      "adoption": "快速增长（75M+交易/月）",
+      "github_stars": "5000+",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-023",
+      "name": "AP2 (Agent Payment Protocol)",
+      "vendor": "Google",
+      "version": "0.1",
+      "layer": "Agent-Payment",
+      "description": "Google推出的Agent预授权支付协议，60+合作组织",
+      "architecture": "Pre-authorized",
+      "transport": "HTTP/gRPC",
+      "security": "OAuth/加密",
+      "adoption": "早期（60+合作伙伴）",
+      "github_stars": "N/A",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-024",
+      "name": "ACP (Agent Commerce Protocol)",
+      "vendor": "Stripe",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "Stripe推出的Agent商务协议，已集成到ChatGPT",
+      "architecture": "Commerce-focused",
+      "transport": "HTTPS",
+      "security": "Stripe安全",
+      "adoption": "ChatGPT集成",
+      "github_stars": "N/A",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-025",
+      "name": "UCP (Universal Commerce Protocol)",
+      "vendor": "Google",
+      "version": "0.1",
+      "layer": "Agent-Payment",
+      "description": "Google推出的通用商务协议，用于Agent间交易",
+      "architecture": "Universal",
+      "transport": "HTTP/gRPC",
+      "security": "加密",
+      "adoption": "早期",
+      "github_stars": "N/A",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-027",
+      "name": "A2UI (Agent-to-UI Protocol)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-UI",
+      "description": "Agent到用户界面的直接交互协议",
+      "architecture": "Component-based",
+      "transport": "WebSocket",
+      "security": "Sandbox",
+      "adoption": "早期",
+      "github_stars": "500",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-028",
+      "name": "Web Bot Auth",
+      "vendor": "IETF/社区",
+      "version": "draft",
+      "layer": "Agent-Auth",
+      "description": "Web机器人身份认证标准，定义Agent在Web上的身份验证",
+      "architecture": "Certificate-based",
+      "transport": "HTTPS",
+      "security": "PKI/OAuth",
+      "adoption": "标准化中",
+      "github_stars": "N/A",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-029",
+      "name": "MCP 2026-07-28 RC",
+      "vendor": "Linux Foundation/MCP",
+      "version": "2026-07-28-rc",
+      "layer": "Agent-Tool",
+      "description": "MCP协议2026年重大更新，引入无状态协议、Tasks原语、MCP Apps",
+      "architecture": "Stateless Client-Server",
+      "transport": "StreamableHTTP/SSE/stdio",
+      "security": "OAuth 2.1/权限控制/审计日志",
+      "adoption": "即将发布",
+      "github_stars": "30000+",
+      "status": "RC"
+    },
+    {
+      "id": "PROTO-030",
+      "name": "MCP Registry Protocol",
+      "vendor": "Linux Foundation/MCP",
+      "version": "0.1",
+      "layer": "Agent-Discovery",
+      "description": "MCP Server注册与发现协议，用于Server目录和安全验证",
+      "architecture": "Registry",
+      "transport": "HTTPS",
+      "security": "TLS/签名验证",
+      "adoption": "预览版",
+      "github_stars": "1500",
+      "status": "预览"
+    },
+    {
+      "id": "PROTO-031",
+      "name": "MCP Tasks Protocol",
+      "vendor": "Linux Foundation/MCP",
+      "version": "draft",
+      "layer": "Agent-Task",
+      "description": "MCP 2026路线图新增Tasks原语，支持Agent自主通信",
+      "architecture": "Task-oriented",
+      "transport": "StreamableHTTP",
+      "security": "OAuth/权限",
+      "adoption": "规划中",
+      "github_stars": "N/A",
+      "status": "规划"
+    },
+    {
+      "id": "PROTO-032",
+      "name": "A2A v1",
+      "vendor": "Google",
+      "version": "1.0",
+      "layer": "Agent-Agent",
+      "description": "Agent间通信协议正式版，IBM ACP已合并入A2A",
+      "architecture": "P2P/Hub",
+      "transport": "HTTP/gRPC",
+      "security": "mTLS/OAuth",
+      "adoption": "广泛（IBM合并）",
+      "github_stars": "15000+",
+      "status": "正式版"
+    },
+    {
+      "id": "PROTO-033",
+      "name": "Agent Pay (Mastercard)",
+      "vendor": "Mastercard",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "Mastercard Agent Pay协议，支持AI Agent安全支付",
+      "architecture": "Payment Gateway",
+      "transport": "HTTPS",
+      "security": "Token化/3DS",
+      "adoption": "发布",
+      "github_stars": "N/A",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-034",
+      "name": "Visa Trusted Agent",
+      "vendor": "Visa",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "Visa可信Agent支付协议",
+      "architecture": "Trusted Execution",
+      "transport": "HTTPS",
+      "security": "Token化/生物识别",
+      "adoption": "发布",
+      "github_stars": "N/A",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-035",
+      "name": "llms.txt Standard",
+      "vendor": "社区",
+      "version": "0.3",
+      "layer": "Agent-Content",
+      "description": "为LLM Agent提供网站内容摘要的标准格式",
+      "architecture": "File-based",
+      "transport": "HTTPS",
+      "security": "CORS",
+      "adoption": "广泛",
+      "github_stars": "4000+",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-036",
+      "name": "Agent Identity Protocol (AIP)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Identity",
+      "description": "定义AI Agent身份标识和验证的协议",
+      "architecture": "DID-based",
+      "transport": "HTTPS",
+      "security": "DID/VC",
+      "adoption": "早期",
+      "github_stars": "200",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-037",
+      "name": "AGORA Protocol",
+      "vendor": "Oxford University",
+      "version": "0.1",
+      "layer": "Agent-Agent",
+      "description": "牛津大学提出的自然语言动态协议设计，Agent自适应任务协商，无需预定义协议",
+      "architecture": "Natural Language Protocol",
+      "transport": "HTTP/LLM",
+      "security": "协商式安全",
+      "adoption": "研究阶段",
+      "github_stars": "500",
+      "status": "研究"
+    },
+    {
+      "id": "PROTO-038",
+      "name": "APEX Standard",
+      "vendor": "APEX Community",
+      "version": "0.1",
+      "layer": "Agent-Interaction",
+      "description": "开放Agent交互协议标准，定义Agent间发现、协商和执行的通用框架",
+      "architecture": "Registry + P2P",
+      "transport": "HTTP/WebSocket",
+      "security": "OAuth/签名",
+      "adoption": "早期",
+      "github_stars": "300",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-039",
+      "name": "MCP Streamable HTTP",
+      "vendor": "Linux Foundation/MCP",
+      "version": "2026-07-28",
+      "layer": "Agent-Transport",
+      "description": "MCP 2026新增StreamableHTTP传输方式，替代SSE，支持无状态请求",
+      "architecture": "Stateless HTTP",
+      "transport": "HTTP/HTTPS",
+      "security": "OAuth 2.1/CORS",
+      "adoption": "即将发布",
+      "github_stars": "N/A",
+      "status": "RC"
+    },
+    {
+      "id": "PROTO-040",
+      "name": "MCP Apps Protocol",
+      "vendor": "Linux Foundation/MCP",
+      "version": "draft",
+      "layer": "Agent-App",
+      "description": "MCP 2026路线图新增MCP Apps概念，定义可组合的Agent应用协议",
+      "architecture": "Composable App",
+      "transport": "StreamableHTTP",
+      "security": "OAuth/权限",
+      "adoption": "规划中",
+      "github_stars": "N/A",
+      "status": "规划"
+    },
+    {
+      "id": "PROTO-041",
+      "name": "Agent Trust Protocol (ATP)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Trust",
+      "description": "定义Agent信任评估和声誉系统的协议，支持跨平台Agent可信度验证",
+      "architecture": "Reputation-based",
+      "transport": "HTTPS",
+      "security": "PKI/签名验证",
+      "adoption": "早期",
+      "github_stars": "200",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-042",
+      "name": "MCP 2026-07-28 RC (Stateless)",
+      "vendor": "Linux Foundation/MCP",
+      "version": "2026-07-28-rc",
+      "layer": "Agent-Tool",
+      "description": "MCP 2026最大版本更新，引入无状态协议核心、StreamableHTTP传输、Tasks原语、MCP Apps概念",
+      "architecture": "Stateless Client-Server",
+      "transport": "StreamableHTTP/SSE/stdio",
+      "security": "OAuth 2.1/权限控制/审计日志",
+      "adoption": "即将发布（RC阶段）",
+      "github_stars": "30000+",
+      "status": "RC",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-043",
+      "name": "AGP (Agent Gateway Protocol)",
+      "vendor": "社区",
+      "version": "0.2",
+      "layer": "Agent-Gateway",
+      "description": "Agent网关协议升级版，统一多Agent系统入口、路由和安全策略",
+      "architecture": "Gateway + Mesh",
+      "transport": "HTTP/gRPC/WS",
+      "security": "mTLS/RBAC/审计",
+      "adoption": "增长中",
+      "github_stars": "2000",
+      "status": "活跃",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-044",
+      "name": "MPP (Model Payment Protocol)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Payment",
+      "description": "模型支付协议，定义AI模型调用和支付的标准化流程",
+      "architecture": "Request-Payment-Response",
+      "transport": "HTTPS",
+      "security": "加密签名/区块链",
+      "adoption": "早期",
+      "github_stars": "300",
+      "status": "草案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-045",
+      "name": "Agent Stack Protocol Suite",
+      "vendor": "多厂商",
+      "version": "2026",
+      "layer": "Agent-Full-Stack",
+      "description": "2026年Agent协议栈：MCP + A2A + x402 + AP2 + Web Bot Auth + llms.txt，形成完整Agent通信标准",
+      "architecture": "Layered Stack",
+      "transport": "Multiple",
+      "security": "多层安全",
+      "adoption": "行业趋势",
+      "github_stars": "N/A",
+      "status": "趋势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-046",
+      "name": "UCP (Universal Commerce Protocol) v2",
+      "vendor": "Google",
+      "version": "0.2",
+      "layer": "Agent-Payment",
+      "description": "Google通用商务协议升级版，与AP2合并，支持Agent间复杂交易",
+      "architecture": "Universal + Pre-authorized",
+      "transport": "HTTP/gRPC",
+      "security": "OAuth/加密/审计",
+      "adoption": "早期（60+合作伙伴）",
+      "github_stars": "N/A",
+      "status": "早期",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-047",
+      "name": "TAP (Tool Access Protocol)",
+      "type": "agent_tool_protocol",
+      "layer": "Agent-Tool",
+      "description": "Tool Access Protocol，AI Agent工具访问协议，标准化Agent对工具的发现、调用和管理",
+      "status": "draft",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-048",
+      "name": "AGP v2 (Agent Gateway Protocol v2)",
+      "type": "agent_gateway_protocol",
+      "layer": "Agent-Agent",
+      "description": "Agent Gateway Protocol v2，Agent网关协议升级版，支持更安全的多Agent路由和通信",
+      "status": "draft",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-049",
+      "name": "MCP Extensions Protocol",
+      "type": "agent_tool_protocol",
+      "layer": "Agent-Tool",
+      "description": "MCP扩展协议，2026-07-28 RC引入，支持MCP Server的扩展机制和插件系统",
+      "status": "rc",
+      "release_date": "2026-07",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-050",
+      "name": "MCP Stateless Core Protocol",
+      "type": "agent_tool_protocol",
+      "layer": "Agent-Tool",
+      "description": "MCP无状态核心协议，2026-07-28 RC引入，将MCP核心改为无状态设计以支持水平扩展",
+      "status": "rc",
+      "release_date": "2026-07",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-051",
+      "name": "Agent Security Protocol (ASP)",
+      "type": "agent_security_protocol",
+      "layer": "Agent-Security",
+      "description": "Agent安全协议，2026年MCP安全指南提出，解决AI工具隧道安全和Agent认证问题",
+      "status": "proposal",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "proto-agora-v2",
+      "name": "AGORA Protocol v2",
+      "type": "agent_communication",
+      "description": "AGORA v2，牛津大学开发的自然语言动态协议，Agent自适应任务协商，支持复杂多Agent协作场景",
+      "organization": "Oxford University",
+      "key_features": [
+        "自然语言协议",
+        "动态协议生成",
+        "Agent自适应协商",
+        "多Agent协作"
+      ],
+      "status": "research",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-apex-v2",
+      "name": "APEX Standard v2",
+      "type": "agent_interaction",
+      "description": "APEX v2开放Agent交互协议标准，Registry + P2P架构，增强Agent发现和信任机制",
+      "organization": "APEX Consortium",
+      "key_features": [
+        "Registry架构",
+        "P2P通信",
+        "Agent发现",
+        "信任机制"
+      ],
+      "status": "draft",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-agent-stack-2026",
+      "name": "Agent Stack 2026 Protocol Suite",
+      "type": "protocol_suite",
+      "description": "2026年Agent协议栈：MCP + A2A + x402 + AP2 + Web Bot Auth + llms.txt，定义Agent生态完整协议层",
+      "organization": "Industry Consortium",
+      "key_features": [
+        "MCP工具层",
+        "A2A通信层",
+        "x402支付层",
+        "Web Bot Auth认证层",
+        "llms.txt发现层"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-mcp-stateless-rc",
+      "name": "MCP Stateless Protocol RC",
+      "type": "mcp_extension",
+      "description": "MCP 2026-07-28 RC引入的无状态协议核心，支持StreamableHTTP传输和Tasks原语",
+      "organization": "Anthropic",
+      "key_features": [
+        "无状态核心",
+        "StreamableHTTP",
+        "Tasks原语",
+        "MCP Apps"
+      ],
+      "status": "rc",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-a2a-v1-ibm-acp",
+      "name": "A2A v1 + IBM ACP Merged",
+      "type": "agent_communication",
+      "description": "A2A v1.0正式版，IBM ACP已合并入A2A，150+组织采用，15000+ GitHub Stars",
+      "organization": "Google/IBM",
+      "key_features": [
+        "A2A正式版",
+        "IBM ACP合并",
+        "150+组织采用",
+        "15000+ Stars"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-agui",
+      "name": "AG-UI (Agent GUI Protocol)",
+      "vendor": "CopilotKit",
+      "version": "0.2",
+      "layer": "Agent-UI",
+      "description": "Agent GUI交互协议，定义Agent与前端UI组件的实时交互标准，SSE事件流驱动",
+      "architecture": "Event Stream + Components",
+      "transport": "SSE/WebSocket",
+      "security": "CORS/认证",
+      "adoption": "CopilotKit生态+扩展",
+      "github_stars": "10000+",
+      "status": "快速增长",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-x42",
+      "name": "X42 (HTTP 402 Micro-Payment)",
+      "vendor": "Coinbase/社区",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "X42微支付协议，HTTP 402状态码驱动的机器对机器支付，与x402互补",
+      "architecture": "HTTP-native",
+      "transport": "HTTP/HTTPS",
+      "security": "加密签名",
+      "adoption": "增长中",
+      "github_stars": "2000+",
+      "status": "生产可用",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-mcp-server-cards",
+      "name": "MCP Server Cards",
+      "vendor": "Linux Foundation/MCP",
+      "version": "draft",
+      "layer": "Agent-Discovery",
+      "description": "MCP Server Cards标准，通过.well-known URL暴露结构化Server元数据，支持浏览器和注册表发现",
+      "architecture": "File-based Discovery",
+      "transport": "HTTPS",
+      "security": "TLS/签名",
+      "adoption": "规划中",
+      "github_stars": "N/A",
+      "status": "规划",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-mpp",
+      "name": "MPP (Merchant Payment Protocol)",
+      "vendor": "行业联盟",
+      "version": "draft",
+      "layer": "Agent-Payment",
+      "description": "商户支付协议，定义Agent与商户间的支付交互标准",
+      "architecture": "Payment-native",
+      "transport": "HTTPS",
+      "security": "加密签名",
+      "adoption": "增长中",
+      "github_stars": "N/A",
+      "status": "规划",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-agui",
+      "name": "AGUI (Agent GUI Protocol)",
+      "category": "agent-protocol",
+      "description": "Agent GUI protocol standardizing how agents interact with user interfaces. One of the six key agent protocols in 2026.",
+      "features": [
+        "agent-UI interaction",
+        "GUI standardization",
+        "user interaction protocol",
+        "interface abstraction"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
+        "https://sanbi.ai/blog/agent-stack-protocols-2026"
+      ]
+    },
+    {
+      "id": "PROTO-a2ui",
+      "name": "A2UI (Agent to UI Protocol)",
+      "category": "agent-protocol",
+      "description": "Protocol for agent-to-user-interface communication. Complements A2A for inter-agent communication.",
+      "features": [
+        "agent-to-UI",
+        "interface communication",
+        "user interaction"
+      ],
+      "status": "emerging",
+      "year": 2025,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026"
+      ]
+    },
+    {
+      "id": "PROTO-ap2",
+      "name": "AP2 (Agent Protocol 2)",
+      "category": "agent-protocol",
+      "description": "Next-generation agent protocol. One of the six key protocols shaping AI agent interactions in 2026.",
+      "features": [
+        "agent communication",
+        "protocol standardization",
+        "interoperability"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
+        "https://sanbi.ai/blog/agent-stack-protocols-2026"
+      ]
+    },
+    {
+      "id": "PROTO-x42",
+      "name": "X42 Protocol",
+      "category": "payment-protocol",
+      "description": "Payment protocol for AI agents enabling autonomous transactions. Part of the 2026 agent stack.",
+      "features": [
+        "agent payments",
+        "autonomous transactions",
+        "economic protocol",
+        "agent commerce"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
+        "https://sanbi.ai/blog/agent-stack-protocols-2026"
+      ]
+    },
+    {
+      "id": "PROTO-streamable-http",
+      "name": "StreamableHTTP (MCP Transport)",
+      "category": "transport-protocol",
+      "description": "New MCP transport layer introduced November 2025 replacing SSE. Uses chunked HTTP streaming for better reliability.",
+      "features": [
+        "HTTP streaming",
+        "SSE replacement",
+        "chunked transfer",
+        "MCP transport"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.speakeasy.com/mcp/release-notes",
+        "https://workos.com/blog/everything-your-team-needs-to-know-about-mcp-in-2026"
+      ]
+    }
+  ]
+}

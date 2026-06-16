@@ -1,0 +1,104 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "ExoDB",
+  "description": "Exoplanet & space exploration knowledge base - exoplanets, missions, astrobiology",
+  "url": "https://exo.genetech.tools",
+  "category": "地外科学",
+  "api": {
+    "type": "rest",
+    "base_url": "https://exo.genetech.tools/api",
+    "openapi": "https://exo.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/exoplanets.json",
+        "method": "GET",
+        "description": "Get exoplanets data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/space_missions.json",
+        "method": "GET",
+        "description": "Get space missions data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/astrobiology.json",
+        "method": "GET",
+        "description": "Get astrobiology data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/space_telescopes.json",
+        "method": "GET",
+        "description": "Get space telescopes data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/planetary_science.json",
+        "method": "GET",
+        "description": "Get planetary science data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/space_habitats.json",
+        "method": "GET",
+        "description": "Get space habitats data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://mineral.genetech.tools",
+      "title": "小行星矿物资源"
+    },
+    {
+      "rel": "related",
+      "href": "https://quantum.genetech.tools",
+      "title": "量子通信深空"
+    },
+    {
+      "rel": "related",
+      "href": "https://nuclear.genetech.tools",
+      "title": "核推进深空"
+    },
+    {
+      "rel": "related",
+      "href": "https://deepsea.genetech.tools",
+      "title": "极端环境类比"
+    }
+  ]
+}

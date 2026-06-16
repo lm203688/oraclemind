@@ -1,0 +1,3071 @@
+# DeepSeaDB - 深海科技知识引擎
+
+Deep sea technology knowledge base covering submersibles, resources, ecology, underwater communication, ocean energy, marine biology, ocean exploration, and underwater tech
+
+## submersibles
+
+### Fendouzhe (奋斗者号)
+
+- name: Fendouzhe (奋斗者号)
+- type: Human-occupied vehicle (HOV)
+- max_depth: 10,909 m
+- operator: Institute of Deep-sea Science and Engineering, CAS
+- country: China
+- year: 2020
+- capabilities: 3 crew; 2 robotic arms; 4K video; 10+ hours bottom time; acoustic communication
+- description: China's deepest-diving manned submersible, reaching the bottom of the Mariana Trench (10,909m) in November 2020. Built with titanium alloy personnel sphere. Has completed 200+ dives including scientific expeditions to hadal zones.
+
+### DSV Limiting Factor (Triton 36000/2)
+
+- name: DSV Limiting Factor (Triton 36000/2)
+- type: Human-occupied vehicle (HOV)
+- max_depth: 11,000 m
+- operator: Caladan Oceanic / Triton Submarines
+- country: USA/UK
+- year: 2018
+- capabilities: 2 crew; 3 viewports; multiple dives to full ocean depth; rapid descent/ascent
+- description: The first commercially developed full-ocean-depth submersible. Completed the Five Deeps Expedition, visiting the deepest point in all five oceans. Has made 15+ dives to hadal depths, more than all other HOVs combined.
+
+### Alvin (DSV-2)
+
+- name: Alvin (DSV-2)
+- type: Human-occupied vehicle (HOV)
+- max_depth: 6,500 m
+- operator: Woods Hole Oceanographic Institution (WHOI)
+- country: USA
+- year: 1964 (upgraded 2022)
+- capabilities: 3 crew; 2 manipulator arms; upgraded 2022 with new titanium sphere and 6,500m rating; HD imaging
+- description: The most scientifically productive deep-sea submersible in history. Originally rated to 4,500m, the 2022 upgrade extended depth to 6,500m, accessing 99% of the ocean floor. Discovered hydrothermal vents in 1977.
+
+### Jiaolong (蛟龙号)
+
+- name: Jiaolong (蛟龙号)
+- type: Human-occupied vehicle (HOV)
+- max_depth: 7,062 m
+- operator: China Ocean Mineral Resources R&D Association
+- country: China
+- year: 2010
+- capabilities: 3 crew; 2 manipulator arms; acoustic communication; 12+ hours bottom time
+- description: China's first deep-sea manned submersible, reaching 7,062m in the Mariana Trench in 2012. Has completed 300+ dives for scientific research and resource surveys. Paved the way for the deeper Fendouzhe.
+
+### Nautilus (E/V Nautilus)
+
+- name: Nautilus (E/V Nautilus)
+- type: ROV support vessel
+- max_depth: 4,000 m (ROVs Hercules/Argus)
+- operator: Ocean Exploration Trust (Robert Ballard)
+- country: USA
+- year: 2008
+- capabilities: Dual ROV system; live telepresence; global exploration; educational outreach
+- description: E/V Nautilus is Robert Ballard's exploration vessel equipped with ROVs Hercules and Argus. The dual-ROV system provides lighting and imaging for detailed archaeological and geological surveys. Live-streamed dives reach millions.
+
+### ROV Jason/Medea
+
+- name: ROV Jason/Medea
+- type: ROV system
+- max_depth: 6,500 m
+- operator: Woods Hole Oceanographic Institution (WHOI)
+- country: USA
+- year: 2002 (upgraded continuously)
+- capabilities: Tethered ROV; sampling; high-resolution imaging; sensor packages; 24-hour operations
+- description: WHOI's primary deep-rated ROV system. Jason has explored hydrothermal vents, seamounts, and abyssal plains worldwide. The Medea tether management system enables operations at maximum depth for extended periods.
+
+### Nereid Under Ice (NUI)
+
+- name: Nereid Under Ice (NUI)
+- type: Hybrid ROV/AUV
+- max_depth: 2,000 m (under ice)
+- operator: Woods Hole Oceanographic Institution (WHOI)
+- country: USA
+- year: 2014
+- capabilities: Operates under ice shelves; fiber-optic tether for real-time control; convertible to AUV mode
+- description: NUI is designed to explore under ice shelves where conventional ROVs cannot operate. It uses a thin fiber-optic tether that can be severed for AUV-mode operation. Has explored under Arctic and Antarctic ice.
+
+### HUGIN AUV (Kongsberg)
+
+- name: HUGIN AUV (Kongsberg)
+- type: Autonomous Underwater Vehicle (AUV)
+- max_depth: 6,000 m
+- operator: Kongsberg Maritime / FFI (Norway)
+- country: Norway
+- year: 2008 (continuously updated)
+- capabilities: Multibeam mapping; synthetic aperture sonar; 100+ hour endurance; modular payload
+- description: The world's most capable deep-rated AUV for commercial and military surveys. Ocean Infinity operates a fleet of HUGINs that can survey 1,200+ km² per day autonomously. Used for seabed mapping, pipeline inspection, and search operations.
+
+### Sentry (AUV)
+
+- name: Sentry (AUV)
+- type: Autonomous Underwater Vehicle (AUV)
+- max_depth: 6,000 m
+- operator: Woods Hole Oceanographic Institution (WHOI)
+- country: USA
+- year: 2008
+- capabilities: Multibeam mapping; photographic surveys; water column sensing; autonomous decision-making
+- description: WHOI's deep-rated scientific AUV. Sentry can create high-resolution seafloor maps and photo-mosaics autonomously. It has discovered multiple hydrothermal vent sites through its autonomous chemical sensing capability.
+
+### Boaty McBoatface (Autosub Long Range)
+
+- name: Boaty McBoatface (Autosub Long Range)
+- type: Autonomous Underwater Vehicle (AUV)
+- max_depth: 6,000 m
+- operator: National Oceanography Centre (NOC), UK
+- country: UK
+- year: 2017
+- capabilities: Long-range endurance (months); under-ice capability; water column sampling; 2,000+ km range
+- description: NOC's long-endurance AUV capable of missions lasting months and covering thousands of kilometers. Has operated under Antarctic ice shelves, measuring water temperature and chemistry in previously inaccessible regions.
+
+### AUV Abyss (IFREMER)
+
+- name: AUV Abyss (IFREMER)
+- type: Autonomous Underwater Vehicle (AUV)
+- max_depth: 6,000 m
+- operator: IFREMER
+- country: France
+- year: 2015
+- capabilities: Multibeam mapping; modular sensor payload; 24-hour missions
+- description: IFREMER's deep-rated AUV for mapping and surveying the abyssal seafloor. Used for polymetallic nodule surveys and hydrothermal vent exploration in the Pacific and Atlantic.
+
+### Shinkai 6500
+
+- name: Shinkai 6500
+- type: Human-occupied vehicle (HOV)
+- max_depth: 6,500 m
+- operator: JAMSTEC
+- country: Japan
+- year: 1991
+- capabilities: 3 crew; 2 manipulator arms; 8+ hours bottom time; extensive scientific instrumentation
+- description: Japan's deepest manned submersible, operational for over 30 years. Has contributed to discoveries of deep-sea life, hydrothermal vent ecosystems, and submarine geology throughout the Pacific. Being replaced by the next-generation DSV12000.
+
+### DSV12000 (Next-gen Japanese HOV)
+
+- name: DSV12000 (Next-gen Japanese HOV)
+- type: Human-occupied vehicle (HOV)
+- max_depth: 12,000 m (full ocean depth)
+- operator: JAMSTEC
+- country: Japan
+- year: Under development (~2027)
+- capabilities: 3 crew; full ocean depth; advanced imaging and sampling; replacing Shinkai 6500
+- description: JAMSTEC's next-generation full-ocean-depth submersible, designed to replace the Shinkai 6500. Will be capable of reaching any point on the ocean floor, including the deepest trenches. Currently under development with expected deployment around 2027.
+
+### Triton 36000/2 (Production Model)
+
+- name: Triton 36000/2 (Production Model)
+- type: Human-occupied vehicle (HOV)
+- max_depth: 11,000 m
+- operator: Triton Submarines
+- country: USA
+- year: 2023+
+- capabilities: 2 crew; full ocean depth; acrylic sphere viewport; commercial production model
+- description: The production version of the Limiting Factor design, available for commercial and scientific purchase. Triton Submarines is the only company producing full-ocean-depth submersibles. Multiple units ordered for research and luxury exploration.
+
+### Deep-Sea Mining Collector Vehicles
+
+- name: Deep-Sea Mining Collector Vehicles
+- type: Mining vehicle
+- max_depth: 6,000 m
+- operator: Allseas (Hidden Gem), Patania (GSR), China Minmetals
+- country: Multiple
+- year: 2022+
+- capabilities: Seafloor nodule collection; hydraulic pickup; sediment separation; pumping to surface vessel
+- description: Purpose-built vehicles for collecting polymetallic nodules from the deep seafloor. Allseas' Hidden Gem successfully collected 3,000+ tonnes in 2022 pilot test. GSR's Patania II has also conducted pilot collections. These represent the operational frontier of deep-sea mining.
+
+### Orpheus AUV (WHOI)
+
+- name: Orpheus AUV (WHOI)
+- type: Autonomous Underwater Vehicle (AUV)
+- max_depth: 11,000 m (hadal zone)
+- operator: Woods Hole Oceanographic Institution (WHOI)
+- country: USA
+- year: 2021
+- capabilities: Full ocean depth; visual navigation; small form factor; low cost; hadal zone research
+- description: A new class of small, low-cost AUV designed specifically for hadal zone exploration. Orpheus uses visual-inertial navigation and can operate at full ocean depth. Its small size and low cost enable deployment in swarms for trench exploration.
+
+### Saildrone Surveyor
+
+- name: Saildrone Surveyor
+- type: Autonomous Surface Vehicle (ASV)
+- max_depth: Surface vessel (mapping to 11,000m seafloor)
+- operator: Saildrone Inc.
+- country: USA
+- year: 2021
+- capabilities: Wind/solar powered; multibeam sonar; 365-day endurance; uncrewed; AI navigation
+- description: The world's largest uncrewed surface vehicle for ocean mapping. Completed first uncrewed mapping of the Aleutian Islands in 2023. Contributes to Seabed 2030 mapping goals. Can operate for a year without refueling.
+
+### Shenhai Yongshi (深海勇士号)
+
+- name: Shenhai Yongshi (深海勇士号)
+- type: Human-occupied vehicle (HOV)
+- max_depth: 4,500 m
+- operator: Institute of Deep-sea Science and Engineering, CAS
+- country: China
+- year: 2017
+- capabilities: 3 crew; 2 manipulator arms; 95% domestically produced; cost-effective operations
+- description: China's 4,500m-rated manned submersible, designed as a cost-effective workhorse for routine deep-sea research. 95% domestically produced, it demonstrated China's submersible manufacturing capability. Complements the deeper Fendouzhe.
+
+### ROV SuBastian (Schmidt Ocean Institute)
+
+- name: ROV SuBastian (Schmidt Ocean Institute)
+- type: ROV
+- max_depth: 4,500 m
+- operator: Schmidt Ocean Institute
+- country: USA
+- year: 2016
+- capabilities: 4K/8K imaging; sampling; live telepresence; modular science packages
+- description: Schmidt Ocean Institute's ROV aboard R/V Falkor (too). Has discovered numerous new species and hydrothermal vents. 2025-2026 expeditions exploring the South Atlantic. Live-streamed dives engage global audiences.
+
+### NOAA Okeanos Explorer ROV (Deep Discoverer)
+
+- name: NOAA Okeanos Explorer ROV (Deep Discoverer)
+- type: ROV
+- max_depth: 6,000 m
+- operator: NOAA Ocean Exploration
+- country: USA
+- year: 2013
+- capabilities: 4K imaging; sampling; live telepresence; Seirios camera platform
+- description: NOAA's primary deep-sea exploration ROV aboard NOAA Ship Okeanos Explorer. 2025 expeditions focus on unexplored Pacific and Atlantic deep waters. The dual-ROV system (Deep Discoverer + Seirios) provides lighting and imaging for detailed exploration.
+
+### HROV Nereid Under Ice (NUI)
+
+- name: HROV Nereid Under Ice (NUI)
+- type: Hybrid ROV/AUV
+- max_depth: 11,000 m
+- operator: WHOI
+- country: USA
+- year: 2014
+- capabilities: Autonomous or tethered; under-ice navigation; sampling; imaging
+- description: WHOI hybrid vehicle designed for under-ice and deep-sea exploration. Can operate as both ROV and AUV. Used for Arctic and Antarctic under-ice surveys and deep-sea vent exploration.
+
+### Chinese Haidou-1
+
+- name: Chinese Haidou-1
+- type: Autonomous underwater vehicle (AUV)
+- max_depth: 10,900 m
+- operator: Shenyang Institute of Automation, CAS
+- country: China
+- year: 2020
+- capabilities: Fully autonomous; 10,900m depth rating; sampling; seafloor mapping
+- description: China autonomous deep-sea vehicle reaching 10,900m in the Mariana Trench. Demonstrated autonomous navigation and sampling at hadal depths. Part of China expanding deep-sea exploration capabilities.
+
+### Orpheus
+
+- name: Orpheus
+- type: Autonomous underwater vehicle (AUV)
+- max_depth: 11,000 m
+- operator: WHOI / NASA JPL
+- country: USA
+- year: 2021
+- capabilities: Autonomous navigation; visual mapping; small and lightweight; hadal zone
+- description: WHOI and NASA JPL collaboration developing a small, low-cost AUV for hadal zone exploration. Uses visual-inertial navigation similar to Mars rovers. Designed to be deployed in swarms for comprehensive hadal mapping.
+
+### Eelume
+
+- name: Eelume
+- type: Snake-like underwater robot
+- max_depth: 500 m
+- operator: Eelume AS (Norway)
+- country: Norway
+- year: 2016
+- capabilities: Snake-like locomotion; resident subsea inspection; docking station
+- description: Norwegian snake-like underwater robot designed for permanent resident subsea inspection and intervention. Lives at docking stations on the seafloor and can perform continuous inspection of subsea infrastructure without surface support.
+
+### Aquadrone
+
+- name: Aquadrone
+- type: Autonomous surface/subsurface vehicle
+- max_depth: 200 m
+- operator: Various manufacturers
+- country: Multiple
+- year: 2023
+- capabilities: Autonomous survey; water column sampling; multi-vehicle coordination
+- description: Autonomous surface and subsurface vehicles for coastal and shelf survey. Growing market for autonomous ocean monitoring with multiple vehicle coordination for comprehensive coverage.
+
+### Bluefin-21
+
+- name: Bluefin-21
+- type: AUV
+- max_depth: 4,500 m
+- operator: General Dynamics Mission Systems
+- country: USA
+- year: 2008
+- capabilities: Side-scan sonar; sub-bottom profiler; modular payload; 24h endurance
+- description: Military and scientific AUV used for deep-sea search and survey. Famous for searching MH370 wreckage. Modular payload bay allows different sensor configurations for various missions.
+
+### Sentry
+
+- name: Sentry
+- type: AUV
+- max_depth: 6,000 m
+- operator: WHOI
+- country: USA
+- year: 2008
+- capabilities: Autonomous survey; multibeam sonar; photographic mapping; chemical sensors
+- description: WHOI deep-rated AUV for scientific survey. Has discovered multiple hydrothermal vent sites. Carries multibeam sonar, camera systems, and chemical sensors for detecting hydrothermal plumes.
+
+### Autosub Long Range (ALR)
+
+- name: Autosub Long Range (ALR)
+- type: AUV (long-endurance)
+- max_depth: 6,000 m
+- operator: NOC Southampton (UK)
+- country: UK
+- year: 2018
+- capabilities: Ultra-long endurance (months); under-ice; oceanographic survey; 6000m rated
+- description: UK National Oceanography Centre long-endurance AUV capable of missions lasting months. Designed for under-ice and deep-ocean surveys. Can travel thousands of kilometers on a single charge.
+
+### Chinese Shenhai Yongshi (Deep Sea Warrior)
+
+- name: Chinese Shenhai Yongshi (Deep Sea Warrior)
+- type: HOV
+- max_depth: 4,500 m
+- operator: Institute of Deep-sea Science and Engineering, CAS
+- country: China
+- year: 2017
+- capabilities: 3 crew; titanium sphere; 2 manipulators; 10h bottom time
+- description: China 4,500m manned submersible for scientific research. Complements the deeper Fendouzhe for mid-depth operations. Has completed hundreds of dives for biological and geological research.
+
+### Russian Mir-1/Mir-2
+
+- name: Russian Mir-1/Mir-2
+- type: HOV
+- max_depth: 6,000 m
+- operator: Shirshov Institute of Oceanology
+- country: Russia
+- year: 1987
+- capabilities: 3 crew; 2 identical submersibles; Arctic and deep-sea operations
+- description: Russian deep-diving manned submersibles that have explored the Arctic seabed (planting flag at North Pole in 2007) and deep-sea vents. Two identical vehicles enable paired operations.
+
+### Nautile
+
+- name: Nautile
+- type: HOV
+- max_depth: 6,000 m
+- operator: IFREMER
+- country: France
+- year: 1984
+- capabilities: 3 crew; 2 manipulators; sampling; video; 5h bottom time
+- description: French manned submersible operated by IFREMER. Has explored hydrothermal vents, studied deep-sea ecosystems, and investigated shipwrecks. One of the longest-serving deep-sea submersibles.
+
+### Shinkai 6500
+
+- name: Shinkai 6500
+- type: HOV
+- max_depth: 6,500 m
+- operator: JAMSTEC
+- country: Japan
+- year: 1990
+- capabilities: 3 crew; 2 manipulators; 8h bottom time; deep research
+- description: Japanese manned submersible with 6,500m depth rating, one of the deepest-diving operational HOVs. Has contributed significantly to deep-sea biology and geology research in the Pacific and Indian Oceans.
+
+### Wave Glider
+
+- name: Wave Glider
+- type: Autonomous surface vehicle (ASV)
+- max_depth: Surface (with subsurface wing)
+- operator: Liquid Robotics (Boeing)
+- country: USA
+- year: 2007
+- capabilities: Wave-powered; unlimited endurance; oceanographic sensors; satellite comms
+- description: Wave-powered autonomous surface vehicle that uses wave energy for propulsion and solar panels for electronics. Can operate indefinitely at sea. Used for ocean monitoring, seismic surveys, and as communication relay for AUVs.
+
+### Saildrone
+
+- name: Saildrone
+- type: Autonomous surface vehicle (ASV)
+- max_depth: Surface
+- operator: Saildrone Inc.
+- country: USA
+- year: 2012
+- capabilities: Wind-powered; unlimited endurance; meteorological and oceanographic sensors; fisheries monitoring
+- description: Wind-powered autonomous surface vehicle for long-duration ocean monitoring. Has completed missions to the Arctic, Antarctic, and tropical cyclones. Used for fisheries enforcement, carbon monitoring, and seafloor mapping support.
+
+### Triton XLR (Next-Gen)
+
+- name: Triton XLR (Next-Gen)
+- type: HOV (next generation)
+- max_depth: 11,000 m
+- operator: Triton Submarines
+- country: USA
+- year: ~2025-2026
+- capabilities: 3 crew; acrylic sphere for panoramic views; 11,000m rated; luxury deep tourism
+- description: Next-generation full-ocean-depth submersible from Triton. Features acrylic pressure hull for 360° views. Designed for both scientific research and deep-sea tourism. Represents the commercialization of hadal zone access.
+
+### Redwing Autonomous Glider (Teledyne/Rutgers)
+
+- name: Redwing Autonomous Glider (Teledyne/Rutgers)
+- type: Autonomous underwater glider
+- max_depth: 1,000 m
+- operator: Teledyne Marine / Rutgers University
+- country: USA
+- year: 2026
+- capabilities: Autonomous ocean circling; long-endurance glider; ocean science data collection; global range
+- description: An autonomous underwater glider named Redwing, launched as a Teledyne Marine-Rutgers project to circle and explore the ocean. Designed for long-duration autonomous missions collecting oceanographic data across entire ocean basins. Represents the next generation of persistent ocean monitoring platforms.
+
+### AI-Powered Coral Reef Mapping Robot (2026)
+
+- name: AI-Powered Coral Reef Mapping Robot (2026)
+- type: Autonomous underwater vehicle (AUV)
+- max_depth: 100 m
+- operator: Various research institutions
+- country: International
+- year: 2026
+- capabilities: AI-driven autonomous navigation; visual mapping of coral reef hotspots; real-time health assessment; machine learning species identification
+- description: Featured on the cover of Science Robotics (May 2026), this underwater robot autonomously maps and monitors coral reef hotspots using visual navigation and AI. It represents the convergence of AI and marine robotics, enabling real-time ecosystem health assessment without human supervision.
+
+### Underwater Intervention Robot (Next-Gen 2026)
+
+- name: Underwater Intervention Robot (Next-Gen 2026)
+- type: Intervention ROV/AUV hybrid
+- max_depth: 6,000 m
+- operator: Multiple developers
+- country: International
+- year: 2026
+- capabilities: AI-driven autonomy; immersive XR teleoperation; autonomous manipulation; transition from teleoperated to autonomous paradigm
+- description: 2026 technology landscape shows underwater intervention robotics transitioning from teleoperated ROV paradigms toward AI-driven autonomy with immersive XR (extended reality) teleoperation. These hybrid systems can operate autonomously for routine tasks and switch to human-supervised XR control for complex interventions.
+
+### Deep-Sea Mining Collector Vehicles (2026 Update)
+
+- name: Deep-Sea Mining Collector Vehicles (2026 Update)
+- type: Mining vehicle
+- max_depth: 6,000 m
+- operator: TMC (Metals Company), GSR, Loke Marine, Allseas
+- country: Multiple
+- year: 2026
+- capabilities: Seafloor nodule collection; hydraulic pickup; sediment separation; pumping to surface vessel; improved environmental monitoring
+- description: 2026 update: The Metals Company (TMC), GSR, and Loke Marine continue pilot nodule collection testing. Allseas' Hidden Gem has collected 3,000+ tonnes in pilot tests. Deep-sea mining technology is advancing but regulatory uncertainty and environmental concerns remain. The ISA is negotiating mining regulations with 2026 as a critical year for the regulatory framework.
+
+### Ocean Discovery League Deep-Sea Camera System
+
+- name: Ocean Discovery League Deep-Sea Camera System
+- type: Deep-sea imaging platform
+- max_depth: 11,000 m
+- operator: Ocean Discovery League
+- country: USA
+- year: 2026
+- capabilities: Low-cost deep-sea imaging; 10,000 target locations; first representative visual record of the deep sea; global deployment strategy
+- description: Ocean Discovery League launched a global strategy to double deep-sea exploration by identifying 10,000 target locations for the first representative visual record of the deep sea. Their low-cost camera systems can be deployed at full ocean depth, democratizing access to deep-sea exploration and dramatically increasing the rate of seafloor documentation.
+
+### SWOT Satellite Seafloor Mapping
+
+- name: SWOT Satellite Seafloor Mapping
+- type: Satellite-based seafloor mapping
+- max_depth: Surface satellite (maps seafloor gravity from space)
+- operator: NASA / CNES
+- country: USA/France
+- year: 2025-2026
+- capabilities: Space-based seafloor topography mapping; one of the most detailed ocean floor maps ever created; detects seafloor features from gravity anomalies
+- description: A NASA-supported team published one of the most detailed maps yet of the ocean floor using data from the SWOT (Surface Water and Ocean Topography) satellite. SWOT measures sea surface height variations caused by seafloor gravity, enabling mapping of underwater mountains, ridges, and trenches from space. This complements ship-based sonar mapping for the Seabed 2030 project.
+
+### Redwing Autonomous Glider
+
+- name: Redwing Autonomous Glider
+- type: Autonomous underwater glider
+- max_depth: 1,000 m (operational); deeper capable
+- operator: Teledyne Marine / Rutgers University
+- country: USA
+- year: 2026
+- capabilities: Autonomous ocean circumnavigation; long-duration deployment; sensor payload for ocean science
+- description: Redwing is an autonomous underwater glider developed by Teledyne Marine and Rutgers University, launched in 2026 with the ambitious goal of circling the global ocean. It uses buoyancy changes for propulsion, enabling months-long missions with minimal power. Redwing represents the next generation of persistent ocean observation platforms.
+
+### LarvalBot (Coral Reef Restoration)
+
+- name: LarvalBot (Coral Reef Restoration)
+- type: Underwater intervention robot
+- max_depth: 30 m (reef operational depth)
+- operator: Queensland University of Technology
+- country: Australia
+- year: 2026
+- capabilities: AI-guided larval delivery to damaged reefs; precision navigation; Science Robotics May 2026 cover feature
+- description: LarvalBot is a pioneering underwater robot designed to restore damaged coral reefs with remarkable precision. By releasing coral larvae at targeted locations, it accelerates natural reef recovery. Featured on the cover of Science Robotics in May 2026, it represents a new paradigm of ecological restoration using underwater robotics.
+
+### AI-Powered Kelp Restoration Robot
+
+- name: AI-Powered Kelp Restoration Robot
+- type: AI underwater robot
+- max_depth: 15 m (kelp forest depth)
+- operator: Dublin High School / community project
+- country: USA
+- year: 2026
+- capabilities: AI vision for kelp health assessment; autonomous replanting; low-cost design
+- description: A breakthrough in marine conservation robotics developed by a team at Dublin High School. This AI-powered underwater robot assesses kelp forest health and autonomously replants kelp in degraded areas. Its low-cost design demonstrates that effective marine robotics need not be expensive, democratizing ocean conservation technology.
+
+### University of Delaware Marine Robotics Fleet
+
+- name: University of Delaware Marine Robotics Fleet
+- type: Multiple AUV/ROV platforms
+- max_depth: Various (up to 6,000 m)
+- operator: University of Delaware CEOE
+- country: USA
+- year: 2025-2026
+- capabilities: Multiple autonomous and remotely operated vehicles; deep-sea mapping; benthic survey; water column sampling
+- description: The University of Delaware's College of Earth, Ocean and Environment operates a fleet of marine robotics for deep-sea exploration. Their 2025-2026 program focuses on advancing autonomous capabilities and combining multiple vehicle types for comprehensive ocean surveys, contributing to both basic science and resource assessment.
+
+### Schmidt Ocean Institute R/V Falkor (too) ROVs
+
+- name: Schmidt Ocean Institute R/V Falkor (too) ROVs
+- type: Research vessel + ROV fleet
+- max_depth: 6,000 m (ROV)
+- operator: Schmidt Ocean Institute
+- country: International
+- year: 2026
+- capabilities: 4K/8K deep-sea imaging; biological sampling; geological mapping; global expedition program
+- description: Schmidt Ocean Institute's R/V Falkor (too) and its ROV fleet are conducting 2026 expeditions from Brazil to the Mid-Atlantic, documenting biodiversity and studying hydrothermal systems. The program provides open-access ocean research and has been responsible for numerous new species discoveries.
+
+### NOAA E/V Nautilus
+
+- name: NOAA E/V Nautilus
+- type: Exploration vessel + ROV
+- max_depth: 4,000 m (ROV Hercules)
+- operator: Ocean Exploration Trust / NOAA
+- country: USA
+- year: 2025-2026
+- capabilities: Dual ROV system (Hercules + Argus); multibeam mapping; live video streaming; education program
+- description: E/V Nautilus is exploring deep-sea priority areas around the Mariana Islands and other Pacific regions in 2025-2026. The vessel's dual ROV system enables detailed seafloor investigation while its multibeam sonar maps unmapped areas. All dives are live-streamed for public engagement.
+
+### AI-Driven Underwater Intervention Robot (2026)
+
+- name: AI-Driven Underwater Intervention Robot (2026)
+- type: AI autonomous underwater vehicle
+- max_depth: 3,000 m (operational)
+- operator: Multiple (PatSnap landscape analysis)
+- country: Global
+- year: 2026
+- capabilities: AI-driven autonomy; immersive XR teleoperation; hybrid autonomous/remote mode; intervention manipulators
+- description: The 2026 technology landscape shows underwater intervention robotics transitioning from purely teleoperated ROV paradigms toward AI-driven autonomy with immersive XR (extended reality) teleoperation as backup. This hybrid approach combines the reliability of human oversight with the efficiency of autonomous operation.
+
+### Deep-Sea Mining Collector Vehicle (Generic)
+
+- name: Deep-Sea Mining Collector Vehicle (Generic)
+- type: Seabed mining vehicle
+- max_depth: 4,000-6,000 m
+- operator: Multiple (TMC, China Minmetals, etc.)
+- country: Various
+- year: 2025-2026
+- capabilities: Nodule collection from abyssal seafloor; hydraulic pickup; onboard processing; acoustic positioning
+- description: Deep-sea mining collector vehicles are designed to traverse the abyssal seafloor at 4,000-6,000 m depth, collecting polymetallic nodules using hydraulic pickup systems. The Metals Company (TMC) conducted pilot collection in 2022. With NOAA's 2026 regulatory framework, commercial deployment is moving closer to reality.
+
+### RoboSub 2026 Autonomous Underwater Vehicle
+
+- name: RoboSub 2026 Autonomous Underwater Vehicle
+- type: Student competition AUV
+- max_depth: Pool depth (competition)
+- operator: Multiple university teams
+- country: International
+- year: 2026
+- capabilities: Autonomous navigation; object recognition; manipulation tasks; competition benchmarks
+- description: RoboSub 2026 is the international autonomous underwater vehicle student competition, advancing the next generation of underwater robotics engineers. Teams design and build AUVs that navigate obstacle courses, identify objects, and perform manipulation tasks autonomously. The competition drives innovation in low-cost underwater autonomy.
+
+### Wave Glider (Liquid Robotics)
+
+- name: Wave Glider (Liquid Robotics)
+- type: Surface wave-powered vehicle
+- max_depth: Surface (sensors to 200 m)
+- operator: Liquid Robotics (Boeing)
+- country: USA
+- year: Ongoing (2026 operations)
+- capabilities: Wave-powered propulsion; solar-powered sensors; months-long autonomous missions; oceanographic and defense applications
+- description: The Wave Glider uses the ocean's wave energy for propulsion and solar panels for sensor power, enabling months-long autonomous missions without fuel. It supports oceanographic research, seismic monitoring, and maritime security. Its persistent presence capability makes it ideal for long-term ocean monitoring programs like Seabed 2030.
+
+### Saildrone Surveyor
+
+- name: Saildrone Surveyor
+- type: Uncrewed surface vehicle (USV)
+- max_depth: Surface vessel with multibeam sonar (maps to 11,000 m)
+- operator: Saildrone Inc.
+- country: USA
+- year: 2025-2026
+- capabilities: Wind and solar powered; multibeam sonar mapping; autonomous navigation; months-long missions
+- description: Saildrone Surveyor is an uncrewed surface vehicle that maps the ocean floor using multibeam sonar while being powered by wind and solar energy. It is a key contributor to the Seabed 2030 project, having mapped hundreds of thousands of square kilometers of previously unmapped seafloor in 2025-2026.
+
+### HUGIN Superior (Kongsberg)
+
+- name: HUGIN Superior (Kongsberg)
+- type: Autonomous underwater vehicle
+- max_depth: 6,000 m
+- operator: Kongsberg Maritime
+- country: Norway
+- year: 2025-2026
+- capabilities: High-resolution synthetic aperture sonar; multibeam echosounder; autonomous survey; 100+ hour endurance
+- description: HUGIN Superior is one of the most capable commercial AUVs, featuring advanced synthetic aperture sonar and autonomous navigation for detailed seafloor survey. With 100+ hour endurance and 6,000 m depth rating, it serves both commercial survey and defense applications. Its high-resolution mapping contributes to Seabed 2030 goals.
+
+### Hybrid ROV/AUV Systems (2026)
+
+- name: Hybrid ROV/AUV Systems (2026)
+- type: Hybrid ROV/AUV
+- max_depth: 4,000-6,000 m
+- operator: Multiple manufacturers
+- country: Global
+- year: 2026
+- capabilities: Switches between tethered ROV and autonomous AUV modes; reduces vessel dependency; extended range
+- description: The 2026 technology trend in underwater vehicles is the development of hybrid systems that can operate as both tethered ROVs (for precise intervention) and autonomous AUVs (for survey and transit). This dual-mode capability reduces the need for dedicated support vessels and extends operational range.
+
+### Eel-Inspired Soft Underwater Robot
+
+- name: Eel-Inspired Soft Underwater Robot
+- type: Bio-inspired soft robot
+- max_depth: 100 m (current generation)
+- operator: Multiple research groups
+- country: Global
+- year: 2025-2026
+- capabilities: Undulatory propulsion; soft body for delicate ecosystem interaction; minimal disturbance; energy-efficient
+- description: Bio-inspired soft underwater robots modeled on eels and other marine organisms represent a new frontier in underwater robotics. Their soft bodies allow delicate interaction with fragile deep-sea ecosystems like coral reefs and hydrothermal vent communities, minimizing disturbance during scientific observation.
+
+### MBARI MOLA AUV
+
+- name: MBARI MOLA AUV
+- type: Autonomous Underwater Vehicle
+- depth_rating: Variable (portable, multi-depth)
+- operator: MBARI
+- description: MOLA (Multimodality, Observing, Low-cost, Agile) AUV is a portable underwater robot that can be operated autonomously. In 2026, MBARI engineers completed an Arctic seafloor survey expedition using MOLA, demonstrating that low-cost AUVs can operate in extreme polar conditions. The portability allows deployment from small vessels, democratizing deep-sea exploration.
+- year: 2026
+
+### LarvalBot (Coral Reef Mapping Robot)
+
+- name: LarvalBot (Coral Reef Mapping Robot)
+- type: AI-driven underwater robot
+- depth_rating: Shallow to mid-depth (reef environments)
+- operator: Queensland University of Technology
+- description: Featured on the May 2026 cover of Science Robotics, LarvalBot autonomously maps and monitors coral reef hotspots using visual and acoustic cues. It represents a new generation of ecologically-focused underwater robots that combine AI-driven navigation with environmental monitoring. The robot can identify coral health indicators and deliver coral larvae to degraded reef areas.
+- year: 2026
+
+### Redwing Autonomous Glider
+
+- name: Redwing Autonomous Glider
+- type: Underwater glider (autonomous)
+- depth_rating: ~1000m
+- operator: Teledyne / Rutgers University
+- description: The Redwing autonomous glider, developed by Teledyne and Rutgers University in 2026, targets a circumnavigation voyage — a global-scale autonomous underwater mission. Gliders like Redwing use buoyancy changes for propulsion, enabling months-long missions with minimal energy. This represents a paradigm shift from short-duration AUV deployments to persistent ocean monitoring.
+- year: 2026
+
+### Bedrock Ocean Exploration AUV
+
+- name: Bedrock Ocean Exploration AUV
+- type: Autonomous seafloor mapping drone
+- depth_rating: Deep ocean
+- operator: Bedrock Ocean Exploration
+- description: A US-based startup developing autonomous underwater drones specifically for seafloor mapping. Bedrock aims to dramatically accelerate the mapping of the ocean floor (currently only ~29% mapped) using fleets of low-cost autonomous vehicles. Their approach combines efficient sonar systems with cloud-based data processing for rapid bathymetric chart generation.
+- year: 2026
+
+### ERA Marine Submersible Drone
+
+- name: ERA Marine Submersible Drone
+- type: Inspection-class submersible drone
+- depth_rating: Shallow to mid-depth
+- operator: ERA Marine AB
+- description: A high-tech underwater robot that captures real-time footage, inspects infrastructure, and ensures safety in marine environments. Featured in May 2026, this submersible drone represents the commercialization of underwater inspection technology — making underwater monitoring accessible for offshore energy, aquaculture, and port infrastructure applications.
+- year: 2026
+
+### MIT Autonomous Seabed Mapping System
+
+- name: MIT Autonomous Seabed Mapping System
+- type: Autonomous high-resolution mapping system
+- depth_rating: Deep ocean
+- operator: MIT Lincoln Laboratory
+- description: MIT Lincoln Laboratory is developing a novel seabed-mapping capability that achieves both high-resolution imaging and fast coverage rate. The system uses advanced sonar processing and autonomous navigation to create detailed seafloor maps more efficiently than traditional methods. This technology could significantly accelerate the Seabed 2030 goal.
+- year: 2026
+
+### Schmidt Ocean Institute ROV SuBastian (2026 Upgrades)
+
+- name: Schmidt Ocean Institute ROV SuBastian (2026 Upgrades)
+- type: Remotely Operated Vehicle
+- depth_rating: 4,500m
+- operator: Schmidt Ocean Institute
+- description: ROV SuBastian continues to be a workhorse for deep-sea research. In 2026, Schmidt Ocean Institute is deploying SuBastian for expeditions in the Southwestern Atlantic, one of the least explored marine regions. The ROV supports 4K ultra-high-definition filming and advanced sampling capabilities. 2025 expeditions captured stunning footage of ultra-black fishes and other deep-sea life.
+- year: 2026
+
+### AI-Driven Underwater Intervention Robot (2026)
+
+- name: AI-Driven Underwater Intervention Robot (2026)
+- type: Intervention-class underwater robot
+- depth_rating: Variable
+- operator: Multiple (industry trend)
+- description: Underwater intervention robotics is transitioning from teleoperated ROV paradigms toward AI-driven autonomy, immersive XR interfaces, and heterogeneous multi-robot systems. The 2026 PatSnap technology landscape report documents this shift, with key advances in computer vision for underwater navigation, dexterous manipulation, and human-robot teaming via extended reality interfaces.
+- year: 2026
+
+### MBARI MOLA AUV Arctic Survey
+
+- name: MBARI MOLA AUV Arctic Survey
+- type: Autonomous Underwater Vehicle
+- depth_rating: Variable (portable, multi-depth)
+- operator: MBARI
+- description: In 2026, MBARI engineers completed an Arctic seafloor survey expedition using the MOLA (Multimodality, Observing, Low-cost, Agile) AUV. Demonstrated that low-cost, portable AUVs can operate in extreme polar conditions previously accessible only to large research vessels. MOLA portability allows deployment from small vessels, democratizing deep-sea exploration.
+- year: 2026
+
+### Alvin Observed Hydrothermal Vent Eruption (April 2026)
+
+- name: Alvin Observed Hydrothermal Vent Eruption (April 2026)
+- type: HOV (scientific observation milestone)
+- depth_rating: 6,500 m
+- operator: WHOI
+- description: On April 28, 2026, scientists in DSV Alvin observed a seafloor eruption at the Tica hydrothermal vent on the East Pacific Rise at 2,500m depth. First time a vent eruption was both predicted (based on temperature fluctuations in vent fluids) and directly observed. Provides unprecedented data on how vent ecosystems respond to and recover from catastrophic events, with implications for understanding deep-sea life resilience.
+- year: 2026
+
+### China Systematic Seafloor Mapping Fleet
+
+- name: China Systematic Seafloor Mapping Fleet
+- type: Research vessel fleet (mapping program)
+- depth_rating: Various (multi-vessel)
+- operator: Multiple Chinese research institutions
+- description: According to a Reuters investigation in March 2026, dozens of Chinese research vessels are systematically mapping the ocean floor at strategically vital regions worldwide. While officially for scientific purposes, the data has dual-use implications for submarine navigation and anti-submarine warfare. Largest peacetime ocean mapping effort by a single nation, contributing data to Seabed 2030 project.
+- year: 2026
+
+### Deep-Sea Mining Watch Platform (2026)
+
+- name: Deep-Sea Mining Watch Platform (2026)
+- type: Transparency and monitoring platform
+- depth_rating: Surface tracking (monitors seafloor operations)
+- operator: Benioff Ocean Science Laboratory / Global Fishing Watch
+- description: Deep-Sea Mining Watch platform provides real-time transparency for deep-sea mining operations. In January 2026, tracked the deepest seabed mining test in history (nearly 2,000m depth). Uses satellite AIS data and machine learning to identify and track mining vessels, enabling independent monitoring of activities that would otherwise be invisible to the public and regulators.
+- year: 2026
+
+### Houston Mechatronics Aquanaut Transforming AUV
+
+- name: Houston Mechatronics Aquanaut Transforming AUV
+- type: Hybrid ROV/AUV (transforming)
+- depth_rating: Up to 6,000 m
+- operator: Houston Mechatronics
+- description: Houston Mechatronics raised 20M USD to develop transforming underwater vehicles from NASA Robonaut and Valkyrie veterans. The Aquanaut can transform from a streamlined AUV for transit to a hovering ROV with manipulator arms for intervention. This hybrid approach eliminates the need for dedicated support vessels, reducing operational costs by 60-80% compared to traditional ROV operations.
+- year: 2026
+
+### LarvalBot Coral Reef Restoration Robot
+
+- name: LarvalBot Coral Reef Restoration Robot
+- type: Underwater intervention robot
+- depth_rating: Shallow to 30 m
+- operator: Queensland University of Technology
+- description: Science Robotics May 2026 cover story: LarvalBot delivers coral larvae to degraded reef areas for restoration. The robot can precisely deposit millions of coral larvae across targeted reef zones, dramatically scaling up coral restoration efforts. Featured on the cover of Science Robotics, this represents a new category of ecological intervention robots that actively restore marine ecosystems rather than just observing them.
+- year: 2026
+
+### Redwing Autonomous Glider Global Circumnavigation Attempt
+
+- name: Redwing Autonomous Glider Global Circumnavigation Attempt
+- type: Autonomous underwater glider
+- depth_rating: Variable (0-1000 m profiling)
+- operator: Teledyne Webb Research / Rutgers University
+- description: In 2026, the Redwing autonomous glider is attempting the first autonomous underwater circumnavigation of the globe. Powered by ocean thermal energy (no batteries needed for propulsion), the glider profiles the water column as it travels, collecting oceanographic data continuously. Success would demonstrate the viability of long-duration, zero-maintenance autonomous ocean monitoring.
+- year: 2026
+
+### Bedrock Ocean Exploration AUV Startup
+
+- name: Bedrock Ocean Exploration AUV Startup
+- type: Commercial AUV mapping service
+- depth_rating: Up to 3,000 m
+- operator: Bedrock Ocean Exploration
+- description: Bedrock Ocean Exploration is a startup deploying AUV fleets for commercial seafloor mapping at scale. Their approach combines autonomous survey with cloud-based data processing, offering mapping-as-a-service to offshore energy, telecom, and government clients. The company represents a new business model: democratizing access to high-resolution seafloor data that was previously available only to organizations with large research vessels.
+- year: 2026
+
+### MIT Lincoln Laboratory Autonomous Seafloor Mapping System
+
+- name: MIT Lincoln Laboratory Autonomous Seafloor Mapping System
+- type: Autonomous mapping system
+- depth_rating: Various
+- operator: MIT Lincoln Laboratory
+- description: MIT Lincoln Laboratory developed an autonomous seafloor mapping system that combines AI-driven path planning with real-time sonar data processing. The system can map unknown seafloor terrain faster than traditional methods by autonomously optimizing survey patterns based on terrain complexity. Applications include unexploded ordnance detection, pipeline inspection, and rapid environmental assessment.
+- year: 2026
+
+### AI-Powered Underwater Intervention Robot 2026
+
+- name: AI-Powered Underwater Intervention Robot 2026
+- type: AUV/ROV_hybrid
+- year: 2026
+- key_finding: 水下干预机器人从遥操作ROV向AI自主+XR远程操作转型。PatSnap 2026技术景观分析：AI驱动自主性、沉浸式XR界面、异构机器人集群。
+- source: PatSnap 2026
+- category: ai_robotics
+
+### LarvalBot
+
+- name: LarvalBot
+- type: bio-inspired_AUV
+- year: 2026
+- key_finding: 登上Science Robotics 2026年5月封面。仿生水下机器人，用于珊瑚礁生态修复，模拟幼虫定殖行为。
+- source: Science Robotics 2026
+- category: bio_inspired
+
+### AI Kelp Forest Monitoring Robot
+
+- name: AI Kelp Forest Monitoring Robot
+- type: monitoring_AUV
+- year: 2026
+- key_finding: 2026年AI突破：基于Blue Robotics框架、Raspberry Pi 5计算、四推进器的水下机器人，专用于海带森林监测。低成本AI视觉方案。
+- source: Medium 2026
+- category: ecological_monitoring
+
+### Houston Mechatronics Aquanaut
+
+- name: Houston Mechatronics Aquanaut
+- type: transforming_submersible
+- year: 2026
+- key_finding: Houston Mechatronics获2000万美元融资，NASA Robonaut/Valkyrie团队打造变形水下航行器。可从AUV模式变为ROV模式。
+- source: IEEE Spectrum 2026
+- category: transforming_vehicle
+
+### Underwater Robotics Market 2026-2034
+
+- name: Underwater Robotics Market 2026-2034
+- type: market_report
+- year: 2026
+- key_finding: 全球水下机器人市场2025年52亿美元，预计2034年达125亿美元，CAGR 9.85%。AI自主性和深海应用为主要驱动力。
+- source: IMARC 2026
+- category: market_analysis
+
+### RoboSub 2026 Competition
+
+- name: RoboSub 2026 Competition
+- type: competition
+- year: 2026
+- key_finding: 国际自主水下航行器竞赛，简化版水下海事行业挑战。推动AUV技术创新和人才培养。
+- source: RoboSub.org 2026
+- category: competition
+
+### Global Underwater Hub Robotics Forum
+
+- name: Global Underwater Hub Robotics Forum
+- type: industry_forum
+- year: 2026
+- key_finding: GUH 2026年6月30日水下机器人和自主性论坛，加速海底机器人协作创新。新成立的水下机器人和自主性论坛。
+- source: Ocean News 2026
+- category: industry_event
+
+### China Deep-Sea Electro-Hydrostatic Actuator (EHA) System
+
+- name: China Deep-Sea Electro-Hydrostatic Actuator (EHA) System
+- type: Deep-sea cutting/actuation system
+- max_depth: 3,500 m
+- operator: Chinese research institutions
+- country: China
+- year: 2026
+- capabilities: Advanced deep-sea cutting system tested at 3,500m depth; electro-hydrostatic actuator for precision underwater operations
+- description: 2026年4月，中国成功在3500米深度测试了先进的深海切割系统——深海电液执行器(EHA)。这是深海作业技术的重大突破，使深海精密操作和资源开采成为可能。该系统可在极端深海环境中执行精确切割和操作任务。
+
+### China Optoelectronic Composite Deep-Sea Connector
+
+- name: China Optoelectronic Composite Deep-Sea Connector
+- type: Deep-sea communication/power connector
+- max_depth: Full ocean depth rated
+- operator: Chinese research institutions
+- country: China
+- year: 2026
+- capabilities: First optoelectronic composite deep-sea underwater connector; combines optical fiber and electrical power transmission; significantly reduces deep-sea infrastructure construction costs
+- description: 中国首个光电复合深海水下连接器近期通过测试，这是一项突破性进展，预计将大幅降低深海基础设施建设成本。该连接器将光纤通信和电力传输合二为一，解决了深海设备同时需要高速数据传输和大功率供电的难题。
+
+### Coral Reef Autonomous Mapping Robot (Science Robotics 2026)
+
+- name: Coral Reef Autonomous Mapping Robot (Science Robotics 2026)
+- type: Autonomous Underwater Vehicle
+- depth_rating: Reef-depth (variable)
+- operator: Research team (Science Robotics cover feature)
+- country: International
+- year: 2026
+- capabilities: Autonomous coral reef mapping and monitoring; uses visual and acoustic cues for navigation and hotspot identification; featured on Science Robotics May 2026 cover
+- description: 2026年5月Science Robotics封面展示了一款可自主绘制和监测珊瑚礁热区的水下机器人。该机器人利用视觉和声学线索进行导航和热点识别，代表了水下自主监测技术的重要进展。
+
+## deep_sea_resources
+
+### Polymetallic Nodules (Manganese Nodules)
+
+- name: Polymetallic Nodules (Manganese Nodules)
+- resource_type: Metals (Mn, Fe, Ni, Cu, Co, REE)
+- location: Clarion-Clipperton Zone (CCZ), Pacific; Indian Ocean; Peru Basin
+- depth: 4,000-6,000 m
+- estimated_quantity: CCZ alone: ~21 billion dry tonnes; 6 billion tonnes of manganese
+- extraction_status: Exploration contracts (ISA); pilot mining tests by Nauru Ocean Resources, TMC, China Minmetals
+- description: Potato-sized concretions on the abyssal seafloor containing manganese, nickel, copper, cobalt, and rare earth elements. The CCZ in the Pacific is the most studied area. The Metals Company (TMC) conducted pilot nodule collection in 2022. ISA mining regulations pending.
+
+### Seafloor Massive Sulfides (SMS)
+
+- name: Seafloor Massive Sulfides (SMS)
+- resource_type: Metals (Cu, Zn, Au, Ag, Pb)
+- location: Active and extinct hydrothermal vents along mid-ocean ridges; back-arc basins
+- depth: 1,500-4,000 m
+- estimated_quantity: Individual deposits 1-100 million tonnes; hundreds of known sites
+- extraction_status: Exploration contracts (ISA); Nautilus Minerals attempted Solwara 1 (failed); Japan JOGMEG testing
+- description: Seafloor massive sulfides form at hydrothermal vents and contain high-grade copper, zinc, gold, and silver. Nautilus Minerals' Solwara 1 project in Papua New Guinea was the first deep-sea mining venture but went bankrupt. Japan's JOGMEG continues testing in the Okinawa Trough.
+
+### Cobalt-Rich Ferromanganese Crusts
+
+- name: Cobalt-Rich Ferromanganese Crusts
+- resource_type: Metals (Co, Mn, Ni, Pt, REE, Te)
+- location: Seamounts and ridges in Pacific (Prime Crust Zone), Atlantic, Indian Ocean
+- depth: 800-4,000 m
+- estimated_quantity: Pacific Prime Crust Zone: ~1 billion dry tonnes; cobalt content 4x terrestrial ores
+- extraction_status: Exploration contracts (ISA); no pilot mining yet; technical challenges with crust attachment to substrate
+- description: Cobalt-rich crusts coat seamount surfaces and contain cobalt at concentrations 4x higher than terrestrial ores. They also contain platinum and tellurium. The main technical challenge is separating the crust from the underlying rock without excessive dilution.
+
+### Gas Hydrates (Methane Clathrates)
+
+- name: Gas Hydrates (Methane Clathrates)
+- resource_type: Energy (methane)
+- location: Continental margins worldwide; Arctic permafrost; South China Sea; Nankai Trough
+- depth: 300-3,000 m (sub-seafloor)
+- estimated_quantity: ~20,000 trillion m³ of methane (10x all conventional gas reserves)
+- extraction_status: China and Japan have conducted successful production tests; commercial viability unproven
+- description: Methane hydrates are ice-like compounds trapping methane in crystalline structures. China successfully extracted gas from South China Sea hydrates in 2017 and 2020. Japan's Nankai Trough tests also succeeded. Commercial production remains 5-10+ years away.
+
+### Deep-Sea Rare Earth Elements (Mud)
+
+- name: Deep-Sea Rare Earth Elements (Mud)
+- resource_type: Rare Earth Elements (REE + Y)
+- location: Pacific deep-sea mud; especially near Minami-Tori Shima (Japan)
+- depth: 3,500-6,000 m
+- estimated_quantity: Near Minami-Tori Shima: 5,000-7,000 ppm total REY; potentially world's largest REE resource
+- extraction_status: Research phase; Japanese survey cruises ongoing; extraction would involve pumping mud to surface
+- description: Deep-sea mud near Japan's Minami-Tori Shima island contains 5,000-7,000 ppm total REY, potentially the world's largest REE resource. Extraction would involve pumping mud to surface for processing.
+
+### Deep-Sea Lithium Resources
+
+- name: Deep-Sea Lithium Resources
+- resource_type: Lithium
+- location: Hydrothermal fluids, brine pools, Red Sea, Gulf of Mexico
+- depth: 1,000-3,500 m
+- estimated_quantity: Poorly quantified; hydrothermal fluids contain 5-15 mM Li
+- extraction_status: Research phase; no extraction technology developed
+- description: Hydrothermal vent fluids and deep-sea brines contain elevated lithium concentrations. As terrestrial lithium demand surges for batteries, deep-sea lithium could become a future resource. However, extraction technology and economic viability remain unproven.
+
+### Phosphorite Deposits
+
+- name: Phosphorite Deposits
+- resource_type: Phosphorus (fertilizer), REE, Uranium
+- location: Continental margins; Chatham Rise (New Zealand); Namibia; Peru-Chile margin
+- depth: 200-1,000 m
+- estimated_quantity: Chatham Rise: ~35 million tonnes; global deposits poorly quantified
+- extraction_status: Chatham Rock Phosphate attempted mining (denied consent 2015); renewed interest due to fertilizer demand
+- description: Marine phosphorite nodules contain phosphate for fertilizer production, along with REE and uranium. New Zealand's Chatham Rise has the best-characterized deposit. Growing global food demand is renewing interest in marine phosphate resources.
+
+### Deep-Sea Scandium and Tellurium
+
+- name: Deep-Sea Scandium and Tellurium
+- resource_type: Critical minerals (Sc, Te)
+- location: Co-rich crusts (Te); hydrothermal deposits (Sc); ferromanganese crusts
+- depth: 1,000-4,000 m
+- estimated_quantity: Trace but valuable; Te concentrated in cobalt-rich crusts
+- extraction_status: Research phase; co-extraction with cobalt crust mining
+- description: Tellurium is critical for solar panels (CdTe) and is concentrated in cobalt-rich ferromanganese crusts at levels exceeding terrestrial ores. Scandium is used in aerospace alloys. Both could be co-products of crust mining.
+
+### Seafloor Sulfide Mounds (Inactive Vents)
+
+- name: Seafloor Sulfide Mounds (Inactive Vents)
+- resource_type: Metals (Cu, Zn, Au, Ag)
+- location: Extinct hydrothermal vent sites along mid-ocean ridges
+- depth: 1,500-4,000 m
+- estimated_quantity: Individual mounds up to 10+ million tonnes; less environmental impact than active vent mining
+- extraction_status: Exploration phase; ISA exploration contracts include inactive vents
+- description: Inactive hydrothermal vent sites contain massive sulfide deposits without the active biological communities of live vents. Mining inactive sites would have lower environmental impact, making them potentially more acceptable for extraction.
+
+### Marine Placer Deposits (Diamonds, Tin, Titanium)
+
+- name: Marine Placer Deposits (Diamonds, Tin, Titanium)
+- resource_type: Diamonds, Cassiterite (Sn), Ilmenite/Rutile (Ti)
+- location: Namibian/South African continental shelf (diamonds); Southeast Asia (tin); Australia (mineral sands)
+- depth: 10-200 m
+- estimated_quantity: Namibia: ~1.5 million carats/year from marine diamond mining
+- extraction_status: Commercially operational (Namibian marine diamonds); De Beers operates fleet of mining vessels
+- description: Marine placer mining is already commercially operational, particularly for diamonds off Namibia's coast. De Beers operates multiple mining vessels that extract diamonds from the seafloor at 90-140m depth. This is the most mature form of seabed mining.
+
+### Abyssal Plain Siliceous Ooze (Diatom Deposits)
+
+- name: Abyssal Plain Siliceous Ooze (Diatom Deposits)
+- resource_type: Silica (diatomite), potential lithium adsorption
+- location: Southern Ocean abyssal plains; equatorial Pacific
+- depth: 3,000-5,000 m
+- estimated_quantity: Vast but poorly quantified
+- extraction_status: Research phase; no extraction planned
+- description: Diatom-rich abyssal sediments contain high-purity silica. While not currently targeted for mining, these deposits could become valuable for industrial silica and as lithium adsorption media if deep-sea resource extraction becomes routine.
+
+### Deep-Sea Brine Pools (Rare Earth Enriched)
+
+- name: Deep-Sea Brine Pools (Rare Earth Enriched)
+- resource_type: Metals, REE, Lithium
+- location: Red Sea (Atlantis II Deep); Mediterranean; Gulf of Mexico
+- depth: 1,000-3,000 m
+- estimated_quantity: Atlantis II Deep: ~90 million m³ of metalliferous brine with elevated Zn, Cu, Ag, Au
+- extraction_status: Pre-feasibility studies; Saudi Arabia/Sudan considered joint development of Red Sea brines
+- description: Deep-sea brine pools, particularly the Atlantis II Deep in the Red Sea, contain metalliferous brines with elevated concentrations of zinc, copper, silver, and gold. These are the most accessible deep-sea mineral deposits, as the metals are already dissolved in solution.
+
+### Seafloor Basalt (Carbon Sequestration Medium)
+
+- name: Seafloor Basalt (Carbon Sequestration Medium)
+- resource_type: Carbon storage (basalt carbonation)
+- location: Mid-ocean ridges and oceanic plateaus globally
+- depth: 1,000-3,000 m
+- estimated_quantity: Effectively unlimited basalt for CO₂ mineralization
+- extraction_status: Research phase; CarbFix project demonstrated on land; ocean basalt application being studied
+- description: Seafloor basalt can permanently sequester CO₂ through mineral carbonation, converting CO₂ into solid carbonate minerals. Iceland's CarbFix project demonstrated this on land. Applying the technique to submarine basalt could provide virtually unlimited carbon storage capacity.
+
+### Deep-Water Ferromanganese Nodules (Arctic)
+
+- name: Deep-Water Ferromanganese Nodules (Arctic)
+- resource_type: Metals (Mn, Fe, Co, Ni)
+- location: Arctic Ocean basin (Lomonosov Ridge, Amundsen Basin)
+- depth: 2,000-4,000 m
+- estimated_quantity: Poorly quantified; Russian surveys indicate significant deposits
+- extraction_status: Exploration by Russia; geopolitical complications due to Arctic sovereignty disputes
+- description: The Arctic Ocean contains ferromanganese nodule deposits that are poorly characterized due to ice cover and geopolitical restrictions. Russian surveys indicate significant deposits. Climate change is reducing ice cover, potentially making these resources more accessible.
+
+### Hydrothermal Vent Precious Metals (Gold, Silver)
+
+- name: Hydrothermal Vent Precious Metals (Gold, Silver)
+- resource_type: Precious metals (Au, Ag)
+- location: Back-arc basin hydrothermal systems; Okinawa Trough; Manus Basin
+- depth: 1,000-2,500 m
+- estimated_quantity: Individual deposits can contain grams per tonne gold; high-grade compared to terrestrial mines
+- extraction_status: Exploration; Japan JOGMEG testing extraction in Okinawa Trough
+- description: Some back-arc basin hydrothermal systems contain remarkably high gold and silver grades, exceeding many terrestrial gold mines. Japan's JOGMEG is actively testing extraction technology in the Okinawa Trough, where gold grades can reach several grams per tonne.
+
+### Cobalt-Rich Ferromanganese Crusts
+
+- name: Cobalt-Rich Ferromanganese Crusts
+- resource_type: Metals (Co, Mn, Fe, Ni, Pt, REE)
+- location: Seamounts and ridges in Pacific (Prime Crust Zone), Atlantic, Indian Ocean
+- depth: 800-2,500 m
+- estimated_quantity: Pacific PCZ alone: ~1 billion tonnes; cobalt content 4x terrestrial ores
+- extraction_status: Exploration contracts (ISA); no commercial mining yet
+- description: Cobalt-rich crusts on seamounts contain cobalt, manganese, nickel, and platinum group metals at concentrations significantly higher than terrestrial ores. The Prime Crust Zone in the central Pacific is the most prospective area. ISA has issued exploration contracts.
+
+### Deep-Sea Phosphorite Deposits
+
+- name: Deep-Sea Phosphorite Deposits
+- resource_type: Phosphorus (P)
+- location: Continental margins; California, Peru-Chile, Namibia margins
+- depth: 200-1,000 m
+- estimated_quantity: Billions of tonnes; significant portion of global phosphate reserves
+- extraction_status: Exploration; not currently mined
+- description: Phosphorite deposits on continental margins represent a significant phosphorus resource. As terrestrial phosphate reserves deplete, deep-sea phosphorites may become economically viable. Critical for fertilizer production and food security.
+
+### Methane Hydrates (Clathrates)
+
+- name: Methane Hydrates (Clathrates)
+- resource_type: Natural gas (CH₄)
+- location: Continental margins globally; especially Japan Nankai Trough, South China Sea, Gulf of Mexico, Arctic
+- depth: 300-3,000 m
+- estimated_quantity: Global: ~3,000x current annual natural gas consumption; enormous energy potential
+- extraction_status: Japan 2013 first offshore production test; China 2017 continuous production test; pilot scale
+- description: Methane hydrates are ice-like structures trapping methane molecules. They represent an enormous energy resource. Japan and China have conducted successful production tests. Environmental concerns include seafloor stability and methane release as a greenhouse gas.
+
+### Deep-Sea Lithium Resources
+
+- name: Deep-Sea Lithium Resources
+- resource_type: Lithium (Li)
+- location: Hydrothermal vent systems; deep-sea brine pools; Red Sea Deeps
+- depth: 1,000-3,500 m
+- estimated_quantity: Concentrations in hydrothermal fluids can reach 10-100 ppm; brine pools higher
+- extraction_status: Exploration; not yet mined
+- description: Lithium is found in elevated concentrations in deep-sea hydrothermal fluids and brine pools. As demand for lithium batteries surges, deep-sea lithium resources are being evaluated. The Red Sea Deeps contain lithium-rich brines.
+
+### Seafloor Sulfide Mounds (Inactive)
+
+- name: Seafloor Sulfide Mounds (Inactive)
+- resource_type: Metals (Cu, Zn, Au, Ag)
+- location: Mid-ocean ridges and back-arc basins; inactive vent sites
+- depth: 1,000-4,000 m
+- estimated_quantity: Individual mounds can contain millions of tonnes of sulfide ore
+- extraction_status: Exploration; ISA exploration contracts
+- description: Inactive hydrothermal sulfide mounds are mineral deposits formed by past hydrothermal activity. Unlike active vents, they do not support chemosynthetic ecosystems, making them potentially less environmentally controversial for mining. They contain copper, zinc, gold, and silver.
+
+### Deep-Sea Rare Earth Elements
+
+- name: Deep-Sea Rare Earth Elements
+- resource_type: REE
+- location: Deep-sea muds in Pacific and Indian Oceans; especially central Pacific
+- depth: 3,500-6,000 m
+- estimated_quantity: Pacific mud: ~1.2 trillion tonnes containing ~80 billion tonnes of REE (estimated)
+- extraction_status: Research; Japanese group demonstrated extraction from Pacific mud
+- description: Japanese researchers discovered that deep-sea mud in the central Pacific contains significant REE concentrations, particularly heavy REE that are more valuable. Kato et al. (2011) estimated these muds could supply REE for centuries. Extraction from mud is simpler than from hard rock.
+
+### Arctic Seafloor Resources
+
+- name: Arctic Seafloor Resources
+- resource_type: Oil, gas, minerals
+- location: Arctic continental shelves; Lomonosov Ridge; Gakkel Ridge hydrothermal
+- depth: 200-4,000 m
+- estimated_quantity: Arctic: ~13% of global undiscovered oil, 30% of undiscovered gas; unknown mineral potential
+- extraction_status: Exploration; limited by ice cover; climate change increasing accessibility
+- description: The Arctic seafloor contains significant oil, gas, and mineral resources. Climate change is reducing ice cover, making these resources more accessible. The Gakkel Ridge may host hydrothermal systems with mineral deposits. Territorial disputes complicate resource development.
+
+### Deep-Sea Brine Pools
+
+- name: Deep-Sea Brine Pools
+- resource_type: Multiple (metals, salts, hydrocarbons)
+- location: Red Sea Deeps; Mediterranean brine lakes; Gulf of Mexico brine pools
+- depth: 1,000-3,500 m
+- estimated_quantity: Red Sea Deeps alone: billions of tonnes of metalliferous sediments
+- extraction_status: Red Sea: Saudi-Sudan joint exploration; no commercial mining
+- description: Deep-sea brine pools are extremely saline, anoxic bodies of water on the seafloor. The Red Sea Deeps contain metalliferous sediments with zinc, copper, silver, and gold. They also host unique extremophile organisms of biotechnology interest.
+
+### Abyssal Plain Siliceous Ooze
+
+- name: Abyssal Plain Siliceous Ooze
+- resource_type: Silica (diatom/radiolarian)
+- location: Abyssal plains below the CCD; Southern Ocean; equatorial Pacific
+- depth: 3,000-6,000 m
+- estimated_quantity: Vast - covers ~15% of ocean floor
+- extraction_status: Not currently targeted; potential future resource
+- description: Siliceous ooze composed of diatom and radiolarian tests covers large areas of the deep ocean floor. While not currently a mining target, it represents a potential source of high-purity silica for semiconductor and solar panel manufacturing.
+
+### Seafloor Basalt (Carbon Sequestration)
+
+- name: Seafloor Basalt (Carbon Sequestration)
+- resource_type: Basalt for CO₂ mineralization
+- location: Mid-ocean ridge flanks; oceanic crust globally
+- depth: 2,000-4,000 m
+- estimated_quantity: Effectively unlimited - oceanic crust covers 60% of Earth
+- extraction_status: CarbFix project demonstrated on land; offshore pilot proposed
+- description: Basalt on the seafloor can permanently sequester CO₂ through mineral carbonation, converting CO₂ into solid carbonate minerals. The CarbFix project in Iceland demonstrated this on land. Offshore basalt could provide virtually unlimited carbon sequestration capacity.
+
+### Deep-Sea Mining Regulatory Framework (ISA 2026)
+
+- name: Deep-Sea Mining Regulatory Framework (ISA 2026)
+- resource_type: Regulatory / Critical minerals
+- location: International seabed (Area) - Clarion-Clipperton Zone and other ISA contract areas
+- depth: 4,000-6,000 m
+- estimated_quantity: CCZ: 21 billion tonnes of nodules; regulatory framework determines access
+- extraction_status: ISA negotiating Mining Code in 2026; 31 exploration contracts active; US considering separate pathway via NOAA
+- description: 2026 is a critical year for deep-sea mining regulation. The ISA is negotiating the Mining Code that will govern commercial deep-sea mining. If it cannot complete the code in 2026, its role as the central rule-maker may unravel. Simultaneously, NOAA issued final rule on January 21, 2026, revising US deep seabed mining regulations, potentially allowing US companies to mine outside the ISA framework.
+
+### Deep-Sea Mining Technology Market (2026)
+
+- name: Deep-Sea Mining Technology Market (2026)
+- resource_type: Market analysis
+- location: Global
+- depth: Various
+- estimated_quantity: Market projected from $7.08 billion (2025) to significant growth by 2030+
+- extraction_status: Technology advancing; commercial operations pending regulatory approval
+- description: The Deep Sea Mining Technology market is poised for significant growth, projected to expand from $7.08 billion in 2025. Key players include TMC, GSR, Loke Marine, and Allseas. Technology is advancing but commercial-scale operations await regulatory clarity from the ISA. The Deep Sea Mining Summit 2026 focuses on market dynamics, investment outlook, and new exploration/mining technologies.
+
+### CCZ New Species Impact on Mining (2025-2026)
+
+- name: CCZ New Species Impact on Mining (2025-2026)
+- resource_type: Biodiversity / Mining constraint
+- location: Clarion-Clipperton Zone (Pacific)
+- depth: 4,000-5,000 m
+- estimated_quantity: 24 new species discovered in 2025; 5,000+ estimated total species, 90%+ undescribed
+- extraction_status: Discovery complicates mining plans; environmental impact assessments need revision
+- description: 2025 research discovered 24 new deep-sea species in the CCZ, including a rare new branch of life. These discoveries highlight the unexpectedly rich biodiversity in areas targeted for nodule mining. The findings are forcing a reassessment of environmental impact assessments and strengthening the case for precautionary approaches to deep-sea mining.
+
+### Argentina Deep-Sea New Species (2026)
+
+- name: Argentina Deep-Sea New Species (2026)
+- resource_type: Biodiversity discovery
+- location: Argentina's deep-sea waters (South Atlantic)
+- depth: Up to 4,000 m
+- estimated_quantity: 28 new species discovered February 2026
+- extraction_status: Research discovery; no mining implications yet
+- description: Twenty-eight new species were found in Argentina's deep sea, announced in early February 2026. The findings include sea snails, urchins, and other organisms previously unknown to science. This discovery highlights how poorly explored the South Atlantic deep sea remains and adds to growing evidence that deep-sea biodiversity is far greater than currently documented.
+
+### Ocean Census 866+ New Species (2025-2026)
+
+- name: Ocean Census 866+ New Species (2025-2026)
+- resource_type: Biodiversity milestone
+- location: Global oceans
+- depth: Up to 6,575 m
+- estimated_quantity: 866 new species identified by Ocean Census (March 2025); 1,121 total new marine species in 2024
+- extraction_status: Research discovery program; goal of 100,000 new species by 2030
+- description: The Ocean Census, the world's largest collaborative effort to discover marine life, announced the identification of 866 new species in March 2025. The program aims to discover 100,000 new species by 2030. Discoveries from depths up to 6,575m include new species of deep-sea organisms. This accelerating rate of discovery underscores how poorly known the deep ocean remains.
+
+### Seabed 2030 Mapping Progress (28.7% - 2026)
+
+- name: Seabed 2030 Mapping Progress (28.7% - 2026)
+- resource_type: Mapping milestone
+- location: Global ocean floor
+- depth: 0-11,000 m
+- estimated_quantity: 28.7% of ocean floor mapped as of April 2026; 5 million km² added in one year
+- extraction_status: Active mapping campaign; accelerating with autonomous vehicles
+- description: The Nippon Foundation-GEBCO Seabed 2030 Project announced in April 2026 that 28.7% of the world's ocean floor has been mapped to modern standards, with 5 million square kilometers added in a single year. This represents significant progress toward the 2030 goal of complete ocean floor mapping, driven by autonomous surface vehicles and satellite gravity mapping.
+
+### US Deep Seabed Mining Regulations (NOAA 2026)
+
+- name: US Deep Seabed Mining Regulations (NOAA 2026)
+- resource_type: Regulatory framework
+- location: US and international waters
+- depth: 4,000-6,000 m
+- estimated_quantity: 8 companies applying for exploration/mining permits
+- extraction_status: Final rule issued January 21, 2026; permit applications being processed
+- description: NOAA issued the final rule on deep seabed mining on January 21, 2026, revising regulations for exploration licenses and mining permits. Eight companies are now vying for permits from NOAA and the Interior Department to explore or mine US and international waters for critical minerals. This regulatory clarity could accelerate deep-sea mining development.
+
+### Japan Deep-Sea 2025 Expedition Species
+
+- name: Japan Deep-Sea 2025 Expedition Species
+- resource_type: Biodiversity discovery
+- location: Japan deep waters
+- depth: Up to 6,575 m
+- estimated_quantity: 38 new species confirmed + 28 potential new species
+- extraction_status: Research discovery; taxonomic classification ongoing
+- description: Japan's landmark deep-sea expedition in 2025 confirmed 38 new species and identified 28 additional potential new species across two of the country's deep-sea areas. These discoveries highlight how poorly known the deep ocean remains and the potential for future bioprospecting of novel compounds.
+
+### 1,121 New Marine Species (2025)
+
+- name: 1,121 New Marine Species (2025)
+- resource_type: Biodiversity milestone
+- location: Global oceans
+- depth: Surface to 6,575 m
+- estimated_quantity: 1,121 new marine species identified in 2025; from ghost sharks to symbiotic worms
+- extraction_status: Research discovery program; Ocean Census goal of 100,000 new species by 2030
+- description: Scientists identified 1,121 new marine species in 2025, including deep-sea ghost sharks, symbiotic worms, and unusual crustaceans. This accelerating rate of discovery underscores the vast unknown biodiversity of the deep ocean and its potential for bioprospecting and pharmaceutical discovery.
+
+### Milos Hydrothermal Field (Greece)
+
+- name: Milos Hydrothermal Field (Greece)
+- resource_type: Hydrothermal mineral deposits
+- location: Off Milos, Greece (Aegean Sea)
+- depth: Shallow to moderate (100-500 m)
+- estimated_quantity: Extensive vent system along active fault lines; mineral deposits under assessment
+- extraction_status: Scientific discovery; mineral potential being evaluated
+- description: Scientists uncovered an extensive underwater hydrothermal vent system near Milos, Greece, hidden along active fault lines beneath the Aegean Sea. The system is notable for its accessibility at relatively shallow depths, making it a unique natural laboratory for studying hydrothermal mineral formation and extremophile biology.
+
+### Novel Linked Hydrothermal-Seep System
+
+- name: Novel Linked Hydrothermal-Seep System
+- resource_type: Hybrid geological feature
+- location: Seafloor (location TBD from Phys.org study)
+- depth: Deep sea
+- estimated_quantity: First known system linking hydrothermal vents and methane seeps in same location
+- extraction_status: Scientific discovery; geological and biological assessment ongoing
+- description: A novel hydrothermal system discovered in 2025 links two previously separate seabed phenomena — hydrothermal vents and methane seeps — in the same location. This hybrid system creates unique chemical and biological conditions not found at either type alone, with implications for understanding deep-sea mineral formation and extremophile ecology.
+
+### Deep-Sea Cobalt-Rich Crusts (Pacific)
+
+- name: Deep-Sea Cobalt-Rich Crusts (Pacific)
+- resource_type: Cobalt, nickel, manganese, REE
+- location: Seamounts in Pacific (Prime Crust Zone)
+- depth: 800-2,500 m
+- estimated_quantity: Significant cobalt resources; Prime Crust Zone contains richest deposits
+- extraction_status: Exploration and assessment; ISA considering mining regulations
+- description: Cobalt-rich ferromanganese crusts on Pacific seamounts are a major potential source of cobalt, nickel, manganese, and rare earth elements. The Prime Crust Zone in the western Pacific contains the richest deposits. Unlike nodules, crusts are attached to seamount surfaces, requiring different extraction technology.
+
+### Deep-Sea Phosphorite Deposits
+
+- name: Deep-Sea Phosphorite Deposits
+- resource_type: Phosphorus
+- location: Continental margins and seamounts globally
+- depth: 200-1,000 m
+- estimated_quantity: Significant; some deposits exceed 100 million tonnes
+- extraction_status: Exploration stage; not currently mined
+- description: Marine phosphorite deposits on continental margins and seamounts represent a major phosphorus resource. With global phosphate reserves on land being depleted, deep-sea phosphorites could become increasingly important for fertilizer production. However, environmental concerns about seabed mining remain significant.
+
+### Abyssal Sediment Rare Earth Elements
+
+- name: Abyssal Sediment Rare Earth Elements
+- resource_type: Rare earth elements in deep-sea mud
+- location: Pacific and Indian Ocean abyssal plains
+- depth: 3,000-6,000 m
+- estimated_quantity: Japanese study estimated 90 billion tonnes of REE in Pacific mud alone
+- extraction_status: Research and assessment; extraction technology under development
+- description: Deep-sea mud on abyssal plains contains significant concentrations of rare earth elements. A Japanese study estimated that Pacific Ocean mud alone contains 90 billion tonnes of REE — over 800 times the world's current land-based reserves. While extraction technology is still developing, this represents a potentially transformative resource.
+
+### Schmidt Ocean Institute 2026 Expedition Targets
+
+- name: Schmidt Ocean Institute 2026 Expedition Targets
+- resource_type: Exploration frontier
+- location: Brazil to Mid-Atlantic seamounts
+- depth: Up to 6,000 m
+- estimated_quantity: Multiple new species and geological features expected
+- extraction_status: Active exploration; open-access data policy
+- description: Schmidt Ocean Institute's 2026 expedition program spans from the deep waters off Brazil to seamounts in the Mid-Atlantic. International teams will document biodiversity, study hydrothermal systems, and map previously unexplored seafloor. The program's open-access data policy ensures discoveries are available to the global scientific community.
+
+### NOAA Deep Seabed Mining Rule (2026)
+
+- name: NOAA Deep Seabed Mining Rule (2026)
+- type: Regulatory framework
+- location: US jurisdiction / international waters
+- description: In January 2026, NOAA issued a final rule streamlining deep-sea mining permits under US jurisdiction. The rule has been criticized for ignoring international protocols (ISA) and scientific warnings about irreversible damage. Eight companies have applied for permits. This represents a significant regulatory development that could accelerate or complicate deep-sea mining depending on legal challenges.
+- year: 2026
+
+### Deep Sea Mining Summit 2026
+
+- name: Deep Sea Mining Summit 2026
+- type: Industry conference
+- location: International
+- description: The 2026 Deep Sea Mining Summit focused on market dynamics, investment outlook, new exploration projects, and environmental considerations. Key topics included the ISA regulatory framework, technology readiness for polymetallic nodule collection, and the growing tension between resource demand and environmental protection.
+- year: 2026
+
+### Global Fishing Watch Deep-Sea Mining Transparency
+
+- name: Global Fishing Watch Deep-Sea Mining Transparency
+- type: Monitoring platform
+- location: Global
+- description: Deep-Sea Mining Watch, developed by the Benioff Ocean Science Laboratory and Global Fishing Watch, provides real-time transparency for deep-sea mining operations. In January 2026, it tracked the deepest seabed mining test in history (nearly 2000m depth). This platform enables independent monitoring of mining activities that would otherwise be invisible.
+- year: 2026
+
+### China Seafloor Mapping Program
+
+- name: China Seafloor Mapping Program
+- type: Strategic ocean mapping
+- location: Global (strategic regions)
+- description: According to a Reuters investigation in March 2026, dozens of Chinese research vessels are systematically mapping the ocean floor at strategically vital regions worldwide. While officially for scientific purposes, the data has dual-use implications for submarine warfare. This represents the largest peacetime ocean mapping effort by a single nation.
+- year: 2026
+
+### Okinawa Trough Hydrothermal Vent Minerals
+
+- name: Okinawa Trough Hydrothermal Vent Minerals
+- type: Seafloor massive sulfide deposit
+- location: Okinawa Trough, East China Sea
+- description: Hydrothermal vents in the Okinawa Trough are at imminent threat from deep-sea mining. Research by OIST shows that mining at these key vents could endanger species at distant sites across the Pacific through larval connectivity. The Okinawa Trough deposits contain zinc, copper, lead, gold, and silver, making them economically attractive but ecologically sensitive.
+- year: 2026
+
+### Deep Sea Mining 2026: Regulation and Geopolitics
+
+- name: Deep Sea Mining 2026: Regulation and Geopolitics
+- type: Regulatory / geopolitical analysis
+- location: Global (ISA, US, international waters)
+- depth: 4,000-6,000 m
+- estimated_quantity: CCZ: 21 billion tonnes of nodules; regulatory framework determines access
+- extraction_status: ISA negotiating Mining Code; NOAA issued US rule January 2026
+- description: 2026 is a critical year for deep-sea mining regulation. ISA negotiating Mining Code for commercial mining in international waters. NOAA January 2026 final rule allows US companies to pursue deep-sea mining outside ISA framework. Trump executive order from April 2025 created a parallel regulatory pathway. Regulatory fragmentation could either accelerate or complicate development.
+- year: 2026
+
+### Okinawa Trough Mining Threat (2026)
+
+- name: Okinawa Trough Mining Threat (2026)
+- type: Ecological risk assessment
+- location: Okinawa Trough, East China Sea
+- depth: 1,000-2,000 m
+- estimated_quantity: Significant zinc, copper, lead, gold, silver deposits
+- extraction_status: OIST research shows mining could endanger species across the Pacific
+- description: OIST 2026 research shows mining at hydrothermal vents in the Okinawa Trough could endanger species at distant sites across the Pacific through larval connectivity. Vent organisms disperse via ocean currents; mining at key source vents could disrupt populations hundreds of kilometers away. Significant implications for environmental impact assessments and marine protected area design.
+- year: 2026
+
+### Natural History Museum Deep-Sea Mining Impact Review (2026)
+
+- name: Natural History Museum Deep-Sea Mining Impact Review (2026)
+- type: Scientific review / impact assessment
+- location: Global
+- depth: Various
+- estimated_quantity: Comprehensive review of all deep-sea ecosystem types
+- extraction_status: Review concludes current understanding insufficient to predict long-term impacts
+- description: NHM published the most comprehensive review to date of how deep-sea mining might affect unique marine life. Synthesizes data from hydrothermal vents, abyssal plains, and seamounts. Concludes current understanding insufficient to predict long-term impacts. Calls for precautionary approach and significantly more baseline research before mining proceeds. Has influenced ISA policy debates.
+- year: 2026
+
+### NOAA Deep Seabed Mining Final Rule 2026
+
+- name: NOAA Deep Seabed Mining Final Rule 2026
+- type: regulation
+- year: 2026
+- key_finding: NOAA 2026年1月21日发布深海采矿最终规则，简化国际水域硬矿物采矿许可申请。8家公司已申请许可。引发国际治理争议。
+- source: Federal Register/NOAA 2026
+- category: regulation
+
+### ISA Mining Code Negotiations 2026
+
+- name: ISA Mining Code Negotiations 2026
+- type: international_regulation
+- year: 2026
+- key_finding: 国际海底管理局2026年Q1未能批准开采规章。深海采矿治理成为全球治理合法性测试。商业开采尚未获批。
+- source: ISA/Mondaq 2026
+- category: regulation
+
+### US Deep Seabed Mining Unilateral Action
+
+- name: US Deep Seabed Mining Unilateral Action
+- type: policy_shift
+- year: 2026
+- key_finding: 特朗普2025年4月行政令允许国际水域深海采矿，NOAA 2026年1月最终规则落地。绕过ISA国际协议，引发外交争端。
+- source: Atlantic Council/Harvard EELP 2026
+- category: geopolitics
+
+### Deep-Sea Mining Watch Platform
+
+- name: Deep-Sea Mining Watch Platform
+- type: monitoring_platform
+- year: 2026
+- key_finding: 2026年1月追踪到最深采矿测试（近2000m）。独立监测平台记录全球深海采矿活动。
+- source: Deep-Sea Mining Watch 2026
+- category: monitoring
+
+### OTC 2026 Marine Mining Session
+
+- name: OTC 2026 Marine Mining Session
+- type: industry_conference
+- year: 2026
+- key_finding: 2026年离岸技术会议海洋采矿专题：新采矿设备开发、新监管环境、新环境挑战。行业正从探索走向预商业阶段。
+- source: OTC 2026
+- category: industry_event
+
+### AOShearman Deep Sea Mining 2026 Analysis
+
+- name: AOShearman Deep Sea Mining 2026 Analysis
+- type: legal_analysis
+- year: 2026
+- key_finding: 2026年深海采矿法规、地缘政治和风险综合分析。涵盖ISA发展、美国政策转变和关键矿物供应链。
+- source: AOShearman 2026
+- category: legal_analysis
+
+### Japan 6,000m Deep Seabed Rare Earth Mining Test (Jan 2026)
+
+- name: Japan 6,000m Deep Seabed Rare Earth Mining Test (Jan 2026)
+- type: deep_seabed_mining_test
+- depth: 6,000 m (nearly 20,000 feet)
+- operator: Japan
+- year: 2026
+- resources: Rare earth-rich deep-sea muds
+- description: 2026年1月，日本在6000米深度进行了有史以来最深的深海采矿测试，成功提取了富含稀土的深海泥浆。这是人类历史上最深的深海采矿试验，使用Deep-Sea Mining Watch透明度平台进行监测。NOAA也于2026年1月21日发布了深海硬矿物采矿最终规则。
+- significance: Deepest seabed mining test in history; demonstrates technical feasibility of rare earth extraction from abyssal depths
+- source: Global Fishing Watch / Benioff Ocean Science Laboratory / NOAA 2026
+
+## deep_sea_ecology
+
+### Hydrothermal Vent Ecosystems
+
+- name: Hydrothermal Vent Ecosystems
+- ecosystem_type: Chemosynthetic
+- depth: 2,000-4,000 m
+- location: Mid-ocean ridges globally (East Pacific Rise, Mid-Atlantic Ridge, Indian Ocean)
+- key_species: Riftia pachyptila, Alvinella pompejana, Bathymodiolus thermophilus, Kiwa hirsuta
+- description: Ecosystems powered by chemical energy from Earth's interior rather than sunlight. Hydrothermal vents support 300+ endemic species through chemosynthetic primary production. Discovered in 1977 at the Galápagos Rift, they revolutionized biology and have implications for the origin of life and astrobiology.
+
+### Cold Seep Communities
+
+- name: Cold Seep Communities
+- ecosystem_type: Chemosynthetic
+- depth: 200-3,500 m
+- location: Continental margins globally (Gulf of Mexico, Mediterranean, West Africa, Japan Trench)
+- key_species: Lamellibrachia luymesi, Bathymodiolus childressi, Vesicomyid clams, Beggiatoa mats
+- description: Cold seeps release methane and hydrogen sulfide from the seafloor, supporting chemosynthetic communities similar to hydrothermal vents but at lower temperatures. Gulf of Mexico seeps are the best studied. These communities may be far more widespread than currently known.
+
+### Whale Fall Ecosystems
+
+- name: Whale Fall Ecosystems
+- ecosystem_type: Successional / Scavenger
+- depth: 100-4,000+ m
+- location: Global ocean (wherever whales die and sink)
+- key_species: Osedax spp., sleeper sharks, hagfish, amphipods, bone-eating worms
+- description: When a whale carcass sinks to the deep seafloor, it creates a localized ecosystem that persists for decades. The succession includes mobile scavengers, enrichment opportunists, and sulfophilic stages. Whale falls may serve as evolutionary stepping stones between vent and seep communities.
+
+### Hadal Zone Trench Communities
+
+- name: Hadal Zone Trench Communities
+- ecosystem_type: Scavenger / Detritivore
+- depth: 6,000-11,000 m
+- location: Deep ocean trenches (Mariana, Kermadec, Tonga, Izu-Bonin, Puerto Rico)
+- key_species: Pseudoliparis swirei, amphipods (Hirondellea gigas), foraminifera, xenophyophores
+- description: Despite extreme pressure, hadal zones support active scavenger communities. Food arrives as carrion falls and is channeled by trench topography. Each trench may harbor endemic species due to geographic isolation.
+
+### Deep-Sea Coral Gardens
+
+- name: Deep-Sea Coral Gardens
+- ecosystem_type: Filter-feeding
+- depth: 200-6,000 m
+- location: North Atlantic, Mediterranean, New Zealand seamounts, Emperor Seamount Chain
+- key_species: Lophelia pertusa, Madrepora oculata, Paragorgia arborea (bubblegum coral)
+- description: Deep-sea corals form structural habitats rivaling tropical reefs in biodiversity. Unlike shallow corals, they don't rely on symbiotic algae. Some colonies are 4,000+ years old. Threatened by bottom trawling, ocean acidification, and oil exploration.
+
+### Abyssal Plain Benthic Communities
+
+- name: Abyssal Plain Benthic Communities
+- ecosystem_type: Deposit-feeding / Suspension-feeding
+- depth: 3,000-6,000 m
+- location: Global abyssal plains; CCZ (Pacific), Porcupine Abyssal Plain (Atlantic)
+- key_species: Sea cucumbers (Scotoplanes), brittle stars, polychaete worms, nematodes, foraminifera
+- description: Abyssal plains cover more of Earth's surface than any other habitat but remain poorly explored. The CCZ biodiversity assessment estimates 5,000+ species, 90%+ undescribed. These communities are most at risk from deep-sea nodule mining.
+
+### Seamount Ecosystems
+
+- name: Seamount Ecosystems
+- ecosystem_type: Filter-feeding / Predatory
+- depth: 500-4,000 m
+- location: Global seamounts; Emperor Seamount Chain, New England Seamounts, Davidson Seamount
+- key_species: Deep-sea corals, sponges, fish aggregations, cephalopods
+- description: Seamounts create upwelling that concentrates nutrients and supports dense filter-feeding communities. They serve as stepping stones for deep-sea species dispersal and are hotspots of endemism. Threatened by bottom trawling and potential crust mining.
+
+### Oxygen Minimum Zone Communities
+
+- name: Oxygen Minimum Zone Communities
+- ecosystem_type: Low-oxygen adapted
+- depth: 200-1,500 m
+- location: Eastern Pacific, Arabian Sea, Bay of Bengal (oxygen minimum zones)
+- key_species: Vampyroteuthis infernalis, jellies, specific polychaetes, nematodes
+- description: Oxygen minimum zones (OMZs) are expanding due to climate change. Specialized communities thrive at 1-3% oxygen saturation. Understanding these communities is critical as OMZ expansion threatens fisheries and alters biogeochemical cycles.
+
+### Chemolithoautotrophic Microbial Mats
+
+- name: Chemolithoautotrophic Microbial Mats
+- ecosystem_type: Microbial
+- depth: 500-4,000 m
+- location: Hydrothermal vents, cold seeps, whale falls, oxygen-depleted sediments
+- key_species: Beggiatoa, Thioploca, Arcobacter, ANME archaea
+- description: Microbial mats at chemosynthetic sites are the base of deep-sea chemosynthetic food webs. They mediate key biogeochemical cycles including sulfur, methane, and nitrogen cycling. ANME archaea perform anaerobic methane oxidation, a critical climate feedback process.
+
+### Deep-Sea Sponge Grounds
+
+- name: Deep-Sea Sponge Grounds
+- ecosystem_type: Filter-feeding
+- depth: 200-3,000 m
+- location: North Atlantic, Antarctic, New Zealand, Nordic fjords
+- key_species: Geodia barretti, Stryphnus fortis, glass sponges (Hexactinellida)
+- description: Dense sponge aggregations form structural habitats on continental shelves and slopes. Glass sponge reefs in British Columbia are living fossils, previously thought extinct for 40 million years. Sponges are major sources of bioactive compounds with pharmaceutical potential.
+
+### Abyssal Plain Communities
+
+- name: Abyssal Plain Communities
+- ecosystem_type: Deposit-feeding
+- depth: 4,000-6,000 m
+- location: Global abyssal plains (largest habitat on Earth)
+- key_species: Holothurians (sea cucumbers), brittle stars, nematodes, foraminifera
+- description: Abyssal plains are the most extensive habitat on Earth, covering ~50% of the planet surface. Communities are dominated by deposit-feeding organisms that process organic matter falling from surface waters. Extremely slow metabolism and long lifespans characterize these communities.
+
+### Hadal Trench Communities
+
+- name: Hadal Trench Communities
+- ecosystem_type: Scavenger-dominated
+- depth: 6,000-11,000 m
+- location: Subduction trenches globally (Mariana, Tonga, Kermadec, Izu-Ogasawara)
+- key_species: Amphipods (Hirondellea gigas), snailfish (Pseudoliparis swirei), xenophyophores
+- description: Hadal zone communities in ocean trenches are dominated by scavenging amphipods that rapidly consume food falls. The Mariana snailfish is the deepest-living fish. Trenches funnel organic matter, creating localized hotspots of biological activity in the deepest ocean.
+
+### Seamount Communities
+
+- name: Seamount Communities
+- ecosystem_type: Filter-feeding and demersal
+- depth: 500-4,000 m
+- location: Global seamounts; especially Emperor Seamounts, New England Seamounts
+- key_species: Deep-sea corals (Lophelia, Paragorgia), sponges, sebastid fishes
+- description: Seamounts create upwelling that supports dense filter-feeding communities of deep-sea corals and sponges. These are biodiversity hotspots and often targeted by deep-sea fisheries. Cobalt-rich crust mining would directly impact these communities.
+
+### Whale Fall Communities
+
+- name: Whale Fall Communities
+- ecosystem_type: Successional scavenger/sulphophilic
+- depth: 100-4,000 m
+- location: Global; wherever large cetaceans die and sink
+- key_species: Osedax (bone-eating worms), bathyal scavengers, sulphophilic bacteria
+- description: Whale falls create localized organic oases on the seafloor, supporting succession from scavenger to sulphophilic communities over decades. Osedax worms that digest bone using symbiotic bacteria are unique to whale falls. These communities may serve as evolutionary stepping stones between vents.
+
+### Deep-Sea Coral Gardens
+
+- name: Deep-Sea Coral Gardens
+- ecosystem_type: Filter-feeding structural
+- depth: 200-2,000 m
+- location: Continental margins; submarine canyons; seamounts; global
+- key_species: Lophelia pertusa, Madrepora oculata, Paragorgia arborea, Primnoa resedaeformis
+- description: Deep-sea coral gardens form structural habitats similar to shallow reefs but in cold, dark waters. They are extremely slow-growing and can be centuries old. Trawling and mining pose severe threats. These ecosystems support high biodiversity including commercially important fish species.
+
+### Brine Pool Communities
+
+- name: Brine Pool Communities
+- ecosystem_type: Extreme halophilic
+- depth: 1,000-3,500 m
+- location: Red Sea Deeps; Gulf of Mexico brine pools; Mediterranean brine lakes
+- key_species: Mussel beds (Bathymodiolus), extremophile bacteria, archaea
+- description: Brine pool communities exist at the interface between normal seawater and extremely saline, anoxic brine. Organisms at the brine-seawater interface include chemosynthetic mussels and bacteria. These extreme environments are analogs for extraterrestrial life in subsurface oceans.
+
+### Submarine Canyon Communities
+
+- name: Submarine Canyon Communities
+- ecosystem_type: Mixed (deposit and filter feeding)
+- depth: 100-4,000 m
+- location: Global continental margins; Monterey Canyon, Nazaré Canyon, Zhemchug Canyon
+- key_species: Deep-sea corals, holothurians, demersal fishes, cephalopods
+- description: Submarine canyons funnel organic matter from shelves to deep sea, creating enhanced food supply and biodiversity hotspots. They support diverse communities including deep-sea corals, fishes, and cephalopods. Canyons are often biodiversity hotspots on continental margins.
+
+### 1,121 New Marine Species (2024)
+
+- name: 1,121 New Marine Species (2024)
+- ecosystem_type: Discovery milestone
+- depth: Various
+- location: Global oceans
+- key_species: New species across all taxa; many from deep sea
+- description: In 2024, 1,121 new marine species were described, many from deep-sea expeditions. This accelerating rate of discovery highlights how poorly known the deep ocean remains. Schmidt Ocean Institute and NOAA Ocean Exploration expeditions contributed significantly to these discoveries.
+
+### Five New Hydrothermal Vent Fields (2025)
+
+- name: Five New Hydrothermal Vent Fields (2025)
+- ecosystem_type: Chemosynthetic (newly discovered)
+- depth: 2,000-4,000 m
+- location: Multiple ocean basins; specific locations under investigation
+- key_species: New vent-endemic species likely; characterization ongoing
+- description: Five new hydrothermal vent fields were discovered in 2025 through various expeditions. Each vent field potentially hosts unique endemic species. These discoveries continue to expand the known range and diversity of chemosynthetic ecosystems.
+
+### Deep-Sea Microbiome Diversity
+
+- name: Deep-Sea Microbiome Diversity
+- ecosystem_type: Microbial
+- depth: 0-11,000 m (throughout water column and sediment)
+- location: Global ocean
+- key_species: Thaumarchaeota, Marine Group II Euryarchaeota, SAR11 clade, SUP05
+- description: Deep-sea microbiomes are vastly more diverse than previously understood. Metagenomic studies reveal thousands of novel microbial lineages. These microorganisms mediate critical biogeochemical cycles including carbon fixation, nitrogen cycling, and sulfur transformation in the deep ocean.
+
+### Five New Hydrothermal Vents (East Pacific Rise 2025)
+
+- name: Five New Hydrothermal Vents (East Pacific Rise 2025)
+- ecosystem_type: Chemosynthetic (newly discovered)
+- depth: 2,500 m
+- location: East Pacific Rise near 10°N latitude
+- key_species: New vent-endemic species likely; characterization ongoing; venting fluids hotter than 300°C (570°F)
+- description: Five new hydrothermal vents were discovered on the East Pacific Rise near 10°N latitude in 2025. All venting fluids are hotter than 300°C (570°F). The discovery was accelerated by machine learning algorithms that predicted vent locations from water column data. Each vent field potentially hosts unique endemic species. These discoveries continue to expand the known range and diversity of chemosynthetic ecosystems.
+
+### 24 New CCZ Deep-Sea Species (2025)
+
+- name: 24 New CCZ Deep-Sea Species (2025)
+- ecosystem_type: Abyssal plain biodiversity
+- depth: 4,000-5,000 m
+- location: Clarion-Clipperton Zone (Pacific)
+- key_species: 24 new amphipod species; includes a rare new branch of life
+- description: Researchers announced the discovery of 24 new deep-sea amphipod species from the CCZ in 2025, including a rare new branch of life. This discovery in the area targeted for polymetallic nodule mining highlights the unexpectedly rich biodiversity and strengthens the case for precautionary approaches. The findings complicate mining plans as environmental impact assessments need revision.
+
+### Hydrothermal Vent Eruption Forecasting (2026)
+
+- name: Hydrothermal Vent Eruption Forecasting (2026)
+- ecosystem_type: Vent dynamics and prediction
+- depth: 2,500 m
+- location: East Pacific Rise (Tica vent site)
+- key_species: Existing vent communities; eruption dynamics studied
+- description: A new study reveals that fluctuations in temperature of fluids from hydrothermal vents indicate the effects of magmatic and tectonic events, enabling eruption forecasting. On April 28, 2026, scientists diving in Alvin observed a seafloor eruption at the Tica hydrothermal vent at 2,500m depth. This represents the first time vent eruption dynamics have been predicted and observed, with implications for understanding how vent ecosystems recover from catastrophic events.
+
+### 28 New Argentina Deep-Sea Species (2026)
+
+- name: 28 New Argentina Deep-Sea Species (2026)
+- ecosystem_type: South Atlantic deep-sea biodiversity
+- depth: Up to 4,000 m
+- location: Argentina's deep-sea waters (South Atlantic)
+- key_species: Sea snails, urchins, and other previously unknown organisms
+- description: Twenty-eight new species were found in Argentina's deep sea, announced in February 2026. The findings include sea snails, urchins, and other organisms previously unknown to science. This discovery highlights how poorly explored the South Atlantic deep sea remains and adds to growing evidence that deep-sea biodiversity is far greater than currently documented.
+
+### Ocean Census Global Discovery Program (2025-2030)
+
+- name: Ocean Census Global Discovery Program (2025-2030)
+- ecosystem_type: Global biodiversity survey
+- depth: 0-6,575 m
+- location: Global oceans
+- key_species: 866+ new species identified by March 2025; target 100,000 by 2030
+- description: The Ocean Census is the world's largest collaborative effort to discover marine life. By March 2025, 866 new species had been identified, with discoveries from depths up to 6,575m. The program aims to discover 100,000 new species by 2030, using advanced genomic and imaging techniques. This accelerating rate of discovery underscores how poorly known the deep ocean remains and has implications for conservation and resource management.
+
+### Deep-Sea Mining Ecological Impact (2026 Assessment)
+
+- name: Deep-Sea Mining Ecological Impact (2026 Assessment)
+- ecosystem_type: Conservation / Impact assessment
+- depth: 4,000-6,000 m
+- location: CCZ and other potential mining areas
+- key_species: Entire abyssal plain communities at risk; 5,000+ species, 90%+ undescribed
+- description: 2026 assessment: deep-sea mining poses significant risks to abyssal plain ecosystems. The CCZ biodiversity assessment estimates 5,000+ species, 90%+ undescribed. New species discoveries in 2025-2026 continue to highlight the richness of these communities. The ISA is negotiating environmental regulations as part of the Mining Code, with 2026 being a critical year for determining the balance between resource extraction and conservation.
+
+### Milos Hydrothermal Vent Community (Greece)
+
+- name: Milos Hydrothermal Vent Community (Greece)
+- ecosystem_type: Shallow hydrothermal vent
+- depth: 100-500 m
+- location: Off Milos, Greece (Aegean Sea)
+- key_species: Unique thermophilic communities; species adapted to shallow vent conditions
+- description: An extensive hydrothermal vent system discovered near Milos, Greece, along active fault lines. Unlike deep-sea vents, this shallow system supports unique communities adapted to both warm vent fluids and sunlight penetration. Its accessibility makes it a natural laboratory for studying vent ecology and mineral formation.
+
+### Linked Hydrothermal-Seep Ecosystem
+
+- name: Linked Hydrothermal-Seep Ecosystem
+- ecosystem_type: Hybrid chemosynthetic
+- depth: Deep sea
+- location: Seafloor (2025 discovery)
+- key_species: Novel organisms adapted to both vent and seep chemistry; unique metabolic pathways
+- description: A 2025 discovery of a hydrothermal system that links vents and methane seeps in the same location. This creates a hybrid ecosystem with organisms adapted to both chemical environments — a previously unknown ecological niche. The discovery suggests such linked systems may be more common than thought, expanding the known habitats for chemosynthetic life.
+
+### Japan Deep-Sea Biodiversity (38+ New Species)
+
+- name: Japan Deep-Sea Biodiversity (38+ New Species)
+- ecosystem_type: Deep-sea benthic communities
+- depth: Up to 6,575 m
+- location: Japan deep waters
+- key_species: 38 confirmed new species + 28 potential new species; includes new fish, crustaceans, and invertebrates
+- description: Japan's 2025 deep-sea expedition revealed extraordinary biodiversity, confirming 38 new species and identifying 28 more potential new species. These discoveries from depths up to 6,575 m include new fish, crustaceans, and invertebrate species, highlighting the vast unknown biodiversity of the deep ocean.
+
+### Deep-Sea Ghost Sharks (Chimaera)
+
+- name: Deep-Sea Ghost Sharks (Chimaera)
+- ecosystem_type: Deep pelagic/benthic
+- depth: 200-2,600 m
+- location: Global oceans; new species discovered 2025
+- key_species: Newly identified ghost shark species; ancient cartilaginous fish lineage
+- description: New species of deep-sea ghost sharks (chimaeras) were among the 1,121 new marine species identified in 2025. These ancient cartilaginous fish, distantly related to sharks, inhabit deep waters and are poorly studied. New species discoveries continue to expand our understanding of deep-sea vertebrate diversity.
+
+### Symbiotic Worm Communities (2025 Discovery)
+
+- name: Symbiotic Worm Communities (2025 Discovery)
+- ecosystem_type: Chemosynthetic symbiosis
+- depth: Deep sea
+- location: Global oceans; new species discovered 2025
+- key_species: Newly identified symbiotic worm species with chemosynthetic bacteria
+- description: New species of symbiotic worms were discovered in 2025, adding to the growing catalog of deep-sea organisms that rely on chemosynthetic bacteria for nutrition. These worms host bacteria that convert chemical compounds (hydrogen sulfide, methane) into energy, forming the base of food webs at vents and seeps.
+
+### Deep-Sea Mining Regulatory Ecology (2026)
+
+- name: Deep-Sea Mining Regulatory Ecology (2026)
+- ecosystem_type: Conservation / Regulatory
+- depth: 4,000-6,000 m
+- location: CCZ and other potential mining areas
+- key_species: Entire abyssal communities; 90%+ species undescribed; ecological baseline data insufficient
+- description: The 2026 NOAA deep-sea mining regulations have intensified the debate between resource extraction and conservation. Ecologists argue that baseline data is insufficient — 90%+ of abyssal species are undescribed. The ISA is negotiating environmental regulations as part of the Mining Code, with 2026 being a critical year for determining the balance.
+
+### Coral Reef AI Restoration Ecology
+
+- name: Coral Reef AI Restoration Ecology
+- ecosystem_type: Coral reef restoration
+- depth: 5-30 m
+- location: Great Barrier Reef and global
+- key_species: Coral larvae delivered by LarvalBot; targeted restoration of degraded reef sections
+- description: AI-powered underwater robots like LarvalBot are creating a new paradigm in coral reef restoration ecology. By precisely delivering coral larvae to damaged reef sections, these robots accelerate natural recovery processes. The May 2026 Science Robotics cover feature highlights this intersection of robotics and marine ecology.
+
+### Kelp Forest Restoration Ecology
+
+- name: Kelp Forest Restoration Ecology
+- ecosystem_type: Kelp forest restoration
+- depth: 5-15 m
+- location: Global temperate coasts
+- key_species: Kelp species replanted by AI robots; associated fish and invertebrate communities
+- description: AI-powered underwater robots are being deployed for kelp forest restoration, assessing health and autonomously replanting degraded areas. Kelp forests are among the most productive ecosystems on Earth but are declining globally due to warming waters. Robotic restoration represents a scalable approach to reversing this trend.
+
+### Abyssal Plain Sediment Community Biodiversity
+
+- name: Abyssal Plain Sediment Community Biodiversity
+- ecosystem_type: Abyssal sediment
+- depth: 4,000-6,000 m
+- location: Global abyssal plains (CCZ focus)
+- key_species: Nematodes, foraminifera, polychaetes, crustaceans; vast majority undescribed
+- description: Abyssal plain sediment communities are among the most species-rich but least studied on Earth. Recent estimates suggest 5,000+ species in the CCZ alone, with 90%+ undescribed. These communities are directly threatened by deep-sea mining, making their study urgent. Every new survey discovers species new to science.
+
+### 1121 New Marine Species (2025-2026)
+
+- name: 1121 New Marine Species (2025-2026)
+- type: Biodiversity milestone
+- location: Global (Ocean Census program)
+- description: Scientists identified 1,121 new marine species in a single year, including deep-sea ghost sharks, symbiotic worms, and unusual crustaceans. This landmark discovery was reported by Forbes in May 2026 and represents the most productive year for marine species discovery in history, largely driven by the Ocean Census program.
+- year: 2026
+
+### MBARI Ultra-Black Fish Discovery
+
+- name: MBARI Ultra-Black Fish Discovery
+- type: Species discovery
+- location: Monterey Bay, deep sea
+- description: MBARI researchers documented ultra-black fishes in 2025 — species with skin that absorbs over 99.5% of light, making them virtually invisible in the deep sea. These fish represent an extreme adaptation to the deep ocean environment where even bioluminescent light can reveal prey. The discovery has implications for understanding deep-sea predator-prey dynamics and biomimetic materials.
+- year: 2025
+
+### NHM Deep-Sea Mining Impact Review (2026)
+
+- name: NHM Deep-Sea Mining Impact Review (2026)
+- type: Scientific review
+- location: Global
+- description: The Natural History Museum published the most comprehensive review to date of how deep-sea mining might affect unique marine life. The review synthesizes data from hydrothermal vents, abyssal plains, and seamounts, concluding that current understanding is insufficient to predict long-term impacts. It calls for a precautionary approach and significantly more baseline research before mining proceeds.
+- year: 2026
+
+### Deep-Sea Wilderness Conservation Analysis
+
+- name: Deep-Sea Wilderness Conservation Analysis
+- type: Conservation analysis
+- location: Global
+- description: A Mongabay analysis published in April 2026 argues that deep-sea wildernesses are more important than the promise of seafloor mining. Using the failed Solwara I project as a case study, the analysis shows that even the best-case scenario for mining a hydrothermal vent is not good enough to justify the ecological damage. The piece has influenced policy debates at the ISA.
+- year: 2026
+
+### Ocean Discovery League 2026 Program
+
+- name: Ocean Discovery League 2026 Program
+- type: Exploration initiative
+- location: Global (10,000 target sites)
+- description: The Ocean Discovery League launched a program to explore 10,000 target locations using low-cost deep-sea imaging tools. The program also includes capacity building for early-career researchers in developing nations. This democratized approach to deep-sea exploration could dramatically increase the pace of discovery compared to traditional expedition-based research.
+- year: 2026
+
+### Hydrothermal-Cold Seep Hybrid System
+
+- name: Hydrothermal-Cold Seep Hybrid System
+- type: Ecosystem discovery
+- location: Deep sea (location TBD)
+- description: The first confirmed hydrothermal-cold seep hybrid system was discovered in 2025, representing a previously unknown type of deep-sea ecosystem. These hybrid systems combine the chemical energy of hydrothermal vents with the hydrocarbon-rich fluids of cold seeps, creating unique ecological niches with novel species assemblages not found at either vent or seep systems alone.
+- year: 2025
+
+### CCZ 24 New Species (2025)
+
+- name: CCZ 24 New Species (2025)
+- type: Biodiversity discovery
+- location: Clarion-Clipperton Zone, Pacific
+- description: In 2025, 24 new species were discovered in the Clarion-Clipperton Zone (CCZ), including representatives of a rare new branch of life. The CCZ is the primary target for polymetallic nodule mining, making these discoveries particularly significant for environmental impact assessment. The new species include organisms with no close known relatives, highlighting how much remains unknown about abyssal ecosystems.
+- year: 2025
+
+### Alvin Observed Vent Eruption (April 2026)
+
+- name: Alvin Observed Vent Eruption (April 2026)
+- ecosystem_type: Vent dynamics and ecological succession
+- depth: 2,500 m
+- location: East Pacific Rise (Tica vent site)
+- key_species: Existing vent communities; eruption dynamics and recolonization studied
+- description: On April 28, 2026, scientists in DSV Alvin directly observed a seafloor eruption at the Tica hydrothermal vent at 2,500m depth on the East Pacific Rise. First time a vent eruption was both predicted and directly observed. Provides unprecedented data on how vent ecosystems respond to catastrophic disturbance - which species survive, how recolonization proceeds, and recovery timeline. Direct implications for understanding resilience of vent ecosystems to natural events and potential mining disturbance.
+- year: 2026
+
+### Sub-Seafloor Vent Ecosystem Discovery
+
+- name: Sub-Seafloor Vent Ecosystem Discovery
+- ecosystem_type: Sub-seafloor chemosynthetic
+- depth: Below seafloor at 2,000-3,000 m
+- location: East Pacific Rise
+- key_species: Vent animals living beneath the seafloor in volcanic cavities
+- description: International science team discovered deep-sea habitats and evidence of hydrothermal animals living in volcanic cavities beneath the seafloor at the East Pacific Rise. Previously unknown sub-seafloor ecosystem - animals found living within volcanic rock itself, beneath the seafloor surface. Fundamentally changes understanding of extent and connectivity of vent ecosystems, suggesting visible vent communities are just the surface expression of a much larger sub-surface biosphere.
+- year: 2026
+
+### Deep-Sea Wilderness vs Mining Analysis (Mongabay 2026)
+
+- name: Deep-Sea Wilderness vs Mining Analysis (Mongabay 2026)
+- ecosystem_type: Conservation analysis
+- depth: Various
+- location: Global
+- key_species: All deep-sea ecosystems at risk from mining
+- description: Mongabay analysis argues deep-sea wildernesses are more important than the promise of seafloor mining. Uses failed Solwara I project in Papua New Guinea as case study - the first and only attempt at commercial deep-sea mining, which went bankrupt. Shows even best-case economic scenario for mining a hydrothermal vent is not good enough to justify ecological damage. Has influenced ISA policy debates and Pacific Island nations considering mining permits.
+- year: 2026
+
+### 1,121 New Marine Species Census (Forbes 2025-2026)
+
+- name: 1,121 New Marine Species Census (Forbes 2025-2026)
+- ecosystem_type: Marine biodiversity census
+- depth: Various (including deep-sea)
+- location: Global
+- key_species: 1,121 new species including deep-sea ghost sharks, symbiotic worms, and bioluminescent organisms
+- description: A comprehensive census documented 1,121 new marine species discovered in 2025, reported by Forbes in 2026. The discoveries include deep-sea ghost sharks (chimaeras), symbiotic worms living on whale bones, and new bioluminescent organisms. The rate of deep-sea species discovery continues to accelerate, highlighting how much of the ocean remains unexplored and how little we know about deep-sea biodiversity.
+- year: 2026
+
+### Argentina 28 Deep-Sea New Species (2026)
+
+- name: Argentina 28 Deep-Sea New Species (2026)
+- ecosystem_type: Deep-sea biodiversity
+- depth: 200-6,575 m
+- location: Argentine Sea (Southwest Atlantic)
+- key_species: 28 new species including deep-sea corals, sponges, and crustaceans
+- description: In February 2026, Argentine scientists announced 28 new deep-sea species discovered in the Argentine Sea at depths ranging from 200 to 6,575 meters. The discoveries include new species of deep-sea corals, sponges, and crustaceans. The findings highlight the rich and previously unknown biodiversity of the Southwest Atlantic deep sea, an area under consideration for future deep-sea mining exploration.
+- year: 2026
+
+### CCZ 24 New Species Including Rare Life Branch (2025-2026)
+
+- name: CCZ 24 New Species Including Rare Life Branch (2025-2026)
+- ecosystem_type: Abyssal plain biodiversity
+- depth: 4,000-5,000 m
+- location: Clarion-Clipperton Zone (Pacific)
+- key_species: 24 new species including a rare new branch on the tree of life
+- description: Scientists discovered 24 new species in the Clarion-Clipperton Zone (CCZ), the primary target for deep-sea manganese nodule mining. One of the species represents a rare new branch on the tree of life - a lineage previously unknown to science. The discovery underscores how much biodiversity could be lost before it is even documented if mining proceeds without adequate baseline studies.
+- year: 2026
+
+### Ocean Census 1121 New Species 2026
+
+- name: Ocean Census 1121 New Species 2026
+- type: biodiversity_survey
+- year: 2026
+- key_finding: Ocean Census第三年发现1121个新海洋物种（2025年866个）。包括深海幽灵鲨、共生蠕虫、异常甲壳类。累计发现速度加快。
+- source: Forbes/Ocean Census 2026
+- category: species_discovery
+
+### Argentina 28 New Deep-Sea Species
+
+- name: Argentina 28 New Deep-Sea Species
+- type: biodiversity_discovery
+- year: 2026
+- key_finding: 阿根廷2026年2月发现28个深海新物种，扩展南大西洋深海生物多样性认知。
+- source: Argentina 2026
+- category: species_discovery
+
+### OIST Okinawa Trough Mining Impact Study
+
+- name: OIST Okinawa Trough Mining Impact Study
+- type: impact_assessment
+- year: 2026
+- key_finding: OIST 2026研究：冲绳海槽采矿可能危及太平洋远距离物种。深海采矿对远距离连通物种的威胁被低估。
+- source: OIST 2026
+- category: mining_impact
+
+### NHM Deep-Sea Mining Impact Review
+
+- name: NHM Deep-Sea Mining Impact Review
+- type: scientific_review
+- year: 2026
+- key_finding: 自然历史博物馆2026年评估：当前对深海采矿影响的理解不足以预测长期后果。呼吁暂停商业开采直到科学评估完成。
+- source: NHM 2026
+- category: mining_impact
+
+### Deep-Sea Wilderness Value Analysis
+
+- name: Deep-Sea Wilderness Value Analysis
+- type: economic_analysis
+- year: 2026
+- key_finding: Mongabay分析：深海荒野的生态价值远超海底采矿收益。Solwara I项目案例显示商业深海采矿的经济可行性存疑。
+- source: Mongabay 2026
+- category: economic_valuation
+
+### Ocean Discovery League Global Strategy
+
+- name: Ocean Discovery League Global Strategy
+- type: exploration_initiative
+- year: 2026
+- key_finding: Ocean Discovery League启动全球战略：10000个目标位置，创建首个深海代表性视觉记录。目标将深海探索覆盖率翻倍。
+- source: EurekAlert 2026
+- category: exploration_strategy
+
+### Schmidt Ocean Institute 2026 South Atlantic
+
+- name: Schmidt Ocean Institute 2026 South Atlantic
+- type: expedition
+- year: 2026
+- key_finding: Schmidt Ocean Institute 2026年从巴西到南大西洋海山的考察。探索地球上最不为人知的海洋区域之一。
+- source: Schmidt Ocean Institute 2026
+- category: expedition
+
+## underwater_communication
+
+### Acoustic Modem Communication
+
+- name: Acoustic Modem Communication
+- type: Acoustic
+- range: 1-20 km typical; up to 100+ km at low bandwidth
+- bandwidth: 1-50 kbps (distance-dependent)
+- depth_rating: 11,000 m
+- organization: Teledyne Benthos, Evologics, WHOI Micro-Modem
+- status: Operational; standard for deep-sea communication
+- description: Acoustic modems are the primary communication method for underwater vehicles and instruments. Sound propagates well in water but bandwidth is severely limited compared to radio. WHOI micro-modem enables reliable data transmission from 11,000m depth at 5-10 kbps.
+
+### Optical/LED Communication
+
+- name: Optical/LED Communication
+- type: Optical
+- range: 10-200 m (blue/green laser/LED)
+- bandwidth: 1-100 Mbps (short range)
+- depth_rating: Any depth (line-of-sight dependent)
+- organization: WHOI, NATO CMRE, various universities
+- status: Emerging; demonstrated in clear water; limited by turbidity
+- description: Blue/green light can penetrate seawater and enable high-bandwidth communication over short ranges. Optical modems using LEDs or lasers can achieve Mbps data rates for close-range AUV-to-AUV or AUV-to-station communication. Limited by water clarity and line-of-sight requirements.
+
+### Electromagnetic (RF) Communication
+
+- name: Electromagnetic (RF) Communication
+- type: Electromagnetic
+- range: 1-100 m (very low frequency)
+- bandwidth: <1 kbps
+- depth_rating: Shallow water primarily; limited penetration in seawater
+- organization: WFS Technologies, various research groups
+- status: Niche applications; useful for diver and shallow-water AUV communication
+- description: Radio frequency communication underwater is severely limited by seawater's conductivity. Very low frequency signals can penetrate a few meters. Useful for diver communication and shallow-water sensor networks, but not practical for deep-sea applications.
+
+### Fiber-Optic Tether Communication
+
+- name: Fiber-Optic Tether Communication
+- type: Wired
+- range: Up to 10,000 m (tether length)
+- bandwidth: Gbps (essentially unlimited)
+- depth_rating: 11,000 m
+- organization: Focal Technologies, WHOI, various ROV manufacturers
+- status: Mature; standard for ROV operations
+- description: Fiber-optic tethers provide real-time high-bandwidth communication for ROVs. Modern fiber-optic tethers are thin (1-2mm) and can be spooled for deep operations. The main limitation is tether management and risk of entanglement.
+
+### Underwater Acoustic Networks (UAN)
+
+- name: Underwater Acoustic Networks (UAN)
+- type: Network
+- range: Multi-hop; 10-100+ km coverage
+- bandwidth: Aggregated 10-100 kbps across network
+- depth_rating: Variable (node-dependent)
+- organization: ONC, OOI, various research groups
+- status: Operational in cabled observatories; expanding to ad-hoc networks
+- description: Networks of acoustic modems forming multi-hop communication grids on the seafloor. Enable data relay from distributed sensors to surface gateways. Critical for large-scale ocean monitoring and AUV coordination.
+
+### Magnetic Induction Communication
+
+- name: Magnetic Induction Communication
+- type: Electromagnetic
+- range: 10-50 m
+- bandwidth: <10 kbps
+- depth_rating: Any depth (not affected by water conductivity)
+- organization: Various research groups
+- status: Research; useful for close-range communication in turbid water where optical fails
+- description: Magnetic induction uses near-field magnetic coupling for short-range communication. Unlike RF, it is not affected by water conductivity. Useful as a backup communication method in turbid conditions where both acoustic and optical methods may fail.
+
+### Acoustic-Optical Hybrid Systems
+
+- name: Acoustic-Optical Hybrid Systems
+- type: Hybrid
+- range: Acoustic: long range / Optical: short range
+- bandwidth: Acoustic: kbps / Optical: Mbps (adaptive switching)
+- depth_rating: Any depth
+- organization: WHOI, NATO CMRE
+- status: Emerging; demonstrated in research settings
+- description: Hybrid systems use acoustic communication for long-range low-bandwidth commands and status, switching to optical for high-bandwidth data transfer at close range. This approach maximizes both range and data rate for AUV operations.
+
+### Through-Water GPS (Surface Relay)
+
+- name: Through-Water GPS (Surface Relay)
+- type: Positioning / Communication
+- range: Surface relay to 6,000+ m depth via acoustic link
+- bandwidth: Position data only (acoustic relay)
+- depth_rating: Any depth (via acoustic relay)
+- organization: Sonardyne, iXblue, Kongsberg
+- status: Operational; standard for AUV positioning
+- description: Ultra-short baseline (USBL) and long-baseline (LBL) acoustic positioning systems enable GPS-like positioning for underwater vehicles. Surface vessels with GPS relay position data to submerged vehicles via acoustic signals.
+
+### Underwater IoT Sensor Networks
+
+- name: Underwater IoT Sensor Networks
+- type: Network
+- range: Variable (multi-hop)
+- bandwidth: Low (sensor data)
+- depth_rating: 6,000 m
+- organization: Various (WHOI, NOAA, EU projects)
+- status: Growing deployment
+- description: Networks of underwater sensors communicating via acoustic links for ocean monitoring. Enable persistent monitoring of deep-sea environments, seismic activity, and marine life. Growing rapidly with advances in low-power acoustic modems.
+
+### Magnetic Induction Communication
+
+- name: Magnetic Induction Communication
+- type: Electromagnetic (near-field)
+- range: 1-50 m
+- bandwidth: 1-100 kbps
+- depth_rating: Any depth (no water attenuation for near-field)
+- organization: Various research groups
+- status: Laboratory and limited field testing
+- description: Magnetic induction communication uses near-field magnetic coupling for short-range underwater communication. Unlike radio, magnetic fields are not attenuated by water. Useful for close-range AUV-to-AUV communication and diver communication.
+
+### Underwater Delay-Tolerant Networking (DTN)
+
+- name: Underwater Delay-Tolerant Networking (DTN)
+- type: Protocol
+- range: Any (store-and-forward)
+- bandwidth: Variable (depends on link)
+- depth_rating: Any
+- organization: NASA JPL, various universities
+- status: Research and development
+- description: Delay-tolerant networking protocols adapted from deep-space communication for underwater use. Handles the long delays and intermittent connectivity of underwater networks. Enables data to hop between vehicles and surface gateways over hours or days.
+
+### Seafloor Fiber Optic Observatories
+
+- name: Seafloor Fiber Optic Observatories
+- type: Wired
+- range: Hundreds of km
+- bandwidth: Gbps
+- depth_rating: 8,000 m (seafloor)
+- organization: Ocean Observatories Initiative (OOI), DONET, NEPTUNE
+- status: Operational; expanding globally
+- description: Seafloor fiber optic cable networks providing real-time high-bandwidth data from deep-sea instruments. OOI (USA), NEPTUNE (Canada), and DONET (Japan) are operational. Enable continuous monitoring of seismic activity, chemistry, and biology.
+
+### Underwater Quantum Communication
+
+- name: Underwater Quantum Communication
+- type: Quantum
+- range: 10-100 m (demonstrated)
+- bandwidth: Very low (key distribution)
+- depth_rating: Shallow water only (current)
+- organization: Various research groups (China, UK)
+- status: Laboratory and lake testing
+- description: Quantum key distribution through water for secure underwater communication. Demonstrated over 10-100m in clear water. Potential for unbreakable encryption of underwater military and commercial communications. Range limited by water turbidity and absorption.
+
+### AI-Enhanced Acoustic Communication
+
+- name: AI-Enhanced Acoustic Communication
+- type: Acoustic (AI-optimized)
+- range: 1-50 km
+- bandwidth: 5-100 kbps (adaptive)
+- depth_rating: 11,000 m
+- organization: Various (MIT, WHOI, industry)
+- status: Emerging; field trials
+- description: Machine learning algorithms that adaptively optimize acoustic communication parameters (frequency, modulation, coding) based on real-time channel conditions. Can achieve 2-5x throughput improvement over fixed-parameter systems in variable underwater conditions.
+
+### Satellite-AUV Relay Communication
+
+- name: Satellite-AUV Relay Communication
+- type: Hybrid (acoustic + satellite)
+- range: Global (via satellite)
+- bandwidth: Low (command/status)
+- depth_rating: Any (via surface relay)
+- organization: Saildrone, Liquid Robotics, various navies
+- status: Operational; expanding
+- description: Autonomous surface vehicles relay communication between satellites and submerged AUVs via acoustic link. Enables global-scale AUV command and control without dedicated support vessels. Saildrone and Wave Glider increasingly used as communication gateways.
+
+### AI-Enhanced Underwater Swarm Communication
+
+- name: AI-Enhanced Underwater Swarm Communication
+- type: Acoustic (AI-optimized swarm)
+- range: 1-50 km (multi-hop swarm)
+- bandwidth: 10-200 kbps (adaptive, swarm-aggregated)
+- depth_rating: 6,000 m
+- organization: Various (MIT, WHOI, ONR)
+- status: Emerging; field trials 2025-2026
+- description: Machine learning algorithms that coordinate communication between swarms of AUVs, optimizing bandwidth allocation and routing in real-time. AI determines which vehicles relay data, when to transmit, and how to avoid interference. Enables large-scale coordinated ocean surveys with dozens of autonomous vehicles operating as a network.
+
+### SWOT Satellite-Ocean Data Relay
+
+- name: SWOT Satellite-Ocean Data Relay
+- type: Satellite-ocean hybrid
+- range: Global (via SWOT satellite)
+- bandwidth: Moderate (ocean topography + relay)
+- depth_rating: Surface (satellite)
+- organization: NASA / CNES
+- status: Operational (SWOT launched 2022; seafloor mapping results 2025-2026)
+- description: The SWOT satellite measures sea surface height with unprecedented precision, enabling seafloor mapping from space by detecting gravity anomalies. This data complements acoustic communication networks by providing large-scale ocean context for AUV navigation and mission planning. The 2025-2026 results produced one of the most detailed ocean floor maps ever created.
+
+### AI-Driven Adaptive Acoustic Communication
+
+- name: AI-Driven Adaptive Acoustic Communication
+- type: Acoustic (AI-enhanced)
+- range: 1-50 km (adaptive)
+- bandwidth: 5-100 kbps (adaptive modulation)
+- depth_rating: 6,000 m
+- organization: Multiple research groups
+- status: Emerging 2026; field trials
+- description: AI-driven acoustic communication systems that adapt modulation, frequency, and power in real-time based on channel conditions. These systems learn the underwater acoustic environment and optimize transmission parameters, significantly improving reliability and bandwidth compared to fixed-configuration modems.
+
+### XR-Enhanced Teleoperation Communication
+
+- name: XR-Enhanced Teleoperation Communication
+- type: Hybrid acoustic/optical
+- range: 100 m - 5 km
+- bandwidth: High (for XR video); low-latency control
+- depth_rating: 3,000 m
+- organization: Multiple (PatSnap landscape 2026)
+- status: Development 2026; prototype testing
+- description: Extended Reality (XR) teleoperation systems for underwater robots require high-bandwidth, low-latency communication for immersive control. These hybrid systems use optical links for high-bandwidth XR video near the vehicle and acoustic links for long-range telemetry, enabling human operators to control deep-sea robots with immersive visualization.
+
+### Underwater IoT Swarm Communication
+
+- name: Underwater IoT Swarm Communication
+- type: Acoustic mesh network
+- range: 1-10 km per node; multi-hop extends range
+- bandwidth: 1-10 kbps per link
+- depth_rating: 6,000 m
+- organization: Research institutions, defense
+- status: Research and development 2025-2026
+- description: Underwater IoT swarms use mesh networking protocols to enable dozens of autonomous vehicles to communicate and coordinate. Each node relays data for others, extending range through multi-hop routing. This approach is critical for large-scale ocean survey and monitoring operations where individual vehicle range is limited.
+
+### Magnetic Induction Communication
+
+- name: Magnetic Induction Communication
+- type: Electromagnetic (near-field)
+- range: 1-50 m
+- bandwidth: 10-100 kbps
+- depth_rating: 100 m
+- organization: University research groups
+- status: Laboratory and shallow-water testing
+- description: Magnetic induction communication uses oscillating magnetic fields to transmit data through water at short ranges. Unlike radio waves, magnetic fields penetrate water effectively at low frequencies. This approach is useful for close-range communication between nearby underwater vehicles and for through-hull data transfer.
+
+### Seafloor Fiber Optic Observatory Networks
+
+- name: Seafloor Fiber Optic Observatory Networks
+- type: Fiber optic
+- range: Unlimited (cabled)
+- bandwidth: Gbps
+- depth_rating: 11,000 m
+- organization: Ocean Observatories Initiative, DONET, NEPTUNE
+- status: Operational; expanding globally
+- description: Cabled seafloor observatories provide high-bandwidth, real-time data from the deep ocean. Networks like OOI (USA), DONET (Japan), and NEPTUNE (Canada) connect hundreds of sensors via fiber optic cables. These observatories serve as communication infrastructure for nearby AUVs and provide continuous monitoring of deep-sea conditions.
+
+### Underwater Quantum Communication
+
+- name: Underwater Quantum Communication
+- type: Quantum (experimental)
+- range: 10-100 m (current)
+- bandwidth: Very low (proof of concept)
+- depth_rating: Shallow water only (current)
+- organization: Chinese and European research groups
+- status: Laboratory and pool experiments
+- description: Experimental quantum communication through water uses entangled photon pairs for theoretically unbreakable encryption. While range and bandwidth are currently very limited, this technology could eventually provide secure communication for military and critical infrastructure applications. Current experiments achieve 10-100 m range in clear water.
+
+### Satellite-AUV Relay Communication
+
+- name: Satellite-AUV Relay Communication
+- type: Satellite-acoustic hybrid
+- range: Global (via satellite)
+- bandwidth: Low (satellite) + moderate (acoustic)
+- depth_rating: Surface relay + 6,000 m acoustic
+- organization: Multiple (Saildrone, Teledyne)
+- status: Operational; used with USV relay vehicles
+- description: Satellite-AUV relay systems use surface vehicles (like Saildrone) as communication gateways between deep AUVs and satellites. The AUV communicates acoustically with the surface relay, which then transmits via satellite to shore. This eliminates the need for AUVs to surface for communication, enabling persistent deep operations.
+
+### Underwater Edge Computing Networks
+
+- name: Underwater Edge Computing Networks
+- type: Computing + communication
+- range: Local cluster (100 m - 1 km)
+- bandwidth: High (local processing reduces transmission needs)
+- depth_rating: 6,000 m
+- organization: Research institutions
+- status: Emerging 2026; prototype deployments
+- description: Underwater edge computing places processing capability on seafloor nodes and AUVs, performing data analysis locally and transmitting only results rather than raw data. This dramatically reduces communication bandwidth requirements and enables real-time decision-making without surface contact. Critical for autonomous survey and mining operations.
+
+### SWOT Satellite Seafloor Mapping Communication
+
+- name: SWOT Satellite Seafloor Mapping Communication
+- type: Satellite-ocean data relay
+- protocol: Ku-band radar + data downlink
+- description: The SWOT satellite demonstrates a new paradigm for ocean floor mapping from space. Its Ka-band radar altimeter measures sea surface height with centimeter precision, revealing gravitational anomalies caused by seafloor features. The data communication chain from satellite to ground station to oceanographic databases enables near-real-time seafloor mapping updates.
+- year: 2026
+
+### Seabed 2030 Data Sharing Network
+
+- name: Seabed 2030 Data Sharing Network
+- type: International data sharing framework
+- protocol: GEBCO grid / IHO S-100
+- description: The Seabed 2030 project has mapped 28.7% of the ocean floor as of April 2026, adding 5 million km2 in one year. The data sharing network connects hydrographic offices, research institutions, and private companies worldwide. The GEBCO Symposium 2026 in Cartagena, Colombia will address standards and coordination for reaching the 100% mapping goal.
+- year: 2026
+
+### Underwater Acoustic Communication for AUV Swarms
+
+- name: Underwater Acoustic Communication for AUV Swarms
+- type: Swarm communication protocol
+- protocol: Acoustic + optical hybrid
+- description: New communication protocols enabling coordinated operation of multiple AUVs as a swarm. Combining acoustic communication (long range, low bandwidth) with optical communication (short range, high bandwidth) allows AUVs to share mapping data in real-time while maintaining formation. This is critical for efficient large-area seafloor surveys.
+- year: 2026
+
+### Deep-Sea Mining Real-Time Monitoring Telemetry
+
+- name: Deep-Sea Mining Real-Time Monitoring Telemetry
+- type: Industrial monitoring communication
+- protocol: Acoustic + satellite relay
+- description: Real-time telemetry systems for monitoring deep-sea mining operations, developed in response to transparency concerns. These systems relay data from mining equipment on the seafloor through acoustic modems to surface vessels, then via satellite to shore-based monitoring centers. The Deep-Sea Mining Watch platform uses this data for independent oversight.
+- year: 2026
+
+### PExT Deep Space-Ocean Communication Bridge
+
+- name: PExT Deep Space-Ocean Communication Bridge
+- type: Cross-domain communication technology
+- protocol: Proximity Extensible Telecommunications
+- description: NASA PExT protocol, originally developed for deep space communication, is being adapted for deep ocean applications. The protocol handles high-latency, low-bandwidth environments common to both deep space and deep sea. This cross-pollination of space and ocean communication technology could improve underwater data transmission reliability.
+- year: 2026
+
+### Deep-Sea Mining Real-Time Monitoring Telemetry (2026)
+
+- name: Deep-Sea Mining Real-Time Monitoring Telemetry (2026)
+- type: Industrial monitoring communication
+- protocol: Acoustic + satellite relay
+- description: Real-time telemetry systems for monitoring deep-sea mining operations, developed in response to transparency concerns. Relay data from mining equipment on seafloor through acoustic modems to surface vessels, then via satellite to shore-based monitoring centers. Deep-Sea Mining Watch platform uses this data for independent oversight. In January 2026, tracked the deepest seabed mining test in history at nearly 2,000m depth.
+- year: 2026
+
+### PExT Deep Space-Ocean Communication Bridge (2026)
+
+- name: PExT Deep Space-Ocean Communication Bridge (2026)
+- type: Cross-domain communication technology
+- protocol: Proximity Extensible Telecommunications
+- description: NASA PExT protocol, originally developed for deep space communication, being adapted for deep ocean applications. Handles high-latency, low-bandwidth environments common to both deep space and deep sea. Cross-pollination of space and ocean communication technology could improve underwater data transmission reliability and enable standardized communication between space and ocean assets.
+- year: 2026
+
+### Underwater IoT Swarm Communication (2026)
+
+- name: Underwater IoT Swarm Communication (2026)
+- type: Swarm communication protocol
+- protocol: Acoustic + optical hybrid
+- description: 2026 research advances in underwater IoT swarm communication enable coordinated operation of large groups of AUVs and sensors. The hybrid approach uses acoustic signals for long-range coordination and optical links for high-bandwidth short-range data transfer. This enables applications like coordinated seafloor mapping by AUV swarms, distributed environmental monitoring, and collaborative underwater inspection of infrastructure.
+- year: 2026
+
+### Seabed 2030 Data Sharing Network (GEBCO S-100)
+
+- name: Seabed 2030 Data Sharing Network (GEBCO S-100)
+- type: Data sharing infrastructure
+- protocol: S-100 hydrographic data standard
+- description: The Seabed 2030 project is building a global data sharing network based on the IHO S-100 hydrographic data standard. As of April 2026, 28.7% of the ocean floor has been mapped, with 5 million km2 added in the past year alone. The S-100 standard enables seamless integration of bathymetric data from different sources and sensors, creating a unified global seafloor map. The data sharing network is critical infrastructure for both scientific research and commercial deep-sea operations.
+- year: 2026
+
+### CES 2026 Internet of Underwater Things
+
+- name: CES 2026 Internet of Underwater Things
+- type: technology_showcase
+- year: 2026
+- key_finding: CES 2026展示水下物联网：现代海洋和水产养殖技术创新，监控、管理和优化鱼类养殖和海洋作业。水下传感器网络商业化。
+- source: CES 2026
+- category: iout
+
+### TNO Underwater Robot Team Communication
+
+- name: TNO Underwater Robot Team Communication
+- type: swarm_communication
+- year: 2026
+- key_finding: TNO展示水下机器人团队通信：部署→建立网络→发射团队→协调→适应。多机器人水下协作通信协议。
+- source: Instagram/TNO 2026
+- category: swarm_comm
+
+## ocean_energy
+
+### Ocean Thermal Energy Conversion (OTEC)
+
+- name: Ocean Thermal Energy Conversion (OTEC)
+- type: Thermal gradient
+- depth: Surface to 1,000 m (cold water pipe)
+- power_potential: Theoretical: 10+ TW globally; practical: 100+ MW per plant
+- trl: TRL 6-7 (demonstrated at 100+ kW scale)
+- organization: Makai Ocean Engineering, OTE Corporation, Japan
+- status: Pilot plants operational; commercial scale not yet achieved
+- description: OTEC uses the temperature difference between warm surface water and cold deep water to generate electricity. The deep cold water intake also brings nutrient-rich water to the surface, enabling mariculture. Makai Ocean Engineering operates a 100 kW OTEC plant in Hawaii.
+
+### Tidal Energy (Deep Water)
+
+- name: Tidal Energy (Deep Water)
+- type: Tidal current
+- depth: 30-100 m (tidal stream turbines)
+- power_potential: Global: ~3 TW theoretical; best sites: Pentland Firth, Bay of Fundy
+- trl: TRL 7-8 (MeyGen operational in Scotland)
+- organization: SIMEC Atlantis, Orbital Marine, Nova Innovation
+- status: Commercial arrays operational; MeyGen 6 MW array in Scotland
+- description: Tidal stream turbines extract energy from tidal currents. The MeyGen project in Scotland's Pentland Firth is the world's largest tidal array at 6 MW. Deep-water tidal sites offer more consistent and powerful currents than shallow sites.
+
+### Wave Energy Converters
+
+- name: Wave Energy Converters
+- type: Wave motion
+- depth: Surface to 100 m (moored devices)
+- power_potential: Global: ~2-3 TW theoretical; highly variable by location
+- trl: TRL 5-7 (multiple prototypes; no commercial scale)
+- organization: Ocean Power Technologies, CorPower, Wello
+- status: Multiple prototypes deployed; commercial viability not yet proven
+- description: Wave energy converters extract energy from surface wave motion. Various designs include point absorbers, oscillating water columns, and attenuators. Despite decades of development, no design has achieved commercial viability. Deep-water deployments offer more consistent wave energy.
+
+### Deep-Current (Thermohaline) Energy
+
+- name: Deep-Current (Thermohaline) Energy
+- type: Ocean current
+- depth: 500-2,000 m (deep ocean currents)
+- power_potential: Theoretical: significant but poorly quantified; Florida Current: ~25 GW
+- trl: TRL 2-3 (concept and early testing)
+- organization: Various research groups
+- status: Research phase; no deployed systems
+- description: Deep ocean currents (thermohaline circulation) carry enormous energy. Unlike surface currents, deep currents are steady and predictable. Turbines deployed in deep currents could provide baseload power for offshore or subsea facilities. The Florida Current alone carries an estimated 25 GW.
+
+### Salinity Gradient Power (Blue Energy)
+
+- name: Salinity Gradient Power (Blue Energy)
+- type: Osmotic pressure
+- depth: Surface (river-sea interface)
+- power_potential: Global: ~2.6 TW theoretical; best at river mouths
+- trl: TRL 4-5 (pilot plants demonstrated)
+- organization: Statkraft (Norway), REDstack (Netherlands)
+- status: Pilot plants operated; not yet commercially viable
+- description: Salinity gradient power exploits the osmotic pressure difference between freshwater and seawater. Pressure-retarded osmosis (PRO) and reverse electrodialysis (RED) are the main approaches. Statkraft operated a PRO pilot plant in Norway. The energy potential is enormous but membrane costs remain prohibitive.
+
+### Subsea Compressed Air Energy Storage (CAES)
+
+- name: Subsea Compressed Air Energy Storage (CAES)
+- type: Energy storage
+- depth: 100-600 m (hydrostatic pressure)
+- power_potential: Scalable; 100+ MWh per installation
+- trl: TRL 4-5 (demonstrated at pilot scale)
+- organization: Hydrostor (Canada), StEnSEA (Germany)
+- status: Hydrostor building 5 MW commercial plant; StEnSEA tested in Lake Constance
+- description: Underwater compressed air energy storage uses hydrostatic pressure at depth to store compressed air in flexible bags or rigid vessels. When electricity is needed, the compressed air is released through turbines. Hydrostor is building a 5 MW commercial plant in Australia.
+
+### Deep-Sea Geothermal Energy
+
+- name: Deep-Sea Geothermal Energy
+- type: Geothermal
+- depth: 1,000-4,000 m (near hydrothermal vents)
+- power_potential: Individual vent fields: 1-100 MW thermal; mid-ocean ridges: enormous
+- trl: TRL 1-2 (concept only)
+- organization: Various research groups (conceptual)
+- status: Conceptual; no development due to extreme environment and distance from shore
+- description: Hydrothermal vents release enormous thermal energy from Earth's interior. While the energy potential is vast, the extreme depth, corrosive environment, and distance from shore make extraction impractical with current technology. Could become relevant for powering deep-sea research stations or mining operations.
+
+### Offshore Floating Wind (Deep Water)
+
+- name: Offshore Floating Wind (Deep Water)
+- type: Wind (deep-water floating platforms)
+- depth: 60-1,000 m (floating platforms)
+- power_potential: Global deep-water wind: 10+ TW; individual turbines: 15+ MW
+- trl: TRL 7-8 (Hywind operational since 2017)
+- organization: Equinor (Hywind), Principle Power (WindFloat), BW Ideol
+- status: Commercial arrays operational; rapidly expanding globally
+- description: Floating wind platforms enable wind energy generation in deep waters beyond the reach of fixed-bottom turbines. Equinor's Hywind Scotland has been operational since 2017. The technology is rapidly maturing with 15+ MW turbines now being deployed on floating platforms.
+
+### Salinity Gradient Power (Blue Energy)
+
+- name: Salinity Gradient Power (Blue Energy)
+- type: Osmotic pressure
+- depth: Surface (river-sea interface)
+- power_potential: Theoretical: 2.6 TW globally; practical: 10+ MW per plant
+- trl: TRL 4-5 (pilot demonstrated)
+- organization: Statkraft (Norway), REDstack (Netherlands)
+- status: Pilot plants demonstrated; commercial scale not yet achieved
+- description: Blue energy harnesses the osmotic pressure difference between freshwater and seawater. Statkraft operated a 4 kW pilot plant in Norway. The technology could provide baseload power at river mouths. Advances in membrane technology are improving efficiency.
+
+### Deep-Sea Geothermal Energy
+
+- name: Deep-Sea Geothermal Energy
+- type: Geothermal (submarine)
+- depth: 2,000-4,000 m (mid-ocean ridge hydrothermal)
+- power_potential: Theoretical: enormous at MOR; practical: not yet quantified
+- trl: TRL 1-2 (concept only)
+- organization: Various research groups
+- status: Concept; no field testing
+- description: Geothermal energy from submarine hydrothermal systems at mid-ocean ridges. The heat flux from hydrothermal vents represents a vast untapped energy source. Concept involves placing heat exchangers near vent systems to generate electricity for deep-sea operations.
+
+### Ocean Current Energy (Gulf Stream)
+
+- name: Ocean Current Energy (Gulf Stream)
+- type: Ocean current turbine
+- depth: 100-300 m (in current)
+- power_potential: Gulf Stream: theoretical 20+ GW; practical: 1-5 GW
+- trl: TRL 3-4 (prototype tested)
+- organization: Florida Atlantic University, Ocean Renewable Power
+- status: Prototype testing; no commercial deployment
+- description: Underwater turbines placed in major ocean currents like the Gulf Stream to generate electricity. Unlike tidal energy, ocean currents flow continuously. FAU has tested prototypes. The consistent flow of the Gulf Stream could provide reliable baseload power.
+
+### Wave Energy Converters (WEC)
+
+- name: Wave Energy Converters (WEC)
+- type: Wave
+- depth: Surface (nearshore and offshore)
+- power_potential: Global: 2+ TW theoretical; practical: 100+ MW arrays
+- trl: TRL 5-7 (multiple designs tested)
+- organization: Carnegie Clean Energy (CETO), CorPower Ocean, Ocean Energy (OE Buoy)
+- status: Multiple pilot projects; approaching commercial viability
+- description: Wave energy converters extract energy from surface waves. Multiple designs exist: point absorbers, oscillating water columns, and attenuators. CorPower Ocean and Carnegie Clean Energy are leading developers. 2025-2026 seeing increased investment and pilot deployments.
+
+### Subsea Battery Storage
+
+- name: Subsea Battery Storage
+- type: Energy storage
+- depth: 100-3,000 m
+- power_potential: MWh scale; complements intermittent ocean energy
+- trl: TRL 4-5
+- organization: Ocean Battery (Bluelift), various
+- status: Pilot testing; first commercial units 2025-2026
+- description: Underwater battery systems that store energy from ocean renewable sources on the seafloor. Ocean Battery uses hydrostatic pressure for pumped storage. Subsea storage eliminates surface footprint and can be co-located with subsea equipment.
+
+### Microbial Fuel Cells (Benthic)
+
+- name: Microbial Fuel Cells (Benthic)
+- type: Bioelectrochemical
+- depth: Any (seafloor sediment)
+- power_potential: Milliwatts to watts per m²; useful for low-power sensors
+- trl: TRL 4-5
+- organization: NASA JPL, various universities
+- status: Field tested; powering low-power sensors
+- description: Benthic microbial fuel cells generate electricity from organic matter in seafloor sediments using electrogenic bacteria. Can power low-power ocean sensors indefinitely without batteries. NASA JPL has tested these for long-duration ocean monitoring.
+
+### Ocean Thermal Energy - Advanced Closed Cycle
+
+- name: Ocean Thermal Energy - Advanced Closed Cycle
+- type: Thermal gradient (advanced)
+- depth: Surface to 1,000 m
+- power_potential: 100+ MW per plant (commercial scale)
+- trl: TRL 6-7
+- organization: Makai Ocean Engineering, OTE Corporation, Japan
+- status: Makai 100kW operational; 10MW design complete
+- description: Advanced closed-cycle OTEC using ammonia working fluid in compact heat exchangers. Makai Ocean Engineering operates a 100 kW facility in Hawaii and has completed 10 MW commercial design. Co-products include desalinated water, air conditioning, and mariculture.
+
+### Deep-Sea Mining Energy Infrastructure
+
+- name: Deep-Sea Mining Energy Infrastructure
+- type: Offshore power for mining operations
+- depth: Surface to 6,000 m (power transmission to seafloor)
+- power_potential: 10-100 MW required for commercial mining operations
+- trl: TRL 4-5
+- organization: TMC, Allseas, GSR (mining); power system design ongoing
+- status: Power requirements defined; systems under development
+- description: Commercial deep-sea mining operations require significant power for seafloor collectors, riser systems, and surface processing. Power must be transmitted from surface vessels to seafloor mining vehicles at depths of 4,000-6,000m. This drives innovation in deep-water power transmission, subsea electrical systems, and energy-efficient mining equipment.
+
+### Seabed 2030 Mapping Energy Requirements
+
+- name: Seabed 2030 Mapping Energy Requirements
+- type: Mapping infrastructure power
+- depth: Surface to 11,000 m (mapping sonar power)
+- power_potential: Saildrone and ASV mapping systems: 100W-1kW; ship-based: 10-100 kW
+- trl: TRL 7-8 (operational)
+- organization: Seabed 2030, Nippon Foundation, GEBCO
+- status: Active mapping campaign; 25% of ocean floor mapped as of 2025
+- description: The Seabed 2030 project aims to map the entire ocean floor by 2030. As of 2025, approximately 25% has been mapped to modern standards. The project drives innovation in low-power autonomous mapping systems (Saildrone, Wave Glider) and high-power ship-based multibeam systems. Energy efficiency of mapping systems is critical for achieving the 2030 goal.
+
+### Seabed 2030 Mapping Progress (28.7% - Energy Implications)
+
+- name: Seabed 2030 Mapping Progress (28.7% - Energy Implications)
+- type: Mapping infrastructure energy
+- depth: Surface to 11,000 m
+- power_potential: Autonomous vehicles: 100W-1kW; ship-based: 10-100 kW; total program energy demand significant
+- trl: TRL 7-8 (operational)
+- organization: Seabed 2030, Nippon Foundation, GEBCO
+- status: 28.7% mapped as of April 2026; 5M km² added in one year
+- description: The Seabed 2030 project reached 28.7% ocean floor mapping in April 2026, adding 5 million km² in one year. This acceleration is driven by energy-efficient autonomous vehicles (Saildrone, Wave Glider) that can map for months on minimal power. The energy efficiency of these platforms is key to achieving the 2030 goal.
+
+### Deep-Sea Mining Energy Systems
+
+- name: Deep-Sea Mining Energy Systems
+- type: Mining operation power
+- depth: 4,000-6,000 m
+- power_potential: Collector vehicles: 500 kW-2 MW; riser systems: 5-10 MW; surface support: 10-50 MW
+- trl: TRL 5-6 (pilot scale)
+- organization: TMC, China Minmetals, Lockheed Martin
+- status: Pilot operations; commercial scale energy requirements defined
+- description: Deep-sea mining operations require significant energy: collector vehicles on the seafloor (500 kW-2 MW), riser systems to lift nodules (5-10 MW), and surface processing (10-50 MW). Energy supply and management are critical challenges for commercial viability. Hybrid diesel-electric and potentially nuclear power systems are being evaluated.
+
+### Autonomous Underwater Vehicle Energy Harvesting
+
+- name: Autonomous Underwater Vehicle Energy Harvesting
+- type: AUV energy harvesting
+- depth: 0-6,000 m
+- power_potential: Thermal gradient: 1-10 W; wave energy: 10-100 W; solar (surface): 100-500 W
+- trl: TRL 3-5
+- organization: Teledyne, WHOI, university research
+- status: Thermal recharging demonstrated; solar and wave harvesting in development
+- description: AUV energy harvesting technologies allow vehicles to recharge batteries without human intervention. Thermal gradient harvesting uses ocean temperature differences, wave energy harvesting captures surface motion, and solar panels charge during surface intervals. These technologies extend AUV mission duration from days to months.
+
+### Ocean Thermal Energy Conversion (OTEC) 2026 Status
+
+- name: Ocean Thermal Energy Conversion (OTEC) 2026 Status
+- type: Thermal gradient
+- depth: Surface to 1,000 m (cold water pipe)
+- power_potential: Theoretical: 10+ TW globally; practical: 100+ MW per plant
+- trl: TRL 6-7
+- organization: Makai Ocean Engineering, OTE Corporation, Japan
+- status: Pilot plants operational; commercial scale advancing; new projects in tropics
+- description: OTEC technology in 2026 is advancing toward commercial viability, with pilot plants in Hawaii and Japan demonstrating reliable operation. New projects in tropical island nations are being developed for both power generation and freshwater production. The deep cold water intake also enables mariculture and air conditioning.
+
+### Wave Energy Converters (2026 Status)
+
+- name: Wave Energy Converters (2026 Status)
+- type: Wave energy
+- depth: Surface
+- power_potential: Theoretical: 2-3 TW globally; practical: 10-100 MW per installation
+- trl: TRL 5-7
+- organization: CorPower Ocean, Ocean Power Technologies, Wello
+- status: Multiple demonstration projects; CorPower reaching commercial scale
+- description: Wave energy converter technology is advancing in 2026, with several companies reaching commercial demonstration scale. CorPower Ocean's resonant wave energy converters have shown promising survivability in harsh conditions. Wave energy provides more consistent power than solar or wind, making it attractive for offshore and island applications.
+
+### Deep-Sea Geothermal Energy
+
+- name: Deep-Sea Geothermal Energy
+- type: Geothermal (submarine)
+- depth: 2,000-4,000 m (vent locations)
+- power_potential: Theoretical: significant at vent fields; practical: not yet demonstrated
+- trl: TRL 2-3
+- organization: Research concept; no commercial development
+- status: Conceptual; no pilot projects
+- description: Deep-sea hydrothermal vents release enormous amounts of geothermal energy. While not currently harnessed, the concept of submarine geothermal energy extraction has been proposed. The extreme temperatures (up to 400°C) and chemical energy at vents represent a theoretical energy resource, though extraction would face enormous engineering challenges.
+
+### Salinity Gradient Power (Blue Energy)
+
+- name: Salinity Gradient Power (Blue Energy)
+- type: Osmotic power
+- depth: River-ocean interfaces
+- power_potential: Theoretical: 2.6 TW globally; practical: 1-5 MW per plant
+- trl: TRL 4-5
+- organization: Statkraft (Norway), Wetsus (Netherlands)
+- status: Pilot plant operated; scaling challenges remain
+- description: Salinity gradient power harnesses the energy released when freshwater mixes with seawater across a semi-permeable membrane. Statkraft operated a prototype in Norway. While theoretically significant, the technology faces membrane cost and fouling challenges. New membrane materials in 2025-2026 are improving efficiency.
+
+### Offshore Floating Nuclear Power for Deep Operations
+
+- name: Offshore Floating Nuclear Power for Deep Operations
+- type: Nuclear (floating)
+- depth: Surface (power for deep-sea operations)
+- power_potential: 50-300 MW per unit
+- trl: TRL 3-4 (concept for ocean use)
+- organization: Various (concept stage)
+- status: Concept development; regulatory and safety challenges
+- description: Floating nuclear power plants could provide the massive energy needed for deep-sea mining and large-scale ocean operations. While land-based small modular reactors are advancing, adapting them for ocean use introduces additional safety and regulatory challenges. This remains a long-term concept for enabling energy-intensive deep-sea operations.
+
+### ICOE/OEE 2026 Joint Conference
+
+- name: ICOE/OEE 2026 Joint Conference
+- type: Industry conference / market milestone
+- location: The Hague, Netherlands
+- description: The largest ocean energy conference in 2026, jointly organized by Ocean Energy Europe and the Dutch Energy from Water Association. Key data point: the largest tidal turbines now reach ~2MW capacity, and the most powerful wave energy converters reach ~1MW — comparable to a medium wind turbine. The conference focuses on wave, tidal, ocean current, OTEC, and salinity gradient technologies.
+- year: 2026
+
+### Makai Ocean Engineering OTEC
+
+- name: Makai Ocean Engineering OTEC
+- type: Ocean Thermal Energy Conversion
+- location: Hawaii, USA
+- description: Makai Ocean Engineering is one of only two surviving OTEC startups in 2026. OTEC exploits the temperature difference between warm surface water and cold deep water to generate electricity. Makai operates a test facility in Hawaii and has demonstrated the core thermodynamic cycle. The main challenge remains the large capital cost of cold water pipes and the relatively low thermal efficiency.
+- year: 2026
+
+### Bluerise OTEC
+
+- name: Bluerise OTEC
+- type: Ocean Thermal Energy Conversion
+- location: Netherlands / Caribbean
+- description: Bluerise is the other surviving OTEC startup in 2026, focusing on smaller-scale OTEC systems for island communities. Their approach uses a hybrid OTEC cycle that also produces fresh water — a critical co-product for tropical islands. The company has secured funding for a pilot plant in the Caribbean.
+- year: 2026
+
+### AWTEC 2026 (Asian Wave/Tidal Conference)
+
+- name: AWTEC 2026 (Asian Wave/Tidal Conference)
+- type: Industry conference
+- location: Kaohsiung, Taiwan
+- description: The 8th Asian Offshore Wind, Wave and Tidal Energy Conference (AWTEC 2026) will be held September 6-10, 2026 in Kaohsiung, Taiwan. The conference features technical sessions on wave energy, tidal energy, and offshore wind integration, fostering collaboration across the Asian marine energy sector.
+- year: 2026
+
+### OTC 2026 Marine Renewable Energy Session
+
+- name: OTC 2026 Marine Renewable Energy Session
+- type: Technical conference session
+- location: Houston, USA
+- description: The 2026 Offshore Technology Conference features a dedicated session on innovations driving the future of wave, tidal, and OTEC technologies. Key topics include advanced materials for marine energy converters, grid integration challenges, and hybrid systems combining multiple ocean energy technologies.
+- year: 2026
+
+### ICOE/OEE 2026 Joint Conference (The Hague)
+
+- name: ICOE/OEE 2026 Joint Conference (The Hague)
+- type: Industry conference / market milestone
+- location: The Hague, Netherlands
+- description: Largest ocean energy conference in 2026. Key data: largest tidal turbines now reach ~2MW capacity, most powerful wave energy converters reach ~1MW. Focuses on wave, tidal, ocean current, OTEC, and salinity gradient technologies. Industry consensus: ocean energy approaching commercial viability for niche applications (islands, offshore platforms) but needs policy support to scale.
+- year: 2026
+
+### AWTEC 2026 (Asian Wave/Tidal Conference)
+
+- name: AWTEC 2026 (Asian Wave/Tidal Conference)
+- type: Industry conference
+- location: Kaohsiung, Taiwan
+- description: 8th Asian Offshore Wind, Wave and Tidal Energy Conference (AWTEC 2026) September 6-10, 2026 in Kaohsiung, Taiwan. Technical sessions on wave energy, tidal energy, and offshore wind integration. Asia emerging as major market for ocean energy with Japan, South Korea, and China all investing in tidal and wave energy demonstration projects.
+- year: 2026
+
+### Bluerise OTEC Caribbean Pilot (2026)
+
+- name: Bluerise OTEC Caribbean Pilot (2026)
+- type: OTEC pilot plant
+- location: Caribbean (Netherlands Antilles)
+- description: Bluerise, a Dutch OTEC company, secured funding in 2026 for a pilot OTEC plant in the Caribbean. The plant will use the temperature difference between warm surface water and cold deep water to generate electricity and produce freshwater. OTEC is particularly suited to tropical islands that import expensive fossil fuels. The Bluerise pilot represents one of the few active OTEC projects globally, alongside Makai in Hawaii.
+- year: 2026
+
+### OTC 2026 Marine Renewable Energy Session
+
+- name: OTC 2026 Marine Renewable Energy Session
+- type: Technical conference session
+- location: Houston, USA
+- description: The 2026 Offshore Technology Conference features a dedicated session on innovations driving the future of wave, tidal, and OTEC technologies. Key topics include advanced materials for marine energy converters, grid integration challenges, and hybrid systems combining multiple ocean energy technologies. The inclusion of ocean energy at the premier offshore technology conference signals growing industry recognition.
+- year: 2026
+
+### Seabed 2030 Milestone 28.7%
+
+- name: Seabed 2030 Milestone 28.7%
+- type: mapping_milestone
+- year: 2026
+- key_finding: Seabed 2030项目2026年4月达到28.7%海底测绘覆盖率，一年增加500万km²。相当于地球陆地面积三分之二以上。目标2030年完成100%测绘。
+- source: Seabed 2030/UNESCO IOC 2026
+- category: mapping_progress
+
+### China Systematic Seafloor Mapping Program
+
+- name: China Systematic Seafloor Mapping Program
+- type: national_program
+- year: 2026
+- key_finding: Reuters 2026年3月报道中国系统性海底测绘计划。大规模海底调查活动引发地缘政治关注。
+- source: Reuters 2026
+- category: national_mapping
+
+### University of Delaware Deep-Sea Robotics 2026
+
+- name: University of Delaware Deep-Sea Robotics 2026
+- type: research_program
+- year: 2026
+- key_finding: 特拉华大学海洋机器人研究2025-2026年深海探索贡献。开发新型海洋机器人和自主系统用于深海调查。
+- source: UDel UDaily 2026
+- category: research
+
+### NOAA Ocean Exploration 2025-2026 Campaign
+
+- name: NOAA Ocean Exploration 2025-2026 Campaign
+- type: government_program
+- year: 2026
+- key_finding: NOAA海洋探索2025年领导和支持多次考察，测试新兴技术。Okeanos Explorer号ROV和测绘考察持续进行。
+- source: NOAA Ocean Explorer 2026
+- category: government_exploration
+
+## marine_biology
+
+### Giant Tube Worm (Riftia pachyptila)
+
+- name: Giant Tube Worm (Riftia pachyptila)
+- species: Riftia pachyptila
+- depth_range: 2,000-3,000 m
+- habitat: Hydrothermal vent chimneys, East Pacific Rise
+- discovery_year: 1977
+- unique_features: No digestive system; relies entirely on endosymbiotic chemosynthetic bacteria for nutrition; hemoglobin binds both O₂ and H₂S
+- description: The iconic organism of deep-sea hydrothermal vents. Riftia grows up to 2.4m long and forms dense clusters around black smokers. Its symbiotic bacteria convert hydrogen sulfide into organic compounds, enabling life independent of sunlight. This chemosynthetic ecosystem revolutionized our understanding of life's energy sources.
+
+### Yeti Crab (Kiwa hirsuta)
+
+- name: Yeti Crab (Kiwa hirsuta)
+- species: Kiwa hirsuta
+- depth_range: 2,200 m
+- habitat: Hydrothermal vents, Pacific-Antarctic Ridge
+- discovery_year: 2005
+- unique_features: Claws covered in hair-like setae hosting chemosynthetic bacteria; blind; may 'farm' bacteria for food
+- description: Discovered in 2005 at a Pacific hydrothermal vent, the yeti crab's hairy claws cultivate chemosynthetic bacteria. A related species, Kiwa puravida, was observed waving its claws over vent fluids to feed its bacterial 'crop' - a remarkable example of deep-sea farming behavior.
+
+### Hadal Snailfish (Pseudoliparis swirei)
+
+- name: Hadal Snailfish (Pseudoliparis swirei)
+- species: Pseudoliparis swirei
+- depth_range: 6,000-8,200 m
+- habitat: Mariana Trench hadal zone
+- discovery_year: 2014
+- unique_features: Deepest-living fish; transparent body; no swim bladder; specialized cartilage; TMAO adaptation
+- description: The deepest-living fish ever recorded, found at 8,178m in the Mariana Trench. Its body is adapted to extreme pressure through TMAO (trimethylamine N-oxide) accumulation that stabilizes proteins. In 2023, a related species (P. belyaevi) was filmed at 8,336m by the Fendouzhe submersible.
+
+### Giant Isopod (Bathynomus giganteus)
+
+- name: Giant Isopod (Bathynomus giganteus)
+- species: Bathynomus giganteus
+- depth_range: 300-2,500 m
+- habitat: Gulf of Mexico, Caribbean, Atlantic abyssal plains
+- discovery_year: 1879
+- unique_features: Up to 50cm long; scavenger; can survive 5+ years without food; copper-based blood
+- description: One of the largest crustaceans, reaching 50cm. Giant isopods are deep-sea scavengers that feed on whale falls and other carrion. Their extreme fasting ability and slow metabolism are adaptations to the food-scarce deep ocean. New species continue to be discovered, including B. yucatanensis (2022).
+
+### Vampire Squid (Vampyroteuthis infernalis)
+
+- name: Vampire Squid (Vampyroteuthis infernalis)
+- species: Vampyroteuthis infernalis
+- depth_range: 600-1,200 m (oxygen minimum zone)
+- habitat: Global tropical and temperate oceans, oxygen minimum zones
+- discovery_year: 1903
+- unique_features: Not a true squid or octopus; lives in oxygen minimum zones (3% saturation); bioluminescent; detritivore
+- description: A unique cephalopod that thrives in oxygen minimum zones where few animals survive. It uses bioluminescent displays for defense and feeds on 'marine snow' (detritus) rather than hunting. Its low metabolic rate and specialized hemocyanin allow survival in near-anoxic conditions.
+
+### Dumbo Octopus (Grimpoteuthis spp.)
+
+- name: Dumbo Octopus (Grimpoteuthis spp.)
+- species: Grimpoteuthis spp.
+- depth_range: 1,000-7,000 m
+- habitat: Global deep ocean, seamounts, hydrothermal vents
+- discovery_year: 1884 (genus)
+- unique_features: Ear-like fins; deepest-living octopus; swallows prey whole; no ink sac
+- description: Named for their ear-like fins, dumbo octopuses are among the deepest-living cephalopods. They lack ink sacs (unnecessary in the dark deep sea) and hover above the seafloor using their fins. New species continue to be discovered as deep-sea exploration expands.
+
+### Barrel Sponge (Xestospongia muta)
+
+- name: Barrel Sponge (Xestospongia muta)
+- species: Xestospongia muta
+- depth_range: 10-120 m (deep specimens at 300+ m)
+- habitat: Caribbean, Florida, Bahamas deep reefs
+- discovery_year: Known historically
+- unique_features: Can live 2,300+ years; filters 50,000x its volume in water daily; hosts diverse microbial communities
+- description: The 'redwood of the reef,' barrel sponges can live for millennia. Deep specimens host unique microbial communities that produce bioactive compounds with pharmaceutical potential. Their longevity makes them valuable for studying deep-sea environmental change.
+
+### Zombie Worm (Osedax spp.)
+
+- name: Zombie Worm (Osedax spp.)
+- species: Osedax spp.
+- depth_range: 30-4,000 m
+- habitat: Whale falls worldwide
+- discovery_year: 2002
+- unique_features: No mouth or digestive system; uses symbiotic bacteria to dissolve and absorb bone; root-like structures penetrate bone
+- description: Osedax worms colonize whale bones on the deep seafloor. Females have root-like structures that penetrate bone and host symbiotic bacteria that break down collagen and lipids. Males are microscopic and live inside females. Over 30 species discovered since 2002.
+
+### Giant Larvacean (Bathochordaeus charon)
+
+- name: Giant Larvacean (Bathochordaeus charon)
+- species: Bathochordaeus charon
+- depth_range: 100-4,000 m
+- habitat: Midwater, global deep ocean
+- discovery_year: 2017 (giant species)
+- unique_features: Builds meter-wide mucus houses; filters particles from water; houses discarded daily and sink as carbon flux
+- description: Giant larvaceans construct elaborate mucus filtering structures up to 1m across. These houses filter particles from seawater and are discarded daily, sinking rapidly and carrying significant carbon to the deep seafloor. They are a major component of the biological carbon pump.
+
+### Scaly-Foot Snail (Chrysomallon squamiferum)
+
+- name: Scaly-Foot Snail (Chrysomallon squamiferum)
+- species: Chrysomallon squamiferum
+- depth_range: 2,400-2,800 m
+- habitat: Indian Ocean hydrothermal vents (Kairei, Longqi)
+- discovery_year: 2001
+- unique_features: Iron-sulfide armored shell and foot; only known animal using iron sulfide in skeleton; vent-endemic
+- description: The scaly-foot snail is the only known animal that incorporates iron sulfide (pyrite and greigite) into its skeleton. Its foot is covered in iron-plated scales. Found at Indian Ocean hydrothermal vents, it is listed as endangered due to potential deep-sea mining at vent sites.
+
+### Honeycomb Glass Sponge (Venus Flower Basket)
+
+- name: Honeycomb Glass Sponge (Venus Flower Basket)
+- species: Euplectella aspergillum
+- depth_range: 100-1,000 m
+- habitat: Deep seafloor, Indo-Pacific
+- discovery_year: Known historically
+- unique_features: Silica lattice structure with remarkable mechanical properties; houses mating pair of shrimp; bio-inspired engineering
+- description: The Venus flower basket sponge builds a lattice skeleton of silica (glass) with exceptional mechanical properties. Its structure has inspired engineering designs for stronger, lighter materials. The sponge houses a mating pair of shrimp that enter as larvae and become trapped.
+
+### Bigfin Squid (Magnapinna spp.)
+
+- name: Bigfin Squid (Magnapinna spp.)
+- species: Magnapinna spp.
+- depth_range: 1,000-4,700 m
+- habitat: Deep ocean midwater, global
+- discovery_year: 1998 (first visual)
+- unique_features: Tentacles can exceed 8m; elbow-like bends; unique posture; rarely observed
+- description: Bigfin squid are among the most mysterious deep-sea animals. Their tentacles can exceed 8m in length with distinctive elbow-like bends. They are rarely observed and poorly understood. ROV encounters have increased in recent years, revealing their unique vertical fishing posture.
+
+### Giant Amphipod (Hirondellea gigas)
+
+- name: Giant Amphipod (Hirondellea gigas)
+- species: Hirondellea gigas
+- depth_range: 6,000-11,000 m
+- habitat: Hadal trenches (Mariana, Tonga, Izu-Ogasawara)
+- discovery_year: 1899
+- unique_features: Deepest-living scavenger; digests wood with cellulase; dominates hadal baited camera deployments
+- description: Hirondellea gigas is the dominant scavenger in ocean trenches, rapidly consuming food falls at hadal depths. It produces cellulase enzymes allowing it to digest wood that sinks to trench floors. Its abundance makes it a key species for understanding hadal food webs.
+
+### Christmas Tree Worm (Spirobranchus giganteus)
+
+- name: Christmas Tree Worm (Spirobranchus giganteus)
+- species: Spirobranchus giganteus
+- depth_range: 3-30 m (deep variants at 100+ m)
+- habitat: Tropical coral reefs; deep variants on seamounts
+- discovery_year: Known historically
+- unique_features: Spiral feeding appendages; calcareous tube in coral; sensitive to light and vibration
+- description: While common in shallow reefs, deep variants of Christmas tree worms are found on seamounts and deep coral banks. Their beautiful spiral feeding structures are iconic. Deep variants may represent undescribed species with pharmaceutical potential.
+
+### Abyssal Sea Cucumber (Scotoplanes globosa)
+
+- name: Abyssal Sea Cucumber (Scotoplanes globosa)
+- species: Scotoplanes globosa
+- depth_range: 1,000-5,000 m
+- habitat: Abyssal plains, global
+- discovery_year: Known historically
+- unique_features: Sea pig; walks on tube feet; forms herds of hundreds; deposit feeder; indicator of abyssal health
+- description: Sea pigs (Scotoplanes) are among the most abundant large animals on abyssal plains. They walk on elongated tube feet and form herds of hundreds of individuals. As deposit feeders, they process organic matter in deep-sea sediments and are indicators of abyssal ecosystem health.
+
+## ocean_exploration
+
+### Five Deeps Expedition
+
+- name: Five Deeps Expedition
+- mission_type: Exploration
+- organization: Caladan Oceanic / Triton Submarines
+- year: 2018-2019
+- location: All five ocean deepest points
+- discoveries: Mapped all five deepest trenches; discovered new species; corrected depth measurements for several trenches
+- description: Victor Vescovo piloted DSV Limiting Factor to the deepest point in all five oceans, completing the first crewed descent of the Puerto Rico Trench, South Sandwich Trench, Java Trench, and Molloy Deep. The expedition mapped 300,000+ km² of seafloor and discovered 40+ new species.
+
+### Ring of Fire Expedition
+
+- name: Ring of Fire Expedition
+- mission_type: Scientific
+- organization: NOAA Ocean Exploration
+- year: 2021-2023
+- location: Pacific Ring of Fire submarine volcanoes
+- discoveries: New hydrothermal vents, unknown species, active underwater volcanism
+- description: NOAA's multi-year expedition to explore submarine volcanoes along the Pacific Ring of Fire. Using ROV Deep Discoverer, the team documented previously unknown hydrothermal systems and their biological communities. Live-streamed dives engaged millions of viewers worldwide.
+
+### Seabed 2030
+
+- name: Seabed 2030
+- mission_type: Mapping
+- organization: GEBCO / Nippon Foundation
+- year: 2017-2030 (ongoing)
+- location: Global ocean
+- discoveries: Mapped 24.9% of ocean floor by 2023 (up from 6% in 2017); discovered thousands of seamounts
+- description: A collaborative project to map 100% of the ocean floor to modern standards by 2030. Progress accelerated from 6% (2017) to 24.9% (2023) through contributions from governments, industry, and citizen scientists. New satellite altimetry data revealed 19,000+ previously unknown seamounts.
+
+### Hadal Zone Exploration (Fendouzhe)
+
+- name: Hadal Zone Exploration (Fendouzhe)
+- mission_type: Scientific
+- organization: Institute of Deep-sea Science and Engineering, CAS
+- year: 2020-present
+- location: Mariana Trench, Kermadec Trench, Philippine Basin
+- discoveries: Deepest fish filming (8,336m); new hadal species; microbial communities at extreme depths
+- description: China's ongoing hadal zone research program using the Fendouzhe submersible. In 2023, filmed a snailfish at 8,336m - the deepest fish observation ever. The program has collected thousands of biological and geological samples from the deepest ocean trenches.
+
+### CCZ Biodiversity Assessment
+
+- name: CCZ Biodiversity Assessment
+- mission_type: Environmental Assessment
+- organization: ISA, multiple research institutions
+- year: 2001-present
+- location: Clarion-Clipperton Zone, Pacific
+- discoveries: Over 5,000 species estimated; >90% new to science; complex connectivity patterns
+- description: The largest deep-sea environmental assessment in history, spanning two decades. Research reveals the CCZ harbors extraordinary biodiversity, with an estimated 5,000+ species, over 90% undescribed. This data is critical for ISA mining regulations and marine protected area design.
+
+### Mojito Deep-Sea Mining Test
+
+- name: Mojito Deep-Sea Mining Test
+- mission_type: Mining Technology Test
+- organization: The Metals Company (TMC) / Allseas
+- year: 2022
+- location: CCZ, Pacific (4,300m depth)
+- discoveries: Demonstrated nodule collection from seafloor; measured sediment plume behavior
+- description: The first integrated pilot test of polymetallic nodule collection in the CCZ. Allseas' Hidden Gem vessel collected 3,000+ tonnes of nodules from 4,300m depth. Environmental monitoring measured sediment plume extent and resettlement. Results inform ISA regulatory decisions.
+
+### Schmidt Ocean Institute 2025-2026 Expeditions
+
+- name: Schmidt Ocean Institute 2025-2026 Expeditions
+- mission_type: Scientific
+- organization: Schmidt Ocean Institute
+- year: 2025-2026
+- location: South Atlantic, Southeast Pacific, Indian Ocean
+- discoveries: 5 new hydrothermal vent fields; numerous new species; seafloor mapping
+- description: Schmidt Ocean Institute R/V Falkor (too) expeditions in 2025-2026 have discovered 5 new hydrothermal vent fields and numerous new species. ROV SuBastian live-streams dives globally. The expeditions focus on unexplored regions of the South Atlantic and Indian Ocean.
+
+### Seabed 2030 Progress Update
+
+- name: Seabed 2030 Progress Update
+- mission_type: Mapping
+- organization: GEBCO / Nippon Foundation
+- year: 2025-2026
+- location: Global ocean
+- discoveries: 28.7% of ocean floor mapped by 2025; new satellite altimetry revealing seamounts
+- description: Seabed 2030 reached 28.7% mapping coverage by 2025, up from 24.9% in 2023. New satellite altimetry data from SWOT and CryoSat missions is revealing thousands of previously unknown seamounts. Autonomous surface vehicles are accelerating mapping in remote areas.
+
+### ISA Deep-Sea Mining Regulations 2025-2026
+
+- name: ISA Deep-Sea Mining Regulations 2025-2026
+- mission_type: Regulatory
+- organization: International Seabed Authority (ISA)
+- year: 2025-2026
+- location: Global (regulatory)
+- discoveries: Draft exploitation regulations under negotiation; 2025 deadline for framework
+- description: The ISA is negotiating regulations for commercial deep-sea mining in international waters. The 2025 deadline for adopting an exploitation code has been extended. Key issues include environmental thresholds, royalty rates, and inspection mechanisms. 31 exploration contracts have been issued.
+
+### China COMRA Deep-Sea Exploration
+
+- name: China COMRA Deep-Sea Exploration
+- mission_type: Scientific + Resource
+- organization: China Ocean Mineral Resources R&D Association (COMRA)
+- year: 2001-present
+- location: CCZ (Pacific), Indian Ocean ridges, South China Sea
+- discoveries: Multiple new hydrothermal fields; polymetallic nodule survey; cobalt crust assessment
+- description: China COMRA has conducted extensive deep-sea exploration under ISA contracts. Activities include polymetallic nodule surveys in the CCZ, hydrothermal vent exploration on Indian Ocean ridges, and cobalt-rich crust assessment on Pacific seamounts. China has the largest ISA exploration area.
+
+### NOAA Ocean Exploration 2025-2026
+
+- name: NOAA Ocean Exploration 2025-2026
+- mission_type: Exploration
+- organization: NOAA Ocean Exploration
+- year: 2025-2026
+- location: US EEZ, Pacific and Atlantic deep waters
+- discoveries: New species, habitats, and geological features in unexplored US waters
+- description: NOAA Ocean Exploration continues systematic exploration of US deep waters using Okeanos Explorer and partner vessels. 2025-2026 expeditions focus on unexplored Pacific and Atlantic deep waters. ROV Deep Discoverer provides live telepresence to scientists worldwide.
+
+### Ocean Decade (UN 2021-2030)
+
+- name: Ocean Decade (UN 2021-2030)
+- mission_type: International coordination
+- organization: UNESCO IOC
+- year: 2021-2030
+- location: Global
+- discoveries: Coordinating 1,000+ ocean science programs; accelerating deep-sea knowledge
+- description: The UN Decade of Ocean Science for Sustainable Development (2021-2030) coordinates over 1,000 ocean science programs globally. Deep-sea exploration and mapping are key priorities. The program aims to deliver the science needed for sustainable ocean management by 2030.
+
+### SWOT Satellite Seafloor Mapping Mission
+
+- name: SWOT Satellite Seafloor Mapping Mission
+- type: satellite_ocean_mapping
+- operator: NASA/CNES/CSA/UKSA
+- year: 2023-2026 (ongoing)
+- capabilities: Maps global ocean floor from space using sea surface height data; reveals individual abyssal hills; produces vertical gravity gradient maps of seafloor features
+- description: NASA的SWOT（Surface Water and Ocean Topography）卫星利用海面高度数据从太空绘制全球海底地图。仅用一年数据就制作出了可显示单个深海丘陵的重力图，精度远超以往。Scripps海洋学研究所称其为海底测绘的突破性工具。2026年最新成果展示了印度洋等区域的海底特征精细地图。
+- significance: Revolutionary seafloor mapping from space; reveals previously unknown seafloor features with unprecedented resolution
+- source: NASA / Scripps Institution of Oceanography 2025-2026
+
+## underwater_tech
+
+### Autonomous Underwater Glider Network
+
+- name: Autonomous Underwater Glider Network
+- type: Monitoring
+- depth_rating: 1,000-6,000 m
+- description: Long-endurance buoyancy-driven gliders that profile the water column for months, collecting oceanographic data
+- organization: Multiple (Teledyne Webb, Slocum, Seaglider, Spray)
+- status: Operational globally; Argo program deploys 4,000+ floats
+- breakthrough: Biogeochemical Argo floats now measure pH, oxygen, nitrate, chlorophyll, and irradiance alongside temperature and salinity
+
+### Seafloor Observatory Networks
+
+- name: Seafloor Observatory Networks
+- type: Monitoring
+- depth_rating: Up to 6,000 m
+- description: Cabled seafloor observatories providing real-time power and data to ocean bottom instruments
+- organization: Ocean Networks Canada (NEPTUNE/VENUS), OOI (USA), DONET (Japan), EMSO (Europe)
+- status: Operational; expanding globally
+- breakthrough: ONC's NEPTUNE observatory has provided 15+ years of continuous deep-sea monitoring data
+
+### Swarm AUV Systems
+
+- name: Swarm AUV Systems
+- type: Exploration
+- depth_rating: 3,000-6,000 m
+- description: Coordinated fleets of autonomous underwater vehicles that survey large areas collaboratively
+- organization: Ocean Infinity, Fugro, Kongsberg
+- status: Operational for commercial surveys; expanding to scientific use
+- breakthrough: Ocean Infinity's fleet of HUGIN AUVs can survey 1,200+ km² per day autonomously
+
+### Deep-Sea DNA Sequencing (eDNA)
+
+- name: Deep-Sea DNA Sequencing (eDNA)
+- type: Biological Survey
+- depth_rating: Any depth (water sampling)
+- description: Environmental DNA sampling and sequencing to detect and identify deep-sea organisms from water samples
+- organization: NOAA, MBARI, University of Copenhagen
+- status: Rapidly advancing; used in CCZ biodiversity surveys
+- breakthrough: eDNA detected 90% more species than visual surveys in CCZ nodule exploration areas
+
+### Pressure-Compensated Electronics
+
+- name: Pressure-Compensated Electronics
+- type: Engineering
+- depth_rating: 11,000 m
+- description: Electronics and batteries that operate at full ocean depth without pressure housings, using oil-filled compensation
+- organization: Triton Submarines, WHOI, Deepsea Power & Light
+- status: Mature technology; used in most deep-rated vehicles
+- breakthrough: Modern pressure-compensated lithium batteries enable full-ocean-depth operation without heavy pressure housings
+
+### Acoustic Communication Networks
+
+- name: Acoustic Communication Networks
+- type: Communication
+- depth_rating: 11,000 m
+- description: Underwater acoustic modems and networks for data transmission from deep-sea instruments to surface
+- organization: Teledyne Benthos, Evologics, WHOI Micro-Modem
+- status: Operational; bandwidth limited to ~10-50 kbps at range
+- breakthrough: WHOI micro-modem enables reliable data transmission from 11,000m depth at 5-10 kbps
+
+### Autonomous Surface Vehicles (ASV) for Ocean Mapping
+
+- name: Autonomous Surface Vehicles (ASV) for Ocean Mapping
+- type: Mapping
+- depth_rating: Surface (mapping to 11,000m seafloor)
+- description: Uncrewed surface vessels equipped with multibeam sonar for autonomous seafloor mapping
+- organization: Saildrone, Ocean Infinity, Fugro
+- status: Operational; Saildrone Surveyor mapped 45,000+ km² of Pacific seafloor
+- breakthrough: Saildrone Surveyor completed first uncrewed mapping of Aleutian Islands in 2023
+
+### AI-Powered Autonomous Survey
+
+- name: AI-Powered Autonomous Survey
+- type: Exploration
+- depth_rating: 6,000 m
+- description: Machine learning algorithms enabling AUVs to autonomously identify targets of interest (vents, species, minerals) and adapt survey patterns in real-time
+- organization: MBARI, WHOI, Ocean Infinity
+- status: Operational; rapidly advancing
+- breakthrough: MBARI AI system can identify hydrothermal vent indicators in real-time, triggering autonomous sampling without human intervention
+
+### Soft Robotics for Deep-Sea Sampling
+
+- name: Soft Robotics for Deep-Sea Sampling
+- type: Sampling
+- depth_rating: 11,000 m
+- description: Soft robotic manipulators that can gently handle delicate deep-sea organisms without damage, inspired by biological structures
+- organization: Harvard Wyss Institute, MBARI
+- status: Laboratory and field testing
+- breakthrough: Soft robotic fingers can handle jellyfish and other fragile organisms without damage; enables study of previously unsampleable deep-sea life
+
+### Autonomous Underwater Construction
+
+- name: Autonomous Underwater Construction
+- type: Construction
+- depth_rating: 3,000 m
+- description: Robotic systems for autonomous underwater construction of infrastructure including pipelines, foundations, and habitats
+- organization: Various (Saipem, Subsea 7)
+- status: Early commercial deployment
+- breakthrough: Autonomous underwater welding and assembly demonstrated; reduces need for human divers in deep construction
+
+### Deep-Sea Carbon Capture and Storage Monitoring
+
+- name: Deep-Sea Carbon Capture and Storage Monitoring
+- type: Environmental
+- depth_rating: 3,000 m
+- description: Monitoring systems for sub-seafloor CO₂ storage sites, detecting leaks and verifying long-term containment
+- organization: SINTEF, IEA, various energy companies
+- status: Operational at pilot sites
+- breakthrough: Fiber optic sensing and chemical monitoring can detect CO₂ leaks at ppm levels across large storage areas
+
+### Underwater Wireless Power Transfer
+
+- name: Underwater Wireless Power Transfer
+- type: Power
+- depth_rating: 500 m
+- description: Wireless power transfer to underwater vehicles and sensors using magnetic resonance coupling, eliminating cable connections
+- organization: Various research groups
+- status: Laboratory and limited field testing
+- breakthrough: Magnetic resonance coupling can transfer 100+ W across 10cm water gap; enables autonomous docking and charging of AUVs
+
+### AI-Driven Autonomous Underwater Intervention System
+
+- name: AI-Driven Autonomous Underwater Intervention System
+- type: AI_underwater_system
+- developer: Multiple research groups
+- year: 2026
+- capabilities: AI-driven AUV/ROV cooperative operations; three cooperative modes pairing manned submersibles with AUVs and USVs; scalable deep-sea operations
+- description: 2026年水下干预机器人技术取得重大进展。AI驱动的自主水下系统实现了载人潜水器与AUV、USV的三种协同作业模式，使深海作业可规模化扩展。完全自主的水下机器人系统正从概念走向现实，尽管仍面临通信延迟、能源限制等挑战。
+- source: PatSnap Technology Landscape 2026 / ScienceDirect 2025
+
+## Related Knowledge Bases
+
+- NuclearDB (https://nuclear.genetech.tools): Deep sea fusion fuel (deuterium)
+- RobotParts (https://robot.genetech.tools): Underwater robotics
+- ExoDB (https://exo.genetech.tools): Extremophile life detection

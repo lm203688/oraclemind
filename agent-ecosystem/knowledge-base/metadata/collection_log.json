@@ -1,0 +1,19 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-05-30T13:39:38.386Z",
+      "action": "deep_mine",
+      "source": "web_search + manual_curation",
+      "categories": [
+        "mcp_servers",
+        "sdks",
+        "protocols",
+        "memory_systems",
+        "vector_dbs"
+      ],
+      "entities_added": 88,
+      "notes": "MCP 2026-07-28 RC, x402/AP2/ACP支付协议, Hermes/OpenClaw/DeerFlow框架, Mem0/Zep/LangMem/Hindsight记忆系统, Vector DB 2026更新"
+    }
+  ],
+  "last_updated": "2026-05-30T13:39:38.386Z"
+}

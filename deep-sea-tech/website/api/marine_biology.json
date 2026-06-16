@@ -1,0 +1,152 @@
+[
+  {
+    "id": "MBIO-001",
+    "name": "Giant Tube Worm (Riftia pachyptila)",
+    "species": "Riftia pachyptila",
+    "depth_range": "2,000-3,000 m",
+    "habitat": "Hydrothermal vent chimneys, East Pacific Rise",
+    "discovery_year": "1977",
+    "unique_features": "No digestive system; relies entirely on endosymbiotic chemosynthetic bacteria for nutrition; hemoglobin binds both O₂ and H₂S",
+    "description": "The iconic organism of deep-sea hydrothermal vents. Riftia grows up to 2.4m long and forms dense clusters around black smokers. Its symbiotic bacteria convert hydrogen sulfide into organic compounds, enabling life independent of sunlight. This chemosynthetic ecosystem revolutionized our understanding of life's energy sources."
+  },
+  {
+    "id": "MBIO-002",
+    "name": "Yeti Crab (Kiwa hirsuta)",
+    "species": "Kiwa hirsuta",
+    "depth_range": "2,200 m",
+    "habitat": "Hydrothermal vents, Pacific-Antarctic Ridge",
+    "discovery_year": "2005",
+    "unique_features": "Claws covered in hair-like setae hosting chemosynthetic bacteria; blind; may 'farm' bacteria for food",
+    "description": "Discovered in 2005 at a Pacific hydrothermal vent, the yeti crab's hairy claws cultivate chemosynthetic bacteria. A related species, Kiwa puravida, was observed waving its claws over vent fluids to feed its bacterial 'crop' - a remarkable example of deep-sea farming behavior."
+  },
+  {
+    "id": "MBIO-003",
+    "name": "Hadal Snailfish (Pseudoliparis swirei)",
+    "species": "Pseudoliparis swirei",
+    "depth_range": "6,000-8,200 m",
+    "habitat": "Mariana Trench hadal zone",
+    "discovery_year": "2014",
+    "unique_features": "Deepest-living fish; transparent body; no swim bladder; specialized cartilage; TMAO adaptation",
+    "description": "The deepest-living fish ever recorded, found at 8,178m in the Mariana Trench. Its body is adapted to extreme pressure through TMAO (trimethylamine N-oxide) accumulation that stabilizes proteins. In 2023, a related species (P. belyaevi) was filmed at 8,336m by the Fendouzhe submersible."
+  },
+  {
+    "id": "MBIO-004",
+    "name": "Giant Isopod (Bathynomus giganteus)",
+    "species": "Bathynomus giganteus",
+    "depth_range": "300-2,500 m",
+    "habitat": "Gulf of Mexico, Caribbean, Atlantic abyssal plains",
+    "discovery_year": "1879",
+    "unique_features": "Up to 50cm long; scavenger; can survive 5+ years without food; copper-based blood",
+    "description": "One of the largest crustaceans, reaching 50cm. Giant isopods are deep-sea scavengers that feed on whale falls and other carrion. Their extreme fasting ability and slow metabolism are adaptations to the food-scarce deep ocean. New species continue to be discovered, including B. yucatanensis (2022)."
+  },
+  {
+    "id": "MBIO-005",
+    "name": "Vampire Squid (Vampyroteuthis infernalis)",
+    "species": "Vampyroteuthis infernalis",
+    "depth_range": "600-1,200 m (oxygen minimum zone)",
+    "habitat": "Global tropical and temperate oceans, oxygen minimum zones",
+    "discovery_year": "1903",
+    "unique_features": "Not a true squid or octopus; lives in oxygen minimum zones (3% saturation); bioluminescent; detritivore",
+    "description": "A unique cephalopod that thrives in oxygen minimum zones where few animals survive. It uses bioluminescent displays for defense and feeds on 'marine snow' (detritus) rather than hunting. Its low metabolic rate and specialized hemocyanin allow survival in near-anoxic conditions."
+  },
+  {
+    "id": "MBIO-006",
+    "name": "Dumbo Octopus (Grimpoteuthis spp.)",
+    "species": "Grimpoteuthis spp.",
+    "depth_range": "1,000-7,000 m",
+    "habitat": "Global deep ocean, seamounts, hydrothermal vents",
+    "discovery_year": "1884 (genus)",
+    "unique_features": "Ear-like fins; deepest-living octopus; swallows prey whole; no ink sac",
+    "description": "Named for their ear-like fins, dumbo octopuses are among the deepest-living cephalopods. They lack ink sacs (unnecessary in the dark deep sea) and hover above the seafloor using their fins. New species continue to be discovered as deep-sea exploration expands."
+  },
+  {
+    "id": "MBIO-007",
+    "name": "Barrel Sponge (Xestospongia muta)",
+    "species": "Xestospongia muta",
+    "depth_range": "10-120 m (deep specimens at 300+ m)",
+    "habitat": "Caribbean, Florida, Bahamas deep reefs",
+    "discovery_year": "Known historically",
+    "unique_features": "Can live 2,300+ years; filters 50,000x its volume in water daily; hosts diverse microbial communities",
+    "description": "The 'redwood of the reef,' barrel sponges can live for millennia. Deep specimens host unique microbial communities that produce bioactive compounds with pharmaceutical potential. Their longevity makes them valuable for studying deep-sea environmental change."
+  },
+  {
+    "id": "MBIO-008",
+    "name": "Zombie Worm (Osedax spp.)",
+    "species": "Osedax spp.",
+    "depth_range": "30-4,000 m",
+    "habitat": "Whale falls worldwide",
+    "discovery_year": "2002",
+    "unique_features": "No mouth or digestive system; uses symbiotic bacteria to dissolve and absorb bone; root-like structures penetrate bone",
+    "description": "Osedax worms colonize whale bones on the deep seafloor. Females have root-like structures that penetrate bone and host symbiotic bacteria that break down collagen and lipids. Males are microscopic and live inside females. Over 30 species discovered since 2002."
+  },
+  {
+    "id": "MBIO-009",
+    "name": "Giant Larvacean (Bathochordaeus charon)",
+    "species": "Bathochordaeus charon",
+    "depth_range": "100-4,000 m",
+    "habitat": "Midwater, global deep ocean",
+    "discovery_year": "2017 (giant species)",
+    "unique_features": "Builds meter-wide mucus houses; filters particles from water; houses discarded daily and sink as carbon flux",
+    "description": "Giant larvaceans construct elaborate mucus filtering structures up to 1m across. These houses filter particles from seawater and are discarded daily, sinking rapidly and carrying significant carbon to the deep seafloor. They are a major component of the biological carbon pump."
+  },
+  {
+    "id": "MBIO-010",
+    "name": "Scaly-Foot Snail (Chrysomallon squamiferum)",
+    "species": "Chrysomallon squamiferum",
+    "depth_range": "2,400-2,800 m",
+    "habitat": "Indian Ocean hydrothermal vents (Kairei, Longqi)",
+    "discovery_year": "2001",
+    "unique_features": "Iron-sulfide armored shell and foot; only known animal using iron sulfide in skeleton; vent-endemic",
+    "description": "The scaly-foot snail is the only known animal that incorporates iron sulfide (pyrite and greigite) into its skeleton. Its foot is covered in iron-plated scales. Found at Indian Ocean hydrothermal vents, it is listed as endangered due to potential deep-sea mining at vent sites."
+  },
+  {
+    "id": "MBIO-011",
+    "name": "Honeycomb Glass Sponge (Venus Flower Basket)",
+    "species": "Euplectella aspergillum",
+    "depth_range": "100-1,000 m",
+    "habitat": "Deep seafloor, Indo-Pacific",
+    "discovery_year": "Known historically",
+    "unique_features": "Silica lattice structure with remarkable mechanical properties; houses mating pair of shrimp; bio-inspired engineering",
+    "description": "The Venus flower basket sponge builds a lattice skeleton of silica (glass) with exceptional mechanical properties. Its structure has inspired engineering designs for stronger, lighter materials. The sponge houses a mating pair of shrimp that enter as larvae and become trapped."
+  },
+  {
+    "id": "MBIO-012",
+    "name": "Bigfin Squid (Magnapinna spp.)",
+    "species": "Magnapinna spp.",
+    "depth_range": "1,000-4,700 m",
+    "habitat": "Deep ocean midwater, global",
+    "discovery_year": "1998 (first visual)",
+    "unique_features": "Tentacles can exceed 8m; elbow-like bends; unique posture; rarely observed",
+    "description": "Bigfin squid are among the most mysterious deep-sea animals. Their tentacles can exceed 8m in length with distinctive elbow-like bends. They are rarely observed and poorly understood. ROV encounters have increased in recent years, revealing their unique vertical fishing posture."
+  },
+  {
+    "id": "MBIO-013",
+    "name": "Giant Amphipod (Hirondellea gigas)",
+    "species": "Hirondellea gigas",
+    "depth_range": "6,000-11,000 m",
+    "habitat": "Hadal trenches (Mariana, Tonga, Izu-Ogasawara)",
+    "discovery_year": "1899",
+    "unique_features": "Deepest-living scavenger; digests wood with cellulase; dominates hadal baited camera deployments",
+    "description": "Hirondellea gigas is the dominant scavenger in ocean trenches, rapidly consuming food falls at hadal depths. It produces cellulase enzymes allowing it to digest wood that sinks to trench floors. Its abundance makes it a key species for understanding hadal food webs."
+  },
+  {
+    "id": "MBIO-014",
+    "name": "Christmas Tree Worm (Spirobranchus giganteus)",
+    "species": "Spirobranchus giganteus",
+    "depth_range": "3-30 m (deep variants at 100+ m)",
+    "habitat": "Tropical coral reefs; deep variants on seamounts",
+    "discovery_year": "Known historically",
+    "unique_features": "Spiral feeding appendages; calcareous tube in coral; sensitive to light and vibration",
+    "description": "While common in shallow reefs, deep variants of Christmas tree worms are found on seamounts and deep coral banks. Their beautiful spiral feeding structures are iconic. Deep variants may represent undescribed species with pharmaceutical potential."
+  },
+  {
+    "id": "MBIO-015",
+    "name": "Abyssal Sea Cucumber (Scotoplanes globosa)",
+    "species": "Scotoplanes globosa",
+    "depth_range": "1,000-5,000 m",
+    "habitat": "Abyssal plains, global",
+    "discovery_year": "Known historically",
+    "unique_features": "Sea pig; walks on tube feet; forms herds of hundreds; deposit feeder; indicator of abyssal health",
+    "description": "Sea pigs (Scotoplanes) are among the most abundant large animals on abyssal plains. They walk on elongated tube feet and form herds of hundreds of individuals. As deposit feeders, they process organic matter in deep-sea sediments and are indicators of abyssal ecosystem health."
+  }
+]

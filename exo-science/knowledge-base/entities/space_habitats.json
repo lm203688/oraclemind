@@ -1,0 +1,101 @@
+[
+  {
+    "id": "SHAB-001",
+    "name": "ISS (International Space Station)",
+    "type": "Orbital habitat",
+    "location": "LEO (400 km altitude)",
+    "capacity": "6 crew continuous",
+    "description": "Continuously inhabited since 2000. Demonstrates long-duration life support, human health in microgravity, and international cooperation. ISS is the baseline for all space habitat design.",
+    "status": "Operational; planned deorbit 2030-2031"
+  },
+  {
+    "id": "SHAB-002",
+    "name": "Tiangong Space Station",
+    "type": "Orbital habitat",
+    "location": "LEO (340-450 km)",
+    "capacity": "3-6 crew",
+    "description": "China's modular space station, completed in 2022. Features the Wentian and Mengtian lab modules. Demonstrates independent long-duration spaceflight capability and hosts international experiments.",
+    "status": "Operational; planned 10+ year lifetime"
+  },
+  {
+    "id": "SHAB-003",
+    "name": "Lunar Gateway",
+    "type": "Cislunar orbital habitat",
+    "location": "Near-rectilinear halo orbit (NRHO) around Moon",
+    "capacity": "4 crew (visiting)",
+    "description": "NASA-led international space station in lunar orbit, serving as a staging point for Artemis lunar landings and future Mars missions. Modules: PPE, HALO, I-Hab, Esprit.",
+    "status": "Under development; first modules launching 2025-2026"
+  },
+  {
+    "id": "SHAB-004",
+    "name": "Artemis Base Camp",
+    "type": "Lunar surface habitat",
+    "location": "Lunar South Pole (Shackleton crater rim area)",
+    "capacity": "4 crew (initially)",
+    "description": "NASA's planned permanent lunar base, starting with pressurized rovers and evolving to a fixed habitat. Leverages local water ice for life support and propellant. Foundation for Mars mission architecture.",
+    "status": "Planning; first habitation targeted for late 2020s"
+  },
+  {
+    "id": "SHAB-005",
+    "name": "Mars Base Camp (Lockheed Martin concept)",
+    "type": "Mars orbital habitat",
+    "location": "Mars orbit",
+    "capacity": "6 crew",
+    "description": "A crewed Mars orbital station from which astronauts would remotely operate surface rovers and deploy landers. Avoids the complexity of landing humans on Mars initially while enabling detailed exploration.",
+    "status": "Concept; not yet funded"
+  },
+  {
+    "id": "SHAB-006",
+    "name": "O'Neill Cylinder",
+    "type": "Free-space settlement concept",
+    "location": "Earth-Moon L5 (proposed)",
+    "capacity": "Millions",
+    "description": "Gerald K. O'Neill's 1976 concept for a rotating cylinder 32 km long and 8 km in diameter, providing Earth-normal gravity through rotation. Would be built from lunar and asteroid materials. The ultimate vision for space settlement.",
+    "status": "Theoretical concept; far future"
+  },
+  {
+    "id": "SHAB-007",
+    "name": "Axiom Station",
+    "type": "Commercial orbital habitat",
+    "location": "LEO (attached to ISS then independent)",
+    "capacity": "4-8 crew",
+    "description": "Axiom Space commercial station modules initially attached to ISS, detaching as independent station post-ISS.",
+    "status": "First module 2026-2027"
+  },
+  {
+    "id": "SHAB-008",
+    "name": "Starlab",
+    "type": "Commercial orbital habitat",
+    "location": "LEO",
+    "capacity": "4 crew",
+    "description": "Voyager Space + Airbus commercial station with inflatable habitat module. Targeting 2028.",
+    "status": "NASA CLD Phase 1 award"
+  },
+  {
+    "id": "SHAB-009",
+    "name": "Orbital Reef",
+    "type": "Commercial orbital habitat",
+    "location": "LEO",
+    "capacity": "10 crew",
+    "description": "Blue Origin expandable commercial station for research, manufacturing, and tourism.",
+    "status": "NASA CLD Phase 1 award"
+  },
+  {
+    "id": "SHAB-010",
+    "name": "Lunar Lava Tube Habitats",
+    "type": "Lunar subsurface concept",
+    "location": "Lunar lava tubes",
+    "capacity": "Large settlements possible",
+    "description": "Natural lava tubes as radiation-shielded habitats. GRAIL data suggests tubes hundreds of meters wide.",
+    "status": "Concept; surveying candidates"
+  },
+  {
+    "id": "SHAB-011",
+    "name": "Mars Ice House",
+    "type": "Mars surface concept",
+    "location": "Mars mid-latitudes",
+    "capacity": "4-6 crew",
+    "description": "3D-printed ice shell around inflatable habitat using subsurface ice for radiation shielding. NASA 3D-Printed Habitat Challenge winner.",
+    "status": "Concept"
+  }
+]

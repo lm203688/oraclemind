@@ -1,0 +1,40 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "RobotParts DB",
+    "description": "Robot parts and protocols database covering actuators, chips, interfaces, LLMs, and communication protocols",
+    "version": "1.0.0",
+    "contact": {
+      "email": "61960005@qq.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://robot.genetech.tools"
+    }
+  ],
+  "paths": {
+    "/api/data.json": {
+      "get": {
+        "summary": "Get all RobotParts DB data",
+        "description": "Returns complete structured data for 机器人配件协议库",
+        "responses": {
+          "200": {
+            "description": "Structured knowledge base data"
+          }
+        }
+      }
+    },
+    "/api/entities.json": {
+      "get": {
+        "summary": "Get all entities",
+        "description": "Returns flat list of all entities across categories",
+        "responses": {
+          "200": {
+            "description": "Entity list"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1324 @@
+[
+  {
+    "id": "QPU-001",
+    "name": "IBM Heron",
+    "manufacturer": "IBM",
+    "qubits": "133 (single chip); modular architecture supports multi-chip scaling",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "99.5% 2-qubit gate; 99.9% single-qubit",
+    "status": "Operational (2023); deployed via IBM Quantum Network",
+    "description": "IBM's flagship quantum processor featuring a modular architecture with classical communication between chips. Heron achieves 99.5% two-qubit gate fidelity, a significant improvement over the previous Eagle processor. IBM plans to connect multiple Heron chips to build systems with 100,000+ qubits by 2033 via the 'Starling' and 'Blue Jay' systems."
+  },
+  {
+    "id": "QPU-002",
+    "name": "Google Willow",
+    "manufacturer": "Google Quantum AI",
+    "qubits": "105",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "99.7% 2-qubit gate; below quantum error correction threshold",
+    "status": "Operational (Dec 2024); demonstrated below-threshold error correction",
+    "description": "Willow achieved a historic milestone: quantum error correction below the critical threshold, where adding more qubits reduces errors rather than increasing them. This is the first demonstration of exponential error suppression. Willow also completed a random circuit sampling benchmark in 5 minutes that would take the world's fastest supercomputer 10 septillion years."
+  },
+  {
+    "id": "QPU-003",
+    "name": "Quantinuum H2",
+    "manufacturer": "Quantinuum",
+    "qubits": "32 (trapped ions); all-to-all connectivity",
+    "technology": "Trapped ion (ytterbium-171)",
+    "gate_fidelity": "99.8% 2-qubit gate; 99.99% single-qubit",
+    "status": "Operational (2023); highest-fidelity quantum computer; Quantum Volume 2²³ = 8,388,608 (2025 world record)",
+    "description": "Quantinuum's H2 holds the record for highest gate fidelities and Quantum Volume of any quantum computer. In 2025, H2 achieved a Quantum Volume of 2²³ = 8,388,608, the highest ever recorded. Trapped ions offer all-to-all connectivity (any qubit can directly interact with any other), eliminating the need for SWAP gates. The H2 has demonstrated 20+ logical qubits with error correction. Quantinuum is building the Helios system with 96 qubits."
+  },
+  {
+    "id": "QPU-004",
+    "name": "Atom Computing (NVIDIA Partner)",
+    "manufacturer": "Atom Computing",
+    "qubits": "1,225",
+    "technology": "Neutral atom (strontium-87); optical tweezer array",
+    "gate_fidelity": "99.5% 2-qubit gate; 99.9% single-qubit",
+    "status": "Operational (2024); largest qubit count for gate-based system",
+    "description": "Atom Computing built the first gate-based quantum computer exceeding 1,000 qubits using neutral atoms trapped in optical tweezer arrays. Strontium-87 atoms are arranged in a 2D grid, with Rydberg interactions enabling entangling gates. The system offers native all-to-all connectivity through atom rearrangement. NVIDIA partnership announced for hybrid quantum-classical computing."
+  },
+  {
+    "id": "QPU-005",
+    "name": "Microsoft Majorana 1",
+    "manufacturer": "Microsoft Quantum",
+    "qubits": "8 (topological); architecture supports million-qubit scaling",
+    "technology": "Topological qubit (Majorana zero modes in indium arsenide/aluminum nanowires)",
+    "gate_fidelity": "Not yet benchmarked; topological protection inherently reduces errors",
+    "status": "Announced Feb 2025; first topological qubit demonstrated",
+    "description": "Microsoft announced the world's first topological qubit in February 2025, based on Majorana zero modes in semiconductor-superconductor nanowires. Topological qubits store information non-locally, making them inherently resistant to local noise. If scaled, this approach could dramatically reduce the overhead needed for error correction. Microsoft aims for a million-qubit topological quantum computer."
+  },
+  {
+    "id": "QPU-006",
+    "name": "IonQ Forte Enterprise",
+    "manufacturer": "IonQ",
+    "qubits": "36 (algorithmic qubits)",
+    "technology": "Trapped ion (ytterbium-171)",
+    "gate_fidelity": "99.6% 2-qubit gate",
+    "status": "Operational (2024); available on major cloud platforms",
+    "description": "IonQ's Forte Enterprise is the first rack-mounted trapped-ion quantum computer designed for on-premises deployment at enterprise data centers. IonQ uses 'algorithmic qubits' metric (accounting for error correction overhead), claiming 36 AQ = roughly equivalent to 70+ physical qubits. Available on AWS Braket, Azure Quantum, and Google Cloud."
+  },
+  {
+    "id": "QPU-007",
+    "name": "QuEra Aquila / Gemini",
+    "manufacturer": "QuEra Computing",
+    "qubits": "256 (neutral atom); Gemini: 2 logical qubits",
+    "technology": "Neutral atom (rubidium-87); programmable quantum simulator",
+    "gate_fidelity": "99.5% 2-qubit gate; analog mode with programmable interactions",
+    "status": "Operational on AWS Braket; Gemini logical qubit system announced 2024; full-stack algorithm co-design program launched Nov 2025",
+    "description": "QuEra operates the largest publicly accessible quantum computer (256-qubit Aquila on AWS Braket). Uses neutral atoms in optical tweezers with programmable interactions. In 2024, QuEra demonstrated 2 logical qubits with error correction and announced Gemini, a hybrid analog-digital system. In November 2025, QuEra launched a full-stack quantum algorithm co-design program to optimize hardware, software, and applications. Backed by Google, Amazon, and SoftBank."
+  },
+  {
+    "id": "QPU-008",
+    "name": "PsiQuantum Omega",
+    "manufacturer": "PsiQuantum",
+    "qubits": "Targeting 1 million+ (photonic); not yet disclosed",
+    "technology": "Photonic (silicon photonics); fusion-based measurement",
+    "gate_fidelity": "N/A - measurement-based quantum computing",
+    "status": "Building utility-scale quantum computer in Brisbane, Australia; $940M investment",
+    "description": "PsiQuantum is building a million-qubit photonic quantum computer using silicon photonics manufactured in existing semiconductor fabs. Their approach uses fusion-based measurement (no need for deterministic gates). Advantages: room-temperature operation, compatibility with semiconductor manufacturing, and natural networking. Queensland government invested $940M for a Brisbane facility."
+  },
+  {
+    "id": "QPU-009",
+    "name": "Caltech 6,100-Qubit Neutral Atom Array",
+    "manufacturer": "Caltech (Manuel Endres group)",
+    "qubits": "6,100 (neutral atom array; record as of 2025)",
+    "technology": "Neutral atom (optical tweezer array)",
+    "gate_fidelity": "Research system; not yet gate-based computing",
+    "status": "Demonstrated 2025; largest qubit array ever assembled",
+    "description": "Caltech physicists created the largest qubit array ever assembled: 6,100 neutral-atom qubits trapped in optical tweezers. This shatters the previous record and demonstrates the scaling potential of neutral-atom platforms. While not yet a full gate-based quantum computer, this array proves that neutral-atom systems can scale far beyond other approaches. The system is a major step toward large-scale quantum simulation and computing."
+  },
+  {
+    "id": "QPU-010",
+    "name": "Zuchongzhi 3.0",
+    "manufacturer": "University of Science and Technology of China (USTC)",
+    "qubits": "105",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "99.5% 2-qubit gate",
+    "status": "Operational (2025); demonstrated quantum computational advantage benchmark",
+    "description": "USTC's Zuchongzhi 3.0 is China's flagship superconducting quantum processor with 105 qubits. Published in Physical Review Letters (2025), it established a new benchmark in quantum computational advantage. The processor demonstrates China's competitive position in superconducting quantum computing, rivaling Google's Willow in qubit count and performance."
+  },
+  {
+    "id": "QPU-011",
+    "name": "Princeton Long-Coherence Qubit",
+    "manufacturer": "Princeton University",
+    "qubits": "48 (demonstration system)",
+    "technology": "Silicon spin qubit (new design with record coherence)",
+    "gate_fidelity": "1.68 ms coherence time; 15x longer than conventional qubits",
+    "status": "Published in Nature (Nov 2025); research breakthrough",
+    "description": "Princeton engineers developed a quantum chip with record-breaking qubit lifespan: coherence rates as high as 1.68 milliseconds on systems as large as 48 qubits. This is 15 times longer than qubits used by Google and IBM, marking an all-time best. Published in Nature (Nov 2025), this breakthrough could dramatically reduce error correction overhead and accelerate practical quantum computing."
+  },
+  {
+    "id": "QPU-012",
+    "name": "IBM Nighthawk (Roadmap)",
+    "manufacturer": "IBM",
+    "qubits": "Progressive scaling 2025-2028",
+    "technology": "Superconducting (modular multi-chip)",
+    "gate_fidelity": "Target: fault-tolerant operations by 2028-2029",
+    "status": "Roadmap announced 2025; successive releases planned 2025-2028",
+    "description": "IBM's Nighthawk is the next-generation processor family in IBM's fault-tolerant quantum computing roadmap. From 2025 to 2028, successive Nighthawk releases will enable exploration of increasingly complex quantum circuits. IBM laid out a clear, rigorous framework for realizing a large-scale, fault-tolerant quantum computer by 2029, combining hardware advances with software stack development."
+  },
+  {
+    "id": "QPU-013",
+    "name": "Rigetti Modular System",
+    "manufacturer": "Rigetti Computing",
+    "qubits": "36-qubit modular system (mid-2025); 100+ qubit system planned by end of 2025",
+    "technology": "Superconducting (modular chiplet architecture)",
+    "gate_fidelity": "Competitive with industry standards",
+    "status": "36-qubit system released mid-2025; 100+ qubit planned",
+    "description": "Rigetti is developing a modular chiplet architecture for superconducting quantum processors. The 36-qubit modular system was released in mid-2025, with a 100+ qubit system expected by end of year. Rigetti's approach focuses on scalable multi-chip integration, connecting smaller chiplets to build larger processors without sacrificing coherence."
+  },
+  {
+    "id": "QPU-014",
+    "name": "Xanadu Photonic Processor",
+    "manufacturer": "Xanadu",
+    "qubits": "Photonic (measurement-based); scaling via Borealis architecture",
+    "technology": "Photonic (squeezed light); room-temperature operation",
+    "gate_fidelity": "N/A - Gaussian boson sampling",
+    "status": "Nasdaq/TSX debut Q1 2026; 304.3% revenue increase to $2.83M",
+    "description": "Xanadu is a Canadian photonic quantum computing company that went public on Nasdaq/TSX in Q1 2026, reporting a 304.3% revenue increase to $2.83 million. Their Borealis system demonstrated quantum computational advantage using Gaussian boson sampling. Photonic approach offers room-temperature operation and natural networking capability. Xanadu provides cloud access through their Xanadu Cloud platform."
+  },
+  {
+    "id": "QPU-015",
+    "name": "Quantinuum Helios (Upcoming)",
+    "manufacturer": "Quantinuum",
+    "qubits": "96 (trapped ion); all-to-all connectivity",
+    "technology": "Trapped ion (ytterbium-171)",
+    "gate_fidelity": "Expected to exceed H2's 99.8% 2-qubit gate fidelity",
+    "status": "Under development; successor to H2",
+    "description": "Helios is Quantinuum's next-generation trapped-ion quantum computer, scaling from H2's 32 qubits to 96 qubits while maintaining all-to-all connectivity and industry-leading gate fidelities. Helios is expected to support significantly more logical qubits with error correction, advancing toward fault-tolerant quantum computing."
+  },
+  {
+    "id": "QPU-016",
+    "name": "Oxford Quantum Circuits (OQC) Lucy",
+    "manufacturer": "Oxford Quantum Circuits",
+    "qubits": "8 (Coaxmon architecture)",
+    "technology": "Superconducting (Coaxmon - 3D coaxial design)",
+    "gate_fidelity": "Competitive; unique 3D architecture simplifies connectivity",
+    "status": "Operational; available on AWS Braket (Japan region)",
+    "description": "OQC uses a unique 3D coaxial superconducting qubit design (Coaxmon) that simplifies connectivity and reduces control complexity compared to planar transmon designs. Lucy, their 8-qubit system, is available on AWS Braket. OQC is scaling toward larger systems and is a key player in the UK quantum ecosystem."
+  },
+  {
+    "id": "QPU-017",
+    "name": "IQM Garnet",
+    "manufacturer": "IQM Quantum Computers",
+    "qubits": "20 (Garnet); 150-qubit system in development",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "Industry-competitive",
+    "status": "Operational; 20-qubit Garnet on IQM Resonance cloud; 150-qubit system planned",
+    "description": "IQM is a European quantum computing company based in Finland. Their 20-qubit Garnet processor is available through the IQM Resonance cloud platform. IQM is developing a 150-qubit system and has secured contracts for on-premises quantum computer installations in Europe. They focus on full-stack quantum computing with in-house chip design and manufacturing."
+  },
+  {
+    "id": "QPU-018",
+    "name": "Pasqal Neutral Atom Processor",
+    "manufacturer": "Pasqal",
+    "qubits": "100+ (neutral atom); targeting 1,000+ by 2027",
+    "technology": "Neutral atom (rubidium); optical tweezer array",
+    "gate_fidelity": "99.5% 2-qubit gate",
+    "status": "Operational; European neutral-atom leader",
+    "description": "Pasqal is a French neutral-atom quantum computing company and European leader in the field. Their processors use rubidium atoms in optical tweezer arrays, similar to QuEra's approach. Pasqal has sold quantum computers to major institutions (including CEA and HPC centers) and is targeting 1,000+ qubit systems by 2027. They also published the QEC Report 2025 with Riverlane."
+  },
+  {
+    "id": "QPU-019",
+    "name": "SpinQ Gemini/Mini",
+    "manufacturer": "SpinQ",
+    "qubits": "2-3 (NMR); educational and portable",
+    "technology": "Nuclear magnetic resonance (NMR)",
+    "gate_fidelity": "Sufficient for educational demonstrations",
+    "status": "Commercial; desktop/portable quantum computers for education",
+    "description": "SpinQ takes a unique approach with compact NMR-based quantum computers designed for education and research. Their Gemini (2-qubit) and Mini (2-qubit portable) systems are the world's first desktop quantum computers. While not competing with large-scale systems, SpinQ democratizes access to quantum computing hardware for teaching and basic research."
+  },
+  {
+    "id": "QPU-020",
+    "name": "Origin Wukong",
+    "manufacturer": "Origin Quantum (China)",
+    "qubits": "72 (superconducting)",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "Competitive for Chinese domestic platform",
+    "status": "Operational; China's first publicly accessible quantum computing cloud platform",
+    "description": "Origin Quantum's Wukong is China's first superconducting quantum computer made publicly accessible via cloud. The 72-qubit system serves China's domestic quantum computing needs and represents the country's growing quantum hardware ecosystem. Origin Quantum is a spinoff from USTC and complements the Zuchongzhi research line."
+  },
+  {
+    "id": "QPU-021",
+    "name": "D-Wave Advantage2",
+    "manufacturer": "D-Wave Systems",
+    "qubits": "7,000+ (flux qubits; quantum annealing)",
+    "technology": "Superconducting flux qubit; quantum annealing",
+    "gate_fidelity": "N/A - annealing processor (not gate-based)",
+    "status": "Operational (2024-2025); largest quantum processor by qubit count",
+    "description": "D-Wave's Advantage2 uses over 7,000 flux qubits for quantum annealing, making it the largest quantum processor by qubit count. Unlike gate-based systems, D-Wave solves optimization problems by finding low-energy states. Advantage2 features improved connectivity (Zephyr topology) and coherence. While not universal, it's the most mature quantum computing platform for specific optimization tasks."
+  },
+  {
+    "id": "QPU-022",
+    "name": "Google Quantum Echoes Processor",
+    "manufacturer": "Google Quantum AI",
+    "qubits": "Based on Willow architecture; enhanced for algorithm benchmarking",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "Enhanced beyond Willow specifications",
+    "status": "Algorithm demonstration Oct 2025; 'Quantum Echoes' algorithm 13,000x faster than classical",
+    "description": "Google demonstrated a landmark quantum computing algorithm called 'Quantum Echoes' in October 2025, running on an enhanced Willow-architecture processor. The algorithm performed a task 13,000 times faster than the most sophisticated classical supercomputers, marking a significant milestone in quantum computational advantage beyond random circuit sampling."
+  },
+  {
+    "id": "QPU-023",
+    "name": "Quantum Motion (UK) Silicon Spin",
+    "manufacturer": "Quantum Motion",
+    "qubits": "1,000+ (silicon spin; integrated with CMOS)",
+    "technology": "Silicon spin qubit; CMOS-compatible",
+    "gate_fidelity": "Targeting high fidelity with CMOS integration",
+    "status": "Research and development; UK-based silicon quantum computing",
+    "description": "Quantum Motion is a UK-based startup developing silicon spin qubits that can be manufactured using existing CMOS semiconductor fabrication processes. Their approach offers a path to quantum computing at scale by leveraging the mature semiconductor industry. They have demonstrated dense qubit arrays compatible with standard chip manufacturing."
+  },
+  {
+    "id": "QPU-024",
+    "name": "IQM 150-Qubit System (Upcoming)",
+    "manufacturer": "IQM Quantum Computers",
+    "qubits": "150 (planned)",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "Targeting fault-tolerant threshold",
+    "status": "In development; planned for 2026-2027",
+    "description": "IQM's next-generation 150-qubit superconducting processor is in development, targeting fault-tolerant quantum computing capabilities. This system will be a significant scaling step from their current 20-qubit Garnet processor and positions IQM as a leading European quantum hardware provider."
+  },
+  {
+    "id": "QPU-025",
+    "name": "Dirac-3 (Quantum Digital Annealer)",
+    "manufacturer": "QCI (Quantum Computing Inc.)",
+    "qubits": "High-dimensional quantum annealing; continuous variable",
+    "technology": "Quantum photonic annealing; continuous-variable",
+    "gate_fidelity": "N/A - annealing/optimization processor",
+    "status": "Commercial; available for optimization problems",
+    "description": "QCI's Dirac-3 is a quantum photonic optimization system that uses continuous-variable quantum annealing. Unlike D-Wave's discrete approach, Dirac-3 can solve high-dimensional optimization problems with continuous variables, making it suitable for logistics, finance, and machine learning applications. It represents the growing diversity of quantum computing approaches beyond gate-based systems."
+  },
+  {
+    "id": "QPU-026",
+    "name": "Silicon Quantum Computing (SQC) Atomic-Scale",
+    "manufacturer": "SQC (Australia)",
+    "qubits": "10 (atomic-precision silicon)",
+    "technology": "Silicon with phosphorus atoms placed with atomic precision",
+    "gate_fidelity": "High fidelity; atomic-precision placement",
+    "status": "Research; demonstrated atomic-scale quantum circuits",
+    "description": "SQC (Silicon Quantum Computing) is an Australian company that places phosphorus atoms in silicon with atomic precision using scanning tunneling microscopy. This approach enables extremely precise qubit placement and control. SQC has demonstrated small but highly controlled quantum circuits, proving the viability of atomic-scale silicon quantum computing."
+  },
+  {
+    "id": "QPU-027",
+    "name": "Anyon Systems",
+    "manufacturer": "Anyon Systems (Canada)",
+    "qubits": "Superconducting; focus on hybrid quantum-classical",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "Competitive",
+    "status": "Operational; Canadian quantum computing company",
+    "description": "Anyon Systems is a Canadian quantum computing company developing superconducting quantum processors with a focus on hybrid quantum-classical computing integration. They provide both hardware and software solutions for quantum computing applications, targeting industrial and research users."
+  },
+  {
+    "id": "QPU-028",
+    "name": "Alice & Bob Cat Qubit Processor",
+    "manufacturer": "Alice & Bob",
+    "qubits": "Cat qubit architecture; targeting logical qubits",
+    "technology": "Superconducting cat qubit (self-correcting bosonic code)",
+    "gate_fidelity": "Cat qubits offer inherent error bias (bit-flip suppression)",
+    "status": "Research and development; French quantum startup",
+    "description": "Alice & Bob is a French quantum computing company developing cat qubits - a type of superconducting qubit that inherently suppresses bit-flip errors through bosonic encoding. This 'biased-noise' approach dramatically reduces the overhead needed for quantum error correction, potentially requiring 10-100x fewer physical qubits per logical qubit compared to surface codes."
+  },
+  {
+    "id": "QPU-029",
+    "name": "QuantWare Soprano",
+    "manufacturer": "QuantWare",
+    "qubits": "Up to 64 (superconducting; multi-chip)",
+    "technology": "Superconducting transmon; 3D-integrated multi-chip",
+    "gate_fidelity": "Competitive; 3D integration reduces wiring complexity",
+    "status": "Commercial; sells quantum processors to researchers and integrators",
+    "description": "QuantWare is a Dutch company that manufactures and sells superconducting quantum processors. Their Soprano processor uses 3D-integrated multi-chip technology to scale beyond single-chip limitations. QuantWare uniquely sells processors directly to research groups and system integrators, enabling organizations to build their own quantum computers."
+  },
+  {
+    "id": "QPU-030",
+    "name": "EeroQ Hudson",
+    "manufacturer": "EeroQ",
+    "qubits": "Helium-based qubit platform",
+    "technology": "Electrons on helium (e-on-He)",
+    "gate_fidelity": "Novel approach; long coherence expected",
+    "status": "Research and development; Chicago-based",
+    "description": "EeroQ is developing a novel quantum computing platform using electrons floating on liquid helium (e-on-He). This approach offers naturally long coherence times because electrons on helium are extremely well-isolated from noise sources. EeroQ's Hudson processor is in early development but represents a fundamentally different approach to superconducting and trapped-ion systems."
+  },
+  {
+    "id": "QPU-031",
+    "name": "10,000-Qubit Processor (D-Wave/Industry Milestone)",
+    "manufacturer": "Multiple (D-Wave leads with 7,000+; industry targeting 10,000+)",
+    "qubits": "10,000+ (announced as industry milestone Dec 2025)",
+    "technology": "Various; D-Wave annealing leads; gate-based systems scaling",
+    "gate_fidelity": "Varies by platform",
+    "status": "Milestone announced Dec 2025; 100x scaling leap",
+    "description": "December 9, 2025 marked a major quantum computing milestone: the industry's first 10,000-qubit processor, representing a 100x scaling leap. While D-Wave's annealing processors lead in raw qubit count, the milestone signals that quantum computing is moving from theoretical to practical scaling. Gate-based systems are also rapidly scaling, with neutral-atom arrays reaching 6,100 qubits."
+  },
+  {
+    "id": "QP-ibm-nighthawk",
+    "name": "IBM Quantum Nighthawk",
+    "type": "superconducting",
+    "qubits": 120,
+    "company": "IBM",
+    "key_features": [
+      "120 qubits with 218 next-gen tunable couplers",
+      "20% more couplers than Heron",
+      "30% more circuit complexity",
+      "Up to 5000 two-qubit gates",
+      "Expected 7500 gates by end 2026"
+    ],
+    "status": "announced",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors",
+        "collected_at": "2026-05-29T14:23:31.089Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-ibm-loon",
+    "name": "IBM Quantum Loon",
+    "type": "superconducting",
+    "qubits": null,
+    "company": "IBM",
+    "key_features": [
+      "Experimental processor demonstrating all key components for fault-tolerant QC",
+      "Multi-layer routing for long-range on-chip connections (c-couplers)",
+      "Real-time classical error decoding <480ns using qLDPC codes",
+      "Achieved 1 year ahead of schedule"
+    ],
+    "status": "experimental",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors",
+        "collected_at": "2026-05-29T14:23:31.089Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-ms-majorana1",
+    "name": "Microsoft Majorana 1",
+    "type": "topological",
+    "qubits": null,
+    "company": "Microsoft",
+    "key_features": [
+      "World's first topological qubit chip",
+      "Uses Majorana zero modes for inherently protected quantum information",
+      "Completely different approach from superconducting/transmon qubits"
+    ],
+    "status": "announced",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.networkworld.com/article/4088709/top-quantum-breakthroughs-of-2025.html",
+        "collected_at": "2026-05-29T14:23:31.089Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-amazon-ocelot",
+    "name": "Amazon Ocelot",
+    "type": "hybrid_cat_transmon",
+    "qubits": null,
+    "company": "Amazon",
+    "key_features": [
+      "Unique hybrid approach combining cat qubits with transmon qubits",
+      "Built-in error correction at hardware level"
+    ],
+    "status": "announced",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.networkworld.com/article/4088709/top-quantum-breakthroughs-of-2025.html",
+        "collected_at": "2026-05-29T14:23:31.089Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-quantware-vio40k",
+    "name": "QuantWare VIO-40K",
+    "type": "superconducting",
+    "qubits": 10000,
+    "company": "QuantWare",
+    "key_features": [
+      "10,000 qubit QPU — 100x larger than anything available today",
+      "VIO 3D scaling architecture with chiplet modules",
+      "40,000 input-output lines",
+      "Compatible with NVIDIA NVQLink for hybrid quantum-classical computing",
+      "Kilofab industrial-scale QPU fab opening 2026"
+    ],
+    "status": "announced",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://quantware.com/news/quantware-announces-scaling-breakthrough-with-vio-40k",
+        "collected_at": "2026-05-29T14:23:31.089Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-psiqphotonic",
+    "name": "PsiQuantum Photonic Processor",
+    "type": "photonic",
+    "qubits": null,
+    "company": "PsiQuantum",
+    "key_features": [
+      "Photonic quantum processor unveiled February 2025",
+      "Uses photons as qubits for room-temperature operation potential"
+    ],
+    "status": "announced",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.networkworld.com/article/4088709/top-quantum-breakthroughs-of-2025.html",
+        "collected_at": "2026-05-29T14:23:31.089Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-quantinuum-helios",
+    "name": "Quantinuum Helios",
+    "type": "trapped_ion",
+    "qubits": 98,
+    "company": "Quantinuum",
+    "key_features": [
+      "98-qubit trapped-ion system launched November 2025",
+      "Record two-qubit gate fidelity of 99.921%",
+      "Real-time quantum error correction capability",
+      "All-to-all connectivity between all qubits",
+      "Successor to H2 system with 3x qubit scaling"
+    ],
+    "status": "operational",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.permutations.app/research/quantum-computing-2026.html",
+        "collected_at": "2026-05-30T13:41:08.972Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-fujitsu-riken-256",
+    "name": "Fujitsu/RIKEN 256-Qubit Superconducting QC",
+    "type": "superconducting",
+    "qubits": 256,
+    "company": "Fujitsu/RIKEN",
+    "key_features": [
+      "256-qubit superconducting quantum computer announced April 2025",
+      "Four times larger than their 2023 system",
+      "Plans for 1000+ qubit system next",
+      "Joint development between Fujitsu and RIKEN in Japan"
+    ],
+    "status": "operational",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.permutations.app/research/quantum-computing-2026.html",
+        "collected_at": "2026-05-30T13:41:08.972Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-jupiter-simulation",
+    "name": "JUPITER 50-Qubit Full Quantum Simulation",
+    "type": "simulation",
+    "qubits": 50,
+    "company": "Jülich Supercomputing Centre (Germany)",
+    "key_features": [
+      "First-ever full simulation of a 50-qubit quantum computer on classical supercomputer",
+      "Achieved on JUPITER supercomputer in Germany (May 2026)",
+      "World record for quantum circuit simulation",
+      "Enables validation and debugging of quantum algorithms classically"
+    ],
+    "status": "operational",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.sciencedaily.com/releases/2026/05/260510234715.htm",
+        "collected_at": "2026-05-30T13:41:08.972Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-princeton-long-coherence",
+    "name": "Princeton Record-Breaking Coherence Qubit",
+    "type": "silicon_spin",
+    "qubits": 48,
+    "company": "Princeton University",
+    "key_features": [
+      "Qubit coherence time over 1 millisecond (1.68ms)",
+      "Three times longer than previous records",
+      "15x longer coherence than qubits used by Google and IBM",
+      "Published in Nature (November 2025)",
+      "Could dramatically reduce error correction overhead"
+    ],
+    "status": "research",
+    "year": 2025,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.princeton.edu/news/2025/11/05/princeton-puts-quantum-computing-fast-track-new-qubit",
+        "collected_at": "2026-05-30T13:41:08.972Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-ibm-highest-fidelity",
+    "name": "IBM Highest Fidelity Superconducting QPU",
+    "type": "superconducting",
+    "qubits": null,
+    "company": "IBM",
+    "key_features": [
+      "New record for qubit fidelity in superconducting quantum systems (2026)",
+      "Overcomes key barrier in quantum computing accuracy",
+      "Part of IBM's path to fault-tolerant quantum computing by 2029"
+    ],
+    "status": "operational",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://tech.yahoo.com/science/articles/ibm-quantum-processor-achieves-highest-110000523.html",
+        "collected_at": "2026-05-30T13:41:08.972Z"
+      }
+    ]
+  },
+  {
+    "id": "QP-google-neutral-atom",
+    "name": "Google Quantum AI Neutral Atom Expansion",
+    "type": "neutral_atom",
+    "qubits": null,
+    "company": "Google Quantum AI",
+    "key_features": [
+      "Google expanding into neutral atom computing alongside 105-qubit Willow chip",
+      "Diversification beyond superconducting transmon approach",
+      "QED-C report shows quantum market doubling to $3B",
+      "Neutral atoms offer all-to-all connectivity and scaling potential"
+    ],
+    "status": "announced",
+    "year": 2026,
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://tech-insider.org/google-quantum-computing-neutral-atom-willow-2026",
+        "collected_at": "2026-05-30T13:41:08.972Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-044",
+    "name": "Quantinuum Helios",
+    "manufacturer": "Quantinuum",
+    "qubits": "98 trapped-ion qubits",
+    "technology": "Trapped ion (ytterbium)",
+    "gate_fidelity": "99.921% two-qubit gate fidelity (record)",
+    "status": "Operational (November 2025)",
+    "description": "Quantinuum launched Helios in November 2025, a 98-qubit trapped-ion system featuring record two-qubit gate fidelities of 99.921%. Helios includes a real-time quantum error correction decoder, making it one of the first commercially available systems with integrated QEC. The system represents a major step toward fault-tolerant quantum computing using trapped-ion technology.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.permutations.app/research/quantum-computing-2026.html",
+        "collected_at": "2026-05-31T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-045",
+    "name": "JUPITER 50-Qubit Quantum Simulator",
+    "manufacturer": "Forschungszentrum Jülich (Germany)",
+    "qubits": "50-qubit full quantum state simulation",
+    "technology": "Classical supercomputer simulation of quantum processor",
+    "gate_fidelity": "Exact simulation (no physical noise)",
+    "status": "World record achieved May 2026",
+    "description": "Scientists at Forschungszentrum Jülich in Germany achieved a world record by fully simulating a 50-qubit quantum computer on the JUPITER supercomputer. The simulation replicates the intricate quantum physics of a real processor in full detail, including every quantum gate operation. This enables verification and validation of quantum algorithms before running on actual hardware, and provides a benchmark for quantum advantage thresholds.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.sciencedaily.com/releases/2026/05/260510234715.htm",
+        "collected_at": "2026-05-31T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-046",
+    "name": "Princeton Long-Coherence Qubit Chip",
+    "manufacturer": "Princeton University",
+    "qubits": "Experimental (small-scale demonstration)",
+    "technology": "Superconducting (optimized coherence)",
+    "gate_fidelity": "Record-breaking qubit lifespan (T1/T2 coherence times)",
+    "status": "Research breakthrough 2026",
+    "description": "Princeton engineers developed a quantum chip with record-breaking qubit lifespan, marking a major leap in quantum computing. Extended coherence times allow more quantum gate operations before decoherence, directly improving the feasibility of quantum error correction and complex quantum algorithms. This addresses one of the fundamental challenges in superconducting quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.innovationnewsnetwork.com/princeton-create-quantum-chip-with-record-breaking-qubit-lifespan/63384",
+        "collected_at": "2026-05-31T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-047",
+    "name": "IonQ Tempo (Forthcoming)",
+    "manufacturer": "IonQ",
+    "qubits": "Next-generation trapped-ion system (specifications pending)",
+    "technology": "Trapped ion",
+    "gate_fidelity": "Expected to exceed Forte fidelity levels",
+    "status": "Announced; in development",
+    "description": "IonQ Tempo is the forthcoming next-generation trapped-ion quantum computer from IonQ. The system is designed to scale in performance beyond the current Forte system. IonQ has partnered with ARLIS to develop a Zero Trust security framework for Tempo, ensuring that as the system scales, it maintains a secure ecosystem. Tempo represents IonQs push toward enterprise-grade quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://quantumcomputingreport.com/ionq-and-arlis-partner-to-develop-zero-trust-framework-for-quantum-systems",
+        "collected_at": "2026-05-31T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-048",
+    "name": "Microsoft Majorana 1",
+    "manufacturer": "Microsoft",
+    "qubits": "Topological qubits (experimental)",
+    "technology": "Topological qubit (Majorana zero modes)",
+    "gate_fidelity": "Theoretical advantage: inherently protected from local noise",
+    "status": "Unveiled February 2025; research phase",
+    "description": "Microsoft unveiled Majorana 1 in February 2025, taking a fundamentally different approach to quantum computing using topological qubits based on Majorana zero modes. Topological qubits are inherently protected from local noise, potentially requiring far less error correction overhead than superconducting or trapped-ion qubits. If successful, this approach could dramatically accelerate the path to practical quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+        "collected_at": "2026-05-31T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-049",
+    "name": "IBM Nighthawk System",
+    "manufacturer": "IBM",
+    "qubits": "Progressive scaling 2025-2028",
+    "technology": "Superconducting (modular architecture)",
+    "gate_fidelity": "Progressively improving with error correction integration",
+    "status": "Development roadmap 2025-2028",
+    "description": "IBMs Nighthawk system represents the next phase of IBMs quantum roadmap, with successive releases from 2025 to 2028 enabling exploration of increasingly complex quantum circuits. Nighthawk integrates IBMs 120-qubit error correction decoder with Qiskit Runtime, providing a fault-tolerant execution path. The system is designed to demonstrate practical quantum advantage in real-world applications.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.ibm.com/quantum/blog/large-scale-ftqc",
+        "collected_at": "2026-05-31T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-050",
+    "name": "D-Wave Advantage2",
+    "manufacturer": "D-Wave Quantum",
+    "qubits": "7000+ flux qubits (quantum annealing)",
+    "technology": "Superconducting flux qubit (quantum annealing)",
+    "gate_fidelity": "N/A (annealing paradigm, not gate-based)",
+    "status": "Operational 2025-2026",
+    "description": "D-Waves Advantage2 system features over 7000 flux qubits for quantum annealing. While not a gate-based quantum computer, Advantage2 excels at optimization problems and is one of the most commercially deployed quantum systems. In 2025-2026, D-Wave has demonstrated quantum advantage on specific optimization problems, particularly in logistics, financial modeling, and materials science.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://homebusinessmag.com/blog/artificial-intelligence/quantum-computing-advances",
+        "collected_at": "2026-05-31T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-051",
+    "name": "IonQ 99.99% Gate Fidelity Milestone",
+    "manufacturer": "IonQ",
+    "qubits": "36 (algorithmic qubits); Forte Enterprise platform",
+    "technology": "Trapped ion (ytterbium-171)",
+    "gate_fidelity": "99.99% two-qubit gate fidelity (world record, Oct 2025)",
+    "status": "World record achieved October 2025",
+    "description": "IonQ achieved a landmark result in October 2025, setting a new world record of 99.99% two-qubit gate fidelity on its trapped-ion quantum computer. This milestone demonstrates that trapped-ion technology can achieve the ultra-high gate fidelities required for fault-tolerant quantum computing with minimal error correction overhead. IonQ also ran a medical device simulation with Ansys on its 36-qubit system, showing early practical quantum advantage.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://investors.ionq.com/news/news-details/2025/IonQ-Achieves-Landmark-Result-Setting-New-World-Record-in-Quantum-Computing-Performance/default.aspx",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-052",
+    "name": "Harvard Quantum Computing Spinoffs",
+    "manufacturer": "Harvard University (research groups)",
+    "qubits": "Various (research-stage)",
+    "technology": "Multiple platforms (neutral atom, superconducting)",
+    "gate_fidelity": "Research systems; advancing faster than expected",
+    "status": "3 startups spawned from Harvard quantum research (2026)",
+    "description": "Harvard researchers reported in May 2026 that quantum computing progress is advancing faster than expected, a pace that has already spawned three startups. The Harvard team's work on neutral atom quantum computing and quantum error correction has been particularly impactful, contributing to the broader ecosystem of quantum computing commercialization. This demonstrates the rapid translation of academic quantum research into commercial ventures.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://thequantuminsider.com/2026/05/04/harvard-researchers-quantum-computing-advancing-faster-than-expected",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-053",
+    "name": "Quantum-Inspired Materials Algorithm Processor",
+    "manufacturer": "Research collaboration",
+    "qubits": "Quantum-inspired (runs on classical HPC + quantum coprocessor)",
+    "technology": "Hybrid quantum-classical algorithm",
+    "gate_fidelity": "N/A - hybrid algorithm approach",
+    "status": "Breakthrough May 2026; solves 'impossible' materials problem",
+    "description": "A new quantum-inspired algorithm cracked a materials science problem so massive that conventional supercomputers struggle to even approach it, as reported by ScienceDaily in May 2026. The algorithm combines quantum computing principles with classical HPC to tackle problems in materials simulation that were previously considered intractable. This represents the growing trend of quantum-classical hybrid computing delivering practical value even before full fault-tolerant quantum computers are available.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.sciencedaily.com/releases/2026/05/260512202355.htm",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-054",
+    "name": "DOE Quantum Leadership Act funded processors",
+    "manufacturer": "US DOE / Multiple vendors",
+    "qubits": "Various; $2.5B authorized for 2026-2030",
+    "technology": "Multiple platforms funded under DOE program",
+    "gate_fidelity": "Program targets fault-tolerant quantum computing",
+    "status": "DOE Quantum Leadership Act authorized 2025; $2.5B for 2026-2030",
+    "description": "The DOE Quantum Leadership Act, authorized in 2025, provides $2.5 billion in quantum funding for 2026-2030, including $500 million specifically for quantum networking. This represents one of the largest government investments in quantum computing globally and will fund the development of next-generation quantum processors across multiple hardware platforms. The Act positions the US to compete with China and EU in the quantum technology race.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.linkedin.com/pulse/quantum-internet-next-frontier-global-connectivity-bellinghausen--exipf",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-055",
+    "name": "National Quantum Initiative Reauthorization (S.3597)",
+    "manufacturer": "US Government",
+    "qubits": "Policy/legislation; reauthorizes and expands US quantum R&D",
+    "technology": "Cross-platform; focuses on workforce, security, and networking",
+    "gate_fidelity": "N/A - legislation",
+    "status": "Introduced in US Senate 2025-2026 (S.3597)",
+    "description": "The National Quantum Initiative Reauthorization Act of 2026 (S.3597) reauthorizes and expands US investment in quantum computing research and development. The act focuses on workforce development, quantum networking, post-quantum cryptography, and maintaining US competitiveness. Japan leads public quantum investment with nearly $8 billion committed, while the US and EU are also increasing funding significantly.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3597/text",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-056",
+    "name": "Quantum Computing Market Doubling (QED-C 2026)",
+    "manufacturer": "Industry-wide",
+    "qubits": "N/A - market report",
+    "technology": "All platforms",
+    "gate_fidelity": "N/A - market analysis",
+    "status": "QED-C report: market doubled from $1.4B to $3B (2025-2026)",
+    "description": "The QED-C 2026 report shows the quantum computing market has doubled from $1.4 billion to $3 billion, reflecting rapid growth in both hardware and software segments. The market growth is driven by increasing enterprise adoption, government investment, and the emergence of quantum-as-a-service platforms. Hybrid quantum-classical computing is the 2026 gold standard, with algorithms running on supercomputers and outsourcing only the most quantum-suited portions to QPUs.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://tech-insider.org/google-quantum-computing-neutral-atom-willow-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-057",
+    "name": "LLNL/ASC Quantum Computing Strategy 2026",
+    "manufacturer": "Lawrence Livermore National Laboratory / ASC",
+    "qubits": "Strategy document for future fault-tolerant QC",
+    "technology": "Multi-platform; focuses on algorithm efficiency and HPC integration",
+    "gate_fidelity": "Strategy targets guaranteed upper and lower bounds for algorithms",
+    "status": "Published October 2025; strategic framework",
+    "description": "Lawrence Livermore National Laboratory and the ASC program published a Quantum Computing Strategy for 2026, emphasizing the need for more efficient algorithms with guaranteed upper and lower bounds for future fault-tolerant quantum computers. The strategy focuses on integrating quantum computing with existing HPC infrastructure and developing algorithms that can deliver practical advantage for national security and scientific applications.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://asc.llnl.gov/sites/asc/files/2025-10/ASC-Quantum-Report-2026-web.pdf",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-058",
+    "name": "First Fault-Tolerant Quantum Computer (Industry Milestone 2026)",
+    "manufacturer": "Multiple (industry-wide target)",
+    "qubits": "Targeting first fault-tolerant QC before end of 2026",
+    "technology": "Multiple platforms competing",
+    "gate_fidelity": "Fault-tolerant threshold required",
+    "status": "Industry target: first fault-tolerant QC potentially unveiled before year end 2026",
+    "description": "The quantum computing industry is targeting the unveiling of the first fault-tolerant quantum computer before the end of 2026. Multiple companies including IBM, Quantinuum, and Google are racing to demonstrate practical fault-tolerant operations. In 2026, quantum computers are reaching new levels of capability, with the transition from 'potential technology' to 'practical products' becoming the dominant narrative.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.spinquanta.com/news-detail/quantum-computers-the-revolutionary-technology-transforming-computing-in-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-059",
+    "name": "US 10,000-Qubit Quantum Computer Plan",
+    "manufacturer": "US firm (unnamed in reports)",
+    "qubits": "10,000 qubits target by 2026",
+    "technology": "Not specified; gate-based system planned",
+    "gate_fidelity": "Targeting fault-tolerant operations",
+    "status": "Announced; first fault-tolerant QC could be unveiled before year end",
+    "description": "A US firm announced plans to build a 10,000-qubit quantum computer by 2026, representing a major scaling milestone. If achieved, this would be the largest gate-based quantum processor, though D-Wave's annealing processors already exceed 7,000 qubits. The announcement reflects the industry's confidence in rapid scaling of quantum hardware, though the distinction between physical and logical qubits remains important.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "C",
+        "article_url": "https://www.reddit.com/r/singularity/comments/1ajnnf6/us_firm_plans_to_build_10000_qubit_quantum",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-060",
+    "name": "Quantum-as-a-Service (QaaS) Platform Expansion 2026",
+    "manufacturer": "Multiple (IBM, Amazon Braket, Azure Quantum, Google Cloud)",
+    "qubits": "Various; cloud-accessible quantum processors",
+    "technology": "Cloud-based quantum computing access",
+    "gate_fidelity": "Varies by backend provider",
+    "status": "Expanding rapidly in 2026; QaaS becomes mainstream access model",
+    "description": "Quantum-as-a-Service expands significantly in 2026, making quantum computing accessible to enterprises without requiring on-premises hardware. IBM Quantum, Amazon Braket, Azure Quantum, and Google Cloud all offer multi-backend quantum cloud access. The QaaS model is critical for democratizing quantum computing and enabling enterprise adoption, with hybrid quantum-classical workflows becoming the standard development paradigm.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://medium.com/@reactjsbd/the-state-of-quantum-computing-in-2026-real-breakthroughs-lingering-hype-and-commercial-reality-081b5d14fb28",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-257",
+    "name": "IonQ Forte Enterprise 99.99% Gate Fidelity",
+    "manufacturer": "IonQ",
+    "qubits": "36 (algorithmic qubits); Forte Enterprise platform",
+    "technology": "Trapped ion (ytterbium-171)",
+    "gate_fidelity": "99.99% two-qubit gate fidelity (world record, Oct 2025)",
+    "status": "World record achieved October 2025",
+    "description": "IonQ achieved a landmark result setting a new world record in two-qubit gate performance, with fidelity exceeding 99.99%. This milestone demonstrates that trapped-ion quantum computers can reach the fidelity levels needed for practical error correction with minimal overhead. The result was achieved on the Forte Enterprise platform and represents a major step toward fault-tolerant quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.ionq.com/news/ionq-achieves-landmark-result-setting-new-world-record",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-258",
+    "name": "Quantinuum HoloQUADS Algorithm Processor",
+    "manufacturer": "Quantinuum (Honeywell Quantum Solutions)",
+    "qubits": "H2 system (32 trapped-ion qubits)",
+    "technology": "Trapped ion; holoQUADS algorithm simulation",
+    "gate_fidelity": "H2 platform: 99.8% 2-qubit gate",
+    "status": "Algorithm demonstrated 2025-2026",
+    "description": "Quantinuum researchers demonstrated their new holoQUADS algorithm on the H2 system, accurately simulating a scientific problem that was previously intractable. The holoQUADS (Holomorphic Quantum Dynamics Simulation) algorithm represents a new class of quantum algorithms that leverage the mathematical structure of quantum mechanics for more efficient simulation. This demonstrates practical quantum advantage on current hardware.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.quantinuum.com/blog/how-a-new-quantum-algorithm-could-help-solve-real-world",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-259",
+    "name": "Quantum Computing Market $3B (2026 Projection)",
+    "manufacturer": "Industry-wide",
+    "qubits": "N/A - market milestone",
+    "technology": "Multiple platforms",
+    "gate_fidelity": "N/A",
+    "status": "Market hit $1.4B in 2025; projected 30% CAGR to $3B by 2026",
+    "description": "The quantum computing market reached $1.4 billion in 2025 and is projected to grow at a 30% annual rate to reach $3 billion by 2026, according to QED-C and industry reports. Key growth drivers include hybrid quantum-classical computing adoption, quantum-as-a-service platforms, and early commercial applications in optimization and simulation. Japan leads public quantum investment with nearly $8 billion committed.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://sqmagazine.co.uk/quantum-computing-statistics",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-260",
+    "name": "Microsoft Majorana 2",
+    "manufacturer": "Microsoft Quantum",
+    "qubits": "Topological qubits (Majorana zero modes); 1,000x improvement over Majorana 1",
+    "technology": "Topological qubit (Majorana zero modes); qubits survive ~20 seconds vs milliseconds",
+    "gate_fidelity": "Qubit lifetime ~20 seconds (1,000x improvement over Majorana 1)",
+    "status": "Announced 2026; dramatic improvement in topological qubit stability",
+    "description": "Microsoft announced Majorana 2, its second-generation topological qubit chip, claiming qubits survive for an average of 20 seconds — a 1,000x improvement over the first Majorana chip. This dramatic increase in coherence time brings topological qubits closer to practical utility. If validated, Majorana 2 could fundamentally change the error correction overhead equation, as topologically protected qubits need far less correction than conventional approaches.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.networkworld.com/article/4088709/top-quantum-breakthroughs-of-2025.html",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-261",
+    "name": "IonQ Forte Enterprise 99.99% Fidelity Milestone",
+    "manufacturer": "IonQ",
+    "qubits": "36 (algorithmic qubits)",
+    "technology": "Trapped ion (ytterbium-171)",
+    "gate_fidelity": "99.99% two-qubit gate fidelity (new world record, Oct 2025)",
+    "status": "World record achieved October 2025",
+    "description": "IonQ achieved a new world record of 99.99% two-qubit gate fidelity on its Forte Enterprise platform in October 2025. This milestone is significant because 99.99% fidelity approaches the threshold where many quantum error correction codes become highly efficient, potentially reducing the number of physical qubits needed per logical qubit by orders of magnitude. IonQ's trapped-ion technology continues to lead in gate fidelity.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://ionq.com/news",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-262",
+    "name": "Fujitsu/RIKEN 256-Qubit Superconducting QC",
+    "manufacturer": "Fujitsu/RIKEN",
+    "qubits": "256",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "Industry-competitive for Japanese platform",
+    "status": "Operational (April 2025); four times larger than previous system",
+    "description": "Fujitsu and RIKEN jointly developed a 256-qubit superconducting quantum computer, announced April 2025. This is four times larger than their previous 64-qubit system and represents Japan's most powerful gate-based quantum computer. The partners plan to develop a 1,000+ qubit system next, positioning Japan as a significant player in the global quantum hardware race.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.permutations.app/research/quantum-computing-2026.html",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-263",
+    "name": "IBM Highest Fidelity Superconducting QPU (2026)",
+    "manufacturer": "IBM",
+    "qubits": "Not disclosed; next-generation superconducting",
+    "technology": "Superconducting (advanced materials and design)",
+    "gate_fidelity": "New record for qubit fidelity in superconducting quantum systems (2026)",
+    "status": "Operational (2026); overcomes key accuracy barrier",
+    "description": "IBM achieved a new record for qubit fidelity in superconducting quantum systems in 2026, overcoming a key barrier in quantum computing accuracy. This advancement is part of IBM's path to fault-tolerant quantum computing by 2029 and enables more reliable quantum computations on superconducting hardware.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://tech.yahoo.com/science/articles/ibm-quantum-processor-achieves-highest-110000523.html",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-264",
+    "name": "Google Quantum AI Neutral Atom Expansion",
+    "manufacturer": "Google Quantum AI",
+    "qubits": "Expanding beyond superconducting; neutral atom platform in development",
+    "technology": "Neutral atom (new direction alongside superconducting)",
+    "gate_fidelity": "Targeting competitive fidelity with neutral atom approach",
+    "status": "Announced 2026; diversification beyond superconducting transmon",
+    "description": "Google Quantum AI is expanding into neutral atom computing alongside its 105-qubit Willow superconducting chip. This diversification signals that Google sees value in multiple qubit modalities. Neutral atoms offer all-to-all connectivity and scaling potential that complements superconducting approaches. The QED-C report shows the quantum market doubling to $3B, and Google's multi-platform strategy positions it for various application domains.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://tech-insider.org/google-quantum-computing-neutral-atom-willow-2026",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-265",
+    "name": "QuantWare VIO-40K (10,000 Qubit QPU)",
+    "manufacturer": "QuantWare",
+    "qubits": "10,000 (VIO 3D scaling architecture)",
+    "technology": "Superconducting; VIO 3D scaling with chiplet modules; 40,000 I/O lines",
+    "gate_fidelity": "Compatible with NVIDIA NVQLink for hybrid computing",
+    "status": "Announced 2025; kilofab industrial-scale QPU fab opening 2026",
+    "description": "QuantWare announced the VIO-40K, a 10,000-qubit QPU using their VIO 3D scaling architecture with chiplet modules and 40,000 input-output lines. This is 100x larger than anything available today. The VIO-40K is compatible with NVIDIA NVQLink for hybrid quantum-classical computing. QuantWare plans to open a kilofab for industrial-scale QPU fabrication in 2026, which could dramatically accelerate quantum hardware availability.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://quantware.com/news/quantware-announces-scaling-breakthrough-with-vio-40k",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-266",
+    "name": "Microsoft Majorana 2",
+    "manufacturer": "Microsoft",
+    "qubits": "8 topological qubits (Majorana zero modes)",
+    "technology": "Topological qubit (Majorana fermion)",
+    "gate_fidelity": "Qubit coherence time ~20 seconds (vs milliseconds for transmon)",
+    "status": "Announced 2025; proof-of-concept demonstrated",
+    "description": "Microsoft's Majorana 2 chip represents a fundamentally different approach to quantum computing using topological qubits based on Majorana zero modes. The qubits on Majorana 2 survive for an average of 20 seconds, compared to milliseconds for conventional transmon qubits — a 10,000x improvement in coherence. Microsoft claims the chip is 1,000 times better than its predecessor. Topological qubits are inherently more resistant to environmental noise, potentially reducing the overhead needed for error correction.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.bbc.com/news/articles/cj4p7gyvp52o",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-267",
+    "name": "Quantinuum H2 (Quantum Volume Record)",
+    "manufacturer": "Quantinuum",
+    "qubits": "56 trapped-ion qubits",
+    "technology": "Trapped ion (ytterbium-171)",
+    "gate_fidelity": "Quantum Volume 2^23 = 8,388,608 (world record 2025)",
+    "status": "Operational; world record Quantum Volume",
+    "description": "Quantinuum's System Model H2 achieved a Quantum Volume of 2^23 = 8,388,608, setting a new world record. Quantum Volume is a holistic metric that captures qubit count, gate fidelity, connectivity, and compiler efficiency. This milestone demonstrates that Quantinuum's trapped-ion approach delivers the highest-quality qubits in the industry, even with fewer physical qubits than superconducting competitors.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.quantinuum.com/blog/quantum-volume-milestone",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-268",
+    "name": "D-Wave Advantage2",
+    "manufacturer": "D-Wave Systems",
+    "qubits": "7,000+ superconducting flux qubits",
+    "technology": "Superconducting flux qubit (quantum annealing)",
+    "gate_fidelity": "N/A (annealing processor, not gate-based)",
+    "status": "Operational 2025; cloud access via Leap platform",
+    "description": "D-Wave's Advantage2 is the latest quantum annealing processor with over 7,000 flux qubits and a new Zephyr connectivity topology providing 20-way connectivity per qubit. While not a gate-model quantum computer, Advantage2 excels at optimization problems and sampling tasks. The new connectivity topology significantly reduces the chain length needed for embedding problems, improving solution quality for real-world optimization applications in logistics, finance, and materials science.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.dwavesys.com/solutions-and-products/systems/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-269",
+    "name": "Atom Computing Navigator (1000+ Qubit)",
+    "manufacturer": "Atom Computing",
+    "qubits": "1,180 neutral atom qubits",
+    "technology": "Neutral atom (strontium-87)",
+    "gate_fidelity": "~99.5% two-qubit gate; all-to-all connectivity via atom rearrangement",
+    "status": "Operational 2025; first 1000+ qubit neutral atom system",
+    "description": "Atom Computing's Navigator system uses 1,180 neutral strontium-87 atoms arranged in optical tweezers. The neutral atom platform offers unique advantages: all-to-all connectivity through physical atom rearrangement, long coherence times, and natural scalability. The system can physically move qubits to interact with any other qubit, eliminating the connectivity constraints of superconducting processors. This was the first neutral atom system to exceed 1,000 qubits.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://atom-computing.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-270",
+    "name": "QuEra Aquila (256 Qubit Enhanced)",
+    "manufacturer": "QuEra Computing",
+    "qubits": "256 neutral atom qubits (programmable)",
+    "technology": "Neutral atom (rubidium-87)",
+    "gate_fidelity": "~99.5% two-qubit gate; analog and digital modes",
+    "status": "Operational; available on AWS Braket",
+    "description": "QuEra's enhanced Aquila system provides 256 programmable neutral atom qubits on AWS Braket. The system supports both analog quantum simulation and digital gate-based computation. QuEra's approach leverages the natural scalability of neutral atoms and the flexibility of programmable tweezer arrays. The company has published results showing quantum advantage for specific materials science and combinatorial optimization problems.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://queracomputing.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-271",
+    "name": "PsiQuantum Omega",
+    "manufacturer": "PsiQuantum",
+    "qubits": "Photonic (targeting 1M+ physical qubits for fault tolerance)",
+    "technology": "Photonic (silicon photonics)",
+    "gate_fidelity": "Fusion-based gate model; targeting logical qubit operations",
+    "status": "Under development; manufacturing partnership with GlobalFoundries",
+    "description": "PsiQuantum is building a utility-scale photonic quantum computer using silicon photonics manufactured in a semiconductor fab (GlobalFoundries). Their fusion-based approach uses single-photon sources, linear optical circuits, and photon detectors. The key advantage is that photonic qubits don't require extreme cooling and can leverage existing semiconductor manufacturing. PsiQuantum aims to build a fault-tolerant quantum computer with over 1 million physical qubits.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://psiquantum.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-272",
+    "name": "IQM Radiance 54-Qubit",
+    "manufacturer": "IQM Quantum Computers",
+    "qubits": "54 superconducting qubits",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "~99.8% two-qubit gate",
+    "status": "Operational 2025; deployed in Finland",
+    "description": "IQM's Radiance 54-qubit quantum computer is Europe's most powerful gate-model quantum system, deployed at the VTT Technical Research Centre of Finland. IQM focuses on building quantum computers for near-term applications in finance, chemistry, and optimization. The company has also announced plans for 150-qubit and 1000-qubit systems. IQM's approach emphasizes co-design of quantum hardware and software for specific application domains.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.meetiqm.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-273",
+    "name": "Oxford Ionics IonQ-style Gate",
+    "manufacturer": "Oxford Ionics",
+    "qubits": "Scalable trapped-ion architecture",
+    "technology": "Trapped ion (electronic qubit control)",
+    "gate_fidelity": "99.99%+ two-qubit gate (demonstrated component-level)",
+    "status": "Development; component demonstrations published 2025",
+    "description": "Oxford Ionics is developing a scalable trapped-ion quantum processor that uses electronic qubit control instead of lasers for gate operations. This approach promises more reliable and scalable gate operations. The company has demonstrated component-level fidelities exceeding 99.99% for two-qubit gates. The electronic control approach eliminates the need for complex laser systems, potentially simplifying scaling to thousands of qubits.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://oxfordionics.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-274",
+    "name": "IBM Quantum System Two (Flamingo)",
+    "manufacturer": "IBM",
+    "qubits": "Multi-chip modular; 1,386 qubits target (Flamingo processor)",
+    "technology": "Superconducting transmon (modular)",
+    "gate_fidelity": "99.5%+ 2-qubit gate; classical inter-chip links",
+    "status": "Planned 2025-2026; modular scaling demonstration",
+    "description": "IBM's Flamingo processor is the next step in IBM's modular quantum computing roadmap, designed to demonstrate multi-chip scaling within the Quantum System Two architecture. Flamingo will use classical communication links between Heron-class chips to build larger systems. This modular approach is critical for IBM's goal of reaching 100,000+ qubits by 2033. The system emphasizes the importance of inter-chip communication bandwidth and latency for distributed quantum computation.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.ibm.com/quantum/roadmap",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-275",
+    "name": "Rigetti Ankaa-3",
+    "manufacturer": "Rigetti Computing",
+    "qubits": "84 superconducting qubits (tunable couplers)",
+    "technology": "Superconducting transmon with tunable couplers",
+    "gate_fidelity": "~99.7% two-qubit gate (tunable coupler architecture)",
+    "status": "Operational 2025; available on Rigetti QCS",
+    "description": "Rigetti's Ankaa-3 system features 84 superconducting qubits with tunable coupler architecture for improved gate fidelity and reduced crosstalk. The tunable coupler design allows precise control of qubit-qubit interactions, enabling higher-fidelity two-qubit gates compared to fixed-frequency architectures. Ankaa-3 is available through Rigetti's Quantum Cloud Services and AWS Braket.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.rigetti.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-276",
+    "name": "IQM Crystal 150-Qubit",
+    "manufacturer": "IQM Quantum Computers",
+    "qubits": "150 superconducting qubits",
+    "technology": "Superconducting transmon (co-design)",
+    "gate_fidelity": "Targeting >99.5% two-qubit gate",
+    "status": "Planned 2026",
+    "description": "IQM's Crystal 150-qubit system is the next generation of IQM's superconducting quantum computers, planned for 2026. The system uses application-specific co-design, optimizing the hardware architecture for target use cases in quantum simulation and optimization. IQM's approach focuses on building quantum computers that are tailored for specific industrial applications rather than general-purpose quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.meetiqm.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-277",
+    "name": "Planqc Qristal",
+    "manufacturer": "planqc",
+    "qubits": "Neutral atom (scalable to 1,000+)",
+    "technology": "Neutral atom (strontium) with optical lattice",
+    "gate_fidelity": "~99.5% two-qubit gate",
+    "status": "Under development; German quantum computing flagship",
+    "description": "planqc is building a neutral atom quantum computer using strontium atoms in optical lattices. The company is part of Germany's quantum computing flagship program and leverages technology from the Max Planck Institute. Their approach combines the scalability of neutral atoms with the precision of optical lattice control. planqc aims to build fault-tolerant quantum computers by combining high-fidelity gate operations with error correction.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://planqc.eu/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-278",
+    "name": "Pasqal Orion",
+    "manufacturer": "Pasqal",
+    "qubits": "100+ neutral atom qubits",
+    "technology": "Neutral atom (rubidium) with optical tweezers",
+    "gate_fidelity": "~99.5% two-qubit gate",
+    "status": "Operational 2025; deployed in France and Netherlands",
+    "description": "Pasqal's Orion system uses arrays of neutral rubidium atoms manipulated by optical tweezers. The system supports both analog quantum simulation and digital computation. Pasqal has deployed systems in France and the Netherlands and has partnerships with major companies including BASF, Siemens, and EDF for quantum computing applications in chemistry, energy, and finance. The company aims to build 1,000-qubit systems by 2027.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://pasqal.io/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-279",
+    "name": "Origin Wukong (悟空)",
+    "manufacturer": "Origin Quantum (本源量子)",
+    "qubits": "72 superconducting qubits",
+    "technology": "Superconducting transmon",
+    "gate_fidelity": "~99.0% two-qubit gate",
+    "status": "Operational 2024; China's most powerful gate-model QC",
+    "description": "Origin Quantum's Wukong (悟空) is China's most powerful gate-model quantum computer with 72 superconducting qubits. Named after the mythical Monkey King, Wukong represents China's push for domestic quantum computing capability. The system is accessible through Origin Quantum's cloud platform and has been used for quantum chemistry, optimization, and machine learning research. China is investing heavily in quantum computing as part of its national technology strategy.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.originquantum.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "QPU-280",
+    "name": "SEEQC Digital Quantum Module",
+    "manufacturer": "SEEQC",
+    "qubits": "Superconducting with SFQ-classical control",
+    "technology": "Superconducting with Single Flux Quantum (SFQ) digital control",
+    "gate_fidelity": "Targeting >99.5% with integrated digital control",
+    "status": "Development; chip demonstrations 2025",
+    "description": "SEEQC is developing a unique approach that integrates Single Flux Quantum (SFQ) digital control electronics directly on the quantum processor chip. This eliminates the need for room-temperature control electronics and the thousands of wires that connect them to the quantum chip. SFQ control operates at the same cryogenic temperature as the qubits, dramatically reducing latency and power consumption while improving scalability. This approach could solve one of the key scaling bottlenecks in superconducting quantum computing.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://seeqc.com/",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

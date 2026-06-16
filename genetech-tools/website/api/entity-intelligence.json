@@ -1,0 +1,4703 @@
+{
+  "meta": {
+    "generated_at": "2026-06-04T02:01:50.010Z",
+    "domain": "genetech.tools",
+    "version": "1.0",
+    "total_entities": 361
+  },
+  "entities": [
+    {
+      "id": "GENE-mpkp8lda-e2pwnv",
+      "name": "ADA",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkp8lda-4td3uu",
+      "name": "DHFR",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkp8lda-0kvohs",
+      "name": "VEGF",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkp8lda-davw6o",
+      "name": "PD-L1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkp8ldb-8dncxy",
+      "name": "Cell Cycle Progression Gene Profile",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkp8ldb-tt87n6",
+      "name": "GAA",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkp8ldb-ztdjwq",
+      "name": "PIK3CA",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpaslv-yx524q",
+      "name": "GAT-1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpaslv-b1y3l9",
+      "name": "SLC6A1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpaslw-1jvfxq",
+      "name": "LAMP2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpaslw-5kp8lw",
+      "name": "OTOF",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-o1wzt2",
+      "name": "Keap1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-4c67cl",
+      "name": "PHD2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-0yiddu",
+      "name": "Nrf2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-wcoz9i",
+      "name": "HIF-1α",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-9l89t7",
+      "name": "PNP",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-447xmw",
+      "name": "IDH1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-rpz7do",
+      "name": "TK",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e3-5i9ptd",
+      "name": "Flt3L",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-d4g4wc",
+      "name": "GLA",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-3qdbe5",
+      "name": "GB3",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-xw22up",
+      "name": "TurboYFP",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-u5cq2x",
+      "name": "DBP",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-bfxq5o",
+      "name": "GYG1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-wzfsrc",
+      "name": "p62",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-80xxny",
+      "name": "LPL",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpg9e4-m738wd",
+      "name": "Furin",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyed-b7d5yv",
+      "name": "PD-1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyed-lpdq3i",
+      "name": "Claudin-1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyed-x4sseb",
+      "name": "Occludin",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyed-qzmf0c",
+      "name": "ZO-1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-iloyzt",
+      "name": "GBA",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-yfym4h",
+      "name": "CLN3",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-q9932g",
+      "name": "Bcl-2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-c7whw6",
+      "name": "HBB",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-yyw2av",
+      "name": "HBA1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-3j1fua",
+      "name": "HBA2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-ot7hw3",
+      "name": "HBG1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-4kf18o",
+      "name": "HBG2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-nablds",
+      "name": "DMD",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-94l4x4",
+      "name": "CK8",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyee-drp2od",
+      "name": "μDys5",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyef-ocgc0e",
+      "name": "GLB1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpmyef-zevojb",
+      "name": "SERPINA1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpqyhr-234enb",
+      "name": "desmin",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkpvwp2-3dwa3t",
+      "name": "Luxturna",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzs-01ltsx",
+      "name": "GLY1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzs-mx1zdr",
+      "name": "GYS",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzs-gfuup9",
+      "name": "UGP2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzs-e04emq",
+      "name": "PYGL",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzs-tq12n9",
+      "name": "AGL",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzs-flgd9n",
+      "name": "SQSTM1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzs-7psoz0",
+      "name": "DES",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzt-8v2jip",
+      "name": "OPN1MW",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzt-3j1jbb",
+      "name": "OPN1SW",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzt-guzm48",
+      "name": "NRL",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzt-9uk4i1",
+      "name": "L-opsin",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq4tzt-27bxs3",
+      "name": "FXN",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq8hyu-zhr2tz",
+      "name": "GFP",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq8hyu-wgz0lz",
+      "name": "miR122",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq8hyu-mgmfll",
+      "name": "miR208a",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq8hyu-k8ywja",
+      "name": "IGF-1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkq8hyu-hmlciy",
+      "name": "TH",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkqew9m-cjhhq9",
+      "name": "GBA1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkqew9m-c4fxxg",
+      "name": "IGF1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkqew9m-pncncz",
+      "name": "IGFBP3",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkqew9m-ybqhmg",
+      "name": "CD133",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkqew9m-nw5jjh",
+      "name": "CLTA1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkqew9m-ya46jj",
+      "name": "AIFM1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpkqew9m-piizfa",
+      "name": "ABL",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-qgdgi1",
+      "name": "β-globin",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-nnw25y",
+      "name": "γ-globin",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-r0005z",
+      "name": "BCL11A",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-q9isgl",
+      "name": "FOG1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-853m32",
+      "name": "HDAC1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-psv76w",
+      "name": "HDAC2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-8jfeij",
+      "name": "CHD4",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f5-lro2eo",
+      "name": "RPGR",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-mpktp0f6-xh2qaa",
+      "name": "RPE65",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-dhnepfhb5m",
+      "name": "TK2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-if721guqyz",
+      "name": "ANGPTL3",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-80ukzywvtx",
+      "name": "PCSK9",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-casyufzxqk",
+      "name": "MECP2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-l7fkq48o8f",
+      "name": "SMN1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-xx9c6qy2u",
+      "name": "CFTR",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-jj88ij34ea",
+      "name": "HTT",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p1a",
+      "name": "NCF1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p2b",
+      "name": "CPS1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p3c",
+      "name": "OTC",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p4d",
+      "name": "ASS1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p5e",
+      "name": "ASL",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p6f",
+      "name": "ARG1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p7g",
+      "name": "SLC25A13",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p8h",
+      "name": "NAGS",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p9i",
+      "name": "TTR",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-nf2k8p0j",
+      "name": "F9",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-gt53100",
+      "name": "BCMA",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-gt53101",
+      "name": "APOE",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-gt53102",
+      "name": "F8",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-gt53103",
+      "name": "ABCA4",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-gt53104",
+      "name": "MYO7A",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0601-was",
+      "name": "WAS",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0601-gdnf",
+      "name": "GDNF",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0601-neurturin",
+      "name": "NEURTURIN",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0602-tk2",
+      "name": "TK2",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0602-cps1-babykj",
+      "name": "CPS1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0603-ldlr",
+      "name": "LDLR",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0603-klrbc1",
+      "name": "KLRC1",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0603-cep290",
+      "name": "CEP290",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0603-rpe65-v2",
+      "name": "RPE65",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "GENE-0603-ldlr-apoe",
+      "name": "LDLR/APOE",
+      "category": "genes",
+      "trl": 4,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-pl1t68",
+      "name": "Adenosine Deaminase Severe Combined Immunodeficiency (ADA-SCID)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-qta6il",
+      "name": "Rheumatoid Arthritis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-mmjh32",
+      "name": "Rheumatic Diseases",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-hu9f91",
+      "name": "Breast Cancer Triple Negative",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-irrv61",
+      "name": "Breast Cancer Stage II",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-7rm3a1",
+      "name": "Breast Cancer Stage III",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-xkliwx",
+      "name": "Breast Cancer Invasive",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-ti7mpm",
+      "name": "Diabetic Macular Edema",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-x6xvxa",
+      "name": "Diabetic Retinopathy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-5es53b",
+      "name": "Squamous Cell Cancer of Head and Neck",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8lda-yaahi9",
+      "name": "Triple Negative Breast Cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-0qxlby",
+      "name": "Epithelial Ovarian Cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-hgeyoj",
+      "name": "Malignant Melanoma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-2autlf",
+      "name": "Advanced Solid Tumors",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-0zllzx",
+      "name": "Ovarian Cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-hvu9z1",
+      "name": "Prostate Cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-vrypoa",
+      "name": "Pompe Disease (Late-onset)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-6ucl2h",
+      "name": "Granuloma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-zu0ei0",
+      "name": "Granulomatous Disease, Chronic",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-p6y77n",
+      "name": "Leukocyte Disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-0t7zkj",
+      "name": "Genetic Disease, X-Linked",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-219nn4",
+      "name": "Genetic Disease, Inborn",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-nl20ra",
+      "name": "Carcinoma, Non-Small-Cell Lung",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-l5t3vb",
+      "name": "Breast Cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkp8ldb-xkai0j",
+      "name": "HER2-low Breast Cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslv-38ohoi",
+      "name": "epilepsy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslv-xowagu",
+      "name": "SLC6A1-related neurodevelopmental disorder",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslv-gqbjxv",
+      "name": "developmental and epileptic encephalopathy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-k9cuo3",
+      "name": "Danon disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-24slzw",
+      "name": "hypertrophic cardiomyopathy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-3ghyot",
+      "name": "myopathy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-yg0mjn",
+      "name": "intellectual disability",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-8jukr6",
+      "name": "retinopathy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-7mvje5",
+      "name": "Fabry disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-rqtwdq",
+      "name": "PRKAG2",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpaslw-kh3vxf",
+      "name": "Pompe disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e2-or75fl",
+      "name": "oral lesions",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e2-d7lf3z",
+      "name": "cold sores",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e2-wocbhw",
+      "name": "oral Kaposi's sarcoma (KS)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e2-6a694g",
+      "name": "HIV-positive",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-vszfmk",
+      "name": "lymphoid hematologic malignancies",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-savbcd",
+      "name": "diabetic wounds",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-6gcs1i",
+      "name": "chronic diabetic wounds",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-qyekfu",
+      "name": "cardiovascular diseases",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-4colse",
+      "name": "CVDs",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-ixdccm",
+      "name": "triple-negative breast cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-0we8i9",
+      "name": "TNBC",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-vygf1z",
+      "name": "glioma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e3-145gfy",
+      "name": "glioblastoma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-gcei6n",
+      "name": "cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-1u48k2",
+      "name": "Chronic granulomatous disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-vhlt11",
+      "name": "inborn error of immunity",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-5yr5pf",
+      "name": "invasive bacterial infections",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-vkn1h4",
+      "name": "fungal infections",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-cycg6s",
+      "name": "inflammatory complications",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-hqrtod",
+      "name": "lung adenocarcinoma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-oxvia7",
+      "name": "respiratory infections",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-mis7p8",
+      "name": "ocular infections",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-mpwkw5",
+      "name": "urinary tract infections",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-h4xuw6",
+      "name": "gastrointestinal infections",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-et55vi",
+      "name": "Glycogen storage disease type 15",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-6pu28c",
+      "name": "cardiomyopathy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-6x52o4",
+      "name": "congestive heart failure",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-nmzn5d",
+      "name": "Haemophilia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-5ywn67",
+      "name": "Haemophilia A",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-mg8r96",
+      "name": "Haemophilia B",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-cole0k",
+      "name": "familial LPL deficiency",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-n28qo1",
+      "name": "chylomicronemia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-cna1f3",
+      "name": "acute pancreatitis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpg9e4-k9anwz",
+      "name": "hepatic steatosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyed-wfbhud",
+      "name": "immune-related adverse events",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-ngq6ym",
+      "name": "intestinal injury",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-15ln2m",
+      "name": "Juvenile neuronal ceroid lipofuscinosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-loadne",
+      "name": "JNCL",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-ss0xv2",
+      "name": "Batten Disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-x08n0a",
+      "name": "Bladder Cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-dome79",
+      "name": "Hb Bart's hydrops fetalis syndrome",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-6mzft9",
+      "name": "BHFS",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-8oc9nb",
+      "name": "α-thalassemia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-0vlxf4",
+      "name": "β-thalassemia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 70,
+        "direction": "↑↑",
+        "score": 70
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyee-n4xo8z",
+      "name": "HbH disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-9ijue6",
+      "name": "Duchenne Muscular Dystrophy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-u2v51q",
+      "name": "Becker muscular dystrophy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-t3lldi",
+      "name": "dystrophinopathies",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-wdqfwt",
+      "name": "GM1 gangliosidosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-1wmzzi",
+      "name": "lysosomal storage disorder",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-06m9j8",
+      "name": "genetic disorders",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-950mhl",
+      "name": "oncology",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-g0hpbi",
+      "name": "Alpha-1 antitrypsin deficiency",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-tilhp7",
+      "name": "AATD",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-jispj6",
+      "name": "lung disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-rnm78u",
+      "name": "liver disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpmyef-ahjg56",
+      "name": "serious paediatric diseases",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpvwp2-oue8u2",
+      "name": "blindness",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpvwp2-1f5ehs",
+      "name": "sickle cell disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 60,
+        "direction": "↑",
+        "score": 60
+      },
+      "signal": "🟡",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpvwp2-devt82",
+      "name": "rare inherited eye",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpvwp3-u2p5k6",
+      "name": "ALS",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpvwp3-m347ut",
+      "name": "inherited blindness",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpvwp3-hm5tew",
+      "name": "Wiskott-Aldrich syndrome",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkpvwp3-dbdy30",
+      "name": "genetic disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzr-uq02s9",
+      "name": "irAEs",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 50,
+        "direction": "→",
+        "score": 50
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzs-s0df3a",
+      "name": "GSD15",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzt-nt6cml",
+      "name": "Osteoporosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzt-7mczrn",
+      "name": "postmenopausal osteoporosis (PMOP)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzt-wkitvl",
+      "name": "Blue cone monochromacy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzt-ku2vus",
+      "name": "BCM",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzt-t25igc",
+      "name": "spinal muscular atrophy (SMA)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzt-qsmhx3",
+      "name": "Friedreich's Ataxia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq4tzt-8iljvh",
+      "name": "FA",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq8hyu-bnzkxy",
+      "name": "metabolic",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq8hyu-nzsdwl",
+      "name": "muscle disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq8hyu-qqi1di",
+      "name": "Parkinson's disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkq8hyu-uh5g5q",
+      "name": "parkinsonism",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9l-e5vdcr",
+      "name": "breast cancer",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-vykga1",
+      "name": "inherited disorders",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-l2nrv8",
+      "name": "Gaucher disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-cl07hk",
+      "name": "Parkinson disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-81v1ox",
+      "name": "GBA1-related Parkinson disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-uk6uiv",
+      "name": "neuronopathic GD",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-w7mvvk",
+      "name": "neurodegenerative diseases",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-4gsihs",
+      "name": "selective neurodegeneration",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-rkmq50",
+      "name": "Parkinson's Disease (PD)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-crix9y",
+      "name": "neurological diseases",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-nwh7fe",
+      "name": "muscular dystrophy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-ji6kam",
+      "name": "white spot disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-8st8x0",
+      "name": "WSD",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-7hnov8",
+      "name": "white spot syndrome virus",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-4ypnv0",
+      "name": "WSSV",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-xq0mfp",
+      "name": "Glioblastoma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpkqew9m-biindc",
+      "name": "GBM",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f5-49cfv6",
+      "name": "hemoglobinopathies",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f5-ee4ksm",
+      "name": "rod-cone dystrophies",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f5-cua3gj",
+      "name": "centripetal retinal degeneration",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f5-hrfzcg",
+      "name": "inherited retinal degenerations",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f6-o8e6d1",
+      "name": "rare inherited eye disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f6-av34ob",
+      "name": "autoimmune conditions",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f6-bxem7b",
+      "name": "rare diseases",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f6-2f2yp3",
+      "name": "hereditary retinal dystrophy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f7-ypj5ez",
+      "name": "beta-thalassemia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-mpktp0f7-1m167n",
+      "name": "frontotemporal dementia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-glh55ppj2i",
+      "name": "Thymidine kinase 2 deficiency",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-e0lzj0n52f",
+      "name": "Rett syndrome",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-30fzbdqafz",
+      "name": "Cystic fibrosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-96j2zl8h2r",
+      "name": "Huntington disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-6hsnfw2m2p",
+      "name": "Hypertriglyceridemia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-zysz5zaap1",
+      "name": "Hereditary transthyretin amyloidosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-iisqqqaub4",
+      "name": "Metachromatic leukodystrophy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-31emls6skc",
+      "name": "Cerebral adrenoleukodystrophy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-lgixfmygvn",
+      "name": "Hemophilia B",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-rk0r4kdqnm",
+      "name": "Leber congenital amaurosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-nf2k8d1a",
+      "name": "p47phox-deficient chronic granulomatous disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-nf2k8d2b",
+      "name": "urea cycle disorders",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-nf2k8d3c",
+      "name": "heterozygous familial hypercholesterolemia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-nf2k8d4d",
+      "name": "familial hypercholesterolemia",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-nf2k8d5e",
+      "name": "cardiovascular disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-nf2k8d6f",
+      "name": "OTOF-related hearing loss",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-nf2k8d7g",
+      "name": "spinal muscular atrophy",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-gt53100",
+      "name": "Stargardt disease",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-gt53101",
+      "name": "Usher syndrome type 1B",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-gt53102",
+      "name": "multiple myeloma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-gt53103",
+      "name": "B-cell lymphoma",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-gt53104",
+      "name": "ultra-rare diseases",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0601-was",
+      "name": "Wiskott-Aldrich syndrome",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0601-bcell-malignancies",
+      "name": "B-cell malignancies",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0601-attr-wildtype",
+      "name": "Wild-type ATTR amyloidosis",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0602-tk2d",
+      "name": "Thymidine kinase 2 deficiency",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0602-cps1d",
+      "name": "CPS1 deficiency",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0602-dfnb9",
+      "name": "DFNB9 autosomal recessive deafness",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0603-hefh-update",
+      "name": "Heterozygous familial hypercholesterolemia (HeFH)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0603-lca10",
+      "name": "Leber congenital amaurosis type 10",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0603-scd-update",
+      "name": "Sickle cell disease (2026 update)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "DIS-0603-attr-update",
+      "name": "ATTR amyloidosis (2026 update)",
+      "category": "diseases",
+      "trl": 3,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🔴",
+      "development_stage": null
+    },
+    {
+      "id": "GT-mpkp8lda-hi3fa1",
+      "name": "GT-mpkp8lda-hi3fa1",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-mpkpaslw-a25iqs",
+      "name": "GT-mpkpaslw-a25iqs",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpaslw-nwk9i9",
+      "name": "GT-mpkpaslw-nwk9i9",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpg9e3-2tktn5",
+      "name": "GT-mpkpg9e3-2tktn5",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpg9e4-6v3fr3",
+      "name": "GT-mpkpg9e4-6v3fr3",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpg9e4-q1u85k",
+      "name": "GT-mpkpg9e4-q1u85k",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpmyee-loh176",
+      "name": "GT-mpkpmyee-loh176",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpmyef-bj5sic",
+      "name": "GT-mpkpmyef-bj5sic",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpmyef-rqvtbz",
+      "name": "GT-mpkpmyef-rqvtbz",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpmyef-31akmn",
+      "name": "GT-mpkpmyef-31akmn",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkpvwp3-mokzta",
+      "name": "GT-mpkpvwp3-mokzta",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-mpkq4tzt-nsr9im",
+      "name": "GT-mpkq4tzt-nsr9im",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkq4tzt-4uyva5",
+      "name": "GT-mpkq4tzt-4uyva5",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkq8hyu-tjy5mx",
+      "name": "GT-mpkq8hyu-tjy5mx",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkq8hyu-88hf1t",
+      "name": "GT-mpkq8hyu-88hf1t",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkqew9m-l94834",
+      "name": "GT-mpkqew9m-l94834",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpkqew9m-ci0r15",
+      "name": "GT-mpkqew9m-ci0r15",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpktp0f6-kd739y",
+      "name": "GT-mpktp0f6-kd739y",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-mpktp0f6-a9fwfj",
+      "name": "GT-mpktp0f6-a9fwfj",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-f98bgwp0l6",
+      "name": "GT-f98bgwp0l6",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-4hbmciufjq",
+      "name": "GT-4hbmciufjq",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-qg1nsmhccw",
+      "name": "GT-qg1nsmhccw",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-1mcimbiuyi",
+      "name": "GT-1mcimbiuyi",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-tg1kkqwogf",
+      "name": "GT-tg1kkqwogf",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-kresladi-lad1",
+      "name": "GT-kresladi-lad1",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-cps1-crispr-personalized",
+      "name": "GT-cps1-crispr-personalized",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-novaiscB-compact",
+      "name": "GT-novaiscB-compact",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-intellia-ttr-phase3",
+      "name": "GT-intellia-ttr-phase3",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-casgevy-expanded",
+      "name": "GT-casgevy-expanded",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-nf2k8g1a",
+      "name": "GT-nf2k8g1a",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-nf2k8g2b",
+      "name": "GT-nf2k8g2b",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-nf2k8g3c",
+      "name": "GT-nf2k8g3c",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-gt53100",
+      "name": "GT-gt53100",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-gt53101",
+      "name": "GT-gt53101",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-gt53102",
+      "name": "GT-gt53102",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-0601-was-gene",
+      "name": "GT-0601-was-gene",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-0601-igf1-parkinson",
+      "name": "GT-0601-igf1-parkinson",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-0601-40plus-approved",
+      "name": "GT-0601-40plus-approved",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-0601-in-vivo-car",
+      "name": "GT-0601-in-vivo-car",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-0601-breakthrough-prize",
+      "name": "GT-0601-breakthrough-prize",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-0602-kygevvi",
+      "name": "GT-0602-kygevvi",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-0602-encelto",
+      "name": "GT-0602-encelto",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-0602-baby-kj",
+      "name": "GT-0602-baby-kj",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-0602-ctx310",
+      "name": "GT-0602-ctx310",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "GT-0602-yale-crispr-immune",
+      "name": "GT-0602-yale-crispr-immune",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-0602-otarmeni",
+      "name": "GT-0602-otarmeni",
+      "category": "gene_therapies",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "GT-0603-editas-edit401",
+      "name": "GT-0603-editas-edit401",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "GT-0603-baby-kj-followup",
+      "name": "GT-0603-baby-kj-followup",
+      "category": "gene_therapies",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-mpkpg9e3-6ad71j",
+      "name": "CR-mpkpg9e3-6ad71j",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-mpkpg9e4-mmdrqv",
+      "name": "CR-mpkpg9e4-mmdrqv",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-mpkpmyef-os0rvq",
+      "name": "CR-mpkpmyef-os0rvq",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-mpkqew9m-9xqkdm",
+      "name": "CR-mpkqew9m-9xqkdm",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-mpkqew9m-5s6sfl",
+      "name": "CR-mpkqew9m-5s6sfl",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-mpkqew9m-kfmtle",
+      "name": "CR-mpkqew9m-kfmtle",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 40,
+        "direction": "→",
+        "score": 40
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-isvfvntxfm",
+      "name": "CR-isvfvntxfm",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-tgida5ygo1",
+      "name": "CR-tgida5ygo1",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-pucvb2b02n",
+      "name": "CR-pucvb2b02n",
+      "category": "crispr_applications",
+      "trl": 9,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "approved"
+    },
+    {
+      "id": "CR-ei0cu60kl5",
+      "name": "CR-ei0cu60kl5",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-yolt101-base-edit",
+      "name": "CR-yolt101-base-edit",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-pm359-prime-edit",
+      "name": "CR-pm359-prime-edit",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-chop-prime-edit-ucd",
+      "name": "CR-chop-prime-edit-ucd",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-nf2k8c1a",
+      "name": "CR-nf2k8c1a",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-nf2k8c2b",
+      "name": "CR-nf2k8c2b",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-gt53100",
+      "name": "CR-gt53100",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-gt53101",
+      "name": "CR-gt53101",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-gt53102",
+      "name": "CR-gt53102",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "regulatory"
+    },
+    {
+      "id": "CR-0601-base-editing-advances",
+      "name": "CR-0601-base-editing-advances",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-0601-crispr-10-companies",
+      "name": "CR-0601-crispr-10-companies",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-0601-250-trials",
+      "name": "CR-0601-250-trials",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-0601-nature-breakthrough",
+      "name": "CR-0601-nature-breakthrough",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-0601-fda-rare-disease",
+      "name": "CR-0601-fda-rare-disease",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "regulatory"
+    },
+    {
+      "id": "CR-0602-fda-ultra-rare-pathway",
+      "name": "CR-0602-fda-ultra-rare-pathway",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "regulatory"
+    },
+    {
+      "id": "CR-0602-personalized-crispr",
+      "name": "CR-0602-personalized-crispr",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-0602-250-trials-update",
+      "name": "CR-0602-250-trials-update",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-0602-yale-immune-crispr",
+      "name": "CR-0602-yale-immune-crispr",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-0603-destructive-crispr",
+      "name": "CR-0603-destructive-crispr",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "preclinical"
+    },
+    {
+      "id": "CR-0603-in-vivo-advances",
+      "name": "CR-0603-in-vivo-advances",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "clinical"
+    },
+    {
+      "id": "CR-0603-fda-plausible-mechanism",
+      "name": "CR-0603-fda-plausible-mechanism",
+      "category": "crispr_applications",
+      "trl": 5,
+      "trend": {
+        "momentum": 45,
+        "direction": "→",
+        "score": 45
+      },
+      "signal": "🟡",
+      "development_stage": "regulatory"
+    }
+  ]
+}

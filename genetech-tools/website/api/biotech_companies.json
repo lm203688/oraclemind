@@ -1,0 +1,445 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-07T22:08:08.574Z",
+  "description": "Leading biotech companies in gene therapy, gene editing, and genomic medicine",
+  "entities": [
+    {
+      "id": "BTC-crispr-ther",
+      "name": "CRISPR Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "CRSP",
+      "focus": "CRISPR-Cas9 gene editing",
+      "key_products": [
+        "Casgevy (exa-cel) - approved SCD/TDT therapy"
+      ],
+      "hq": "Switzerland",
+      "founded": 2013,
+      "development_stage": "commercial",
+      "key_achievements": [
+        "First CRISPR therapy approved (Casgevy)",
+        "Sickle cell and beta-thalassemia treatment"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-intellia",
+      "name": "Intellia Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "NTLA",
+      "focus": "In vivo CRISPR gene editing",
+      "key_products": [
+        "NTLA-2001 (ATTR amyloidosis)",
+        "NTLA-2002 (hereditary angioedema)"
+      ],
+      "hq": "USA",
+      "founded": 2014,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "First in vivo CRISPR editing in humans",
+        "LNP delivery platform"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-beam",
+      "name": "Beam Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "BEAM",
+      "focus": "Base editing technology",
+      "key_products": [
+        "BEAM-101 (sickle cell)",
+        "BEAM-201"
+      ],
+      "hq": "USA",
+      "founded": 2017,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "Leading base editing company",
+        "CBE and ABE platforms"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-editas",
+      "name": "Editas Medicine",
+      "category": "biotech_companies",
+      "ticker": "EDIT",
+      "focus": "CRISPR gene editing",
+      "key_products": [
+        "EDIT-101 (LCA10 eye disease)"
+      ],
+      "hq": "USA",
+      "founded": 2013,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "First in vivo CRISPR clinical trial in body",
+        "In vivo eye disease editing"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-prime-med",
+      "name": "Prime Medicine",
+      "category": "biotech_companies",
+      "ticker": "PRME",
+      "focus": "Prime editing technology",
+      "key_products": [
+        "PM359 (chronic granulomatous disease)"
+      ],
+      "hq": "USA",
+      "founded": 2020,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "Only prime editing company in clinic",
+        "Search-and-replace genome editing"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-verve",
+      "name": "Verve Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "VERV",
+      "focus": "Base editing for cardiovascular disease",
+      "key_products": [
+        "VERVE-101 (PCSK9)",
+        "VERVE-102"
+      ],
+      "hq": "USA",
+      "founded": 2018,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "In vivo base editing for heart disease",
+        "One-time treatment for high cholesterol"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-sangamo",
+      "name": "Sangamo Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "SGMO",
+      "focus": "Zinc finger technology and gene regulation",
+      "key_products": [
+        "SB-525 (hemophilia A)"
+      ],
+      "hq": "USA",
+      "founded": 1995,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "Pioneer in ZFN technology",
+        "Gene regulation platform"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-arbor-bio",
+      "name": "Arbor Biotechnologies",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "CRISPR discovery and gene editing",
+      "key_products": [
+        "Novel CRISPR systems discovery"
+      ],
+      "hq": "USA",
+      "founded": 2016,
+      "development_stage": "preclinical",
+      "key_achievements": [
+        "Discovering novel CRISPR effectors",
+        "Expanding CRISPR toolbox"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-caribou",
+      "name": "Caribou Biosciences",
+      "category": "biotech_companies",
+      "ticker": "CRBU",
+      "focus": "CRISPR genome editing",
+      "key_products": [
+        "CB-010 (B-cell lymphoma)",
+        "CB-011 (multiple myeloma)"
+      ],
+      "hq": "USA",
+      "founded": 2011,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "chRDNA guide technology",
+        "Allogeneic CAR-T cell therapies"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-locus-bio",
+      "name": "Locus Biosciences",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "CRISPR-Cas3 antibacterial therapy",
+      "key_products": [
+        "LBP-EC01 (UTI treatment)"
+      ],
+      "hq": "USA",
+      "founded": 2015,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "CRISPR-Cas3 for bacterial killing",
+        "Precision antimicrobials"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-cellectis",
+      "name": "Cellectis",
+      "category": "biotech_companies",
+      "ticker": "CLLS",
+      "focus": "TALEN gene editing for CAR-T",
+      "key_products": [
+        "UCART19 (B-ALL)",
+        "UCART22"
+      ],
+      "hq": "France",
+      "founded": 1999,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "Allogeneic CAR-T using TALEN",
+        "Off-the-shelf immunotherapy"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-pairwise",
+      "name": "Pairwise",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "CRISPR base editing for agriculture and health",
+      "key_products": [
+        "Agricultural gene-edited crops"
+      ],
+      "hq": "USA",
+      "founded": 2017,
+      "development_stage": "commercial (agri)",
+      "key_achievements": [
+        "First gene-edited food product (mustard greens)",
+        "Base editing in agriculture"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-kriya",
+      "name": "Kriya Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "Gene therapy for metabolic diseases",
+      "key_products": [
+        "KT-A112 (type 2 diabetes)"
+      ],
+      "hq": "USA",
+      "founded": 2019,
+      "development_stage": "preclinical",
+      "key_achievements": [
+        "Gene therapy approach to diabetes",
+        "Metabolic disease focus"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-breeze-bio",
+      "name": "BreezeBio",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "Gene therapy innovation",
+      "key_products": [],
+      "hq": "USA",
+      "founded": 2023,
+      "development_stage": "early",
+      "key_achievements": [
+        "Emerging gene therapy startup"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "low",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-tune-ther",
+      "name": "Tune Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "Epigenome editing",
+      "key_products": [],
+      "hq": "USA",
+      "founded": 2021,
+      "development_stage": "preclinical",
+      "key_achievements": [
+        "Epigenetic gene regulation without DNA cutting",
+        "Reversible gene silencing/activation"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-chroma-med",
+      "name": "Chroma Medicine",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "Epigenome editing therapeutics",
+      "key_products": [],
+      "hq": "USA",
+      "founded": 2020,
+      "development_stage": "preclinical",
+      "key_achievements": [
+        "Epigenetic editing platform",
+        "Durable gene regulation"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-05-31T15:38:09.017Z",
+      "last_updated": "2026-05-31T15:38:09.017Z"
+    },
+    {
+      "id": "BTC-prime-med",
+      "name": "Prime Medicine",
+      "category": "biotech_companies",
+      "ticker": "PRME",
+      "focus": "Prime editing gene therapy",
+      "key_products": [
+        "PM359 (Wilson Disease)",
+        "PM259 (UCD platform)"
+      ],
+      "hq": "USA",
+      "founded": 2020,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "Raised $315M for prime editing commercialization",
+        "Advancing in vivo prime editing for liver genetic disorders",
+        "FDA flexibility on 2-patient gene editing submission"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-06-07T22:08:08.574Z",
+      "last_updated": "2026-06-07T22:08:08.574Z"
+    },
+    {
+      "id": "BTC-beam-ther",
+      "name": "Beam Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "BEAM",
+      "focus": "Base editing gene therapy",
+      "key_products": [
+        "BEAM-101 (Sickle Cell)",
+        "BEAM-302 (Liver diseases)"
+      ],
+      "hq": "USA",
+      "founded": 2017,
+      "development_stage": "clinical",
+      "key_achievements": [
+        "Platform approach for single-course precision gene editing",
+        "Base editing for liver-targeted genetic diseases",
+        "LNP delivery for in vivo base editing"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-06-07T22:08:08.574Z",
+      "last_updated": "2026-06-07T22:08:08.574Z"
+    },
+    {
+      "id": "BTC-tune-ther",
+      "name": "Tune Therapeutics",
+      "category": "biotech_companies",
+      "ticker": "private",
+      "focus": "Epigenome editing therapeutics",
+      "key_products": [],
+      "hq": "USA",
+      "founded": 2021,
+      "development_stage": "preclinical",
+      "key_achievements": [
+        "Developing durable epigenome editing platform",
+        "Gene control without DNA breaks",
+        "Multiplexed gene activation and silencing"
+      ],
+      "sources": [
+        "web_search"
+      ],
+      "confidence": "medium",
+      "first_seen": "2026-06-07T22:08:08.574Z",
+      "last_updated": "2026-06-07T22:08:08.574Z"
+    }
+  ]
+}

@@ -1,0 +1,2851 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-31T22:02:40.222Z",
+  "description": "mcp_servers库",
+  "entities": [
+    {
+      "id": "MCP-001",
+      "name": "server-filesystem",
+      "full_name": "@modelcontextprotocol/server-filesystem",
+      "category": "文件系统",
+      "description": "读写本地文件系统",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "本地沙箱",
+      "stars": 13000,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "读写文件",
+        "目录列表",
+        "文件搜索"
+      ]
+    },
+    {
+      "id": "MCP-002",
+      "name": "server-postgres",
+      "full_name": "@modelcontextprotocol/server-postgres",
+      "category": "数据库",
+      "description": "PostgreSQL 数据库查询",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "只读查询模式",
+      "stars": 8500,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "schema浏览",
+        "只读模式"
+      ]
+    },
+    {
+      "id": "MCP-003",
+      "name": "server-github",
+      "full_name": "@modelcontextprotocol/server-github",
+      "category": "API",
+      "description": "GitHub API 操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth token",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "token权限控制",
+      "stars": 7200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "创建PR/Issue",
+        "搜索代码",
+        "文件操作"
+      ]
+    },
+    {
+      "id": "MCP-004",
+      "name": "server-puppeteer",
+      "full_name": "@modelcontextprotocol/server-puppeteer",
+      "category": "浏览器",
+      "description": "浏览器自动化",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "沙箱浏览器",
+      "stars": 6800,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页截图",
+        "表单填写",
+        "点击交互"
+      ]
+    },
+    {
+      "id": "MCP-005",
+      "name": "server-sqlite",
+      "full_name": "@modelcontextprotocol/server-sqlite",
+      "category": "数据库",
+      "description": "SQLite 本地数据库",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "本地文件",
+      "stars": 5900,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "建表",
+        "数据导入"
+      ]
+    },
+    {
+      "id": "MCP-006",
+      "name": "server-brave-search",
+      "full_name": "@modelcontextprotocol/server-brave-search",
+      "category": "搜索",
+      "description": "Brave 搜索引擎",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API限流",
+      "stars": 4500,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页搜索",
+        "结果过滤"
+      ]
+    },
+    {
+      "id": "MCP-007",
+      "name": "server-memory",
+      "full_name": "@modelcontextprotocol/server-memory",
+      "category": "记忆",
+      "description": "Agent 持久化记忆",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地存储",
+      "stars": 5200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "知识图谱",
+        "实体关系",
+        "持久化"
+      ]
+    },
+    {
+      "id": "MCP-008",
+      "name": "firecrawl-mcp-server",
+      "full_name": "firecrawl-mcp-server",
+      "category": "网页抓取",
+      "description": "网页内容提取和爬取",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API限流",
+      "stars": 3800,
+      "maintainer": "Mendable",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页抓取",
+        "批量爬取",
+        "结构化提取"
+      ]
+    },
+    {
+      "id": "MCP-009",
+      "name": "server-sequential-thinking",
+      "full_name": "@modelcontextprotocol/server-sequential-thinking",
+      "category": "推理",
+      "description": "结构化思维链推理",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "无风险",
+      "stars": 4100,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "思维链",
+        "分步推理",
+        "动态调整"
+      ]
+    },
+    {
+      "id": "MCP-010",
+      "name": "notion-mcp-server",
+      "full_name": "@notionhq/notion-mcp-server",
+      "category": "生产力",
+      "description": "Notion 页面和数据库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "token权限",
+      "stars": 3200,
+      "maintainer": "Notion",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "页面CRUD",
+        "数据库查询",
+        "搜索"
+      ]
+    },
+    {
+      "id": "MCP-011",
+      "name": "server-slack",
+      "full_name": "@modelcontextprotocol/server-slack",
+      "category": "通信",
+      "description": "Slack 消息和频道操作",
+      "protocol_version": "2025-03-26",
+      "auth": "Bot token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 2800,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发消息",
+        "读频道",
+        "搜索"
+      ]
+    },
+    {
+      "id": "MCP-012",
+      "name": "supabase-mcp-server",
+      "full_name": "supabase-mcp-server",
+      "category": "数据库",
+      "description": "Supabase 数据库和认证",
+      "protocol_version": "2025-03-26",
+      "auth": "Service key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "key权限",
+      "stars": 2600,
+      "maintainer": "Supabase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "Auth管理",
+        "Storage操作"
+      ]
+    },
+    {
+      "id": "MCP-013",
+      "name": "Context7",
+      "full_name": "@upstash/context7-mcp",
+      "category": "文档",
+      "description": "实时获取最新库文档和代码示例",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "只读",
+      "stars": 4200,
+      "maintainer": "Upstash",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "实时文档",
+        "代码示例",
+        "版本感知"
+      ]
+    },
+    {
+      "id": "MCP-014",
+      "name": "Exa MCP Server",
+      "full_name": "exa-mcp-server",
+      "category": "搜索",
+      "description": "AI原生高级网络搜索引擎",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API限流",
+      "stars": 3100,
+      "maintainer": "Exa",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "语义搜索",
+        "内容提取",
+        "相似度搜索"
+      ]
+    },
+    {
+      "id": "MCP-015",
+      "name": "Browserbase",
+      "full_name": "@browserbasehq/mcp-server",
+      "category": "浏览器",
+      "description": "云端浏览器自动化，支持多会话",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "云端沙箱",
+      "stars": 2800,
+      "maintainer": "Browserbase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "云端浏览器",
+        "多会话",
+        "截图/PDF"
+      ]
+    },
+    {
+      "id": "MCP-016",
+      "name": "server-docker",
+      "full_name": "@modelcontextprotocol/server-docker",
+      "category": "DevOps",
+      "description": "Docker容器管理",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "Docker socket权限",
+      "stars": 2400,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "容器管理",
+        "镜像操作",
+        "日志查看"
+      ]
+    },
+    {
+      "id": "MCP-017",
+      "name": "server-git",
+      "full_name": "@modelcontextprotocol/server-git",
+      "category": "版本控制",
+      "description": "Git仓库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "本地权限",
+      "stars": 2200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Git操作",
+        "diff查看",
+        "分支管理"
+      ]
+    },
+    {
+      "id": "MCP-018",
+      "name": "server-google-maps",
+      "full_name": "@modelcontextprotocol/server-google-maps",
+      "category": "地图",
+      "description": "Google Maps API集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API限流",
+      "stars": 1800,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "地理编码",
+        "路线规划",
+        "地点搜索"
+      ]
+    },
+    {
+      "id": "MCP-019",
+      "name": "server-fetch",
+      "full_name": "@modelcontextprotocol/server-fetch",
+      "category": "网络",
+      "description": "HTTP请求和网页内容获取",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "沙箱请求",
+      "stars": 3500,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "HTTP GET/POST",
+        "HTML转Markdown",
+        "内容提取"
+      ]
+    },
+    {
+      "id": "MCP-020",
+      "name": "server-time",
+      "full_name": "@modelcontextprotocol/server-time",
+      "category": "工具",
+      "description": "时间查询和时区转换",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "无风险",
+      "stars": 1200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "当前时间",
+        "时区转换",
+        "时间计算"
+      ]
+    },
+    {
+      "id": "MCP-021",
+      "name": "Figma MCP Server",
+      "full_name": "@figma/mcp-server",
+      "category": "设计",
+      "description": "Figma设计文件读取和代码生成",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "token权限",
+      "stars": 3600,
+      "maintainer": "Figma",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "设计读取",
+        "代码生成",
+        "布局分析"
+      ]
+    },
+    {
+      "id": "MCP-022",
+      "name": "Linear MCP Server",
+      "full_name": "linear-mcp-server",
+      "category": "项目管理",
+      "description": "Linear项目管理工具集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API权限",
+      "stars": 1900,
+      "maintainer": "Linear",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Issue管理",
+        "项目追踪",
+        "团队协作"
+      ]
+    },
+    {
+      "id": "MCP-023",
+      "name": "Jira MCP Server",
+      "full_name": "jira-mcp-server",
+      "category": "项目管理",
+      "description": "Jira项目管理集成",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth/API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1500,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Issue CRUD",
+        "Sprint管理",
+        "JQL查询"
+      ]
+    },
+    {
+      "id": "MCP-024",
+      "name": "server-sentry",
+      "full_name": "@modelcontextprotocol/server-sentry",
+      "category": "监控",
+      "description": "Sentry错误追踪集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1400,
+      "maintainer": "Sentry",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "错误查看",
+        "性能监控",
+        "Release追踪"
+      ]
+    },
+    {
+      "id": "MCP-025",
+      "name": "Stripe MCP Server",
+      "full_name": "stripe-mcp-server",
+      "category": "支付",
+      "description": "Stripe支付平台集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "受限key",
+      "stars": 1600,
+      "maintainer": "Stripe",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "客户管理",
+        "订阅管理",
+        "发票操作"
+      ]
+    },
+    {
+      "id": "MCP-026",
+      "name": "Shopify MCP Server",
+      "full_name": "shopify-mcp-server",
+      "category": "电商",
+      "description": "Shopify电商平台集成",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 1100,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "产品管理",
+        "订单管理",
+        "库存查询"
+      ]
+    },
+    {
+      "id": "MCP-027",
+      "name": "MongoDB MCP Server",
+      "full_name": "mongodb-mcp-server",
+      "category": "数据库",
+      "description": "MongoDB数据库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "连接权限",
+      "stars": 2100,
+      "maintainer": "MongoDB",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRUD操作",
+        "聚合查询",
+        "索引管理"
+      ]
+    },
+    {
+      "id": "MCP-028",
+      "name": "Redis MCP Server",
+      "full_name": "redis-mcp-server",
+      "category": "数据库",
+      "description": "Redis缓存和消息队列操作",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "连接权限",
+      "stars": 1700,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "键值操作",
+        "发布订阅",
+        "缓存管理"
+      ]
+    },
+    {
+      "id": "MCP-029",
+      "name": "Anki MCP Server",
+      "full_name": "anki-mcp-server",
+      "category": "教育",
+      "description": "Anki间隔重复闪卡应用集成",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地API",
+      "stars": 900,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "创建卡片",
+        "查询卡片",
+        "学习进度"
+      ]
+    },
+    {
+      "id": "MCP-030",
+      "name": "server-google-drive",
+      "full_name": "@modelcontextprotocol/server-google-drive",
+      "category": "文件系统",
+      "description": "Google Drive文件操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 2000,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "文件搜索",
+        "读写文档",
+        "列表查看"
+      ]
+    },
+    {
+      "id": "MCP-031",
+      "name": "server-aws",
+      "full_name": "aws-mcp-server",
+      "category": "云服务",
+      "description": "AWS服务集成（S3/Lambda/DynamoDB等）",
+      "protocol_version": "2025-03-26",
+      "auth": "IAM credentials",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "IAM权限",
+      "stars": 2300,
+      "maintainer": "AWS",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "S3操作",
+        "Lambda管理",
+        "DynamoDB查询"
+      ]
+    },
+    {
+      "id": "MCP-032",
+      "name": "server-kubernetes",
+      "full_name": "kubernetes-mcp-server",
+      "category": "DevOps",
+      "description": "Kubernetes集群管理",
+      "protocol_version": "2025-03-26",
+      "auth": "kubeconfig",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "RBAC权限",
+      "stars": 1800,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Pod管理",
+        "部署操作",
+        "日志查看"
+      ]
+    },
+    {
+      "id": "MCP-033",
+      "name": "Terraform MCP Server",
+      "full_name": "terraform-mcp-server",
+      "category": "DevOps",
+      "description": "Terraform基础设施即代码",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地权限",
+      "stars": 1300,
+      "maintainer": "HashiCorp",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Plan/Apply",
+        "State查看",
+        "模块浏览"
+      ]
+    },
+    {
+      "id": "MCP-034",
+      "name": "Playwright MCP Server",
+      "full_name": "@playwright/mcp-server",
+      "category": "浏览器",
+      "description": "Playwright浏览器自动化，支持多浏览器",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "沙箱浏览器",
+      "stars": 3200,
+      "maintainer": "Microsoft",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "多浏览器",
+        "截图/PDF",
+        "网络拦截"
+      ]
+    },
+    {
+      "id": "MCP-035",
+      "name": "server-echosign",
+      "full_name": "adobe-mcp-server",
+      "category": "文档",
+      "description": "Adobe文档服务集成（PDF操作等）",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 800,
+      "maintainer": "Adobe",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "PDF操作",
+        "签名管理",
+        "文档转换"
+      ]
+    },
+    {
+      "id": "MCP-036",
+      "name": "Sysdig MCP Server",
+      "full_name": "sysdig-mcp-server",
+      "category": "安全",
+      "description": "云安全监控和威胁检测",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 700,
+      "maintainer": "Sysdig",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "安全事件",
+        "合规检查",
+        "漏洞扫描"
+      ]
+    },
+    {
+      "id": "MCP-037",
+      "name": "server-twitter",
+      "full_name": "twitter-mcp-server",
+      "category": "社交媒体",
+      "description": "Twitter/X平台操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth 2.0",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 1500,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发推文",
+        "搜索推文",
+        "用户信息"
+      ]
+    },
+    {
+      "id": "MCP-038",
+      "name": "server-discord",
+      "full_name": "discord-mcp-server",
+      "category": "通信",
+      "description": "Discord消息和频道操作",
+      "protocol_version": "2025-03-26",
+      "auth": "Bot token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "Bot权限",
+      "stars": 1200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发消息",
+        "读频道",
+        "服务器管理"
+      ]
+    },
+    {
+      "id": "MCP-039",
+      "name": "server-email (IMAP/SMTP)",
+      "full_name": "email-mcp-server",
+      "category": "通信",
+      "description": "邮件收发操作（IMAP/SMTP）",
+      "protocol_version": "2025-03-26",
+      "auth": "credentials",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "加密连接",
+      "stars": 1100,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "收邮件",
+        "发邮件",
+        "搜索邮件"
+      ]
+    },
+    {
+      "id": "MCP-040",
+      "name": "server-calendar (Google Calendar)",
+      "full_name": "google-calendar-mcp-server",
+      "category": "生产力",
+      "description": "Google日历操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 1600,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "创建事件",
+        "查询日程",
+        "冲突检测"
+      ]
+    },
+    {
+      "id": "MCP-041",
+      "name": "server-airtable",
+      "full_name": "airtable-mcp-server",
+      "category": "数据库",
+      "description": "Airtable数据库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API权限",
+      "stars": 1000,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "记录CRUD",
+        "视图查询",
+        "字段操作"
+      ]
+    },
+    {
+      "id": "MCP-042",
+      "name": "server-snowflake",
+      "full_name": "snowflake-mcp-server",
+      "category": "数据库",
+      "description": "Snowflake数据仓库查询",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth/key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "RBAC权限",
+      "stars": 900,
+      "maintainer": "Snowflake",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "数据仓库",
+        "分析函数"
+      ]
+    },
+    {
+      "id": "MCP-043",
+      "name": "server-elasticsearch",
+      "full_name": "elasticsearch-mcp-server",
+      "category": "搜索",
+      "description": "Elasticsearch全文搜索集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API权限",
+      "stars": 1300,
+      "maintainer": "Elastic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "全文搜索",
+        "聚合分析",
+        "索引管理"
+      ]
+    },
+    {
+      "id": "MCP-044",
+      "name": "server-langchain",
+      "full_name": "langchain-mcp-server",
+      "category": "AI",
+      "description": "LangChain工具和链集成",
+      "protocol_version": "2025-03-26",
+      "auth": "varies",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "工具权限",
+      "stars": 1800,
+      "maintainer": "LangChain",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "链调用",
+        "RAG管道",
+        "工具集成"
+      ]
+    },
+    {
+      "id": "MCP-045",
+      "name": "server-computer-use",
+      "full_name": "@anthropic/server-computer-use",
+      "category": "桌面自动化",
+      "description": "桌面GUI自动化操作",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地沙箱",
+      "stars": 2900,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "屏幕截图",
+        "鼠标键盘",
+        "应用操作"
+      ]
+    },
+    {
+      "id": "MCP-046",
+      "name": "Vercel MCP Server",
+      "full_name": "vercel-mcp-server",
+      "category": "部署",
+      "description": "Vercel部署平台集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "token权限",
+      "stars": 1700,
+      "maintainer": "Vercel",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "部署管理",
+        "域名操作",
+        "日志查看"
+      ]
+    },
+    {
+      "id": "MCP-047",
+      "name": "Neon MCP Server",
+      "full_name": "neon-mcp-server",
+      "category": "数据库",
+      "description": "Neon Serverless Postgres操作",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API权限",
+      "stars": 1100,
+      "maintainer": "Neon",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "分支管理",
+        "SQL查询",
+        "自动扩缩"
+      ]
+    },
+    {
+      "id": "MCP-048",
+      "name": "Cloudflare MCP Server",
+      "full_name": "cloudflare-mcp-server",
+      "category": "云服务",
+      "description": "Cloudflare Workers和DNS管理",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1400,
+      "maintainer": "Cloudflare",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Workers部署",
+        "DNS管理",
+        "缓存清除"
+      ]
+    },
+    {
+      "id": "MCP-049",
+      "name": "server-huggingface",
+      "full_name": "huggingface-mcp-server",
+      "category": "AI",
+      "description": "HuggingFace模型和数据集操作",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1500,
+      "maintainer": "HuggingFace",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "模型搜索",
+        "推理调用",
+        "数据集浏览"
+      ]
+    },
+    {
+      "id": "MCP-050",
+      "name": "server-openapi",
+      "full_name": "@modelcontextprotocol/server-openapi",
+      "category": "API",
+      "description": "OpenAPI规范自动生成MCP工具",
+      "protocol_version": "2025-03-26",
+      "auth": "varies",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "规范定义",
+      "stars": 1900,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "自动工具生成",
+        "API发现",
+        "参数验证"
+      ]
+    },
+    {
+      "id": "MCP-051",
+      "name": "server-mysql",
+      "full_name": "mysql-mcp-server",
+      "category": "数据库",
+      "description": "MySQL数据库查询操作",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "连接权限",
+      "stars": 1600,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "Schema浏览",
+        "数据导入导出"
+      ]
+    },
+    {
+      "id": "MCP-052",
+      "name": "server-zapier",
+      "full_name": "zapier-mcp-server",
+      "category": "自动化",
+      "description": "Zapier工作流自动化集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API权限",
+      "stars": 1300,
+      "maintainer": "Zapier",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "触发器管理",
+        "动作执行",
+        "工作流编排"
+      ]
+    },
+    {
+      "id": "MCP-google-cloud-db",
+      "name": "Google Cloud Database MCP Servers",
+      "type": "database",
+      "company": "Google Cloud",
+      "key_features": [
+        "Managed remote MCP for AlloyDB PostgreSQL, Spanner, Cloud SQL, Bigtable, Firestore",
+        "Enterprise-grade auditing, observability and governance",
+        "Natural language database interaction",
+        "Schema creation, query diagnosis, vector similarity search"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-oracle-sqlcl",
+      "name": "Oracle SQLcl MCP Server",
+      "type": "database",
+      "company": "Oracle",
+      "key_features": [
+        "MCP server for Oracle Database via SQLcl",
+        "AI agents can connect, run SQL/PLSQL queries and scripts",
+        "Credentials managed locally on user machine",
+        "All interactions logged in DBTOOLS$MCP_LOG",
+        "VS Code SQL Developer integration with auto-registration"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-database-mcp",
+      "name": "@cocaxcode/database-mcp",
+      "type": "database",
+      "company": "Community",
+      "key_features": [
+        "33 tools across 3 engines (PostgreSQL, MySQL, SQLite)",
+        "Connection groups, named connection management",
+        "Automatic rollback with reverse SQL",
+        "Schema auto-discovery via MCP Resources",
+        "Zero config, 100% local credentials",
+        "Works with Claude Code, Cursor, Windsurf, VS Code, Gemini CLI"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-universal-db",
+      "name": "universal-db-mcp",
+      "type": "database",
+      "company": "Community (Anarkh-Lee)",
+      "key_features": [
+        "Supports 17 databases: MySQL, PostgreSQL, Oracle, MongoDB, etc.",
+        "Natural language query and analysis",
+        "Compatible with 50+ platforms (Claude Desktop, Cursor, VS Code, ChatGPT)",
+        "44 releases, active development"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-data-commons",
+      "name": "Google Data Commons MCP Server",
+      "type": "data_analysis",
+      "company": "Google",
+      "key_features": [
+        "Access to Google Data Commons public datasets",
+        "Statistical data about populations, economics, environment",
+        "Seamless integration with Google Cloud ecosystem"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-truefoundry-gateway",
+      "name": "TrueFoundry MCP Gateway",
+      "type": "gateway",
+      "company": "TrueFoundry",
+      "key_features": [
+        "3-4ms latency (10ms under load)",
+        "350+ requests per second",
+        "Enterprise-grade MCP gateway for AI agent security",
+        "Centralized tool management and access control"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-skyvia",
+      "name": "Skyvia MCP Server",
+      "full_name": "Skyvia MCP",
+      "category": "数据集成",
+      "description": "云端数据集成平台MCP Server，支持ETL/ELT数据管道",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 800,
+      "maintainer": "Skyvia",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "数据集成",
+        "ETL管道",
+        "云数据库连接"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-ahrefs",
+      "name": "Ahrefs MCP Server",
+      "full_name": "ahrefs-mcp",
+      "category": "SEO",
+      "description": "SEO分析工具MCP Server，提供关键词研究、反向链接分析",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 500,
+      "maintainer": "Ahrefs",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "关键词研究",
+        "反向链接分析",
+        "SEO审计"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mikrotik",
+      "name": "MikroTik Router MCP Server",
+      "full_name": "io.github.kivanccakmak/yaver",
+      "category": "网络管理",
+      "description": "MikroTik路由器管理MCP Server，支持防火墙、NAT、DHCP、DNS、WireGuard",
+      "protocol_version": "2025-11-25",
+      "auth": "SSH",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "SSH密钥",
+      "stars": 200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "Python",
+      "features": [
+        "防火墙管理",
+        "NAT配置",
+        "WireGuard VPN",
+        "DHCP/DNS"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-fastmcp",
+      "name": "FastMCP Server",
+      "full_name": "@fastmcp/server",
+      "category": "开发框架",
+      "description": "高性能MCP Server开发框架，用于快速构建自定义MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "本地沙箱",
+      "stars": 3500,
+      "maintainer": "FastMCP",
+      "status": "active",
+      "language": "Python",
+      "features": [
+        "快速开发",
+        "热重载",
+        "类型安全",
+        "自动文档"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-vercel-v0",
+      "name": "Vercel v0 MCP Server",
+      "full_name": "@vercel/v0-mcp",
+      "category": "前端开发",
+      "description": "Vercel v0 AI前端生成工具MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2800,
+      "maintainer": "Vercel",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "AI前端生成",
+        "组件创建",
+        "代码生成"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-razorpay",
+      "name": "Razorpay MCP Server",
+      "full_name": "razorpay-mcp",
+      "category": "支付",
+      "description": "印度支付平台Razorpay的MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 150,
+      "maintainer": "Razorpay",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "支付处理",
+        "退款管理",
+        "订阅管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-linear-v2",
+      "name": "Linear MCP Server v2",
+      "full_name": "@linear/mcp-server",
+      "category": "项目管理",
+      "description": "Linear项目管理工具MCP Server升级版，支持更丰富的查询和操作",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 1200,
+      "maintainer": "Linear",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "项目管理",
+        "Issue追踪",
+        "团队协作",
+        "工作流自动化"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-1password",
+      "name": "1Password MCP Server",
+      "full_name": "@1password/mcp-server",
+      "category": "安全",
+      "description": "1Password密码管理器MCP Server，安全访问密钥和凭证",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "端到端加密",
+      "stars": 900,
+      "maintainer": "1Password",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "密钥管理",
+        "凭证访问",
+        "安全存储"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-hubspot",
+      "name": "HubSpot MCP Server",
+      "full_name": "hubspot-mcp",
+      "category": "CRM",
+      "description": "HubSpot CRM平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 600,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRM操作",
+        "联系人管理",
+        "交易追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-resend",
+      "name": "Resend MCP Server",
+      "full_name": "resend-mcp",
+      "category": "邮件",
+      "description": "Resend邮件服务MCP Server，开发者友好的邮件API",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 400,
+      "maintainer": "Resend",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "邮件发送",
+        "模板管理",
+        "邮件追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-sentry-v2",
+      "name": "Sentry MCP Server v2",
+      "full_name": "@sentry/mcp-server",
+      "category": "监控",
+      "description": "Sentry错误监控MCP Server升级版，支持AI辅助错误分析",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 1100,
+      "maintainer": "Sentry",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "错误追踪",
+        "性能监控",
+        "AI错误分析",
+        "Release追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-postmark",
+      "name": "Postmark MCP Server",
+      "full_name": "postmark-mcp",
+      "category": "邮件",
+      "description": "Postmark邮件投递服务MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "邮件投递",
+        "退信处理",
+        "邮件统计"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-gdrive-v2",
+      "name": "Google Drive MCP Server v2",
+      "full_name": "@google/drive-mcp",
+      "category": "文件系统",
+      "description": "Google Drive MCP Server升级版，支持文件搜索、读写和共享",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2200,
+      "maintainer": "Google",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "文件读写",
+        "搜索",
+        "共享管理",
+        "版本控制"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-clickup",
+      "name": "ClickUp MCP Server",
+      "full_name": "clickup-mcp",
+      "category": "项目管理",
+      "description": "ClickUp项目管理平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 350,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "任务管理",
+        "文档协作",
+        "时间追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-intercom",
+      "name": "Intercom MCP Server",
+      "full_name": "intercom-mcp",
+      "category": "客服",
+      "description": "Intercom客户服务平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 280,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "客户支持",
+        "对话管理",
+        "用户数据"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-woocommerce",
+      "name": "WooCommerce MCP Server",
+      "full_name": "woocommerce-mcp",
+      "category": "电商",
+      "description": "WooCommerce电商平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key + HTTPS",
+      "stars": 300,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "PHP/TypeScript",
+      "features": [
+        "产品管理",
+        "订单处理",
+        "库存管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-bigquery",
+      "name": "BigQuery MCP Server",
+      "full_name": "@google/bigquery-mcp",
+      "category": "数据库",
+      "description": "Google BigQuery数据仓库MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "Service Account",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "IAM",
+      "stars": 1800,
+      "maintainer": "Google",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "数据分析",
+        "数据导出"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-datadog",
+      "name": "Datadog MCP Server",
+      "full_name": "datadog-mcp",
+      "category": "监控",
+      "description": "Datadog监控平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key + APP Key",
+      "stars": 700,
+      "maintainer": "Datadog",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "指标查询",
+        "日志搜索",
+        "告警管理",
+        "仪表盘"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-twilio",
+      "name": "Twilio MCP Server",
+      "full_name": "twilio-mcp",
+      "category": "通信",
+      "description": "Twilio通信平台MCP Server，支持SMS、语音、视频",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 550,
+      "maintainer": "Twilio",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SMS发送",
+        "语音通话",
+        "视频会议",
+        "号码管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-asana",
+      "name": "Asana MCP Server",
+      "full_name": "asana-mcp",
+      "category": "项目管理",
+      "description": "Asana项目管理MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 400,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "任务管理",
+        "项目追踪",
+        "团队协作"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-figma-v2",
+      "name": "Figma MCP Server v2",
+      "full_name": "@figma/mcp-server-v2",
+      "category": "设计",
+      "description": "Figma设计工具MCP Server升级版，支持设计稿读取和代码生成",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 3200,
+      "maintainer": "Figma",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "设计稿读取",
+        "代码生成",
+        "组件库访问",
+        "样式提取"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-xero",
+      "name": "Xero MCP Server",
+      "full_name": "xero-mcp",
+      "category": "财务",
+      "description": "Xero财务软件MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发票管理",
+        "银行对账",
+        "财务报告"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-quickbooks",
+      "name": "QuickBooks MCP Server",
+      "full_name": "quickbooks-mcp",
+      "category": "财务",
+      "description": "QuickBooks会计软件MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 250,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "会计管理",
+        "发票处理",
+        "薪资管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-miro",
+      "name": "Miro MCP Server",
+      "full_name": "miro-mcp",
+      "category": "协作",
+      "description": "Miro在线白板协作平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 350,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "白板操作",
+        "协作绘图",
+        "模板管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-confluence",
+      "name": "Confluence MCP Server",
+      "full_name": "confluence-mcp",
+      "category": "知识管理",
+      "description": "Atlassian Confluence知识库MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 800,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "页面读写",
+        "空间管理",
+        "搜索",
+        "评论"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-github-v2",
+      "name": "GitHub MCP Server v2",
+      "full_name": "@github/mcp-server-v2",
+      "category": "开发",
+      "description": "GitHub MCP Server升级版，支持Copilot集成和更丰富的API",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 8000,
+      "maintainer": "GitHub",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "PR管理",
+        "Issue操作",
+        "Copilot集成",
+        "Actions触发",
+        "代码搜索"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mcpregistry",
+      "name": "MCP Registry Server",
+      "full_name": "@mcp/registry",
+      "category": "注册中心",
+      "description": "MCP官方注册中心Server，用于发现和验证MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "TLS",
+      "stars": 1500,
+      "maintainer": "Linux Foundation/MCP",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Server发现",
+        "版本验证",
+        "安全审计"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mongodb-v2",
+      "name": "MongoDB MCP Server v2",
+      "full_name": "@mongodb/mcp-server",
+      "category": "数据库",
+      "description": "MongoDB官方MCP Server升级版，支持Atlas集群管理",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key + TLS",
+      "stars": 1500,
+      "maintainer": "MongoDB",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRUD操作",
+        "聚合管道",
+        "Atlas管理",
+        "索引优化"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-firecrawl-v2",
+      "name": "Firecrawl MCP Server v2",
+      "full_name": "@firecrawl/mcp-server",
+      "category": "网页抓取",
+      "description": "Firecrawl网页抓取MCP Server升级版，支持批量爬取和结构化提取",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 4500,
+      "maintainer": "Firecrawl",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页抓取",
+        "批量爬取",
+        "结构化提取",
+        "JavaScript渲染"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-redis-v2",
+      "name": "Redis MCP Server v2",
+      "full_name": "@redis/mcp-server",
+      "category": "数据库",
+      "description": "Redis MCP Server升级版，支持Redis Stack全功能",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "ACL",
+      "stars": 900,
+      "maintainer": "Redis",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "键值操作",
+        "发布订阅",
+        "流处理",
+        "RediSearch"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-coinbase",
+      "name": "Coinbase MCP Server",
+      "full_name": "coinbase-mcp",
+      "category": "加密货币",
+      "description": "Coinbase加密货币交易所MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key + HMAC",
+      "stars": 600,
+      "maintainer": "Coinbase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "交易操作",
+        "钱包查询",
+        "市场数据"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-stripe-v2",
+      "name": "Stripe MCP Server v2",
+      "full_name": "@stripe/mcp-server-v2",
+      "category": "支付",
+      "description": "Stripe支付MCP Server升级版，支持x402协议",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 2500,
+      "maintainer": "Stripe",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "支付处理",
+        "订阅管理",
+        "x402协议",
+        "发票管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-terraform-v2",
+      "name": "Terraform MCP Server v2",
+      "full_name": "@hashicorp/terraform-mcp",
+      "category": "基础设施",
+      "description": "HashiCorp Terraform MCP Server升级版，支持AI辅助IaC",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 1200,
+      "maintainer": "HashiCorp",
+      "status": "active",
+      "language": "Go",
+      "features": [
+        "基础设施管理",
+        "AI辅助配置",
+        "Plan/Apply",
+        "状态查询"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-salesforce",
+      "name": "Salesforce MCP Server",
+      "full_name": "salesforce-mcp",
+      "category": "CRM",
+      "description": "Salesforce CRM平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 700,
+      "maintainer": "社区/Salesforce",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRM操作",
+        "SOQL查询",
+        "对象管理",
+        "流程自动化"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-heroku",
+      "name": "Heroku MCP Server",
+      "full_name": "heroku-mcp",
+      "category": "云平台",
+      "description": "Heroku云平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 300,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "应用管理",
+        "部署操作",
+        "日志查看",
+        "扩缩容"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-supabase-v2",
+      "name": "Supabase MCP Server v2",
+      "full_name": "@supabase/mcp-server-v2",
+      "category": "数据库",
+      "description": "Supabase MCP Server升级版，支持Edge Functions和Storage",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 2000,
+      "maintainer": "Supabase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "数据库操作",
+        "Edge Functions",
+        "Storage管理",
+        "Auth管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-cloudflare-v2",
+      "name": "Cloudflare MCP Server v2",
+      "full_name": "@cloudflare/mcp-server-v2",
+      "category": "云平台",
+      "description": "Cloudflare MCP Server升级版，支持Workers和Pages部署",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 1800,
+      "maintainer": "Cloudflare",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Workers部署",
+        "DNS管理",
+        "CDN配置",
+        "Pages发布"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-notion-v2",
+      "name": "Notion MCP Server v2",
+      "full_name": "@notion/mcp-server-v2",
+      "category": "知识管理",
+      "description": "Notion MCP Server升级版，支持数据库操作和AI增强",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 3500,
+      "maintainer": "Notion",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "页面读写",
+        "数据库操作",
+        "搜索",
+        "AI增强"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-slack-v2",
+      "name": "Slack MCP Server v2",
+      "full_name": "@slack/mcp-server-v2",
+      "category": "通信",
+      "description": "Slack MCP Server升级版，支持频道管理和消息搜索",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2000,
+      "maintainer": "Slack",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "消息发送",
+        "频道管理",
+        "文件上传",
+        "搜索"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-aws-v2",
+      "name": "AWS MCP Server v2",
+      "full_name": "@aws/mcp-server-v2",
+      "category": "云平台",
+      "description": "AWS MCP Server升级版，支持多服务集成",
+      "protocol_version": "2025-11-25",
+      "auth": "IAM",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "IAM Role",
+      "stars": 3000,
+      "maintainer": "AWS",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "S3操作",
+        "Lambda管理",
+        "EC2管理",
+        "CloudWatch"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-playwright-v2",
+      "name": "Playwright MCP Server v2",
+      "full_name": "@playwright/mcp-server-v2",
+      "category": "浏览器自动化",
+      "description": "Playwright MCP Server升级版，支持AI驱动的浏览器操作",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "本地沙箱",
+      "stars": 5000,
+      "maintainer": "Microsoft",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "浏览器自动化",
+        "截图",
+        "表单填写",
+        "AI驱动操作"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-atlassian-rovo",
+      "name": "Atlassian Rovo MCP Server",
+      "full_name": "@atlassian/rovo-mcp-server",
+      "category": "项目管理",
+      "description": "Atlassian官方云托管MCP Server，连接Jira、Confluence、Compass，单一安全端点",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth 2.0",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0 / 云端托管",
+      "stars": 2200,
+      "maintainer": "Atlassian",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Jira Issue管理",
+        "Confluence文档搜索",
+        "Compass服务发现",
+        "云托管零配置"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-servicenow",
+      "name": "ServiceNow MCP Server",
+      "full_name": "servicenow-mcp-server",
+      "category": "ITSM",
+      "description": "ServiceNow IT服务管理MCP Server，支持Incident和Change管理",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth 2.0",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 600,
+      "maintainer": "ServiceNow",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Incident管理",
+        "Change管理",
+        "CMDB查询",
+        "知识库搜索"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-grafana",
+      "name": "Grafana MCP Server",
+      "full_name": "grafana-mcp-server",
+      "category": "监控",
+      "description": "Grafana可观测性平台MCP Server，支持Dashboard和告警管理",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 700,
+      "maintainer": "Grafana Labs",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Dashboard管理",
+        "数据源查询",
+        "告警规则",
+        "注解操作"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-portkey-agentforce",
+      "name": "Portkey AgentForce MCP",
+      "full_name": "@portkey/agentforce-mcp",
+      "category": "AI网关",
+      "description": "Portkey提供的AgentForce连接方案，通过MCP连接Salesforce等企业系统",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key + 网关",
+      "stars": 500,
+      "maintainer": "Portkey",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "企业系统连接",
+        "AI网关",
+        "多模型路由",
+        "可观测性"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-ahrefs-v2",
+      "name": "Ahrefs MCP Server v2",
+      "full_name": "@ahrefs/mcp-server",
+      "category": "SEO",
+      "description": "Ahrefs SEO分析工具MCP Server升级版，支持更丰富的SEO数据查询",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 800,
+      "maintainer": "Ahrefs",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "关键词研究",
+        "反向链接分析",
+        "SEO审计",
+        "竞品分析",
+        "排名追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-shopify-v2",
+      "name": "Shopify MCP Server v2",
+      "full_name": "@shopify/mcp-server",
+      "category": "电商",
+      "description": "Shopify官方MCP Server，支持产品/订单/库存/客户管理",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 1500,
+      "maintainer": "Shopify",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "产品管理",
+        "订单处理",
+        "库存同步",
+        "客户分析",
+        "折扣管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-hubspot-v2",
+      "name": "HubSpot MCP Server v2",
+      "full_name": "@hubspot/mcp-server",
+      "category": "CRM",
+      "description": "HubSpot官方MCP Server，支持CRM全功能操作",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 1000,
+      "maintainer": "HubSpot",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRM操作",
+        "营销自动化",
+        "销售管道",
+        "客户服务",
+        "内容管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-vercel-ai-gateway",
+      "name": "Vercel AI Gateway MCP",
+      "full_name": "@vercel/ai-gateway-mcp",
+      "category": "AI网关",
+      "description": "Vercel AI Gateway MCP Server，统一多模型AI访问",
+      "protocol_version": "2025-11-25",
+      "auth": "API Token",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "Token权限",
+      "stars": 1200,
+      "maintainer": "Vercel",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "多模型路由",
+        "流式响应",
+        "缓存优化",
+        "Fallback策略"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-scrapling",
+      "name": "Scrapling MCP Server",
+      "category": "mcp_servers",
+      "description": "Adaptive web scraping framework with native MCP server integration for AI agents",
+      "github": "https://github.com/D4Vinci/Scrapling",
+      "pypi": "scrapling",
+      "version": "0.4.8",
+      "language": "Python",
+      "key_features": [
+        "Adaptive element tracking - survives website redesigns",
+        "Native anti-bot bypass (Cloudflare Turnstile etc.)",
+        "Three-tier Fetcher system (Fetcher/StealthyFetcher/DynamicFetcher)",
+        "Scrapy-like Spider framework with concurrent crawling",
+        "MCP Server for conversational scraping with AI agents",
+        "Auto-resuming spiders with pause/recovery",
+        "Real-time statistics and streaming"
+      ],
+      "fetcher_types": {
+        "Fetcher": "Basic HTTP requests",
+        "StealthyFetcher": "Stealth mode bypassing anti-bot detection",
+        "DynamicFetcher": "Handles JS-rendered pages"
+      },
+      "use_cases": [
+        "Data collection for knowledge bases",
+        "Anti-bot protected site scraping",
+        "Large-scale concurrent crawling",
+        "AI agent web interaction",
+        "Website change monitoring"
+      ],
+      "adaptive_feature": "Elements tracked by smart structure analysis, not fragile CSS selectors - survives website redesigns automatically",
+      "anti_bot": [
+        "Cloudflare Turnstile",
+        "DataDome",
+        "PerimeterX",
+        "Akamai Bot Manager"
+      ],
+      "installation": "pip install scrapling",
+      "mcp_setup": "Built-in MCP server for Claude/AI agent integration",
+      "stars": "5k+",
+      "license": "BSD-3",
+      "sources": [
+        "web_search",
+        "github"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T22:02:40.222Z",
+      "last_updated": "2026-05-31T22:02:40.222Z"
+    }
+  ]
+}

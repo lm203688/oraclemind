@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "NuclearDB",
+  "name_for_model": "nucleardb",
+  "description_for_human": "Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclear fuel, and radiation applications",
+  "description_for_model": "Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclear fuel, and radiation applications. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://nuclear.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://nuclear.genetech.tools/"
+}

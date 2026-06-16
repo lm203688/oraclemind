@@ -1,0 +1,352 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-26T06:21:42.676Z",
+  "description": "model_apis库",
+  "entities": [
+    {
+      "id": "API-001",
+      "name": "OpenAI API",
+      "vendor": "OpenAI",
+      "type": "LLM API",
+      "models": [
+        "GPT-4o",
+        "GPT-4o-mini",
+        "o1",
+        "o3-mini",
+        "DALL-E 3",
+        "Whisper",
+        "TTS"
+      ],
+      "pricing_input": "$2.5/1M tokens (GPT-4o)",
+      "pricing_output": "$10/1M tokens (GPT-4o)",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "Function Calling",
+        "Vision",
+        "Structured Output",
+        "Batch API",
+        "Fine-tuning",
+        "Assistants API"
+      ],
+      "rate_limit": "Tier1: 500 RPM",
+      "sdk_languages": [
+        "Python",
+        "Node.js",
+        "Go",
+        "Java",
+        "C#"
+      ],
+      "docs": "https://platform.openai.com/docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-002",
+      "name": "Anthropic API",
+      "vendor": "Anthropic",
+      "type": "LLM API",
+      "models": [
+        "Claude 3.5 Sonnet",
+        "Claude 3.5 Haiku",
+        "Claude 3 Opus"
+      ],
+      "pricing_input": "$3/1M tokens (Sonnet)",
+      "pricing_output": "$15/1M tokens (Sonnet)",
+      "context_window": "200K",
+      "features": [
+        "Messages API",
+        "Tool Use",
+        "Vision",
+        "MCP Support",
+        "Prompt Caching",
+        "Extended Thinking"
+      ],
+      "rate_limit": "Tier1: 1000 RPM",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.anthropic.com",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-003",
+      "name": "Google Gemini API",
+      "vendor": "Google",
+      "type": "LLM API",
+      "models": [
+        "Gemini 2.0 Flash",
+        "Gemini 2.5 Pro",
+        "Gemini 1.5 Pro"
+      ],
+      "pricing_input": "$1.25/1M tokens (Flash)",
+      "pricing_output": "$5/1M tokens (Flash)",
+      "context_window": "1M-2M",
+      "features": [
+        "Generate Content",
+        "Function Calling",
+        "Vision",
+        "Code Execution",
+        "Grounding",
+        "Context Caching"
+      ],
+      "rate_limit": "Free: 15 RPM, Pay: 2000 RPM",
+      "sdk_languages": [
+        "Python",
+        "Node.js",
+        "Go",
+        "Java",
+        "Dart"
+      ],
+      "docs": "https://ai.google.dev/docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-004",
+      "name": "DeepSeek API",
+      "vendor": "DeepSeek",
+      "type": "LLM API",
+      "models": [
+        "DeepSeek-V3",
+        "DeepSeek-R1"
+      ],
+      "pricing_input": "$0.27/1M tokens",
+      "pricing_output": "$1.1/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "FIM",
+        "JSON Output",
+        "Function Calling"
+      ],
+      "rate_limit": "按余额",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://platform.deepseek.com/api-docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-005",
+      "name": "智谱AI API",
+      "vendor": "智谱AI",
+      "type": "LLM API",
+      "models": [
+        "GLM-4",
+        "GLM-4V",
+        "GLM-4-Flash"
+      ],
+      "pricing_input": "¥0.1/1M tokens (Flash)",
+      "pricing_output": "¥0.1/1M tokens (Flash)",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "Function Calling",
+        "Vision",
+        "Web Search",
+        "Code Interpreter"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js",
+        "Java"
+      ],
+      "docs": "https://open.bigmodel.cn/dev/api",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-006",
+      "name": "Mistral API",
+      "vendor": "Mistral AI",
+      "type": "LLM API",
+      "models": [
+        "Mistral Large",
+        "Mistral Medium",
+        "Codestral",
+        "Pixtral"
+      ],
+      "pricing_input": "$2/1M tokens (Large)",
+      "pricing_output": "$6/1M tokens (Large)",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "Function Calling",
+        "Vision",
+        "Embeddings",
+        "Agents API"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.mistral.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-007",
+      "name": "Cohere API",
+      "vendor": "Cohere",
+      "type": "LLM/RAG API",
+      "models": [
+        "Command R+",
+        "Command R",
+        "Embed v3",
+        "Rerank v3"
+      ],
+      "pricing_input": "$2.5/1M tokens (R+)",
+      "pricing_output": "$10/1M tokens (R+)",
+      "context_window": "128K",
+      "features": [
+        "Chat",
+        "RAG",
+        "Embeddings",
+        "Rerank",
+        "Connectors",
+        "Fine-tuning"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.cohere.com",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-008",
+      "name": "Groq API",
+      "vendor": "Groq",
+      "type": "推理加速API",
+      "models": [
+        "Llama 3.3 70B",
+        "Mixtral 8x7B",
+        "Gemma 2 9B"
+      ],
+      "pricing_input": "$0.59/1M tokens",
+      "pricing_output": "$0.79/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "超低延迟推理",
+        "OpenAI兼容",
+        "Chat Completions",
+        "Vision"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://console.groq.com/docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-009",
+      "name": "Together AI API",
+      "vendor": "Together AI",
+      "type": "推理平台",
+      "models": [
+        "200+开源模型",
+        "Llama 3",
+        "Qwen 2.5",
+        "DeepSeek"
+      ],
+      "pricing_input": "$0.18/1M tokens (Llama3)",
+      "pricing_output": "$0.18/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "Serverless推理",
+        "Fine-tuning",
+        "Embeddings",
+        "Image Gen"
+      ],
+      "rate_limit": "按余额",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://docs.together.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-010",
+      "name": "Fireworks AI API",
+      "vendor": "Fireworks AI",
+      "type": "推理平台",
+      "models": [
+        "Llama 3.3",
+        "Qwen 2.5",
+        "Mixtral",
+        "Whisper"
+      ],
+      "pricing_input": "$0.2/1M tokens",
+      "pricing_output": "$0.2/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "Serverless推理",
+        "Fine-tuning",
+        "Vision",
+        "Function Calling"
+      ],
+      "rate_limit": "按余额",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://docs.fireworks.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-011",
+      "name": "Perplexity API",
+      "vendor": "Perplexity",
+      "type": "搜索AI API",
+      "models": [
+        "Sonar",
+        "Sonar Pro",
+        "Sonar Reasoning"
+      ],
+      "pricing_input": "$1/1M tokens",
+      "pricing_output": "$1/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "实时搜索",
+        "引用来源",
+        "Pro深度搜索"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.perplexity.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-012",
+      "name": "ElevenLabs API",
+      "vendor": "ElevenLabs",
+      "type": "TTS/STT API",
+      "models": [
+        "eleven_multilingual_v2",
+        "eleven_turbo_v2",
+        "eleven_monolingual_v1"
+      ],
+      "pricing_input": "$0.18/1K chars",
+      "pricing_output": "N/A",
+      "context_window": "N/A",
+      "features": [
+        "TTS",
+        "STT",
+        "Voice Cloning",
+        "Sound Effects",
+        "Dubbing"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://elevenlabs.io/docs/api-reference",
+      "status": "生产可用"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "source": "QuantumDB",
+  "url": "https://quantum.genetech.tools",
+  "cross_references": {
+    "nuclear": {
+      "name": "NuclearDB",
+      "url": "https://nuclear.genetech.tools",
+      "api_url": "https://nuclear.genetech.tools/api/data.json",
+      "description": "量子模拟核聚变",
+      "category": "核能"
+    },
+    "agent": {
+      "name": "Agent Ecosystem DB",
+      "url": "https://agent.genetech.tools",
+      "api_url": "https://agent.genetech.tools/api/data.json",
+      "description": "量子机器学习",
+      "category": "AI Agent生态"
+    },
+    "robot": {
+      "name": "RobotParts DB",
+      "url": "https://robot.genetech.tools",
+      "api_url": "https://robot.genetech.tools/api/data.json",
+      "description": "量子传感器机器人",
+      "category": "机器人配件"
+    },
+    "brain": {
+      "name": "BrainDB",
+      "url": "https://brain.genetech.tools",
+      "api_url": "https://brain.genetech.tools/api/data.json",
+      "description": "量子脑理论",
+      "category": "脑科学"
+    }
+  },
+  "ecosystem_index": "quantum.genetech.tools"
+}

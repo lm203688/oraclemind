@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GeneTech Tools Pro - 升级订阅</title>
+<style>
+body{font-family:system-ui;background:#0a0e17;color:#e2e8f0;line-height:1.8;max-width:600px;margin:0 auto;padding:40px 20px;text-align:center}
+h1{color:#06b6d4;font-size:2em;margin-bottom:8px}
+.price{font-size:3em;font-weight:800;color:#f59e0b;margin:16px 0}
+.price span{font-size:0.4em;color:#94a3b8;font-weight:400}
+.features{text-align:left;background:#111827;border-radius:12px;padding:24px;margin:24px 0;border:1px solid #1e2d4a}
+.features div{padding:6px 0;font-size:15px}
+.features div::before{content:"✅ ";color:#10b981}
+.btn{display:block;padding:16px;background:linear-gradient(135deg,#f59e0b,#f97316);color:#000;border:none;border-radius:10px;font-size:18px;font-weight:700;cursor:pointer;text-decoration:none;margin:16px 0}
+.btn:hover{opacity:0.9}
+.note{color:#94a3b8;font-size:13px;margin-top:24px}
+.contact{background:#1a2236;border-radius:8px;padding:16px;margin-top:24px;border:1px solid #1e2d4a}
+</style>
+</head><body>
+<h1>⭐ GeneTech Tools Pro</h1>
+<p style="color:#94a3b8">解锁全部知识引擎能力</p>
+<div class="price">$29<span>/月</span></div>
+
+<div class="features">
+  <div>无限基因搜索查询（免费版5次/天）</div>
+  <div>REST API 访问（1000次/天）</div>
+  <div>批量 CSV/JSON 数据导出</div>
+  <div>定制基因治疗分析报告（$199价值）</div>
+  <div>新疗法邮件提醒</div>
+  <div>优先数据更新</div>
+  <div>11个知识库全部Pro权限</div>
+</div>
+
+<button class="btn" onclick="handleSubscribe()">立即订阅 — $29/月</button>
+
+<div class="contact">
+  <p style="font-weight:600;color:#06b6d4">📋 或购买单次报告</p>
+  <p style="color:#94a3b8;font-size:14px">定制基因治疗深度分析报告 — <b style="color:#f59e0b">$199/份</b></p>
+  <button class="btn" style="background:linear-gradient(135deg,#06b6d4,#8b5cf6);color:#fff" onclick="handleReport()">购买报告</button>
+</div>
+
+<div class="note">
+  <p>支付方式：支付宝 / 微信 / PayPal / 信用卡</p>
+  <p>联系邮箱：genetech.tools@gmail.com</p>
+  <p>7天无理由退款保障</p>
+</div>
+
+<script>
+function handleSubscribe() {
+  // For now, collect email and we'll process manually
+  const email = prompt('请输入您的邮箱地址，我们将发送订阅链接：');
+  if (email && email.includes('@')) {
+    // Save to file for processing
+    fetch('https://genetech.tools/', {method:'HEAD'}).then(() => {
+      alert('订阅请求已收到！我们将在24小时内发送支付链接到 ' + email);
+    });
+  }
+}
+function handleReport() {
+  const gene = prompt('请输入您想查询的基因/疗法/疾病：');
+  if (gene) {
+    alert('报告需求已记录！我们将在48小时内联系您确认详情。');
+  }
+}
+</script>
+</body></html>

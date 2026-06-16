@@ -1,0 +1,272 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-25T06:26:07.835Z",
+  "description": "争议记录",
+  "controversies": [
+    {
+      "id": "CTR-1779682986066-e45w1p",
+      "entity_genes": [
+        "GAT-1",
+        "SLC6A1"
+      ],
+      "entity_diseases": [
+        "epilepsy",
+        "SLC6A1-related neurodevelopmental disorder",
+        "developmental and epileptic encephalopathy"
+      ],
+      "contradictions": [
+        {
+          "field": "efficacy_data",
+          "value1": "{\"seizure reduction\":\"80%\",\"seizure freedom\":\"40%\",\"normalized EEG abnormalities\":\"preclinical models\"}",
+          "value2": "{\"metric\":\"80% seizure reduction, 40% seizure freedom with 4-phenylbutyrate\"}",
+          "severity": "medium",
+          "note": "需要人工判断是否为不同实验条件下的结果"
+        }
+      ],
+      "detected_at": "2026-05-25T04:23:06.066Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-1779682986066-7pvhas",
+      "entity_genes": [
+        "LAMP2",
+        "OTOF"
+      ],
+      "entity_diseases": [
+        "Danon disease",
+        "hypertrophic cardiomyopathy",
+        "myopathy",
+        "intellectual disability",
+        "retinopathy",
+        "Fabry disease",
+        "PRKAG2",
+        "Pompe disease"
+      ],
+      "contradictions": [
+        {
+          "field": "efficacy_data",
+          "value1": "{}",
+          "value2": "{}",
+          "severity": "medium",
+          "note": "需要人工判断是否为不同实验条件下的结果"
+        }
+      ],
+      "detected_at": "2026-05-25T04:23:06.066Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-1779683553442-g41bqo",
+      "entity_genes": [
+        "PNP",
+        "PD-1",
+        "PD-L1",
+        "Claudin-1",
+        "Occludin",
+        "ZO-1"
+      ],
+      "entity_diseases": [
+        "triple-negative breast cancer",
+        "TNBC",
+        "immune-related adverse events",
+        "intestinal injury"
+      ],
+      "contradictions": [
+        {
+          "field": "efficacy_data",
+          "value1": "{}",
+          "value2": "{}",
+          "severity": "medium",
+          "note": "需要人工判断是否为不同实验条件下的结果"
+        }
+      ],
+      "detected_at": "2026-05-25T04:32:33.442Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-2026-NATURE-GT-TUMOR",
+      "title": "Did a boy's life-saving gene therapy cause his brain tumour?",
+      "description": "Nature报道：一名接受基因疗法的男孩出现了脑肿瘤，引发对AAV载体安全性的重大质疑。这是基因疗法领域最严重的安全事件之一，可能影响整个AAV基因疗法的发展方向。",
+      "entities_involved": [
+        "AAV",
+        "gene_therapy_safety"
+      ],
+      "sources": [
+        {
+          "source_id": "PMID:42168522",
+          "source_type": "pubmed",
+          "title": "Did a boy's life-saving gene therapy cause his brain tumour?",
+          "journal": "Nature",
+          "credibility": "A"
+        }
+      ],
+      "status": "unresolved",
+      "severity": "critical",
+      "created_at": "2026-05-25T04:30:00.000Z",
+      "updated_at": "2026-05-25T04:30:00.000Z",
+      "tags": [
+        "safety",
+        "AAV",
+        "brain_tumor",
+        "gene_therapy",
+        "insertional_mutagenesis"
+      ],
+      "impact_assessment": "可能影响所有AAV载体基因疗法的临床试验设计和监管审批流程"
+    },
+    {
+      "id": "CTR-1779683971138-ag0z9o",
+      "entity_genes": [
+        "Luxturna"
+      ],
+      "entity_diseases": [
+        "blindness",
+        "sickle cell disease",
+        "rare inherited eye"
+      ],
+      "contradictions": [
+        {
+          "field": "development_stage",
+          "value1": "unknown",
+          "value2": "approved",
+          "severity": "high"
+        }
+      ],
+      "detected_at": "2026-05-25T04:39:31.138Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-1779684387540-i9h5mm",
+      "entity_genes": [
+        "PNP",
+        "PD-1",
+        "PD-L1",
+        "Claudin-1",
+        "Occludin",
+        "ZO-1"
+      ],
+      "entity_diseases": [
+        "triple-negative breast cancer",
+        "TNBC",
+        "immune-related adverse events",
+        "irAEs"
+      ],
+      "contradictions": [
+        {
+          "field": "efficacy_data",
+          "value1": "{}",
+          "value2": "{}",
+          "severity": "medium",
+          "note": "需要人工判断是否为不同实验条件下的结果"
+        }
+      ],
+      "detected_at": "2026-05-25T04:46:27.540Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-1779684558577-f62hj5",
+      "entity_genes": [
+        "PNP",
+        "PD-1",
+        "PD-L1",
+        "Claudin-1",
+        "Occludin",
+        "ZO-1"
+      ],
+      "entity_diseases": [
+        "triple-negative breast cancer",
+        "TNBC",
+        "immune-related adverse events",
+        "irAEs",
+        "intestinal injury"
+      ],
+      "contradictions": [
+        {
+          "field": "efficacy_data",
+          "value1": "{}",
+          "value2": "{}",
+          "severity": "medium",
+          "note": "需要人工判断是否为不同实验条件下的结果"
+        }
+      ],
+      "detected_at": "2026-05-25T04:49:18.577Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-1779684857046-e2drpo",
+      "entity_genes": [
+        "PNP",
+        "PD-1",
+        "PD-L1",
+        "Claudin-1",
+        "Occludin",
+        "ZO-1"
+      ],
+      "entity_diseases": [
+        "triple-negative breast cancer",
+        "TNBC",
+        "breast cancer"
+      ],
+      "contradictions": [
+        {
+          "field": "efficacy_data",
+          "value1": "{}",
+          "value2": "{}",
+          "severity": "medium",
+          "note": "需要人工判断是否为不同实验条件下的结果"
+        }
+      ],
+      "detected_at": "2026-05-25T04:54:17.046Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-1779684857046-avok2p",
+      "entity_genes": [],
+      "entity_diseases": [
+        "cancer",
+        "neurological diseases",
+        "β-thalassemia",
+        "muscular dystrophy"
+      ],
+      "contradictions": [
+        {
+          "field": "efficacy_data",
+          "value1": "{}",
+          "value2": "{}",
+          "severity": "medium",
+          "note": "需要人工判断是否为不同实验条件下的结果"
+        }
+      ],
+      "detected_at": "2026-05-25T04:54:17.046Z",
+      "status": "unresolved",
+      "resolution": null
+    },
+    {
+      "id": "CTR-1779690367834-xu9gyp",
+      "entity_genes": [
+        "RPE65"
+      ],
+      "entity_diseases": [
+        "blindness",
+        "sickle cell disease",
+        "rare inherited eye disease"
+      ],
+      "contradictions": [
+        {
+          "field": "development_stage",
+          "value1": "unknown",
+          "value2": "approved",
+          "severity": "high"
+        }
+      ],
+      "detected_at": "2026-05-25T06:26:07.834Z",
+      "status": "unresolved",
+      "resolution": null
+    }
+  ]
+}

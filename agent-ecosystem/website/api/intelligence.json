@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "generated_at": "2026-06-04T02:06:54.527Z",
+    "domain": "agent-ecosystem.genetech.tools",
+    "version": "1.0",
+    "total_entities": 356
+  },
+  "categories": {
+    "mcp_servers": {
+      "count": 145,
+      "avg_trl": 4,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 1,
+        "🟡": 0,
+        "🔴": 144
+      },
+      "trl_label": "Development",
+      "dominant_signal": "🔴"
+    },
+    "agent_sdks": {
+      "count": 8,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 8
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "protocols": {
+      "count": 55,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 55
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "memory_systems": {
+      "count": 15,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 15
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "model_apis": {
+      "count": 12,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 12
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "vector_dbs": {
+      "count": 31,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 31
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "benchmarks": {
+      "count": 8,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 0,
+        "🟡": 0,
+        "🔴": 8
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    },
+    "sdks": {
+      "count": 82,
+      "avg_trl": 3,
+      "avg_momentum": 45,
+      "signals": {
+        "🟢": 1,
+        "🟡": 0,
+        "🔴": 81
+      },
+      "trl_label": "Research",
+      "dominant_signal": "🔴"
+    }
+  },
+  "predictions": {},
+  "top_signals": [],
+  "maturity_distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 142,
+    "4": 106,
+    "5": 53,
+    "6": 28,
+    "7": 14,
+    "8": 7,
+    "9": 3
+  },
+  "cross_domain_insights": []
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "UTEC-001",
+    "name": "Autonomous Underwater Glider Network",
+    "type": "Monitoring",
+    "depth_rating": "1,000-6,000 m",
+    "description": "Long-endurance buoyancy-driven gliders that profile the water column for months, collecting oceanographic data",
+    "organization": "Multiple (Teledyne Webb, Slocum, Seaglider, Spray)",
+    "status": "Operational globally; Argo program deploys 4,000+ floats",
+    "breakthrough": "Biogeochemical Argo floats now measure pH, oxygen, nitrate, chlorophyll, and irradiance alongside temperature and salinity"
+  },
+  {
+    "id": "UTEC-002",
+    "name": "Seafloor Observatory Networks",
+    "type": "Monitoring",
+    "depth_rating": "Up to 6,000 m",
+    "description": "Cabled seafloor observatories providing real-time power and data to ocean bottom instruments",
+    "organization": "Ocean Networks Canada (NEPTUNE/VENUS), OOI (USA), DONET (Japan), EMSO (Europe)",
+    "status": "Operational; expanding globally",
+    "breakthrough": "ONC's NEPTUNE observatory has provided 15+ years of continuous deep-sea monitoring data"
+  },
+  {
+    "id": "UTEC-003",
+    "name": "Swarm AUV Systems",
+    "type": "Exploration",
+    "depth_rating": "3,000-6,000 m",
+    "description": "Coordinated fleets of autonomous underwater vehicles that survey large areas collaboratively",
+    "organization": "Ocean Infinity, Fugro, Kongsberg",
+    "status": "Operational for commercial surveys; expanding to scientific use",
+    "breakthrough": "Ocean Infinity's fleet of HUGIN AUVs can survey 1,200+ km² per day autonomously"
+  },
+  {
+    "id": "UTEC-004",
+    "name": "Deep-Sea DNA Sequencing (eDNA)",
+    "type": "Biological Survey",
+    "depth_rating": "Any depth (water sampling)",
+    "description": "Environmental DNA sampling and sequencing to detect and identify deep-sea organisms from water samples",
+    "organization": "NOAA, MBARI, University of Copenhagen",
+    "status": "Rapidly advancing; used in CCZ biodiversity surveys",
+    "breakthrough": "eDNA detected 90% more species than visual surveys in CCZ nodule exploration areas"
+  },
+  {
+    "id": "UTEC-005",
+    "name": "Pressure-Compensated Electronics",
+    "type": "Engineering",
+    "depth_rating": "11,000 m",
+    "description": "Electronics and batteries that operate at full ocean depth without pressure housings, using oil-filled compensation",
+    "organization": "Triton Submarines, WHOI, Deepsea Power & Light",
+    "status": "Mature technology; used in most deep-rated vehicles",
+    "breakthrough": "Modern pressure-compensated lithium batteries enable full-ocean-depth operation without heavy pressure housings"
+  },
+  {
+    "id": "UTEC-006",
+    "name": "Acoustic Communication Networks",
+    "type": "Communication",
+    "depth_rating": "11,000 m",
+    "description": "Underwater acoustic modems and networks for data transmission from deep-sea instruments to surface",
+    "organization": "Teledyne Benthos, Evologics, WHOI Micro-Modem",
+    "status": "Operational; bandwidth limited to ~10-50 kbps at range",
+    "breakthrough": "WHOI micro-modem enables reliable data transmission from 11,000m depth at 5-10 kbps"
+  },
+  {
+    "id": "UTEC-007",
+    "name": "Autonomous Surface Vehicles (ASV) for Ocean Mapping",
+    "type": "Mapping",
+    "depth_rating": "Surface (mapping to 11,000m seafloor)",
+    "description": "Uncrewed surface vessels equipped with multibeam sonar for autonomous seafloor mapping",
+    "organization": "Saildrone, Ocean Infinity, Fugro",
+    "status": "Operational; Saildrone Surveyor mapped 45,000+ km² of Pacific seafloor",
+    "breakthrough": "Saildrone Surveyor completed first uncrewed mapping of Aleutian Islands in 2023"
+  },
+  {
+    "id": "UTEC-008",
+    "name": "AI-Powered Autonomous Survey",
+    "type": "Exploration",
+    "depth_rating": "6,000 m",
+    "description": "Machine learning algorithms enabling AUVs to autonomously identify targets of interest (vents, species, minerals) and adapt survey patterns in real-time",
+    "organization": "MBARI, WHOI, Ocean Infinity",
+    "status": "Operational; rapidly advancing",
+    "breakthrough": "MBARI AI system can identify hydrothermal vent indicators in real-time, triggering autonomous sampling without human intervention"
+  },
+  {
+    "id": "UTEC-009",
+    "name": "Soft Robotics for Deep-Sea Sampling",
+    "type": "Sampling",
+    "depth_rating": "11,000 m",
+    "description": "Soft robotic manipulators that can gently handle delicate deep-sea organisms without damage, inspired by biological structures",
+    "organization": "Harvard Wyss Institute, MBARI",
+    "status": "Laboratory and field testing",
+    "breakthrough": "Soft robotic fingers can handle jellyfish and other fragile organisms without damage; enables study of previously unsampleable deep-sea life"
+  },
+  {
+    "id": "UTEC-010",
+    "name": "Autonomous Underwater Construction",
+    "type": "Construction",
+    "depth_rating": "3,000 m",
+    "description": "Robotic systems for autonomous underwater construction of infrastructure including pipelines, foundations, and habitats",
+    "organization": "Various (Saipem, Subsea 7)",
+    "status": "Early commercial deployment",
+    "breakthrough": "Autonomous underwater welding and assembly demonstrated; reduces need for human divers in deep construction"
+  },
+  {
+    "id": "UTEC-011",
+    "name": "Deep-Sea Carbon Capture and Storage Monitoring",
+    "type": "Environmental",
+    "depth_rating": "3,000 m",
+    "description": "Monitoring systems for sub-seafloor CO₂ storage sites, detecting leaks and verifying long-term containment",
+    "organization": "SINTEF, IEA, various energy companies",
+    "status": "Operational at pilot sites",
+    "breakthrough": "Fiber optic sensing and chemical monitoring can detect CO₂ leaks at ppm levels across large storage areas"
+  },
+  {
+    "id": "UTEC-012",
+    "name": "Underwater Wireless Power Transfer",
+    "type": "Power",
+    "depth_rating": "500 m",
+    "description": "Wireless power transfer to underwater vehicles and sensors using magnetic resonance coupling, eliminating cable connections",
+    "organization": "Various research groups",
+    "status": "Laboratory and limited field testing",
+    "breakthrough": "Magnetic resonance coupling can transfer 100+ W across 10cm water gap; enables autonomous docking and charging of AUVs"
+  },
+  {
+    "id": "UTEC-013",
+    "name": "AI-Driven Autonomous Underwater Intervention System",
+    "type": "AI_underwater_system",
+    "developer": "Multiple research groups",
+    "year": "2026",
+    "capabilities": "AI-driven AUV/ROV cooperative operations; three cooperative modes pairing manned submersibles with AUVs and USVs; scalable deep-sea operations",
+    "description": "2026年水下干预机器人技术取得重大进展。AI驱动的自主水下系统实现了载人潜水器与AUV、USV的三种协同作业模式，使深海作业可规模化扩展。完全自主的水下机器人系统正从概念走向现实，尽管仍面临通信延迟、能源限制等挑战。",
+    "source": "PatSnap Technology Landscape 2026 / ScienceDirect 2025"
+  }
+]

@@ -1,0 +1,339 @@
+{
+  "domain": "genetech.tools",
+  "sites": [
+    {
+      "name": "GeneTech Tools",
+      "dir": "genetech-tools",
+      "subdomain": "",
+      "url": "https://genetech.tools",
+      "category": "基因技术",
+      "description": "Comprehensive gene technology knowledge base - genes, diseases, therapies, CRISPR applications",
+      "description_cn": "基因技术知识引擎 - 基因、疾病、疗法、CRISPR应用",
+      "entities": ["genes", "diseases", "gene_therapies", "crispr_applications"],
+      "search_queries": [
+        "gene therapy 2025 2026",
+        "CRISPR gene editing clinical trial",
+        "AAV gene delivery breakthrough",
+        "mRNA therapy latest",
+        "base editing prime editing",
+        "CAR-T gene therapy",
+        "gene therapy FDA approval",
+        "in vivo gene editing",
+        "epigenome editing",
+        "gene therapy rare disease"
+      ],
+      "cross_refs": {
+        "tcm": "中药与基因疗法交叉研究",
+        "brain": "脑疾病基因疗法",
+        "life": "合成生物学基因工程",
+        "agent": "AI辅助基因设计"
+      }
+    },
+    {
+      "name": "TCMDB",
+      "dir": "tcm-tools",
+      "subdomain": "tcm",
+      "url": "https://tcm.genetech.tools",
+      "category": "中药方剂",
+      "description": "Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmacology",
+      "description_cn": "中药方剂知识引擎 - 中药、方剂、疾病、药理",
+      "entities": ["herbs", "formulas", "diseases", "ingredients", "pharmacology"],
+      "search_queries": [
+        "traditional chinese medicine research 2025 2026",
+        "TCM herbal formula clinical trial",
+        "中药有效成分研究",
+        "TCM pharmacology mechanism",
+        "herb-drug interaction",
+        "TCM modernization AI",
+        "中药方剂网络药理学",
+        "TCM evidence-based medicine"
+      ],
+      "cross_refs": {
+        "genetech": "中药基因调控机制",
+        "brain": "中药神经保护",
+        "life": "中药合成生物学",
+        "energy": "中药与生物能源"
+      }
+    },
+    {
+      "name": "RobotParts DB",
+      "dir": "robot-parts",
+      "subdomain": "robot",
+      "url": "https://robot.genetech.tools",
+      "category": "机器人配件",
+      "description": "Robot parts & protocols database - actuators, chips, protocols, LLMs, interfaces",
+      "description_cn": "机器人配件协议库 - 执行器、芯片、协议、大模型、接口",
+      "entities": ["actuators", "chips", "protocols", "llms", "interfaces", "sensors", "platforms"],
+      "search_queries": [
+        "robot actuator 2025 2026 new release",
+        "robotics hardware protocol",
+        "robot SOC chip",
+        "humanoid robot components",
+        "robot operating system ROS2",
+        "robot LLM integration",
+        "robot sensor LiDAR camera",
+        "robot communication protocol MQTT DDS",
+        "collaborative robot cobot",
+        "robot actuator servo stepper BLDC"
+      ],
+      "cross_refs": {
+        "brain": "脑机接口机器人控制",
+        "agent": "AI Agent机器人集成",
+        "quantum": "量子传感器机器人",
+        "deepsea": "深海机器人"
+      }
+    },
+    {
+      "name": "BrainDB",
+      "dir": "brain-science",
+      "subdomain": "brain",
+      "url": "https://brain.genetech.tools",
+      "category": "脑科学",
+      "description": "Brain science knowledge base - brain regions, BCI, neurotech, consciousness",
+      "description_cn": "脑科学知识引擎 - 脑区、脑机接口、神经技术、意识",
+      "entities": ["brain_regions", "bci_devices", "neurotech", "neurotransmitters", "brain_disorders", "consciousness_research"],
+      "search_queries": [
+        "brain computer interface 2025 2026",
+        "neural implant Neuralink",
+        "BCI clinical trial",
+        "neurotechnology breakthrough",
+        "brain mapping connectome",
+        "neuroprosthetic device",
+        "EEG BCI non-invasive",
+        "consciousness research",
+        "neuroplasticity",
+        "brain stimulation TMS tDCS"
+      ],
+      "cross_refs": {
+        "genetech": "基因疗法脑疾病",
+        "robot": "脑机接口机器人",
+        "tcm": "中药神经保护",
+        "life": "神经再生长寿"
+      }
+    },
+    {
+      "name": "NuclearDB",
+      "dir": "nuclear-energy",
+      "subdomain": "nuclear",
+      "url": "https://nuclear.genetech.tools",
+      "category": "核能",
+      "description": "Nuclear energy knowledge base - reactors, fusion, fission, nuclear policy",
+      "description_cn": "核能知识引擎 - 反应堆、聚变、裂变、核政策",
+      "entities": ["reactors", "fusion_projects", "fission_tech", "nuclear_fuel", "nuclear_policy", "radiation_safety"],
+      "search_queries": [
+        "nuclear fusion breakthrough 2025 2026",
+        "ITER progress update",
+        "small modular reactor SMR",
+        "tokamak stellarator latest",
+        "nuclear fusion startup",
+        "fusion energy milestone",
+        "nuclear fission advanced reactor",
+        "thorium reactor",
+        "nuclear energy policy",
+        "fusion plasma confinement"
+      ],
+      "cross_refs": {
+        "quantum": "量子计算核模拟",
+        "energy": "核能与新能源对比",
+        "deepsea": "深海核能应用",
+        "mineral": "核燃料矿物"
+      }
+    },
+    {
+      "name": "QuantumDB",
+      "dir": "quantum-computing",
+      "subdomain": "quantum",
+      "url": "https://quantum.genetech.tools",
+      "category": "量子计算",
+      "description": "Quantum computing knowledge base - processors, algorithms, error correction, applications",
+      "description_cn": "量子计算知识引擎 - 处理器、算法、纠错、应用",
+      "entities": ["processors", "algorithms", "error_correction", "quantum_software", "quantum_applications", "quantum_networking"],
+      "search_queries": [
+        "quantum computing breakthrough 2025 2026",
+        "quantum processor new release",
+        "quantum error correction milestone",
+        "quantum advantage demonstration",
+        "quantum algorithm development",
+        "quantum networking quantum internet",
+        "quantum sensing",
+        "quantum software framework",
+        "superconducting qubit",
+        "trapped ion quantum"
+      ],
+      "cross_refs": {
+        "nuclear": "量子模拟核聚变",
+        "agent": "量子机器学习",
+        "robot": "量子传感器机器人",
+        "brain": "量子脑理论"
+      }
+    },
+    {
+      "name": "ExoDB",
+      "dir": "exo-science",
+      "subdomain": "exo",
+      "url": "https://exo.genetech.tools",
+      "category": "地外科学",
+      "description": "Exoplanet & space exploration knowledge base - exoplanets, missions, astrobiology",
+      "description_cn": "地外科学知识引擎 - 系外行星、探测任务、天体生物学",
+      "entities": ["exoplanets", "space_missions", "astrobiology", "space_telescopes", "planetary_science", "space_habitats"],
+      "search_queries": [
+        "exoplanet discovery 2025 2026",
+        "James Webb telescope exoplanet atmosphere",
+        "habitable zone planet",
+        "space mission launch schedule",
+        "astrobiology biosignature",
+        "Mars mission progress",
+        "Europa Clipper",
+        "space telescope new",
+        "planetary defense asteroid",
+        "space habitat design"
+      ],
+      "cross_refs": {
+        "mineral": "小行星矿物资源",
+        "quantum": "量子通信深空",
+        "nuclear": "核推进深空",
+        "deepsea": "极端环境类比"
+      }
+    },
+    {
+      "name": "MineralDB",
+      "dir": "alien-minerals",
+      "subdomain": "mineral",
+      "url": "https://mineral.genetech.tools",
+      "category": "外星矿物",
+      "description": "Extraterrestrial mineral & asteroid mining knowledge base - minerals, asteroids, mining tech",
+      "description_cn": "外星矿物知识引擎 - 矿物、小行星、采矿技术",
+      "entities": ["minerals", "asteroids", "mining_tech", "space_resources", "processing_methods", "resource_assessment"],
+      "search_queries": [
+        "asteroid mining 2025 2026",
+        "space resource utilization",
+        "lunar mining regolith",
+        "asteroid composition analysis",
+        "space mineral processing",
+        "rare earth asteroid",
+        "in-situ resource utilization ISRU",
+        "asteroid prospecting mission",
+        "space manufacturing",
+        "lunar helium-3 mining"
+      ],
+      "cross_refs": {
+        "exo": "小行星探测任务",
+        "nuclear": "核燃料太空矿物",
+        "energy": "太空太阳能",
+        "deepsea": "深海矿物对比"
+      }
+    },
+    {
+      "name": "DeepSeaDB",
+      "dir": "deep-sea-tech",
+      "subdomain": "deepsea",
+      "url": "https://deepsea.genetech.tools",
+      "category": "深海科技",
+      "description": "Deep sea technology knowledge base - submersibles, resources, marine biology, underwater tech",
+      "description_cn": "深海科技知识引擎 - 潜水器、资源、海洋生物、水下技术",
+      "entities": ["submersibles", "deep_sea_resources", "marine_biology", "underwater_tech", "deep_sea_ecology", "ocean_exploration"],
+      "search_queries": [
+        "deep sea exploration 2025 2026",
+        "deep sea mining polymetallic nodule",
+        "autonomous underwater vehicle AUV",
+        "hadal zone exploration",
+        "deep sea vent ecosystem",
+        "submersible new design",
+        "deep sea resource extraction",
+        "ocean floor mapping",
+        "deep sea biology new species",
+        "underwater communication"
+      ],
+      "cross_refs": {
+        "mineral": "深海矿物vs太空矿物",
+        "robot": "水下机器人",
+        "energy": "海洋能源",
+        "exo": "极端环境类比"
+      }
+    },
+    {
+      "name": "EnergyDB",
+      "dir": "new-energy",
+      "subdomain": "energy",
+      "url": "https://energy.genetech.tools",
+      "category": "新能源",
+      "description": "New energy technology knowledge base - solar, storage, hydrogen, grid tech",
+      "description_cn": "新能源知识引擎 - 光伏、储能、氢能、电网技术",
+      "entities": ["solar_tech", "energy_storage", "hydrogen_energy", "grid_tech", "wind_energy", "nuclear_renewable"],
+      "search_queries": [
+        "solar cell efficiency record 2025 2026",
+        "battery technology breakthrough",
+        "solid state battery",
+        "hydrogen fuel cell development",
+        "perovskite solar cell",
+        "grid energy storage",
+        "renewable energy milestone",
+        "green hydrogen production",
+        "energy density battery",
+        "smart grid technology"
+      ],
+      "cross_refs": {
+        "nuclear": "核能vs可再生能源",
+        "quantum": "量子电池",
+        "life": "生物能源",
+        "deepsea": "海洋能源"
+      }
+    },
+    {
+      "name": "LifeDB",
+      "dir": "life-science",
+      "subdomain": "life",
+      "url": "https://life.genetech.tools",
+      "category": "生命科学",
+      "description": "Life science knowledge base - synthetic biology, longevity, regenerative medicine",
+      "description_cn": "生命科学知识引擎 - 合成生物学、长寿科技、再生医学",
+      "entities": ["synthetic_biology", "longevity_tech", "regenerative_medicine", "biotech_tools", "bioethics", "bioinformatics"],
+      "search_queries": [
+        "synthetic biology breakthrough 2025 2026",
+        "longevity research anti-aging",
+        "regenerative medicine stem cell",
+        "cell therapy CAR-T",
+        "bioengineering new organism",
+        "senolytics aging",
+        "epigenetic reprogramming",
+        "xenotransplantation",
+        "biomanufacturing",
+        "gene circuit design"
+      ],
+      "cross_refs": {
+        "genetech": "基因工程合成生物",
+        "tcm": "中药长寿研究",
+        "brain": "神经再生",
+        "energy": "生物能源"
+      }
+    },
+    {
+      "name": "Agent Ecosystem DB",
+      "dir": "agent-ecosystem",
+      "subdomain": "agent",
+      "url": "https://agent.genetech.tools",
+      "category": "AI Agent生态",
+      "description": "AI Agent ecosystem knowledge base - MCP servers, SDKs, protocols, memory systems, benchmarks",
+      "description_cn": "AI Agent生态知识引擎 - MCP服务器、SDK、协议、记忆系统、评测",
+      "entities": ["mcp_servers", "agent_sdks", "protocols", "memory_systems", "benchmarks", "model_apis", "vector_dbs", "agent_frameworks", "tool_platforms"],
+      "search_queries": [
+        "AI agent framework 2025 2026",
+        "MCP server new release",
+        "agent SDK development",
+        "AI agent memory system",
+        "agent benchmark evaluation",
+        "autonomous agent",
+        "multi-agent system",
+        "agent tool use",
+        "AI agent deployment",
+        "agent protocol standard"
+      ],
+      "cross_refs": {
+        "robot": "Agent驱动机器人",
+        "brain": "脑启发AI",
+        "quantum": "量子机器学习",
+        "genetech": "AI辅助基因设计"
+      }
+    }
+  ]
+}

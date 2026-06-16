@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-06-05T14:00:00Z",
+  "description": "量子计算实体库",
+  "entities": [
+    {
+      "type": "processors",
+      "file": "processors.json",
+      "count": 84,
+      "description": "量子处理器"
+    },
+    {
+      "type": "algorithms",
+      "file": "algorithms.json",
+      "count": 70,
+      "description": "量子算法"
+    },
+    {
+      "type": "error_correction",
+      "file": "error_correction.json",
+      "count": 40,
+      "description": "量子纠错"
+    },
+    {
+      "type": "quantum_software",
+      "file": "quantum_software.json",
+      "count": 42,
+      "description": "量子软件与框架"
+    },
+    {
+      "type": "quantum_networking",
+      "file": "quantum_networking.json",
+      "count": 37,
+      "description": "量子网络与通信"
+    }
+  ]
+}

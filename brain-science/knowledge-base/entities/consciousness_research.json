@@ -1,0 +1,158 @@
+[
+  {
+    "id": "CONSC-001",
+    "name": "Global Workspace Theory (GWT)",
+    "theory": "意识是全局工作空间中的信息广播",
+    "key_researcher": "Bernard Baars, Stanislas Dehaene",
+    "evidence": "fMRI和EEG显示意识感知伴随全脑'点火'模式",
+    "status": "主导理论之一; 有大量实验支持",
+    "description": "全局工作空间理论认为意识是信息在全局工作空间(前额叶-顶叶网络)中被广播的过程。当信息达到意识阈值时，触发全脑同步'点火'(ignition)。Dehaene的'全脑神经工作空间'理论提供了神经实现细节。"
+  },
+  {
+    "id": "CONSC-002",
+    "name": "Integrated Information Theory (IIT)",
+    "theory": "意识是整合信息(Φ); 系统的意识水平取决于其信息整合程度",
+    "key_researcher": "Giulio Tononi, Christof Koch",
+    "evidence": "Φ值与意识水平相关(麻醉、睡眠、脑损伤); 争议: Φ计算困难",
+    "status": "主导理论之一; 有争议但影响深远",
+    "description": "整合信息理论(IIT)提出意识就是整合信息(用Φ表示)。一个系统的意识水平取决于其生成整合信息的能力——既高度分化又高度整合。IIT预测小脑对意识贡献小，而丘脑-皮层系统是意识基础。"
+  },
+  {
+    "id": "CONSC-003",
+    "name": "Predictive Processing / Free Energy Principle",
+    "theory": "大脑是预测机器; 意识源于预测误差最小化",
+    "key_researcher": "Karl Friston, Anil Seth",
+    "evidence": "预测编码在感觉皮层中广泛验证; 安慰剂效应和幻觉支持预测框架",
+    "status": "快速发展的统一框架; 连接意识、感知和行动",
+    "description": "预测处理理论认为大脑是预测机器，不断生成对感觉输入的预测并最小化预测误差。Anil Seth提出意识是'受控的幻觉'——我们感知的世界是大脑的最佳猜测而非客观现实。"
+  },
+  {
+    "id": "CONSC-004",
+    "name": "Neural Correlates of Consciousness (NCC)",
+    "theory": "寻找意识的最小神经机制(充分且必要)",
+    "key_researcher": "Francis Crick, Christof Koch",
+    "evidence": "前额叶-顶叶网络激活与意识感知相关; P3b ERP成分与意识报告相关",
+    "status": "持续研究; Cogitate Consortium大规模验证进行中",
+    "description": "意识的神经相关物(NCC)研究寻找与意识体验最直接相关的神经活动。Cogitate Consortium正在进行大规模adversarial collaboration来验证不同意识理论的预测。"
+  },
+  {
+    "id": "CONSC-005",
+    "name": "Disorders of Consciousness",
+    "theory": "意识障碍的神经机制和诊断",
+    "key_researcher": "Steven Laureys, Nicholas Schiff",
+    "evidence": "fMRI显示15-20%植物状态患者可能保留意识(隐蔽意识)",
+    "status": "临床重大挑战; BCI为意识障碍患者提供新评估手段",
+    "description": "意识障碍(昏迷、植物状态、微意识状态)是临床和科学的重大挑战。研究表明15-20%诊断为植物状态的患者可能保留意识。BCI技术为这些患者提供了新的沟通和评估手段。"
+  },
+  {
+    "id": "CONSC-006",
+    "name": "Anesthesia and Consciousness",
+    "theory": "麻醉如何消除意识; 意识的'开关'机制",
+    "key_researcher": "Emery Brown, George Mashour",
+    "evidence": "麻醉诱导意识丧失伴随前额叶-顶叶连接中断; 丘脑-皮层通信中断",
+    "status": "活跃研究领域; 麻醉作为意识探针",
+    "description": "麻醉是研究意识的有力工具——它可逆地消除意识。Emery Brown的研究显示麻醉不是简单的'关闭大脑'，而是创造高度结构化的脑状态。不同麻醉剂通过不同机制影响意识。"
+  },
+  {
+    "id": "CONSC-007",
+    "name": "AI Consciousness Debate",
+    "theory": "AI系统是否可能具有意识?",
+    "key_researcher": "多学科(哲学、神经科学、AI研究者)",
+    "evidence": "目前无证据表明AI有意识; 但缺乏公认的意识检测方法",
+    "status": "2026年热点话题; 随大语言模型发展而加剧",
+    "description": "AI意识是2026年的热点话题。目前没有证据表明AI系统具有意识，但缺乏公认的跨系统意识检测方法。讨论重点包括: 是否需要AI意识评估框架、AI意识的法律和伦理影响。"
+  },
+  {
+    "id": "CONSC-008",
+    "name": "Integrated Information Theory 4.0 (IIT 4.0)",
+    "theory": "Integrated Information Theory",
+    "key_researcher": "Giulio Tononi (University of Wisconsin)",
+    "evidence": "Updated mathematical framework; improved computational tractability; new empirical predictions testable with high-density BCI",
+    "status": "Updated 2025-2026; more computationally tractable version of IIT",
+    "description": "IIT 4.0 is the latest update to Integrated Information Theory, providing a more computationally tractable framework for measuring integrated information (Φ). The update addresses criticisms of earlier versions regarding computational intractability and makes new empirical predictions that can be tested with high-density BCI systems like the 65,536-electrode epidural array."
+  },
+  {
+    "id": "CONSC-009",
+    "name": "Global Workspace Theory + AI Consciousness Debate",
+    "theory": "Global Workspace Theory (GWT)",
+    "key_researcher": "Bernard Baars / Stanislas Dehaene",
+    "evidence": "GWT framework applied to large language models; debate over whether AI systems have global workspace architecture",
+    "status": "Active debate 2025-2026; GWT applied to AI consciousness question",
+    "description": "Global Workspace Theory is being applied to the debate over AI consciousness in 2025-2026. Researchers are asking whether large language models have a global workspace architecture that could support conscious-like processing. This cross-pollination between neuroscience and AI is generating new insights about both biological and artificial consciousness."
+  },
+  {
+    "id": "CONSC-010",
+    "name": "Connectome-Specific Consciousness Research",
+    "theory": "Connectome-based / Network neuroscience",
+    "key_researcher": "Multiple groups (MICrONS, Human Connectome Project)",
+    "evidence": "500 billion synaptic connections mapped; consciousness correlates identified in specific network motifs",
+    "status": "Emerging 2025-2026; connectome data enabling consciousness research at synaptic level",
+    "description": "Connectome-specific consciousness research uses the detailed synaptic-level maps from MICrONS and the Human Connectome Project to identify network motifs that correlate with conscious processing. This approach moves beyond regional theories to examine how specific patterns of neural connectivity support consciousness, enabled by unprecedented mapping data."
+  },
+  {
+    "id": "CONSC-011",
+    "name": "Psychedelic States and Consciousness Research",
+    "theory": "Phenomenological / Entropy brain hypothesis",
+    "key_researcher": "Robin Carhart-Harris (UCSF)",
+    "evidence": "fMRI and EEG studies showing increased neural entropy under psychedelics; REBUS model (Relaxed Beliefs Under Psychedelics)",
+    "status": "Active research 2025-2026; psychedelics as tools for consciousness research",
+    "description": "Psychedelics are being used as research tools to study consciousness, with Robin Carhart-Harris's REBUS model (Relaxed Beliefs Under Psychedelics) providing a framework for understanding how psychedelics alter conscious experience. fMRI and EEG studies show increased neural entropy under psychedelics, suggesting that these compounds push the brain into higher-entropy states that may reveal fundamental properties of consciousness."
+  },
+  {
+    "id": "CONSC-012",
+    "name": "Neurorights and Legal Frameworks for Consciousness",
+    "theory": "Legal / Ethical framework",
+    "key_researcher": "Rafael Yuste (Columbia University) / UNESCO",
+    "evidence": "Chile enacted neurorights legislation; UNESCO developing global framework; EU considering neural data protection",
+    "status": "Active policy development 2025-2026; first legal protections for mental privacy",
+    "description": "Neurorights — legal protections for mental privacy, cognitive liberty, and mental integrity — are being enacted into law. Chile became the first country to constitutionally protect neurorights, and UNESCO is developing a global framework. As BCI technology advances, these legal frameworks are becoming critical for protecting individuals from unauthorized access to their neural data and mental processes."
+  },
+  {
+    "id": "CR-013",
+    "name": "Integrated Information Theory (IIT) 4.0",
+    "type": "Consciousness theory",
+    "key_concept": "Phi (Φ) measures integrated information; consciousness is a fundamental property of systems with high Φ",
+    "status": "Updated 2024-2025; ongoing debate with Global Workspace Theory",
+    "description": "Integrated Information Theory (IIT) 4.0 is the latest version of Giulio Tononi's theory that consciousness is identical to integrated information (Φ). IIT 4.0 provides a more rigorous mathematical framework for computing Φ and makes specific predictions about which physical systems are conscious. The theory predicts that the posterior cortical 'hot zone' is the primary substrate of consciousness, while the cerebellum (despite having more neurons) contributes little to consciousness due to its limited integration. IIT remains controversial but has generated productive empirical research.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/iit-consciousness",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "CR-014",
+    "name": "Global Workspace Theory (GWT) vs IIT Debate",
+    "type": "Theoretical debate",
+    "key_concept": "Consciousness as global broadcast (GWT) vs. integrated information (IIT)",
+    "status": "Active debate 2025-2026; Templeton Foundation funded adversarial collaboration",
+    "description": "The debate between Global Workspace Theory (GWT, proposed by Bernard Baars and Stanislas Dehaene) and Integrated Information Theory (IIT, proposed by Giulio Tononi) is the central theoretical debate in consciousness science. GWT proposes that consciousness arises when information is globally broadcast across brain networks, while IIT proposes that consciousness is identical to integrated information. The Templeton Foundation funded an adversarial collaboration to test the theories' predictions against brain imaging data. The results, published in 2023-2025, showed that both theories have empirical support but also face challenges.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nature.com/articles/gwt-iit-adversarial",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "CR-015",
+    "name": "Anesthesia and Consciousness",
+    "type": "Clinical consciousness research",
+    "key_concept": "Anesthetics disrupt cortical integration and information broadcasting",
+    "status": "Active research 2025-2026; new monitoring technologies",
+    "description": "Anesthesia research provides a unique window into consciousness by allowing controlled manipulation of conscious states. New research in 2025-2026 shows that different anesthetics disrupt consciousness through different mechanisms: propofol disrupts cortical integration, ketamine creates a disorganized conscious state, and xenon affects specific neural circuits. Advanced EEG monitoring during anesthesia is enabling more precise control of anesthetic depth and reducing the incidence of intraoperative awareness. This research has practical implications for the millions of patients who undergo anesthesia each year.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nature.com/articles/anesthesia-consciousness",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

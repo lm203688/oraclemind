@@ -1,0 +1,112 @@
+[
+  {
+    "id": "SRES-001",
+    "name": "Lunar South Pole Water Ice",
+    "resource_type": "Water",
+    "location": "Permanently shadowed craters (Cabeus, Shackleton, Haworth, Shoemaker)",
+    "estimated_quantity": "Hundreds of millions of tonnes",
+    "extraction_method": "Thermal mining / sublimation capture",
+    "economic_value": "Critical enabler - worth $10M+ per tonne in orbit as propellant",
+    "description": "LCROSS confirmed water ice in Cabeus crater. LRO data suggests extensive ice deposits across south pole PSRs. This is the single most valuable near-term space resource, enabling propellant production, life support, and radiation shielding."
+  },
+  {
+    "id": "SRES-002",
+    "name": "Lunar Regolith Oxygen",
+    "resource_type": "Oxygen",
+    "location": "Lunar surface (global - regolith is 40-45% oxygen by weight)",
+    "estimated_quantity": "Effectively unlimited",
+    "extraction_method": "Molten regolith electrolysis, hydrogen reduction, carbothermal reduction",
+    "economic_value": "$1-5M per tonne delivered to orbit",
+    "description": "Lunar regolith contains 40-45% oxygen by weight, bound in oxide minerals. Multiple extraction methods have been demonstrated. Oxygen is the most valuable near-term ISRU product after water, needed for life support and LOX propellant."
+  },
+  {
+    "id": "SRES-003",
+    "name": "16 Psyche Metal Deposits",
+    "resource_type": "Iron-Nickel-PGM",
+    "location": "16 Psyche (main belt, 2.9 AU)",
+    "estimated_quantity": "~2×10¹⁹ kg of metal (theoretical)",
+    "extraction_method": "Direct mechanical processing; no smelting needed for metallic phase",
+    "economic_value": "Theoretical $10 quintillion; practical value depends on delivery cost",
+    "description": "If Psyche is indeed an exposed metallic core, it represents the largest known concentration of iron, nickel, and platinum group metals in the solar system. However, the extreme distance and lack of infrastructure make near-term extraction impractical."
+  },
+  {
+    "id": "SRES-004",
+    "name": "Ceres Water Deposits",
+    "resource_type": "Water",
+    "location": "Ceres (main belt, 2.77 AU)",
+    "estimated_quantity": "200 million km³ of ice (est.)",
+    "extraction_method": "Thermal extraction from subsurface; possible brine pumping",
+    "economic_value": "Enabling resource for main belt operations",
+    "description": "Ceres may contain more fresh water than Earth. Dawn mission data revealed subsurface brine and ice. As a staging point for outer solar system missions, Ceres water could serve as a propellant depot for deeper space operations."
+  },
+  {
+    "id": "SRES-005",
+    "name": "Lunar Helium-3",
+    "resource_type": "Helium-3",
+    "location": "Lunar surface regolith (global, concentrated in mature mare soils)",
+    "estimated_quantity": "~1 million tonnes total",
+    "extraction_method": "Solar wind degassing of heated regolith",
+    "economic_value": "$3-5 billion per tonne (if fusion reactors developed)",
+    "description": "He-3 is implanted in lunar regolith by solar wind. While the total quantity is large, concentrations are extremely low (1-50 ppb). Economic viability depends entirely on the development of practical He-3 fusion reactors, which remains uncertain."
+  },
+  {
+    "id": "SRES-006",
+    "name": "Lunar Rare Earth Elements (KREEP)",
+    "resource_type": "Rare Earth Elements",
+    "location": "Lunar KREEP terrain (Mare Imbrium region, Oceanus Procellarum)",
+    "estimated_quantity": "Significant but poorly quantified",
+    "extraction_method": "Acid leaching or molten salt electrolysis of KREEP-rich regolith",
+    "economic_value": "High if terrestrial supply constrained; REEs worth $100-1000/kg",
+    "description": "KREEP (Potassium, Rare Earth Elements, Phosphorus) terrains on the Moon contain elevated REE concentrations. While lower grade than terrestrial deposits, the absence of environmental regulations and co-location with other ISRU activities could make extraction viable."
+  },
+  {
+    "id": "SRES-007",
+    "name": "Near-Earth Asteroid Water",
+    "resource_type": "Water",
+    "location": "C-type near-Earth asteroids (Bennu, Ryugu-type)",
+    "estimated_quantity": "5-10% water by mass in hydrated minerals",
+    "extraction_method": "Thermal dehydration of phyllosilicates at 300-800°C",
+    "economic_value": "Comparable to lunar water if accessible",
+    "description": "Carbonaceous asteroids contain water bound in phyllosilicate minerals. OSIRIS-REx and Hayabusa2 confirmed water-bearing minerals. While extraction requires more energy than lunar ice mining, some NEAs are energetically easier to reach than the lunar surface."
+  },
+  {
+    "id": "SRES-008",
+    "name": "Martian Water Ice",
+    "resource_type": "Water",
+    "location": "Mars subsurface (mid-latitudes and poles); exposed at scarps",
+    "estimated_quantity": "Millions of km³ at poles; extensive subsurface deposits",
+    "extraction_method": "Drilling and sublimation; warm regolith extraction",
+    "economic_value": "Essential for human Mars missions",
+    "description": "Mars Reconnaissance Orbiter discovered extensive subsurface water ice at mid-latitudes, accessible within 1-2 meters of the surface. This is the critical resource enabling human Mars exploration and eventual settlement."
+  },
+  {
+    "id": "SRES-006",
+    "name": "Mars Atmospheric Resources",
+    "resource_type": "CO₂, N₂, Ar, water vapor",
+    "location": "Mars atmosphere (95.3% CO₂)",
+    "estimated_quantity": "Effectively unlimited CO₂; trace water vapor",
+    "extraction_method": "MOXIE-type solid oxide electrolysis; water vapor adsorption",
+    "economic_value": "Critical for Mars ISRU - oxygen for life support and propellant",
+    "description": "Mars atmosphere is 95.3% CO₂, providing a virtually unlimited carbon and oxygen source. NASA MOXIE demonstrated oxygen production from Martian CO₂ on Perseverance rover. This is the most accessible ISRU resource on Mars."
+  },
+  {
+    "id": "SRES-007",
+    "name": "Asteroid Water for Propellant",
+    "resource_type": "Water (H₂O)",
+    "location": "C-type and B-type asteroids (Ryugu, Bennu class)",
+    "estimated_quantity": "Individual asteroids may contain 10-40% water by mass as hydrated minerals",
+    "extraction_method": "Thermal processing of hydrated minerals; optical mining",
+    "economic_value": "$10M+ per tonne in orbit as propellant; enables deep space transportation",
+    "description": "Water extracted from carbonaceous asteroids can be split into hydrogen and oxygen for rocket propellant. This is the highest-value near-term space resource, enabling refueling depots in space and dramatically reducing launch costs from Earth."
+  },
+  {
+    "id": "SRES-008",
+    "name": "Lunar Helium-3 Resource Assessment",
+    "resource_type": "Helium-3 (³He)",
+    "location": "Lunar surface regolith (mare basalts)",
+    "estimated_quantity": "~1 million tonnes in upper few meters globally; 3-20 ppb concentration",
+    "extraction_method": "Regolith heating to 600-700°C; solar wind implantation",
+    "economic_value": "Potentially $1-5B per tonne as fusion fuel (if D-³He fusion achieved)",
+    "description": "Lunar helium-3 is a potential clean fusion fuel. While no commercial D-³He fusion reactor exists, the resource is strategically important. China has expressed particular interest in lunar He-3 extraction as part of its lunar exploration program."
+  }
+]

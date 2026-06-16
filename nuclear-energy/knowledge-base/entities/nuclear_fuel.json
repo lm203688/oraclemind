@@ -1,0 +1,392 @@
+[
+  {
+    "id": "NFUEL-001",
+    "name": "HALEU (High-Assay Low-Enriched Uranium)",
+    "type": "Nuclear fuel (enriched uranium)",
+    "enrichment": "5-20% U-235 (vs 3-5% for standard LEU)",
+    "status": "Critical supply gap; US DOE funding domestic production; Centrus Energy producing",
+    "applications": "Advanced reactors, SMRs, fast reactors, microreactors",
+    "description": "HALEU is uranium enriched to 5-20% U-235, higher than standard reactor fuel (3-5%) but below weapons-grade (>90%). Most advanced reactor designs require HALEU, but the global supply chain is severely limited. Russia currently dominates HALEU production. The US DOE is investing billions to establish domestic HALEU production, with Centrus Energy beginning production at their Ohio facility. The HALEU supply gap is a major bottleneck for advanced reactor deployment."
+  },
+  {
+    "id": "NFUEL-002",
+    "name": "TRISO (Tri-structural Isotropic) Fuel",
+    "type": "Accident-tolerant fuel particle",
+    "structure": "Uranium kernel + 3 coating layers (pyrolytic carbon + SiC) = ~1mm particle",
+    "status": "Qualified and tested; production scaling up",
+    "applications": "HTGRs, microreactors, FHRs (Xe-100, eVinci, Hermes)",
+    "description": "TRISO fuel particles are the most robust nuclear fuel ever created. Each ~1mm particle contains a uranium oxide/oxycarbide kernel coated with three layers: porous carbon (absorbs fission products), inner pyrolytic carbon, silicon carbide (pressure vessel), and outer pyrolytic carbon. TRISO retains fission products at temperatures above 1,600°C, making it essentially meltdown-proof. It's the fuel of choice for HTGRs and microreactors."
+  },
+  {
+    "id": "NFUEL-003",
+    "name": "Molten Salt Fuel",
+    "type": "Liquid nuclear fuel",
+    "composition": "Uranium or thorium dissolved in fluoride or chloride salt (e.g., FLiBe, LiF-BeF₂)",
+    "status": "Demonstrated in MSRE (1960s); modern development by multiple companies",
+    "applications": "Molten salt reactors (MSRs), thorium reactors",
+    "description": "Molten salt fuel dissolves fissile material (uranium or thorium) directly in a molten salt that serves as both fuel and coolant. Advantages: no fuel fabrication, online refueling and reprocessing, negative temperature coefficient (inherent safety), and high operating temperatures (700°C+). The MSRE at Oak Ridge demonstrated the concept in the 1960s. Modern MSR developers include Copenhagen Atomics, Terrestrial Energy, and Flibe Energy."
+  },
+  {
+    "id": "NFUEL-004",
+    "name": "Metal Fuel (Sodium-cooled Fast Reactor)",
+    "type": "Metallic nuclear fuel",
+    "composition": "U-Zr or U-Pu-Zr alloy in steel cladding",
+    "status": "Demonstrated in EBR-II and FFTF; used in TerraPower Natrium",
+    "applications": "Sodium-cooled fast reactors, breeder reactors",
+    "description": "Metal fuel (U-Zr or U-Pu-Zr alloy) is used in sodium-cooled fast reactors. It has excellent thermal conductivity (better than oxide fuel), which combined with sodium coolant's high thermal conductivity provides passive safety. EBR-II demonstrated inherent safety of metal-fueled fast reactors in the 1980s. TerraPower's Natrium reactor uses metal fuel. Metal fuel also enables breeding (producing more fuel than consumed)."
+  },
+  {
+    "id": "NFUEL-005",
+    "name": "Thorium Fuel Cycle",
+    "type": "Alternative nuclear fuel cycle",
+    "composition": "Th-232 → Pa-233 → U-233 (breeding process)",
+    "status": "Demonstrated in multiple reactors; not commercially deployed",
+    "applications": "MSRs, CANDU reactors, advanced reactors",
+    "description": "Thorium is 3-4x more abundant than uranium and can be bred into U-233, an excellent fissile material. The thorium cycle produces less long-lived transuranic waste and has inherent proliferation resistance (U-232 contaminant makes U-232 hard to weaponize). India has the largest thorium reserves and an active thorium program. Copenhagen Atomics and Flibe Energy are developing thorium-fueled MSRs."
+  },
+  {
+    "id": "NFUEL-006",
+    "name": "Accident Tolerant Fuel (ATF)",
+    "type": "Enhanced safety fuel for existing reactors",
+    "composition": "Various: Cr-coated Zr cladding, FeCrAl cladding, U₃Si₂ fuel, SiC cladding",
+    "status": "Lead test assemblies in commercial reactors; NRC review ongoing",
+    "applications": "Existing LWR fleet (retrofit)",
+    "description": "ATF is designed to improve the safety of existing light water reactors by providing more time for operator action during accidents. Approaches include chromium-coated zirconium cladding (reduces oxidation), FeCrAl cladding (withstands higher temperatures), and silicon carbide cladding (no hydrogen generation). Several ATF designs are in lead test assembly programs at commercial reactors. ATF was a key recommendation after Fukushima."
+  },
+  {
+    "id": "NFUEL-007",
+    "name": "FCM™ Fuel (Fully Ceramic Micro-encapsulated)",
+    "type": "Advanced accident-tolerant fuel",
+    "composition": "TRISO particles embedded in SiC matrix (replaces traditional fuel pellets and cladding)",
+    "status": "Under development by USNC; testing phase",
+    "applications": "Microreactors, LWR retrofit, advanced reactors",
+    "description": "USNC's FCM™ fuel combines TRISO fuel particles with a silicon carbide matrix to create fuel that is essentially indestructible under accident conditions. Unlike traditional fuel rods with zirconium cladding, FCM™ has no metallic components that can oxidize or generate hydrogen. It can be fabricated into traditional fuel pellet geometry for LWR retrofit or custom shapes for advanced reactors."
+  },
+  {
+    "id": "NFUEL-008",
+    "name": "Tritium Breeding",
+    "type": "Fusion fuel production",
+    "composition": "Li-6 + n → T + He-4 (in lithium-containing blanket)",
+    "status": "Not yet demonstrated at scale; critical for D-T fusion reactors",
+    "applications": "Fusion power plants (ITER, DEMO, commercial fusion)",
+    "description": "Tritium breeding is essential for D-T fusion power plants, as tritium is not naturally available in sufficient quantities. The breeding blanket contains lithium (Li-6) which produces tritium when bombarded by fusion neutrons. The tritium breeding ratio (TBR) must exceed 1.0 for a self-sufficient fusion power plant. ITER will test breeding blanket modules, but full-scale tritium breeding has never been demonstrated."
+  },
+  {
+    "id": "NFUEL-009",
+    "name": "DOE HALEU Distribution Program (2025-2026)",
+    "type": "Nuclear fuel supply chain / Government program",
+    "enrichment": "5-20% U-235 HALEU",
+    "status": "DOE made conditional commitments to supply HALEU to five US nuclear developers",
+    "applications": "Advanced reactors, SMRs, fast reactors, microreactors",
+    "description": "The US DOE announced conditional commitments to supply high-assay low-enriched uranium (HALEU) to five domestic nuclear developers, addressing the critical HALEU supply gap. This program is essential for the US advanced reactor industry, which has been dependent on Russian HALEU. The DOE is also funding domestic HALEU production through Centrus Energy and other suppliers."
+  },
+  {
+    "id": "NFUEL-010",
+    "name": "TRISO-X First HALEU Allocation",
+    "type": "TRISO fuel fabrication / HALEU supply",
+    "enrichment": "HALEU-based TRISO particles",
+    "status": "TRISO-X allocated first tranche of HALEU for pioneering fuel fabrication",
+    "applications": "X-energy Xe-100, Kairos Power FHR, other TRISO-fueled reactors",
+    "description": "TRISO-X (X-energy subsidiary) received the first allocation of HALEU for commercial TRISO fuel fabrication. TRISO particle fuel is considered 'the most robust nuclear fuel on the planet' because it can withstand very high temperatures without melting. This allocation marks a critical step in establishing a domestic TRISO fuel supply chain, enabling deployment of TRISO-fueled advanced reactors."
+  },
+  {
+    "id": "NFUEL-011",
+    "name": "Standard Nuclear TRISO Fuel Production Line",
+    "type": "Reactor-agnostic TRISO fuel production",
+    "enrichment": "HALEU TRISO fuel",
+    "status": "Production line announced December 2025; reactor-agnostic fuel supplier",
+    "applications": "Any TRISO-fueled reactor design",
+    "description": "Standard Nuclear announced a TRISO fuel production line in December 2025, positioning itself as a reactor-agnostic producer of TRISO nuclear fuel. Unlike TRISO-X (tied to X-energy), Standard Nuclear aims to supply TRISO fuel to any advanced reactor developer. This diversification of the TRISO fuel supply chain is critical for the broader advanced reactor industry."
+  },
+  {
+    "id": "NFUEL-012",
+    "name": "US DOE Fuel Line Pilot Program",
+    "type": "Government program / Fuel supply chain",
+    "enrichment": "Multiple fuel types (HALEU, TRISO, metallic fuel)",
+    "status": "Established July 2025; enabling advanced reactor fuel supply",
+    "applications": "All advanced reactor designs requiring non-standard fuel",
+    "description": "The US DOE established the Fuel Line Pilot Program in July 2025 to enable domestic advanced nuclear fuel production. This program addresses the critical fuel supply bottleneck that has slowed advanced reactor deployment. The Fuel Line Pilot Program works alongside HALEU production initiatives to create a complete domestic fuel supply chain for next-generation reactors."
+  },
+  {
+    "id": "NFUEL-013",
+    "name": "Accident Tolerant Fuel (ATF) Commercial Deployment",
+    "type": "Enhanced safety nuclear fuel",
+    "enrichment": "Standard LEU (3-5% U-235) with ATF coatings",
+    "status": "Commercial deployment beginning 2025-2026",
+    "applications": "Existing LWR fleet safety enhancement; accident tolerance",
+    "description": "Accident Tolerant Fuel (ATF) is transitioning from testing to commercial deployment in 2025-2026. ATF uses advanced coatings and cladding materials (silicon carbide, chromium coatings, FeCrAl alloys) that resist oxidation and hydrogen generation during loss-of-coolant accidents. ATF could have prevented the hydrogen explosions at Fukushima. Commercial deployment in existing reactors enhances safety without requiring new reactor designs."
+  },
+  {
+    "id": "NFUEL-014",
+    "name": "Fusion Fuel Cycle (D-T Breeding and Supply)",
+    "type": "Fusion fuel / Tritium breeding",
+    "enrichment": "Deuterium (natural) + Tritium (bred from lithium)",
+    "status": "Critical challenge for fusion energy; ITER and DEMO breeding blanket development",
+    "applications": "All D-T fusion reactors; tritium self-sufficiency required",
+    "description": "The deuterium-tritium fusion fuel cycle is a critical challenge for fusion energy. While deuterium is abundant in seawater, tritium must be bred from lithium using fusion neutrons in breeding blankets. Achieving tritium self-sufficiency (breeding ratio >1.0) is essential for any D-T fusion power plant. ITER will test breeding blanket modules, and DEMO must demonstrate self-sufficient tritium production for commercial fusion."
+  },
+  {
+    "id": "NFUEL-015",
+    "name": "Metallic Fuel for Fast Reactors",
+    "type": "Fast reactor fuel / Metal alloy",
+    "enrichment": "Various (including HALEU and plutonium-bearing alloys)",
+    "status": "Active development for fast spectrum reactors and microreactors",
+    "applications": "Fast reactors, microreactors, breed-and-burn reactors",
+    "description": "Metallic uranium alloy fuels (U-Zr, U-Pu-Zr) are gaining renewed attention for fast spectrum reactors and microreactors. Metallic fuels offer high thermal conductivity (safer operation), ease of pyroprocessing for recycling, and compatibility with sodium-cooled fast reactors. Oklos Aurora microreactor uses metallic fuel for its 20-year refueling cycle. The US is investing in metallic fuel fabrication capabilities to support advanced reactor deployment."
+  },
+  {
+    "id": "NFUEL-016",
+    "name": "HALEU Fuel Supply for Advanced Reactors",
+    "type": "Fuel supply / High-Assay Low-Enriched Uranium",
+    "enrichment": "5-20% U-235 (HALEU)",
+    "application": "Advanced reactors, SMRs, microreactors",
+    "status": "Critical supply chain bottleneck; DOE accelerating domestic production",
+    "description": "High-Assay Low-Enriched Uranium (HALEU) is a critical fuel supply bottleneck for advanced reactors. Most Gen IV designs and many SMRs require HALEU (5-20% enrichment) rather than conventional LEU (3-5%). Currently, Russia is the only commercial supplier of HALEU, creating a strategic vulnerability. The DOE is accelerating domestic HALEU production through Centrus Energy and other pathways to support the advanced reactor pipeline.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.energy.gov/articles/department-energy-announces-initial-selections-new-reactor-pilot-program",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NFUEL-017",
+    "name": "TRISO Fuel Production Scale-Up",
+    "type": "Fuel fabrication / TRISO particle fuel",
+    "enrichment": "Various (LEU and HALEU compatible)",
+    "application": "HTGRs, FHRs, microreactors (Xe-100, eVinci, Hermes)",
+    "status": "Scaling up production for multiple reactor programs",
+    "description": "TRISO (TRIstructural-ISOtropic) fuel particle production is scaling up to support multiple advanced reactor programs including X-energy Xe-100, Westinghouse eVinci, and Kairos Hermes. TRISO particles contain uranium fuel in a multi-layer ceramic coating that retains fission products even at extreme temperatures (1,600°C+), making them inherently safe. The US DOE is supporting TRISO fuel fabrication capability at Oak Ridge National Laboratory to meet growing demand from advanced reactor developers.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.asme.org/topics-resources/content/what-nuclear-energy-technologies-are-actually-advancing-in-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NFUEL-018",
+    "name": "Metallic Fuel for Fast Reactors (TerraPower Natrium)",
+    "type": "Fuel type / Metallic fuel",
+    "enrichment": "HALEU (5-20% U-235)",
+    "application": "Sodium-cooled fast reactors (TerraPower Natrium, EBR-II heritage)",
+    "status": "Under development; first fuel loads for Natrium demonstration",
+    "description": "Metallic fuel development for sodium-cooled fast reactors is advancing to support TerraPower's Natrium demonstration. Metallic fuel (uranium-zirconium alloy) offers advantages over oxide fuel for fast reactors: higher thermal conductivity, easier reprocessing, and better compatibility with sodium coolant. The fuel builds on decades of EBR-II operational experience at Idaho National Laboratory. Securing reliable HALEU supply for metallic fuel fabrication remains a key challenge.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://nuclearinnovationalliance.org/sites/default/files/2025-11/Primer%20%282025%29%20%281%29.pdf",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NFUEL-019",
+    "name": "Thorium Fuel Cycle Development",
+    "type": "Alternative fuel cycle / Thorium",
+    "enrichment": "No enrichment needed for Th-232 (fertile, not fissile); requires fissile driver (U-235 or Pu-239)",
+    "application": "Molten salt reactors, HTGRs, CANDU reactors",
+    "status": "Active R&D; Copenhagen Atomics and others pursuing thorium MSR",
+    "description": "Thorium fuel cycle development is advancing, particularly for molten salt reactors. Thorium (Th-232) is more abundant than uranium and produces less long-lived transuranic waste. Copenhagen Atomics is developing a thorium-fueled MSR designed for factory mass production. India has the world's largest thorium reserves and a dedicated thorium program. While thorium is not fissile itself (requires a fissile driver to breed U-233), it offers potential advantages in waste management and proliferation resistance.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.asme.org/topics-resources/content/what-nuclear-energy-technologies-are-actually-advancing-in-2026",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NFUEL-020",
+    "name": "Fusion Fuel (Deuterium-Tritium) Supply Chain",
+    "type": "Fusion fuel / D-T supply",
+    "enrichment": "N/A - isotopic separation",
+    "application": "Fusion reactors (ITER, SPARC, and future fusion power plants)",
+    "status": "Tritium supply is critical bottleneck; breeding blankets under development",
+    "description": "The deuterium-tritium (D-T) fusion fuel supply chain is a critical consideration for the emerging fusion energy industry. Deuterium is abundant in seawater, but tritium is extremely rare and must be bred from lithium using fusion neutrons (breeding blankets). ITER will consume significant amounts of tritium, and future fusion power plants must produce more tritium than they consume (tritium breeding ratio >1). The tritium supply bottleneck is one of the key challenges for fusion energy commercialization.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.weforum.org/stories/2026/02/nuclear-fusion-science-explained",
+        "collected_at": "2026-06-01T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NFUEL-021",
+    "name": "DOE Reactor Pilot Program Fuel Supply",
+    "type": "Government program / Advanced reactor fuel",
+    "enrichment": "Multiple fuel types (HALEU, TRISO, metallic fuel)",
+    "status": "DOE announced initial selections for new reactor pilot program June 2025",
+    "applications": "Advanced reactor demonstrations; fuel supply chain development",
+    "description": "The DOE announced initial selections for its Reactor Pilot Program in June 2025, following President Trumps Executive Order 14301 reforming nuclear reactor testing at DOE. The program addresses the critical fuel supply bottleneck by enabling domestic advanced nuclear fuel production alongside reactor demonstrations. Energy Secretary Chris Wright stated that at least three SMRs would be running by mid-2026.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.energy.gov/articles/department-energy-announces-initial-selections-n",
+        "collected_at": "2026-06-02T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-22",
+    "name": "DOE HALEU Allocation Program (5 Developers)",
+    "type": "Fuel supply program / Government initiative",
+    "fuel_type": "HALEU (High-Assay Low-Enriched Uranium)",
+    "enrichment": "5-20% U-235",
+    "status": "DOE allocated HALEU to 5 advanced reactor developers",
+    "description": "The Department of Energy allocated HALEU (High-Assay Low-Enriched Uranium) to 5 advanced reactor developers, addressing a critical fuel supply gap. HALEU is essential for most advanced reactor designs but is not commercially available in the US. The DOE program is a stopgap measure while domestic HALEU production capacity is being established.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.energy.gov/ne/articles/haleu-allocation-5-developers",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-23",
+    "name": "TRISO-X First HALEU Fuel Allocation",
+    "type": "TRISO fuel production / First commercial allocation",
+    "fuel_type": "TRISO (Tri-structural Isotropic) particle fuel with HALEU",
+    "enrichment": "HALEU-grade TRISO particles",
+    "status": "First HALEU allocation for TRISO fuel production (2025)",
+    "description": "TRISO-X received the first HALEU allocation specifically for TRISO fuel production, marking a milestone in advanced nuclear fuel manufacturing. TRISO particles are inherently safe fuel forms that retain fission products even at extreme temperatures. This allocation enables TRISO-X to begin commercial-scale production of TRISO fuel for advanced reactors.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.triso-x.com/news/haleu-allocation",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-24",
+    "name": "Standard Nuclear TRISO Production Line (December 2025)",
+    "type": "Fuel manufacturing / TRISO production facility",
+    "fuel_type": "TRISO particle fuel",
+    "enrichment": "Commercial-grade TRISO production",
+    "status": "Production line operational December 2025",
+    "description": "Standard Nuclear brought a TRISO fuel production line online in December 2025, adding to the growing domestic TRISO manufacturing capacity. The facility produces TRISO particles for advanced reactor customers and supports the US goal of establishing a reliable domestic fuel supply chain for next-generation reactors.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.standardnuclear.com/triso-production-2025",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-25",
+    "name": "Accident Tolerant Fuel (ATF) Commercial Deployment",
+    "type": "Fuel safety improvement / Commercial deployment",
+    "fuel_type": "Accident Tolerant Fuel (ATF) - multiple designs",
+    "enrichment": "Standard and HALEU grades available",
+    "status": "Commercial deployment beginning 2025-2026",
+    "description": "Accident Tolerant Fuel (ATF) is entering commercial deployment in 2025-2026, with multiple designs being loaded into operating reactors. ATF provides significantly longer coping time during loss-of-coolant accidents compared to conventional Zircaloy-clad fuel. Major fuel vendors including Framatome, Westinghouse, and Global Nuclear Fuel are deploying ATF variants in commercial reactors.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.nei.org/news/2026/accident-tolerant-fuel-deployment",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-26",
+    "name": "Fusion Fuel Cycle: D-T Breeding and Supply Chain",
+    "type": "Fusion fuel / Tritium breeding",
+    "fuel_type": "Deuterium-Tritium (D-T) fusion fuel",
+    "enrichment": "Tritium breeding from lithium blankets",
+    "status": "Critical supply chain challenge for fusion energy",
+    "description": "The deuterium-tritium (D-T) fusion fuel cycle presents unique supply chain challenges. While deuterium is abundant in seawater, tritium must be bred from lithium using neutron capture in fusion reactor blankets. Establishing a reliable tritium supply chain is critical for fusion energy deployment. Current global tritium inventory is limited, and breeding ratios must exceed 1.0 for sustainable fusion power. This is a key focus area for the ITER and DEMO programs.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.iaea.org/topics/fusion-fuel-cycle",
+        "collected_at": "2026-06-04T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-027",
+    "name": "TRISO Fuel (TRIstructural-ISOtropic)",
+    "type": "Advanced nuclear fuel",
+    "material": "Uranium oxide or uranium oxycarbide kernels with pyrolytic carbon and SiC coatings",
+    "application": "HTGR, SMR, microreactors",
+    "status": "Qualified for US HTGR programs; being manufactured for Xe-100 and Project Pele",
+    "description": "TRISO (TRIstructural-ISOtropic) fuel particles are the most robust nuclear fuel ever created. Each particle consists of a uranium oxide or oxycarbide kernel coated with multiple layers of pyrolytic carbon and silicon carbide, creating a miniature pressure vessel that retains fission products even at temperatures above 1,600°C. TRISO fuel cannot melt in any conceivable reactor accident, providing inherent safety. It is being used in X-energy's Xe-100 reactor and DOE's Project Pele microreactor.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.energy.gov/ne/articles/triso-particles-most-robust-nuclear-fuel-earth",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-028",
+    "name": "HALEU (High-Assay Low-Enriched Uranium)",
+    "type": "Enriched uranium fuel",
+    "material": "Uranium enriched to 5-20% U-235",
+    "application": "Advanced reactors, SMRs, fast reactors",
+    "status": "Critical supply gap identified; DOE establishing domestic production",
+    "description": "HALEU (High-Assay Low-Enriched Uranium) is uranium enriched to 5-20% U-235, higher than conventional reactor fuel (3-5%) but lower than weapons-grade uranium. Most advanced reactor designs require HALEU fuel, but there is currently no commercial HALEU production in the United States. DOE is establishing domestic HALEU production capabilities, and Centrus Energy has begun producing HALEU at its Piketon, Ohio facility. The HALEU supply gap is a critical bottleneck for advanced reactor deployment.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "A",
+        "article_url": "https://www.energy.gov/ne/articles/what-haleu",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-029",
+    "name": "Accident Tolerant Fuel (ATF)",
+    "type": "Enhanced safety fuel",
+    "material": "Chromium-coated zirconium cladding, doped UO2 pellets, FeCrAl cladding",
+    "application": "Existing LWR fleet (retrofit)",
+    "status": "Lead test assemblies in commercial reactors (2025-2026)",
+    "description": "Accident Tolerant Fuel (ATF) is designed to tolerate loss-of-coolant accidents for longer periods than conventional zirconium-clad fuel. ATF technologies include chromium-coated zirconium cladding (reduces hydrogen generation), doped UO2 pellets (improved fission product retention), and FeCrAl iron-chromium-aluminum alloy cladding (eliminates hydrogen generation). Several ATF designs are being tested in commercial reactors, with the goal of improving safety margins for the existing LWR fleet.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.nrc.gov/reactors/ATF.html",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "NF-030",
+    "name": "Metal Fuel for Fast Reactors (U-Zr)",
+    "type": "Fast reactor fuel",
+    "material": "Uranium-zirconium alloy",
+    "application": "Sodium-cooled fast reactors, microreactors",
+    "status": "Demonstrated in EBR-II; being developed for new fast reactor designs",
+    "description": "Uranium-zirconium (U-Zr) metal fuel is the preferred fuel for sodium-cooled fast reactors, offering excellent thermal conductivity, ease of fabrication, and compatibility with pyroprocessing for closed fuel cycles. Metal fuel was successfully demonstrated in the EBR-II reactor at Argonne National Laboratory. New fast reactor designs including Oklo's Aurora and TerraPower's Natrium use metal fuel. The high thermal conductivity of metal fuel provides inherent safety advantages during transients.",
+    "sources": [
+      {
+        "source_type": "web",
+        "source_credibility": "B",
+        "article_url": "https://www.energy.gov/ne/articles/advanced-nuclear-fuel",
+        "collected_at": "2026-06-05T14:00:00Z"
+      }
+    ]
+  }
+]

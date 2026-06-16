@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeneTech Tools - 基因技术知识引擎</title>
+<meta name="baidu-site-verification" content="57ad357901185fe04aede5441e7883d7">
+<meta name="google-site-verification" content="d99c5ebb7ff798301d6f16b1fe583d6c">
+<meta name="description" content="基因治疗、CRISPR基因编辑、基因-疾病关系知识引擎。实时追踪全球基因技术前沿，79基因/140疾病/19疗法/6 CRISPR应用。">
+<meta name="keywords" content="基因治疗,CRISPR,基因编辑,gene therapy,基因技术,知识引擎,基因疾病关系">
+<meta property="og:title" content="GeneTech Tools - 基因技术知识引擎">
+<meta property="og:description" content="实时追踪全球基因治疗、CRISPR基因编辑前沿。交叉验证PubMed、临床试验、新闻多源数据。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://genetech.tools">
+<link rel="canonical" href="https://genetech.tools/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"GeneTech Tools","url":"https://genetech.tools","description":"基因技术知识引擎 - 实时追踪全球基因治疗、CRISPR基因编辑前沿","applicationCategory":"ScienceApplication","operatingSystem":"Web"}
+</script>
+<style>
+:root{--bg:#0a0e17;--bg2:#111827;--bg3:#1a2236;--border:#1e2d4a;--text:#e2e8f0;--text2:#94a3b8;--accent:#06b6d4;--accent2:#8b5cf6;--green:#10b981;--red:#ef4444;--yellow:#f59e0b;--orange:#f97316}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,23,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;height:56px;gap:8px}
+.nav-logo{font-size:18px;font-weight:700;display:flex;align-items:center;gap:6px;color:#fff;white-space:nowrap}
+.nav-logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:6px 12px;border-radius:8px;color:var(--text2);font-size:13px;transition:all .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:var(--bg3);text-decoration:none}
+.page{display:none;padding-top:56px}.page.active{display:block}
+.hero{padding:60px 20px 40px;text-align:center}
+.hero h1{font-size:42px;font-weight:800;margin-bottom:12px}
+.hero h1 .gradient{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:16px;color:var(--text2);max-width:560px;margin:0 auto 28px}
+.search-box{max-width:520px;margin:0 auto;position:relative}
+.search-box input{width:100%;padding:14px 18px 14px 44px;border-radius:14px;border:1px solid var(--border);background:var(--bg2);color:#fff;font-size:15px;outline:none;transition:border .2s}
+.search-box input:focus{border-color:var(--accent)}
+.search-box svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text2)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;max-width:1200px;margin:0 auto 40px;padding:0 20px}
+.stat-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:center;transition:transform .2s,border-color .2s}
+.stat-card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.stat-num{font-size:28px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:12px;color:var(--text2);margin-top:2px}
+.section{max-width:1200px;margin:0 auto;padding:0 20px 40px}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px}
+.section-header h2{font-size:22px;font-weight:700;display:flex;align-items:center;gap:8px}
+.section-header h2 .icon{font-size:24px}
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap}
+.filter-btn{padding:5px 12px;border-radius:16px;border:1px solid var(--border);background:transparent;color:var(--text2);font-size:12px;cursor:pointer;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px;transition:transform .2s,border-color .2s;cursor:pointer}
+.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card-title{font-size:15px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.card-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tag{padding:2px 8px;border-radius:10px;font-size:10px;font-weight:500}
+.tag-gene{background:rgba(6,182,212,0.15);color:var(--accent)}
+.tag-disease{background:rgba(239,68,68,0.15);color:var(--red)}
+.tag-therapy{background:rgba(139,92,246,0.15);color:var(--accent2)}
+.tag-stage{background:rgba(16,185,129,0.15);color:var(--green)}
+.tag-preclinical{background:rgba(245,158,11,0.15);color:var(--yellow)}
+.tag-approved{background:rgba(16,185,129,0.15);color:var(--green)}
+.tag-crispr{background:rgba(249,115,22,0.15);color:var(--orange)}
+.tag-severity-critical{background:rgba(239,68,68,0.2);color:var(--red)}
+.tag-severity-high{background:rgba(249,115,22,0.2);color:var(--orange)}
+.tag-severity-medium{background:rgba(245,158,11,0.2);color:var(--yellow)}
+.tag-news{background:rgba(6,182,212,0.12);color:var(--accent)}
+.tag-paper{background:rgba(139,92,246,0.12);color:var(--accent2)}
+.card-desc{font-size:13px;color:var(--text2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-footer{margin-top:10px;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--text2)}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.show{display:flex}
+.modal{background:var(--bg2);border:1px solid var(--border);border-radius:18px;max-width:640px;width:100%;max-height:80vh;overflow-y:auto;padding:28px}
+.modal h3{font-size:20px;font-weight:700;margin-bottom:14px}
+.modal-section{margin-bottom:16px}
+.modal-section h4{font-size:13px;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.finding-item{padding:10px 12px;background:var(--bg3);border-radius:10px;margin-bottom:6px;font-size:13px;line-height:1.6}
+.controversy-card{border-left:3px solid var(--red)}
+.controversy-card.severity-high{border-left-color:var(--orange)}
+.controversy-card.severity-medium{border-left-color:var(--yellow)}
+.footer{border-top:1px solid var(--border);padding:32px 20px;text-align:center;color:var(--text2);font-size:12px}
+.footer a{color:var(--accent)}
+/* Gene Search Tool */
+.search-tool{max-width:800px;margin:0 auto;padding:40px 20px}
+.search-tool h2{font-size:28px;font-weight:800;text-align:center;margin-bottom:8px}
+.search-tool .subtitle{text-align:center;color:var(--text2);margin-bottom:24px}
+.gene-input{width:100%;padding:16px 20px;border-radius:14px;border:2px solid var(--border);background:var(--bg2);color:#fff;font-size:18px;outline:none;transition:border .2s;font-family:monospace}
+.gene-input:focus{border-color:var(--accent)}
+.gene-input::placeholder{color:var(--text2);font-family:-apple-system,sans-serif}
+.search-result{margin-top:24px}
+.gene-profile{background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:28px;margin-bottom:16px}
+.gene-profile h3{font-size:24px;font-weight:800;margin-bottom:4px}
+.gene-profile .gene-meta{color:var(--text2);font-size:13px;margin-bottom:16px}
+.gene-section{margin-bottom:16px}
+.gene-section h4{font-size:13px;color:var(--text2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.gene-list{display:flex;flex-wrap:wrap;gap:6px}
+.gene-chip{padding:6px 14px;border-radius:10px;font-size:13px;cursor:pointer;transition:all .2s}
+.gene-chip:hover{transform:scale(1.05)}
+.gene-chip.disease{background:rgba(239,68,68,0.12);color:#fca5a5;border:1px solid rgba(239,68,68,0.2)}
+.gene-chip.therapy{background:rgba(139,92,246,0.12);color:#c4b5fd;border:1px solid rgba(139,92,246,0.2)}
+.gene-chip.crispr{background:rgba(249,115,22,0.12);color:#fdba74;border:1px solid rgba(249,115,22,0.2)}
+.gene-chip.gene{background:rgba(6,182,212,0.12);color:#67e8f9;border:1px solid rgba(6,182,212,0.2)}
+.no-result{text-align:center;padding:40px;color:var(--text2)}
+.no-result .emoji{font-size:48px;margin-bottom:12px}
+/* News */
+.news-item{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;transition:border-color .2s}
+.news-item:hover{border-color:var(--accent)}
+.news-item h4{font-size:14px;font-weight:600;margin-bottom:4px;line-height:1.4}
+.news-item h4 a{color:var(--text)}
+.news-item h4 a:hover{color:var(--accent)}
+.news-item .snippet{font-size:12px;color:var(--text2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.news-item .meta{font-size:11px;color:var(--text2);margin-top:6px;display:flex;gap:8px}
+/* Paper */
+.paper-item{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;cursor:pointer;transition:border-color .2s}
+.paper-item:hover{border-color:var(--accent2)}
+.paper-item h4{font-size:14px;font-weight:600;margin-bottom:4px;line-height:1.4}
+.paper-item .abstract{font-size:12px;color:var(--text2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.paper-item .meta{font-size:11px;color:var(--text2);margin-top:6px}
+/* Ad placeholder */
+.ad-slot{background:var(--bg3);border:1px dashed var(--border);border-radius:12px;padding:20px;text-align:center;color:var(--text2);font-size:12px;margin:20px 0}
+/* Responsive */
+@media(max-width:768px){.hero h1{font-size:28px}.nav-links{display:none}.card-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.search-tool h2{font-size:22px}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{animation:fadeIn .3s ease-out}
+/* Tab pills for mobile */
+.mobile-tabs{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 12px;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:768px){.mobile-tabs{display:flex}}
+.mobile-tabs a{padding:6px 12px;border-radius:8px;color:var(--text2);font-size:12px;white-space:nowrap;flex-shrink:0}
+.mobile-tabs a.active{background:var(--accent);color:#fff}
+
+/* Anti-scraping CSS */
+.detail-val, .entity-desc {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.detail-val::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* Honeypot - invisible to humans */
+.honey-link {
+  display: none !important;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showPage('home')">🧬 <span>GeneTech Tools</span></a>
+    <div class="nav-links">
+      <a href="#" onclick="showPage('home')" class="active" data-page="home">首页</a>
+      <a href="#" onclick="showPage('search')" data-page="search">基因搜索</a>
+      <a href="#" onclick="showPage('daily')" data-page="daily">每日情报</a>
+      <a href="#" onclick="showPage('therapies')" data-page="therapies">基因疗法</a>
+      <a href="#" onclick="showPage('crispr')" data-page="crispr">CRISPR</a>
+      <a href="#" onclick="showPage('data')" data-page="data">知识库</a>
+      <a href="knowledge-graph.html" style="color:#8b5cf6">图谱</a>
+      <a href="intelligence.html" style="color:#06b6d4">分析</a>
+      <a href="outlook.html" style="color:#f59e0b">预测</a>
+      <a href="banned-words" style="color:#ff6b6b;font-weight:600" target="_blank">🛡️ 违禁词检测</a>
+      <a href="http://150.158.119.19:8420" style="color:#8b5cf6;font-weight:600" target="_blank">🤖 AI工具</a>
+      <a href="credits.html" style="color:#f59e0b;font-weight:600">💎 Pro</a>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-tabs">
+  <a href="#" onclick="showPage('home')" class="active" data-page="home">首页</a>
+  <a href="#" onclick="showPage('search')" data-page="search">基因搜索</a>
+  <a href="#" onclick="showPage('daily')" data-page="daily">每日情报</a>
+  <a href="#" onclick="showPage('therapies')" data-page="therapies">疗法</a>
+  <a href="#" onclick="showPage('crispr')" data-page="crispr">CRISPR</a>
+  <a href="#" onclick="showPage('data')" data-page="data">知识库</a>
+</div>
+
+<!-- HOME PAGE -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <h1>基因技术<span class="gradient">知识引擎</span></h1>
+    <p>实时追踪全球基因治疗、CRISPR基因编辑前沿。交叉验证 PubMed、临床试验、新闻多源数据。</p>
+    <div class="search-box">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="6"/><path d="M13 13l3 3"/></svg>
+      <input type="text" id="heroSearch" placeholder="输入基因名搜索，如 PD-L1、VEGF、RPE65..." onkeydown="if(event.key==='Enter'){showPage('search');document.getElementById('geneInput').value=this.value;searchGene()}">
+    </div>
+  </div>
+  <div class="stats" id="statsContainer"></div>
+  <div class="section">
+    <div class="section-header"><h2><span class="icon">🔥</span> 最新动态</h2></div>
+    <div id="homeNews"></div>
+    <button onclick="showReport()" style="padding:10px 20px;background:transparent;border:1px solid var(--accent2);color:var(--accent2);border-radius:8px;cursor:pointer;font-size:13px;margin-top:8px">📋 Custom Gene Therapy Report — $199</button>
+  </div>
+</div>
+
+<!-- GENE SEARCH PAGE -->
+<div class="page" id="page-search">
+  <div class="search-tool">
+    <h2>🧬 基因搜索工具</h2>
+    <p class="subtitle">输入基因名，查看关联疾病、疗法、CRISPR应用</p>
+    <input type="text" class="gene-input" id="geneInput" placeholder="输入基因符号，如 PD-L1、VEGF、ADA..." oninput="searchGene()" autofocus>
+    <div class="search-result" id="searchResult"></div>
+    <button onclick="showReport()" style="padding:10px 20px;background:transparent;border:1px solid var(--accent2);color:var(--accent2);border-radius:8px;cursor:pointer;font-size:13px;margin-top:8px">📋 Custom Gene Therapy Report — $199</button>
+  </div>
+</div>
+
+
+<!-- KNOWLEDGE MATRIX HUB -->
+<div class="section" style="padding-top:20px">
+  <h2 style="text-align:center;margin-bottom:24px">🌐 知识库矩阵 · Knowledge Matrix</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;max-width:1100px;margin:0 auto">
+    <a href="https://tcm.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">🌿</div>
+      <div style="font-weight:600;color:var(--accent)">TCMDB</div>
+      <div style="font-size:12px;color:var(--text2)">337中药 · 1379疾病 · 中药方剂知识引擎</div>
+    </a>
+    <a href="https://robot.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">🤖</div>
+      <div style="font-weight:600;color:var(--accent)">RobotParts DB</div>
+      <div style="font-size:12px;color:var(--text2)">10执行器 · 7芯片 · 8协议 · 机器人配件库</div>
+    </a>
+    <a href="https://brain.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">🧠</div>
+      <div style="font-weight:600;color:var(--accent)">BrainDB</div>
+      <div style="font-size:12px;color:var(--text2)">8脑区 · 5脑机接口 · 脑科学知识引擎</div>
+    </a>
+    <a href="https://nuclear.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">☢️</div>
+      <div style="font-weight:600;color:var(--accent)">NuclearDB</div>
+      <div style="font-size:12px;color:var(--text2)">7反应堆 · 5聚变路线 · 核能知识引擎</div>
+    </a>
+    <a href="https://quantum.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">⚛️</div>
+      <div style="font-weight:600;color:var(--accent)">QuantumDB</div>
+      <div style="font-size:12px;color:var(--text2)">6处理器 · 5算法 · 量子计算知识引擎</div>
+    </a>
+    <a href="https://exo.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">🪐</div>
+      <div style="font-weight:600;color:var(--accent)">ExoDB</div>
+      <div style="font-size:12px;color:var(--text2)">5系外行星 · 5探测任务 · 地外科学</div>
+    </a>
+    <a href="https://mineral.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">💎</div>
+      <div style="font-weight:600;color:var(--accent)">MineralDB</div>
+      <div style="font-size:12px;color:var(--text2)">6矿物 · 3小行星 · 外星矿物知识引擎</div>
+    </a>
+    <a href="https://deepsea.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">🌊</div>
+      <div style="font-weight:600;color:var(--accent)">DeepSeaDB</div>
+      <div style="font-size:12px;color:var(--text2)">5潜水器 · 4深海资源 · 深海科技</div>
+    </a>
+    <a href="https://energy.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">⚡</div>
+      <div style="font-weight:600;color:var(--accent)">EnergyDB</div>
+      <div style="font-size:12px;color:var(--text2)">5光伏 · 5储能 · 新能源知识引擎</div>
+    </a>
+    <a href="https://life.genetech.tools" target="_blank" style="display:block;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s">
+      <div style="font-size:24px;margin-bottom:4px">🧫</div>
+      <div style="font-weight:600;color:var(--accent)">LifeDB</div>
+      <div style="font-size:12px;color:var(--text2)">6合成生物 · 5长寿科技 · 生命科学</div>
+    </a>
+  </div>
+</div>
+
+<!-- DAILY INTELLIGENCE PAGE -->
+<div class="page" id="page-daily">
+  <div class="section" style="padding-top:40px">
+    <div class="section-header"><h2><span class="icon">📰</span> 行业新闻</h2>
+      <div class="filter-bar" id="newsFilters">
+        <button class="filter-btn active" onclick="filterNews('all',this)">全部</button>
+        <button class="filter-btn" onclick="filterNews('approval',this)">批准</button>
+        <button class="filter-btn" onclick="filterNews('clinical',this)">临床</button>
+        <button class="filter-btn" onclick="filterNews('crispr',this)">CRISPR</button>
+        <button class="filter-btn" onclick="filterNews('aav',this)">AAV</button>
+      </div>
+    </div>
+    <div id="newsGrid"></div>
+    <button onclick="showReport()" style="padding:10px 20px;background:transparent;border:1px solid var(--accent2);color:var(--accent2);border-radius:8px;cursor:pointer;font-size:13px;margin-top:8px">📋 Custom Gene Therapy Report — $199</button>
+  </div>
+  <div class="section">
+    <div class="section-header"><h2><span class="icon">📄</span> 最新论文</h2></div>
+    <div id="paperGrid"></div>
+  </div>
+</div>
+
+<!-- THERAPIES PAGE -->
+<div class="page" id="page-therapies">
+  <div class="section" style="padding-top:40px">
+    <div class="section-header"><h2><span class="icon">💉</span> 基因疗法追踪</h2>
+      <div class="filter-bar" id="therapyFilters"></div>
+    </div>
+    <div class="card-grid" id="therapyGrid"></div>
+    <button onclick="showReport()" style="padding:10px 20px;background:transparent;border:1px solid var(--accent2);color:var(--accent2);border-radius:8px;cursor:pointer;font-size:13px;margin-top:8px">📋 Custom Gene Therapy Report — $199</button>
+  </div>
+</div>
+
+<!-- CRISPR PAGE -->
+<div class="page" id="page-crispr">
+  <div class="section" style="padding-top:40px">
+    <div class="section-header"><h2><span class="icon">✂️</span> CRISPR 基因编辑</h2></div>
+    <div class="card-grid" id="crisprGrid"></div>
+  </div>
+</div>
+
+<!-- DATA/KNOWLEDGE BASE PAGE -->
+<div class="page" id="page-data">
+  <div class="section" style="padding-top:40px">
+    <div class="section-header"><h2><span class="icon">🧬</span> 基因库</h2>
+      <input type="text" id="geneFilter" placeholder="筛选基因..." oninput="renderGeneList()" style="padding:6px 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:#fff;font-size:13px;outline:none">
+    </div>
+    <div class="card-grid" id="geneGrid"></div>
+  </div>
+  <div class="section">
+    <div class="section-header"><h2><span class="icon">🏥</span> 疾病库</h2>
+      <input type="text" id="diseaseFilter" placeholder="筛选疾病..." oninput="renderDiseaseList()" style="padding:6px 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:#fff;font-size:13px;outline:none">
+    </div>
+    <div class="card-grid" id="diseaseGrid"></div>
+  </div>
+  <div class="section">
+    <div class="section-header"><h2><span class="icon">⚠️</span> 争议追踪</h2></div>
+    <div class="card-grid" id="controversyGrid"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>GeneTech Tools — 基因技术知识引擎 | 数据来源：PubMed / ClinicalTrials.gov / 行业新闻</p>
+  <p style="margin-top:6px">知识库更新于 <span id="updateDate"></span> | <a href="https://genetech.tools">genetech.tools</a></p>
+</div>
+
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modalContent"></div>
+</div>
+
+<script src="data.js"></script>
+<script>
+// Page navigation
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + name)?.classList.add('active');
+  document.querySelectorAll('.nav-links a, .mobile-tabs a').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === name);
+  });
+  window.scrollTo(0, 0);
+  if (name === 'search') document.getElementById('geneInput')?.focus();
+  return false;
+}
+
+// Stats
+const statsEl = document.getElementById('statsContainer');
+const statItems = [
+  {num:DB.stats.genes,label:'基因',icon:'🧬'},{num:DB.stats.diseases,label:'疾病',icon:'🏥'},
+  {num:DB.stats.therapies,label:'基因疗法',icon:'💉'},{num:DB.stats.crispr,label:'CRISPR',icon:'✂️'},
+  {num:DB.stats.relations,label:'关系',icon:'🔗'},{num:DB.stats.papers,label:'论文',icon:'📄'}
+];
+statsEl.innerHTML = statItems.map(s => `<div class="stat-card fade-in"><div class="stat-num">${s.icon} ${s.num}</div><div class="stat-label">${s.label}</div></div>`).join('');
+document.getElementById('updateDate').textContent = new Date(DB.updated).toLocaleDateString('zh-CN');
+
+// Stage labels
+const stageLabels = {approved:'已批准',phase_iii:'III期临床',phase_ii:'II期临床',phase_i:'I期临床',preclinical:'临床前',unknown:'未知'};
+function stageTag(stage) {
+  const label = stageLabels[stage] || stage;
+  const cls = stage === 'approved' ? 'tag-approved' : stage === 'preclinical' ? 'tag-preclinical' : 'tag-stage';
+  return `<span class="tag ${cls}">${label}</span>`;
+}
+
+// ===== HOME: Latest News =====
+function renderHomeNews() {
+  const el = document.getElementById('homeNews');
+  const top5 = DB.news.slice(0, 5);
+  el.innerHTML = top5.map(n => `
+    <div class="news-item fade-in">
+      <h4><a href="${n.url}" target="_blank" rel="noopener">${n.title}</a></h4>
+      <div class="snippet">${n.snippet}</div>
+      <div class="meta"><span class="tag tag-news">${n.source}</span><span>${new Date(n.date).toLocaleDateString('zh-CN')}</span></div>
+    </div>
+  `).join('');
+}
+renderHomeNews();
+
+// ===== GENE SEARCH TOOL =====
+
+let searchCount = 0;
+const FREE_LIMIT = 5;
+
+function searchGene() {
+  const q = document.getElementById('geneInput').value.trim().toUpperCase();
+  const el = document.getElementById('searchResult');
+  if (!q) { el.innerHTML = ''; return; }
+
+  // Find matching genes
+  const matches = DB.genes.filter(g => g.symbol.toUpperCase().includes(q));
+  if (!matches.length) {
+    el.innerHTML = `<div class="no-result"><div class="emoji">🔍</div><p>未找到基因 "${q}"，试试其他名称</p></div>`;
+    return;
+  }
+
+  el.innerHTML = matches.slice(0, 5).map(g => {
+    const relTherapies = DB.therapies.filter(t => (t.target_genes||[]).some(tg => tg.toUpperCase() === g.symbol));
+    const relCrispr = DB.crispr.filter(c => (c.target_genes||[]).some(cg => cg.toUpperCase() === g.symbol));
+    return `
+    <div class="gene-profile fade-in">
+      <h3>🧬 ${g.symbol}</h3>
+      <div class="gene-meta">引用 ${g.source_count} 次 · 置信度 ${g.confidence}</div>
+      ${g.diseases.length ? `<div class="gene-section"><h4>关联疾病 (${g.diseases.length})</h4><div class="gene-list">${g.diseases.slice(0,10).map(d => `<span class="gene-chip disease">${d}</span>`).join('')}</div></div>` : ''}
+      ${g.therapies.length ? `<div class="gene-section"><h4>相关疗法</h4><div class="gene-list">${g.therapies.slice(0,8).map(t => `<span class="gene-chip therapy">${t.replace(/_/g,' ')}</span>`).join('')}</div></div>` : ''}
+      ${g.crispr.length ? `<div class="gene-section"><h4>CRISPR应用</h4><div class="gene-list">${g.crispr.map(c => `<span class="gene-chip crispr">${c}</span>`).join('')}</div></div>` : ''}
+      ${relTherapies.length ? `<div class="gene-section"><h4>疗法详情</h4>${relTherapies.map(t => `<div class="finding-item"><strong>${(t.therapy_types||[]).join(', ').replace(/_/g,' ')}</strong> · ${stageTag(t.development_stage)}<br>${(t.target_diseases||[]).slice(0,3).join(', ')}<br><span style="font-size:12px;color:var(--text2)">${(t.key_findings||[])[0]||''}</span></div>`).join('')}</div>` : ''}
+      ${relCrispr.length ? `<div class="gene-section"><h4>CRISPR详情</h4>${relCrispr.map(c => `<div class="finding-item"><strong>${c.editing_type||'CRISPR'}</strong> · ${stageTag(c.development_stage)}<br>${(c.target_diseases||[]).join(', ')}<br><span style="font-size:12px;color:var(--text2)">${(c.key_findings||[])[0]||''}</span></div>`).join('')}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+// ===== DAILY INTELLIGENCE =====
+let newsFilter = 'all';
+function filterNews(f, btn) {
+  newsFilter = f;
+  document.querySelectorAll('#newsFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn?.classList.add('active');
+  renderNews();
+}
+function renderNews() {
+  const el = document.getElementById('newsGrid');
+  let items = DB.news;
+  if (newsFilter !== 'all') {
+    const kw = {approval:['approval','approved','fda','批准'],clinical:['clinical','trial','phase','临床'],crispr:['crispr','editing','gene editing'],aav:['aav','adeno-associated','viral vector']};
+    const keywords = kw[newsFilter] || [];
+    items = items.filter(n => keywords.some(k => (n.title+n.snippet).toLowerCase().includes(k)));
+  }
+  el.innerHTML = items.map(n => `
+    <div class="news-item fade-in">
+      <h4><a href="${n.url}" target="_blank" rel="noopener">${n.title}</a></h4>
+      <div class="snippet">${n.snippet}</div>
+      <div class="meta"><span class="tag tag-news">${n.source}</span><span>${new Date(n.date).toLocaleDateString('zh-CN')}</span></div>
+    </div>
+  `).join('') || '<div style="color:var(--text2);padding:20px">无匹配新闻</div>';
+}
+renderNews();
+
+// Papers
+function renderPapers() {
+  const el = document.getElementById('paperGrid');
+  el.innerHTML = DB.papers.map(p => `
+    <div class="paper-item fade-in" onclick="showPaper('${p.pmid}')">
+      <h4>${p.title}</h4>
+      <div class="abstract">${p.abstract}</div>
+      <div class="meta"><span class="tag tag-paper">PubMed</span> ${p.journal} · ${p.date} · ${(p.authors||[]).join(', ')}</div>
+    </div>
+  `).join('');
+}
+renderPapers();
+
+function showPaper(pmid) {
+  const p = DB.papers.find(x => x.pmid === pmid);
+  if (!p) return;
+  showModal(`
+    <h3>📄 ${p.title}</h3>
+    <div style="color:var(--text2);font-size:13px;margin-bottom:16px">${p.journal} · ${p.date} · ${(p.authors||[]).join(', ')}</div>
+    <div class="modal-section"><h4>摘要</h4><div class="finding-item">${p.abstract}</div></div>
+    <div style="margin-top:12px"><a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}" target="_blank" rel="noopener">查看 PubMed 原文 →</a></div>
+  `);
+}
+
+// ===== THERAPIES =====
+let therapyFilter = 'all';
+function renderTherapies(filter) {
+  therapyFilter = filter;
+  const grid = document.getElementById('therapyGrid');
+  let items = DB.therapies;
+  if (filter !== 'all') items = items.filter(t => (t.therapy_types||[]).includes(filter));
+  grid.innerHTML = items.map(t => `
+    <div class="card fade-in" onclick="showTherapy('${t.id}')">
+      <div class="card-title">${(t.target_genes||[]).slice(0,3).join(', ') || '未知基因'}</div>
+      <div class="card-meta">
+        ${(t.therapy_types||[]).map(tt => `<span class="tag tag-therapy">${tt.replace(/_/g,' ')}</span>`).join('')}
+        ${stageTag(t.development_stage)}
+      </div>
+      <div class="card-desc">${(t.target_diseases||[]).slice(0,3).join(', ') || '未知疾病'}</div>
+      <div class="card-footer"><span>${(t.vectors||[]).slice(0,2).join(', ') || '未知载体'}</span><span>${(t.key_findings||[]).length} 条发现</span></div>
+    </div>
+  `).join('');
+}
+const therapyTypes = [...new Set(DB.therapies.flatMap(t => t.therapy_types||[]))];
+document.getElementById('therapyFilters').innerHTML = `<button class="filter-btn active" onclick="setTherapyFilter('all',this)">全部</button>` +
+  therapyTypes.map(t => `<button class="filter-btn" onclick="setTherapyFilter('${t}',this)">${t.replace(/_/g,' ')}</button>`).join('');
+function setTherapyFilter(f, btn) {
+  document.querySelectorAll('#therapyFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTherapies(f);
+}
+renderTherapies('all');
+
+// ===== CRISPR =====
+document.getElementById('crisprGrid').innerHTML = DB.crispr.map(c => `
+  <div class="card fade-in" onclick="showCrispr('${c.id}')">
+    <div class="card-title">✂️ ${(c.target_genes||[]).join(', ') || '基因编辑技术'}</div>
+    <div class="card-meta"><span class="tag tag-crispr">${c.editing_type||'CRISPR'}</span>${stageTag(c.development_stage)}</div>
+    <div class="card-desc">${(c.target_diseases||[]).join(', ') || '通用研究'}</div>
+    <div class="card-footer"><span>${(c.companies||[]).slice(0,2).join(', ') || '学术研究'}</span><span>${(c.key_findings||[]).length} 条发现</span></div>
+  </div>
+`).join('');
+
+// ===== GENE LIST =====
+function renderGeneList() {
+  const q = (document.getElementById('geneFilter')?.value || '').toLowerCase();
+  const items = q ? DB.genes.filter(g => g.symbol.toLowerCase().includes(q)) : DB.genes;
+  document.getElementById('geneGrid').innerHTML = items.slice(0,40).map(g => `
+    <div class="card fade-in" onclick="document.getElementById('geneInput').value='${g.symbol}';showPage('search');searchGene()">
+      <div class="card-title">🧬 ${g.symbol}</div>
+      <div class="card-meta"><span class="tag tag-gene">基因</span><span class="tag tag-stage">${g.source_count} 次引用</span></div>
+      <div class="card-desc">${g.diseases.slice(0,3).join(', ') || '暂无关联疾病数据'}</div>
+      <div class="card-footer"><span>置信度: ${g.confidence}</span><span>${g.therapies.length?g.therapies.length+' 疗法':'—'}</span></div>
+    </div>
+  `).join('') + (items.length > 40 ? `<div class="card" style="display:flex;align-items:center;justify-content:center;color:var(--text2)">还有 ${items.length-40} 个基因...</div>` : '');
+}
+renderGeneList();
+
+// ===== DISEASE LIST =====
+function renderDiseaseList() {
+  const q = (document.getElementById('diseaseFilter')?.value || '').toLowerCase();
+  const items = q ? DB.diseases.filter(d => d.name.toLowerCase().includes(q)) : DB.diseases;
+  document.getElementById('diseaseGrid').innerHTML = items.slice(0,30).map(d => `
+    <div class="card fade-in">
+      <div class="card-title">🏥 ${d.name}</div>
+      <div class="card-meta"><span class="tag tag-disease">疾病</span><span class="tag tag-stage">${d.source_count} 次引用</span></div>
+      <div class="card-footer"><span>置信度: ${d.confidence}</span></div>
+    </div>
+  `).join('') + (items.length > 30 ? `<div class="card" style="display:flex;align-items:center;justify-content:center;color:var(--text2)">还有 ${items.length-30} 种疾病...</div>` : '');
+}
+renderDiseaseList();
+
+// ===== CONTROVERSIES =====
+document.getElementById('controversyGrid').innerHTML = DB.controversies.map(c => {
+  const severity = c.severity || 'medium';
+  const title = `${(c.genes||[]).join(', ')} 相关争议`;
+  return `
+    <div class="card controversy-card severity-${severity} fade-in" onclick="showControversy('${c.id}')">
+      <div class="card-title">⚠️ ${title}</div>
+      <div class="card-meta">
+        <span class="tag tag-severity-${severity}">${severity==='critical'?'严重':severity==='high'?'高':'中'}风险</span>
+        <span class="tag tag-stage">${c.status==='unresolved'?'未解决':'已解决'}</span>
+      </div>
+      <div class="card-desc">涉及基因: ${(c.genes||[]).join(', ')} | 疾病: ${(c.diseases||[]).slice(0,3).join(', ')}</div>
+    </div>`;
+}).join('');
+
+// ===== MODALS =====
+function showModal(html) {
+  document.getElementById('modalContent').innerHTML = html;
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('show');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+
+function showTherapy(id) {
+  const t = DB.therapies.find(x => x.id === id);
+  if (!t) return;
+  showModal(`
+    <h3>💉 ${(t.target_genes||[]).join(', ')}</h3>
+    <div class="card-meta" style="margin-bottom:16px">${(t.therapy_types||[]).map(tt => `<span class="tag tag-therapy">${tt.replace(/_/g,' ')}</span>`).join('')}${stageTag(t.development_stage)}</div>
+    <div class="modal-section"><h4>靶向疾病</h4><div class="finding-item">${(t.target_diseases||[]).join(', ') || '未知'}</div></div>
+    <div class="modal-section"><h4>载体</h4><div class="finding-item">${(t.vectors||[]).join(', ') || '未知'}</div></div>
+    ${(t.companies||[]).length ? `<div class="modal-section"><h4>相关公司</h4><div class="finding-item">${t.companies.join(', ')}</div></div>` : ''}
+    <div class="modal-section"><h4>关键发现</h4>${(t.key_findings||[]).map(f => `<div class="finding-item">${f}</div>`).join('')}</div>
+  `);
+}
+
+function showCrispr(id) {
+  const c = DB.crispr.find(x => x.id === id);
+  if (!c) return;
+  showModal(`
+    <h3>✂️ ${(c.target_genes||[]).join(', ') || 'CRISPR应用'}</h3>
+    <div class="card-meta" style="margin-bottom:16px"><span class="tag tag-crispr">${c.editing_type||'CRISPR'}</span>${stageTag(c.development_stage)}</div>
+    <div class="modal-section"><h4>靶向疾病</h4><div class="finding-item">${(c.target_diseases||[]).join(', ') || '通用研究'}</div></div>
+    <div class="modal-section"><h4>载体</h4><div class="finding-item">${(c.vectors||[]).join(', ') || '未知'}</div></div>
+    ${(c.companies||[]).length ? `<div class="modal-section"><h4>相关公司</h4><div class="finding-item">${c.companies.join(', ')}</div></div>` : ''}
+    <div class="modal-section"><h4>关键发现</h4>${(c.key_findings||[]).map(f => `<div class="finding-item">${f}</div>`).join('')}</div>
+  `);
+}
+
+function showControversy(id) {
+  const c = DB.controversies.find(x => x.id === id);
+  if (!c) return;
+  const severity = c.severity || 'medium';
+  showModal(`
+    <h3>⚠️ 争议记录</h3>
+    <div class="card-meta" style="margin-bottom:16px">
+      <span class="tag tag-severity-${severity}">${severity==='critical'?'严重':severity==='high'?'高':'中'}风险</span>
+      <span class="tag tag-stage">${c.status==='unresolved'?'未解决':'已解决'}</span>
+    </div>
+    <div class="modal-section"><h4>涉及基因</h4><div class="finding-item">${(c.genes||[]).join(', ') || '未知'}</div></div>
+    <div class="modal-section"><h4>涉及疾病</h4><div class="finding-item">${(c.diseases||[]).join(', ') || '未知'}</div></div>
+  `);
+}
+</script>
+
+<script>
+(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  } else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<div style="position:fixed;bottom:20px;right:20px;z-index:999"><a href="https://genetech.tools/order.html" style="display:block;padding:12px 20px;background:linear-gradient(135deg,#f59e0b,#f97316);color:#000;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none;box-shadow:0 4px 12px rgba(245,158,11,0.4)">💰 订购Pro</a></div>
+
+<!-- Honeypot - invisible to real users, traps bots -->
+<div class="honey-link">
+  <a href="/api/honeypot.json">Download all data</a>
+  <a href="/api/export.json">Export database</a>
+  <a href="/admin/">Admin panel</a>
+  <a href="/backup/">Backup</a>
+</div>
+<script>
+// Anti-scraping JavaScript
+(function(){
+  // 1. Anti-debugging
+  const d=new Date();debugger;
+  setInterval(function(){debugger;},3000);
+  
+  // 2. Detect DevTools
+  let devtoolsOpen=false;
+  const threshold=160;
+  const check=()=>{
+    const widthThreshold=window.outerWidth-window.innerWidth>threshold;
+    const heightThreshold=window.outerHeight-window.innerHeight>threshold;
+    if(widthThreshold||heightThreshold){
+      if(!devtoolsOpen){
+        devtoolsOpen=true;
+        document.body.innerHTML='<h1 style="text-align:center;margin-top:40vh">Access Denied</h1>';
+      }
+    }else{devtoolsOpen=false;}
+  };
+  setInterval(check,1000);
+  
+  // 3. Honeypot link monitoring
+  document.querySelectorAll('.honey-link a').forEach(a=>{
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      // Bot detected - redirect to honeypot
+      window.location.href='/api/honeypot.json';
+    });
+  });
+  
+  // 4. Right-click protection on entity content
+  document.querySelectorAll('.detail-val, .entity-desc').forEach(el=>{
+    el.addEventListener('contextmenu',e=>e.preventDefault());
+    el.addEventListener('copy',e=>{
+      e.preventDefault();
+      e.clipboardData.setData('text/plain','Content protected. Visit '+window.location.href);
+    });
+  });
+  
+  // 5. Canvas fingerprint for bot detection
+  try{
+    const canvas=document.createElement('canvas');
+    const ctx=canvas.getContext('2d');
+    ctx.textBaseline='top';
+    ctx.font='14px Arial';
+    ctx.fillText('🤖',2,2);
+    const fp=canvas.toDataURL().slice(-50);
+    if(!fp||fp.length<10){
+      // Likely headless browser
+      document.body.style.display='none';
+    }
+  }catch(e){}
+  
+  // 6. Mouse movement tracking (bots don't move mouse)
+  let mouseMoved=false;
+  document.addEventListener('mousemove',()=>{mouseMoved=true;},{once:true});
+  setTimeout(()=>{
+    if(!mouseMoved && !window._botChecked){
+      window._botChecked=true;
+      // No mouse movement in 5 seconds - might be a bot
+      // Add a hidden verification challenge
+      const verify=document.createElement('div');
+      verify.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:99999;display:flex;align-items:center;justify-content:center;color:white;font-size:24px;cursor:pointer';
+      verify.textContent='Click to continue';
+      verify.onclick=()=>{verify.remove();};
+      document.body.appendChild(verify);
+    }
+  },5000);
+  
+  // 7. Disable keyboard shortcuts for copying
+  document.addEventListener('keydown',function(e){
+    if((e.ctrlKey||e.metaKey)&&(e.key==='c'||e.key==='u'||e.key==='s'||e.key==='a')){
+      if(e.target.closest('.detail-val,.entity-desc')){
+        e.preventDefault();
+      }
+    }
+  });
+})();
+</script>
+
+<!-- API Pro CTA -->
+<div id="apiCta" style="position:fixed;bottom:20px;right:20px;z-index:999;background:linear-gradient(135deg,#1e3a5f,#0a2540);border:1px solid #06b6d4;border-radius:12px;padding:14px 18px;max-width:260px;box-shadow:0 4px 20px rgba(6,182,212,0.3);cursor:pointer;transition:all .3s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''" onclick="window.location.href='/api-pricing.html'">
+  <div style="font-size:.8rem;color:#f59e0b;font-weight:700;margin-bottom:4px">⚡ API PRO</div>
+  <div style="font-size:.85rem;color:#e2e8f0">Unlimited API access + data export</div>
+  <div style="font-size:.75rem;color:#06b6d4;margin-top:4px">$29/mo → Get API Key</div>
+</div>
+
+<script src="/anti-scrape.js"></script>
+</body>
+</html>

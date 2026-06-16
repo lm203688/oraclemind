@@ -1,0 +1,1340 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-05T14:16:40.000Z",
+  "description": "细胞治疗库 - 新增类别",
+  "entities": [
+    {
+      "id": "CT-001",
+      "name": "CAR-T细胞治疗",
+      "type": "免疫细胞治疗",
+      "mechanism": "嵌合抗原受体T细胞靶向杀伤肿瘤",
+      "clinical_stage": "已上市(血液瘤)/临床(实体瘤)",
+      "potential": "极高(血液瘤)/高(实体瘤)",
+      "description": "患者T细胞基因工程改造后回输，精准杀伤表达特定抗原的癌细胞",
+      "trend": "截至2025年7款FDA批准CAR-T产品；2026年市场$4.83Bn→2033年$18.46Bn"
+    },
+    {
+      "id": "CT-002",
+      "name": "CAR-NK细胞治疗",
+      "type": "免疫细胞治疗",
+      "mechanism": "嵌合抗原受体NK细胞杀伤肿瘤",
+      "clinical_stage": "临床I/II期",
+      "potential": "高",
+      "description": "NK细胞CAR改造，无需HLA匹配，异体使用潜力大，CRS风险低",
+      "trend": "Fate Therapeutics/NKarta/赛诺菲；现货型(off-the-shelf)产品开发"
+    },
+    {
+      "id": "CT-003",
+      "name": "TCR-T细胞治疗",
+      "type": "免疫细胞治疗",
+      "mechanism": "T细胞受体工程靶向胞内抗原",
+      "clinical_stage": "已上市(afamitresgene)/临床",
+      "potential": "高",
+      "description": "工程化T细胞受体识别MHC呈递的胞内抗原，可靶向CAR-T无法触及的靶点",
+      "trend": "afamitresgene autoleucel获FDA批准(实体瘤)；实体瘤治疗突破"
+    },
+    {
+      "id": "CT-004",
+      "name": "TIL肿瘤浸润淋巴细胞",
+      "type": "免疫细胞治疗",
+      "mechanism": "扩增肿瘤内天然T细胞回输",
+      "clinical_stage": "已上市(Amtagvi)",
+      "potential": "高",
+      "description": "从患者肿瘤中提取天然识别肿瘤的T细胞，体外扩增后回输",
+      "trend": "Iovance/Amtagvi 2024年获FDA批准(黑色素瘤)；实体瘤新选择"
+    },
+    {
+      "id": "CT-005",
+      "name": "iPSC来源细胞治疗",
+      "type": "干细胞治疗",
+      "mechanism": "iPSC分化为功能细胞替代损伤组织",
+      "clinical_stage": "已上市(日本)/临床",
+      "potential": "极高",
+      "description": "诱导多能干细胞分化为角膜/NK/心肌/神经等细胞用于治疗",
+      "trend": "日本iPSC角膜细胞(2023)/NK细胞(2024)获批；全球大量临床试验"
+    },
+    {
+      "id": "CT-006",
+      "name": "通用型CAR-T(异体)",
+      "type": "免疫细胞治疗",
+      "mechanism": "健康供者T细胞CAR改造/基因编辑消除排斥",
+      "clinical_stage": "临床I/II期",
+      "potential": "极高",
+      "description": "现货型CAR-T产品，无需患者自体细胞，可大规模生产",
+      "trend": "CRISPR编辑消除TCR/HLA；Allogene/Cellectis/Caribou Biosciences推进"
+    },
+    {
+      "id": "CT-007",
+      "name": "CAR-巨噬细胞CAR-M",
+      "type": "免疫细胞治疗",
+      "mechanism": "巨噬细胞CAR改造吞噬肿瘤",
+      "clinical_stage": "临床I期",
+      "potential": "中高",
+      "description": "工程化巨噬细胞可吞噬肿瘤并重塑肿瘤微环境，适合实体瘤",
+      "trend": "Carisma Therapeutics领先；实体瘤微环境调控新策略"
+    },
+    {
+      "id": "CT-008",
+      "name": "基因治疗(AAV递送)",
+      "type": "基因治疗",
+      "mechanism": "AAV载体递送功能基因替代缺陷基因",
+      "clinical_stage": "已上市(多款)",
+      "potential": "高",
+      "description": "腺相关病毒载体递送治疗性基因，一次性治疗遗传病",
+      "trend": "Hemgenix/Zolgensma/Casgevy已上市；AAV衣壳工程改进靶向性；免疫原性挑战"
+    },
+    {
+      "id": "CT-009",
+      "name": "LNP递送基因编辑",
+      "type": "基因治疗",
+      "mechanism": "脂质纳米颗粒递送CRISPR/mRNA至靶器官",
+      "clinical_stage": "临床I/II期",
+      "potential": "极高",
+      "description": "非病毒递送基因编辑工具，LNP可靶向肝脏，肝外递送突破中",
+      "trend": "Intellia LNP-CRISPR肝脏靶向临床成功；肝外递送(肺/脑/肌肉)是前沿"
+    },
+    {
+      "id": "CT-010",
+      "name": "CAR-T实体瘤策略",
+      "type": "免疫细胞治疗",
+      "mechanism": "多靶点/装甲CAR/微环境调控",
+      "clinical_stage": "临床I/II期",
+      "potential": "高",
+      "description": "克服实体瘤微环境抑制的CAR-T策略：双靶点/分泌细胞因子/检查点阻断",
+      "trend": "2026年CAR-T从血液瘤向实体瘤突破的关键年；数十款产品预计获批"
+    },
+    {
+      "id": "CT-011",
+      "name": "间充质干细胞MSC",
+      "type": "干细胞治疗",
+      "mechanism": "旁分泌/免疫调节/组织修复",
+      "clinical_stage": "II/III期(多适应症)",
+      "potential": "中高",
+      "description": "多能间充质干细胞抗炎和组织修复，移植物抗宿主病/骨关节炎等",
+      "trend": "全球1000+临床试验；与长寿科技交叉；外泌体作为无细胞替代"
+    },
+    {
+      "id": "CT-012",
+      "name": "3D生物打印组织/器官",
+      "type": "组织工程",
+      "mechanism": "逐层打印活细胞和生物材料构建功能组织",
+      "clinical_stage": "临床(皮肤/软骨)/临床前(器官)",
+      "potential": "极高(远期)",
+      "description": "3D打印活体组织用于移植，最终目标是打印完整器官",
+      "trend": "3D打印耳朵(2022)/皮肤已临床使用；完整器官仍需数年"
+    },
+    {
+      "id": "CT-013",
+      "name": "体内CAR-T疗法",
+      "type": "免疫细胞治疗",
+      "mechanism": "LNP/AAV递送CAR基因在体内直接改造T细胞",
+      "clinical_stage": "临床I期",
+      "potential": "极高",
+      "description": "无需体外培养T细胞，直接在体内将T细胞改造为CAR-T，大幅降低成本和等待时间",
+      "trend": "2025年ASH年会最新进展；Interius Bio/Myeloid Therapeutics/Umoja Biopharma领先",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://link.springer.com/article/10.1007/s11605-025-09234-7",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-014",
+      "name": "现货型CAR-T(Off-the-Shelf)",
+      "type": "免疫细胞治疗",
+      "mechanism": "异体供体CAR-T/基因编辑消除GVHD",
+      "clinical_stage": "临床I/II期",
+      "potential": "极高",
+      "description": "通用型CAR-T无需患者自体细胞，可即用即取，降低成本和等待时间",
+      "trend": "2025-2026年临床进展显著但仍为研究性；CRISPR编辑消除TCR/MHC",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://globalrph.com/2026/04/car-t-cell-therapy-the-truth-about-off-the-shelf-treatments-in-2026",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-015",
+      "name": "CAR-T实体瘤突破2026",
+      "type": "免疫细胞治疗",
+      "mechanism": "双靶点/装甲CAR-T/肿瘤微环境调控",
+      "clinical_stage": "临床I/II期",
+      "potential": "极高",
+      "description": "CAR-T从血液瘤向实体瘤突破的关键年，数十款产品预计获批",
+      "trend": "2017-2025年6款自体CAR-T获FDA批准；2026年实体瘤突破窗口",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.linkedin.com/pulse/car-t-cell-therapy-2026-from-blood-cancers-solid-stefano-gaburro-phd-lvrjf",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-016",
+      "name": "CAR-T多发性骨髓瘤II期",
+      "type": "免疫细胞治疗",
+      "mechanism": "BCMA靶向CAR-T",
+      "clinical_stage": "II期(ASH 2025)",
+      "potential": "高",
+      "description": "ASH 2025: CAR-T多发性骨髓瘤II期试验12个月PFS 79%，18个月PFS 66%，OS 95%/90%",
+      "trend": "MD Anderson Cancer Center数据；长期生存数据支持CAR-T在骨髓瘤中的地位",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.mdanderson.org/newsroom/research-newsroom/ash-2025--car-t-cell-therapy-shows-promising-phase-ii-trial-results-in-multiple-myeloma.h00-159781968.html",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-017",
+      "name": "下一代CAR-T市场",
+      "type": "市场趋势",
+      "mechanism": "N/A",
+      "clinical_stage": "N/A",
+      "potential": "高",
+      "description": "下一代CAR-T疗法市场预测：新靶点/新适应症/新制造工艺驱动增长",
+      "trend": "自动化制造降低成本；新靶点(GPRC5D/SLAMF7)拓展适应症",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.towardshealthcare.com/insights/next-gen-car-t-therapy-market-sizing",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-018",
+      "name": "CRISPR临床试验2026更新",
+      "type": "基因编辑治疗",
+      "mechanism": "CRISPR-Cas9/碱基编辑/先导编辑",
+      "clinical_stage": "多适应症临床",
+      "potential": "极高",
+      "description": "2026年CRISPR临床试验最新进展：Casgevy后更多基因编辑疗法进入临床",
+      "trend": "IGI 2026更新：体内递送/碱基编辑/表观遗传编辑新方向",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://innovativegenomics.org/news/crispr-clinical-trials-2026",
+          "collected_at": "2026-05-30T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-019",
+      "name": "现货型CAR-T(allogeneic)",
+      "type": "免疫细胞治疗",
+      "mechanism": "异体来源CAR-T细胞，即用型无需自体采集",
+      "clinical_stage": "临床I/II期",
+      "potential": "极高",
+      "description": "现货型CAR-T：异体来源，无需患者自体细胞采集和培养，大幅降低成本和等待时间",
+      "trend": "2025-2026年临床进展显著但仍处研究阶段；CRS/GvHD风险管控是关键",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://globalrph.com/2026/04/car-t-cell-therapy-the-truth-about-off-the-shelf-treatments-in-2026",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-020",
+      "name": "CAR-T多发性骨髓瘤II期",
+      "type": "免疫细胞治疗",
+      "mechanism": "BCMA靶向CAR-T",
+      "clinical_stage": "II期",
+      "potential": "高",
+      "description": "ASH 2025：CAR-T多发性骨髓瘤II期试验12个月PFS 79%，18个月PFS 66%，OS 95%/90%",
+      "trend": "多发性骨髓瘤CAR-T疗效数据持续改善；长期生存数据积累",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.mdanderson.org/newsroom/research-newsroom/ash-2025--car-t-cell-therapy-shows-promising-phase-ii-trial-results-in-multiple-myeloma.h00-159781968.html",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-021",
+      "name": "体内CAR-T(in vivo)",
+      "type": "免疫细胞治疗",
+      "mechanism": "体内递送CAR基因→T细胞原位改造",
+      "clinical_stage": "临床I期",
+      "potential": "极高",
+      "description": "体内CAR-T：通过载体直接在体内将CAR基因递送至T细胞，无需体外培养，ASH 2025最新进展",
+      "trend": "从体外到体内是CAR-T革命性转变；LNP/病毒载体递送技术突破",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://link.springer.com/article/10.1186/s40364-026-00938-8",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-022",
+      "name": "CAR-T实体瘤突破",
+      "type": "免疫细胞治疗",
+      "mechanism": "新靶点/新策略攻克实体瘤",
+      "clinical_stage": "临床I/II期",
+      "potential": "极高",
+      "description": "2026年CAR-T从血液癌到实体瘤：新靶点(GPC3/CLDN18.2/MUC1)/新策略(双靶点/装甲CAR)",
+      "trend": "实体瘤是CAR-T下一个前沿；6款自体CAR-T已获批(2017-2025)",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.linkedin.com/pulse/car-t-cell-therapy-2026-from-blood-cancers-solid-stefano-gaburro-phd-lvrjf",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-023",
+      "name": "AACR 2026 CAR-T早期研究",
+      "type": "免疫细胞治疗",
+      "mechanism": "高风险冒烟型多发性骨髓瘤CAR-T",
+      "clinical_stage": "早期临床",
+      "potential": "高",
+      "description": "AACR 2026年会：CAR-T用于高风险冒烟型多发性骨髓瘤早期研究，AI诊断模型同步展示",
+      "trend": "CAR-T从晚期治疗向早期干预扩展；AI辅助患者筛选",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.oncologynewscentral.com/oncology/early-studies-on-car-t-and-diagnostic-tools-among-highlights-at-aacr-2026",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-024",
+      "name": "CAR-T未来十年展望",
+      "type": "行业趋势",
+      "mechanism": "N/A",
+      "clinical_stage": "N/A",
+      "potential": "极高",
+      "description": "BioInformant预测未来十年数十款CAR-T疗法将获批，覆盖多种血液癌和实体瘤",
+      "trend": "从自体到异体/体内；从血液瘤到实体瘤；从末线到前线",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://bioinformant.com/car-t-cell-therapy-development",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-025",
+      "name": "CAR-T FDA里程碑(2017-2025)",
+      "type": "行业回顾",
+      "mechanism": "N/A",
+      "clinical_stage": "已上市",
+      "potential": "高",
+      "description": "2017-2025年6款自体CAR-T产品获FDA批准：Kymriah/Yescarta/Tecartus/Breyanzi/Abecma/Carvykti",
+      "trend": "CAR-T从突破性疗法到标准治疗；适应症从后线向前线推进",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://nonabio.com/car-t-cell-therapy-in-2025-breakthroughs-barriers-and-the-road-ahead",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-026",
+      "name": "TIL肿瘤浸润淋巴细胞疗法",
+      "type": "免疫细胞治疗",
+      "mechanism": "扩增肿瘤浸润T细胞→回输杀伤肿瘤",
+      "clinical_stage": "已上市(Iovance)/临床",
+      "potential": "高",
+      "description": "从患者肿瘤中提取浸润淋巴细胞，体外扩增后回输，对实体瘤(黑色素瘤)有效",
+      "trend": "Amtagvi(lifileucel)2024年获FDA批准；更多实体瘤适应症拓展",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-027",
+      "name": "TCR-T细胞治疗",
+      "type": "免疫细胞治疗",
+      "mechanism": "工程化T细胞受体识别胞内抗原",
+      "clinical_stage": "已上市(Adaptimmune)/临床",
+      "potential": "高",
+      "description": "TCR-T识别细胞内抗原(MHC呈递)，可靶向CAR-T无法触及的胞内靶点",
+      "trend": "Tecelra(afamitresgene autoleucel)2024年获FDA批准；实体瘤新选择",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-028",
+      "name": "CAR-M巨噬细胞治疗",
+      "type": "免疫细胞治疗",
+      "mechanism": "CAR修饰巨噬细胞吞噬肿瘤",
+      "clinical_stage": "临床I期",
+      "potential": "高",
+      "description": "CAR修饰巨噬细胞，既可直接吞噬肿瘤，又可重塑肿瘤微环境，实体瘤潜力大",
+      "trend": "Carisma Therapeutics领先；实体瘤微环境突破新策略",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-029",
+      "name": "KIR-CAR T细胞治疗",
+      "type": "免疫细胞治疗",
+      "mechanism": "KIR-CAR T细胞靶向杀伤肿瘤",
+      "clinical_stage": "临床I期(AACR 2026)",
+      "potential": "高",
+      "description": "AACR 2026: KIR-CAR T细胞治疗在多发性骨髓瘤中安全，剂量递增疗效增加",
+      "trend": "新型CAR设计突破传统scFv限制；KIR-CAR开辟新靶点空间",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://ecancer.org/en/news/28100-aacr-2026-new-kir-car-t-cell-therapy-shows-promise",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-030",
+      "name": "免化疗CAR-T疗法",
+      "type": "免疫细胞治疗",
+      "mechanism": "改良CAR-T免去预处理化疗",
+      "clinical_stage": "临床早期",
+      "potential": "高",
+      "description": "Reuters 2026: 改良型CAR-T疗法可能让血液癌患者免受毒性预处理化疗",
+      "trend": "CAR-T从高毒性到低毒性；免化疗预处理改善患者体验",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.reuters.com/business/healthcare-pharmaceuticals/new-car-t-cell-method",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-031",
+      "name": "FDA扩展CAR-T适应症",
+      "type": "监管批准",
+      "mechanism": "axi-cabtagene ciloleucel扩展",
+      "clinical_stage": "已上市(新适应症)",
+      "potential": "高",
+      "description": "FDA扩展axi-cabtagene ciloleucel (axi-cel) CAR-T疗法适应症，覆盖罕见患者群体",
+      "trend": "CAR-T从血液瘤到更广适应症；FDA加速审批路径",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://bloodcancerunited.org/resources/newsroom/fda-expands-car-t-approval-include-patients-with-rare",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-032",
+      "name": "CAR-T实体瘤进展2026",
+      "type": "免疫细胞治疗",
+      "mechanism": "CAR-T杀伤可检测肿瘤+免疫微环境调控",
+      "clinical_stage": "临床I/II期",
+      "potential": "高",
+      "description": "CAR-T 2026年从血液瘤到实体瘤进展：杀伤可检测部分+免疫微环境调控",
+      "trend": "实体瘤CAR-T从概念到早期临床；联合免疫检查点策略",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-033",
+      "name": "现货型CAR-T真相2026",
+      "type": "免疫细胞治疗",
+      "mechanism": "异体CAR-T(allogeneic)",
+      "clinical_stage": "研究性",
+      "potential": "高",
+      "description": "2025-2026年现货型(off-the-shelf) CAR-T取得实质性临床进展但仍为研究性",
+      "trend": "异体CAR-T从概念到临床数据；GVHD和持久性仍是挑战",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://globalrph.com/2026/04/car-t-cell-therapy-the-truth-about-off-the-shelf-treatments",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-034",
+      "name": "CAR-T未来十年发展策略",
+      "type": "行业展望",
+      "mechanism": "多策略",
+      "clinical_stage": "多阶段",
+      "potential": "极高",
+      "description": "Bioinformant: 未来十年数十种CAR-T疗法可能获批，覆盖液体瘤和实体瘤",
+      "trend": "CAR-T从7款到数十款；实体瘤突破是下一个里程碑",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://bioinformant.com/car-t-cell-therapy-development",
+          "collected_at": "2026-06-01T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-035",
+      "name": "uPAR靶向CAR-T实体瘤突破",
+      "type": "实体瘤CAR-T",
+      "mechanism": "uPAR靶向CAR-T细胞",
+      "clinical_stage": "临床前/早期临床",
+      "potential": "极高",
+      "description": "uPAR靶向CAR-T细胞缩小实体瘤并清除转移灶，为CAR-T治疗实体瘤提供新策略",
+      "trend": "CAR-T从血液瘤到实体瘤突破；uPAR靶点前景广阔",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://medicalxpress.com/news/2026-03-upar-car-cells-shrank-solid.html",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-036",
+      "name": "WashU CAR-T FDA突破性疗法认定",
+      "type": "T细胞血癌CAR-T",
+      "mechanism": "创新CAR-T免疫疗法",
+      "clinical_stage": "FDA突破性疗法认定",
+      "potential": "极高",
+      "description": "华盛顿大学医学院开发的侵袭性T细胞血癌CAR-T免疫疗法获FDA突破性疗法认定，加速审批路径",
+      "trend": "CAR-T疗法审批加速；T细胞恶性肿瘤新选择",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://medicine.washu.edu/news/innovative-car-t-cell-therapy-receives-fda-breakthrough-therapy-designation",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-037",
+      "name": "AACR 2026 CAR-T早期研究亮点",
+      "type": "学术会议",
+      "mechanism": "多策略",
+      "clinical_stage": "多阶段",
+      "potential": "高",
+      "description": "AACR 2026年会CAR-T早期研究亮点：高风险冒烟型多发性骨髓瘤CAR-T应用和AI诊断模型",
+      "trend": "CAR-T适应症扩展到早期疾病；AI辅助CAR-T治疗决策",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.oncologynewscentral.com/oncology/early-studies-on-car-t-and-diagnostic-tools-among-highlights-at-aacr-2026",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-038",
+      "name": "iwCAR-T 2026国际研讨会",
+      "type": "学术会议",
+      "mechanism": "多策略",
+      "clinical_stage": "多阶段",
+      "potential": "高",
+      "description": "iwCAR-T 2026: 年度国际CAR-T和细胞治疗研讨会，汇聚全球顶尖临床和转化研究人才",
+      "trend": "CAR-T国际合作加强；从血液瘤到实体瘤策略讨论",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://iwcar-t.org/agenda",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-039",
+      "name": "CAR-T长期疗效Nature数据",
+      "type": "临床数据",
+      "mechanism": "CD19靶向CAR-T",
+      "clinical_stage": "已上市",
+      "potential": "高",
+      "description": "Nature发表CAR-T长期疗效数据：CD19靶向CAR-T细胞可在B细胞恶性肿瘤中诱导长期缓解，长期毒性极小",
+      "trend": "CAR-T长期疗效数据积累；安全性优于预期",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s41571-023-00754-1",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-040",
+      "name": "CAR-T市场2026-2033预测",
+      "type": "市场数据",
+      "mechanism": "N/A",
+      "clinical_stage": "N/A",
+      "potential": "极高",
+      "description": "全球CAR-T细胞治疗市场预计从2026年48.3亿美元增长到2033年184.6亿美元，CAGR 21.1%",
+      "trend": "CAR-T市场持续高速增长；新适应症和通用型产品驱动",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.coherentmarketinsights.com/market-insight/car-t-cell-therapy-market-102",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-041",
+      "name": "CAR-T实体瘤免疫逃逸机制",
+      "type": "机制研究",
+      "mechanism": "免疫逃逸",
+      "clinical_stage": "研究",
+      "potential": "高",
+      "description": "CAR-T治疗实体瘤免疫逃逸机制研究：CAR-T细胞杀伤可检测部分但剩余部分增殖(Lei et al., 2026)",
+      "trend": "实体瘤免疫逃逸机制深入理解；联合策略克服逃逸",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.linkedin.com/pulse/car-t-cell-therapy-2026-from-blood-cancers-solid-stefano-gaburro-phd-lvrjf",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-042",
+      "name": "MSK CAR-T进展时间线",
+      "type": "历史回顾",
+      "mechanism": "多策略",
+      "clinical_stage": "多阶段",
+      "potential": "高",
+      "description": "Memorial Sloan Kettering CAR-T进展时间线：从免疫细胞保护小鼠到7款FDA批准产品的完整历程",
+      "trend": "CAR-T从实验室到临床的完整路径；未来十年数十种疗法可能获批",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.mskcc.org/timeline/car-t-timeline-progress",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-043",
+      "name": "通用型CAR-T(allogeneic)2026",
+      "type": "异体CAR-T",
+      "mechanism": "异体T细胞CAR改造",
+      "clinical_stage": "I/II期",
+      "potential": "极高",
+      "description": "通用型(异体)CAR-T 2026年进展：现货型产品降低成本和等待时间，但GVHD和持久性挑战仍存",
+      "trend": "异体CAR-T从概念到临床；成本和可及性改善",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-044",
+      "name": "CAR-NK细胞治疗2026进展",
+      "type": "CAR-NK",
+      "mechanism": "NK细胞CAR改造",
+      "clinical_stage": "I/II期",
+      "potential": "高",
+      "description": "CAR-NK细胞治疗2026年进展：无需HLA匹配，异体使用潜力大，CRS风险低，实体瘤应用探索",
+      "trend": "CAR-NK安全性优势明显；与CAR-T互补而非替代",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-045",
+      "name": "CAR-T联合免疫检查点抑制剂",
+      "type": "联合疗法",
+      "mechanism": "CAR-T+PD-1/CTLA-4抑制",
+      "clinical_stage": "I/II期",
+      "potential": "高",
+      "description": "CAR-T联合免疫检查点抑制剂2026年进展：克服实体瘤免疫抑制微环境，提升CAR-T持久性和疗效",
+      "trend": "联合疗法成为实体瘤CAR-T标准策略；免疫微环境调控",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-046",
+      "name": "CAR-T制造自动化2026",
+      "type": "制造技术",
+      "mechanism": "自动化生产",
+      "clinical_stage": "N/A",
+      "potential": "高",
+      "description": "CAR-T制造自动化2026年进展：封闭式自动化生产系统降低成本和变异，缩短vein-to-vein时间",
+      "trend": "CAR-T制造从手工到自动化；成本下降推动可及性",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-047",
+      "name": "TCR-T细胞治疗2026",
+      "type": "TCR-T",
+      "mechanism": "T细胞受体工程",
+      "clinical_stage": "I/II期",
+      "potential": "高",
+      "description": "TCR-T细胞治疗2026年进展：识别细胞内抗原，拓展实体瘤治疗靶点范围",
+      "trend": "TCR-T与CAR-T互补；细胞内靶点识别优势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-048",
+      "name": "TIL肿瘤浸润淋巴细胞疗法",
+      "type": "TIL疗法",
+      "mechanism": "肿瘤浸润淋巴细胞扩增",
+      "clinical_stage": "已上市(I期)",
+      "potential": "高",
+      "description": "TIL疗法2026年进展：Amtagvi(Lifileucel)获批后市场扩展，实体瘤治疗新选择",
+      "trend": "TIL从黑色素瘤到其他实体瘤；制造工艺优化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-049",
+      "name": "CAR-T安全性管理2026",
+      "type": "安全管理",
+      "mechanism": "CRS/ICANS管理",
+      "clinical_stage": "已上市",
+      "potential": "高",
+      "description": "CAR-T安全性管理2026年进展：CRS和ICANS预测/预防/治疗策略优化，死亡率持续下降",
+      "trend": "CAR-T安全性持续改善；早期干预和精准管理",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-050",
+      "name": "CRDWC 2026 CAR-T临床进展挑战",
+      "type": "学术会议",
+      "mechanism": "多策略",
+      "clinical_stage": "多阶段",
+      "potential": "高",
+      "description": "CRDWC 2026年9月迈阿密：CAR-T细胞治疗临床进展与挑战专题，全球肿瘤专家和生物技术领袖",
+      "trend": "CAR-T全球合作加强；临床挑战和解决方案讨论",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://cancerglobalconference.com/program/scientific-sessions/CAR-T-Cell-Therapy:-Clinical-Progress-and-Challenges",
+          "collected_at": "2026-06-02T13:42:00Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-051",
+      "name": "KIR-CAR T实体瘤I期临床",
+      "type": "免疫疗法",
+      "efficiency": "N/A",
+      "cost": "高",
+      "maturity": "I期临床",
+      "companies": [
+        "Penn Medicine"
+      ],
+      "description": "Penn Medicine首创KIR-CAR T细胞疗法I期临床试验，模仿自然杀伤细胞设计，限制T细胞毒性，针对实体瘤",
+      "trend": "CAR-T从血液瘤到实体瘤突破；NK细胞设计策略降低毒性",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.pennmedicine.org/news/new-kir-car-t-cell-therapy-shows-promise-in-solid-cancers",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-052",
+      "name": "In vivo CAR-T体内制造",
+      "type": "免疫疗法",
+      "efficiency": "N/A",
+      "cost": "潜在低",
+      "maturity": "临床前",
+      "companies": [
+        "Innovative Genomics Institute"
+      ],
+      "description": "IGI开发体内CAR-T疗法：在体内直接制造抗癌免疫细胞，小鼠实验杀死癌症，有望实现免化疗off-the-shelf治疗",
+      "trend": "从体外到体内制造CAR-T；免化疗成为可能；off-the-shelf前景",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://innovativegenomics.org/news/in-vivo-car-t-cancer-fighting-immune-cells",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-053",
+      "name": "Mayo Clinic CAR-T实体瘤突破",
+      "type": "免疫疗法",
+      "efficiency": "N/A",
+      "cost": "高",
+      "maturity": "临床突破",
+      "companies": [
+        "Mayo Clinic"
+      ],
+      "description": "Mayo Clinic跨学科合作实现CAR-T治疗实体瘤突破性进展",
+      "trend": "跨学科合作推动CAR-T实体瘤突破；工程化改造是关键",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.mayoclinic.org/medical-professionals/cancer/news/major-advance-in-use-of-car-t-cell-therapy-to-treat-solid-tumors/mac-20588405",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-054",
+      "name": "City of Hope CAR-T胶质母细胞瘤",
+      "type": "免疫疗法",
+      "efficiency": "N/A",
+      "cost": "高",
+      "maturity": "临床研究",
+      "companies": [
+        "City of Hope"
+      ],
+      "description": "City of Hope Christine Brown团队改造CAR-T治疗胶质母细胞瘤，为实体瘤CAR-T提供工程化改造经验",
+      "trend": "脑瘤CAR-T从实验到临床；工程化改造策略多样化",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.cityofhope.org/research/research-news/edge-of-breakthrough/christine-brown",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-055",
+      "name": "Cancer Research UK CAR-T国际试验",
+      "type": "免疫疗法",
+      "efficiency": "N/A",
+      "cost": "高",
+      "maturity": "临床试验",
+      "companies": [
+        "Cancer Research UK"
+      ],
+      "description": "Cancer Research UK 2026年4月启动突破性国际CAR-T临床试验，针对年轻人实体癌",
+      "trend": "CAR-T临床试验从血液瘤扩展到实体瘤；国际合作加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://news.cancerresearchuk.org/2026/04/08/breakthrough-international-trial-launches-to-tackle-young-peoples-cancers",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-056",
+      "name": "TIM-3诱饵增强CAR-T",
+      "type": "免疫疗法",
+      "efficiency": "N/A",
+      "cost": "高",
+      "maturity": "临床前",
+      "companies": [
+        "Avance Bio"
+      ],
+      "description": "TIM-3诱饵策略增强CAR-T疗效，目前聚焦血液癌但原理可适配实体瘤CAR-T",
+      "trend": "免疫检查点诱饵策略增强CAR-T；从血液癌到实体瘤扩展",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.avancebio.com/breakthrough-in-car-t-cell-therapy-offers-hope-for-b-all-treatment",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-057",
+      "name": "Nature CAR-T当前挑战与未来方向",
+      "type": "学术综述",
+      "efficiency": "N/A",
+      "cost": "N/A",
+      "maturity": "参考",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "Nature综述CAR-T当前挑战与未来方向：实体瘤尚未批准但其他T细胞疗法已获授权，新策略不断涌现",
+      "trend": "CAR-T从血液瘤到实体瘤的攻坚；工程化/联合疗法/新型靶点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.nature.com/articles/s41392-025-02269-w",
+          "collected_at": "2026-06-03T13:57:41.937Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-058",
+      "name": "Penn Medicine KIR-CAR T实体瘤I期",
+      "type": "免疫疗法",
+      "mechanism": "KIR-CAR T细胞靶向杀伤实体瘤",
+      "clinical_stage": "I期临床",
+      "potential": "极高",
+      "companies": [
+        "Penn Medicine"
+      ],
+      "description": "Penn Medicine首创KIR-CAR T细胞疗法I期临床试验，模仿自然杀伤细胞设计，限制T细胞毒性，针对实体瘤",
+      "trend": "CAR-T从血液瘤到实体瘤突破；NK细胞设计策略降低毒性",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.pennmedicine.org/news/new-kir-car-t-cell-therapy-shows-promise-in-solid-cancers",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-059",
+      "name": "IGI体内CAR-T免化疗突破",
+      "type": "免疫疗法",
+      "mechanism": "体内直接制造CAR-T",
+      "clinical_stage": "临床前",
+      "potential": "极高",
+      "companies": [
+        "Innovative Genomics Institute"
+      ],
+      "description": "IGI开发体内CAR-T疗法：在体内直接制造抗癌免疫细胞，小鼠实验杀死癌症，有望实现免化疗off-the-shelf治疗",
+      "trend": "从体外到体内制造CAR-T；免化疗成为可能",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://innovativegenomics.org/news/in-vivo-car-t-cancer-fighting-immune-cells",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-060",
+      "name": "Mayo Clinic CAR-T实体瘤跨学科突破",
+      "type": "免疫疗法",
+      "mechanism": "跨学科合作CAR-T实体瘤",
+      "clinical_stage": "临床突破",
+      "potential": "极高",
+      "companies": [
+        "Mayo Clinic"
+      ],
+      "description": "Mayo Clinic跨学科合作实现CAR-T治疗实体瘤突破性进展",
+      "trend": "跨学科合作推动CAR-T实体瘤突破；工程化改造是关键",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.mayoclinic.org/medical-professionals/cancer/news/major-advance-in-use-of-car-t-cell-therapy-to-treat-solid-tumors/mac-20588405",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-061",
+      "name": "Cancer Research UK CAR-T国际试验启动",
+      "type": "免疫疗法",
+      "mechanism": "CAR-T治疗年轻人实体癌",
+      "clinical_stage": "临床试验",
+      "potential": "高",
+      "companies": [
+        "Cancer Research UK"
+      ],
+      "description": "Cancer Research UK 2026年4月启动突破性国际CAR-T临床试验，针对年轻人实体癌",
+      "trend": "CAR-T临床试验从血液瘤扩展到实体瘤；国际合作加速",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://news.cancerresearchuk.org/2026/04/08/breakthrough-international-trial-launches-to-tackle-young-peoples-cancers",
+          "collected_at": "2026-06-04T14:05:26.379Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-063",
+      "name": "CAR-T全球多维分析Nature子刊",
+      "type": "学术综述",
+      "mechanism": "CAR-T",
+      "clinical_stage": "综合分析",
+      "potential": "参考",
+      "companies": [
+        "多机构"
+      ],
+      "description": "Nature子刊发表CAR-T全球多维分析：血液恶性肿瘤取得实质性进展，实体瘤仍是挑战",
+      "trend": "CAR-T血液瘤成熟/实体瘤突破中；全球研发格局分析",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-064",
+      "name": "WashU CAR-T获FDA突破性疗法认定",
+      "type": "监管突破",
+      "mechanism": "CAR-T",
+      "clinical_stage": "突破性疗法",
+      "potential": "极高",
+      "companies": [
+        "Washington University"
+      ],
+      "description": "Washington University CAR-T疗法获FDA突破性疗法认定，加速审批路径",
+      "trend": "FDA加速CAR-T审批；突破性疗法认定增加",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-065",
+      "name": "Reuters免化疗CAR-T报道",
+      "type": "行业报道",
+      "mechanism": "体内CAR-T",
+      "clinical_stage": "临床前",
+      "potential": "极高",
+      "companies": [
+        "多公司"
+      ],
+      "description": "Reuters报道免化疗CAR-T疗法：在体内直接制造抗癌免疫细胞，无需化疗预处理",
+      "trend": "免化疗是CAR-T终极目标；体内制造技术突破",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:07:22.337Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-065",
+      "name": "基因驱动蚊子抑制疟疾患者来源寄生虫",
+      "type": "基因驱动+免疫",
+      "mechanism": "基因驱动蚊子+免疫",
+      "clinical_stage": "临床前",
+      "potential": "极高",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "基因驱动蚊子抑制患者来源疟疾寄生虫：基因驱动技术引入野生蚊子遗传修饰，减少疟疾传播",
+      "trend": "基因驱动从实验室到接近受控释放；疟疾防控新希望",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-04T14:09:22.606Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-066",
+      "name": "uPAR靶向CAR-T缩小实体瘤并清除转移",
+      "type": "实体瘤CAR-T",
+      "mechanism": "uPAR靶向CAR-T",
+      "clinical_stage": "临床前",
+      "potential": "极高",
+      "companies": [
+        "多研究机构"
+      ],
+      "description": "uPAR靶向CAR-T细胞缩小实体瘤并清除转移灶，突破CAR-T在实体瘤中的应用瓶颈",
+      "trend": "CAR-T从血液癌到实体瘤突破；uPAR是新靶点",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://medicalxpress.com/news/2026-03-upar-car-cells-shrank-solid.html",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-067",
+      "name": "AACR 2026: CAR-T早期研究亮点",
+      "type": "会议报告",
+      "mechanism": "CAR-T",
+      "clinical_stage": "早期临床",
+      "potential": "高",
+      "companies": [
+        "多机构"
+      ],
+      "description": "AACR 2026年会CAR-T早期研究亮点：高风险冒烟型多发性骨髓瘤CAR-T治疗、AI诊断模型",
+      "trend": "CAR-T从晚期到早期疾病干预；AI辅助诊断",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.oncologynewscentral.com/oncology/early-studies-on-car-t-and-diagnostic-tools-among-highlights-at-aacr-2026",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-068",
+      "name": "Blood ICT: 扩大CAR-T可及性真实世界经验",
+      "type": "临床研究",
+      "mechanism": "CAR-T",
+      "clinical_stage": "临床应用",
+      "potential": "高",
+      "companies": [
+        "多中心"
+      ],
+      "description": "Blood ICT发表扩大CAR-T可及性真实世界经验：从专科中心到更广泛医疗系统",
+      "trend": "CAR-T从专科到普及；真实世界数据指导推广",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://ashpublications.org/bloodict/article/2/1/100026/557342/Broadening-CAR-T-access-lessons-from-real-world",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-069",
+      "name": "CAR-T细胞治疗市场4.83B→18.46B预测",
+      "type": "市场数据",
+      "mechanism": "CAR-T",
+      "clinical_stage": "N/A",
+      "potential": "N/A",
+      "companies": [
+        "Coherent Market Insights"
+      ],
+      "description": "CAR-T细胞治疗市场2026年48.3亿美元，预计2033年达184.6亿美元，CAGR 21.1%",
+      "trend": "CAR-T市场持续高速增长；适应症扩展驱动",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.coherentmarketinsights.com/market-insight/car-t-cell-therapy-market-102",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-070",
+      "name": "CAR-T 2026: 从血液癌到实体瘤",
+      "type": "行业分析",
+      "mechanism": "CAR-T",
+      "clinical_stage": "多阶段",
+      "potential": "极高",
+      "companies": [
+        "多公司"
+      ],
+      "description": "CAR-T 2026年从血液癌到实体瘤：免疫抑制肿瘤微环境(TME)是主要挑战，新策略突破中",
+      "trend": "CAR-T实体瘤是下一个前沿；TME调控是关键",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.linkedin.com/pulse/car-t-cell-therapy-2026-from-blood-cancers-solid-stefano-gaburro-phd-lvrjf",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-071",
+      "name": "CAR-T现状挑战与前景综述",
+      "type": "学术综述",
+      "mechanism": "CAR-T",
+      "clinical_stage": "N/A",
+      "potential": "高",
+      "companies": [
+        "多机构"
+      ],
+      "description": "Wiley发表CAR-T现状挑战与前景综述：生物学基础、当前挑战和未来方向",
+      "trend": "CAR-T从突破到优化；挑战和前景并存",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/mco2.70606",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-072",
+      "name": "BioInformant: CAR-T疗法开发未来策略",
+      "type": "行业分析",
+      "mechanism": "CAR-T",
+      "clinical_stage": "多阶段",
+      "potential": "高",
+      "companies": [
+        "多公司"
+      ],
+      "description": "BioInformant分析CAR-T疗法开发未来策略：未来十年数十种CAR-T疗法可能获批",
+      "trend": "CAR-T从少数到数十种；液体癌和实体瘤双线推进",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://bioinformant.com/car-t-cell-therapy-development",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-073",
+      "name": "CAR-T Summit 2026临床进展版",
+      "type": "行业会议",
+      "mechanism": "CAR-T",
+      "clinical_stage": "N/A",
+      "potential": "N/A",
+      "companies": [
+        "多公司"
+      ],
+      "description": "CAR-T Cell Therapy Summit 2026临床进展第2版(9月21-23日)",
+      "trend": "CAR-T年度峰会持续；临床进展是核心议题",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://cancerglobalconference.com/program/scientific-sessions/CAR-T-Cell-Therapy:-Clinical-Progress-and-Challenges",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-074",
+      "name": "MSK: CAR-T细胞进展时间线",
+      "type": "历史回顾",
+      "mechanism": "CAR-T",
+      "clinical_stage": "N/A",
+      "potential": "N/A",
+      "companies": [
+        "MSK"
+      ],
+      "description": "Memorial Sloan Kettering CAR-T细胞进展时间线：从第二代CAR到临床突破",
+      "trend": "CAR-T从概念到治愈；历史回顾显示加速趋势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.mskcc.org/timeline/car-t-timeline-progress",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-075",
+      "name": "同种异体(off-the-shelf)CAR-T 2026进展",
+      "type": "通用型CAR-T",
+      "mechanism": "同种异体CAR-T",
+      "clinical_stage": "临床I/II期",
+      "potential": "极高",
+      "companies": [
+        "多公司"
+      ],
+      "description": "2026年同种异体(off-the-shelf)CAR-T进展：从自体到通用型，降低成本和等待时间",
+      "trend": "CAR-T从自体到通用型；成本和时间大幅降低",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "CT-076",
+      "name": "CAR-T神经毒性2026管理策略",
+      "type": "安全性",
+      "mechanism": "CAR-T",
+      "clinical_stage": "临床管理",
+      "potential": "N/A",
+      "companies": [
+        "多中心"
+      ],
+      "description": "2026年CAR-T神经毒性(ICANS)管理策略进展：早期识别、分级管理、新干预手段",
+      "trend": "CAR-T安全性从被动到主动管理；神经毒性可控性提升",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-05T14:16:40.000Z"
+        }
+      ]
+    }
+  ]
+}

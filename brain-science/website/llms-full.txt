@@ -1,0 +1,2562 @@
+# BrainDB - 脑科学知识引擎
+
+Brain science knowledge base covering brain regions, BCI, neural implants, brain disorders, and neuropharmacology
+
+## brain_regions
+
+### Prefrontal Cortex
+
+- name: Prefrontal Cortex
+- location: Anterior frontal lobe
+- function: Executive function, planning, decision-making, working memory, impulse control, social behavior
+- associated_disorders: ADHD, schizophrenia, depression, frontotemporal dementia, antisocial behavior
+- neurotransmitters: Dopamine, glutamate, GABA, serotonin
+- description: The prefrontal cortex is the most recently evolved brain region and is responsible for higher cognitive functions. It comprises ~30% of the human cerebral cortex. Damage (e.g., Phineas Gage case) profoundly alters personality and decision-making. It is the last region to fully mature (~age 25) and is implicated in most psychiatric disorders.
+
+### Hippocampus
+
+- name: Hippocampus
+- location: Medial temporal lobe
+- function: Memory formation (episodic and spatial), memory consolidation, navigation
+- associated_disorders: Alzheimer's disease (earliest affected region), PTSD, epilepsy, depression
+- neurotransmitters: Glutamate, GABA, acetylcholine
+- description: The hippocampus is critical for forming new episodic and spatial memories. London taxi drivers famously have larger posterior hippocampi from navigation experience. It's one of the first regions damaged in Alzheimer's disease, explaining why memory loss is an early symptom. Adult neurogenesis occurs in the dentate gyrus, one of the few brain regions where new neurons are born throughout life.
+
+### Amygdala
+
+- name: Amygdala
+- location: Medial temporal lobe, anterior to hippocampus
+- function: Fear processing, emotional memory, threat detection, aggression, reward learning
+- associated_disorders: Anxiety disorders, PTSD, phobias, autism spectrum disorder, aggression
+- neurotransmitters: Glutamate, GABA, norepinephrine, serotonin, dopamine
+- description: The amygdala is the brain's threat detection center, rapidly processing fear and danger signals before conscious awareness. It tags emotional memories, making them more vivid and lasting. Hyperactivity is linked to anxiety disorders and PTSD; hypoactivity to risk-taking and psychopathy. The amygdala is a key target for PTSD treatments including exposure therapy and MDMA-assisted therapy.
+
+### Cerebellum
+
+- name: Cerebellum
+- location: Posterior fossa, below occipital lobe
+- function: Motor coordination, balance, motor learning, procedural memory, cognitive functions
+- associated_disorders: Ataxia, autism, schizophrenia, dyslexia, essential tremor
+- neurotransmitters: Glutamate, GABA (Purkinje cells)
+- description: The cerebellum contains more neurons than the rest of the brain combined (~69 billion) despite being only 10% of brain volume. While traditionally associated with motor control, recent research reveals major roles in cognition, language, and emotion. Cerebellar abnormalities are found in autism, schizophrenia, and dyslexia. It's a target for non-invasive brain stimulation therapies.
+
+### Basal Ganglia
+
+- name: Basal Ganglia
+- location: Deep within cerebral hemispheres
+- function: Voluntary motor control, habit formation, reward processing, action selection
+- associated_disorders: Parkinson's disease, Huntington's disease, OCD, Tourette syndrome, addiction
+- neurotransmitters: Dopamine (primary), GABA, glutamate, acetylcholine
+- description: The basal ganglia are a group of subcortical nuclei critical for selecting and initiating voluntary movements. Dopamine from the substantia nigra modulates basal ganglia circuits. Parkinson's disease results from loss of these dopamine neurons. The basal ganglia also drive habit formation and reward-based learning, making them central to addiction neuroscience.
+
+### Thalamus
+
+- name: Thalamus
+- location: Central brain, above brainstem
+- function: Sensory relay station, consciousness regulation, sleep-wake cycle, attention
+- associated_disorders: Thalamic pain syndrome, coma, insomnia, epilepsy
+- neurotransmitters: Glutamate, GABA
+- description: The thalamus is the brain's sensory relay station, routing nearly all sensory information (except olfaction) to the appropriate cortical areas. It also plays a crucial role in consciousness and the sleep-wake cycle. Thalamic lesions can cause severe chronic pain (thalamic pain syndrome) or disorders of consciousness. Deep brain stimulation of the thalamus treats essential tremor and some forms of epilepsy.
+
+### Hypothalamus
+
+- name: Hypothalamus
+- location: Below thalamus, at base of brain
+- function: Homeostasis, hormone regulation, body temperature, hunger, thirst, circadian rhythm, sexual behavior
+- associated_disorders: Hypothalamic obesity, diabetes insipidus, sleep disorders, endocrine disorders
+- neurotransmitters: Multiple neuropeptides, dopamine, serotonin, GABA, glutamate
+- description: The hypothalamus is the brain's master regulator of homeostasis, controlling the autonomic nervous system and pituitary gland. It regulates body temperature, hunger, thirst, sleep, and hormonal balance. The suprachiasmatic nucleus (SCN) is the body's master clock. Hypothalamic dysfunction can cause obesity, diabetes insipidus, and sleep disorders.
+
+### Insular Cortex (Insula)
+
+- name: Insular Cortex (Insula)
+- location: Deep within lateral sulcus, hidden by opercula
+- function: Interoception, emotion, self-awareness, taste, pain processing, empathy, addiction craving
+- associated_disorders: Addiction, anxiety, eating disorders, chronic pain, alexithymia
+- neurotransmitters: Glutamate, GABA, serotonin, dopamine
+- description: The insula is a hidden cortical region critical for interoception (sensing internal body states) and emotional self-awareness. It integrates bodily sensations with emotional and cognitive processing. The anterior insula is activated during empathy, disgust, and craving. The insula is increasingly recognized as a key hub in addiction (craving), anxiety, and chronic pain.
+
+### Default Mode Network (DMN)
+
+- name: Default Mode Network (DMN)
+- location: Medial prefrontal cortex, posterior cingulate, angular gyrus, hippocampus
+- function: Self-referential thinking, mind-wandering, episodic memory, social cognition, creativity
+- associated_disorders: Depression, Alzheimer's, ADHD, schizophrenia, autism
+- neurotransmitters: Multiple (distributed network)
+- description: The DMN is a large-scale brain network active during rest and mind-wandering, deactivated during goal-directed tasks. It's critical for self-reflection, memory retrieval, and creative thinking. DMN dysfunction is implicated in numerous psychiatric and neurological conditions. DMN connectivity is increasingly used as a biomarker for brain health.
+
+### Ventral Tegmental Area (VTA)
+
+- name: Ventral Tegmental Area (VTA)
+- location: Midbrain, near substantia nigra
+- function: Reward processing, motivation, addiction, prediction error signaling
+- associated_disorders: Addiction, depression, schizophrenia, Parkinson's disease
+- neurotransmitters: Dopamine (primary), GABA, glutamate
+- description: The VTA contains the brain's primary reward circuit dopamine neurons. These neurons signal prediction error - the difference between expected and received rewards - forming the basis of reinforcement learning. VTA dopamine release is hijacked by addictive drugs, making it central to addiction neuroscience.
+
+### Anterior Cingulate Cortex (ACC)
+
+- name: Anterior Cingulate Cortex (ACC)
+- location: Medial frontal lobe, surrounding corpus callosum
+- function: Error monitoring, conflict resolution, pain affect, empathy, decision-making, effort allocation
+- associated_disorders: Depression, OCD, chronic pain, ADHD
+- neurotransmitters: Serotonin, dopamine, glutamate, GABA
+- description: The ACC monitors for errors and conflicts, signaling when adjustments are needed. It's crucial for the emotional component of pain (how much pain bothers you). The ACC is a target for deep brain stimulation in treatment-resistant depression and OCD. Damage can cause akinetic mutism (awake but unresponsive).
+
+### Substantia Nigra
+
+- name: Substantia Nigra
+- location: Midbrain, adjacent to VTA
+- function: Motor control (pars compacta: dopamine to basal ganglia), reward (pars reticulata)
+- associated_disorders: Parkinson's disease (degeneration of pars compacta dopamine neurons)
+- neurotransmitters: Dopamine (pars compacta), GABA (pars reticulata)
+- description: The substantia nigra contains dopamine neurons that project to the basal ganglia (nigrostriatal pathway). Loss of these neurons causes Parkinson's disease, with symptoms appearing after ~60% have died. The dark pigment (neuromelanin) gives it its name ('black substance'). Deep brain stimulation of downstream targets can alleviate Parkinson's motor symptoms.
+
+### Visual Cortex (V1-V5)
+
+- name: Visual Cortex (V1-V5)
+- location: Occipital lobe and extending into temporal and parietal lobes
+- function: Visual processing: V1 (edge detection), V2 (orientation), V4 (color/form), V5/MT (motion), IT (object recognition)
+- associated_disorders: Blindsight, visual agnosia, prosopagnosia (face blindness), cortical blindness
+- neurotransmitters: Glutamate, GABA
+- description: The visual cortex processes visual information in a hierarchical stream. V1 performs basic feature extraction; higher areas process increasingly complex features (motion, color, faces, objects). The ventral stream (what) identifies objects; the dorsal stream (where/how) processes spatial relationships. Visual prostheses target V1 to restore vision in blindness.
+
+### Auditory Cortex
+
+- name: Auditory Cortex
+- location: Superior temporal gyrus (Heschl's gyrus)
+- function: Sound processing, speech comprehension, music perception, auditory memory
+- associated_disorders: Tinnitus, auditory hallucinations (schizophrenia), auditory agnosia, amusia
+- neurotransmitters: Glutamate, GABA
+- description: The auditory cortex processes sound features from basic frequencies to complex speech and music. The left auditory cortex specializes in speech processing; the right in music and prosody. Cochlear implants stimulate the auditory nerve to bypass damaged hair cells. Auditory cortex abnormalities are linked to tinnitus and auditory hallucinations in schizophrenia.
+
+### Somatosensory Cortex
+
+- name: Somatosensory Cortex
+- location: Postcentral gyrus (parietal lobe)
+- function: Touch, temperature, pain, proprioception (body position sense)
+- associated_disorders: Sensory loss, phantom limb pain, neuropathic pain, neglect syndrome
+- neurotransmitters: Glutamate, GABA
+- description: The somatosensory cortex processes tactile and proprioceptive information from the body. It's organized as a 'homunculus' (body map) with disproportionate representation of hands and face. Phantom limb pain after amputation is related to cortical reorganization. Somatosensory BCIs are being developed to restore touch sensation in paralysis.
+
+### Motor Cortex (M1)
+
+- name: Motor Cortex (M1)
+- location: Precentral gyrus (frontal lobe)
+- function: Voluntary motor control, movement execution, fine motor skills
+- associated_disorders: Paralysis, stroke, ALS, cerebral palsy
+- neurotransmitters: Glutamate (excitatory), GABA (inhibitory)
+- description: The primary motor cortex (M1) generates neural signals that drive voluntary movement. It's organized as a motor homunculus with large representations for hands and face (fine motor control). M1 is the primary target for brain-computer interfaces that decode movement intentions for paralysis patients. Neuralink, BrainGate, and others record from M1 to restore communication and movement.
+
+### Broca's Area
+
+- name: Broca's Area
+- location: Left inferior frontal gyrus (Brodmann areas 44, 45)
+- function: Speech production, language processing, grammar, articulation planning
+- associated_disorders: Broca's aphasia (expressive aphasia), stuttering, specific language impairment
+- neurotransmitters: Glutamate, GABA, dopamine
+- description: Broca's area is critical for speech production and grammatical processing. Damage causes Broca's aphasia: patients understand language but cannot produce fluent speech (telegraphic speech). Named after Paul Broca who studied patient 'Tan' in 1861. TMS to Broca's area can temporarily disrupt speech production, confirming its role.
+
+### Wernicke's Area
+
+- name: Wernicke's Area
+- location: Left posterior superior temporal gyrus (Brodmann area 22)
+- function: Language comprehension, semantic processing, reading
+- associated_disorders: Wernicke's aphasia (receptive aphasia), alexia, semantic dementia
+- neurotransmitters: Glutamate, GABA
+- description: Wernicke's area is essential for understanding spoken and written language. Damage causes Wernicke's aphasia: patients produce fluent but meaningless speech (word salad) and cannot comprehend language. The arcuate fasciculus connects Broca's and Wernicke's areas; damage to this pathway causes conduction aphasia (can speak and understand but cannot repeat).
+
+### Corpus Callosum
+
+- name: Corpus Callosum
+- location: Midline, connecting left and right hemispheres
+- function: Interhemispheric communication, integrating left and right brain processing
+- associated_disorders: Split-brain syndrome, agenesis of corpus callosum, multiple sclerosis
+- neurotransmitters: Glutamate (excitatory interhemispheric connections)
+- description: The corpus callosum is the largest white matter tract, containing ~200 million axons connecting the two cerebral hemispheres. Split-brain patients (corpus callosotomy for epilepsy) revealed that each hemisphere has independent consciousness and specialized functions. The corpus callosum is affected early in multiple sclerosis and Alzheimer's disease.
+
+### Brainstem (Midbrain, Pons, Medulla)
+
+- name: Brainstem (Midbrain, Pons, Medulla)
+- location: Base of brain, connecting to spinal cord
+- function: Vital functions: breathing, heart rate, blood pressure, consciousness, sleep-wake cycle
+- associated_disorders: Locked-in syndrome, coma, brain death, sleep apnea, sudden infant death syndrome
+- neurotransmitters: Multiple (serotonin, norepinephrine, dopamine, acetylcholine, GABA)
+- description: The brainstem controls vital autonomic functions necessary for survival. The reticular activating system (RAS) in the brainstem regulates consciousness and arousal. Damage to specific brainstem regions causes locked-in syndrome (conscious but paralyzed except eye movements). The brainstem is the last region to lose function in brain death.
+
+### Locus Coeruleus
+
+- name: Locus Coeruleus
+- location: Pons (brainstem)
+- function: Norepinephrine production, arousal, attention, stress response, cognitive flexibility
+- associated_disorders: ADHD, PTSD, depression, Alzheimer's (early degeneration), anxiety
+- neurotransmitters: Norepinephrine (primary - sole source in the brain)
+- description: The locus coeruleus is a tiny nucleus in the pons that is the brain's sole source of norepinephrine. Despite its small size (~50,000 neurons), it projects throughout the brain and modulates arousal, attention, and stress responses. It's one of the first regions affected by Alzheimer's tau pathology, potentially explaining early attention deficits. LC-norepinephrine system is a target for ADHD and PTSD treatments.
+
+### Claustrum
+
+- name: Claustrum
+- location: Between insula and putamen (thin sheet of neurons)
+- function: Consciousness integration? - proposed hub for binding diverse cortical information into unified experience
+- associated_disorders: Consciousness disorders, epilepsy (high density of 5-HT2A receptors)
+- neurotransmitters: Glutamate, GABA
+- description: The claustrum is a thin, sheet-like structure that Francis Crick proposed as the 'conductor of consciousness' - integrating information from diverse cortical regions into unified conscious experience. It has connections with virtually all cortical areas. High density of 5-HT2A receptors (the target of psychedelics) suggests a role in altered states of consciousness. Its exact function remains one of neuroscience's biggest mysteries.
+
+### Nucleus Accumbens
+
+- name: Nucleus Accumbens
+- location: Ventral striatum, at junction of caudate and putamen
+- function: Reward processing, pleasure, motivation, addiction, reinforcement learning
+- associated_disorders: Addiction, depression (anhedonia), obesity, gambling disorder
+- neurotransmitters: Dopamine (primary), GABA, glutamate, endocannabinoids, opioids
+- description: The nucleus accumbens is the brain's pleasure center, integrating dopamine signals from the VTA with glutamate inputs from the prefrontal cortex and amygdala. It's central to reward-seeking behavior and addiction. All addictive drugs increase dopamine in the nucleus accumbens. Deep brain stimulation of the nucleus accumbens is being tested for treatment-resistant depression and addiction.
+
+### Entorhinal Cortex
+
+- name: Entorhinal Cortex
+- location: Medial temporal lobe, adjacent to hippocampus
+- function: Main gateway to hippocampus; grid cells for spatial navigation; memory consolidation
+- associated_disorders: Alzheimer's disease (very early affected region), epilepsy, schizophrenia
+- neurotransmitters: Glutamate, GABA, acetylcholine
+- description: The entorhinal cortex is the primary interface between the neocortex and hippocampus. Grid cells here create a hexagonal coordinate system for spatial navigation (Nobel Prize 2014). It's one of the first regions affected by Alzheimer's tau pathology, years before symptoms appear. This makes it a target for early Alzheimer's detection and intervention.
+
+### Pineal Gland
+
+- name: Pineal Gland
+- location: Midline, posterior to third ventricle
+- function: Melatonin production, circadian rhythm regulation, sleep-wake cycle
+- associated_disorders: Sleep disorders, seasonal affective disorder, circadian rhythm disruptions
+- neurotransmitters: Melatonin (hormone), serotonin (precursor)
+- description: The pineal gland produces melatonin from serotonin in response to darkness, regulating the circadian rhythm. Descartes famously called it the 'seat of the soul.' Pineal calcification increases with age and is visible on CT scans. Melatonin supplements are widely used for jet lag and insomnia. The pineal gland's role in circadian health is increasingly recognized as critical for overall wellbeing.
+
+### Ventromedial Prefrontal Cortex (vmPFC)
+
+- name: Ventromedial Prefrontal Cortex (vmPFC)
+- location: Medial frontal lobe, below the dorsomedial prefrontal cortex
+- function: Emotional decision-making, risk assessment, moral judgment, value-based choice, fear extinction
+- associated_disorders: Anxiety disorders, addiction, impaired social judgment, antisocial behavior
+- neurotransmitters: Serotonin, dopamine, GABA
+- description: The vmPFC is critical for integrating emotional signals into decision-making. Patients with vmPFC damage (e.g., Phineas Gage) show impaired judgment despite intact intellect. The vmPFC is central to fear extinction learning and is a target for anxiety disorder treatments. In 2025-2026, BCI research has explored vmPFC stimulation for treatment-resistant depression and anxiety.
+
+### Posterior Parietal Cortex (PPC)
+
+- name: Posterior Parietal Cortex (PPC)
+- location: Posterior parietal lobe
+- function: Sensorimotor integration, spatial awareness, attention, movement planning, coordinate transformation
+- associated_disorders: Neglect syndrome, apraxia, spatial disorientation
+- neurotransmitters: Glutamate, GABA, acetylcholine
+- description: The PPC integrates sensory information to create spatial representations and guide movement. It's a key BCI target for prosthetic control, as PPC neurons encode movement intentions before execution. BrainGate and other BCI groups have demonstrated that PPC recordings can decode intended reach directions, enabling thought-controlled robotic arms. The PPC is also central to attention networks.
+
+### Ventral Tegmental Area (VTA)
+
+- name: Ventral Tegmental Area (VTA)
+- location: Midbrain, medial to substantia nigra
+- function: Dopamine production, reward processing, motivation, addiction, learning
+- associated_disorders: Addiction, depression, schizophrenia, Parkinson's disease
+- neurotransmitters: Dopamine (primary), GABA, glutamate
+- description: The VTA is the brain's primary source of dopamine neurons projecting to the nucleus accumbens (mesolimbic pathway) and prefrontal cortex (mesocortical pathway). It's central to reward prediction error and reinforcement learning. VTA dysfunction underlies addiction (drugs hijack VTA dopamine signaling) and depression (reduced reward sensitivity). Deep brain stimulation of VTA-connected circuits is being explored for treatment-resistant depression.
+
+### Retrosplenial Cortex
+
+- name: Retrosplenial Cortex
+- location: Posterior cingulate region, behind the splenium of the corpus callosum
+- function: Spatial navigation, episodic memory, scene construction, orientation
+- associated_disorders: Alzheimer's disease (early atrophy), spatial disorientation, topographic amnesia
+- neurotransmitters: Glutamate, GABA
+- description: The retrosplenial cortex is critical for spatial navigation and converting between egocentric and allocentric reference frames. It's one of the first regions to show atrophy in Alzheimer's disease, often before hippocampal degeneration. This makes it a potential early biomarker for AD. The retrosplenial cortex works closely with the hippocampus and entorhinal cortex in the brain's navigation and memory system.
+
+### Claustrum
+
+- name: Claustrum
+- location: Thin sheet of neurons between insular cortex and putamen
+- function: Consciousness integration, cross-modal sensory binding, attention switching, cognitive control
+- associated_disorders: Consciousness disorders, epilepsy, disrupted sensory integration
+- neurotransmitters: Glutamate, GABA, acetylcholine
+- description: The claustrum is a thin, sheet-like structure that Francis Crick famously proposed as the 'conductor of consciousness' due to its extensive connectivity with nearly all cortical areas. Recent research (2025-2026) supports its role in integrating information across brain regions and coordinating conscious experience. Electrical stimulation of the claustrum can disrupt consciousness, and claustrum dysfunction is implicated in epilepsy and disorders of consciousness.
+
+### Ventromedial Prefrontal Cortex (vmPFC)
+
+- name: Ventromedial Prefrontal Cortex (vmPFC)
+- location: Medial frontal lobe, ventral to the genu of the corpus callosum
+- function: Emotion regulation, decision-making under risk, moral judgment, value-based choice, fear extinction
+- associated_disorders: Anxiety disorders, depression, addiction, impaired decision-making, antisocial behavior
+- neurotransmitters: Serotonin, dopamine, GABA, glutamate
+- description: The vmPFC is critical for integrating emotional signals into decision-making. It plays a central role in fear extinction (the basis of exposure therapy for anxiety disorders) and value-based decision-making. Damage to the vmPFC results in impaired emotional decision-making (as seen in patient Elliot, studied by Damasio). The vmPFC is a key target for neuromodulation therapies for depression and anxiety in 2025-2026.
+
+### Posterior Parietal Cortex (PPC)
+
+- name: Posterior Parietal Cortex (PPC)
+- location: Posterior parietal lobe (Brodmann areas 5, 7, 39, 40)
+- function: Spatial attention, sensorimotor integration, motor planning, spatial reasoning, navigation
+- associated_disorders: Spatial neglect, apraxia, BCI motor decoding target
+- neurotransmitters: Glutamate, GABA, acetylcholine
+- description: The PPC integrates sensory information to construct spatial representations and guide motor actions. It is a key brain region for BCI applications, as it encodes motor intention and spatial goals. In 2025-2026, the PPC has become an important target for BCI decoding of movement intention, complementing motor cortex signals for more naturalistic prosthetic control.
+
+### Ventral Tegmental Area (VTA)
+
+- name: Ventral Tegmental Area (VTA)
+- location: Midbrain, medial to substantia nigra
+- function: Reward processing, motivation, addiction, dopamine signaling, prediction error
+- associated_disorders: Addiction, depression, schizophrenia, Parkinson disease (non-motor symptoms)
+- neurotransmitters: Dopamine (primary), GABA, glutamate
+- description: The VTA is the origin of the mesolimbic dopamine pathway, the brains reward circuit. VTA dopamine neurons fire in response to unexpected rewards (prediction error), driving learning and motivation. Dysregulation of VTA signaling is central to addiction (drugs hijack this pathway) and depression (reduced reward sensitivity). In 2025-2026, VTA-targeted neuromodulation is being explored for treatment-resistant addiction.
+
+### Mammillary Bodies
+
+- name: Mammillary Bodies
+- location: Posterior hypothalamus, at the caudal end of the fornix
+- function: Memory consolidation, spatial memory, episodic memory recall, Papez circuit relay
+- associated_disorders: Wernicke-Korsakoff syndrome (thiamine deficiency), amnesia, alcohol-related brain damage
+- neurotransmitters: Glutamate, GABA, acetylcholine
+- description: The mammillary bodies are key relay stations in the Papez circuit for episodic memory. Damage causes profound amnesia, most famously in Wernicke-Korsakoff syndrome from thiamine deficiency (often alcohol-related). In 2025-2026, deep brain stimulation of the mammillary bodies and fornix is being explored for memory enhancement in Alzheimers disease, with early clinical trials showing modest improvements.
+
+### Pineal Gland
+
+- name: Pineal Gland
+- location: Midline, posterior to the third ventricle, near the corpora quadrigemina
+- function: Melatonin production, circadian rhythm regulation, sleep-wake cycle, seasonal timing
+- associated_disorders: Sleep disorders, circadian rhythm disruption, seasonal affective disorder, pineal tumors
+- neurotransmitters: Melatonin (hormone), serotonin (precursor)
+- description: The pineal gland produces melatonin from serotonin in response to darkness, regulating the circadian rhythm. In 2025-2026, pineal gland research has gained attention due to the growing recognition of circadian disruption in mental health, neurodegeneration, and cancer. Novel melatonin receptor agonists and light therapy protocols targeting pineal function are being developed for sleep and mood disorders.
+
+### MICrONS Project Connectome Map (Mouse Visual Cortex)
+
+- name: MICrONS Project Connectome Map (Mouse Visual Cortex)
+- location: Mouse visual cortex (V1 to higher visual areas)
+- function: Most detailed brain wiring diagram ever created; 500 million synapses mapped
+- disorders: Understanding cortical computation; basis for AI-inspired neural architectures
+- description: The MICrONS (Machine Intelligence from Cortical Networks) project, involving 150+ scientists, created the most detailed brain connectome map ever — a full wiring diagram of a piece of mouse visual cortex with 500 million synapses. Published in April 2025, this map reveals how neurons are connected and communicate, providing unprecedented insight into cortical computation. The dataset is publicly available and is being used to develop brain-inspired AI algorithms.
+- sources: [object Object]
+
+### Princeton Mouse Visual Connectome (500M Synapses)
+
+- name: Princeton Mouse Visual Connectome (500M Synapses)
+- location: Mouse visual cortex
+- function: Detailed synaptic-level connectome of visual processing circuits
+- disorders: Understanding visual processing disorders; basis for computational neuroscience models
+- description: Princeton scientists mapped half a billion connections in a tiny piece of mouse brain, creating one of the most detailed connectome maps ever produced. Published in April 2025, the map reveals the intricate wiring patterns of visual cortex neurons at synaptic resolution. This achievement demonstrates that comprehensive brain wiring diagrams are achievable and provides a foundation for understanding how neural circuits process information.
+- sources: [object Object]
+
+### Hopkins High-Resolution Developing Human Brain Atlas
+
+- name: Hopkins High-Resolution Developing Human Brain Atlas
+- location: Whole brain (developmental stages)
+- function: High-resolution atlas of the developing human brain
+- disorders: Neurodevelopmental disorders (autism, ADHD, schizophrenia origins)
+- description: Johns Hopkins researchers created a high-resolution atlas of the developing human brain, published in March 2026. This atlas maps brain development at unprecedented resolution, revealing how different brain regions form and connect during gestation and early life. It is critical for understanding the origins of neurodevelopmental disorders like autism, ADHD, and schizophrenia, which are increasingly understood as disorders of brain development.
+- sources: [object Object]
+
+### Human Brain Project Digital Brain Atlas
+
+- name: Human Brain Project Digital Brain Atlas
+- location: Whole brain (digital reconstruction)
+- function: Comprehensive digital atlas integrating multimodal brain data
+- disorders: Reference for neurological and psychiatric research
+- description: The Human Brain Project's digital brain atlas integrates multimodal data (structural, functional, molecular) into a comprehensive 3D reference of the human brain. The atlas enables researchers to navigate brain data across scales (from molecules to systems) and modalities (MRI, histology, gene expression). It serves as a foundational resource for neuroscience research and clinical applications, providing a common coordinate framework for brain data integration.
+- sources: [object Object]
+
+### Brain Entorhinal Cortex-Navigation System
+
+- name: Brain Entorhinal Cortex-Navigation System
+- location: Entorhinal cortex (medial temporal lobe)
+- function: Spatial navigation, grid cells, head direction cells, memory encoding
+- disorders: Alzheimer's disease (entorhinal cortex is first affected region); spatial disorientation
+- description: The entorhinal cortex contains grid cells that create an internal coordinate system for spatial navigation, discovered by May-Britt and Edvard Moser (2014 Nobel Prize). This region is the primary gateway for information flowing into the hippocampus and is the first brain area affected by Alzheimer's disease pathology. Understanding entorhinal cortex function is critical for both spatial navigation research and early Alzheimer's detection.
+- sources: [object Object]
+
+### Insular Cortex (Interoception and Emotion Hub)
+
+- name: Insular Cortex (Interoception and Emotion Hub)
+- location: Insular cortex (deep within lateral sulcus)
+- function: Interoception (body awareness), emotion, taste, pain processing, risk prediction
+- disorders: Anxiety disorders, addiction, interoceptive dysfunction, eating disorders
+- description: The insular cortex is a hidden brain region deep within the lateral sulcus that serves as a hub for interoception — the brain's ability to sense the body's internal states. It integrates bodily signals with emotional and cognitive processing, playing a key role in anxiety, addiction, and decision-making under uncertainty. The insula's role in interoception makes it a target for neuromodulation therapies for anxiety and addiction.
+- sources: [object Object]
+
+### Cerebellum (Beyond Motor Control)
+
+- name: Cerebellum (Beyond Motor Control)
+- location: Cerebellum (posterior fossa)
+- function: Motor coordination, balance, cognitive processing, language, emotional regulation
+- disorders: Ataxia, autism (cerebellar abnormalities), schizophrenia, dyslexia
+- description: The cerebellum, long known for motor coordination, is increasingly recognized for its role in cognitive processing, language, and emotional regulation. Research shows cerebellar abnormalities in autism, schizophrenia, and dyslexia, expanding its significance beyond motor control. The cerebellum contains more neurons than the rest of the brain combined and its computational architecture (uniform parallel processing) makes it a model for understanding neural computation.
+- sources: [object Object]
+
+### Default Mode Network (DMN)
+
+- name: Default Mode Network (DMN)
+- location: Medial prefrontal cortex, posterior cingulate, angular gyrus (distributed network)
+- function: Self-referential thinking, mind-wandering, episodic memory, social cognition
+- disorders: Depression (rumination), ADHD (reduced DMN suppression), Alzheimer's (DMN connectivity loss), schizophrenia
+- description: The Default Mode Network (DMN) is a large-scale brain network active during rest and self-referential thinking. DMN dysfunction is implicated in depression (excessive rumination), ADHD (failure to suppress DMN during tasks), and Alzheimer's disease (early connectivity loss in DMN). The DMN is a key target for neurofeedback and meditation-based interventions, and its study has transformed our understanding of brain function at rest.
+- sources: [object Object]
+
+### Ventral Tegmental Area (VTA) Reward Circuit
+
+- name: Ventral Tegmental Area (VTA) Reward Circuit
+- location: Ventral tegmental area (midbrain)
+- function: Dopamine production, reward processing, motivation, addiction
+- disorders: Addiction (dopamine dysregulation), depression (anhedonia), Parkinson's disease (dopamine neuron loss)
+- description: The Ventral Tegmental Area (VTA) is a key dopamine-producing region in the midbrain that drives reward processing, motivation, and reinforcement learning. VTA dopamine neurons project to the nucleus accumbens (mesolimbic pathway) and prefrontal cortex (mesocortical pathway). VTA dysfunction is central to addiction (dopamine hijacking), depression (reduced reward sensitivity), and Parkinson's disease (dopamine neuron degeneration). It is a target for DBS in treatment-resistant depression.
+- sources: [object Object]
+
+### Hypothalamus (Homeostatic Control Center)
+
+- name: Hypothalamus (Homeostatic Control Center)
+- location: Hypothalamus (diencephalon, below thalamus)
+- function: Temperature regulation, hunger, thirst, sleep, hormone release, circadian rhythm
+- disorders: Obesity, sleep disorders, thermoregulatory dysfunction, endocrine disorders
+- description: The hypothalamus is the brain's master regulatory center for homeostasis, controlling body temperature, hunger, thirst, sleep-wake cycles, and hormone release via the pituitary gland. It contains the suprachiasmatic nucleus (the body's master clock) and orexin-producing neurons that regulate wakefulness. Hypothalamic dysfunction contributes to obesity, narcolepsy, and endocrine disorders. Its small size belies its critical role in maintaining physiological balance.
+- sources: [object Object]
+
+### Subgenual Cingulate (Area 25)
+
+- name: Subgenual Cingulate (Area 25)
+- location: Ventral medial prefrontal cortex, below the genu of the corpus callosum
+- function: Depression circuit hub, emotional regulation, autonomic control, sadness processing
+- associated_disorders: Treatment-resistant depression (DBS target), bipolar disorder, OCD
+- neurotransmitters: Serotonin, dopamine, GABA, glutamate
+- description: The subgenual cingulate (Area 25) is a key hub in the depression circuit and the primary target for deep brain stimulation in treatment-resistant depression. Helen Mayberg identified Area 25 as hyperactive in depression, and DBS of this region has shown dramatic improvement in severely treatment-resistant patients. In 2025-2026, closed-loop DBS of Area 25 is advancing through clinical trials, with UCSF demonstrating biomarker-guided stimulation that adapts to the patients neural state.
+- sources: [object Object]
+
+### Fusiform Gyrus (Fusiform Face Area)
+
+- name: Fusiform Gyrus (Fusiform Face Area)
+- location: Temporal lobe, lateral fusiform gyrus
+- function: Face recognition, visual expertise, word recognition, object categorization
+- associated_disorders: Prosopagnosia (face blindness), autism (atypical face processing), Capgras syndrome
+- neurotransmitters: Glutamate, GABA
+- description: The fusiform gyrus contains the Fusiform Face Area (FFA), a specialized region for face recognition. Damage causes prosopagnosia (inability to recognize faces). In autism, the FFA shows atypical activation patterns, potentially explaining social cognition difficulties. 2025-2026 connectomics research reveals that the FFA is part of a broader social brain network that includes the amygdala, temporoparietal junction, and medial prefrontal cortex.
+- sources: [object Object]
+
+### Temporoparietal Junction (TPJ)
+
+- name: Temporoparietal Junction (TPJ)
+- location: Junction of temporal and parietal lobes, near the angular gyrus
+- function: Theory of mind, self-other distinction, attention reorienting, moral reasoning, agency detection
+- associated_disorders: Autism (theory of mind deficits), schizophrenia (agency confusion), spatial neglect
+- neurotransmitters: Glutamate, GABA, acetylcholine
+- description: The temporoparietal junction (TPJ) is critical for theory of mind (understanding others mental states) and self-other distinction. It activates when we reason about others beliefs, intentions, and emotions. In autism, TPJ dysfunction may underlie theory of mind deficits. In schizophrenia, TPJ abnormalities may contribute to misattributing internal thoughts to external agents. The TPJ is also involved in attention reorienting and is a target for TMS in spatial neglect rehabilitation.
+- sources: [object Object]
+
+### Periaqueductal Gray (PAG)
+
+- name: Periaqueductal Gray (PAG)
+- location: Midbrain, surrounding the cerebral aqueduct
+- function: Pain modulation, defensive behaviors (fight-flight-freeze), fear processing, opioid analgesia
+- associated_disorders: Chronic pain, PTSD, panic disorder, migraine
+- neurotransmitters: Opioid peptides, serotonin, GABA, glutamate, substance P
+- description: The periaqueductal gray (PAG) is the brains pain control center and a key structure in defensive behavior circuits. It mediates opioid analgesia and the fight-flight-freeze response. The PAG coordinates with the amygdala and prefrontal cortex in fear processing. In 2025-2026, DBS targeting the PAG is being explored for chronic neuropathic pain, and focused ultrasound targeting the PAG is being tested for PTSD and chronic pain without surgery.
+- sources: [object Object]
+
+### Olfactory Bulb
+
+- name: Olfactory Bulb
+- location: Anterior cranial fossa, above the nasal cavity
+- function: Olfaction (smell), sensory gateway to the brain, neurogenesis in adults
+- associated_disorders: Alzheimers (early smell loss), Parkinsons (early smell loss), Long COVID (anosmia), depression
+- neurotransmitters: Glutamate, GABA, dopamine
+- description: The olfactory bulb is the brains first relay station for smell information and one of the few brain regions where adult neurogenesis occurs. Early smell loss is one of the earliest symptoms of both Alzheimers and Parkinsons disease, often preceding motor or cognitive symptoms by years. Long COVID frequently causes anosmia through olfactory bulb damage. The olfactory bulbs unique access to the brain makes it a potential route for drug delivery and a biomarker for neurodegeneration.
+- sources: [object Object]
+
+### Subgenual Cingulate Area 25 (Brodmann Area 25)
+
+- name: Subgenual Cingulate Area 25 (Brodmann Area 25)
+- location: Medial prefrontal cortex, subgenual region
+- function: Mood regulation, emotional processing; target for deep brain stimulation in treatment-resistant depression
+- connectivity: Connected to amygdala, hypothalamus, orbitofrontal cortex, and brainstem monoamine centers
+- description: Brodmann Area 25 (subgenual cingulate) is a critical hub in the mood regulation network. UCSF researchers demonstrated that closed-loop deep brain stimulation (DBS) of Area 25 can produce sustained remission in treatment-resistant depression (published in Nature 2021). This finding has made Area 25 the primary target for next-generation neuromodulation therapies for depression, with multiple clinical trials ongoing in 2025-2026.
+- sources: [object Object]
+
+### Fusiform Gyrus (Face Recognition Area)
+
+- name: Fusiform Gyrus (Face Recognition Area)
+- location: Ventral temporal lobe; fusiform face area (FFA)
+- function: Face perception, facial recognition, visual expertise for categories
+- connectivity: Connected to occipital face area, superior temporal sulcus, amygdala, and prefrontal cortex
+- description: The fusiform gyrus contains the Fusiform Face Area (FFA), a specialized region for face perception. BCI research is increasingly targeting the fusiform gyrus for visual prosthetics and face recognition augmentation. Understanding FFA connectivity patterns is critical for developing BCIs that can restore or enhance visual processing, particularly for patients with prosopagnosia (face blindness).
+- sources: [object Object]
+
+### Entorhinal Cortex (Navigation System)
+
+- name: Entorhinal Cortex (Navigation System)
+- location: Medial temporal lobe; bordering the hippocampus
+- function: Spatial navigation, grid cell formation, memory consolidation, path integration
+- connectivity: Major input pathway to hippocampus; connected to presubiculum, parasubiculum, perirhinal cortex
+- description: The entorhinal cortex contains grid cells that create an internal coordinate system for spatial navigation, a discovery that earned the 2014 Nobel Prize. This region is critical for BCI applications in navigation and spatial memory restoration. Grid cell patterns are being studied for their potential to inform neural coding strategies in brain-computer interfaces, and entorhinal degeneration is an early marker for Alzheimer's disease.
+- sources: [object Object]
+
+### Hopkins Developing Human Brain Atlas (March 2026)
+
+- name: Hopkins Developing Human Brain Atlas (March 2026)
+- location: Comprehensive brain atlas covering developmental stages
+- function: Reference atlas for brain development research; mapping developmental trajectories
+- connectivity: Full-brain connectivity mapping across developmental stages
+- description: Johns Hopkins University published a developing human brain atlas in March 2026, providing the most detailed map of brain development from conception through adolescence. The atlas documents how brain regions form, connect, and mature over time, offering unprecedented insights into neurodevelopmental disorders and normal brain development. This resource is invaluable for BCI research targeting pediatric populations.
+- sources: [object Object]
+
+### MICrONS 500 Billion Synapse Connectome Map (April 2025)
+
+- name: MICrONS 500 Billion Synapse Connectome Map (April 2025)
+- location: 1 cubic millimeter of mouse visual cortex; 500 billion synaptic connections mapped
+- function: Most detailed synaptic-level connectome ever created; functional and structural mapping
+- connectivity: 200,000+ brain cells, 500 million synapses in 1mm³ of visual cortex
+- description: The MICrONS project published the most detailed connectome map ever created in April 2025, capturing over 200,000 brain cells and approximately 500 million synapses in a cubic millimeter of mouse visual cortex. This map reveals the wiring diagram at synaptic resolution, enabling researchers to understand how neural circuits process visual information. The dataset is freely available and has become a foundational resource for computational neuroscience and BCI development.
+- sources: [object Object]
+
+### Princeton Mouse Visual Connectome (500M Synapses)
+
+- name: Princeton Mouse Visual Connectome (500M Synapses)
+- location: Mouse visual cortex; cubic millimeter volume
+- function: Complete synaptic-level map of mouse visual processing circuits
+- connectivity: Every neuron and synapse mapped in the visual processing pathway
+- description: Princeton researchers mapped every neuron in a cubic millimeter of mouse brain, creating a connectome that promises to accelerate the study of normal brain function and disease. The map captures over 200,000 brain cells and approximately four kilometers of neural wiring. This achievement represents a new era in neuroscience where complete circuit diagrams can be used to understand information processing in the brain.
+- sources: [object Object]
+
+### Human Brain Project Digital Brain Atlas
+
+- name: Human Brain Project Digital Brain Atlas
+- location: Whole-brain digital reconstruction; European flagship project
+- function: Multi-scale digital reconstruction of the human brain for research and clinical applications
+- connectivity: Multi-resolution connectivity data from molecular to systems level
+- description: The Human Brain Project created a comprehensive digital brain atlas as part of its legacy, providing multi-scale reconstruction of the human brain. The atlas integrates data from molecular, cellular, and systems-level neuroscience into a unified digital framework. This resource supports BCI research by providing detailed anatomical and functional reference data for electrode placement and neural circuit targeting.
+- sources: [object Object]
+
+### Locus Coeruleus (蓝斑核)
+
+- name: Locus Coeruleus (蓝斑核)
+- location: Pons (脑桥)
+- function: Primary source of norepinephrine in the brain; arousal, attention, stress response
+- connections: Widespread projections to cortex, hippocampus, cerebellum, spinal cord
+- description: The locus coeruleus is a small nucleus in the pons that is the brain's primary source of norepinephrine (noradrenaline). Despite containing only about 50,000 neurons in humans, it has widespread projections throughout the brain and plays a critical role in arousal, attention, cognitive flexibility, and the stress response. Recent research has highlighted its role in Alzheimer's disease — it is one of the first brain regions to show tau pathology, potentially decades before cognitive symptoms appear.
+- sources: [object Object]
+
+### Claustrum (屏状核)
+
+- name: Claustrum (屏状核)
+- location: Between insular cortex and putamen
+- function: Integration of cross-modal information; potential role in consciousness
+- connections: Reciprocal connections with nearly all cortical areas
+- description: The claustrum is a thin sheet of neurons located between the insular cortex and the putamen. It has reciprocal connections with nearly every region of the cerebral cortex, making it a potential hub for integrating information across different sensory modalities. Francis Crick proposed that the claustrum could be the 'conductor of the cortical orchestra' — the structure that binds together disparate neural processes into unified conscious experience. Recent optogenetic studies have shown that claustrum activation can globally suppress cortical activity.
+- sources: [object Object]
+
+### Ventral Tegmental Area (VTA, 腹侧被盖区)
+
+- name: Ventral Tegmental Area (VTA, 腹侧被盖区)
+- location: Midbrain (中脑)
+- function: Dopamine production; reward, motivation, addiction
+- connections: Nucleus accumbens (mesolimbic), prefrontal cortex (mesocortical), amygdala
+- description: The ventral tegmental area (VTA) is a group of dopamine-producing neurons in the midbrain that play a central role in the brain's reward system. The mesolimbic pathway (VTA → nucleus accumbens) is the primary reward circuit, and the mesocortical pathway (VTA → prefrontal cortex) is involved in motivation and executive function. VTA dysfunction is implicated in addiction, depression, and schizophrenia. Deep brain stimulation of VTA-connected circuits is being explored for treatment-resistant depression.
+- sources: [object Object]
+
+### Subthalamic Nucleus (STN, 丘脑底核)
+
+- name: Subthalamic Nucleus (STN, 丘脑底核)
+- location: Diencephalon (间脑), below thalamus
+- function: Motor control, decision making, impulse control
+- connections: Globus pallidus, substantia nigra, motor cortex (indirect pathway)
+- description: The subthalamic nucleus is a small lens-shaped nucleus that plays a critical role in the indirect pathway of the basal ganglia motor circuit. It is the primary target for deep brain stimulation (DBS) in Parkinson's disease, where electrical stimulation can dramatically reduce tremor, rigidity, and bradykinesia. Recent research has also revealed the STN's role in decision-making under conflict — it acts as a 'brake' on action initiation when multiple competing options are present.
+- sources: [object Object]
+
+### Parabrachial Nucleus (臂旁核)
+
+- name: Parabrachial Nucleus (臂旁核)
+- location: Pons (脑桥), surrounding superior cerebellar peduncle
+- function: Threat detection, pain processing, respiratory regulation, taste
+- connections: Amygdala, thalamus, insular cortex, hypothalamus
+- description: The parabrachial nucleus is emerging as a critical hub for threat detection and negative emotional states. It receives nociceptive (pain) input from the spinal cord and relays it to the amygdala and other emotional processing centers. Recent research using optogenetics has shown that specific parabrachial neuron populations can drive threat avoidance behavior and anxiety-like states. The nucleus also plays a role in taste perception and respiratory regulation.
+- sources: [object Object]
+
+### Nucleus Accumbens (NAc, 伏隔核)
+
+- name: Nucleus Accumbens (NAc, 伏隔核)
+- location: Basal forebrain (前脑基底), part of ventral striatum
+- function: Reward processing, pleasure, addiction, motivation
+- connections: VTA (dopamine input), prefrontal cortex (glutamate input), amygdala
+- description: The nucleus accumbens is the primary component of the ventral striatum and is central to the brain's reward circuitry. It integrates dopaminergic signals from the VTA with glutamatergic inputs from the prefrontal cortex and amygdala to encode reward prediction, pleasure, and motivation. The NAc is the primary target of addictive drugs, which hijack the dopamine signaling system. Deep brain stimulation of the NAc is being investigated for treatment-resistant depression and addiction.
+- sources: [object Object]
+
+### Mammillary Bodies (乳头体)
+
+- name: Mammillary Bodies (乳头体)
+- location: Posterior hypothalamus (下丘脑后部)
+- function: Episodic memory, spatial navigation
+- connections: Hippocampus (via fornix), anterior thalamus (via mammillothalamic tract)
+- description: The mammillary bodies are small round nuclei in the posterior hypothalamus that play a crucial role in episodic memory. They are part of the Papez circuit (hippocampus → mammillary bodies → anterior thalamus → cingulate cortex → hippocampus). Damage to the mammillary bodies causes Korsakoff's syndrome, characterized by severe anterograde amnesia. Recent research has shown that the mammillary bodies are not just a relay station but actively process spatial and temporal information.
+- sources: [object Object]
+
+### Periaqueductal Gray (PAG, 导水管周围灰质)
+
+- name: Periaqueductal Gray (PAG, 导水管周围灰质)
+- location: Midbrain (中脑), surrounding cerebral aqueduct
+- function: Pain modulation, defensive behavior, fear response, opioid analgesia
+- connections: Spinal cord, amygdala, prefrontal cortex, hypothalamus
+- description: The periaqueductal gray (PAG) is a brainstem structure surrounding the cerebral aqueduct that plays a central role in pain modulation and defensive behavior. The PAG contains the endogenous opioid system and is the primary site of action for opioid analgesia. Different columns of the PAG organize different defensive responses: lateral PAG → fight/flight, ventrolateral PAG → passive coping (freezing), dorsolateral PAG → active coping. The PAG is also involved in migraine pathophysiology.
+- sources: [object Object]
+
+### Habenula (缰核)
+
+- name: Habenula (缰核)
+- location: Epithalamus (上丘脑), adjacent to pineal gland
+- function: Negative reward prediction, disappointment, depression
+- connections: VTA, raphe nuclei, substantia nigra, septal nuclei
+- description: The habenula is a small bilateral structure in the epithalamus that plays a critical role in negative reward prediction and disappointment. It is activated when expected rewards are not received, and it inhibits dopamine neurons in the VTA and serotonin neurons in the raphe nuclei. Hyperactivity of the habenula is associated with depression, and deep brain stimulation of the habenula has shown promise for treatment-resistant depression. The lateral habenula is considered a key node in the brain's anti-reward system.
+- sources: [object Object]
+
+### Entorhinal Cortex (内嗅皮层)
+
+- name: Entorhinal Cortex (内嗅皮层)
+- location: Medial temporal lobe (颞叶内侧), anterior to hippocampus
+- function: Grid cells for spatial navigation; gateway to hippocampus
+- connections: Hippocampus (perforant path), neocortex, olfactory bulb
+- description: The entorhinal cortex is the primary interface between the neocortex and the hippocampus, serving as the gateway for information entering and leaving the hippocampal memory system. It contains grid cells that create a hexagonal coordinate system for spatial navigation (discovered by May-Britt and Edvard Moser, Nobel Prize 2014). The entorhinal cortex is one of the first regions affected by Alzheimer's disease, with neurofibrillary tangles appearing here before symptoms develop. This explains why spatial disorientation is often an early sign of Alzheimer's.
+- sources: [object Object]
+
+### Dorsal Raphe Nucleus (中缝背核)
+
+- name: Dorsal Raphe Nucleus (中缝背核)
+- location: Midbrain (中脑), along midline
+- function: Primary source of serotonin; mood, sleep, appetite, cognition
+- connections: Widespread cortical and subcortical projections
+- description: The dorsal raphe nucleus is the largest serotonergic nucleus in the brain, containing approximately one-third of all serotonin-producing neurons. Its widespread projections influence virtually every aspect of brain function, including mood, sleep-wake cycles, appetite, cognition, and pain perception. SSRIs (selective serotonin reuptake inhibitors), the most widely prescribed antidepressants, primarily act by increasing serotonin availability at dorsal raphe projection sites. Recent research has revealed that different subpopulations of dorsal raphe neurons have distinct functions.
+- sources: [object Object]
+
+### Anterior Cingulate Cortex (ACC, 前扣带皮层)
+
+- name: Anterior Cingulate Cortex (ACC, 前扣带皮层)
+- location: Medial prefrontal cortex (前额叶内侧)
+- function: Error monitoring, conflict resolution, pain affect, empathy, effort allocation
+- connections: Prefrontal cortex, amygdala, insula, PAG, striatum
+- description: The anterior cingulate cortex (ACC) is a critical hub for cognitive control and emotional processing. It monitors for errors and conflicts between competing responses, signaling the need for increased cognitive control. The ACC is also central to the affective (emotional) component of pain — it processes how much pain bothers you, not where it hurts. Damage to the ACC can cause akinetic mutism (awake but unresponsive). The ACC is implicated in OCD, depression, and chronic pain conditions.
+- sources: [object Object]
+
+### Insular Cortex (岛叶皮层)
+
+- name: Insular Cortex (岛叶皮层)
+- location: Deep within lateral sulcus, hidden by opercula
+- function: Interoception, self-awareness, emotion, taste, risk prediction
+- connections: Amygdala, hypothalamus, ACC, prefrontal cortex, brainstem
+- description: The insular cortex (insula) is a hidden cortical structure that plays a central role in interoception — the sense of the body's internal states. The anterior insula is involved in emotional awareness and risk prediction, while the posterior insula processes physical sensations from the body. The insula is critical for self-awareness and subjective feeling states. It is activated in virtually every emotional experience and is implicated in anxiety disorders, addiction, and eating disorders. The right anterior insula is larger in humans than in other primates, suggesting a role in uniquely human self-awareness.
+- sources: [object Object]
+
+### Ventromedial Prefrontal Cortex (vmPFC, 腹内侧前额叶)
+
+- name: Ventromedial Prefrontal Cortex (vmPFC, 腹内侧前额叶)
+- location: Medial prefrontal cortex, ventral aspect
+- function: Emotional decision-making, value computation, fear extinction, social cognition
+- connections: Amygdala, hippocampus, ACC, striatum, hypothalamus
+- description: The ventromedial prefrontal cortex (vmPFC) is essential for emotional decision-making and value-based choices. Patients with vmPFC damage (like the famous case of Phineas Gage) can make rational calculations but make disastrous life decisions because they cannot integrate emotional information into their choices. The vmPFC is also critical for fear extinction — the process by which fear responses are unlearned. Dysfunction of the vmPFC is implicated in anxiety disorders, addiction, and antisocial behavior.
+- sources: [object Object]
+
+### Cerebellum (小脑) - Beyond Motor Control
+
+- name: Cerebellum (小脑) - Beyond Motor Control
+- location: Posterior cranial fossa, below occipital lobe
+- function: Motor coordination, but also: cognition, language, emotional regulation, social processing
+- connections: Cerebral cortex (via thalamus), brainstem, spinal cord
+- description: The cerebellum contains more neurons than the rest of the brain combined but was traditionally considered solely a motor control structure. Recent research has revealed that the cerebellum also plays important roles in cognition, language processing, emotional regulation, and social cognition. The 'cognitive cerebellum' hypothesis proposes that the cerebellum applies its error-correction and prediction capabilities to cognitive and emotional processes, just as it does for motor control. Cerebellar abnormalities are now linked to autism, schizophrenia, and dyslexia.
+- sources: [object Object]
+
+## bci
+
+### Neuralink N1
+
+- name: Neuralink N1
+- company: Neuralink
+- type: 侵入式
+- channels: 1024
+- status: 人体试验
+- applications: 瘫痪恢复, 视觉假体, 语音解码, 机械臂控制
+- description: Neuralink的N1植入物包含1024个电极，通过手术机器人植入运动皮层。2024年首位人类受试者Noland Arbaugh通过意念控制电脑光标和玩游戏。2025年第二位受试者展示了改进的信号稳定性。Neuralink正在开发视觉假体（Blindsight）和语音解码功能。2026年里程碑：BCI已从辅助医疗设备转向更广泛的应用探索。
+
+### BrainGate
+
+- name: BrainGate
+- company: BrainGate (Brown University / Stanford)
+- type: 侵入式
+- channels: 128 (Utah array)
+- status: 人体试验
+- applications: 打字控制, 机械臂, 语音解码, 光标控制
+- description: BrainGate是学术界最成熟的侵入式BCI，使用Utah阵列植入运动皮层。斯坦福团队2023年实现了95字/分钟的语音解码速度（接近正常语速150字/分钟）。BrainGate还演示了通过意念控制机械臂抓取物体。长期稳定性是主要挑战。
+
+### Synchron Stentrode
+
+- name: Synchron Stentrode
+- company: Synchron
+- type: 血管内
+- channels: 16
+- status: 人体试验（FDA Breakthrough Device）
+- applications: 文字输入, 设备控制, AI集成
+- description: Synchron的Stentrode通过颈静脉植入，无需开颅手术。它附着在血管壁上记录运动皮层信号。2023年患者通过Stentrode实现了Apple Vision Pro控制。Synchron获得了FDA Breakthrough Device认定。2026年，Synchron正在探索与AI的深度集成，让BCI用户通过思维直接调用AI助手。
+
+### Emotiv EPOC X
+
+- name: Emotiv EPOC X
+- company: Emotiv
+- type: 非侵入式EEG
+- channels: 14
+- status: 商用
+- applications: 研究, 游戏, 冥想, 情绪监测
+- description: Emotiv EPOC X是最广泛使用的消费级EEG头带，14通道湿电极。用于游戏、冥想辅助和情绪监测。虽然不能实现精确控制，但可以检测大致的认知状态（专注、放松、压力）。Emotiv还提供开发者SDK和云平台。
+
+### OpenBCI Cyton + Galea
+
+- name: OpenBCI Cyton + Galea
+- company: OpenBCI
+- type: 非侵入式EEG/fNIRS
+- channels: 16-32 (Cyton); 16 EEG + fNIRS (Galea)
+- status: 商用开源
+- applications: 研究, DIY, 神经反馈, 艺术装置
+- description: OpenBCI提供开源EEG硬件，Cyton板16通道，Galea头显结合EEG和fNIRS（功能性近红外光谱）。开源特性使其成为研究者和创客的首选。Galea是首个同时采集EEG和fNIRS数据的消费级设备。
+
+### Paradromics Connex Direct
+
+- name: Paradromics Connex Direct
+- company: Paradromics
+- type: 侵入式
+- channels: 65,536 (高密度微线阵列)
+- status: 人体试验准备（FDA Breakthrough Device）
+- applications: 语音解码, 运动恢复, 情绪障碍治疗
+- description: Paradromics的Connex Direct使用高密度微线阵列，提供65,536个记录通道——远超Neuralink的1024。目标是实现高带宽脑机通信，特别是语音解码（将思维直接转换为文字）。获得FDA Breakthrough Device认定。2025-2026年计划开始人体试验。
+
+### Blackrock Neurotech Neuralace
+
+- name: Blackrock Neurotech Neuralace
+- company: Blackrock Neurotech
+- type: 侵入式
+- channels: 10,000+ (Utah阵列升级版)
+- status: 人体试验
+- applications: 瘫痪恢复, 语音解码, 触觉恢复
+- description: Blackrock Neurotech是BCI领域的老牌公司，其Utah阵列已被用于BrainGate等研究数十年。Neuralace是新一代高密度阵列，提供10,000+通道。Blackrock的BCI系统已让多位瘫痪患者实现了光标控制和打字。2025年被收购后加速商业化。
+
+### NextMind (Apple收购)
+
+- name: NextMind (Apple收购)
+- company: NextMind → Apple
+- type: 非侵入式EEG
+- channels: 8 (视觉皮层靶向)
+- status: 商用（2020-2022）; Apple收购后开发中
+- applications: 视觉注意力追踪, AR/VR交互, 设备控制
+- description: NextMind开发了一种小型EEG传感器，贴在后脑勺上读取视觉皮层信号，可以检测用户正在注视的物体并实现意念控制。Apple于2023年收购NextMind，预计将技术集成到Vision Pro和未来设备中。这可能是Apple进入BCI领域的第一步。
+
+### Meta wrist-worn EMG
+
+- name: Meta wrist-worn EMG
+- company: Meta (CTRL-Labs收购)
+- type: 非侵入式EMG（肌电）
+- channels: 多通道EMG传感器
+- status: 研发中
+- applications: AR/VR输入, 手势控制, 无键盘打字
+- description: Meta于2019年收购CTRL-Labs，开发腕带式EMG传感器。它不直接读取大脑信号，而是读取从大脑传到手腕的运动神经信号，可以在手指移动之前就检测到意图。目标是实现AR/VR中的隐形输入——无需实际移动手指就能打字或控制设备。
+
+### NeuroPace RNS System
+
+- name: NeuroPace RNS System
+- company: NeuroPace
+- type: 侵入式（响应式神经刺激器）
+- channels: 4条导联，每条4个触点
+- status: FDA批准（癫痫治疗）
+- applications: 难治性癫痫, 未来: 抑郁症, 强迫症
+- description: NeuroPace RNS是FDA批准的首个响应式神经刺激器，植入颅骨内持续监测脑电活动，检测到癫痫发作前兆时自动发送电脉冲阻止发作。它是闭环BCI的先驱——不仅是记录，还能实时干预。正在探索扩展到抑郁症和强迫症治疗。
+
+### Neuralink Blindsight
+
+- name: Neuralink Blindsight
+- company: Neuralink
+- type: 侵入式（视觉假体）
+- channels: 1,000+ (视觉皮层植入)
+- status: 人体试验准备（FDA Breakthrough Device）
+- applications: 盲人视觉恢复
+- description: Neuralink的Blindsight项目旨在为盲人恢复视觉。通过在视觉皮层植入电极阵列，将摄像头图像转换为电刺激，让盲人感知光点和形状。获得FDA Breakthrough Device认定。目前只能提供低分辨率视觉（光点矩阵），但Neuralink计划逐步提高分辨率。
+
+### Science Corp (Max Hodak)
+
+- name: Science Corp (Max Hodak)
+- company: Science Corp
+- type: 侵入式（眼内植入+光遗传学）
+- channels: 光遗传学刺激视网膜神经节细胞
+- status: 临床前
+- applications: 视网膜疾病治疗, 视觉增强
+- description: Science Corp由Neuralink联合创始人Max Hodak创立，采用不同路径：通过眼内植入物结合光遗传学技术，将基因疗法和光电植入物结合来恢复视力。这种方法不需要开颅手术，而是通过眼科手术植入。Science Corp在2025年展示了令人印象深刻的动物实验结果。
+
+### Precision Neuroscience Layer 7
+
+- name: Precision Neuroscience Layer 7
+- company: Precision Neuroscience
+- type: 微创半侵入式（皮层表面）
+- channels: 1,024 (薄膜微电极阵列)
+- status: 人体试验
+- applications: 运动解码, 语音解码, 神经监测
+- description: Precision Neuroscience的Layer 7是一种薄膜微电极阵列，放置在大脑表面（硬膜下）而不穿透脑组织。这比Neuralink的穿透式植入更安全，可逆（可取出）。2025年在人体试验中成功记录了高分辨率脑信号。由前Neuralink工程师创立。
+
+### LumiMind LumiSleep
+
+- name: LumiMind LumiSleep
+- company: LumiMind
+- type: 非侵入式EEG（消费级）
+- channels: 消费级EEG传感器
+- status: CES 2026发布
+- applications: 睡眠优化, 实时听觉反馈, 失眠治疗
+- description: LumiMind的LumiSleep在CES 2026上亮相，是首个提供实时听觉反馈的消费级EEG设备。它监测睡眠脑电波，在检测到浅睡眠时播放特定声音来促进深度睡眠。代表了消费级神经技术的新趋势——从监测走向干预。
+
+### Cognixion ONE
+
+- name: Cognixion ONE
+- company: Cognixion
+- type: 非侵入式EEG + AR
+- channels: 多通道干电极EEG
+- status: FDA Breakthrough Device; 商用
+- applications: ALS/瘫痪患者通信, AR界面, 语音合成
+- description: Cognixion ONE是一款结合EEG和AR的BCI头显，专为ALS和瘫痪患者设计。用户通过脑电波控制AR界面进行交流，系统将意图转换为合成语音。获得FDA Breakthrough Device认定。它代表了非侵入式BCI在辅助通信领域的最前沿。
+
+### Intracortical Visual Prosthesis (Bionic Eye / Orion)
+
+- name: Intracortical Visual Prosthesis (Bionic Eye / Orion)
+- company: Second Sight / Vivani (formerly Second Sight)
+- type: 侵入式（视觉假体）
+- channels: 60+ 电极 (Orion: 皮层植入)
+- status: 人体试验; 公司经历破产重组
+- applications: 盲人视觉恢复 (RP, AMD)
+- description: Second Sight开发了Argus II视网膜植入物（已停产）和Orion视觉皮层植入物。Orion绕过眼睛和视神经，直接刺激视觉皮层，理论上可以帮助更多类型的盲人。公司经历了破产和重组，但Orion的临床数据证明了皮层视觉假体的可行性。
+
+### Synchron + AI Integration
+
+- name: Synchron + AI Integration
+- company: Synchron
+- type: 血管内BCI + AI
+- channels: 16 (Stentrode) + AI语言模型
+- status: 人体试验
+- applications: 思维直接调用AI, 自然语言交互, 意图预测
+- description: Synchron正在将BCI与AI语言模型深度集成，让用户通过思维直接调用AI助手。这不是简单的打字解码，而是让AI理解用户的意图并执行复杂任务。2026年，这种BCI+AI的融合被认为是下一代交互界面的方向——从'思维打字'进化到'思维对话'。
+
+### Neural Speech Decoding (Stanford/UCSF)
+
+- name: Neural Speech Decoding (Stanford/UCSF)
+- company: 学术研究 (Stanford, UCSF)
+- type: 侵入式（语音解码研究）
+- channels: 128-256 (ECoG + Utah阵列)
+- status: 人体试验
+- applications: 语音恢复, 思维转文字, 情感语音合成
+- description: 斯坦福和UCSF团队在语音解码方面取得重大突破。2023年，斯坦福团队实现了95字/分钟的解码速度；UCSF团队实现了情感语音合成（不仅解码文字，还保留语调情感）。这些成果让瘫痪患者重新'说话'成为可能，是BCI领域最令人兴奋的进展之一。
+
+### Closed-Loop DBS for Depression
+
+- name: Closed-Loop DBS for Depression
+- company: 多中心研究 (UCSF, Emory等)
+- type: 侵入式（深部脑刺激）
+- channels: 4-8 (DBS电极触点) + 闭环传感
+- status: 临床试验
+- applications: 难治性抑郁症, 双相障碍, 强迫症
+- description: 闭环深部脑刺激（DBS）是BCI的另一种形态：植入电极监测特定脑区活动，检测到抑郁症状的神经标志物时自动刺激。UCSF团队2021年在Nature报告了首例成功案例。与开环DBS不同，闭环系统只在需要时刺激，更有效且副作用更少。
+
+### UNESCO Neurotechnology Ethics Standard
+
+- name: UNESCO Neurotechnology Ethics Standard
+- company: UNESCO
+- type: 政策/伦理框架
+- channels: N/A
+- status: 2025年通过全球首个神经技术伦理标准
+- applications: 神经权利保护, 认知自由, 精神隐私
+- description: UNESCO于2025年通过了全球首个神经技术伦理标准，呼吁各国确保神经技术保持包容性和可及性。该标准涉及神经权利（neurorights）保护，包括认知自由、精神隐私、心理完整性和平等获取。智利已将神经权利写入宪法。这是BCI和神经技术领域最重要的政策里程碑。
+
+### CAS CEBSIT Invasive BCI
+
+- name: CAS CEBSIT Invasive BCI
+- type: BCI
+- company: Chinese Academy of Sciences / Huashan Hospital Fudan
+- key_findings: China's first-in-human invasive BCI clinical trial — second country after US, Implant 26mm diameter, <6mm thick — half the size of Neuralink N1, Ultra-flexible electrodes ~1% diameter of human hair, minimizing tissue damage, Patient (quadriamputee from electrical accident) can play chess and racing games using mind, Device stable since March 2025 implantation, no infection or electrode failure, Target market entry 2028 after regulatory approval
+- sources: [object Object]
+
+### 65,536-Electrode Wireless Subdural BCI
+
+- name: 65,536-Electrode Wireless Subdural BCI
+- type: BCI
+- company: Nature Electronics research team
+- key_findings: 50μm-thick flexible micro-ECoG BCI with 256×256 electrode array, 65,536 recording electrodes, 1,024 simultaneous channels, Wirelessly powered, bidirectional communication with external relay, Chronic recordings: 2 weeks in pigs, 2 months in behaving NHPs, Published in Nature Electronics December 2025
+- sources: [object Object]
+
+### Long-term Independent Intracortical BCI for ALS
+
+- name: Long-term Independent Intracortical BCI for ALS
+- type: BCI
+- company: Research team (bioRxiv preprint)
+- key_findings: ALS patient used multimodal BCI independently at home for 19 months, 3800+ hours, Communicated 183,060 sentences (1.96M words) at 56.1 words/minute average, 99.2% word accuracy in prompted task (125,000 word vocabulary), Transformer-based brain-to-text decoder outperformed prior RNN models, Participant maintained full-time employment despite paralysis
+- sources: [object Object]
+
+### Bidirectional BCI for Walking Exoskeleton
+
+- name: Bidirectional BCI for Walking Exoskeleton
+- type: BCI
+- company: UC Irvine / Rancho Los Amigos
+- key_findings: First bidirectional BCI restoring both brain-controlled walking AND leg sensory feedback, Uses bilateral interhemispheric ECoG implants over leg M1/S1 cortices, All operations executed on portable embedded system — fully untethered, Demonstrated in epilepsy patient 3 weeks post-implantation
+- sources: [object Object]
+
+### Neuralink High-Volume Production (2026)
+
+- name: Neuralink High-Volume Production (2026)
+- company: Neuralink
+- type: 侵入式
+- channels: 1024+
+- status: 量产启动
+- applications: 瘫痪恢复, 语音恢复, 视觉假体, 机械臂控制
+- description: Neuralink announced high-volume production of brain-computer interface devices starting in 2026, with plans to move to an almost entirely automated surgical procedure. With $650 million in funding, Neuralink received FDA Breakthrough Device Designation for speech restoration technology targeting severe speech impairments. The company launched its first clinical trial in the Middle East (UAE-PRIME) and aims to scale production and automate surgeries by late 2026.
+
+### Paradromics Connexus Direct Data Interface
+
+- name: Paradromics Connexus Direct Data Interface
+- company: Paradromics
+- type: 侵入式
+- channels: 数千通道
+- status: 临床试验启动
+- applications: 语音恢复, 严重运动障碍
+- description: Paradromics' Connexus Direct Data Interface entered clinical trials in November 2025, as reported by Nature. The device is designed to safely restore speech for people with severe motor impairments, positioning it as a direct rival to Neuralink. Paradromics uses a high-channel-count electrode array that can record from thousands of neurons simultaneously, enabling more detailed neural signal decoding for speech restoration.
+
+### Consumer EEG BCI Wave (2026)
+
+- name: Consumer EEG BCI Wave (2026)
+- company: Multiple (Neurable, Emotiv, etc.)
+- type: 非侵入式
+- channels: Variable (4-32 channels)
+- status: 商业化
+- applications: 游戏, 专注力训练, 睡眠监测, 认知评估
+- description: Consumer brain-computer interfaces gained significant momentum in 2026, with EEG-based devices like Neurable's licensed headset and Emotiv's platforms reaching market. The FDA has granted breakthrough device designations to multiple BCI companies, accelerating the path to market. Consumer BCIs focus on gaming, focus training, sleep monitoring, and cognitive assessment, representing the non-invasive counterpart to clinical implantable BCIs.
+
+### Ultrasound-Based Neuromodulation BCI
+
+- name: Ultrasound-Based Neuromodulation BCI
+- company: Multiple research groups
+- type: 非侵入式/聚焦超声
+- channels: N/A (focused ultrasound targeting)
+- status: 临床试验
+- applications: 抑郁症, 强迫症, 疼痛管理, 癫痫
+- description: Non-invasive focused ultrasound neuromodulation is hitting an inflection point in 2026 as FDA approvals advance and the technology moves from hype to clinical reality. Unlike EEG-based BCIs that only read brain signals, ultrasound neuromodulation can both read and write neural activity non-invasively by focusing acoustic energy on specific brain regions. This bidirectional capability makes it a potential game-changer for treating depression, OCD, and chronic pain without surgery.
+
+### Flexible Electrode BCI (2026 Trend)
+
+- name: Flexible Electrode BCI (2026 Trend)
+- company: Multiple (Neuralink, Synchron, academic groups)
+- type: 侵入式/柔性电极
+- channels: Variable
+- status: 临床试验/量产
+- applications: 长期植入, 减少组织损伤, 信号稳定性
+- description: Flexible electrode technology is a defining trend in BCI in 2026. The maturation of flexible neural electrode materials that minimize tissue scarring is enabling longer-lasting, more stable neural recordings. Neuralink's polymer threads and Synchron's stentrode both benefit from flexible electrode advances. This trend is critical for making BCIs viable as long-term medical devices rather than short-term research tools.
+
+### Brain Implants for Mental Health (2026 Trend)
+
+- name: Brain Implants for Mental Health (2026 Trend)
+- company: Multiple (research stage)
+- type: 侵入式/神经调控
+- channels: Variable
+- status: 早期研究
+- applications: 抑郁症, 强迫症, PTSD, 成瘾
+- description: A major trend to watch in 2026 is the application of brain implants for mental health conditions. Beyond paralysis and speech restoration, researchers are exploring BCI and neuromodulation implants for treatment-resistant depression, OCD, PTSD, and addiction. This represents a significant expansion of BCI applications from motor restoration to psychiatric treatment, raising both therapeutic promise and ethical considerations about brain intervention for behavioral conditions.
+
+### Columbia University Next-Gen BCI Chip
+
+- name: Columbia University Next-Gen BCI Chip
+- company: Columbia University
+- type: 侵入式/新一代硅芯片
+- channels: High-density silicon electrode array
+- status: 研究突破 2025-2026
+- applications: 人机交互, 神经疾病治疗, 高密度神经记录
+- description: Columbia University researchers announced a new generation of brain-computer interface based on silicon chips placed on the brain surface. The new implant stands to transform human-computer interaction and expand treatment possibilities for neurological conditions. The silicon chip approach offers high-density recording with improved biocompatibility and signal quality compared to traditional electrode arrays.
+
+### China National BCI Development Strategy
+
+- name: China National BCI Development Strategy
+- company: Chinese Government / Multiple institutions
+- type: 国家战略/政策
+- channels: N/A - policy framework
+- status: 发布2025; 目标2027年重大技术突破
+- applications: 脑机接口产业化, 医疗康复, 神经增强, 国防应用
+- description: China released a national BCI development strategy aiming for major technical breakthroughs by 2027 and to cultivate two or three globally competitive BCI companies. Reuters reported that China could see widespread use of brain-computer technology in 3-5 years. The strategy positions China as a major competitor to US BCI efforts (Neuralink, Synchron) with state-backed resources and rapid clinical translation.
+
+### BCI Neurofeedback for Cortical State Switching
+
+- name: BCI Neurofeedback for Cortical State Switching
+- company: Multiple research groups
+- type: 非侵入式/神经反馈
+- channels: EEG-based
+- status: 2026年突破
+- applications: 认知增强, 注意力训练, 冥想辅助, 精神健康
+- description: A 2026 breakthrough demonstrated that BCI neurofeedback enables users to learn voluntary control of cortical state switching. Users can transition between focused attention and relaxed states through real-time EEG feedback. This technology has applications in cognitive enhancement, meditation training, and mental health treatment, representing the convergence of BCI technology with contemplative neuroscience.
+
+### Paradromics Connex Direct Data Interface
+
+- name: Paradromics Connex Direct Data Interface
+- company: Paradromics
+- type: 侵入式/高带宽
+- channels: High-channel-count (targeting 10,000+ electrodes)
+- status: 进入临床试验 2026
+- applications: 语音恢复, 严重瘫痪, 高带宽神经通信
+- description: Paradromics has entered clinical trials with its Connex Direct Data Interface, a brain implant that could rival Neuralink. The device aims to safely restore speech for people with severe communication impairments. Unlike Neuralinks flexible polymer threads, Paradromics uses a different approach to achieve high-bandwidth neural recording. The entry of Paradromics into clinical trials expands the competitive landscape for invasive BCI technology.
+
+### FDA Breakthrough Device Designation Wave (2025-2026)
+
+- name: FDA Breakthrough Device Designation Wave (2025-2026)
+- company: Multiple BCI companies (Neuralink, Synchron, Paradromics, others)
+- type: 监管里程碑
+- channels: Various
+- status: 多家公司获得FDA突破性设备认定
+- applications: 加速BCI商业化, 语音恢复, 运动恢复, 视觉假体
+- description: The FDA has granted breakthrough device designations to multiple BCI companies in 2025-2026, accelerating the path to market. Neuralink received FDA Breakthrough Device Designation for its speech restoration technology. This regulatory momentum signals that the FDA views BCI as a promising medical technology category, reducing the typical 5-10 year regulatory timeline for novel medical devices.
+
+### China Approves World's First BCI Medical Device
+
+- name: China Approves World's First BCI Medical Device
+- company: Chinese medical device company (NMPA approved)
+- type: 侵入式/医疗器械
+- channels: Multi-channel (specifics pending)
+- status: NMPA approved March 2026; world's first BCI medical device
+- applications: 颈髓损伤四肢瘫痪, 手部抓握恢复, 运动功能重建
+- description: China approved the world's first brain-computer interface medical device in March 2026, designed for patients with cervical spinal cord injury resulting in quadriplegia. The device enables hand grasping function restoration through BCI. This is a landmark regulatory milestone — the first time any country has approved a BCI device as a medical product, setting a precedent for BCI commercialization worldwide. China's faster regulatory pathway for BCI contrasts with the FDA's more cautious approach.
+- sources: [object Object]
+
+### Neuralink Middle East Clinical Trial (UAE-PRIME)
+
+- name: Neuralink Middle East Clinical Trial (UAE-PRIME)
+- company: Neuralink
+- type: 侵入式
+- channels: 1024+
+- status: Launched first clinical trial in Middle East (UAE-PRIME)
+- applications: 瘫痪恢复, 语音恢复, 运动控制
+- description: Neuralink launched its first clinical trial in the Middle East, called UAE-PRIME, expanding beyond the US. This international expansion signals Neuralink's confidence in its technology and regulatory strategy. The trial will enroll patients with severe paralysis and test the N1 implant's ability to restore communication and motor control. Neuralink also announced $650 million in new funding and plans for high-volume production starting in 2026.
+- sources: [object Object]
+
+### Guardian 4 Ear-EEG + Cognitive Intelligence Platform
+
+- name: Guardian 4 Ear-EEG + Cognitive Intelligence Platform
+- company: Guardian (CES 2026)
+- type: 非侵入式/耳内EEG
+- channels: Multi-channel ear-EEG
+- status: CES 2026展示; 消费级
+- applications: 认知监测, 疲劳检测, 专注力评估, 脑健康追踪
+- description: The Guardian 4 earbuds, showcased at CES 2026, pair with a Cognitive Intelligence Platform that turns in-ear EEG signals into cognitive metrics. This represents a new generation of wearable neurotechnology that is comfortable enough for daily use while providing meaningful brain health data. Ear-EEG offers better signal quality than forehead EEG and is more socially acceptable than traditional EEG headsets, potentially enabling mass-market brain monitoring.
+- sources: [object Object]
+
+### BrainPatch 2026 Neuro-AI Industry Trends
+
+- name: BrainPatch 2026 Neuro-AI Industry Trends
+- company: BrainPatch
+- type: 行业趋势/分析
+- channels: N/A - industry analysis
+- status: Published 2026; comprehensive neurotechnology industry trends
+- applications: BCI产业化, AI-神经技术融合, 可穿戴EEG, 神经数据隐私
+- description: BrainPatch published comprehensive 2026 neurotechnology industry trends covering BCI, AI, neuromodulation, wearable EEG, and neural data privacy. Key findings: the most visible neurotechnology trend in 2026 is the maturation of BCIs; multimodal EEG analyzers are being cleared by regulators; agentic scribes are appearing in neurology clinics; and neural data privacy is emerging as a critical ethical and regulatory concern. The report identifies 2026 as a pivotal year for neurotechnology commercialization.
+- sources: [object Object]
+
+### Neuroba: 2026 as BCI Turning Point
+
+- name: Neuroba: 2026 as BCI Turning Point
+- company: Neuroba
+- type: 行业分析/预测
+- channels: N/A - industry analysis
+- status: Published 2026; predicts 2026 as 'year everything changes' for BCI
+- applications: BCI商业化, 消费级神经技术, 医疗BCI扩展
+- description: Neuroba published an analysis calling 2026 the year everything changes for brain-computer interfaces. The analysis points to converging factors: FDA breakthrough device designations accelerating approvals, Chinese BCI medical device approval, Neuralink mass production, and consumer EEG devices reaching market maturity. The convergence of regulatory progress, technological maturity, and commercial investment creates a unique inflection point for BCI technology.
+- sources: [object Object]
+
+### Multimodal EEG Analyzer (FDA Cleared 2026)
+
+- name: Multimodal EEG Analyzer (FDA Cleared 2026)
+- company: Multiple (2025-2026 clearances)
+- type: 非侵入式/多模态EEG分析
+- channels: Multi-channel EEG + AI analysis
+- status: FDA cleared 2025-2026; multimodal EEG analyzers entering clinical use
+- applications: 神经科诊断, 癫痫监测, 睡眠分析, 认知评估
+- description: Multimodal EEG analyzers that combine traditional EEG with AI-powered analysis have been cleared by the FDA in 2025-2026, marking a significant step for neuro-AI in clinical practice. These devices use machine learning to detect patterns in EEG data that human readers might miss, improving diagnostic accuracy for epilepsy, sleep disorders, and cognitive decline. The clearance of AI-enhanced EEG devices represents the integration of neurotechnology with clinical neurology.
+- sources: [object Object]
+
+### Agentic Scribes in Neurology Clinics (2026)
+
+- name: Agentic Scribes in Neurology Clinics (2026)
+- company: Multiple AI companies
+- type: AI辅助/神经科临床
+- channels: N/A - AI software
+- status: Deploying in neurology clinics 2026
+- applications: 神经科文档, 临床决策支持, 患者记录自动化
+- description: Agentic AI scribes are appearing in neurology clinics in 2026, automating clinical documentation and decision support. These AI assistants can transcribe patient encounters, suggest diagnostic codes, flag relevant clinical guidelines, and generate referral letters. In neurology specifically, they can help interpret EEG reports and track symptom progression over time. This represents the practical application of AI in clinical neuroscience, improving efficiency and reducing physician burnout.
+- sources: [object Object]
+
+### Neural Data Privacy (2026 Critical Issue)
+
+- name: Neural Data Privacy (2026 Critical Issue)
+- company: Multiple stakeholders (UNESCO, governments, companies)
+- type: 政策/伦理/隐私
+- channels: N/A - policy framework
+- status: Emerging as critical issue in 2026; UNESCO standards being implemented
+- applications: 神经权利保护, 精神隐私, 认知自由, 数据安全
+- description: Neural data privacy is emerging as a critical issue in 2026 as BCI devices generate unprecedented brain data. UNESCO's 2025 neurotechnology ethics standard provides a framework, but implementation varies by country. Key concerns include: who owns brain data, how to prevent unauthorized neural surveillance, and ensuring cognitive liberty. Chile has enshrined neurorights in its constitution, and other countries are considering similar legislation. The commercialization of BCI makes neural data privacy an urgent policy priority.
+- sources: [object Object]
+
+### Nonsurgical Brain Implant (Cell-Electronics Interface)
+
+- name: Nonsurgical Brain Implant (Cell-Electronics Interface)
+- company: Research team (Nature Biotechnology 2025)
+- type: 微创/细胞-电子接口
+- channels: Cell-scale electronic interface
+- status: Published Nature Biotechnology 2025; preclinical
+- applications: 脑刺激, 神经疾病治疗, 无需手术的神经接口
+- description: A groundbreaking study published in Nature Biotechnology 2025 demonstrated a nonsurgical brain implant enabled through a cell-electronics interface. Unlike traditional neural implants that require invasive surgery, this approach uses engineered cells that integrate with neural tissue and communicate with external electronics. The technology could transform brain stimulation treatments by eliminating the need for craniotomy, making neuromodulation accessible to a much broader patient population.
+- sources: [object Object]
+
+### First FDA-Cleared In-Ear EEG Device (2026)
+
+- name: First FDA-Cleared In-Ear EEG Device (2026)
+- company: Multiple (2026 milestone)
+- type: 非侵入式/耳内EEG
+- channels: Multi-channel in-ear EEG
+- status: FDA cleared 2026; first in-ear EEG device cleared
+- applications: 脑健康监测, 癫痫检测, 睡眠分析, 认知评估
+- description: An in-ear EEG device received FDA clearance for the first time in 2026, making brain monitoring far more portable and expanding access to neurological assessment. This regulatory milestone validates ear-EEG as a clinical-grade technology and opens the door for consumer brain health monitoring devices. In-ear EEG offers better signal quality than forehead EEG and is more socially acceptable than traditional EEG headsets.
+- sources: [object Object]
+
+### New Coating Extends Neural Implant Lifespan
+
+- name: New Coating Extends Neural Implant Lifespan
+- company: Research team (2025)
+- type: 植入物技术/涂层
+- channels: N/A - implant coating technology
+- status: Published 2025; extends implant lifespan in body
+- applications: 长期植入, 减少免疫反应, 信号稳定性
+- description: Researchers developed a new coating that significantly extends the lifespan of neural implants in the body. The findings demonstrate that bare-die silicon chips, when carefully designed with the new coating, can operate reliably in the body for months rather than weeks. This addresses one of the fundamental challenges for chronic neural implants: the foreign body response that degrades signal quality over time. The coating technology could dramatically improve the longevity and reliability of BCI devices.
+- sources: [object Object]
+
+### Neurotech Devices Market 2026 ($15.1B → $31B by 2033)
+
+- name: Neurotech Devices Market 2026 ($15.1B → $31B by 2033)
+- company: Industry-wide
+- type: 市场分析/行业趋势
+- channels: N/A - market analysis
+- status: Market valued at $15.1B in 2026; projected $31B by 2033 (CAGR 10.7%)
+- applications: 神经技术产业化, 投资趋势, 市场预测
+- description: The global neurotech devices market is valued at $15.15 billion in 2026 and is expected to reach $31 billion by 2033, growing at a CAGR of 10.7%. Key growth drivers include BCI commercialization, neuromodulation device approvals, consumer EEG devices, and AI-powered neurological diagnostics. The market expansion reflects the transition of neurotechnology from research labs to clinical and consumer markets.
+- sources: [object Object]
+
+### Emotiv BCI 2026 Applications Update
+
+- name: Emotiv BCI 2026 Applications Update
+- company: Emotiv
+- type: 非侵入式EEG
+- channels: 14-32 (EPOC X / EPOC Flex)
+- status: Commercial; expanding applications in 2026
+- applications: 医疗, 游戏, 研究, 辅助技术, 认知评估
+- description: Emotiv published a comprehensive 2026 update on brain-computer interface applications, covering healthcare, gaming, accessibility, and research. Key developments include expanded clinical applications for EEG-based diagnostics, integration with AI for real-time cognitive state monitoring, and new accessibility tools for ALS and paralysis patients. Emotiv also highlighted BCI neurofeedback for cortical state switching as a 2026 breakthrough, enabling users to learn voluntary control of attention and relaxation states.
+- sources: [object Object]
+
+### China NMPA First BCI Medical Device Approval
+
+- name: China NMPA First BCI Medical Device Approval
+- company: Chinese BCI company (NMPA approved)
+- type: Regulatory milestone / Medical device approval
+- channels: Invasive BCI; first regulatory approval for BCI as medical device
+- status: Approved March 2026; world first
+- applications: Medical BCI for neurological conditions, Sets global regulatory precedent
+- description: China's NMPA approved the world's first brain-computer interface as a medical device in March 2026. This landmark regulatory decision establishes a precedent for BCI medical device approval globally and positions China as a leader in BCI commercialization.
+
+### Neuralink PRIME Study (UAE)
+
+- name: Neuralink PRIME Study (UAE)
+- company: Neuralink
+- type: Clinical trial / International expansion
+- channels: 1,024 electrodes; N1 Implant
+- status: Recruiting; first international Neuralink trial
+- applications: BCI control of computer and robotic arm, Quadriplegia from spinal cord injury
+- description: Neuralink launched its PRIME feasibility trial in the UAE, extending BCI control using the N1 Implant. This is Neuralink's first clinical trial outside the US, investigating BCI control of a computer and robotic arm for people with quadriplegia.
+
+### BCI Neurofeedback Cortical State Switching
+
+- name: BCI Neurofeedback Cortical State Switching
+- company: Multiple research groups
+- type: Neurofeedback BCI / Cognitive enhancement
+- channels: Non-invasive EEG-based
+- status: Demonstrated 2026; breakthrough in voluntary brain state control
+- applications: Attention disorder treatment, Cognitive enhancement, Brain-state-dependent therapies
+- description: A 2026 breakthrough demonstrated that BCI neurofeedback enables users to voluntarily switch between cortical brain states. Users learn to modulate their neural activity patterns using real-time EEG feedback, effectively gaining conscious control over their brain states.
+
+### 65,536-Electrode Wireless Epidural BCI
+
+- name: 65,536-Electrode Wireless Epidural BCI
+- company: Research consortium (Nature Electronics)
+- type: High-density BCI / Wireless epidural
+- channels: 65,536 electrodes; wireless
+- status: Published Nature Electronics December 2025
+- applications: High-resolution brain recording, Minimally invasive BCI
+- description: A wireless epidural BCI with 65,536 electrodes — the highest count ever achieved. Epidural placement avoids penetrating brain tissue while capturing high-resolution signals. The wireless design eliminates percutaneous connectors, reducing infection risk.
+
+### ALS Patient Independent BCI Use (19 Months)
+
+- name: ALS Patient Independent BCI Use (19 Months)
+- company: Research group (bioRxiv preprint)
+- type: Clinical outcome / Long-term BCI study
+- channels: Invasive BCI; long-term home use
+- status: Published bioRxiv 2025-2026
+- applications: Sustained communication for ALS, Long-term BCI viability evidence
+- description: An ALS patient used a BCI independently for 19 months, accumulating over 3,800 hours of use — the longest documented period of independent BCI use. This demonstrates that BCIs can provide sustained, reliable communication for people with severe paralysis.
+
+### Bidirectional BCI Walking Exoskeleton
+
+- name: Bidirectional BCI Walking Exoskeleton
+- company: UC Irvine
+- type: Bidirectional BCI / Motor restoration
+- channels: Invasive; bidirectional (recording + stimulation)
+- status: Demonstrated 2025-2026
+- applications: Walking restoration, Sensory feedback for motor control
+- description: UC Irvine demonstrated a bidirectional BCI for controlling a walking exoskeleton with sensory feedback. The system records motor intentions and provides somatosensory feedback through cortical stimulation, creating a closed-loop system that significantly improves walking performance.
+
+### FDA Breakthrough Device Designation Wave (2025-2026)
+
+- name: FDA Breakthrough Device Designation Wave (2025-2026)
+- company: Multiple BCI companies
+- type: Regulatory milestone / Accelerated pathway
+- channels: Multiple modalities
+- status: Multiple designations granted 2025-2026
+- applications: Accelerated market access for BCI, Speech restoration, Motor restoration
+- description: The FDA granted breakthrough device designations to multiple BCI companies in 2025-2026, accelerating the path to market. Neuralink received designation for speech restoration technology. This wave signals FDA recognition of BCI as a promising medical technology category.
+
+### China BCI National Strategy (2027 Target)
+
+- name: China BCI National Strategy (2027 Target)
+- company: Chinese government
+- type: National strategy / Government initiative
+- channels: Multi-modal BCI
+- status: Announced 2025-2026; 2027 breakthrough targets
+- applications: Medical BCI, Consumer BCI, Military applications
+- description: China announced a comprehensive national BCI strategy with targets for breakthrough developments by 2027. The strategy covers medical, consumer, and military applications with significant government investment. The NMPA's first BCI medical device approval in March 2026 is an early outcome.
+
+### Nonsurgical Cell-Electronics Interface
+
+- name: Nonsurgical Cell-Electronics Interface
+- company: Research group (Nature Biotechnology)
+- type: Non-invasive BCI / Cell-electronics hybrid
+- channels: Engineered cells form electronic interface with neurons
+- status: Published Nature Biotechnology 2025
+- applications: Non-surgical BCI implantation, Expanded BCI accessibility
+- description: Published in Nature Biotechnology 2025, this nonsurgical approach uses engineered cells that form direct electronic connections with neurons. The cells are injected and then form stable electronic interfaces, potentially eliminating the need for brain surgery for BCI implantation.
+
+### Paradromics Connex Direct Data Interface
+
+- name: Paradromics Connex Direct Data Interface
+- company: Paradromics
+- type: Invasive BCI / High-bandwidth cortical
+- channels: High-channel-count cortical implant
+- status: Clinical trial initiated 2025
+- applications: Speech restoration for severe impairment, High-bandwidth neural recording
+- description: Paradromics entered clinical trials with its Connex Direct Data Interface, a high-bandwidth cortical implant for restoring speech in people with severe speech impairment. Nature reported this implant could rival Neuralink, expanding the competitive landscape for invasive BCIs.
+
+### Neuralink Mass Production 2026
+
+- name: Neuralink Mass Production 2026
+- company: Neuralink
+- type: 侵入式
+- channels: 1024
+- status: 量产启动2026; 自动化植入手术
+- applications: 瘫痪恢复, 视觉假体, 语音解码, 运动控制
+- description: Neuralink announced plans to start 'high-volume production' of brain-computer interface devices in 2026. Elon Musk stated that full automation of the implantation procedure will allow Neuralink to scale to thousands of implants per year. The automated surgical robot can implant the N1 chip in under an hour. By 2026, significantly faster adoption of the technology is expected, with the automated procedure reducing surgical time and expanding access beyond the initial clinical trial patients.
+- sources: [object Object]
+
+### Paradromics Connex Direct
+
+- name: Paradromics Connex Direct
+- company: Paradromics
+- type: 侵入式
+- channels: 数千通道 (高带宽)
+- status: 临床试验启动2025; Nature报道
+- applications: 语音恢复, 运动控制, 严重瘫痪
+- description: Paradromics' Connex Direct is a high-bandwidth brain-computer interface that enters clinical trials aimed at safely restoring speech for people with severe communication disabilities. The device uses a larger number of electrodes than Neuralink, providing higher bandwidth neural recording. Nature reported that this brain implant could rival Neuralink's technology. The clinical trial focuses on patients with ALS and severe paralysis who have lost the ability to speak.
+- sources: [object Object]
+
+### Flexible Electrode BCI (2026 Trend)
+
+- name: Flexible Electrode BCI (2026 Trend)
+- company: Multiple (Synchron, Precision Neuroscience, etc.)
+- type: 侵入式 (柔性电极)
+- channels: Variable (100-10,000+)
+- status: Key trend for 2026; better biocompatibility
+- applications: 长期植入, 信号质量改善, 组织损伤减少
+- description: Flexible electrode BCIs are a key trend for 2026, offering better biocompatibility and longer-term recording stability compared to rigid electrodes. Flexible electrodes conform to the brain's surface and move with the brain's natural pulsations, reducing tissue damage and immune response. Companies like Precision Neuroscience, Synchron, and academic groups are developing flexible electrode arrays that can record from thousands of neurons for years without degradation. This technology is critical for making BCIs practical for long-term clinical use.
+- sources: [object Object]
+
+### Brain Implants for Mental Health
+
+- name: Brain Implants for Mental Health
+- company: Multiple (academic and industry)
+- type: 侵入式 (深部脑刺激)
+- channels: 4-16 (DBS electrodes)
+- status: Emerging application 2026; clinical trials for depression, OCD
+- applications: 治疗抵抗性抑郁症, 强迫症, 成瘾, PTSD
+- description: Brain implants for mental health conditions are an emerging trend in 2026. Deep brain stimulation (DBS) is being tested for treatment-resistant depression, OCD, and addiction, with several clinical trials showing promising results. The approach uses implanted electrodes to modulate specific brain circuits involved in mood and compulsive behavior. Key targets include the subcallosal cingulate (for depression), the ventral capsule/ventral striatum (for OCD), and the nucleus accumbens (for addiction). This represents a paradigm shift from pharmaceutical to circuit-based treatment of mental illness.
+- sources: [object Object]
+
+### Chinese BCI Competition
+
+- name: Chinese BCI Competition
+- company: Multiple Chinese companies and institutions
+- type: 侵入式和非侵入式
+- channels: Variable
+- status: Rapid growth 2025-2026; government investment
+- applications: 医疗康复, 消费级应用, 军事
+- description: Chinese BCI companies and institutions are rapidly emerging as competitors to US-based firms like Neuralink and Synchron. The Chinese government has made significant investments in BCI technology as part of its brain science initiative. Chinese BCI efforts span both invasive and non-invasive approaches, with applications in medical rehabilitation, consumer devices, and defense. STAT News identified Chinese competition as one of three key trends to watch in BCI for 2026.
+- sources: [object Object]
+
+### Georgia Tech Wearable BCI
+
+- name: Georgia Tech Wearable BCI
+- company: Georgia Institute of Technology
+- type: 非侵入式 (可穿戴)
+- channels: EEG (flexible, wireless)
+- status: Demonstrated 2025-2026
+- applications: 日常脑监测, 神经反馈, 辅助技术
+- description: Georgia Tech has developed a new wearable brain-computer interface that uses flexible, wireless EEG sensors for comfortable, long-term brain monitoring. The device is designed for everyday use, unlike traditional bulky EEG caps. The wearable BCI can detect neural signals related to attention, fatigue, and emotional states, enabling applications in neurofeedback training, driver fatigue monitoring, and assistive technology for people with disabilities.
+- sources: [object Object]
+
+### BCI Neurofeedback for Cortical State Switching
+
+- name: BCI Neurofeedback for Cortical State Switching
+- company: Multiple research groups
+- type: 非侵入式 (神经反馈)
+- channels: EEG/fNIRS
+- status: Demonstrated 2026; users learn to switch cortical states
+- applications: 注意力训练, 冥想辅助, 认知增强
+- description: BCI neurofeedback enables users to learn cortical state switching — the ability to voluntarily transition between different brain states (e.g., focused attention vs. relaxed awareness). In 2026, new neurofeedback systems provide real-time feedback on brain state, allowing users to develop fine-grained control over their neural activity. This technology has applications in attention training for ADHD, meditation enhancement, peak performance training, and cognitive rehabilitation after brain injury.
+- sources: [object Object]
+
+### FDA Breakthrough Device Designation for BCIs
+
+- name: FDA Breakthrough Device Designation for BCIs
+- company: Multiple (Neuralink, Synchron, Paradromics, etc.)
+- type: 监管进展
+- channels: N/A
+- status: FDA granted breakthrough device designations to multiple BCI companies (2025-2026)
+- applications: 加速市场准入, 监管路径明确化
+- description: The FDA has granted breakthrough device designations to multiple BCI companies, accelerating the path to market. This designation provides priority review and more interactive communication with FDA during the development process. The EU MDR is also developing specific regulatory frameworks for BCI devices. The regulatory clarity is a major enabler for the BCI industry, providing clearer pathways from clinical trials to commercial approval.
+- sources: [object Object]
+
+### Transcranial Focused Ultrasound (tFUS) BCI
+
+- name: Transcranial Focused Ultrasound (tFUS) BCI
+- company: Multiple research groups and startups
+- type: 非侵入式 (聚焦超声)
+- channels: N/A (neuromodulation, not recording)
+- status: Clinical trials for depression, essential tremor, pain
+- applications: 神经调控, 抑郁症治疗, 特发性震颤, 慢性疼痛
+- description: Transcranial focused ultrasound (tFUS) is an emerging non-invasive BCI technology that can both stimulate and suppress neural activity in deep brain structures without surgery. Unlike TMS (which only reaches superficial cortex), tFUS can target deep structures like the thalamus, basal ganglia, and hippocampus. Clinical trials are underway for depression, essential tremor, and chronic pain. tFUS represents a paradigm shift in non-invasive brain stimulation, enabling precise targeting of deep brain circuits that were previously only accessible through surgery.
+- sources: [object Object]
+
+### Emotiv EEG Earbuds (Consumer BCI)
+
+- name: Emotiv EEG Earbuds (Consumer BCI)
+- company: Emotiv
+- type: 非侵入式 (耳戴式EEG)
+- channels: EEG (ear-based sensors)
+- status: Available 2025-2026; consumer market
+- applications: 日常脑监测, 冥想辅助, 注意力训练, 游戏
+- description: Emotiv has developed EEG earbuds that provide brain-computer interface capabilities in a consumer-friendly form factor. The ear-based EEG sensors measure brain activity from the ear canal, providing a more comfortable and discreet alternative to traditional EEG headsets. While the signal quality is lower than full-cap EEG, the earbuds enable continuous brain monitoring in everyday settings. Emotiv's CEO Tan Le has emphasized that consumer BCI is 'happening NOW' in 2026.
+- sources: [object Object]
+
+## neural_implants
+
+### Neuralink N1 Implant
+
+- name: Neuralink N1 Implant
+- company: Neuralink
+- type: 侵入式皮层内微电极阵列
+- material: 柔性聚合物电极线 (比头发丝更细)
+- channels: 1,024
+- implantation: R1手术机器人自动植入
+- status: 人体试验（2024年首位受试者）
+- applications: 瘫痪恢复, 视觉假体(Blindsight), 语音解码
+- description: Neuralink N1是当前最受关注的神经植入物。1,024个电极分布在96根柔性聚合物线上，由R1手术机器人精确植入运动皮层。2024年首位人类受试者Noland Arbaugh成功通过意念控制电脑光标。N1采用无线充电和蓝牙传输，完全植入皮下，无外部连线。约硬币大小。
+
+### Utah Array (Blackrock)
+
+- name: Utah Array (Blackrock)
+- company: Blackrock Neurotech
+- type: 侵入式微电极阵列
+- material: 硅基微针阵列 (4mm x 4mm, 100根微针)
+- channels: 100 per array (可多阵列组合)
+- implantation: 手动或气动植入
+- status: 人体试验（BrainGate等使用数十年）
+- applications: 运动解码, 语音解码, 基础研究
+- description: Utah阵列是BCI研究中最常用的侵入式电极，已有20+年人体使用经验。每根硅微针尖端镀铂记录单个神经元。缺点：刚性硅可能导致组织损伤和胶质疤痕；长期稳定性受限（信号质量随时间下降）。仍是学术研究的金标准。
+
+### Stentrode (Synchron)
+
+- name: Stentrode (Synchron)
+- company: Synchron
+- type: 血管内植入物
+- material: 镍钛合金自膨胀支架 + 电极
+- channels: 16
+- implantation: 通过导管经颈静脉植入（无需开颅）
+- status: 人体试验（FDA Breakthrough Device）
+- applications: 文字输入, 设备控制, AI集成
+- description: Stentrode是唯一不需要开颅手术的侵入式BCI植入物。它通过导管经颈静脉送入大脑血管，在运动皮层附近的血管壁上展开，记录皮层信号。这种微创植入方式大大降低了手术风险，是BCI走向临床普及的关键突破。
+
+### ECoG Strip/Grid
+
+- name: ECoG Strip/Grid
+- company: Multiple (PMT, Ad-Tech, DIXI Medical)
+- type: 半侵入式皮层表面电极
+- material: 铂/铱电极嵌入硅胶
+- channels: 32-256 (标准临床); 高密度可达1,000+
+- implantation: 开颅手术放置于硬膜下（不穿透脑组织）
+- status: 临床标准（癫痫定位）; BCI研究
+- applications: 癫痫手术定位, 语言映射, BCI研究
+- description: ECoG（皮层脑电图）电极是癫痫手术前定位的标准工具，放置在大脑表面（硬膜下）记录皮层活动。与穿透式电极不同，ECoG不损伤脑组织，信号质量介于EEG和皮层内记录之间。高密度ECoG正在成为BCI研究的重要工具。
+
+### Precision Neuroscience Layer 7
+
+- name: Precision Neuroscience Layer 7
+- company: Precision Neuroscience
+- type: 微创皮层表面薄膜阵列
+- material: 柔性薄膜微电极 (厚度<1mm)
+- channels: 1,024
+- implantation: 微创手术放置于硬膜外/硬膜下（可逆取出）
+- status: 人体试验
+- applications: 运动解码, 语音解码, 神经监测
+- description: Precision的Layer 7是一种超薄柔性薄膜微电极阵列，放置在大脑表面而不穿透脑组织。关键优势：可逆——可以通过微创手术取出。这解决了侵入式BCI最大的顾虑之一（永久植入）。2025年人体试验显示信号质量接近穿透式电极。
+
+### NeuroPace RNS Neurostimulator
+
+- name: NeuroPace RNS Neurostimulator
+- company: NeuroPace
+- type: 闭环响应式神经刺激器
+- material: 钛外壳 + 铂铱电极导联
+- channels: 4条导联 × 4触点 = 16 (记录+刺激)
+- implantation: 颅骨内植入 + 脑内导联
+- status: FDA批准（癫痫治疗）
+- applications: 难治性癫痫, 未来: 抑郁症, 强迫症
+- description: NeuroPace RNS是FDA批准的首个闭环神经刺激器。植入颅骨内，持续监测脑电活动，检测到癫痫发作模式时自动发送电脉冲阻止发作。它是'读取+写入'双向BCI的先驱。电池寿命约8年，可通过无线充电更新算法。
+
+### DBS Electrodes (Medtronic, Abbott, Boston Scientific)
+
+- name: DBS Electrodes (Medtronic, Abbott, Boston Scientific)
+- company: Medtronic (Percept), Abbott (Infinity), Boston Scientific (Vercise)
+- type: 深部脑刺激电极
+- material: 铂铱合金触点 + 钛脉冲发生器
+- channels: 4-8触点/电极 (方向性电极可达32触点)
+- implantation: 立体定向手术植入深部脑核团
+- status: FDA批准（帕金森, 震颤, 肌张力障碍, 强迫症）
+- applications: 帕金森病, 特发性震颤, 肌张力障碍, OCD, 抑郁症(研究)
+- description: 深部脑刺激（DBS）是最成熟的神经植入技术，已治疗20万+患者。新一代方向性电极可定向刺激特定脑区，减少副作用。Medtronic Percept具备感知功能（闭环DBS基础）。DBS正在扩展到抑郁症、阿尔茨海默病和成瘾治疗。
+
+### Cochlear Implant
+
+- name: Cochlear Implant
+- company: Cochlear, MED-EL, Advanced Bionics
+- type: 听觉神经假体
+- material: 铂电极阵列 + 钛接收器
+- channels: 12-24 电极触点
+- implantation: 乳突手术植入耳蜗
+- status: FDA批准（最成功的神经假体）
+- applications: 感音神经性耳聋, 人工耳蜗
+- description: 人工耳蜗是最成功的神经假体，已植入100万+患者。它绕过受损的毛细胞，直接刺激听神经。虽然提供的是'电子听觉'（不如自然听力），但让聋人能够理解语言。它是BCI和神经植入技术的成功先例，证明了大脑可以适应人工输入。
+
+### Retinal Implant (Argus II / PRIMA)
+
+- name: Retinal Implant (Argus II / PRIMA)
+- company: Second Sight (Argus II, 已停产) / Pixium Vision (PRIMA)
+- type: 视网膜假体
+- material: 微电极阵列 + 光电二极管
+- channels: 60 (Argus II); 378 photovoltaic pixels (PRIMA)
+- implantation: 眼科手术植入视网膜下/上
+- status: Argus II: 已停产; PRIMA: 临床试验
+- applications: 视网膜色素变性, 老年性黄斑变性
+- description: 视网膜植入物为视网膜疾病导致的盲人恢复部分视觉。Argus II是首个FDA批准的视网膜假体（60电极，已停产）。Pixium Vision的PRIMA使用光伏像素（378个），由外部眼镜投射红外光供电，无需体内电池。视觉分辨率仍然很低（光点矩阵），但在持续改进。
+
+### Vagus Nerve Stimulator (VNS)
+
+- name: Vagus Nerve Stimulator (VNS)
+- company: LivaNova (SenTiva), electroCore (gammaCore)
+- type: 迷走神经刺激器
+- material: 铂铱电极 + 钛脉冲发生器 (植入式); 经皮电极 (非植入式)
+- channels: 1-2 (迷走神经刺激)
+- implantation: 颈部手术（植入式）; 颈部皮肤贴附（非植入式）
+- status: FDA批准（癫痫, 抑郁症, 偏头痛, 簇状头痛）
+- applications: 难治性癫痫, 治疗抵抗性抑郁症, 偏头痛, 簇状头痛, 炎症
+- description: 迷走神经刺激器通过刺激迷走神经调节大脑活动。植入式VNS（LivaNova）用于癫痫和抑郁症；非植入式（electroCore gammaCore）用于偏头痛和簇状头痛。VNS的抗炎作用正在被探索用于自身免疫疾病。迷走神经是脑-体通信的主要通道。
+
+### Spinal Cord Stimulator
+
+- name: Spinal Cord Stimulator
+- company: Medtronic, Abbott, Boston Scientific, Nevro
+- type: 脊髓刺激器
+- material: 铂铱电极导联 + 钛脉冲发生器
+- channels: 8-32 触点
+- implantation: 硬膜外腔植入（微创）
+- status: FDA批准（慢性疼痛）
+- applications: 慢性疼痛, 失败背部手术综合征, 复杂区域疼痛综合征
+- description: 脊髓刺激器在脊髓硬膜外腔植入电极，发送电脉冲干扰疼痛信号传导至大脑。新一代设备采用高频刺激（10kHz, Nevro）和闭环感知（Evoke, Saluda）。脊髓刺激器是神经调控领域仅次于DBS的成功案例。
+
+### NeuroVista Seizure Advisory System
+
+- name: NeuroVista Seizure Advisory System
+- company: NeuroVista (澳大利亚)
+- type: 癫痫预警植入物
+- material: ECoG电极 + 皮下植入物
+- channels: 多通道ECoG
+- implantation: 硬膜下电极 + 胸部皮下设备
+- status: 临床试验（澳大利亚）
+- applications: 癫痫发作预警
+- description: NeuroVista系统持续监测脑电活动，在癫痫发作前数分钟至数小时发出预警。临床试验显示预警准确率可达80%以上。虽然公司已停止运营，但技术概念被其他公司继承。癫痫预警是闭环神经植入的重要应用方向。
+
+### Paradromics Connexus Implant
+
+- name: Paradromics Connexus Implant
+- company: Paradromics
+- type: 侵入式高通道微电极阵列
+- material: 高通道数电极阵列
+- channels: 数千
+- implantation: 手术植入
+- status: 临床试验（2025年Nature报道）
+- applications: 语音恢复, 严重运动障碍沟通
+- description: Paradromics的Connexus植入物进入临床试验阶段，被Nature报道为可能挑战Neuralink的脑植入物。该设备使用高通道数电极阵列，可同时记录数千个神经元的活动，专门设计用于恢复严重运动障碍患者的语音沟通能力。与Neuralink的柔性聚合物电极不同，Paradromics采用更传统的高密度电极阵列技术。
+
+### LumiMind LumiSleep (CES 2026)
+
+- name: LumiMind LumiSleep (CES 2026)
+- company: LumiMind
+- type: 消费级EEG睡眠设备
+- material: 干电极EEG传感器
+- channels: 多通道EEG
+- implantation: 非侵入式佩戴
+- status: CES 2026发布
+- applications: 睡眠辅助, 入睡过渡, 睡眠质量监测
+- description: LumiMind的LumiSleep在CES 2026上发布，是首个提供即时听觉反馈以促进睡眠过渡的消费级EEG设备。该设备通过实时监测脑电活动，在用户入睡过程中提供个性化的声音反馈，帮助加速入睡。LumiSleep代表了消费级神经技术从简单的脑电监测向主动干预的转变。
+
+### Guardian 4 Ear-EEG Earbuds
+
+- name: Guardian 4 Ear-EEG Earbuds
+- company: Multiple (CES 2026)
+- type: 耳内EEG监测设备
+- material: 入耳式EEG传感器
+- channels: 多通道耳内EEG
+- implantation: 非侵入式佩戴（耳塞式）
+- status: CES 2026展示
+- applications: 认知监测, 疲劳检测, 专注力评估, 脑健康追踪
+- description: CES 2026展示了新一代耳内EEG设备，如Guardian 4耳塞，配合认知智能平台将耳内EEG信号转化为认知指标。耳内EEG的优势在于佩戴舒适、日常可用，且耳道内电极信号质量优于额头EEG。这类设备代表了神经技术从专业医疗向日常消费级应用的过渡。
+
+### Closed-Loop Epilepsy Implant (Next Generation)
+
+- name: Closed-Loop Epilepsy Implant (Next Generation)
+- company: Multiple (NeuroPace, academic groups)
+- type: 闭环癫痫控制植入物
+- material: ECoG电极 + 植入式脉冲发生器
+- channels: 多通道ECoG + 刺激
+- implantation: 硬膜下植入
+- status: 临床试验/改进中
+- applications: 药物难治性癫痫, 癫痫发作预测与阻断
+- description: 新一代闭环癫痫植入物结合了改进的信号检测算法和更精确的刺激参数。NeuroPace的RNS系统是已获FDA批准的闭环癫痫设备，2025-2026年的改进版本利用机器学习算法提高发作预测准确率，缩短检测-刺激延迟，并减少误触发。闭环神经植入是神经调控领域最具前景的方向之一。
+
+### Neuralink Mass Production Implant (2026)
+
+- name: Neuralink Mass Production Implant (2026)
+- company: Neuralink
+- type: 侵入式/大规模生产版
+- material: 柔性聚合物电极线 (量产优化)
+- channels: 1,024+ (量产版可能增加)
+- implantation: 自动化手术机器人 (2026年目标：几乎全自动化)
+- status: 2026年开始大规模生产
+- applications: 瘫痪恢复, 语音恢复, 视觉假体, 运动控制
+- description: Elon Musk announced that Neuralink will begin high-volume production of brain-computer implants in 2026, with an almost entirely automated surgical procedure. The transition from manual to automated surgery is critical for scaling BCI deployment beyond a handful of research subjects. Neuralink also received FDA Breakthrough Device Designation for its speech restoration technology targeting severe speech impairments.
+
+### Columbia Silicon-on-Brain Implant
+
+- name: Columbia Silicon-on-Brain Implant
+- company: Columbia University
+- type: 侵入式/硅基皮层表面
+- material: 硅基微电极阵列 (新一代)
+- channels: High-density (specific count pending)
+- implantation: 皮层表面植入
+- status: 研究突破 2025-2026
+- applications: 高密度神经记录, 神经疾病治疗, 人机交互
+- description: Columbia University researchers announced a new generation of brain-computer interface using silicon chips placed on the brain surface. This approach differs from Neuralinks penetrating electrodes by using surface-mounted silicon arrays that reduce tissue damage while maintaining high signal quality. The silicon chip technology could transform human-computer interaction and expand treatment possibilities for neurological conditions.
+
+### Flexible Electrode Next Generation (2026)
+
+- name: Flexible Electrode Next Generation (2026)
+- company: Multiple (academic and industry)
+- type: 侵入式/柔性电极
+- material: 柔性聚合物/水凝胶涂层 (最小化组织瘢痕)
+- channels: Variable (scaling to thousands)
+- implantation: 皮层内植入 (微创)
+- status: 2026年关键技术趋势
+- applications: 长期植入, 减少免疫反应, 信号稳定性改善
+- description: Flexible neural electrode materials that minimize tissue scarring have matured significantly by 2025-2026. This is one of the three key trends to watch in BCI in 2026 (per STAT News). New materials including hydrogel coatings, conductive polymers, and ultra-flexible substrates reduce the foreign body response and enable longer-term stable recordings. This addresses one of the fundamental challenges for chronic neural implants.
+
+### Paradromics Connex Implant
+
+- name: Paradromics Connex Implant
+- company: Paradromics
+- type: 侵入式/高带宽神经接口
+- material: 微线电极阵列
+- channels: High-bandwidth (targeting 10,000+ channels)
+- implantation: 皮层内植入
+- status: 进入临床试验 2026
+- applications: 语音恢复, 严重瘫痪通信, 高带宽脑机接口
+- description: Paradromics has entered clinical trials with its Connex implant, aiming to safely restore speech for people with severe communication impairments. Nature reported that this brain implant could rival Neuralinks. Paradromics uses a different electrode technology (microwire arrays) to achieve high-bandwidth neural recording. The clinical trial entry marks a significant milestone for BCI commercialization beyond Neuralink.
+
+### Focused Ultrasound Neuromodulation Device
+
+- name: Focused Ultrasound Neuromodulation Device
+- company: Multiple (Infrasonix, BrainSonix, academic groups)
+- type: 非侵入式/聚焦超声神经调控
+- material: N/A (经颅超声)
+- channels: N/A (聚焦超声靶向特定脑区)
+- implantation: 非侵入式 (头戴式设备)
+- status: 2026年非侵入式神经技术拐点
+- applications: 神经调控, 抑郁症治疗, 癫痫控制, 认知增强
+- description: Non-invasive neurotech hits an inflection point in 2026 as focused ultrasound neuromodulation devices move from research to clinical applications. Unlike implanted electrodes, focused ultrasound can target deep brain structures (like the thalamus) without surgery. FDA approvals for ultrasound-based neuromodulation devices are expanding, making this a key technology to watch in the non-invasive BCI space.
+
+### Chinese BCI Implant (NEO System)
+
+- name: Chinese BCI Implant (NEO System)
+- company: NEO (Neural Electronic Opportunity) / Chinese institutions
+- type: 侵入式/国产脑机接口
+- material: 柔性电极
+- channels: Variable
+- implantation: 微创植入
+- status: 人体试验 2025-2026
+- applications: 瘫痪恢复, 运动控制, 中国BCI产业化
+- description: Chinas domestic BCI implant programs are advancing rapidly, with the NEO system and other Chinese-developed implants entering human trials in 2025-2026. Chinas national BCI strategy aims for widespread use within 3-5 years. Chinese BCI companies benefit from state backing, faster regulatory pathways, and large patient populations for clinical trials, creating a competitive alternative to US-based BCI companies.
+
+### China NMPA-Approved BCI Implant for Quadriplegia
+
+- name: China NMPA-Approved BCI Implant for Quadriplegia
+- company: Chinese medical device company (NMPA approved)
+- type: 侵入式/医疗器械批准
+- material: Multi-channel electrode array (specifics pending)
+- channels: Multi-channel
+- implantation: Surgical implantation
+- status: NMPA approved March 2026; world's first BCI medical device approval
+- applications: 颈髓损伤四肢瘫痪, 手部抓握恢复
+- description: China's NMPA approved the world's first BCI medical device in March 2026, specifically for patients with cervical spinal cord injury resulting in quadriplegia. The implant enables hand grasping function restoration. This regulatory milestone is significant because it represents the first time any regulatory body has approved a BCI implant as a medical device, potentially accelerating BCI commercialization globally.
+- sources: [object Object]
+
+### Neuralink Automated Surgical Robot (2026)
+
+- name: Neuralink Automated Surgical Robot (2026)
+- company: Neuralink
+- type: 手术机器人/自动化植入
+- material: N/A - surgical system
+- channels: N/A - surgical robot for N1 implant
+- implantation: Almost entirely automated surgical procedure (2026 target)
+- status: In development; targeting near-full automation by late 2026
+- applications: BCI植入自动化, 手术标准化, 大规模部署
+- description: Neuralink is developing an almost entirely automated surgical procedure for its N1 brain implant, targeting near-full automation by late 2026. The R1 surgical robot currently assists human surgeons in implanting the ultra-thin polymer electrode threads. Full automation is critical for scaling BCI deployment beyond a handful of research subjects to thousands or millions of patients. This represents a key step in making BCI implantation as routine as other neurosurgical procedures.
+- sources: [object Object]
+
+### Optogenetic Retinal Implant (Science Corp Advances)
+
+- name: Optogenetic Retinal Implant (Science Corp Advances)
+- company: Science Corp (Max Hodak)
+- type: 侵入式/光遗传学视网膜植入
+- material: Gene therapy + optoelectronic implant
+- channels: Optogenetic stimulation of retinal ganglion cells
+- implantation: Ophthalmic surgery (no craniotomy required)
+- status: Clinical trials advancing 2025-2026
+- applications: 视网膜疾病治疗, 视觉恢复, 视觉增强
+- description: Science Corp, founded by Neuralink co-founder Max Hodak, is advancing optogenetic retinal implants that combine gene therapy with optoelectronic devices. Unlike cortical visual prostheses (Neuralink Blindsight), Science Corp's approach targets the retina directly, requiring only ophthalmic surgery rather than craniotomy. The gene therapy makes retinal ganglion cells light-sensitive, and the implant provides patterned light stimulation. This approach could restore vision to patients with retinal degeneration without the risks of brain surgery.
+- sources: [object Object]
+
+### Nonsurgical Cell-Electronics Brain Interface
+
+- name: Nonsurgical Cell-Electronics Brain Interface
+- company: Research team (Nature Biotechnology)
+- type: 非手术/细胞-电子接口
+- material: Engineered cells + electronic interface
+- channels: Cell-scale resolution
+- implantation: Nonsurgical delivery method
+- status: Published Nature Biotechnology 2025; preclinical
+- applications: 神经调控, 脑疾病治疗, 无需手术的脑刺激
+- description: A nonsurgical brain implant enabled through a cell-electronics interface was published in Nature Biotechnology 2025. Bioelectronic implants for brain stimulation traditionally require invasive surgery, but this new approach uses engineered cells that integrate with neural tissue and communicate with external electronics. This could transform brain stimulation treatments by eliminating the need for craniotomy, making neuromodulation accessible to a much broader patient population.
+- sources: [object Object]
+
+### Extended-Lifespan Neural Implant Coating
+
+- name: Extended-Lifespan Neural Implant Coating
+- company: Research team
+- type: 植入物涂层/生物兼容性
+- material: Novel biocompatible coating for silicon neural implants
+- channels: N/A - coating technology applicable to any implant
+- implantation: Applied during implant manufacturing
+- status: Published 2025; demonstrated months-long reliable operation
+- applications: 长期植入, 减少免疫反应, 信号稳定性改善
+- description: A new coating technology significantly extends the lifespan of neural implants in the body. The findings demonstrate that bare-die silicon chips, when carefully designed with this coating, can operate reliably in the body for months rather than weeks. This addresses the fundamental challenge of the foreign body response that degrades signal quality over time in chronic neural implants. The coating could dramatically improve BCI device longevity and reliability.
+- sources: [object Object]
+
+### Neuralink Automated Surgical Robot (2026 Target)
+
+- name: Neuralink Automated Surgical Robot (2026 Target)
+- company: Neuralink
+- type: Surgical robot / Automated implantation
+- material: N/A (robotic system for N1 Implant insertion)
+- channels: Automated insertion of 1,024-thread N1 Implant
+- implantation: Robotic; near-fully automated surgery targeted for 2026
+- status: In development; Elon Musk announced high-volume production start 2026
+- applications: Mass production of brain implants, Automated surgical implantation, Scalable BCI deployment
+- description: Neuralink is developing an automated surgical robot for near-fully automated implantation of its N1 Implant. Elon Musk announced on December 31, 2025 that Neuralink would start high-volume production of brain-computer interfaces in 2026. The automated surgical system is key to scaling BCI deployment beyond specialized neurosurgical centers.
+
+### Columbia Silicon BCI Chip
+
+- name: Columbia Silicon BCI Chip
+- company: Columbia University
+- type: Silicon-based BCI chip / Next-generation
+- material: Silicon microelectrode array
+- channels: High-density silicon microelectrodes
+- implantation: Cortical implantation
+- status: Research prototype; next-generation BCI chip design
+- applications: High-precision neural recording, Next-generation BCI hardware
+- description: Columbia University developed a next-generation silicon-based BCI chip that advances the state of the art in neural recording technology. The chip uses advanced silicon microfabrication techniques to achieve high-density electrode arrays with improved signal quality and longevity compared to traditional microelectrode arrays.
+
+### China NEO System (Human Trials)
+
+- name: China NEO System (Human Trials)
+- company: Chinese research consortium
+- type: Minimally invasive BCI / Epidural
+- material: Flexible electrode array
+- channels: Epidural electrode array
+- implantation: Epidural (above dura); minimally invasive
+- status: Human trials ongoing; Chinese BCI development
+- applications: Motor restoration, Communication aid, Neurological rehabilitation
+- description: China's NEO (Neural Electronic Opportunity) system is a minimally invasive epidural BCI in human trials. The system uses flexible electrode arrays placed above the dura mater, avoiding direct brain tissue penetration. The NEO system is part of China's national BCI strategy and represents an alternative approach to fully invasive systems like Neuralink.
+
+### Neural Implant Coating for Extended Lifespan
+
+- name: Neural Implant Coating for Extended Lifespan
+- company: Multiple research groups
+- type: Implant coating / Longevity enhancement
+- material: Biocompatible anti-inflammatory coating
+- channels: Applicable to various implant types
+- implantation: Coating applied during manufacturing
+- status: Published 2025; extends functional implant lifespan
+- applications: Reducing glial scarring, Extending implant functional life, Improving chronic recording quality
+- description: Researchers developed a biocompatible coating for neural implants that significantly extends their functional lifespan by reducing the immune response and glial scarring that typically degrades implant performance over time. Published in 2025, this advancement addresses one of the major limitations of chronic neural implants — the gradual loss of signal quality due to tissue reaction.
+
+### Flexible Electrode Neural Implants (2026 Trend)
+
+- name: Flexible Electrode Neural Implants (2026 Trend)
+- company: Multiple companies and research groups
+- type: Flexible electrode / Next-generation implant
+- material: Flexible polymer and soft materials
+- channels: Various; flexible electrode arrays
+- implantation: Conformal brain surface contact; reduced tissue damage
+- status: Major trend in 2026; multiple groups developing
+- applications: Reduced tissue damage, Improved chronic recording, Conformal brain coverage
+- description: Flexible electrode neural implants are a major trend in 2026, with multiple groups developing soft, conformable arrays that match the mechanical properties of brain tissue. Unlike rigid silicon arrays, flexible electrodes reduce tissue damage, minimize immune response, and maintain better contact with the brain surface over time. This trend is highlighted as one of the three key BCI trends to watch in 2026.
+
+### Precision Neuroscience Layer 7
+
+- name: Precision Neuroscience Layer 7
+- company: Precision Neuroscience
+- type: 微创皮层接口
+- channels: 1,024 per array; multiple arrays possible
+- material: Flexible thin-film electrode array
+- status: Clinical trials 2025-2026; sits on brain surface without penetration
+- description: Precision Neuroscience's Layer 7 is a minimally invasive brain-computer interface that sits on the surface of the brain (epidural or subdural space) without penetrating brain tissue. The flexible thin-film electrode array conforms to the brain's surface and can record high-density neural signals. Because it doesn't penetrate brain tissue, it's potentially reversible and safer than penetrating electrode arrays. The device is designed to be implanted through a small craniotomy and can be removed if needed.
+- sources: [object Object]
+
+### Synchron Stentrode
+
+- name: Synchron Stentrode
+- company: Synchron
+- type: 血管内植入
+- channels: 16 electrodes
+- material: Nitieol stent with electrode sensors
+- status: FDA Breakthrough Device; clinical trials ongoing
+- description: Synchron's Stentrode is a unique endovascular BCI that is implanted through the jugular vein and deploys in the superior sagittal sinus, adjacent to the motor cortex. Because it's implanted through blood vessels, it doesn't require open brain surgery — a major safety advantage. The Stentrode has received FDA Breakthrough Device designation and is in clinical trials for patients with severe paralysis. It was the first BCI to receive FDA Investigational Device Exemption for a permanently implanted BCI.
+- sources: [object Object]
+
+### BrainGate2 Neural Interface System
+
+- name: BrainGate2 Neural Interface System
+- company: BrainGate Consortium (Brown University, Stanford, etc.)
+- type: 侵入式皮层内微电极
+- channels: 96-128 electrodes (Utah array)
+- material: Silicon microelectrode array
+- status: Longest-running human BCI trials; over 15 years of research
+- description: BrainGate2 is the continuation of the BrainGate clinical trial, the longest-running human BCI research program. The consortium has demonstrated that people with paralysis can use BCI to control computer cursors, robotic arms, and typing interfaces with their thoughts. Recent achievements include decoding attempted handwriting at 90 characters per minute and demonstrating stable recording for over 5 years in some participants. BrainGate provides the foundational research that informs commercial BCI development.
+- sources: [object Object]
+
+### Neuropixels 2.0 (High-Density Neural Probe)
+
+- name: Neuropixels 2.0 (High-Density Neural Probe)
+- company: Imec / HHMI Janelia / Allen Institute / UCL
+- type: 研究用高密度神经探针
+- channels: 5,120 sites per probe; 4 probes per animal
+- material: CMOS silicon probe
+- status: Available for research 2023-2026; transforming neuroscience
+- description: Neuropixels 2.0 probes are the most advanced neural recording probes available, with 5,120 recording sites on a single shank thinner than a human hair. Four probes can record from over 20,000 neurons simultaneously in a single animal. The probes have revolutionized systems neuroscience by enabling large-scale, high-density recording of neural activity across multiple brain regions. They are used by hundreds of laboratories worldwide and are essential for understanding how neural circuits process information.
+- sources: [object Object]
+
+### Closed-Loop DBS for Epilepsy (NeuroPace RNS)
+
+- name: Closed-Loop DBS for Epilepsy (NeuroPace RNS)
+- company: NeuroPace
+- type: 闭环深部脑刺激
+- channels: 4 cortical strip leads + depth leads
+- material: Titanium-encased neurostimulator
+- status: FDA approved for focal epilepsy; expanding indications
+- description: The NeuroPace RNS System is the first closed-loop brain-responsive neurostimulator approved by the FDA. It continuously monitors brain activity and delivers targeted electrical stimulation when it detects patterns that could lead to a seizure. The closed-loop approach is more effective and has fewer side effects than continuous stimulation. The device has been shown to reduce seizure frequency by 50% or more in the majority of patients. Research is expanding its use to depression and other neurological conditions.
+- sources: [object Object]
+
+## brain_disorders
+
+### Alzheimer's Disease
+
+- name: Alzheimer's Disease
+- type: Neurodegenerative
+- prevalence: 55M+ globally (all dementias); AD ~60-70% of cases
+- brain_regions: Hippocampus, Entorhinal Cortex, Default Mode Network, Prefrontal Cortex
+- key_proteins: Amyloid-β plaques, Tau neurofibrillary tangles
+- treatments: Leqembi (lecanemab, 2023 FDA), Kisunla (donanemab, 2024 FDA), cholinesterase inhibitors
+- description: Alzheimer's is the most common cause of dementia, characterized by progressive memory loss and cognitive decline. Amyloid plaques and tau tangles accumulate decades before symptoms. Leqembi and Kisunla (anti-amyloid antibodies) are the first disease-modifying treatments, slowing decline by ~27-35%. Early detection via blood tests (p-tau217) is transforming diagnosis. BCI and neurotechnology approaches include deep brain stimulation and cognitive prosthetics.
+
+### Parkinson's Disease
+
+- name: Parkinson's Disease
+- type: Neurodegenerative
+- prevalence: 10M+ globally
+- brain_regions: Substantia Nigra, Basal Ganglia, Motor Cortex
+- key_proteins: α-synuclein (Lewy bodies)
+- treatments: L-DOPA, DBS, MAO-B inhibitors, duodopa infusion, focused ultrasound
+- description: Parkinson's results from loss of dopamine neurons in the substantia nigra. Motor symptoms (tremor, rigidity, bradykinesia) appear after ~60% neuron loss. DBS is the most effective surgical treatment. New approaches include focused ultrasound (MRgFUS) for tremor, gene therapy (AADC gene), and stem cell transplantation. BCI research is exploring closed-loop DBS that adapts to symptom fluctuations.
+
+### Major Depressive Disorder (MDD)
+
+- name: Major Depressive Disorder (MDD)
+- type: Psychiatric
+- prevalence: 280M+ globally (WHO)
+- brain_regions: Prefrontal Cortex, Amygdala, Hippocampus, Default Mode Network, Nucleus Accumbens
+- key_neurotransmitters: Serotonin, norepinephrine, dopamine, glutamate
+- treatments: SSRIs, SNRIs, ketamine/esketamine (Spravato), TMS, DBS (research), psilocybin (research)
+- description: Depression is the leading cause of disability worldwide. While SSRIs help many, ~30% have treatment-resistant depression (TRD). Ketamine/esketamine provides rapid relief (hours vs weeks for SSRIs). TMS is FDA-approved for TRD. Psilocybin-assisted therapy shows remarkable results in clinical trials. Closed-loop DBS targeting the subcallosal cingulate is being developed for severe TRD.
+
+### Schizophrenia
+
+- name: Schizophrenia
+- type: Psychiatric
+- prevalence: 24M globally
+- brain_regions: Prefrontal Cortex, Hippocampus, Auditory Cortex, Thalamus
+- key_neurotransmitters: Dopamine (hyperactive in striatum, hypoactive in PFC), glutamate, serotonin
+- treatments: Antipsychotics (typical/atypical), clozapine (treatment-resistant), CBT, social support
+- description: Schizophrenia involves positive symptoms (hallucinations, delusions), negative symptoms (apathy, social withdrawal), and cognitive deficits. The dopamine hypothesis explains positive symptoms; glutamate/NMDA dysfunction may underlie cognitive deficits. Clozapine is most effective for treatment-resistant cases but has serious side effects. New muscarinic agonists (KarXT) show promise.
+
+### Autism Spectrum Disorder (ASD)
+
+- name: Autism Spectrum Disorder (ASD)
+- type: Neurodevelopmental
+- prevalence: 1 in 36 children (US CDC, 2023)
+- brain_regions: Prefrontal Cortex, Amygdala, Cerebellum, Corpus Callosum, Insula
+- key_features: Altered connectivity (local over-connectivity, long-range under-connectivity), early brain overgrowth
+- treatments: Behavioral therapy (ABA), speech therapy, occupational therapy; no approved medications for core symptoms
+- description: ASD is characterized by social communication difficulties and restricted/repetitive behaviors. Brain imaging shows atypical connectivity patterns and early brain overgrowth. No medications treat core symptoms; current drugs only address associated symptoms (irritability, ADHD). TMS and neurofeedback are being explored. The neurodiversity movement advocates for acceptance rather than 'cure.'
+
+### Epilepsy
+
+- name: Epilepsy
+- type: Neurological
+- prevalence: 50M globally
+- brain_regions: Multiple (depends on seizure type), Temporal lobe (most common), Motor Cortex
+- key_features: Abnormal synchronous neuronal firing; seizures can be focal or generalized
+- treatments: Anti-seizure medications, DBS (Medtronic), VNS, RNS (NeuroPace), surgery, ketogenic diet
+- description: Epilepsy is characterized by recurrent seizures. ~30% of patients are drug-resistant. Neurotechnology plays a major role: NeuroPace RNS (closed-loop stimulation), DBS (open-loop), VNS, and laser ablation (Visualase). AI-powered seizure prediction is advancing rapidly. BCI approaches aim to detect and abort seizures before they occur.
+
+### Stroke
+
+- name: Stroke
+- type: Cerebrovascular
+- prevalence: 12.2M new strokes/year globally
+- brain_regions: Variable (depends on affected artery), Motor Cortex, Language Areas, Basal Ganglia
+- key_features: Ischemic (87%) or hemorrhagic (13%); penumbra (salvageable tissue) is treatment target
+- treatments: tPA (thrombolysis), thrombectomy, rehabilitation, TMS, BCI-assisted motor recovery
+- description: Stroke is the second leading cause of death and a major cause of disability. Thrombectomy (mechanical clot removal) has revolutionized acute treatment. BCI and neurotechnology are advancing stroke rehabilitation: TMS to enhance plasticity, BCI-driven robotic therapy, and vagus nerve stimulation paired with rehabilitation to promote motor recovery.
+
+### Traumatic Brain Injury (TBI)
+
+- name: Traumatic Brain Injury (TBI)
+- type: Neurological/Neurotrauma
+- prevalence: 69M TBI cases/year globally
+- brain_regions: Prefrontal Cortex, Temporal Lobes, White Matter (diffuse axonal injury), Brainstem
+- key_features: Concussion to severe injury; diffuse axonal injury; chronic traumatic encephalopathy (CTE)
+- treatments: Acute: surgery, ICP monitoring; Chronic: cognitive rehabilitation, symptom management
+- description: TBI ranges from mild concussion to severe injury. Repeated concussions can cause CTE (chronic traumatic encephalopathy), seen in athletes and military personnel. Blood biomarkers (GFAP, UCH-L1) are improving diagnosis. Neurotechnology approaches include EEG-based concussion assessment, TMS for post-concussion symptoms, and BCI for severe TBI rehabilitation.
+
+### PTSD (Post-Traumatic Stress Disorder)
+
+- name: PTSD (Post-Traumatic Stress Disorder)
+- type: Psychiatric / Trauma-related
+- prevalence: 3.9% global lifetime prevalence; higher in veterans and trauma survivors
+- brain_regions: Amygdala, Hippocampus, Prefrontal Cortex, Insula, Anterior Cingulate
+- key_features: Hyperactive amygdala, hypoactive prefrontal cortex, smaller hippocampus
+- treatments: Exposure therapy, EMDR, SSRIs, MDMA-assisted therapy (Phase 3 breakthrough), stellate ganglion block
+- description: PTSD involves persistent re-experiencing, avoidance, and hyperarousal after trauma. Neurobiologically, the amygdala is hyperactive while the prefrontal cortex fails to regulate it. MDMA-assisted therapy (MAPS) achieved breakthrough results in Phase 3 trials and is expected to receive FDA approval. This would be the first psychedelic-assisted therapy approved for PTSD.
+
+### ALS (Amyotrophic Lateral Sclerosis)
+
+- name: ALS (Amyotrophic Lateral Sclerosis)
+- type: Neurodegenerative
+- prevalence: ~30,000 in US; 2 per 100,000 globally
+- brain_regions: Motor Cortex, Brainstem, Spinal Cord (motor neurons)
+- key_proteins: TDP-43, SOD1, C9orf72
+- treatments: Riluzole, edaravone, Qalsody (SOD1 antisense), Relyvrio (AMX0035), BCI for communication
+- description: ALS causes progressive degeneration of motor neurons, leading to paralysis while cognition often remains intact. BCI is critically important for ALS patients to maintain communication as the disease progresses. BrainGate and Neuralink have enrolled ALS patients. New treatments include antisense oligonucleotides (Qalsody for SOD1-ALS) and combination therapy (Relyvrio).
+
+### Multiple Sclerosis (MS)
+
+- name: Multiple Sclerosis (MS)
+- type: Autoimmune / Neurological
+- prevalence: 2.8M globally
+- brain_regions: White Matter (demyelination), Optic Nerve, Spinal Cord, Corpus Callosum
+- key_features: Immune-mediated demyelination; relapsing-remitting (85%) or progressive forms
+- treatments: Disease-modifying therapies (20+ approved), B-cell depletion (ocrelizumab), HSCT
+- description: MS is an autoimmune disease where the immune system attacks myelin (insulation around nerve fibers). 20+ disease-modifying therapies are available, transforming prognosis. B-cell depletion (ocrelizumab) is effective for both relapsing and progressive forms. Hematopoietic stem cell transplantation (HSCT) can halt disease in aggressive cases. Neurotechnology aids in monitoring and rehabilitation.
+
+### Addiction / Substance Use Disorder
+
+- name: Addiction / Substance Use Disorder
+- type: Psychiatric / Neurological
+- prevalence: 46.3M Americans (2021 NSDUH); includes alcohol, opioids, stimulants, nicotine
+- brain_regions: Nucleus Accumbens, VTA, Prefrontal Cortex, Amygdala, Insula
+- key_neurotransmitters: Dopamine (reward hijacking), glutamate, GABA, endocannabinoids
+- treatments: MAT (methadone, buprenorphine, naltrexone), CBT, DBS (research), TMS (research)
+- description: Addiction hijacks the brain's reward system, with dopamine-driven compulsive drug-seeking despite consequences. The nucleus accumbens and VTA are central. Medication-assisted treatment (MAT) is the gold standard for opioid use disorder. DBS of the nucleus accumbens is being tested for severe, treatment-resistant addiction. TMS targeting the insula and prefrontal cortex shows promise for reducing craving.
+
+### Chronic Pain
+
+- name: Chronic Pain
+- type: Neurological / Pain Medicine
+- prevalence: 1.5B+ globally affected by chronic pain; ~20% of adults
+- brain_regions: Somatosensory Cortex, Anterior Cingulate Cortex, Insula, Prefrontal Cortex, Thalamus
+- key_features: Central sensitization, neuroplastic changes, altered pain processing networks
+- treatments: Multimodal: medications, physical therapy, CBT, spinal cord stimulation, DRG stimulation, DBS (research)
+- description: Chronic pain involves maladaptive neuroplastic changes in pain processing networks. Central sensitization amplifies pain signals. Spinal cord stimulation and dorsal root ganglion (DRG) stimulation are neurotechnology approaches for refractory pain. DBS targeting the periventricular/periaqueductal gray is used for severe neuropathic pain. Non-invasive approaches include TMS and neurofeedback.
+
+### Huntington's Disease
+
+- name: Huntington's Disease
+- type: Neurodegenerative (genetic)
+- prevalence: ~41,000 symptomatic in US; 200,000 at-risk
+- brain_regions: Basal Ganglia (caudate nucleus), Cerebral Cortex
+- key_proteins: Mutant huntingtin protein (mHTT); CAG repeat expansion in HTT gene
+- treatments: Symptomatic only; gene-silencing trials (antisense oligonucleotides, RNAi) ongoing
+- description: Huntington's is a fatal genetic neurodegenerative disease caused by CAG repeat expansion in the HTT gene. Symptoms include chorea (involuntary movements), cognitive decline, and psychiatric symptoms. Gene-silencing approaches (antisense oligonucleotides by Roche/Ionis, RNAi by UniQure) aim to reduce mutant huntingtin protein. These trials represent the frontier of genetic neurotherapy.
+
+### Consciousness Disorders (Coma, Vegetative State, Minimally Conscious State)
+
+- name: Consciousness Disorders (Coma, Vegetative State, Minimally Conscious State)
+- type: Neurological
+- prevalence: ~50,000 in US in vegetative/minimally conscious state
+- brain_regions: Thalamus, Brainstem (RAS), Default Mode Network, Prefrontal Cortex
+- key_features: Disrupted thalamocortical connectivity; covert consciousness may exist in 15-20% of 'vegetative' patients
+- treatments: Amantadine, DBS (research), TMS, VNS, ultrasonic thalamic stimulation
+- description: Disorders of consciousness range from coma to vegetative state (VS) to minimally conscious state (MCS). Brain imaging reveals that 15-20% of patients diagnosed as vegetative may have covert consciousness (cognitive motor dissociation). Neurotechnology approaches include DBS of the thalamus, VNS, and focused ultrasound thalamic stimulation. BCI-like paradigms using fMRI help detect covert consciousness.
+
+### Treatment-Resistant Depression (TRD)
+
+- name: Treatment-Resistant Depression (TRD)
+- type: Psychiatric
+- prevalence: ~30% of depression patients (100M+ globally)
+- brain_regions: Subgenual Cingulate (Area 25), Prefrontal Cortex, Nucleus Accumbens, VTA
+- key_features: Failure of ≥2 antidepressant trials; profound anhedonia and functional impairment
+- treatments: Esketamine (Spravato), DBS (subgenual cingulate), psilocybin-assisted therapy, TMS, VNS
+- description: Treatment-resistant depression affects approximately 30% of the 300+ million people with depression worldwide. In 2025-2026, new approaches include psilocybin-assisted therapy, deep brain stimulation of the subgenual cingulate, and esketamine. BCI and neuromodulation implants for TRD are an emerging trend in 2026.
+
+### Post-Concussion Syndrome / Chronic Traumatic Encephalopathy (CTE)
+
+- name: Post-Concussion Syndrome / Chronic Traumatic Encephalopathy (CTE)
+- type: Neurodegenerative / Traumatic brain injury
+- prevalence: CTE confirmed in ~90% of former NFL players studied; millions at risk
+- brain_regions: Prefrontal Cortex, Temporal Lobes, Hippocampus, Cerebellum
+- key_features: Progressive tau protein accumulation; cognitive decline; behavioral changes; mood disorders
+- treatments: Symptom management; prevention (rule changes in sports); potential anti-tau therapies
+- description: CTE is a neurodegenerative disease caused by repeated head impacts, confirmed in approximately 90% of former NFL players studied. In 2025-2026, advances in blood biomarkers (p-tau) and neuroimaging are enabling earlier detection.
+
+### Autism Spectrum Disorder (ASD)
+
+- name: Autism Spectrum Disorder (ASD)
+- type: Neurodevelopmental
+- prevalence: 1 in 36 children (US CDC 2023); increasing detection rates
+- brain_regions: Prefrontal Cortex, Temporal Cortex, Amygdala, Cerebellum, Default Mode Network
+- key_features: Altered connectivity patterns (both hyper- and hypo-connectivity); sensory processing differences
+- treatments: Behavioral therapy (ABA), social skills training, emerging neuromodulation (TMS), digital therapeutics
+- description: Autism spectrum disorder is increasingly understood as a difference in brain connectivity rather than a simple deficit. 2025-2026 research reveals both hyper-connectivity in some networks and hypo-connectivity in others. Neuromodulation approaches and digital therapeutics are emerging treatment options.
+
+### Long COVID Neurological Syndrome
+
+- name: Long COVID Neurological Syndrome
+- type: Post-infectious neurological
+- prevalence: 10-30% of COVID-19 survivors report neurological symptoms; millions globally
+- brain_regions: Prefrontal Cortex, Hippocampus, Olfactory Bulb, Brainstem, Insular Cortex
+- key_features: Brain fog, memory impairment, anosmia, fatigue, dysautonomia, anxiety/depression
+- treatments: Rehabilitation, cognitive training, neuromodulation (investigational), symptom management
+- description: Long COVID neurological syndrome affects millions worldwide with persistent cognitive impairment (brain fog), memory problems, loss of smell, and autonomic dysfunction. 2025-2026 research reveals persistent neuroinflammation, microglial activation, and blood-brain barrier disruption as key mechanisms. Neuromodulation approaches including TMS and tDCS are being tested for cognitive rehabilitation.
+
+### Traumatic Brain Injury (TBI) - Chronic Effects
+
+- name: Traumatic Brain Injury (TBI) - Chronic Effects
+- type: Neurotrauma / Neurodegenerative
+- prevalence: 69 million TBI cases annually worldwide; chronic effects in 10-20% of moderate/severe cases
+- brain_regions: Prefrontal Cortex, Hippocampus, White Matter Tracts, Cerebellum, Brainstem
+- key_features: Chronic cognitive impairment, emotional dysregulation, CTE risk, post-concussion syndrome
+- treatments: Cognitive rehabilitation, neuromodulation, anti-tau therapies (investigational for CTE), hyperbaric oxygen (controversial)
+- description: Chronic effects of traumatic brain injury include persistent cognitive deficits, emotional changes, and increased risk of chronic traumatic encephalopathy (CTE). 2025-2026 research focuses on biomarkers for CTE (anti-tau PET imaging), neuromodulation for cognitive rehabilitation, and the connection between repeated concussion and neurodegeneration. BCI technology is being explored for cognitive enhancement in chronic TBI patients.
+
+### Consciousness Disorders (Coma, Vegetative State, Minimally Conscious State)
+
+- name: Consciousness Disorders (Coma, Vegetative State, Minimally Conscious State)
+- type: Disorders of consciousness
+- prevalence: Hundreds of thousands in vegetative or minimally conscious states globally
+- brain_regions: Thalamus, Default Mode Network, Claustrum, Prefrontal Cortex, Posterior Cingulate Cortex
+- key_features: Impaired awareness, disrupted connectivity in consciousness networks, variable recovery potential
+- treatments: Thalamic deep brain stimulation, focused ultrasound (investigational), amantadine, sensory stimulation protocols
+- description: Disorders of consciousness including coma, vegetative state, and minimally conscious state represent a frontier for neuroscience and BCI technology. 2025-2026 advances include: thalamic DBS for consciousness restoration, focused ultrasound targeting the thalamus non-invasively, and BCI-based communication with minimally conscious patients. The claustrums role as a consciousness integrator is being explored as a therapeutic target.
+
+### Treatment-Resistant Depression (TRD)
+
+- name: Treatment-Resistant Depression (TRD)
+- type: Psychiatric / Mood disorder
+- prevalence: 30% of depression patients (affecting ~100 million globally); 1 million+ in US alone
+- brain_regions: Subgenual Cingulate (Area 25), Prefrontal Cortex, Amygdala, VTA, Default Mode Network
+- key_features: Failure of 2+ antidepressant trials, persistent anhedonia, impaired function, high suicide risk
+- treatments: Esketamine (Spravato), psilocybin-assisted therapy, DBS (Area 25), TMS, vagus nerve stimulation, closed-loop neuromodulation (emerging)
+- description: Treatment-resistant depression affects approximately 30% of depression patients and is a major focus of neuromodulation and BCI research in 2025-2026. Brain implants for mental health are a key trend, with closed-loop neuromodulation systems detecting depression biomarkers and delivering targeted stimulation. Psilocybin-assisted therapy has shown remarkable results in Phase 2/3 trials for TRD.
+
+### Treatment-Resistant Depression (BCI/DBS Target)
+
+- name: Treatment-Resistant Depression (BCI/DBS Target)
+- prevalence: ~30% of depression patients; ~5% of global population
+- brain_regions: Subcallosal cingulate (Area 25), ventral striatum, medial prefrontal cortex
+- treatments: Closed-loop DBS (UCSF), ketamine/esketamine, TMS, BCI neurofeedback
+- status: Closed-loop DBS showing promise; BCI neurofeedback emerging
+- description: Treatment-resistant depression (TRD) affects approximately 30% of depression patients who fail to respond to at least two antidepressant treatments. UCSF demonstrated that closed-loop deep brain stimulation can effectively treat TRD by monitoring biomarkers of depression and stimulating only when needed. BCI neurofeedback is also emerging as a non-invasive approach. TRD is a key target for the 2026 trend of brain implants for mental health, representing a major unmet medical need.
+- sources: [object Object]
+
+### Post-Traumatic Stress Disorder (PTSD) - Neuromodulation
+
+- name: Post-Traumatic Stress Disorder (PTSD) - Neuromodulation
+- prevalence: ~7-8% of population (lifetime); higher in military and trauma-exposed populations
+- brain_regions: Amygdala (hyperactive), medial prefrontal cortex (hypoactive), hippocampus (volume reduction)
+- treatments: Trauma-focused therapy, EMDR, MDMA-assisted therapy, neuromodulation (TMS, focused ultrasound)
+- status: MDMA-assisted therapy approaching FDA approval; neuromodulation trials ongoing
+- description: PTSD is characterized by amygdala hyperactivity, medial prefrontal cortex hypoactivity, and hippocampal changes. Neuromodulation approaches including TMS and focused ultrasound are being explored to normalize these circuits. MDMA-assisted therapy has shown remarkable results in Phase 3 trials and is approaching FDA approval. The combination of pharmacotherapy with neuromodulation represents a new frontier in PTSD treatment.
+- sources: [object Object]
+
+### Autism Spectrum Disorder (ASD) - Connectomics Insights
+
+- name: Autism Spectrum Disorder (ASD) - Connectomics Insights
+- prevalence: ~1-2% of global population; increasing diagnosis rates
+- brain_regions: Cerebellum (Purkinje cell loss), social brain network (amygdala, fusiform gyrus, TPJ), DMN
+- treatments: Behavioral therapy, speech therapy, occupational therapy; no approved pharmacological treatment for core symptoms
+- status: Connectomics revealing circuit-level abnormalities; cerebellum emerging as key region
+- description: Autism Spectrum Disorder is increasingly understood through connectomics, with the MICrONS project and other brain mapping efforts revealing circuit-level abnormalities. The cerebellum has emerged as a key region, with Purkinje cell loss consistently observed in ASD brains. The social brain network (amygdala, fusiform gyrus, temporoparietal junction) shows atypical connectivity. While no pharmacological treatments exist for core ASD symptoms, connectomics-driven insights are guiding the development of targeted neuromodulation approaches.
+- sources: [object Object]
+
+### Concussion / Mild Traumatic Brain Injury (mTBI)
+
+- name: Concussion / Mild Traumatic Brain Injury (mTBI)
+- prevalence: ~1.6-3.8 million sports-related concussions per year in US alone
+- brain_regions: Diffuse axonal injury, prefrontal cortex, corpus callosum
+- treatments: Cognitive rest, graduated return-to-play, vestibular therapy, EEG monitoring
+- status: EEG-based concussion assessment devices gaining regulatory approval
+- description: Concussion (mild traumatic brain injury) is a major health concern, particularly in sports. EEG-based concussion assessment devices are gaining regulatory approval in 2025-2026, enabling rapid sideline assessment of brain function after head impacts. These devices measure changes in brain wave patterns associated with concussion, providing objective data to supplement clinical evaluation. The consumer EEG device wave (CES 2026) is also enabling at-home monitoring of post-concussion recovery.
+- sources: [object Object]
+
+### Addiction (Substance Use Disorders) - Neuromodulation
+
+- name: Addiction (Substance Use Disorders) - Neuromodulation
+- prevalence: ~20 million+ in US alone (substance use disorders)
+- brain_regions: Nucleus accumbens, VTA, prefrontal cortex, insula
+- treatments: TMS (targeting prefrontal cortex), DBS (targeting nucleus accumbens), focused ultrasound, cognitive therapy
+- status: TMS FDA-approved for smoking cessation; DBS trials for severe addiction
+- description: Addiction is increasingly understood as a brain circuit disorder involving the mesolimbic dopamine pathway (VTA to nucleus accumbens), prefrontal cortex (impaired impulse control), and insula (craving). TMS targeting the prefrontal cortex is FDA-approved for smoking cessation, and DBS of the nucleus accumbens is in clinical trials for severe alcohol and opioid addiction. The 2026 trend of brain implants for mental health includes addiction as a key target, particularly as the opioid crisis continues.
+- sources: [object Object]
+
+### Bipolar Disorder (Neuromodulation Approaches)
+
+- name: Bipolar Disorder (Neuromodulation Approaches)
+- type: Psychiatric / Mood disorder
+- prevalence: ~2.8% of global population (46M+ in US)
+- brain_regions: Prefrontal Cortex, Amygdala, Basal Ganglia, Anterior Cingulate, Default Mode Network
+- key_features: Alternating episodes of mania/hypomania and depression; circadian rhythm disruption
+- treatments: Mood stabilizers (lithium, valproate), atypical antipsychotics, DBS (research), TMS
+- description: Bipolar disorder involves dramatic mood swings between mania and depression. Lithium remains the gold standard treatment but has significant side effects. In 2025-2026, neuromodulation approaches including DBS and TMS are being explored for treatment-resistant bipolar depression. Closed-loop DBS that detects mood state transitions and delivers targeted stimulation is a promising research direction. The disorder involves dysregulation of prefrontal-amygdala circuits.
+- sources: [object Object]
+
+### Treatment-Resistant Depression (Closed-Loop DBS Target)
+
+- name: Treatment-Resistant Depression (Closed-Loop DBS Target)
+- type: Mood disorder / Neuromodulation target
+- prevalence: Approximately 30% of major depression cases are treatment-resistant
+- brain_regions: Subgenual cingulate (Area 25), Amygdala, Prefrontal cortex
+- key_proteins: BDNF, Serotonin transporter, Glutamate receptors
+- treatments: Closed-loop deep brain stimulation (UCSF/Nature 2021), Ketamine/esketamine, psilocybin-assisted therapy (clinical trials)
+- description: Treatment-resistant depression is a severe form of major depression that does not respond to conventional antidepressants. UCSF researchers demonstrated that closed-loop DBS of Area 25 can produce sustained remission. This has become a primary target for next-generation neuromodulation, with multiple clinical trials ongoing in 2025-2026 exploring adaptive stimulation strategies.
+
+### PTSD (Neuromodulation Therapy Target)
+
+- name: PTSD (Neuromodulation Therapy Target)
+- type: Trauma disorder / Neuromodulation target
+- prevalence: 6-8% of general population; higher in military and trauma-exposed populations
+- brain_regions: Amygdala, Prefrontal cortex, Hippocampus, Default mode network
+- key_proteins: Cortisol, Norepinephrine, BDNF
+- treatments: TMS (transcranial magnetic stimulation), Focused ultrasound neuromodulation, MDMA-assisted therapy (Phase 3 complete), psilocybin-assisted therapy (clinical trials)
+- description: PTSD is increasingly targeted by neuromodulation therapies including TMS and focused ultrasound. MDMA-assisted therapy completed Phase 3 trials with statistically significant reductions in PTSD symptoms. psilocybin-assisted therapy is also in clinical trials. These neuromodulation and psychedelic approaches represent a paradigm shift from traditional pharmacotherapy.
+
+### Autism Spectrum Disorder (Connectomics Insights)
+
+- name: Autism Spectrum Disorder (Connectomics Insights)
+- type: Neurodevelopmental disorder / Connectomics research
+- prevalence: 1-2% of global population
+- brain_regions: Prefrontal cortex, Temporal cortex, Amygdala, Cerebellum, Default mode network
+- key_proteins: SHANK3, NLGN3/4, CNTNAP2, MECP2
+- treatments: Behavioral interventions, Connectomics-guided neuromodulation (emerging), Social cognition training with BCI feedback (research)
+- description: Autism Spectrum Disorder research is being transformed by connectomics insights from projects like MICrONS, which mapped 500 billion synaptic connections. Understanding atypical connectivity patterns in ASD is enabling new approaches to diagnosis and potential neuromodulation-based interventions. BCI feedback for social cognition training is an emerging research direction.
+
+### Concussion/mTBI (EEG Assessment Device)
+
+- name: Concussion/mTBI (EEG Assessment Device)
+- type: Traumatic brain injury / Diagnostic technology
+- prevalence: 1.6-3.8 million sports-related concussions annually in the US alone
+- brain_regions: Prefrontal cortex, Temporal lobes, White matter tracts
+- key_proteins: S100B, GFAP, Neurofilament light chain (NfL), Tau
+- treatments: EEG-based assessment devices (FDA cleared 2026), Graduated return-to-play protocols, Cognitive rest and rehabilitation
+- description: FDA-cleared EEG assessment devices for concussion/mild TBI are now available in 2026, providing objective biomarkers for brain injury assessment. These devices measure neural activity patterns that correlate with concussion severity, replacing subjective clinical assessments with quantitative diagnostics. This is a major advance for sports medicine and military applications.
+
+### Long COVID Neurological Syndrome
+
+- name: Long COVID Neurological Syndrome
+- type: Post-viral neurological syndrome / Emerging disorder
+- prevalence: 10-30% of COVID-19 survivors report neurological symptoms
+- brain_regions: Olfactory bulb, Prefrontal cortex, Brainstem, Hippocampus
+- key_proteins: ACE2 receptor, Inflammatory cytokines, Autoantibodies
+- treatments: Rehabilitation programs, Neuromodulation (investigational), Anti-inflammatory approaches, Cognitive rehabilitation
+- description: Long COVID neurological syndrome encompasses brain fog, cognitive impairment, and sensory disturbances persisting after COVID-19 infection. Research is revealing that the virus can cause persistent neuroinflammation and microvascular damage. Neuromodulation approaches are being investigated as potential treatments, and the condition is driving increased investment in neurotechnology for post-viral rehabilitation.
+
+### Long COVID Neurological Effects
+
+- name: Long COVID Neurological Effects
+- type: Post-viral neurological syndrome
+- prevalence: 10-30% of COVID-19 survivors experience neurological symptoms
+- key_symptoms: 脑雾, 疲劳, 嗅觉丧失, 头痛, 认知障碍
+- treatment: Symptomatic management; cognitive rehabilitation; emerging antiviral and anti-inflammatory approaches
+- description: Long COVID neurological effects (neuro-COVID) affect 10-30% of COVID-19 survivors, causing persistent brain fog, fatigue, cognitive impairment, and loss of smell. Research suggests multiple mechanisms: direct viral neurotropism, neuroinflammation, microvascular damage, and autoimmune responses. Brain imaging studies show reduced gray matter volume and white matter changes. The condition has created a massive public health challenge, with millions affected worldwide and no approved specific treatment.
+- sources: [object Object]
+
+### Autoimmune Encephalitis
+
+- name: Autoimmune Encephalitis
+- type: Autoimmune brain disorder
+- prevalence: Incidence ~0.8/100,000; likely underdiagnosed
+- key_symptoms: 精神症状, 癫痫, 运动障碍, 记忆障碍, 自主神经功能障碍
+- treatment: Immunotherapy (steroids, IVIG, plasmapheresis, rituximab); tumor removal if paraneoplastic
+- description: Autoimmune encephalitis occurs when the immune system attacks brain proteins, causing psychiatric symptoms, seizures, and cognitive decline. Anti-NMDA receptor encephalitis is the most common form, often affecting young women with ovarian teratomas. The condition was only recently characterized (2007) and is likely underdiagnosed — many patients previously diagnosed with 'psychiatric' conditions actually have autoimmune encephalitis. Early immunotherapy can lead to full recovery, making rapid diagnosis critical.
+- sources: [object Object]
+
+### Chronic Traumatic Encephalopathy (CTE)
+
+- name: Chronic Traumatic Encephalopathy (CTE)
+- type: Neurodegenerative disease (trauma-related)
+- prevalence: Found in 90%+ of deceased NFL players studied; growing concern in contact sports
+- key_symptoms: 认知障碍, 行为改变, 抑郁, 冲动控制障碍, 痴呆
+- treatment: No cure; prevention through reduced head impact exposure; symptomatic management
+- description: Chronic Traumatic Encephalopathy (CTE) is a neurodegenerative disease caused by repeated head impacts, found primarily in contact sport athletes and military veterans. CTE is characterized by the accumulation of hyperphosphorylated tau protein in a unique pattern around blood vessels in the depths of cortical sulci. The condition can only be definitively diagnosed post-mortem, though new biomarkers (CSF tau, neurofilament light) are enabling earlier detection in living patients. CTE has led to rule changes in sports and growing awareness of head injury risks.
+- sources: [object Object]
+
+### Posterior Cortical Atrophy (PCA)
+
+- name: Posterior Cortical Atrophy (PCA)
+- type: Neurodegenerative syndrome
+- prevalence: ~5% of Alzheimer's cases present as PCA
+- key_symptoms: 视觉障碍, 空间定向障碍, 失读, 失用, Balint综合征
+- treatment: Alzheimer's treatments (cholinesterase inhibitors); visual rehabilitation; occupational therapy
+- description: Posterior Cortical Atrophy (PCA) is a neurodegenerative syndrome that primarily affects visual processing, often caused by Alzheimer's disease pathology in the occipital and parietal lobes. Patients present with visual difficulties (reading, navigation, recognizing objects) while memory remains relatively preserved early on. Many patients are initially misdiagnosed as having eye problems or psychiatric conditions. PCA gained public attention when Terry Pratchett and Wendy Mitchell disclosed their diagnoses. It represents an important atypical presentation of Alzheimer's disease.
+- sources: [object Object]
+
+### Functional Neurological Disorder (FND)
+
+- name: Functional Neurological Disorder (FND)
+- type: Functional brain disorder
+- prevalence: 14-22/100,000; one of the most common diagnoses in neurology clinics
+- key_symptoms: 运动障碍, 感觉障碍, 癫痫样发作, 认知症状
+- treatment: Physical therapy, cognitive behavioral therapy, psychotherapy; multidisciplinary approach
+- description: Functional Neurological Disorder (FND) is a condition where patients experience genuine neurological symptoms (weakness, tremor, seizures, sensory loss) without structural brain damage. FND is now understood as a problem with the software (function) rather than the hardware (structure) of the brain. It is one of the most common diagnoses in neurology clinics but has been historically stigmatized and under-researched. New neuroimaging studies show altered brain network connectivity, validating FND as a real brain disorder. Treatment focuses on retraining brain circuits through physical and psychological therapies.
+- sources: [object Object]
+
+## neuropharmacology
+
+### Psilocybin-Assisted Therapy
+
+- name: Psilocybin-Assisted Therapy
+- type: Psychedelic-assisted therapy
+- compound: Psilocybin (prodrug → psilocin, 5-HT2A agonist)
+- status: Phase 2/3 trials (depression, PTSD, addiction); Compass Pathways & Usona Institute leading
+- indications: Treatment-resistant depression, PTSD, Addiction, End-of-life anxiety, OCD
+- mechanism: 5-HT2A agonism → increased brain connectivity, default mode network disruption, neuroplasticity
+- description: Psilocybin is the most studied psychedelic for therapeutic use. It acts on 5-HT2A receptors, dramatically increasing brain connectivity and disrupting the default mode network (associated with rumination in depression). Clinical trials show 1-3 sessions with psychological support can produce lasting antidepressant effects (months to years). Compass Pathways and Usona Institute are leading Phase 2/3 trials. Expected FDA decision by 2026-2027.
+
+### MDMA-Assisted Therapy (MAPS)
+
+- name: MDMA-Assisted Therapy (MAPS)
+- type: Psychedelic-assisted therapy
+- compound: MDMA (3,4-methylenedioxymethamphetamine)
+- status: Phase 3 complete; FDA submission 2024; expected approval 2025-2026
+- indications: PTSD (primary), Autism social anxiety (research), Couples therapy (research)
+- mechanism: Serotonin/dopamine/norepinephrine release → enhanced trust, empathy, fear extinction; oxytocin surge
+- description: MDMA-assisted therapy is the closest psychedelic to FDA approval. MAPS Phase 3 trials showed 67% of PTSD patients no longer met diagnostic criteria after 3 sessions. MDMA doesn't cause hallucinations but enhances emotional openness and trust, making trauma processing possible. Expected to be the first legally approved psychedelic-assisted therapy, potentially in 2025-2026.
+
+### Ketamine / Esketamine (Spravato)
+
+- name: Ketamine / Esketamine (Spravato)
+- type: Rapid-acting antidepressant
+- compound: Ketamine (racemic) / Esketamine (S-enantiomer)
+- status: FDA approved (Spravato/esketamine 2019 for TRD; 2020 for suicidal ideation)
+- indications: Treatment-resistant depression, Suicidal ideation, Chronic pain (off-label)
+- mechanism: NMDA receptor antagonism → glutamate surge → BDNF release → rapid synaptogenesis
+- description: Ketamine is the first rapid-acting antidepressant, working within hours (vs weeks for SSRIs). It blocks NMDA receptors, triggering a glutamate surge that promotes synaptogenesis (new neural connections). Esketamine (Spravato) nasal spray is FDA-approved for TRD and suicidal ideation. IV ketamine clinics are widespread. Main limitations: short duration (days-weeks), abuse potential, dissociative side effects.
+
+### Neuroplastogens (Non-Hallucinogenic Psychedelics)
+
+- name: Neuroplastogens (Non-Hallucinogenic Psychedelics)
+- type: Next-generation psychiatric drugs
+- compound: Various (Delix Therapeutics, Mindstate Design Labs, etc.)
+- status: Preclinical / Phase 1
+- indications: Depression, PTSD, Anxiety, Addiction
+- mechanism: 5-HT2A agonism without hallucinogenic effects → neuroplasticity without trip
+- description: Neuroplastogens are a new class of drugs that aim to capture the therapeutic benefits of psychedelics (neuroplasticity, anti-depressant effects) without the hallucinogenic experience. By selectively activating specific 5-HT2A signaling pathways (β-arrestin vs Gq), these compounds promote neural growth and reconnection without causing perceptual disturbances. This could make psychedelic-inspired therapy much more accessible and scalable.
+
+### Anti-Amyloid Antibodies (Leqembi, Kisunla)
+
+- name: Anti-Amyloid Antibodies (Leqembi, Kisunla)
+- type: Disease-modifying Alzheimer's drugs
+- compound: Lecanemab (Leqembi), Donanemab (Kisunla)
+- status: FDA approved (Leqembi 2023, Kisunla 2024)
+- indications: Early Alzheimer's disease (mild cognitive impairment or mild dementia)
+- mechanism: Monoclonal antibodies targeting amyloid-β plaques → clearance by microglia → slowing cognitive decline
+- description: Leqembi and Kisunla are the first disease-modifying treatments for Alzheimer's, slowing cognitive decline by 27-35% over 18 months by clearing amyloid plaques. They're effective only in early-stage AD. Side effects include ARIA (amyloid-related imaging abnormalities, brain swelling/bleeding) in ~20-30% of patients. IV infusion every 2-4 weeks. Cost: ~$26,000/year. Blood tests (p-tau217) are enabling earlier diagnosis and treatment.
+
+### Antisense Oligonucleotides (ASOs) for Neurological Diseases
+
+- name: Antisense Oligonucleotides (ASOs) for Neurological Diseases
+- type: Gene-silencing therapy
+- compound: Nusinersen (Spinraza, SMA), Tofersen (Qalsody, SOD1-ALS), HTT-ASOs (Huntington's)
+- status: FDA approved (SMA, SOD1-ALS); clinical trials (Huntington's, ALS, Alzheimer's)
+- indications: Spinal muscular atrophy, SOD1-ALS, Huntington's disease (trials), Alzheimer's (trials)
+- mechanism: Synthetic oligonucleotides bind target mRNA → RNase H degradation → reduced disease protein production
+- description: ASOs represent a paradigm shift: targeting the genetic root cause rather than symptoms. Nusinersen (Spinraza) transformed SMA from a fatal childhood disease to a manageable condition. Tofersen (Qalsody) slows SOD1-ALS progression. ASOs for Huntington's (reducing mutant huntingtin) are in clinical trials. The challenge: intrathecal delivery (spinal injection) and blood-brain barrier penetration.
+
+### GLP-1 Receptor Agonists (Neuroprotection)
+
+- name: GLP-1 Receptor Agonists (Neuroprotection)
+- type: Repurposed metabolic drugs with neuroprotective effects
+- compound: Semaglutide (Ozempic/Wegovy), Liraglutide, Tirzepatide
+- status: Phase 3 trials for Alzheimer's and Parkinson's; observational data shows reduced dementia risk
+- indications: Alzheimer's disease (prevention/treatment), Parkinson's disease, Stroke recovery
+- mechanism: GLP-1R agonism → reduced neuroinflammation, improved mitochondrial function, reduced oxidative stress, enhanced neurogenesis
+- description: GLP-1 receptor agonists (originally for diabetes/obesity) show remarkable neuroprotective properties. Large observational studies found 40-60% reduced dementia risk in GLP-1 users. Phase 3 trials for Alzheimer's (semaglutide) and Parkinson's are ongoing. Mechanisms include reducing neuroinflammation, improving mitochondrial function, and promoting neurogenesis. If confirmed, this would repurpose one of the most prescribed drug classes for brain protection.
+
+### Ketamine Analogues / Next-Gen Rapid Antidepressants
+
+- name: Ketamine Analogues / Next-Gen Rapid Antidepressants
+- type: Rapid-acting antidepressant (improved safety)
+- compound: Rel-1017 (dextromethadone), NRX-101 (D-cycloserine + lurasidone), AGN-241751
+- status: Phase 2/3 trials
+- indications: Treatment-resistant depression, Bipolar depression, Suicidal ideation
+- mechanism: NMDA modulation (various subunit selectivity) → rapid antidepressant effect with fewer side effects
+- description: Multiple companies are developing ketamine-like drugs with improved safety profiles: no dissociative effects, no abuse potential, oral administration. Rel-1017 (dextromethadone) showed rapid antidepressant effects in Phase 2. The goal is to capture ketamine's rapid efficacy while eliminating its drawbacks (dissociation, abuse potential, need for IV administration/monitoring).
+
+### Cannabis-Based Neuropharmacology (CBD/THC)
+
+- name: Cannabis-Based Neuropharmacology (CBD/THC)
+- type: Cannabinoid therapeutics
+- compound: CBD (Epidiolex), THC (dronabinol, nabilone), CB1/CB2 modulators
+- status: Epidiolex FDA-approved (seizures); many trials for pain, anxiety, PTSD, MS spasticity
+- indications: Epilepsy (Dravet/Lennox-Gastaut), Chronic pain, MS spasticity, PTSD, Anxiety
+- mechanism: CBD: multiple targets (5-HT1A, TRPV1, GPR55, negative allosteric modulator of CB1); THC: CB1/CB2 agonist
+- description: Cannabis-based therapeutics are expanding beyond Epidiolex (CBD for rare epilepsies). CBD's anxiolytic and antipsychotic effects are being studied for PTSD and schizophrenia. Selective CB1/CB2 modulators aim to provide therapeutic benefits without the 'high.' The endocannabinoid system is a major target for pain, inflammation, and psychiatric disorders.
+
+### Gene Therapy for Neurological Diseases (AAV Vectors)
+
+- name: Gene Therapy for Neurological Diseases (AAV Vectors)
+- type: Gene therapy
+- compound: AAV9-SMN1 (Zolgensma, SMA), AAV-AADC (Parkinson's), AAV-GAD (Parkinson's)
+- status: Zolgensma FDA-approved (SMA); AAV-AADC and AAV-GAD in clinical trials for Parkinson's
+- indications: Spinal muscular atrophy, Parkinson's disease, Alzheimer's (trials), ALS (trials)
+- mechanism: Adeno-associated virus (AAV) delivers functional gene copies to replace defective or missing proteins
+- description: AAV gene therapy delivers functional genes to brain cells. Zolgensma (AAV9-SMN1) is a one-time cure for SMA type 1. AAV-AADC delivers the aromatic L-amino acid decarboxylase gene to Parkinson's patients' putamen, enhancing dopamine production. Challenges include immune responses to AAV, blood-brain barrier penetration, and manufacturing costs ($2.1M for Zolgensma).
+
+### Focused Ultrasound + Microbubbles (BBB Opening)
+
+- name: Focused Ultrasound + Microbubbles (BBB Opening)
+- type: Drug delivery technology
+- compound: MR-guided focused ultrasound (MRgFUS) + IV microbubbles
+- status: Clinical trials (Alzheimer's, brain tumors, Parkinson's)
+- indications: Alzheimer's disease (enhance drug delivery), Brain tumors (BBB opening for chemotherapy), Parkinson's (lesioning)
+- mechanism: Ultrasound pulses cause microbubbles to oscillate → transiently open blood-brain barrier → allow drug entry
+- description: Focused ultrasound with microbubbles can transiently open the blood-brain barrier (BBB), the biggest obstacle to brain drug delivery. This allows antibodies, gene therapies, and chemotherapy to reach the brain in therapeutic concentrations. In Alzheimer's trials, BBB opening itself appears to promote amyloid clearance by allowing microglia access. This technology could transform neuropharmacology by making previously ineffective drugs work.
+
+### Digital Therapeutics (DTx) for Neurological/Psychiatric Conditions
+
+- name: Digital Therapeutics (DTx) for Neurological/Psychiatric Conditions
+- type: Software as medical device
+- compound: EndeavorRx (ADHD), Freespira (PTSD/panic), reSET/reSET-O (addiction), Somryst (insomnia)
+- status: FDA authorized (multiple DTx products)
+- indications: ADHD, PTSD, Insomnia, Addiction, Depression, Chronic pain
+- mechanism: Targeted neurocognitive training, biofeedback, CBT → neuroplastic changes in specific brain networks
+- description: Digital therapeutics are FDA-authorized software programs that treat neurological and psychiatric conditions through neuroplasticity. EndeavorRx is the first FDA-authorized video game treatment (for ADHD). Freespira uses breathing biofeedback for PTSD. DTx represents the intersection of neuropharmacology and neurotechnology—software that changes brain function without drugs.
+
+### Neuroplastogens (Non-Hallucinogenic Psychedelics)
+
+- name: Neuroplastogens (Non-Hallucinogenic Psychedelics)
+- type: Novel psychoplastogen compounds
+- compound: TBG-01, AAZ-A, DL-01, and other 5-HT2A biased agonists
+- status: Preclinical/Phase 1; multiple companies developing
+- indications: Treatment-resistant depression, PTSD, Anxiety, Addiction
+- mechanism: 5-HT2A agonism with beta-arrestin bias → neuroplasticity without hallucinogenic effects
+- description: Neuroplastogens are a new class of compounds that promote neuroplasticity through 5-HT2A receptor activation but without the hallucinogenic effects of traditional psychedelics. Multiple companies are developing neuroplastogens, with some entering Phase 1 trials in 2025-2026.
+
+### Psychedelic Polypharmacology Discovery
+
+- name: Psychedelic Polypharmacology Discovery
+- type: Research finding / Drug development
+- compound: Multiple psychedelic compounds (psilocin, DMT, LSD, mescaline, DOI)
+- status: Published 2025; fundamental pharmacology research
+- indications: Understanding psychedelic mechanisms, Drug design, Safety assessment
+- mechanism: Potent actions at nearly every serotonin, dopamine, and adrenergic receptor (not just 5-HT2A)
+- description: A landmark 2025 study revealed that psychedelics have potent and efficacious actions at nearly every serotonin, dopamine, and adrenergic receptor — far beyond the previously assumed 5-HT2A selectivity. This polypharmacology is reshaping drug design strategies for next-generation psychedelic-inspired therapeutics.
+
+### MDMA-Assisted Therapy (Post-FDA Review)
+
+- name: MDMA-Assisted Therapy (Post-FDA Review)
+- type: Psychedelic-assisted therapy
+- compound: MDMA (3,4-methylenedioxymethamphetamine)
+- status: FDA issued Complete Response Letter (2024); resubmission expected with additional data
+- indications: PTSD
+- mechanism: Serotonin/dopamine/norepinephrine release → enhanced therapeutic alliance, fear extinction, emotional processing
+- description: MDMA-assisted therapy for PTSD received a Complete Response Letter from the FDA in 2024, citing concerns about functional unblinding and adverse events. The psychedelic medicine community is learning from this setback, with improved trial designs expected for resubmission.
+
+### Anti-Tau Immunotherapy for Neurodegeneration
+
+- name: Anti-Tau Immunotherapy for Neurodegeneration
+- type: Disease-modifying therapy
+- compound: Semorinemab, Zagotenemab, E2814, and other anti-tau antibodies
+- status: Phase 2/3 trials (multiple candidates); some failures, others ongoing
+- indications: Alzheimer Disease, Progressive supranuclear palsy, CTE, Frontotemporal dementia
+- mechanism: Anti-tau antibodies target extracellular tau seeds → prevent spread of tau pathology between neurons
+- description: Anti-tau immunotherapy targets the spread of tau neurofibrillary tangles, a hallmark of Alzheimer and other tauopathies. Unlike anti-amyloid therapies that target plaques, anti-tau approaches address the pathology most closely correlated with cognitive decline. Several candidates are in Phase 2/3 trials in 2025-2026.
+
+### MDMA-Assisted Therapy (PTSD)
+
+- name: MDMA-Assisted Therapy (PTSD)
+- type: Psychedelic-assisted therapy
+- compound: MDMA (3,4-methylenedioxymethamphetamine) - serotonin/dopamine/norepinephrine releaser
+- status: FDA advisory committee meeting 2024; resubmission expected; Phase 3 complete
+- indications: PTSD, Autism social anxiety (investigational), Couples therapy (investigational)
+- mechanism: Serotonin release → increased trust and empathy, reduced fear response, enhanced therapeutic alliance
+- description: MDMA-assisted therapy for PTSD has completed Phase 3 trials with remarkable results. MAPS-sponsored studies show that 67-71% of participants no longer meet PTSD diagnostic criteria after three MDMA-assisted therapy sessions. The FDA advisory committee meeting in 2024 raised procedural concerns but the therapy remains on track for potential approval. MDMA enhances the therapeutic alliance by reducing fear and increasing trust.
+
+### 5-HT2A Partial Agonists (Next-Gen Psychedelics)
+
+- name: 5-HT2A Partial Agonists (Next-Gen Psychedelics)
+- type: Novel psychoplastogen / Non-hallucinogenic psychedelic
+- compound: Tabernanthalog (TBG), AAZ-A-154, and other 5-HT2A partial agonists
+- status: Preclinical to Phase 1; multiple candidates in development
+- indications: Depression, Anxiety, Addiction, PTSD, Neurodegeneration
+- mechanism: 5-HT2A partial agonism → neuroplasticity without hallucinogenic effects; promotes dendritic growth and synaptogenesis
+- description: Next-generation psychedelic-inspired compounds aim to deliver the neuroplasticity benefits of psychedelics without the hallucinogenic experience. These 5-HT2A partial agonists (psychoplastogens) promote rapid dendritic growth and synaptogenesis similar to psilocybin but without causing a trip. This could make psychedelic-derived therapies more scalable and acceptable for widespread clinical use.
+
+### GLP-1 Receptor Agonists for Neurodegeneration
+
+- name: GLP-1 Receptor Agonists for Neurodegeneration
+- type: Repurposed metabolic drug / Neuroprotective
+- compound: Semaglutide (Ozempic/Wegovy), Tirzepatide (Mounjaro/Zepbound), Liraglutide
+- status: Phase 2/3 trials for Alzheimers and Parkinsons; observational data encouraging
+- indications: Alzheimers Disease, Parkinsons Disease, Cognitive decline, Neuroinflammation
+- mechanism: GLP-1 receptor activation → reduced neuroinflammation, improved mitochondrial function, reduced amyloid/tau pathology, enhanced neurogenesis
+- description: GLP-1 receptor agonists (originally developed for diabetes and obesity) are being repurposed for neurodegenerative diseases. Observational data from millions of users shows 40-60% reduced risk of dementia in GLP-1 RA users. Phase 2/3 trials are underway for Alzheimers and Parkinsons. The neuroprotective mechanism involves reducing neuroinflammation, improving mitochondrial function, and potentially reducing amyloid and tau pathology.
+
+### Gene Therapy for Neurological Diseases
+
+- name: Gene Therapy for Neurological Diseases
+- type: Gene therapy / Precision medicine
+- compound: AAV-based gene therapies (Zolgensma for SMA, ongoing trials for Parkinsons, Alzheimers, Huntington)
+- status: SMA gene therapy approved; multiple neurological gene therapies in Phase 1/2
+- indications: Spinal Muscular Atrophy (approved), Parkinsons Disease, Alzheimers Disease, Huntingtons Disease, Epilepsy
+- mechanism: AAV vector delivery of therapeutic genes → restore missing protein, reduce toxic protein, or modulate neural circuits
+- description: Gene therapy for neurological diseases is advancing rapidly in 2025-2026. Following the success of Zolgensma for SMA, gene therapies are in development for Parkinsons (AADC gene therapy), Alzheimers (anti-amyloid gene therapy), Huntingtons (HTT-lowering), and epilepsy (neurotransmitter-modulating gene therapy). The key challenge is delivering genes across the blood-brain barrier, with AAV9 and novel capsids showing promise.
+
+### MDMA-Assisted Therapy (PTSD)
+
+- name: MDMA-Assisted Therapy (PTSD)
+- drug_class: Psychedelic-assisted therapy / Empathogen
+- mechanism: Serotonin 5-HT2A receptor agonist; promotes fear extinction and therapeutic alliance
+- applications: PTSD, social anxiety in autism, end-of-life anxiety
+- status: Phase 3 complete; approaching FDA approval 2025-2026
+- description: MDMA-assisted therapy has completed Phase 3 clinical trials for PTSD with remarkable results, showing that 67-71% of participants no longer met PTSD criteria after three sessions. MDMA promotes fear extinction and enhances the therapeutic alliance, allowing patients to process traumatic memories without being overwhelmed. FDA approval is expected in 2025-2026, which would make it the first psychedelic-assisted therapy approved for clinical use. MAPS (Multidisciplinary Association for Psychedelic Studies) has led the 30+ year effort.
+- sources: [object Object]
+
+### Psilocybin-Assisted Therapy (Depression)
+
+- name: Psilocybin-Assisted Therapy (Depression)
+- drug_class: Psychedelic-assisted therapy / Classic psychedelic
+- mechanism: 5-HT2A receptor agonist; promotes neuroplasticity and brain network reorganization
+- applications: Treatment-resistant depression, end-of-life anxiety, addiction, OCD
+- status: Phase 2/3 trials; breakthrough therapy designation (US and UK)
+- description: Psilocybin-assisted therapy is advancing through clinical trials for treatment-resistant depression, with breakthrough therapy designations in both the US and UK. Psilocybin promotes neuroplasticity and reorganizes brain networks (particularly reducing DMN rigidity associated with depression). A single or few sessions can produce lasting antidepressant effects, unlike daily medication. COMPASS Pathways and Usona Institute are leading clinical development. Australia has already rescheduled psilocybin for clinical use.
+- sources: [object Object]
+
+### Neuropharmacology + Neurotechnology Convergence (2026 Trend)
+
+- name: Neuropharmacology + Neurotechnology Convergence (2026 Trend)
+- drug_class: Convergence / Drug-device combinations
+- mechanism: Combining pharmacological interventions with neuromodulation for synergistic effects
+- applications: Treatment-resistant depression, addiction, PTSD, neurorehabilitation
+- status: Emerging paradigm 2026; several drug-device combination trials underway
+- description: A major 2026 trend is the convergence of neuropharmacology and neurotechnology. Drug-device combinations are showing synergistic effects: psychedelics combined with neurofeedback, DBS combined with pharmacotherapy, and TMS combined with cognitive enhancers. This convergence recognizes that brain disorders are circuit-level problems that may benefit from both chemical and electrical interventions. The combination approach could dramatically improve treatment outcomes for conditions that respond poorly to either approach alone.
+- sources: [object Object]
+
+### Ketamine/Esketamine (Rapid-Acting Antidepressant)
+
+- name: Ketamine/Esketamine (Rapid-Acting Antidepressant)
+- drug_class: NMDA receptor antagonist / Dissociative anesthetic
+- mechanism: NMDA receptor antagonism; promotes glutamate surge and rapid synaptic plasticity
+- applications: Treatment-resistant depression, suicidal ideation, acute depression
+- status: Esketamine (Spravato) FDA approved; IV ketamine widely used off-label
+- description: Ketamine and its S-enantiomer esketamine (Spravato) represent a breakthrough in rapid-acting antidepressants. Unlike conventional antidepressants that take weeks to work, ketamine can reduce depressive symptoms within hours. Esketamine nasal spray is FDA-approved for treatment-resistant depression and suicidal ideation. The mechanism involves NMDA receptor antagonism leading to rapid synaptic plasticity. However, concerns about abuse potential, dissociative side effects, and long-term safety remain.
+- sources: [object Object]
+
+### Anti-Amyloid Antibodies (Alzheimer's Disease)
+
+- name: Anti-Amyloid Antibodies (Alzheimer's Disease)
+- drug_class: Monoclonal antibody / Disease-modifying therapy
+- mechanism: Target and clear amyloid-beta plaques from the brain
+- applications: Early-stage Alzheimer's disease, mild cognitive impairment due to AD
+- status: Lecanemab (Leqembi) and donanemab (Kisunla) FDA approved 2023-2024
+- description: Anti-amyloid antibodies lecanemab (Leqembi) and donanemab (Kisunla) are the first disease-modifying therapies for Alzheimer's disease, receiving FDA approval in 2023-2024. They slow cognitive decline by ~27-35% over 18 months by clearing amyloid-beta plaques. However, they carry risks of ARIA (amyloid-related imaging abnormalities) and are only effective in early-stage AD with confirmed amyloid pathology. These drugs represent a paradigm shift from symptomatic to disease-modifying treatment in neurodegeneration.
+- sources: [object Object]
+
+### Psychedelic Polypharmacology Discovery (2025)
+
+- name: Psychedelic Polypharmacology Discovery (2025)
+- drug_class: Research finding / Drug development paradigm shift
+- mechanism: Potent actions at nearly every serotonin, dopamine, and adrenergic receptor (not just 5-HT2A)
+- applications: Drug design, Safety assessment, Understanding psychedelic mechanisms
+- status: Published 2025; fundamental pharmacology research
+- description: A landmark 2025 study published in Neuron revealed that psychedelics have potent and efficacious actions at nearly every serotonin, dopamine, and adrenergic receptor — far beyond the previously assumed 5-HT2A selectivity. This polypharmacology discovery is reshaping drug design strategies for next-generation psychedelic-inspired therapeutics. The finding suggests that the therapeutic effects of psychedelics may involve multiple receptor systems simultaneously, not just 5-HT2A, which has major implications for developing non-hallucinogenic neuroplastogens.
+- sources: [object Object]
+
+### Neuroplastogens: Next Wave Without the Trip (2026)
+
+- name: Neuroplastogens: Next Wave Without the Trip (2026)
+- drug_class: Non-hallucinogenic psychedelic / Neuroplastogen
+- mechanism: 5-HT2A biased agonism → neuroplasticity without hallucinogenic effects
+- applications: Depression, PTSD, Anxiety, Addiction, Neurodegeneration
+- status: Multiple candidates in preclinical/Phase 1; 2026 key development year
+- description: The next wave of psychedelics focuses on brain rewiring without the trip. Neuroplastogens — non-hallucinogenic compounds that promote neuroplasticity through selective 5-HT2A receptor activation — are advancing through preclinical and early clinical development in 2026. By separating therapeutic neuroplasticity from hallucinations, these compounds could make psychedelic-inspired therapy much more scalable and accessible. Multiple companies including Delix Therapeutics and Mindstate Design Labs are developing candidates.
+- sources: [object Object]
+
+### Psychedelic Polypharmacology Discovery (Neuron 2025)
+
+- name: Psychedelic Polypharmacology Discovery (Neuron 2025)
+- type: Pharmacological research / Drug discovery
+- compound: Multiple psychedelics (psilocybin, LSD, DMT, mescaline)
+- status: Published Neuron 2025; comprehensive receptor profiling
+- indications: Treatment-resistant depression, PTSD, Substance use disorders, Anxiety disorders
+- mechanism: Potent actions at nearly every serotonin, dopamine, and adrenergic receptor subtype; promotes neural plasticity through 5-HT2A and multiple off-target pathways
+- description: A landmark Neuron 2025 paper revealed that psychedelics have potent and efficacious actions at nearly every serotonin, dopamine, and adrenergic receptor subtype — far more targets than previously appreciated. This polypharmacology explains the complex subjective effects and suggests that different receptor profiles may be harnessed for different therapeutic outcomes. The discovery opens new avenues for rational psychedelic-inspired drug design.
+
+### Neuroplastogens: Next-Generation Non-Hallucinogenic Psychedelics
+
+- name: Neuroplastogens: Next-Generation Non-Hallucinogenic Psychedelics
+- type: Drug class / Novel therapeutics
+- compound: 5-HT2A biased agonists (tabernanthalog, AAZ-A-154, etc.)
+- status: Preclinical to early clinical; 2026 key development year
+- indications: Depression, Anxiety, Substance use disorders, PTSD
+- mechanism: 5-HT2A receptor biased agonism; promote neuroplasticity without hallucinogenic effects by activating specific signaling pathways (β-arrestin vs Gq)
+- description: Neuroplastogens are a new class of compounds that promote neural plasticity through 5-HT2A receptor activation without producing hallucinations. By separating therapeutic neuroplasticity from hallucinogenic effects, these molecules could make treatment safer and more accessible. 2026 is a key development year for this class, with several candidates advancing toward clinical trials.
+
+### GLP-1 Receptor Agonists for Neuroprotection
+
+- name: GLP-1 Receptor Agonists for Neuroprotection
+- type: Drug repurposing / Neuroprotective agents
+- compound: Semaglutide, tirzepatide, and other GLP-1/GIP receptor agonists
+- status: Observational studies show 40-60% reduced dementia risk; clinical trials planned
+- indications: Alzheimer's disease prevention, Parkinson's disease, Cognitive decline, Neuroinflammation
+- mechanism: GLP-1 receptor activation reduces neuroinflammation, promotes neuronal survival, improves insulin signaling in the brain, and reduces amyloid and tau pathology
+- description: GLP-1 receptor agonists (originally developed for diabetes and obesity) show remarkable neuroprotective properties. Observational studies report 40-60% reduced dementia risk in patients taking these drugs. The mechanism involves reducing neuroinflammation, promoting neuronal survival, and improving brain insulin signaling. Clinical trials for Alzheimer's prevention are being planned, potentially representing the largest drug repurposing opportunity in neurology.
+
+### Anti-Tau Immunotherapy (Phase 2/3)
+
+- name: Anti-Tau Immunotherapy (Phase 2/3)
+- type: Immunotherapy / Disease-modifying treatment
+- compound: Semorinemab, zagotenemab, and next-generation anti-tau antibodies
+- status: Phase 2/3 clinical trials; mixed results but next-gen antibodies promising
+- indications: Alzheimer's disease, Frontotemporal dementia, Progressive supranuclear palsy
+- mechanism: Monoclonal antibodies targeting pathological tau protein; prevent tau aggregation and spread between neurons
+- description: Anti-tau immunotherapy targets the tau protein pathology that correlates more closely with cognitive decline than amyloid plaques. While first-generation anti-tau antibodies showed mixed results, next-generation candidates with improved target engagement and blood-brain barrier penetration are advancing through Phase 2/3 trials. Success would provide a complementary approach to anti-amyloid therapies.
+
+### Focused Ultrasound + Microbubbles for Blood-Brain Barrier Opening
+
+- name: Focused Ultrasound + Microbubbles for Blood-Brain Barrier Opening
+- type: Drug delivery technology / Neuropharmacology enabler
+- compound: Microbubble contrast agents + focused ultrasound
+- status: Clinical trials ongoing; enabling CNS drug delivery
+- indications: Alzheimer's disease, Brain tumors, Parkinson's disease, Any condition requiring CNS drug delivery
+- mechanism: Focused ultrasound with intravenously injected microbubbles temporarily opens the blood-brain barrier, allowing therapeutic agents to enter the brain that would otherwise be excluded
+- description: Focused ultrasound combined with microbubble contrast agents can temporarily and reversibly open the blood-brain barrier, enabling delivery of therapeutic agents directly to the brain. This technology is in clinical trials for Alzheimer's disease (delivering anti-amyloid antibodies), brain tumors (delivering chemotherapy), and Parkinson's disease. It represents a paradigm shift in neuropharmacology by overcoming the BBB, which has been the major obstacle for CNS drug development.
+
+### Psychedelic-Assisted Therapy (Psilocybin, MDMA)
+
+- name: Psychedelic-Assisted Therapy (Psilocybin, MDMA)
+- type: Psychedelic therapeutics
+- mechanism: 5-HT2A receptor agonism; promotes neural plasticity and new neural connections
+- applications: 治疗抵抗性抑郁症, PTSD, 成瘾, 临终焦虑
+- status: Psilocybin Phase 3 trials; MDMA-assisted therapy FDA breakthrough therapy designation
+- description: Psychedelic-assisted therapy has emerged as one of the most promising new approaches in psychiatry. Psilocybin (from magic mushrooms) and MDMA (ecstasy) are in advanced clinical trials for treatment-resistant depression, PTSD, and addiction. The therapies work by promoting neural plasticity — psychedelics open a window of heightened brain adaptability, creating opportunities for therapeutic change. A key 2026 development is the search for 'psychoplastogens' — molecules that provide the therapeutic benefits of psychedelics (neural plasticity) without the hallucinogenic effects, potentially making treatment more accessible.
+- sources: [object Object]
+
+### Psychoplastogens (Non-Hallucinogenic Psychedelics)
+
+- name: Psychoplastogens (Non-Hallucinogenic Psychedelics)
+- type: Novel neuropharmacology
+- mechanism: 5-HT2A agonists that promote neural plasticity without hallucinations
+- applications: 抑郁症, PTSD, 神经退行性疾病, 脑损伤恢复
+- status: Preclinical and early clinical development (2025-2026)
+- description: Psychoplastogens are a new class of compounds that promote neural plasticity (the brain's ability to form new connections) without causing hallucinations. By separating therapeutic neuroplasticity from the psychedelic experience, these molecules could make psychedelic-inspired treatments more accessible and acceptable. Key compounds include tabernanthalog (TBG) and AAZ-A-154, which promote neurite growth and synaptogenesis in animal models. This represents the 'next wave' of psychedelic research — harnessing the therapeutic mechanism while eliminating the trip.
+- sources: [object Object]
+
+### Anti-Amyloid Antibodies (Lecanemab, Donanemab)
+
+- name: Anti-Amyloid Antibodies (Lecanemab, Donanemab)
+- type: Disease-modifying Alzheimer's therapy
+- mechanism: Anti-amyloid-beta monoclonal antibodies; clear amyloid plaques from brain
+- applications: 早期阿尔茨海默病
+- status: Lecanemab (Leqembi) FDA approved 2023; Donanemab (Kisunla) FDA approved 2024
+- description: Lecanemab and Donanemab are the first disease-modifying therapies for Alzheimer's disease, representing a landmark breakthrough after decades of failures. Both are anti-amyloid-beta monoclonal antibodies that clear amyloid plaques from the brain. Lecanemab slows cognitive decline by 27% over 18 months, while Donanemab achieved 35% slowing and showed that treatment can be stopped once amyloid is cleared. Key challenges include ARIA (amyloid-related imaging abnormalities) side effects, high cost, and the need for early diagnosis before significant brain damage occurs.
+- sources: [object Object]
+
+### GLP-1 Receptor Agonists for Neurodegeneration
+
+- name: GLP-1 Receptor Agonists for Neurodegeneration
+- type: Repurposed metabolic drugs for brain
+- mechanism: GLP-1 receptor agonism; neuroprotection, anti-inflammatory, reduces oxidative stress
+- applications: 阿尔茨海默病, 帕金森病, 脑卒中恢复
+- status: Phase 2-3 trials for Alzheimer's and Parkinson's; liraglutide and semaglutide
+- description: GLP-1 receptor agonists (originally developed for diabetes and obesity) are being investigated for neurodegenerative diseases. These drugs cross the blood-brain barrier and have neuroprotective, anti-inflammatory, and antioxidant effects. A Phase 2 trial of liraglutide in Alzheimer's disease showed reduced brain atrophy over 12 months. Semaglutide (Ozempic/Wegovy) is in Phase 3 trials for Alzheimer's. The repurposing of these widely-used drugs could rapidly provide new treatment options for neurodegenerative diseases.
+- sources: [object Object]
+
+### NMDA Receptor Modulators (Auvelity)
+
+- name: NMDA Receptor Modulators (Auvelity)
+- type: Rapid-acting antidepressant
+- mechanism: Dextromethorphan (NMDA antagonist) + bupropion (CYP2D6 inhibitor)
+- applications: 重度抑郁症
+- status: FDA approved 2022; first oral rapid-acting antidepressant
+- description: Auvelity (dextromethorphan-bupropion) is the first oral rapid-acting antidepressant, providing antidepressant effects within one week compared to 4-6 weeks for traditional antidepressants. Dextromethorphan acts as an NMDA receptor antagonist (similar mechanism to ketamine), while bupropion increases dextromethorphan bioavailability by inhibiting its metabolism. The rapid onset of action addresses a critical unmet need in depression treatment, where the delay between starting medication and symptom improvement is associated with increased suicide risk.
+- sources: [object Object]
+
+## Related Knowledge Bases
+
+- GeneTech (https://genetech.tools): Gene therapy for neurological disorders
+- RobotParts (https://robot.genetech.tools): Neuro-inspired robotics
+- AgentEco (https://agent.genetech.tools): BCI-agent interfaces

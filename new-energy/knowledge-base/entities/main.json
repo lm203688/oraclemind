@@ -1,0 +1,95 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-06-05T14:16:40.000Z",
+  "description": "新能源实体库 - 主索引",
+  "categories": {
+    "solar": {
+      "file": "solar.json",
+      "description": "光伏技术库",
+      "entity_count": 116,
+      "focus": "PERC/TOPCon/HJT/钙钛矿/叠层/聚光/有机/量子点/柔性/室内/回收/LONGi HIBC 28.13%/XJTU n-i-p 26.5%/钙钛矿>30%/三结36.1%/效率表v67/BNEF NEO 2026/EIA 100%清洁/CAS钙钛矿/2026技术趋势/Nature综述/Fluxim追踪/Fraunhofer 36.1%/2025突破回顾"
+    },
+    "solar_tech": {
+      "file": "solar_tech.json",
+      "description": "光伏前沿技术(英文版)",
+      "entity_count": 8
+    },
+    "storage": {
+      "file": "storage.json",
+      "description": "储能技术库",
+      "entity_count": 93,
+      "focus": "LFP/钠离子/固态/液流/压缩空气/重力/氢储能/热储能/超级电容/BMS/108GW里程碑/VPP/HESS/LDES/BNEF 100GW/JPM 43%/120+吉瓦级/2026电池展望/储能革命趋势"
+    },
+    "energy_storage": {
+      "file": "energy_storage.json",
+      "description": "储能前沿技术(英文版)",
+      "entity_count": 8
+    },
+    "hydrogen_energy": {
+      "file": "hydrogen_energy.json",
+      "description": "氢能技术库",
+      "entity_count": 74,
+      "focus": "PEM/SOEC/AEL电解/燃料电池/储氢/输氢/氢能重卡/绿氨/光催化/清算之年/美国氢能战略/IEA回顾/FCEV市场/加州规划/FCEV市场2.7亿/FCHEA路线图"
+    },
+    "wind_energy": {
+      "file": "wind_energy.json",
+      "description": "风电技术库",
+      "entity_count": 63,
+      "focus": "浮式海上/高空/垂直轴/超大型/海上制氢/回收/AI运维/柔直送出/43GW增长/.2T投资/20MW+风机/风电+储能/叶片回收/BNEF NEO 2026/Levin 7趋势/EIA 55GW+"
+    },
+    "grid_tech": {
+      "file": "grid_tech.json",
+      "description": "电网技术库",
+      "entity_count": 66,
+      "focus": "HVDC/构网型逆变器/VPP/DLR/柔直/微电网/V2G/智能电表/现货市场/AI调度/需求响应/AI电力需求/DERMS/储能调度/柔直配网/BNEF NEO 2026/Canary Media/BDO 2026/Forbes 2026"
+    },
+    "nuclear_renewable": {
+      "file": "nuclear_renewable.json",
+      "description": "核能-可再生能源混合系统",
+      "entity_count": 2
+    }
+  },
+  "total_entities": 205,
+  "data_sources": [
+    "web-search: solar cell efficiency record 2025 2026",
+    "web-search: battery storage technology breakthrough 2025 2026",
+    "web-search: renewable energy new development 2025 2026",
+    "web-search: hydrogen fuel cell progress 2025 2026",
+    "web-search: perovskite solar cell latest breakthrough 2026",
+    "NREL Best Research-Cell Efficiency Chart (Rev.05-12-2026)",
+    "Nature: Solar Cell Efficiency Tables (Version 67)",
+    "IEA: Global Energy Review 2026 - Battery Storage",
+    "IEA: Global Hydrogen Review 2025",
+    "IEA: Breakthrough Agenda Report 2025 - Hydrogen",
+    "BloombergNEF: Energy Transition Investment Trends 2025",
+    "BloombergNEF: New Energy Outlook 2026",
+    "BloombergNEF: Energy Storage Enters the 100-GWatt Era",
+    "J.P. Morgan: Battery Energy Storage Revolution 2026",
+    "GreyB: Energy Storage Innovation Trends 2026",
+    "Wood Mackenzie: Hydrogen Year of Reckoning 2026",
+    "DOE: Progress in Hydrogen and Fuel Cells 2025",
+    "Deloitte: 2026 Renewable Energy Industry Outlook",
+    "pv magazine: LONGi 28.13% silicon cell (April 2026)",
+    "XJTU: n-i-p perovskite 26.5% Science (January 2026)",
+    "Knowridge: Perovskite >30% breakthrough (May 2026)",
+    "web-search: solar cell efficiency record 2025 2026 (2026-06-01 refresh)",
+    "web-search: battery storage technology breakthrough 2025 2026 (2026-06-01 refresh)",
+    "web-search: renewable energy new development 2026 (2026-06-01 refresh)",
+    "web-search: hydrogen fuel cell progress 2025 2026 (2026-06-01 refresh)",
+    "web-search: perovskite solar cell latest breakthrough 2026 (2026-06-01 refresh)",
+    "Fraunhofer ISE: 36.1% triple-junction tandem (2026)",
+    "CAS.org: Perovskite solar panels future analysis (2026)",
+    "Fluxim AG: Perovskite efficiency tracking 2026 update",
+    "Nature: Perovskite strategies review 2025-2026",
+    "Sunhub: Solar panel technology 2026 trends",
+    "BloombergNEF: 100GW Energy Storage Era (2026)",
+    "J.P. Morgan: Battery Energy Storage 43% growth (2026)",
+    "pv magazine USA: What's next for battery technology 2026",
+    "Coherent Market: Hydrogen Fuel Cell Vehicle Market 2026-2033",
+    "FCHEA: Road Map to a US Hydrogen Economy",
+    "EIA: New solar, wind + storage capacity 2026",
+    "Canary Media: US clean power 2026",
+    "BDO: 2026 Natural Resources & Energy Industry Predictions",
+    "Forbes: 2026 Outlook Clean Energy"
+  ]
+}

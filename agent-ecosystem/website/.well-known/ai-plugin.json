@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Agent Ecosystem DB",
+  "name_for_model": "agentecosystemdb",
+  "description_for_human": "AI Agent ecosystem database covering MCP servers, SDKs, protocols, memory systems, and benchmarks",
+  "description_for_model": "AI Agent ecosystem database covering MCP servers, SDKs, protocols, memory systems, and benchmarks. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://agent.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://agent.genetech.tools/"
+}

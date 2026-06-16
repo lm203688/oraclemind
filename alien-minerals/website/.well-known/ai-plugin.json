@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "MineralDB",
+  "name_for_model": "mineraldb",
+  "description_for_human": "Extraterrestrial mineral database covering space minerals, asteroids, mining technology, lunar resources, processing methods, resource assessment, and space resources",
+  "description_for_model": "Extraterrestrial mineral database covering space minerals, asteroids, mining technology, lunar resources, processing methods, resource assessment, and space resources. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://mineral.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://mineral.genetech.tools/"
+}

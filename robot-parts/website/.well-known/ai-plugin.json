@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "RobotParts DB",
+  "name_for_model": "robotpartsdb",
+  "description_for_human": "Robot parts and protocols database covering actuators, chips, interfaces, LLMs, and communication protocols",
+  "description_for_model": "Robot parts and protocols database covering actuators, chips, interfaces, LLMs, and communication protocols. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://robot.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://robot.genetech.tools/"
+}

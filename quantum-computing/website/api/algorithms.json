@@ -1,0 +1,62 @@
+{
+  "count": 7,
+  "updated": "2026-05-29T02:27:01.438Z",
+  "data": [
+    {
+      "id": "QALG-001",
+      "name": "Shor's Algorithm",
+      "type": "Number theory / Cryptography",
+      "complexity": "O((log N)³) vs classical O(exp((log N)^(1/3)))",
+      "application": "Integer factorization - breaks RSA, ECC encryption",
+      "description": "Shor's algorithm (1994) can factor large integers exponentially faster than any known classical algorithm. This threatens RSA-2048 and ECC, the backbone of internet security. Requires ~4,000 logical qubits (millions of physical qubits with error correction). NIST has standardized post-quantum cryptography (CRYSTALS-Kyber, CRYSTALS-Dilithium) in response."
+    },
+    {
+      "id": "QALG-002",
+      "name": "Grover's Algorithm",
+      "type": "Search / Optimization",
+      "complexity": "O(√N) vs classical O(N)",
+      "application": "Unstructured search, cryptographic key search, database search",
+      "description": "Grover's algorithm (1996) provides quadratic speedup for unstructured search problems. While less dramatic than Shor's exponential speedup, it's more broadly applicable. For a 256-bit key, Grover reduces effective security to 128 bits. This motivates AES-256 as the post-quantum symmetric encryption standard."
+    },
+    {
+      "id": "QALG-003",
+      "name": "VQE (Variational Quantum Eigensolver)",
+      "type": "Chemistry / Materials",
+      "complexity": "Heuristic - no proven speedup; practical advantage on NISQ devices",
+      "application": "Molecular ground state energy, drug discovery, catalyst design, materials science",
+      "description": "VQE is the most widely used NISQ-era quantum algorithm. It uses a hybrid quantum-classical loop: a quantum circuit prepares a trial state, measures the energy, and a classical optimizer updates parameters. IBM, Google, and others have used VQE to simulate small molecules (H₂, LiH, BeH₂). The key question is whether VQE scales to chemically relevant systems."
+    },
+    {
+      "id": "QALG-004",
+      "name": "QAOA (Quantum Approximate Optimization Algorithm)",
+      "type": "Combinatorial Optimization",
+      "complexity": "Heuristic - no proven speedup; competitive with classical for some problems",
+      "application": "Max-Cut, portfolio optimization, scheduling, logistics, vehicle routing",
+      "description": "QAOA (Farhi et al., 2014) is a hybrid quantum-classical algorithm for combinatorial optimization. It alternates between problem and mixer Hamiltonians, with parameters optimized classically. At p→∞, QAOA converges to the optimal solution. In practice, low-depth QAOA (p=1-10) is used on NISQ devices. Whether QAOA provides practical advantage over classical heuristics remains open."
+    },
+    {
+      "id": "QALG-005",
+      "name": "Quantum Phase Estimation (QPE)",
+      "type": "Algebraic / Eigenvalue",
+      "complexity": "O(poly(n)) - exponential speedup for eigenvalue problems",
+      "application": "Chemistry (exact energy levels), factoring (part of Shor's), quantum simulation",
+      "description": "QPE is a fundamental quantum subroutine that estimates the eigenvalue (phase) of a unitary operator. It's the core of Shor's algorithm and the most promising approach for exact quantum chemistry simulation. QPE requires fault-tolerant quantum computers (not NISQ), but when available, it can simulate molecular energies with exponential speedup over classical methods."
+    },
+    {
+      "id": "QALG-006",
+      "name": "Quantum Machine Learning (QML)",
+      "type": "Machine Learning",
+      "complexity": "Varies - most QML algorithms lack proven speedup",
+      "application": "Classification, generative models, anomaly detection, reinforcement learning",
+      "description": "QML explores whether quantum computers can accelerate machine learning tasks. Approaches include quantum kernel methods, variational quantum circuits as neural network layers, and quantum Boltzmann machines. While theoretical speedups exist for specific problems (HHL for linear systems), practical QML advantage remains unproven. Hybrid quantum-classical ML is the current focus."
+    },
+    {
+      "id": "QALG-007",
+      "name": "Quantum Error Correction (Surface Code)",
+      "type": "Error Correction",
+      "complexity": "O(d²) physical qubits per logical qubit (d = code distance)",
+      "application": "Enabling fault-tolerant quantum computation",
+      "description": "The surface code is the leading quantum error correction scheme. It arranges physical qubits on a 2D lattice where each logical qubit requires d² physical qubits for code distance d. Google's Willow demonstrated below-threshold error correction with the surface code in 2024. At ~1,000 physical qubits per logical qubit, a million-qubit machine could support ~1,000 logical qubits."
+    }
+  ]
+}

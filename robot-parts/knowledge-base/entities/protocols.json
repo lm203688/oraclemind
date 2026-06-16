@@ -1,0 +1,1645 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-05",
+  "description": "通信协议库",
+  "entities": [
+    {
+      "id": "PROTO-001",
+      "name": "EtherCAT",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "100 Mbps",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "line/star/ring",
+      "max_nodes": "65535",
+      "cable": "CAT5+ Ethernet",
+      "standard": "IEC 61158",
+      "applications": [
+        "industrial_robot",
+        "CNC",
+        "motion_control"
+      ],
+      "pros": [
+        "ultra_low_latency",
+        "deterministic",
+        "wide_support"
+      ],
+      "cons": [
+        "requires_master",
+        "complex_setup"
+      ],
+      "compatibility": [
+        "Beckhoff",
+        "Omron",
+        "any EtherCAT slave"
+      ]
+    },
+    {
+      "id": "PROTO-002",
+      "name": "CANopen",
+      "category": "communication",
+      "type": "fieldbus",
+      "speed": "1 Mbps max",
+      "latency": "~1 ms",
+      "determinism": "deterministic",
+      "topology": "bus",
+      "max_nodes": "127",
+      "cable": "twisted pair",
+      "standard": "CiA 301",
+      "applications": [
+        "mobile_robot",
+        "motor_control",
+        "industrial"
+      ],
+      "pros": [
+        "robust",
+        "simple",
+        "widely_supported"
+      ],
+      "cons": [
+        "limited_bandwidth",
+        "slow_for_large_data"
+      ],
+      "compatibility": [
+        "STM32",
+        "CAN adapter",
+        "PiCAN"
+      ]
+    },
+    {
+      "id": "PROTO-003",
+      "name": "PROFINET",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "100 Mbps",
+      "latency": "<1 ms (IRT)",
+      "determinism": "deterministic (IRT)",
+      "topology": "star/tree/ring",
+      "max_nodes": "256",
+      "cable": "CAT5+ Ethernet",
+      "standard": "IEC 61158",
+      "applications": [
+        "factory_automation",
+        "process_control"
+      ],
+      "pros": [
+        "integrated_IT",
+        "real_time"
+      ],
+      "cons": [
+        "complex",
+        "expensive"
+      ],
+      "compatibility": [
+        "Siemens",
+        "Phoenix Contact"
+      ]
+    },
+    {
+      "id": "PROTO-004",
+      "name": "DYNAMIXEL Protocol 2.0",
+      "category": "communication",
+      "type": "proprietary_serial",
+      "speed": "3 Mbps",
+      "latency": "~1 ms",
+      "determinism": "semi-deterministic",
+      "topology": "daisy_chain",
+      "max_nodes": "252",
+      "cable": "TTL/RS485",
+      "standard": "ROBOTIS proprietary",
+      "applications": [
+        "hobby_robot",
+        "humanoid",
+        "manipulator"
+      ],
+      "pros": [
+        "simple",
+        "rich_feedback",
+        "position_control"
+      ],
+      "cons": [
+        "proprietary",
+        "limited_bandwidth"
+      ],
+      "compatibility": [
+        "DYNAMIXEL servos only"
+      ]
+    },
+    {
+      "id": "PROTO-005",
+      "name": "ROS2 DDS",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "depends on transport",
+      "latency": "~1-10 ms",
+      "determinism": "configurable QoS",
+      "topology": "P2P mesh",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet/WiFi",
+      "standard": "OMG DDS",
+      "applications": [
+        "robot_software",
+        "multi_robot",
+        "research"
+      ],
+      "pros": [
+        "flexible",
+        "scalable",
+        "open_source"
+      ],
+      "cons": [
+        "overhead",
+        "complex_config"
+      ],
+      "compatibility": [
+        "any ROS2 compatible hardware"
+      ]
+    },
+    {
+      "id": "PROTO-006",
+      "name": "UART/Serial",
+      "category": "communication",
+      "type": "serial",
+      "speed": "up to 5 Mbps",
+      "latency": "~1 ms",
+      "determinism": "non-deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "2 (point-to-point)",
+      "cable": "TX/RX/GND",
+      "standard": "RS-232/RS-485/TTL",
+      "applications": [
+        "debug",
+        "GPS",
+        "simple_sensor",
+        "motor_controller"
+      ],
+      "pros": [
+        "simple",
+        "universal"
+      ],
+      "cons": [
+        "slow",
+        "no_multi_drop"
+      ],
+      "compatibility": [
+        "almost_all_MCU"
+      ]
+    },
+    {
+      "id": "PROTO-007",
+      "name": "I2C",
+      "category": "communication",
+      "type": "serial_bus",
+      "speed": "100/400/3400 KHz",
+      "latency": "~1 ms",
+      "determinism": "non-deterministic",
+      "topology": "bus",
+      "max_nodes": "127",
+      "cable": "SDA/SCL/GND",
+      "standard": "NXP/Philips",
+      "applications": [
+        "sensor",
+        "EEPROM",
+        "display",
+        "IMU"
+      ],
+      "pros": [
+        "simple",
+        "2_wire",
+        "multi_device"
+      ],
+      "cons": [
+        "slow",
+        "address_conflicts"
+      ],
+      "compatibility": [
+        "almost_all_MCU"
+      ]
+    },
+    {
+      "id": "PROTO-008",
+      "name": "SPI",
+      "category": "communication",
+      "type": "serial_bus",
+      "speed": "up to 80 MHz",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "master-slave",
+      "max_nodes": "depends on CS lines",
+      "cable": "MOSI/MISO/SCK/CS",
+      "standard": "Motorola",
+      "applications": [
+        "display",
+        "ADC/DAC",
+        "flash",
+        "IMU"
+      ],
+      "pros": [
+        "fast",
+        "full_duplex",
+        "deterministic"
+      ],
+      "cons": [
+        "many_wires",
+        "no_standard_connector"
+      ],
+      "compatibility": [
+        "almost_all_MCU"
+      ]
+    },
+    {
+      "id": "PROTO-009",
+      "name": "TSN (Time-Sensitive Networking)",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "1 Gbps",
+      "latency": "<10 μs",
+      "determinism": "deterministic",
+      "topology": "star/tree",
+      "max_nodes": "unlimited",
+      "cable": "CAT6+ Ethernet",
+      "standard": "IEEE 802.1",
+      "applications": [
+        "industrial_robot",
+        "autonomous_vehicle",
+        "motion_control"
+      ],
+      "pros": [
+        "standard_ethernet",
+        "ultra_low_jitter",
+        "converged_network"
+      ],
+      "cons": [
+        "complex_config",
+        "requires_TSN_switches",
+        "emerging"
+      ],
+      "compatibility": [
+        "TSN-aware switches",
+        "Intel TSN",
+        "NXP TSN"
+      ]
+    },
+    {
+      "id": "PROTO-010",
+      "name": "OPC-UA",
+      "category": "communication",
+      "type": "industrial_protocol",
+      "speed": "depends on transport",
+      "latency": "~10-100 ms",
+      "determinism": "non-deterministic (Pub/Sub可配)",
+      "topology": "client-server/Pub-Sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "IEC 62541",
+      "applications": [
+        "factory_automation",
+        "SCADA",
+        "industrial_iot"
+      ],
+      "pros": [
+        "platform_independent",
+        "secure",
+        "information_model"
+      ],
+      "cons": [
+        "overhead",
+        "not_realtime",
+        "complex"
+      ],
+      "compatibility": [
+        "Siemens",
+        "Beckhoff",
+        "any OPC-UA server"
+      ]
+    },
+    {
+      "id": "PROTO-011",
+      "name": "CAN FD",
+      "category": "communication",
+      "type": "fieldbus",
+      "speed": "5 Mbps (data phase)",
+      "latency": "~0.5 ms",
+      "determinism": "deterministic",
+      "topology": "bus",
+      "max_nodes": "127",
+      "cable": "twisted pair",
+      "standard": "ISO 11898-1",
+      "applications": [
+        "automotive",
+        "motor_control",
+        "mobile_robot"
+      ],
+      "pros": [
+        "backward_compatible_CAN",
+        "higher_bandwidth",
+        "deterministic"
+      ],
+      "cons": [
+        "still_limited_vs_ethernet",
+        "requires_FD_controller"
+      ],
+      "compatibility": [
+        "STM32 with CAN-FD",
+        "NXP",
+        "Infineon"
+      ]
+    },
+    {
+      "id": "PROTO-012",
+      "name": "Modbus TCP/RTU",
+      "category": "communication",
+      "type": "industrial_protocol",
+      "speed": "100 Mbps (TCP) / 115Kbps (RTU)",
+      "latency": "~10-100 ms",
+      "determinism": "non-deterministic",
+      "topology": "client-server/bus",
+      "max_nodes": "247 (RTU)",
+      "cable": "Ethernet/twisted pair",
+      "standard": "Modbus Organization",
+      "applications": [
+        "plc_communication",
+        "sensor_network",
+        "industrial"
+      ],
+      "pros": [
+        "simple",
+        "widely_supported",
+        "legacy_compatible"
+      ],
+      "cons": [
+        "no_security",
+        "limited_data_model",
+        "slow"
+      ],
+      "compatibility": [
+        "almost_all_PLC",
+        "industrial_devices"
+      ]
+    },
+    {
+      "id": "PROTO-013",
+      "name": "SOME/IP",
+      "category": "communication",
+      "type": "automotive_middleware",
+      "speed": "depends on transport",
+      "latency": "~1-10 ms",
+      "determinism": "configurable",
+      "topology": "client-server/Pub-Sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "AUTOSAR",
+      "applications": [
+        "autonomous_driving",
+        "automotive_robot",
+        "ADAS"
+      ],
+      "pros": [
+        "automotive_standard",
+        "service_oriented",
+        "scalable"
+      ],
+      "cons": [
+        "automotive_only",
+        "complex",
+        "AUTOSAR_dependency"
+      ],
+      "compatibility": [
+        "AUTOSAR stacks",
+        "vector_tools"
+      ]
+    },
+    {
+      "id": "PROTO-014",
+      "name": "USB 3.x",
+      "category": "communication",
+      "type": "serial_bus",
+      "speed": "5-20 Gbps",
+      "latency": "~125 μs",
+      "determinism": "non-deterministic",
+      "topology": "tiered_star",
+      "max_nodes": "127 (per controller)",
+      "cable": "USB cable",
+      "standard": "USB-IF",
+      "applications": [
+        "camera",
+        "sensor_hub",
+        "debug",
+        "data_transfer"
+      ],
+      "pros": [
+        "high_bandwidth",
+        "plug_play",
+        "ubiquitous"
+      ],
+      "cons": [
+        "non_deterministic",
+        "cable_length_limited",
+        "host_dependency"
+      ],
+      "compatibility": [
+        "almost_all_devices"
+      ]
+    },
+    {
+      "id": "PROTO-015",
+      "name": "MIPI CSI-2/3",
+      "category": "communication",
+      "type": "camera_interface",
+      "speed": "1-8 Gbps per lane",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "1 per interface",
+      "cable": "flex cable/PCB trace",
+      "standard": "MIPI Alliance",
+      "applications": [
+        "camera_sensor",
+        "vision_system",
+        "robot_perception"
+      ],
+      "pros": [
+        "high_bandwidth",
+        "low_latency",
+        "low_power"
+      ],
+      "cons": [
+        "short_distance",
+        "point_to_point_only",
+        "complex_PHY"
+      ],
+      "compatibility": [
+        "Jetson",
+        "RPi",
+        "Qualcomm",
+        "NXP"
+      ]
+    },
+    {
+      "id": "PROTO-016",
+      "name": "Ethernet/IP",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "100 Mbps - 1 Gbps",
+      "latency": "~1-10 ms",
+      "determinism": "non-deterministic (CIP Motion可配)",
+      "topology": "star/tree",
+      "max_nodes": "unlimited",
+      "cable": "CAT5+ Ethernet",
+      "standard": "ODVA/IEC 61158",
+      "applications": [
+        "factory_automation",
+        "robot_controller",
+        "PLC"
+      ],
+      "pros": [
+        "standard_ethernet",
+        "CIP_protocol_suite",
+        "wide_support"
+      ],
+      "cons": [
+        "not_truly_realtime",
+        "Rockwell_ecosystem_bias"
+      ],
+      "compatibility": [
+        "Rockwell",
+        "Omron",
+        "any CIP device"
+      ]
+    },
+    {
+      "id": "PROTO-017",
+      "name": "IO-Link",
+      "category": "communication",
+      "type": "sensor_actuator",
+      "speed": "230.4 Kbps",
+      "latency": "~2 ms",
+      "determinism": "cyclic_deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "1 per port",
+      "cable": "standard_sensor_cable",
+      "standard": "IEC 61131-9",
+      "applications": [
+        "smart_sensor",
+        "actuator",
+        "industrial_io"
+      ],
+      "pros": [
+        "simple",
+        "point_to_point",
+        "diagnostics",
+        "standard_cable"
+      ],
+      "cons": [
+        "slow",
+        "point_to_point_only",
+        "limited_data"
+      ],
+      "compatibility": [
+        "IO-Link master",
+        "smart_sensors"
+      ]
+    },
+    {
+      "id": "PROTO-018",
+      "name": "Wireless (WiFi 6/7)",
+      "category": "communication",
+      "type": "wireless",
+      "speed": "1-46 Gbps",
+      "latency": "~1-10 ms",
+      "determinism": "non-deterministic (TBD可配)",
+      "topology": "star/mesh",
+      "max_nodes": "varies",
+      "cable": "N/A (wireless)",
+      "standard": "IEEE 802.11ax/be",
+      "applications": [
+        "mobile_robot",
+        "AMR",
+        "drone",
+        "teleoperation"
+      ],
+      "pros": [
+        "no_cable",
+        "mobile",
+        "high_bandwidth"
+      ],
+      "cons": [
+        "interference",
+        "latency_jitter",
+        "security_concerns"
+      ],
+      "compatibility": [
+        "WiFi adapters",
+        "Intel",
+        "Qualcomm"
+      ]
+    },
+    {
+      "id": "PROTO-019",
+      "name": "Bluetooth 5.x / BLE",
+      "category": "communication",
+      "type": "wireless",
+      "speed": "2 Mbps (BLE)",
+      "latency": "~3-10 ms",
+      "determinism": "non-deterministic",
+      "topology": "star/mesh",
+      "max_nodes": "unlimited (mesh)",
+      "cable": "N/A (wireless)",
+      "standard": "Bluetooth SIG",
+      "applications": [
+        "sensor_node",
+        "beacon",
+        "remote_control",
+        "iot_robot"
+      ],
+      "pros": [
+        "low_power",
+        "ubiquitous",
+        "mesh_networking"
+      ],
+      "cons": [
+        "low_bandwidth",
+        "short_range",
+        "interference"
+      ],
+      "compatibility": [
+        "ESP32",
+        "nRF52",
+        "almost_all_mobile"
+      ]
+    },
+    {
+      "id": "PROTO-020",
+      "name": "SBus (Futaba)",
+      "category": "communication",
+      "type": "rc_protocol",
+      "speed": "100 Kbps",
+      "latency": "~7 ms",
+      "determinism": "semi-deterministic",
+      "topology": "bus",
+      "max_nodes": "16 channels",
+      "cable": "single_wire",
+      "standard": "Futaba proprietary",
+      "applications": [
+        "drone",
+        "rc_vehicle",
+        "hobby_robot"
+      ],
+      "pros": [
+        "simple",
+        "single_cable",
+        "widely_used_RC"
+      ],
+      "cons": [
+        "proprietary",
+        "limited_channels",
+        "slow"
+      ],
+      "compatibility": [
+        "Futaba receivers",
+        "SBus adapters"
+      ]
+    },
+    {
+      "id": "PROTO-021",
+      "name": "MAVLink",
+      "category": "communication",
+      "type": "drone_protocol",
+      "speed": "depends on transport",
+      "latency": "~1-5 ms",
+      "determinism": "non-deterministic",
+      "topology": "point-to-point/multicast",
+      "max_nodes": "255",
+      "cable": "UART/UDP/TCP",
+      "standard": "MAVLink.org",
+      "applications": [
+        "drone",
+        "UAV",
+        "UGV",
+        "autonomous_vehicle"
+      ],
+      "pros": [
+        "lightweight",
+        "drone_standard",
+        "extensible"
+      ],
+      "cons": [
+        "drone_focused",
+        "no_security_builtin",
+        "limited_robotics"
+      ],
+      "compatibility": [
+        "PX4",
+        "ArduPilot",
+        "QGroundControl"
+      ]
+    },
+    {
+      "id": "PROTO-023",
+      "name": "OPC UA over TSN",
+      "category": "communication",
+      "type": "industrial_protocol",
+      "speed": "1 Gbps",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "client-server/pub-sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "OPC Foundation",
+      "applications": [
+        "industrial_robot",
+        "smart_factory",
+        "humanoid"
+      ],
+      "pros": [
+        "interoperability",
+        "security_builtin",
+        "information_model"
+      ],
+      "cons": [
+        "overhead",
+        "complex_setup"
+      ],
+      "compatibility": [
+        "Siemens",
+        "Beckhoff",
+        "any OPC UA device"
+      ]
+    },
+    {
+      "id": "PROTO-024",
+      "name": "Matter",
+      "category": "communication",
+      "type": "iot_protocol",
+      "speed": "depends on transport",
+      "latency": "~50-200 ms",
+      "determinism": "non-deterministic",
+      "topology": "mesh/star",
+      "max_nodes": "250+",
+      "cable": "Wi-Fi/Thread/BLE",
+      "standard": "CSA",
+      "applications": [
+        "home_robot",
+        "smart_home",
+        "iot"
+      ],
+      "pros": [
+        "interoperability",
+        "secure",
+        "easy_setup"
+      ],
+      "cons": [
+        "not_real_time",
+        "consumer_focused"
+      ],
+      "compatibility": [
+        "Apple HomeKit",
+        "Google Home",
+        "Amazon Alexa"
+      ]
+    },
+    {
+      "id": "PROTO-025",
+      "name": "UWB (Ultra-Wideband)",
+      "category": "communication",
+      "type": "positioning_protocol",
+      "speed": "low data",
+      "latency": "<1 ms",
+      "determinism": "deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "depends",
+      "cable": "wireless",
+      "standard": "IEEE 802.15.4z",
+      "applications": [
+        "robot_positioning",
+        "indoor_localization",
+        "humanoid"
+      ],
+      "pros": [
+        "cm_level_accuracy",
+        "low_power",
+        "secure_ranging"
+      ],
+      "cons": [
+        "short_range",
+        "limited_data_rate"
+      ],
+      "compatibility": [
+        "Apple U1",
+        "Decawave DW1000"
+      ]
+    },
+    {
+      "id": "PROTO-026",
+      "name": "NB-IoT",
+      "category": "communication",
+      "type": "cellular_iot",
+      "speed": "<200 kbps",
+      "latency": "1-10 s",
+      "determinism": "non-deterministic",
+      "topology": "star (cellular)",
+      "max_nodes": "massive",
+      "cable": "cellular",
+      "standard": "3GPP",
+      "applications": [
+        "fleet_robot",
+        "remote_monitoring",
+        "agricultural_robot"
+      ],
+      "pros": [
+        "long_range",
+        "low_power",
+        "cellular_coverage"
+      ],
+      "cons": [
+        "high_latency",
+        "low_bandwidth",
+        "carrier_dependent"
+      ],
+      "compatibility": [
+        "any NB-IoT module"
+      ]
+    },
+    {
+      "id": "PROTO-027",
+      "name": "Wireless IIoT (5G NR)",
+      "category": "communication",
+      "type": "cellular_industrial",
+      "speed": "1-10 Gbps",
+      "latency": "<1 ms (URLLC)",
+      "determinism": "deterministic (URLLC)",
+      "topology": "star (cellular)",
+      "max_nodes": "massive",
+      "cable": "wireless",
+      "standard": "3GPP Release 16+",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "AGV",
+        "teleoperation"
+      ],
+      "pros": [
+        "ultra_low_latency",
+        "high_bandwidth",
+        "mobility"
+      ],
+      "cons": [
+        "infrastructure_cost",
+        "spectrum_license"
+      ],
+      "compatibility": [
+        "5G NR modules",
+        "industrial_5G_gateways"
+      ]
+    },
+    {
+      "id": "PROTO-028",
+      "name": "PROFINET over TSN",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "1 Gbps",
+      "latency": "<31.25 μs",
+      "determinism": "deterministic",
+      "topology": "line/star/ring",
+      "max_nodes": "256",
+      "cable": "CAT6+ Ethernet",
+      "standard": "PI (PROFIBUS International)",
+      "applications": [
+        "industrial_robot",
+        "smart_factory",
+        "motion_control"
+      ],
+      "pros": [
+        "deterministic",
+        "PROFINET_ecosystem",
+        "TSN_integration"
+      ],
+      "cons": [
+        "Siemens_centric",
+        "complex_setup"
+      ],
+      "compatibility": [
+        "Siemens",
+        "any PROFINET device"
+      ]
+    },
+    {
+      "id": "PROTO-029",
+      "name": "EtherCAT over TSN",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "1 Gbps",
+      "latency": "<50 μs",
+      "determinism": "deterministic",
+      "topology": "line/star",
+      "max_nodes": "65535",
+      "cable": "CAT5+ Ethernet",
+      "standard": "ETG (EtherCAT Technology Group)",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "motion_control"
+      ],
+      "pros": [
+        "ultra_low_latency",
+        "EtherCAT_ecosystem",
+        "TSN_integration"
+      ],
+      "cons": [
+        "requires_TSN_infrastructure",
+        "complex"
+      ],
+      "compatibility": [
+        "Beckhoff",
+        "any EtherCAT device"
+      ]
+    },
+    {
+      "id": "PROTO-030",
+      "name": "DDS-XRCE (DDS for Resource-Constrained)",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "depends on transport",
+      "latency": "<1 ms",
+      "determinism": "configurable",
+      "topology": "pub-sub",
+      "max_nodes": "unlimited",
+      "cable": "UDP/TCP",
+      "standard": "OMG",
+      "applications": [
+        "humanoid",
+        "drone",
+        "embedded_robot"
+      ],
+      "pros": [
+        "lightweight_DDS",
+        "real_time",
+        "scalable"
+      ],
+      "cons": [
+        "complex_QoS",
+        "learning_curve"
+      ],
+      "compatibility": [
+        "eProsima",
+        "RTI",
+        "any DDS-XRCE implementation"
+      ]
+    },
+    {
+      "id": "PROTO-031",
+      "name": "Adaptive Protocol (AI-driven)",
+      "category": "communication",
+      "type": "adaptive_protocol",
+      "speed": "adaptive",
+      "latency": "adaptive",
+      "determinism": "configurable",
+      "topology": "adaptive",
+      "max_nodes": "varies",
+      "cable": "varies",
+      "standard": "emerging",
+      "applications": [
+        "humanoid",
+        "adaptive_robot",
+        "AI_robot"
+      ],
+      "pros": [
+        "AI_optimized",
+        "self_adapting",
+        "future_proof"
+      ],
+      "cons": [
+        "immature",
+        "complex",
+        "limited_implementations"
+      ],
+      "compatibility": [
+        "research_platforms"
+      ]
+    },
+    {
+      "id": "PROTO-032",
+      "name": "Embodied AI Robot Communication Network",
+      "category": "communication",
+      "type": "embodied_ai_network",
+      "speed": "multi-Gbps",
+      "latency": "<1 ms",
+      "determinism": "deterministic",
+      "topology": "hierarchical",
+      "max_nodes": "varies",
+      "cable": "Ethernet/wireless",
+      "standard": "emerging (2026 report)",
+      "applications": [
+        "humanoid",
+        "embodied_ai",
+        "smart_factory"
+      ],
+      "pros": [
+        "AI_native",
+        "integrated_perception",
+        "unified_stack"
+      ],
+      "cons": [
+        "early_stage",
+        "proprietary_tendencies"
+      ],
+      "compatibility": [
+        "Chinese and international chip/module vendors"
+      ]
+    },
+    {
+      "id": "PROTO-033",
+      "name": "FlexxBotics Protocol",
+      "category": "communication",
+      "type": "robot_management",
+      "speed": "varies",
+      "latency": "varies",
+      "determinism": "non-deterministic",
+      "topology": "hub-spoke",
+      "max_nodes": "varies",
+      "cable": "Ethernet/wireless",
+      "standard": "FlexxBotics",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "smart_factory"
+      ],
+      "pros": [
+        "unified_management",
+        "multi_vendor",
+        "cloud_integration"
+      ],
+      "cons": [
+        "proprietary",
+        "subscription_model"
+      ],
+      "compatibility": [
+        "major_robot_brands"
+      ]
+    },
+    {
+      "id": "PROTO-034",
+      "name": "ROS2 over Zenoh",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "depends on transport",
+      "latency": "<1 ms",
+      "determinism": "configurable QoS",
+      "topology": "P2P mesh",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet/WiFi/5G",
+      "standard": "Eclipse Zenoh + ROS2",
+      "applications": [
+        "robot_software",
+        "multi_robot",
+        "edge_cloud"
+      ],
+      "pros": [
+        "低延迟",
+        "广域网支持",
+        "ROS2兼容",
+        "轻量级"
+      ],
+      "cons": [
+        "新项目",
+        "生态不如DDS成熟"
+      ],
+      "compatibility": [
+        "ROS2 Humble/Jazzy",
+        "Zenoh router"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-035",
+      "name": "Matter over Thread 1.4",
+      "category": "communication",
+      "type": "iot_protocol",
+      "speed": "250 Kbps (Thread)",
+      "latency": "~50 ms",
+      "determinism": "non-deterministic",
+      "topology": "mesh",
+      "max_nodes": "500+",
+      "cable": "wireless (Thread)",
+      "standard": "CSA Matter 1.4",
+      "applications": [
+        "home_robot",
+        "smart_home",
+        "service_robot"
+      ],
+      "pros": [
+        "跨平台互操作",
+        "安全",
+        "低功耗",
+        "Thread mesh"
+      ],
+      "cons": [
+        "not_real_time",
+        "consumer_focused"
+      ],
+      "compatibility": [
+        "Apple HomeKit",
+        "Google Home",
+        "Amazon Alexa",
+        "Samsung SmartThings"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-036",
+      "name": "Wi-Fi 7 (802.11be)",
+      "category": "communication",
+      "type": "wireless",
+      "speed": "up to 46 Gbps",
+      "latency": "<1 ms (TBD)",
+      "determinism": "TBD (Time-Sensitive)",
+      "topology": "star/mesh",
+      "max_nodes": "varies",
+      "cable": "N/A (wireless)",
+      "standard": "IEEE 802.11be",
+      "applications": [
+        "mobile_robot",
+        "AMR",
+        "teleoperation",
+        "humanoid"
+      ],
+      "pros": [
+        "超高速率",
+        "MLO多链路",
+        "低延迟",
+        "TBD支持"
+      ],
+      "cons": [
+        "基础设施成本",
+        "功耗较高",
+        "2026年早期部署"
+      ],
+      "compatibility": [
+        "Intel BE200",
+        "Qualcomm FastConnect 7800",
+        "MediaTek Filogic"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-040",
+      "name": "Embodied AI Robot Comm Network",
+      "category": "communication",
+      "type": "embodied_ai_network",
+      "speed": "multi-Gbps",
+      "latency": "<1 ms",
+      "determinism": "deterministic",
+      "topology": "hierarchical",
+      "max_nodes": "varies",
+      "cable": "Ethernet/wireless",
+      "standard": "emerging (2026 report)",
+      "applications": [
+        "humanoid",
+        "embodied_ai",
+        "smart_factory"
+      ],
+      "pros": [
+        "AI原生",
+        "集成感知",
+        "统一协议栈",
+        "分层拓扑"
+      ],
+      "cons": [
+        "早期阶段",
+        "专有倾向"
+      ],
+      "compatibility": [
+        "Chinese and international chip/module vendors"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-041",
+      "name": "DDS-TSN Integration",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "1 Gbps",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "pub-sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "OMG DDS + IEEE 802.1 TSN",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "autonomous_vehicle"
+      ],
+      "pros": [
+        "DDS灵活性",
+        "TSN确定性",
+        "实时通信",
+        "标准化"
+      ],
+      "cons": [
+        "复杂配置",
+        "需要TSN交换机"
+      ],
+      "compatibility": [
+        "RTI Connext",
+        "eProsima FastDDS",
+        "TSN switches"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-042",
+      "name": "IEEE RoboCom 2026",
+      "type": "workshop_standard",
+      "layer": "communication",
+      "description": "IEEE RoboCom 2026研讨会，第6届国际群体机器人通信和网络研讨会，与IEEE CCNC 2026联合举办",
+      "vendor": "IEEE",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-043",
+      "name": "ROBOCOMM",
+      "type": "conference_standard",
+      "layer": "communication",
+      "description": "ROBOCOMM国际机器人通信与协调会议，关注群体和集群机器人通信协议",
+      "vendor": "Academic",
+      "release_date": "2026-2027",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-044",
+      "name": "EtherCAT over TSN v2",
+      "type": "industrial_ethernet",
+      "layer": "fieldbus",
+      "description": "EtherCAT over TSN v2，2026年升级版，增强实时性和时间敏感网络集成",
+      "vendor": "ETG",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-045",
+      "name": "CAN XL",
+      "type": "fieldbus",
+      "layer": "fieldbus",
+      "description": "CAN XL协议，CAN FD的下一代升级，支持更高数据速率和更大帧长度，适用于高级机器人通信",
+      "vendor": "CiA",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-046",
+      "name": "6G NR for Robotics",
+      "type": "wireless",
+      "layer": "wireless",
+      "description": "6G NR机器人通信协议，2026年研究阶段，支持超低延迟和高可靠性机器人无线通信",
+      "vendor": "3GPP",
+      "release_date": "2026",
+      "status": "research",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "rproto-i3c",
+      "name": "I3C (MIPI)",
+      "type": "sensor_communication",
+      "description": "I3C传感器通信协议，MIPI联盟标准，新兴传感器通信竞争者，比I2C更高数据速率和更低功耗",
+      "organization": "MIPI Alliance",
+      "key_features": [
+        "传感器通信",
+        "比I2C更快",
+        "更低功耗",
+        "动态寻址",
+        "向后兼容I2C"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-opcua-dds-gateway",
+      "name": "OPC UA/DDS Gateway Standard",
+      "type": "interoperability",
+      "description": "OPC UA/DDS网关标准，实现OPC UA和DDS协议互操作，RTI发布的标准规范",
+      "organization": "OPC Foundation/OMG",
+      "key_features": [
+        "OPC UA+DDS互操作",
+        "网关标准",
+        "实时通信",
+        "工业4.0"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-5g-nr-urllc",
+      "name": "5G NR URLLC for Robotics",
+      "type": "wireless_communication",
+      "description": "5G NR URLLC超可靠低延迟通信，<1ms延迟，用于工业机器人和人形机器人远程控制",
+      "organization": "3GPP",
+      "key_features": [
+        "<1ms延迟",
+        "超可靠",
+        "工业机器人",
+        "远程控制",
+        "5G NR"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-can-xl-v2",
+      "name": "CAN XL v2",
+      "type": "bus_protocol",
+      "description": "CAN XL v2，CAN FD下一代升级版，更高数据速率和更大帧长度，适合机器人内部通信",
+      "organization": "CAN in Automation",
+      "key_features": [
+        "CAN FD升级",
+        "更高数据速率",
+        "更大帧长度",
+        "向后兼容"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-wifi7-mlo",
+      "name": "Wi-Fi 7 MLO (802.11be)",
+      "type": "wireless_protocol",
+      "description": "Wi-Fi 7 MLO多链路操作，最高46Gbps，支持多频段同时传输，用于机器人高带宽数据传输",
+      "organization": "IEEE",
+      "key_features": [
+        "46Gbps",
+        "MLO多链路",
+        "多频段",
+        "低延迟",
+        "高带宽"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-ethercat-g",
+      "name": "EtherCAT G (Gigabit)",
+      "type": "realtime_ethernet",
+      "description": "EtherCAT G千兆版，EtherCAT的千兆以太网升级，更高带宽和更短周期时间",
+      "organization": "ETG (EtherCAT Technology Group)",
+      "key_features": [
+        "千兆以太网",
+        "更高带宽",
+        "更短周期",
+        "EtherCAT兼容"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-thread-14",
+      "name": "Thread 1.4 Mesh Protocol",
+      "type": "mesh_networking",
+      "description": "Thread 1.4网状网络协议，用于家庭和服务机器人互操作，低功耗Mesh网络",
+      "organization": "Thread Group",
+      "key_features": [
+        "Mesh网络",
+        "低功耗",
+        "家庭机器人",
+        "互操作",
+        "IP原生"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-ieee8021-tsn-profile",
+      "name": "IEEE 802.1 TSN Profile for Robotics",
+      "type": "tsn_standard",
+      "description": "IEEE 802.1 TSN机器人配置文件，定义机器人实时通信的TSN标准配置",
+      "organization": "IEEE",
+      "key_features": [
+        "TSN标准配置",
+        "实时通信",
+        "确定性延迟",
+        "机器人专用"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-robot-comm-electronics",
+      "name": "Robot Communication Electronics Standard",
+      "type": "communication_standard",
+      "description": "机器人通信电子标准，2025年市场47.6亿美元，2034年预计108.9亿美元",
+      "organization": "Industry Consortium",
+      "key_features": [
+        "通信电子标准",
+        "市场快速增长",
+        "工业4.0",
+        "互操作"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-delft-comm",
+      "name": "DelftX Robot Communication Protocol",
+      "type": "educational_standard",
+      "description": "Delft大学机器人通信协议课程标准，涵盖关键通信协议和硬件",
+      "organization": "TU Delft",
+      "key_features": [
+        "教育标准",
+        "通信协议",
+        "硬件集成",
+        "机器人设计"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-zenoh-flow",
+      "name": "Zenoh-Flow",
+      "type": "data_flow_framework",
+      "description": "ZettaScale Zenoh-Flow数据流框架，支持机器人集群和自动驾驶开发",
+      "organization": "ZettaScale",
+      "key_features": [
+        "数据流框架",
+        "机器人集群",
+        "自动驾驶",
+        "Zenoh原生"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-robotcore",
+      "name": "ROBOTCORE",
+      "type": "hardware_acceleration",
+      "description": "Acceleration Robotics ROBOTCORE ROS 2硬件加速协议，支持TSN实时通信",
+      "organization": "Acceleration Robotics",
+      "key_features": [
+        "ROS 2加速",
+        "TSN支持",
+        "硬件加速",
+        "实时通信"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-cyclonedds",
+      "name": "Cyclone DDS",
+      "type": "dds_implementation",
+      "description": "Eclipse Cyclone DDS实现，ROS 2默认DDS，以太网环境下性能优于Zenoh",
+      "organization": "Eclipse Foundation",
+      "key_features": [
+        "DDS实现",
+        "ROS 2默认",
+        "以太网优化",
+        "开源"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-ethercat-g",
+      "name": "EtherCAT G",
+      "category": "industrial-protocol",
+      "description": "Gigabit version of EtherCAT for higher bandwidth real-time communication in robotics.",
+      "features": [
+        "gigabit speed",
+        "real-time",
+        "EtherCAT extension",
+        "high bandwidth",
+        "deterministic"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.linkedin.com/pulse/robot-communication-protocols-why-ethercat-can-real-future-hxehc"
+      ]
+    },
+    {
+      "id": "rproto-wifi7-mlo",
+      "name": "Wi-Fi 7 MLO",
+      "category": "wireless-protocol",
+      "description": "Wi-Fi 7 with Multi-Link Operation enabling up to 46 Gbps throughput for wireless robot communication.",
+      "features": [
+        "46 Gbps",
+        "multi-link",
+        "ultra-low latency",
+        "wireless robotics",
+        "MLO aggregation"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        "https://www.linkedin.com/pulse/robot-communication-protocols-why-ethercat-can-real-future-hxehc"
+      ]
+    },
+    {
+      "id": "rproto-5g-nr-urllc",
+      "name": "5G NR URLLC",
+      "category": "wireless-protocol",
+      "description": "5G New Radio Ultra-Reliable Low-Latency Communication for robotics. Sub-1ms latency for cloud robotics.",
+      "features": [
+        "sub-1ms latency",
+        "ultra-reliable",
+        "5G NR",
+        "cloud robotics",
+        "remote operation"
+      ],
+      "status": "emerging",
+      "year": 2025,
+      "sources": [
+        "https://www.linkedin.com/pulse/robot-communication-protocols-why-ethercat-can-real-future-hxehc"
+      ]
+    },
+    {
+      "id": "rproto-thread-1.4",
+      "name": "Thread 1.4",
+      "category": "iot-protocol",
+      "description": "Thread 1.4 mesh networking protocol for IoT and robotic systems with improved reliability and range.",
+      "features": [
+        "mesh networking",
+        "IoT integration",
+        "swarm robotics",
+        "low power",
+        "improved range"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://thinkrobotics.com/blogs/learn/robot-communication-protocols-a-comprehensive-guide"
+      ]
+    }
+  ]
+}

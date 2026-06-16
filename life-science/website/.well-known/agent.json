@@ -1,0 +1,104 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "LifeDB",
+  "description": "Life science knowledge base - synthetic biology, longevity, regenerative medicine",
+  "url": "https://life.genetech.tools",
+  "category": "生命科学",
+  "api": {
+    "type": "rest",
+    "base_url": "https://life.genetech.tools/api",
+    "openapi": "https://life.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/synthetic_biology.json",
+        "method": "GET",
+        "description": "Get synthetic biology data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/longevity_tech.json",
+        "method": "GET",
+        "description": "Get longevity tech data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/regenerative_medicine.json",
+        "method": "GET",
+        "description": "Get regenerative medicine data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/biotech_tools.json",
+        "method": "GET",
+        "description": "Get biotech tools data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/bioethics.json",
+        "method": "GET",
+        "description": "Get bioethics data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/bioinformatics.json",
+        "method": "GET",
+        "description": "Get bioinformatics data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://genetech.tools",
+      "title": "基因工程合成生物"
+    },
+    {
+      "rel": "related",
+      "href": "https://tcm.genetech.tools",
+      "title": "中药长寿研究"
+    },
+    {
+      "rel": "related",
+      "href": "https://brain.genetech.tools",
+      "title": "神经再生"
+    },
+    {
+      "rel": "related",
+      "href": "https://nuclear.genetech.tools",
+      "title": "生物能源"
+    }
+  ]
+}

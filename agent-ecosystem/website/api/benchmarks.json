@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-05-26T06:16:26.793Z",
+  "description": "benchmarks库",
+  "entities": [
+    {
+      "id": "BENCH-001",
+      "name": "SWE-bench",
+      "focus": "代码修复",
+      "description": "真实GitHub issue自动修复",
+      "top_score": "Claude 3.5 Sonnet ~49%",
+      "adoption": "广泛"
+    },
+    {
+      "id": "BENCH-002",
+      "name": "WebArena",
+      "focus": "网页操作",
+      "description": "真实网页环境任务完成",
+      "top_score": "~35%",
+      "adoption": "学术"
+    },
+    {
+      "id": "BENCH-003",
+      "name": "AgentBench",
+      "focus": "多任务",
+      "description": "多场景Agent能力评估",
+      "top_score": "GPT-4 ~36.9",
+      "adoption": "学术"
+    },
+    {
+      "id": "BENCH-004",
+      "name": "BFCL v3",
+      "focus": "函数调用",
+      "description": "多语言函数调用评估",
+      "top_score": "GPT-4o ~90%",
+      "adoption": "广泛"
+    },
+    {
+      "id": "BENCH-005",
+      "name": "MCP兼容性测试",
+      "focus": "MCP",
+      "description": "MCP Server兼容性验证",
+      "top_score": "N/A",
+      "adoption": "新兴"
+    }
+  ]
+}

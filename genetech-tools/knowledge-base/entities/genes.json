@@ -1,0 +1,1026 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-05T14:17:33.931Z",
+  "description": "基因实体库",
+  "entities": [
+    {
+      "id": "GENE-mpkp8lda-e2pwnv",
+      "symbol": "ADA",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkp8lda-4td3uu",
+      "symbol": "DHFR",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkp8lda-0kvohs",
+      "symbol": "VEGF",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:21:23.374Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkp8lda-davw6o",
+      "symbol": "PD-L1",
+      "first_seen": "2026-05-25T04:21:23.374Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkp8ldb-8dncxy",
+      "symbol": "Cell Cycle Progression Gene Profile",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkp8ldb-tt87n6",
+      "symbol": "GAA",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkp8ldb-ztdjwq",
+      "symbol": "PIK3CA",
+      "first_seen": "2026-05-25T04:21:23.375Z",
+      "last_updated": "2026-05-25T04:21:23.375Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpaslv-yx524q",
+      "symbol": "GAT-1",
+      "first_seen": "2026-05-25T04:23:06.067Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpaslv-b1y3l9",
+      "symbol": "SLC6A1",
+      "first_seen": "2026-05-25T04:23:06.067Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 6,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpaslw-1jvfxq",
+      "symbol": "LAMP2",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpaslw-5kp8lw",
+      "symbol": "OTOF",
+      "first_seen": "2026-05-25T04:23:06.068Z",
+      "last_updated": "2026-05-25T04:23:06.068Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-o1wzt2",
+      "symbol": "Keap1",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-4c67cl",
+      "symbol": "PHD2",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-0yiddu",
+      "symbol": "Nrf2",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-wcoz9i",
+      "symbol": "HIF-1α",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.072Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-9l89t7",
+      "symbol": "PNP",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-447xmw",
+      "symbol": "IDH1",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-rpz7do",
+      "symbol": "TK",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e3-5i9ptd",
+      "symbol": "Flt3L",
+      "first_seen": "2026-05-25T04:27:21.099Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-d4g4wc",
+      "symbol": "GLA",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-3qdbe5",
+      "symbol": "GB3",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-xw22up",
+      "symbol": "TurboYFP",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-u5cq2x",
+      "symbol": "DBP",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-bfxq5o",
+      "symbol": "GYG1",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 7,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-wzfsrc",
+      "symbol": "p62",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 6,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-80xxny",
+      "symbol": "LPL",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpg9e4-m738wd",
+      "symbol": "Furin",
+      "first_seen": "2026-05-25T04:27:21.100Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyed-b7d5yv",
+      "symbol": "PD-1",
+      "first_seen": "2026-05-25T04:32:33.445Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyed-lpdq3i",
+      "symbol": "Claudin-1",
+      "first_seen": "2026-05-25T04:32:33.445Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyed-x4sseb",
+      "symbol": "Occludin",
+      "first_seen": "2026-05-25T04:32:33.445Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyed-qzmf0c",
+      "symbol": "ZO-1",
+      "first_seen": "2026-05-25T04:32:33.445Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-iloyzt",
+      "symbol": "GBA",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:42:37.073Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-yfym4h",
+      "symbol": "CLN3",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:32:33.446Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-q9932g",
+      "symbol": "Bcl-2",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-c7whw6",
+      "symbol": "HBB",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 5,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-yyw2av",
+      "symbol": "HBA1",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-3j1fua",
+      "symbol": "HBA2",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-ot7hw3",
+      "symbol": "HBG1",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-4kf18o",
+      "symbol": "HBG2",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-nablds",
+      "symbol": "DMD",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:32:33.446Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-94l4x4",
+      "symbol": "CK8",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:32:33.446Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyee-drp2od",
+      "symbol": "μDys5",
+      "first_seen": "2026-05-25T04:32:33.446Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyef-ocgc0e",
+      "symbol": "GLB1",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpmyef-zevojb",
+      "symbol": "SERPINA1",
+      "first_seen": "2026-05-25T04:32:33.447Z",
+      "last_updated": "2026-05-25T04:32:33.447Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpqyhr-234enb",
+      "symbol": "desmin",
+      "first_seen": "2026-05-25T04:35:40.191Z",
+      "last_updated": "2026-05-25T04:54:17.049Z",
+      "source_count": 4,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkpvwp2-3dwa3t",
+      "symbol": "Luxturna",
+      "first_seen": "2026-05-25T04:39:31.142Z",
+      "last_updated": "2026-05-25T04:39:31.142Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzs-01ltsx",
+      "symbol": "GLY1",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzs-mx1zdr",
+      "symbol": "GYS",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzs-gfuup9",
+      "symbol": "UGP2",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzs-e04emq",
+      "symbol": "PYGL",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzs-tq12n9",
+      "symbol": "AGL",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzs-flgd9n",
+      "symbol": "SQSTM1",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzs-7psoz0",
+      "symbol": "DES",
+      "first_seen": "2026-05-25T04:46:27.544Z",
+      "last_updated": "2026-05-25T04:46:27.544Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzt-8v2jip",
+      "symbol": "OPN1MW",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzt-3j1jbb",
+      "symbol": "OPN1SW",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzt-guzm48",
+      "symbol": "NRL",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzt-9uk4i1",
+      "symbol": "L-opsin",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq4tzt-27bxs3",
+      "symbol": "FXN",
+      "first_seen": "2026-05-25T04:46:27.545Z",
+      "last_updated": "2026-05-25T04:46:27.545Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq8hyu-zhr2tz",
+      "symbol": "GFP",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 2,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq8hyu-wgz0lz",
+      "symbol": "miR122",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq8hyu-mgmfll",
+      "symbol": "miR208a",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq8hyu-k8ywja",
+      "symbol": "IGF-1",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkq8hyu-hmlciy",
+      "symbol": "TH",
+      "first_seen": "2026-05-25T04:49:18.582Z",
+      "last_updated": "2026-05-25T04:49:18.582Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkqew9m-cjhhq9",
+      "symbol": "GBA1",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkqew9m-c4fxxg",
+      "symbol": "IGF1",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkqew9m-pncncz",
+      "symbol": "IGFBP3",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkqew9m-ybqhmg",
+      "symbol": "CD133",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkqew9m-nw5jjh",
+      "symbol": "CLTA1",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkqew9m-ya46jj",
+      "symbol": "AIFM1",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpkqew9m-piizfa",
+      "symbol": "ABL",
+      "first_seen": "2026-05-25T04:54:17.050Z",
+      "last_updated": "2026-05-25T04:54:17.050Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-qgdgi1",
+      "symbol": "β-globin",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-nnw25y",
+      "symbol": "γ-globin",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-r0005z",
+      "symbol": "BCL11A",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-q9isgl",
+      "symbol": "FOG1",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-853m32",
+      "symbol": "HDAC1",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-psv76w",
+      "symbol": "HDAC2",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-8jfeij",
+      "symbol": "CHD4",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f5-lro2eo",
+      "symbol": "RPGR",
+      "first_seen": "2026-05-25T06:26:07.841Z",
+      "last_updated": "2026-05-25T06:26:07.841Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-mpktp0f6-xh2qaa",
+      "symbol": "RPE65",
+      "first_seen": "2026-05-25T06:26:07.842Z",
+      "last_updated": "2026-05-25T06:26:07.842Z",
+      "source_count": 1,
+      "confidence": "low"
+    },
+    {
+      "id": "GENE-dhnepfhb5m",
+      "symbol": "TK2",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Thymidine kinase 2 - target for TK2 deficiency treatment"
+    },
+    {
+      "id": "GENE-if721guqyz",
+      "symbol": "ANGPTL3",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Angiopoietin-like 3 - target for CTX310 CRISPR therapy reducing triglycerides"
+    },
+    {
+      "id": "GENE-80ukzywvtx",
+      "symbol": "PCSK9",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Proprotein convertase subtilisin/kexin type 9 - target for CTX112 CRISPR therapy"
+    },
+    {
+      "id": "GENE-casyufzxqk",
+      "symbol": "MECP2",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Methyl-CpG-binding protein 2 - Rett syndrome gene therapy target"
+    },
+    {
+      "id": "GENE-l7fkq48o8f",
+      "symbol": "SMN1",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Survival motor neuron 1 - spinal muscular atrophy gene therapy target"
+    },
+    {
+      "id": "GENE-xx9c6qy2u",
+      "symbol": "CFTR",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Cystic fibrosis transmembrane conductance regulator - cystic fibrosis gene therapy target"
+    },
+    {
+      "id": "GENE-jj88ij34ea",
+      "symbol": "HTT",
+      "first_seen": "2026-05-29T13:28:26.274Z",
+      "last_updated": "2026-05-29T13:28:26.274Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Huntingtin - Huntington disease gene therapy/silencing target"
+    },
+    {
+      "id": "GENE-nf2k8p1a",
+      "symbol": "NCF1",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Neutrophil cytosolic factor 1 - target of PM359 prime editing therapy for p47-CGD"
+    },
+    {
+      "id": "GENE-nf2k8p2b",
+      "symbol": "CPS1",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Carbamoyl phosphate synthetase 1 - urea cycle disorder gene, prime editing target"
+    },
+    {
+      "id": "GENE-nf2k8p3c",
+      "symbol": "OTC",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Ornithine transcarbamylase - urea cycle disorder gene, prime editing target"
+    },
+    {
+      "id": "GENE-nf2k8p4d",
+      "symbol": "ASS1",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Argininosuccinate synthase 1 - urea cycle disorder gene, prime editing target"
+    },
+    {
+      "id": "GENE-nf2k8p5e",
+      "symbol": "ASL",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Argininosuccinate lyase - urea cycle disorder gene, prime editing target"
+    },
+    {
+      "id": "GENE-nf2k8p6f",
+      "symbol": "ARG1",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Arginase 1 - urea cycle disorder gene, prime editing target"
+    },
+    {
+      "id": "GENE-nf2k8p7g",
+      "symbol": "SLC25A13",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Solute carrier family 25 member 13 - citrin deficiency gene, prime editing target"
+    },
+    {
+      "id": "GENE-nf2k8p8h",
+      "symbol": "NAGS",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "N-acetylglutamate synthase - urea cycle disorder gene, prime editing target"
+    },
+    {
+      "id": "GENE-nf2k8p9i",
+      "symbol": "TTR",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Transthyretin - target of Intellia NTLA-2001 in vivo CRISPR therapy for ATTR amyloidosis"
+    },
+    {
+      "id": "GENE-nf2k8p0j",
+      "symbol": "F9",
+      "first_seen": "2026-05-30T13:33:07.534Z",
+      "last_updated": "2026-05-30T13:33:07.534Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Coagulation factor IX - hemophilia B gene therapy target (CSL Behring hemgenix)"
+    },
+    {
+      "id": "GENE-gt53100",
+      "symbol": "BCMA",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "B-cell maturation antigen - target for CRISPR allogeneic CAR-T in multiple myeloma"
+    },
+    {
+      "id": "GENE-gt53101",
+      "symbol": "APOE",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Apolipoprotein E - cardiovascular and Alzheimer disease risk gene, emerging gene therapy target"
+    },
+    {
+      "id": "GENE-gt53102",
+      "symbol": "F8",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Coagulation factor VIII - hemophilia A gene therapy target (Roctavian/Valrox approved)"
+    },
+    {
+      "id": "GENE-gt53103",
+      "symbol": "ABCA4",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "ATP-binding cassette sub-family A member 4 - Stargardt disease gene therapy target"
+    },
+    {
+      "id": "GENE-gt53104",
+      "symbol": "MYO7A",
+      "first_seen": "2026-05-31T13:38:23.799Z",
+      "last_updated": "2026-05-31T13:38:23.799Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Myosin VIIA - Usher syndrome type 1B gene therapy target"
+    },
+    {
+      "id": "GENE-0601-was",
+      "symbol": "WAS",
+      "first_seen": "2026-06-01T13:50:39.243Z",
+      "last_updated": "2026-06-01T13:50:39.243Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Wiskott-Aldrich syndrome protein - target of first FDA-approved WAS gene therapy"
+    },
+    {
+      "id": "GENE-0601-gdnf",
+      "symbol": "GDNF",
+      "first_seen": "2026-06-01T13:50:39.243Z",
+      "last_updated": "2026-06-01T13:50:39.243Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Glial cell line-derived neurotrophic factor - Parkinson's disease gene therapy target"
+    },
+    {
+      "id": "GENE-0601-neurturin",
+      "symbol": "NEURTURIN",
+      "first_seen": "2026-06-01T13:50:39.243Z",
+      "last_updated": "2026-06-01T13:50:39.243Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Neurturin - neurotrophic factor for Parkinson's disease gene therapy"
+    },
+    {
+      "id": "GENE-0602-tk2",
+      "symbol": "TK2",
+      "first_seen": "2026-06-02T13:52:58.820Z",
+      "last_updated": "2026-06-02T13:52:58.820Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Thymidine kinase 2 - mitochondrial enzyme, target of first approved TK2 deficiency drug Kygevvi"
+    },
+    {
+      "id": "GENE-0602-cps1-babykj",
+      "symbol": "CPS1",
+      "first_seen": "2026-06-02T13:52:58.820Z",
+      "last_updated": "2026-06-02T13:52:58.820Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Carbamoyl phosphate synthetase 1 - target of personalized CRISPR base editing therapy (Baby KJ case)"
+    },
+    {
+      "id": "GENE-0603-ldlr",
+      "symbol": "LDLR",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Low-density lipoprotein receptor - target of Editas EDIT-401 CRISPR therapy showing >90% LDL-C reduction in preclinical studies"
+    },
+    {
+      "id": "GENE-0603-klrbc1",
+      "symbol": "KLRC1",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Killer cell lectin-like receptor subfamily C member 1 - potential CRISPR target for cancer immunotherapy"
+    },
+    {
+      "id": "GENE-0603-cep290",
+      "symbol": "CEP290",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Centrosomal protein 290 - Leber congenital amaurosis type 10 gene, antisense oligonucleotide therapy (sepofarsen) in clinical trials"
+    },
+    {
+      "id": "GENE-0603-rpe65-v2",
+      "symbol": "RPE65",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Retinal pigment epithelium-specific protein 65 - Luxturna gene therapy target, 2026 Breakthrough Prize awarded to pioneers"
+    },
+    {
+      "id": "GENE-0603-ldlr-apoe",
+      "symbol": "LDLR/APOE",
+      "first_seen": "2026-06-03T13:53:41.685Z",
+      "last_updated": "2026-06-03T13:53:41.685Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "LDLR-APOE pathway - cardiovascular gene therapy targets, in vivo CRISPR editing approaches advancing in 2026"
+    },
+    {
+      "id": "GENE-0604-tp53",
+      "symbol": "TP53",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Tumor protein p53 - most frequently mutated gene in cancer, emerging CRISPR target for cancer therapy"
+    },
+    {
+      "id": "GENE-0604-egfr",
+      "symbol": "EGFR",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Epidermal growth factor receptor - head and neck cancer CRISPR target for restoring chemotherapy sensitivity"
+    },
+    {
+      "id": "GENE-0604-hpv-e6e7",
+      "symbol": "HPV E6/E7",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Human papillomavirus oncogenes - CRISPR target for destroying virus-infected cells in head and neck cancer"
+    },
+    {
+      "id": "GENE-0604-cd73",
+      "symbol": "CD73",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "5'-nucleotidase - immunosuppressive enzyme, CRISPR editing combined with gene therapy enhances anti-glioma efficacy"
+    },
+    {
+      "id": "GENE-0604-scd1",
+      "symbol": "SCD1",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Stearoyl-CoA desaturase 1 - metabolic gene target for CRISPR-based cancer therapy"
+    },
+    {
+      "id": "GENE-0604-cd19",
+      "symbol": "CD19",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "B-cell antigen CD19 - target for CAR-T gene therapy in B-cell malignancies, multiple FDA-approved products"
+    },
+    {
+      "id": "GENE-0604-il2rg",
+      "symbol": "IL2RG",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Interleukin-2 receptor gamma - X-linked SCID gene therapy target, Strimvelis approved in EU"
+    },
+    {
+      "id": "GENE-0604-ryr2",
+      "symbol": "RYR2",
+      "first_seen": "2026-06-04T14:05:08.467Z",
+      "last_updated": "2026-06-04T14:05:08.467Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Ryanodine receptor 2 - cardiac gene, potential CRISPR target for arrhythmogenic cardiomyopathy"
+    },
+    {
+      "id": "GENE-0605-nefl",
+      "symbol": "NEFL",
+      "first_seen": "2026-06-05T14:17:33.931Z",
+      "last_updated": "2026-06-05T14:17:33.931Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Neurofilament light chain - biomarker for neurodegeneration, target of Encelto gene therapy for pediatric solid tumors"
+    },
+    {
+      "id": "GENE-0605-ntn1",
+      "symbol": "NTN1",
+      "first_seen": "2026-06-05T14:17:33.931Z",
+      "last_updated": "2026-06-05T14:17:33.931Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Netrin-1 - neurodevelopmental guidance molecule, therapeutic target in Encelto gene therapy"
+    },
+    {
+      "id": "GENE-0605-arsa",
+      "symbol": "ARSA",
+      "first_seen": "2026-06-05T14:17:33.931Z",
+      "last_updated": "2026-06-05T14:17:33.931Z",
+      "source_count": 1,
+      "confidence": "low",
+      "description": "Arylsulfatase A - enzyme deficient in metachromatic leukodystrophy, target of LENMELDY gene therapy"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "pubmed": {
+    "enabled": true,
+    "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+    "rate_limit_ms": 400,
+    "max_results": 50,
+    "search_queries": [
+      "gene therapy[Title/Abstract] AND 2026[dp]",
+      "CRISPR gene editing[Title/Abstract] AND 2026[dp]",
+      "AAV gene delivery[Title/Abstract] AND 2026[dp]",
+      "mRNA therapy[Title/Abstract] AND 2026[dp]",
+      "gene editing clinical trial[Title/Abstract] AND 2026[dp]",
+      "base editing[Title/Abstract] AND 2026[dp]",
+      "prime editing[Title/Abstract] AND 2026[dp]",
+      "CAR-T gene therapy[Title/Abstract] AND 2026[dp]"
+    ],
+    "credibility": "A",
+    "type": "peer_reviewed"
+  },
+  "arxiv": {
+    "enabled": true,
+    "base_url": "http://export.arxiv.org/api/query",
+    "rate_limit_ms": 3000,
+    "max_results": 30,
+    "categories": ["q-bio.GN", "q-bio.BM", "q-bio.NC"],
+    "search_queries": ["gene therapy", "CRISPR", "gene editing", "AAV delivery"],
+    "credibility": "B",
+    "type": "preprint"
+  },
+  "clinical_trials": {
+    "enabled": true,
+    "base_url": "https://clinicaltrials.gov/api/v2/studies",
+    "rate_limit_ms": 1000,
+    "max_results": 50,
+    "conditions": ["gene therapy", "CRISPR", "gene editing"],
+    "credibility": "A",
+    "type": "clinical_trial"
+  },
+  "news": {
+    "enabled": true,
+    "sources": [
+      {
+        "name": "Nature Biotechnology News",
+        "url": "https://www.nature.com/nbt/news",
+        "credibility": "A",
+        "type": "news"
+      },
+      {
+        "name": "Gene Therapy News",
+        "url": "https://www.genetherapynet.com",
+        "credibility": "B",
+        "type": "news"
+      },
+      {
+        "name": "Fierce Biotech Gene Therapy",
+        "url": "https://www.fiercebiotech.com/topics/gene-therapy",
+        "credibility": "B",
+        "type": "news"
+      }
+    ],
+    "search_queries": [
+      "gene therapy breakthrough 2026",
+      "CRISPR clinical trial results 2026",
+      "gene editing approval 2026",
+      "AAV gene therapy 2026"
+    ]
+  }
+}

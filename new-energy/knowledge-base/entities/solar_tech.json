@@ -1,0 +1,74 @@
+[
+  {
+    "id": "SOL-001",
+    "name": "Perovskite-Silicon Tandem Cell",
+    "type": "Photovoltaic",
+    "efficiency": "33.9% (record, LONGi 2023); 29.1% certified (Oxford PV)",
+    "description": "Stacking a perovskite top cell (wide bandgap) on a silicon bottom cell captures more of the solar spectrum. This is the fastest path to exceeding the silicon single-junction limit (29.4%).",
+    "developer": "Oxford PV, LONGi, Hanwha Qcells, CubicPV",
+    "status": "Oxford PV shipping first commercial tandem modules (2024); mass production 2025-2026"
+  },
+  {
+    "id": "SOL-002",
+    "name": "All-Perovskite Tandem Cell",
+    "type": "Photovoltaic",
+    "efficiency": "29.3% (record, NJU/EPFL 2023)",
+    "description": "Two perovskite layers with different bandgaps stacked together. Potentially cheaper than perovskite-silicon tandems since both layers are solution-processable. Key challenge: stable narrow-bandgap perovskite (tin-lead).",
+    "developer": "Caelux, NJU, EPFL, UNC",
+    "status": "Lab efficiency records climbing rapidly; stability improving; commercialization 5+ years"
+  },
+  {
+    "id": "SOL-003",
+    "name": "HJT (Heterojunction Technology)",
+    "type": "Photovoltaic",
+    "efficiency": "26.81% (LONGi, world record for silicon single junction)",
+    "description": "Combines crystalline silicon with amorphous silicon layers for high efficiency and low temperature coefficient. Better performance in hot climates than PERC.",
+    "developer": "LONGi, Huasun, Risen, REC",
+    "status": "Commercial; growing market share; LONGi's 26.81% broke the silicon efficiency record"
+  },
+  {
+    "id": "SOL-004",
+    "name": "TOPCon (Tunnel Oxide Passivated Contact)",
+    "type": "Photovoltaic",
+    "efficiency": "25.7%+ (mass production)",
+    "description": "The current mainstream upgrade from PERC, adding a tunnel oxide layer for better surface passivation. Dominating new capacity additions globally.",
+    "developer": "Jinko Solar, Trina, JA Solar, LONGi",
+    "status": "Mainstream; >60% of new capacity in 2024; lowest $/W in mass production"
+  },
+  {
+    "id": "SOL-005",
+    "name": "CIGS Thin Film",
+    "type": "Photovoltaic",
+    "efficiency": "23.6% (record, Solar Frontier); 16-18% commercial modules",
+    "description": "Copper indium gallium selenide thin-film solar cells. Flexible, lightweight, and good performance in low-light and high-temperature conditions. Used in BIPV and portable applications.",
+    "developer": "Solar Frontier, Avancis, Manz AG, Flisom",
+    "status": "Niche market; flexible and BIPV applications; indium supply concern"
+  },
+  {
+    "id": "SOL-006",
+    "name": "Organic Photovoltaics (OPV)",
+    "type": "Photovoltaic",
+    "efficiency": "19.2% (record); 10-12% commercial",
+    "description": "Carbon-based semiconductors enabling ultra-lightweight, flexible, semi-transparent solar cells. Can be printed on plastic films. Very low cost potential but limited efficiency and stability.",
+    "developer": "Heliatek, Epishine, ASCA, Sumitomo Chemical",
+    "status": "Niche applications (BIPV, IoT power); efficiency gap too large for mainstream"
+  },
+  {
+    "id": "SOL-007",
+    "name": "Concentrated Solar Power (CSP) with Thermal Storage",
+    "type": "Solar thermal",
+    "efficiency": "15-25% (solar-to-electric); 40%+ with combined cycle",
+    "description": "Mirrors concentrate sunlight to heat molten salt, which stores energy for 10+ hours of dispatchable power. Provides baseload solar without batteries.",
+    "developer": "SolarReserve, ACWA Power, BrightSource, Abengoa",
+    "status": "Operational plants in Morocco, UAE, China, Spain; declining costs but still expensive vs PV+battery"
+  },
+  {
+    "id": "SOL-008",
+    "name": "Bifacial Solar Modules",
+    "type": "PV architecture",
+    "efficiency": "5-25% more energy than monofacial depending on albedo",
+    "description": "Modules that capture light from both sides, using ground-reflected light to boost output. Now standard for utility-scale installations.",
+    "developer": "All major manufacturers",
+    "status": "Mainstream; >70% of utility-scale installations in 2024"
+  }
+]

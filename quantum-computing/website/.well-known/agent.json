@@ -1,0 +1,104 @@
+{
+  "$schema": "https://agents.well-known.dev/v1",
+  "name": "QuantumDB",
+  "description": "Quantum computing knowledge base - processors, algorithms, error correction, applications",
+  "url": "https://quantum.genetech.tools",
+  "category": "量子计算",
+  "api": {
+    "type": "rest",
+    "base_url": "https://quantum.genetech.tools/api",
+    "openapi": "https://quantum.genetech.tools/api/openapi.json",
+    "endpoints": [
+      {
+        "path": "/api/processors.json",
+        "method": "GET",
+        "description": "Get processors data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/algorithms.json",
+        "method": "GET",
+        "description": "Get algorithms data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/error_correction.json",
+        "method": "GET",
+        "description": "Get error correction data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/quantum_software.json",
+        "method": "GET",
+        "description": "Get quantum software data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/quantum_applications.json",
+        "method": "GET",
+        "description": "Get quantum applications data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/quantum_networking.json",
+        "method": "GET",
+        "description": "Get quantum networking data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/data.json",
+        "method": "GET",
+        "description": "Get complete structured data",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/entities.json",
+        "method": "GET",
+        "description": "Get flat entity list",
+        "content_type": "application/json"
+      },
+      {
+        "path": "/api/cross-refs.json",
+        "method": "GET",
+        "description": "Get cross-references to related knowledge bases",
+        "content_type": "application/json"
+      }
+    ]
+  },
+  "capabilities": [
+    "query",
+    "browse",
+    "cross_reference"
+  ],
+  "content_types": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "auth": {
+    "type": "none"
+  },
+  "contact": "61960005@qq.com",
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://nuclear.genetech.tools",
+      "title": "量子模拟核聚变"
+    },
+    {
+      "rel": "related",
+      "href": "https://agent.genetech.tools",
+      "title": "量子机器学习"
+    },
+    {
+      "rel": "related",
+      "href": "https://robot.genetech.tools",
+      "title": "量子传感器机器人"
+    },
+    {
+      "rel": "related",
+      "href": "https://brain.genetech.tools",
+      "title": "量子脑理论"
+    }
+  ]
+}

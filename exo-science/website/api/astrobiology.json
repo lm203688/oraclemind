@@ -1,0 +1,348 @@
+[
+  {
+    "id": "ASTRO-001",
+    "name": "Hydrothermal Vent Origin Theory",
+    "type": "Origin of life hypothesis",
+    "description": "Life originated at deep-sea hydrothermal vents where chemical gradients provided energy for the first metabolic reactions",
+    "significance": "Explains how life could arise without sunlight; relevant to icy moons (Europa, Enceladus) with subsurface vents",
+    "evidence": "Alkaline hydrothermal vents (Lost City) produce H₂ and mineral microcompartments similar to cells; vent chemistry is consistent with core metabolic pathways (acetyl-CoA pathway)"
+  },
+  {
+    "id": "ASTRO-002",
+    "name": "Panspermia Hypothesis",
+    "type": "Life distribution theory",
+    "description": "Life (or its building blocks) is distributed throughout the universe by meteorites, comets, and interstellar dust",
+    "significance": "If valid, life could be widespread; doesn't explain origin but changes where we look for it",
+    "evidence": "Amino acids found in meteorites (Murchison); organic molecules in interstellar clouds; extremophiles survive space conditions; lithopanspermia between Mars-Earth is energetically feasible"
+  },
+  {
+    "id": "ASTRO-003",
+    "name": "Biosignature Detection",
+    "type": "Life detection methodology",
+    "description": "Searching for atmospheric gases (O₂, O₃, CH₄, N₂O, DMS) that would indicate biological activity on exoplanets",
+    "significance": "The primary method for detecting life on exoplanets with JWST and future telescopes",
+    "evidence": "JWST has detected CO₂, H₂O, SO₂, and possible DMS in exoplanet atmospheres; no confirmed biosignature yet; O₂+CH₄ disequilibrium remains gold standard"
+  },
+  {
+    "id": "ASTRO-004",
+    "name": "Enceladus Plume Analysis",
+    "type": "Ocean world habitability assessment",
+    "description": "Cassini's analysis of Enceladus's plumes revealed a potentially habitable subsurface ocean with complex organics",
+    "significance": "Enceladus is the most accessible ocean world for life detection - plumes allow sampling without drilling through ice",
+    "evidence": "H₂, CH₄, and organics up to 200+ amu detected in plume ice grains; alkaline pH; silica nanoparticles indicating hydrothermal activity at 90°C+"
+  },
+  {
+    "id": "ASTRO-005",
+    "name": "Mars Biosignature Search",
+    "type": "In-situ life detection",
+    "description": "Perseverance rover is collecting samples that may contain biosignatures from ancient Mars habitable environments",
+    "significance": "If biosignatures are found, it would be the first detection of extraterrestrial life; samples will be returned to Earth for definitive analysis via Mars Sample Return",
+    "evidence": "Jezero Crater contains carbonate rocks and hydrated minerals that preserve biosignatures on Earth; Perseverance has identified organic molecules in multiple samples"
+  },
+  {
+    "id": "ASTRO-006",
+    "name": "Great Filter Theory",
+    "type": "Fermi Paradox explanation",
+    "description": "Some evolutionary step is extremely improbable, explaining why we see no evidence of advanced civilizations",
+    "significance": "If the filter is behind us, life is rare; if ahead, civilizations may be doomed. Astrobiology research helps identify which steps are hard.",
+    "evidence": "No confirmed technosignatures despite 60+ years of SETI; Fermi Paradox remains unresolved; Drake Equation parameters increasingly constrained by exoplanet data"
+  },
+  {
+    "id": "ASTRO-007",
+    "name": "Technosignature Search",
+    "type": "Intelligent life detection",
+    "description": "Searching for evidence of advanced civilizations through their technological emissions: radio signals, laser beacons, waste heat, atmospheric industrial pollution, megastructures",
+    "significance": "Complements biosignature searches; could detect civilizations far more easily than biology; NASA funded technosignature research again in 2018",
+    "evidence": "Breakthrough Listen has collected 1+ PB of data; no confirmed signals; several 'signals of interest' detected but not verified; Dyson sphere searches ongoing in IR surveys"
+  },
+  {
+    "id": "ASTRO-008",
+    "name": "Europa Ocean Habitability",
+    "type": "Ocean world assessment",
+    "description": "Europa's subsurface ocean contains more water than Earth's oceans and is in contact with a rocky seafloor, providing conditions for chemistry relevant to life",
+    "significance": "Europa Clipper (arriving 2030) will determine if Europa's ocean could support life; one of the most promising abodes for life in our solar system",
+    "evidence": "Magnetic field measurements indicate a salty ocean; Hubble detected possible water vapor plumes; ice shell ~15-25 km thick; tidal heating maintains liquid water"
+  },
+  {
+    "id": "ASTRO-009",
+    "name": "Venus Cloud Life Hypothesis",
+    "type": "Atmospheric life possibility",
+    "description": "Microbial life could exist in Venus's temperate cloud layer (50-60 km altitude) where conditions are Earth-like despite the hellish surface",
+    "significance": "If true, would be the closest and most accessible extraterrestrial life; challenges our understanding of planetary habitability",
+    "evidence": "Phosphine detection in 2020 (debated); proposed ammonia detection; cloud droplet chemistry could support acidophilic microbes; Rocket Lab and VLF missions proposed"
+  },
+  {
+    "id": "ASTRO-010",
+    "name": "Exoplanet Atmosphere Characterization",
+    "type": "Remote sensing methodology",
+    "description": "Using transmission spectroscopy, emission spectroscopy, and direct imaging to determine the composition, temperature, and dynamics of exoplanet atmospheres",
+    "significance": "The primary way to assess exoplanet habitability and search for biosignatures; JWST has transformed this field",
+    "evidence": "JWST has characterized 50+ exoplanet atmospheres; detected CO₂, H₂O, SO₂, CH₄, CO, Na, K, and possible DMS; revealed unexpected diversity in atmospheric chemistry"
+  },
+  {
+    "id": "ASTRO-011",
+    "name": "Molten Planet Class (2026 Discovery)",
+    "type": "New planetary classification",
+    "description": "University of Oxford-led study (2026) identified a new class of exoplanet - molten planets that store large amounts of water in their magma oceans under extreme pressure",
+    "significance": "Redefines our understanding of planetary water storage; suggests water-rich worlds may be more common than thought but in unexpected forms",
+    "evidence": "Models show that under high pressure, water dissolves into silicate magma rather than forming surface oceans; these planets would appear dry but contain vast water reservoirs"
+  },
+  {
+    "id": "ASTRO-012",
+    "name": "Hycean Worlds",
+    "type": "Planetary habitability concept",
+    "description": "A proposed class of habitable sub-Neptune planets with hydrogen-rich atmospheres and liquid water ocean surfaces, potentially detectable via biosignatures",
+    "significance": "If real, hycean worlds would vastly expand the range of habitable planets; K2-18 b is the prime candidate",
+    "evidence": "K2-18 b shows CH₄ and CO₂ in its atmosphere with possible DMS; models suggest temperate ocean surfaces are possible under H₂/He envelopes; JWST observations ongoing"
+  },
+  {
+    "id": "ASTRO-013",
+    "name": "Venus Cloud Microbiome Hypothesis",
+    "type": "Life detection hypothesis",
+    "description": "Microbial life could exist in Venus temperate cloud layer (50-60 km) where conditions are Earth-like",
+    "significance": "Would mean life arose independently on two planets in one solar system",
+    "evidence": "Phosphine detection debated; possible ammonia; cloud chemistry compatible with microbial metabolism; Venus Life Finder mission proposed"
+  },
+  {
+    "id": "ASTRO-014",
+    "name": "Enceladus Biosignature Search",
+    "type": "Active research program",
+    "description": "Systematic search for biosignatures in Enceladus plume material",
+    "significance": "Enceladus has all requirements for life: liquid water, organic chemistry, energy source, accessible sampling",
+    "evidence": "Cassini detected H2, CH4, complex organics in plume; Enceladus Orbilander mission proposed"
+  },
+  {
+    "id": "ASTRO-015",
+    "name": "Subsurface Ocean Worlds Habitability",
+    "type": "Planetary habitability framework",
+    "description": "Icy moons with subsurface oceans may be the most common habitable environments in the universe",
+    "significance": "If life exists in subsurface oceans, habitable real estate vastly exceeds surface water worlds",
+    "evidence": "Europa Clipper en route; Cassini Enceladus data; JUICE en route to Ganymede"
+  },
+  {
+    "id": "ASTRO-016",
+    "name": "Technosignature Search",
+    "type": "Expanded life detection",
+    "description": "Search for technological signatures: atmospheric industrial pollution, megastructures, waste heat, laser communications",
+    "significance": "Technosignatures detectable at galactic distances unlike biosignatures",
+    "evidence": "JWST could detect CFCs and NO2 as industrial technosignatures; Roman could detect Dyson sphere waste heat"
+  },
+  {
+    "id": "ASTRO-017",
+    "name": "Mars Subsurface Biosignature Preservation",
+    "type": "Astrobiological investigation",
+    "description": "Mars subsurface may preserve biosignatures from when the planet was habitable ~3.5+ Gya",
+    "significance": "Finding biosignatures on Mars would prove life arose on two planets in one solar system",
+    "evidence": "Perseverance collecting samples; ExoMars will drill 2m; Martian meteorites show organics"
+  },
+  {
+    "id": "ASTRO-018",
+    "name": "Molten Planet Water Storage (2026)",
+    "type": "Planetary habitability revision",
+    "description": "University of Oxford 2026 study reveals that a new class of molten exoplanets stores vast water reserves in their magma oceans under extreme pressure, rather than as surface oceans",
+    "significance": "Fundamentally redefines habitability criteria; water-rich worlds may be far more common than thought but in unexpected forms",
+    "evidence": "Models show water dissolves into silicate magma under high pressure; these planets appear dry but contain enormous water reservoirs"
+  },
+  {
+    "id": "ASTRO-019",
+    "name": "Exoplanet Weather Forecasting (JWST 2026)",
+    "type": "Atmospheric dynamics",
+    "description": "JWST produced the first detailed weather forecasts for exoplanets, revealing daily weather cycles including sand cloud formation and dissipation",
+    "significance": "Opens the field of exoplanet meteorology; allows study of atmospheric dynamics on distant worlds in unprecedented detail",
+    "evidence": "WASP-94Ab shows sand clouds in morning transitioning to clear skies by evening; demonstrates diurnal atmospheric cycles on exoplanets"
+  },
+  {
+    "id": "ASTRO-020",
+    "name": "Star-Planet Composition Link (2026)",
+    "type": "Planet formation evidence",
+    "description": "Gemini South confirmed that WASP-189 b's atmospheric composition directly echoes its host star, providing the first definitive link between planet and star chemistry",
+    "significance": "Provides crucial evidence for planet formation theories; confirms gas giants inherit chemical makeup from their protoplanetary disk",
+    "evidence": "WASP-189 b atmospheric metal ratios match host star composition; first direct evidence of chemical inheritance in giant planet formation"
+  },
+  {
+    "id": "ASTRO-021",
+    "name": "AI-Driven Exoplanet Discovery (2026)",
+    "type": "Methodological breakthrough",
+    "description": "Machine learning analysis of TESS data revealed 11,554 candidate planets, 10,091 never before detected, representing a paradigm shift in discovery rate",
+    "significance": "AI-accelerated discovery could increase known exoplanet count by orders of magnitude; enables identification of rare habitable candidates in vast datasets",
+    "evidence": "New technique combining AI with traditional detection methods found 10,000+ candidates in a single survey; total confirmed exoplanets now exceed 6,200"
+  },
+  {
+    "id": "ASTRO-022",
+    "name": "Protoplanetary System Formation (WISPIT 2)",
+    "type": "Planet formation observation",
+    "description": "Direct observation of planets forming in the WISPIT 2 protoplanetary disk, with two planets detected carving gaps in the disk",
+    "significance": "One of the rare cases where we can observe planetary system formation in real time; provides direct evidence for planet formation mechanisms",
+    "evidence": "WISPIT 2b detected in 2025 carving gap in disk; WISPIT 2c confirmed in 2026 as second planet; both observed in the process of forming"
+  },
+  {
+    "id": "ASTRO-023",
+    "name": "Molten Planet Water Storage (Oxford 2026)",
+    "type": "New planetary category",
+    "description": "Oxford researchers discovered in 2026 that a new class of exoplanets — molten planets — can store vast amounts of water dissolved in their magma oceans. This challenges the assumption that hot planets are dry and suggests water may be far more common in the universe than previously thought.",
+    "significance": "Redefines the search for habitable worlds; water can exist in unexpected forms on hot planets",
+    "evidence": "Oxford University 2026 study; thermodynamic models show water solubility in silicate melts at high pressure"
+  },
+  {
+    "id": "ASTRO-024",
+    "name": "AI-Driven Exoplanet Discovery (10,000+ Candidates)",
+    "type": "Detection methodology breakthrough",
+    "description": "A new AI-based technique applied to TESS data identified over 10,000 new exoplanet candidates in 2026, including 10,091 previously unseen signals. This represents the largest single batch of planet candidates ever identified and demonstrates the transformative power of machine learning in astronomical discovery.",
+    "significance": "Orders of magnitude increase in detection efficiency; AI is now essential for processing massive astronomical datasets",
+    "evidence": "Published 2026; AI model applied to full TESS dataset; 10,091 new candidates identified beyond human review capacity"
+  },
+  {
+    "id": "ASTRO-025",
+    "name": "WASP-94Ab Mineral Cloud Weather",
+    "type": "Exoplanet atmospheric science",
+    "description": "JWST discovered that the giant exoplanet WASP-94Ab experiences a daily weather cycle where mineral clouds form in the morning and dissipate by evening. This is the first detection of rock-vapor weather patterns on an exoplanet, revealing complex atmospheric dynamics on ultra-hot Jupiters.",
+    "significance": "First detection of mineral cloud weather on another world; demonstrates JWST can resolve diurnal atmospheric cycles",
+    "evidence": "JWST transmission spectroscopy 2026; morning mineral clouds vs. evening clear skies on same planet"
+  },
+  {
+    "id": "ASTRO-026",
+    "name": "Planet-Star Composition Link (WASP-189 b)",
+    "type": "Planet formation evidence",
+    "description": "Gemini South observations confirmed that the atmosphere of WASP-189 b has a chemical composition that directly echoes its host star. This is the first definitive link between a giant planet's composition and its star, providing crucial evidence that gas giants inherit their chemical makeup from the protoplanetary disk.",
+    "significance": "First direct planet-star composition link; validates core accretion formation theory for gas giants",
+    "evidence": "Gemini South high-resolution spectroscopy 2026; atmospheric abundances match stellar composition"
+  },
+  {
+    "id": "ASTRO-027",
+    "name": "29 Cygni b: Planet-Star Boundary Redefined",
+    "type": "Planetary classification",
+    "description": "JWST observations of 29 Cygni b, an object about 15 times Jupiter's mass, are redefining the boundary between planets and brown dwarfs. The object shows characteristics of both categories, challenging the traditional 13-Jupiter-mass dividing line and suggesting a continuum rather than a sharp boundary.",
+    "significance": "Challenges the planet/brown dwarf classification system; suggests a continuum of objects",
+    "evidence": "JWST spectroscopy 2026; 29 Cygni b shows mixed planetary and substellar features"
+  },
+  {
+    "id": "ASTRO-028",
+    "name": "Alpha Centauri A Planet Candidate",
+    "type": "Nearest star system discovery",
+    "description": "JWST detected strong evidence for a giant planet orbiting Alpha Centauri A, the nearest Sun-like star at 4.37 light-years. If confirmed, this would be the first planet found in the Alpha Centauri A/B system and the closest known exoplanet to a Sun-like star.",
+    "significance": "First planet candidate in the nearest Sun-like star system; if confirmed, transforms nearby exoplanet landscape",
+    "evidence": "JWST direct imaging observations 2025-2026; signal consistent with Saturn-mass planet at ~1 AU"
+  },
+  {
+    "id": "ASTRO-029",
+    "name": "HD 137010 b: Ice-Cold Earth in Habitable Zone",
+    "type": "Potentially habitable world",
+    "description": "HD 137010 b is an Earth-size planet 146 light-years away with a 50% chance of residing in the habitable zone of its Sun-like star. NASA describes it as an ice-cold Earth — potentially habitable but likely very cold. It represents a new class of borderline habitable worlds.",
+    "significance": "Earth-size planet in habitable zone of Sun-like star; expands the definition of potentially habitable to include cold worlds",
+    "evidence": "NASA Discovery Alert 2026; radial velocity and transit data; 50% habitable zone probability"
+  },
+  {
+    "id": "ASTRO-030",
+    "name": "Silicon-Based Life Hypothesis (Updated)",
+    "type": "Alternative biochemistry",
+    "description": "Recent laboratory experiments have demonstrated that silicon can form complex self-organizing structures under high-pressure, low-temperature conditions similar to those on icy moons like Europa and Enceladus. While not evidence of life, these findings expand the chemical space where life-like processes could occur beyond carbon chemistry.",
+    "significance": "Expands the chemical search space for extraterrestrial life; silicon chemistry viable under icy moon conditions",
+    "evidence": "Laboratory experiments 2025-2026; silicon self-organization demonstrated at Europa-like conditions"
+  },
+  {
+    "id": "ASTRO-031",
+    "name": "SETI 45-Planet Life Search Shortlist",
+    "type": "Research program",
+    "year": 2026,
+    "description": "The SETI Institute identified 45 rocky exoplanets in habitable zones as priority targets for biosignature searches. This shortlist represents the most focused effort to date for detecting extraterrestrial life, combining transit spectroscopy feasibility with stellar activity assessments.",
+    "significance": "First comprehensive, actionable target list for life detection beyond Earth"
+  },
+  {
+    "id": "ASTRO-032",
+    "name": "Molten Planet Water Storage (Oxford 2026)",
+    "type": "Discovery / classification",
+    "year": 2026,
+    "description": "University of Oxford researchers identified a new class of molten exoplanets that can store enormous volumes of water dissolved in global magma oceans. As these planets cool, water could be released to form oceans, potentially creating habitable conditions from initially hellish worlds.",
+    "significance": "Expands the definition of potentially habitable worlds to include currently molten planets"
+  },
+  {
+    "id": "ASTRO-033",
+    "name": "JWST Exoplanet Surface Analysis",
+    "type": "Observation milestone",
+    "year": 2026,
+    "description": "For the first time, JWST directly analyzed the surface of an exoplanet, revealing a dark, hot, barren rocky world. This breakthrough demonstrates that JWST can characterize not just atmospheres but solid surfaces of rocky exoplanets, opening exoplanet geology as a new field of study.",
+    "significance": "First-ever surface characterization of an exoplanet; birth of exoplanet geology"
+  },
+  {
+    "id": "ASTRO-034",
+    "name": "PSR J2322-2650 b Exotic Atmosphere",
+    "type": "Discovery",
+    "year": 2026,
+    "description": "JWST detected a helium-carbon dominated atmosphere on PSR J2322-2650 b, a composition never seen before on any planet. This challenges fundamental models of atmospheric chemistry and planet formation around neutron stars.",
+    "significance": "First detection of a helium-carbon atmosphere; challenges planet formation theory"
+  },
+  {
+    "id": "ASTRO-035",
+    "name": "AI-Driven Biosignature Detection",
+    "type": "Methodology",
+    "year": 2026,
+    "description": "Machine learning algorithms are increasingly being used to identify subtle biosignature patterns in JWST spectral data that human analysts might miss. In 2026, AI systems demonstrated the ability to distinguish between abiotic and potentially biotic spectral features with higher confidence than traditional methods.",
+    "significance": "AI augmentation significantly increases biosignature detection sensitivity"
+  },
+  {
+    "id": "ASTRO-036",
+    "name": "JWST Rocky Planet Atmosphere Deficit (2026)",
+    "type": "Observational finding",
+    "year": 2026,
+    "description": "By 2026, JWST has studied multiple rocky exoplanet atmospheres and found a striking deficit: most rocky planets around M-dwarf stars show no evidence of thick atmospheres. Challenges the assumption that rocky planets in the habitable zone necessarily retain atmospheres. Stellar activity from M-dwarfs may strip atmospheres more effectively than models predicted."
+  },
+  {
+    "id": "ASTRO-037",
+    "name": "Intermittent Habitability Study (45 Planets, 2026)",
+    "type": "Habitability framework expansion",
+    "year": 2026,
+    "description": "A 2026 study identified 45 known exoplanets that could maintain habitable conditions despite only intermittently residing in the habitable zone due to eccentric orbits. Life could persist through frozen periods in subsurface oceans or under ice sheets, expanding the traditional habitable zone concept. Direct implications for SETI target selection and JWST observation priorities."
+  },
+  {
+    "id": "ASTRO-038",
+    "name": "AI-Driven Mega-Scale Exoplanet Discovery (83.7M Stars, 2026)",
+    "type": "Methodology revolution",
+    "year": 2026,
+    "description": "In April 2026, astronomers used AI to scan 83.7 million stars from TESS data in the largest planet discovery campaign ever conducted. The ML approach identified thousands of new candidates that would have taken human reviewers decades to find. Fundamental shift from human-led to AI-led discovery in astronomy."
+  },
+  {
+    "id": "ASTRO-039",
+    "name": "45 Rocky Habitable Zone Planets Shortlist",
+    "type": "research_program",
+    "year": 2026,
+    "key_finding": "SETI Institute确定45颗宜居带岩石行星作为生命搜索优先目标。从6000+确认系外行星中筛选，优先考虑质量和轨道数据可靠的候选者。",
+    "source": "SETI Institute/Innovation News Network 2026",
+    "category": "life_search"
+  },
+  {
+    "id": "ASTRO-040",
+    "name": "AI Stellar Scan 83.7M Stars",
+    "type": "discovery_method",
+    "year": 2026,
+    "key_finding": "AI扫描8370万颗恒星发现11554个候选行星，其中10091个前所未见。2026年4月28日宣布，史上最大规模行星发现。",
+    "source": "Instagram/ScienceDaily 2026",
+    "category": "ai_discovery"
+  },
+  {
+    "id": "ASTRO-041",
+    "name": "Intermittent Habitability Study",
+    "type": "research",
+    "year": 2026,
+    "key_finding": "研究显示行星不必持续停留在宜居带内，可在进出宜居带过程中仍维持生命。改变了对宜居性的传统理解。",
+    "source": "ScienceDaily 2026",
+    "category": "habitability_theory"
+  },
+  {
+    "id": "ASTRO-042",
+    "name": "ESO Habitable Zone Reality Check",
+    "type": "review",
+    "year": 2026,
+    "key_finding": "ESO分析：已发现约70颗宜居带系外行星，但仅约30颗为岩石行星。多数宜居带行星与地球差异巨大，'宜居'标签需谨慎解读。",
+    "source": "ESO 2026",
+    "category": "habitability_theory"
+  },
+  {
+    "id": "ASTRO-043",
+    "name": "Statistical Biosignature (Agnostic Biosignature Method)",
+    "type": "biosignature_detection_method",
+    "discovery_year": "2026",
+    "description": "2026年4月，科学家发现了一种隐藏的化学签名——通过检测跨多个行星的分子复杂性统计模式来发现外星生命，而非聚焦单一行星。这种'不可知生物签名'方法不依赖于对生命组成或功能的详细了解，而是利用生命在分子中留下的独特统计模式。研究团队开发了可在任何化学样本（火星土壤、小行星、系外行星大气）中检测此签名的算法。",
+    "significance": "革命性的生命探测方法，从单一行星搜索转向跨行星统计模式匹配，大幅提高发现外星生命的概率",
+    "source": "ScienceDaily April 2026 / Statistical biosignature research"
+  }
+]
