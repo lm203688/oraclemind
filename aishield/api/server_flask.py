@@ -25,9 +25,11 @@ ENTERPRISE_DAILY_LIMIT = -1  # Enterprise无限
 XUNHU_APPID = "201906181178"
 XUNHU_SECRET = "d856af3cab45ce0b0ae5d491a2ac94b0"
 XUNHU_API = "https://api.xunhupay.com/payment/do.html"
-# 回调地址需要公网可访问
-XUNHU_NOTIFY_URL = "http://8.217.147.255:8450/api/v1/payment/callback"
-XUNHU_RETURN_URL = "http://8.217.147.255:8450/pay?status=success"
+# 回调地址走ATEX平台统一处理
+XUNHU_NOTIFY_URL = "http://150.158.119.19:8420/v1/pay/alipay/callback"
+XUNHU_RETURN_URL = "http://150.158.119.19:8450/pay?status=success"
+# ATEX平台API（用于统一支付验证）
+ATEX_API = "http://150.158.119.19:8420"
 
 # 产品定价映射（v3: 市场调整，免费层扩10倍，Pro/企业降价）
 PRODUCTS = {
@@ -892,6 +894,117 @@ def check_order(order_id):
     if not order:
         return jsonify({"success": False, "detail": "订单不存在"}), 404
     return jsonify({"success": True, "order": order})
+
+# ============ ATEX统一支付融合 ============
+
+@app.route("/api/v1/payment/atex", methods=["POST"])
+def create_atex_payment():
+    """通过ATEX平台创建支付订单（统一支付入口）
+    
+    用户在AIShield购买Pro/Enterprise时，调用ATEX的支付系统：
+    1. ATEX创建订单 → 虎皮椒支付宝/微信
+    2. 用户支付 → ATEX回调 → 通知AIShield
+    3. AIShield激活用户权限
+    """
+    data = request.json or {}
+    product_id = data.get("product_id", "pro_monthly")
+    
+    if product_id not in PRODUCTS:
+        return jsonify({"success": False, "detail": f"无效产品: {product_id}"}), 400
+    
+    product = PRODUCTS[product_id]
+    
+    # 调用ATEX API创建支付订单
+    try:
+        import urllib.request
+        payload = json.dumps({
+            "amount_cny": product["price"],
+            "description": product["name"],
+            "metadata": {
+                "platform": "aishield",
+                "product_id": product_id,
+                "tier": product["tier"],
+                "duration_days": product.get("duration_days", 0),
+            }
+        }).encode()
+        
+        req = urllib.request.Request(
+            f"{ATEX_API}/v1/pay/alipay",
+            data=payload,
+            headers={"Content-Type": "application/json", "Authorization": "Bearer atex_deploy_2026"},
+            method="POST"
+        )
+        resp = urllib.request.urlopen(req, timeout=10)
+        atex_result = json.loads(resp.read())
+        
+        # 保存订单关联
+        order_id = atex_result.get("order_id", f"AS{int(time.time())}")
+        orders = load_orders()
+        orders[order_id] = {
+            "order_id": order_id,
+            "product_id": product_id,
+            "product_name": product["name"],
+            "amount": product["price"],
+            "tier": product["tier"],
+            "duration_days": product.get("duration_days", 0),
+            "status": "pending",
+            "payment_channel": "atex",
+            "atex_order_id": atex_result.get("atex_order_id", ""),
+            "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        }
+        save_orders(orders)
+        
+        return jsonify({
+            "success": True,
+            "order_id": order_id,
+            "pay_url": atex_result.get("pay_url", ""),
+            "amount": product["price"],
+            "product_name": product["name"],
+            "payment_channel": "atex",
+        })
+    except Exception as e:
+        # ATEX不可用时回退到本地支付
+        return jsonify({
+            "success": False,
+            "detail": f"ATEX支付创建失败: {str(e)}",
+            "fallback": "使用 /api/v1/payment/create 直接创建虎皮椒订单",
+        }), 502
+
+@app.route("/api/v1/payment/atex/callback", methods=["POST"])
+def atex_payment_callback():
+    """ATEX支付成功后通知AIShield激活权限"""
+    data = request.json or {}
+    order_id = data.get("order_id", "")
+    atex_signature = data.get("atex_signature", "")
+    
+    # 简单验证
+    if atex_signature != "atex_deploy_2026":
+        return jsonify({"success": False, "detail": "无效签名"}), 403
+    
+    orders = load_orders()
+    order = orders.get(order_id)
+    if not order:
+        return jsonify({"success": False, "detail": "订单不存在"}), 404
+    
+    if order["status"] != "paid":
+        order["status"] = "paid"
+        order["paid_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ")
+        save_orders(orders)
+    
+    return jsonify({"success": True, "order": order})
+
+@app.route("/api/v1/payment/methods")
+def payment_methods():
+    """返回支持的支付方式"""
+    return jsonify({
+        "methods": [
+            {"id": "alipay", "name": "支付宝", "icon": "💰", "enabled": True},
+            {"id": "wechat", "name": "微信支付", "icon": "💬", "enabled": True},
+            {"id": "atex", "name": "ATEX余额", "icon": "🤖", "enabled": True, "description": "使用ATEX平台余额支付"},
+        ],
+        "products": PRODUCTS,
+        "platform": "AIShield + ATEX unified payment",
+    })
 
 # ============ Internal Deploy ============
 

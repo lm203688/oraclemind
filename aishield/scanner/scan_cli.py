@@ -456,6 +456,13 @@ def scan(tool_type, source_url, name="", description=""):
     secrets_results = secrets_detection(source_data.get("files", {}))
     semantic_results = semantic_analysis(source_data.get("files", {}), tool_type, name)
     
+    # Step 5b: 高级审计（新增模块）
+    try:
+        from scanner.advanced_audit import run_advanced_audit
+        advanced_results = run_advanced_audit(source_data.get("files", {}), tool_type)
+    except ImportError:
+        advanced_results = {"advanced_findings": [], "total_advanced_findings": 0}
+    
     # Step 6: 评分
     scores = calculate_scores(static_results, dependency_results, secrets_results, semantic_results)
     
@@ -465,6 +472,7 @@ def scan(tool_type, source_url, name="", description=""):
     for f in dependency_results.get("findings", []): all_findings.append(f)
     for f in secrets_results.get("findings", []): all_findings.append(f)
     for f in semantic_results.get("findings", []): all_findings.append(f)
+    for f in advanced_results.get("advanced_findings", []): all_findings.append(f)
     
     # 去重
     seen = set()
@@ -486,6 +494,7 @@ def scan(tool_type, source_url, name="", description=""):
         "dependency_analysis": dependency_results,
         "secrets_detection": secrets_results,
         "semantic_analysis": semantic_results,
+        "advanced_audit": advanced_results,
         "commit_hash": source_data.get("commit_hash", ""),
         "recommendations": recommendations,
     }
