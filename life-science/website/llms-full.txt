@@ -1430,6 +1430,42 @@ Life science knowledge base covering synthetic biology, longevity tech, cell the
 - trend: 长寿药物管线从稀疏到密集；多机制并行降低风险
 - sources: [object Object]
 
+### Life Biosciences ER-100首次人体注射
+
+- name: Life Biosciences ER-100首次人体注射
+- type: 表观遗传重编程
+- efficiency: 首次人体给药
+- cost: 极高
+- maturity: 临床I期
+- companies: Life Biosciences
+- description: 2026年6月Life Biosciences宣布首位患者接受ER-100细胞重编程注射，这是史上首次逆转衰老相关变化的注射治疗，通过部分'重置'细胞生物学年龄实现
+- trend: 首次逆转衰老人体注射是里程碑事件；表观遗传重编程从概念走向临床
+- sources: [object Object]
+
+### 哈佛表观遗传重编程人体试验2026
+
+- name: 哈佛表观遗传重编程人体试验2026
+- type: 衰老逆转
+- efficiency: 即将开始
+- cost: 极高
+- maturity: 临床I期
+- companies: 哈佛大学, Life Biosciences
+- description: 哈佛科学家在2026年世界政府峰会上宣布衰老可能很快可逆，表观遗传重编程疗法试验即将开始，旨在将细胞恢复到更年轻状态
+- trend: 哈佛背书推动衰老逆转研究主流化；表观遗传重编程成为最前沿方向
+- sources: [object Object]
+
+### Life Biosciences细胞 rejuvenation平台
+
+- name: Life Biosciences细胞 rejuvenation平台
+- type: 细胞 rejuvenation
+- efficiency: 临床推进
+- cost: 极高
+- maturity: 临床I期
+- companies: Life Biosciences
+- description: Life Biosciences开创表观遗传修复技术逆转衰老相关疾病，2026年计划开展人体试验测试基因疗法逆转细胞衰老并恢复组织功能
+- trend: 细胞 rejuvenation 从抗衰研究走向临床应用；表观遗传修复成为核心策略
+- sources: [object Object], [object Object]
+
 ## cell_therapy
 
 ### CAR-T细胞治疗
@@ -2280,6 +2316,30 @@ Life science knowledge base covering synthetic biology, longevity tech, cell the
 - companies: 多中心
 - description: 2026年CAR-T神经毒性(ICANS)管理策略进展：早期识别、分级管理、新干预手段
 - trend: CAR-T安全性从被动到主动管理；神经毒性可控性提升
+- sources: [object Object]
+
+### CRISPR临床试验2026全景
+
+- name: CRISPR临床试验2026全景
+- type: 基因编辑临床
+- efficiency: 250+项试验
+- cost: 高
+- maturity: 临床推进
+- companies: CRISPR Therapeutics, Vertex, Intellia, Editas
+- description: 截至2026年初，全球约250项CRISPR基因编辑治疗临床试验正在进行，其中150+项处于活跃状态，覆盖血红蛋白病、癌症、自身免疫病等多领域
+- trend: CRISPR从实验室走向临床加速；血液病领域领先，实体瘤和HIV快速推进
+- sources: [object Object], [object Object]
+
+### Christiana Care CRISPR头颈癌疗法
+
+- name: Christiana Care CRISPR头颈癌疗法
+- type: CRISPR癌症疗法
+- efficiency: I期临床试验
+- cost: 高
+- maturity: 临床I期
+- companies: Christiana Care Health System
+- description: 2026年1月报道Christiana Care团队利用CRISPR基因编辑技术恢复化疗对耐药头颈癌肿瘤的疗效，为耐药癌症治疗提供新方案
+- trend: CRISPR用于克服化疗耐药性；实体瘤CRISPR疗法取得早期突破
 - sources: [object Object]
 
 ## bioinformatics
@@ -4866,6 +4926,18 @@ Life science knowledge base covering synthetic biology, longevity tech, cell the
 - maturity: 实验室阶段
 - description: 2026年生物固碳合成生物学进展：工程微生物固定CO2，从概念到中试
 - trend: 生物固碳从概念到中试；合成生物学赋能碳捕获
+- sources: [object Object]
+
+### CRISPR基因与细胞治疗临床多领域突破
+
+- name: CRISPR基因与细胞治疗临床多领域突破
+- type: 基因编辑临床
+- efficiency: 多疾病 promising
+- cost: 高
+- maturity: 临床推进
+- companies: CRISPR Therapeutics, 多研究机构
+- description: 2025年ScienceDirect综述：CRISPR基因与细胞治疗已进入多疾病临床试验，早期结果令人鼓舞，但关键挑战仍存，包括脱靶效应、递送效率和免疫反应
+- trend: CRISPR疗法从血液病扩展到实体瘤、HIV和自身免疫病；递送技术是关键瓶颈
 - sources: [object Object]
 
 ## longevity_tech

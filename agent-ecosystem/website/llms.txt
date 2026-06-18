@@ -10,13 +10,13 @@
 
 ## Stats
 
-- Total entities: 398
-- mcp_servers: 159
+- Total entities: 407
+- mcp_servers: 161
 - agent_sdks: 8
-- protocols: 64
-- memory_systems: 20
+- protocols: 66
+- memory_systems: 23
 - model_apis: 12
-- vector_dbs: 33
+- vector_dbs: 35
 - benchmarks: 8
 - sdks: 94
 
@@ -54,7 +54,7 @@
 - **Redis MCP Server**: Redis缓存和消息队列操作
 - **Anki MCP Server**: Anki间隔重复闪卡应用集成
 - **server-google-drive**: Google Drive文件操作
-- ... and 129 more
+- ... and 131 more
 
 ### agent_sdks
 
@@ -99,7 +99,7 @@
 - **MCP 2026-07-28 RC**: MCP协议2026年重大更新，引入无状态协议、Tasks原语、MCP Apps
 - **MCP Registry Protocol**: MCP Server注册与发现协议，用于Server目录和安全验证
 - **MCP Tasks Protocol**: MCP 2026路线图新增Tasks原语，支持Agent自主通信
-- ... and 34 more
+- ... and 36 more
 
 ### memory_systems
 
@@ -123,6 +123,9 @@
 - **ICLR 2026 Agent Memory Workshop**: ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems. Advances design of memory layer for agentic systems.
 - **Mem0 State of Agent Memory 2026**: Comprehensive report on AI agent memory in 2026 by Mem0. Production engineering discipline with real benchmarks and measurable trade-offs.
 - **SitePoint Agent Memory Guide**: Complete guide to agent memory in 2026 covering memory architecture concepts and five most destructive memory failure modes.
+- **LoCoMo Benchmark**: LoCoMo是2026年Agent记忆架构比较的标准基准之一，用于评估长期对话记忆能力，与LongMemEval和BEAM并列为三大记忆基准
+- **LongMemEval Benchmark**: LongMemEval (ICLR 2025)是长期记忆检索评估基准，每个问题约48个会话(S变体500题、~115K tokens)，已成为Agent记忆系统标准评估工具
+- **BEAM Benchmark**: BEAM是2026年三大Agent记忆基准之一(与LoCoMo和LongMemEval并列)，用于全面评估Agent记忆架构性能
 
 ### model_apis
 
@@ -171,7 +174,7 @@
 - **Turbopuffer**: Turbopuffer Serverless向量搜索，2026年新进入者，低延迟托管向量搜索服务
 - **MyScale**: MyScale SQL向量数据库，基于ClickHouse的向量搜索，支持SQL+向量混合查询
 - **SingleStore Vector**: SingleStore分布式SQL+向量数据库，支持实时分析和向量搜索
-- ... and 3 more
+- ... and 5 more
 
 ### benchmarks
 

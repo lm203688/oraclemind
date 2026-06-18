@@ -1,54 +1,50 @@
-# ATEX - Git Ignore
+# === Project .gitignore (cleaned 2026-06-18) ===
 
-# Operational data (NEVER commit)
-accounts/
-orders/
-logs/
-data/
-settlements/
-releases/
+# Knowledge base & API data (untracked to prevent git checkout lock)
+*/knowledge-base/
+*/website/api/
 
-# Internal tools
-scripts/
-promo/
-promote.py
-promotion_log.json
-promotion_plan.json
-strategy.json
+# Browser profiles / cache
+browser_data*/
+*/chrome_profile/
+
+# Node modules
+node_modules/
+*/node_modules/
 
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
 *.egg-info/
 dist/
 build/
-.eggs/
-*.egg
 
 # Environment
 .env
 .env.local
 .venv/
 venv/
-ENV/
 
-# IDE
+# OS / IDE
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
-# OS
-.DS_Store
-Thumbs.db
+# User uploads
+upload/
+*.xlsx
 
-# Internal archives
-ATEX_v*_完整存档_*.md
+# Sensitive
+saas_data/
+*.xlsx
+.atex_api_key
+.creem
+.clawhub
 
-# Agent workspace files
+# Agent workspace files (local only)
 HEARTBEAT.md
 AGENTS.md
 SOUL.md
@@ -56,26 +52,30 @@ USER.md
 IDENTITY.md
 TOOLS.md
 BOOTSTRAP.md
-git_bak/
-accounts
-orders
-logs
-services_real
-data
-git_bak/
-# Internal workspace files
-IDENTITY.md
-SOUL.md
-TOOLS.md
-USER.md
-upload
-*.xlsx
-# Sensitive data
-saas_data/
-*.xlsx
-saas_data/
 
-# Knowledge base & API data — remove from git tracking to prevent checkout conflicts
-# (data stays in workspace, just not tracked by git)
-*/knowledge-base/
-*/website/api/
+# Old junk dirs (deleted but prevent re-adding)
+git_back/
+git_bak/
+gene_tech_video/
+promo/
+research/
+docs/
+download/
+atex/
+atex-demo/
+atex-mcp-server-public/
+token_exchange/
+
+# Temp screenshots & one-off scripts (root level)
+*.png
+*.log
+douyin_*.js
+douyin_*.png
+douyin_*.json
+qr_*.png
+qr_*.js
+save_qr.js
+get_qr.js
+extract_qr.js
+launch_douyin.sh
+feishu_content.json

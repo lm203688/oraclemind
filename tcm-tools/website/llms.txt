@@ -1,0 +1,28 @@
+# TCMDB - 中药方剂知识引擎
+
+> Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships
+
+## API Endpoints (JSON)
+
+- `GET /api/data.json` - Complete structured data
+- `GET /api/entities.json` - All entities flat list
+- `GET /api/openapi.json` - OpenAPI 3.1 specification
+
+## Stats
+
+- Total entities: 0
+- herbs: 0
+- diseases: 0
+
+## Categories
+
+### herbs
+
+
+### diseases
+
+
+## Related Knowledge Bases
+
+- [GeneTech](https://genetech.tools) - Pharmacogenomics bridges gene therapy with TCM
+- [LifeDB](https://life.genetech.tools) - Natural compounds in synthetic biology

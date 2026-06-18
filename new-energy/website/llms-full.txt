@@ -1376,6 +1376,42 @@ Renewable energy knowledge base covering solar, storage, hydrogen, wind, grid te
 - trend: 美国可再生能源增长势头不减；项目开发加速
 - sources: [object Object]
 
+### 中国钙钛矿刚性电池30.3%认证效率
+
+- name: 中国钙钛矿刚性电池30.3%认证效率
+- type: 钙钛矿
+- efficiency: 30.3%
+- cost: 低
+- maturity: 实验室纪录
+- companies: 中国科研团队
+- description: 中国科学家团队在刚性钙钛矿太阳能电池上取得突破，获得30.3%的认证功率转换效率，刷新钙钛矿单结效率纪录
+- trend: 钙钛矿单结效率突破30%是商业化关键里程碑；中国在钙钛矿领域持续领先
+- sources: [object Object]
+
+### 全钙钛矿叠层>29%效率突破
+
+- name: 全钙钛矿叠层>29%效率突破
+- type: 叠层
+- efficiency: >29%
+- cost: 潜在极低
+- maturity: 实验室突破
+- companies: 多研究机构
+- description: Nature Materials 2025年Liu等人论文显示全钙钛矿叠层电池效率突破29%，关键在于窄带隙锡铅钙钛矿的结晶质量控制
+- trend: 全钙钛矿叠层是终极低成本光伏路线；结晶质量是效率提升的关键
+- sources: [object Object]
+
+### 中国民营钙钛矿近28%效率突破
+
+- name: 中国民营钙钛矿近28%效率突破
+- type: 钙钛矿
+- efficiency: ~28%
+- cost: 低
+- maturity: 实验室纪录
+- companies: 中国民营企业
+- description: 中国民营企业开发的钙钛矿太阳能电池效率接近28%，标志着中国在钙钛矿光伏技术领域的重大突破
+- trend: 中国民营企业在钙钛矿领域快速追赶；效率持续攀升
+- sources: [object Object]
+
 ## storage
 
 ### 磷酸铁锂LFP
@@ -2470,6 +2506,42 @@ Renewable energy knowledge base covering solar, storage, hydrogen, wind, grid te
 - trend: 储能电池性能成本持续改善；学习曲线效应明显
 - sources: [object Object]
 
+### 全固态钠电池安全技术突破
+
+- name: 全固态钠电池安全技术突破
+- type: 固态钠电池
+- efficiency: N/A
+- cost: 低
+- maturity: 实验室突破
+- companies: 研究机构
+- description: 2026年5月报道更安全的全固态钠电池技术，可降低电网储能成本并减少对锂的依赖，为大规模储能提供新方案
+- trend: 固态钠电池是电网储能理想方案；无锂依赖降低供应链风险
+- sources: [object Object]
+
+### BYD固态电池和钠离子电池突破
+
+- name: BYD固态电池和钠离子电池突破
+- type: 固态电池+钠离子
+- efficiency: 10000次循环
+- cost: 中
+- maturity: 产业化推进
+- companies: 比亚迪(BYD)
+- description: 比亚迪公布固态电池和钠离子电池技术重大突破，声称可达10000次充放电循环，显著提升电池寿命
+- trend: 中国电池巨头加速固态电池产业化；钠离子为低成本储能提供新选择
+- sources: [object Object]
+
+### NFPP钠离子电池电网储能评估2026
+
+- name: NFPP钠离子电池电网储能评估2026
+- type: 钠离子电池
+- efficiency: N/A
+- cost: 低
+- maturity: 商用扩张
+- companies: 多家电池厂商
+- description: Volta Foundation 2026年评估：NFPP(钠铁焦磷酸盐)钠离子电池成为锂离子电池更低成本的电网储能替代方案，安全性和成本优势显著
+- trend: 钠离子电池在固定储能领域快速渗透；NFPP正极材料成本优势明显
+- sources: [object Object]
+
 ## hydrogen_energy
 
 ### PEM电解水制氢
@@ -3277,6 +3349,42 @@ Renewable energy knowledge base covering solar, storage, hydrogen, wind, grid te
 - maturity: 研发中
 - description: 2026年氢能储运技术进展：液氢、有机氢化物、氨载氢等多种路线并行发展
 - trend: 氢储运从高压气态到多元化；降低运输成本是关键
+- sources: [object Object]
+
+### 凯尔特海离岸风电直接制氢
+
+- name: 凯尔特海离岸风电直接制氢
+- type: 海上风电制氢
+- efficiency: N/A
+- cost: 中高
+- maturity: 规划推进
+- companies: 英国能源企业
+- description: 凯尔特海风力资源通过直接离岸制氢技术开发，技术经济模型显示海上风电耦合电解槽可实现高效绿氢生产
+- trend: 离岸风电直接制氢省去电网环节；欧洲海上绿氢项目加速推进
+- sources: [object Object]
+
+### 海水直接电解制氢技术
+
+- name: 海水直接电解制氢技术
+- type: 海水制氢
+- efficiency: N/A
+- cost: 中
+- maturity: 研发推进
+- companies: 中国研究团队
+- description: 海水直接电解制氢技术兼容可再生能源，目标是低成本、高能效、长寿命的氢气生产方案，避免淡水资源限制
+- trend: 海水制氢解决淡水资源瓶颈；与海上风电/光伏耦合前景广阔
+- sources: [object Object]
+
+### 全球绿氢市场2025-2035预测
+
+- name: 全球绿氢市场2025-2035预测
+- type: 市场数据
+- efficiency: N/A
+- cost: 持续下降
+- maturity: 市场爆发
+- companies: 全行业
+- description: 全球绿氢市场规模2025年123.1亿美元，预计2035年达2313.2亿美元，CAGR约34.3%；绿氢预计2030年占总产量15%，2050年超70%
+- trend: 绿氢市场爆发式增长；可再生能源制氢成本持续下降驱动商业化
 - sources: [object Object]
 
 ## wind_energy

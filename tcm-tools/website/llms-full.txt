@@ -1,0 +1,12 @@
+# TCMDB - 中药方剂知识引擎
+
+Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships
+
+## herbs
+
+## diseases
+
+## Related Knowledge Bases
+
+- GeneTech (https://genetech.tools): Pharmacogenomics bridges gene therapy with TCM
+- LifeDB (https://life.genetech.tools): Natural compounds in synthetic biology

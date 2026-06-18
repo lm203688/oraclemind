@@ -2449,6 +2449,40 @@ AI Agent ecosystem database covering MCP servers, SDKs, protocols, memory system
 - year: 2026
 - sources: https://mcpmanager.ai/blog/most-popular-mcp-servers
 
+### MCP Extensions Framework
+
+- name: MCP Extensions Framework
+- full_name: Model Context Protocol Extensions
+- category: 协议扩展
+- description: MCP 2026-07-28 RC版本引入Extensions框架，允许社区扩展MCP核心协议而不破坏兼容性，支持自定义工具类型和资源格式
+- protocol_version: 2026-07-28-RC
+- auth: varies
+- hosts: Claude Desktop, Cursor, VS Code, 所有MCP客户端
+- security: 扩展沙箱
+- stars: 0
+- maintainer: Anthropic + 社区
+- status: active
+- language: TypeScript/Python
+- features: 自定义工具类型, 资源格式扩展, 协议兼容性保证, 社区扩展生态
+- sources: [object Object]
+
+### MCP Stateless Protocol Core
+
+- name: MCP Stateless Protocol Core
+- full_name: MCP Stateless Core
+- category: 协议核心
+- description: MCP 2026-07-28 RC版本引入无状态协议核心，解决有状态连接的可扩展性问题，支持HTTP无状态调用和大规模Agent部署
+- protocol_version: 2026-07-28-RC
+- auth: varies
+- hosts: 所有MCP客户端
+- security: 无状态安全
+- stars: 0
+- maintainer: Anthropic
+- status: active
+- language: TypeScript
+- features: 无状态调用, HTTP扩展, 大规模部署支持, 向后兼容
+- sources: [object Object]
+
 ## agent_sdks
 
 ### Vercel AI SDK
@@ -3415,6 +3449,30 @@ AI Agent ecosystem database covering MCP servers, SDKs, protocols, memory system
 - year: 2025
 - sources: https://www.speakeasy.com/mcp/release-notes, https://workos.com/blog/everything-your-team-needs-to-know-about-mcp-in-2026
 
+### MCP 2026-07-28 Release Candidate
+
+- name: MCP 2026-07-28 Release Candidate
+- type: 协议规范
+- description: Model Context Protocol 2026年7月28日发布候选版本：无状态协议核心 + Extensions框架，是MCP自发布以来最大架构升级
+- key_features: 无状态协议核心, Extensions扩展框架, HTTP无状态调用, 大规模Agent部署支持, 向后兼容
+- status: release_candidate
+- year: 2026
+- maintainer: Anthropic
+- adoption: 9700万下载量(截至2026年)
+- sources: [object Object], [object Object]
+
+### A2A (Agent-to-Agent) Protocol
+
+- name: A2A (Agent-to-Agent) Protocol
+- type: Agent间通信协议
+- description: A2A协议是2026年AI Agent生态中Agent间通信的标准协议之一，与MCP(Agent-to-Tool)互补，解决多Agent协作问题
+- key_features: Agent间通信, 任务委派, 状态同步, 多Agent协作
+- status: emerging
+- year: 2026
+- maintainer: 社区
+- adoption: 快速增长
+- sources: [object Object]
+
 ## memory_systems
 
 ### mem0
@@ -3643,6 +3701,42 @@ AI Agent ecosystem database covering MCP servers, SDKs, protocols, memory system
 - status: active
 - year: 2026
 - sources: https://www.sitepoint.com/the-new-reality-of-agent-memory-the-complete-guide-2026
+
+### LoCoMo Benchmark
+
+- name: LoCoMo Benchmark
+- full_name: LoCoMo Long-term Conversation Memory Benchmark
+- category: 记忆基准
+- description: LoCoMo是2026年Agent记忆架构比较的标准基准之一，用于评估长期对话记忆能力，与LongMemEval和BEAM并列为三大记忆基准
+- key_features: 长期对话记忆评估, 多轮交互测试, 记忆检索准确率, 行业标准基准
+- status: active
+- year: 2026
+- maintainer: 学术界
+- sources: [object Object]
+
+### LongMemEval Benchmark
+
+- name: LongMemEval Benchmark
+- full_name: LongMemEval Long-term Memory Retrieval Benchmark
+- category: 记忆基准
+- description: LongMemEval (ICLR 2025)是长期记忆检索评估基准，每个问题约48个会话(S变体500题、~115K tokens)，已成为Agent记忆系统标准评估工具
+- key_features: 48会话/问题, 500题(S变体), ~115K tokens/问题, ICLR 2025论文
+- status: active
+- year: 2025
+- maintainer: 学术界
+- sources: [object Object], [object Object]
+
+### BEAM Benchmark
+
+- name: BEAM Benchmark
+- full_name: BEAM Agent Memory Benchmark
+- category: 记忆基准
+- description: BEAM是2026年三大Agent记忆基准之一(与LoCoMo和LongMemEval并列)，用于全面评估Agent记忆架构性能
+- key_features: Agent记忆综合评估, 与LoCoMo/LongMemEval并列, 行业标准
+- status: active
+- year: 2026
+- maintainer: 学术界
+- sources: [object Object]
 
 ## model_apis
 
@@ -4204,6 +4298,32 @@ AI Agent ecosystem database covering MCP servers, SDKs, protocols, memory system
 - status: active
 - year: 2025
 - sources: https://www.instaclustr.com/education/vector-database/best-open-source-vector-database-solutions-top-5-in-2026
+
+### Pinecone 2026
+
+- name: Pinecone 2026
+- full_name: Pinecone Vector Database
+- category: 向量数据库
+- description: Pinecone在2026年保持托管型向量数据库领导地位，是AI Agent生产系统的首选方案，支持大规模向量检索和混合查询
+- key_features: 全托管服务, 大规模向量检索, 混合查询, Serverless架构
+- status: production
+- year: 2026
+- maintainer: Pinecone
+- language: Rust/Go
+- sources: [object Object]
+
+### Qdrant 2026 Major Update
+
+- name: Qdrant 2026 Major Update
+- full_name: Qdrant Vector Search Engine
+- category: 向量数据库
+- description: Qdrant在2026年发布重大更新，作为Rust编写的开源向量数据库速度领导者，在AI Agent工作负载中表现突出
+- key_features: Rust实现, 开源, 速度领先, 2026重大更新, 高效过滤
+- status: production
+- year: 2026
+- maintainer: Qdrant
+- language: Rust
+- sources: [object Object]
 
 ## benchmarks
 

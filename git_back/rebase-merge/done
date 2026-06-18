@@ -1,3 +1,0 @@
-pick 67c3d816195b7f51176e87d1017ca1a53b378c8f Initial commit
-pick 83d2904c42cc6c6bc4ae5b56e81f6d0681488d0c feat: add demo page + Docker deploy + MCP installer
-pick efb2ecb497b6251dca57f1a31bc7e7bf141523f8 fix: demo endpoint safe_json_loads bug - read file before parsing

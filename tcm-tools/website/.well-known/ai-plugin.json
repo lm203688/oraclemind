@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "TCMDB",
+  "name_for_model": "tcmdb",
+  "description_for_human": "Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships",
+  "description_for_model": "Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://tcm.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://tcm.genetech.tools/"
+}

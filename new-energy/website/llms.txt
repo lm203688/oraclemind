@@ -10,10 +10,10 @@
 
 ## Stats
 
-- Total entities: 430
-- solar: 116
-- storage: 93
-- hydrogen_energy: 74
+- Total entities: 439
+- solar: 119
+- storage: 96
+- hydrogen_energy: 77
 - wind_energy: 63
 - grid_tech: 66
 - solar_tech: 8
@@ -54,7 +54,7 @@
 - **LONGi 35.0% Perovskite-Silicon Tandem**: perovskite_silicon_tandem
 - **Nankai University 27.17% n-i-p Perovskite**: perovskite_single_junction
 - **Korea-China Joint 27.6% Perovskite**: perovskite_single_junction
-- ... and 86 more
+- ... and 89 more
 
 ### storage
 
@@ -88,7 +88,7 @@
 - **120+吉瓦级储能项目2026**: 2026年全球120+吉瓦级储能项目规划，储能技术成本持续下降，融资渠道更广泛
 - **Vattenfall 200MW储能租赁**: Vattenfall 2025年签署三项协议，租赁超200MW电池储能容量并优化运营，储能租赁模式兴起
 - **DOE下一代电池计划**: 美国能源部DOE Breaking It Down系列推动下一代电池技术：固态/锂硫/钠离子/铁-空气等多路线并行
-- ... and 63 more
+- ... and 66 more
 
 ### hydrogen_energy
 
@@ -122,7 +122,7 @@
 - **美国氢能2026前景**: FCHEA总裁Frank Wolak认为美国氢能2026年仍可取得实质进展，尽管2025年政策剧烈波动
 - **绿氢电解槽成本下降**: 电解槽规模化生产推动绿氢成本下降，2026年目标$3-4/kg，2030年目标$1-2/kg
 - **氢能管道基础设施**: 欧洲氢骨干网(EHB)规划53000km氢能管道，连接各国供需；美国/中东同步规划
-- ... and 44 more
+- ... and 47 more
 
 ### wind_energy
 

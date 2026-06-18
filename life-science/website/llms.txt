@@ -10,13 +10,13 @@
 
 ## Stats
 
-- Total entities: 475
+- Total entities: 481
 - synthetic_biology: 30
-- longevity: 104
-- cell_therapy: 76
+- longevity: 107
+- cell_therapy: 78
 - bioinformatics: 70
 - biomanufacturing: 79
-- synbio: 96
+- synbio: 97
 - longevity_tech: 8
 - biotech_tools: 5
 - regenerative_medicine: 4
@@ -89,7 +89,7 @@
 - **2025长寿研究时间线**: 2025年长寿研究突破时间线：衰老可被测量、减缓、甚至逆转，提供真正希望
 - **2026长寿初创公司9强**: 2026年9家最值得关注抗衰老/长寿初创公司：表观遗传重编程、细胞再生、代谢干预等多路线
 - **2025十大长寿突破**: 2025年十大长寿/抗衰老突破：代谢药物抗衰再定位、表观遗传时钟优化、GLP-1长寿关联等
-- ... and 74 more
+- ... and 77 more
 
 ### cell_therapy
 
@@ -123,7 +123,7 @@
 - **CAR-M巨噬细胞治疗**: CAR修饰巨噬细胞，既可直接吞噬肿瘤，又可重塑肿瘤微环境，实体瘤潜力大
 - **KIR-CAR T细胞治疗**: AACR 2026: KIR-CAR T细胞治疗在多发性骨髓瘤中安全，剂量递增疗效增加
 - **免化疗CAR-T疗法**: Reuters 2026: 改良型CAR-T疗法可能让血液癌患者免受毒性预处理化疗
-- ... and 46 more
+- ... and 48 more
 
 ### bioinformatics
 
@@ -225,7 +225,7 @@
 - **CRISPR诊断CRISPR-Dx**: CRISPR用于核酸检测，快速/低成本/现场部署，替代传统PCR
 - **合成生物学市场预测2026-2033**: 合成生物学市场2026年68.7亿，预计2033年达125.1亿，CAGR 22.7%
 - **2026生物技术10大突破趋势**: Atlantis Bioscience 2026年10大生物技术趋势：体内编辑/RNA治疗/空间组学/再生医学创新
-- ... and 66 more
+- ... and 67 more
 
 ### longevity_tech
 

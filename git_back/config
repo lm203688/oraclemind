@@ -1,8 +1,0 @@
-[core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	logallrefupdates = true
-[remote "origin"]
-	url = https://lm203688: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@github.com/lm203688/atex.git
-	fetch = +refs/heads/*:refs/remotes/origin/*
