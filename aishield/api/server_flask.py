@@ -480,7 +480,51 @@ def badge_by_name(tool_name):
             return Response(svg, mimetype="image/svg+xml")
     return jsonify({"success": False, "detail": "工具未找到"}), 404
 
-# ============ API: Pricing ============
+# ============ API: 安全评分JSON（供第三方嵌入） ============
+
+@app.route("/api/v1/score/<path:tool_name>")
+def score_json(tool_name):
+    """返回工具安全评分JSON（供Smithery/mcp.so等平台嵌入）"""
+    tools = load_json(TOOLS_FILE)
+    for url, t in tools.items():
+        if t.get("name", "").lower() == tool_name.lower():
+            return jsonify({
+                "tool": t.get("name", tool_name),
+                "source_url": url,
+                "overall_score": t.get("overall_score", 0),
+                "badge_level": t.get("badge_level", "none"),
+                "risk_level": t.get("risk_level", "unknown"),
+                "scores": {
+                    "security": t.get("security_score", 0),
+                    "privacy": t.get("privacy_score", 0),
+                    "quality": t.get("quality_score", 0),
+                    "performance": t.get("performance_score", 0),
+                },
+                "owasp_coverage": t.get("owasp_coverage", {}),
+                "last_scanned": t.get("last_scanned", ""),
+                "badge_svg": f"http://150.158.119.19:8450/api/v1/badge-name/{tool_name}",
+                "badge_markdown": f"![AIShield](http://150.158.119.19:8450/api/v1/badge-name/{tool_name})",
+                "embed_html": f'<iframe src="http://150.158.119.19:8450/api/v1/embed/{tool_name}" width="200" height="60" frameborder="0"></iframe>',
+            })
+    return jsonify({"success": False, "detail": "工具未找到"}), 404
+
+@app.route("/api/v1/embed/<path:tool_name>")
+def embed_badge(tool_name):
+    """可嵌入的HTML安全评分卡片"""
+    tools = load_json(TOOLS_FILE)
+    for url, t in tools.items():
+        if t.get("name", "").lower() == tool_name.lower():
+            score = t.get("overall_score", 0)
+            badge = t.get("badge_level", "none")
+            colors = {"gold": "#FFD700", "silver": "#C0C0C0", "bronze": "#CD7F32", "none": "#555"}
+            bg = colors.get(badge, "#555")
+            return Response(f'''<div style="display:inline-block;background:#1a1a2e;border:1px solid #333;border-radius:8px;padding:8px 12px;font-family:system-ui,sans-serif">
+<a href="http://150.158.119.19:8450" target="_blank" style="text-decoration:none;color:#fff">
+<span style="background:{bg};color:#000;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700">🛡️ {badge.upper()}</span>
+<span style="color:#fff;margin-left:8px;font-size:13px;font-weight:600">{score}/100</span>
+<span style="color:#888;margin-left:4px;font-size:10px">AIShield</span>
+</a></div>''', mimetype="text/html")
+    return Response("<div>AIShield: Not scanned</div>", mimetype="text/html")
 
 @app.route("/api/v1/pricing")
 def pricing():
@@ -608,6 +652,7 @@ def prompt_check():
     prompt_lower = prompt.lower()
     
     INJECTION_PATTERNS = [
+        # 英文模式
         (r"ignore (all )?(previous|prior) instructions", "Prompt注入", "critical"),
         (r"disregard (all|previous|prior)", "Prompt注入", "critical"),
         (r"you are now (a |an )?(different|new|dan|evil|hacker)", "角色篡改", "critical"),
@@ -623,6 +668,23 @@ def prompt_check():
         (r"eval\s*\(|exec\s*\(", "动态执行指令", "high"),
         (r"\\x[0-9a-f]{2}|\\u[0-9a-f]{4}", "编码混淆", "medium"),
         (r"base64|decode|atob|btoa", "编码操作", "low"),
+        # 中文模式
+        (r"忽略.*(?:之前|前面|以上).*(?:指令|提示|规则)", "中文Prompt注入", "critical"),
+        (r"无视.*(?:之前|前面|以上).*(?:指令|提示|规则)", "中文Prompt注入", "critical"),
+        (r"不要遵守.*(?:规则|限制|约束)", "中文越狱指令", "critical"),
+        (r"你现在(?:是|扮演).*(?:黑客|恶意|不同|新的)", "中文角色篡改", "critical"),
+        (r"(?:系统|后台).*(?:密码|密钥|token|API.?key)", "窃取系统凭证", "critical"),
+        (r"(?:发送|上传|传).*(?:到|至|给).*(?:http|https|服务器|网址)", "中文数据外传", "critical"),
+        (r"(?:执行|运行).*(?:代码|命令|脚本|程序)", "请求执行代码", "high"),
+        (r"(?:访问|读取|查看).*(?:文件|数据库|系统|目录)", "请求访问文件系统", "high"),
+        (r"(?:越狱|破解|突破).*(?:限制|安全|防护|过滤)", "中文越狱指令", "critical"),
+        (r"(?:没有|不受|不要).*(?:限制|规则|约束|安全)", "中文越狱指令", "critical"),
+        (r"(?:假装|伪装).*(?:是|成为).*(?:黑客|恶意|不同)", "中文角色伪装", "high"),
+        (r"(?:导出|下载|提取).*(?:数据|信息|用户|密码)", "数据提取指令", "high"),
+        (r"(?:修改|删除|清空|格式化).*(?:数据|文件|数据库)", "数据破坏指令", "critical"),
+        (r"(?:开启|打开|启动).*(?:终端|shell|命令行|root)", "请求系统权限", "critical"),
+        (r"sudo\s|rm\s+-rf|chmod\s+\d+", "系统命令注入", "critical"),
+        (r"(?:思考过程|reasoning|chain.?of.?thought).*(?:输出|显示|reveal)", "请求泄露思维链", "medium"),
     ]
     
     import re
