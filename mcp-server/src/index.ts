@@ -363,7 +363,7 @@ server.tool('aishield_scan', '🛡️ AIShield安全扫描 — 扫描MCP Server/
   name: z.string().optional().describe('Tool name (optional)'),
 }, async ({ source_url, tool_type, name }) => {
   try {
-    const resp = await fetch('https://aishield.ai/api/v1/audit', {
+    const resp = await fetch('http://127.0.0.1:8450/api/v1/audit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'User-Agent': 'ATEX-MCP-Server/1.0' },
       body: JSON.stringify({ source_url, tool_type, name }),
@@ -381,7 +381,7 @@ server.tool('aishield_guardrail', '🛡️ AIShield Guardrail — 在安装任�
   auto_block: z.boolean().default(true).describe('If true, return block verdict for unsafe tools'),
 }, async ({ source_url, auto_block }) => {
   try {
-    const resp = await fetch('https://aishield.ai/api/v1/audit', {
+    const resp = await fetch('http://127.0.0.1:8450/api/v1/audit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'User-Agent': 'ATEX-MCP-Server/1.0' },
       body: JSON.stringify({ source_url, tool_type: 'mcp', auto_block }),

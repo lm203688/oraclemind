@@ -5,7 +5,7 @@
 PORT=8450
 PIDFILE=/home/z/my-project/aishield/aishield.pid
 LOGFILE=/home/z/my-project/aishield/server.log
-GUNICORN=/home/z/.venv/bin/gunicorn
+GUNICORN=/home/z/.local/bin/gunicorn
 WORKERS=2
 TIMEOUT=60
 THREADS=2
