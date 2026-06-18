@@ -354,7 +354,50 @@ server.tool('knowledge_entity_detail', '🔍 知识实体详情 — 获取特定
 });
 
 // ══════════════════════════════════════════════════════════
-// SECTION 3: Chat (LLM Proxy)
+// SECTION 3: AIShield Security Tools
+// ══════════════════════════════════════════════════════════
+
+server.tool('aishield_scan', '🛡️ AIShield安全扫描 — 扫描MCP Server/AI工具的安全风险，4维评分(安全/隐私/质量/性能)，119条规则覆盖OWASP MCP Top 10 (1 ATEX/call)', {
+  source_url: z.string().describe('GitHub repo URL of the tool to scan'),
+  tool_type: z.string().default('mcp').describe('Tool type: mcp/skill/gpt/prompt'),
+  name: z.string().optional().describe('Tool name (optional)'),
+}, async ({ source_url, tool_type, name }) => {
+  try {
+    const resp = await fetch('https://aishield.ai/api/v1/audit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'User-Agent': 'ATEX-MCP-Server/1.0' },
+      body: JSON.stringify({ source_url, tool_type, name }),
+      signal: AbortSignal.timeout(30000),
+    });
+    const data = await resp.json();
+    return { content: [{ type: 'text' as const, text: JSON.stringify(data, null, 2) }] };
+  } catch (e: any) {
+    return { content: [{ type: 'text' as const, text: `AIShield scan failed: ${e.message}. Visit https://github.com/lm203688/aishield for details.` }] };
+  }
+});
+
+server.tool('aishield_guardrail', '🛡️ AIShield Guardrail — 在安装任何MCP/AI工具前调用此工具进行安全检查。返回pass/fail+评分 (1 ATEX/call)', {
+  source_url: z.string().describe('GitHub repo URL of the tool to install'),
+  auto_block: z.boolean().default(true).describe('If true, return block verdict for unsafe tools'),
+}, async ({ source_url, auto_block }) => {
+  try {
+    const resp = await fetch('https://aishield.ai/api/v1/audit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'User-Agent': 'ATEX-MCP-Server/1.0' },
+      body: JSON.stringify({ source_url, tool_type: 'mcp', auto_block }),
+      signal: AbortSignal.timeout(30000),
+    });
+    const data = await resp.json();
+    const score = data.overall_score || 0;
+    const verdict = score >= 70 ? '✅ PASS' : '❌ BLOCK';
+    return { content: [{ type: 'text' as const, text: `AIShield Guardrail Verdict: ${verdict}\nScore: ${score}/100\nBadge: ${data.badge_level || 'N/A'}\n\nDetails: ${JSON.stringify(data, null, 2)}` }] };
+  } catch (e: any) {
+    return { content: [{ type: 'text' as const, text: `Guardrail check failed: ${e.message}. CAUTION: Do not install until verified.` }] };
+  }
+});
+
+// ══════════════════════════════════════════════════════════
+// SECTION 4: Chat (LLM Proxy)
 // ══════════════════════════════════════════════════════════
 
 server.tool('chat', '💬 AI对话 — 调用AI模型对话（DeepSeek/GPT-4o/Claude），按Token计费', {
@@ -378,7 +421,7 @@ server.tool('chat', '💬 AI对话 — 调用AI模型对话（DeepSeek/GPT-4o/Cl
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error('✅ ATEX MCP Server running — 23 AI services + 12 knowledge engines');
+  console.error('✅ ATEX MCP Server running — 23 AI services + 12 knowledge engines + AIShield security');
   console.error(`   Base URL: ${ATEX_BASE}`);
   console.error(`   API Key: ${ATEX_KEY ? '***' + ATEX_KEY.slice(-4) : '(not set — some tools require authentication)'}`);
 }
