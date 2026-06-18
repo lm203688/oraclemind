@@ -74,3 +74,8 @@ upload
 saas_data/
 *.xlsx
 saas_data/
+
+# Knowledge base & API data — remove from git tracking to prevent checkout conflicts
+# (data stays in workspace, just not tracked by git)
+*/knowledge-base/
+*/website/api/
