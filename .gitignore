@@ -82,3 +82,4 @@ feishu_content.json
 social-auto-upload/.git/
 atex-mcp-server/
 atex-mcp-server/.git/
+agent-distribution/.env
