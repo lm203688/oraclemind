@@ -83,3 +83,7 @@ social-auto-upload/.git/
 atex-mcp-server/
 atex-mcp-server/.git/
 agent-distribution/.env
+aishield/data/
+aishield/*.pid
+aishield/*.log
+aishield/tunnel*

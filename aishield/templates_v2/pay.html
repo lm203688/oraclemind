@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>支付 — AIShield Pro</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#12121a;--border:#1e1e2e;--text:#e0e0e0;--dim:#888;--accent:#6c5ce7;--accent2:#a29bfe;--green:#00b894}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6}
+.container{max-width:600px;margin:0 auto;padding:0 20px}
+.header{border-bottom:1px solid var(--border);padding:16px 0}
+.header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:700;color:var(--accent2)}
+a{color:var(--accent2);text-decoration:none}
+.pay-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px;margin:32px 0}
+.pay-title{font-size:24px;font-weight:700;margin-bottom:8px}
+.pay-price{font-size:36px;font-weight:800;color:var(--green);margin-bottom:24px}
+.pay-price span{font-size:16px;color:var(--dim);font-weight:400}
+.btn{display:inline-block;padding:14px 32px;border-radius:10px;font-weight:600;font-size:16px;cursor:pointer;border:none;transition:all .2s}
+.btn-alipay{background:#1677FF;color:white;width:100%;margin-bottom:12px}
+.btn-alipay:hover{background:#0e5fd8}
+.btn-wechat{background:#07C160;color:white;width:100%}
+.btn-wechat:hover{background:#06a94f}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.footer{text-align:center;padding:30px 0;color:var(--dim);font-size:12px;border-top:1px solid var(--border)}
+form input,form select{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:8px;font-size:14px;margin-bottom:12px}
+form label{font-size:13px;color:var(--dim);display:block;margin-bottom:4px}
+.highlight{background:rgba(0,184,148,.1);border:1px solid rgba(0,184,148,.3);border-radius:8px;padding:12px 16px;margin:16px 0;font-size:14px;color:var(--green)}
+.success-msg{text-align:center;padding:40px 20px}
+.success-msg h2{color:var(--green);font-size:24px;margin-bottom:12px}
+.loading{display:inline-block;width:20px;height:20px;border:2px solid var(--dim);border-top-color:var(--accent2);border-radius:50%;animation:spin 1s linear infinite;margin-right:8px;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="header"><div class="container">
+<a href="/" class="logo">🛡️ AIShield</a>
+<a href="/pricing">← 返回定价</a>
+</div></div>
+
+<div class="container">
+<div class="pay-card" id="payForm">
+<div class="pay-title">升级 AIShield Pro</div>
+<div class="pay-price" id="priceDisplay">¥19<span>/月</span></div>
+
+<form onsubmit="return false">
+<label>邮箱地址 *</label>
+<input type="email" id="email" required placeholder="you@company.com">
+<label>选择版本</label>
+<select id="product" onchange="updatePrice()">
+<option value="pro_monthly">Pro版 ¥19/月</option>
+<option value="pro_yearly">Pro版 ¥190/年（省¥38）</option>
+<option value="enterprise_monthly">企业版 ¥99/月</option>
+<option value="enterprise_yearly">企业版 ¥990/年（省¥198）</option>
+<option value="scan_pack_10">10次扫描包 ¥5</option>
+<option value="scan_pack_50">50次扫描包 ¥20</option>
+</select>
+</form>
+
+<div style="margin-top:20px">
+<button class="btn btn-alipay" onclick="createOrder('alipay')">💳 支付宝支付</button>
+<button class="btn btn-wechat" onclick="createOrder('wechat')">💚 微信支付</button>
+</div>
+
+<div class="highlight">
+🔒 支付由虎皮椒担保，资金安全有保障。付款后自动激活API Key，无需等待。
+</div>
+
+<p style="font-size:12px;color:var(--dim);text-align:center">
+支付即表示同意 <a href="/docs">服务条款</a> | 如有问题联系 pay@aishield.ai
+</p>
+</div>
+
+<div class="pay-card" id="paySuccess" style="display:none">
+<div class="success-msg">
+<h2>✅ 支付成功！</h2>
+<p>您的API Key已自动激活，请查看邮箱获取详情。</p>
+<p style="margin-top:16px"><a href="/docs" style="color:var(--accent2)">查看API文档 →</a></p>
+</div>
+</div>
+</div>
+
+<div class="footer"><div class="container">AIShield v2.0 — AI生态缔造者 🌐</div></div>
+
+<script>
+const prices = {
+  pro_monthly: {price: '¥19', period: '/月', amount: 19},
+  pro_yearly: {price: '¥190', period: '/年', amount: 190},
+  enterprise_monthly: {price: '¥99', period: '/月', amount: 99},
+  enterprise_yearly: {price: '¥990', period: '/年', amount: 990},
+  scan_pack_10: {price: '¥5', period: '', amount: 5},
+  scan_pack_50: {price: '¥20', period: '', amount: 20},
+};
+
+function updatePrice() {
+  const p = document.getElementById('product').value;
+  const info = prices[p];
+  document.getElementById('priceDisplay').innerHTML = info.price + '<span>' + info.period + '</span>';
+}
+
+function createOrder(type) {
+  const email = document.getElementById('email').value;
+  const product = document.getElementById('product').value;
+  if (!email) { alert('请输入邮箱'); return; }
+  
+  const btn = type === 'alipay' ? document.querySelector('.btn-alipay') : document.querySelector('.btn-wechat');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="loading"></span>正在创建订单...';
+  
+  fetch('/api/v1/payment/create', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({product_id: product, type: type, email: email})
+  }).then(r => r.json()).then(data => {
+    if (data.success) {
+      // 跳转到虎皮椒支付页面
+      window.location.href = data.pay_url;
+    } else {
+      alert('创建订单失败: ' + data.detail);
+      btn.disabled = false;
+      btn.innerHTML = type === 'alipay' ? '💳 支付宝支付' : '💚 微信支付';
+    }
+  }).catch(e => {
+    alert('网络错误，请重试');
+    btn.disabled = false;
+    btn.innerHTML = type === 'alipay' ? '💳 支付宝支付' : '💚 微信支付';
+  });
+}
+
+// 检查支付成功回调
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('status') === 'success') {
+  document.getElementById('payForm').style.display = 'none';
+  document.getElementById('paySuccess').style.display = 'block';
+}
+</script>
+</body>
+</html>

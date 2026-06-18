@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API文档 — AIShield</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#12121a;--border:#1e1e2e;--text:#e0e0e0;--dim:#888;--accent:#6c5ce7;--accent2:#a29bfe;--green:#00b894;--red:#e17055}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6}
+a{color:var(--accent2);text-decoration:none}
+.container{max-width:900px;margin:0 auto;padding:0 20px}
+.header{border-bottom:1px solid var(--border);padding:16px 0}
+.header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.docs{padding:30px 0}
+h1{font-size:28px;font-weight:800;margin-bottom:20px}
+h2{font-size:20px;font-weight:700;margin:30px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+h3{font-size:16px;font-weight:600;margin:20px 0 8px;color:var(--accent2)}
+.endpoint{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;margin:12px 0}
+.method{display:inline-block;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:700;margin-right:8px}
+.get{background:#0984e3;color:#fff}
+.post{background:#00b894;color:#fff}
+.path{font-family:monospace;font-size:14px;color:var(--accent2)}
+pre{background:#0d0d15;border:1px solid var(--border);border-radius:6px;padding:12px;overflow-x:auto;font-size:13px;margin:8px 0}
+code{font-family:'Fira Code',monospace;font-size:13px}
+.param{display:flex;gap:12px;margin:4px 0;font-size:14px}
+.param-name{font-family:monospace;color:var(--accent2);min-width:120px}
+.param-type{color:var(--dim);font-size:12px;min-width:60px}
+.param-desc{color:var(--text)}
+.badge-demo{display:inline-flex;align-items:center;gap:8px;margin:8px 0}
+</style>
+</head>
+<body>
+<div class="header"><div class="container">
+  <a href="/" class="logo">🛡️ AIShield</a>
+  <a href="/">← 返回首页</a>
+</div></div>
+
+<div class="container docs">
+<h1>📖 API文档</h1>
+
+<p>AIShield提供RESTful API，支持AI工具安全审计的完整流程。</p>
+
+<h2>快速开始</h2>
+<div class="endpoint">
+  <span class="method post">POST</span><span class="path">/api/v1/audit</span>
+  <p style="margin-top:8px">提交审计请求。异步执行，立即返回audit_id，前端轮询获取结果。</p>
+  
+  <h3>请求体</h3>
+  <pre><code>{
+  "tool_type": "mcp",          // 必填: mcp / skill / gpt / prompt
+  "source_url": "https://github.com/owner/repo",  // 必填: GitHub URL
+  "name": "My Tool",           // 可选: 工具名称
+  "description": "..."         // 可选: 工具描述
+}</code></pre>
+
+  <h3>响应</h3>
+  <pre><code>{
+  "success": true,
+  "audit_id": "audit_abc123",
+  "status": "pending"          // pending → completed / failed
+}</code></pre>
+</div>
+
+<h2>查询审计结果</h2>
+<div class="endpoint">
+  <span class="method get">GET</span><span class="path">/api/v1/audit/{audit_id}</span>
+  <p style="margin-top:8px">查询审计结果。status为completed时返回完整报告。</p>
+  
+  <h3>响应（completed）</h3>
+  <pre><code>{
+  "audit_id": "audit_abc123",
+  "status": "completed",
+  "name": "My Tool",
+  "security_score": 96,        // 0-100
+  "privacy_score": 100,        // 0-100
+  "quality_score": 80,         // 0-100
+  "performance_score": 100,    // 0-100
+  "overall_score": 96,         // 加权总分
+  "risk_level": "safe",        // safe / medium / high / critical
+  "badge_level": "gold",       // gold / silver / bronze / none
+  "findings": [...],           // 发现的问题列表
+  "recommendations": [...],    // 安全建议
+  "static_analysis": {...},    // 静态分析详情
+  "dependency_analysis": {...},// 依赖分析详情
+  "secrets_detection": {...},  // 敏感信息检测详情
+  "semantic_analysis": {...},  // 语义分析详情（仅skill/gpt/prompt）
+  "timestamp": "2026-06-09T12:00:00Z"
+}</code></pre>
+</div>
+
+<h2>工具列表</h2>
+<div class="endpoint">
+  <span class="method get">GET</span><span class="path">/api/v1/tools</span>
+  <p style="margin-top:8px">获取已审计工具列表，支持筛选和排序。</p>
+  
+  <h3>查询参数</h3>
+  <div class="param"><span class="param-name">q</span><span class="param-type">string</span><span class="param-desc">搜索关键词</span></div>
+  <div class="param"><span class="param-name">tool_type</span><span class="param-type">string</span><span class="param-desc">mcp / skill / gpt / prompt</span></div>
+  <div class="param"><span class="param-name">risk_level</span><span class="param-type">string</span><span class="param-desc">safe / medium / high / critical</span></div>
+  <div class="param"><span class="param-name">badge</span><span class="param-type">string</span><span class="param-desc">gold / silver / bronze / none</span></div>
+  <div class="param"><span class="param-name">sort</span><span class="param-type">string</span><span class="param-desc">排序字段（默认overall_score）</span></div>
+  <div class="param"><span class="param-name">limit</span><span class="param-type">int</span><span class="param-desc">每页数量（默认50，最大200）</span></div>
+  <div class="param"><span class="param-name">offset</span><span class="param-type">int</span><span class="param-desc">偏移量</span></div>
+</div>
+
+<h2>统计数据</h2>
+<div class="endpoint">
+  <span class="method get">GET</span><span class="path">/api/v1/stats</span>
+  <p style="margin-top:8px">获取平台统计数据。</p>
+  <pre><code>{
+  "total_tools": 14,
+  "total_audits": 40,
+  "by_type": {"mcp": 13, "skill": 1},
+  "by_risk": {"safe": 13, "critical": 1},
+  "by_badge": {"gold": 13, "none": 1},
+  "avg_security_score": 95.6
+}</code></pre>
+</div>
+
+<h2>安全徽章</h2>
+<div class="endpoint">
+  <span class="method get">GET</span><span class="path">/api/v1/badge/{tool_key}</span>
+  <p style="margin-top:8px">获取SVG格式安全徽章，可嵌入README。</p>
+  
+  <h3>使用方式</h3>
+  <pre><code>![AIShield](https://aishield.ai/api/v1/badge/https://github.com/owner/repo)</code></pre>
+  
+  <div class="badge-demo">
+    🛡️ AIShield <span style="background:#FFD700;color:#000;padding:2px 8px;border-radius:4px;font-weight:700">96/100</span>
+    <span style="background:#00b894;color:#fff;padding:2px 8px;border-radius:4px;font-size:12px">safe</span>
+  </div>
+</div>
+
+<h2>评分体系</h2>
+<table style="width:100%;border-collapse:collapse;margin:12px 0">
+  <tr style="border-bottom:1px solid var(--border)">
+    <th style="text-align:left;padding:8px">维度</th>
+    <th style="text-align:left;padding:8px">权重</th>
+    <th style="text-align:left;padding:8px">说明</th>
+  </tr>
+  <tr style="border-bottom:1px solid var(--border)">
+    <td style="padding:8px">安全</td><td style="padding:8px">40%</td>
+    <td style="padding:8px">危险API、命令执行、网络请求、已知恶意依赖</td>
+  </tr>
+  <tr style="border-bottom:1px solid var(--border)">
+    <td style="padding:8px">隐私</td><td style="padding:8px">25%</td>
+    <td style="padding:8px">敏感信息泄露、数据外传、环境变量访问</td>
+  </tr>
+  <tr style="border-bottom:1px solid var(--border)">
+    <td style="padding:8px">质量</td><td style="padding:8px">20%</td>
+    <td style="padding:8px">依赖数量、代码结构、文档完整性</td>
+  </tr>
+  <tr>
+    <td style="padding:8px">性能</td><td style="padding:8px">15%</td>
+    <td style="padding:8px">子进程使用、资源消耗、启动速度</td>
+  </tr>
+</table>
+
+<h2>徽章等级</h2>
+<div style="display:flex;gap:16px;margin:12px 0;flex-wrap:wrap">
+  <div style="padding:8px 16px;border-radius:8px;background:#FFD700;color:#000;font-weight:700">🥇 Gold ≥85</div>
+  <div style="padding:8px 16px;border-radius:8px;background:#C0C0C0;color:#000;font-weight:700">🥈 Silver ≥70</div>
+  <div style="padding:8px 16px;border-radius:8px;background:#CD7F32;color:#fff;font-weight:700">🥉 Bronze ≥55</div>
+  <div style="padding:8px 16px;border-radius:8px;background:#555;color:#fff;font-weight:700">⚠️ None &lt;55</div>
+</div>
+
+<h2>集成方式</h2>
+
+<h3>GitHub Action</h3>
+<pre><code># .github/workflows/aishield.yml
+name: AIShield Audit
+on: [push, pull_request]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: aisheild/audit-action@v1
+        with:
+          tool_type: mcp
+          source_url: ${{ github.repositoryUrl }}</code></pre>
+
+<h3>浏览器插件</h3>
+<p>安装AIShield浏览器插件，在GPT Store和MCP工具市场自动显示安全评分。</p>
+
+<h3>CLI</h3>
+<pre><code>pip install aishield
+aishield scan --type mcp --url https://github.com/owner/repo</code></pre>
+
+</div>
+</body>
+</html>
