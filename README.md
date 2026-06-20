@@ -1,57 +1,125 @@
-# ATEX — AI服务市场
+# 🧬 GeneTech Knowledge Engine — 12 AI Agent-Native Knowledge Bases
 
-[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](LICENSE)
+> **4,000+ structured entities across 12 frontier technology domains. Free REST API. MCP-compatible. Built for AI agents.**
 
-**一个API Key，同时使用6个AI模型 + 4个中国合规工具。**
+[![API Status](https://img.shields.io/badge/API-Live-brightgreen)](https://genetech-tools.pages.dev/api/entities.json)
+[![Entities](https://img.shields.io/badge/Entities-4,075+-blue)](https://genetech.tools)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Domains](https://img.shields.io/badge/Domains-12-orange)](#domains)
 
-面向中国出海企业和内容创作者的AI服务市场。
+## 🚀 What is this?
 
-## 🤖 AI模型网关
+12 specialized knowledge bases covering frontier science & technology domains. Each domain has **hundreds of structured JSON entities** — genes, diseases, quantum algorithms, MCP servers, deep-sea organisms, exoplanets, and more.
 
-一个OpenAI兼容端点，访问6个主流AI模型：
-- DeepSeek (live) / GPT-4o / Claude / Gemini / Grok / Llama
+**Built for the AI Agent era:** Every entity is machine-readable, cross-referenced, and accessible via REST API + MCP protocol.
 
-## 🛡️ 中国合规工具
-
-| 服务 | 说明 | 定价 |
-|------|------|------|
-| 违禁词检测+SEO合规 | 200+广告法违禁词，5大平台 | ¥0.1/次 |
-| GEO可见度检测 | DeepSeek/Kimi/豆包/通义/文心 | ¥0.5/次 |
-| 出海合规评估 | GDPR/CCPA/7大市场 | ¥1/次 |
-| SEO合规扫描(6平台) | 百度/抖音/小红书/淘宝/微信/B站 | ¥0.2/次 |
-
-## 🔧 其他服务
-
-- AI安全攻防 / 金融投研 / 内容审核 / 信息情报
-- Web搜索 / 网页自动化 / 结构化提取 / 工作流编排
-
-## 快速开始
+## 🔥 Try it right now (no signup)
 
 ```bash
-# 1. 注册获取API Key
-curl -X POST http://150.158.119.19:8420/v1/register \
-  -H "Content-Type: application/json" \
-  -d '{"name": "my_agent"}'
+# Get all gene therapy entities
+curl https://genetech-tools.pages.dev/api/entities.json | jq '.total'
 
-# 2. 检测违禁词
-curl -X POST http://150.158.119.19:8420/api/v1/services/buy \
-  -H "Content-Type: application/json" \
-  -d '{"buyer": "YOUR_USER_ID", "service_id": "svc_046", "quantity": 1, "params": {"text": "全网最低价", "platform": "douyin"}}'
+# Search AI agent frameworks
+curl https://agentecosystem.pages.dev/api/entities.json | jq '.entities[0]'
+
+# Browse new energy breakthroughs  
+curl https://newenergy-nya.pages.dev/api/entities.json | jq '.entities[:3]'
 ```
 
-## 协议兼容
+## 📊 12 Domains & Entity Counts
 
-- OpenAI Function Calling
-- Anthropic Tool Use
-- MCP (Model Context Protocol)
-- OpenAI Plugin Manifest
+| Domain | Site | Entities | Focus |
+|--------|------|----------|-------|
+| 🧬 GeneTech | [genetech.tools](https://genetech.tools) | 422 | Genes, diseases, CRISPR, gene therapies |
+| 🌿 Life Science | [life.genetech.tools](https://life.genetech.tools) | 511 | Synthetic biology, cell therapy, longevity |
+| ⚡ New Energy | [energy.genetech.tools](https://energy.genetech.tools) | 492 | Solar, hydrogen, wind, grid, storage |
+| 🤖 Agent Ecosystem | [agent.genetech.tools](https://agent.genetech.tools) | 433 | MCP servers, SDKs, protocols, frameworks |
+| 🧠 Brain Science | [brain.genetech.tools](https://brain.genetech.tools) | 269 | Neurotech, brain disorders, cognitive science |
+| ⚛️ Quantum | [quantum.genetech.tools](https://quantum.genetech.tools) | 317 | Quantum algorithms, hardware, software |
+| ☢️ Nuclear | [nuclear.genetech.tools](https://nuclear.genetech.tools) | 260 | Fission, fusion, nuclear fuel, waste |
+| 🔭 Exo-Science | [exo.genetech.tools](https://exo.genetech.tools) | 316 | Exoplanets, astrobiology, space exploration |
+| 💎 Alien Minerals | [mineral.genetech.tools](https://mineral.genetech.tools) | 283 | Rare minerals, mining tech |
+| 🌊 Deep Sea | [deepsea.genetech.tools](https://deepsea.genetech.tools) | 322 | Marine biology, underwater tech, ocean energy |
+| 🤖 Robotics | [robot.genetech.tools](https://robot.genetech.tools) | 247 | Sensors, actuators, robot arms, protocols |
+| 🌿 TCM | [tcm.genetech.tools](https://tcm.genetech.tools) | 0 | Traditional Chinese medicine (data coming) |
 
-## Links
+## 🔌 API Access
 
-- **Landing Page**: https://lm203688.github.io/atex/
-- **API**: http://150.158.119.19:8420
-- **Glama**: https://glama.ai/mcp/servers/lm203688/atex
+### Free Tier (no signup)
+- **30 requests/hour**
+- All endpoints accessible
+- No API key needed on `*.pages.dev` domains
 
-## License
+### Pro Tier — $29/month
+- **500 API calls/day**
+- API key authentication
+- Priority response times
+- Webhook support
+- [Subscribe →](https://creem.io/checkout/prod_4EpFVQGKm5vWXChbRiFdbE)
 
-AGPL-3.0 — see [LICENSE](LICENSE)
+### Lifetime — $99 one-time
+- Everything in Pro, forever
+- All future updates included
+- [Get Lifetime →](https://creem.io/checkout/prod_pny43rzDa0mmBaj7d9k4w)
+
+### Get your free API key
+```bash
+curl -X POST https://genetech-tools.pages.dev/api/register \
+  -H "Content-Type: application/json" \
+  -d '{"email":"you@example.com"}'
+```
+
+## 🤖 AI Agent Integration
+
+### llms.txt (AI discovery)
+Every site has `/llms.txt` and `/llms-full.txt` for AI agents to discover and understand the knowledge base.
+
+### MCP Protocol
+Agent Ecosystem DB includes MCP server listings, protocol specs, and SDK references — all machine-readable.
+
+### OpenAPI 3.1
+```bash
+curl https://genetech-tools.pages.dev/api/openapi.json
+```
+
+## 🏗️ Tech Stack
+
+- **Frontend:** Static HTML/CSS/JS on Cloudflare Pages
+- **API:** Cloudflare Pages Functions (edge, global)
+- **Data:** JSON files (versioned, structured)
+- **AI Layer:** llms.txt + agent-discovery.json + schema.org
+- **Payment:** Creem (global, supports Alipay)
+
+## 📈 Use Cases
+
+- **RAG pipelines:** Feed structured entities into your LLM
+- **AI agents:** Let ChatGPT/Claude call our API via function calling
+- **Research:** Export structured data for analysis
+- **Education:** Interactive knowledge exploration
+- **Content creation:** Cite real entities in articles/videos
+
+## 🌐 Cross-Domain References
+
+Entities link across domains:
+- Gene → Disease → Therapy → Company (GeneTech)
+- Synthetic biology → Cell therapy → Longevity (Life Science)
+- MCP server → SDK → Protocol → Benchmark (Agent Ecosystem)
+
+## 📝 License
+
+Data is licensed under CC BY 4.0. Code is MIT.
+
+## 🤝 Contributing
+
+Found a bug? Want to add entities? Open an issue or PR.
+
+## 💡 Roadmap
+
+- [ ] GraphQL endpoint
+- [ ] Vector search (semantic similarity)
+- [ ] Real-time data updates
+- [ ] More domains (materials science, climate tech)
+
+---
+
+**Built by [lm203688](https://github.com/lm203688)** · [API Docs](https://genetech.tools/api-pricing) · [Get API Key](https://genetech.tools/api-key) · [Pricing](https://genetech.tools/credits)
