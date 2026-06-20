@@ -3,130 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GeneTech API — 12 AI Knowledge Bases · 4,000+ Entities · Free REST API</title>
-<meta name="description" content="12 frontier science knowledge bases with 4,000+ structured JSON entities. Free REST API. MCP-compatible. Built for AI agents.">
-<meta name="keywords" content="API, knowledge base, AI agents, gene technology, quantum computing, REST API, free API, structured data, MCP, llms.txt">
+<title>GeneTech API — 12 Knowledge Bases · 4,000+ Entities · Free REST API</title>
+<meta name="description" content="12 frontier science knowledge bases. 4,000+ structured entities. Free REST API. MCP-compatible. Built for AI agents.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
-.wrap{max-width:800px;margin:0 auto;padding:40px 20px}
-h1{font-size:2.5em;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
-.sub{font-size:1.2em;color:#94a3b8;margin-bottom:30px}
-.demo{background:#1e293b;border-radius:12px;padding:20px;margin:20px 0;font-family:monospace;font-size:0.9em;overflow-x:auto}
-.demo .comment{color:#64748b}
-.btn{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;margin:8px 8px 8px 0}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:40px 20px}
+h1{font-size:2.4em;background:linear-gradient(135deg,#60a5fa,#a78bfa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+h2{font-size:1.5em;margin:32px 0 16px;color:#f1f5f9}
+.sub{font-size:1.15em;color:#94a3b8;margin-bottom:24px}
+.demo{background:#1e293b;border-radius:12px;padding:16px;margin:16px 0;font-family:monospace;font-size:0.85em;overflow-x:auto;border:1px solid #334155}
+.demo .c{color:#64748b}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;margin:6px 4px;font-size:0.95em}
 .btn-primary{background:#3b82f6;color:#fff}
 .btn-secondary{border:2px solid #475569;color:#e2e8f0}
-.domains{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0}
-.domain{background:#1e293b;padding:16px;border-radius:8px;border:1px solid #334155}
-.domain h3{color:#60a5fa;font-size:0.95em;margin-bottom:4px}
-.domain p{color:#94a3b8;font-size:0.85em}
-.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
-.plan{background:#1e293b;padding:24px;border-radius:12px;border:1px solid #334155;text-align:center}
-.plan h3{color:#60a5fa;margin-bottom:8px}
-.price{font-size:2em;font-weight:800;margin:8px 0}
-.price small{font-size:0.4em;color:#94a3b8;font-weight:400}
-.plan ul{text-align:left;list-style:none;margin:12px 0}
-.plan li{padding:4px 0;color:#94a3b8;font-size:0.9em}
-.plan li::before{content:"✅ ";color:#22c55e}
-.cta{display:inline-block;padding:14px 28px;border-radius:12px;background:#22c55e;color:#fff;font-weight:700;text-decoration:none;margin-top:12px}
-footer{text-align:center;padding:40px 0;color:#64748b;font-size:0.85em}
+.btn-paid{background:#22c55e;color:#fff;font-size:1.05em;padding:14px 28px}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:20px 0}
+.product{background:#1e293b;padding:24px;border-radius:12px;border:1px solid #334155}
+.product h3{color:#60a5fa;font-size:1.1em;margin-bottom:6px}
+.product .price{font-size:1.8em;font-weight:800;color:#f1f5f9;margin:8px 0}
+.product .price small{font-size:0.45em;color:#94a3b8;font-weight:400}
+.product ul{list-style:none;margin:10px 0}
+.product li{padding:3px 0;color:#94a3b8;font-size:0.88em}
+.product li::before{content:"✅ ";color:#22c55e}
+.domains{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin:16px 0}
+.domain{background:#1e293b;padding:12px;border-radius:8px;border:1px solid #334155;font-size:0.85em}
+.domain strong{color:#60a5fa;display:block}
+.domain span{color:#64748b}
+footer{text-align:center;padding:32px 0;color:#475569;font-size:0.85em}
 </style>
 </head>
 <body>
 <div class="wrap">
 <h1>🧬 GeneTech Knowledge Engine</h1>
 <p class="sub">12 AI Agent-native knowledge bases · 4,000+ structured entities · Free REST API</p>
-
 <div class="demo">
-<span class="comment"># Try it right now — no signup needed</span><br>
+<span class="c"># Try it right now — no signup needed</span><br>
 curl https://genetech-tools.pages.dev/api/entities.json | jq '.total'<br>
-<span class="comment"># → 422</span><br><br>
-curl https://agentecosystem.pages.dev/api/entities.json | jq '.entities[0].name'<br>
-<span class="comment"># → "server-filesystem"</span>
+<span class="c"># → 422</span><br><br>
+curl -X POST https://genetech-tools.pages.dev/api/register \<br>
+&nbsp;&nbsp;-H "Content-Type: application/json" \<br>
+&nbsp;&nbsp;-d '{"email":"you@example.com"}'<br>
+<span class="c"># → {"api_key":"gtk_...","plan":"free"}</span>
 </div>
-
 <div>
 <a class="btn btn-primary" href="https://genetech.tools/api-key">Get Free API Key</a>
-<a class="btn btn-secondary" href="https://genetech.tools/credits">View Pricing</a>
 <a class="btn btn-secondary" href="https://github.com/lm203688/kb-ecosystem">GitHub</a>
 </div>
-
 <h2>📊 12 Knowledge Domains</h2>
 <div class="domains">
-<div class="domain"><h3>🧬 Gene Technology</h3><p>422 entities · genes, diseases, therapies, CRISPR</p></div>
-<div class="domain"><h3>⚛️ Quantum Computing</h3><p>317 entities · algorithms, hardware, software</p></div>
-<div class="domain"><h3>☢️ Nuclear Energy</h3><p>260 entities · fission, fusion, waste, fuel</p></div>
-<div class="domain"><h3>🧠 Brain Science</h3><p>347 entities · neurotech, disorders, cognition</p></div>
-<div class="domain"><h3>🤖 Agent Ecosystem</h3><p>433 entities · MCP servers, SDKs, protocols</p></div>
-<div class="domain"><h3>⚡ New Energy</h3><p>492 entities · solar, storage, hydrogen, wind</p></div>
-<div class="domain"><h3>🧪 Life Science</h3><p>511 entities · synbio, cell therapy, longevity</p></div>
-<div class="domain"><h3>🚀 Exo-Science</h3><p>336 entities · exoplanets, astrobiology</p></div>
-<div class="domain"><h3>💎 Alien Minerals</h3><p>283 entities · rare earth, mining tech</p></div>
-<div class="domain"><h3>🌊 Deep-Sea Tech</h3><p>322 entities · biology, underwater tech</p></div>
-<div class="domain"><h3>🦾 Robot Parts</h3><p>247 entities · sensors, actuators, protocols</p></div>
-<div class="domain"><h3>🌿 TCM</h3><p>Traditional Chinese Medicine herbs & formulas</p></div>
+<div class="domain"><strong>🧬 Gene Tech</strong><span>422 entities</span></div>
+<div class="domain"><strong>🧪 Life Science</strong><span>511 entities</span></div>
+<div class="domain"><strong>⚡ New Energy</strong><span>492 entities</span></div>
+<div class="domain"><strong>🤖 Agent Ecosystem</strong><span>433 entities</span></div>
+<div class="domain"><strong>🧠 Brain Science</strong><span>347 entities</span></div>
+<div class="domain"><strong>🚀 Exo-Science</strong><span>336 entities</span></div>
+<div class="domain"><strong>🌊 Deep-Sea Tech</strong><span>322 entities</span></div>
+<div class="domain"><strong>⚛️ Quantum</strong><span>317 entities</span></div>
+<div class="domain"><strong>💎 Alien Minerals</strong><span>283 entities</span></div>
+<div class="domain"><strong>☢️ Nuclear</strong><span>260 entities</span></div>
+<div class="domain"><strong>🦾 Robot Parts</strong><span>247 entities</span></div>
+<div class="domain"><strong>🌿 TCM</strong><span>Herbs & formulas</span></div>
 </div>
-
-<h2>💎 Pricing</h2>
-<div class="pricing">
-<div class="plan">
-<h3>Free</h3>
-<div class="price">$0<small>/forever</small></div>
-<ul>
-<li>30 API calls/hour</li>
-<li>All 12 domains</li>
-<li>JSON + OpenAPI 3.1</li>
-<li>No signup needed</li>
-</ul>
-<a class="btn btn-secondary" href="https://genetech-tools.pages.dev/api/entities.json">Try Now</a>
-</div>
-<div class="plan">
-<h3>API Pro</h3>
-<div class="price">$29<small>/month</small></div>
-<ul>
-<li>500 API calls/day</li>
-<li>Webhook support</li>
-<li>Priority support</li>
-<li>Commercial license</li>
-</ul>
-<a class="cta" href="https://creem.io/checkout/prod_4EpFVQGKm5vWXChbRiFdbE">Subscribe</a>
-</div>
-<div class="plan">
-<h3>Lifetime</h3>
-<div class="price">$99<small>/one-time</small></div>
-<ul>
-<li>Everything in Pro</li>
-<li>Forever access</li>
-<li>All future updates</li>
-<li>Priority support</li>
-</ul>
-<a class="cta" href="https://creem.io/checkout/prod_pny43rzDa0mmBaj7d9k4w">Buy Now</a>
+<h2>💎 Pricing — All Products</h2>
+<div class="products">
+<div class="product"><h3>🆓 Free Tier</h3><div class="price">$0<small>/forever</small></div><ul><li>30 API calls/hour</li><li>All 12 domains</li><li>JSON + OpenAPI 3.1</li><li>No signup needed</li></ul><a class="btn btn-secondary" href="https://genetech-tools.pages.dev/api/entities.json">Try Now</a></div>
+<div class="product"><h3>🔑 API Access</h3><div class="price">$29<small>/month</small></div><ul><li>500 API calls/day</li><li>Webhook support</li><li>Commercial license</li><li>Priority support</li></ul><a class="btn btn-paid" href="https://creem.io/checkout/prod_pny43rzDa0mmBaj7d9k4w">Subscribe</a></div>
+<div class="product"><h3>📈 Intelligence Pro</h3><div class="price">$49<small>/month</small></div><ul><li>Knowledge graph access</li><li>Predictions & signals</li><li>Trend analysis</li><li>Investment indicators</li></ul><a class="btn btn-paid" href="https://creem.io/checkout/prod_4EpFVQGKm5vWXChbRiFdbE">Subscribe</a></div>
+<div class="product"><h3>📰 Daily Brief</h3><div class="price">$19<small>/month</small></div><ul><li>AI-curated daily report</li><li>12 domain breakthroughs</li><li>Trend vectors</li><li>Email delivery</li></ul><a class="btn btn-paid" href="https://creem.io/checkout/prod_22YhSbYonX9hiC0OppnXTn">Subscribe</a></div>
+<div class="product"><h3>🎁 Lifetime Member</h3><div class="price">$99<small>/one-time</small></div><ul><li>Everything in Pro</li><li>Forever access</li><li>All future updates</li><li>Priority support</li></ul><a class="btn btn-paid" href="https://creem.io/checkout/prod_5IooNCEQoCyqp758oeVPGT">Buy Now</a></div>
+<div class="product"><h3>📦 Single Domain</h3><div class="price">$49<small>/one-time</small></div><ul><li>Full domain data export</li><li>JSON + CSV format</li><li>Commercial license</li><li>Instant download</li></ul><a class="btn btn-paid" href="https://creem.io/checkout/prod_44o1TOBce0Zt00X4E5ACET">Buy Now</a></div>
+<div class="product"><h3>🏦 Full Database</h3><div class="price">$499<small>/one-time</small></div><ul><li>All 12 domains</li><li>4,000+ entities</li><li>JSON + CSV + SQL</li><li>Commercial license</li></ul><a class="btn btn-paid" href="https://creem.io/checkout/prod_5OFcAcJeXzfTMkDDt6woBh">Buy Now</a></div>
 </div>
 </div>
-
-<h2>🔧 Use Cases</h2>
-<ul style="margin:20px 0;padding-left:20px;color:#94a3b8">
-<li><strong>RAG for LLMs:</strong> Feed structured entities into your LLM context</li>
-<li><strong>AI Agent tools:</strong> MCP protocol for function-calling agents</li>
-<li><strong>Research:</strong> Export structured data for analysis</li>
-<li><strong>Content creation:</strong> Cite real entities in articles</li>
-<li><strong>Education:</strong> Interactive knowledge exploration</li>
-</ul>
-
-<h2>🚀 Why GeneTech API?</h2>
-<ul style="margin:20px 0;padding-left:20px;color:#94a3b8">
-<li><strong>AI Agent native:</strong> llms.txt + MCP + OpenAPI 3.1</li>
-<li><strong>Unique domains:</strong> Alien minerals, deep-sea tech, exo-science — you won't find these elsewhere</li>
-<li><strong>Cross-domain refs:</strong> Gene → Disease → Therapy → Company</li>
-<li><strong>Daily updated:</strong> AI-powered data mining adds new entities daily</li>
-<li><strong>Zero backend:</strong> Pure static JSON, served from Cloudflare edge</li>
-</ul>
-
-</div>
-<footer>
-<p>GeneTech Knowledge Engine · <a href="https://github.com/lm203688/kb-ecosystem">GitHub</a> · <a href="https://genetech.tools">Website</a></p>
-<p>Built by AI, for AI 🤖</p>
-</footer>
+<footer><p>GeneTech Knowledge Engine · <a href="https://github.com/lm203688/kb-ecosystem">GitHub</a> · <a href="https://genetech.tools">Website</a></p><p>Built by AI, for AI 🤖</p></footer>
 </body>
 </html>
