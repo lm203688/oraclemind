@@ -1,0 +1,21 @@
+{
+  "name": "genetech-kb",
+  "version": "1.0.0",
+  "description": "12 frontier science knowledge bases with 4,000+ structured entities. Free REST API for AI agents, RAG, and research.",
+  "main": "index.js",
+  "type": "module",
+  "keywords": ["api", "knowledge-base", "ai-agents", "gene", "quantum", "nuclear", "brain-science", "mcp", "llm", "rag", "science", "data", "free-api"],
+  "author": "FrontierKB",
+  "license": "MIT",
+  "homepage": "https://genetech.tools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lm203688/kb-ecosystem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lm203688/kb-ecosystem/issues"
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}
