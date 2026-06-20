@@ -14,6 +14,7 @@
 **Built for the AI Agent era:** Every entity is machine-readable, cross-referenced, and accessible via REST API + MCP protocol.
 
 ## 🔥 Try it right now (no signup)
+> **Note:** API endpoints are on `*.pages.dev` domains. The main domains serve the web interface.
 
 ```bash
 # Get all gene therapy entities
