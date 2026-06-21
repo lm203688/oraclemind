@@ -1,94 +1,68 @@
-# 🧬 GeneTech Knowledge Engine — 12 AI Agent-Native Knowledge Bases
+# 🧬 GeneTech Knowledge Engine
 
-> **4,000+ structured entities across 12 frontier technology domains. Free REST API. MCP-compatible. Built for AI agents.**
+> Free API for 12 frontier science domains. 4,000+ structured entities. MCP-compatible. No signup needed.
 
-[![API Status](https://img.shields.io/badge/API-Live-brightgreen)](https://genetech-tools.pages.dev/api/entities.json)
-[![Entities](https://img.shields.io/badge/Entities-4,075+-blue)](https://genetech.tools)
-[![MCP Server](https://img.shields.io/badge/MCP-Available-purple)](#mcp-server)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Website](https://img.shields.io/badge/Website-genetech.tools-cyan)](https://genetech.tools)
+[![API](https://img.shields.io/badge/API-REST%20%2B%20MCP-blue)](https://genetech-tools.pages.dev/api/entities.json)
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-green)](LICENSE)
+[![Entities](https://img.shields.io/badge/Entities-4%2C136%2B-orange)](https://genetech-tools.pages.dev)
 
-## 🚀 What is this?
+## 🎯 What is this?
 
-12 specialized knowledge bases covering frontier science & technology domains. Each domain has hundreds of structured JSON entities — genes, diseases, quantum algorithms, MCP servers, deep-sea organisms, exoplanets, and more.
+A free knowledge base API covering **12 frontier science domains** with structured JSON entities. Built for RAG, AI agents, and MCP integration.
 
-**Built for the AI Agent era:** Every entity is machine-readable, cross-referenced, and accessible via REST API + MCP protocol.
-
-## 🔥 Try it right now (no signup)
+## 🚀 Quick Start
 
 ```bash
-curl https://genetech-tools.pages.dev/api/entities.json | jq '.total'
+# Get all entities from GeneTech domain
+curl https://genetech-tools.pages.dev/api/entities.json | jq .total
 # → 422
 
-curl -X POST https://genetech-tools.pages.dev/api/register \
-  -H "Content-Type: application/json" \
-  -d '{"email":"you@example.com"}'
-# → {"api_key":"gtk_...","plan":"free"}
+# Search across all domains
+curl https://genetech-tools.pages.dev/api/search?q=CRISPR
+
+# Use as MCP Server (23 AI services + 12 knowledge engines)
+npx @atex-ai/mcp-server
 ```
 
-## 🤖 MCP Server
+## 📚 12 Domains
 
-Use in Claude Desktop, Cursor, or any MCP-compatible AI agent:
-
-```json
-{
-  "mcpServers": {
-    "genetech": {
-      "command": "npx",
-      "args": ["@frontierkb/mcp-server"]
-    }
-  }
-}
-```
-
-See [`mcp-server/`](mcp-server/) directory.
-
-## 📦 SDK
-
-```bash
-npm install github:lm203688/kb-ecosystem
-```
-
-```javascript
-import { GeneTech } from 'genetech-kb';
-const kb = new GeneTech();
-const entities = await kb.getEntities('genetech');
-```
-
-See [`sdk/`](sdk/) directory.
-
-## 📊 12 Knowledge Domains
-
-| Domain | Entities | API Base |
-|--------|----------|----------|
-| 🧬 Gene Technology | 422 | `genetech-tools.pages.dev/api/` |
-| 🧪 Life Science | 511 | `lifescience-epe.pages.dev/api/` |
-| ⚡ New Energy | 492 | `newenergy-nya.pages.dev/api/` |
-| 🤖 Agent Ecosystem | 433 | `agentecosystem.pages.dev/api/` |
-| 🧠 Brain Science | 347 | `brainscience.pages.dev/api/` |
-| 🚀 Exo-Science | 336 | `exoscience.pages.dev/api/` |
-| 🌊 Deep-Sea Tech | 322 | `deepseatech.pages.dev/api/` |
-| ⚛️ Quantum | 317 | `quantumcomputing.pages.dev/api/` |
-| 💎 Alien Minerals | 283 | `alienminerals.pages.dev/api/` |
-| ☢️ Nuclear | 260 | `nuclearenergy.pages.dev/api/` |
-| 🦾 Robot Parts | 247 | `robotparts.pages.dev/api/` |
-| 🌿 TCM | — | `tcm-tools.pages.dev/api/` |
+| Domain | URL | Entities | Topics |
+|--------|-----|----------|--------|
+| 🧬 Gene Technology | [genetech-tools.pages.dev](https://genetech-tools.pages.dev) | 422 | Genes, diseases, CRISPR, gene therapies |
+| 🌿 TCM | [tcm-tools.pages.dev](https://tcm-tools.pages.dev) | 1,778 | Herbs, prescriptions, diseases |
+| 🤖 Agent Ecosystem | [agentecosystem.pages.dev](https://agentecosystem.pages.dev) | 433 | MCP servers, SDKs, protocols |
+| ⚛️ Quantum Computing | [quantumcomputing.pages.dev](https://quantumcomputing.pages.dev) | 322 | Processors, algorithms, error correction |
+| 🧠 Brain Science | [brainscience.pages.dev](https://brainscience.pages.dev) | 356 | BCI, neuroimaging, neurotech |
+| ☢️ Nuclear Energy | [nuclearenergy.pages.dev](https://nuclearenergy.pages.dev) | 265 | Reactors, fusion, safety |
+| 🪐 Exo-Science | [exoscience.pages.dev](https://exoscience.pages.dev) | 345 | Exoplanets, missions, telescopes |
+| 💎 Alien Minerals | [alienminerals.pages.dev](https://alienminerals.pages.dev) | 292 | Minerals, asteroids, mining tech |
+| 🌊 Deep Sea Tech | [deepseatech.pages.dev](https://deepseatech.pages.dev) | 333 | Submersibles, resources, ecology |
+| ⚡ New Energy | [newenergy-nya.pages.dev](https://newenergy-nya.pages.dev) | 492 | Solar, hydrogen, wind, grid |
+| 🧫 Life Science | [lifescience-epe.pages.dev](https://lifescience-epe.pages.dev) | 511 | CRISPR, cell therapy, longevity |
+| 🦾 Robot Parts | [robotparts.pages.dev](https://robotparts.pages.dev) | 260 | Actuators, sensors, chips, platforms |
 
 ## 💰 Pricing
 
-- **Free:** 30 API calls/hour, no signup
-- **Pro:** $29/month — 500 calls/day + webhook
-- **Lifetime:** $99 one-time — forever access
-- **Full Database:** $499 — all 12 domains download
+| Plan | Price | Features |
+|------|-------|----------|
+| Free | $0 | 30 calls/hour, no signup |
+| Pro | $29/mo | 1,000 calls/hour, API key, priority |
+| Enterprise | $199/mo | Unlimited, SLA, custom data |
 
-[Pricing Page](https://genetech-tools.pages.dev/api-landing) · [Get API Key](https://genetech.tools/api-key)
+**Data packages:** Single domain $49 | All 12 domains $499
 
 ## 🔗 Links
 
-- [Website](https://genetech.tools)
-- [GitHub Pages](https://lm203688.github.io/kb-ecosystem/)
-- [API Docs (OpenAPI 3.1)](https://genetech-tools.pages.dev/api/openapi.json)
-- [Tutorial](https://github.com/lm203688/kb-ecosystem/issues/2)
+- 🌐 [Website](https://genetech.tools)
+- 📖 [API Docs](https://genetech-tools.pages.dev/api/entities.json)
+- 🤖 [MCP Server](https://github.com/lm203688/atex)
+- 💬 [Discussions](https://github.com/lm203688/kb-ecosystem/issues)
+
+## ⭐ Star History
+
+If you find this useful, please star the repo!
 
 ---
 
-**Built by AI, for AI 🤖**
+*Built with ❤️ for the AI agent community. Data updated daily.*
