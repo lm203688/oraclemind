@@ -1,0 +1,57 @@
+{
+  "date": "2026-06-21",
+  "day": "Sunday",
+  "executor": "Eve (orchestration & search) + z-ai web_search",
+  "domains": ["exo-science", "alien-minerals", "deep-sea-tech", "robot-parts"],
+  "new_entities": {
+    "exo-science": {
+      "exoplanets": {"before": 107, "after": 111, "added": 4, "note": "TOI-199b methane Saturn, WISPIT 2 c, CWISEP J193518.59-154620.3 b, 6000+ milestone"},
+      "astrobiology": {"before": 43, "after": 46, "added": 3, "note": "Enceladus amino acid survival, Enceladus complex organics, Europa subsurface biosignature"},
+      "space_missions": {"before": 75, "after": 76, "added": 1, "note": "TESS 2026 114 planets milestone"},
+      "planetary_science": {"before": 10, "after": 11, "added": 1, "note": "TESS M dwarf radius valley disappearance"}
+    },
+    "alien-minerals": {
+      "asteroids": {"before": 50, "after": 53, "added": 3, "note": "Rubin 2025 fastest spinner, JWST 2104 asteroids, 2025 close approach"},
+      "mining_tech": {"before": 55, "after": 57, "added": 2, "note": "AstroForge Vestri 2026, Interlune He-3 demonstrator"},
+      "lunar_resources": {"before": 46, "after": 49, "added": 3, "note": "Interlune He-3, LH3M patents, Artemis ISRU"},
+      "space_resources": {"before": 11, "after": 12, "added": 1, "note": "Psyche Mars flyby 2026"}
+    },
+    "deep-sea-tech": {
+      "submersibles": {"before": 82, "after": 86, "added": 4, "note": "Triton 36000/2 HES, Triton 13000/3, Limiting Factor, China 2000m habitat"},
+      "ocean_exploration": {"before": 13, "after": 18, "added": 5, "note": "GHEP UN, China hadal facility, Schmidt Brazil, Orpheus Ocean, deepest chemosynthesis"},
+      "deep_sea_ecology": {"before": 55, "after": 57, "added": 2, "note": "Deepest chemosynthesis community, Schmidt 31 new species"}
+    },
+    "robot-parts": {
+      "actuators": {"before": 95, "after": 98, "added": 3, "note": "Tesla Optimus G3 50act, EngineAI T800 450Nm, Unitree H1 360Nm"},
+      "sensors": {"before": 9, "after": 12, "added": 3, "note": "Tesla G3 suite, Unitree G1 LiDAR, Unitree H1 360depth"},
+      "chips": {"before": 63, "after": 64, "added": 1, "note": "NVIDIA GB10 DIGITS"},
+      "platforms": {"before": 9, "after": 14, "added": 5, "note": "Optimus G3, EngineAI T800, Unitree G1, Unitree H1, NVIDIA GR00T reference"},
+      "interfaces": {"before": 5, "after": 6, "added": 1, "note": "NVIDIA Isaac GR00T platform"}
+    }
+  },
+  "totals": {
+    "exo_science": 9,
+    "alien_minerals": 9,
+    "deep_sea_tech": 11,
+    "robot_parts": 13
+  },
+  "total_new": 42,
+  "infrastructure": {
+    "api_endpoints_updated": 12,
+    "llms_txt_updated": 12,
+    "sitemaps_updated": 12
+  },
+  "workflow": {
+    "search": "z-ai CLI web_search (20 searches, 8 results each)",
+    "extraction": "Eve direct structuring from search results",
+    "key_discoveries": [
+      "TOI-199b: Saturn-sized exoplanet with methane atmosphere and Earth-like temperature (JWST 2026)",
+      "Enceladus: Amino acids can survive spacecraft impact speeds, enabling life detection",
+      "NASA Psyche: Mars gravity assist completed May 15, 2026, en route to metal-rich asteroid",
+      "Global Hadal Exploration Programme: UN-approved Chinese-led deep sea initiative",
+      "Tesla Optimus Gen 3: 50 actuators, 22 DoF per hand, 57kg, commercial deployment 2026",
+      "EngineAI T800: 1.85m humanoid, 450 N·m peak torque, 29 DOF, Chinese full-stack development",
+      "NVIDIA Isaac GR00T: Open humanoid robot reference design with Unitree H2 Plus"
+    ]
+  }
+}

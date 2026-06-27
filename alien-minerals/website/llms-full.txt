@@ -1425,6 +1425,39 @@ Extraterrestrial mineral database covering space minerals, asteroids, mining tec
 - source: NASA Science / Updated 2026 analysis
 - description: 2026年最新分析确认16 Psyche由30-60%金属（铁、镍）和其余岩石组成，并非最初认为的纯金属，但仍是已知最富金属的小行星。科学家认为它是早期行星构建块——微行星的部分核心。NASA Psyche探测器正在飞往该小行星，预计2029年抵达，将进行人类首次对金属小行星的近距离探测。全球小行星采矿市场规模2025年达26亿美元，预计2034年达100亿美元。
 
+### Asteroid 2025 (fastest-spinning)
+
+- name: Asteroid 2025 (fastest-spinning)
+- type: Near-Earth asteroid (fast rotator)
+- diameter: >500 meters
+- rotation_period: Record-breaking (fastest known for size)
+- discovery_year: 2025
+- composition: N/A (under investigation)
+- description: Discovered by the NSF-DOE Vera C. Rubin Observatory, this is the fastest-ever spinning asteroid with a diameter over half a kilometer. A team at the University of Washington discovered 19 quickly rotating asteroids including this record-holder, dubbed 2025. The study provides crucial information about asteroid structural integrity and spin limits.
+- source: NSF-DOE Vera C. Rubin Observatory 2025, University of Washington
+
+### JWST February 2026 Asteroid Batch (2,104 new asteroids)
+
+- name: JWST February 2026 Asteroid Batch (2,104 new asteroids)
+- type: Asteroid survey discovery
+- diameter: Various
+- rotation_period: Various
+- discovery_year: 2026
+- composition: Various
+- description: In February 2026, the James Webb Space Telescope discovered 2,104 previously unknown asteroids in approximately 10 hours of observations, including seven near-Earth asteroids (none dangerous). This demonstrates JWST's capability as an asteroid discovery tool beyond its primary mission.
+- source: JWST 2026 observations
+
+### 16 Psyche (metal-rich asteroid target)
+
+- name: 16 Psyche (metal-rich asteroid target)
+- type: Metal-rich M-type asteroid
+- diameter: ~226 km (mean)
+- rotation_period: ~4.196 hours
+- discovery_year: N/A (discovered 1852, mission 2023-2029)
+- composition: Metal-rich (iron, nickel, possibly gold/platinum group metals)
+- description: Target of NASA's Psyche mission. The spacecraft completed its Mars gravity-assist flyby on May 15, 2026, coming within 4,609 km of Mars' surface. The flyby provided a critical speed boost and orbital plane adjustment without using fuel. The mission will enter orbit around 16 Psyche in 2029, marking the first up-close exploration of a metal-rich asteroid.
+- source: NASA Psyche Mission 2026
+
 ## mining_tech
 
 ### Molten Regolith Electrolysis
@@ -1992,6 +2025,25 @@ Extraterrestrial mineral database covering space minerals, asteroids, mining tec
 - key_challenge: Technical feasibility questioned by recent studies; high delta-v costs; regulatory uncertainty
 - source: BBC Future / IMARC Group / Reddit r/space 2025-2026
 
+### AstroForge Vestri Spacecraft
+
+- name: AstroForge Vestri Spacecraft
+- type: Asteroid mining probe
+- manufacturer: AstroForge (California)
+- year: 2026 (planned launch)
+- mass: 200 kg (440 lbs)
+- description: AstroForge's third and boldest space mission, built in-house. Vestri is designed to dock with a metallic near-Earth asteroid, aiming to mine and return one to two tons of material. If successful, it will be the first private mission to land outside the Earth-moon system. The target asteroid identity remains undisclosed. Launch scheduled for 2026.
+- source: AstroForge 2026, Forbes, Popular Mechanics
+
+### NASA MRE (Molten Regolith Electrolysis)
+
+- name: NASA MRE (Molten Regolith Electrolysis)
+- type: ISRU oxygen extraction technology
+- manufacturer: NASA
+- year: 2025 (project completed)
+- description: NASA's MRE technology developed to extract oxygen and metals from minerals in lunar regolith. The MRE project was completed in 2025, advancing capabilities for in-situ resource utilization on the Moon. The system heats regolith to molten temperatures and electrolyzes it to produce oxygen and metal byproducts.
+- source: NASA Lunar Surface Technology 2025
+
 ## lunar_resources
 
 ### Lunar South Pole Water Ice
@@ -2446,6 +2498,36 @@ Extraterrestrial mineral database covering space minerals, asteroids, mining tec
 - significance: First Chinese-discovered lunar mineral containing rare earth elements; potential indicator of REE-enriched regions on the lunar surface
 - source: China Geological Survey / China Daily May 2026
 - description: 中国首块月球陨石Pakepake 005（44克）中发现新矿物铈镁嫦娥石，表明月球表面可能存在稀土元素富集区域。这一发现对月球资源评估和未来ISRU（原位资源利用）具有重要指导意义。
+
+### Interlune Helium-3 Lunar Demonstrator Mission
+
+- name: Interlune Helium-3 Lunar Demonstrator Mission
+- type: Lunar resource assessment mission
+- target_resource: Helium-3 (He-3)
+- year: 2026 (planned demonstrator launch)
+- organization: Interlune
+- description: Interlune plans to launch a demonstrator mission in 2026 to sample lunar regolith and measure helium-3 concentrations. The company estimates processing 100,000 to 1 million tons of regolith to obtain one kilogram of He-3. He-3 is valued for potential quantum computing and fusion energy applications.
+- source: Interlune 2026, BBC
+
+### LH3M Lunar Helium-3 Extraction Architecture
+
+- name: LH3M Lunar Helium-3 Extraction Architecture
+- type: Patented He-3 extraction system
+- target_resource: Helium-3 (He-3)
+- year: 2025-2026
+- organization: LH3M
+- description: LH3M secured its fifth US patent covering an end-to-end architecture for He-3 detection, extraction, and refinement on the Moon. The company's patented system represents a comprehensive approach to lunar Helium-3 mining, from prospecting to production.
+- source: LH3M patent filings 2025-2026
+
+### Astrotech Helium-3 Regolith Heating Extraction
+
+- name: Astrotech Helium-3 Regolith Heating Extraction
+- type: ISRU extraction method
+- target_resource: Helium-3 (He-3)
+- year: 2025-2026
+- organization: Astrotech
+- description: Astrotech's approach to extracting helium-3 from lunar regolith by heating it. The company plans to use SpaceX Starship rockets for transport. Led by CEO Tom Pickens, the method involves thermal extraction of He-3 from mined regolith material.
+- source: Astrotech 2025-2026
 
 ## processing_methods
 
@@ -3029,6 +3111,15 @@ Extraterrestrial mineral database covering space minerals, asteroids, mining tec
 - extraction_method: Regolith heating to 600-700°C; solar wind implantation
 - economic_value: Potentially $1-5B per tonne as fusion fuel (if D-³He fusion achieved)
 - description: Lunar helium-3 is a potential clean fusion fuel. While no commercial D-³He fusion reactor exists, the resource is strategically important. China has expressed particular interest in lunar He-3 extraction as part of its lunar exploration program.
+
+### Ryugu Asteroid Prebiotic Organic Matter
+
+- name: Ryugu Asteroid Prebiotic Organic Matter
+- type: Asteroid sample analysis
+- year: 2025
+- organization: JAXA/International research teams
+- description: Ryugu asteroid research revealed mineral history predating any on Earth, with details of the asteroid's composition helping scientists understand how water and prebiotic organic matter arrived on Earth. Published August 2025, the findings provide new insights into the earliest solar system materials.
+- source: JAXA Hayabusa2 2025
 
 ## Related Knowledge Bases
 

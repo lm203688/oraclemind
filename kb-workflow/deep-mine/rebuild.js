@@ -40,19 +40,25 @@ function rebuildDataJs(siteDir, site, entities) {
     return false;
   }
   
-  // Build stats
+  // Build stats - support both array and dict-with-entities formats
   const stats = {};
+  const normalizedEntities = {}; // normalized to arrays
   for (const [name, data] of Object.entries(entities)) {
+    let arr = [];
     if (Array.isArray(data)) {
-      stats[name] = data.length;
+      arr = data;
+    } else if (data && typeof data === 'object' && Array.isArray(data.entities)) {
+      arr = data.entities;
     }
+    normalizedEntities[name] = arr;
+    if (arr.length > 0) stats[name] = arr.length;
   }
   
   // Build DB object
   const db = {
     updated: new Date().toISOString(),
     stats,
-    ...entities
+    ...normalizedEntities
   };
   
   // Write data.js
@@ -73,12 +79,12 @@ function rebuildDataJs(siteDir, site, entities) {
       updated: db.updated,
       stats
     },
-    data: entities
+    data: normalizedEntities
   }, null, 2));
   
   // entities.json (flat list)
   const allEntities = [];
-  for (const [type, items] of Object.entries(entities)) {
+  for (const [type, items] of Object.entries(normalizedEntities)) {
     if (Array.isArray(items)) {
       for (const item of items) {
         allEntities.push({ ...item, _type: type });
@@ -91,8 +97,8 @@ function rebuildDataJs(siteDir, site, entities) {
   }, null, 2));
   
   // Per-entity JSON files
-  for (const [name, data] of Object.entries(entities)) {
-    if (Array.isArray(data)) {
+  for (const [name, data] of Object.entries(normalizedEntities)) {
+    if (Array.isArray(data) && data.length > 0) {
       fs.writeFileSync(path.join(apiDir, `${name}.json`), JSON.stringify({
         count: data.length,
         updated: db.updated,
@@ -138,7 +144,11 @@ async function main() {
   
   for (const site of sites) {
     const entities = loadEntities(site.dir);
-    const totalEntities = Object.values(entities).reduce((sum, arr) => sum + (Array.isArray(arr) ? arr.length : 0), 0);
+    const totalEntities = Object.values(entities).reduce((sum, data) => {
+      if (Array.isArray(data)) return sum + data.length;
+      if (data && typeof data === 'object' && Array.isArray(data.entities)) return sum + data.entities.length;
+      return sum;
+    }, 0);
     
     if (totalEntities === 0) {
       console.log(`⏭️  ${site.name}: no entity data, skipping`);

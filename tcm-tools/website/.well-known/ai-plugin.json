@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "TCMDB",
   "name_for_model": "tcmdb",
-  "description_for_human": "Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships",
-  "description_for_model": "Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships. Provides structured data via JSON API at /api/data.json.",
+  "description_for_human": "Traditional Chinese Medicine knowledge base with herbs, diseases, innovative drugs, pharmacology research, and clinical/market data",
+  "description_for_model": "Traditional Chinese Medicine knowledge base with herbs, diseases, innovative drugs, pharmacology research, and clinical/market data. Provides structured data via JSON API at /api/data.json.",
   "auth": {
     "type": "none"
   },

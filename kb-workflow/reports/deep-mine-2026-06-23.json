@@ -1,0 +1,98 @@
+{
+  "date": "2026-06-23",
+  "domains": [
+    {
+      "dir": "quantum-computing",
+      "tasks": [
+        {
+          "file": "processors.json",
+          "added": 6,
+          "total": 101
+        },
+        {
+          "file": "error_correction.json",
+          "added": 5,
+          "total": 58
+        },
+        {
+          "file": "quantum_networking.json",
+          "added": 4,
+          "total": 52
+        },
+        {
+          "file": "algorithms.json",
+          "added": 4,
+          "total": 93
+        },
+        {
+          "file": "quantum_software.json",
+          "added": 4,
+          "total": 56
+        }
+      ],
+      "totalAdded": 23
+    },
+    {
+      "dir": "nuclear-energy",
+      "tasks": [
+        {
+          "file": "fusion.json",
+          "added": 6,
+          "total": 74
+        },
+        {
+          "file": "smr.json",
+          "added": 5,
+          "total": 52
+        },
+        {
+          "file": "reactors.json",
+          "added": 5,
+          "total": 91
+        },
+        {
+          "file": "nuclear_fuel.json",
+          "added": 4,
+          "total": 42
+        },
+        {
+          "file": "radiation_applications.json",
+          "added": 4,
+          "total": 45
+        }
+      ],
+      "totalAdded": 24
+    },
+    {
+      "dir": "brain-science",
+      "tasks": [
+        {
+          "file": "bci.json",
+          "added": 6,
+          "total": 84
+        },
+        {
+          "file": "neural_implants.json",
+          "added": 5,
+          "total": 51
+        },
+        {
+          "file": "neurotech.json",
+          "added": 5,
+          "total": 30
+        },
+        {
+          "file": "neuropharmacology.json",
+          "added": 5,
+          "total": 47
+        },
+        {
+          "file": "brain_disorders.json",
+          "added": 4,
+          "total": 43
+        }
+      ],
+      "totalAdded": 25
+    }
+  ]
+}

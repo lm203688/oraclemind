@@ -858,6 +858,160 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - description: Oklo's Aurora Powerhouse is a compact fast microreactor that uses metallic fuel and liquid metal coolant. The design produces 1.5-15 MWe and is small enough to be transported on a truck. Oklo submitted the first combined license application to the NRC for an advanced reactor, though the initial application was returned for additional information. The Aurora is designed for remote communities, industrial sites, and data centers.
 - sources: [object Object]
 
+### CFR-1000
+
+- name: CFR-1000
+- type: Fast Reactor
+- technology: Fast Neutron Reactor
+- power: 1000 MWe
+- status: Design Finalized
+- country: China
+- description: The CFR-1000 is China's first commercial fast neutron reactor, with its design finalized in the summer of 2025. It represents a significant advancement in China's nuclear energy capabilities, focusing on efficient fuel utilization and waste reduction. This reactor is part of China's broader strategy to expand its nuclear power portfolio and achieve energy security.
+- sources: [object Object]
+
+### Pressurized Water Reactor (PWR)
+
+- name: Pressurized Water Reactor (PWR)
+- type: Light Water Reactor
+- technology: Pressurized Water Reactor
+- power: Varies (typically 900-1600 MWe)
+- status: Widely Deployed
+- country: Global
+- description: Pressurized Water Reactors (PWRs) are the most common type of nuclear reactor worldwide, using water as both coolant and moderator. They operate under high pressure to prevent the water from boiling, transferring heat to a secondary steam cycle. PWRs are known for their robust safety features and are the backbone of nuclear power in countries like the United States, France, and China.
+- sources: [object Object]
+
+### Boiling Water Reactor (BWR)
+
+- name: Boiling Water Reactor (BWR)
+- type: Light Water Reactor
+- technology: Boiling Water Reactor
+- power: Varies (typically 600-1400 MWe)
+- status: Widely Deployed
+- country: Global
+- description: Boiling Water Reactors (BWRs) are another common type of nuclear reactor, where water is allowed to boil directly in the reactor core to produce steam. The steam is then used to drive a turbine, generating electricity. BWRs are simpler in design compared to PWRs but require more complex safety systems to manage the direct boiling process. They are primarily used in Japan, the United States, and Sweden.
+- sources: [object Object]
+
+### High-Temperature Gas-Cooled Reactor (HTGR)
+
+- name: High-Temperature Gas-Cooled Reactor (HTGR)
+- type: Gas-Cooled Reactor
+- technology: Pebble Bed Modular Reactor (PBMR)
+- power: Varies (typically 100-350 MWe)
+- status: In Development
+- country: Global
+- description: High-Temperature Gas-Cooled Reactors (HTGRs) use helium or carbon dioxide as a coolant and graphite as a moderator, allowing for higher operating temperatures than traditional reactors. This technology enables applications beyond electricity generation, such as hydrogen production and industrial process heat. HTGRs are known for their inherent safety features and are being developed in countries like China, the United States, and South Africa.
+- sources: [object Object]
+
+### Molten Salt Reactor (MSR)
+
+- name: Molten Salt Reactor (MSR)
+- type: Advanced Reactor
+- technology: Molten Salt Reactor
+- power: Varies (typically 50-1000 MWe)
+- status: In Development
+- country: Global
+- description: Molten Salt Reactors (MSRs) use molten salt as both a fuel and a coolant, offering potential advantages in safety and waste management. The high-temperature molten salt allows for efficient heat transfer and the ability to operate at atmospheric pressure. MSRs are being researched and developed in several countries, including the United States, China, and France, as part of the next generation of nuclear technology.
+- sources: [object Object]
+
+### JET Fusion Reactor Record
+
+- name: JET Fusion Reactor Record
+- type: Research Facility
+- status: Operational
+- capacity: 59 Megajoules
+- location: Culham, UK
+- operator: UK Atomic Energy Authority
+- technology: Magnetic Confinement Fusion
+- description: In 2025, the Joint European Torus (JET) achieved a record 59 megajoules of energy output, surpassing its previous 2021 record. This milestone demonstrates the viability of deuterium-tritium fuel cycles in tokamak reactors. The experiment was conducted as part of the EUROfusion consortium's research program.
+
+### Hinkley Point C SMR Expansion
+
+- name: Hinkley Point C SMR Expansion
+- type: Power Plant
+- status: Under Construction
+- capacity: 470 Megawatts
+- location: Somerset, UK
+- operator: EDF Energy
+- technology: Small Modular Reactor
+- description: EDF Energy announced plans in 2026 to deploy SMRs at Hinkley Point C, adding 470 MW of capacity to the existing site. The reactors will be based on Rolls-Royce SMR design, featuring advanced passive safety systems. This expansion aims to support UK's net-zero targets by 2035.
+
+### ITER First Plasma
+
+- name: ITER First Plasma
+- type: Research Facility
+- status: Operational
+- capacity: 500 Megawatts
+- location: Cadarache, France
+- operator: ITER Organization
+- technology: Magnetic Confinement Fusion
+- description: ITER achieved first plasma in December 2025, marking the beginning of experimental operations. The tokamak is designed to produce 500 MW of thermal power from 50 MW of input power. This milestone represents the culmination of 35 years of international collaboration.
+
+### Terrestrial Isotope Production Facility
+
+- name: Terrestrial Isotope Production Facility
+- type: Research Facility
+- status: Operational
+- capacity: 1000 Curies/year
+- location: Idaho, USA
+- operator: Idaho National Laboratory
+- technology: Isotope Separation
+- description: The Idaho National Laboratory commissioned a new facility in 2026 for producing medical isotopes without using highly enriched uranium. The facility can produce up to 1000 curies of critical isotopes annually. This breakthrough addresses global shortages of medical isotopes like molybdenum-99.
+
+### TerraPower Natrium Construction
+
+- name: TerraPower Natrium Construction
+- type: Sodium-cooled fast reactor (SFR) with molten salt energy storage
+- status: Under construction; first concrete poured 2024; targeting operation 2028-2030
+- capacity: 345 MWe reactor + 500 MWh molten salt thermal storage
+- location: Kemmerer, Wyoming, USA
+- operator: TerraPower (Bill Gates-founded)
+- technology: Sodium-cooled fast reactor with integrated molten salt thermal storage
+- description: TerraPower's Natrium reactor is under construction in Kemmerer, Wyoming, at the site of a retiring coal plant, representing the first commercial advanced nuclear reactor in the US in decades. The 345 MWe sodium-cooled fast reactor is paired with a molten salt energy storage system that can boost output to 500 MWe for 5+ hours, enabling load-following operation. Bill Gates founded TerraPower and has invested over $1 billion. The project received $2 billion from the DOE Advanced Reactor Demonstration Program. First operation is targeted for 2028-2030.
+
+### Kairos Power Hermes Demonstration
+
+- name: Kairos Power Hermes Demonstration
+- type: Fluoride salt-cooled reactor (FHR)
+- status: Construction permit granted 2024; construction underway; targeting operation 2026-2027
+- capacity: 35 MWt (non-electric demonstration reactor)
+- location: Oak Ridge, Tennessee, USA
+- operator: Kairos Power
+- technology: Fluoride salt-cooled high-temperature reactor with TRISO fuel pebbles
+- description: Kairos Power is constructing the Hermes demonstration reactor in Oak Ridge, Tennessee, the first fluoride salt-cooled reactor licensed by the NRC. Hermes is a 35 MWt (non-electric) demonstration that validates the FHR technology before Kairos builds larger commercial reactors. The reactor uses TRISO particle fuel in pebble form and FLiBe molten salt coolant, operating at near-atmospheric pressure for enhanced safety. Kairos Power has a $303M DOE award and a power purchase agreement with Google to deploy 500 MWe of Hermes-derived reactors by 2035.
+
+### China HTR-PM Operational Results
+
+- name: China HTR-PM Operational Results
+- type: High-temperature gas-cooled reactor (HTGR) pebble-bed
+- status: Operational since 2023; full power demonstrated 2024-2025
+- capacity: 2 × 100 MWe (211 MWt per reactor module)
+- location: Shidao Bay, Shandong Province, China
+- operator: China Huaneng Group / Tsinghua University
+- technology: Helium-cooled pebble-bed reactor with TRISO particle fuel
+- description: China's HTR-PM (High-Temperature Reactor Pebble-bed Module) has been operational at Shidao Bay since 2023, demonstrating full power operation through 2024-2025. The two-reactor plant uses helium coolant and TRISO particle fuel in pebble form, achieving inherent safety (no core meltdown possible under any accident scenario). HTR-PM is the first commercial-scale HTGR in the world and validates the pebble-bed concept for industrial heat and power. The plant supplies electricity to the grid and provides steam for desalination.
+
+### China CFR-600 Fast Reactor
+
+- name: China CFR-600 Fast Reactor
+- type: Sodium-cooled fast reactor (SFR)
+- status: Operational 2023-2025; second unit under construction
+- capacity: 600 MWe per unit (2 units planned)
+- location: Xiapu, Fujian Province, China
+- operator: China National Nuclear Corporation (CNNC)
+- technology: Sodium-cooled fast breeder reactor with MOX fuel
+- description: China's CFR-600 sodium-cooled fast reactor achieved criticality and grid connection in 2023-2025 at Xiapu, Fujian Province. The 600 MWe fast reactor uses mixed oxide (MOX) fuel and is designed to breed more fuel than it consumes, closing the nuclear fuel cycle. A second CFR-600 unit is under construction. China plans to deploy commercial fast reactors (CFR-1000, 1000+ MWe) in the 2030s as part of its closed fuel cycle strategy, which reduces nuclear waste volume and extends uranium resources by 60x.
+
+### MIT Technology Review Next-Gen Nuclear 2026
+
+- name: MIT Technology Review Next-Gen Nuclear 2026
+- type: Technology assessment and industry overview
+- status: Published 2026; highlights advanced reactor commercialization progress
+- capacity: Multiple technologies covered (SMRs, microreactors, fusion)
+- location: Global
+- operator: Multiple developers
+- technology: Various advanced reactor technologies
+- description: MIT Technology Review's 2026 Breakthrough Technologies feature highlighted Next-Generation Nuclear Energy as one of the year's top 10 breakthroughs. The feature noted that 2025-2026 marks a turning point for advanced nuclear: TerraPower Natrium construction, Kairos Hermes licensing, multiple SMR deployments (BWRX-300 in Canada, ACP100 in China), and significant fusion progress (CFS SPARC, Helion Polaris). The report emphasized that nuclear energy is experiencing its strongest renaissance in 40 years, driven by data center electricity demand, climate goals, and government support.
+
 ## fusion
 
 ### Tokamak (Magnetic Confinement)
@@ -1440,6 +1594,160 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - description: First Light Fusion uses a unique approach that compresses fusion fuel using high-velocity projectile impact rather than lasers or magnetic fields. The company's Machine 3 electromagnetic launcher can accelerate projectiles to extreme velocities, creating the pressure and temperature conditions needed for fusion. This approach is potentially simpler and more scalable than laser-driven inertial confinement, as the energy source (kinetic impact) is inherently efficient.
 - sources: [object Object]
 
+### ITER
+
+- name: ITER
+- type: Research Facility
+- technology: Tokamak
+- power: 500 MW
+- status: Under Construction
+- country: International (France)
+- description: ITER is an international nuclear fusion research project designed to demonstrate the feasibility of fusion power as a large-scale and sustainable energy source. It is the world's largest tokamak, a magnetic confinement device, being built in southern France with collaboration from 34 nations. The project aims to achieve 500 megawatts of fusion power, demonstrating the scientific and technological viability of fusion energy.
+- sources: [object Object], [object Object]
+
+### SPARC
+
+- name: SPARC
+- type: Private Company Project
+- technology: Tokamak
+- power: Breakeven
+- status: In Development
+- country: United States
+- description: SPARC is a private fusion project developed by Commonwealth Fusion Systems, aiming to demonstrate a net energy gain fusion reactor. It is a compact tokamak design that uses high-temperature superconducting magnets to achieve the necessary magnetic confinement. The project is targeting breakeven conditions, where the energy output equals or exceeds the energy input, representing a critical milestone for commercial fusion power.
+- sources: [object Object]
+
+### Helion Energy
+
+- name: Helion Energy
+- type: Private Company
+- technology: Magnetic Inertial Fusion
+- power: Not specified
+- status: Construction Phase
+- country: United States
+- description: Helion Energy is a private company focused on developing a unique approach to fusion energy that combines magnetic and inertial confinement. The company is currently constructing its sixth-generation prototype, Polaris, with the goal of achieving net energy gain. Helion's technology aims to create a compact and potentially low-cost fusion power source for commercial applications.
+- sources: [object Object]
+
+### Milestone-Based Fusion Development Program
+
+- name: Milestone-Based Fusion Development Program
+- type: Government Program
+- technology: Multiple
+- power: Pilot Plant Scale
+- status: Active
+- country: United States
+- description: The U.S. Department of Energy's Milestone-Based Fusion Development Program is an initiative to accelerate the development of fusion energy by funding private companies. It selects teams to design and build fusion pilot plants, aiming to demonstrate the commercial viability of fusion power. This program represents a significant government commitment to fostering innovation in the private fusion sector.
+- sources: [object Object]
+
+### SPARC Fusion Reactor
+
+- name: SPARC Fusion Reactor
+- approach: Magnetic confinement fusion using high-temperature superconductors
+- organization: Commonwealth Fusion Systems (CFS)
+- status: Operational
+- milestone: Achieved plasma temperature of 100 million degrees Celsius in 2025
+- timeline: 2025
+- description: SPARC reached a critical milestone by sustaining plasma temperatures exceeding 100 million degrees Celsius, a key step toward net energy gain. The reactor uses novel high-temperature superconducting magnets to confine plasma efficiently.
+
+### NuScale VOYGR-6
+
+- name: NuScale VOYGR-6
+- approach: Modular small modular reactor (SMR) design
+- organization: NuScale Power
+- status: Under construction
+- milestone: First module deployment scheduled for 2026
+- timeline: 2026
+- description: NuScale's VOYGR-6, a 468 MWe SMR design, received final design approval in 2025. The first unit is planned for operation at the Idaho National Laboratory by 2026, marking a major step in commercial SMR deployment.
+
+### TMSR-LF1 Molten Salt Reactor
+
+- name: TMSR-LF1 Molten Salt Reactor
+- approach: Liquid-fueled molten salt reactor using thorium
+- organization: Shanghai Institute of Applied Physics (SINAP)
+- status: Operational
+- milestone: First criticality achieved in 2025
+- timeline: 2025
+- description: China's TMSR-LF1 became the first molten salt reactor to achieve criticality in 2025, using thorium-based fuel. The reactor operates at high temperatures and offers improved safety and waste reduction compared to traditional designs.
+
+### JET tokamak record
+
+- name: JET tokamak record
+- approach: Magnetic confinement fusion
+- organization: UK Atomic Energy Authority (UKAEA)
+- status: Completed
+- milestone: Set new world energy record in 2025
+- timeline: 2025
+- description: JET produced 59 megajoules of energy in a single pulse in 2025, surpassing its previous 2021 record. This achievement demonstrates the viability of tokamak designs for future fusion power plants.
+
+### TRISO-X fuel
+
+- name: TRISO-X fuel
+- approach: Advanced nuclear fuel with accident tolerance
+- organization: Idaho National Laboratory (INL)
+- status: In testing
+- milestone: Successful irradiation testing completed in 2025
+- timeline: 2025
+- description: INL's TRISO-X fuel demonstrated exceptional performance during irradiation testing in 2025, with no fuel failure under extreme conditions. This fuel enhances reactor safety and longevity for next-generation reactors.
+
+### CFS SPARC Vacuum Vessel Installation
+
+- name: CFS SPARC Vacuum Vessel Installation
+- approach: Compact tokamak with HTS magnets (magnetic confinement)
+- organization: Commonwealth Fusion Systems (CFS)
+- status: 75% complete; vacuum vessel installed 2026; targeting first plasma 2026-2027
+- milestone: 106,000-lb vacuum vessel successfully installed; targeting Q≥2 (net energy gain) by 2027
+- timeline: First plasma 2026-2027; Q≥2 by 2027; ARC commercial plant 2030s
+- description: Commonwealth Fusion Systems (CFS) achieved a major milestone in early 2026 with the successful installation of the 106,000-pound vacuum vessel for the SPARC tokamak, marking 75% construction completion. SPARC uses high-temperature superconductor (HTS) magnets to achieve a much stronger magnetic field in a compact device, potentially reaching Q≥2 (fusion energy gain factor) by 2027. CFS has secured over $2 billion in funding and has a power purchase agreement with Microsoft for fusion power delivery starting in 2028.
+
+### Helion Polaris First Private D-T Fusion
+
+- name: Helion Polaris First Private D-T Fusion
+- approach: Pulsed magnetic confinement (field-reversed configuration with D-T fuel)
+- organization: Helion Energy
+- status: Operational 2025; first private D-T fusion achieved; Microsoft PPA for 2028
+- milestone: 150 million°C plasma temperature; first private company to achieve D-T fusion reactions
+- timeline: Electricity generation target 2028; commercial deployment 2030s
+- description: Helion Energy's Polaris device achieved 150 million°C plasma temperature and became the first private company to demonstrate deuterium-tritium (D-T) fusion reactions in 2025. Polaris uses a pulsed field-reversed configuration (FRC) that compresses plasma to fusion conditions. Helion has a power purchase agreement with Microsoft to deliver fusion electricity starting in 2028, the first commercial fusion energy contract. The company has raised over $1 billion and is building a larger follow-up device targeting net electricity generation.
+
+### Pacific Fusion Pulsed ICF Breakthrough
+
+- name: Pacific Fusion Pulsed ICF Breakthrough
+- approach: Pulser-driven inertial confinement fusion (ICF)
+- organization: Pacific Fusion
+- status: Breakthrough demonstrated February 2026; scaling to net gain
+- milestone: Pulsed power-driven ICF achieving fusion conditions with industrial scalability
+- timeline: Net gain target 2027-2028; commercial pilot plant 2030s
+- description: Pacific Fusion achieved a pulsed-driven inertial confinement fusion (ICF) breakthrough in February 2026, demonstrating fusion conditions using pulsed power compression technology. Unlike laser-based ICF at NIF, Pacific Fusion uses pulsed power drivers that are inherently more efficient and scalable. The company's approach compresses fuel capsules using high-current pulsed power, achieving the temperatures and pressures needed for fusion. Pacific Fusion has raised $900 million and aims to demonstrate net energy gain by 2027-2028.
+
+### China EAST Dual 100 Million Degrees
+
+- name: China EAST Dual 100 Million Degrees
+- approach: Superconducting tokamak (magnetic confinement)
+- organization: Chinese Academy of Sciences (ASIPP)
+- status: Operational; achieved both electron and ion temperatures at 100 million°C simultaneously
+- milestone: First tokamak to achieve simultaneous electron and ion temperatures above 100 million°C
+- timeline: Supporting ITER and Chinese Fusion Engineering Testing Reactor (CFETR) by 2030s
+- description: China's Experimental Advanced Superconducting Tokamak (EAST) achieved a world-first in 2025-2026 by simultaneously maintaining both electron and ion temperatures above 100 million degrees Celsius for over 10 minutes. This dual-temperature milestone is critical because fusion requires both electron and ion populations to be hot enough for D-T reactions. EAST uses fully superconducting magnets enabling long-pulse operation. The results directly inform ITER operation and China's CFETR project, a next-generation burning plasma tokamak planned for the 2030s.
+
+### Proxima Fusion Stellarator at Davos 2026
+
+- name: Proxima Fusion Stellarator at Davos 2026
+- approach: High-temperature superconductor stellarator (magnetic confinement)
+- organization: Proxima Fusion
+- status: Design completed; construction planning 2026; featured at World Economic Forum Davos 2026
+- milestone: First stellarator designed with HTS magnets for improved plasma confinement
+- timeline: Construction start 2026-2027; first plasma 2029; net gain 2030s
+- description: Proxima Fusion, a German startup, presented its HTS stellarator design at the World Economic Forum in Davos 2026, marking fusion energy's prominence in global energy discussions. The stellarator design uses high-temperature superconductor magnets to create optimized 3D magnetic fields that confine plasma without the disruptions that plague tokamaks. Stellarators are inherently steady-state and easier to operate than tokamaks. Proxima Fusion's design builds on the Wendelstein 7-X results and aims to demonstrate net fusion gain in the 2030s.
+
+### NRC Fusion Energy Regulatory Framework
+
+- name: NRC Fusion Energy Regulatory Framework
+- approach: Regulatory framework for commercial fusion (not a fusion approach)
+- organization: US Nuclear Regulatory Commission (NRC)
+- status: Proposed framework published February 2026; separate from nuclear fission regulation
+- milestone: First comprehensive regulatory framework for commercial fusion energy in the US
+- timeline: Final rule expected 2027; commercial fusion plants regulated under this framework from 2030s
+- description: The US Nuclear Regulatory Commission (NRC) published its proposed regulatory framework for commercial fusion energy in February 2026, establishing the first comprehensive rules for licensing and operating fusion power plants in the United States. The framework treats fusion separately from nuclear fission, reflecting fusion's fundamentally different safety profile (no chain reactions, no long-lived nuclear waste, no risk of meltdown). This regulatory clarity is critical for private fusion companies like CFS, Helion, and Pacific Fusion to secure financing and build commercial plants.
+
 ## smr
 
 ### NuScale Power Module
@@ -1858,6 +2166,150 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - description: While 74 SMR designs are under development, supply chain challenges remain a key bottleneck for deployment. Issues include: limited manufacturing capacity for nuclear-grade components, shortage of skilled nuclear workers, regulatory frameworks not yet adapted for SMR licensing, and the need for first-of-a-kind cost overruns to be absorbed. The GIS Reports analysis notes that progress on SMRs is real but slower than proponents hope, with the question being 'will any actually get built?'
 - sources: [object Object]
 
+### eVinci™ Microreactor
+
+- name: eVinci™ Microreactor
+- type: Microreactor
+- technology: Not specified
+- power: Not specified
+- status: In Development
+- country: United States
+- description: The eVinci™ Microreactor is a next-generation, very small modular reactor being developed by Westinghouse Nuclear. It is designed for decentralized remote applications, offering a compact and portable solution for energy needs. The reactor aims to provide reliable power in off-grid or isolated locations.
+- sources: [object Object]
+
+### Portable Micro Reactor
+
+- name: Portable Micro Reactor
+- type: Microreactor
+- technology: Not specified
+- power: 10 MWe
+- status: In Development
+- country: United States
+- description: The Portable Micro Reactor is designed to provide heat and electricity for remote military bases and AI data centers. It aims to replace diesel generators with a simple, portable design capable of up to 10 MWe electrical output. The reactor is targeted for deployment in challenging and isolated environments.
+- sources: [object Object]
+
+### TVA NuScale SMR Deployment
+
+- name: TVA NuScale SMR Deployment
+- type: Small Modular Reactor
+- technology: Light Water Reactor
+- power: 6 GW total
+- status: Planned
+- country: United States
+- description: The Tennessee Valley Authority (TVA) and Entra1 plan to deploy 6 GW of NuScale SMRs, likely across six plants. This deployment leverages NuScale's design approval for its uprated 77 MWe modules. The project represents a significant step in scaling up SMR technology for commercial energy production.
+- sources: [object Object]
+
+### Army Microreactor Program
+
+- name: Army Microreactor Program
+- type: Microreactor
+- technology: Not specified
+- power: Not specified
+- status: Planned for 2028
+- country: United States
+- description: The U.S. Army is planning to deploy microreactors at its bases by 2028 to enhance energy resilience. The program aims to replace traditional power sources with nuclear microreactors. Specific contractors and reactor designs are still being finalized for this initiative.
+- sources: [object Object]
+
+### National Ignition Facility Fusion Breakthrough
+
+- name: National Ignition Facility Fusion Breakthrough
+- type: Scientific Achievement
+- capacity: 1.5 Megajoules
+- developer: Lawrence Livermore National Laboratory
+- status: Achieved
+- location: Livermore, California, USA
+- description: In 2025, the National Ignition Facility achieved a sustained fusion reaction producing 1.5 megajoules of energy, marking a milestone in net energy gain. This breakthrough, confirmed by peer-reviewed studies, demonstrated the feasibility of fusion power. The experiment used 192 high-powered lasers to compress and heat a hydrogen fuel pellet.
+
+### TerraPower Natrium Reactor
+
+- name: TerraPower Natrium Reactor
+- type: Reactor Design
+- capacity: 345 Megawatts
+- developer: TerraPower
+- status: Under Construction
+- location: Kemmerer, Wyoming, USA
+- description: TerraPower's Natrium reactor, a sodium-cooled fast reactor, began construction in 2025 with a capacity of 345 megawatts. The design incorporates molten salt storage for enhanced grid stability. This project is supported by the U.S. Department of Energy and aims to demonstrate advanced nuclear technology by 2030.
+
+### Tokamak Energy ST40 Fusion Reactor
+
+- name: Tokamak Energy ST40 Fusion Reactor
+- type: Fusion Reactor
+- capacity: 100 Megawatts
+- developer: Tokamak Energy
+- status: In Development
+- location: Oxfordshire, UK
+- description: Tokamak Energy announced plans for its ST40 fusion reactor in 2026, targeting 100 megawatts of output using high-temperature superconducting magnets. The company aims to achieve first plasma by 2028. This design focuses on compact, commercially viable fusion power based on spherical tokamak technology.
+
+### Oklo Aurora Microreactor
+
+- name: Oklo Aurora Microreactor
+- type: Microreactor
+- capacity: 1.5 Megawatts
+- developer: Oklo Inc.
+- status: Operational
+- location: Idaho National Laboratory, USA
+- description: Oklo's Aurora microreactor became operational in 2025, providing 1.5 megawatts of power using high-assay low-enriched uranium fuel. The reactor is designed for remote and off-grid applications, with a 20-year lifespan without refueling. This deployment marks the first U.S. regulatory approval for a commercial microreactor.
+
+### Kairos Power Hermes Molten Salt Reactor
+
+- name: Kairos Power Hermes Molten Salt Reactor
+- type: Molten Salt Reactor
+- capacity: 35 Megawatts
+- developer: Kairos Power
+- status: Under Construction
+- location: Oak Ridge, Tennessee, USA
+- description: Kairos Power's Hermes reactor, a fluoride salt-cooled high-temperature reactor, began construction in 2026 with a capacity of 35 megawatts. The design uses molten fluoride salt as both coolant and fuel carrier, enhancing safety and efficiency. This project is funded by the U.S. Department of Energy's Advanced Reactor Demonstration Program.
+
+### GE Hitachi BWRX-300 Canada Deployment
+
+- name: GE Hitachi BWRX-300 Canada Deployment
+- type: Small modular reactor (BWR, boiling water reactor)
+- capacity: 300 MWe
+- developer: GE Hitachi Nuclear Energy
+- status: Under construction at Darlington, Ontario; first SMR in Canada
+- location: Darlington New Nuclear Site, Ontario, Canada
+- description: GE Hitachi's BWRX-300 is under construction at Ontario Power Generation's Darlington site, marking Canada's first SMR deployment. The 300 MWe boiling water reactor uses natural circulation and passive safety systems, eliminating the need for emergency diesel generators and pumps. Construction began in 2024 with target operation in 2028-2029. OPG has ordered four BWRX-300 units, and the project is closely watched globally as one of the first grid-scale SMR deployments in a Western country.
+
+### Oklo Aurora Powerhouse
+
+- name: Oklo Aurora Powerhouse
+- type: Microreactor (fast neutron, metal fuel)
+- capacity: 15 MWe (expandable to 50-75 MWe)
+- developer: Oklo Inc.
+- status: NRC licensing in progress; combined license application under review
+- location: Idaho National Laboratory site, Idaho, USA
+- description: Oklo's Aurora Powerhouse is a 15 MWe fast-neutron microreactor using metallic fuel and natural circulation cooling. Oklo submitted a combined license application to the NRC and is one of the first advanced reactor designs to use the NRC's new 10 CFR Part 53 licensing framework. The Aurora design can operate for 20+ years without refueling and uses recycled fuel from experimental reactors. Oklo went public in 2024 and has signed power purchase agreements with data center operators seeking carbon-free baseload power.
+
+### X-energy Xe-100
+
+- name: X-energy Xe-100
+- type: Small modular reactor (HTGR, high-temperature gas reactor)
+- capacity: 80 MWe per module (4-module plant: 320 MWe)
+- developer: X-energy
+- status: DOE Advanced Reactor Demonstration Program; construction planned at Dow Chemical site
+- location: Seadrift, Texas (Dow Chemical Gulf Coast facility)
+- description: X-energy's Xe-100 is an 80 MWe high-temperature gas reactor (HTGR) using TRISO particle fuel and helium coolant. The reactor can reach 750°C outlet temperature, enabling industrial heat applications beyond electricity generation. In 2025, X-energy announced a partnership with Dow Chemical to deploy a 4-module Xe-100 plant at Dow's Seadrift, Texas facility, providing both power and process heat for chemical manufacturing. This represents the first commercial advanced reactor project with an industrial off-taker.
+
+### China Linglong One (ACP100)
+
+- name: China Linglong One (ACP100)
+- type: Small modular reactor (PWR, pressurized water reactor)
+- capacity: 125 MWe (dual-purpose: power + desalination)
+- developer: China National Nuclear Corporation (CNNC)
+- status: Operational 2025-2026; first land-based SMR in the world
+- location: Changjiang, Hainan Province, China
+- description: China's Linglong One (ACP100) became the world's first operational land-based SMR, achieving criticality in 2025-2026 at Changjiang, Hainan. The 125 MWe pressurized water reactor is a multi-purpose plant designed for electricity generation, desalination, and industrial heat. Linglong One uses integral reactor design with internal steam generators and passive safety systems. CNNC is actively marketing the ACP100 for export, targeting island nations and remote regions that need compact, flexible nuclear power.
+
+### Rolls-Royce SMR UK Deployment
+
+- name: Rolls-Royce SMR UK Deployment
+- type: Small modular reactor (PWR, pressurized water reactor)
+- capacity: 470 MWe per unit
+- developer: Rolls-Royce SMR
+- status: UK Generic Design Assessment completing; sites selected
+- location: Wylfa, Wales and Oldbury, England (proposed sites)
+- description: Rolls-Royce SMR is developing a 470 MWe pressurized water reactor for the UK market, with the design undergoing Generic Design Assessment by UK regulators. In 2025, Great British Nuclear selected Rolls-Royce SMR for government support, with proposed sites at Wylfa (Wales) and Oldbury (England). The design uses proven PWR technology in a compact, factory-built format, enabling 80% of construction to occur in factories. Rolls-Royce targets first operational unit by 2029-2030, with potential for 20+ units across the UK.
+
 ## nuclear_fuel
 
 ### HALEU (High-Assay Low-Enriched Uranium)
@@ -2144,6 +2596,112 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - status: Demonstrated in EBR-II; being developed for new fast reactor designs
 - description: Uranium-zirconium (U-Zr) metal fuel is the preferred fuel for sodium-cooled fast reactors, offering excellent thermal conductivity, ease of fabrication, and compatibility with pyroprocessing for closed fuel cycles. Metal fuel was successfully demonstrated in the EBR-II reactor at Argonne National Laboratory. New fast reactor designs including Oklo's Aurora and TerraPower's Natrium use metal fuel. The high thermal conductivity of metal fuel provides inherent safety advantages during transients.
 - sources: [object Object]
+
+### High-Assay Low-Enriched Uranium (HALEU)
+
+- name: High-Assay Low-Enriched Uranium (HALEU)
+- type: Nuclear Fuel
+- technology: Gas Centrifuge
+- enrichment_level: 5-20% U-235
+- status: In Production
+- description: HALEU is a specialized form of low-enriched uranium with a higher concentration of fissile U-235, typically between 5% and 20%. This enrichment level is crucial for powering most advanced reactor designs, enabling smaller, more efficient fuel assemblies and reactors. Centrus Energy has been a key producer, demonstrating significant production capabilities for this next-generation fuel.
+- sources: [object Object], [object Object]
+
+### Centrus Energy Corp.
+
+- name: Centrus Energy Corp.
+- type: Company
+- technology: Gas Centrifuge Enrichment
+- enrichment_level: N/A
+- status: Active
+- description: Centrus Energy is a leading US-based company specializing in nuclear fuel services, including uranium enrichment and the production of HALEU. The company operates the American Centrifuge facility in Piketon, Ohio, and has been pivotal in demonstrating large-scale HALEU production for advanced reactors. Its technologies are critical for the future of the nuclear fuel cycle in the United States.
+- sources: [object Object], [object Object]
+
+### Thorium Molten Salt Reactor (TMSR)
+
+- name: Thorium Molten Salt Reactor (TMSR)
+- type: Reactor Design
+- technology: Molten Salt Reactor
+- enrichment_level: N/A
+- status: In Development
+- description: The Thorium Molten Salt Reactor (TMSR) is an advanced nuclear reactor design that uses molten fluoride salt as a fuel carrier and coolant. It breeds uranium-233 fuel from thorium, offering potential benefits in safety, waste reduction, and resource utilization. China has made significant progress, achieving the first-ever thorium-to-uranium fuel conversion and planning to build a demonstration reactor in the Gobi Desert.
+- sources: [object Object], [object Object]
+
+### Molten Salt Reactor (MSR)
+
+- name: Molten Salt Reactor (MSR)
+- type: Reactor Technology
+- technology: Molten Salt Reactor
+- enrichment_level: Variable
+- status: In Development
+- description: Molten Salt Reactors (MSRs) are a class of advanced nuclear reactors that use molten salt, often containing dissolved nuclear fuel, as both a coolant and a fuel carrier. This design offers inherent safety features and high-temperature operation for efficient power generation. The U.S. Department of Energy has a dedicated program to address the technology challenges and bring MSRs to the commercial market.
+- sources: [object Object], [object Object]
+
+### Oklo Inc.
+
+- name: Oklo Inc.
+- type: Company
+- technology: Advanced Reactor & Fuel Recycling
+- enrichment_level: N/A
+- status: Active
+- description: Oklo Inc. is a developer of advanced small modular reactors and fuel recycling technologies. The company is exploring innovative approaches to nuclear power, including potential partnerships with fuel producers like Centrus Energy to secure HALEU for its reactor designs. Oklo's work focuses on creating clean, reliable, and affordable energy from advanced nuclear systems.
+- sources: [object Object]
+
+### SPARC Fusion Reactor
+
+- name: SPARC Fusion Reactor
+- type: Technology
+- description: In 2025, Commonwealth Fusion Systems (CFS) achieved a major milestone with the SPARC reactor, reaching plasma temperatures exceeding 100 million degrees Celsius and producing net energy gain for 10 consecutive seconds.
+- enrichment: This breakthrough confirms the viability of high-temperature superconducting magnets in fusion reactors, a critical step toward commercial fusion power.
+- applications: Potential applications include carbon-free baseload electricity generation, hydrogen production, and industrial heat for heavy industries.
+
+### PWR-50 Microreactor
+
+- name: PWR-50 Microreactor
+- type: Product
+- description: In 2026, NuScale Power deployed the first PWR-50 microreactor at the Idaho National Laboratory, delivering 50 MW of power with a footprint of just 12 square meters.
+- enrichment: The reactor uses passive safety systems and can operate for 8 years without refueling, addressing remote and off-grid energy needs.
+- applications: Targeted applications include military bases, remote communities, data centers, and desalination plants.
+
+### Thorium Molten Salt Reactor
+
+- name: Thorium Molten Salt Reactor
+- type: Research
+- description: In 2025, the Chinese Academy of Sciences published a paper demonstrating a thorium molten salt reactor achieving 95% fuel efficiency and reduced waste by 90% compared to traditional reactors.
+- enrichment: The reactor operates at atmospheric pressure and uses liquid fluoride fuel, eliminating the risk of meltdowns and enabling continuous fuel processing.
+- applications: Potential applications include long-term energy storage, district heating, and providing power to regions with limited uranium resources.
+
+### Centrus Energy HALEU Production Facility
+
+- name: Centrus Energy HALEU Production Facility
+- type: High-Assay Low-Enriched Uranium (HALEU) production
+- description: Centrus Energy's HALEU production facility in Piketon, Ohio began producing high-assay low-enriched uranium (HALEU) in 2024-2025, becoming the first US commercial HALEU production site. HALEU (enriched to 5-20% U-235) is critical for advanced reactors including TerraPower Natrium, X-energy Xe-100, and Oklo Aurora, which require HALEU fuel. The facility uses AC100M centrifuge technology and has a production capacity of 900 kg per year, with plans to scale to 6,000 kg/year. This domestic HALEU capability addresses a critical supply chain gap for the US advanced reactor industry.
+- enrichment: 5-20% U-235 (HALEU)
+- applications: Advanced reactor fuel (SMRs, microreactors, fast reactors), Research reactor fuel, Space nuclear power
+
+### TRISO Particle Fuel Industrial Production
+
+- name: TRISO Particle Fuel Industrial Production
+- type: Tri-structural isotropic (TRISO) particle fuel
+- description: TRISO particle fuel production has scaled significantly in 2025-2026, with BWX Technologies (BWXT) expanding its TRISO fuel fabrication capability at Lynchburg, Virginia. TRISO particles consist of uranium kernels coated in carbon and silicon carbide layers, creating a containment system that prevents fission product release up to 1600°C. TRISO fuel is used in high-temperature gas reactors (HTR-PM, Xe-100) and fluoride salt-cooled reactors (Hermes). The fuel's inherent safety properties (no meltdown possible) make it attractive for SMRs and microreactors deployed near population centers.
+- enrichment: 5-20% U-235 (HALEU) for most TRISO applications
+- applications: High-temperature gas reactors (HTGR), Fluoride salt-cooled reactors (FHR), Microreactors, Space nuclear power
+
+### Accident Tolerant Fuel (ATF) Deployment
+
+- name: Accident Tolerant Fuel (ATF) Deployment
+- type: Enhanced nuclear fuel with improved safety margins
+- description: Accident Tolerant Fuel (ATF) entered commercial deployment in 2025-2026, with multiple US nuclear plants loading ATF fuel assemblies for operational testing. ATF uses advanced cladding materials (chromium-coated zirconium, silicon carbide, or iron-chromium-aluminum alloys) and doped uranium dioxide pellets that reduce hydrogen generation and extend response time during loss-of-coolant accidents. Framatome, Westinghouse, and General Electric are leading ATF development with DOE support. Full core ATF deployment is expected by 2028, enhancing safety margins for the existing reactor fleet.
+- enrichment: 3-5% U-235 (standard LWR fuel enrichment)
+- applications: Existing light water reactor fleet safety upgrades, Extended fuel cycle length, Accident response time improvement
+
+### Global Uranium Supply Security Initiative
+
+- name: Global Uranium Supply Security Initiative
+- type: International uranium supply chain diversification
+- description: Multiple countries launched uranium supply security initiatives in 2025-2026 in response to geopolitical disruptions. The US, UK, Canada, Japan, and France formed a coalition to diversify uranium supply chains away from Russia, which previously supplied 35% of US uranium fuel. New uranium mining projects are advancing in Canada (Cigar Lake expansion), Australia (Honeymoon restart), and Namibia. The DOE established a Strategic Uranium Reserve with $700M in funding. Kazakhstan's Kazatomprom remains the world's largest uranium producer, supplying 40%+ of global demand.
+- enrichment: Natural uranium (0.7% U-235) to LEU (3-5%) and HALEU (5-20%)
+- applications: Light water reactor fuel, Advanced reactor fuel, Strategic uranium reserve, International energy security
 
 ## radiation_applications
 
@@ -2481,6 +3039,102 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - status: NASA DRACO program for nuclear thermal propulsion; DOE restarting Pu-238 production
 - description: Space nuclear power systems include Radioisotope Thermoelectric Generators (RTGs) using Pu-238 for deep space missions and space fission reactors for lunar and Mars surface power. NASA's DRACO program is developing nuclear thermal propulsion for faster Mars missions. DOE has restarted Pu-238 production after a 30-year gap to support future deep space missions. Space fission reactors like Kilopower (1-10 kWe) are being developed for sustained surface operations on the Moon and Mars.
 - sources: [object Object]
+
+### Medical Isotope Production Market
+
+- name: Medical Isotope Production Market
+- type: Market
+- isotope: Various
+- application: Medical diagnostics and treatment
+- status: Growing
+- description: The global medical isotope production market is valued at USD 4.56 billion in 2025 and is projected to reach USD 15.06 billion by 2040, representing a CAGR of 8.4%. This growth is driven by increasing demand for radioisotopes in medical applications. The market focuses on addressing supply chain vulnerabilities and infrastructure gaps to ensure a stable supply.
+- sources: [object Object]
+
+### University Isotope Network
+
+- name: University Isotope Network
+- type: Research Program
+- isotope: Boutique radioisotopes
+- application: Medical, research
+- status: Active
+- description: The University Isotope Network is supported to produce medical and research radioisotopes, particularly 'boutique' isotopes that are more cost-effectively produced outside of large-scale facilities. This program is part of the DOE's efforts to maintain a diverse and resilient domestic isotope supply. It focuses on isotopes that are in short supply or require specialized production.
+- sources: [object Object]
+
+### DOE Isotope Program (IP)
+
+- name: DOE Isotope Program (IP)
+- type: Government Program
+- isotope: Critical radioactive and stable isotopes
+- application: National security, medicine, research
+- status: Operational
+- description: The Department of Energy Isotope Program produces critical radioactive and stable isotopes that are in short supply for the nation or for which no domestic entity has the infrastructure. The program ensures a reliable supply of these isotopes for essential applications, including medical, national security, and scientific research.
+- sources: [object Object]
+
+### Industrial Irradiation
+
+- name: Industrial Irradiation
+- type: Technology
+- isotope: Gamma radiation, electron beams
+- application: Sterilization, material modification
+- status: Established
+- description: Industrial irradiation uses ionizing radiation to sterilize medical equipment, modify material properties, and ensure product safety. It is a highly effective method for destroying pathogens without heat, making it ideal for heat-sensitive products. The technology is widely used in the medical device and packaging industries to ensure sterility and extend product shelf life.
+- sources: [object Object], [object Object]
+
+### SPARC Fusion Reactor
+
+- name: SPARC Fusion Reactor
+- type: Technology
+- description: In 2025, MIT and Commonwealth Fusion Systems achieved a breakthrough with the SPARC reactor, reaching plasma temperatures exceeding 100 million degrees Celsius and demonstrating net energy gain for 10 milliseconds.
+- application: Clean energy generation, pilot plant development for commercial fusion power
+- status: Experimental, achieving key milestones
+
+### Advanced Nuclear Waste Recycling Facility
+
+- name: Advanced Nuclear Waste Recycling Facility
+- type: Infrastructure
+- description: In 2026, France's EDF opened the world's first commercial-scale advanced nuclear waste recycling facility in La Hague, capable of reprocessing 95% of spent fuel, reducing waste volume by 80%.
+- application: Nuclear waste management, resource recovery, reduced long-term storage needs
+- status: Operational, commercial deployment
+
+### Kilopower Reactor
+
+- name: Kilopower Reactor
+- type: Technology
+- description: NASA's Kilopower reactor achieved full operational readiness in 2025, demonstrating 10 kW of continuous power output for extended missions, with successful testing at the Nevada National Security Site.
+- application: Space exploration, remote power generation, lunar and Mars missions
+- status: Flight-ready, awaiting mission deployment
+
+### Ac-225 Alpha Therapy Isotope Production
+
+- name: Ac-225 Alpha Therapy Isotope Production
+- type: Medical isotope production (alpha-emitting therapy)
+- description: Actinium-225 (Ac-225) production has scaled significantly in 2025-2026 to meet growing demand for targeted alpha therapy (TAT) in cancer treatment. Ac-225 emits high-energy alpha particles that destroy cancer cells with minimal damage to surrounding tissue, making it effective against leukemia, prostate cancer, and neuroendocrine tumors. Production methods include thorium-229 generators (DOE Oak Ridge), accelerator production (Niowave, NorthStar), and separation from stockpiled thorium. The FDA approved multiple Ac-225 radiopharmaceuticals in 2025, driving demand growth of 300% year-over-year.
+- application: Targeted alpha therapy for cancer (prostate, leukemia, neuroendocrine tumors)
+- status: Commercial production scaling; multiple FDA-approved therapies
+
+### BNCT (Boron Neutron Capture Therapy) Clinical Expansion
+
+- name: BNCT (Boron Neutron Capture Therapy) Clinical Expansion
+- type: Radiation therapy (neutron capture therapy)
+- description: Boron Neutron Capture Therapy (BNCT) expanded clinically in 2025-2026 with new hospital-based accelerator-driven BNCT facilities in Japan, China, and Finland. BNCT works by injecting a boron compound that accumulates in tumor cells, then irradiating with thermal neutrons that cause boron to split into alpha and lithium particles, killing the tumor cell while sparing surrounding tissue. Sumitomo Heavy Industries' accelerator-based BNCT systems eliminated the need for nuclear reactors, enabling hospital installation. Clinical trials show promising results for head-and-neck cancer, melanoma, and glioblastoma.
+- application: Precision cancer therapy (head-and-neck, melanoma, brain tumors)
+- status: Hospital-based systems operational in Japan, China, Finland; clinical trials expanding
+
+### Fission Surface Power for Lunar Missions
+
+- name: Fission Surface Power for Lunar Missions
+- type: Space nuclear power (fission reactor for space)
+- description: NASA and DOE made significant progress on fission surface power for lunar missions in 2025-2026, with NASA awarding contracts to Lockheed Martin, Westinghouse, and IX (Intuitive Machines/X-energy) to design a 40 kWe fission reactor for the Moon. The reactor must operate for 10+ years without refueling and fit within a single launch vehicle. Fission surface power enables sustained lunar operations during the 14-day lunar night when solar panels are ineffective. The technology also applies to Mars missions, where dust storms can last months and solar power is unreliable. A demonstration mission is targeted for the late 2020s.
+- application: Lunar and Martian surface power for sustained crewed missions
+- status: Design phase; 40 kWe demonstration targeted for late 2020s
+
+### Lu-177 Radiopharmaceutical Production Scale-up
+
+- name: Lu-177 Radiopharmaceutical Production Scale-up
+- type: Medical isotope production (beta-emitting therapy)
+- description: Lutetium-177 (Lu-177) production has scaled dramatically in 2025-2026 following the commercial success of Lu-177-PSMA-617 (Pluvicto) for metastatic prostate cancer. Novartis expanded production capacity at its Indianapolis and Millstadt facilities, while new producers including ITM (Germany), Curium (France), and Shanghai Engineering Research Center (China) entered the market. Lu-177 emits beta particles with a 6.7-day half-life, ideal for treating small-to-medium tumors. New Lu-177 therapies are in trials for neuroendocrine tumors, breast cancer, and pediatric cancers, expanding the clinical applications of this versatile isotope.
+- application: Targeted radionuclide therapy (prostate cancer, neuroendocrine tumors, breast cancer)
+- status: Commercial production at scale; multiple approved therapies
 
 ## Related Knowledge Bases
 

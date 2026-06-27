@@ -1,89 +1,129 @@
-# 🛡️ AIShield MCP Server
+# ATEX MCP Server
 
-AI工具安全审计与认证平台 — 让AI工具值得信任
+> One MCP Server to access **23 AI services** + **12 knowledge engines** via Model Context Protocol.
 
-[![AIShield](https://aishield.ai/api/v1/badge-name/AIShield)](https://aishield.ai)
+## What You Get
 
-## 功能
+### 🛠️ 23 AI Services
+| Category | Tools | Price |
+|----------|-------|-------|
+| 🇨🇳 Compliance | Banned word check, AI search visibility, Global compliance, SEO compliance | 0.1-8 ATEX |
+| 🎯 AI Capabilities | TTS, ASR, VLM, Image gen, Image edit, Video gen | 2-10 ATEX |
+| 🌐 Data | Web search, Web reader | 3-5 ATEX |
+| 🧠 Specialized | Book distill, Vector optimize, Token slim, Browser automation | 1-8 ATEX |
+| 🛡️ Security | Cyber skill lookup (754 skills), Skill generation | 1-5 ATEX |
+| 💬 LLM | Chat (DeepSeek/GPT-4o/Claude) | Per-token |
 
-- **🔍 安全扫描** — 扫描MCP/GPT/Skill/Prompt的安全风险
-- **📊 四维评分** — 安全/隐私/质量/性能四维打分
-- **🏷️ 认证徽章** — 生成可嵌入README的安全认证徽章
-- **📦 批量扫描** — 一次扫描多个工具（Pro/Enterprise）
-- **🤖 MCP原生** — 直接在Claude等AI Agent中使用
+### 🔬 12 Knowledge Engines
+| Engine | Domain | Coverage |
+|--------|--------|----------|
+| 🧬 GeneTech Tools | genetech.tools | 397 entities — genes, diseases, CRISPR |
+| 🌿 TCMDB | tcm.genetech.tools | 1778 entities — herbs, prescriptions |
+| 🤖 Agent Ecosystem | agent.genetech.tools | 398 entities — MCP servers, SDKs |
+| ⚛️ QuantumDB | quantum.genetech.tools | 273 entities — processors, algorithms |
+| 🧠 BrainDB | brain.genetech.tools | 252 entities — BCI, neuroimaging |
+| ☢️ NuclearDB | nuclear.genetech.tools | 238 entities — reactors, fusion |
+| 🪐 ExoDB | exo.genetech.tools | 316 entities — exoplanets, missions |
+| 💎 MineralDB | mineral.genetech.tools | 283 entities — minerals, asteroids |
+| 🌊 DeepSeaDB | deepsea.genetech.tools | 307 entities — submersibles, resources |
+| ⚡ EnergyDB | energy.genetech.tools | 430 entities — batteries, hydrogen |
+| 🧫 LifeDB | life.genetech.tools | 475 entities — CRISPR, cell therapy |
+| 🦾 RobotParts DB | robot.genetech.tools | 229 entities — actuators, sensors |
 
-## 安装
+## Quick Start
 
-### Claude Desktop
+### Option 1: npx (recommended)
 
-在 `claude_desktop_config.json` 中添加：
+```bash
+npx @atex-ai/mcp-server
+```
+
+### Option 2: Claude Desktop Config
+
+Add to your `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
-    "aishield": {
-      "command": "python",
-      "args": ["/path/to/aishield/mcp/server.py"]
+    "atex": {
+      "command": "npx",
+      "args": ["-y", "@atex-ai/mcp-server"],
+      "env": {
+        "ATEX_API_KEY": "your-api-key-here"
+      }
     }
   }
 }
 ```
 
-### Smithery
+### Option 3: Cursor / Windsurf
 
-```bash
-npx @smithery/cli install aishield
+Add to your MCP settings:
+
+```json
+{
+  "mcp": {
+    "servers": {
+      "atex": {
+        "command": "npx",
+        "args": ["-y", "@atex-ai/mcp-server"],
+        "env": {
+          "ATEX_API_KEY": "your-api-key-here"
+        }
+      }
+    }
+  }
+}
 ```
 
-## 使用示例
+## Environment Variables
 
-在Claude中直接说：
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `ATEX_API_KEY` | (none) | Your ATEX API key for authenticated services |
+| `ATEX_BASE_URL` | `http://150.158.119.19:8420` | ATEX server URL |
 
-> "帮我扫描 https://github.com/anthropics/claude-code 这个MCP工具的安全风险"
+## Available Tools
 
-> "查看MCP Python SDK的安全评分"
+### Platform
+- `check_balance` — Check account balance
+- `list_services` — List all available services
 
-> "批量扫描这些MCP工具：[URL列表]"
+### Compliance (🇨🇳)
+- `cn_banned_word_check` — Chinese banned word detection (0.1 ATEX)
+- `ai_search_visibility` — AI search visibility check (2 ATEX)
+- `global_compliance_check` — Global compliance assessment (8 ATEX)
+- `seo_compliance_check` — SEO compliance check (1 ATEX)
 
-## 工具列表
+### AI Capabilities
+- `tts_synthesis` — Text-to-speech (2 ATEX)
+- `asr_recognition` — Speech-to-text (2 ATEX)
+- `vlm_understand` — Image understanding (3 ATEX)
+- `image_generate` — AI image generation (5 ATEX)
+- `image_edit` — AI image editing (5 ATEX)
+- `video_generate` — AI video generation (10 ATEX)
+- `web_search` — Web search (5 ATEX)
+- `web_reader` — Web page reader (3 ATEX)
 
-| 工具 | 说明 |
-|------|------|
-| `scan_ai_tool` | 扫描AI工具安全风险，返回四维评分 |
-| `get_security_badge` | 获取安全徽章信息 |
-| `batch_scan` | 批量扫描（最多10个） |
+### Specialized
+- `book_distill` — Book-to-skills distillation (8 ATEX)
+- `vector_optimize` — Vector search optimization (3 ATEX)
+- `token_slim` — Token cost reduction (1 ATEX)
+- `browser_act` — AI browser automation (5 ATEX)
+- `cyber_skill_lookup` — Security skill lookup (1 ATEX)
+- `cyber_skill_generate` — Security skill generation (5 ATEX)
 
-## 评分体系
+### Knowledge Engines
+- `knowledge_engines_list` — List all 12 engines
+- `knowledge_search` — Search across knowledge bases
+- `knowledge_entity_detail` — Get entity details by ID
 
-| 徽章 | 分数 | 含义 |
-|------|------|------|
-| 🥇 Gold | 85-100 | 安全可信，推荐使用 |
-| 🥈 Silver | 70-84 | 基本安全，需关注部分问题 |
-| 🥉 Bronze | 50-69 | 存在风险，谨慎使用 |
-| ⚠️ None | <50 | 严重风险，不建议使用 |
+### LLM
+- `chat` — AI chat (DeepSeek/GPT-4o/Claude)
 
-## 定价
+## Get API Key
 
-| 版本 | 价格 | 每日扫描 | 认证徽章 | 批量扫描 |
-|------|------|----------|----------|----------|
-| 免费版 | ¥0/月 | 3次 | ❌ | ❌ |
-| Pro版 | ¥99/月 | 100次 | ✅ | ✅ |
-| 企业版 | ¥499/月 | 无限 | ✅ | ✅ |
-
-## API接入
-
-```bash
-# 申请API Key
-curl -X POST https://aishield.ai/api/v1/keys \
-  -H "Content-Type: application/json" \
-  -d '{"email":"you@example.com","tier":"free"}'
-
-# 提交扫描
-curl -X POST https://aishield.ai/api/v1/audit \
-  -H "Content-Type: application/json" \
-  -H "X-API-Key: your_api_key" \
-  -d '{"tool_type":"mcp","source_url":"https://github.com/user/mcp-server"}'
-```
+Visit [genetech.tools/credits.html](https://genetech.tools/credits.html) to top up your ATEX balance. Balance never expires.
 
 ## License
 

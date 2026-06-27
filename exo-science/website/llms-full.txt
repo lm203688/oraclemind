@@ -1263,6 +1263,71 @@ Exoplanet and space exploration knowledge base covering exoplanets, missions, te
 - description: Third planet in the TOI-201 system, discovered in 2026. Notable because the orbits of planets in this system are constantly changing, providing a unique opportunity to study orbital dynamics and planet-planet gravitational interactions in real time. Featured in NASA Exoplanet Archive weekly highlights.
 - source: NASA Exoplanet Archive 2026
 
+### TOI-199 b
+
+- name: TOI-199 b
+- type: Temperate gas giant (exo-Saturn) with methane atmosphere
+- mass: N/A
+- radius: Saturn-sized
+- orbital_period: N/A
+- distance: ~335 light-years
+- host_star: TOI-199
+- discovery_year: 2026
+- detection_method: Transit (TESS) + JWST atmospheric characterization
+- atmosphere: Methane-rich (CH4 confirmed by JWST)
+- habitable: false
+- temperature: Earth-like temperature range
+- description: Saturn-sized exoplanet with Earth-like temperatures and a methane-rich atmosphere, discovered using NASA's James Webb Space Telescope. Led by researcher Renyu Hu at Penn State Eberly College of Science. The system exhibits strong transit timing variations (TTVs) due to an outer non-transiting giant planet. Models for temperate gas-giant exoplanets had predicted methane, and this discovery provides confirmation. Featured as a NASA 'Goldilocks' giant planet.
+- source: NASA/JWST 2026, Penn State Research, IOPscience
+
+### WISPIT 2 c
+
+- name: WISPIT 2 c
+- type: Exoplanet (new discovery)
+- mass: N/A
+- radius: N/A
+- orbital_period: N/A
+- distance: N/A
+- host_star: WISPIT 2
+- discovery_year: 2026
+- detection_method: Transit
+- atmosphere: Under investigation
+- habitable: false
+- description: New planet discovered in 2026, featured in NASA Exoplanet Archive weekly highlights as a notable new discovery. Part of the 2026 TESS milestone of 114 new planets added to the archive.
+- source: NASA Exoplanet Archive 2026
+
+### CWISEP J193518.59-154620.3 b
+
+- name: CWISEP J193518.59-154620.3 b
+- type: Exoplanet (new discovery)
+- mass: N/A
+- radius: N/A
+- orbital_period: N/A
+- distance: N/A
+- host_star: CWISEP J193518.59-154620.3
+- discovery_year: 2026
+- detection_method: Transit
+- atmosphere: Under investigation
+- habitable: false
+- description: New planet discovered in 2026, featured in NASA Exoplanet Archive weekly highlights alongside WISPIT 2 c. Part of the 2026 TESS milestone additions.
+- source: NASA Exoplanet Archive 2026
+
+### TESS 2026 Milestone Planets (3 new hot Jupiters)
+
+- name: TESS 2026 Milestone Planets (3 new hot Jupiters)
+- type: Hot Jupiters orbiting M dwarfs
+- mass: N/A
+- radius: Jupiter-sized
+- orbital_period: Short (hot Jupiter class)
+- distance: N/A
+- host_star: M dwarf stars
+- discovery_year: 2026
+- detection_method: Transit (TESS)
+- atmosphere: Under investigation
+- habitable: false
+- description: Three new hot Jupiter planets orbiting M dwarf stars discovered by NASA's TESS mission in 2026, part of a milestone addition of 114 planets to the NASA Exoplanet Archive. These discoveries are notable because hot Jupiters around M dwarfs are relatively rare.
+- source: NASA Exoplanet Archive 2026
+
 ## space_missions
 
 ### James Webb Space Telescope (JWST)
@@ -2029,6 +2094,15 @@ Exoplanet and space exploration knowledge base covering exoplanets, missions, te
 - source: SETI Institute / Astrobiology.com 2024-2026
 - status: active
 
+### TESS 2026 114-Planet Milestone
+
+- name: TESS 2026 114-Planet Milestone
+- type: Mission milestone
+- agency: NASA
+- year: 2026
+- description: In 2026, NASA's TESS mission achieved a major milestone with 114 new planets added to the Exoplanet Archive, including three new hot Jupiters orbiting M dwarfs, WISPIT 2 c, and CWISEP J193518.59-154620.3 b. By this time, TESS had discovered over 7,000 planetary candidates and confirmed 679+ exoplanets since launch.
+- source: NASA Exoplanet Archive 2026
+
 ## space_telescopes
 
 ### Hubble Space Telescope
@@ -2689,6 +2763,36 @@ Exoplanet and space exploration knowledge base covering exoplanets, missions, te
 - significance: 革命性的生命探测方法，从单一行星搜索转向跨行星统计模式匹配，大幅提高发现外星生命的概率
 - source: ScienceDaily April 2026 / Statistical biosignature research
 
+### Enceladus Amino Acid Surface Survival Study
+
+- name: Enceladus Amino Acid Surface Survival Study
+- type: Astrobiology life-detection feasibility study
+- target: Enceladus (Saturn's moon)
+- year: 2025-2026
+- organization: NASA
+- description: NASA experiment demonstrating that amino acids within Enceladus's plumes can withstand spacecraft impacts and radiolysis (breakdown by radiation). Subsurface sampling is not required for detection of amino acids on Enceladus - these molecules will survive just beneath the surface. The study strengthens the case for future life-detection missions to ocean moons.
+- source: NASA 2025-2026, EarthSky
+
+### Enceladus Complex Organic Molecules Discovery
+
+- name: Enceladus Complex Organic Molecules Discovery
+- type: Organic molecule detection
+- target: Enceladus (Saturn's moon)
+- year: 2025
+- organization: NASA/Cassini mission data analysis
+- description: Fresh analysis of Cassini data revealed new complex organic molecules inside ice grains spewing from Enceladus's plumes. NASA also found evidence of a key ingredient for life and a supercharged source of energy to fuel it, strengthening the case for a new mission to orbit and land on Enceladus.
+- source: NASA Cassini data analysis 2025
+
+### Laser Sail Astrobiology Precursor Mission (Enceladus/Europa)
+
+- name: Laser Sail Astrobiology Precursor Mission (Enceladus/Europa)
+- type: Mission concept
+- target: Enceladus and Europa
+- year: 2025-2026
+- organization: Academic research
+- description: Feasibility study for deploying laser sail technology in precursor life-detection missions to Enceladus and Europa. The work assesses the potential of light sail propulsion to enable faster, cheaper missions to icy moons for biosignature detection.
+- source: Academic research 2025-2026
+
 ## space_mining
 
 ### Asteroid Water Extraction
@@ -3147,6 +3251,15 @@ Exoplanet and space exploration knowledge base covering exoplanets, missions, te
 - type: Cryogeology
 - description: New Horizons revealed flowing nitrogen glaciers in Sputnik Planitia
 - findings: Nitrogen ice convection; glacial flow patterns; subsurface ocean suggested by tidal axis orientation
+
+### TESS Radius Valley Disappearance (Gillis et al. 2026)
+
+- name: TESS Radius Valley Disappearance (Gillis et al. 2026)
+- type: Planetary occurrence rate study
+- year: 2026
+- authors: Gillis, Erik Diego; Cloutier, Ryan; Pass, et al.
+- description: TESS planet occurrence rates study revealing the disappearance of the radius valley around mid-to-late M dwarfs. The study found no hot Jupiters in the survey and set an upper limit of 0.012 hot Jupiters per mid-to-late M dwarf within 10 days. This has significant implications for planet formation theories.
+- source: Gillis et al. 2026, NASA Exoplanet Archive
 
 ## space_habitats
 

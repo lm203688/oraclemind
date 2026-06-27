@@ -1,12 +1,694 @@
-# TCMDB - 中药方剂知识引擎
+# TCMDB - 中药方剂知识引擎 - 中药、方剂、疾病、药理
 
-Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships
-
-## herbs
+Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmacology
 
 ## diseases
 
-## Related Knowledge Bases
+### TCMBANKDI000001
 
-- GeneTech (https://genetech.tools): Pharmacogenomics bridges gene therapy with TCM
-- LifeDB (https://life.genetech.tools): Natural compounds in synthetic biology
+- name: Stomach Neoplasms
+- category: diseases
+- description: Stomach Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000002
+
+- name: Hyperalgesia
+- category: diseases
+- description: Hyperalgesia — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000003
+
+- name: Encephalitis
+- category: diseases
+- description: Encephalitis — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000004
+
+- name: Chronic pain
+- category: diseases
+- description: Chronic pain — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000005
+
+- name: Autoimmune Diseases
+- category: diseases
+- description: Autoimmune Diseases — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000006
+
+- name: Nasopharyngeal Neoplasms
+- category: diseases
+- description: Nasopharyngeal Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000007
+
+- name: melanoma
+- category: diseases
+- description: melanoma — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000008
+
+- name: Brain Neoplasms
+- category: diseases
+- description: Brain Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000009
+
+- name: Glioma
+- category: diseases
+- description: Glioma — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000022
+
+- name: Prostatic Neoplasms
+- category: diseases
+- description: Prostatic Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000053
+
+- name: leukemia
+- category: diseases
+- description: leukemia — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000082
+
+- name: Nasopharyngeal carcinoma
+- category: diseases
+- description: Nasopharyngeal carcinoma — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000085
+
+- name: Inflammation
+- category: diseases
+- description: Inflammation — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000086
+
+- name: Colonic Neoplasms
+- category: diseases
+- description: Colonic Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000090
+
+- name: Acute kidney injury
+- category: diseases
+- description: Acute kidney injury — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000047
+
+- name: Neoplasm Metastasis
+- category: diseases
+- description: Neoplasm Metastasis — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000038
+
+- name: Vomiting
+- category: diseases
+- description: Vomiting — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000080
+
+- name: Anemia
+- category: diseases
+- description: Anemia — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000450
+
+- name: Hypertrophic Cardiomyopathy
+- category: diseases
+- description: Hypertrophic Cardiomyopathy — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000019
+
+- name: Parkinson Disease
+- category: diseases
+- description: Parkinson Disease — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000023
+
+- name: Lupus Erythematosus, Systemic
+- category: diseases
+- description: Lupus Erythematosus, Systemic — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000017
+
+- name: Liver Cirrhosis
+- category: diseases
+- description: Liver Cirrhosis — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000018
+
+- name: Pancreatic Neoplasm
+- category: diseases
+- description: Pancreatic Neoplasm — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000026
+
+- name: Obesity
+- category: diseases
+- description: Obesity — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000027
+
+- name: Cardiovascular Diseases
+- category: diseases
+- description: Cardiovascular Diseases — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000031
+
+- name: Insulin Resistance
+- category: diseases
+- description: Insulin Resistance — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000015
+
+- name: Lichen Planus, Oral
+- category: diseases
+- description: Lichen Planus, Oral — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000012
+
+- name: Immunosuppression
+- category: diseases
+- description: Immunosuppression — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000028
+
+- name: Body mass index
+- category: diseases
+- description: Body mass index — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI003326
+
+- name: High density lipoprotein measurement
+- category: diseases
+- description: High density lipoprotein measurement — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI007408
+
+- name: Corpuscular Hemoglobin Concentration Mean
+- category: diseases
+- description: Corpuscular Hemoglobin Concentration Mean — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI007749
+
+- name: Hematocrit procedure
+- category: diseases
+- description: Hematocrit procedure — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI008850
+
+- name: Malignant neoplasm of stomach
+- category: diseases
+- description: Malignant neoplasm of stomach — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000048
+
+- name: Neoplasms
+- category: diseases
+- description: Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### TCMBANKDI000813
+
+- name: CAMPOMELIC DYSPLASIA
+- category: diseases
+- description: CAMPOMELIC DYSPLASIA — TCMBANK收录的疾病/适应症实体
+
+### DISEASE-abc123
+
+- name: 慢性阻塞性肺疾病
+- type: 呼吸系统疾病
+- prevalence: 全球主要公共卫生负担之一
+- genetic_cause: 
+- available_therapies: 中西医结合治疗
+- clinical_trials: 2023年成立共识专家组围绕临床关键问题研究
+- description: 严重危害人类健康，是全球主要公共卫生负担之一，2023年成立共识专家组围绕中西医结合临床关键问题进行研究
+- last_updated: 2026-06-27T15:55:11.625Z
+
+### DISEASE-def456
+
+- name: 类风湿关节炎
+- type: 自身免疫性疾病
+- prevalence: 
+- genetic_cause: 
+- available_therapies: 有毒中药治疗
+- clinical_trials: 有毒中药治疗类风湿关节炎合理应用指南
+- description: 有毒中药治疗类风湿关节炎合理应用指南相关疾病
+- last_updated: 2026-06-27T15:55:11.625Z
+
+### DISEASE-ghi789
+
+- name: 冠心病血瘀证
+- type: 心血管疾病
+- prevalence: 
+- genetic_cause: 
+- available_therapies: 
+- clinical_trials: 国际冠心病血瘀证诊断指南
+- description: 国际冠心病血瘀证诊断指南相关疾病
+- last_updated: 2026-06-27T15:55:11.625Z
+
+### DISEASE-jkl012
+
+- name: 睡眠障碍
+- type: 神经系统疾病
+- prevalence: 
+- genetic_cause: 
+- available_therapies: 
+- clinical_trials: 
+- description: 睡眠相关疾病
+- last_updated: 2026-06-27T15:55:11.625Z
+
+## formulas
+
+### FORMULA-abc123
+
+- name_cn: 红景天方
+- name_en: Rhodiola Formula
+- composition: 红景天
+- indication: 高原反应、疲劳、免疫力低下
+- mechanism: 提高机体抗缺氧能力，增强免疫功能
+- description: 用于缓解高原反应，改善疲劳状态，增强机体抵抗力
+- last_updated: 2026-06-27T15:55:02.954Z
+
+### FORMULA-def456
+
+- name_cn: 川贝母方
+- name_en: Fritillaria Formula
+- composition: 川贝母
+- indication: 咳嗽、痰多、咽喉肿痛
+- mechanism: 清热润肺，化痰止咳
+- description: 用于治疗肺热咳嗽，痰多粘稠，咽喉肿痛等症状
+- last_updated: 2026-06-27T15:55:02.954Z
+
+### FORMULA-ghi789
+
+- name_cn: 人工麝香方
+- name_en: Artificial Musk Formula
+- composition: 人工麝香
+- indication: 胸痹心痛、心绞痛
+- mechanism: 活血化瘀，通络止痛
+- description: 用于治疗胸痹心痛，心绞痛等心血管疾病
+- last_updated: 2026-06-27T15:55:02.954Z
+
+### FORMULA-jkl012
+
+- name_cn: 中药配方颗粒
+- name_en: Chinese Medicine Formula Granules
+- composition: 多种中药提取物
+- indication: 多种疾病治疗
+- mechanism: 根据方剂配伍理论，发挥综合治疗作用
+- description: 现代中药剂型，便于携带和使用，符合传统方剂配伍理论
+- last_updated: 2026-06-27T15:55:02.954Z
+
+### FORMULA-mno345
+
+- name_cn: 中成药
+- name_en: Chinese Patent Medicine
+- composition: 多种中药成分
+- indication: 多种疾病治疗
+- mechanism: 根据经典方剂制成，具有特定治疗作用
+- description: 经国家批准生产的标准化中药制剂，便于临床使用
+- last_updated: 2026-06-27T15:55:02.954Z
+
+## herbs
+
+### TCMBANKHE000001
+
+- name: Turpentine Oil
+- category: herbs
+- description: Turpentine Oil — TCMBANK收录的中药材实体
+
+### TCMBANKHE000022
+
+- name: Echinacea
+- category: herbs
+- description: Echinacea — TCMBANK收录的中药材实体
+
+### TCMBANKHE000298
+
+- name: Leaf of Pendulous Monkshood
+- category: herbs
+- description: Leaf of Pendulous Monkshood — TCMBANK收录的中药材实体
+
+### TCMBANKHE002073
+
+- name: Hemsley Rockvine Root
+- category: herbs
+- description: Hemsley Rockvine Root — TCMBANK收录的中药材实体
+
+### TCMBANKHE002865
+
+- name: Spiceleaf Kernel Oil
+- category: herbs
+- description: Spiceleaf Kernel Oil — TCMBANK收录的中药材实体
+
+### TCMBANKHE000667
+
+- name: Pig Theroid
+- category: herbs
+- description: Pig Theroid — TCMBANK收录的中药材实体
+
+### TCMBANKHE000969
+
+- name: Sea-ear Shell
+- category: herbs
+- description: Sea-ear Shell — TCMBANK收录的中药材实体
+
+### TCMBANKHE000081
+
+- name: Flos Citri grandis
+- category: herbs
+- description: Flos Citri grandis — TCMBANK收录的中药材实体
+
+### TCMBANKHE000105
+
+- name: Et Radix Patriniae Rhizoma
+- category: herbs
+- description: Et Radix Patriniae Rhizoma — TCMBANK收录的中药材实体
+
+### TCMBANKHE009036
+
+- name: leafy twigs of Oriental Arborvitae;CE BAI YE;Chinese Arborvitae Leaf
+- category: herbs
+- description: leafy twigs of Oriental Arborvitae;CE BAI YE;Chinese Arborvitae Leaf — TCMBANK收录的中药材实体
+
+### TCMBANKHE003737
+
+- name: Common Tobacco
+- category: herbs
+- description: Common Tobacco — TCMBANK收录的中药材实体
+
+### TCMBANKHE000005
+
+- name: Spirulina major Kuetz.
+- category: herbs
+- description: Spirulina major Kuetz. — TCMBANK收录的中药材实体
+
+### TCMBANKHE003727
+
+- name: Cabbage
+- category: herbs
+- description: Cabbage — TCMBANK收录的中药材实体
+
+### TCMBANKHE000002
+
+- name: Pomegranate fruit
+- category: herbs
+- description: Pomegranate fruit — TCMBANK收录的中药材实体
+
+### TCMBANKHE003732
+
+- name: Lucid Ganoderma
+- category: herbs
+- description: Lucid Ganoderma — TCMBANK收录的中药材实体
+
+### TCMBANKHE003724
+
+- name: rhizome of Common Turmeric
+- category: herbs
+- description: rhizome of Common Turmeric — TCMBANK收录的中药材实体
+
+### TCMBANKHE003734
+
+- name: root of common htreewingnut
+- category: herbs
+- description: root of common htreewingnut — TCMBANK收录的中药材实体
+
+### TCMBANKHE005001
+
+- name: 雷公藤 (Tripterygium wilfordii)
+- category: herbs
+- latin_name: Tripterygium wilfordii Hook.f.
+- family: Celastraceae (卫矛科)
+- part_used: 根木质部
+- nature_flavor: 苦、辛，寒，有大毒
+- meridian_tropism: 肝、肾经
+- functions: 祛风除湿,活血通络,消肿止痛,杀虫解毒
+- clinical_applications: 类风湿关节炎,系统性红斑狼疮,肾病综合征,银屑病
+- key_compounds: 雷公藤甲素 (Triptolide),雷公藤内酯醇,雷公藤红素
+- modern_research: 2025年ARD发表研究证实雷公藤甲素纳米制剂治疗RA疗效与甲氨蝶呤相当且肝毒性更低
+- toxicity: 生殖毒性、肝毒性、肾毒性，需严格控制剂量
+- dosage: 10-25g/日（去根皮），煎服
+- contraindications: 孕妇禁用,育龄期慎用,肝肾功能不全禁用
+- description: 雷公藤为卫矛科植物，根入药，性苦辛寒有大毒，归肝肾经。功效祛风除湿、活血通络、消肿止痛。现代研究发现其活性成分雷公藤甲素具有显著抗炎免疫抑制作用，被广泛用于自身免疫疾病治疗。2025年纳米脂质体递送技术突破了毒性瓶颈。
+- sources: [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### TCMBANKHE005002
+
+- name: 青蒿 (Artemisia annua)
+- category: herbs
+- latin_name: Artemisia annua L.
+- family: Asteraceae (菊科)
+- part_used: 地上部分
+- nature_flavor: 苦、辛，寒
+- meridian_tropism: 肝、胆经
+- functions: 清透虚热,凉血除蒸,解暑截疟,退虚热
+- clinical_applications: 疟疾,阴虚发热,暑热外感,肿瘤（辅助治疗）
+- key_compounds: 青蒿素 (Artemisinin),双氢青蒿素 (DHA),青蒿琥酯
+- modern_research: 2025年Phytomedicine发表DHA抗肿瘤机制研究，通过TfR1选择性内吞诱导铁死亡
+- dosage: 6-15g/日，煎服（后下）或鲜品绞汁
+- description: 青蒿为菊科一年生草本，地上部分入药。性苦辛寒，归肝胆经。功效清透虚热、凉血除蒸、解暑截疟。其活性成分青蒿素由屠呦呦团队发现并因此获2015年诺贝尔生理学或医学奖。2025年研究发现青蒿素衍生物通过铁死亡机制具有抗肿瘤活性。
+- sources: [object Object],[object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### TCMBANKHE005003
+
+- name: 三七 (Panax notoginseng)
+- category: herbs
+- latin_name: Panax notoginseng (Burk.) F.H.Chen
+- family: Araliaceae (五加科)
+- part_used: 根及根茎
+- nature_flavor: 甘、微苦，温
+- meridian_tropism: 肝、胃经
+- functions: 散瘀止血,消肿定痛
+- clinical_applications: 各种出血证,跌打损伤,胸痹心痛,缺血性脑血管病
+- key_compounds: 三七皂苷R1,人参皂苷Rg1,人参皂苷Rb1,三七素
+- modern_research: 三七总皂苷(PNS)具有抗血小板、改善微循环、心肌保护作用，以岭药业通心络胶囊核心组分之一
+- dosage: 3-9g/日，研粉吞服1-3g
+- description: 三七为五加科人参属植物，以根及根茎入药。主产于云南文山、广西田阳。性甘微苦温，归肝胃经。功效益气活血、散瘀止血、消肿定痛，被誉为'金不换'和'血管清道夫'。其活性成分三七总皂苷具有显著的抗血小板和改善微循环作用，是通心络、血塞通等中成药的核心原料。
+- sources: [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### TCMBANKHE005004
+
+- name: 黄芪 (Astragalus membranaceus)
+- category: herbs
+- latin_name: Astragalus membranaceus (Fisch.) Bunge
+- family: Fabaceae (豆科)
+- part_used: 根
+- nature_flavor: 甘，微温
+- meridian_tropism: 肺、脾经
+- functions: 补气升阳,固表止汗,利水消肿,托毒生肌
+- clinical_applications: 气虚乏力,自汗易感冒,水肿,疮疡久不收口,慢性肾病
+- key_compounds: 黄芪甲苷 (Astragaloside IV),黄芪多糖(APS),异黄酮类
+- modern_research: 黄芪多糖(APS)具有免疫调节和抗肿瘤辅助作用；黄芪甲苷具有心肌保护和抗纤维化活性
+- dosage: 9-30g/日，煎服
+- description: 黄芪为豆科黄耆属植物，以根入药。主产于内蒙古、山西、甘肃。性甘微温，归肺脾经。功效补气升阳、固表止汗、利水消肿、托毒生肌，为补气要药。现代研究表明黄芪多糖和黄芪甲苷具有免疫调节、心肌保护、抗纤维化等多重药理活性。是玉屏风散、补中益气汤等经典名方的核心组成。
+- sources: [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### TCMBANKHE005005
+
+- name: 丹参 (Salvia miltiorrhiza)
+- category: herbs
+- latin_name: Salvia miltiorrhiza Bunge
+- family: Lamiaceae (唇形科)
+- part_used: 根及根茎
+- nature_flavor: 苦，微寒
+- meridian_tropism: 心、心包、肝经
+- functions: 活血祛瘀,通经止痛,清心除烦,凉血消痈
+- clinical_applications: 胸痹心痛（冠心病）,月经不调,疮疡痈肿,失眠
+- key_compounds: 丹参酮IIA (Tanshinone IIA),丹酚酸B (Salvianolic acid B),隐丹参酮
+- modern_research: 丹参酮IIA具有抗炎、抗氧化、抗肿瘤血管生成活性；丹参多酚酸盐已开发为注射用丹参多酚酸盐(上市药物)
+- dosage: 10-15g/日，煎服
+- description: 丹参为唇形科鼠尾草属植物，以根及根茎入药。性苦微寒，归心、心包、肝经。功效活血祛瘀、通经止痛、清心除烦、凉血消痈。'一味丹参散，功同四物汤'，是活血化瘀要药。现代药理证实丹参酮和丹酚酸具有改善心肌缺血、抗血小板、抗炎抗氧化等多重活性。已衍生出复方丹参滴丸、丹参注射液等多个中成药大品种。
+- sources: [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### HERB-a1b2c3
+
+- name_cn: 红景天
+- name_en: Rhodiola
+- name_latin: Rhodiola rosea
+- category: 补益药
+- properties: 甘、涩、寒
+- meridian: 肺、心
+- key_compounds: 红景天苷、rosavin、rosin、rosarin
+- indications: 气虚血瘀、胸痹心痛、中风偏瘫、倦怠气喘
+- description: 高山植物，具有抗缺氧、抗疲劳、抗辐射作用，用于治疗高原反应和心血管疾病
+- last_updated: 2026-06-27T15:54:53.480Z
+
+### HERB-d4e5f6
+
+- name_cn: 川贝母
+- name_en: Fritillary Bulb
+- name_latin: Fritillaria cirrhosa
+- category: 化痰止咳平喘药
+- properties: 苦、甘、微寒
+- meridian: 肺、心
+- key_compounds: 贝母碱、去氢贝母碱
+- indications: 肺热燥咳、干咳少痰、阴虚劳嗽、咯痰带血
+- description: 百合科植物，主治热痰咳嗽，尤宜于燥咳和阴虚咳嗽
+- last_updated: 2026-06-27T15:54:53.480Z
+
+### HERB-g7h8i9
+
+- name_cn: 麝香
+- name_en: Musk
+- name_latin: Moschus berezovskii
+- category: 开窍药
+- properties: 辛、温
+- meridian: 心、脾
+- key_compounds: 麝香酮、麝香吡啶
+- indications: 热病神昏、中风痰厥、气郁暴厥、中恶昏迷
+- description: 珍贵动物药材，具有开窍醒神、活血通经、消肿止痛功效
+- last_updated: 2026-06-27T15:54:53.481Z
+
+### HERB-j0k1l2
+
+- name_cn: 潞党参
+- name_en: Codonopsis Root
+- name_latin: Codonopsis pilosula
+- category: 补气药
+- properties: 甘、平
+- meridian: 脾、肺
+- key_compounds: 党参苷、苍术内酯I、苍术内酯II
+- indications: 脾肺气虚、食少倦怠、咳嗽虚喘、气血两虚
+- description: 参苓白术散君药，具有补中益气、健脾益肺作用，可改善IBS-D情绪状态
+- last_updated: 2026-06-27T15:54:53.481Z
+
+### HERB-m3n4o5
+
+- name_cn: 阿育吠陀草药
+- name_en: Ayurvedic Herbs
+- name_latin: Multiple species
+- category: 传统药物
+- properties:  varies by herb
+- meridian:  varies by herb
+- key_compounds:  varies by herb
+- indications:  varies by herb
+- description: 印度传统医学体系使用的草药，通过量子技术提高生物利用度和靶向性
+- last_updated: 2026-06-27T15:54:53.481Z
+
+## ingredients
+
+### INGREDIENT-a1b2c3
+
+- name: 四季青
+- source_herb: 冬青科植物四季青
+- type: 配方颗粒
+- pharmacology: 清热解毒，凉血止血
+- description: 用于肺热咳嗽，咽喉肿痛，热病烦渴，疮疡肿毒
+- last_updated: 2026-06-27T15:55:23.935Z
+
+### INGREDIENT-d4e5f6
+
+- name: 绵萆薢
+- source_herb: 薯蓣科植物绵萆薢
+- type: 配方颗粒
+- pharmacology: 利湿去浊，祛风除痹
+- description: 用于小便浑浊，淋沥涩痛，风湿痹痛，腰膝酸痛
+- last_updated: 2026-06-27T15:55:23.935Z
+
+### INGREDIENT-g7h8i9
+
+- name: 淫羊藿
+- source_herb: 小檗科植物柔毛淫羊藿
+- type: 配方颗粒
+- pharmacology: 补肾阳，强筋骨，祛风湿
+- description: 用于肾阳虚衰，阳痿遗精，筋骨痿软，风湿痹痛
+- last_updated: 2026-06-27T15:55:23.935Z
+
+### INGREDIENT-j0k1l2
+
+- name: 伸筋草
+- source_herb: 石松科植物石松
+- type: 配方颗粒
+- pharmacology: 祛风除湿，舒筋活络
+- description: 用于关节酸痛，屈伸不利，跌打损伤
+- last_updated: 2026-06-27T15:55:23.935Z
+
+### INGREDIENT-m3n4o5
+
+- name: 中药配方颗粒
+- source_herb: 单味中药饮片
+- type: 现代中药剂型
+- pharmacology: 保持传统中药药效，便于质量控制
+- description: 由单味中药饮片经现代工艺提取制成的颗粒剂，便于临床调配
+- last_updated: 2026-06-27T15:55:23.935Z
+
+### INGREDIENT-p6q7r8
+
+- name: 中药饮片
+- source_herb: 中药材
+- type: 传统中药剂型
+- pharmacology: 根据炮制方法不同而异
+- description: 中药材经过净制、切制、炮制等加工制成的药材，是中医临床用药的基础
+- last_updated: 2026-06-27T15:55:23.935Z
+
+### INGREDIENT-s9t0u1
+
+- name: 中成药
+- source_herb: 中药复方或单味药
+- type: 现代中药制剂
+- pharmacology: 根据处方组成而定
+- description: 以中药材为原料，按照规定的处方和工艺制成的制剂，如丸剂、片剂、胶囊剂等
+- last_updated: 2026-06-27T15:55:23.935Z
+
+### INGREDIENT-v2w3x4
+
+- name: 中药工业
+- source_herb: 中药材资源
+- type: 产业领域
+- pharmacology: 现代化生产技术
+- description: 指中药材种植、加工、制剂生产的产业体系，是中医药现代化发展的重要支撑
+- last_updated: 2026-06-27T15:55:23.935Z
+
+## pharmacology
+
+### PHARMACOLOGY-abc123
+
+- name: 参苓白术散
+- mechanism: 改善腹泻型肠易激综合征（IBS-D）大鼠情绪状态
+- evidence_level: 实验研究
+- description: 以潞党参为君药，评价其药理学效应及潜在作用机制
+- last_updated: 2026-06-27T15:55:32.849Z
+
+### PHARMACOLOGY-def456
+
+- name: 中药新药研究
+- mechanism: 促进中药现代化
+- evidence_level: 专业刊物报道
+- description: 全面报道中药新药研究与开发，宣传国内外中药新药及临床药理研究成果
+- last_updated: 2026-06-27T15:55:32.849Z
+
+### PHARMACOLOGY-ghi789
+
+- name: 医院中药饮片管理
+- mechanism: 规范中药饮片使用
+- evidence_level: 官方规范
+- description: 《医院中药饮片管理规范（2026版）》由国家中医药局和国家卫生健康委联合印发
+- last_updated: 2026-06-27T15:55:32.849Z
+
+### PHARMACOLOGY-jkl012
+
+- name: 中药企业东南亚市场战略
+- mechanism: 基于博弈论的市场适配
+- evidence_level: 学术研究
+- description: 研究中药企业在东南亚市场的战略适配机制
+- last_updated: 2026-06-27T15:55:32.849Z
+
+### PHARMACOLOGY-mno345
+
+- name: 医药领域补交实验数据
+- mechanism: 行政和司法审理考量
+- evidence_level: 学术分析
+- description: 基于行政和司法视角分析医药领域补交实验数据的审理与考量
+- last_updated: 2026-06-27T15:55:32.849Z
+

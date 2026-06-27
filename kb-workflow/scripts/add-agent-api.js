@@ -3,8 +3,8 @@ const path = require('path');
 const BASE = '/home/z/my-project';
 
 const SITES = [
-  { dir: 'genetech-tools', domain: 'genetech.tools', name: 'GeneTech Tools', nameZh: '基因技术知识引擎', desc: 'Comprehensive gene technology knowledge base covering genes, diseases, therapies, and CRISPR applications', categories: ['genes', 'diseases', 'gene_therapies', 'crispr_applications'] },
-  { dir: 'tcm-tools', domain: 'tcm.genetech.tools', name: 'TCMDB', nameZh: '中药方剂知识引擎', desc: 'Traditional Chinese Medicine knowledge base with herbs, diseases, and herb-disease relationships', categories: ['herbs', 'diseases'] },
+  { dir: 'genetech-tools', domain: 'genetech.tools', name: 'GeneTech Tools', nameZh: '基因技术知识引擎', desc: 'Comprehensive gene technology knowledge base covering genes, diseases, therapies, CRISPR applications, genomic diagnostics, gene delivery, gene editing tools, biotech companies, and regenerative medicine', categories: ['genes', 'diseases', 'gene_therapies', 'crispr_applications', 'genomic_diagnostics', 'gene_delivery', 'gene_editing_tools', 'biotech_companies', 'regenerative_medicine'] },
+  { dir: 'tcm-tools', domain: 'tcm.genetech.tools', name: 'TCMDB', nameZh: '中药方剂知识引擎', desc: 'Traditional Chinese Medicine knowledge base with herbs, diseases, innovative drugs, pharmacology research, and clinical/market data', categories: ['herbs', 'diseases', 'tcm_innovative_drugs', 'tcm_herb_research', 'tcm_clinical_market'] },
   { dir: 'agent-ecosystem', domain: 'agent.genetech.tools', name: 'Agent Ecosystem DB', nameZh: 'AI Agent生态知识引擎', desc: 'AI Agent ecosystem database covering MCP servers, SDKs, protocols, memory systems, and benchmarks', categories: ['mcp_servers', 'agent_sdks', 'protocols', 'memory_systems', 'model_apis', 'vector_dbs', 'benchmarks', 'sdks'] },
   { dir: 'robot-parts', domain: 'robot.genetech.tools', name: 'RobotParts DB', nameZh: '机器人配件协议库', desc: 'Robot parts and protocols database covering actuators, chips, interfaces, LLMs, and communication protocols', categories: ['actuators', 'chips', 'interfaces', 'llms', 'protocols'] },
   { dir: 'quantum-computing', domain: 'quantum.genetech.tools', name: 'QuantumDB', nameZh: '量子计算知识引擎', desc: 'Quantum computing knowledge base covering processors, algorithms, error correction, quantum software, and quantum networking', categories: ['processors', 'algorithms', 'error_correction', 'quantum_software', 'quantum_networking'] },
@@ -15,6 +15,8 @@ const SITES = [
   { dir: 'deep-sea-tech', domain: 'deepsea.genetech.tools', name: 'DeepSeaDB', nameZh: '深海科技知识引擎', desc: 'Deep sea technology knowledge base covering submersibles, resources, ecology, underwater communication, ocean energy, marine biology, ocean exploration, and underwater tech', categories: ['submersibles', 'deep_sea_resources', 'deep_sea_ecology', 'underwater_communication', 'ocean_energy', 'marine_biology', 'ocean_exploration', 'underwater_tech'] },
   { dir: 'new-energy', domain: 'energy.genetech.tools', name: 'EnergyDB', nameZh: '新能源知识引擎', desc: 'Renewable energy knowledge base covering solar, storage, hydrogen, wind, grid technology, and clean energy', categories: ['solar', 'storage', 'hydrogen_energy', 'wind_energy', 'grid_tech', 'solar_tech', 'energy_storage', 'nuclear_renewable'] },
   { dir: 'life-science', domain: 'life.genetech.tools', name: 'LifeDB', nameZh: '生命科学知识引擎', desc: 'Life science knowledge base covering synthetic biology, longevity tech, cell therapy, bioinformatics, and biomanufacturing', categories: ['synthetic_biology', 'longevity', 'cell_therapy', 'bioinformatics', 'biomanufacturing', 'synbio', 'longevity_tech', 'biotech_tools', 'regenerative_medicine', 'bioethics'] },
+  { dir: 'biocomputing', domain: 'biocompute.genetech.tools', name: 'BioComputeDB', nameZh: '生物计算机技术知识引擎', desc: 'Biological computing knowledge base covering DNA computing, organoid intelligence, gene circuits, biochips, neuromorphic computing, and biocomputing platforms', categories: ['biocomputing', 'platforms'] },
+  { dir: 'bionic-ai', domain: 'bionic.genetech.tools', name: 'BionicAI DB', nameZh: 'AI仿生技术知识引擎', desc: 'AI bionic technology knowledge base covering neuromorphic computing, bionic sensors, bionic robotics, bionic materials, bionic algorithms, bionic energy, and bionic interfaces', categories: ['bionic_tech', 'bionic_companies', 'bionic_applications'] },
 ];
 
 const RELATED_MAP = {
@@ -72,6 +74,23 @@ const RELATED_MAP = {
     { domain: 'genetech.tools', name: 'GeneTech', relation: 'Gene editing enables synthetic biology' },
     { domain: 'tcm.genetech.tools', name: 'TCMDB', relation: 'Natural compounds in synthetic biology' },
     { domain: 'energy.genetech.tools', name: 'EnergyDB', relation: 'Biofuels and bioenergy' },
+    { domain: 'biocompute.genetech.tools', name: 'BioComputeDB', relation: 'Synthetic biology gene circuits for biocomputing' },
+  ],
+  'biocompute.genetech.tools': [
+    { domain: 'life.genetech.tools', name: 'LifeDB', relation: 'Synthetic biology gene circuits' },
+    { domain: 'brain.genetech.tools', name: 'BrainDB', relation: 'Organoid intelligence and neuroscience' },
+    { domain: 'genetech.tools', name: 'GeneTech', relation: 'CRISPR gene circuit computing' },
+    { domain: 'quantum.genetech.tools', name: 'QuantumDB', relation: 'Bio-quantum computing intersection' },
+    { domain: 'agent.genetech.tools', name: 'Agent Ecosystem DB', relation: 'Bio-inspired AI agents' },
+    { domain: 'bionic.genetech.tools', name: 'BionicAI DB', relation: 'Neuromorphic computing intersection' },
+  ],
+  'bionic.genetech.tools': [
+    { domain: 'biocompute.genetech.tools', name: 'BioComputeDB', relation: 'Neuromorphic and bio-computing overlap' },
+    { domain: 'brain.genetech.tools', name: 'BrainDB', relation: 'Brain-inspired computing architecture' },
+    { domain: 'robot.genetech.tools', name: 'RobotParts DB', relation: 'Bionic robot components' },
+    { domain: 'agent.genetech.tools', name: 'Agent Ecosystem DB', relation: 'Swarm intelligence for agent coordination' },
+    { domain: 'energy.genetech.tools', name: 'EnergyDB', relation: 'Bionic energy harvesting' },
+    { domain: 'life.genetech.tools', name: 'LifeDB', relation: 'Biomimetic materials and synthetic biology' },
   ],
 };
 

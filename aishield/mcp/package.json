@@ -1,47 +1,47 @@
 {
-  "name": "aishield-mcp",
-  "version": "2.1.0",
-  "description": "AIShield MCP Server - Scan AI tools (MCP/Skill/GPT) for security risks via Model Context Protocol. Agent-native security scanner.",
-  "main": "server.py",
-  "type": "mcp-server",
+  "name": "@aishield/mcp-server",
+  "version": "1.0.0",
+  "description": "AIShield MCP Server \u2014 AI compliance tools + Agent security scanning via Model Context Protocol",
+  "main": "dist/index.js",
   "bin": {
-    "aishield-mcp": "index.js"
+    "aishield-mcp-server": "dist/index.js"
   },
   "scripts": {
-    "start": "node index.js",
-    "start:py": "python3 server.py",
-    "start:remote": "AISHIELD_REMOTE=1 python3 server.py"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
   },
   "keywords": [
     "mcp",
-    "mcp-server",
-    "security",
-    "ai-safety",
-    "ai-security",
-    "tool-scanner",
-    "prompt-injection",
-    "agent-security",
     "model-context-protocol",
-    "claude",
-    "cursor"
+    "atex",
+    "ai",
+    "knowledge-engine",
+    "compliance",
+    "tts",
+    "asr",
+    "vlm",
+    "image-generation",
+    "video-generation",
+    "gene-tech",
+    "tcm",
+    "quantum",
+    "robotics",
+    "deep-sea",
+    "exo-science"
   ],
-  "author": "AIShield <contact@aishield.ai>",
+  "author": "ATEX AI",
   "license": "MIT",
-  "homepage": "https://aishield.ai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aishield-ai/aishield"
+    "url": "https://github.com/lm203688/atex-mcp-server"
   },
-  "bugs": {
-    "url": "https://github.com/aishield-ai/aishield/issues"
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
   },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "files": [
-    "index.js",
-    "server.py",
-    "scanner/",
-    "README.md"
-  ]
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
 }

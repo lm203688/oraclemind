@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-20",
+  "day": "Saturday",
+  "executor": "xiaowu-agent (LLM extraction) + Eve (orchestration & QA)",
+  "domains": ["new-energy", "life-science", "agent-ecosystem"],
+  "new_entities": {
+    "new-energy": {
+      "solar": {"before": 119, "after": 131, "added": 12, "note": "multiple runs including earlier test"},
+      "storage": {"before": 96, "after": 107, "added": 11},
+      "hydrogen": {"before": 77, "after": 90, "added": 13},
+      "wind": {"before": 63, "after": 70, "added": 7},
+      "grid": {"before": 66, "after": 76, "added": 10}
+    },
+    "life-science": {
+      "synbio": {"before": 97, "after": 104, "added": 7},
+      "cell_therapy": {"before": 78, "after": 86, "added": 8},
+      "longevity": {"before": 107, "after": 112, "added": 5},
+      "bioinformatics": {"before": 70, "after": 75, "added": 5},
+      "biomanufacturing": {"before": 79, "after": 84, "added": 5}
+    },
+    "agent-ecosystem": {
+      "mcp_servers": {"before": 163, "after": 171, "added": 8},
+      "sdks": {"before": 94, "after": 98, "added": 4},
+      "protocols": {"before": 66, "after": 72, "added": 6},
+      "vector_dbs": {"before": 35, "after": 37, "added": 2},
+      "memory_systems": {"before": 23, "after": 25, "added": 2},
+      "benchmarks": {"before": 8, "after": 10, "added": 2}
+    }
+  },
+  "totals": {
+    "new_energy": 53,
+    "life_science": 30,
+    "agent_ecosystem": 24
+  },
+  "total_new": 107,
+  "infrastructure": {
+    "entity_pages_generated": 4075,
+    "api_endpoints_updated": 12,
+    "knowledge_graph_nodes": 4075
+  },
+  "workflow": {
+    "search": "z-ai CLI web_search (32 searches, 8 results each)",
+    "extraction": "xiaowu-agent API (http://150.158.119.19:3003/v1, model: xiaowu-agent)",
+    "savings": "LLM extraction delegated to xiaowu, saving z-ai/GLM tokens"
+  }
+}

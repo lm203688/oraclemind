@@ -1,0 +1,19 @@
+{
+  "sites": [
+    {
+      "domain": "life.genetech.tools",
+      "entities": 511,
+      "llms_kb": 8,
+      "faqs": 3,
+      "indexnow_ok": 21,
+      "indexnow_fail": 0,
+      "bing_ping": "410"
+    }
+  ],
+  "total_llms_kb": 8,
+  "total_entities": 511,
+  "total_faqs": 3,
+  "total_submits": 21,
+  "date": "2026-06-20",
+  "executor": "xiaowu (FAQ generation) + scripts (rebuild + submit)"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "BioComputeDB",
+  "name_for_model": "biocomputedb",
+  "description_for_human": "Biological computing knowledge base covering DNA computing, organoid intelligence, gene circuits, biochips, neuromorphic computing, and biocomputing platforms",
+  "description_for_model": "Biological computing knowledge base covering DNA computing, organoid intelligence, gene circuits, biochips, neuromorphic computing, and biocomputing platforms. Provides structured data via JSON API at /api/data.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://biocompute.genetech.tools/api/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://biocompute.genetech.tools/"
+}

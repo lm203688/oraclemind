@@ -122,6 +122,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .ad-slot{background:var(--bg3);border:1px dashed var(--border);border-radius:12px;padding:20px;text-align:center;color:var(--text2);font-size:12px;margin:20px 0}
 /* Responsive */
 @media(max-width:768px){.hero h1{font-size:28px}.nav-links{display:none}.card-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.search-tool h2{font-size:22px}}
+@media(max-width:768px){div[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .fade-in{animation:fadeIn .3s ease-out}
 /* Tab pills for mobile */
@@ -166,18 +167,20 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   <div class="nav-inner">
     <a href="#" class="nav-logo" onclick="showPage('home')">🧬 <span>GeneTech Tools</span></a>
     <div class="nav-links">
+      <!-- 板块①: 知识库 -->
       <a href="#" onclick="showPage('home')" class="active" data-page="home">首页</a>
       <a href="#" onclick="showPage('search')" data-page="search">基因搜索</a>
       <a href="#" onclick="showPage('daily')" data-page="daily">每日情报</a>
-      <a href="#" onclick="showPage('therapies')" data-page="therapies">基因疗法</a>
+      <a href="#" onclick="showPage('therapies')" data-page="therapies">疗法</a>
       <a href="#" onclick="showPage('crispr')" data-page="crispr">CRISPR</a>
       <a href="#" onclick="showPage('data')" data-page="data">知识库</a>
       <a href="knowledge-graph.html" style="color:#8b5cf6">图谱</a>
-      <a href="intelligence.html" style="color:#06b6d4">分析</a>
-      <a href="outlook.html" style="color:#f59e0b">预测</a>
-      <a href="banned-words" style="color:#ff6b6b;font-weight:600" target="_blank">🛡️ 违禁词检测</a>
-      <a href="http://150.158.119.19:8420" style="color:#8b5cf6;font-weight:600" target="_blank">🤖 AI工具</a>
-      <a href="credits.html" style="color:#f59e0b;font-weight:600">💎 Pro</a>
+      <span style="width:1px;height:20px;background:var(--border);margin:0 4px"></span>
+      <!-- 板块②: AI工具 -->
+      <a href="banned-words" style="color:#ff6b6b" target="_blank">🛡️ 违禁词</a>
+      <span style="width:1px;height:20px;background:var(--border);margin:0 4px"></span>
+      <!-- 板块③: 变现 -->
+      <a href="credits.html" style="color:#f59e0b;font-weight:700">💎 Pro</a>
     </div>
   </div>
 </nav>
@@ -201,11 +204,50 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
       <input type="text" id="heroSearch" placeholder="输入基因名搜索，如 PD-L1、VEGF、RPE65..." onkeydown="if(event.key==='Enter'){showPage('search');document.getElementById('geneInput').value=this.value;searchGene()}">
     </div>
   </div>
+
+  <!-- 三大板块入口 -->
+  <div style="max-width:1200px;margin:0 auto 30px;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+    <!-- 板块① 知识库 -->
+    <div style="background:var(--bg2);border:2px solid var(--accent);border-radius:16px;padding:20px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;right:0;background:var(--accent);color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:0 0 0 8px">板块①</div>
+      <div style="font-size:28px;margin-bottom:8px">🧬</div>
+      <div style="font-size:16px;font-weight:700;color:var(--accent);margin-bottom:4px">知识库</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:12px" id="kb-stats">加载中...</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <a href="#" onclick="showPage('search')" style="font-size:11px;padding:4px 10px;background:rgba(6,182,212,0.15);color:var(--accent);border-radius:8px;text-decoration:none">基因搜索</a>
+        <a href="#" onclick="showPage('daily')" style="font-size:11px;padding:4px 10px;background:rgba(6,182,212,0.15);color:var(--accent);border-radius:8px;text-decoration:none">每日情报</a>
+        <a href="#" onclick="showPage('data')" style="font-size:11px;padding:4px 10px;background:rgba(6,182,212,0.15);color:var(--accent);border-radius:8px;text-decoration:none">完整数据库</a>
+      </div>
+    </div>
+    <!-- 板块③ Pro变现 -->
+    <div style="background:var(--bg2);border:2px solid var(--yellow);border-radius:16px;padding:20px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;right:0;background:var(--yellow);color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:0 0 0 8px">板块③</div>
+      <div style="font-size:28px;margin-bottom:8px">💎</div>
+      <div style="font-size:16px;font-weight:700;color:var(--yellow);margin-bottom:4px">Pro 订阅</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:12px">完整数据库 · API访问 · MCP Server · 定制报告 · 从$19/月</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <a href="credits.html" style="font-size:11px;padding:4px 10px;background:rgba(245,158,11,0.15);color:var(--yellow);border-radius:8px;text-decoration:none">💎 查看定价</a>
+        <a href="order.html" style="font-size:11px;padding:4px 10px;background:rgba(245,158,11,0.15);color:var(--yellow);border-radius:8px;text-decoration:none">🛒 立即订购</a>
+        <a href="/api/openapi.json" target="_blank" style="font-size:11px;padding:4px 10px;background:rgba(245,158,11,0.15);color:var(--yellow);border-radius:8px;text-decoration:none">🔌 API文档</a>
+      </div>
+    </div>
+  </div>
+
   <div class="stats" id="statsContainer"></div>
   <div class="section">
     <div class="section-header"><h2><span class="icon">🔥</span> 最新动态</h2></div>
     <div id="homeNews"></div>
-    <button onclick="showReport()" style="padding:10px 20px;background:transparent;border:1px solid var(--accent2);color:var(--accent2);border-radius:8px;cursor:pointer;font-size:13px;margin-top:8px">📋 Custom Gene Therapy Report — $199</button>
+  </div>
+
+  <!-- 场景化CTA: 知识库→AI工具 -->
+  <div style="max-width:1200px;margin:0 auto 30px;padding:0 20px">
+    <div style="background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1px solid var(--border);border-radius:16px;padding:24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:250px">
+        <div style="font-size:15px;font-weight:700;margin-bottom:6px">💡 用AI分析这些基因数据</div>
+        <div style="font-size:13px;color:var(--text2)">用AI对话深度分析知识库数据，生成结构化洞察</div>
+      </div>
+      
+    </div>
   </div>
 </div>
 
@@ -316,6 +358,16 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
     <div class="section-header"><h2><span class="icon">✂️</span> CRISPR 基因编辑</h2></div>
     <div class="card-grid" id="crisprGrid"></div>
   </div>
+  <!-- Pro CTA -->
+  <div style="max-width:1200px;margin:0 auto 30px;padding:0 20px">
+    <div style="background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(249,115,22,0.1));border:1px solid rgba(245,158,11,0.3);border-radius:16px;padding:24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:250px">
+        <div style="font-size:15px;font-weight:700;margin-bottom:6px;color:var(--yellow)">💎 获取250+ CRISPR临床试验完整报告</div>
+        <div style="font-size:13px;color:var(--text2)">Pro版包含所有临床试验的详细数据、关键发现、公司信息、争议记录。支持API导出和MCP Server调用。</div>
+      </div>
+      <a href="credits.html" style="padding:12px 24px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:#000;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap">💎 升级Pro →</a>
+    </div>
+  </div>
 </div>
 
 <!-- DATA/KNOWLEDGE BASE PAGE -->
@@ -371,6 +423,37 @@ const statItems = [
 statsEl.innerHTML = statItems.map(s => `<div class="stat-card fade-in"><div class="stat-num">${s.icon} ${s.num}</div><div class="stat-label">${s.label}</div></div>`).join('');
 document.getElementById('updateDate').textContent = new Date(DB.updated).toLocaleDateString('zh-CN');
 
+// Dynamic KB stats (from data.js, not hardcoded)
+const _totalEntities = (DB.stats.genes||0) + (DB.stats.diseases||0) + (DB.stats.therapies||0) + (DB.stats.crispr||0);
+const _kbStats = document.getElementById('kb-stats');
+if (_kbStats) {
+  _kbStats.textContent = `${_totalEntities}实体 · ${DB.stats.genes||0}基因 · ${DB.stats.diseases||0}疾病 · ${DB.stats.therapies||0}疗法 · ${DB.stats.crispr||0} CRISPR应用`;
+}
+
+// showReport: Custom Gene Therapy Report ordering
+function showReport() {
+  showModal(`
+    <h3>📋 Custom Gene Therapy Report</h3>
+    <div style="color:var(--text2);font-size:13px;margin-bottom:16px">定制基因疗法报告 — $199</div>
+    <div class="modal-section">
+      <h4>报告包含</h4>
+      <ul style="margin:8px 0;padding-left:20px;color:var(--text2);font-size:13px;line-height:1.8">
+        <li>目标基因的完整疾病关联分析</li>
+        <li>所有相关疗法的临床试验数据</li>
+        <li>CRISPR应用前景评估</li>
+        <li>争议记录与风险评估</li>
+        <li>最新论文摘要汇编</li>
+        <li>PDF + Excel双格式交付</li>
+      </ul>
+    </div>
+    <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+      <a href="order.html?product=custom-report" style="padding:12px 24px;background:linear-gradient(135deg,var(--accent2),#7c3aed);color:#fff;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none">🛒 立即订购 $199</a>
+      <a href="credits.html" style="padding:12px 24px;background:transparent;border:1px solid var(--border);color:var(--text);border-radius:10px;font-size:14px;text-decoration:none">查看其他套餐</a>
+    </div>
+    <div style="margin-top:12px;font-size:12px;color:var(--text2)">报告将在3个工作日内交付。如有疑问请联系 contact@aishield.tools</div>
+  `);
+}
+
 // Stage labels
 const stageLabels = {approved:'已批准',phase_iii:'III期临床',phase_ii:'II期临床',phase_i:'I期临床',preclinical:'临床前',unknown:'未知'};
 function stageTag(stage) {
@@ -422,8 +505,56 @@ function searchGene() {
       ${g.crispr.length ? `<div class="gene-section"><h4>CRISPR应用</h4><div class="gene-list">${g.crispr.map(c => `<span class="gene-chip crispr">${c}</span>`).join('')}</div></div>` : ''}
       ${relTherapies.length ? `<div class="gene-section"><h4>疗法详情</h4>${relTherapies.map(t => `<div class="finding-item"><strong>${(t.therapy_types||[]).join(', ').replace(/_/g,' ')}</strong> · ${stageTag(t.development_stage)}<br>${(t.target_diseases||[]).slice(0,3).join(', ')}<br><span style="font-size:12px;color:var(--text2)">${(t.key_findings||[])[0]||''}</span></div>`).join('')}</div>` : ''}
       ${relCrispr.length ? `<div class="gene-section"><h4>CRISPR详情</h4>${relCrispr.map(c => `<div class="finding-item"><strong>${c.editing_type||'CRISPR'}</strong> · ${stageTag(c.development_stage)}<br>${(c.target_diseases||[]).join(', ')}<br><span style="font-size:12px;color:var(--text2)">${(c.key_findings||[])[0]||''}</span></div>`).join('')}</div>` : ''}
+      <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">
+        <button onclick="aiAnalyzeGene('${g.symbol}')" style="padding:10px 20px;background:linear-gradient(135deg,var(--accent2),#7c3aed);color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:13px;font-weight:600">🤖 AI深度分析 ${g.symbol} →</button>
+        <div id="ai-result-${g.symbol}" style="margin-top:12px"></div>
+      </div>
     </div>`;
   }).join('');
+}
+
+// AI Analysis (local fallback)
+function aiAnalyzeGene(symbol) {
+  const resultEl = document.getElementById('ai-result-' + symbol);
+  if (!resultEl) return;
+  resultEl.innerHTML = '<div style="padding:16px;background:var(--bg2);border-radius:10px;color:var(--text2);font-size:13px">⏳ AI分析中，请稍候...</div>';
+  
+  const gene = DB.genes.find(g => g.symbol === symbol);
+  if (!gene) { resultEl.innerHTML = '<p style="color:#ef4444">未找到基因数据</p>'; return; }
+  
+  const diseases = (gene.diseases||[]).slice(0, 5).join(', ');
+  const therapies = (gene.therapies||[]).join(', ');
+  const prompt = `你是基因技术专家。请分析基因${symbol}：\n1. 功能概述\n2. 关联疾病：${diseases}\n3. 相关疗法：${therapies}\n4. CRISPR应用前景\n5. 研发建议\n请用中文回答，简洁专业。`;
+  
+  fetch('/api/v1/ai-analysis' /* ATEX moved to aishield.tools */, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      service_id: 'svc_022',
+      params: { message: prompt, model: 'deepseek-chat' }
+    })
+  })
+  .then(r => r.json())
+  .then(data => {
+    if (data.ok) {
+      const text = data.result?.data?.text || data.result?.text || JSON.stringify(data.result);
+      resultEl.innerHTML = `<div style="padding:16px;background:var(--bg2);border:1px solid var(--accent2);border-radius:10px;font-size:13px;line-height:1.8;white-space:pre-wrap">${text}</div>`;
+    } else {
+      // Fallback: show basic analysis from local data
+      resultEl.innerHTML = `<div style="padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;font-size:13px;line-height:1.8">
+        <p><strong>🧬 ${symbol}</strong> — 基于本地知识库分析</p>
+        <p style="margin-top:8px"><strong>关联疾病 (${gene.diseases.length}):</strong> ${diseases || '暂无'}</p>
+        <p style="margin-top:8px"><strong>相关疗法:</strong> ${therapies || '暂无'}</p>
+        <p style="margin-top:8px;color:var(--text2)">⚠️ AI服务暂时不可用，以上为本地数据分析。。</p>
+      </div>`;
+    }
+  })
+  .catch(err => {
+    resultEl.innerHTML = `<div style="padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;font-size:13px">
+      <p style="color:var(--text2)">⚠️ AI分析服务连接失败。本地数据显示 ${symbol} 关联 ${gene.diseases.length} 个疾病。</p>
+      
+    </div>`;
+  });
 }
 
 // ===== DAILY INTELLIGENCE =====
@@ -724,5 +855,91 @@ function showControversy(id) {
 </div>
 
 <script src="/anti-scrape.js"></script>
+
+
+
+
+v>
+
+
+
+
+<!-- Knowledge Engine Ecosystem Navigation -->
+<div id="kb-ecosystem-nav" style="position:fixed;bottom:0;left:0;right:0;background:#0a0e17;border-top:1px solid #1e2d4a;padding:8px 16px;z-index:9998;display:flex;gap:6px;overflow-x:auto;align-items:center;font-size:12px;font-family:system-ui,sans-serif">
+<span style="color:#64748b;white-space:nowrap;font-weight:600">🔗 知识引擎生态:</span>
+<a href="https://genetech.tools" target="_blank" title="基因技术" style="border-color:#06b6d4;background:#06b6d420">🧬 基因技术</a>
+<a href="https://tcm.genetech.tools" target="_blank" title="中医药">🌿 中医药</a>
+<a href="https://agent.genetech.tools" target="_blank" title="Agent生态">🤖 Agent生态</a>
+<a href="https://robot.genetech.tools" target="_blank" title="机器人">⚙️ 机器人</a>
+<a href="https://quantum.genetech.tools" target="_blank" title="量子计算">⚛️ 量子计算</a>
+<a href="https://brain.genetech.tools" target="_blank" title="脑科学">🧠 脑科学</a>
+<a href="https://nuclear.genetech.tools" target="_blank" title="核能">☢️ 核能</a>
+<a href="https://exo.genetech.tools" target="_blank" title="地外科学">🪐 地外科学</a>
+<a href="https://mineral.genetech.tools" target="_blank" title="外星矿物">💎 外星矿物</a>
+<a href="https://deepsea.genetech.tools" target="_blank" title="深海科技">🌊 深海科技</a>
+<a href="https://energy.genetech.tools" target="_blank" title="新能源">⚡ 新能源</a>
+<a href="https://life.genetech.tools" target="_blank" title="生命科学">🔬 生命科学</a>
+<a href="https://aishield.tools" target="_blank" title="ATEX Agent工具平台" style="border-color:#8b5cf6;background:#8b5cf620">🛡️ AIShield</a>
+<a href="/credits.html" style="border-color:#f59e0b;background:#f59e0b20;white-space:nowrap">💎 升级Pro</a>
+</div>
+
+
+<!-- Ecosystem Footer -->
+<div style="background:#0d1117;border-top:2px solid #1e2d4a;padding:24px;margin-top:40px">
+<div style="max-width:1200px;margin:0 auto">
+<div style="text-align:center;margin-bottom:16px">
+<span style="color:#94a3b8;font-size:14px">🔗 前沿科技知识引擎生态 — 12站联动，数据互通</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:16px">
+  <a href="https://genetech.tools" target="_blank" style="color:#06b6d4;font-weight:700">🧬 基因技术</a>
+  <a href="https://tcm.genetech.tools" target="_blank">🌿 中医药</a>
+  <a href="https://agent.genetech.tools" target="_blank">🤖 Agent生态</a>
+  <a href="https://robot.genetech.tools" target="_blank">⚙️ 机器人</a>
+  <a href="https://quantum.genetech.tools" target="_blank">⚛️ 量子计算</a>
+  <a href="https://brain.genetech.tools" target="_blank">🧠 脑科学</a>
+  <a href="https://nuclear.genetech.tools" target="_blank">☢️ 核能</a>
+  <a href="https://exo.genetech.tools" target="_blank">🪐 地外科学</a>
+  <a href="https://mineral.genetech.tools" target="_blank">💎 外星矿物</a>
+  <a href="https://deepsea.genetech.tools" target="_blank">🌊 深海科技</a>
+  <a href="https://energy.genetech.tools" target="_blank">⚡ 新能源</a>
+  <a href="https://life.genetech.tools" target="_blank">🔬 生命科学</a>
+</div>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+<a href="https://aishield.tools" target="_blank" style="color:#8b5cf6">🤖 AIShield AI安全平台</a>
+<a href="/credits.html" style="color:#f59e0b">💎 Pro订阅 / 数据下载</a>
+<a href="/agent-discovery.json" style="color:#06b6d4">🔌 Agent可读接口</a>
+</div>
+</div>
+</div>
+
+
+<!-- Contextual Cross-Site Recommendations -->
+<div style="max-width:1200px;margin:40px auto;padding:0 20px">
+<div style="background:linear-gradient(135deg,#0d1117,#111827);border:1px solid #1e2d4a;border-radius:16px;padding:24px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+<span style="font-size:1.4rem">🔗</span>
+<span style="font-size:1.1rem;font-weight:700;color:#e2e8f0">跨域知识推荐</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin-bottom:16px">在🧬 基因技术之外，以下知识引擎与当前领域有交叉研究：</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+  <a href="https://life.genetech.tools" target="_blank" style="display:block;background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:16px;text-decoration:none;color:inherit;transition:all .3s;flex:1;min-width:200px" onmouseover="this.style.borderColor='#10b981'" onmouseout="this.style.borderColor='#1e2d4a'">
+<div style="font-size:1.5rem;margin-bottom:4px">🔬</div>
+<div style="font-weight:700;color:#10b981;margin-bottom:4px">生命科学</div>
+<div style="font-size:.8rem;color:#94a3b8">CRISPR工具 → 细胞治疗和衰老逆转</div>
+</a>
+  <a href="https://brain.genetech.tools" target="_blank" style="display:block;background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:16px;text-decoration:none;color:inherit;transition:all .3s;flex:1;min-width:200px" onmouseover="this.style.borderColor='#ec4899'" onmouseout="this.style.borderColor='#1e2d4a'">
+<div style="font-size:1.5rem;margin-bottom:4px">🧠</div>
+<div style="font-weight:700;color:#ec4899;margin-bottom:4px">脑科学</div>
+<div style="font-size:.8rem;color:#94a3b8">基因治疗 → 神经疾病基因疗法</div>
+</a>
+  <a href="https://tcm.genetech.tools" target="_blank" style="display:block;background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:16px;text-decoration:none;color:inherit;transition:all .3s;flex:1;min-width:200px" onmouseover="this.style.borderColor='#22c55e'" onmouseout="this.style.borderColor='#1e2d4a'">
+<div style="font-size:1.5rem;margin-bottom:4px">🌿</div>
+<div style="font-weight:700;color:#22c55e;margin-bottom:4px">中医药</div>
+<div style="font-size:.8rem;color:#94a3b8">药物基因组学 → 中药个性化</div>
+</a>
+</div>
+</div>
+</div>
+
 </body>
 </html>

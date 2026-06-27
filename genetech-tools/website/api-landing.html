@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GeneTech API — 12个前沿科技知识库 · 4000+结构化实体 · 免费REST API</title>
+<meta name="description" content="12个前沿科技领域的结构化知识库API：基因技术、量子计算、核能、脑科学、深海科技、新能源、生命科学、AI Agent生态等。4000+实体，免费tier，REST+MCP协议。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:960px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:60px 20px 40px}
+.hero h1{font-size:2.5em;background:linear-gradient(135deg,#60a5fa,#a78bfa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px}
+.hero p{font-size:1.2em;color:#94a3b8;max-width:600px;margin:0 auto 30px}
+.cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{padding:14px 28px;border-radius:12px;font-weight:600;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-primary{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(59,130,246,.4)}
+.btn-secondary{background:#1e293b;color:#e2e8f0;border:1px solid #334155}
+.btn-secondary:hover{background:#334155}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin:40px 0}
+.stat{background:#1e293b;border-radius:16px;padding:24px;text-align:center;border:1px solid #334155}
+.stat-num{font-size:2em;font-weight:700;color:#60a5fa}
+.stat-label{color:#94a3b8;font-size:.9em;margin-top:4px}
+.domains{margin:40px 0}
+.domains h2{text-align:center;font-size:1.8em;margin-bottom:24px}
+.domain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.domain{background:#1e293b;border-radius:12px;padding:16px;border:1px solid #334155;transition:all .2s;text-decoration:none;color:#e2e8f0}
+.domain:hover{border-color:#3b82f6;transform:translateY(-2px)}
+.domain-name{font-weight:600;color:#60a5fa;margin-bottom:4px}
+.domain-count{font-size:.85em;color:#64748b}
+.code-block{background:#1e293b;border-radius:12px;padding:20px;margin:20px 0;overflow-x:auto;border:1px solid #334155}
+.code-block pre{color:#a5b4fc;font-family:'SF Mono',Monaco,monospace;font-size:.9em;white-space:pre-wrap}
+.pricing{margin:40px 0}
+.pricing h2{text-align:center;font-size:1.8em;margin-bottom:24px}
+.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.price-card{background:#1e293b;border-radius:16px;padding:28px;border:1px solid #334155;position:relative}
+.price-card.popular{border-color:#3b82f6;box-shadow:0 0 30px rgba(59,130,246,.15)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#3b82f6;color:#fff;padding:4px 16px;border-radius:20px;font-size:.8em;font-weight:600}
+.price-name{font-size:1.2em;font-weight:700;margin-bottom:8px}
+.price-amount{font-size:2.5em;font-weight:700;margin-bottom:16px}
+.price-amount small{font-size:.4em;color:#64748b;font-weight:400}
+.price-features{list-style:none;margin:0}
+.price-features li{padding:6px 0;color:#cbd5e1;font-size:.95em}
+.price-features li:before{content:"✓ ";color:#22c55e}
+.price-btn{display:block;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;margin-top:16px}
+.price-btn.free{background:#334155;color:#e2e8f0}
+.price-btn.paid{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff}
+section{padding:40px 0}
+section h2{text-align:center;font-size:1.8em;margin-bottom:24px}
+footer{text-align:center;padding:40px 20px;color:#475569;border-top:1px solid #1e293b;margin-top:40px}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="hero">
+<h1>🧬 GeneTech API</h1>
+<p>12个前沿科技领域 · 4,000+结构化实体 · 免费REST API · AI Agent原生设计</p>
+<div class="cta-group">
+<a class="btn btn-primary" href="#try">立即试用 (无需注册)</a>
+<a class="btn btn-secondary" href="#pricing">查看定价</a>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat"><div class="stat-num">4,075+</div><div class="stat-label">结构化实体</div></div>
+<div class="stat"><div class="stat-num">12</div><div class="stat-label">前沿科技领域</div></div>
+<div class="stat"><div class="stat-num">Free</div><div class="stat-label">免费Tier</div></div>
+<div class="stat"><div class="stat-num">MCP</div><div class="stat-label">Agent协议支持</div></div>
+</div>
+
+<section id="domains">
+<h2>12个知识库领域</h2>
+<div class="domain-grid">
+<a class="domain" href="https://genetech-tools.pages.dev" target="_blank"><div class="domain-name">🧬 基因技术</div><div class="domain-count">422 entities</div></a>
+<a class="domain" href="https://agentecosystem.pages.dev" target="_blank"><div class="domain-name">🤖 AI Agent生态</div><div class="domain-count">433 entities</div></a>
+<a class="domain" href="https://lifescience-epe.pages.dev" target="_blank"><div class="domain-name">🧪 生命科学</div><div class="domain-count">511 entities</div></a>
+<a class="domain" href="https://newenergy-nya.pages.dev" target="_blank"><div class="domain-name">⚡ 新能源</div><div class="domain-count">492 entities</div></a>
+<a class="domain" href="https://brainscience.pages.dev" target="_blank"><div class="domain-name">🧠 脑科学</div><div class="domain-count">269 entities</div></a>
+<a class="domain" href="https://quantumcomputing.pages.dev" target="_blank"><div class="domain-name">⚛️ 量子计算</div><div class="domain-count">317 entities</div></a>
+<a class="domain" href="https://nuclearenergy.pages.dev" target="_blank"><div class="domain-name">☢️ 核能</div><div class="domain-count">260 entities</div></a>
+<a class="domain" href="https://exoscience.pages.dev" target="_blank"><div class="domain-name">🪐 地外科学</div><div class="domain-count">316 entities</div></a>
+<a class="domain" href="https://alienminerals.pages.dev" target="_blank"><div class="domain-name">💎 外星矿物</div><div class="domain-count">283 entities</div></a>
+<a class="domain" href="https://deepseatech.pages.dev" target="_blank"><div class="domain-name">🌊 深海科技</div><div class="domain-count">307 entities</div></a>
+<a class="domain" href="https://robotparts.pages.dev" target="_blank"><div class="domain-name">🦾 机器人配件</div><div class="domain-count">229 entities</div></a>
+<a class="domain" href="https://tcm-tools.pages.dev" target="_blank"><div class="domain-name">🌿 中医药</div><div class="domain-count">0 entities</div></a>
+</div>
+</section>
+
+<section id="try">
+<h2>立即试用 (无需注册)</h2>
+<div class="code-block"><pre># 获取所有基因实体
+curl https://genetech-tools.pages.dev/api/entities.json | jq '.total'
+
+# 获取量子计算数据
+curl https://quantumcomputing.pages.dev/api/entities.json | jq '.entities[0]'
+
+# 获取AI Agent生态MCP服务器列表
+curl https://agentecosystem.pages.dev/api/entities.json | jq '.entities[] | select(.category=="MCP")'
+
+# 免费注册API Key (获取更高限额)
+curl -X POST https://genetech-tools.pages.dev/api/register \
+  -H "Content-Type: application/json" \
+  -d '{"email":"your@email.com"}'</pre></div>
+</section>
+
+<section id="pricing">
+<h2>定价</h2>
+<div class="price-grid">
+<div class="price-card">
+<div class="price-name">Free</div>
+<div class="price-amount">$0<small>/forever</small></div>
+<ul class="price-features">
+<li>30 API calls/hour</li>
+<li>所有12个领域</li>
+<li>JSON + OpenAPI spec</li>
+<li>无需注册</li>
+<li>llms.txt 访问</li>
+</ul>
+<a class="price-btn free" href="https://genetech-tools.pages.dev/api/entities.json">立即开始</a>
+</div>
+<div class="price-card popular">
+<div class="badge">MOST POPULAR</div>
+<div class="price-name">API Pro</div>
+<div class="price-amount">$29<small>/month</small></div>
+<ul class="price-features">
+<li>500 API calls/day</li>
+<li>所有领域 + 跨域引用</li>
+<li>优先加载</li>
+<li>Webhook支持</li>
+<li>API Key认证</li>
+<li>商业使用许可</li>
+</ul>
+<a class="price-btn paid" href="https://creem.io/checkout/prod_4EpFVQGKm5vWXChbRiFdbE">立即购买</a>
+</div>
+<div class="price-card">
+<div class="price-name">Lifetime</div>
+<div class="price-amount">$99<small>one-time</small></div>
+<ul class="price-features">
+<li>无限API calls</li>
+<li>所有功能,永久使用</li>
+<li>数据包下载</li>
+<li>未来更新包含</li>
+<li>优先支持</li>
+</ul>
+<a class="price-btn paid" href="https://creem.io/checkout/prod_pny43rzDa0mmBaj7d9k4w">立即购买</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>为什么选择GeneTech API?</h2>
+<div style="max-width:700px;margin:0 auto">
+<p style="margin-bottom:16px">✅ <strong>AI Agent原生设计</strong> — 每个实体都是机器可读JSON，附带llms.txt让AI自动发现，MCP协议支持Agent直接调用</p>
+<p style="margin-bottom:16px">✅ <strong>独特冷门领域</strong> — 外星矿物、深海科技、地外科学...这些数据你在Wikipedia上找不到结构化版本</p>
+<p style="margin-bottom:16px">✅ <strong>跨域关联</strong> — 基因→疾病→疗法→公司，合成生物学→细胞治疗→长寿技术</p>
+<p style="margin-bottom:16px">✅ <strong>开发者友好</strong> — OpenAPI 3.1 spec, CORS支持, 无需注册即可试用</p>
+<p>✅ <strong>持续更新</strong> — 每日自动深挖新实体，小乌AI辅助数据采集</p>
+</div>
+</section>
+
+<footer>
+<p>GeneTech Knowledge Engine · <a href="https://github.com/lm203688/kb-ecosystem" style="color:#3b82f6">GitHub</a> · <a href="https://genetech.tools" style="color:#3b82f6">genetech.tools</a></p>
+<p style="margin-top:8px">Built by AI, for AI 🤖</p>
+</footer>
+</div>
+
+</body>
+</html>

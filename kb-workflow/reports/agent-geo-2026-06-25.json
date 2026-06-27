@@ -1,0 +1,9 @@
+{
+  "sites": [],
+  "total_llms_kb": 0,
+  "total_entities": 0,
+  "total_faqs": 0,
+  "total_submits": 0,
+  "date": "2026-06-25",
+  "executor": "xiaowu (FAQ generation) + scripts (rebuild + submit)"
+}

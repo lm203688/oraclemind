@@ -11,6 +11,8 @@
   <url><loc>https://agent.genetech.tools/entity/afw-004.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/afw-005.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/afw-006.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/afw-007.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/afw-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/api-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/api-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/api-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -36,6 +38,11 @@
   <url><loc>https://agent.genetech.tools/entity/bench-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/bench-004.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/bench-005.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/bench-006.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/bench-007.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/bench-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/bench-009.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/bench-010.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -88,18 +95,149 @@
   <url><loc>https://agent.genetech.tools/entity/mcp-050.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-051.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-052.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-164.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-165.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-166.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-167.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-168.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-169.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-170.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-171.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-1password.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-ahrefs-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-ahrefs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-aishield-guardrail.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-aishield-scanner.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-asana.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-atlassian-remote.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-atlassian-rovo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-atlassian.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-aws-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-bigquery.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-browserbase.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-containers.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-d1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-durable-objects.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-email-workers.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-images.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-kv.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-pages.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-queues.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-r2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-stream.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-turnstile.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-workers-ai.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cf-workers-logs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-claude-desktop.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-clickup.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cloudflare-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-codex.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-coinbase.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-composio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-confluence.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-context7-docs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-context7.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-cursor.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-data-commons.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-database-mcp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-datadog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-exa-search.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-extensions-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-fastmcp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-figma-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-firecrawl-scraping.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-firecrawl-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-firecrawl.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-gdrive-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-github-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-google-cloud-db.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-grafana.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-heroku.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-hubspot-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-hubspot.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-instatunnel.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-intercom.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-knit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-linear-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-mcpmanager.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-mcpmarket.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-mcpregistry.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-mikrotik.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-miro.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-mongodb-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-notion-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-oracle-sqlcl.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-pgedge.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-playwright-mcp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-playwright-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-portkey-agentforce.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-postmark.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-prefect.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-proxyman.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-quickbooks.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-rasa.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-razorpay.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-redis-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-registry.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-replit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-resend.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-salesforce.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-scalekit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-scrapling.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-sentry-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-servicenow.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-shareuhack.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-shopify-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-skyvia-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-skyvia.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-slack-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-smithery.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-speakeasy.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-stackgen.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-stainless.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-stateless-core.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-stripe-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-supabase-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-terraform-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-tessl.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-titanapps.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-tokenmix.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-totalum.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-truefoundry-gateway.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-truto.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-twilio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-tyk-security.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mcp-universal-db.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-vercel-ai-gateway.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-vercel-v0.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-woocommerce.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-workos.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mcp-xero.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mem-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mem-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mem-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mem-004.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mem-005.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/mem-006.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-007.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-009.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-010.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-011.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-012.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-013.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-014.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-015.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-016.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-017.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-018.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-019.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-021.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-022.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-023.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-024.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/mem-025.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/proto-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/proto-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/proto-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -121,6 +259,55 @@
   <url><loc>https://agent.genetech.tools/entity/proto-019.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/proto-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/proto-021.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-022.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-023.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-024.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-025.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-027.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-028.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-029.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-030.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-031.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-032.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-033.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-034.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-035.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-037.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-038.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-039.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-040.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-041.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-042.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-043.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-044.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-045.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-046.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-047.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-048.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-049.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-050.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-051.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-067.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-068.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-069.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-070.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-071.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-072.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-a2a-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-a2a-v1-ibm-acp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-a2ui.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-agent-stack-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-agora-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-agui.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-ap2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-apex-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-mcp-2026-rc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-mcp-server-cards.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-mcp-stateless-rc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-mpp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-streamable-http.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/proto-x42.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -153,11 +340,71 @@
   <url><loc>https://agent.genetech.tools/entity/sdk-030.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-031.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-032.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-033.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-034.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-035.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-agno-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-agno.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-akka-agents.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-alice-labs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-alicelabs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-autogen-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-bee-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-claude-agent-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-cognee.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-composio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-crewai-enterprise.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-crewai-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-deerflow-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-deerflow.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-dify-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-evermind.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-fastmcp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-flowise-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-flowtivity.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-genta.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-google-a2a-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-google-a2a.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-gurusup.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-hermes-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-hermes.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-hindsight.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-inngest.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-langgraph-platform.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-langgraph-studio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-langmem.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-llamaindex-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-mastra-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-mastra.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-mem0.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-memoclaw.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-memvid.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-microsoft-agent-framework.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-morph-llm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-morph.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-ms-agent-framework.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-ms-maf-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-n8n-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-objectbox.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-openai-agents-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-openai-agents.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-openai-responses.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-openclaw.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-pickaxe.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-pydantic-ai.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-rasa-calm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-rhesis.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-scrapling.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-semantic-kernel-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-sim-studio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/sdk-smolagents.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-temporal-agents.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-trigger-dev.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-vellum.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-vercel-ai-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/sdk-zep.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/tpl-aishield-ecosystem.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/tplat-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/tplat-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/tplat-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -171,4 +418,33 @@
   <url><loc>https://agent.genetech.tools/entity/vdb-006.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/vdb-007.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agent.genetech.tools/entity/vdb-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-037.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-cassandra5.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-chroma-cloud.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-chromadb-cloud-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-faiss-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-kdbai.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-lancedb-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-marqo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-milvus-v3.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-milvus-v4.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-mongodb-atlas.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-myscale.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-objectbox.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-pgvector-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-pinecone-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-pinecone-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-pinecone-v3.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-qdrant-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-qdrant-hybrid.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-qdrant-v3.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-singlestore.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-supabase-pgvector.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-turbopuffer.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-typesense.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-vald.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-vespa.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-weaviate-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agent.genetech.tools/entity/vdb-weaviate-v3.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

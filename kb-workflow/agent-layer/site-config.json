@@ -334,6 +334,65 @@
         "quantum": "量子机器学习",
         "genetech": "AI辅助基因设计"
       }
+    },
+    {
+      "name": "BioComputeDB",
+      "dir": "biocomputing",
+      "subdomain": "biocompute",
+      "url": "https://biocompute.genetech.tools",
+      "category": "生物计算",
+      "description": "Biological computing knowledge base - DNA computing, organoid intelligence, gene circuits, biochips",
+      "description_cn": "生物计算机技术知识引擎 - DNA计算、类器官智能、基因电路、生物芯片",
+      "entities": ["biocomputing", "platforms"],
+      "search_queries": [
+        "biological computing DNA computing 2025 2026",
+        "organoid intelligence brain organoid biocomputer",
+        "DNA data storage biological chip",
+        "gene circuit logic gate computing",
+        "neuromorphic chip bio-inspired computing",
+        "protein computing molecular computing",
+        "living computer neuron cells",
+        "biocomputing commercial breakthrough",
+        "CRISPR logic circuit biosensing",
+        "memristor neuromorphic brain-inspired"
+      ],
+      "cross_refs": {
+        "life": "合成生物学基因电路",
+        "brain": "类器官智能与脑科学",
+        "genetech": "CRISPR基因电路计算",
+        "quantum": "生物量子计算交叉",
+        "agent": "生物启发AI"
+      }
+    },
+    {
+      "name": "BionicAI DB",
+      "dir": "bionic-ai",
+      "subdomain": "bionic",
+      "url": "https://bionic.genetech.tools",
+      "category": "AI仿生技术",
+      "description": "AI bionic technology knowledge base - neuromorphic computing, bionic sensors, bionic robotics, bionic materials, bionic algorithms, bionic energy",
+      "description_cn": "AI仿生技术知识引擎 - 神经形态计算、仿生传感器、仿生机器人、仿生材料、仿生算法、仿生能源",
+      "entities": ["bionic_tech", "bionic_companies", "bionic_applications"],
+      "search_queries": [
+        "neuromorphic computing chip 2025 2026",
+        "bio-inspired AI algorithm swarm intelligence",
+        "bionic robot actuator artificial muscle",
+        "biomimetic material spider silk lotus effect",
+        "spiking neural network SNN breakthrough",
+        "event camera bio-inspired vision",
+        "artificial photosynthesis bionic energy",
+        "gecko adhesion bionic grip",
+        "electronic nose bionic sensor",
+        "bionic drone bird flight robot"
+      ],
+      "cross_refs": {
+        "biocompute": "神经形态与生物计算交叉",
+        "brain": "类脑计算与脑科学",
+        "robot": "仿生机器人配件",
+        "agent": "群体智能Agent协同",
+        "energy": "仿生能源技术",
+        "life": "仿生材料与合成生物"
+      }
     }
   ]
 }

@@ -39,7 +39,7 @@ function saveEntities(siteDir, entityName, data) {
   const filePath = path.join(entitiesDir, `${entityName}.json`);
   let existing = [];
   if (fs.existsSync(filePath)) {
-    try { existing = JSON.parse(fs.readFileSync(filePath, 'utf-8')); } catch (e) {}
+    try { const raw = JSON.parse(fs.readFileSync(filePath, 'utf-8')); existing = Array.isArray(raw) ? raw : (raw.entities || raw.data || []); } catch (e) {}
   }
   const existingMap = new Map(existing.map(e => [e.id || e.name, e]));
   for (const item of data) {
@@ -54,10 +54,7 @@ function saveEntities(siteDir, entityName, data) {
 async function webSearch(query, retries = 3) {
   for (let i = 0; i < retries; i++) {
     try {
-      const result = await client.invokeFunction({
-        name: 'web_search',
-        arguments: JSON.stringify({ query, count: 10 })
-      });
+      const result = await client.functions.invoke('web_search', { query, count: 10 });
       return result;
     } catch (e) {
       if (e.message?.includes('429')) {

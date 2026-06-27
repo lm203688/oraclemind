@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "site_name": "AI Agent生态知识引擎",
+  "domain": "agent.genetech.tools",
+  "tagline": "AI Agent生态全景数据库",
+  "last_updated": "2026-06-25T08:02:09.788845Z",
+  "total_entities": 469,
+  "categories": {
+    "agent frameworks": 14,
+    "agent sdks": 8,
+    "benchmarks": 10,
+    "main": 0,
+    "mcp servers": 178,
+    "memory systems": 25,
+    "model apis": 16,
+    "protocols": 72,
+    "sdks": 103,
+    "tool platforms": 6,
+    "vector dbs": 37
+  },
+  "api_endpoints": {
+    "entities": "https://agent.genetech.tools/api/entities.json",
+    "structured_data": "https://agent.genetech.tools/api/data.json",
+    "knowledge_graph": "https://agent.genetech.tools/api/graph.json",
+    "openapi": "https://agent.genetech.tools/api/openapi.json",
+    "ai_plugin": "https://agent.genetech.tools/.well-known/ai-plugin.json",
+    "llms_txt": "https://agent.genetech.tools/llms.txt",
+    "llms_full": "https://agent.genetech.tools/llms-full.txt",
+    "sitemap": "https://agent.genetech.tools/sitemap.xml"
+  },
+  "ai_agent_instructions": "Use the API endpoints above to query 469 entities about AI Agent生态全景数据库. All data is freely accessible via GET requests.",
+  "cross_domain_links": []
+}

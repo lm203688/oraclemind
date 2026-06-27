@@ -11,8 +11,8 @@ mkdir -p "$(dirname "$LOG")"
 
 echo "$(date): Starting SEO submission" >> "$LOG"
 
-for dir in genetech-tools tcm-tools agent-ecosystem robot-parts quantum-computing brain-science nuclear-energy exo-science alien-minerals deep-sea-tech new-energy life-science; do
-  domain_map="genetech-tools:genetech.tools tcm-tools:tcm.genetech.tools agent-ecosystem:agent.genetech.tools robot-parts:robot.genetech.tools quantum-computing:quantum.genetech.tools brain-science:brain.genetech.tools nuclear-energy:nuclear.genetech.tools exo-science:exo.genetech.tools alien-minerals:mineral.genetech.tools deep-sea-tech:deepsea.genetech.tools new-energy:energy.genetech.tools life-science:life.genetech.tools"
+for dir in genetech-tools tcm-tools agent-ecosystem robot-parts quantum-computing brain-science nuclear-energy exo-science alien-minerals deep-sea-tech new-energy life-science biocomputing; do
+  domain_map="genetech-tools:genetech.tools tcm-tools:tcm.genetech.tools agent-ecosystem:agent.genetech.tools robot-parts:robot.genetech.tools quantum-computing:quantum.genetech.tools brain-science:brain.genetech.tools nuclear-energy:nuclear.genetech.tools exo-science:exo.genetech.tools alien-minerals:mineral.genetech.tools deep-sea-tech:deepsea.genetech.tools new-energy:energy.genetech.tools life-science:life.genetech.tools biocomputing:biocompute.genetech.tools"
   domain=$(echo "$domain_map" | tr ' ' '\n' | grep "^$dir:" | sed "s/^$dir://")
   
   # Submit homepage and sitemap via GET to all 3 IndexNow endpoints
@@ -44,6 +44,16 @@ print(json.dumps(urls[:100]))
       -d "$payload" 2>/dev/null)
     echo "$(date): $domain: POST batch → IndexNow: $post_result" >> "$LOG"
   fi
+done
+
+# Submit aishield.tools (separate domain via CF Tunnel)
+echo "$(date): Submitting aishield.tools" >> "$LOG"
+for endpoint in api.indexnow.org www.bing.com yandex.com; do
+  for url in "https://aishield.tools/" "https://aishield.tools/llms.txt" "https://aishield.tools/.well-known/ai-plugin.json"; do
+    code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 \
+      "https://$endpoint/indexnow?url=${url}&key=$INDEXNOW_KEY" 2>/dev/null)
+    echo "$(date): aishield.tools: $url → $endpoint: $code" >> "$LOG"
+  done
 done
 
 echo "$(date): SEO submission complete" >> "$LOG"

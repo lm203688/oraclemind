@@ -1,9 +1,0 @@
-__pycache__
-*.pyc
-*.log
-server.log
-data/audits.json
-data/tools.json
-.git
-.gitignore
-*.md

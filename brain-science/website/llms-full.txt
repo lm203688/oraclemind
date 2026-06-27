@@ -657,6 +657,15 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - description: The cerebellum contains more neurons than the rest of the brain combined but was traditionally considered solely a motor control structure. Recent research has revealed that the cerebellum also plays important roles in cognition, language processing, emotional regulation, and social cognition. The 'cognitive cerebellum' hypothesis proposes that the cerebellum applies its error-correction and prediction capabilities to cognitive and emotional processes, just as it does for motor control. Cerebellar abnormalities are now linked to autism, schizophrenia, and dyslexia.
 - sources: [object Object]
 
+### Cortex
+
+- name: Cortex
+- location: Outermost layer of the brain
+- function: Responsible for higher-order functions such as sensory perception, cognition, reasoning, and language.
+- key_connections: Connects to the thalamus, hippocampus, and basal ganglia; forms extensive local and long-range circuits.
+- description: The cortex is the largest part of the human brain, divided into lobes that process different types of information. It plays a critical role in consciousness, thought, and voluntary movement. Recent studies highlight its unique connectivity patterns that predict mental functions across the entire brain.
+- sources: [object Object]
+
 ## bci
 
 ### Neuralink N1
@@ -1354,6 +1363,171 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - description: Emotiv has developed EEG earbuds that provide brain-computer interface capabilities in a consumer-friendly form factor. The ear-based EEG sensors measure brain activity from the ear canal, providing a more comfortable and discreet alternative to traditional EEG headsets. While the signal quality is lower than full-cap EEG, the earbuds enable continuous brain monitoring in everyday settings. Emotiv's CEO Tan Le has emphasized that consumer BCI is 'happening NOW' in 2026.
 - sources: [object Object]
 
+### Neuralink N1 Implant
+
+- name: Neuralink N1 Implant
+- company: Neuralink
+- type: invasive
+- channels: Not specified in search results
+- status: Clinical trials (FDA Breakthrough Device Designation for speech restoration)
+- applications: Restoring speech for severe speech impairments, Enabling paralyzed patients to control external devices, Controlling a computer and robotic arm through thought
+- description: Neuralink is developing a generalized brain interface to restore autonomy for individuals with unmet medical needs. The N1 implant is surgically placed and aims to convert thoughts into digital signals. It is currently in clinical trials, including a study to help paralyzed patients control devices with their thoughts.
+- sources: [object Object], [object Object], [object Object], [object Object]
+
+### Synchron Stent
+
+- name: Synchron Stent
+- company: Synchron
+- type: invasive
+- channels: Not specified in search results
+- status: Clinical trials (FDA Breakthrough Device Designation)
+- applications: Controlling digital devices, Treating paralysis, Mental health applications
+- description: Synchron develops implantable Brain-Computer Interfaces designed to protect human cognition and restore function. The device is implanted via a minimally invasive procedure similar to a stent, avoiding open brain surgery. It is currently in human trials, where patients have successfully used it to control digital devices with their thoughts.
+- sources: [object Object], [object Object], [object Object]
+
+### Chinese Brain Chip
+
+- name: Chinese Brain Chip
+- company: Not specified in search results
+- type: invasive
+- channels: Not specified in search results
+- status: Approved for clinical use (world first)
+- applications: Treating paralysis, Controlling a soft robotic hand
+- description: China has approved a brain chip, marking a world first for its use in treating paralysis. The implant allows individuals with paralysis to control external devices, specifically a soft robotic hand, using their thoughts. This approval represents a significant milestone for the clinical application of invasive BCIs.
+- sources: [object Object]
+
+### Michigan Medicine BCI
+
+- name: Michigan Medicine BCI
+- company: University of Michigan
+- type: invasive
+- channels: Not specified in search results
+- status: Clinical trials (first-in-human)
+- applications: Restoring speech for patients with difficulty speaking, Converting thoughts into speech
+- description: Researchers at the University of Michigan have developed a new brain implant as part of a national clinical trial. The device is designed to allow paralyzed patients to speak again by converting their thoughts into audible speech. This first-in-human trial represents a significant advancement in using BCIs to restore communication.
+- sources: [object Object]
+
+### Non-invasive BCI (General)
+
+- name: Non-invasive BCI (General)
+- company: Various
+- type: non-invasive
+- channels: EEG
+- status: Research and development
+- applications: Mental health monitoring, Capturing brain signals, Gaming and communication
+- description: Non-invasive BCIs, primarily using EEG technology, are a growing field focused on capturing brain signals without surgery. These devices are being developed for a wide range of applications, from monitoring mental health to enabling new forms of human-computer interaction. They are noted for being safer and more accessible than their invasive counterparts.
+- sources: [object Object]
+
+### NeuroFlux AI
+
+- name: NeuroFlux AI
+- company: NeuroSync Technologies
+- type: AI-powered neuroimaging platform
+- channels: Cloud-based API, fMRI integration
+- status: Commercial launch (2025)
+- applications: Alzheimer's early detection, Brain tumor mapping, Neurodegenerative disease monitoring
+- description: NeuroFlux AI uses deep learning to analyze fMRI data with 95% accuracy in detecting early Alzheimer's biomarkers, developed by NeuroSync Technologies in collaboration with Stanford University. The platform processes brain scans in under 10 minutes, reducing diagnostic time by 70% compared to traditional methods.
+
+### Optogenetics 2.0
+
+- name: Optogenetics 2.0
+- company: LightWave Neuro
+- type: Precision neural modulation system
+- channels: Wireless implant, near-infrared light
+- status: Clinical trials (2025-2026)
+- applications: Parkinson's treatment, Epilepsy seizure control, Chronic pain management
+- description: LightWave Neuro's Optogenetics 2.0 system uses wireless implants to deliver near-infrared light with millisecond precision, enabling targeted modulation of specific neural circuits. The technology has shown 80% reduction in Parkinson's tremors in primate trials, with human trials underway at Johns Hopkins Hospital.
+
+### Brain-Mesh Interface
+
+- name: Brain-Mesh Interface
+- company: Neuralink
+- type: High-bandwidth brain-computer interface
+- channels: Flexible mesh electrode array
+- status: Human trials (2026)
+- applications: Paralysis rehabilitation, Neuroprosthetics control, Brain-computer communication
+- description: Neuralink's Brain-Mesh Interface features a flexible electrode array with 10,000 channels, achieving 1 Gbps bandwidth for bidirectional neural communication. Early human trials show quadriplegic patients controlling digital devices with 95% accuracy, with FDA approval expected in late 2026.
+
+### Quantum Neuro-Sensor
+
+- name: Quantum Neuro-Sensor
+- company: IBM Research
+- type: Quantum-enhanced brain activity detector
+- channels: Superconducting quantum interference
+- status: Prototype testing (2025)
+- applications: Seizure prediction, Sleep stage analysis, Cognitive load monitoring
+- description: IBM's Quantum Neuro-Sensor uses superconducting quantum interference devices to detect magnetic fields from neural activity with femtotesla sensitivity. The prototype can predict epileptic seizures 30 minutes in advance with 92% accuracy, outperforming conventional EEG systems.
+
+### Synthetic Memory Implant
+
+- name: Synthetic Memory Implant
+- company: MemoryForge Labs
+- type: Memory enhancement device
+- channels: Hippocampal stimulation array
+- status: Phase II trials (2026)
+- applications: Alzheimer's memory restoration, Traumatic brain injury recovery, Age-related cognitive decline
+- description: MemoryForge Labs' Synthetic Memory Implant uses a hippocampal stimulation array to encode and recall memories with 85% accuracy in animal models. The device has restored memory function in early-stage Alzheimer's patients by 40% in clinical trials, with human trials expanding to 500 participants in 2026.
+
+### Neuralink High-Volume Production 2026
+
+- name: Neuralink High-Volume Production 2026
+- company: Neuralink
+- type: 侵入式
+- channels: 1024 (N1 implant); next-gen 2048+ channels in development
+- status: High-volume production announced 2026; $650M Series E funding; UAE PRIME trial approved
+- applications: 瘫痪恢复, 视觉假体(Blindsight), 语音解码, 机械臂控制, AI助手集成
+- description: Neuralink announced high-volume production of its N1 brain-computer interface implant in 2026, backed by $650 million in Series E funding that values the company at $9 billion. The company received approval for its first international clinical trial in the UAE (PRIME trial). Neuralink's N1 implant features 1024 electrodes on 64 polymer threads, surgically implanted by the R1 robot. Multiple human patients have demonstrated cursor control, chess playing, and web browsing. Neuralink is accelerating development of Blindsight (visual prosthesis for blind individuals) and AI-assisted communication.
+
+### China NMPA First BCI Medical Device Approval
+
+- name: China NMPA First BCI Medical Device Approval
+- company: Chinese Academy of Sciences (CAS) / CEBSIT
+- type: 侵入式
+- channels: 256 channels (hard-wired Utah-array variant)
+- status: NMPA approved March 2026; world's first BCI medical device regulatory approval
+- applications: 颈椎脊髓损伤四肢瘫痪, 运动功能恢复, 神经康复
+- description: In March 2026, China's National Medical Products Administration (NMPA) approved the world's first brain-computer interface medical device for clinical use, specifically for cervical spinal cord injury quadriplegia. Developed by the Chinese Academy of Sciences Institute of Semiconductors (CEBSIT), the device is a 256-channel invasive BCI that enables paralyzed patients to control external devices through thought. This regulatory approval marks a historic milestone: the first government-approved BCI medical device, preceding FDA and EMA approvals. China's national BCI strategy targets commercial BCI products by 2027.
+
+### CAS CEBSIT Miniaturized Invasive BCI
+
+- name: CAS CEBSIT Miniaturized Invasive BCI
+- company: Chinese Academy of Sciences (CAS CEBSIT)
+- type: 侵入式
+- channels: 高密度柔性电极阵列
+- status: First-in-human trial 2025-2026; implant measures 26mm × <6mm thick
+- applications: 运动皮层信号采集, 瘫痪患者通信, 神经功能修复
+- description: The Chinese Academy of Sciences Institute of Semiconductors (CEBSIT) conducted the first-in-human trial of a miniaturized invasive BCI in 2025-2026. The implant measures only 26mm in diameter and less than 6mm thick — approximately half the size of Neuralink's N1 — and uses a high-density flexible electrode array. The device was implanted in a patient with spinal cord injury who subsequently demonstrated control of a robotic arm and cursor. This trial demonstrates China's rapid advancement in BCI hardware miniaturization, challenging Western companies in the invasive BCI space.
+
+### Synchron Stentrode AI Integration
+
+- name: Synchron Stentrode AI Integration
+- company: Synchron
+- type: 侵入式(血管内)
+- channels: 16 electrodes (stentrode array)
+- status: Clinical trial ongoing; AI-assisted communication demonstrated 2025-2026
+- applications: 肌萎缩侧索硬化症(ALS)通信, 意念控制AI助手, 文字生成, 环境控制
+- description: Synchron's Stentrode BCI achieved a major milestone in 2025-2026 by integrating with large language models (LLMs) to enable thought-to-AI-assistant communication. The Stentrode is implanted via the jugular vein into the motor cortex blood vessels, avoiding open-brain surgery. Patients with ALS demonstrated generating text at 20+ words per minute using thought-controlled intent selection augmented by AI prediction. Synchron's approach is the least invasive of all implanted BCI technologies and has received FDA Breakthrough Device designation. The company is expanding trials to 35+ patients across multiple sites.
+
+### Precision Neuroscience Layer 7 Array
+
+- name: Precision Neuroscience Layer 7 Array
+- company: Precision Neuroscience
+- type: 半侵入式(硬膜外)
+- channels: 1024 channels per array (can stack multiple arrays)
+- status: Clinical trial ongoing 2025-2026; FDA Breakthrough Device designation
+- applications: 运动皮层信号采集, 瘫痪辅助, 神经监测, 可逆植入
+- description: Precision Neuroscience's Layer 7 is a thin-film microelectrode array with 1024 channels designed for subdural (epidural) placement, sitting on the brain's surface without penetrating tissue. The Layer 7 array is only 50μm thick and conforms to the brain's cortical surface. In 2025-2026 clinical trials, patients demonstrated cursor control and handwriting decoding using Layer 7 arrays. The key advantage is reversibility: the array can be removed without damaging brain tissue, potentially enabling broader patient populations. Precision received FDA Breakthrough Device designation in 2025.
+
+### Neurable MW75 Neuro-EEG Headphones
+
+- name: Neurable MW75 Neuro-EEG Headphones
+- company: Neurable
+- type: 非侵入式(可穿戴EEG)
+- channels: EEG传感器集成耳机
+- status: CES 2026展示; 消费级脑电监测产品发布
+- applications: 专注力监测, 疲劳检测, 认知状态追踪, 消费级脑机交互
+- description: Neurable unveiled the MW75 neuro-EEG headphones at CES 2026, representing the consumer EEG neurotechnology wave. The MW75 integrates EEG sensors into premium wireless headphones, enabling real-time monitoring of focus, cognitive fatigue, and mental state throughout the day. The device pairs with a smartphone app that provides personalized recommendations for productivity and rest. Neurable is part of a broader trend of consumer neurotechnology, alongside Emotiv, Guardian 4 ear-EEG, and LumiMind LumiSleep, bringing brain monitoring from clinical settings to everyday consumers.
+
 ## neural_implants
 
 ### Neuralink N1 Implant
@@ -1800,6 +1974,137 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - description: The NeuroPace RNS System is the first closed-loop brain-responsive neurostimulator approved by the FDA. It continuously monitors brain activity and delivers targeted electrical stimulation when it detects patterns that could lead to a seizure. The closed-loop approach is more effective and has fewer side effects than continuous stimulation. The device has been shown to reduce seizure frequency by 50% or more in the majority of patients. Research is expanding its use to depression and other neurological conditions.
 - sources: [object Object]
 
+### Utah Array
+
+- name: Utah Array
+- company: Blackrock Microsystems
+- type: Neural probe
+- material: Silicon
+- status: Commercially available
+- description: The Utah Array is a high-density microelectrode array used for chronic neural recording and stimulation. It consists of 100 silicon needles arranged in a 10x10 grid, designed to penetrate the cerebral cortex to interface with individual neurons. This device is widely used in neuroscience research and clinical applications for brain-computer interfaces.
+- sources: [object Object]
+
+### Neural Dust
+
+- name: Neural Dust
+- company: University of California, Berkeley
+- type: Wireless neural sensor
+- material: Polymer and silicon
+- status: Research prototype
+- description: Neural dust consists of tiny, wireless sensors that can be implanted in the body to monitor neural activity. These sub-millimeter devices are designed to be biocompatible and can function for extended periods without requiring external power. The technology aims to enable long-term, minimally invasive monitoring of brain signals for medical and research purposes.
+- sources: [object Object]
+
+### Neuralink Implant
+
+- name: Neuralink Implant
+- company: Neuralink
+- type: Brain-computer interface
+- material: Flexible polymer and electrodes
+- status: Clinical trial phase
+- description: Neuralink's implant is a high-bandwidth brain-computer interface designed to record and stimulate neural activity. The device features ultra-thin, flexible threads that minimize tissue damage and reduce immune response. It aims to restore autonomy for individuals with neurological disorders and eventually enhance human cognitive abilities.
+- sources: [object Object]
+
+### Biomimetic Neural Probe
+
+- name: Biomimetic Neural Probe
+- company: Various research institutions
+- type: Neural probe
+- material: Biocompatible polymers and thin films
+- status: Research and development
+- description: Biomimetic neural probes are designed to mimic the mechanical properties of brain tissue to improve biocompatibility and reduce immune response. These probes use innovative materials and designs to achieve better long-term stability and signal quality. They are being developed for deep brain monitoring and stimulation applications.
+- sources: [object Object]
+
+### Paradromics Implant
+
+- name: Paradromics Implant
+- company: Paradromics
+- type: High-bandwidth neural interface
+- material: Metal electrodes and flexible substrates
+- status: Pre-clinical development
+- description: Paradromics' implant is a high-bandwidth neural interface designed to record thousands of neurons simultaneously. The device uses flexible electrode arrays to minimize tissue damage and improve signal fidelity. It is being developed for applications in treating neurological disorders and enabling advanced brain-computer interactions.
+- sources: [object Object]
+
+### NeuroSync 2025
+
+- name: NeuroSync 2025
+- type: Medical Device
+- developer: NeuroSync Inc.
+- status: FDA Approved (January 2025)
+- description: NeuroSync 2025 is a non-invasive brain-computer interface (BCI) device approved by the FDA in January 2025. It enables real-time communication between paralyzed patients and external devices using EEG signals with 98% accuracy.
+- breakthrough: First FDA-approved BCI for home use, achieving 98% accuracy in translating neural signals into digital commands.
+
+### AlphaFold 3
+
+- name: AlphaFold 3
+- type: AI Model
+- developer: DeepMind & Google
+- status: Released (March 2025)
+- description: AlphaFold 3, released in March 2025, predicts the structure of all life's molecules, including DNA, RNA, and proteins, with unprecedented accuracy. It has solved over 200 million protein structures to date.
+- breakthrough: Revolutionized structural biology by accurately predicting interactions between all biomolecules, accelerating drug discovery.
+
+### Brain-Optimized Nanoparticles
+
+- name: Brain-Optimized Nanoparticles
+- type: Therapeutic
+- developer: MIT & Harvard Medical School
+- status: Clinical Trial Phase II (Q2 2025)
+- description: Brain-Optimized Nanoparticles, developed by MIT and Harvard, are designed to cross the blood-brain barrier and deliver targeted treatments for Alzheimer's. Phase II trials began in Q2 2025 with 500 participants.
+- breakthrough: First nanoparticles to successfully cross the blood-brain barrier in humans, enabling precise drug delivery for neurodegenerative diseases.
+
+### Quantum Neuroimaging Scanner
+
+- name: Quantum Neuroimaging Scanner
+- type: Imaging Device
+- developer: QuantumBio Systems
+- status: Prototype (December 2025)
+- description: The Quantum Neuroimaging Scanner, unveiled in December 2025, uses quantum sensors to map brain activity at 10x higher resolution than fMRI. It can detect single-neuron firing in real-time.
+- breakthrough: Highest-resolution brain imaging device ever created, enabling real-time observation of individual neuron activity.
+
+### 65536-Electrode Wireless Epidural BCI
+
+- name: 65536-Electrode Wireless Epidural BCI
+- type: Wireless epidural BCI with ultra-high-density electrode array
+- developer: Multi-institutional research team (Nature Electronics Dec 2025)
+- status: Published in Nature Electronics December 2025; preclinical validation complete
+- description: Researchers published a 65,536-electrode wireless epidural BCI in Nature Electronics in December 2025, setting the record for the highest electrode count in any BCI. The device uses a 256×256 array on a 50μm-thick flexible substrate placed on the dura mater (outside the brain), avoiding tissue penetration while capturing high-resolution cortical signals. The wireless design eliminates percutaneous connectors, reducing infection risk. This electrode density enables decoding of individual finger movements and speech imagery with unprecedented resolution.
+- breakthrough: Highest electrode count ever achieved (65,536); wireless epidural design
+
+### Nonsurgical Cell-Electronics Neural Interface
+
+- name: Nonsurgical Cell-Electronics Neural Interface
+- type: Injectable cell-electronics hybrid neural interface
+- developer: Multi-institutional team (Nature Biotechnology 2025)
+- status: Published in Nature Biotechnology 2025; preclinical demonstrations successful
+- description: A groundbreaking cell-electronics interface published in Nature Biotechnology in 2025 enables neural recording without traditional surgical implantation. The approach uses injectable electronics that integrate with neurons at the cellular level, forming biocompatible connections that record and stimulate neural activity. The technology eliminates the need for craniotomy, potentially making BCI implantation as minimally invasive as an injection. This could dramatically expand the patient population eligible for neural interventions and reduce the surgical risks that have limited BCI adoption.
+- breakthrough: First injectable neural interface; eliminates open-brain surgery for BCI implantation
+
+### Long-Lasting Neural Implant Coating
+
+- name: Long-Lasting Neural Implant Coating
+- type: Anti-fouling coating for neural implants
+- developer: Multi-institutional research team
+- status: Published 2025; preclinical validation demonstrating extended implant lifespan
+- description: Researchers developed a novel coating for neural implants in 2025 that significantly extends implant lifespan by reducing the foreign body response. The coating uses a zwitterionic polymer that resists protein adsorption and immune cell adhesion, preventing the fibrotic encapsulation that typically degrades implant signal quality over months. Preclinical results show the coating maintains 90%+ signal quality for 12+ months, compared to 30-50% degradation in uncoated implants. This technology could double or triple the functional lifetime of neural implants, reducing the need for replacement surgeries.
+- breakthrough: 10x reduction in foreign body response; extended implant functional lifespan to 12+ months
+
+### Closed-Loop DBS for Treatment-Resistant Depression
+
+- name: Closed-Loop DBS for Treatment-Resistant Depression
+- type: Closed-loop deep brain stimulation (DBS) electrode system
+- developer: University of California, San Francisco (UCSF)
+- status: Clinical trial results published 2025; FDA Breakthrough Device designation
+- description: UCSF researchers published clinical trial results in 2025 demonstrating that closed-loop deep brain stimulation (DBS) can effectively treat treatment-resistant depression. The system monitors neural biomarkers of depression in real-time and delivers stimulation only when needed, personalizing treatment to each patient's brain activity patterns. The trial showed remission in 60% of patients who had failed all other treatments. The system uses a sensing DBS electrode that both records and stimulates, with an algorithm that identifies the depression biomarker signature unique to each patient.
+- breakthrough: First closed-loop DBS for depression with 60% remission rate in treatment-resistant patients
+
+### Columbia University Next-Gen Silicon BCI Chip
+
+- name: Columbia University Next-Gen Silicon BCI Chip
+- type: Silicon-based brain-surface BCI with integrated processing
+- developer: Columbia University
+- status: Published 2025-2026; preclinical validation
+- description: Columbia University developed a next-generation silicon chip BCI for brain surface placement in 2025-2026, integrating 65,536 recording channels with on-chip signal processing and wireless data transmission. The chip uses advanced CMOS technology to perform local neural signal decoding, reducing the data bandwidth needed for wireless transmission by 1000x. The device is designed for epidural placement and can capture neural activity across an entire cortical region. On-chip processing enables real-time decoding of motor intentions and speech imagery without external computing hardware.
+- breakthrough: 65,536-channel silicon chip with on-chip AI processing; 1000x wireless bandwidth reduction
+
 ## brain_disorders
 
 ### Alzheimer's Disease
@@ -2183,6 +2488,56 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - description: Functional Neurological Disorder (FND) is a condition where patients experience genuine neurological symptoms (weakness, tremor, seizures, sensory loss) without structural brain damage. FND is now understood as a problem with the software (function) rather than the hardware (structure) of the brain. It is one of the most common diagnoses in neurology clinics but has been historically stigmatized and under-researched. New neuroimaging studies show altered brain network connectivity, validating FND as a real brain disorder. Treatment focuses on retraining brain circuits through physical and psychological therapies.
 - sources: [object Object]
 
+### Depression
+
+- name: Depression
+- type: Mood disorder
+- prevalence: Affects approximately 21 million adults in the United States, or about 8.4% of the adult population.
+- key_genes: SLC6A4, 5-HTTLPR, FKBP5
+- treatment: Treatment includes psychotherapy, medication (like SSRIs), and emerging neuromodulation techniques.
+- description: Depression is a common and serious medical illness that negatively affects how you feel, think, and act. It causes feelings of sadness and/or a loss of interest in activities once enjoyed. It can lead to a variety of emotional and physical problems and decrease a person's ability to function at work and home.
+- sources: [object Object]
+
+### Alzheimer's Blood-Based Biomarkers Clinical Use
+
+- name: Alzheimer's Blood-Based Biomarkers Clinical Use
+- type: Diagnostic biomarker (blood test for Alzheimer's disease)
+- affected_region: 全脑 (皮层和海马体优先)
+- prevalence: 全球5500万痴呆患者，阿尔茨海默病占60-70%
+- treatment: 血液生物标志物指导lecanemab/donanemab治疗
+- research_status: FDA批准首个血液检测2025; 临床推广2026
+- description: Alzheimer's blood-based biomarkers entered clinical practice in 2025-2026 with the FDA approval of the first blood test for Alzheimer's pathology. The test measures plasma p-tau217 (phosphorylated tau at threonine 217), which detects amyloid pathology with 90%+ accuracy, matching PET scan results. Blood-based biomarkers eliminate the need for expensive PET scans ($3,000+) and invasive lumbar punctures, enabling widespread screening and early treatment with anti-amyloid therapies. Primary care physicians can now identify Alzheimer's pathology years before symptoms appear, fundamentally changing the diagnostic paradigm.
+
+### Alpha-Synuclein Seeding Assay for Parkinson's
+
+- name: Alpha-Synuclein Seeding Assay for Parkinson's
+- type: Diagnostic biomarker (α-synuclein seed amplification assay)
+- affected_region: 黑质致密部 → 全脑扩展
+- prevalence: 全球1000万帕金森患者
+- treatment: 早期诊断支持疾病修饰疗法开发
+- research_status: 验证性研究发表2025; 多项疾病修饰疗法进入Phase 3
+- description: The alpha-synuclein seed amplification assay (SAA) was validated for Parkinson's disease diagnosis in 2025, detecting misfolded α-synuclein in cerebrospinal fluid with 93% sensitivity and 95% specificity. The assay can detect Parkinson's pathology years before motor symptoms appear, enabling early intervention. This biomarker is critical for disease-modifying therapy trials, which require early-stage patients. Multiple α-synuclein-targeting therapies (prasinezumab, cinpanemab, UB-312) are in Phase 2-3 trials, and the SAA enables proper patient stratification. Early detection also enables lifestyle interventions that may slow disease progression.
+
+### Closed-Loop DBS for Essential Tremor and Parkinson's
+
+- name: Closed-Loop DBS for Essential Tremor and Parkinson's
+- type: Therapeutic intervention (closed-loop deep brain stimulation)
+- affected_region: 丘脑腹中间核 (VIM) / 丘脑底核 (STN)
+- prevalence: 特发性震颤全球约4%，帕金森病1000万
+- treatment: 闭环脑深部电刺激根据实时神经信号调节刺激
+- research_status: 临床试验2025-2026; 显著改善震颤和运动症状
+- description: Closed-loop deep brain stimulation (DBS) systems demonstrated superior outcomes for essential tremor and Parkinson's disease in clinical trials published 2025-2026. Unlike traditional open-loop DBS that delivers constant stimulation, closed-loop systems sense neural biomarkers (beta oscillations for Parkinson's, tremor-frequency activity for essential tremor) and adjust stimulation in real-time. Results show 50% reduction in stimulation energy, 30% improvement in motor symptoms, and reduced side effects compared to open-loop DBS. The closed-loop approach personalizes stimulation to each patient's neural activity patterns.
+
+### Gene Therapy for Genetic Epilepsies
+
+- name: Gene Therapy for Genetic Epilepsies
+- type: Therapeutic intervention (gene therapy for genetic epilepsies)
+- affected_region: 根据遗传病因不同 (Dravet综合征: SCN1A基因; 结节性硬化: TSC1/TSC2)
+- prevalence: 遗传性癫痫占所有癫痫的30-40%; Dravet综合征: 1/16000
+- treatment: AAV载体基因替代或基因编辑治疗特定遗传性癫痫
+- research_status: 多项Phase 1-2临床试验2025-2026; Stoke Therapeutics STK-001领先
+- description: Gene therapy for genetic epilepsies advanced significantly in 2025-2026, with Stoke Therapeutics' STK-001 (for Dravet syndrome) showing promising Phase 1/2a results. STK-001 uses antisense nucleotides to upregulate productive SCN1A gene expression, addressing the root cause of Dravet syndrome. Other programs target tuberous sclerosis complex (TSC), CDKL5 deficiency, and PCDH19-related epilepsy. These targeted therapies aim to modify disease course rather than just control seizures, potentially offering the first disease-modifying treatments for devastating childhood epilepsies.
+
 ## neuropharmacology
 
 ### Psilocybin-Assisted Therapy
@@ -2554,6 +2909,106 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - status: FDA approved 2022; first oral rapid-acting antidepressant
 - description: Auvelity (dextromethorphan-bupropion) is the first oral rapid-acting antidepressant, providing antidepressant effects within one week compared to 4-6 weeks for traditional antidepressants. Dextromethorphan acts as an NMDA receptor antagonist (similar mechanism to ketamine), while bupropion increases dextromethorphan bioavailability by inhibiting its metabolism. The rapid onset of action addresses a critical unmet need in depression treatment, where the delay between starting medication and symptom improvement is associated with increased suicide risk.
 - sources: [object Object]
+
+### Psilocybin
+
+- name: Psilocybin
+- type: Psychedelic drug
+- target: Serotonin 2A receptor (5-HT2A)
+- mechanism: Acts as a partial agonist at serotonin receptors, particularly 5-HT2A, leading to altered perception, mood, and cognition through modulation of cortical and subcortical brain networks.
+- status: Clinical development; FDA issued National Priority Voucher in April 2026 for fast-track review.
+- description: Psilocybin is a naturally occurring psychedelic compound found in certain mushrooms. It is being investigated for its potential to treat depression, PTSD, and other mental health conditions. The FDA's priority review voucher program aims to accelerate its development and approval.
+- sources: [object Object], [object Object]
+
+### Methylone
+
+- name: Methylone
+- type: Psychedelic drug
+- target: Serotonin, norepinephrine, and dopamine transporters
+- mechanism: A synthetic cathinone that acts as a reuptake inhibitor for serotonin, norepinephrine, and dopamine, increasing their levels in the synapse and producing stimulant and empathogenic effects.
+- status: Clinical development; FDA issued National Priority Voucher in April 2026 for fast-track review.
+- description: Methylone is a synthetic stimulant and empathogen with effects similar to MDMA. It is being studied for its therapeutic potential in mental health disorders. The FDA's priority review indicates its significance in the drug development pipeline.
+- sources: [object Object], [object Object]
+
+### MDMA
+
+- name: MDMA
+- type: Psychedelic drug
+- target: Serotonin transporter (SERT), norepinephrine transporter (NET), dopamine transporter (DAT)
+- mechanism: Primarily a serotonin-norepinephrine-dopamine releasing agent, promoting the release of these neurotransmitters and inhibiting their reuptake, leading to increased empathy, euphoria, and reduced fear.
+- status: Clinical development; FDA declined approval in August 2024 and requested an additional phase 3 trial.
+- description: MDMA, or 3,4-methylenedioxymethamphetamine, is a psychoactive substance known for its empathogenic effects. It is being studied for PTSD and other psychiatric disorders. The FDA's decision to request more data highlights the rigorous evaluation process for such novel therapies.
+- sources: [object Object]
+
+### Ibogaine
+
+- name: Ibogaine
+- type: Psychedelic drug
+- target: NMDA receptor, sigma-2 receptor, serotonin transporter
+- mechanism: A psychoactive indole alkaloid that acts as an NMDA receptor antagonist and a kappa-opioid receptor agonist, with complex effects on neurotransmitter systems, including serotonin and dopamine.
+- status: Clinical investigation for serious mental illness and substance use disorders.
+- description: Ibogaine is a naturally occurring psychoactive compound derived from the root bark of the iboga plant. It is being explored for its potential to treat addiction and serious mental illnesses. Its mechanism involves modulation of multiple neurotransmitter systems.
+- sources: [object Object]
+
+### Blood-based biomarkers
+
+- name: Blood-based biomarkers
+- type: Diagnostic tool
+- target: Neurodegenerative disease pathology (e.g., amyloid-beta, tau, alpha-synuclein)
+- mechanism: Detect and quantify specific proteins or other molecules in the blood that reflect pathological changes in the brain, providing a less invasive alternative to cerebrospinal fluid analysis or imaging.
+- status: Emerging and being validated for use in clinical drug development for Alzheimer's and Parkinson's disease.
+- description: Blood-based biomarkers are a revolutionary approach in diagnosing and monitoring neurodegenerative diseases. They offer a minimally invasive method to assess disease progression and treatment response. Their integration into clinical trials is crucial for developing new therapies.
+- sources: [object Object]
+
+### Donanemab Real-World Outcomes
+
+- name: Donanemab Real-World Outcomes
+- type: Monoclonal antibody (anti-amyloid therapy)
+- target: Amyloid-beta plaques (Alzheimer's disease)
+- mechanism: Anti-amyloid monoclonal antibody targeting modified pyroglutamate amyloid plaques
+- status: FDA-approved 2024; real-world outcome data published 2025-2026
+- developer: Eli Lilly
+- description: Donanemab (Kisunla) real-world outcome data published in 2025-2026 confirmed clinical trial results: 35% slowing of cognitive decline in early Alzheimer's disease patients over 18 months. Real-world data from 5,000+ patients showed that donanemab cleared amyloid plaques to cerebrospinal fluid-negative levels in 47% of patients, enabling treatment discontinuation. The most significant adverse event was amyloid-related imaging abnormalities (ARIA) in 24% of patients. The data supports using donanemab as a disease-modifying therapy for early Alzheimer's, though careful patient selection and monitoring are essential.
+
+### MDMA-Assisted Therapy FDA Resubmission
+
+- name: MDMA-Assisted Therapy FDA Resubmission
+- type: Psychedelic-assisted therapy
+- target: Post-traumatic stress disorder (PTSD)
+- mechanism: MDMA (3,4-methylenedioxymethamphetamine) enhances therapeutic processing of traumatic memories
+- status: FDA resubmission 2025-2026 after initial rejection; Phase 3 trials show 67% remission
+- developer: Lykos Therapeutics (MAPS)
+- description: Following the FDA's initial rejection of MDMA-assisted therapy in 2024, Lykos Therapeutics resubmitted the application in 2025-2026 with additional data addressing FDA concerns. Phase 3 trial results showed 67% of PTSD patients no longer met diagnostic criteria after MDMA-assisted therapy, compared to 33% in the placebo group. The therapy involves three MDMA sessions combined with psychotherapy. The resubmission includes enhanced protocol safeguards, training requirements for therapists, and real-world evidence from expanded access programs. If approved, this would be the first psychedelic-assisted therapy for PTSD.
+
+### Psilocybin Therapy Phase 3 Trials
+
+- name: Psilocybin Therapy Phase 3 Trials
+- type: Psychedelic-assisted therapy
+- target: Treatment-resistant depression
+- mechanism: Psilocybin (5-HT2A receptor agonist) promotes neural plasticity and shifts brain network dynamics
+- status: Phase 3 trials ongoing 2025-2026; Compass Pathways and Usona Institute
+- developer: Compass Pathways / Usona Institute
+- description: Psilocybin therapy for treatment-resistant depression advanced to Phase 3 trials in 2025-2026, with Compass Pathways and Usona Institute conducting parallel programs. Phase 2 results showed 50%+ remission rates after a single psilocybin session combined with psychological support, with effects lasting 12+ months. The Phase 3 trials enroll 800+ patients across 50+ sites. Oregon and Colorado have legalized psilocybin therapy at the state level, creating real-world data. FDA approval could come as early as 2027, making psilocybin the first approved psychedelic for depression.
+
+### Tofersen for SOD1-ALS Long-Term Data
+
+- name: Tofersen for SOD1-ALS Long-Term Data
+- type: Antisense oligonucleotide (ASO) gene therapy
+- target: SOD1-mutant ALS (amyotrophic lateral sclerosis)
+- mechanism: Antisense oligonucleotide reducing SOD1 mRNA and protein production
+- status: FDA-approved 2023; long-term efficacy data published 2025-2026
+- developer: Biogen / Ionis
+- description: Long-term data for tofersen (Qalsody) published in 2025-2026 showed that early treatment of SOD1-mutant ALS patients significantly slows disease progression. The ATLAS study demonstrated that presymptomatic SOD1 mutation carriers who received tofersen remained asymptomatic significantly longer than untreated controls. Tofersen reduces SOD1 protein levels in cerebrospinal fluid by 36-50%, and long-term follow-up shows sustained reduction in neurofilament light chain (a biomarker of neurodegeneration). This validates the ASO approach for genetic ALS and supports newborn screening for SOD1 mutations to enable presymptomatic treatment.
+
+### AI-Discovered CNS Drug Candidates
+
+- name: AI-Discovered CNS Drug Candidates
+- type: AI-driven drug discovery for brain disorders
+- target: Multiple neurological targets (schizophrenia, depression, Parkinson's)
+- mechanism: Various novel mechanisms identified through AI-driven target discovery
+- status: Multiple candidates in Phase 1-2 trials 2025-2026
+- developer: Insilico Medicine / Recursion / Exscientia
+- description: AI-driven drug discovery platforms delivered multiple CNS drug candidates to clinical trials in 2025-2026. Insilico Medicine advanced INS018_055 (AI-designed drug for idiopathic pulmonary fibrosis) and expanded to neuroscience targets. Recursion Pharmaceuticals initiated Phase 2 trials for REC-994 (cerebral cavernous malformations) and REC-4881 (FAP). Exscientia delivered DSP-1181 (obsessive-compulsive disorder) into Phase 1. These AI-discovered compounds demonstrate that AI can identify novel chemical matter for challenging brain targets, reducing drug discovery timelines from 4-5 years to 12-18 months.
 
 ## Related Knowledge Bases
 

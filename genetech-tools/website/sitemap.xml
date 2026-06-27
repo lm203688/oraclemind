@@ -5,8 +5,58 @@
   <url><loc>https://genetech.tools/api/entities.json</loc><changefreq>daily</changefreq><priority>0.5</priority></url>
   <url><loc>https://genetech.tools/llms.txt</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://genetech.tools/llms-full.txt</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-arbor-bio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-be-biopharma.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-beam-ther.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-beam.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-bluebird-bio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-breeze-bio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-caribou.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-cellectis.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-chroma-med.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-crispr-ther.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-editas.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-formation-bio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-generate-biomedicines.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-intellia.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-kriya.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-locus-bio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-pairwise.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-prime-med.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-sangamo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-tune-ther.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/btc-verve.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/ca-in-vivo-crispr-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/ca-stanford-ai-crispr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0601-250-trials.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0601-base-editing-advances.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0601-crispr-10-companies.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0601-fda-rare-disease.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0601-nature-breakthrough.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0602-250-trials-update.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0602-fda-ultra-rare-pathway.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0602-personalized-crispr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0602-yale-immune-crispr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0603-destructive-crispr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0603-fda-plausible-mechanism.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0603-in-vivo-advances.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0604-crispr-market-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0604-destructive-crispr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0604-editas-edit401.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0604-head-neck-chemo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0604-scd-gene-editing.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0605-crispr-market-growth.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0605-crispr-t1d-hiv.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0605-fda-rare-pathway-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-0605-yale-crispr-tool.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-base-editing.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-casgevy.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-chop-prime-edit-ucd.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-crispr-medicine-news-clinical-.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-ei0cu60kl5.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-gt53100.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-gt53101.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-gt53102.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-isvfvntxfm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-mpkpg9e3-6ad71j.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-mpkpg9e4-mmdrqv.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -14,16 +64,44 @@
   <url><loc>https://genetech.tools/entity/cr-mpkqew9m-5s6sfl.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-mpkqew9m-9xqkdm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-mpkqew9m-kfmtle.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-nf2k8c1a.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-nf2k8c2b.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-pm359-prime-edit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-prime-editing.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-pucvb2b02n.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-scid-gene-correction.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-tgida5ygo1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/cr-vertex-crisprs-gene-editing-th.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/cr-yolt101-base-edit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0601-attr-wildtype.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0601-bcell-malignancies.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0601-was.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0602-cps1d.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0602-dfnb9.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0602-tk2d.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0603-attr-update.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0603-hefh-update.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0603-lca10.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0603-scd-update.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0604-arrhythmogenic-cm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0604-head-neck-cancer.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0604-sickle-cell-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0604-viral-infection-crispr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0604-xscid.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0605-mld.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0605-pediatric-solid-tumor.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-0605-tk2-deficiency.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-30fzbdqafz.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-31emls6skc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-6hsnfw2m2p.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-96j2zl8h2r.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-e0lzj0n52f.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-glh55ppj2i.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-gt53100.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-gt53101.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-gt53102.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-gt53103.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-gt53104.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-iisqqqaub4.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-lgixfmygvn.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-mpkp8lda-5es53b.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -166,11 +244,80 @@
   <url><loc>https://genetech.tools/entity/dis-mpktp0f6-o8e6d1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-mpktp0f7-1m167n.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-mpktp0f7-ypj5ez.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-nf2k8d1a.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-nf2k8d2b.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-nf2k8d3c.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-nf2k8d4d.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-nf2k8d5e.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-nf2k8d6f.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/dis-nf2k8d7g.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-rk0r4kdqnm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/dis-zysz5zaap1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-aav-serotypes-2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-aav-serotypes.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-aav.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-aav9.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-adenoviral.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-adenovirus.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-exosome.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-lentiviral.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-lentivirus.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-lnp-extrahepatic.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-lnp-precision.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-lnp-rna-therapeutics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-lnp-vs-aav.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-lnp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-nonviral-diabetes.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdl-polymer.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-cancer-genomics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-clinical-genomics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-ctdna-ngs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-gene-panel.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-genomic-testing-market.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-liquid-biopsy.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-nextgeneration-sequencing-ngs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-ngs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-ont.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-pacbio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-pharmacogenomics-2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-pharmacogenomics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-rapid-whole-genome-sequencing-.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-wes.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gdx-wgs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0601-gdnf.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0601-neurturin.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0601-was.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0602-cps1-babykj.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0602-tk2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0603-cep290.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0603-klrbc1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0603-ldlr-apoe.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0603-ldlr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0603-rpe65-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-cd19.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-cd73.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-egfr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-hpv-e6e7.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-il2rg.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-ryr2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-scd1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0604-tp53.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0605-arsa.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0605-nefl.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-0605-ntn1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-80ukzywvtx.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-cancerpam.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-casyufzxqk.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-crispr-cas9.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-crispr-gene-editing-market.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-crispr-screening.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-dhnepfhb5m.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-gene-therapy.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-gt53100.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-gt53101.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-gt53102.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-gt53103.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-gt53104.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-if721guqyz.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-jj88ij34ea.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-l7fkq48o8f.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -253,14 +400,78 @@
   <url><loc>https://genetech.tools/entity/gene-mpktp0f5-qgdgi1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-mpktp0f5-r0005z.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-mpktp0f6-xh2qaa.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-n-of-1-trials.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p0j.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p1a.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p2b.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p3c.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p4d.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p5e.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p6f.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p7g.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p8h.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-nf2k8p9i.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-severe-combined-immunodeficien.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gene-ultra-rare-gene-based-therapy.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gene-xx9c6qy2u.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-base-edit-abe.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-base-edit-cbe.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-base-editors.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-cas12a.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-cas13.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-cas9-hifi.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-cas9-new-variants.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-crispr-cas12a.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-crispr-epigenome-mek.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-crisproff-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-crsp-cas9.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-epigenome-edit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-fast-ctrl-cas9.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-inducible-be.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-pe-max.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-pen-system.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-prime-edit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-prime-editors.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-talen.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-twin-prime.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-yale-crispr-immuno.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/get-zfn.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0601-40plus-approved.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0601-breakthrough-prize.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0601-igf1-parkinson.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0601-in-vivo-car.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0601-was-gene.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0602-baby-kj.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0602-ctx310.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0602-encelto.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0602-kygevvi.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0602-otarmeni.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0602-yale-crispr-immune.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0603-baby-kj-followup.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0603-editas-edit401.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0604-baby-kj-personalized.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0604-fda-ultra-rare.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0604-scd-gene-editing.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0605-encelto.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0605-kygevvi.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0605-lenmeldy.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0605-verve102.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-0605-was-gene-therapy.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-1mcimbiuyi.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-4hbmciufjq.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-amt-130.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-beam-liver-base-edit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-casgevy-expanded.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-cps1-crispr-personalized.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-f98bgwp0l6.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-glybera.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-gt53100.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-gt53101.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-gt53102.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-intellia-ttr-phase3.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-kresladi-lad1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-kymriah.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-luxturna.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-mpkp8lda-hi3fa1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-mpkpaslw-a25iqs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-mpkpaslw-nwk9i9.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -280,7 +491,29 @@
   <url><loc>https://genetech.tools/entity/gt-mpkqew9m-l94834.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-mpktp0f6-a9fwfj.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-mpktp0f6-kd739y.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-nf2k8g1a.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-nf2k8g2b.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-nf2k8g3c.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-novaiscb-compact.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-prime-urea-cycle.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-prime-wilson-disease.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-qg1nsmhccw.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genetech.tools/entity/gt-tg1kkqwogf.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-uniqures-aav-based-gene-silenc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/gt-zolgensma.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-bioprinting.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-brain-organoid.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-crispr-stem.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-humacyte.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-induced-pluripotent-stem-cells.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-ipsc-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-ipsc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-msc-exosome.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-msc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-organ-repair.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-organoid.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-pluripotent-stem-cell-therapie.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-scaffold.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-tissue-eng.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://genetech.tools/entity/rgm-xeno-transplant.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

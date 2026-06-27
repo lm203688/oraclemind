@@ -165,6 +165,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .detail-val{flex:1;color:#475569;font-size:.9rem;word-break:break-word}
 .footer{margin-top:2rem;padding:1.5rem;text-align:center;color:#94a3b8;font-size:.8rem}
 .footer a{color:${site.color};text-decoration:none}
+
+/* Paywall preview styles */
+.paywall-preview{position:relative;max-height:200px;overflow:hidden}
+.paywall-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to bottom,transparent,#fff 60%);padding:2rem 2rem 1.5rem;text-align:center}
+.paywall-overlay .unlock-btn{display:inline-block;padding:.6rem 1.5rem;background:${site.color};color:#fff;text-decoration:none;border-radius:8px;font-size:.9rem;font-weight:600;transition:transform .2s}
+.paywall-overlay .unlock-btn:hover{transform:scale(1.05)}
+.paywall-overlay .unlock-hint{display:block;margin-top:.5rem;font-size:.8rem;color:#94a3b8}
+.details-locked{position:relative;max-height:300px;overflow:hidden}
+.details-locked::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to bottom,transparent,#fff 80%);pointer-events:none}
+.upgrade-banner{margin:1rem 2rem;padding:1rem 1.25rem;background:linear-gradient(135deg,${site.color}10,${site.color}05);border:1px solid ${site.color}30;border-radius:8px;text-align:center}
+.upgrade-banner p{font-size:.85rem;color:#475569;margin-bottom:.5rem}
+.upgrade-banner a{display:inline-block;padding:.5rem 1.25rem;background:${site.color};color:#fff;text-decoration:none;border-radius:6px;font-size:.85rem;font-weight:600}
 </style>
 </head>
 <body>
@@ -181,9 +193,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <h2>${name}</h2>
       <span class="category">${category.replace(/_/g, ' ')}</span>
     </div>
-    ${description ? `<div class="entity-desc">${description}</div>` : ''}
-    <div class="details">
-      ${details.map(d => `<div class="detail-row"><div class="detail-key">${d.key}</div><div class="detail-val">${d.value}</div></div>`).join('\n      ')}
+    ${description ? `<div class="entity-desc paywall-preview">${description.substring(0, 280)}<span style="filter:blur(4px);user-select:none">${description.substring(280, 400)}</span><div class="paywall-overlay"><a class="unlock-btn" href="/order.html">🔓 解锁完整数据 (Pro)</a><span class="unlock-hint">免费用户可查看摘要，Pro 会员解锁全部详情与深度数据</span></div></div>` : ''}
+    <div class="details details-locked">
+      ${details.slice(0, 3).map(d => `<div class="detail-row"><div class="detail-key">${d.key}</div><div class="detail-val">${d.value}</div></div>`).join('\n      ')}
+      ${details.length > 3 ? `<div style="padding:.5rem 0"><div class="upgrade-banner"><p>还有 ${details.length - 3} 项深度数据 · Pro 会员可查看全部</p><a href="/order.html">升级 Pro 解锁 →</a></div></div>` : ''}
     </div>
   </div>
   <div class="footer">

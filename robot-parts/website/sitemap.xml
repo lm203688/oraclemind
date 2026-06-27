@@ -37,8 +37,68 @@
   <url><loc>https://robot.genetech.tools/entity/act-030.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/act-031.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/act-032.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-1x-neo-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-agility-digit-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-atlas-electric-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-bd-atlas-electric-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-bonsystems-bcsa.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-ct-unite-gan-encoder-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-ct-unite-gan-production.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-cubemars-ak45-36.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-cubemars-ak70-10.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-cubemars-frameless.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-cubemars-gl40-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-cubemars-qdd.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-dea-soft.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-faulhaber-3274.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-figure-03-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-figure-03-helix.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-first-a301-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-first-a301.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-high-torque-mini-hi.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-high-torque-pi.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-honpine-hpjm-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-humanoid-1000-deal.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-hyundai-bd-atlas-prod.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/act-hyundai-gripper.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-hyundai-mobis-atlas.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-iai-new-lineup.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-iai-robot-lineup.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-iai-robot.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-inspire-dexterous-hand.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-inspire-linear-servo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-kai-humanoid-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-keyirobot-hand.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-kpower-fullbody.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-kpower-servo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-lg-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-lg-cloid-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/act-mit-electrofluidic.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-moog-smartmotor-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-mosrac-48v-series.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-mosrac-whg240.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-neura-dyna-hand.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-omni-humanoid-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-optimus-gen3-hand.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-patsnap-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-patsnap-analysis.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-robotis-20dof-hand.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-robozaps-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-roland-berger-hd-actuator.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-schaeffler-4in1-compact.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-schaeffler-compact.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-schaeffler-hexagon.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-schaeffler-modular.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-schaeffler-planetary.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-tesla-optimus-hand.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-tesla-optimus-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-tienkung-ultra.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-tmotor-ak80-9-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-unitree-b2-motor-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-unitree-g1-hand.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-welling-harmonic.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-welling-joint.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/act-welling-planetary.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/chip-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/chip-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/chip-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -59,6 +119,46 @@
   <url><loc>https://robot.genetech.tools/entity/chip-018.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/chip-019.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/chip-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-advantech-iq10.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-amd-ryzen-ai-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-amd-ryzen-ai-400.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-amd-ryzen-ai-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-amlogic-a311d2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-edge-ai-realtime.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-gigadevice-gd32h7-robot.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-gigadevice-gd32h7.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-horizon-j6.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-horizon-j6e.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-intel-ces2026-ai.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-intel-core-ultra-s3-edge.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-intel-core-ultra-s3-robee.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-intel-core-ultra-s3-robotics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-intel-ultra3-robotics-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-mediatek-edge-ai-7b.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-mediatek-genio-700-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-mediatek-genio-700.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-microsoft-braga.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-ms-braga-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-neura-robotics-iq10.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-nvidia-cosmos-gr00t-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-nvidia-cosmos-groot.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-nvidia-t5000-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-nvidia-t5000.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-nvidia-thor-robotics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-nvidia-thor-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-nxp-imx95.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-qualcomm-iq10-advantech.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-qualcomm-iq10-pro.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-qualcomm-iq10.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-qualcomm-iq9.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-qualcomm-rb6-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-qualcomm-robotics-pc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-renesas-rzv2h-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-renesas-rzv2l.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-rockchip-rk3588s-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-snapdragon-x2-plus.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-ti-tda4vp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/chip-turbox-irb10.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/if-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/if-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/if-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -92,6 +192,27 @@
   <url><loc>https://robot.genetech.tools/entity/proto-019.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/proto-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/proto-021.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-023.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-024.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-025.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-027.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-028.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-029.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-030.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-031.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-032.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-033.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-034.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-035.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-040.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-041.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-042.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-043.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-044.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-045.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/proto-046.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/rp-ct21x-gan-encoder.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/rp-honpine-hpjm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/rp-intel-core-ultra-s3.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -101,9 +222,30 @@
   <url><loc>https://robot.genetech.tools/entity/rplat-004.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/rplat-005.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/rplat-006.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rplat-007.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rplat-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rplat-009.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-5g-nr-urllc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-can-xl-v2.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-cyclonedds.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-delft-comm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-ethercat-g.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-i3c.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-ieee8021-tsn-profile.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-opcua-dds-gateway.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-robot-comm-electronics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-robotcore.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-thread-1-4.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-thread-14.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-wifi7-mlo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/rproto-zenoh-flow.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/sens-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/sens-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/sens-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/sens-004.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://robot.genetech.tools/entity/sens-005.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/sens-006.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/sens-007.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/sens-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://robot.genetech.tools/entity/sens-009.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

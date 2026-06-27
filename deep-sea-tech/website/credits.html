@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pricing — Frontier Knowledge Base</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0e17;color:#e2e8f0;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+h1{color:#06b6d4;text-align:center;margin:20px 0;font-size:2rem}
+.subtitle{text-align:center;color:#94a3b8;margin-bottom:10px;font-size:1.05rem}
+.badge-row{text-align:center;margin-bottom:40px}
+.vs-badge{display:inline-block;background:rgba(245,158,11,0.15);color:#f59e0b;padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:600}
+
+/* Section titles */
+.section-title{color:#e2e8f0;font-size:1.3rem;margin:40px 0 20px;padding-bottom:8px;border-bottom:1px solid #1e2d4a;display:flex;align-items:center;gap:10px}
+.section-title .icon{font-size:1.4rem}
+
+/* Pricing Cards */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin:20px 0}
+.pricing-card{background:#111827;border:1px solid #1e2d4a;border-radius:16px;padding:30px;position:relative;transition:all .3s}
+.pricing-card:hover{transform:translateY(-4px);border-color:#06b6d4}
+.pricing-card.featured{border-color:#f59e0b;background:linear-gradient(180deg,#1a1f35 0%,#111827 100%)}
+.pricing-card.featured:hover{border-color:#fbbf24}
+.pricing-card .popular{position:absolute;top:-12px;right:20px;background:#f59e0b;color:#000;padding:4px 14px;border-radius:12px;font-size:.75rem;font-weight:700}
+.card-name{font-size:1.2rem;font-weight:700;margin-bottom:4px}
+.card-desc{color:#94a3b8;font-size:.85rem;margin-bottom:16px;min-height:40px}
+.card-price{font-size:2.4rem;font-weight:800;color:#06b6d4;margin-bottom:4px}
+.card-price .period{font-size:.9rem;font-weight:400;color:#64748b}
+.card-price .old{font-size:1rem;color:#475569;text-decoration:line-through;margin-left:8px;font-weight:400}
+.card-competitor{font-size:.75rem;color:#64748b;margin-bottom:16px;padding:6px 10px;background:#0a0e17;border-radius:6px}
+.card-competitor span{color:#f59e0b;font-weight:600}
+.features{list-style:none;margin:16px 0}
+.features li{padding:6px 0;font-size:.88rem;color:#cbd5e1;display:flex;align-items:flex-start;gap:8px}
+.features li::before{content:'✓';color:#10b981;font-weight:700;flex-shrink:0}
+.features li.pro::before{content:'★';color:#f59e0b}
+.btn{display:block;width:100%;padding:14px;border-radius:10px;border:none;font-size:1rem;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;transition:all .2s}
+.btn-primary{background:#06b6d4;color:#000}
+.btn-primary:hover{background:#22d3ee}
+.btn-featured{background:#f59e0b;color:#000}
+.btn-featured:hover{background:#fbbf24}
+.btn-outline{background:transparent;border:1px solid #1e2d4a;color:#e2e8f0}
+.btn-outline:hover{border-color:#06b6d4}
+
+/* Comparison table */
+.compare-section{margin:60px 0 30px}
+.compare-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.compare-table th,.compare-table td{padding:12px 16px;text-align:left;border-bottom:1px solid #1e2d4a}
+.compare-table th{color:#94a3b8;font-weight:600;position:sticky;top:0;background:#0a0e17}
+.compare-table th.highlight{color:#f59e0b}
+.compare-table td{color:#cbd5e1}
+.compare-table .check{color:#10b981;font-weight:700}
+.compare-table .cross{color:#475569}
+.compare-table .partial{color:#f59e0b}
+
+/* FAQ */
+.faq{margin:40px 0}
+.faq-item{border:1px solid #1e2d4a;border-radius:10px;margin:8px 0;overflow:hidden}
+.faq-q{padding:16px 20px;cursor:pointer;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.faq-q:hover{background:#111827}
+.faq-a{padding:0 20px 16px;color:#94a3b8;font-size:.9rem;display:none}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-q::after{content:'+';color:#06b6d4;font-size:1.2rem}
+
+footer{text-align:center;padding:40px 0;color:#475569;font-size:.8rem}
+footer a{color:#06b6d4;text-decoration:none}
+
+@media(max-width:640px){
+  .pricing-grid{grid-template-columns:1fr}
+  .compare-table{font-size:.75rem}
+  .compare-table th,.compare-table td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+
+<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:2rem 1.5rem;margin:0 auto;max-width:900px;border-radius:12px;text-align:center">
+  <h2 style="margin:0 0 0.5rem;font-size:1.5rem">🤖 AI Agent Native Knowledge Base</h2>
+  <p style="margin:0;opacity:0.9">4,000+ structured entities across 12 frontier science domains. REST API + MCP protocol. Let your AI agents query real knowledge.</p>
+  <div style="margin-top:1rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+    <code style="background:rgba(255,255,255,0.2);padding:0.5rem 1rem;border-radius:6px">GET https://deepseatech.pages.dev/api/entities.json</code>
+    <code style="background:rgba(255,255,255,0.2);padding:0.5rem 1rem;border-radius:6px">POST /api/register → Get API Key</code>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Frontier Knowledge Base</h1>
+  <p class="subtitle">AI-Powered Intelligence Across 12 Frontier Technology Domains</p>
+  <div class="badge-row">
+    <span class="vs-badge">⚡ vs. BioCentury $20K/yr · CB Insights $50K/yr · Crunchbase $99/mo</span>
+  </div>
+
+  <!-- Subscription Plans -->
+  <div class="section-title"><span class="icon">🔄</span> Monthly Subscriptions</div>
+  <div class="pricing-grid">
+
+    <div class="pricing-card">
+      <div class="card-name">Daily Brief</div>
+      <div class="card-desc">AI-curated frontier tech intelligence, delivered daily</div>
+      <div class="card-price">$19<span class="period">/month</span></div>
+      <div class="card-competitor">vs. <span>Perplexity Pro $20/mo</span> — deeper domain expertise</div>
+      <ul class="features">
+        <li>Daily AI-curated brief (12 domains)</li>
+        <li>Trend vectors & momentum signals</li>
+        <li>Cross-domain impact analysis</li>
+        <li>Key breakthrough highlights</li>
+        <li>Email delivery every morning</li>
+      </ul>
+      <a href="https://www.www.creem.io/product/prod_22YhSbYonX9hiC0OppnXTn" class="btn btn-outline" target="_blank">Subscribe Now</a>
+    </div>
+
+    <div class="pricing-card featured">
+      <div class="popular">BEST VALUE</div>
+      <div class="card-name">Intelligence Pro</div>
+      <div class="card-desc">Knowledge graphs, predictions & investment signals</div>
+      <div class="card-price">$49<span class="period">/month</span></div>
+      <div class="card-competitor">vs. <span>Crunchbase Pro $99/mo</span> — 12 domains + AI predictions</div>
+      <ul class="features">
+        <li>Everything in Daily Brief</li>
+        <li class="pro">Interactive knowledge graph visualization</li>
+        <li class="pro">Technology maturity (TRL) tracking</li>
+        <li class="pro">Competitive landscape mapping</li>
+        <li class="pro">AI trend predictions (6-12 months)</li>
+        <li class="pro">Investment signal indicators 🟢🟡🔴</li>
+        <li class="pro">Inflection point alerts</li>
+        <li>990 API credits/month</li>
+      </ul>
+      <a href="https://www.www.creem.io/product/prod_4EpFVQGKm5vWXChbRiFdbE" class="btn btn-featured" target="_blank">Subscribe Now</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="card-name">API Access</div>
+      <div class="card-desc">Programmatic access for developers & AI agents</div>
+      <div class="card-price">$29<span class="period">/month</span></div>
+      <div class="card-competitor">vs. <span>Semantic Scholar Free</span> — structured + cross-domain</div>
+      <ul class="features">
+        <li>4,800+ entities across 12 domains</li>
+        <li>REST API with JSON responses</li>
+        <li>OpenAPI 3.1 schema</li>
+        <li>AI Agent integration (MCP/OpenAI)</li>
+        <li>Cross-reference relations</li>
+        <li>500 API calls/day</li>
+        <li>Webhook support</li>
+      </ul>
+      <a href="https://www.www.creem.io/product/prod_pny43rzDa0mmBaj7d9k4w" class="btn btn-outline" target="_blank">Subscribe Now</a>
+    </div>
+
+  </div>
+
+  <!-- One-Time Products -->
+  <div class="section-title"><span class="icon">💎</span> One-Time Purchase</div>
+  <div class="pricing-grid">
+
+    <div class="pricing-card">
+      <div class="card-name">Lifetime Membership</div>
+      <div class="card-desc">Permanent access to all intelligence & updates</div>
+      <div class="card-price">$99<span class="period"> one-time</span></div>
+      <div class="card-competitor">vs. <span>BioCentury $20K/yr</span> — 200x cheaper</div>
+      <ul class="features">
+        <li>Everything in Intelligence Pro, forever</li>
+        <li>License key activation</li>
+        <li>Daily report downloads</li>
+        <li>All future updates included</li>
+        <li>Priority support</li>
+      </ul>
+      <a href="https://www.www.creem.io/product/prod_5IooNCEQoCyqp758oeVPGT" class="btn btn-primary" target="_blank">Get Lifetime Access</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="card-name">Full Database Download</div>
+      <div class="card-desc">Complete dataset from all 12 knowledge bases</div>
+      <div class="card-price">$999<span class="period"> one-time</span></div>
+      <div class="card-competitor">vs. <span>DealForma $18K/yr</span> — raw data + analysis</div>
+      <ul class="features">
+        <li>12 knowledge bases, 4,800+ entities</li>
+        <li>Structured JSON + OpenAPI schema</li>
+        <li>Cross-reference relations included</li>
+        <li>AI analysis & investment signals</li>
+        <li>Free updates for 30 days</li>
+        <li>Commercial use license</li>
+      </ul>
+      <a href="https://www.www.creem.io/product/prod_5OFcAcJeXzfTMkDDt6woBh" class="btn btn-outline" target="_blank">Purchase Dataset</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="card-name">Single Domain Data</div>
+      <div class="card-desc">One domain's complete dataset</div>
+      <div class="card-price">$49<span class="period"> one-time</span></div>
+      <div class="card-competitor">vs. <span>Elicit Pro $49/mo</span> — one-time, not monthly</div>
+      <ul class="features">
+        <li>Choose from 12 domains</li>
+        <li>100-1,700+ entities per domain</li>
+        <li>Structured JSON + OpenAPI schema</li>
+        <li>Cross-reference relations</li>
+        <li>Free updates for 30 days</li>
+      </ul>
+      <a href="https://www.www.creem.io/product/prod_44o1TOBce0Zt00X4E5ACET" class="btn btn-outline" target="_blank">Choose Domain</a>
+    </div>
+
+  </div>
+
+  <!-- ATEX moved to aishield.tools (independent project) -->
+<!-- Comparison Table -->
+  <div class="compare-section">
+    <div class="section-title"><span class="icon">📊</span> Competitive Comparison</div>
+    <div style="overflow-x:auto">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th class="highlight">Frontier KB</th>
+          <th>BioCentury</th>
+          <th>CB Insights</th>
+          <th>Crunchbase</th>
+          <th>Elicit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starting Price</td>
+          <td class="check">$19/mo</td>
+          <td>$20K/yr</td>
+          <td>$50K/yr</td>
+          <td>$99/mo</td>
+          <td>$49/mo</td>
+        </tr>
+        <tr>
+          <td>Domains Covered</td>
+          <td class="check">12 frontier tech</td>
+          <td>Biopharma only</td>
+          <td>All industries</td>
+          <td>All industries</td>
+          <td>Academic papers</td>
+        </tr>
+        <tr>
+          <td>Knowledge Graph</td>
+          <td class="check">✓ Interactive</td>
+          <td class="cross">✗</td>
+          <td class="partial">Basic</td>
+          <td class="cross">✗</td>
+          <td class="cross">✗</td>
+        </tr>
+        <tr>
+          <td>AI Predictions</td>
+          <td class="check">✓ 6-12 months</td>
+          <td class="cross">✗</td>
+          <td class="partial">Trends only</td>
+          <td class="cross">✗</td>
+          <td class="cross">✗</td>
+        </tr>
+        <tr>
+          <td>Investment Signals</td>
+          <td class="check">✓ 🟢🟡🔴</td>
+          <td class="partial">Analyst reports</td>
+          <td class="check">✓</td>
+          <td class="partial">Funding data</td>
+          <td class="cross">✗</td>
+        </tr>
+        <tr>
+          <td>API Access</td>
+          <td class="check">✓ REST + OpenAPI</td>
+          <td class="cross">✗</td>
+          <td class="partial">Enterprise only</td>
+          <td class="check">✓</td>
+          <td class="partial">Limited</td>
+        </tr>
+        <tr>
+          <td>AI Agent Integration</td>
+          <td class="check">✓ MCP + OpenAI</td>
+          <td class="cross">✗</td>
+          <td class="cross">✗</td>
+          <td class="cross">✗</td>
+          <td class="cross">✗</td>
+        </tr>
+        <tr>
+          <td>Cross-Domain Analysis</td>
+          <td class="check">✓ 12 domains</td>
+          <td class="cross">✗</td>
+          <td class="partial">Surface level</td>
+          <td class="cross">✗</td>
+          <td class="cross">✗</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <div class="section-title"><span class="icon">❓</span> FAQ</div>
+    <div class="faq-item">
+      <div class="faq-q">What are the 12 frontier technology domains?</div>
+      <div class="faq-a">GeneTech, Traditional Chinese Medicine, AI Agent Ecosystem, Robotics, Quantum Computing, Brain Science, Nuclear Energy, Exo-Science, Space Minerals, Deep Sea Technology, New Energy, and Life Science. Each domain has its own dedicated knowledge base with 100-1,700+ entities.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How is this different from just using ChatGPT or Perplexity?</div>
+      <div class="faq-a">General AI tools give you answers from the public web. We provide structured, curated knowledge graphs with verified relationships, technology maturity tracking, and predictive analytics built on proprietary data pipelines. Our cross-domain correlation engine finds connections that no general AI can.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I cancel my subscription anytime?</div>
+      <div class="faq-a">Yes, you can cancel anytime through your Creem account. No long-term contracts. Your access continues until the end of the billing period.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What does "AI Agent integration" mean?</div>
+      <div class="faq-a">Our API supports MCP (Model Context Protocol) and OpenAI Plugin standards, meaning AI agents like Claude, GPT, and others can directly query our knowledge bases. This is unique — no competitor offers Agent-native access.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What payment methods do you accept?</div>
+      <div class="faq-a">We accept Visa, Mastercard, Apple Pay, Google Pay, and PayPal through our payment partner Creem (Merchant of Record). All transactions are secure and tax-compliant.</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Frontier Knowledge Base · <a href="https://genetech.tools">genetech.tools</a> · Payments by <a href="https://creem.io" target="_blank">Creem</a></p>
+    <p style="margin-top:8px">Questions? <a href="mailto:463102527@qq.com">463102527@qq.com</a></p>
+  </footer>
+</div>
+
+<script>
+// FAQ toggle
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+});
+</script>
+</body>
+</html>

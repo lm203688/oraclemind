@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中医药知识引擎 | TCM Knowledge Base</title>
+<meta name="description" content="中医药知识引擎，中药方剂、疾病关联知识库。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<style>
+:root{--bg:#0a1628;--bg2:#0f2741;--bg3:#163355;--border:rgba(255,255,255,0.08);--text:#e2e8f0;--text2:#94a3b8;--accent:#22c55e;--accent2:#8b5cf6;--yellow:#f59e0b;--orange:#f97316}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+a{color:var(--accent)}
+.nav{position:sticky;top:0;z-index:100;background:rgba(10,22,40,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:12px 20px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.nav-brand{font-size:18px;font-weight:700;color:var(--accent);text-decoration:none}
+.nav-links{display:flex;gap:16px;flex-wrap:wrap;margin-left:auto}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:13px;transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+.hero{text-align:center;padding:60px 20px 40px}
+.hero h1{font-size:2.5rem;margin-bottom:12px;background:linear-gradient(135deg,var(--accent),#4ade80);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:1.1rem;color:var(--text2);max-width:600px;margin:0 auto}
+.stats{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:30px 0}
+.stat-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px 30px;text-align:center;min-width:120px}
+.stat-num{font-size:2rem;font-weight:700;color:var(--accent)}
+.stat-label{font-size:13px;color:var(--text2);margin-top:4px}
+.section{max-width:1200px;margin:0 auto;padding:20px}
+.section h2{font-size:1.4rem;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px;transition:border-color .2s}
+.card:hover{border-color:var(--accent)}
+.card h3{font-size:15px;margin-bottom:6px}
+.card p{font-size:13px;color:var(--text2)}
+.search-box{max-width:500px;margin:0 auto 30px}
+.search-box input{width:100%;padding:12px 16px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);color:var(--text);font-size:15px;outline:none}
+.search-box input:focus{border-color:var(--accent)}
+.cta{max-width:1200px;margin:30px auto;padding:20px;background:linear-gradient(135deg,rgba(139,92,246,0.1),rgba(124,58,237,0.1));border:1px solid rgba(139,92,246,0.3);border-radius:16px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cta-btn{padding:12px 24px;background:linear-gradient(135deg,var(--accent2),#7c3aed);color:#fff;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+.footer{text-align:center;padding:30px 20px;border-top:1px solid var(--border);color:var(--text2);font-size:13px}
+.footer a{color:var(--text2);margin:0 8px}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.filter-btn{padding:6px 14px;border:1px solid var(--border);background:var(--bg2);color:var(--text2);border-radius:8px;cursor:pointer;font-size:13px}
+.filter-btn.active{background:var(--accent);color:#000;border-color:var(--accent)}
+.empty{text-align:center;padding:40px;color:var(--text2)}
+.eco-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:16px}
+.eco-card{display:block;padding:14px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color .2s}
+.eco-card:hover{border-color:var(--accent)}
+.eco-card .emoji{font-size:24px;margin-bottom:4px}
+.eco-card .name{font-weight:600;color:var(--accent);font-size:14px}
+.eco-card .desc{font-size:12px;color:var(--text2)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">🌿 TCMDB</a>
+    <div class="nav-links">
+      <a href="#herbs">中药</a>
+      <a href="#diseases">疾病</a>
+      <a href="https://aishield.tools/api/v1/services" target="_blank">API</a>
+      <a href="https://aishield.tools" target="_blank">🤖 AI平台</a>
+      <a href="https://genetech.tools">🏠 生态首页</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>中医药知识引擎</h1>
+  <p>中药方剂、疾病关联、现代药理研究的知识库。连接传统中医与现代科学。</p>
+</div>
+
+<div class="stats" id="statsContainer"></div>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="搜索中药名或疾病..." oninput="filterAll()">
+</div>
+
+<div class="section" id="herbs">
+  <h2>🌿 中药库 <span id="herbCount" style="font-size:14px;color:var(--text2);font-weight:400"></span></h2>
+  <div class="card-grid" id="herbGrid"></div>
+</div>
+
+<div class="section" id="diseases">
+  <h2>🏥 疾病库 <span id="diseaseCount" style="font-size:14px;color:var(--text2);font-weight:400"></span></h2>
+  <div class="card-grid" id="diseaseGrid"></div>
+</div>
+
+<div class="cta">
+  <div style="flex:1;min-width:250px">
+    <div style="font-size:15px;font-weight:700;margin-bottom:6px">💡 用AI分析这些数据</div>
+    <div style="font-size:13px;color:var(--text2)">用ATEX AI对话深度分析中药-疾病关系，用TTS生成口播音频，用图像理解提取图表</div>
+  </div>
+  
+</div>
+
+<div class="section">
+  <h2>🌐 知识引擎生态</h2>
+  <p style="color:var(--text2);margin-bottom:12px">ATEX是GeneTech知识引擎生态的AI能力层。</p>
+  <div class="eco-grid">
+    <a href="https://genetech.tools" class="eco-card" target="_blank"><div class="emoji">🧬</div><div class="name">GeneTech</div><div class="desc">基因技术</div></a>
+    <a href="https://agent.genetech.tools" class="eco-card" target="_blank"><div class="emoji">🔌</div><div class="name">Agent生态</div><div class="desc">MCP/SDK</div></a>
+    <a href="https://quantum.genetech.tools" class="eco-card" target="_blank"><div class="emoji">⚛️</div><div class="name">量子计算</div><div class="desc">量子处理器</div></a>
+    <a href="https://brain.genetech.tools" class="eco-card" target="_blank"><div class="emoji">🧠</div><div class="name">脑科学</div><div class="desc">脑机接口</div></a>
+    <a href="https://energy.genetech.tools" class="eco-card" target="_blank"><div class="emoji">⚡</div><div class="name">新能源</div><div class="desc">固态电池</div></a>
+    <a href="https://life.genetech.tools" class="eco-card" target="_blank"><div class="emoji">🦠</div><div class="name">生命科学</div><div class="desc">CRISPR</div></a>
+    <a href="https://nuclear.genetech.tools" class="eco-card" target="_blank"><div class="emoji">☢️</div><div class="name">核能</div><div class="desc">核聚变</div></a>
+    <a href="https://exo.genetech.tools" class="eco-card" target="_blank"><div class="emoji">🔭</div><div class="name">系外行星</div><div class="desc">深空探测</div></a>
+    <a href="https://mineral.genetech.tools" class="eco-card" target="_blank"><div class="emoji">💎</div><div class="name">矿物</div><div class="desc">外星矿物</div></a>
+    <a href="https://deepsea.genetech.tools" class="eco-card" target="_blank"><div class="emoji">🌊</div><div class="name">深海</div><div class="desc">深海技术</div></a>
+    <a href="https://robot.genetech.tools" class="eco-card" target="_blank"><div class="emoji">🤖</div><div class="name">机器人</div><div class="desc">核心部件</div></a>
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 TCMDB · <a href="https://genetech.tools">GeneTech生态</a> · 
+  <a href="https://aishield.tools" target="_blank">AIShield AI安全盾</a> · 
+  数据更新: <span id="updateDate">-</span>
+</div>
+
+<script src="data.js"></script>
+<script>
+// Render stats
+const statsEl = document.getElementById('statsContainer');
+const statItems = [
+  {num: DB.stats.herbs, label: '中药', icon: '🌿'},
+  {num: DB.stats.diseases, label: '疾病', icon: '🏥'},
+  {num: DB.stats.ingredients || 0, label: '成分', icon: '🧪'},
+];
+statsEl.innerHTML = statItems.map(s => 
+  `<div class="stat-card"><div class="stat-num">${s.icon} ${s.num}</div><div class="stat-label">${s.label}</div></div>`
+).join('');
+
+document.getElementById('updateDate').textContent = new Date(DB.updated).toLocaleDateString('zh-CN');
+
+// Render herbs
+function renderHerbs(filter='') {
+  const el = document.getElementById('herbGrid');
+  const items = DB.herbs.filter(h => 
+    !filter || h.name.toLowerCase().includes(filter.toLowerCase())
+  );
+  document.getElementById('herbCount').textContent = `(${items.length})`;
+  if (items.length === 0) {
+    el.innerHTML = '<div class="empty">暂无数据。数据持续采集中。</div>';
+    return;
+  }
+  el.innerHTML = items.map(h => `
+    <div class="card">
+      <h3>${h.name}</h3>
+      <p>ID: ${h.id}</p>
+    </div>
+  `).join('');
+}
+
+// Render diseases
+function renderDiseases(filter='') {
+  const el = document.getElementById('diseaseGrid');
+  const items = DB.diseases.filter(d => 
+    !filter || d.name.toLowerCase().includes(filter.toLowerCase())
+  );
+  document.getElementById('diseaseCount').textContent = `(${items.length})`;
+  if (items.length === 0) {
+    el.innerHTML = '<div class="empty">暂无数据。数据持续采集中。</div>';
+    return;
+  }
+  el.innerHTML = items.map(d => `
+    <div class="card">
+      <h3>${d.name}</h3>
+      <p>ID: ${d.id}</p>
+    </div>
+  `).join('');
+}
+
+function filterAll() {
+  const q = document.getElementById('searchInput').value;
+  renderHerbs(q);
+  renderDiseases(q);
+}
+
+renderHerbs();
+renderDiseases();
+</script>
+</body>
+</html>

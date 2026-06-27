@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "site_name": "地外科学知识引擎",
+  "domain": "exo.genetech.tools",
+  "tagline": "地外科学知识引擎",
+  "last_updated": "2026-06-25T08:06:04.970288Z",
+  "total_entities": 345,
+  "categories": {
+    "astrobiology": 46,
+    "exoplanets": 111,
+    "main": 0,
+    "missions": 20,
+    "planetary science": 11,
+    "space habitats": 11,
+    "space mining": 37,
+    "space missions": 76,
+    "space telescopes": 33
+  },
+  "api_endpoints": {
+    "entities": "https://exo.genetech.tools/api/entities.json",
+    "structured_data": "https://exo.genetech.tools/api/data.json",
+    "knowledge_graph": "https://exo.genetech.tools/api/graph.json",
+    "openapi": "https://exo.genetech.tools/api/openapi.json",
+    "ai_plugin": "https://exo.genetech.tools/.well-known/ai-plugin.json",
+    "llms_txt": "https://exo.genetech.tools/llms.txt",
+    "llms_full": "https://exo.genetech.tools/llms-full.txt",
+    "sitemap": "https://exo.genetech.tools/sitemap.xml"
+  },
+  "ai_agent_instructions": "Use the API endpoints above to query 345 entities about 地外科学知识引擎. All data is freely accessible via GET requests.",
+  "cross_domain_links": [
+    {
+      "domain": "mineral.genetech.tools",
+      "relation": "太空任务→小行星采矿"
+    }
+  ]
+}

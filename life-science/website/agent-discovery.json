@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "site_name": "生命科学知识引擎",
+  "domain": "life.genetech.tools",
+  "tagline": "生命科学知识引擎",
+  "last_updated": "2026-06-25T08:07:53.043490Z",
+  "total_entities": 532,
+  "categories": {
+    "bioethics": 3,
+    "bioinformatics": 75,
+    "biomanufacturing": 89,
+    "biotech tools": 5,
+    "cell therapy": 91,
+    "longevity": 118,
+    "longevity tech": 8,
+    "main": 0,
+    "regenerative medicine": 4,
+    "synbio": 109,
+    "synthetic biology": 30
+  },
+  "api_endpoints": {
+    "entities": "https://life.genetech.tools/api/entities.json",
+    "structured_data": "https://life.genetech.tools/api/data.json",
+    "knowledge_graph": "https://life.genetech.tools/api/graph.json",
+    "openapi": "https://life.genetech.tools/api/openapi.json",
+    "ai_plugin": "https://life.genetech.tools/.well-known/ai-plugin.json",
+    "llms_txt": "https://life.genetech.tools/llms.txt",
+    "llms_full": "https://life.genetech.tools/llms-full.txt",
+    "sitemap": "https://life.genetech.tools/sitemap.xml"
+  },
+  "ai_agent_instructions": "Use the API endpoints above to query 532 entities about 生命科学知识引擎. All data is freely accessible via GET requests.",
+  "cross_domain_links": [
+    {
+      "domain": "brain.genetech.tools",
+      "relation": "长寿研究→脑疾病"
+    },
+    {
+      "domain": "genetech.tools",
+      "relation": "基因疗法→长寿技术"
+    }
+  ]
+}

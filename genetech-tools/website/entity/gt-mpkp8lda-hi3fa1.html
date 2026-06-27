@@ -39,37 +39,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .footer{margin-top:2rem;padding:1.5rem;text-align:center;color:#94a3b8;font-size:.8rem}
 .footer a{color:#2563eb;text-decoration:none}
 
-/* Anti-scraping CSS */
-.detail-val, .entity-desc {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.detail-val::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-/* Honeypot - invisible to humans */
-.honey-link {
-  display: none !important;
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  opacity: 0;
-  pointer-events: none;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
+/* Paywall preview styles */
+.paywall-preview{position:relative;max-height:200px;overflow:hidden}
+.paywall-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to bottom,transparent,#fff 60%);padding:2rem 2rem 1.5rem;text-align:center}
+.paywall-overlay .unlock-btn{display:inline-block;padding:.6rem 1.5rem;background:#2563eb;color:#fff;text-decoration:none;border-radius:8px;font-size:.9rem;font-weight:600;transition:transform .2s}
+.paywall-overlay .unlock-btn:hover{transform:scale(1.05)}
+.paywall-overlay .unlock-hint{display:block;margin-top:.5rem;font-size:.8rem;color:#94a3b8}
+.details-locked{position:relative;max-height:300px;overflow:hidden}
+.details-locked::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to bottom,transparent,#fff 80%);pointer-events:none}
+.upgrade-banner{margin:1rem 2rem;padding:1rem 1.25rem;background:linear-gradient(135deg,#2563eb10,#2563eb05);border:1px solid #2563eb30;border-radius:8px;text-align:center}
+.upgrade-banner p{font-size:.85rem;color:#475569;margin-bottom:.5rem}
+.upgrade-banner a{display:inline-block;padding:.5rem 1.25rem;background:#2563eb;color:#fff;text-decoration:none;border-radius:6px;font-size:.85rem;font-weight:600}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is GT-mpkp8lda-hi3fa1?","acceptedAnswer":{"@type":"Answer","text":"To evaluate the efficacy and safety of ADVM-022, an AAV.7m8-delivered aflibercept gene therapy, in subjects with diabetic macular edema.. Nurses play an essential role in the gene therapy pathway for haemophilia, including education, care coordination, bleed management, and long-term follow-up.. The"}}]}</script>
-<meta itemprop="dateModified" content="2026-05-30">
 </head>
 <body>
 <div class="header">
@@ -85,123 +66,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <h2>GT-mpkp8lda-hi3fa1</h2>
       <span class="category">gene therapies</span>
     </div>
-    
-<div class="tldr" style="background:#f0fdf4;border-left:4px solid #22c55e;padding:1rem 1.5rem;margin:1.5rem 2rem;border-radius:0 8px 8px 0">
-  <strong>TL;DR:</strong> To evaluate the efficacy and safety of ADVM-022, an AAV.7m8-delivered aflibercept gene therapy, in subjects with diabetic macular edema.. Nurses play an essential role in the gene therapy pathway for 
-</div>
-<div class="entity-desc">To evaluate the efficacy and safety of ADVM-022, an AAV.7m8-delivered aflibercept gene therapy, in subjects with diabetic macular edema.. Nurses play an essential role in the gene therapy pathway for haemophilia, including education, care coordination, bleed management, and long-term follow-up.. Their responsibilities span from eligibility assessment and patient education to peri-infusion care, adverse event detection, and psychosocial support.. Gene therapy for haemophilia requires well-trained nurses to ensure safe delivery, effective follow-up, and high-quality patient support.. Nurses are crucial for generating real-world evidence through registries and research to evaluate the long-term safety and effectiveness of gene therapy.. In vivo CAR gene delivery has demonstrated feasibility and therapeutic potential in recent clinical reports, offering an alternative to the complex ex vivo manufacturing of CAR-T cells.. Nurses are critical for generating real-world evidence through registries and research to evaluate the long-term safety and effectiveness of gene therapy.. AAV9-Ab immunoglobulin G titers vary by age, with a higher likelihood of titers ≥1:100 in the 0-month age group compared to others.. Titers decline up to 12 months of age and then steadily increase from 12 to 24 months.. A greater proportion of individuals from Russia had AAV9-Ab titers ≥1:100 compared to other countries.. RAAVioli is a robust and versatile computational method for the comprehensive analysis of AAV integration sites and vector rearrangements across long- and short-read sequencing platforms.. Short-read sequencing provided superior throughput, uncovering more integration sites and enabling precise quantification of clonal abundance, which is essential for evaluating gene therapy safety.. Benchmarking analyses highlighted RAAVioli's higher sensitivity and accuracy relative to existing tools, establishing it as a reliable and scalable resource for AAV-based gene therapy studies.. Computational approaches, including machine learning, are enabling the design of finely engineered viral vectors for gene therapy by exploring vast protein sequence spaces beyond traditional methods.. These computational methods support viral vector bioengineering by targeting stability, structural modeling, functional prediction, and generating novel variants.. The field is moving toward more integrated and holistic design strategies, with a transformative potential for the next generation of viral gene therapies.. Lyophilization of AAV vectors with excipients like methyl cellulose (MC) and dileucine (diLeu) maintains their gene expression activity after reconstitution.. AAV vectors lyophilized with MC showed similar gene expression patterns in mice as non-lyophilized vectors, with no body weight loss.. The combination of diLeu with MC prolonged the gene expression activity of lyophilized AAV vectors for at least 4 weeks at room temperature.. Genome editing has evolved from early complex methods like ZFNs and TALENs to the dominant, simpler, and more efficient CRISPR-Cas9 system.. Advanced variants like base editors and prime editors enable precise single-nucleotide changes and insertions without double-strand breaks, while emerging tools expand manipulation to RNA and epigenetic modifications.. Despite challenges like off-target effects and immunogenicity, CRISPR-derived technologies are at the forefront of next-generation genetic medicine, driving progress toward precise and programmable therapies.</div>
-    <div class="details">
+    <div class="entity-desc paywall-preview">To evaluate the efficacy and safety of ADVM-022, an AAV.7m8-delivered aflibercept gene therapy, in subjects with diabetic macular edema.. Nurses play an essential role in the gene therapy pathway for haemophilia, including education, care coordination, bleed management, and long-<span style="filter:blur(4px);user-select:none">term follow-up.. Their responsibilities span from eligibility assessment and patient education to peri-infusion care, ad</span><div class="paywall-overlay"><a class="unlock-btn" href="/order.html">🔓 解锁完整数据 (Pro)</a><span class="unlock-hint">免费用户可查看摘要，Pro 会员解锁全部详情与深度数据</span></div></div>
+    <div class="details details-locked">
       <div class="detail-row"><div class="detail-key">Target Genes</div><div class="detail-val">VEGF</div></div>
       <div class="detail-row"><div class="detail-key">Target Diseases</div><div class="detail-val">Diabetic Macular Edema, Diabetic Retinopathy</div></div>
       <div class="detail-row"><div class="detail-key">Therapy Type</div><div class="detail-val">AAV_delivery</div></div>
-      <div class="detail-row"><div class="detail-key">Therapy Types</div><div class="detail-val">AAV_delivery</div></div>
-      <div class="detail-row"><div class="detail-key">Development Stage</div><div class="detail-val">approved</div></div>
-      <div class="detail-row"><div class="detail-key">Companies</div><div class="detail-val"></div></div>
-      <div class="detail-row"><div class="detail-key">Vectors</div><div class="detail-val">AAV.7m8, viral-vector, adeno-associated virus serotype 9 (AAV9), AAV, rAAV, viral vectors, adeno-associated viral vectors, AAV vectors, Adeno-Associated Virus (AAV), lentivirus, adenovirus, lipid nanoparticles, gold nanoparticles, DNA nano clews</div></div>
-      <div class="detail-row"><div class="detail-key">Key Findings</div><div class="detail-val">To evaluate the efficacy and safety of ADVM-022, an AAV.7m8-delivered aflibercept gene therapy, in subjects with diabetic macular edema., Nurses play an essential role in the gene therapy pathway for haemophilia, including education, care coordination, bleed management, and long-term follow-up., Their responsibilities span from eligibility assessment and patient education to peri-infusion care, adverse event detection, and psychosocial support., Gene therapy for haemophilia requires well-trained...</div></div>
-      <div class="detail-row"><div class="detail-key">Development Stage Updated At</div><div class="detail-val">2026-05-25T06:26:07.835Z</div></div>
+      <div style="padding:.5rem 0"><div class="upgrade-banner"><p>还有 6 项深度数据 · Pro 会员可查看全部</p><a href="/order.html">升级 Pro 解锁 →</a></div></div>
     </div>
   </div>
-  
-<div class="faq-section" style="padding:1.5rem 2rem;border-top:1px solid #e2e8f0">
-  <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:1rem;color:#0f172a">Frequently Asked Questions</h3>
-  
-  <div class="faq-item" style="margin-bottom:1rem">
-    <h4 style="font-size:1rem;font-weight:600;color:#334155">What is GT-mpkp8lda-hi3fa1?</h4>
-    <p style="color:#475569;font-size:.9rem;margin-top:.25rem">To evaluate the efficacy and safety of ADVM-022, an AAV.7m8-delivered aflibercept gene therapy, in subjects with diabetic macular edema.. Nurses play an essential role in the gene therapy pathway for haemophilia, including education, care coordination, bleed management, and long-term follow-up.. The</p>
-  </div>
-</div>
-<div class="footer">
+  <div class="footer">
     <p>基因技术知识引擎 · <a href="https://genetech.tools">genetech.tools</a> · Powered by Knowledge Engine</p>
   </div>
 </div>
-
-<!-- Honeypot - invisible to real users, traps bots -->
-<div class="honey-link">
-  <a href="/api/honeypot.json">Download all data</a>
-  <a href="/api/export.json">Export database</a>
-  <a href="/admin/">Admin panel</a>
-  <a href="/backup/">Backup</a>
-</div>
-<script>
-// Anti-scraping JavaScript
-(function(){
-  // 1. Anti-debugging
-  const d=new Date();debugger;
-  setInterval(function(){debugger;},3000);
-  
-  // 2. Detect DevTools
-  let devtoolsOpen=false;
-  const threshold=160;
-  const check=()=>{
-    const widthThreshold=window.outerWidth-window.innerWidth>threshold;
-    const heightThreshold=window.outerHeight-window.innerHeight>threshold;
-    if(widthThreshold||heightThreshold){
-      if(!devtoolsOpen){
-        devtoolsOpen=true;
-        document.body.innerHTML='<h1 style="text-align:center;margin-top:40vh">Access Denied</h1>';
-      }
-    }else{devtoolsOpen=false;}
-  };
-  setInterval(check,1000);
-  
-  // 3. Honeypot link monitoring
-  document.querySelectorAll('.honey-link a').forEach(a=>{
-    a.addEventListener('click',function(e){
-      e.preventDefault();
-      // Bot detected - redirect to honeypot
-      window.location.href='/api/honeypot.json';
-    });
-  });
-  
-  // 4. Right-click protection on entity content
-  document.querySelectorAll('.detail-val, .entity-desc').forEach(el=>{
-    el.addEventListener('contextmenu',e=>e.preventDefault());
-    el.addEventListener('copy',e=>{
-      e.preventDefault();
-      e.clipboardData.setData('text/plain','Content protected. Visit '+window.location.href);
-    });
-  });
-  
-  // 5. Canvas fingerprint for bot detection
-  try{
-    const canvas=document.createElement('canvas');
-    const ctx=canvas.getContext('2d');
-    ctx.textBaseline='top';
-    ctx.font='14px Arial';
-    ctx.fillText('🤖',2,2);
-    const fp=canvas.toDataURL().slice(-50);
-    if(!fp||fp.length<10){
-      // Likely headless browser
-      document.body.style.display='none';
-    }
-  }catch(e){}
-  
-  // 6. Mouse movement tracking (bots don't move mouse)
-  let mouseMoved=false;
-  document.addEventListener('mousemove',()=>{mouseMoved=true;},{once:true});
-  setTimeout(()=>{
-    if(!mouseMoved && !window._botChecked){
-      window._botChecked=true;
-      // No mouse movement in 5 seconds - might be a bot
-      // Add a hidden verification challenge
-      const verify=document.createElement('div');
-      verify.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:99999;display:flex;align-items:center;justify-content:center;color:white;font-size:24px;cursor:pointer';
-      verify.textContent='Click to continue';
-      verify.onclick=()=>{verify.remove();};
-      document.body.appendChild(verify);
-    }
-  },5000);
-  
-  // 7. Disable keyboard shortcuts for copying
-  document.addEventListener('keydown',function(e){
-    if((e.ctrlKey||e.metaKey)&&(e.key==='c'||e.key==='u'||e.key==='s'||e.key==='a')){
-      if(e.target.closest('.detail-val,.entity-desc')){
-        e.preventDefault();
-      }
-    }
-  });
-})();
-</script>
 </body>
 </html>

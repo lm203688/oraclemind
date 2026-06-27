@@ -1,89 +1,55 @@
-# === Project .gitignore (cleaned 2026-06-18) ===
+# === Project .gitignore (reorganized 2026-06-23) ===
 
 # Knowledge base & API data (untracked to prevent git checkout lock)
 */knowledge-base/
 */website/api/
+*/website/data.js
+*/website/entity/
+*/website/llms*.txt
+*/website/schema.json
+*/website/sitemap.xml*
 
-# Browser profiles / cache
+# === AIShield (separate project, formerly ATEX, not tracked in kb-ecosystem repo) ===
+aishield/
+
+# === Shared payment config ===
+shared/
+
+# === Deprecated old directories (moved to .trash) ===
+.trash/
+
+# === Third-party tools ===
+social-auto-upload/
+
+# === Browser profiles / cache ===
 browser_data*/
 */chrome_profile/
 
-# Node modules
+# === Node modules ===
 node_modules/
 */node_modules/
 
-# Python
+# === Python ===
 __pycache__/
 *.py[cod]
 *.egg-info/
 dist/
 build/
 
-# Environment
+# === Environment ===
 .env
 .env.local
 .venv/
 venv/
 
-# OS / IDE
+# === OS / IDE ===
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
-*.swp
-*.swo
 
-# User uploads
+# === Uploads ===
 upload/
-*.xlsx
 
-# Sensitive
-saas_data/
-*.xlsx
-.atex_api_key
-.creem
-.clawhub
-
-# Agent workspace files (local only)
-HEARTBEAT.md
-AGENTS.md
-SOUL.md
-USER.md
-IDENTITY.md
-TOOLS.md
-BOOTSTRAP.md
-
-# Old junk dirs (deleted but prevent re-adding)
-git_back/
-git_bak/
-gene_tech_video/
-promo/
-research/
-docs/
-download/
-atex/
-atex-demo/
-atex-mcp-server-public/
-token_exchange/
-
-# Temp screenshots & one-off scripts (root level)
-*.png
+# === Logs ===
 *.log
-douyin_*.js
-douyin_*.png
-douyin_*.json
-qr_*.png
-qr_*.js
-save_qr.js
-get_qr.js
-extract_qr.js
-launch_douyin.sh
-feishu_content.json
-social-auto-upload/.git/
-atex-mcp-server/
-atex-mcp-server/.git/
-agent-distribution/.env
-aishield/data/
-aishield/*.pid
-aishield/*.log
-aishield/tunnel*
+*.pid
+kb-workflow/logs/

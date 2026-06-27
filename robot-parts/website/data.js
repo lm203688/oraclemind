@@ -1,788 +1,5075 @@
 const DB = {
-  "updated": "2026-05-29T02:27:01.433Z",
+  "updated": "2026-06-27T16:00:50.311Z",
   "stats": {
-    "platforms": 6,
-    "sensors": 5
+    "actuators": 117,
+    "chips": 65,
+    "interfaces": 14,
+    "llms": 27,
+    "platforms": 23,
+    "protocols": 64,
+    "sensors": 12
   },
-  "actuators": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-26T04:02:14.972Z",
-    "description": "执行器/舵机库",
-    "entities": [
-      {
-        "id": "ACT-001",
-        "name": "DYNAMIXEL XM540-W270-T",
-        "category": "servo",
-        "manufacturer": "ROBOTIS",
-        "type": "smart_servo",
-        "torque": "9.2 Nm @ 12V",
-        "speed": "0.222 sec/60° @ 12V",
-        "weight": "82g",
-        "voltage": "10.0~14.8V",
-        "protocol": "DYNAMIXEL Protocol 2.0",
-        "interface": "TTL/RS485",
-        "position_resolution": "4096",
-        "applications": [
-          "humanoid",
-          "manipulator",
-          "quadruped"
-        ],
-        "price_range": "0-100",
-        "compatibility": [
-          "U2D2",
-          "CM-550",
-          "OpenCM9.04"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-002",
-        "name": "DYNAMIXEL XM430-W350-T",
-        "category": "servo",
-        "manufacturer": "ROBOTIS",
-        "type": "smart_servo",
-        "torque": "4.1 Nm @ 12V",
-        "speed": "0.22 sec/60° @ 12V",
-        "weight": "82g",
-        "voltage": "10.0~14.8V",
-        "protocol": "DYNAMIXEL Protocol 2.0",
-        "interface": "TTL/RS485",
-        "position_resolution": "4096",
-        "applications": [
-          "humanoid",
-          "manipulator",
-          "walker"
-        ],
-        "price_range": "0-80",
-        "compatibility": [
-          "U2D2",
-          "CM-550",
-          "OpenCM9.04"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-003",
-        "name": "DYNAMIXEL PH54-200-S500-R",
-        "category": "servo",
-        "manufacturer": "ROBOTIS",
-        "type": "smart_servo",
-        "torque": "44.7 Nm @ 48V",
-        "speed": "0.011 sec/60° @ 48V",
-        "weight": "1.45kg",
-        "voltage": "24.0~48.0V",
-        "protocol": "DYNAMIXEL Protocol 2.0",
-        "interface": "RS485",
-        "position_resolution": "505900",
-        "applications": [
-          "humanoid_pro",
-          "industrial",
-          "exoskeleton"
-        ],
-        "price_range": "00-700",
-        "compatibility": [
-          "U2D2",
-          "CM-550"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-004",
-        "name": "CubeMars AK80-64",
-        "category": "actuator",
-        "manufacturer": "CubeMars",
-        "type": "quasi_direct_drive",
-        "torque": "17 Nm peak",
-        "speed": "6.3 rad/s",
-        "weight": "490g",
-        "voltage": "24V",
-        "protocol": "CAN bus",
-        "interface": "CAN 2.0",
-        "position_resolution": "14-bit encoder",
-        "applications": [
-          "quadruped",
-          "humanoid_leg",
-          "exoskeleton"
-        ],
-        "price_range": "00-300",
-        "compatibility": [
-          "CAN adapter",
-          "Pi3Hat"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-005",
-        "name": "CubeMars AK10-9",
-        "category": "actuator",
-        "manufacturer": "CubeMars",
-        "type": "quasi_direct_drive",
-        "torque": "9 Nm peak",
-        "speed": "23.3 rad/s",
-        "weight": "270g",
-        "voltage": "24V",
-        "protocol": "CAN bus",
-        "interface": "CAN 2.0",
-        "position_resolution": "14-bit encoder",
-        "applications": [
-          "quadruped",
-          "drone_gimbal",
-          "robotic_arm"
-        ],
-        "price_range": "50-200",
-        "compatibility": [
-          "CAN adapter",
-          "Pi3Hat"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-006",
-        "name": "T-Motor AK80-9",
-        "category": "actuator",
-        "manufacturer": "T-Motor",
-        "type": "quasi_direct_drive",
-        "torque": "17 Nm peak",
-        "speed": "6.3 rad/s",
-        "weight": "490g",
-        "voltage": "24V",
-        "protocol": "CAN bus",
-        "interface": "CAN 2.0",
-        "position_resolution": "14-bit",
-        "applications": [
-          "quadruped",
-          "humanoid"
-        ],
-        "price_range": "00-300",
-        "compatibility": [
-          "CAN adapter"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-007",
-        "name": "Unitree A1 Motor",
-        "category": "actuator",
-        "manufacturer": "Unitree",
-        "type": "quasi_direct_drive",
-        "torque": "23.7 Nm peak",
-        "speed": "23.3 rad/s",
-        "weight": "500g",
-        "voltage": "24V",
-        "protocol": "CAN bus",
-        "interface": "CAN 2.0",
-        "position_resolution": "14-bit",
-        "applications": [
-          "quadruped",
-          "humanoid_leg"
-        ],
-        "price_range": "00-350",
-        "compatibility": [
-          "Unitree controller"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-008",
-        "name": "DJI M3508/M2006",
-        "category": "servo",
-        "manufacturer": "DJI",
-        "type": "smart_servo",
-        "torque": "1.0/0.25 Nm",
-        "speed": "~300rpm",
-        "weight": "68g/28g",
-        "voltage": "24V",
-        "protocol": "CAN bus",
-        "interface": "CAN 2.0",
-        "position_resolution": "8192",
-        "applications": [
-          "robot_arm",
-          "gimbal",
-          "mobile_robot"
-        ],
-        "price_range": "0-60",
-        "compatibility": [
-          "DJI C board"
-        ],
-        "ros_support": false
-      },
-      {
-        "id": "ACT-009",
-        "name": "Moteus r4.11 + MJ5208",
-        "category": "actuator",
-        "manufacturer": "mjbots",
-        "type": "servo_controller",
-        "torque": "3.2 Nm peak",
-        "speed": "60 rad/s",
-        "weight": "55g(controller)",
-        "voltage": "12-48V",
-        "protocol": "CAN-FD",
-        "interface": "CAN-FD",
-        "position_resolution": "14-bit",
-        "applications": [
-          "quadruped",
-          "robotic_arm",
-          "hobby"
-        ],
-        "price_range": "0-80",
-        "compatibility": [
-          "Pi3Hat",
-          "fdcanusb"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "ACT-010",
-        "name": "Focbox Unity",
-        "category": "controller",
-        "manufacturer": "Enertion/VESC",
-        "type": "motor_controller",
-        "torque": "depends on motor",
-        "speed": "depends on motor",
-        "weight": "180g",
-        "voltage": "8-60V",
-        "protocol": "VESC/UART",
-        "interface": "UART/USB/CAN",
-        "position_resolution": "N/A",
-        "applications": [
-          "mobile_robot",
-          "electric_vehicle",
-          "robot_arm"
-        ],
-        "price_range": "00-150",
-        "compatibility": [
-          "VESC Tool"
-        ],
-        "ros_support": false
-      }
-    ]
-  },
-  "chips": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-26T04:02:14.972Z",
-    "description": "芯片/计算平台库",
-    "entities": [
-      {
-        "id": "CHIP-001",
-        "name": "NVIDIA Jetson Orin NX",
-        "category": "compute",
-        "manufacturer": "NVIDIA",
-        "type": "SoC",
-        "cpu": "8-core ARM Cortex-A78AE",
-        "gpu": "1024-core Ampere GPU",
-        "memory": "8/16GB LPDDR5",
-        "tdp": "10-25W",
-        "ai_perf": "70 TOPS",
-        "interfaces": [
-          "PCIe",
-          "USB3",
-          "GbE",
-          "MIPI CSI",
-          "I2C",
-          "SPI",
-          "UART",
-          "CAN"
-        ],
-        "form_factor": "Jetson module",
-        "price_range": "00-600",
-        "applications": [
-          "autonomous_robot",
-          "manipulator",
-          "AMR",
-          "drone"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "CHIP-002",
-        "name": "NVIDIA Jetson Orin Nano",
-        "category": "compute",
-        "manufacturer": "NVIDIA",
-        "type": "SoC",
-        "cpu": "6-core ARM Cortex-A78AE",
-        "gpu": "1024-core Ampere GPU",
-        "memory": "8GB LPDDR5",
-        "tdp": "7-15W",
-        "ai_perf": "40 TOPS",
-        "interfaces": [
-          "PCIe",
-          "USB3",
-          "GbE",
-          "MIPI CSI",
-          "I2C",
-          "SPI",
-          "UART"
-        ],
-        "form_factor": "Jetson module",
-        "price_range": "00-300",
-        "applications": [
-          "entry_robot",
-          "vision_system",
-          "edge_ai"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "CHIP-003",
-        "name": "Raspberry Pi 5",
-        "category": "compute",
-        "manufacturer": "Raspberry Pi",
-        "type": "SBC",
-        "cpu": "4-core ARM Cortex-A76",
-        "gpu": "VideoCore VII",
-        "memory": "4/8GB LPDDR4X",
-        "tdp": "5-12W",
-        "ai_perf": "N/A",
-        "interfaces": [
-          "USB3",
-          "GbE",
-          "PCIe 2.0",
-          "GPIO",
-          "I2C",
-          "SPI",
-          "UART"
-        ],
-        "form_factor": "SBC",
-        "price_range": "0-80",
-        "applications": [
-          "hobby_robot",
-          "education",
-          "sensor_hub"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "CHIP-004",
-        "name": "STM32H743",
-        "category": "mcu",
-        "manufacturer": "STMicroelectronics",
-        "type": "MCU",
-        "cpu": "ARM Cortex-M7 @ 480MHz",
-        "gpu": "N/A",
-        "memory": "1MB RAM / 2MB Flash",
-        "tdp": "0.5W",
-        "ai_perf": "N/A",
-        "interfaces": [
-          "CAN-FD",
-          "USB",
-          "SPI",
-          "I2C",
-          "UART",
-          "ADC",
-          "PWM"
-        ],
-        "form_factor": "LQFP/BGA",
-        "price_range": "0-20",
-        "applications": [
-          "motor_control",
-          "realtime_control",
-          "sensor_interface"
-        ],
-        "ros_support": false
-      },
-      {
-        "id": "CHIP-005",
-        "name": "ESP32-S3",
-        "category": "mcu",
-        "manufacturer": "Espressif",
-        "type": "MCU",
-        "cpu": "Xtensa LX7 dual-core @ 240MHz",
-        "gpu": "N/A",
-        "memory": "512KB SRAM / 8MB PSRAM",
-        "tdp": "0.5W",
-        "ai_perf": "N/A",
-        "interfaces": [
-          "WiFi",
-          "BLE",
-          "SPI",
-          "I2C",
-          "UART",
-          "ADC",
-          "PWM"
-        ],
-        "form_factor": "QFN",
-        "price_range": "-5",
-        "applications": [
-          "IoT_robot",
-          "wireless_control",
-          "sensor_node"
-        ],
-        "ros_support": false
-      },
-      {
-        "id": "CHIP-006",
-        "name": "Qualcomm RB5",
-        "category": "compute",
-        "manufacturer": "Qualcomm",
-        "type": "SoC",
-        "cpu": "8-core Kryo 585",
-        "gpu": "Adreno 650",
-        "memory": "8GB LPDDR5",
-        "tdp": "15W",
-        "ai_perf": "15 TOPS",
-        "interfaces": [
-          "PCIe",
-          "USB3",
-          "GbE",
-          "MIPI CSI",
-          "I2C",
-          "SPI",
-          "CAN"
-        ],
-        "form_factor": "QRB5165 module",
-        "price_range": "00-600",
-        "applications": [
-          "drone",
-          "AMR",
-          "industrial_robot"
-        ],
-        "ros_support": true
-      },
-      {
-        "id": "CHIP-007",
-        "name": "Rockchip RK3588",
-        "category": "compute",
-        "manufacturer": "Rockchip",
-        "type": "SoC",
-        "cpu": "4xA76 + 4xA55",
-        "gpu": "Mali-G610 MP4",
-        "memory": "4/8/16GB LPDDR4x",
-        "tdp": "5-10W",
-        "ai_perf": "6 TOPS",
-        "interfaces": [
-          "PCIe 3.0",
-          "USB3",
-          "GbE",
-          "MIPI CSI",
-          "I2C",
-          "SPI",
-          "UART"
-        ],
-        "form_factor": "BGA",
-        "price_range": "0-150",
-        "applications": [
-          "robot_vision",
-          "edge_ai",
-          "hobby_robot"
-        ],
-        "ros_support": true
-      }
-    ]
-  },
-  "interfaces": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-26T04:02:14.972Z",
-    "description": "接口标准库",
-    "entities": [
-      {
-        "id": "IF-001",
-        "name": "USB 3.0",
-        "category": "interface",
-        "type": "wired",
-        "speed": "5 Gbps",
-        "power": "5V/900mA",
-        "connector": "Type-A/Type-C/Micro-B",
-        "applications": [
-          "camera",
-          "lidar",
-          "compute_module",
-          "debug"
-        ],
-        "pros": [
-          "universal",
-          "hot_plug",
-          "power_delivery"
-        ],
-        "cons": [
-          "not_deterministic",
-          "cable_length_limited"
-        ],
-        "compatibility": [
-          "almost_all_devices"
-        ]
-      },
-      {
-        "id": "IF-002",
-        "name": "MIPI CSI-2",
-        "category": "interface",
-        "type": "camera_serial",
-        "speed": "2.5 Gbps/lane (up to 4 lanes)",
-        "power": "low",
-        "connector": "FFC/FPC",
-        "applications": [
-          "camera_module",
-          "depth_sensor"
-        ],
-        "pros": [
-          "high_bandwidth",
-          "low_power",
-          "standard_in_mobile"
-        ],
-        "cons": [
-          "short_cable",
-          "fragile_connector"
-        ],
-        "compatibility": [
-          "Jetson",
-          "RK3588",
-          "Qualcomm"
-        ]
-      },
-      {
-        "id": "IF-003",
-        "name": "PCIe 3.0/4.0",
-        "category": "interface",
-        "type": "high_speed_bus",
-        "speed": "8/16 GT/s per lane",
-        "power": "depends on slot",
-        "connector": "M.2/PCIe slot",
-        "applications": [
-          "GPU",
-          "NVMe",
-          "FPGA",
-          "high_speed_capture"
-        ],
-        "pros": [
-          "very_high_bandwidth",
-          "low_latency"
-        ],
-        "cons": [
-          "complex",
-          "expensive_connectors"
-        ],
-        "compatibility": [
-          "Jetson",
-          "x86_SBC",
-          "RK3588"
-        ]
-      },
-      {
-        "id": "IF-004",
-        "name": "GPIO",
-        "category": "interface",
-        "type": "digital_I/O",
-        "speed": "low",
-        "power": "3.3V/5V",
-        "connector": "pin_header",
-        "applications": [
-          "button",
-          "LED",
-          "relay",
-          "simple_sensor"
-        ],
-        "pros": [
-          "simple",
-          "universal"
-        ],
-        "cons": [
-          "slow",
-          "no_standardization"
-        ],
-        "compatibility": [
-          "Raspberry_Pi",
-          "STM32",
-          "ESP32"
-        ]
-      },
-      {
-        "id": "IF-005",
-        "name": "Ethernet (GbE)",
-        "category": "interface",
-        "type": "network",
-        "speed": "1 Gbps",
-        "power": "PoE optional",
-        "connector": "RJ45",
-        "applications": [
-          "robot_communication",
-          "ROS2",
-          "remote_control"
-        ],
-        "pros": [
-          "standard",
-          "long_range",
-          "PoE"
-        ],
-        "cons": [
-          "bulky_connector",
-          "EMI_sensitive"
-        ],
-        "compatibility": [
-          "Jetson",
-          "Pi5",
-          "RK3588",
-          "x86"
-        ]
-      }
-    ]
-  },
-  "llms": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-26T04:02:14.972Z",
-    "description": "机器人大模型库",
-    "entities": [
-      {
-        "id": "LLM-001",
-        "name": "GPT-4o",
-        "category": "LLM",
-        "manufacturer": "OpenAI",
-        "type": "multimodal_LLM",
-        "parameters": "~1.8T (est.)",
-        "input": "text+image",
-        "output": "text",
-        "robotics_use": [
-          "task_planning",
-          "visual_reasoning",
-          "code_generation",
-          "natural_language_command"
-        ],
-        "api_available": true,
-        "open_source": false,
-        "price": ".5-10/1M tokens",
-        "compatibility": [
-          "any_compute_platform_via_API"
-        ],
-        "embodied_ai": false
-      },
-      {
-        "id": "LLM-002",
-        "name": "Claude 3.5 Sonnet",
-        "category": "LLM",
-        "manufacturer": "Anthropic",
-        "type": "LLM",
-        "parameters": "unknown",
-        "input": "text+image",
-        "output": "text",
-        "robotics_use": [
-          "task_planning",
-          "code_generation",
-          "safety_reasoning"
-        ],
-        "api_available": true,
-        "open_source": false,
-        "price": "-15/1M tokens",
-        "compatibility": [
-          "any_compute_platform_via_API"
-        ],
-        "embodied_ai": false
-      },
-      {
-        "id": "LLM-003",
-        "name": "RT-2",
-        "category": "VLA",
-        "manufacturer": "Google DeepMind",
-        "type": "vision_language_action",
-        "parameters": "55B",
-        "input": "text+image",
-        "output": "robot_actions",
-        "robotics_use": [
-          "end_to_end_control",
-          "visual_manipulation",
-          "instruction_following"
-        ],
-        "api_available": false,
-        "open_source": false,
-        "price": "N/A (research)",
-        "compatibility": [
-          "Google robot hardware"
-        ],
-        "embodied_ai": true
-      },
-      {
-        "id": "LLM-004",
-        "name": "Octo",
-        "category": "VLA",
-        "manufacturer": "Berkeley",
-        "type": "vision_language_action",
-        "parameters": "93M",
-        "input": "text+image+proprioception",
-        "output": "robot_actions",
-        "robotics_use": [
-          "general_robot_manipulation",
-          "transfer_learning"
-        ],
-        "api_available": true,
-        "open_source": true,
-        "price": "Free",
-        "compatibility": [
-          "multiple_robot_arms"
-        ],
-        "embodied_ai": true
-      },
-      {
-        "id": "LLM-005",
-        "name": "OpenVLA",
-        "category": "VLA",
-        "manufacturer": "Stanford",
-        "type": "vision_language_action",
-        "parameters": "7B",
-        "input": "text+image",
-        "output": "robot_actions",
-        "robotics_use": [
-          "fine_tuned_manipulation",
-          "instruction_following"
-        ],
-        "api_available": true,
-        "open_source": true,
-        "price": "Free",
-        "compatibility": [
-          "multiple_robots_via_fine_tuning"
-        ],
-        "embodied_ai": true
-      },
-      {
-        "id": "LLM-006",
-        "name": "Qwen2.5-VL",
-        "category": "LLM",
-        "manufacturer": "Alibaba",
-        "type": "multimodal_LLM",
-        "parameters": "3B/7B/72B",
-        "input": "text+image+video",
-        "output": "text",
-        "robotics_use": [
-          "visual_reasoning",
-          "OCR",
-          "spatial_understanding"
-        ],
-        "api_available": true,
-        "open_source": true,
-        "price": "Free (self-hosted)",
-        "compatibility": [
-          "Jetson",
-          "RK3588",
-          "cloud"
-        ],
-        "embodied_ai": false
-      },
-      {
-        "id": "LLM-007",
-        "name": "π0 (Pi-Zero)",
-        "category": "VLA",
-        "manufacturer": "Physical Intelligence",
-        "type": "vision_language_action",
-        "parameters": "unknown",
-        "input": "text+image+proprioception",
-        "output": "robot_actions",
-        "robotics_use": [
-          "general_purpose_manipulation",
-          "laundry_folding",
-          "assembly"
-        ],
-        "api_available": false,
-        "open_source": false,
-        "price": "N/A (limited_access)",
-        "compatibility": [
-          "multiple_robots"
-        ],
-        "embodied_ai": true
-      }
-    ]
-  },
-  "main": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-26T03:59:48.667Z",
-    "description": "robot parts chips protocols实体库",
-    "entities": []
-  },
+  "actuators": [
+    {
+      "id": "ACT-001",
+      "name": "DYNAMIXEL XM540-W270-T",
+      "category": "servo",
+      "manufacturer": "ROBOTIS",
+      "type": "smart_servo",
+      "torque": "9.2 Nm @ 12V",
+      "speed": "0.222 sec/60° @ 12V",
+      "weight": "82g",
+      "voltage": "10.0~14.8V",
+      "protocol": "DYNAMIXEL Protocol 2.0",
+      "interface": "TTL/RS485",
+      "position_resolution": "4096",
+      "applications": [
+        "humanoid",
+        "manipulator",
+        "quadruped"
+      ],
+      "price_range": "0-100",
+      "compatibility": [
+        "U2D2",
+        "OpenCM",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-002",
+      "name": "DYNAMIXEL XM430-W350-T",
+      "category": "servo",
+      "manufacturer": "ROBOTIS",
+      "type": "smart_servo",
+      "torque": "4.1 Nm @ 12V",
+      "speed": "0.16 sec/60° @ 12V",
+      "weight": "82g",
+      "voltage": "10.0~14.8V",
+      "protocol": "DYNAMIXEL Protocol 2.0",
+      "interface": "TTL/RS485",
+      "position_resolution": "4096",
+      "applications": [
+        "humanoid",
+        "manipulator",
+        "quadruped"
+      ],
+      "price_range": "0-100",
+      "compatibility": [
+        "U2D2",
+        "OpenCM",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-003",
+      "name": "DYNAMIXEL PH54-200-S500-R",
+      "category": "servo",
+      "manufacturer": "ROBOTIS",
+      "type": "smart_servo",
+      "torque": "44.7 Nm @ 48V",
+      "speed": "0.613 sec/60° @ 48V",
+      "weight": "840g",
+      "voltage": "24.0~48.0V",
+      "protocol": "DYNAMIXEL Protocol 2.0",
+      "interface": "RS485",
+      "position_resolution": "501900",
+      "applications": [
+        "humanoid_hip",
+        "industrial",
+        "large_manipulator"
+      ],
+      "price_range": "300-500",
+      "compatibility": [
+        "U2D2",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-004",
+      "name": "Odrive D6374",
+      "category": "motor_controller",
+      "manufacturer": "Odrive",
+      "type": "BLDC_controller",
+      "torque": "depends on motor",
+      "speed": "depends on motor",
+      "weight": "N/A",
+      "voltage": "12-48V",
+      "protocol": "UART/CAN",
+      "interface": "UART/USB/CAN",
+      "position_resolution": "encoder dependent",
+      "applications": [
+        "humanoid",
+        "quadruped",
+        "robot_arm"
+      ],
+      "price_range": "100-200",
+      "compatibility": [
+        "Odrive GUI",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-005",
+      "name": "SimpleFOC Shield",
+      "category": "motor_controller",
+      "manufacturer": "SimpleFOC",
+      "type": "BLDC_controller",
+      "torque": "depends on motor",
+      "speed": "depends on motor",
+      "weight": "30g",
+      "voltage": "5-30V",
+      "protocol": "UART/I2C",
+      "interface": "UART/I2C/SPI",
+      "position_resolution": "encoder dependent",
+      "applications": [
+        "hobby_robot",
+        "gimbal",
+        "small_arm"
+      ],
+      "price_range": "0-50",
+      "compatibility": [
+        "Arduino",
+        "ESP32",
+        "STM32"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "ACT-006",
+      "name": "T-Motor AK80-64",
+      "category": "actuator",
+      "manufacturer": "T-Motor",
+      "type": "integrated_actuator",
+      "torque": "17 Nm",
+      "speed": "6.3 rad/s",
+      "weight": "475g",
+      "voltage": "24V",
+      "protocol": "CAN bus",
+      "interface": "CAN",
+      "position_resolution": "14-bit encoder",
+      "applications": [
+        "quadruped",
+        "humanoid_knee",
+        "robot_arm"
+      ],
+      "price_range": "200-400",
+      "compatibility": [
+        "Custom CAN",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-007",
+      "name": "T-Motor AK10-9",
+      "category": "actuator",
+      "manufacturer": "T-Motor",
+      "type": "integrated_actuator",
+      "torque": "9 Nm",
+      "speed": "23 rad/s",
+      "weight": "260g",
+      "voltage": "24V",
+      "protocol": "CAN bus",
+      "interface": "CAN",
+      "position_resolution": "14-bit encoder",
+      "applications": [
+        "quadruped",
+        "humanoid_ankle",
+        "drone_gimbal"
+      ],
+      "price_range": "150-300",
+      "compatibility": [
+        "Custom CAN",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-008",
+      "name": "Maxon EC Flat 60",
+      "category": "motor",
+      "manufacturer": "Maxon",
+      "type": "BLDC_motor",
+      "torque": "0.677 Nm",
+      "speed": "4780 rpm",
+      "weight": "300g",
+      "voltage": "24V",
+      "protocol": "ESCON controller",
+      "interface": "analog/digital",
+      "position_resolution": "external encoder",
+      "applications": [
+        "precision_arm",
+        "surgical_robot",
+        "space"
+      ],
+      "price_range": "500-1000",
+      "compatibility": [
+        "ESCON",
+        "EPOS4",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-009",
+      "name": "Kollmorgen TBM2G",
+      "category": "motor",
+      "manufacturer": "Kollmorgen",
+      "type": "frameless_torque_motor",
+      "torque": "varies (up to 100+ Nm)",
+      "speed": "varies",
+      "weight": "varies",
+      "voltage": "48-400V",
+      "protocol": "AKD drive",
+      "interface": "EtherCAT/EthernetIP",
+      "position_resolution": "external encoder",
+      "applications": [
+        "humanoid_joint",
+        "industrial_robot",
+        "collaborative_robot"
+      ],
+      "price_range": "1000+",
+      "compatibility": [
+        "AKD",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-010",
+      "name": "Focbox Unity",
+      "category": "controller",
+      "manufacturer": "Enertion/VESC",
+      "type": "motor_controller",
+      "torque": "depends on motor",
+      "speed": "depends on motor",
+      "weight": "180g",
+      "voltage": "8-60V",
+      "protocol": "VESC/UART",
+      "interface": "UART/USB/CAN",
+      "position_resolution": "N/A",
+      "applications": [
+        "mobile_robot",
+        "electric_vehicle",
+        "robot_arm"
+      ],
+      "price_range": "00-150",
+      "compatibility": [
+        "VESC Tool"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "ACT-011",
+      "name": "Unitree B2 Motor",
+      "category": "actuator",
+      "manufacturer": "Unitree",
+      "type": "integrated_actuator",
+      "torque": "23.7 Nm",
+      "speed": "16.4 rad/s",
+      "weight": "530g",
+      "voltage": "24V",
+      "protocol": "custom CAN",
+      "interface": "CAN",
+      "position_resolution": "14-bit",
+      "applications": [
+        "humanoid",
+        "quadruped"
+      ],
+      "price_range": "200-400",
+      "compatibility": [
+        "Unitree SDK",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-012",
+      "name": "Unitree A1 Motor",
+      "category": "actuator",
+      "manufacturer": "Unitree",
+      "type": "integrated_actuator",
+      "torque": "9.1 Nm",
+      "speed": "21.4 rad/s",
+      "weight": "240g",
+      "voltage": "21.6V",
+      "protocol": "custom CAN",
+      "interface": "CAN",
+      "position_resolution": "14-bit",
+      "applications": [
+        "quadruped",
+        "small_humanoid"
+      ],
+      "price_range": "100-200",
+      "compatibility": [
+        "Unitree SDK",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-013",
+      "name": "Tesla M107 Joint Motor",
+      "category": "actuator",
+      "manufacturer": "Tesla",
+      "type": "custom_actuator",
+      "torque": "classified",
+      "speed": "classified",
+      "weight": "classified",
+      "voltage": "classified",
+      "protocol": "Tesla proprietary",
+      "interface": "proprietary bus",
+      "position_resolution": "classified",
+      "applications": [
+        "Tesla Optimus Gen 2/3"
+      ],
+      "price_range": "N/A (internal)",
+      "compatibility": [
+        "Tesla Optimus only"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "ACT-014",
+      "name": "Figure Custom Actuator",
+      "category": "actuator",
+      "manufacturer": "Figure AI",
+      "type": "custom_actuator",
+      "torque": "classified",
+      "speed": "classified",
+      "weight": "classified",
+      "voltage": "classified",
+      "protocol": "proprietary",
+      "interface": "proprietary bus",
+      "position_resolution": "classified",
+      "applications": [
+        "Figure 01/02/03"
+      ],
+      "price_range": "N/A (internal)",
+      "compatibility": [
+        "Figure robots only"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "ACT-015",
+      "name": "CubeMars GL40",
+      "category": "actuator",
+      "manufacturer": "CubeMars",
+      "type": "integrated_actuator",
+      "torque": "7.2 Nm",
+      "speed": "24.5 rad/s",
+      "weight": "215g",
+      "voltage": "24V",
+      "protocol": "CAN bus",
+      "interface": "CAN",
+      "position_resolution": "14-bit",
+      "applications": [
+        "quadruped",
+        "humanoid_wrist",
+        "drone"
+      ],
+      "price_range": "100-200",
+      "compatibility": [
+        "ROS2",
+        "custom CAN"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-016",
+      "name": "CubeMars AK80-9",
+      "category": "actuator",
+      "manufacturer": "CubeMars",
+      "type": "integrated_actuator",
+      "torque": "17 Nm",
+      "speed": "25.5 rad/s",
+      "weight": "490g",
+      "voltage": "24V",
+      "protocol": "CAN bus",
+      "interface": "CAN",
+      "position_resolution": "14-bit",
+      "applications": [
+        "humanoid",
+        "quadruped",
+        "robot_arm"
+      ],
+      "price_range": "200-400",
+      "compatibility": [
+        "ROS2",
+        "custom CAN"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-017",
+      "name": "Anybotics ANYdrive 3.0",
+      "category": "actuator",
+      "manufacturer": "Anybotics",
+      "type": "SEA_actuator",
+      "torque": "120 Nm",
+      "speed": "12 rad/s",
+      "weight": "2.1 kg",
+      "voltage": "48V",
+      "protocol": "EtherCAT",
+      "interface": "EtherCAT",
+      "position_resolution": "19-bit",
+      "applications": [
+        "quadruped_ANYmal",
+        "industrial_inspection"
+      ],
+      "price_range": "1000+",
+      "compatibility": [
+        "ANYmal SDK",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-018",
+      "name": "MIT Mini Cheetah Actuator",
+      "category": "actuator",
+      "manufacturer": "MIT/Custom",
+      "type": "integrated_actuator",
+      "torque": "17 Nm",
+      "speed": "40.2 rad/s",
+      "weight": "260g",
+      "voltage": "24V",
+      "protocol": "CAN bus",
+      "interface": "CAN",
+      "position_resolution": "14-bit",
+      "applications": [
+        "quadruped",
+        "research"
+      ],
+      "price_range": "200-400",
+      "compatibility": [
+        "custom firmware",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-019",
+      "name": "Faulhaber 3268 BP4",
+      "category": "motor",
+      "manufacturer": "Faulhaber",
+      "type": "DC_micro_motor",
+      "torque": "0.108 Nm",
+      "speed": "6000 rpm",
+      "weight": "280g",
+      "voltage": "24V",
+      "protocol": "MCDC controller",
+      "interface": "RS232/CAN",
+      "position_resolution": "external encoder",
+      "applications": [
+        "precision_arm",
+        "medical_robot",
+        "micro_positioning"
+      ],
+      "price_range": "500-1000",
+      "compatibility": [
+        "Faulhaber MCDC",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-020",
+      "name": "Moog SmartMotor",
+      "category": "actuator",
+      "manufacturer": "Moog",
+      "type": "integrated_servo",
+      "torque": "varies (up to 50 Nm)",
+      "speed": "varies",
+      "weight": "varies",
+      "voltage": "48-400V",
+      "protocol": "EtherCAT/CANopen",
+      "interface": "EtherCAT/CAN/EthernetIP",
+      "position_resolution": "20-bit",
+      "applications": [
+        "industrial_robot",
+        "simulator",
+        "defense"
+      ],
+      "price_range": "1000+",
+      "compatibility": [
+        "Moog SDK",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-021",
+      "name": "Hebi X5 Actuator",
+      "category": "actuator",
+      "manufacturer": "Hebi Robotics",
+      "type": "integrated_actuator",
+      "torque": "15 Nm",
+      "speed": "10 rad/s",
+      "weight": "325g",
+      "voltage": "24V",
+      "protocol": "UDP/TCP",
+      "interface": "Ethernet/WiFi",
+      "position_resolution": "14-bit",
+      "applications": [
+        "modular_robot",
+        "research",
+        "education"
+      ],
+      "price_range": "300-600",
+      "compatibility": [
+        "Hebi API",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-022",
+      "name": "Hebi X8 Actuator",
+      "category": "actuator",
+      "manufacturer": "Hebi Robotics",
+      "type": "integrated_actuator",
+      "torque": "40 Nm",
+      "speed": "6 rad/s",
+      "weight": "660g",
+      "voltage": "24V",
+      "protocol": "UDP/TCP",
+      "interface": "Ethernet/WiFi",
+      "position_resolution": "14-bit",
+      "applications": [
+        "humanoid",
+        "large_manipulator",
+        "research"
+      ],
+      "price_range": "500-800",
+      "compatibility": [
+        "Hebi API",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-023",
+      "name": "Kinova Gen3 Actuator",
+      "category": "actuator",
+      "manufacturer": "Kinova",
+      "type": "integrated_actuator",
+      "torque": "varies per joint",
+      "speed": "varies",
+      "weight": "integrated",
+      "voltage": "24V",
+      "protocol": "EtherCAT/proprietary",
+      "interface": "EtherCAT",
+      "position_resolution": "high-res",
+      "applications": [
+        "robot_arm",
+        "assistive_robot",
+        "research"
+      ],
+      "price_range": "1000+",
+      "compatibility": [
+        "Kinova API",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-024",
+      "name": "RoboDrive ILM 70",
+      "category": "motor",
+      "manufacturer": "RoboDrive/Kollmorgen",
+      "type": "frameless_torque_motor",
+      "torque": "3.5 Nm continuous",
+      "speed": "3000 rpm",
+      "weight": "0.7 kg",
+      "voltage": "48V",
+      "protocol": "external drive",
+      "interface": "EtherCAT/CANopen",
+      "position_resolution": "external encoder",
+      "applications": [
+        "collaborative_robot",
+        "humanoid_joint",
+        "surgical"
+      ],
+      "price_range": "500-1000",
+      "compatibility": [
+        "various drives",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-025",
+      "name": "Innodisk Flexidrive",
+      "category": "actuator",
+      "manufacturer": "Innodisk",
+      "type": "linear_actuator",
+      "torque": "varies",
+      "speed": "varies",
+      "weight": "varies",
+      "voltage": "12-24V",
+      "protocol": "PWM/UART",
+      "interface": "UART/PWM",
+      "position_resolution": "potentiometer",
+      "applications": [
+        "gripper",
+        "linear_motion",
+        "industrial"
+      ],
+      "price_range": "50-200",
+      "compatibility": [
+        "Arduino",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-026",
+      "name": "Festo DSBC",
+      "category": "actuator",
+      "manufacturer": "Festo",
+      "type": "pneumatic_cylinder",
+      "torque": "varies (pneumatic)",
+      "speed": "varies",
+      "weight": "varies",
+      "voltage": "24V (valve)",
+      "protocol": "IO-Link/EtherNetIP",
+      "interface": "IO-Link/EtherNetIP/PROFINET",
+      "position_resolution": "analog/digital",
+      "applications": [
+        "industrial_automation",
+        "gripper",
+        "pick_place"
+      ],
+      "price_range": "200-1000",
+      "compatibility": [
+        "Festo CPX",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-027",
+      "name": "Schunk EGP Gripper",
+      "category": "gripper",
+      "manufacturer": "Schunk",
+      "type": "electric_gripper",
+      "torque": "gripping force 25-250N",
+      "speed": "0.05-0.3s",
+      "weight": "0.9 kg",
+      "voltage": "24V",
+      "protocol": "PROFINET/EtherCAT",
+      "interface": "PROFINET/EtherCAT/IO-Link",
+      "position_resolution": "adjustable",
+      "applications": [
+        "pick_place",
+        "assembly",
+        "collaborative_robot"
+      ],
+      "price_range": "500-1500",
+      "compatibility": [
+        "various robot arms",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-028",
+      "name": "Robotiq 2F-85 Gripper",
+      "category": "gripper",
+      "manufacturer": "Robotiq",
+      "type": "adaptive_gripper",
+      "torque": "gripping force 20-235N",
+      "speed": "0.15-1.2s",
+      "weight": "0.9 kg",
+      "voltage": "24V",
+      "protocol": "Modbus TCP",
+      "interface": "Ethernet/USB/RS485",
+      "position_resolution": "4 positions",
+      "applications": [
+        "pick_place",
+        "machine_tending",
+        "collaborative_robot"
+      ],
+      "price_range": "300-600",
+      "compatibility": [
+        "UR",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-029",
+      "name": "Dexai Allegro Hand v4",
+      "category": "dexterous_hand",
+      "manufacturer": "Dexai/Wonik Robotics",
+      "type": "dexterous_hand",
+      "torque": "varies per joint",
+      "speed": "varies",
+      "weight": "1.1 kg",
+      "voltage": "24V",
+      "protocol": "EtherCAT",
+      "interface": "EtherCAT",
+      "position_resolution": "16-bit per joint",
+      "applications": [
+        "dexterous_manipulation",
+        "research",
+        "humanoid_hand"
+      ],
+      "price_range": "5000+",
+      "compatibility": [
+        "ROS2",
+        "custom SDK"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-030",
+      "name": "Shadow Dexterous Hand",
+      "category": "dexterous_hand",
+      "manufacturer": "Shadow Robot",
+      "type": "dexterous_hand",
+      "torque": "varies per joint",
+      "speed": "varies",
+      "weight": "4.3 kg",
+      "voltage": "24V",
+      "protocol": "EtherCAT/proprietary",
+      "interface": "EtherCAT/USB",
+      "position_resolution": "high-res per joint",
+      "applications": [
+        "dexterous_manipulation",
+        "research",
+        "teleoperation"
+      ],
+      "price_range": "10000+",
+      "compatibility": [
+        "Shadow SDK",
+        "ROS2"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "ACT-031",
+      "name": "Lynxmotion LSS Arm",
+      "category": "servo",
+      "manufacturer": "Lynxmotion",
+      "type": "smart_servo",
+      "torque": "3.2 Nm",
+      "speed": "0.18 sec/60°",
+      "weight": "56g",
+      "voltage": "6-12V",
+      "protocol": "UART",
+      "interface": "UART/daisy-chain",
+      "position_resolution": "10-bit",
+      "applications": [
+        "education",
+        "hobby_robot",
+        "small_arm"
+      ],
+      "price_range": "0-50",
+      "compatibility": [
+        "LSS API",
+        "Arduino"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "ACT-032",
+      "name": "Agility Robotics Digit Actuator",
+      "category": "actuator",
+      "manufacturer": "Agility Robotics",
+      "type": "custom_actuator",
+      "torque": "classified",
+      "speed": "classified",
+      "weight": "classified",
+      "voltage": "classified",
+      "protocol": "proprietary",
+      "interface": "proprietary bus",
+      "position_resolution": "classified",
+      "applications": [
+        "Digit humanoid"
+      ],
+      "price_range": "N/A (internal)",
+      "compatibility": [
+        "Digit SDK"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "ACT-mit-electrofluidic",
+      "name": "MIT Electrofluidic Fiber Muscles",
+      "type": "artificial_muscle",
+      "company": "MIT Media Lab / Politecnico di Bari",
+      "key_features": [
+        "Electrically driven artificial muscle fibers",
+        "Combines thin McKibben actuator with miniaturized EHD pump",
+        "No moving parts, silent operation",
+        "Compliant enough for human body interface",
+        "Can be packed densely and distributed throughout robot structure",
+        "Published in Science Robotics 2026",
+        "Weighs just a few grams per pump, not much thicker than a toothpick"
+      ],
+      "status": "research",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-hyundai-gripper",
+      "name": "Hyundai Custom Robot Gripper",
+      "type": "gripper",
+      "company": "Hyundai Motor Group Robotics LAB",
+      "key_features": [
+        "In-house developed gripper for humanoid robots",
+        "Can stably lift heavy components (battery packs, body parts, glass, seats)",
+        "Tied to Smart Factory strategy (E-FOREST platform)",
+        "Hyundai Mobis supplying mass-production actuators for Boston Dynamics Atlas"
+      ],
+      "status": "development",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-schaeffler-planetary",
+      "name": "Schaeffler Planetary Gear Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "Schaeffler",
+      "type": "planetary_gear_actuator",
+      "description": "舍弗勒CES 2026首发人形机器人关节行星齿轮执行器，精确扭矩传递，支持连续运行",
+      "torque": "高扭矩密度",
+      "features": [
+        "行星齿轮传动",
+        "精确扭矩传递",
+        "连续运行",
+        "紧凑设计"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88156672",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-lg-actuator",
+      "name": "LG Electronics Robotics Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "LG Electronics",
+      "type": "smart_actuator",
+      "description": "LG电子CES 2026发布人形机器人Cloid配套执行器品牌",
+      "features": [
+        "LG官方品牌",
+        "Cloid机器人配套",
+        "高精度控制",
+        "消费级定位"
+      ],
+      "applications": [
+        "humanoid",
+        "home_service"
+      ],
+      "price_range": "consumer",
+      "status": "development",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-tesla-optimus-hand",
+      "name": "Tesla Optimus Gen 3 Hand Actuator",
+      "category": "hand_actuator",
+      "manufacturer": "Tesla",
+      "type": "dexterous_hand",
+      "description": "Tesla Optimus Gen 3手部执行器，50个执行器实现精密操控",
+      "torque": "精密力控",
+      "features": [
+        "50个执行器",
+        "精密操控",
+        "仿人手设计",
+        "触觉反馈"
+      ],
+      "applications": [
+        "humanoid",
+        "manipulation"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-robotis-20dof-hand",
+      "name": "ROBOTIS 20-DOF Robot Hand",
+      "category": "hand_actuator",
+      "manufacturer": "ROBOTIS",
+      "type": "dexterous_hand",
+      "description": "ROBOTIS 20自由度机器人手，2026年新品",
+      "features": [
+        "20自由度",
+        "DYNAMIXEL驱动",
+        "仿人手设计",
+        "高精度控制"
+      ],
+      "applications": [
+        "humanoid",
+        "research",
+        "manipulation"
+      ],
+      "price_range": "500-2000",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-first-a301",
+      "name": "FIRST A301 Motor",
+      "category": "servo",
+      "manufacturer": "FIRST",
+      "type": "standard_motor",
+      "description": "FIRST Tech Challenge标准化电机，简化机器人设计",
+      "features": [
+        "标准化设计",
+        "简化集成",
+        "高可靠性",
+        "竞赛级性能"
+      ],
+      "applications": [
+        "education",
+        "competition",
+        "hobby"
+      ],
+      "price_range": "0-100",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-high-torque-mini-hi",
+      "name": "High Torque Robotics Mini Hi",
+      "category": "joint_actuator",
+      "manufacturer": "High Torque Robotics",
+      "type": "high_torque_actuator",
+      "description": "高扭矩密度小型执行器，人形机器人专用",
+      "features": [
+        "高扭矩密度",
+        "小型化",
+        "人形机器人优化",
+        "高效散热"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-high-torque-pi",
+      "name": "High Torque Robotics Pi",
+      "category": "joint_actuator",
+      "manufacturer": "High Torque Robotics",
+      "type": "compact_actuator",
+      "description": "High Torque Robotics Pi系列紧凑型执行器",
+      "features": [
+        "紧凑设计",
+        "高功率密度",
+        "模块化",
+        "精密控制"
+      ],
+      "applications": [
+        "humanoid",
+        "manipulator"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-hyundai-mobis-atlas",
+      "name": "Hyundai Mobis Atlas Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "Hyundai Mobis",
+      "type": "mass_production_actuator",
+      "description": "现代摩比斯为Boston Dynamics Atlas量产供应的执行器",
+      "features": [
+        "量产供应",
+        "Atlas专用",
+        "汽车级质量",
+        "高可靠性"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-unitree-b2-motor-v2",
+      "name": "Unitree B2 Motor v2",
+      "category": "joint_actuator",
+      "manufacturer": "Unitree",
+      "type": "smart_actuator",
+      "description": "Unitree B2电机升级版，用于Unitree H2人形机器人",
+      "features": [
+        "高扭矩输出",
+        "集成驱动器",
+        "CAN总线通信",
+        "人形机器人优化"
+      ],
+      "applications": [
+        "humanoid",
+        "quadruped"
+      ],
+      "price_range": "200-500",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-figure-03-actuator",
+      "name": "Figure 03 Custom Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "Figure AI",
+      "type": "custom_actuator",
+      "description": "Figure 03人形机器人定制执行器",
+      "features": [
+        "定制设计",
+        "高动态响应",
+        "力控优化",
+        "集成传感器"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-atlas-electric-actuator",
+      "name": "Boston Dynamics Electric Atlas Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "Boston Dynamics",
+      "type": "electric_actuator",
+      "description": "电动版Atlas专用执行器，高动态性能",
+      "features": [
+        "电动驱动",
+        "高动态响应",
+        "液压替代",
+        "精密力控"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-kai-humanoid-actuator",
+      "name": "KAI Humanoid Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "KAI Robotics",
+      "type": "humanoid_actuator",
+      "description": "KAI人形机器人专用执行器",
+      "features": [
+        "人形机器人专用",
+        "高扭矩密度",
+        "模块化设计",
+        "AI优化控制"
+      ],
+      "applications": [
+        "humanoid"
+      ],
+      "price_range": "enterprise",
+      "status": "development",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-omni-humanoid-actuator",
+      "name": "OMNI Humanoid Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "OMNI Robotics",
+      "type": "humanoid_actuator",
+      "description": "OMNI人形机器人执行器系统",
+      "features": [
+        "全身体执行器",
+        "高自由度",
+        "仿生设计",
+        "自适应控制"
+      ],
+      "applications": [
+        "humanoid",
+        "service"
+      ],
+      "price_range": "enterprise",
+      "status": "development",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-1x-neo-actuator",
+      "name": "1X NEO Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "1X Technologies",
+      "type": "humanoid_actuator",
+      "description": "1X NEO人形机器人执行器",
+      "features": [
+        "仿人运动",
+        "柔顺控制",
+        "低功耗设计",
+        "家庭场景优化"
+      ],
+      "applications": [
+        "humanoid",
+        "home_service"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-schaeffler-hexagon",
+      "name": "Schaeffler-Hexagon Joint Module",
+      "category": "joint_actuator",
+      "manufacturer": "Schaeffler/Hexagon Robotics",
+      "type": "joint_module",
+      "description": "舍弗勒与Hexagon Robotics合作开发的人形机器人关节模块",
+      "features": [
+        "战略合作",
+        "1000+机器人订单",
+        "关节模块化",
+        "汽车级供应链"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-roland-berger-hd-actuator",
+      "name": "Roland Berger HD Actuator Series",
+      "category": "joint_actuator",
+      "manufacturer": "多家",
+      "type": "high_density_actuator",
+      "description": "人形机器人高密度执行器系列，市场预测2026-2036",
+      "features": [
+        "高功率密度",
+        "成本下降趋势",
+        "规模化生产",
+        "多供应商"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial",
+        "service"
+      ],
+      "price_range": "varies",
+      "status": "market_trend",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-tmotor-ak80-9-v2",
+      "name": "T-Motor AK80-9 v2",
+      "category": "joint_actuator",
+      "manufacturer": "T-Motor",
+      "type": "smart_actuator",
+      "description": "T-Motor AK80-9升级版，人形机器人关节电机",
+      "torque": "17.8 Nm",
+      "speed": "8.1 rad/s",
+      "features": [
+        "高扭矩",
+        "集成驱动器",
+        "CAN通信",
+        "紧凑设计"
+      ],
+      "applications": [
+        "humanoid",
+        "quadruped",
+        "manipulator"
+      ],
+      "price_range": "200-500",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-cubemars-gl40-v2",
+      "name": "CubeMars GL40 v2",
+      "category": "joint_actuator",
+      "manufacturer": "CubeMars",
+      "type": "smart_actuator",
+      "description": "CubeMars GL40升级版，人形机器人关节执行器",
+      "features": [
+        "高扭矩密度",
+        "集成FOC驱动",
+        "多协议支持",
+        "IP65防护"
+      ],
+      "applications": [
+        "humanoid",
+        "quadruped"
+      ],
+      "price_range": "200-500",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-faulhaber-3274",
+      "name": "Faulhaber 3274 BP4",
+      "category": "micro_actuator",
+      "manufacturer": "Faulhaber",
+      "type": "micro_motor",
+      "description": "Faulhaber新一代微型精密电机，机器人关节和精密控制",
+      "features": [
+        "微型精密",
+        "高效率",
+        "低齿槽",
+        "长寿命"
+      ],
+      "applications": [
+        "humanoid",
+        "medical",
+        "precision"
+      ],
+      "price_range": "500-1000",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-moog-smartmotor-v2",
+      "name": "Moog SmartMotor v2",
+      "category": "servo",
+      "manufacturer": "Moog",
+      "type": "smart_servo",
+      "description": "Moog SmartMotor升级版，工业级智能伺服",
+      "features": [
+        "集成控制器",
+        "高精度",
+        "工业级可靠性",
+        "EtherCAT支持"
+      ],
+      "applications": [
+        "industrial_robot",
+        "CNC",
+        "humanoid"
+      ],
+      "price_range": "1000-5000",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-schaeffler-compact",
+      "name": "Schaeffler Compact Actuator (CES 2026)",
+      "category": "joint_actuator",
+      "manufacturer": "Schaeffler",
+      "type": "integrated_actuator",
+      "description": "舍弗勒CES 2026首发紧凑型执行器，集成齿轮箱+电机+编码器+控制器",
+      "torque": "高扭矩密度",
+      "features": [
+        "集成4合1设计",
+        "精确扭矩传递",
+        "连续运行",
+        "紧凑设计",
+        "CES 2026首发"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-kpower-servo",
+      "name": "Kpower Humanoid Servo",
+      "category": "servo",
+      "manufacturer": "Kpower (广东)",
+      "type": "smart_servo",
+      "description": "广东Kpower人形机器人关节舵机，提供完整选型指南",
+      "features": [
+        "人形机器人专用",
+        "关节电机选型指南",
+        "高扭矩输出",
+        "多规格可选"
+      ],
+      "applications": [
+        "humanoid",
+        "education"
+      ],
+      "price_range": "50-300",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-welling-joint",
+      "name": "Welling Parts Joint Module",
+      "category": "joint_actuator",
+      "manufacturer": "Welling Parts",
+      "type": "integrated_actuator",
+      "description": "Welling新一代关节模块系列，谐波+行星两条路线",
+      "features": [
+        "谐波减速器路线",
+        "行星减速器路线",
+        "集成驱动器",
+        "多规格覆盖"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-mosrac-whg240",
+      "name": "Mosrac WHG-240 Frameless BLDC",
+      "category": "motor",
+      "manufacturer": "Mosrac",
+      "type": "frameless_torque_motor",
+      "description": "Mosrac WHG-240 48V无框BLDC力矩电机，人形机器人关节专用",
+      "torque": "高扭矩密度",
+      "speed": "低转速高扭矩",
+      "weight": "轻量化",
+      "voltage": "48V",
+      "features": [
+        "48V无框设计",
+        "BLDC力矩电机",
+        "高扭矩密度",
+        "人形机器人优化"
+      ],
+      "applications": [
+        "humanoid",
+        "collaborative_robot"
+      ],
+      "price_range": "200-500",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-honpine-hpjm-v2",
+      "name": "HONPINE HPJM v2 Joint Module",
+      "category": "joint_actuator",
+      "manufacturer": "HONPINE",
+      "type": "integrated_actuator",
+      "description": "HONPINE HPJM升级版，6合1深度集成关节模块，31.5mm中空轴",
+      "features": [
+        "6合1深度集成",
+        "31.5mm中空轴穿线",
+        "24位双编码器",
+        "多圈绝对值断电记忆",
+        "凸极磁路永磁制动"
+      ],
+      "applications": [
+        "humanoid",
+        "manipulator"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-ct-unite-gan-encoder-actuator",
+      "name": "CT-Unite GaN Encoder Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "CT-Unite",
+      "type": "smart_actuator",
+      "description": "CT-Unite首款GaN磁编码器芯片驱动的执行器，180°C稳定运行",
+      "features": [
+        "GaN磁编码器",
+        "180°C稳定运行",
+        "21位超高分辨率",
+        "响应延迟<2μs",
+        "2026 Q3量产"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "development",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-optimus-gen3-hand",
+      "name": "Tesla Optimus Gen 3 Hand (50 Actuators)",
+      "category": "hand_actuator",
+      "manufacturer": "Tesla",
+      "type": "dexterous_hand",
+      "description": "Tesla Optimus Gen 3手部50个执行器，22自由度，精密力控，2026夏季量产",
+      "torque": "精密力控",
+      "features": [
+        "50个执行器",
+        "22自由度",
+        "仿人手设计",
+        "触觉反馈",
+        "精密操控",
+        "2026夏季量产"
+      ],
+      "applications": [
+        "humanoid",
+        "manipulation",
+        "assembly"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-neura-dyna-hand",
+      "name": "Neura Dyna Dexterous Hand",
+      "category": "hand_actuator",
+      "manufacturer": "Neura Robotics",
+      "type": "dexterous_hand",
+      "description": "Neura Robotics灵巧手，2026年人形机器人突破性执行器",
+      "features": [
+        "灵巧操控",
+        "力感知",
+        "多指协调",
+        "自适应抓取"
+      ],
+      "applications": [
+        "humanoid",
+        "manipulation"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-lg-cloid-actuator",
+      "name": "LG Cloid Robotics Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "LG Electronics",
+      "type": "smart_actuator",
+      "description": "LG电子CES 2026发布Cloid人形机器人配套执行器品牌，消费级定位",
+      "features": [
+        "LG官方品牌",
+        "Cloid机器人配套",
+        "消费级定位",
+        "高精度控制",
+        "CES 2026发布"
+      ],
+      "applications": [
+        "humanoid",
+        "home_service"
+      ],
+      "price_range": "consumer",
+      "status": "development",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-keyirobot-hand",
+      "name": "KeyiRobot Dexterous Hand Actuator",
+      "category": "hand_actuator",
+      "manufacturer": "KeyiRobot",
+      "type": "dexterous_hand",
+      "description": "2026年人形机器人灵巧手执行器突破，驱动精密操控",
+      "features": [
+        "灵巧手突破",
+        "精密操控",
+        "力反馈",
+        "多指协调"
+      ],
+      "applications": [
+        "humanoid",
+        "manipulation"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-schaeffler-4in1-compact",
+      "name": "Schaeffler 4-in-1 Compact Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "Schaeffler",
+      "type": "integrated_actuator",
+      "description": "舍弗勒CES 2026紧凑型4合1执行器，集成齿轮箱+电机+编码器+控制器",
+      "torque": "高扭矩密度",
+      "features": [
+        "4合1集成",
+        "齿轮箱+电机+编码器+控制器",
+        "精确扭矩传递",
+        "连续运行",
+        "紧凑设计"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-unitree-g1-hand",
+      "name": "Unitree G1 Dexterous Hand",
+      "category": "hand_actuator",
+      "manufacturer": "Unitree",
+      "type": "dexterous_hand",
+      "description": "Unitree G1人形机器人灵巧手，2026年5500+台出货",
+      "features": [
+        "灵巧操控",
+        "力感知",
+        "3指/5指版本",
+        "5500+台出货"
+      ],
+      "applications": [
+        "humanoid",
+        "manipulation"
+      ],
+      "price_range": "200-500",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-robozaps-actuator",
+      "name": "RoboZaps Humanoid Actuator Kit",
+      "category": "joint_actuator",
+      "manufacturer": "RoboZaps",
+      "type": "actuator_kit",
+      "description": "RoboZaps人形机器人执行器套件，2026年可购买方案",
+      "features": [
+        "完整套件",
+        "可购买",
+        "多规格",
+        "开源兼容"
+      ],
+      "applications": [
+        "humanoid",
+        "education",
+        "research"
+      ],
+      "price_range": "500-2000",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-humanoid-1000-deal",
+      "name": "Humanoid-Schaeffler 1000+ Robot Actuator",
+      "category": "joint_actuator",
+      "manufacturer": "Humanoid/Schaeffler",
+      "type": "mass_production_actuator",
+      "description": "Humanoid与Schaeffler合作1000+台人形机器人执行器订单，Forbes报道",
+      "features": [
+        "1000+订单",
+        "战略合作",
+        "汽车级供应链",
+        "量产执行器"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "enterprise",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-inspire-linear-servo",
+      "name": "INSPIRE Micro Linear Servo Actuator",
+      "type": "linear_servo",
+      "description": "INSPIRE微线性伺服执行器，微型尺寸、高精度力控，适用于人形机器人手指和精密关节",
+      "vendor": "INSPIRE",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "ACT-inspire-dexterous-hand",
+      "name": "INSPIRE Dexterous Hand",
+      "type": "dexterous_hand",
+      "description": "INSPIRE灵巧手，微线性伺服驱动，高精度力控，适用于人形机器人精密操作",
+      "vendor": "INSPIRE",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "ACT-dea-soft",
+      "name": "Dielectric Elastomer Actuator (DEA)",
+      "type": "artificial_muscle",
+      "description": "介电弹性体执行器，软体机器人新型驱动技术，材料创新突破，仿生肌肉驱动",
+      "vendor": "Various",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "ACT-iai-robot-lineup",
+      "name": "IAI America Robot Actuator Lineup",
+      "type": "smart_actuator",
+      "description": "IAI America 2026年机器人执行器产品线更新，覆盖多种执行器类型",
+      "vendor": "IAI America",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "ACT-bd-atlas-electric-v2",
+      "name": "Boston Dynamics Atlas Electric Actuator v2",
+      "type": "integrated_actuator",
+      "description": "Boston Dynamics Atlas产品版电动执行器v2，CES 2026与Hyundai联合发布",
+      "vendor": "Boston Dynamics/Hyundai",
+      "release_date": "2026-01",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "ACT-tesla-optimus-v2",
+      "name": "Tesla Optimus Gen 3 Actuator Suite",
+      "type": "integrated_actuator",
+      "description": "Tesla Optimus Gen 3执行器套件，50+执行器，2026年商业化部署",
+      "vendor": "Tesla",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "ACT-first-a301-v2",
+      "name": "FIRST A301 Motor v2",
+      "type": "smart_servo",
+      "description": "FIRST A301电机v2，标准化和简化FTC机器人设计，增强性能和可靠性",
+      "vendor": "FIRST",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "ACT-hyundai-bd-atlas-prod",
+      "name": "Hyundai/Boston Dynamics Atlas Production Actuator",
+      "type": "integrated_actuator",
+      "description": "Hyundai与Boston Dynamics联合发布的Atlas产品版执行器，CES 2026亮相",
+      "vendor": "Hyundai/Boston Dynamics",
+      "release_date": "2026-01",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "act-schaeffler-modular",
+      "name": "Schaeffler Modular Joint System",
+      "type": "modular_actuator",
+      "description": "舍弗勒模块化关节系统，支持齿轮箱+电机+编码器+控制器4合1集成，模块化设计适配不同人形机器人",
+      "company": "Schaeffler",
+      "key_features": [
+        "4合1集成",
+        "模块化设计",
+        "行星齿轮",
+        "多规格适配"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "act-kpower-fullbody",
+      "name": "Kpower Full-Body Servo Kit",
+      "type": "servo_kit",
+      "description": "Kpower人形机器人全身舵机套件，广东Kpower发布完整选型指南，覆盖关节/手部/腰部",
+      "company": "Kpower Servo",
+      "key_features": [
+        "全身舵机套件",
+        "选型指南",
+        "关节/手部/腰部",
+        "48V系统"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "act-welling-harmonic",
+      "name": "Welling Parts Harmonic Drive Module",
+      "type": "harmonic_drive_joint",
+      "description": "威灵部件谐波驱动关节模块，高精度谐波减速器+无框力矩电机集成方案",
+      "company": "Welling Parts (美的集团)",
+      "key_features": [
+        "谐波减速器",
+        "无框力矩电机",
+        "高精度",
+        "紧凑设计"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "act-welling-planetary",
+      "name": "Welling Parts Planetary Drive Module",
+      "type": "planetary_drive_joint",
+      "description": "威灵部件行星驱动关节模块，大扭矩行星减速器+无框力矩电机集成方案",
+      "company": "Welling Parts (美的集团)",
+      "key_features": [
+        "行星减速器",
+        "大扭矩输出",
+        "无框力矩电机",
+        "高可靠性"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "act-mosrac-48v-series",
+      "name": "Mosrac 48V BLDC Motor Series",
+      "type": "frameless_bldc",
+      "description": "Mosrac 48V无框BLDC力矩电机系列，WHG系列完整产品线，覆盖人形机器人各关节需求",
+      "company": "Mosrac",
+      "key_features": [
+        "48V系统",
+        "无框BLDC",
+        "力矩电机",
+        "完整产品线"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "act-ct-unite-gan-production",
+      "name": "CT-Unite GaN Encoder Actuator (Production)",
+      "type": "gan_encoder_actuator",
+      "description": "CT-Unite GaN磁编码器执行器量产版，180°C稳定，21位分辨率，<2μs延迟，2026 Q3量产",
+      "company": "CT-Unite",
+      "key_features": [
+        "GaN磁编码器",
+        "180°C稳定",
+        "21位分辨率",
+        "<2μs延迟",
+        "2026 Q3量产"
+      ],
+      "status": "pre_production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "act-agility-digit-v2",
+      "name": "Agility Robotics Digit v2 Actuator",
+      "type": "bipedal_actuator",
+      "description": "Agility Robotics Digit v2执行器，Amazon部署的双足人形机器人执行器升级版",
+      "company": "Agility Robotics",
+      "key_features": [
+        "双足执行器",
+        "Amazon部署",
+        "物流场景",
+        "高可靠性"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "act-patsnap-analysis",
+      "name": "Humanoid Actuator Patent Landscape",
+      "type": "patent_analysis",
+      "description": "人形机器人执行器专利全景分析，530,554+专利分析，执行器占人形机器人总生产成本70%",
+      "company": "PatSnap",
+      "key_features": [
+        "530K+专利分析",
+        "成本占比70%",
+        "商业化阶段",
+        "运动控制技术"
+      ],
+      "status": "research",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-iai-robot",
+      "name": "IAI Intelligent Actuator Robot",
+      "category": "actuator",
+      "manufacturer": "IAI America",
+      "type": "integrated_actuator",
+      "description": "IAI智能执行器机器人系列，2026年更新产品线指南",
+      "features": [
+        "产品线更新",
+        "多类型执行器",
+        "高精度",
+        "工业级"
+      ],
+      "applications": [
+        "industrial_robot",
+        "pick_place",
+        "assembly"
+      ],
+      "price_range": "200-2000",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-patsnap-actuator",
+      "name": "PatSnap Humanoid Actuator Analysis",
+      "category": "market_analysis",
+      "manufacturer": "多家",
+      "type": "market_report",
+      "description": "人形机器人执行器530554+专利分析，2026年进入关键商业化阶段",
+      "features": [
+        "530K+专利",
+        "商业化阶段",
+        "运动控制",
+        "技术趋势"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial"
+      ],
+      "price_range": "varies",
+      "status": "market_trend",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-iai-new-lineup",
+      "name": "IAI New Robot Lineup",
+      "category": "actuator",
+      "manufacturer": "IAI",
+      "type": "robot_actuator",
+      "description": "IAI 2026年更新机器人产品线指南，按执行器类型组织",
+      "features": [
+        "产品线指南",
+        "按类型组织",
+        "简化选型",
+        "更新规格"
+      ],
+      "applications": [
+        "industrial_robot",
+        "assembly",
+        "pick_place"
+      ],
+      "price_range": "100-2000",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-cubemars-ak45-36",
+      "name": "CubeMars AK45-36",
+      "category": "integrated_actuator",
+      "manufacturer": "CubeMars",
+      "type": "integrated_actuator",
+      "description": "CubeMars AK45-36超高压扭矩执行器，36:1齿轮比，集成无刷直流电机+行星齿轮箱+驱动板",
+      "features": [
+        "36:1齿轮比",
+        "超高扭矩",
+        "集成设计",
+        "KV80"
+      ],
+      "applications": [
+        "humanoid",
+        "quadruped",
+        "industrial"
+      ],
+      "price_range": "500-1500",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-cubemars-ak70-10",
+      "name": "CubeMars AK70-10",
+      "category": "integrated_actuator",
+      "manufacturer": "CubeMars",
+      "type": "integrated_actuator",
+      "description": "CubeMars AK70-10人形机器人执行器，紧凑设计，高扭矩密度",
+      "features": [
+        "人形机器人专用",
+        "高扭矩密度",
+        "紧凑设计",
+        "集成驱动"
+      ],
+      "applications": [
+        "humanoid",
+        "exoskeleton"
+      ],
+      "price_range": "400-1200",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-cubemars-qdd",
+      "name": "CubeMars QDD Motor Series",
+      "category": "qdd_actuator",
+      "manufacturer": "CubeMars",
+      "type": "qdd_actuator",
+      "description": "CubeMars QDD电机系列，人形和四足机器人专用，高扭矩控制精度和响应速度",
+      "features": [
+        "QDD直驱",
+        "高扭矩控制",
+        "快速响应",
+        "人形/四足专用"
+      ],
+      "applications": [
+        "humanoid",
+        "quadruped",
+        "exoskeleton"
+      ],
+      "price_range": "300-2000",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-cubemars-frameless",
+      "name": "CubeMars Frameless Torque Motor",
+      "category": "frameless_motor",
+      "manufacturer": "CubeMars",
+      "type": "frameless_motor",
+      "description": "CubeMars无框扭矩电机，高扭矩密度+可控转子惯量，外转子设计",
+      "features": [
+        "无框设计",
+        "高扭矩密度",
+        "外转子",
+        "可控惯量"
+      ],
+      "applications": [
+        "humanoid",
+        "gimbal",
+        "exoskeleton"
+      ],
+      "price_range": "200-800",
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "ACT-bonsystems-bcsa",
+      "name": "Bonsystems BCSA (Cycloidal Smart Actuator)",
+      "category": "smart-actuator",
+      "description": "New cycloidal smart actuator designed specifically for humanoid robots, launching August 2026. Features integrated intelligence and cycloidal drive.",
+      "features": [
+        "cycloidal drive",
+        "integrated intelligence",
+        "humanoid-optimized",
+        "smart actuator",
+        "high torque density"
+      ],
+      "status": "upcoming",
+      "year": 2026,
+      "sources": [
+        "https://en.bonsystems.com/newsletter/smart-humanoid-robot-actuator"
+      ]
+    },
+    {
+      "id": "ACT-agility-digit-v2",
+      "name": "Agility Robotics Digit New Actuators",
+      "category": "humanoid-actuator",
+      "description": "New actuator innovations for Agility Robotics Digit humanoid robot with expanded work capabilities.",
+      "features": [
+        "humanoid locomotion",
+        "work capabilities",
+        "advanced actuation",
+        "bipedal motion"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://www.agilityrobotics.com/content/agility-robotics-announces-new-innovations-for-market-leading-humanoid-robot-digit"
+      ]
+    },
+    {
+      "id": "ACT-figure-03-helix",
+      "name": "Figure 03 Helix Actuator System",
+      "category": "humanoid_actuator",
+      "manufacturer": "Figure AI",
+      "type": "Integrated humanoid actuator suite",
+      "torque": "28 joint actuators + 50+ hand actuators (Gen 3 hands)",
+      "speed": "Human-reflex-level visual-to-motion response",
+      "weight": "Full-body integrated",
+      "voltage": "N/A",
+      "protocol": "Proprietary Helix AI control",
+      "interface": "Helix neural interface",
+      "position_resolution": "N/A",
+      "applications": [
+        "humanoid",
+        "home",
+        "industrial",
+        "logistics"
+      ],
+      "price_range": "N/A (commercial platform)",
+      "compatibility": [
+        "Figure 03 platform",
+        "Helix AI"
+      ],
+      "description": "Figure AI第三代人形机器人Figure 03的执行器系统，集成28个关节执行器和Gen 3手中50+个执行器。专为Helix AI设计，实现人类反射级别的视觉到运动响应。Figure AI已交付超过350台机器人，BotQ生产线已从蓝图转为高产量制造环境。"
+    },
+    {
+      "id": "ACT-tienkung-ultra",
+      "name": "Tien Kung Ultra Actuator System",
+      "category": "humanoid_actuator",
+      "manufacturer": "X-Humanoid",
+      "type": "High-performance humanoid actuator suite",
+      "torque": "Full-size humanoid joint actuators",
+      "speed": "Fully autonomous half-marathon in 1:15:00 (21.0975km)",
+      "weight": "Full-size humanoid",
+      "voltage": "N/A",
+      "protocol": "X-Humanoid proprietary",
+      "interface": "Embodied AI control",
+      "position_resolution": "N/A",
+      "applications": [
+        "humanoid",
+        "marathon",
+        "industrial sorting",
+        "competition"
+      ],
+      "price_range": "N/A",
+      "compatibility": [
+        "Tien Kung platform"
+      ],
+      "description": "X-Humanoid天工Ultra执行器系统，实现了全自主半程马拉松（21.0975公里，1小时15分），零人工干预。Embodied天工2.0在CES 2026上展示了全自主零件分拣和与观众互动。天工3.0赢得北京机器人勇士赛。执行器系统实现了人类反射级别的视觉到运动响应时间。"
+    },
+    {
+      "id": "ACT-tesla-optimus-g3-50act",
+      "name": "Tesla Optimus Gen 3 Actuator System (50 Actuators)",
+      "category": "full_body_actuator",
+      "manufacturer": "Tesla",
+      "type": "Electromagnetic joint actuators",
+      "torque": "Tesla-designed (proprietary)",
+      "year": "2026",
+      "description": "Tesla Optimus Gen 3 features 50 actuators total (28 structural + per-hand actuators for dexterity). 22 degrees of freedom per hand. Tesla-designed actuators and sensors. The robot weighs 57 kg, stands 1.73m tall, and is 30% faster than previous generation with 10 kg weight reduction. 2.3 kWh battery.",
+      "source": "Tesla 2026 patent filings"
+    },
+    {
+      "id": "ACT-engineai-t800-hightorque",
+      "name": "EngineAI T800 High-Torque Actuator System",
+      "category": "full_body_actuator",
+      "manufacturer": "EngineAI (China)",
+      "type": "High-torque joint actuators",
+      "torque": "Up to 450 N·m peak torque per joint",
+      "year": "2025-2026",
+      "description": "EngineAI T800 humanoid robot actuator system with 29 articulated body joints (full-body DOF, excluding dexterous hands). Capable of 360° motion range. High-torque actuators powered by solid-state battery. Aluminum-alloy frame. Full-stack in-house development.",
+      "source": "EngineAI 2025-2026"
+    },
+    {
+      "id": "ACT-unitree-h1-360nm",
+      "name": "Unitree H1 Joint Motor System",
+      "category": "joint_motor",
+      "manufacturer": "Unitree Robotics (China)",
+      "type": "High-torque joint motors for humanoid",
+      "torque": "360 N·m maximum (arm joint)",
+      "year": "2025-2026",
+      "description": "Unitree H1 humanoid robot joint motor system. Height ~180cm, weight ~70kg. Features 360° depth sensing and 3D LiDAR. Maximum torque of arm joint 360 N·m. Designed for agile locomotion and manipulation tasks.",
+      "source": "Unitree Robotics 2025-2026"
+    },
+    {
+      "id": "ACTUATOR-A1B2C3",
+      "name": "Unitree H1 Actuator",
+      "type": "Electric Motor",
+      "torque": "20 Nm",
+      "description": "High-performance actuator used in Unitree's humanoid robots",
+      "manufacturer": "Unitree Robotics",
+      "application": "Humanoid robots",
+      "last_updated": "2026-06-27T15:58:12.573Z"
+    },
+    {
+      "id": "ACTUATOR-D4E5F6",
+      "name": "Tesla Optimus Actuator",
+      "type": "Electric Motor",
+      "torque": "15 Nm",
+      "description": "Actuator system designed for Tesla's humanoid robot",
+      "manufacturer": "Tesla",
+      "application": "Humanoid robots",
+      "last_updated": "2026-06-27T15:58:12.574Z"
+    },
+    {
+      "id": "ACTUATOR-G7H8I9",
+      "name": "Boston Dynamics Atlas Actuator",
+      "type": "Hydraulic",
+      "torque": "50 Nm",
+      "description": "Hydraulic actuator system for Atlas humanoid robot",
+      "manufacturer": "Boston Dynamics",
+      "application": "Humanoid robots",
+      "last_updated": "2026-06-27T15:58:12.574Z"
+    },
+    {
+      "id": "ACTUATOR-J0K1L2",
+      "name": "Figure AI Actuator",
+      "type": "Electric Motor",
+      "torque": "18 Nm",
+      "description": "Advanced actuator for Figure AI's humanoid robot",
+      "manufacturer": "Figure AI",
+      "application": "Humanoid robots",
+      "last_updated": "2026-06-27T15:58:12.574Z"
+    },
+    {
+      "id": "ACTUATOR-M3N4O5",
+      "name": "Agility Robotics Digit Actuator",
+      "type": "Electric Motor",
+      "torque": "25 Nm",
+      "description": "Actuator system for Digit's legged robots",
+      "manufacturer": "Agility Robotics",
+      "application": "Legged robots",
+      "last_updated": "2026-06-27T15:58:12.574Z"
+    },
+    {
+      "id": "ACTUATOR-P6Q7R8",
+      "name": "Apptronik Apollo Actuator",
+      "type": "Electric Motor",
+      "torque": "22 Nm",
+      "description": "Actuator system for Apptronik's humanoid robot",
+      "manufacturer": "Apptronik",
+      "application": "Humanoid robots",
+      "last_updated": "2026-06-27T15:58:12.574Z"
+    },
+    {
+      "id": "ACTUATOR-S9T0U1",
+      "name": "1X NEO Actuator",
+      "type": "Electric Motor",
+      "torque": "16 Nm",
+      "description": "Actuator system for 1X Technologies' humanoid robot",
+      "manufacturer": "1X Technologies",
+      "application": "Humanoid robots",
+      "last_updated": "2026-06-27T15:58:12.574Z"
+    },
+    {
+      "id": "ACTUATOR-V2W3X4",
+      "name": "AgiBot Actuator",
+      "type": "Electric Motor",
+      "torque": "19 Nm",
+      "description": "Actuator system for AgiBot's humanoid robot",
+      "manufacturer": "AgiBot",
+      "application": "Humanoid robots",
+      "last_updated": "2026-06-27T15:58:12.574Z"
+    },
+    {
+      "id": "ACTUATOR-abc123",
+      "name": "Unitree G1",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "杭州宇树科技有限公司2025年发布的人形机器人产品",
+      "manufacturer": "杭州宇树科技有限公司",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-def456",
+      "name": "Galbot G1",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "北京银河通用机器人有限公司2025年发布的人形机器人产品",
+      "manufacturer": "北京银河通用机器人有限公司",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-ghi789",
+      "name": "天工2.0",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "国地共建具身智能机器人创新中心2025年发布的人形机器人产品",
+      "manufacturer": "国地共建具身智能机器人创新中心",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-jkl012",
+      "name": "众擎PM01人形机器人",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "2025年发布的人形机器人产品",
+      "manufacturer": "未明确",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-mno345",
+      "name": "Figure AI执行器",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "Figure AI公司人形机器人执行系统",
+      "manufacturer": "Figure AI",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-pqr678",
+      "name": "Agility Robotics执行器",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "Agility Robotics公司人形机器人执行系统",
+      "manufacturer": "Agility Robotics",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-stu901",
+      "name": "特斯拉执行器",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "特斯拉公司人形机器人执行系统",
+      "manufacturer": "特斯拉",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-vwx234",
+      "name": "波士顿动力执行器",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "波士顿动力公司人形机器人执行系统",
+      "manufacturer": "波士顿动力",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-yza567",
+      "name": "Apptronik执行器",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "Apptronik公司人形机器人执行系统",
+      "manufacturer": "Apptronik",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-bcd890",
+      "name": "1X Technologies执行器",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "1X Technologies公司人形机器人执行系统",
+      "manufacturer": "1X Technologies",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACTUATOR-efg123",
+      "name": "AgiBot执行器",
+      "type": "伺服电机",
+      "torque": "未明确",
+      "description": "AgiBot公司人形机器人执行系统",
+      "manufacturer": "AgiBot",
+      "application": "人形机器人",
+      "last_updated": "2026-06-27T15:57:14.601Z"
+    }
+  ],
+  "chips": [
+    {
+      "id": "CHIP-001",
+      "name": "NVIDIA Jetson Orin NX",
+      "category": "compute",
+      "manufacturer": "NVIDIA",
+      "type": "SoC",
+      "cpu": "8-core ARM Cortex-A78AE",
+      "gpu": "1024-core Ampere GPU",
+      "memory": "8/16GB LPDDR5",
+      "tdp": "10-25W",
+      "ai_perf": "70 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "Jetson module",
+      "price_range": "00-600",
+      "applications": [
+        "autonomous_vehicle",
+        "robot_vision",
+        "edge_ai"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-002",
+      "name": "NVIDIA Jetson AGX Orin",
+      "category": "compute",
+      "manufacturer": "NVIDIA",
+      "type": "SoC",
+      "cpu": "12-core ARM Cortex-A78AE",
+      "gpu": "2048-core Ampere GPU",
+      "memory": "32/64GB LPDDR5",
+      "tdp": "15-60W",
+      "ai_perf": "275 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "10GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "Jetson module",
+      "price_range": "600-2000",
+      "applications": [
+        "autonomous_vehicle",
+        "robot_vision",
+        "industrial_robot"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-003",
+      "name": "Raspberry Pi 5",
+      "category": "compute",
+      "manufacturer": "Raspberry Pi Foundation",
+      "type": "SBC",
+      "cpu": "4-core ARM Cortex-A76",
+      "gpu": "VideoCore VII",
+      "memory": "4/8GB LPDDR4x",
+      "tdp": "5-12W",
+      "ai_perf": "N/A (Hailo-8L AI kit: 13 TOPS)",
+      "interfaces": [
+        "PCIe 2.0",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART"
+      ],
+      "form_factor": "SBC",
+      "price_range": "0-100",
+      "applications": [
+        "hobby_robot",
+        "education",
+        "iot_robot"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-004",
+      "name": "STM32H743",
+      "category": "mcu",
+      "manufacturer": "STMicroelectronics",
+      "type": "MCU",
+      "cpu": "ARM Cortex-M7 @ 480MHz",
+      "gpu": "N/A",
+      "memory": "1MB SRAM",
+      "tdp": "<1W",
+      "ai_perf": "N/A (CMSIS-NN)",
+      "interfaces": [
+        "SPI",
+        "I2C",
+        "UART",
+        "CAN",
+        "USB",
+        "ETH",
+        "ADC"
+      ],
+      "form_factor": "LQFP/BGA",
+      "price_range": "0-20",
+      "applications": [
+        "motor_control",
+        "sensor_hub",
+        "realtime_control"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "CHIP-005",
+      "name": "ESP32-S3",
+      "category": "mcu",
+      "manufacturer": "Espressif",
+      "type": "MCU",
+      "cpu": "Xtensa LX7 dual-core @ 240MHz",
+      "gpu": "N/A",
+      "memory": "512KB SRAM",
+      "tdp": "<1W",
+      "ai_perf": "N/A (ESP-DL)",
+      "interfaces": [
+        "SPI",
+        "I2C",
+        "UART",
+        "CAN",
+        "WiFi",
+        "BLE",
+        "USB"
+      ],
+      "form_factor": "QFN",
+      "price_range": "0-5",
+      "applications": [
+        "iot_robot",
+        "wifi_robot",
+        "sensor_node"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "CHIP-006",
+      "name": "Teensy 4.1",
+      "category": "mcu",
+      "manufacturer": "PJRC",
+      "type": "MCU",
+      "cpu": "ARM Cortex-M7 @ 600MHz",
+      "gpu": "N/A",
+      "memory": "1MB SRAM",
+      "tdp": "<1W",
+      "ai_perf": "N/A",
+      "interfaces": [
+        "SPI",
+        "I2C",
+        "UART",
+        "CAN",
+        "USB",
+        "ETH",
+        "SD"
+      ],
+      "form_factor": "board",
+      "price_range": "0-30",
+      "applications": [
+        "motor_control",
+        "realtime_control",
+        "audio_robot"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "CHIP-007",
+      "name": "Rockchip RK3588",
+      "category": "compute",
+      "manufacturer": "Rockchip",
+      "type": "SoC",
+      "cpu": "4xA76 + 4xA55",
+      "gpu": "Mali-G610 MP4",
+      "memory": "4/8/16GB LPDDR4x",
+      "tdp": "5-10W",
+      "ai_perf": "6 TOPS",
+      "interfaces": [
+        "PCIe 3.0",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART"
+      ],
+      "form_factor": "BGA",
+      "price_range": "0-150",
+      "applications": [
+        "robot_vision",
+        "edge_ai",
+        "hobby_robot"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-008",
+      "name": "NVIDIA Jetson Thor",
+      "category": "compute",
+      "manufacturer": "NVIDIA",
+      "type": "SoC",
+      "cpu": "NVIDIA custom ARM",
+      "gpu": "Next-gen Blackwell GPU",
+      "memory": "128GB LPDDR5x",
+      "tdp": "40-130W",
+      "ai_perf": "2070 FP4 TFLOPS",
+      "interfaces": [
+        "PCIe 5.0",
+        "USB3",
+        "10GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "Jetson module",
+      "price_range": "2000+",
+      "applications": [
+        "humanoid_robot",
+        "autonomous_vehicle",
+        "physical_ai"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-009",
+      "name": "Qualcomm RB6 (QCS6490)",
+      "category": "compute",
+      "manufacturer": "Qualcomm",
+      "type": "SoC",
+      "cpu": "8-core Kryo 670",
+      "gpu": "Adreno 643L",
+      "memory": "8/16GB LPDDR5",
+      "tdp": "10-20W",
+      "ai_perf": "15 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "module",
+      "price_range": "200-500",
+      "applications": [
+        "robot_vision",
+        "drone",
+        "AMR"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-010",
+      "name": "Intel RealSense D455",
+      "category": "sensor_processor",
+      "manufacturer": "Intel",
+      "type": "depth_camera",
+      "cpu": "Intel Movidius VPU",
+      "gpu": "N/A",
+      "memory": "N/A",
+      "tdp": "3.5W",
+      "ai_perf": "depth processing",
+      "interfaces": [
+        "USB3",
+        "MIPI CSI"
+      ],
+      "form_factor": "camera module",
+      "price_range": "200-400",
+      "applications": [
+        "robot_vision",
+        "navigation",
+        "object_detection"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-011",
+      "name": "Hailo-8 M.2",
+      "category": "ai_accelerator",
+      "manufacturer": "Hailo",
+      "type": "AI_accelerator",
+      "cpu": "N/A",
+      "gpu": "N/A",
+      "memory": "N/A",
+      "tdp": "2.5W",
+      "ai_perf": "26 TOPS",
+      "interfaces": [
+        "PCIe 3.0",
+        "M.2"
+      ],
+      "form_factor": "M.2 module",
+      "price_range": "50-100",
+      "applications": [
+        "edge_ai",
+        "robot_vision",
+        "object_detection"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "CHIP-012",
+      "name": "Google Coral TPU",
+      "category": "ai_accelerator",
+      "manufacturer": "Google",
+      "type": "AI_accelerator",
+      "cpu": "N/A",
+      "gpu": "N/A",
+      "memory": "N/A",
+      "tdp": "2W",
+      "ai_perf": "4 TOPS",
+      "interfaces": [
+        "USB3",
+        "PCIe",
+        "M.2"
+      ],
+      "form_factor": "USB/M.2 module",
+      "price_range": "0-50",
+      "applications": [
+        "edge_ai",
+        "classification",
+        "detection"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "CHIP-013",
+      "name": "NXP i.MX 8M Plus",
+      "category": "compute",
+      "manufacturer": "NXP",
+      "type": "SoC",
+      "cpu": "4-core ARM Cortex-A53 + M7",
+      "gpu": "GC7000L",
+      "memory": "2/4GB LPDDR4",
+      "tdp": "5-10W",
+      "ai_perf": "2.3 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA/module",
+      "price_range": "50-200",
+      "applications": [
+        "industrial_robot",
+        "vision",
+        "motor_control"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-014",
+      "name": "TI TDA4VM",
+      "category": "compute",
+      "manufacturer": "Texas Instruments",
+      "type": "SoC",
+      "cpu": "2xA72 + 4xR5F + C7x DSP",
+      "gpu": "N/A",
+      "memory": "4/8GB LPDDR4",
+      "tdp": "5-20W",
+      "ai_perf": "8 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA",
+      "price_range": "100-300",
+      "applications": [
+        "automotive_vision",
+        "robot_vision",
+        "ADAS"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-015",
+      "name": "Infineon AURIX TC397",
+      "category": "mcu",
+      "manufacturer": "Infineon",
+      "type": "MCU",
+      "cpu": "6-core TriCore @ 300MHz",
+      "gpu": "N/A",
+      "memory": "16MB flash, 3.5MB SRAM",
+      "tdp": "<3W",
+      "ai_perf": "N/A",
+      "interfaces": [
+        "SPI",
+        "I2C",
+        "UART",
+        "CAN-FD",
+        "ETH",
+        "HSSL"
+      ],
+      "form_factor": "BGA",
+      "price_range": "20-50",
+      "applications": [
+        "functional_safety",
+        "motor_control",
+        "automotive_robot"
+      ],
+      "ros_support": false
+    },
+    {
+      "id": "CHIP-016",
+      "name": "Renesas RZ/V2H",
+      "category": "compute",
+      "manufacturer": "Renesas",
+      "type": "SoC",
+      "cpu": "4-core ARM Cortex-A55 + R8",
+      "gpu": "N/A",
+      "memory": "4/8GB LPDDR4",
+      "tdp": "10-20W",
+      "ai_perf": "80 TOPS (DRP-AI3)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA/module",
+      "price_range": "100-300",
+      "applications": [
+        "robot_vision",
+        "industrial_robot",
+        "AMR"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-017",
+      "name": "AMD Xilinx Kria K26",
+      "category": "compute",
+      "manufacturer": "AMD/Xilinx",
+      "type": "FPGA_SoC",
+      "cpu": "2-core ARM Cortex-A72 + R5",
+      "gpu": "N/A",
+      "memory": "4GB LPDDR4",
+      "tdp": "5-15W",
+      "ai_perf": "configurable (DPU)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "SOM",
+      "price_range": "200-500",
+      "applications": [
+        "vision_acceleration",
+        "realtime_processing",
+        "industrial_robot"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-018",
+      "name": "Microchip PolarFire SoC",
+      "category": "compute",
+      "manufacturer": "Microchip",
+      "type": "FPGA_SoC",
+      "cpu": "4-core RISC-V + FPGA",
+      "gpu": "N/A",
+      "memory": "2/4GB DDR4",
+      "tdp": "5-15W",
+      "ai_perf": "configurable",
+      "interfaces": [
+        "PCIe",
+        "USB",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA/module",
+      "price_range": "100-300",
+      "applications": [
+        "radiation_hardened",
+        "space_robot",
+        "industrial"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-019",
+      "name": "Horizon Robotics J5",
+      "category": "compute",
+      "manufacturer": "Horizon Robotics",
+      "type": "SoC",
+      "cpu": "8-core ARM Cortex-A55",
+      "gpu": "N/A",
+      "memory": "8/16GB LPDDR4x",
+      "tdp": "10-20W",
+      "ai_perf": "128 TOPS (BPU)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA/module",
+      "price_range": "200-500",
+      "applications": [
+        "autonomous_driving",
+        "robot_vision",
+        "AMR"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "CHIP-020",
+      "name": "Allwinner T507",
+      "category": "compute",
+      "manufacturer": "Allwinner",
+      "type": "SoC",
+      "cpu": "4-core ARM Cortex-A53",
+      "gpu": "Mali-G31 MP2",
+      "memory": "2/4GB DDR4",
+      "tdp": "3-8W",
+      "ai_perf": "0.5 TOPS (NPU)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA",
+      "price_range": "0-50",
+      "applications": [
+        "hobby_robot",
+        "iot_robot",
+        "education"
+      ],
+      "ros_support": true
+    },
+    {
+      "id": "RP-ct21x-gan-encoder",
+      "name": "CT-Unite CT-21X GaN Magnetic Encoder",
+      "type": "chip",
+      "company": "CT-Unite",
+      "key_findings": [
+        "China's first GaN-based magnetic encoder chip for humanoid robot joints",
+        "Stable operation at 180°C, peak tolerance 250-400°C",
+        "Angular accuracy 30-100 arcseconds, thermal drift 0.01-0.03°/°C",
+        "21-bit ultra-high-resolution ADC, angular error ±0.1°",
+        "Response latency <2μs, bandwidth 1-5 MHz, up to 300,000 rpm",
+        "Improves trajectory control accuracy from ±0.2mm to ±0.05mm",
+        "Mass production expected Q3 2026"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.trendforce.com/news/2026/05/04/news-china-unveils-first-gan-magnetic-encoder-chip-for-humanoid-robot-joints/",
+          "collected_at": "2026-05-29T14:23:31.089Z"
+        }
+      ]
+    },
+    {
+      "id": "RP-intel-core-ultra-s3",
+      "name": "Intel Core Ultra Series 3",
+      "type": "chip",
+      "company": "Intel",
+      "key_findings": [
+        "Edge AI robotics compute platform combining CPU, GPU, and NPU on one SoC",
+        "Replaces bulky discrete GPUs in robots — reduced heat and cost",
+        "Powers Ella service robot (200 drinks/hour) with 3 concurrent AI agents",
+        "Adopted by Trossen Robotics, Circulus (Korea), Oversonic (Italy)",
+        "Debuted at Computex 2026"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://newsroom.intel.com/artificial-intelligence/intel-core-ultra-series-3-for-edge-ai-robotics",
+          "collected_at": "2026-05-29T14:23:31.089Z"
+        }
+      ]
+    },
+    {
+      "id": "RP-honpine-hpjm",
+      "name": "HONPINE HPJM Integrated Joint Module",
+      "type": "actuator",
+      "company": "HONPINE",
+      "key_findings": [
+        "Deep integration of 6 core components into single compact unit",
+        "50+ different joint module specifications for flexible development",
+        "Hollow-shaft routing with 31.5mm bore in 120mm outer diameter",
+        "24-bit dual-encoder with multi-turn absolute power-loss memory",
+        "Salient-pole magnetic circuit permanent magnet brake design"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.honpine.com/news/Company-News/-Next-Generation-Humanoid-Robot-Joint-Design-HONPINE-HPJM-with-Harmonic-Drive-Hollow-Shaft-and-Integrated-Encoder-Module.html",
+          "collected_at": "2026-05-29T14:23:31.089Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-qualcomm-iq10",
+      "name": "Qualcomm Dragonwing IQ10",
+      "category": "compute",
+      "manufacturer": "Qualcomm",
+      "type": "SoC",
+      "cpu": "18-core CPU",
+      "gpu": "Qualcomm Adreno",
+      "memory": "LPDDR5",
+      "tdp": "15-45W",
+      "ai_perf": "700 TOPS (350 dense INT8)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN",
+        "I2C",
+        "SPI"
+      ],
+      "form_factor": "BGA module",
+      "price_range": "enterprise",
+      "features": [
+        "人形机器人专用",
+        "700 TOPS AI算力",
+        "18核CPU",
+        "低功耗设计",
+        "Qualcomm 20年移动经验"
+      ],
+      "applications": [
+        "humanoid",
+        "autonomous_vehicle",
+        "drone"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-qualcomm-iq9",
+      "name": "Qualcomm Dragonwing IQ9",
+      "category": "compute",
+      "manufacturer": "Qualcomm",
+      "type": "SoC",
+      "cpu": "8-core Kryo",
+      "gpu": "Adreno",
+      "memory": "LPDDR5",
+      "tdp": "10-25W",
+      "ai_perf": "400 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN"
+      ],
+      "form_factor": "BGA module",
+      "price_range": "enterprise",
+      "features": [
+        "上一代机器人处理器",
+        "400 TOPS",
+        "工业机器人优化"
+      ],
+      "applications": [
+        "industrial_robot",
+        "AMR"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-intel-core-ultra-s3-edge",
+      "name": "Intel Core Ultra Series 3 Edge",
+      "category": "compute",
+      "manufacturer": "Intel",
+      "type": "Edge Processor",
+      "cpu": "Intel Core Ultra",
+      "gpu": "Intel Arc",
+      "memory": "LPDDR5",
+      "tdp": "15-65W",
+      "ai_perf": "NPU 40+ TOPS",
+      "interfaces": [
+        "PCIe 5.0",
+        "USB4",
+        "Thunderbolt",
+        "Wi-Fi 7"
+      ],
+      "form_factor": "BGA",
+      "price_range": "300-800",
+      "features": [
+        "CES 2026发布",
+        "RoBee机器人采用",
+        "Edge AI优化",
+        "NPU集成"
+      ],
+      "applications": [
+        "humanoid",
+        "edge_ai",
+        "robotics"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-nvidia-thor-v2",
+      "name": "NVIDIA Jetson Thor (2026 BC Award)",
+      "category": "compute",
+      "manufacturer": "NVIDIA",
+      "type": "SoC",
+      "cpu": "ARM Neoverse V3",
+      "gpu": "Blackwell GPU",
+      "memory": "LPDDR5/5X",
+      "tdp": "30-100W",
+      "ai_perf": "800+ TOPS",
+      "interfaces": [
+        "PCIe 5.0",
+        "USB4",
+        "10GbE",
+        "MIPI CSI",
+        "CAN"
+      ],
+      "form_factor": "Jetson module",
+      "price_range": "1000-3000",
+      "features": [
+        "2026 BC Award Winner",
+        "Physical AI专用",
+        "800+ TOPS",
+        "高级传感器处理",
+        "Isaac Lab-Arena支持"
+      ],
+      "applications": [
+        "humanoid",
+        "autonomous_vehicle",
+        "industrial_robot"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-amd-ryzen-ai-2026",
+      "name": "AMD Ryzen AI Processor 2026",
+      "category": "compute",
+      "manufacturer": "AMD",
+      "type": "APU",
+      "cpu": "Zen 5",
+      "gpu": "RDNA 3.5",
+      "memory": "LPDDR5X",
+      "tdp": "15-54W",
+      "ai_perf": "50+ TOPS NPU",
+      "interfaces": [
+        "PCIe 5.0",
+        "USB4",
+        "Wi-Fi 7"
+      ],
+      "form_factor": "BGA/Socket",
+      "price_range": "300-1000",
+      "features": [
+        "CES 2026发布",
+        "Ryzen AI新系列",
+        "XDNA 2 NPU",
+        "机器人扩展"
+      ],
+      "applications": [
+        "edge_ai",
+        "robotics",
+        "humanoid"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-microsoft-braga",
+      "name": "Microsoft Braga AI Chip",
+      "category": "ai_accelerator",
+      "manufacturer": "Microsoft",
+      "type": "AI Accelerator",
+      "cpu": "N/A",
+      "gpu": "Custom AI",
+      "memory": "HBM",
+      "tdp": "TBD",
+      "ai_perf": "高算力",
+      "interfaces": [
+        "PCIe",
+        "CXL"
+      ],
+      "form_factor": "Datacenter",
+      "price_range": "enterprise",
+      "features": [
+        "微软自研AI芯片",
+        "代号Braga",
+        "2026年推迟发布",
+        "设计变更中"
+      ],
+      "applications": [
+        "cloud_ai",
+        "datacenter"
+      ],
+      "status": "delayed",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-nvidia-cosmos-groot",
+      "name": "NVIDIA Cosmos + GR00T Model Chip",
+      "category": "ai_model",
+      "manufacturer": "NVIDIA",
+      "type": "AI Model Platform",
+      "description": "NVIDIA Cosmos物理AI模型和GR00T开放模型，用于机器人学习和推理",
+      "features": [
+        "Cosmos物理AI模型",
+        "GR00T开放模型",
+        "Isaac Lab-Arena",
+        "机器人学习推理"
+      ],
+      "applications": [
+        "humanoid",
+        "robot_learning",
+        "physical_ai"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-gigadevice-gd32h7",
+      "name": "GigaDevice GD32H7 Series",
+      "category": "mcu",
+      "manufacturer": "GigaDevice",
+      "type": "MCU",
+      "cpu": "ARM Cortex-M7",
+      "memory": "1MB SRAM",
+      "tdp": "low power",
+      "interfaces": [
+        "CAN-FD",
+        "EtherCAT",
+        "Ethernet",
+        "USB",
+        "SPI",
+        "I2C"
+      ],
+      "form_factor": "LQFP/BGA",
+      "price_range": "5-20",
+      "features": [
+        "机器人控制MCU",
+        "CAN-FD支持",
+        "EtherCAT从站",
+        "高实时性"
+      ],
+      "applications": [
+        "robot_joint",
+        "motor_control",
+        "sensor_hub"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-advantech-iq10",
+      "name": "Advantech Qualcomm IQ10 Platform",
+      "category": "compute",
+      "manufacturer": "Advantech/Qualcomm",
+      "type": "SBC",
+      "cpu": "Qualcomm Dragonwing IQ10",
+      "memory": "LPDDR5",
+      "tdp": "15-45W",
+      "ai_perf": "700 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN"
+      ],
+      "form_factor": "SBC",
+      "price_range": "1000-3000",
+      "features": [
+        "研华IQ10平台",
+        "700 TOPS算力",
+        "工业级可靠性",
+        "机器人专用"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial_robot",
+        "AMR"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-qualcomm-rb6-v2",
+      "name": "Qualcomm RB6 v2 (QCS8250)",
+      "category": "compute",
+      "manufacturer": "Qualcomm",
+      "type": "SoC",
+      "cpu": "8-core Kryo",
+      "gpu": "Adreno 670",
+      "memory": "LPDDR5",
+      "tdp": "10-25W",
+      "ai_perf": "400 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN"
+      ],
+      "form_factor": "BGA module",
+      "price_range": "enterprise",
+      "features": [
+        "RB6升级版",
+        "更高AI算力",
+        "机器人专用优化"
+      ],
+      "applications": [
+        "AMR",
+        "industrial_robot",
+        "drone"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-horizon-j6",
+      "name": "Horizon Robotics J6",
+      "category": "compute",
+      "manufacturer": "Horizon Robotics",
+      "type": "SoC",
+      "cpu": "ARM Cortex-A78AE",
+      "memory": "LPDDR5",
+      "tdp": "15-30W",
+      "ai_perf": "200+ TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN"
+      ],
+      "form_factor": "BGA",
+      "price_range": "enterprise",
+      "features": [
+        "地平线J6",
+        "200+ TOPS",
+        "国产机器人芯片",
+        "BPU架构"
+      ],
+      "applications": [
+        "autonomous_driving",
+        "robotics",
+        "humanoid"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-renesas-rzv2h-v2",
+      "name": "Renesas RZ/V2H v2",
+      "category": "compute",
+      "manufacturer": "Renesas",
+      "type": "SoC",
+      "cpu": "ARM Cortex-A55 + R8",
+      "memory": "LPDDR4",
+      "tdp": "10-20W",
+      "ai_perf": "80 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN",
+        "EtherCAT"
+      ],
+      "form_factor": "BGA",
+      "price_range": "100-500",
+      "features": [
+        "RZ/V2H升级版",
+        "DRP-AI3加速器",
+        "低功耗",
+        "EtherCAT支持"
+      ],
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "AMR"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-ti-tda4vp",
+      "name": "TI TDA4VP",
+      "category": "compute",
+      "manufacturer": "Texas Instruments",
+      "type": "SoC",
+      "cpu": "ARM Cortex-A72 + R5F",
+      "memory": "LPDDR4",
+      "tdp": "5-15W",
+      "ai_perf": "8 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN",
+        "EtherCAT"
+      ],
+      "form_factor": "FCBGA",
+      "price_range": "50-200",
+      "features": [
+        "TDA4VM精简版",
+        "低功耗",
+        "视觉处理",
+        "机器人感知"
+      ],
+      "applications": [
+        "AMR",
+        "robot_vision",
+        "industrial_robot"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-mediatek-genio-700",
+      "name": "MediaTek Genio 700",
+      "category": "compute",
+      "manufacturer": "MediaTek",
+      "type": "SoC",
+      "cpu": "ARM Cortex-A78 + A55",
+      "gpu": "Mali-G57",
+      "memory": "LPDDR4X",
+      "tdp": "5-15W",
+      "ai_perf": "4 TOPS (APU)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN",
+        "I2C",
+        "SPI"
+      ],
+      "form_factor": "BGA",
+      "price_range": "50-150",
+      "features": [
+        "Computex 2026发布",
+        "驱动Grinn机械手实时手势检测",
+        "Edge AI优化",
+        "低功耗设计"
+      ],
+      "applications": [
+        "humanoid",
+        "robot_vision",
+        "edge_ai"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-mediatek-edge-ai-7b",
+      "name": "MediaTek Edge AI Chip (Dual 7B)",
+      "category": "compute",
+      "manufacturer": "MediaTek",
+      "type": "SoC",
+      "cpu": "ARM Cortex-A78AE",
+      "gpu": "Mali-G715",
+      "memory": "LPDDR5",
+      "tdp": "15-30W",
+      "ai_perf": "单芯片支持两个7B模型",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN"
+      ],
+      "form_factor": "BGA module",
+      "price_range": "200-500",
+      "features": [
+        "MWC 2026展示",
+        "单芯片双7B模型推理",
+        "Edge AI旗舰",
+        "机器人伴侣"
+      ],
+      "applications": [
+        "humanoid",
+        "companion_robot",
+        "edge_ai"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-rockchip-rk3588s-v2",
+      "name": "Rockchip RK3588S v2",
+      "category": "compute",
+      "manufacturer": "Rockchip",
+      "type": "SoC",
+      "cpu": "4xA76 + 4xA55",
+      "gpu": "Mali-G610 MP4",
+      "memory": "4/8/16GB LPDDR5",
+      "tdp": "5-10W",
+      "ai_perf": "6 TOPS (NPU升级)",
+      "interfaces": [
+        "PCIe 3.0",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA",
+      "price_range": "0-150",
+      "features": [
+        "RK3588S升级版",
+        "LPDDR5支持",
+        "NPU升级",
+        "国产机器人首选"
+      ],
+      "applications": [
+        "robot_vision",
+        "edge_ai",
+        "hobby_robot"
+      ],
+      "ros_support": true,
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-amlogic-a311d2",
+      "name": "Amlogic A311D2",
+      "category": "compute",
+      "manufacturer": "Amlogic",
+      "type": "SoC",
+      "cpu": "4xA73 + 4xA53",
+      "gpu": "Mali-G52 MP6",
+      "memory": "4/8GB LPDDR4X",
+      "tdp": "5-12W",
+      "ai_perf": "5 TOPS (NPU)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN"
+      ],
+      "form_factor": "BGA",
+      "price_range": "0-100",
+      "features": [
+        "Amlogic机器人方案",
+        "5 TOPS NPU",
+        "视觉处理",
+        "低成本"
+      ],
+      "applications": [
+        "robot_vision",
+        "edge_ai",
+        "AMR"
+      ],
+      "ros_support": true,
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-intel-core-ultra-s3-robotics",
+      "name": "Intel Core Ultra Series 3 Robotics Edition",
+      "category": "compute",
+      "manufacturer": "Intel",
+      "type": "Edge Processor",
+      "cpu": "Intel Core Ultra (P-cores + E-cores)",
+      "gpu": "Intel Arc + NPU",
+      "memory": "LPDDR5X",
+      "tdp": "15-65W",
+      "ai_perf": "NPU 40+ TOPS + GPU",
+      "interfaces": [
+        "PCIe 5.0",
+        "USB4",
+        "Thunderbolt 4",
+        "Wi-Fi 7",
+        "CAN",
+        "MIPI CSI"
+      ],
+      "form_factor": "BGA",
+      "price_range": "300-800",
+      "features": [
+        "Computex 2026发布",
+        "RoBee机器人采用",
+        "Ella服务机器人(200杯/时)",
+        "3并发AI Agent",
+        "Edge AI优化"
+      ],
+      "applications": [
+        "humanoid",
+        "edge_ai",
+        "service_robot"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-nvidia-cosmos-gr00t-v2",
+      "name": "NVIDIA Cosmos + GR00T v2",
+      "category": "ai_model",
+      "manufacturer": "NVIDIA",
+      "type": "AI Model Platform",
+      "description": "NVIDIA Cosmos物理AI模型和GR00T v2开放模型，Isaac Lab-Arena支持",
+      "features": [
+        "Cosmos物理AI v2",
+        "GR00T开放模型v2",
+        "Isaac Lab-Arena",
+        "机器人学习推理",
+        "BC Award 2026"
+      ],
+      "applications": [
+        "humanoid",
+        "robot_learning",
+        "physical_ai"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-qualcomm-iq10-advantech",
+      "name": "Advantech MIC-710AI (IQ10)",
+      "category": "compute",
+      "manufacturer": "Advantech/Qualcomm",
+      "type": "SBC",
+      "cpu": "Qualcomm Dragonwing IQ10",
+      "memory": "LPDDR5",
+      "tdp": "15-45W",
+      "ai_perf": "700 TOPS",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "GbE",
+        "MIPI CSI",
+        "CAN",
+        "EtherCAT"
+      ],
+      "form_factor": "SBC",
+      "price_range": "1000-3000",
+      "features": [
+        "研华IQ10平台",
+        "700 TOPS算力",
+        "工业级",
+        "机器人专用",
+        "EtherCAT支持"
+      ],
+      "applications": [
+        "humanoid",
+        "industrial_robot",
+        "AMR"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-gigadevice-gd32h7-robot",
+      "name": "GigaDevice GD32H7 Robot Edition",
+      "category": "mcu",
+      "manufacturer": "GigaDevice",
+      "type": "MCU",
+      "cpu": "ARM Cortex-M7 @ 600MHz",
+      "memory": "2MB SRAM",
+      "tdp": "low power",
+      "interfaces": [
+        "CAN-FD",
+        "EtherCAT",
+        "Ethernet",
+        "USB",
+        "SPI",
+        "I2C",
+        "UART"
+      ],
+      "form_factor": "LQFP/BGA",
+      "price_range": "5-25",
+      "features": [
+        "机器人关节控制MCU",
+        "CAN-FD支持",
+        "EtherCAT从站",
+        "高实时性",
+        "人形机器人优化"
+      ],
+      "applications": [
+        "robot_joint",
+        "motor_control",
+        "humanoid"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-nvidia-t5000",
+      "name": "NVIDIA T5000 Robot Chip",
+      "type": "SoC",
+      "description": "NVIDIA T5000机器人专用芯片，2026年新发布，为实体机器人提供专用AI计算能力",
+      "vendor": "NVIDIA",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "CHIP-qualcomm-robotics-pc",
+      "name": "Qualcomm Robotics PC Chip",
+      "type": "SoC",
+      "description": "Qualcomm 2026年CES发布的机器人PC芯片，结合PC计算能力和机器人控制",
+      "vendor": "Qualcomm",
+      "release_date": "2026-01",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "CHIP-intel-core-ultra-s3-robee",
+      "name": "Intel Core Ultra Series 3 (RoBee)",
+      "type": "SoC",
+      "description": "Intel Core Ultra Series 3边缘处理器，CES 2026 RoBee机器人采用",
+      "vendor": "Intel",
+      "release_date": "2026-01",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "CHIP-ms-braga-v2",
+      "name": "Microsoft Braga AI Chip v2",
+      "type": "AI_accelerator",
+      "description": "Microsoft下一代AI芯片Braga v2，2026年推迟发布，设计变更和人员调整",
+      "vendor": "Microsoft",
+      "release_date": "2026",
+      "status": "delayed",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "CHIP-edge-ai-realtime",
+      "name": "Edge AI Real-Time Learning Chip",
+      "type": "AI_accelerator",
+      "description": "新一代边缘AI处理器，支持工业机器人实时学习和在线适应，无需云端",
+      "vendor": "NVIDIA/Intel/Qualcomm",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "chip-qualcomm-iq10-pro",
+      "name": "Qualcomm Dragonwing IQ10 Pro",
+      "type": "robotics_processor",
+      "description": "高通Dragonwing IQ10 Pro，700 TOPS(350 dense INT8)，18核CPU，直接对标NVIDIA Jetson",
+      "company": "Qualcomm",
+      "key_features": [
+        "700 TOPS",
+        "18核CPU",
+        "能效优先",
+        "机器人专用"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "chip-nvidia-t5000-v2",
+      "name": "NVIDIA T5000 v2 Robot Chip",
+      "type": "robotics_processor",
+      "description": "NVIDIA T5000 v2机器人专用芯片，CES 2026新发布，增强AI推理和机器人控制能力",
+      "company": "NVIDIA",
+      "key_features": [
+        "机器人专用",
+        "AI推理增强",
+        "实时控制",
+        "Blackwell架构"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "chip-mediatek-genio-700-v2",
+      "name": "MediaTek Genio 700 v2",
+      "type": "edge_ai_processor",
+      "description": "联发科Genio 700 v2，驱动Grinn机械手实时手势检测（Computex 2026演示）",
+      "company": "MediaTek",
+      "key_features": [
+        "实时手势检测",
+        "Edge AI",
+        "Computex 2026",
+        "机械手驱动"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "chip-intel-ultra3-robotics-v2",
+      "name": "Intel Core Ultra Series 3 Robotics v2",
+      "type": "edge_processor",
+      "description": "Intel Core Ultra Series 3机器人版v2，驱动RoBee和Ella服务机器人（200杯/时，3并发AI Agent）",
+      "company": "Intel",
+      "key_features": [
+        "RoBee驱动",
+        "Ella服务机器人",
+        "3并发AI Agent",
+        "边缘推理"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "chip-amd-ryzen-ai-v2",
+      "name": "AMD Ryzen AI 2026 v2",
+      "type": "ai_processor",
+      "description": "AMD Ryzen AI 2026 v2，XDNA 2 NPU架构，50+ TOPS，支持机器人AI推理",
+      "company": "AMD",
+      "key_features": [
+        "XDNA 2 NPU",
+        "50+ TOPS",
+        "AI推理",
+        "机器人应用"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "chip-nxp-imx95",
+      "name": "NXP i.MX 95",
+      "type": "applications_processor",
+      "description": "NXP i.MX 95高级应用处理器，支持机器人实时控制和边缘AI推理",
+      "company": "NXP",
+      "key_features": [
+        "实时控制",
+        "边缘AI",
+        "安全启动",
+        "多核异构"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "chip-renesas-rzv2l",
+      "name": "Renesas RZ/V2L",
+      "type": "entry_ai_processor",
+      "description": "瑞萨RZ/V2L入门级AI处理器，内置DRP-AI加速器，适合低成本机器人视觉应用",
+      "company": "Renesas",
+      "key_features": [
+        "DRP-AI加速器",
+        "入门级",
+        "低成本",
+        "视觉AI"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "chip-horizon-j6e",
+      "name": "Horizon Robotics J6E",
+      "type": "vision_processor",
+      "description": "地平线J6E增强版视觉处理器，增强机器人视觉感知和决策能力",
+      "company": "Horizon Robotics",
+      "key_features": [
+        "视觉感知增强",
+        "BPU架构",
+        "多摄像头",
+        "实时决策"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-snapdragon-x2-plus",
+      "name": "Qualcomm Snapdragon X2 Plus",
+      "category": "compute",
+      "manufacturer": "Qualcomm",
+      "type": "SoC",
+      "cpu": "10-core Oryon CPU",
+      "gpu": "Adreno",
+      "memory": "LPDDR5X",
+      "tdp": "15-30W",
+      "ai_perf": "80 TOPS NPU",
+      "interfaces": [
+        "PCIe",
+        "USB4",
+        "Wi-Fi 7",
+        "MIPI CSI"
+      ],
+      "form_factor": "BGA",
+      "price_range": "200-500",
+      "features": [
+        "CES 2026发布",
+        "10核Oryon",
+        "80 TOPS NPU",
+        "中端AI PC"
+      ],
+      "applications": [
+        "edge_ai",
+        "robotics",
+        "humanoid"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-intel-ces2026-ai",
+      "name": "Intel CES 2026 AI Chip",
+      "category": "compute",
+      "manufacturer": "Intel",
+      "type": "Edge Processor",
+      "cpu": "Intel Next-Gen",
+      "gpu": "Intel Arc Next",
+      "memory": "LPDDR5X",
+      "tdp": "15-65W",
+      "ai_perf": "NPU 50+ TOPS",
+      "interfaces": [
+        "PCIe 5.0",
+        "USB4",
+        "Thunderbolt 5",
+        "Wi-Fi 7"
+      ],
+      "form_factor": "BGA",
+      "price_range": "300-1000",
+      "features": [
+        "CES 2026发布",
+        "新架构",
+        "先进制程",
+        "机器人扩展"
+      ],
+      "applications": [
+        "humanoid",
+        "edge_ai",
+        "robotics"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-turbox-irb10",
+      "name": "Thundercomm TurboX IRB10",
+      "category": "dev_board",
+      "manufacturer": "Thundercomm/Qualcomm",
+      "type": "开发板",
+      "cpu": "Dragonwing IQ10",
+      "gpu": "Qualcomm Adreno",
+      "memory": "LPDDR5X",
+      "tdp": "30-60W",
+      "ai_perf": "700 TOPS (IQ10)",
+      "interfaces": [
+        "PCIe",
+        "USB3",
+        "MIPI CSI",
+        "Ethernet",
+        "Wi-Fi 7"
+      ],
+      "form_factor": "SOM+Carrier",
+      "price_range": "1000-3000",
+      "features": [
+        "IQ10开发板",
+        "Embedded World 2026",
+        "AMR/人形机器人",
+        "参考设计"
+      ],
+      "applications": [
+        "humanoid",
+        "amr",
+        "industrial_robot"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-neura-robotics-iq10",
+      "name": "NEURA Robotics IQ10 Platform",
+      "category": "compute",
+      "manufacturer": "NEURA Robotics/Qualcomm",
+      "type": "机器人平台",
+      "cpu": "Dragonwing IQ10",
+      "gpu": "Qualcomm Adreno",
+      "memory": "LPDDR5X",
+      "tdp": "30-60W",
+      "ai_perf": "700 TOPS",
+      "interfaces": [
+        "MIPI CSI",
+        "PCIe",
+        "Ethernet",
+        "Wi-Fi 7"
+      ],
+      "form_factor": "Custom",
+      "price_range": "N/A",
+      "features": [
+        "NEURA机器人平台",
+        "IQ10驱动",
+        "认知机器人",
+        "Computex 2026"
+      ],
+      "applications": [
+        "cognitive_robot",
+        "humanoid",
+        "amr"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "CHIP-amd-ryzen-ai-400",
+      "name": "AMD Ryzen AI 400 Series",
+      "category": "ai-processor",
+      "description": "AMD's latest AI-powered PC chip with 1.3x faster AI processing. Announced at CES 2026.",
+      "features": [
+        "1.3x faster AI",
+        "NPU integration",
+        "AI-powered processing",
+        "PC-class performance"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://www.mastercard.com/us/en/news-and-trends/stories/2026/ces-2026.html"
+      ]
+    },
+    {
+      "id": "CHIP-nvidia-thor-robotics",
+      "name": "NVIDIA Thor (Robotics Variant)",
+      "category": "robot_soc",
+      "manufacturer": "NVIDIA",
+      "type": "Robotics SoC / Edge AI accelerator",
+      "compute": "2000 TOPS (INT8)",
+      "architecture": "Blackwell GPU + next-gen tensor cores",
+      "interface": "PCIe Gen5, Ethernet, MIPI CSI",
+      "power": "~100W",
+      "applications": [
+        "humanoid",
+        "autonomous_vehicle",
+        "robot_perception"
+      ],
+      "price_range": "N/A (OEM)",
+      "compatibility": [
+        "Isaac ROS",
+        "Isaac Sim",
+        "CUDA"
+      ],
+      "description": "NVIDIA Thor芯片的机器人变体，为Physical AI和人形机器人提供边缘AI加速。支持多模态传感器融合、实时推理和触觉基础模型训练。在GTC 2026上展示，与Robotiq等触觉传感器集成。"
+    },
+    {
+      "id": "CHIP-nvidia-gb10-digits",
+      "name": "NVIDIA GB10 Grace + Blackwell (DIGITS Desktop AI)",
+      "category": "desktop_ai_chip",
+      "manufacturer": "NVIDIA",
+      "type": "Desktop AI computing chip",
+      "year": "2025",
+      "description": "Announced at CES January 2025, NVIDIA's desktop AI machine (originally called Digits) uses the GB10 chip combining the Grace processor and Blackwell GPU architecture. Designed for AI development and robotics workloads at the desktop level.",
+      "source": "NVIDIA CES 2025"
+    },
+    {
+      "id": "CHIP-a1b2c3",
+      "name": "触觉传感芯片",
+      "manufacturer": "他山科技",
+      "architecture": "未明确",
+      "process_node": "未明确",
+      "description": "人工智能触觉传感芯片及应用解决方案研发",
+      "application": "触觉传感器赛道",
+      "last_updated": "2026-06-27T15:57:25.493Z"
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "IF-001",
+      "name": "USB 3.0",
+      "category": "interface",
+      "type": "wired",
+      "speed": "5 Gbps",
+      "power": "5V/900mA",
+      "connector": "Type-A/Type-C/Micro-B",
+      "applications": [
+        "camera",
+        "lidar",
+        "compute_module",
+        "debug"
+      ],
+      "pros": [
+        "universal",
+        "hot_plug",
+        "power_delivery"
+      ],
+      "cons": [
+        "not_deterministic",
+        "cable_length_limited"
+      ],
+      "compatibility": [
+        "almost_all_devices"
+      ]
+    },
+    {
+      "id": "IF-002",
+      "name": "MIPI CSI-2",
+      "category": "interface",
+      "type": "camera_serial",
+      "speed": "2.5 Gbps/lane (up to 4 lanes)",
+      "power": "low",
+      "connector": "FFC/FPC",
+      "applications": [
+        "camera_module",
+        "depth_sensor"
+      ],
+      "pros": [
+        "high_bandwidth",
+        "low_power",
+        "standard_in_mobile"
+      ],
+      "cons": [
+        "short_cable",
+        "fragile_connector"
+      ],
+      "compatibility": [
+        "Jetson",
+        "RK3588",
+        "Qualcomm"
+      ]
+    },
+    {
+      "id": "IF-003",
+      "name": "PCIe 3.0/4.0",
+      "category": "interface",
+      "type": "high_speed_bus",
+      "speed": "8/16 GT/s per lane",
+      "power": "depends on slot",
+      "connector": "M.2/PCIe slot",
+      "applications": [
+        "GPU",
+        "NVMe",
+        "FPGA",
+        "high_speed_capture"
+      ],
+      "pros": [
+        "very_high_bandwidth",
+        "low_latency"
+      ],
+      "cons": [
+        "complex",
+        "expensive_connectors"
+      ],
+      "compatibility": [
+        "Jetson",
+        "x86_SBC",
+        "RK3588"
+      ]
+    },
+    {
+      "id": "IF-004",
+      "name": "GPIO",
+      "category": "interface",
+      "type": "digital_I/O",
+      "speed": "low",
+      "power": "3.3V/5V",
+      "connector": "pin_header",
+      "applications": [
+        "button",
+        "LED",
+        "relay",
+        "simple_sensor"
+      ],
+      "pros": [
+        "simple",
+        "universal"
+      ],
+      "cons": [
+        "slow",
+        "no_standardization"
+      ],
+      "compatibility": [
+        "Raspberry_Pi",
+        "STM32",
+        "ESP32"
+      ]
+    },
+    {
+      "id": "IF-005",
+      "name": "Ethernet (GbE)",
+      "category": "interface",
+      "type": "network",
+      "speed": "1 Gbps",
+      "power": "PoE optional",
+      "connector": "RJ45",
+      "applications": [
+        "robot_communication",
+        "ROS2",
+        "remote_control"
+      ],
+      "pros": [
+        "standard",
+        "long_range",
+        "PoE"
+      ],
+      "cons": [
+        "bulky_connector",
+        "EMI_sensitive"
+      ],
+      "compatibility": [
+        "Jetson",
+        "Pi5",
+        "RK3588",
+        "x86"
+      ]
+    },
+    {
+      "id": "IF-006",
+      "name": "NVIDIA Isaac GR00T Platform (GR00T N1.5 + GR00T-Dreams)",
+      "type": "Humanoid robot development platform",
+      "manufacturer": "NVIDIA",
+      "year": "2025-2026",
+      "description": "NVIDIA Isaac GR00T是人形机器人的基础模型和数据流水线研究与开发平台。包含GR00T N1.5基础模型和GR00T-Dreams合成数据生成工具。提供仿真环境(Isaac Lab)、人在回路的数据采集管道，以及NVIDIA端到端机器人平台用于大规模AI机器人训练和部署。",
+      "source": "NVIDIA GTC 2025, Computex 2025"
+    },
+    {
+      "id": "INTERFACE-abc123",
+      "name": "Unitree G1 Interface",
+      "type": "Robot Control Interface",
+      "description": "Control interface for Unitree G1 humanoid robot developed by Hangzhou Unitree Technology Co., Ltd.",
+      "standard": "Proprietary",
+      "application": "Humanoid Robot Control",
+      "last_updated": "2026-06-27T15:58:06.531Z"
+    },
+    {
+      "id": "INTERFACE-def456",
+      "name": "Galbot G1 Interface",
+      "type": "Robot Control Interface",
+      "description": "Control interface for Galbot G1 humanoid robot developed by Beijing Galaxy General Robotics Co., Ltd.",
+      "standard": "Proprietary",
+      "application": "Humanoid Robot Control",
+      "last_updated": "2026-06-27T15:58:06.531Z"
+    },
+    {
+      "id": "INTERFACE-ghi789",
+      "name": "Tiangong 2.0 Interface",
+      "type": "Robot Control Interface",
+      "description": "Control interface for Tiangong 2.0 humanoid robot developed by National Geospatial Innovation Center for Embodied Intelligence Robots.",
+      "standard": "Proprietary",
+      "application": "Humanoid Robot Control",
+      "last_updated": "2026-06-27T15:58:06.531Z"
+    },
+    {
+      "id": "INTERFACE-jkl012",
+      "name": "Zhongqing PM01 Interface",
+      "type": "Robot Control Interface",
+      "description": "Control interface for Zhongqing PM01 humanoid robot.",
+      "standard": "Proprietary",
+      "application": "Humanoid Robot Control",
+      "last_updated": "2026-06-27T15:58:06.531Z"
+    },
+    {
+      "id": "INTERFACE-mno345",
+      "name": "Shenzhen Embodied Intelligence Interface",
+      "type": "Development Platform Interface",
+      "description": "Interface for the Shenzhen Embodied Intelligent Robot Technology Innovation and Industry Development Action Plan (2025-2027).",
+      "standard": "Regional Policy Standard",
+      "application": "Robot Development Platform",
+      "last_updated": "2026-06-27T15:58:06.531Z"
+    },
+    {
+      "id": "INTERFACE-pqr678",
+      "name": "CES 2026 Robot Interface",
+      "type": "Exhibition Interface",
+      "description": "Interface for robots exhibited at CES 2026, expected to showcase advanced execution capabilities.",
+      "standard": "Exhibition Standard",
+      "application": "Robot Exhibition",
+      "last_updated": "2026-06-27T15:58:06.531Z"
+    },
+    {
+      "id": "INTERFACE-stu901",
+      "name": "Robot Industry Chain Interface",
+      "type": "Industry Interface",
+      "description": "Interface covering the complete robot industry chain from R&D kits to development platforms.",
+      "standard": "Industry Standard",
+      "application": "Robot Industry Integration",
+      "last_updated": "2026-06-27T15:58:06.531Z"
+    },
+    {
+      "id": "INTERFACE-vwx234",
+      "name": "CES 2026 Robot Interface",
+      "type": "Exhibition Interface",
+      "description": "Interface for Chinese humanoid robot manufacturers at CES 2026.",
+      "standard": "Exhibition Standard",
+      "application": "Robot Exhibition",
+      "last_updated": "2026-06-27T15:56:40.977Z"
+    }
+  ],
+  "llms": [
+    {
+      "id": "LLM-001",
+      "name": "GPT-4o",
+      "category": "LLM",
+      "manufacturer": "OpenAI",
+      "type": "multimodal_LLM",
+      "parameters": "~1.8T (est.)",
+      "input": "text+image",
+      "output": "text",
+      "robotics_use": [
+        "task_planning",
+        "visual_reasoning",
+        "code_generation",
+        "natural_language_command"
+      ],
+      "api_available": true,
+      "open_source": false,
+      "price": ".5-10/1M tokens",
+      "compatibility": [
+        "any_compute_platform_via_API"
+      ],
+      "embodied_ai": false
+    },
+    {
+      "id": "LLM-002",
+      "name": "Claude 3.5 Sonnet",
+      "category": "LLM",
+      "manufacturer": "Anthropic",
+      "type": "LLM",
+      "parameters": "unknown",
+      "input": "text+image",
+      "output": "text",
+      "robotics_use": [
+        "task_planning",
+        "code_generation",
+        "safety_reasoning"
+      ],
+      "api_available": true,
+      "open_source": false,
+      "price": "-15/1M tokens",
+      "compatibility": [
+        "any_compute_platform_via_API"
+      ],
+      "embodied_ai": false
+    },
+    {
+      "id": "LLM-003",
+      "name": "RT-2",
+      "category": "VLA",
+      "manufacturer": "Google DeepMind",
+      "type": "vision_language_action",
+      "parameters": "55B",
+      "input": "text+image",
+      "output": "robot_actions",
+      "robotics_use": [
+        "end_to_end_control",
+        "visual_manipulation",
+        "instruction_following"
+      ],
+      "api_available": false,
+      "open_source": false,
+      "price": "N/A (research)",
+      "compatibility": [
+        "Google robot hardware"
+      ],
+      "embodied_ai": true
+    },
+    {
+      "id": "LLM-004",
+      "name": "Octo",
+      "category": "VLA",
+      "manufacturer": "Berkeley",
+      "type": "vision_language_action",
+      "parameters": "93M",
+      "input": "text+image+proprioception",
+      "output": "robot_actions",
+      "robotics_use": [
+        "general_robot_manipulation",
+        "transfer_learning"
+      ],
+      "api_available": true,
+      "open_source": true,
+      "price": "Free",
+      "compatibility": [
+        "multiple_robot_arms"
+      ],
+      "embodied_ai": true
+    },
+    {
+      "id": "LLM-005",
+      "name": "OpenVLA",
+      "category": "VLA",
+      "manufacturer": "Stanford",
+      "type": "vision_language_action",
+      "parameters": "7B",
+      "input": "text+image",
+      "output": "robot_actions",
+      "robotics_use": [
+        "fine_tuned_manipulation",
+        "instruction_following"
+      ],
+      "api_available": true,
+      "open_source": true,
+      "price": "Free",
+      "compatibility": [
+        "multiple_robots_via_fine_tuning"
+      ],
+      "embodied_ai": true
+    },
+    {
+      "id": "LLM-006",
+      "name": "Qwen2.5-VL",
+      "category": "LLM",
+      "manufacturer": "Alibaba",
+      "type": "multimodal_LLM",
+      "parameters": "3B/7B/72B",
+      "input": "text+image+video",
+      "output": "text",
+      "robotics_use": [
+        "visual_reasoning",
+        "OCR",
+        "spatial_understanding"
+      ],
+      "api_available": true,
+      "open_source": true,
+      "price": "Free (self-hosted)",
+      "compatibility": [
+        "Jetson",
+        "RK3588",
+        "cloud"
+      ],
+      "embodied_ai": false
+    },
+    {
+      "id": "LLM-007",
+      "name": "π0 (Pi-Zero)",
+      "category": "VLA",
+      "manufacturer": "Physical Intelligence",
+      "type": "vision_language_action",
+      "parameters": "unknown",
+      "input": "text+image+proprioception",
+      "output": "robot_actions",
+      "robotics_use": [
+        "general_purpose_manipulation",
+        "laundry_folding",
+        "assembly"
+      ],
+      "api_available": false,
+      "open_source": false,
+      "price": "N/A (limited_access)",
+      "compatibility": [
+        "multiple_robots"
+      ],
+      "embodied_ai": true
+    },
+    {
+      "id": "LLM-a1b2c3",
+      "name": "墨茵机器人",
+      "developer": "奇瑞",
+      "parameters": "220台批量投产",
+      "description": "奇瑞自研的机器人，完成220台批量投产并获欧盟CE机械安全认证",
+      "robot_integration": "投用在自有整车生产线，开展内饰配件转运与预装作业",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-d4e5f6",
+      "name": "乐聚机器人",
+      "developer": "乐聚",
+      "parameters": "规模化生产",
+      "description": "依托佛山规模化产线生产的机器人",
+      "robot_integration": "应用于人形机器人领域",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-g7h8i9",
+      "name": "宇树机器人",
+      "developer": "宇树",
+      "parameters": "IPO落地",
+      "description": "国产头部人形机器人企业，有望在2026年上半年实现IPO落地",
+      "robot_integration": "为人形机器人量产筑牢根基",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-j0k1l2",
+      "name": "AI芯片",
+      "developer": "未指定",
+      "parameters": "逐鹿战升级",
+      "description": "十大科技市场趋势之一，AI芯片竞争升级",
+      "robot_integration": "应用于机器人领域",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-m3n4o5",
+      "name": "人形机器人",
+      "developer": "未指定",
+      "parameters": "销量增长133%",
+      "description": "2025年中国人形机器人销量预计增长133%，达到28000台",
+      "robot_integration": "应用于多个领域",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-p6q7r8",
+      "name": "人形机器人",
+      "developer": "未指定",
+      "parameters": "中美共振",
+      "description": "2026年人形机器人从政策端和产业端有望实现中美共振",
+      "robot_integration": "板块迎来主升浪",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-s9t0u1",
+      "name": "机器人新技术",
+      "developer": "未指定",
+      "parameters": "创新应用",
+      "description": "2025世界机器人大会主论坛聚焦创新应用，分享机器人新技术",
+      "robot_integration": "应用于机器人领域",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-v2w3x4",
+      "name": "辅助驾驶",
+      "developer": "未指定",
+      "parameters": "十大科技市场",
+      "description": "十大科技市场领域之一",
+      "robot_integration": "应用于机器人领域",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-y5z6a7",
+      "name": "AR眼镜",
+      "developer": "未指定",
+      "parameters": "十大科技市场",
+      "description": "十大科技市场领域之一",
+      "robot_integration": "应用于机器人领域",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-b8c9d0",
+      "name": "消费电子",
+      "developer": "未指定",
+      "parameters": "十大科技市场",
+      "description": "十大科技市场领域之一",
+      "robot_integration": "应用于机器人领域",
+      "last_updated": "2026-06-27T15:56:25.853Z"
+    },
+    {
+      "id": "LLM-a3b7c9",
+      "name": "GPT-4",
+      "developer": "OpenAI",
+      "parameters": "1.76 trillion",
+      "description": "Advanced multimodal AI model capable of understanding and generating human-like text.",
+      "robot_integration": "Used in robot control systems, natural language processing for human-robot interaction, and decision-making algorithms.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-d4e8f2",
+      "name": "BERT",
+      "developer": "Google",
+      "parameters": "110 million",
+      "description": "Bidirectional Encoder Representations from Transformers, pre-trained on large text corpora.",
+      "robot_integration": "Applied in robot perception systems for understanding natural language commands and context-aware responses.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-g5h1j3",
+      "name": "LLaMA",
+      "developer": "Meta",
+      "parameters": "65 billion",
+      "description": "Large Language Model Meta AI, designed for research and industrial applications.",
+      "robot_integration": "Utilized in robot planning and task generation, particularly in collaborative robotics scenarios.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-k6m4n5",
+      "name": "PaLM",
+      "developer": "Google",
+      "parameters": "540 billion",
+      "description": "Pathways Language Model, capable of handling complex reasoning and generation tasks.",
+      "robot_integration": "Integrated into robot learning frameworks for adaptive behavior and complex task execution.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-p7q8r9",
+      "name": "Claude",
+      "developer": "Anthropic",
+      "parameters": "100 billion",
+      "description": "Constitutional AI model focused on safety and alignment with human values.",
+      "robot_integration": "Deployed in safety-critical robotic systems to ensure ethical decision-making and human oversight.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-s2t3u4",
+      "name": "Falcon",
+      "developer": "TII",
+      "parameters": "180 billion",
+      "description": "Open-source large language model with strong performance across multiple benchmarks.",
+      "robot_integration": "Used in robot control interfaces and multi-agent robotic systems for coordinated tasks.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-v5w6x7",
+      "name": "Mistral",
+      "developer": "Mistral AI",
+      "parameters": "7 billion",
+      "description": "Efficient and scalable language model optimized for performance and resource usage.",
+      "robot_integration": "Applied in edge robotics for real-time processing and low-latency decision-making.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-y8z9a1",
+      "name": "Gemini",
+      "developer": "Google",
+      "parameters": "1.5 trillion",
+      "description": "Multimodal AI model designed for understanding and generating across text, code, and other modalities.",
+      "robot_integration": "Enhances robot perception and interaction capabilities, particularly in human-robot collaboration.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-b2c3d4",
+      "name": "XLNet",
+      "developer": "Google/CMU",
+      "parameters": "340 million",
+      "description": "Generalized autoregressive pretraining for language understanding.",
+      "robot_integration": "Supports robot natural language understanding and context-aware task planning.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    },
+    {
+      "id": "LLM-e5f6g7",
+      "name": "RoBERTa",
+      "developer": "Facebook AI",
+      "parameters": "355 million",
+      "description": "Robustly optimized BERT approach, trained with larger datasets and optimized training procedures.",
+      "robot_integration": "Used in robot dialogue systems and semantic understanding for human-robot interaction.",
+      "last_updated": "2026-06-27T15:57:53.020Z"
+    }
+  ],
+  "main": [],
   "platforms": [
     {
       "id": "RPLAT-001",
@@ -831,260 +5118,1869 @@ const DB = {
       "description": "Enterprise drone platform for inspection, mapping, and public safety. 55-min flight time, IP55 rating, multi-payload support.",
       "manufacturer": "DJI",
       "application": "Infrastructure inspection, surveying, emergency response"
+    },
+    {
+      "id": "RPLAT-007",
+      "name": "Figure 03",
+      "type": "General-purpose humanoid robot",
+      "manufacturer": "Figure AI",
+      "year": "2026",
+      "description": "Figure AI第三代人形机器人，专为Helix AI、家庭和大规模部署设计。集成28个关节执行器和Gen 3手中50+个执行器。BotQ生产线已交付超过350台。被Robozaps评为2026年最佳人形机器人第一名。",
+      "key_features": [
+        "Helix AI integration",
+        "Gen 3 hands with 50+ actuators",
+        "Home and industrial capable",
+        "Mass production at BotQ"
+      ],
+      "price_range": "N/A (commercial)"
+    },
+    {
+      "id": "RPLAT-008",
+      "name": "Embodied Tien Kung 3.0",
+      "type": "Full-size general-purpose humanoid robot",
+      "manufacturer": "X-Humanoid",
+      "year": "2026",
+      "description": "X-Humanoid天工3.0全尺寸通用人形机器人，赢得北京机器人勇士赛，完全自主完成多项竞赛任务。天工Ultra完成了全自主半程马拉松（21.0975公里，1小时15分）。天工2.0在CES 2026展示了全自主零件分拣。",
+      "key_features": [
+        "Fully autonomous competition",
+        "Half-marathon capable",
+        "Autonomous parts sorting",
+        "Human-reflex response"
+      ],
+      "price_range": "N/A"
+    },
+    {
+      "id": "RPLAT-009",
+      "name": "Tesla Optimus Gen 3",
+      "type": "General-purpose humanoid robot",
+      "manufacturer": "Tesla",
+      "year": "2026 (planned commercial rollout)",
+      "description": "特斯拉Optimus第三代人形机器人，计划2026年商业化部署。2025年开始内部测试，主要在特斯拉工厂内运行。被Robozaps评为2026年人形机器人第二名。",
+      "key_features": [
+        "Commercial deployment 2026",
+        "Factory-tested",
+        "Tesla AI integration",
+        "Mass production planned"
+      ],
+      "price_range": "N/A (targeting affordable)"
+    },
+    {
+      "id": "RPLAT-010",
+      "name": "Tesla Optimus Gen 3",
+      "type": "General-purpose humanoid robot",
+      "manufacturer": "Tesla",
+      "year": "2026 (commercial deployment)",
+      "description": "Tesla Optimus第三代人形机器人。重量57kg，身高1.73m，比前代轻10kg、快30%。配备50个执行器，每只手22个自由度。2.3kWh电池，模块化设计便于量产。搭载Tesla Autopilot AI和FSD大脑，OLED面部显示屏。Fremont工厂正在改造以生产该机器人。",
+      "key_features": [
+        "50 actuators (28 structural + hand actuators)",
+        "22 DoF per hand",
+        "57 kg weight, 1.73m height",
+        "2.3 kWh battery",
+        "Tesla Autopilot AI integration",
+        "OLED facial display",
+        "Modular design for mass production",
+        "30% faster than Gen 2"
+      ],
+      "price_range": "Targeting affordable (mass production)"
+    },
+    {
+      "id": "RPLAT-011",
+      "name": "EngineAI T800 Humanoid Robot",
+      "type": "Full-size general-purpose humanoid robot",
+      "manufacturer": "EngineAI (China)",
+      "year": "2025-2026",
+      "description": "EngineAI T800全尺寸人形机器人，身高约1.85米。采用铝合金框架、高扭矩执行器和固态电池设计。全身29个自由度（不含灵巧手），峰值扭矩可达450 N·m，支持360°运动范围。具备武术表演能力。全栈自主研发。2025年底发布。",
+      "key_features": [
+        "1.85m height, full-size humanoid",
+        "29 DOF (excluding dexterous hands)",
+        "Up to 450 N·m peak torque per joint",
+        "360° motion range",
+        "Aluminum-alloy frame",
+        "Solid-state battery",
+        "Martial arts capability",
+        "Full-stack in-house development"
+      ],
+      "price_range": "N/A"
+    },
+    {
+      "id": "RPLAT-012",
+      "name": "Unitree G1 Humanoid Robot",
+      "type": "Compact humanoid robot (AI avatar)",
+      "manufacturer": "Unitree Robotics (China)",
+      "year": "2025-2026",
+      "description": "Unitree G1是最经济实惠的人形机器人，起价$13,500。身高约127cm，重约35kg。配备23-43个关节电机，3D LiDAR和深度相机。最高速度3.3 m/s。2025-2026年全球出货数千台，通过模仿学习和强化学习引领人形机器人革命。G1 EDU版本增加有效载荷至3kg并扩展自由度。",
+      "key_features": [
+        "Starting at $13,500",
+        "127cm tall, 35kg",
+        "23-43 joint motors",
+        "3D LiDAR + depth camera",
+        "Up to 3.3 m/s walking speed",
+        "4-microphone array + 5W speaker",
+        "Imitation learning + RL",
+        "Thousands shipped worldwide"
+      ],
+      "price_range": "From $13,500"
+    },
+    {
+      "id": "RPLAT-013",
+      "name": "Unitree H1 Humanoid Robot",
+      "type": "Full-size humanoid robot",
+      "manufacturer": "Unitree Robotics (China)",
+      "year": "2025-2026",
+      "description": "Unitree H1全尺寸人形机器人，身高约180cm，重约70kg。最大臂关节扭矩360 N·m。配备3D LiDAR和360°深度感知系统。与NVIDIA合作，作为Isaac GR00T参考人形机器人平台的基础。",
+      "key_features": [
+        "180cm tall, 70kg",
+        "360 N·m max arm joint torque",
+        "3D LiDAR + 360° depth perception",
+        "NVIDIA Isaac GR00T integration",
+        "Bipedal locomotion"
+      ],
+      "price_range": "N/A"
+    },
+    {
+      "id": "RPLAT-014",
+      "name": "NVIDIA Isaac GR00T Reference Humanoid Robot",
+      "type": "Open humanoid robot reference design",
+      "manufacturer": "NVIDIA (with Unitree)",
+      "year": "2025-2026",
+      "description": "NVIDIA发布的人形机器人参考设计，基于Isaac GR00T平台构建，结合Unitree H2 Plus人形机器人。为人形机器人开发提供开放平台，包括基础模型、数据流水线和仿真环境（Isaac Lab）。NVIDIA首个人形机器人系统使用中国初创公司Unitree的人形机器人。",
+      "key_features": [
+        "Open reference design",
+        "Built on Isaac GR00T platform",
+        "Unitree H2 Plus humanoid base",
+        "Foundation models included",
+        "Isaac Lab simulation environment",
+        "GR00T N1.5 and GR00T-Dreams synthetic data",
+        "First publicly available humanoid robotics system from NVIDIA"
+      ],
+      "price_range": "N/A (reference design)"
+    },
+    {
+      "id": "PLATFORM-abc123",
+      "name": "Figure AI",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "Figure AI",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-def456",
+      "name": "Agility Robotics",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "Agility Robotics",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-ghi789",
+      "name": "特斯拉",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "特斯拉",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-jkl012",
+      "name": "波士顿动力",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "波士顿动力",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-mno345",
+      "name": "Apptronik",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "Apptronik",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-pqr678",
+      "name": "1X Technologies",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "1X Technologies",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-stu901",
+      "name": "Unitree Robotics",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "Unitree Robotics",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-vwx234",
+      "name": "AgiBot",
+      "type": "人形机器人公司",
+      "description": "2026年最值得关注的人形机器人公司之一",
+      "manufacturer": "AgiBot",
+      "application": "人形机器人研发",
+      "last_updated": "2026-06-27T15:57:14.719Z"
+    },
+    {
+      "id": "PLATFORM-yza567",
+      "name": "优傲机器人",
+      "type": "机器人公司",
+      "description": "提供机器人新闻、资料和联系渠道",
+      "manufacturer": "优傲机器人",
+      "application": "机器人新闻与资料",
+      "last_updated": "2026-06-27T15:57:14.719Z"
     }
   ],
-  "protocols": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-26T04:02:14.972Z",
-    "description": "通信协议库",
-    "entities": [
-      {
-        "id": "PROTO-001",
-        "name": "EtherCAT",
-        "category": "communication",
-        "type": "industrial_ethernet",
-        "speed": "100 Mbps",
-        "latency": "<100 μs",
-        "determinism": "deterministic",
-        "topology": "line/star/ring",
-        "max_nodes": "65535",
-        "cable": "CAT5+ Ethernet",
-        "standard": "IEC 61158",
-        "applications": [
-          "industrial_robot",
-          "CNC",
-          "motion_control"
-        ],
-        "pros": [
-          "ultra_low_latency",
-          "deterministic",
-          "wide_support"
-        ],
-        "cons": [
-          "requires_master",
-          "complex_setup"
-        ],
-        "compatibility": [
-          "Beckhoff",
-          "Omron",
-          "any EtherCAT slave"
-        ]
-      },
-      {
-        "id": "PROTO-002",
-        "name": "CANopen",
-        "category": "communication",
-        "type": "fieldbus",
-        "speed": "1 Mbps max",
-        "latency": "~1 ms",
-        "determinism": "deterministic",
-        "topology": "bus",
-        "max_nodes": "127",
-        "cable": "twisted pair",
-        "standard": "CiA 301",
-        "applications": [
-          "mobile_robot",
-          "motor_control",
-          "industrial"
-        ],
-        "pros": [
-          "robust",
-          "simple",
-          "widely_supported"
-        ],
-        "cons": [
-          "limited_bandwidth",
-          "slow_for_large_data"
-        ],
-        "compatibility": [
-          "STM32",
-          "CAN adapter",
-          "PiCAN"
-        ]
-      },
-      {
-        "id": "PROTO-003",
-        "name": "PROFINET",
-        "category": "communication",
-        "type": "industrial_ethernet",
-        "speed": "100 Mbps",
-        "latency": "<1 ms (IRT)",
-        "determinism": "deterministic (IRT)",
-        "topology": "star/tree/ring",
-        "max_nodes": "256",
-        "cable": "CAT5+ Ethernet",
-        "standard": "IEC 61158",
-        "applications": [
-          "factory_automation",
-          "process_control"
-        ],
-        "pros": [
-          "integrated_IT",
-          "real_time"
-        ],
-        "cons": [
-          "complex",
-          "expensive"
-        ],
-        "compatibility": [
-          "Siemens",
-          "Phoenix Contact"
-        ]
-      },
-      {
-        "id": "PROTO-004",
-        "name": "DYNAMIXEL Protocol 2.0",
-        "category": "communication",
-        "type": "proprietary_serial",
-        "speed": "3 Mbps",
-        "latency": "~1 ms",
-        "determinism": "semi-deterministic",
-        "topology": "daisy_chain",
-        "max_nodes": "252",
-        "cable": "TTL/RS485",
-        "standard": "ROBOTIS proprietary",
-        "applications": [
-          "hobby_robot",
-          "humanoid",
-          "manipulator"
-        ],
-        "pros": [
-          "simple",
-          "rich_feedback",
-          "position_control"
-        ],
-        "cons": [
-          "proprietary",
-          "limited_bandwidth"
-        ],
-        "compatibility": [
-          "DYNAMIXEL servos only"
-        ]
-      },
-      {
-        "id": "PROTO-005",
-        "name": "ROS2 DDS",
-        "category": "communication",
-        "type": "middleware",
-        "speed": "depends on transport",
-        "latency": "~1-10 ms",
-        "determinism": "configurable QoS",
-        "topology": "P2P mesh",
-        "max_nodes": "unlimited",
-        "cable": "Ethernet/WiFi",
-        "standard": "OMG DDS",
-        "applications": [
-          "robot_software",
-          "multi_robot",
-          "research"
-        ],
-        "pros": [
-          "flexible",
-          "scalable",
-          "open_source"
-        ],
-        "cons": [
-          "overhead",
-          "complex_config"
-        ],
-        "compatibility": [
-          "any ROS2 compatible hardware"
-        ]
-      },
-      {
-        "id": "PROTO-006",
-        "name": "UART/Serial",
-        "category": "communication",
-        "type": "serial",
-        "speed": "up to 5 Mbps",
-        "latency": "~1 ms",
-        "determinism": "non-deterministic",
-        "topology": "point-to-point",
-        "max_nodes": "2 (point-to-point)",
-        "cable": "TX/RX/GND",
-        "standard": "RS-232/RS-485/TTL",
-        "applications": [
-          "debug",
-          "GPS",
-          "simple_sensor",
-          "motor_controller"
-        ],
-        "pros": [
-          "simple",
-          "universal"
-        ],
-        "cons": [
-          "slow",
-          "no_multi_drop"
-        ],
-        "compatibility": [
-          "almost_all_MCU"
-        ]
-      },
-      {
-        "id": "PROTO-007",
-        "name": "I2C",
-        "category": "communication",
-        "type": "serial_bus",
-        "speed": "100/400/3400 KHz",
-        "latency": "~1 ms",
-        "determinism": "non-deterministic",
-        "topology": "bus",
-        "max_nodes": "127",
-        "cable": "SDA/SCL/GND",
-        "standard": "NXP/Philips",
-        "applications": [
-          "sensor",
-          "EEPROM",
-          "display",
-          "IMU"
-        ],
-        "pros": [
-          "simple",
-          "2_wire",
-          "multi_device"
-        ],
-        "cons": [
-          "slow",
-          "address_conflicts"
-        ],
-        "compatibility": [
-          "almost_all_MCU"
-        ]
-      },
-      {
-        "id": "PROTO-008",
-        "name": "SPI",
-        "category": "communication",
-        "type": "serial_bus",
-        "speed": "up to 80 MHz",
-        "latency": "<100 μs",
-        "determinism": "deterministic",
-        "topology": "master-slave",
-        "max_nodes": "depends on CS lines",
-        "cable": "MOSI/MISO/SCK/CS",
-        "standard": "Motorola",
-        "applications": [
-          "display",
-          "ADC/DAC",
-          "flash",
-          "IMU"
-        ],
-        "pros": [
-          "fast",
-          "full_duplex",
-          "deterministic"
-        ],
-        "cons": [
-          "many_wires",
-          "no_standard_connector"
-        ],
-        "compatibility": [
-          "almost_all_MCU"
-        ]
-      }
-    ]
-  },
+  "protocols": [
+    {
+      "id": "PROTO-001",
+      "name": "EtherCAT",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "100 Mbps",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "line/star/ring",
+      "max_nodes": "65535",
+      "cable": "CAT5+ Ethernet",
+      "standard": "IEC 61158",
+      "applications": [
+        "industrial_robot",
+        "CNC",
+        "motion_control"
+      ],
+      "pros": [
+        "ultra_low_latency",
+        "deterministic",
+        "wide_support"
+      ],
+      "cons": [
+        "requires_master",
+        "complex_setup"
+      ],
+      "compatibility": [
+        "Beckhoff",
+        "Omron",
+        "any EtherCAT slave"
+      ]
+    },
+    {
+      "id": "PROTO-002",
+      "name": "CANopen",
+      "category": "communication",
+      "type": "fieldbus",
+      "speed": "1 Mbps max",
+      "latency": "~1 ms",
+      "determinism": "deterministic",
+      "topology": "bus",
+      "max_nodes": "127",
+      "cable": "twisted pair",
+      "standard": "CiA 301",
+      "applications": [
+        "mobile_robot",
+        "motor_control",
+        "industrial"
+      ],
+      "pros": [
+        "robust",
+        "simple",
+        "widely_supported"
+      ],
+      "cons": [
+        "limited_bandwidth",
+        "slow_for_large_data"
+      ],
+      "compatibility": [
+        "STM32",
+        "CAN adapter",
+        "PiCAN"
+      ]
+    },
+    {
+      "id": "PROTO-003",
+      "name": "PROFINET",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "100 Mbps",
+      "latency": "<1 ms (IRT)",
+      "determinism": "deterministic (IRT)",
+      "topology": "star/tree/ring",
+      "max_nodes": "256",
+      "cable": "CAT5+ Ethernet",
+      "standard": "IEC 61158",
+      "applications": [
+        "factory_automation",
+        "process_control"
+      ],
+      "pros": [
+        "integrated_IT",
+        "real_time"
+      ],
+      "cons": [
+        "complex",
+        "expensive"
+      ],
+      "compatibility": [
+        "Siemens",
+        "Phoenix Contact"
+      ]
+    },
+    {
+      "id": "PROTO-004",
+      "name": "DYNAMIXEL Protocol 2.0",
+      "category": "communication",
+      "type": "proprietary_serial",
+      "speed": "3 Mbps",
+      "latency": "~1 ms",
+      "determinism": "semi-deterministic",
+      "topology": "daisy_chain",
+      "max_nodes": "252",
+      "cable": "TTL/RS485",
+      "standard": "ROBOTIS proprietary",
+      "applications": [
+        "hobby_robot",
+        "humanoid",
+        "manipulator"
+      ],
+      "pros": [
+        "simple",
+        "rich_feedback",
+        "position_control"
+      ],
+      "cons": [
+        "proprietary",
+        "limited_bandwidth"
+      ],
+      "compatibility": [
+        "DYNAMIXEL servos only"
+      ]
+    },
+    {
+      "id": "PROTO-005",
+      "name": "ROS2 DDS",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "depends on transport",
+      "latency": "~1-10 ms",
+      "determinism": "configurable QoS",
+      "topology": "P2P mesh",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet/WiFi",
+      "standard": "OMG DDS",
+      "applications": [
+        "robot_software",
+        "multi_robot",
+        "research"
+      ],
+      "pros": [
+        "flexible",
+        "scalable",
+        "open_source"
+      ],
+      "cons": [
+        "overhead",
+        "complex_config"
+      ],
+      "compatibility": [
+        "any ROS2 compatible hardware"
+      ]
+    },
+    {
+      "id": "PROTO-006",
+      "name": "UART/Serial",
+      "category": "communication",
+      "type": "serial",
+      "speed": "up to 5 Mbps",
+      "latency": "~1 ms",
+      "determinism": "non-deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "2 (point-to-point)",
+      "cable": "TX/RX/GND",
+      "standard": "RS-232/RS-485/TTL",
+      "applications": [
+        "debug",
+        "GPS",
+        "simple_sensor",
+        "motor_controller"
+      ],
+      "pros": [
+        "simple",
+        "universal"
+      ],
+      "cons": [
+        "slow",
+        "no_multi_drop"
+      ],
+      "compatibility": [
+        "almost_all_MCU"
+      ]
+    },
+    {
+      "id": "PROTO-007",
+      "name": "I2C",
+      "category": "communication",
+      "type": "serial_bus",
+      "speed": "100/400/3400 KHz",
+      "latency": "~1 ms",
+      "determinism": "non-deterministic",
+      "topology": "bus",
+      "max_nodes": "127",
+      "cable": "SDA/SCL/GND",
+      "standard": "NXP/Philips",
+      "applications": [
+        "sensor",
+        "EEPROM",
+        "display",
+        "IMU"
+      ],
+      "pros": [
+        "simple",
+        "2_wire",
+        "multi_device"
+      ],
+      "cons": [
+        "slow",
+        "address_conflicts"
+      ],
+      "compatibility": [
+        "almost_all_MCU"
+      ]
+    },
+    {
+      "id": "PROTO-008",
+      "name": "SPI",
+      "category": "communication",
+      "type": "serial_bus",
+      "speed": "up to 80 MHz",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "master-slave",
+      "max_nodes": "depends on CS lines",
+      "cable": "MOSI/MISO/SCK/CS",
+      "standard": "Motorola",
+      "applications": [
+        "display",
+        "ADC/DAC",
+        "flash",
+        "IMU"
+      ],
+      "pros": [
+        "fast",
+        "full_duplex",
+        "deterministic"
+      ],
+      "cons": [
+        "many_wires",
+        "no_standard_connector"
+      ],
+      "compatibility": [
+        "almost_all_MCU"
+      ]
+    },
+    {
+      "id": "PROTO-009",
+      "name": "TSN (Time-Sensitive Networking)",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "1 Gbps",
+      "latency": "<10 μs",
+      "determinism": "deterministic",
+      "topology": "star/tree",
+      "max_nodes": "unlimited",
+      "cable": "CAT6+ Ethernet",
+      "standard": "IEEE 802.1",
+      "applications": [
+        "industrial_robot",
+        "autonomous_vehicle",
+        "motion_control"
+      ],
+      "pros": [
+        "standard_ethernet",
+        "ultra_low_jitter",
+        "converged_network"
+      ],
+      "cons": [
+        "complex_config",
+        "requires_TSN_switches",
+        "emerging"
+      ],
+      "compatibility": [
+        "TSN-aware switches",
+        "Intel TSN",
+        "NXP TSN"
+      ]
+    },
+    {
+      "id": "PROTO-010",
+      "name": "OPC-UA",
+      "category": "communication",
+      "type": "industrial_protocol",
+      "speed": "depends on transport",
+      "latency": "~10-100 ms",
+      "determinism": "non-deterministic (Pub/Sub可配)",
+      "topology": "client-server/Pub-Sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "IEC 62541",
+      "applications": [
+        "factory_automation",
+        "SCADA",
+        "industrial_iot"
+      ],
+      "pros": [
+        "platform_independent",
+        "secure",
+        "information_model"
+      ],
+      "cons": [
+        "overhead",
+        "not_realtime",
+        "complex"
+      ],
+      "compatibility": [
+        "Siemens",
+        "Beckhoff",
+        "any OPC-UA server"
+      ]
+    },
+    {
+      "id": "PROTO-011",
+      "name": "CAN FD",
+      "category": "communication",
+      "type": "fieldbus",
+      "speed": "5 Mbps (data phase)",
+      "latency": "~0.5 ms",
+      "determinism": "deterministic",
+      "topology": "bus",
+      "max_nodes": "127",
+      "cable": "twisted pair",
+      "standard": "ISO 11898-1",
+      "applications": [
+        "automotive",
+        "motor_control",
+        "mobile_robot"
+      ],
+      "pros": [
+        "backward_compatible_CAN",
+        "higher_bandwidth",
+        "deterministic"
+      ],
+      "cons": [
+        "still_limited_vs_ethernet",
+        "requires_FD_controller"
+      ],
+      "compatibility": [
+        "STM32 with CAN-FD",
+        "NXP",
+        "Infineon"
+      ]
+    },
+    {
+      "id": "PROTO-012",
+      "name": "Modbus TCP/RTU",
+      "category": "communication",
+      "type": "industrial_protocol",
+      "speed": "100 Mbps (TCP) / 115Kbps (RTU)",
+      "latency": "~10-100 ms",
+      "determinism": "non-deterministic",
+      "topology": "client-server/bus",
+      "max_nodes": "247 (RTU)",
+      "cable": "Ethernet/twisted pair",
+      "standard": "Modbus Organization",
+      "applications": [
+        "plc_communication",
+        "sensor_network",
+        "industrial"
+      ],
+      "pros": [
+        "simple",
+        "widely_supported",
+        "legacy_compatible"
+      ],
+      "cons": [
+        "no_security",
+        "limited_data_model",
+        "slow"
+      ],
+      "compatibility": [
+        "almost_all_PLC",
+        "industrial_devices"
+      ]
+    },
+    {
+      "id": "PROTO-013",
+      "name": "SOME/IP",
+      "category": "communication",
+      "type": "automotive_middleware",
+      "speed": "depends on transport",
+      "latency": "~1-10 ms",
+      "determinism": "configurable",
+      "topology": "client-server/Pub-Sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "AUTOSAR",
+      "applications": [
+        "autonomous_driving",
+        "automotive_robot",
+        "ADAS"
+      ],
+      "pros": [
+        "automotive_standard",
+        "service_oriented",
+        "scalable"
+      ],
+      "cons": [
+        "automotive_only",
+        "complex",
+        "AUTOSAR_dependency"
+      ],
+      "compatibility": [
+        "AUTOSAR stacks",
+        "vector_tools"
+      ]
+    },
+    {
+      "id": "PROTO-014",
+      "name": "USB 3.x",
+      "category": "communication",
+      "type": "serial_bus",
+      "speed": "5-20 Gbps",
+      "latency": "~125 μs",
+      "determinism": "non-deterministic",
+      "topology": "tiered_star",
+      "max_nodes": "127 (per controller)",
+      "cable": "USB cable",
+      "standard": "USB-IF",
+      "applications": [
+        "camera",
+        "sensor_hub",
+        "debug",
+        "data_transfer"
+      ],
+      "pros": [
+        "high_bandwidth",
+        "plug_play",
+        "ubiquitous"
+      ],
+      "cons": [
+        "non_deterministic",
+        "cable_length_limited",
+        "host_dependency"
+      ],
+      "compatibility": [
+        "almost_all_devices"
+      ]
+    },
+    {
+      "id": "PROTO-015",
+      "name": "MIPI CSI-2/3",
+      "category": "communication",
+      "type": "camera_interface",
+      "speed": "1-8 Gbps per lane",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "1 per interface",
+      "cable": "flex cable/PCB trace",
+      "standard": "MIPI Alliance",
+      "applications": [
+        "camera_sensor",
+        "vision_system",
+        "robot_perception"
+      ],
+      "pros": [
+        "high_bandwidth",
+        "low_latency",
+        "low_power"
+      ],
+      "cons": [
+        "short_distance",
+        "point_to_point_only",
+        "complex_PHY"
+      ],
+      "compatibility": [
+        "Jetson",
+        "RPi",
+        "Qualcomm",
+        "NXP"
+      ]
+    },
+    {
+      "id": "PROTO-016",
+      "name": "Ethernet/IP",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "100 Mbps - 1 Gbps",
+      "latency": "~1-10 ms",
+      "determinism": "non-deterministic (CIP Motion可配)",
+      "topology": "star/tree",
+      "max_nodes": "unlimited",
+      "cable": "CAT5+ Ethernet",
+      "standard": "ODVA/IEC 61158",
+      "applications": [
+        "factory_automation",
+        "robot_controller",
+        "PLC"
+      ],
+      "pros": [
+        "standard_ethernet",
+        "CIP_protocol_suite",
+        "wide_support"
+      ],
+      "cons": [
+        "not_truly_realtime",
+        "Rockwell_ecosystem_bias"
+      ],
+      "compatibility": [
+        "Rockwell",
+        "Omron",
+        "any CIP device"
+      ]
+    },
+    {
+      "id": "PROTO-017",
+      "name": "IO-Link",
+      "category": "communication",
+      "type": "sensor_actuator",
+      "speed": "230.4 Kbps",
+      "latency": "~2 ms",
+      "determinism": "cyclic_deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "1 per port",
+      "cable": "standard_sensor_cable",
+      "standard": "IEC 61131-9",
+      "applications": [
+        "smart_sensor",
+        "actuator",
+        "industrial_io"
+      ],
+      "pros": [
+        "simple",
+        "point_to_point",
+        "diagnostics",
+        "standard_cable"
+      ],
+      "cons": [
+        "slow",
+        "point_to_point_only",
+        "limited_data"
+      ],
+      "compatibility": [
+        "IO-Link master",
+        "smart_sensors"
+      ]
+    },
+    {
+      "id": "PROTO-018",
+      "name": "Wireless (WiFi 6/7)",
+      "category": "communication",
+      "type": "wireless",
+      "speed": "1-46 Gbps",
+      "latency": "~1-10 ms",
+      "determinism": "non-deterministic (TBD可配)",
+      "topology": "star/mesh",
+      "max_nodes": "varies",
+      "cable": "N/A (wireless)",
+      "standard": "IEEE 802.11ax/be",
+      "applications": [
+        "mobile_robot",
+        "AMR",
+        "drone",
+        "teleoperation"
+      ],
+      "pros": [
+        "no_cable",
+        "mobile",
+        "high_bandwidth"
+      ],
+      "cons": [
+        "interference",
+        "latency_jitter",
+        "security_concerns"
+      ],
+      "compatibility": [
+        "WiFi adapters",
+        "Intel",
+        "Qualcomm"
+      ]
+    },
+    {
+      "id": "PROTO-019",
+      "name": "Bluetooth 5.x / BLE",
+      "category": "communication",
+      "type": "wireless",
+      "speed": "2 Mbps (BLE)",
+      "latency": "~3-10 ms",
+      "determinism": "non-deterministic",
+      "topology": "star/mesh",
+      "max_nodes": "unlimited (mesh)",
+      "cable": "N/A (wireless)",
+      "standard": "Bluetooth SIG",
+      "applications": [
+        "sensor_node",
+        "beacon",
+        "remote_control",
+        "iot_robot"
+      ],
+      "pros": [
+        "low_power",
+        "ubiquitous",
+        "mesh_networking"
+      ],
+      "cons": [
+        "low_bandwidth",
+        "short_range",
+        "interference"
+      ],
+      "compatibility": [
+        "ESP32",
+        "nRF52",
+        "almost_all_mobile"
+      ]
+    },
+    {
+      "id": "PROTO-020",
+      "name": "SBus (Futaba)",
+      "category": "communication",
+      "type": "rc_protocol",
+      "speed": "100 Kbps",
+      "latency": "~7 ms",
+      "determinism": "semi-deterministic",
+      "topology": "bus",
+      "max_nodes": "16 channels",
+      "cable": "single_wire",
+      "standard": "Futaba proprietary",
+      "applications": [
+        "drone",
+        "rc_vehicle",
+        "hobby_robot"
+      ],
+      "pros": [
+        "simple",
+        "single_cable",
+        "widely_used_RC"
+      ],
+      "cons": [
+        "proprietary",
+        "limited_channels",
+        "slow"
+      ],
+      "compatibility": [
+        "Futaba receivers",
+        "SBus adapters"
+      ]
+    },
+    {
+      "id": "PROTO-021",
+      "name": "MAVLink",
+      "category": "communication",
+      "type": "drone_protocol",
+      "speed": "depends on transport",
+      "latency": "~1-5 ms",
+      "determinism": "non-deterministic",
+      "topology": "point-to-point/multicast",
+      "max_nodes": "255",
+      "cable": "UART/UDP/TCP",
+      "standard": "MAVLink.org",
+      "applications": [
+        "drone",
+        "UAV",
+        "UGV",
+        "autonomous_vehicle"
+      ],
+      "pros": [
+        "lightweight",
+        "drone_standard",
+        "extensible"
+      ],
+      "cons": [
+        "drone_focused",
+        "no_security_builtin",
+        "limited_robotics"
+      ],
+      "compatibility": [
+        "PX4",
+        "ArduPilot",
+        "QGroundControl"
+      ]
+    },
+    {
+      "id": "PROTO-023",
+      "name": "OPC UA over TSN",
+      "category": "communication",
+      "type": "industrial_protocol",
+      "speed": "1 Gbps",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "client-server/pub-sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "OPC Foundation",
+      "applications": [
+        "industrial_robot",
+        "smart_factory",
+        "humanoid"
+      ],
+      "pros": [
+        "interoperability",
+        "security_builtin",
+        "information_model"
+      ],
+      "cons": [
+        "overhead",
+        "complex_setup"
+      ],
+      "compatibility": [
+        "Siemens",
+        "Beckhoff",
+        "any OPC UA device"
+      ]
+    },
+    {
+      "id": "PROTO-024",
+      "name": "Matter",
+      "category": "communication",
+      "type": "iot_protocol",
+      "speed": "depends on transport",
+      "latency": "~50-200 ms",
+      "determinism": "non-deterministic",
+      "topology": "mesh/star",
+      "max_nodes": "250+",
+      "cable": "Wi-Fi/Thread/BLE",
+      "standard": "CSA",
+      "applications": [
+        "home_robot",
+        "smart_home",
+        "iot"
+      ],
+      "pros": [
+        "interoperability",
+        "secure",
+        "easy_setup"
+      ],
+      "cons": [
+        "not_real_time",
+        "consumer_focused"
+      ],
+      "compatibility": [
+        "Apple HomeKit",
+        "Google Home",
+        "Amazon Alexa"
+      ]
+    },
+    {
+      "id": "PROTO-025",
+      "name": "UWB (Ultra-Wideband)",
+      "category": "communication",
+      "type": "positioning_protocol",
+      "speed": "low data",
+      "latency": "<1 ms",
+      "determinism": "deterministic",
+      "topology": "point-to-point",
+      "max_nodes": "depends",
+      "cable": "wireless",
+      "standard": "IEEE 802.15.4z",
+      "applications": [
+        "robot_positioning",
+        "indoor_localization",
+        "humanoid"
+      ],
+      "pros": [
+        "cm_level_accuracy",
+        "low_power",
+        "secure_ranging"
+      ],
+      "cons": [
+        "short_range",
+        "limited_data_rate"
+      ],
+      "compatibility": [
+        "Apple U1",
+        "Decawave DW1000"
+      ]
+    },
+    {
+      "id": "PROTO-026",
+      "name": "NB-IoT",
+      "category": "communication",
+      "type": "cellular_iot",
+      "speed": "<200 kbps",
+      "latency": "1-10 s",
+      "determinism": "non-deterministic",
+      "topology": "star (cellular)",
+      "max_nodes": "massive",
+      "cable": "cellular",
+      "standard": "3GPP",
+      "applications": [
+        "fleet_robot",
+        "remote_monitoring",
+        "agricultural_robot"
+      ],
+      "pros": [
+        "long_range",
+        "low_power",
+        "cellular_coverage"
+      ],
+      "cons": [
+        "high_latency",
+        "low_bandwidth",
+        "carrier_dependent"
+      ],
+      "compatibility": [
+        "any NB-IoT module"
+      ]
+    },
+    {
+      "id": "PROTO-027",
+      "name": "Wireless IIoT (5G NR)",
+      "category": "communication",
+      "type": "cellular_industrial",
+      "speed": "1-10 Gbps",
+      "latency": "<1 ms (URLLC)",
+      "determinism": "deterministic (URLLC)",
+      "topology": "star (cellular)",
+      "max_nodes": "massive",
+      "cable": "wireless",
+      "standard": "3GPP Release 16+",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "AGV",
+        "teleoperation"
+      ],
+      "pros": [
+        "ultra_low_latency",
+        "high_bandwidth",
+        "mobility"
+      ],
+      "cons": [
+        "infrastructure_cost",
+        "spectrum_license"
+      ],
+      "compatibility": [
+        "5G NR modules",
+        "industrial_5G_gateways"
+      ]
+    },
+    {
+      "id": "PROTO-028",
+      "name": "PROFINET over TSN",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "1 Gbps",
+      "latency": "<31.25 μs",
+      "determinism": "deterministic",
+      "topology": "line/star/ring",
+      "max_nodes": "256",
+      "cable": "CAT6+ Ethernet",
+      "standard": "PI (PROFIBUS International)",
+      "applications": [
+        "industrial_robot",
+        "smart_factory",
+        "motion_control"
+      ],
+      "pros": [
+        "deterministic",
+        "PROFINET_ecosystem",
+        "TSN_integration"
+      ],
+      "cons": [
+        "Siemens_centric",
+        "complex_setup"
+      ],
+      "compatibility": [
+        "Siemens",
+        "any PROFINET device"
+      ]
+    },
+    {
+      "id": "PROTO-029",
+      "name": "EtherCAT over TSN",
+      "category": "communication",
+      "type": "industrial_ethernet",
+      "speed": "1 Gbps",
+      "latency": "<50 μs",
+      "determinism": "deterministic",
+      "topology": "line/star",
+      "max_nodes": "65535",
+      "cable": "CAT5+ Ethernet",
+      "standard": "ETG (EtherCAT Technology Group)",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "motion_control"
+      ],
+      "pros": [
+        "ultra_low_latency",
+        "EtherCAT_ecosystem",
+        "TSN_integration"
+      ],
+      "cons": [
+        "requires_TSN_infrastructure",
+        "complex"
+      ],
+      "compatibility": [
+        "Beckhoff",
+        "any EtherCAT device"
+      ]
+    },
+    {
+      "id": "PROTO-030",
+      "name": "DDS-XRCE (DDS for Resource-Constrained)",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "depends on transport",
+      "latency": "<1 ms",
+      "determinism": "configurable",
+      "topology": "pub-sub",
+      "max_nodes": "unlimited",
+      "cable": "UDP/TCP",
+      "standard": "OMG",
+      "applications": [
+        "humanoid",
+        "drone",
+        "embedded_robot"
+      ],
+      "pros": [
+        "lightweight_DDS",
+        "real_time",
+        "scalable"
+      ],
+      "cons": [
+        "complex_QoS",
+        "learning_curve"
+      ],
+      "compatibility": [
+        "eProsima",
+        "RTI",
+        "any DDS-XRCE implementation"
+      ]
+    },
+    {
+      "id": "PROTO-031",
+      "name": "Adaptive Protocol (AI-driven)",
+      "category": "communication",
+      "type": "adaptive_protocol",
+      "speed": "adaptive",
+      "latency": "adaptive",
+      "determinism": "configurable",
+      "topology": "adaptive",
+      "max_nodes": "varies",
+      "cable": "varies",
+      "standard": "emerging",
+      "applications": [
+        "humanoid",
+        "adaptive_robot",
+        "AI_robot"
+      ],
+      "pros": [
+        "AI_optimized",
+        "self_adapting",
+        "future_proof"
+      ],
+      "cons": [
+        "immature",
+        "complex",
+        "limited_implementations"
+      ],
+      "compatibility": [
+        "research_platforms"
+      ]
+    },
+    {
+      "id": "PROTO-032",
+      "name": "Embodied AI Robot Communication Network",
+      "category": "communication",
+      "type": "embodied_ai_network",
+      "speed": "multi-Gbps",
+      "latency": "<1 ms",
+      "determinism": "deterministic",
+      "topology": "hierarchical",
+      "max_nodes": "varies",
+      "cable": "Ethernet/wireless",
+      "standard": "emerging (2026 report)",
+      "applications": [
+        "humanoid",
+        "embodied_ai",
+        "smart_factory"
+      ],
+      "pros": [
+        "AI_native",
+        "integrated_perception",
+        "unified_stack"
+      ],
+      "cons": [
+        "early_stage",
+        "proprietary_tendencies"
+      ],
+      "compatibility": [
+        "Chinese and international chip/module vendors"
+      ]
+    },
+    {
+      "id": "PROTO-033",
+      "name": "FlexxBotics Protocol",
+      "category": "communication",
+      "type": "robot_management",
+      "speed": "varies",
+      "latency": "varies",
+      "determinism": "non-deterministic",
+      "topology": "hub-spoke",
+      "max_nodes": "varies",
+      "cable": "Ethernet/wireless",
+      "standard": "FlexxBotics",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "smart_factory"
+      ],
+      "pros": [
+        "unified_management",
+        "multi_vendor",
+        "cloud_integration"
+      ],
+      "cons": [
+        "proprietary",
+        "subscription_model"
+      ],
+      "compatibility": [
+        "major_robot_brands"
+      ]
+    },
+    {
+      "id": "PROTO-034",
+      "name": "ROS2 over Zenoh",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "depends on transport",
+      "latency": "<1 ms",
+      "determinism": "configurable QoS",
+      "topology": "P2P mesh",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet/WiFi/5G",
+      "standard": "Eclipse Zenoh + ROS2",
+      "applications": [
+        "robot_software",
+        "multi_robot",
+        "edge_cloud"
+      ],
+      "pros": [
+        "低延迟",
+        "广域网支持",
+        "ROS2兼容",
+        "轻量级"
+      ],
+      "cons": [
+        "新项目",
+        "生态不如DDS成熟"
+      ],
+      "compatibility": [
+        "ROS2 Humble/Jazzy",
+        "Zenoh router"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-035",
+      "name": "Matter over Thread 1.4",
+      "category": "communication",
+      "type": "iot_protocol",
+      "speed": "250 Kbps (Thread)",
+      "latency": "~50 ms",
+      "determinism": "non-deterministic",
+      "topology": "mesh",
+      "max_nodes": "500+",
+      "cable": "wireless (Thread)",
+      "standard": "CSA Matter 1.4",
+      "applications": [
+        "home_robot",
+        "smart_home",
+        "service_robot"
+      ],
+      "pros": [
+        "跨平台互操作",
+        "安全",
+        "低功耗",
+        "Thread mesh"
+      ],
+      "cons": [
+        "not_real_time",
+        "consumer_focused"
+      ],
+      "compatibility": [
+        "Apple HomeKit",
+        "Google Home",
+        "Amazon Alexa",
+        "Samsung SmartThings"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-036",
+      "name": "Wi-Fi 7 (802.11be)",
+      "category": "communication",
+      "type": "wireless",
+      "speed": "up to 46 Gbps",
+      "latency": "<1 ms (TBD)",
+      "determinism": "TBD (Time-Sensitive)",
+      "topology": "star/mesh",
+      "max_nodes": "varies",
+      "cable": "N/A (wireless)",
+      "standard": "IEEE 802.11be",
+      "applications": [
+        "mobile_robot",
+        "AMR",
+        "teleoperation",
+        "humanoid"
+      ],
+      "pros": [
+        "超高速率",
+        "MLO多链路",
+        "低延迟",
+        "TBD支持"
+      ],
+      "cons": [
+        "基础设施成本",
+        "功耗较高",
+        "2026年早期部署"
+      ],
+      "compatibility": [
+        "Intel BE200",
+        "Qualcomm FastConnect 7800",
+        "MediaTek Filogic"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-040",
+      "name": "Embodied AI Robot Comm Network",
+      "category": "communication",
+      "type": "embodied_ai_network",
+      "speed": "multi-Gbps",
+      "latency": "<1 ms",
+      "determinism": "deterministic",
+      "topology": "hierarchical",
+      "max_nodes": "varies",
+      "cable": "Ethernet/wireless",
+      "standard": "emerging (2026 report)",
+      "applications": [
+        "humanoid",
+        "embodied_ai",
+        "smart_factory"
+      ],
+      "pros": [
+        "AI原生",
+        "集成感知",
+        "统一协议栈",
+        "分层拓扑"
+      ],
+      "cons": [
+        "早期阶段",
+        "专有倾向"
+      ],
+      "compatibility": [
+        "Chinese and international chip/module vendors"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-041",
+      "name": "DDS-TSN Integration",
+      "category": "communication",
+      "type": "middleware",
+      "speed": "1 Gbps",
+      "latency": "<100 μs",
+      "determinism": "deterministic",
+      "topology": "pub-sub",
+      "max_nodes": "unlimited",
+      "cable": "Ethernet",
+      "standard": "OMG DDS + IEEE 802.1 TSN",
+      "applications": [
+        "industrial_robot",
+        "humanoid",
+        "autonomous_vehicle"
+      ],
+      "pros": [
+        "DDS灵活性",
+        "TSN确定性",
+        "实时通信",
+        "标准化"
+      ],
+      "cons": [
+        "复杂配置",
+        "需要TSN交换机"
+      ],
+      "compatibility": [
+        "RTI Connext",
+        "eProsima FastDDS",
+        "TSN switches"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:52:31.849Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-042",
+      "name": "IEEE RoboCom 2026",
+      "type": "workshop_standard",
+      "layer": "communication",
+      "description": "IEEE RoboCom 2026研讨会，第6届国际群体机器人通信和网络研讨会，与IEEE CCNC 2026联合举办",
+      "vendor": "IEEE",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-043",
+      "name": "ROBOCOMM",
+      "type": "conference_standard",
+      "layer": "communication",
+      "description": "ROBOCOMM国际机器人通信与协调会议，关注群体和集群机器人通信协议",
+      "vendor": "Academic",
+      "release_date": "2026-2027",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-044",
+      "name": "EtherCAT over TSN v2",
+      "type": "industrial_ethernet",
+      "layer": "fieldbus",
+      "description": "EtherCAT over TSN v2，2026年升级版，增强实时性和时间敏感网络集成",
+      "vendor": "ETG",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-045",
+      "name": "CAN XL",
+      "type": "fieldbus",
+      "layer": "fieldbus",
+      "description": "CAN XL协议，CAN FD的下一代升级，支持更高数据速率和更大帧长度，适用于高级机器人通信",
+      "vendor": "CiA",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-046",
+      "name": "6G NR for Robotics",
+      "type": "wireless",
+      "layer": "wireless",
+      "description": "6G NR机器人通信协议，2026年研究阶段，支持超低延迟和高可靠性机器人无线通信",
+      "vendor": "3GPP",
+      "release_date": "2026",
+      "status": "research",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "rproto-i3c",
+      "name": "I3C (MIPI)",
+      "type": "sensor_communication",
+      "description": "I3C传感器通信协议，MIPI联盟标准，新兴传感器通信竞争者，比I2C更高数据速率和更低功耗",
+      "organization": "MIPI Alliance",
+      "key_features": [
+        "传感器通信",
+        "比I2C更快",
+        "更低功耗",
+        "动态寻址",
+        "向后兼容I2C"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-opcua-dds-gateway",
+      "name": "OPC UA/DDS Gateway Standard",
+      "type": "interoperability",
+      "description": "OPC UA/DDS网关标准，实现OPC UA和DDS协议互操作，RTI发布的标准规范",
+      "organization": "OPC Foundation/OMG",
+      "key_features": [
+        "OPC UA+DDS互操作",
+        "网关标准",
+        "实时通信",
+        "工业4.0"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-5g-nr-urllc",
+      "name": "5G NR URLLC",
+      "category": "wireless-protocol",
+      "description": "5G New Radio Ultra-Reliable Low-Latency Communication for robotics. Sub-1ms latency for cloud robotics.",
+      "features": [
+        "sub-1ms latency",
+        "ultra-reliable",
+        "5G NR",
+        "cloud robotics",
+        "remote operation"
+      ],
+      "status": "emerging",
+      "year": 2025,
+      "sources": [
+        "https://www.linkedin.com/pulse/robot-communication-protocols-why-ethercat-can-real-future-hxehc"
+      ]
+    },
+    {
+      "id": "rproto-can-xl-v2",
+      "name": "CAN XL v2",
+      "type": "bus_protocol",
+      "description": "CAN XL v2，CAN FD下一代升级版，更高数据速率和更大帧长度，适合机器人内部通信",
+      "organization": "CAN in Automation",
+      "key_features": [
+        "CAN FD升级",
+        "更高数据速率",
+        "更大帧长度",
+        "向后兼容"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-wifi7-mlo",
+      "name": "Wi-Fi 7 MLO",
+      "category": "wireless-protocol",
+      "description": "Wi-Fi 7 with Multi-Link Operation enabling up to 46 Gbps throughput for wireless robot communication.",
+      "features": [
+        "46 Gbps",
+        "multi-link",
+        "ultra-low latency",
+        "wireless robotics",
+        "MLO aggregation"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        "https://www.linkedin.com/pulse/robot-communication-protocols-why-ethercat-can-real-future-hxehc"
+      ]
+    },
+    {
+      "id": "rproto-ethercat-g",
+      "name": "EtherCAT G",
+      "category": "industrial-protocol",
+      "description": "Gigabit version of EtherCAT for higher bandwidth real-time communication in robotics.",
+      "features": [
+        "gigabit speed",
+        "real-time",
+        "EtherCAT extension",
+        "high bandwidth",
+        "deterministic"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.linkedin.com/pulse/robot-communication-protocols-why-ethercat-can-real-future-hxehc"
+      ]
+    },
+    {
+      "id": "rproto-thread-14",
+      "name": "Thread 1.4 Mesh Protocol",
+      "type": "mesh_networking",
+      "description": "Thread 1.4网状网络协议，用于家庭和服务机器人互操作，低功耗Mesh网络",
+      "organization": "Thread Group",
+      "key_features": [
+        "Mesh网络",
+        "低功耗",
+        "家庭机器人",
+        "互操作",
+        "IP原生"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-ieee8021-tsn-profile",
+      "name": "IEEE 802.1 TSN Profile for Robotics",
+      "type": "tsn_standard",
+      "description": "IEEE 802.1 TSN机器人配置文件，定义机器人实时通信的TSN标准配置",
+      "organization": "IEEE",
+      "key_features": [
+        "TSN标准配置",
+        "实时通信",
+        "确定性延迟",
+        "机器人专用"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-robot-comm-electronics",
+      "name": "Robot Communication Electronics Standard",
+      "type": "communication_standard",
+      "description": "机器人通信电子标准，2025年市场47.6亿美元，2034年预计108.9亿美元",
+      "organization": "Industry Consortium",
+      "key_features": [
+        "通信电子标准",
+        "市场快速增长",
+        "工业4.0",
+        "互操作"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-delft-comm",
+      "name": "DelftX Robot Communication Protocol",
+      "type": "educational_standard",
+      "description": "Delft大学机器人通信协议课程标准，涵盖关键通信协议和硬件",
+      "organization": "TU Delft",
+      "key_features": [
+        "教育标准",
+        "通信协议",
+        "硬件集成",
+        "机器人设计"
+      ],
+      "status": "standard",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-zenoh-flow",
+      "name": "Zenoh-Flow",
+      "type": "data_flow_framework",
+      "description": "ZettaScale Zenoh-Flow数据流框架，支持机器人集群和自动驾驶开发",
+      "organization": "ZettaScale",
+      "key_features": [
+        "数据流框架",
+        "机器人集群",
+        "自动驾驶",
+        "Zenoh原生"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-robotcore",
+      "name": "ROBOTCORE",
+      "type": "hardware_acceleration",
+      "description": "Acceleration Robotics ROBOTCORE ROS 2硬件加速协议，支持TSN实时通信",
+      "organization": "Acceleration Robotics",
+      "key_features": [
+        "ROS 2加速",
+        "TSN支持",
+        "硬件加速",
+        "实时通信"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-cyclonedds",
+      "name": "Cyclone DDS",
+      "type": "dds_implementation",
+      "description": "Eclipse Cyclone DDS实现，ROS 2默认DDS，以太网环境下性能优于Zenoh",
+      "organization": "Eclipse Foundation",
+      "key_features": [
+        "DDS实现",
+        "ROS 2默认",
+        "以太网优化",
+        "开源"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "rproto-thread-1.4",
+      "name": "Thread 1.4",
+      "category": "iot-protocol",
+      "description": "Thread 1.4 mesh networking protocol for IoT and robotic systems with improved reliability and range.",
+      "features": [
+        "mesh networking",
+        "IoT integration",
+        "swarm robotics",
+        "low power",
+        "improved range"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://thinkrobotics.com/blogs/learn/robot-communication-protocols-a-comprehensive-guide"
+      ]
+    },
+    {
+      "id": "PROTOCOL-a1b2c3",
+      "name": "VLA",
+      "type": "智能协议",
+      "description": "实现机器人智能化的正确路径",
+      "standard": "行业共识",
+      "application": "机器人智能化",
+      "last_updated": "2026-06-27T15:57:37.616Z"
+    },
+    {
+      "id": "PROTOCOL-d4e5f6",
+      "name": "CE机械安全认证",
+      "type": "安全协议",
+      "description": "欧盟机械安全认证标准",
+      "standard": "欧盟标准",
+      "application": "机器人安全认证",
+      "last_updated": "2026-06-27T15:57:37.616Z"
+    },
+    {
+      "id": "PROTOCOL-g7h8i9",
+      "name": "TC591",
+      "type": "标准化协议",
+      "description": "全国机器人标准化技术委员会",
+      "standard": "国家标准",
+      "application": "机器人领域国家标准制修订",
+      "last_updated": "2026-06-27T15:57:37.616Z"
+    },
+    {
+      "id": "PROTOCOL-j0k1l2",
+      "name": "48V-300VDC",
+      "type": "电气协议",
+      "description": "额定电压覆盖高低压",
+      "standard": "电气标准",
+      "application": "机器人关节供电",
+      "last_updated": "2026-06-27T15:57:37.616Z"
+    },
+    {
+      "id": "PROTOCOL-m3n4o5",
+      "name": "IP55",
+      "type": "防护协议",
+      "description": "绝缘等级F级，防护等级IP55",
+      "standard": "防护标准",
+      "application": "机器人关节防护",
+      "last_updated": "2026-06-27T15:57:37.616Z"
+    },
+    {
+      "id": "PROTOCOL-p6q7r8",
+      "name": "通讯协议全覆盖",
+      "type": "通信协议",
+      "description": "支持市场主流通讯协议",
+      "standard": "通信标准",
+      "application": "机器人整机通信",
+      "last_updated": "2026-06-27T15:57:37.616Z"
+    },
+    {
+      "id": "PROTOCOL-s9t0u1",
+      "name": "IP55防护协议",
+      "type": "防护标准",
+      "description": "防护等级IP55，防尘防水",
+      "standard": "IEC 60529",
+      "application": "机器人环境防护",
+      "last_updated": "2026-06-27T15:56:11.190Z"
+    },
+    {
+      "id": "PROTOCOL-v2w3x4",
+      "name": "系列化标准协议",
+      "type": "产品标准",
+      "description": "产品系列化、标准化，满足不同环境需求",
+      "standard": "行业标准",
+      "application": "机器人关节设计",
+      "last_updated": "2026-06-27T15:56:11.190Z"
+    }
+  ],
   "sensors": [
     {
       "id": "SENS-001",
@@ -1125,6 +7021,65 @@ const DB = {
       "range": "0.01 N·m to 1000+ N·m",
       "description": "Measures forces and torques in 6 axes (Fx, Fy, Fz, Tx, Ty, Tz). Critical for robotic assembly, polishing, and safe human-robot interaction.",
       "manufacturer": "ATI Industrial Automation, OnRobot, SCHUNK, ME-Meßsysteme"
+    },
+    {
+      "id": "SENS-006",
+      "name": "XELA uSkin 3-Axis Tactile Sensor",
+      "type": "Tactile sensing (3-axis)",
+      "range": "3-axis force (x, y, z) per taxel",
+      "description": "High-density three-axis tactile sensor for humanoid and industrial robot hands. Each taxel measures normal and shear forces in 3 axes, enabling robots to understand what they touch. Featured at CES 2026, the uSkin system now covers fingertips, phalanges, and palm with a nail element for precision interaction. Combined with uAi software for tactile intelligence.",
+      "manufacturer": "XELA Robotics"
+    },
+    {
+      "id": "SENS-007",
+      "name": "Robotiq TSF-85 Tactile Sensor Fingertips",
+      "type": "Tactile sensing (multimodal)",
+      "range": "Pressure, vibration, proprioception",
+      "description": "Tactile sensor fingertips for the Robotiq 2F-85 Adaptive Gripper, bringing high-frequency tactile sensing to a proven manipulation platform. TSF-85 provides rich multimodal data for foundation model training, enables better grasp decisions and stability. Designed for Physical AI systems that need the sense of touch for real-world manipulation. Showcased at NVIDIA GTC and Hannover Messe 2026.",
+      "manufacturer": "Robotiq"
+    },
+    {
+      "id": "SENS-008",
+      "name": "Tactile Foundation Model Sensor Suite",
+      "type": "AI-powered tactile perception system",
+      "range": "Temperature, thermal, vibration, pressure (multi-modal)",
+      "description": "2026年触觉基础模型(Tactile Foundation Models)概念兴起，为机器人赋予触觉感知。新一代触觉传感器套件模仿人类皮肤，采用流体填充阻抗传感和水听器(麦克风)检测振动。可感知温度、热变化、振动和压力。预计到2026年底，每台新人形机器人都将标配触觉传感器，每个机器人手指都将嵌入触觉感知。",
+      "manufacturer": "Multiple (Meta AI Research, XELA, academic labs)"
+    },
+    {
+      "id": "SENS-009",
+      "name": "Bioinspired Flexible Tactile Sensor",
+      "type": "Flexible/soft tactile sensor",
+      "range": "Multi-modal (pressure, strain, temperature)",
+      "description": "仿生柔性触觉传感器，用于智能软体机器人。从硬件构建块和触觉传感到控制算法和应用，实现了类皮肤的多模态感知。2025-2026年研究进展包括柔性电子皮肤、可拉伸传感器阵列和自愈合触觉材料，为人形机器人和软体机器人提供更自然的人机交互能力。",
+      "manufacturer": "Academic research (ACS Applied Materials & Interfaces 2025)"
+    },
+    {
+      "id": "SENS-tesla-optimus-g3-suite",
+      "name": "Tesla Optimus Gen 3 Sensor Suite",
+      "type": "Multi-modal robot sensor system",
+      "manufacturer": "Tesla",
+      "year": "2026",
+      "description": "Tesla-designed sensors integrated into Optimus Gen 3. Includes 360° vision system, force/torque sensing, and Tesla Autopilot AI for autonomous navigation. Features highly dexterous hands with tactile feedback. OLED facial display.",
+      "source": "Tesla 2026"
+    },
+    {
+      "id": "SENS-unitree-g1-lidar",
+      "name": "Unitree G1 Perception System (3D LiDAR + Depth Camera)",
+      "type": "Robot perception sensor suite",
+      "manufacturer": "Unitree Robotics (China)",
+      "year": "2025-2026",
+      "description": "Unitree G1 humanoid robot sensor suite: 3D LiDAR, depth camera, 4-microphone array, and 5W speaker. Enables 360° depth perception for autonomous navigation. G1 is a compact humanoid at ~127cm tall, 35kg, with speeds up to 3.3 m/s.",
+      "source": "Unitree Robotics 2025-2026"
+    },
+    {
+      "id": "SENS-unitree-h1-360depth",
+      "name": "Unitree H1 360° Depth Perception System",
+      "type": "Multi-modal depth sensing system",
+      "manufacturer": "Unitree Robotics (China)",
+      "year": "2025-2026",
+      "description": "Unitree H1's advanced perception system featuring 3D LiDAR and depth camera with 360° depth perception. Designed for robust environmental awareness in humanoid robot applications. Paired with high-torque actuators for dynamic locomotion.",
+      "source": "Unitree Robotics 2025-2026"
     }
   ]
 };

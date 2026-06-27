@@ -1,74 +1,82 @@
-# Cloudflare 流量周报
+# Cloudflare Pages 周报
 
-**报告周期**: 2026-06-01 ~ 2026-06-07  
-**生成时间**: 2026-06-08 10:11 CST  
-**Zone**: genetech.tools (af8613036b8aedcac17933ce230f30fd)
+**报告周期：** 2026-06-15 ~ 2026-06-21  
+**生成时间：** 2026-06-22 11:20 (Asia/Shanghai)
 
 ---
 
-## 每日流量概览
+## 1. 部署状态
 
-| 日期 | 请求量 | 页面浏览 | 独立访客 | 带宽 (MB) |
-|------|--------|---------|---------|----------|
-| 2026-06-01 (Sun) | 759 | 291 | 315 | 5.1 |
-| 2026-06-02 (Mon) | 1,537 | 828 | 530 | 11.2 |
-| 2026-06-03 (Tue) | **25,594** | **13,429** | 364 | **120.6** |
-| 2026-06-04 (Wed) | 3,762 | 1,654 | 355 | 18.9 |
-| 2026-06-05 (Thu) | 1,522 | 369 | 306 | 12.0 |
-| 2026-06-06 (Fri) | 576 | 275 | 219 | 6.6 |
-| 2026-06-07 (Sat) | 784 | 364 | 225 | 9.0 |
+全部 **12/12** 知识库站点部署成功 ✅
 
-## 周汇总
+| # | 站点目录 | 项目名 | 自定义域名 | 部署日期 | 状态 |
+|---|---------|--------|-----------|----------|------|
+| 1 | genetech-tools | genetech-tools | genetech.tools | 2026-06-22 | ✅ |
+| 2 | tcm-tools | tcm-tools | tcm.genetech.tools | 2026-06-22 | ✅ |
+| 3 | agent-ecosystem | agentecosystem | agent.genetech.tools | 2026-06-22 | ✅ |
+| 4 | robot-parts | robotparts | robot.genetech.tools | 2026-06-22 | ✅ |
+| 5 | quantum-computing | quantumcomputing | quantum.genetech.tools | 2026-06-22 | ✅ |
+| 6 | brain-science | brainscience | brain.genetech.tools | 2026-06-22 | ✅ |
+| 7 | nuclear-energy | nuclearenergy | nuclear.genetech.tools | 2026-06-22 | ✅ |
+| 8 | exo-science | exoscience | exo.genetech.tools | 2026-06-22 | ✅ |
+| 9 | alien-minerals | alienminerals | mineral.genetech.tools | 2026-06-22 | ✅ |
+| 10 | deep-sea-tech | deepseatech | deepsea.genetech.tools | 2026-06-22 | ✅ |
+| 11 | new-energy | newenergy | energy.genetech.tools | 2026-06-21 | ✅ |
+| 12 | life-science | lifescience | life.genetech.tools | 2026-06-21 | ✅ |
 
-| 指标 | 数值 |
+---
+
+## 2. ATEX 平台健康检查
+
+**端点：** http://150.158.119.19:8420
+
+### 基本状态
+| 指标 | 值 |
+|------|-----|
+| 平台版本 | 6.0 |
+| 注册用户 | 46 |
+| 服务数 | 23 |
+| 挂单数 | 3 |
+| 总交易数 | 2 |
+| 总佣金 | ¥66.87 |
+| 最新价格 | ¥1.5 |
+| 日交易量 | 0 |
+| 佣金费率 | maker 3.0% / taker 5.0% |
+
+### 端点检查
+| 端点 | 状态 |
 |------|------|
-| 总请求量 | 34,534 |
-| 总页面浏览 | 17,210 |
-| 总独立访客 | 2,314 (去重) |
-| 总带宽 | 183.3 MB |
-| 日均请求 | 4,933 |
-| 日均PV | 2,459 |
-
-## 流量分析
-
-- **峰值日**: 6月3日（周二），请求量 25,594，PV 13,429，带宽 120.6 MB — 疑似爬虫/搜索引擎集中抓取
-- **工作日 vs 周末**: 工作日流量明显高于周末，符合知识库工具类产品特征
-- **PV/请求比**: 平均 0.50，6月3日高达 0.52，说明内容页面访问占比高
-- **带宽异常**: 6月3日带宽 120.6 MB，是日均的 4.6 倍，需关注是否有大文件被频繁请求
-
-## 12个知识库站点部署状态
-
-| 站点 | CF Pages项目 | 部署状态 | 部署时间 |
-|------|-------------|---------|---------|
-| genetech-tools | genetech-tools | ✅ success | 2026-06-08 10:08 |
-| tcm-tools | tcm-tools | ✅ success | 2026-06-08 10:08 |
-| agent-ecosystem | agentecosystem | ✅ success | 2026-06-08 10:08 |
-| robot-parts | robotparts | ✅ success | 2026-06-08 10:09 |
-| quantum-computing | quantumcomputing | ✅ success | 2026-06-08 10:09 |
-| brain-science | brainscience | ✅ success | 2026-06-08 10:09 |
-| nuclear-energy | nuclearenergy | ✅ success | 2026-06-08 10:10 |
-| exo-science | exoscience | ✅ success | 2026-06-08 10:10 |
-| alien-minerals | alienminerals | ✅ success | 2026-06-08 10:10 |
-| deep-sea-tech | deepseatech | ✅ success | 2026-06-08 10:10 |
-| new-energy | newenergy | ✅ success | 2026-06-08 10:10 |
-| life-science | lifescience | ✅ success | 2026-06-08 10:10 |
-
-**部署结果**: 12/12 全部成功 ✅
+| `/api/v1/status` | ✅ 正常 |
+| `/llms.txt` | ✅ 正常（含4个合规工具 + 12个AI能力） |
+| `/.well-known/ai-plugin.json` | ✅ 正常（schema v1） |
 
 ---
 
-## ATEX 平台健康检查
+## 3. Cloudflare 流量数据
 
-| 检查项 | 状态 | 详情 |
-|--------|------|------|
-| API Status | ✅ 正常 | 版本 6.0 |
-| 服务数 | ✅ | 23 个服务在线 |
-| 用户数 | ✅ | 42 个账户 |
-| 挂单数 | ✅ | 3 个开放订单 |
-| 总交易 | ✅ | 2 笔，佣金 ¥66.87 |
-| /llms.txt | ✅ 正常 | 返回完整服务清单 |
-| /.well-known/ai-plugin.json | ✅ 正常 | Schema v1，含 OpenAPI 规范链接 |
+> ⚠️ 注意：当前API Token缺少 Zone Analytics Read 权限，无法获取域名级HTTP请求统计。以下为 Pages Functions 调用数据。
+
+### Pages Functions 调用（近7天）
+
+| 日期 | 请求数 |
+|------|--------|
+| 2026-06-15 ~ 06-19 | 0（无数据） |
+| 2026-06-20 | 263 |
+| 2026-06-21 | 34 |
+| **合计** | **297** |
+
+### 自定义域名清单
+12个站点全部绑定 `*.genetech.tools` 子域名：
+- genetech.tools（主站）
+- tcm / agent / robot / quantum / brain / nuclear / exo / mineral / deepsea / energy / life .genetech.tools
 
 ---
 
-*报告由 Eve 自动生成*
+## 4. 总结
+
+- **部署：** 12/12 站点全部部署成功，10个于本周日更新，2个保持上周部署
+- **ATEX：** 平台运行正常，46用户，23个服务在线，合规工具+AI能力均可用
+- **流量：** 本周Pages Functions调用297次（6/20-6/21有数据），流量较低
+- **建议：** 
+  - 为API Token添加 `Zone Analytics Read` 权限以获取完整流量数据
+  - 本周流量偏低，可考虑增加内容更新频率和SEO优化

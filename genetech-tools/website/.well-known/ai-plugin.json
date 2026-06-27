@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "GeneTech Tools",
   "name_for_model": "genetechtools",
-  "description_for_human": "Comprehensive gene technology knowledge base covering genes, diseases, therapies, and CRISPR applications",
-  "description_for_model": "Comprehensive gene technology knowledge base covering genes, diseases, therapies, and CRISPR applications. Provides structured data via JSON API at /api/data.json.",
+  "description_for_human": "Comprehensive gene technology knowledge base covering genes, diseases, therapies, CRISPR applications, genomic diagnostics, gene delivery, gene editing tools, biotech companies, and regenerative medicine",
+  "description_for_model": "Comprehensive gene technology knowledge base covering genes, diseases, therapies, CRISPR applications, genomic diagnostics, gene delivery, gene editing tools, biotech companies, and regenerative medicine. Provides structured data via JSON API at /api/data.json.",
   "auth": {
     "type": "none"
   },

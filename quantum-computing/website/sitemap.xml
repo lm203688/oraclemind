@@ -5,6 +5,25 @@
   <url><loc>https://quantum.genetech.tools/api/entities.json</loc><changefreq>daily</changefreq><priority>0.5</priority></url>
   <url><loc>https://quantum.genetech.tools/llms.txt</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://quantum.genetech.tools/llms-full.txt</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-037.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-038.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-039.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-040.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-041.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-042.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-043.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-044.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-045.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-046.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-047.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-048.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-49.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-50.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-51.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-52.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-53.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qa-54.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qalg-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qalg-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qalg-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -27,6 +46,50 @@
   <url><loc>https://quantum.genetech.tools/entity/qalg-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qalg-021.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qalg-022.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-023.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-024.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-025.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-027.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-028.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-029.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-030.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-031.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-032.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-033.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-034.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-035.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-055.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-056.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-057.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-058.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-059.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-060.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-061.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-062.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-063.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-064.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-065.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-066.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-067.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-068.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-069.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-070.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-71.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-72.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-73.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-74.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-75.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-76.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-77.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-78.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-79.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-80.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-81.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-82.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-83.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-84.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qalg-85.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qec-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qec-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qec-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -37,6 +100,51 @@
   <url><loc>https://quantum.genetech.tools/entity/qec-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qec-009.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qec-010.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-011.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-012.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-013.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-014.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-015.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-016.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-017.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-018.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-019.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-021.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-022.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-023.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-024.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-025.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-027.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-028.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-033.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-034.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-035.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-037.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-038.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-039.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-040.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-29.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-30.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-31.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-32.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-41.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-42.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-43.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-44.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-45.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-46.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-47.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-48.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qec-49.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qn-27.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qn-28.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qn-29.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qn-30.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qn-31.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qn-32.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qnet-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qnet-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qnet-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -47,11 +155,45 @@
   <url><loc>https://quantum.genetech.tools/entity/qnet-008.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qnet-009.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qnet-010.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-011.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-012.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-013.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-014.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-015.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-016.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-017.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-018.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-019.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-021.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-022.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-023.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-024.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-025.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-033.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-034.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-035.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-037.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-38.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-39.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-40.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-41.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-42.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-43.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qnet-44.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qp-amazon-ocelot.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qp-fujitsu-riken-256.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qp-google-neutral-atom.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qp-ibm-highest-fidelity.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qp-ibm-loon.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qp-ibm-nighthawk.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qp-jupiter-simulation.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qp-ms-majorana1.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qp-princeton-long-coherence.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qp-psiqphotonic.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qp-quantinuum-helios.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qp-quantware-vio40k.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qpu-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qpu-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -84,6 +226,59 @@
   <url><loc>https://quantum.genetech.tools/entity/qpu-029.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qpu-030.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qpu-031.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-044.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-045.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-046.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-047.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-048.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-049.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-050.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-051.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-052.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-053.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-054.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-055.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-056.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-057.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-058.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-059.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-060.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-257.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-258.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-259.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-260.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-261.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-262.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-263.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-264.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-265.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-266.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-267.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-268.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-269.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-270.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-271.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-272.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-273.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-274.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-275.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-276.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-277.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-278.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-279.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-280.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-281.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-282.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-283.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-284.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-285.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qpu-286.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qs-30.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qs-31.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qs-32.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qs-33.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qs-34.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qs-35.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qsw-001.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qsw-002.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qsw-003.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -96,4 +291,35 @@
   <url><loc>https://quantum.genetech.tools/entity/qsw-010.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qsw-011.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantum.genetech.tools/entity/qsw-012.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-013.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-014.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-015.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-016.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-017.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-018.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-019.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-020.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-021.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-022.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-023.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-024.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-025.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-027.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-028.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-029.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-036.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-037.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-038.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-039.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-040.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-041.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-042.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-43.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-44.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-45.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-46.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-47.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-48.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantum.genetech.tools/entity/qsw-49.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

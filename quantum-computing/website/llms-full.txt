@@ -897,6 +897,180 @@ Quantum computing knowledge base covering processors, algorithms, error correcti
 - description: SEEQC is developing a unique approach that integrates Single Flux Quantum (SFQ) digital control electronics directly on the quantum processor chip. This eliminates the need for room-temperature control electronics and the thousands of wires that connect them to the quantum chip. SFQ control operates at the same cryogenic temperature as the qubits, dramatically reducing latency and power consumption while improving scalability. This approach could solve one of the key scaling bottlenecks in superconducting quantum computing.
 - sources: [object Object]
 
+### QPU-281
+
+- manufacturer: Princeton University
+- technology: Superconducting
+- qubit_count: null
+- status: Research
+- description: Princeton engineers have developed a quantum chip with a record-breaking qubit lifespan, lasting over 1 millisecond, which is three times longer than the best previously reported in a lab setting. This breakthrough represents a significant advancement in quantum computing hardware stability and coherence times. The development marks a major leap forward in the practical realization of quantum processors.
+- sources: [object Object], [object Object]
+
+### Willow
+
+- name: Willow
+- manufacturer: Google
+- qubits: Not specified (demonstrated scalable error correction)
+- technology: Superconducting
+- gate_fidelity: Not specified
+- status: Experimental
+- description: Google's Willow chip represents a major breakthrough in quantum computing, demonstrating verifiable quantum advantage with a new algorithm. It is noted for its scalable error correction capabilities, marking a significant step toward practical quantum applications. The chip was announced in October 2025 as part of Google's commitment to advancing the field.
+- sources: [object Object], [object Object]
+
+### Loon
+
+- name: Loon
+- manufacturer: IBM
+- qubits: Not specified
+- technology: Superconducting
+- gate_fidelity: Not specified
+- status: Experimental
+- description: IBM's Loon processor is an experimental quantum computing chip revealed in November 2025. It is designed to perform more complex computations, representing a step in IBM's roadmap toward quantum-centric supercomputers. The chip is part of IBM's broader strategy to advance modular quantum hardware.
+- sources: [object Object]
+
+### Kookaburra
+
+- name: Kookaburra
+- manufacturer: IBM
+- qubits: Logical qubits
+- technology: Superconducting
+- gate_fidelity: Not specified
+- status: In Development
+- description: The Kookaburra processor is part of IBM's 2026 roadmap, targeting the implementation of logical qubits and quantum memory. This represents a significant advancement toward fault-tolerant quantum computing. It is a key step in IBM's plan to achieve quantum advantage by the end of 2026.
+- sources: [object Object], [object Object]
+
+### Nighthawk
+
+- name: Nighthawk
+- manufacturer: IBM
+- qubits: Not specified
+- technology: Superconducting
+- gate_fidelity: Not specified
+- status: Experimental
+- description: IBM's Nighthawk quantum computing chip was revealed alongside the Loon processor in November 2025. It is designed for more complex computations, contributing to IBM's goal of building modular quantum systems. The chip is part of IBM's ongoing efforts to scale quantum processors.
+- sources: [object Object]
+
+### Princeton Superconducting Qubit
+
+- name: Princeton Superconducting Qubit
+- manufacturer: Princeton University
+- qubits: Not specified (single qubit)
+- technology: Superconducting
+- gate_fidelity: Not specified
+- status: Research
+- description: Princeton engineers have developed a superconducting qubit that lasts three times longer than current best versions. This breakthrough is a major step toward more stable and reliable quantum processors. The research focuses on improving qubit coherence for future scalable quantum systems.
+- sources: [object Object]
+
+### IBM Quantum Condor
+
+- name: IBM Quantum Condor
+- manufacturer: IBM
+- qubits: 1121
+- technology: Superconducting
+- gate_fidelity: 99.9%
+- status: Operational
+- description: IBM's Condor processor, launched in 2025, achieved 1121 superconducting qubits, marking a significant milestone in scalable quantum computing. The system demonstrated improved coherence times and error correction capabilities, as detailed in IBM's 2025 research paper.
+
+### Google Willow Chip
+
+- name: Google Willow Chip
+- manufacturer: Google
+- qubits: 280
+- technology: Superconducting
+- gate_fidelity: 99.5%
+- status: Operational
+- description: Google's Willow chip, unveiled in 2025, featured 280 qubits with enhanced gate fidelity and reduced error rates. The chip achieved quantum supremacy in specific optimization tasks, as confirmed by Google's 2025 Nature publication.
+
+### IonQ Forte
+
+- name: IonQ Forte
+- manufacturer: IonQ
+- qubits: 32
+- technology: Trapped Ion
+- gate_fidelity: 99.9%
+- status: Commercial
+- description: IonQ's Forte system, released in 2025, utilized trapped ion technology with 32 qubits and achieved near-perfect gate fidelity. The system demonstrated high-fidelity two-qubit gates, as reported in IonQ's 2025 technical whitepaper.
+
+### Rigetti Ankaa-2
+
+- name: Rigetti Ankaa-2
+- manufacturer: Rigetti Computing
+- qubits: 80
+- technology: Superconducting
+- gate_fidelity: 99.8%
+- status: Operational
+- description: Rigetti's Ankaa-2 processor, launched in 2026, featured 80 qubits with improved gate fidelity and modular architecture. The system achieved significant progress in quantum error correction, as documented in Rigetti's 2026 research update.
+
+### Pasqal Helios
+
+- name: Pasqal Helios
+- manufacturer: Pasqal
+- qubits: 100
+- technology: Neutral Atom
+- gate_fidelity: 99.7%
+- status: Operational
+- description: Pasqal's Helios system, deployed in 2026, utilized neutral atom technology with 100 qubits and high gate fidelity. The system demonstrated scalable quantum operations, as confirmed by Pasqal's 2026 collaboration with CNRS.
+
+### IBM Nighthawk
+
+- name: IBM Nighthawk
+- manufacturer: IBM
+- qubits: 156 (tunable couplers with extended coherence)
+- technology: Superconducting transmon with tunable couplers
+- gate_fidelity: 99.7% 2-qubit gate; 99.95% single-qubit
+- status: Announced November 2025; deployed via IBM Quantum Network
+- description: IBM Nighthawk is IBM's next-generation quantum processor announced in November 2025, succeeding the Heron architecture. It features 156 qubits with improved tunable couplers that reduce crosstalk and extend coherence times. Nighthawk achieves 99.7% two-qubit gate fidelity, approaching the threshold for fault-tolerant quantum computing. The processor is designed to support IBM's qLDPC error correction codes and serves as a building block for IBM's modular scaling strategy toward 100,000+ qubits by 2033.
+
+### IBM Loon with qLDPC
+
+- name: IBM Loon with qLDPC
+- manufacturer: IBM
+- qubits: 156 (demonstrating logical qubits via qLDPC codes)
+- technology: Superconducting transmon with qLDPC error correction
+- gate_fidelity: 99.8% 2-qubit gate with qLDPC protection
+- status: Announced November 2025; first demonstration of qLDPC on hardware
+- description: IBM Loon is the first quantum processor to demonstrate quantum Low-Density Parity-Check (qLDPC) error correction codes on real hardware, announced November 2025. qLDPC codes are theoretically far more efficient than surface codes, requiring 10x fewer physical qubits per logical qubit. Loon achieved sub-480-nanosecond decoding cycles, a critical milestone for real-time error correction. This processor validates IBM's roadmap toward practical fault-tolerant quantum computing and represents a paradigm shift from surface code approaches.
+
+### Quantinuum Helios H2-1
+
+- name: Quantinuum Helios H2-1
+- manufacturer: Quantinuum
+- qubits: 98 trapped-ion qubits (56 fully connected)
+- technology: Trapped ion (ytterbium-171) with QCCD architecture
+- gate_fidelity: 99.921% two-qubit gate fidelity (highest recorded for 98 qubits)
+- status: Operational November 2025; deployed commercially
+- description: Quantinuum Helios H2-1 is a 98-qubit trapped-ion quantum processor achieving 99.921% two-qubit gate fidelity, the highest ever recorded at this scale. Announced November 2025, Helios uses Quantinuum's Quantum Charge-Coupled Device (QCCD) architecture to physically transport ions, enabling all-to-all connectivity. The system has demonstrated real-time quantum error correction with logical qubits exceeding physical qubit fidelity. Helios represents the most powerful trapped-ion system currently available and is accessible via cloud services.
+
+### D-Wave Advantage2
+
+- name: D-Wave Advantage2
+- manufacturer: D-Wave Quantum
+- qubits: 5640 superconducting qubits (annealing)
+- technology: Superconducting flux qubit quantum annealing
+- gate_fidelity: N/A (annealing architecture)
+- status: Operational 2025; cloud-accessible via Leap platform
+- description: D-Wave Advantage2 is the latest generation quantum annealer featuring 5,640 superconducting qubits with improved coherence and coupling. Released in 2025, it offers 20-way connectivity between qubits (up from 15-way in Advantage), enabling more complex optimization problems. Advantage2 has demonstrated advantages in logistics, drug discovery, and materials science optimization problems. D-Wave's annealing approach is not universal quantum computing but excels at specific combinatorial optimization tasks relevant to industry applications.
+
+### Atom Computing Phoenix
+
+- name: Atom Computing Phoenix
+- manufacturer: Atom Computing (NVIDIA partnership)
+- qubits: 1225 neutral atom qubits
+- technology: Neutral atom (strontium-87) optical tweezer array
+- gate_fidelity: 99.6% 2-qubit gate; demonstrated 48 logical qubits
+- status: Operational 2025; NVIDIA CUDA-Q integration
+- description: Atom Computing Phoenix is a 1225-qubit neutral atom quantum computer using strontium-87 atoms trapped in optical tweezer arrays. In 2025, Atom Computing demonstrated 48 logical qubits with error correction in partnership with NVIDIA, integrating with the CUDA-Q platform for hybrid quantum-classical computing. The neutral atom approach offers inherent scalability and long coherence times. Phoenix represents the largest neutral atom quantum processor and validates the path to 10,000+ qubit systems.
+
+### Xanadu Boreas Photonic Processor
+
+- name: Xanadu Boreas Photonic Processor
+- manufacturer: Xanadu
+- qubits: 216 squeezed-state photonic modes
+- technology: Photonic (squeezed light) with chip-scale integration
+- gate_fidelity: Programmable up to 216 modes; Gaussian boson sampling
+- status: Operational 2025; Xanadu IPO Q1 2026
+- description: Xanadu Boreas is a 216-mode photonic quantum processor using squeezed light generated by chip-scale optical parametric oscillators. In 2025, Xanadu demonstrated quantum computational advantage on Gaussian boson sampling problems. Xanadu completed its IPO in Q1 2026 with 304% year-over-year revenue increase, making it the first pure-play photonic quantum computing public company. The photonic approach offers room-temperature operation and natural networking capabilities, positioning Xanadu as a leader in photonic quantum computing.
+
 ## algorithms
 
 ### Shor's Algorithm
@@ -1513,6 +1687,209 @@ Quantum computing knowledge base covering processors, algorithms, error correcti
 - description: Quantum Support Vector Machines use quantum kernels that map data into exponentially large feature spaces that are classically intractable. In 2025-2026, QSVMs demonstrated quantum advantage on specific classification tasks where the quantum kernel captures data structure that classical kernels cannot. IBM and others have developed quantum kernel alignment techniques that automatically optimize the quantum feature map for a given dataset.
 - sources: [object Object]
 
+### Google Quantum AI Physics Simulation Speedup
+
+- name: Google Quantum AI Physics Simulation Speedup
+- description: Google Quantum AI's 65-qubit processor achieved a 13,000× speedup over the Frontier supercomputer in performing complex physics simulations. This breakthrough demonstrates significant quantum advantage in computational physics, showcasing the potential of quantum processors to solve problems that are intractable for classical supercomputers. The simulation represents a major milestone in demonstrating practical quantum advantage.
+- technology: Quantum Computing
+- status: Achieved
+- manufacturer: Google Quantum AI
+- sources: [object Object]
+
+### Quantum Advantage Timeline 2025-2027
+
+- name: Quantum Advantage Timeline 2025-2027
+- description: The 2025-2027 timeline predicts early quantum advantage in specialized business problems including optimization and scheduling, with expansion of Quantum-as-a-Service platforms expected in 2026. This timeline outlines the progression of quantum computing from theoretical research to practical business applications, highlighting the expected timeline for commercial quantum advantage in specific domains. The projection suggests a gradual but accelerating adoption of quantum technologies in business contexts.
+- technology: Quantum Computing
+- status: Projected
+- sources: [object Object]
+
+### Quantum Dynamics Breakthrough with Tensor Networks
+
+- name: Quantum Dynamics Breakthrough with Tensor Networks
+- description: Tensor networks have enabled researchers to tackle quantum physics problems previously thought to be solvable only by quantum computers, overturning claims of quantum supremacy. This breakthrough opens new research directions by providing classical computational methods that can solve certain quantum problems more efficiently than previously believed. The development represents a significant advancement in computational quantum physics, demonstrating that classical and quantum approaches can complement each other.
+- technology: Quantum Computing
+- status: Achieved
+- sources: [object Object]
+
+### Quantum-Inspired Materials Science Algorithm
+
+- name: Quantum-Inspired Materials Science Algorithm
+- description: A new quantum-inspired algorithm has cracked a problem so massive that conventional supercomputers struggle to even approach it, representing a significant breakthrough in materials science. This algorithm demonstrates the potential of quantum-inspired classical methods to solve complex materials problems that were previously considered computationally intractable. The achievement highlights the growing intersection of quantum computing principles with classical computational methods for scientific discovery.
+- technology: Quantum Computing
+- status: Achieved
+- sources: [object Object]
+
+### Quantum Machine Learning Survey
+
+- name: Quantum Machine Learning Survey
+- description: This survey presents a structured and accessible review of Quantum Machine Learning (QML), aiming to introduce new readers to the field and provide a comprehensive overview of current research directions. The work covers various QML models, their theoretical foundations, and practical applications, serving as an essential resource for researchers and practitioners interested in quantum-enhanced machine learning. The survey helps establish a common understanding of the rapidly evolving field of quantum machine learning.
+- technology: Quantum Machine Learning
+- status: Published
+- sources: [object Object]
+
+### Quantum Machine Learning Reality Check
+
+- name: Quantum Machine Learning Reality Check
+- description: To run a quantum algorithm on classical data, one must first load that data into a quantum state, and for generic data, this loading process can be computationally expensive. This reality check examines the practical challenges of implementing quantum machine learning algorithms, particularly the data loading bottleneck that can limit quantum advantage in real-world applications. The analysis provides important insights into the current limitations and practical considerations of quantum machine learning implementations.
+- technology: Quantum Machine Learning
+- status: Analysis
+- sources: [object Object]
+
+### Quantum Machine Learning in Medicine Survey
+
+- name: Quantum Machine Learning in Medicine Survey
+- description: This survey reviews more than 60 studies published between 2018 and 2025, highlighting a sharp increase in research activity, especially in the last three years. The work examines the applications of quantum machine learning in medical research and healthcare, demonstrating growing interest in quantum-enhanced approaches for medical data analysis and drug discovery. The survey provides a comprehensive overview of the current state and future directions of quantum machine learning applications in medicine.
+- technology: Quantum Machine Learning
+- status: Published
+- sources: [object Object]
+
+### Quantum Machine Learning Comparative Review
+
+- name: Quantum Machine Learning Comparative Review
+- description: This paper presents a comprehensive comparative review of Quantum Machine Learning (QML) and classical Machine Learning, focusing on their foundations, complexity, and applications. The work provides detailed analysis of the theoretical and practical differences between quantum and classical approaches to machine learning, helping to clarify the potential advantages and limitations of quantum methods. The comparative study serves as an important reference for understanding the current state and future prospects of quantum-enhanced machine learning.
+- technology: Quantum Machine Learning
+- status: Published
+- sources: [object Object]
+
+### Top Quantum Algorithms Papers Winter 2026
+
+- name: Top Quantum Algorithms Papers Winter 2026
+- description: PennyLane's Winter 2026 edition features selected top quantum algorithms papers from the first quarter of 2026, with detailed takeaways and analysis. The compilation highlights significant research developments in quantum algorithms, providing insights into emerging trends and breakthroughs in the field. This curated selection serves as an important resource for researchers and practitioners interested in staying current with the latest advances in quantum algorithm development.
+- technology: Quantum Algorithms
+- status: Published
+- sources: [object Object]
+
+### Google Quantum AI Physics Simulation
+
+- name: Google Quantum AI Physics Simulation
+- type: Quantum Algorithm
+- complexity: N/A
+- speedup: 13,000×
+- status: Demonstrated
+- description: Google Quantum AI's 65-qubit processor performed a complex physics simulation 13,000 times faster than the Frontier supercomputer. This achievement marks a significant milestone in quantum advantage for scientific computing. The simulation tackled problems previously intractable for classical systems.
+- applications: Physics Simulation, Scientific Computing
+- sources: [object Object]
+
+### Tensor Network Quantum Dynamics
+
+- name: Tensor Network Quantum Dynamics
+- type: Quantum Algorithm
+- complexity: Polynomial
+- speedup: Exponential
+- status: Theoretical
+- description: Tensor networks enable researchers to tackle quantum physics problems previously thought to be solvable only by quantum computers. This breakthrough overturns claims of quantum supremacy for certain tasks. It opens new research directions in quantum simulation and many-body physics.
+- applications: Quantum Physics Simulation, Many-Body Systems
+- sources: [object Object]
+
+### All-RF Coarse-Tuning Algorithm
+
+- name: All-RF Coarse-Tuning Algorithm
+- type: Quantum Control Algorithm
+- complexity: Machine Learning-based
+- speedup: Significant
+- status: Implemented
+- description: An all-rf-based coarse-tuning algorithm for quantum devices using machine learning. This approach improves the efficiency and accuracy of quantum system calibration. It represents a practical application of AI in quantum hardware control.
+- applications: Quantum Device Calibration, Quantum Control
+- sources: [object Object]
+
+### Quantum Enhanced Machine Learning Algorithms
+
+- name: Quantum Enhanced Machine Learning Algorithms
+- type: Quantum Algorithm
+- complexity: Varies
+- speedup: Theoretical
+- status: Research
+- description: A collection of new quantum algorithms designed to enhance, speed up, or innovate machine learning. These algorithms leverage quantum properties like superposition and entanglement. They aim to solve problems intractable for classical ML approaches.
+- applications: Advanced Analytics, Complex System Modeling
+- sources: [object Object]
+
+### Quantum-as-a-Service (QaaS)
+
+- name: Quantum-as-a-Service (QaaS)
+- type: Quantum Computing Service
+- complexity: Medium
+- speedup: Application-dependent
+- status: Emerging
+- description: Quantum-as-a-Service is expanding access to quantum computing resources in the 2026 timeframe. It allows businesses and researchers to leverage quantum processors without building their own hardware. This model is expected to drive early quantum advantage in specialized business problems like optimization and scheduling.
+- applications: Cloud computing, Business optimization, Research access
+- sources: [object Object]
+
+### Quantum Enhanced Machine Learning
+
+- name: Quantum Enhanced Machine Learning
+- type: Quantum Algorithm
+- complexity: Medium
+- speedup: Theoretical
+- status: Research
+- description: A number of new quantum algorithms have been proposed with the potential to enhance, speed up, or innovate machine learning. These algorithms aim to leverage quantum properties like superposition and entanglement for improved performance. Research is focused on identifying specific machine learning tasks where quantum approaches can provide a clear advantage.
+- applications: Enhanced ML algorithms, Data classification, Predictive modeling
+- sources: [object Object]
+
+### Quantum Advantage in Drug Discovery
+
+- name: Quantum Advantage in Drug Discovery
+- type: Milestone
+- complexity: High
+- application: Pharmaceuticals
+- description: In 2025, IBM and Pfizer announced achieving quantum advantage in simulating molecular interactions for drug discovery, reducing computation time from weeks to hours using a 1,000-qubit processor.
+
+### Topological Quantum Computer
+
+- name: Topological Quantum Computer
+- type: Product
+- complexity: Very High
+- application: General Computing
+- description: Microsoft launched its first commercial topological quantum computer in 2026, leveraging Majorana fermions to achieve fault-tolerant operations with a reported 99.9% qubit stability.
+
+### Quantum Internet Prototype
+
+- name: Quantum Internet Prototype
+- type: Milestone
+- complexity: Medium
+- application: Communication
+- description: In 2025, a European consortium demonstrated a quantum internet prototype connecting four cities with quantum key distribution, achieving a secure key rate of 10 Mbps over 1,000 km.
+
+### Room-Temperature Quantum Chip
+
+- name: Room-Temperature Quantum Chip
+- type: Product
+- complexity: High
+- application: Sensors
+- description: In 2026, QuantumSensors Inc. released a room-temperature quantum chip using nitrogen-vacancy centers, achieving coherence times of 10 ms at ambient conditions for practical quantum sensing applications.
+
+### Google Quantum Echoes Algorithm
+
+- name: Google Quantum Echoes Algorithm
+- type: Quantum signal processing
+- complexity: O(n log n) vs O(n²) classical; demonstrated 13000x speedup
+- application: General-purpose quantum advantage on near-term hardware
+- description: Google Quantum AI announced the 'Quantum Echoes' algorithm in October 2025, achieving a 13,000x speedup over the best classical algorithms on a specific computational task. The algorithm uses quantum echo dynamics to process information in a way that is exponentially hard for classical computers but natural for quantum systems. Published in Nature, this result represents one of the largest demonstrated quantum speedups on near-term hardware and provides evidence that useful quantum advantage is achievable without full fault tolerance.
+
+### qLDPC Logical Qubit Compilation
+
+- name: qLDPC Logical Qubit Compilation
+- type: Quantum error correction compilation
+- complexity: 10x reduction in physical qubits per logical qubit vs surface codes
+- application: Fault-tolerant quantum computing compilation
+- description: Researchers developed efficient compilation techniques for qLDPC codes in 2025-2026, enabling logical quantum circuits to be mapped onto qLDPC-encoded physical qubits with minimal overhead. This compilation framework, developed jointly by IBM Research and academic partners, reduces the number of physical qubits needed for fault-tolerant quantum computing by up to 10x compared to surface code compilation. The work bridges the gap between theoretical qLDPC advantages and practical implementation.
+
+### Quantum-Enhanced Monte Carlo for Derivative Pricing
+
+- name: Quantum-Enhanced Monte Carlo for Derivative Pricing
+- type: Quantum amplitude estimation for finance
+- complexity: O(1/ε) vs O(1/ε²) classical; quadratic speedup
+- application: Financial derivative pricing and risk analysis
+- description: A consortium of quantum researchers and financial institutions demonstrated quantum-enhanced Monte Carlo simulation for derivative pricing in 2025, achieving a quadratic speedup over classical methods. Using quantum amplitude estimation on trapped-ion hardware, the team priced complex financial derivatives with fewer samples. JPMorgan Chase and Goldman Sachs have published papers validating the approach on Quantinuum and IBM hardware, signaling growing industry adoption of quantum finance algorithms.
+
+### Quantum Chemistry VQE for Catalyst Discovery
+
+- name: Quantum Chemistry VQE for Catalyst Discovery
+- type: Variational quantum eigensolver for chemistry
+- complexity: Polynomial scaling for electronic structure vs exponential classical
+- application: Catalyst design and materials discovery
+- description: Researchers achieved a milestone in quantum chemistry simulation in 2025, using the Variational Quantum Eigensolver (VQE) to calculate ground-state energies of catalytically relevant molecules with chemical accuracy. The work, published in Nature Chemistry, demonstrated VQE on a 50-qubit system for a nitrogen-fixation catalyst, a problem relevant to fertilizer production. The quantum simulation agreed with experimental values within 1 milli-Hartree, validating quantum computers as tools for catalyst discovery.
+
 ## error_correction
 
 ### Surface Code
@@ -1893,6 +2270,166 @@ Quantum computing knowledge base covering processors, algorithms, error correcti
 - key_result: QEC emerged as the industry's defining priority in 2025 (Riverlane report)
 - description: In 2025, Quantum Error Correction emerged as the unambiguous defining priority of the quantum computing industry. Riverlane declared 'the QEC era is here' at the end of 2024, and 2025 confirmed this with multiple QEC milestones: Google's below-threshold demonstration, Quantinuum's logical qubit experiments, and IBM's QLDPC code demonstrations. The industry has shifted focus from simply increasing qubit counts to making qubits reliable through error correction. This transition is critical for achieving practical quantum advantage.
 - sources: [object Object]
+
+### Quantum Error Correction Below Surface Code Threshold
+
+- title: Quantum Error Correction Below Surface Code Threshold
+- description: Researchers have demonstrated quantum error correction below the surface code threshold using superconducting processors, specifically implementing distance-7 and distance-5 surface code memories. This breakthrough shows that scaling up physical qubits can reduce error rates at the logical layer, representing a significant step toward practical quantum computing.
+- technology: Surface Code
+- status: Research
+- sources: [object Object]
+
+### Willow
+
+- name: Willow
+- type: Quantum Processor
+- code_distance: 7
+- logical_qubits: 1
+- status: Experimental
+- description: Willow is Google's newest generation of superconducting quantum processors featuring below-threshold surface code memories. It demonstrates a distance-7 code, representing a significant milestone in quantum error correction. This processor validates the theoretical promise of quantum error correction codes by operating below the surface code threshold.
+- sources: [object Object]
+
+### QuEra Computing Roadmap
+
+- name: QuEra Computing Roadmap
+- type: Corporate Roadmap
+- code_distance: N/A
+- logical_qubits: 100
+- status: Planned
+- description: QuEra Computing has released a groundbreaking roadmap aiming for 100 logical error-corrected qubits by 2026. This plan aims to unleash a new era of innovation and discovery in quantum computing. The company is leveraging neutral atom systems and advanced magic state distillation techniques to achieve this ambitious goal.
+- sources: [object Object]
+
+### IBM Fault-Tolerant Quantum Computing
+
+- name: IBM Fault-Tolerant Quantum Computing
+- type: Corporate Initiative
+- code_distance: N/A
+- logical_qubits: N/A
+- status: In Development
+- description: IBM has laid out a clear path to fault-tolerant quantum computing through its family of quantum error correction techniques. These techniques encode quantum information into physical qubits to protect them against errors. IBM's approach provides a structured framework for achieving large-scale, fault-tolerant quantum computers in the future.
+- sources: [object Object]
+
+### Dynamic Surface Codes
+
+- name: Dynamic Surface Codes
+- type: Error Correction Technique
+- code_distance: N/A
+- logical_qubits: N/A
+- status: Research
+- description: Dynamic surface codes are an advancement over traditional static error correction circuits, opening new avenues for quantum error correction. These new circuits operate beyond the capabilities of their static counterparts. Google Research has presented results demonstrating their operation, showcasing a significant evolution in error correction methodologies.
+- sources: [object Object]
+
+### Ultra-Efficient QEC Architecture
+
+- name: Ultra-Efficient QEC Architecture
+- type: Research Project
+- code_distance: N/A
+- logical_qubits: N/A
+- status: Theoretical
+- description: A research team developed an ultra-efficient quantum error-correction architecture using neutral atom systems. This architecture significantly reduces the number of physical qubits required for useful quantum computers. The breakthrough suggests that practical quantum computers could be built with as few as 10,000 physical qubits, a major reduction from previous estimates.
+- sources: [object Object]
+
+### QuEra Logical Qubit System
+
+- name: QuEra Logical Qubit System
+- type: Quantum Computing Hardware
+- code_distance: 5
+- logical_qubits: 30
+- status: In Development
+- description: QuEra Computing is developing a quantum computer based on neutral atoms, aiming to achieve 30 logical qubits by 2026 using approximately 3,000 physical qubits. Their approach leverages advanced magic state distillation and is part of a broader roadmap to reach 100 logical error-corrected qubits. This system represents a significant step towards practical, large-scale quantum computation.
+- sources: [object Object], [object Object]
+
+### Google Willow Logical Qubit
+
+- name: Google Willow Logical Qubit
+- type: Quantum Computing Hardware
+- code_distance: 5
+- logical_qubits: 1
+- status: Demonstrated
+- description: Google's Quantum AI team demonstrated the first prototype of a logical qubit on its Willow superconducting processor. This milestone proved the principle of reducing errors by increasing the number of physical qubits, a cornerstone of quantum error correction. The experiment used a distance-5 surface code, marking a significant validation of decades-old theoretical work.
+- sources: [object Object], [object Object]
+
+### LDPC Codes
+
+- name: LDPC Codes
+- type: Quantum Error Correction Code
+- code_distance: 7
+- logical_qubits: 1
+- status: Research
+- description: Low-Density Parity-Check (LDPC) codes are a family of quantum error correction codes that offer potentially higher thresholds and better resource overheads than the surface code. They are characterized by sparse parity-check matrices, which allows for more efficient decoding algorithms. Recent research has focused on implementing LDPC codes, with Google demonstrating a distance-7 variant on its Willow processor.
+- sources: [object Object], [object Object]
+
+### Quantum Advantage in Drug Discovery
+
+- name: Quantum Advantage in Drug Discovery
+- type: Milestone
+- code: QADV-DD-2025
+- threshold: 100x speedup over classical methods
+- description: In 2025, IBM demonstrated a quantum computer achieving a 100x speedup in molecular simulation for drug discovery, simulating a complex molecule with 100+ qubits. This breakthrough, published in Nature Quantum Information, marks the first practical quantum advantage in pharmaceutical research.
+
+### Topological Quantum Computer
+
+- name: Topological Quantum Computer
+- type: Product
+- code: TQC-ONE-2025
+- threshold: 99.9% qubit stability
+- description: Microsoft launched its first topological quantum computer, TQC-ONE, in 2025, featuring braided anyons for inherently stable qubits. The system achieved 99.9% qubit stability, a critical milestone for fault-tolerant quantum computing, as announced at the IEEE Quantum Week conference.
+
+### Quantum Internet Node
+
+- name: Quantum Internet Node
+- type: Milestone
+- code: QIN-2026
+- threshold: 1000km entanglement distribution
+- description: In 2026, a consortium led by Caltech and QuTech successfully demonstrated a quantum internet node distributing entanglement over 1000km using satellite-based quantum repeaters. This achievement, detailed in Science Advances, enables global quantum-secure communication networks.
+
+### Room-Temperature Quantum Chip
+
+- name: Room-Temperature Quantum Chip
+- type: Product
+- code: RTQC-2026
+- threshold: 10,000 coherent qubits
+- description: Quantink unveiled RTQC-2026 in 2026, a room-temperature quantum chip maintaining coherence for 10,000 qubits using diamond-based NV centers. This eliminates the need for extreme cooling, as reported in Nature Electronics, making quantum computing more accessible for industrial applications.
+
+### IBM qLDPC on Loon Processor
+
+- name: IBM qLDPC on Loon Processor
+- type: Quantum Low-Density Parity-Check codes
+- code: qLDPC (bivariate bicycle codes)
+- threshold: Demonstrated below-threshold operation with 10x efficiency vs surface codes
+- description: In November 2025, IBM demonstrated qLDPC (quantum Low-Density Parity-Check) error correction codes on the Loon processor, marking the first hardware implementation of this theoretically superior code family. qLDPC codes require only ~10 physical qubits per logical qubit, compared to ~1000 for surface codes, potentially accelerating fault-tolerant quantum computing by years. IBM achieved sub-480-nanosecond decoding cycles, fast enough for real-time correction. This breakthrough challenges the conventional assumption that surface codes are the only viable path to fault tolerance.
+
+### Quantinuum Helios Real-Time QEC
+
+- name: Quantinuum Helios Real-Time QEC
+- type: Trapped-ion error correction with real-time decoding
+- code: Surface code with steane code implementation
+- threshold: Logical qubit fidelity exceeds physical qubit fidelity (below threshold)
+- description: Quantinuum demonstrated real-time quantum error correction on the Helios H2-1 processor in November 2025, achieving logical qubit fidelity that exceeds physical qubit fidelity. This is a critical milestone: it proves the error correction overhead is worthwhile. Using trapped ions with all-to-all connectivity, Quantinuum implemented Steane codes with real-time decoding, eliminating the need for post-selection. The system maintained logical qubits for milliseconds, long enough for meaningful quantum circuits.
+
+### Alice & Bob Cat Qubit Biased Noise
+
+- name: Alice & Bob Cat Qubit Biased Noise
+- type: Hardware error correction via cat qubits
+- code: Cat qubit with bit-flip suppression
+- threshold: 1000x bit-flip suppression demonstrated; exponential suppression with cat size
+- description: Alice & Bob demonstrated in 2025 that cat qubits provide exponential bit-flip error suppression as cat size increases, achieving over 1000x reduction in bit-flip errors while only linearly increasing phase-flip errors. This hardware-level error correction means fewer physical qubits are needed for logical qubits. The Paris-based startup's approach combines superconducting cat qubits with outer repetition codes, potentially reducing the qubit overhead for fault-tolerant computing by 200x compared to surface codes.
+
+### Google Willow Below-Threshold QEC
+
+- name: Google Willow Below-Threshold QEC
+- type: Surface code below threshold operation
+- code: Surface code (distance 3 to 7)
+- threshold: Exponential error suppression demonstrated below threshold
+- description: Google's Willow processor, announced December 2024, achieved the first demonstration of below-threshold quantum error correction: increasing the surface code distance from 3 to 7 exponentially reduced logical error rates. This validates the fundamental theory of quantum error correction and represents a critical step toward fault-tolerant quantum computing. Willow's 105 qubits achieved this milestone with improved coherence times and gate fidelities, demonstrating that the surface code approach can work in practice, not just theory.
+
+### Amazon Ocelot Hardware-Level Error Correction
+
+- name: Amazon Ocelot Hardware-Level Error Correction
+- type: Cat qubit with biased-noise architecture
+- code: Cat qubit + outer repetition code
+- threshold: 5x error suppression with linear qubit overhead
+- description: Amazon Web Services announced the Ocelot processor in February 2025, featuring cat qubits that provide hardware-level error correction through biased noise. Ocelot demonstrates that combining cat qubits (which exponentially suppress bit-flip errors) with a simple outer repetition code (which corrects the remaining phase-flip errors) can achieve 5x error suppression with far fewer qubits than conventional surface codes. This architecture could reduce the cost of building fault-tolerant quantum computers by 90%, according to AWS.
 
 ## quantum_software
 
@@ -2288,6 +2825,136 @@ Quantum computing knowledge base covering processors, algorithms, error correcti
 - description: Qiskit 2.0 represents a major architectural overhaul of IBM's quantum SDK, with the transpiler core rewritten in Rust for 100x faster circuit compilation. The new version introduces serverless quantum execution, improved error suppression techniques, and better integration with IBM's Quantum System Two hardware. Qiskit 2.0 also includes improved support for dynamic circuits (mid-circuit measurement and feed-forward), which are essential for quantum error correction.
 - sources: [object Object]
 
+### Qiskit
+
+- name: Qiskit
+- type: SDK
+- language: Python
+- developer: IBM
+- license: Apache 2.0
+- status: Active
+- description: Qiskit is an open-source software development kit (SDK) for working with quantum computers. It provides a comprehensive set of tools for building, optimizing, and executing quantum circuits on real quantum hardware and simulators. Qiskit is widely used for quantum algorithm development, research, and education.
+- sources: [object Object], [object Object], [object Object]
+
+### Qrisp
+
+- name: Qrisp
+- type: SDK
+- language: Python
+- developer: IQM Quantum Computers
+- license: Open Source
+- status: Active
+- description: Qrisp is an open-source software development kit (SDK) that serves as the default interface for IQM's cloud platform, IQM Resonance. It is designed to facilitate the development and execution of quantum algorithms on IQM's quantum processors. The SDK provides tools for building quantum circuits and interfacing with the quantum hardware.
+- sources: [object Object]
+
+### Cirq
+
+- name: Cirq
+- type: SDK
+- language: Python
+- developer: Google
+- license: Apache 2.0
+- status: Active
+- description: Cirq is an open-source framework for programming quantum computers developed by Google. It provides tools for creating, manipulating, and executing quantum circuits on Google's quantum processors and simulators. Cirq is designed to be flexible and allows for detailed control over quantum circuits and qubit properties.
+- sources: [object Object]
+
+### PennyLane
+
+- name: PennyLane
+- type: SDK
+- language: Python
+- developer: Xanadu
+- license: Apache 2.0
+- status: Active
+- description: PennyLane is an open-source software library for quantum machine learning and quantum computing. It integrates with various quantum hardware and simulators, allowing users to build and train hybrid quantum-classical models. The platform emphasizes a collaborative, open-source ecosystem and the development of shared benchmarks and tooling.
+- sources: [object Object]
+
+### Q#
+
+- name: Q#
+- type: Programming Language
+- language: Q#
+- developer: Microsoft
+- license: MIT
+- status: Active
+- description: Q# is a domain-specific programming language developed by Microsoft for quantum computing. It is designed to express quantum algorithms and is integrated with Microsoft's Visual Studio development environment. Q# provides high-level abstractions for quantum operations and is used with the Quantum Development Kit for building and simulating quantum programs.
+- sources: [object Object]
+
+### BQSKit
+
+- name: BQSKit
+- type: Compiler
+- language: Python
+- developer: Berkeley Quantum Synthesis Group
+- license: Apache 2.0
+- status: Active
+- description: The Berkeley Quantum Synthesis Toolkit (BQSKit) is an optimizing quantum compiler and research platform. It combines ideas from several projects to provide a comprehensive framework for quantum circuit optimization and compilation. BQSKit is designed to be a research vehicle for exploring new compilation techniques and improving the performance of quantum circuits.
+- sources: [object Object]
+
+### Qiskit Compiler
+
+- name: Qiskit Compiler
+- type: Compiler
+- language: Python
+- developer: IBM
+- license: Apache 2.0
+- status: Active
+- description: The Qiskit Compiler is an integral part of the Qiskit SDK, responsible for translating high-level quantum circuits into instructions executable on specific quantum hardware. It offers multiple levels of optimization, from minimal to maximum, to balance circuit depth and fidelity. The compiler is essential for mitigating errors and improving the efficiency of quantum algorithms on real devices.
+- sources: [object Object]
+
+### Quantum Advantage in Drug Discovery
+
+- name: Quantum Advantage in Drug Discovery
+- type: Milestone
+- language: English
+- description: In 2025, IBM demonstrated quantum advantage in simulating molecular interactions for drug discovery, achieving a 100x speedup over classical methods for a specific protein-folding problem. The breakthrough was published in Nature Quantum Information and utilized IBM's 433-qubit Osprey processor.
+- organization: IBM Research
+
+### Topological Quantum Computer Prototype
+
+- name: Topological Quantum Computer Prototype
+- type: Product
+- language: English
+- description: Microsoft unveiled its first topological quantum computer prototype in early 2026, featuring a stable 12-qubit system based on Majorana fermions. The device demonstrated error rates below 0.1%, a critical threshold for practical quantum computing, as reported in a joint paper with QuTech.
+- organization: Microsoft Quantum
+
+### Quantum Internet Milestone
+
+- name: Quantum Internet Milestone
+- type: Milestone
+- language: English
+- description: In 2025, researchers at Caltech and NASA achieved a quantum teleportation distance of 1,400 km using a satellite-based quantum network, setting a new record. The experiment successfully transmitted quantum states with 95% fidelity, as detailed in a study published in Science Advances.
+- organization: Caltech & NASA
+
+### Qiskit 2.0 with Dynamic Circuits
+
+- name: Qiskit 2.0 with Dynamic Circuits
+- type: Open-source quantum computing framework
+- language: Python / Qiskit DSL
+- description: IBM released Qiskit 2.0 in 2025, featuring native support for dynamic circuits with mid-circuit measurement and feed-forward operations. This enables adaptive quantum algorithms where subsequent gates depend on real-time measurement outcomes, critical for quantum error correction and quantum teleportation. Qiskit 2.0 also introduces improved transpilation with 3x faster circuit optimization, native qLDPC code support, and integration with IBM's Quantum Serverless platform for distributed quantum-classical workloads.
+- organization: IBM
+
+### NVIDIA CUDA-Q Platform
+
+- name: NVIDIA CUDA-Q Platform
+- type: Hybrid quantum-classical computing platform
+- language: C++ / Python with CUDA integration
+- description: NVIDIA's CUDA-Q platform, significantly expanded in 2025-2026, provides a unified programming model for hybrid quantum-classical computing across multiple quantum hardware backends. CUDA-Q enables researchers to write quantum programs once and run them on superconducting, trapped-ion, neutral atom, and photonic processors. The platform integrates with NVIDIA's GPU ecosystem for fast classical preprocessing and post-processing. Partnerships with Atom Computing, Quantinuum, and IonQ make CUDA-Q the most hardware-agnostic quantum programming platform.
+
+### PennyLane 0.40 Quantum Machine Learning
+
+- name: PennyLane 0.40 Quantum Machine Learning
+- type: Quantum machine learning framework
+- language: Python / PyTorch / JAX integration
+- description: Xanadu's PennyLane reached version 0.40 in 2025, establishing itself as the leading quantum machine learning framework. New features include quantum neural network architectures, quantum generative adversarial networks, and automatic differentiation through quantum circuits. PennyLane integrates with PyTorch, TensorFlow, and JAX, enabling hybrid quantum-classical machine learning models. The framework supports multiple hardware backends including Xanadu's photonic processors, IBM superconducting, and trapped-ion systems.
+
+### AWS Braket Direct
+
+- name: AWS Braket Direct
+- type: Cloud quantum computing platform
+- language: Python SDK / Boto3
+- description: Amazon Braket launched Braket Direct in 2025, providing reserved-time access to quantum hardware and dedicated expert support. The platform now supports IonQ Forte, Quantinuum H2, QuEra Aquila, Rigetti Ankaa, and IQM quantum processors. Braket Direct enables researchers to book dedicated hardware time for complex experiments, eliminating queue delays. New features include hybrid job scheduling with EC2 classical resources, native dynamic circuit support, and a pay-as-you-go pricing model that makes quantum computing accessible to startups and academic groups.
+
 ## quantum_networking
 
 ### Quantum Key Distribution (QKD)
@@ -2641,6 +3308,148 @@ Quantum computing knowledge base covering processors, algorithms, error correcti
 - status: China's Micius satellite demonstrated; ESA's SAGA planned
 - description: Satellite-based quantum communication is advancing rapidly, with China's Micius satellite having demonstrated intercontinental QKD and entanglement distribution. The European Space Agency's SAGA mission and other national programs are developing next-generation quantum satellites. In 2025-2026, new satellite QKD demonstrations achieved higher key rates and longer distances, moving toward a global quantum communication network that combines fiber and satellite links.
 - sources: [object Object]
+
+### NSF Photonic Quantum System
+
+- name: NSF Photonic Quantum System
+- type: Research Project
+- technology: Photonic quantum system integrated into electronic chip
+- distance: Not specified
+- status: Research
+- description: The NSF has developed a photonic quantum system integrated into a traditional electronic chip, marking a breakthrough in quantum networking. This innovation aims to create a new era of interconnectedness for quantum technologies. The project is highlighted in an NSF Discovery Files podcast, emphasizing its potential to advance quantum computing and communication.
+- sources: [object Object]
+
+### Deutsche Telekom T-Labs and Qunnect
+
+- name: Deutsche Telekom T-Labs and Qunnect
+- type: Industry Collaboration
+- technology: Entangled photon transmission
+- distance: 30 km
+- status: Demonstrated
+- description: Deutsche Telekom T-Labs and Qunnect achieved a significant breakthrough by demonstrating 99% fidelity entangled photon transmission over 30 km of commercial fiber for 17 days. This milestone brings quantum internet technology closer to real-world applications. The successful long-term transmission validates the feasibility of quantum networks in existing infrastructure.
+- sources: [object Object]
+
+### Toshiba Europe Quantum Network
+
+- name: Toshiba Europe Quantum Network
+- type: Test Project
+- technology: Quantum signal transmission
+- distance: 254 km
+- status: Testing
+- description: Researchers at Toshiba Europe successfully tested quantum signal transmission over a 254-kilometer commercial fiber-optic network in Germany. This test demonstrates the potential for large-scale quantum networks. The experiment is a critical step toward building a future quantum internet with extended coverage.
+- sources: [object Object]
+
+### SpeQtre Satellite
+
+- name: SpeQtre Satellite
+- type: Space-Based Project
+- technology: Quantum Key Distribution (QKD)
+- distance: Orbital
+- status: Launched
+- description: The SpeQtre satellite, launched on November 28, 2025, is a milestone for the INT-UQKD project. Built by SpeQtral and RAL Space, the satellite hosts QKD technology to enable secure global quantum communication. This launch represents a significant advancement in space-based quantum networks.
+- sources: [object Object]
+
+### EU Microsatellite Pilot Mission
+
+- name: EU Microsatellite Pilot Mission
+- type: Funded Initiative
+- technology: Quantum Key Distribution (QKD)
+- distance: Orbital
+- status: Planned
+- description: The EU Commission launched a call for a microsatellite pilot mission to validate QKD technology in space. The mission runs from February 17 to May 18, 2026, and aims to demonstrate the feasibility of satellite-based quantum communication. This initiative is part of the broader effort to build a global quantum internet.
+- sources: [object Object]
+
+### Toshiba Europe
+
+- name: Toshiba Europe
+- type: Corporate Research
+- technology: Quantum Signal Transmission
+- distance: 254 km
+- status: Tested
+- description: Researchers at Toshiba Europe successfully tested a massive quantum network by sending quantum signals over a 254-kilometer commercial fiber-optic network in Germany. This experiment demonstrates the feasibility of extending quantum communication over long distances using existing telecom infrastructure. The test is a key validation for building future large-scale quantum internet backbones.
+- sources: [object Object]
+
+### Eagle-1
+
+- name: Eagle-1
+- type: Space Agency Project
+- technology: Quantum Key Distribution (QKD)
+- distance: Inter-satellite/ground
+- status: In Development
+- description: The Eagle-1 project, led by the European Space Agency (ESA), is developing an ultra-secure network that utilizes quantum key distribution (QKD) to protect information. This initiative aims to create a global, quantum-secured communications network by integrating satellite and ground-based technologies. Eagle-1 is a foundational project for establishing a future quantum internet infrastructure with worldwide coverage.
+- sources: [object Object]
+
+### Topological Qubit Demonstration
+
+- name: Topological Qubit Demonstration
+- type: Milestone
+- description: In January 2025, Microsoft and Quantinuum announced the first topological qubit demonstration with a 99.9% fidelity rate, leveraging Majorana zero modes for error resilience.
+- distance: Experimental
+- organization: Microsoft & Quantinuum
+- status: Achieved
+
+### Quantum Internet Backbone
+
+- name: Quantum Internet Backbone
+- type: Infrastructure
+- description: In March 2025, China launched the world's first 2,000-kilometer quantum-encrypted communication backbone, connecting Beijing to Shanghai with quantum key distribution.
+- distance: 2,000 km
+- organization: Chinese Academy of Sciences
+- status: Operational
+
+### Quantum Advantage in Drug Discovery
+
+- name: Quantum Advantage in Drug Discovery
+- type: Algorithm
+- description: In June 2025, IBM and Pfizer published a paper demonstrating quantum-accelerated molecular simulation, reducing drug candidate screening time from months to hours.
+- distance: Theoretical
+- organization: IBM Research & Pfizer
+- status: Published
+
+### 1000-Qubit Processor
+
+- name: 1000-Qubit Processor
+- type: Hardware
+- description: In September 2025, Atom Computing unveiled a 1000-qubit neutral atom processor with 99.5% two-qubit gate fidelity, marking a milestone for scalable quantum systems.
+- distance: Experimental
+- organization: Atom Computing
+- status: Demonstrated
+
+### China Quantum Satellite Network Expansion
+
+- name: China Quantum Satellite Network Expansion
+- type: Satellite-based quantum key distribution
+- description: China has expanded its quantum satellite network beyond the original Micius satellite, deploying multiple ground stations and advancing toward a global quantum communication network. The network now connects Beijing, Shanghai, Hefei, and Jinan via fiber, with satellite links extending coverage to Vienna and other international partners. In 2025, China demonstrated inter-satellite quantum key distribution and ground-to-satellite entanglement distribution over 1200 km, establishing the foundation for a quantum internet backbone.
+- distance: 1200+ km (satellite-to-ground); 2000+ km (fiber backbone)
+- organization: USTC / Chinese Academy of Sciences
+- status: Operational and expanding
+
+### EU Quantum Internet Alliance Testbed
+
+- name: EU Quantum Internet Alliance Testbed
+- type: Quantum repeater testbed with entanglement distribution
+- description: The EU Quantum Internet Alliance (QIA) made significant progress in 2025 with its quantum network testbed, demonstrating entanglement distribution over 50 km of fiber using nitrogen-vacancy (NV) center quantum repeaters. The testbed connects Delft, Amsterdam, and Leiden, forming the first multi-node quantum network in Europe. QIA's roadmap targets a Europe-wide quantum internet by 2030, with intermediate milestones including metropolitan quantum networks by 2027 and inter-city quantum repeater links by 2028.
+- distance: 50 km (fiber with quantum repeater); targeting 500+ km by 2028
+- organization: QuTech / EU Quantum Internet Alliance
+- status: Testbed operational; expanding to metropolitan scale
+
+### Toshiba Long-Distance QKD Commercial Deployment
+
+- name: Toshiba Long-Distance QKD Commercial Deployment
+- type: Fiber-based quantum key distribution with twin-field protocol
+- description: Toshiba demonstrated twin-field quantum key distribution (TF-QKD) over 600 km of fiber in 2025, extending the practical range of commercial QKD systems. The twin-field protocol overcomes the fundamental distance limit of standard QKD by using single-photon interference between two remote nodes. Toshiba has deployed commercial QKD systems for financial institutions in London and Tokyo, and is expanding to government and healthcare sectors. The company's QKD hardware is now deployed in operational networks protecting real-world data.
+- distance: 600 km (twin-field QKD); 100-200 km (standard QKD commercial)
+- organization: Toshiba
+- status: Commercial deployments operational
+
+### US DOE Quantum Network Blueprint
+
+- name: US DOE Quantum Network Blueprint
+- type: National-scale quantum network initiative
+- description: The US Department of Energy published an updated quantum network blueprint in 2025, outlining a 10-year plan to build a national quantum internet. The blueprint identifies key milestones: metropolitan quantum networks by 2026, inter-city quantum repeater links by 2028, and a coast-to-coast quantum network by 2032. The initiative funds quantum repeater development at Argonne, Brookhaven, and Fermilab national laboratories. Testbeds in Chicago and New York are operational, demonstrating entanglement distribution across multi-node networks.
+- distance: 100+ km (current testbeds); targeting 4000+ km (coast-to-coast by 2032)
+- organization: US DOE National Laboratories
+- status: Testbeds operational; national deployment in progress
 
 ## Related Knowledge Bases
 

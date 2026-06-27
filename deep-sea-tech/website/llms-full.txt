@@ -858,6 +858,54 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - capabilities: Autonomous coral reef mapping and monitoring; uses visual and acoustic cues for navigation and hotspot identification; featured on Science Robotics May 2026 cover
 - description: 2026年5月Science Robotics封面展示了一款可自主绘制和监测珊瑚礁热区的水下机器人。该机器人利用视觉和声学线索进行导航和热点识别，代表了水下自主监测技术的重要进展。
 
+### Triton 36000/2 Hadal Exploration System (Limiting Factor)
+
+- name: Triton 36000/2 Hadal Exploration System (Limiting Factor)
+- type: Full Ocean Depth manned submersible
+- depth_rating: 11,000 meters (full ocean depth)
+- operator: Triton Submarines / Caladan Oceanic
+- country: USA
+- year: 2025-2026
+- capabilities: The world's only submersible certified to repeatedly dive to the deepest part of the ocean (Mariana Trench Challenger Deep). DNV-GL certified. Has dived multiple times to Challenger Deep and completed dives in the Puerto Rico Trench (8,376m). Tested to 14km depth.
+- description: Triton 36000/2是唯一获得全海深认证的载人潜水器，可反复下潜至马里亚纳海沟最深处。已完成多次挑战者深渊下潜和波多黎各海沟（8,376米）下潜。由Triton Submarines制造，DNV-GL认证。
+- source: Triton Submarines 2025-2026
+
+### WHOI Deep Venture AUV
+
+- name: WHOI Deep Venture AUV
+- type: Autonomous Underwater Vehicle (new class)
+- depth_rating: Ultra-deep water
+- operator: Woods Hole Oceanographic Institution (WHOI)
+- country: USA
+- year: 2025-2026
+- capabilities: DEEP VENTURE is the latest evolution of a new class of AUVs designed to significantly expand deep sea exploration. Deployed from R/V Atlantis. Features advanced autonomy for unexplored seafloor mapping.
+- description: 伍兹霍尔海洋研究所(WHOI)开发的最新一代自主水下航行器(AUV)，属于全新级别的深海探索平台。从R/V Atlantis科考船上部署，具备先进自主能力，可大幅扩展深海探索范围。
+- source: WHOI 2025-2026
+
+### Orpheus Ocean Commercial Hadal AUV
+
+- name: Orpheus Ocean Commercial Hadal AUV
+- type: Commercial autonomous underwater vehicle
+- depth_rating: Full ocean depth (hadal zone)
+- operator: Orpheus Ocean (WHOI spinoff)
+- country: USA
+- year: 2025-2026
+- capabilities: Based on WHOI's Orpheus AUV technology. Small enough to fit on an airplane. Designed to land on the ocean floor at the deepest parts. Pre-seed funding secured for first commercial demonstrations, bringing revolutionary speed and capabilities to hadal zone exploration.
+- description: Orpheus Ocean是WHOI的衍生初创公司，获得种子轮融资用于Orpheus AUV的商业化演示。该AUV体积小到可以装上飞机，设计用于在海洋最深处着陆作业，为超深渊带探索带来革命性的速度提升。
+- source: Orpheus Ocean 2025-2026, WCAI
+
+### Triton 36000/3 Full Ocean Depth Three-Person Submersible
+
+- name: Triton 36000/3 Full Ocean Depth Three-Person Submersible
+- type: Full Ocean Depth manned submersible (3-person)
+- depth_rating: 11,000+ meters
+- operator: Triton Submarines
+- country: USA/Spain
+- year: 2025-2026
+- capabilities: The world's deepest-diving three-person acrylic submersible, unveiled in Spain in September 2025. Based on the chassis design of Triton models that can dive up to 3,300m, extended to full ocean depth. DNV-GL certified.
+- description: 2025年9月在西班牙发布的全球最深潜三人丙烯酸载人潜水器。基于Triton 3300系列底盘设计扩展至全海深能力，获得DNV-GL认证。
+- source: Triton Submarines September 2025
+
 ## deep_sea_resources
 
 ### Polymetallic Nodules (Manganese Nodules)
@@ -1895,6 +1943,24 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - source: Schmidt Ocean Institute 2026
 - category: expedition
 
+### Deepest Chemosynthetic Community Discovery
+
+- name: Deepest Chemosynthetic Community Discovery
+- type: Chemosynthesis-based ecosystem
+- depth: Hadal zone (deepest known)
+- year: 2025-2026
+- description: Discovery of the deepest and most extensive chemosynthesis-based communities known to exist on Earth, found during a scientific expedition into the hadal zone of the Pacific Ocean. These communities thrive on chemical energy rather than sunlight, representing an other-worldly ecosystem.
+- source: Scientific expedition 2025-2026
+
+### Schmidt Ocean Brazil 31 New Species Discovery
+
+- name: Schmidt Ocean Brazil 31 New Species Discovery
+- type: Deep-sea species discovery
+- depth: Deep waters off Brazil, South Atlantic
+- year: 2026
+- description: An international team of experts discovered over two dozen (31) new marine species on a recent expedition off the coast of Brazil in the South Atlantic Ocean. The discoveries were made in just two weeks of deep-sea exploration, highlighting how much remains unknown in the deep ocean.
+- source: Schmidt Ocean Institute June 2026
+
 ## underwater_communication
 
 ### Acoustic Modem Communication
@@ -2931,6 +2997,56 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - description: NASA的SWOT（Surface Water and Ocean Topography）卫星利用海面高度数据从太空绘制全球海底地图。仅用一年数据就制作出了可显示单个深海丘陵的重力图，精度远超以往。Scripps海洋学研究所称其为海底测绘的突破性工具。2026年最新成果展示了印度洋等区域的海底特征精细地图。
 - significance: Revolutionary seafloor mapping from space; reveals previously unknown seafloor features with unprecedented resolution
 - source: NASA / Scripps Institution of Oceanography 2025-2026
+
+### Global Hadal Exploration Programme (GHEP)
+
+- name: Global Hadal Exploration Programme (GHEP)
+- type: International deep-sea exploration program
+- operator: Institute of Deep-sea Science and Engineering, CAS
+- country: China (UN-approved international initiative)
+- year: 2025-2035 (10-year mission)
+- description: A 10-year multidisciplinary initiative led by the Institute of Deep-sea Science and Engineering of the Chinese Academy of Sciences, officially approved by the United Nations as part of the Ocean Decade. Aims to investigate biodiversity, ecosystems, pollution, and geological processes unique to the hadal zone (6,000m to ~11,000m depth). A pioneering international effort for hadal zone exploration.
+- source: UN Ocean Decade, IDSSE-CAS 2025
+
+### China South China Sea Underwater Research Station
+
+- name: China South China Sea Underwater Research Station
+- type: Manned underwater research facility
+- operator: Chinese Academy of Sciences
+- country: China
+- year: 2025-2026 (approved/construction)
+- description: China approved a one-of-a-kind research facility to be anchored 2,000 metres under the South China Sea, where scientists will live and work. This represents a major infrastructure investment for long-term deep-sea research.
+- source: Chinese Academy of Sciences 2025-2026
+
+### Schmidt Ocean Institute 2026 South Atlantic Expedition
+
+- name: Schmidt Ocean Institute 2026 South Atlantic Expedition
+- type: Deep-sea expedition
+- operator: Schmidt Ocean Institute
+- country: International
+- year: 2026
+- description: In 2026, Schmidt Ocean Institute continues exploring the Southern Atlantic, one of the least explored marine regions on Earth. From deep waters off Brazil to seamounts, the expedition discovered 31 new species in just two weeks of exploration. Updated 10-Year Expedition Map announced.
+- source: Schmidt Ocean Institute 2026
+
+### NOAA Ocean Exploration 2025 Field Season
+
+- name: NOAA Ocean Exploration 2025 Field Season
+- type: Government deep-sea exploration
+- operator: NOAA Ocean Exploration
+- country: USA
+- year: 2025
+- description: NOAA Ocean Exploration led a remotely operated vehicle (ROV) and mapping expedition on NOAA Ship Okeanos Explorer to explore deep waters. Part of ongoing US government efforts to map and characterize the deep ocean.
+- source: NOAA Ocean Exploration 2025
+
+### E/V Nautilus 2025 Pacific Field Season
+
+- name: E/V Nautilus 2025 Pacific Field Season
+- type: Deep-sea expedition
+- operator: Ocean Exploration Trust
+- country: USA
+- year: 2025
+- description: E/V Nautilus successfully completed a six-month field season consisting of seven multi-disciplinary expeditions exploring the Pacific Ocean in 2025. The expeditions covered diverse deep-sea habitats and geological features.
+- source: Ocean Exploration Trust 2025
 
 ## underwater_tech
 

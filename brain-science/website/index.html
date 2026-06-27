@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<meta name="google-site-verification" content="PENDING_VERIFICATION" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>脑科学知识引擎 - Brain Science Knowledge Engine</title>
@@ -48,6 +49,8 @@
   overflow: hidden;
 }
 
+
+@media(max-width:768px){div[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
@@ -58,15 +61,54 @@
     <a href="#bci">脑机接口</a>
     <a href="https://genetech.tools" style="color:var(--accent2)">← 主站</a>
     <a href="https://genetech.tools/banned-words" style="color:#ff6b6b;font-weight:600" target="_blank">🛡️ 违禁词检测</a>
-      <a href="http://150.158.119.19:8420" style="color:#8b5cf6;font-weight:600" target="_blank">🤖 AI工具</a>
-  </div>
+      </div>
 </div></div>
 <div class="hero">
   <h1>🧠 <span>脑科学知识引擎</span></h1>
   <p>脑区、神经递质、脑机接口、神经退行性疾病、认知科学一站式查询</p>
   <input class="search" placeholder="搜索..." oninput="handleSearch(this.value)">
   <div class="stats" style="margin-top:24px"><div class="stat"><div class="stat-num">8</div><div class="stat-label">脑区</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">脑机接口</div></div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">脑机接口</div></div>
+  <!-- 三大板块入口 -->
+  <div style="max-width:1200px;margin:0 auto 30px;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+    <!-- 板块① 知识库 -->
+    <div style="background:var(--bg2);border:2px solid #ec4899;border-radius:16px;padding:20px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;right:0;background:#ec4899;color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:0 0 0 8px">板块①</div>
+      <div style="font-size:28px;margin-bottom:8px">🧠</div>
+      <div style="font-size:16px;font-weight:700;color:#ec4899;margin-bottom:4px">知识库</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:12px">46实体 · 8BCI设备 · 8脑疾病 · 10脑区 · 5意识研究 · 7神经技术 · 8神经递质</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <a href="#" style="font-size:11px;padding:4px 10px;background:rgba(255,255,255,0.08);color:#ec4899;border-radius:8px;text-decoration:none">浏览数据</a>
+        <a href="/api/data.json" target="_blank" style="font-size:11px;padding:4px 10px;background:rgba(255,255,255,0.08);color:#ec4899;border-radius:8px;text-decoration:none">API</a>
+        <a href="/llms.txt" target="_blank" style="font-size:11px;padding:4px 10px;background:rgba(255,255,255,0.08);color:#ec4899;border-radius:8px;text-decoration:none">LLM索引</a>
+      </div>
+    </div>
+    <!-- 板块③ Pro变现 -->
+    <div style="background:var(--bg2);border:2px solid #f59e0b;border-radius:16px;padding:20px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;right:0;background:#f59e0b;color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:0 0 0 8px">板块③</div>
+      <div style="font-size:28px;margin-bottom:8px">💎</div>
+      <div style="font-size:16px;font-weight:700;color:#f59e0b;margin-bottom:4px">Pro 订阅</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:12px">完整数据库 · API访问 · MCP Server · 从$19/月</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <a href="/credits.html" style="font-size:11px;padding:4px 10px;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:8px;text-decoration:none">💎 定价</a>
+        <a href="/order.html" style="font-size:11px;padding:4px 10px;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:8px;text-decoration:none">🛒 订购</a>
+        <a href="/api/openapi.json" target="_blank" style="font-size:11px;padding:4px 10px;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:8px;text-decoration:none">🔌 API</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 场景化CTA -->
+  <div style="max-width:1200px;margin:0 auto 30px;padding:0 20px">
+    <div style="background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1px solid var(--border);border-radius:16px;padding:24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:250px">
+        <div style="font-size:15px;font-weight:700;margin-bottom:6px">💡 用AI分析这些数据</div>
+        <div style="font-size:13px;color:var(--text2)">用ATEX AI对话深度分析数据，用TTS生成口播音频，用图像理解提取图表，用浏览器自动化采集更多信息</div>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
 </div>
 <div class="section" id="brain_regions">
   <h2>🧠 脑区</h2>
@@ -183,4 +225,90 @@ function closeModal(){document.getElementById('modal').classList.remove('active'
 </div>
 
 <script src="/anti-scrape.js"></script>
+
+
+
+
+v>
+
+
+
+
+<!-- Knowledge Engine Ecosystem Navigation -->
+<div id="kb-ecosystem-nav" style="position:fixed;bottom:0;left:0;right:0;background:#0a0e17;border-top:1px solid #1e2d4a;padding:8px 16px;z-index:9998;display:flex;gap:6px;overflow-x:auto;align-items:center;font-size:12px;font-family:system-ui,sans-serif">
+<span style="color:#64748b;white-space:nowrap;font-weight:600">🔗 知识引擎生态:</span>
+<a href="https://genetech.tools" target="_blank" title="基因技术">🧬 基因技术</a>
+<a href="https://tcm.genetech.tools" target="_blank" title="中医药">🌿 中医药</a>
+<a href="https://agent.genetech.tools" target="_blank" title="Agent生态">🤖 Agent生态</a>
+<a href="https://robot.genetech.tools" target="_blank" title="机器人">⚙️ 机器人</a>
+<a href="https://quantum.genetech.tools" target="_blank" title="量子计算">⚛️ 量子计算</a>
+<a href="https://brain.genetech.tools" target="_blank" title="脑科学" style="border-color:#ec4899;background:#ec489920">🧠 脑科学</a>
+<a href="https://nuclear.genetech.tools" target="_blank" title="核能">☢️ 核能</a>
+<a href="https://exo.genetech.tools" target="_blank" title="地外科学">🪐 地外科学</a>
+<a href="https://mineral.genetech.tools" target="_blank" title="外星矿物">💎 外星矿物</a>
+<a href="https://deepsea.genetech.tools" target="_blank" title="深海科技">🌊 深海科技</a>
+<a href="https://energy.genetech.tools" target="_blank" title="新能源">⚡ 新能源</a>
+<a href="https://life.genetech.tools" target="_blank" title="生命科学">🔬 生命科学</a>
+<a href="https://aishield.tools" target="_blank" title="ATEX Agent工具平台" style="border-color:#8b5cf6;background:#8b5cf620">🛡️ AIShield</a>
+<a href="/credits.html" style="border-color:#f59e0b;background:#f59e0b20;white-space:nowrap">💎 升级Pro</a>
+</div>
+
+
+<!-- Ecosystem Footer -->
+<div style="background:#0d1117;border-top:2px solid #1e2d4a;padding:24px;margin-top:40px">
+<div style="max-width:1200px;margin:0 auto">
+<div style="text-align:center;margin-bottom:16px">
+<span style="color:#94a3b8;font-size:14px">🔗 前沿科技知识引擎生态 — 12站联动，数据互通</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:16px">
+  <a href="https://genetech.tools" target="_blank">🧬 基因技术</a>
+  <a href="https://tcm.genetech.tools" target="_blank">🌿 中医药</a>
+  <a href="https://agent.genetech.tools" target="_blank">🤖 Agent生态</a>
+  <a href="https://robot.genetech.tools" target="_blank">⚙️ 机器人</a>
+  <a href="https://quantum.genetech.tools" target="_blank">⚛️ 量子计算</a>
+  <a href="https://brain.genetech.tools" target="_blank" style="color:#ec4899;font-weight:700">🧠 脑科学</a>
+  <a href="https://nuclear.genetech.tools" target="_blank">☢️ 核能</a>
+  <a href="https://exo.genetech.tools" target="_blank">🪐 地外科学</a>
+  <a href="https://mineral.genetech.tools" target="_blank">💎 外星矿物</a>
+  <a href="https://deepsea.genetech.tools" target="_blank">🌊 深海科技</a>
+  <a href="https://energy.genetech.tools" target="_blank">⚡ 新能源</a>
+  <a href="https://life.genetech.tools" target="_blank">🔬 生命科学</a>
+</div>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+<a href="https://aishield.tools" target="_blank" style="color:#8b5cf6">🤖 AIShield AI安全平台</a>
+<a href="/credits.html" style="color:#f59e0b">💎 Pro订阅 / 数据下载</a>
+<a href="/agent-discovery.json" style="color:#06b6d4">🔌 Agent可读接口</a>
+</div>
+</div>
+</div>
+
+
+<!-- Contextual Cross-Site Recommendations -->
+<div style="max-width:1200px;margin:40px auto;padding:0 20px">
+<div style="background:linear-gradient(135deg,#0d1117,#111827);border:1px solid #1e2d4a;border-radius:16px;padding:24px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+<span style="font-size:1.4rem">🔗</span>
+<span style="font-size:1.1rem;font-weight:700;color:#e2e8f0">跨域知识推荐</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin-bottom:16px">在🧠 脑科学之外，以下知识引擎与当前领域有交叉研究：</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+  <a href="https://genetech.tools" target="_blank" style="display:block;background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:16px;text-decoration:none;color:inherit;transition:all .3s;flex:1;min-width:200px" onmouseover="this.style.borderColor='#06b6d4'" onmouseout="this.style.borderColor='#1e2d4a'">
+<div style="font-size:1.5rem;margin-bottom:4px">🧬</div>
+<div style="font-weight:700;color:#06b6d4;margin-bottom:4px">基因技术</div>
+<div style="font-size:.8rem;color:#94a3b8">神经基因治疗</div>
+</a>
+  <a href="https://life.genetech.tools" target="_blank" style="display:block;background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:16px;text-decoration:none;color:inherit;transition:all .3s;flex:1;min-width:200px" onmouseover="this.style.borderColor='#10b981'" onmouseout="this.style.borderColor='#1e2d4a'">
+<div style="font-size:1.5rem;margin-bottom:4px">🔬</div>
+<div style="font-weight:700;color:#10b981;margin-bottom:4px">生命科学</div>
+<div style="font-size:.8rem;color:#94a3b8">衰老逆转 → 神经保护</div>
+</a>
+  <a href="https://robot.genetech.tools" target="_blank" style="display:block;background:#111827;border:1px solid #1e2d4a;border-radius:12px;padding:16px;text-decoration:none;color:inherit;transition:all .3s;flex:1;min-width:200px" onmouseover="this.style.borderColor='#f97316'" onmouseout="this.style.borderColor='#1e2d4a'">
+<div style="font-size:1.5rem;margin-bottom:4px">⚙️</div>
+<div style="font-weight:700;color:#f97316;margin-bottom:4px">机器人</div>
+<div style="font-size:.8rem;color:#94a3b8">BCI → 神经接口硬件</div>
+</a>
+</div>
+</div>
+</div>
+
 </body></html>
