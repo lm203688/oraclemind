@@ -4,11 +4,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   reactStrictMode: false,
-  // 确保静态资源正确缓存
   async headers() {
     return [
       {
