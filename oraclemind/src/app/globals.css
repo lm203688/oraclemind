@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-serif-sc: var(--font-serif-sc), 'Noto Serif SC', serif;
+
+  /* ── 实验室冷感配色 ── */
+  --color-lab-cyan: oklch(0.70 0.12 180);        /* 实验青 — 数据/现代Agent */
+  --color-lab-cyan-dim: oklch(0.55 0.10 180);
+  --color-lab-cyan-bright: oklch(0.78 0.14 180);
+
+  --color-lab-bronze: oklch(0.65 0.10 50);        /* 古铜金 — 古典验证Agent */
+  --color-lab-bronze-dim: oklch(0.50 0.08 50);
+  --color-lab-bronze-bright: oklch(0.75 0.12 50);
+
+  --color-lab-alert: oklch(0.65 0.18 25);          /* 警示红 */
+  --color-lab-success: oklch(0.70 0.14 145);       /* 实验绿 */
+  --color-lab-neutral: oklch(0.55 0.015 200);      /* 雾灰 */
+
+  /* 五行配色（保留用于古典验证展示，但降饱和度匹配冷感） */
+  --color-fire: oklch(0.62 0.16 25);
+  --color-fire-light: oklch(0.72 0.13 25);
+  --color-water: oklch(0.58 0.12 240);
+  --color-water-light: oklch(0.68 0.10 240);
+  --color-wood: oklch(0.62 0.14 145);
+  --color-wood-light: oklch(0.72 0.12 145);
+  --color-metal: oklch(0.72 0.04 95);
+  --color-metal-light: oklch(0.82 0.03 95);
+  --color-earth: oklch(0.68 0.10 60);
+  --color-earth-light: oklch(0.78 0.08 60);
+}
+
+/* ── Dark mode (default) — 实验室冷感深墨青 ── */
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.13 0.005 200);
+  --foreground: oklch(0.85 0.01 200);
+  --card: oklch(0.16 0.008 200);
+  --card-foreground: oklch(0.85 0.01 200);
+  --popover: oklch(0.16 0.008 200);
+  --popover-foreground: oklch(0.85 0.01 200);
+  --primary: oklch(0.70 0.12 180);
+  --primary-foreground: oklch(0.13 0.005 200);
+  --secondary: oklch(0.20 0.008 200);
+  --secondary-foreground: oklch(0.85 0.01 200);
+  --muted: oklch(0.20 0.008 200);
+  --muted-foreground: oklch(0.55 0.015 200);
+  --accent: oklch(0.22 0.015 200);
+  --accent-foreground: oklch(0.85 0.01 200);
+  --destructive: oklch(0.62 0.18 25);
+  --border: oklch(1 0 0 / 6%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.70 0.12 180);
+  --chart-1: oklch(0.70 0.12 180);   /* 实验青 */
+  --chart-2: oklch(0.65 0.10 50);    /* 古铜金 */
+  --chart-3: oklch(0.62 0.14 145);   /* 实验绿 */
+  --chart-4: oklch(0.62 0.16 25);    /* 警示红 */
+  --chart-5: oklch(0.60 0.10 280);   /* 紫色（辅助） */
+  --sidebar: oklch(0.14 0.005 200);
+  --sidebar-foreground: oklch(0.85 0.01 200);
+  --sidebar-primary: oklch(0.70 0.12 180);
+  --sidebar-primary-foreground: oklch(0.13 0.005 200);
+  --sidebar-accent: oklch(0.20 0.015 200);
+  --sidebar-accent-foreground: oklch(0.85 0.01 200);
+  --sidebar-border: oklch(1 0 0 / 6%);
+  --sidebar-ring: oklch(0.70 0.12 180);
+
+  /* 五行暗色 */
+  --color-fire: oklch(0.62 0.18 25);
+  --color-fire-light: oklch(0.55 0.15 25);
+  --color-water: oklch(0.60 0.15 240);
+  --color-water-light: oklch(0.52 0.12 240);
+  --color-wood: oklch(0.65 0.18 145);
+  --color-wood-light: oklch(0.55 0.14 145);
+  --color-metal: oklch(0.78 0.05 95);
+  --color-metal-light: oklch(0.68 0.04 95);
+  --color-earth: oklch(0.70 0.14 60);
+  --color-earth-light: oklch(0.60 0.12 60);
+}
+
+.dark {
+  /* 与:root相同，明确dark模式 */
+  --background: oklch(0.13 0.005 200);
+  --foreground: oklch(0.85 0.01 200);
+  --card: oklch(0.16 0.008 200);
+  --card-foreground: oklch(0.85 0.01 200);
+  --popover: oklch(0.16 0.008 200);
+  --popover-foreground: oklch(0.85 0.01 200);
+  --primary: oklch(0.70 0.12 180);
+  --primary-foreground: oklch(0.13 0.005 200);
+  --secondary: oklch(0.20 0.008 200);
+  --secondary-foreground: oklch(0.85 0.01 200);
+  --muted: oklch(0.20 0.008 200);
+  --muted-foreground: oklch(0.55 0.015 200);
+  --accent: oklch(0.22 0.015 200);
+  --accent-foreground: oklch(0.85 0.01 200);
+  --destructive: oklch(0.62 0.18 25);
+  --border: oklch(1 0 0 / 6%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.70 0.12 180);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ── Lab Glass Card ── */
+.glass-card {
+  background: oklch(0.16 0.008 200 / 70%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid oklch(0.70 0.12 180 / 12%);
+}
+
+/* ── Cyan Glow (for data/modern) ── */
+.cyan-glow {
+  text-shadow: 0 0 20px oklch(0.70 0.12 180 / 25%), 0 0 40px oklch(0.70 0.12 180 / 10%);
+}
+
+.cyan-border-glow {
+  box-shadow: 0 0 15px oklch(0.70 0.12 180 / 12%), inset 0 0 15px oklch(0.70 0.12 180 / 4%);
+}
+
+/* ── Bronze Glow (for classical) ── */
+.bronze-glow {
+  text-shadow: 0 0 20px oklch(0.65 0.10 50 / 25%), 0 0 40px oklch(0.65 0.10 50 / 10%);
+}
+
+/* ── Data Grid Background (replaces star-field) ── */
+.data-grid {
+  background-image:
+    linear-gradient(oklch(0.70 0.12 180 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.70 0.12 180 / 4%) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.data-grid-fine {
+  background-image:
+    linear-gradient(oklch(0.70 0.12 180 / 2%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.70 0.12 180 / 2%) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* ── Probability Cloud (replaces cosmic glow) ── */
+.probability-cloud {
+  background: radial-gradient(
+    ellipse 60% 40% at 50% 30%,
+    oklch(0.70 0.12 180 / 8%),
+    transparent 70%
+  );
+}
+
+/* ── Scanline Animation (lab equipment vibe) ── */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.scanline::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    oklch(0.70 0.12 180 / 30%) 50%,
+    transparent 100%
+  );
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+}
+
+/* ── Pulse Animation (for active states) ── */
+@keyframes lab-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.lab-pulse {
+  animation: lab-pulse 2s ease-in-out infinite;
+}
+
+/* ── Shimmer (for loading states) ── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    oklch(0.20 0.008 200 / 0%) 0%,
+    oklch(0.70 0.12 180 / 8%) 50%,
+    oklch(0.20 0.008 200 / 0%) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* ── Custom Scrollbar ── */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: oklch(0.70 0.12 180 / 15%);
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.70 0.12 180 / 30%);
+}
+
+/* ── Typography ── */
+.font-mono-tabular {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Cross-validation matrix cell ── */
+.matrix-cell {
+  transition: all 0.2s ease;
+}
+
+.matrix-cell:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
