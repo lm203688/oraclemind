@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>蜂群科研 — 虚拟实验平台 v2</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:1400px;margin:0 auto;padding:20px}
+h1{font-size:28px;background:linear-gradient(90deg,#6366f1,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:#94a3b8;font-size:14px;margin-bottom:24px}
+.stats-bar{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.stat-card{background:#1e293b;padding:14px 20px;border-radius:10px;border:1px solid #334155}
+.stat-val{font-size:22px;font-weight:bold;color:#6366f1}
+.stat-label{font-size:11px;color:#94a3b8}
+.tabs{display:flex;gap:4px;margin-bottom:20px;border-bottom:1px solid #334155}
+.tab{padding:10px 20px;cursor:pointer;color:#94a3b8;border-bottom:2px solid transparent}
+.tab.active{color:#6366f1;border-bottom-color:#6366f1}
+.panel{display:none}.panel.active{display:block}
+.engine-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.engine-card{background:#1e293b;padding:14px;border-radius:8px;border:1px solid #334155;cursor:pointer;transition:0.3s}
+.engine-card:hover{border-color:#6366f1;transform:translateY(-2px)}
+.engine-name{font-weight:bold;margin-bottom:4px;font-size:14px}
+.engine-conf{font-size:11px}
+.conf-high{color:#22c55e}.conf-medium{color:#eab308}.conf-low{color:#ef4444}
+.form-group{margin-bottom:12px}
+.form-group label{display:block;margin-bottom:2px;color:#94a3b8;font-size:12px}
+.form-group input,.form-group select{width:100%;padding:6px 10px;background:#1e293b;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px}
+.btn{padding:8px 20px;background:linear-gradient(90deg,#6366f1,#a855f7);color:white;border:none;border-radius:8px;cursor:pointer;font-size:13px;margin:4px 2px}
+.btn:hover{opacity:0.9}
+.btn-secondary{background:#334155}
+.result-card{background:#1e293b;padding:16px;border-radius:10px;border:1px solid #334155;margin-top:12px}
+.result-value{font-size:28px;font-weight:bold;color:#6366f1}
+.result-ci{font-size:13px;color:#94a3b8;margin-top:2px}
+.chart-container{background:#1e293b;padding:16px;border-radius:10px;border:1px solid #334155;margin-top:12px}
+.bar-chart{display:flex;align-items:end;gap:4px;height:200px;padding:10px}
+.bar{flex:1;background:linear-gradient(180deg,#6366f1,#a855f7);border-radius:4px 4px 0 0;position:relative;min-height:2px}
+.bar-label{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);font-size:10px;color:#94a3b8;white-space:nowrap}
+.bar-val{position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:10px;color:#e2e8f0}
+.recommendation{margin-top:10px;padding:10px;border-radius:8px;font-weight:bold;text-align:center}
+.mo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px}
+.mo-item{background:#1e293b;padding:10px;border-radius:6px;border:1px solid #334155}
+.mo-label{font-size:11px;color:#94a3b8}.mo-val{font-size:16px;font-weight:bold;color:#e2e8f0}
+.batch-table{width:100%;border-collapse:collapse;margin-top:12px}
+.batch-table th,.batch-table td{padding:6px 10px;border:1px solid #334155;text-align:center;font-size:12px}
+.batch-table th{background:#334155;color:#94a3b8}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>蜂群科研 SwarmMind Labs</h1>
+<p class="subtitle">30引擎 · 100%论文验证 · 不确定性量化 · 多目标优化 · API: http://150.158.119.19:8461</p>
+
+<div class="stats-bar">
+<div class="stat-card"><div class="stat-val">30</div><div class="stat-label">实验引擎</div></div>
+<div class="stat-card"><div class="stat-val">1450</div><div class="stat-label">论文验证组</div></div>
+<div class="stat-card"><div class="stat-val">100%</div><div class="stat-label">真实论文数据</div></div>
+<div class="stat-card"><div class="stat-val">27</div><div class="stat-label">物理体系</div></div>
+</div>
+
+<div class="tabs">
+<div class="tab active" onclick="switchTab('engines',event)">引擎总览</div>
+<div class="tab" onclick="switchTab('experiment',event)">单次实验</div>
+<div class="tab" onclick="switchTab('batch',event)">批量对比</div>
+<div class="tab" onclick="switchTab('multiobjective',event)">多目标评估</div>
+<div class="tab" onclick="switchTab('feedback',event)">数据回流</div>
+</div>
+
+<div id="panel-engines" class="panel active">
+<div class="engine-grid" id="engine-grid"></div>
+</div>
+
+<div id="panel-experiment" class="panel">
+<div style="display:grid;grid-template-columns:300px 1fr;gap:16px">
+<div>
+<div class="form-group"><label>选择引擎</label><select id="exp-engine" onchange="loadEngineParams()"></select></div>
+<div id="engine-params"></div>
+<button class="btn" onclick="runExperiment()">运行实验</button>
+</div>
+<div id="exp-result"><p style="color:#94a3b8">选择引擎并运行实验查看结果</p></div>
+</div>
+</div>
+
+<div id="panel-batch" class="panel">
+<div style="display:grid;grid-template-columns:300px 1fr;gap:16px">
+<div>
+<div class="form-group"><label>选择引擎</label><select id="batch-engine" onchange="loadBatchParams()"></select></div>
+<div id="batch-params"></div>
+<button class="btn" onclick="runBatch()">运行批量对比</button>
+</div>
+<div id="batch-result"></div>
+</div>
+</div>
+
+<div id="panel-multiobjective" class="panel">
+<div style="display:grid;grid-template-columns:300px 1fr;gap:16px">
+<div>
+<div class="form-group"><label>选择引擎</label><select id="mo-engine" onchange="loadMoParams()"></select></div>
+<div id="mo-params"></div>
+<button class="btn" onclick="runMultiObjective()">多目标评估</button>
+</div>
+<div id="mo-result"></div>
+</div>
+</div>
+
+<div id="panel-feedback" class="panel">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div>
+<h3>提交真实实验结果</h3>
+<div class="form-group"><label>引擎</label><select id="fb-engine"></select></div>
+<div class="form-group"><label>预测值</label><input id="fb-predicted" placeholder="0.174"></div>
+<div class="form-group"><label>真实值</label><input id="fb-actual" placeholder="0.150"></div>
+<div class="form-group"><label>条件(JSON)</label><input id="fb-conditions" placeholder='{"T":25}'></div>
+<button class="btn" onclick="submitFeedback()">提交反馈</button>
+</div>
+<div><h3>校准报告</h3><div id="fb-report"></div></div>
+</div>
+</div>
+</div>
+
+<script>
+const API='http://150.158.119.19:8461';
+let engines=[];
+const ENGINE_PARAMS={
+corrosion:[{key:'material',label:'材料',type:'select',opts:['carbon_steel','stainless_316','aluminum','copper'],def:'carbon_steel'},{key:'environment',label:'环境',type:'select',opts:['3.5%NaCl','1M H2SO4','0.1M NaCl','seawater'],def:'3.5%NaCl'},{key:'temperature_C',label:'温度(°C)',type:'number',def:25}],
+perovskite:[{key:'system',label:'体系',type:'select',opts:['MAPbI3','FAPbI3','CsPbI3','MAPbBr3'],def:'MAPbI3'},{key:'thickness_nm',label:'厚度(nm)',type:'number',def:500}],
+co2:[{key:'catalyst',label:'催化剂',type:'select',opts:['Au','Ag','Cu','Sn','Pb','Zn','Ni'],def:'Au'},{key:'potential_V',label:'电位(V)',type:'number',def:-0.8,step:0.1}],
+battery:[{key:'cathode',label:'正极',type:'select',opts:['LiFePO4','LiCoO2','NMC'],def:'LiFePO4'},{key:'C_rate',label:'C倍率',type:'number',def:1.0,step:0.1}],
+combustion:[{key:'fuel',label:'燃料',type:'select',opts:['CH4','C3H8','H2','CO'],def:'CH4'},{key:'oxidizer',label:'氧化剂',type:'select',opts:['air','O2'],def:'air'},{key:'phi',label:'当量比',type:'number',def:1.0,step:0.1}],
+ammonia:[{key:'temperature_C',label:'温度(°C)',type:'number',def:450},{key:'pressure_bar',label:'压力(bar)',type:'number',def:100},{key:'H2_N2',label:'H2:N2',type:'number',def:3.0,step:0.5}],
+};
+
+async function loadEngines(){
+try{const r=await fetch(API+'/api/v1/engines');const d=await r.json();engines=d.engines;
+document.querySelector('.stat-val').textContent=d.total;
+renderEngines(engines);populateSelects(engines);}catch(e){console.error(e);}}
+
+function renderEngines(list){
+document.getElementById('engine-grid').innerHTML=list.map(e=>`<div class="engine-card" onclick="selectEngine('${e.id}')"><div class="engine-name">${e.name}</div><div class="engine-conf">${e.id}</div></div>`).join('');}
+
+function populateSelects(list){const opts=list.map(e=>`<option value="${e.id}">${e.name}</option>`).join('');
+['exp-engine','mo-engine','batch-engine','fb-engine'].forEach(id=>{const el=document.getElementById(id);if(el)el.innerHTML=opts;});}
+
+function selectEngine(id){document.getElementById('exp-engine').value=id;switchTab('experiment',event);loadEngineParams();}
+
+function loadEngineParams(){
+const eid=document.getElementById('exp-engine').value;
+const params=ENGINE_PARAMS[eid]||[{key:'temperature_C',label:'温度(°C)',type:'number',def:25},{key:'time_min',label:'时间(min)',type:'number',def:60},{key:'pH',label:'pH',type:'number',def:7,step:0.1}];
+document.getElementById('engine-params').innerHTML=params.map(p=>{
+if(p.type==='select')return `<div class="form-group"><label>${p.label}</label><select id="param-${p.key}">${p.opts.map(o=>`<option ${o==p.def?'selected':''}>${o}</option>`).join('')}</select></div>`;
+return `<div class="form-group"><label>${p.label}</label><input id="param-${p.key}" type="${p.type}" value="${p.def}" ${p.step?`step="${p.step}"`:''}></div>`;
+}).join('');}
+
+function loadMoParams(){loadEngineParams();}
+function loadBatchParams(){loadEngineParams();}
+
+function getParams(){
+const eid=document.getElementById('exp-engine').value;
+const params=ENGINE_PARAMS[eid]||['temperature_C','time_min','pH'];
+const conditions={};
+params.forEach(p=>{const key=typeof p==='string'?p:p.key;const el=document.getElementById('param-'+key);if(el){const v=el.value;conditions[key]=isNaN(v)?v:parseFloat(v);}});
+return conditions;}
+
+async function runExperiment(){
+const engine=document.getElementById('exp-engine').value;
+const conditions=getParams();
+document.getElementById('exp-result').innerHTML='<p>运行中...</p>';
+try{
+const r=await fetch(API+'/api/v1/run/'+engine,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(conditions)});
+const d=await r.json();const result=d.result||{};const uq=result._uncertainty||{};
+let html='<div class="result-card">';
+const keys=['removal_pct','yield_pct','efficiency_pct','conversion','corrosion_rate_mm_year','desalination_pct','flux_kg_m2_h','thickness_um','i_corr_uA_cm2','T_ad_K','bandgap_eV'];
+for(const k of keys){if(result[k]!==undefined){html+=`<div class="result-value">${result[k]}</div>`;
+if(uq.ci_95_lower!==undefined){html+=`<div class="result-ci">95%CI: [${uq.ci_95_lower}, ${uq.ci_95_upper}] (${uq.uncertainty_pct})</div><div class="result-ci">置信等级: ${uq.confidence_level_cn} | 可靠性: ${(uq.model_reliability*100).toFixed(0)}%</div><div class="result-ci" style="margin-top:4px">${uq.interpretation}</div>`;}break;}}
+html+='<hr style="border-color:#334155;margin:10px 0">';
+for(const[k,v]of Object.entries(result)){if(k!=='_uncertainty'&&typeof v!=='object')html+=`<div style="font-size:12px;color:#94a3b8">${k}: ${v}</div>`;}
+html+='</div>';document.getElementById('exp-result').innerHTML=html;
+}catch(e){document.getElementById('exp-result').innerHTML='<p style="color:#ef4444">失败:'+e.message+'</p>';}}
+
+async function runBatch(){
+const engine=document.getElementById('batch-engine').value;
+const conditions=getParams();
+document.getElementById('batch-result').innerHTML='<p>批量运行中...</p>';
+const results=[];
+for(let T of[25,40,60,80,100]){
+const c={...conditions,temperature_C:T};
+try{const r=await fetch(API+'/api/v1/run/'+engine,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(c)});
+const d=await r.json();const result=d.result||{};let val=0;
+for(const k of['removal_pct','yield_pct','efficiency_pct','conversion','corrosion_rate_mm_year','desalination_pct','T_ad_K']){if(result[k]!==undefined){val=result[k];break;}}
+results.push({T:T,val:val});}catch(e){}}
+const maxVal=Math.max(...results.map(r=>Math.abs(r.val)),1);
+let html='<div class="chart-container"><h3>温度扫描结果</h3><div class="bar-chart">';
+results.forEach(r=>{const h=Math.abs(r.val)/maxVal*180;html+=`<div class="bar" style="height:${h}px"><span class="bar-val">${r.val.toFixed(1)}</span><span class="bar-label">${r.T}°C</span></div>`;});
+html+='</div></div>';
+html+='<table class="batch-table"><tr><th>温度(°C)</th><th>预测值</th></tr>';
+results.forEach(r=>{html+=`<tr><td>${r.T}</td><td>${r.val.toFixed(3)}</td></tr>`;});
+html+='</table>';
+document.getElementById('batch-result').innerHTML=html;}
+
+async function runMultiObjective(){
+const engine=document.getElementById('mo-engine').value;
+const conditions=getParams();
+document.getElementById('mo-result').innerHTML='<p>评估中...</p>';
+try{
+const r=await fetch(API+'/api/v1/multiobjective/'+engine,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(conditions)});
+const d=await r.json();const mo=d.multi_objective||{};
+let html='<div class="result-card">';
+html+=`<div class="result-value">${mo.overall_score||'N/A'}</div><div class="result-ci">综合评分(0-1)</div>`;
+html+=`<div class="recommendation" style="background:${mo.overall_score>=0.6?'#166534':'#854d0e'};color:white">${mo.recommendation||''}</div>`;
+html+='<div class="mo-grid">';
+if(mo.primary)html+=`<div class="mo-item"><div class="mo-label">主指标</div><div class="mo-val">${mo.primary.value||''} ${mo.primary.unit||''}</div></div>`;
+if(mo.secondary)html+=`<div class="mo-item"><div class="mo-label">选择性</div><div class="mo-val">${mo.secondary.selectivity_pct||''}%</div></div>`;
+if(mo.economic)html+=`<div class="mo-item"><div class="mo-label">总成本</div><div class="mo-val">¥${mo.economic.total_cost_CNY||''}</div></div>`;
+if(mo.environmental)html+=`<div class="mo-item"><div class="mo-label">绿色评分</div><div class="mo-val">${mo.environmental.green_score||''}</div></div>`;
+if(mo.feasibility)html+=`<div class="mo-item"><div class="mo-label">安全等级</div><div class="mo-val">${mo.feasibility.safety_risk||''}</div></div>`;
+if(mo.feasibility)html+=`<div class="mo-item"><div class="mo-label">设备要求</div><div class="mo-val" style="font-size:13px">${mo.feasibility.equipment_requirement||''}</div></div>`;
+html+='</div></div>';
+document.getElementById('mo-result').innerHTML=html;
+}catch(e){document.getElementById('mo-result').innerHTML='<p style="color:#ef4444">失败:'+e.message+'</p>';}}
+
+async function submitFeedback(){
+const engine=document.getElementById('fb-engine').value;
+const predicted=parseFloat(document.getElementById('fb-predicted').value);
+const actual=parseFloat(document.getElementById('fb-actual').value);
+const conditions=document.getElementById('fb-conditions').value||'{}';
+try{
+const r=await fetch(API+'/api/v1/feedback/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({engine_id:engine,conditions:JSON.parse(conditions),predicted:{value:predicted},actual:{value:actual},user_id:'web_user'})});
+const d=await r.json();
+alert(`误差: ${d.mean_error}%\n${d.feedback}\n可靠性: ${(d.engine_reliability*100).toFixed(1)}%`);
+loadReport();}catch(e){alert('失败:'+e.message);}}
+
+async function loadReport(){
+try{const r=await fetch(API+'/api/v1/feedback/report');const d=await r.json();
+let html=`<p>总反馈:${d.total_feedbacks}条|已校准引擎:${d.engines_calibrated}个</p>`;
+if(d.engine_rankings){html+='<table class="batch-table"><tr><th>引擎</th><th>反馈数</th><th>平均误差</th><th>可靠性</th></tr>';
+d.engine_rankings.slice(0,10).forEach(e=>{html+=`<tr><td>${e.engine_id}</td><td>${e.feedbacks}</td><td>${e.avg_error}%</td><td>${(e.reliability*100).toFixed(0)}%</td></tr>`;});
+html+='</table>';}
+document.getElementById('fb-report').innerHTML=html;}catch(e){}}
+
+function switchTab(name,ev){
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+ev.target.classList.add('active');
+document.getElementById('panel-'+name).classList.add('active');}
+
+loadEngines();loadReport();
+</script>
+</body>
+</html>

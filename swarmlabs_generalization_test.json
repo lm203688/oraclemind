@@ -1,0 +1,178 @@
+{
+  "method": "80/20 split, random seed=42",
+  "total_engines": 32,
+  "train_accuracy": {
+    "<3%": 3,
+    "<5%": 18,
+    "<8%": 32,
+    "<10%": 32
+  },
+  "test_accuracy": {
+    "<3%": 3,
+    "<5%": 13,
+    "<8%": 32,
+    "<10%": 32
+  },
+  "details": [
+    {
+      "engine": "adsorption",
+      "train_mean": 6.6,
+      "test_mean": 5.8
+    },
+    {
+      "engine": "ammonia",
+      "train_mean": 4.5,
+      "test_mean": 4.0
+    },
+    {
+      "engine": "battery",
+      "train_mean": 2.6,
+      "test_mean": 3.0
+    },
+    {
+      "engine": "bioreactor",
+      "train_mean": 3.2,
+      "test_mean": 1.6
+    },
+    {
+      "engine": "co2",
+      "train_mean": 5.5,
+      "test_mean": 5.9
+    },
+    {
+      "engine": "combustion",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "complexometric",
+      "train_mean": 4.4,
+      "test_mean": 2.9
+    },
+    {
+      "engine": "corrosion",
+      "train_mean": 4.3,
+      "test_mean": 5.2
+    },
+    {
+      "engine": "crystal",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "distillation",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "drying",
+      "train_mean": 4.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "electrodialysis",
+      "train_mean": 4.5,
+      "test_mean": 4.3
+    },
+    {
+      "engine": "electroplating",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "enzyme",
+      "train_mean": 3.0,
+      "test_mean": 3.1
+    },
+    {
+      "engine": "extraction",
+      "train_mean": 4.4,
+      "test_mean": 4.3
+    },
+    {
+      "engine": "flocculation",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "fluidization",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "gassolid",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "ion_exchange",
+      "train_mean": 4.4,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "ionic_liquid",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "membrane_distillation",
+      "train_mean": 4.7,
+      "test_mean": 4.6
+    },
+    {
+      "engine": "membrane",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "molecular",
+      "train_mean": 4.8,
+      "test_mean": 4.5
+    },
+    {
+      "engine": "pcr",
+      "train_mean": 4.6,
+      "test_mean": 3.3
+    },
+    {
+      "engine": "perovskite",
+      "train_mean": 2.9,
+      "test_mean": 3.2
+    },
+    {
+      "engine": "photoFenton",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "photocatalysis",
+      "train_mean": 5.3,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "polymer",
+      "train_mean": 2.9,
+      "test_mean": 3.0
+    },
+    {
+      "engine": "quantum",
+      "train_mean": 4.8,
+      "test_mean": 3.9
+    },
+    {
+      "engine": "scfluid",
+      "train_mean": 5.0,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "sonochemical",
+      "train_mean": 4.3,
+      "test_mean": 5.0
+    },
+    {
+      "engine": "validation",
+      "train_mean": 4.1,
+      "test_mean": 5.0
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "experiment": "EGFR抑制剂合成-路径A",
+    "predicted": 0.39999999999999997,
+    "actual": 0.0,
+    "error": 0.39999999999999997,
+    "accurate": false,
+    "phase": "feedback",
+    "timestamp": "2026-07-05 22:15:49"
+  },
+  {
+    "experiment": "EGFR抑制剂合成-路径A",
+    "predicted": 0.39999999999999997,
+    "actual": 0.0,
+    "error": 0.39999999999999997,
+    "accurate": false,
+    "phase": "feedback",
+    "timestamp": "2026-07-05 22:15:58"
+  },
+  {
+    "experiment": "EGFR抑制剂合成",
+    "predicted": 0.39999999999999997,
+    "actual": 0.0,
+    "error": 0.39999999999999997,
+    "accurate": false,
+    "phase": "feedback",
+    "timestamp": "2026-07-05 22:32:19"
+  },
+  {
+    "experiment": "EGFR",
+    "predicted": 0.5717888467368218,
+    "actual": 1.0,
+    "error": 0.42821115326317816,
+    "accurate": false,
+    "phase": "feedback",
+    "timestamp": "2026-07-05 22:33:43"
+  },
+  {
+    "experiment": "光催化",
+    "predicted": 0.5717888467368218,
+    "actual": 1.0,
+    "error": 0.42821115326317816,
+    "accurate": false,
+    "phase": "feedback",
+    "timestamp": "2026-07-06 07:40:50"
+  },
+  {
+    "experiment": "{'name': '光催化EGFR'}",
+    "predicted": 0.5717888467368218,
+    "actual": 1.0,
+    "actual_yield": 0.85,
+    "error": 0.42821115326317816,
+    "accurate": false,
+    "status": "off",
+    "phase": "feedback",
+    "timestamp": "2026-07-06 07:43:31"
+  },
+  {
+    "experiment": "EGFR抑制剂合成",
+    "predicted": 0.5717888467368218,
+    "actual": 1.0,
+    "actual_yield": 0.75,
+    "error": 0.42821115326317816,
+    "accurate": false,
+    "status": "off",
+    "phase": "feedback",
+    "timestamp": "2026-07-06 12:07:18"
+  },
+  {
+    "experiment": "EGFR抑制剂合成",
+    "predicted": 0.5717888467368218,
+    "actual": 1.0,
+    "error": 0.42821115326317816,
+    "accurate": false,
+    "phase": "feedback",
+    "timestamp": "2026-07-06 12:07:18"
+  }
+]

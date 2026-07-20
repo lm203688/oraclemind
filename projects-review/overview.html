@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>厉兴 · 项目总览</title>
+<style>
+  :root { --primary: #1a56db; --success: #057a55; --warning: #c27803; --danger: #c81e1e; --bg: #f0f4f8; --card-bg: #fff; --border: #e2e8f0; --text: #1e293b; --text-secondary: #64748b; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); padding: 32px 24px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 32px; margin-bottom: 4px; }
+  .subtitle { color: var(--text-secondary); margin-bottom: 32px; font-size: 15px; }
+  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; transition: box-shadow 0.2s; }
+  .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .card-icon { font-size: 28px; }
+  .card-title { font-size: 18px; font-weight: 700; }
+  .card-status { font-size: 12px; padding: 2px 10px; border-radius: 12px; font-weight: 600; }
+  .status-main { background: #fde8e8; color: var(--danger); }
+  .status-active { background: #fdf6b2; color: var(--warning); }
+  .status-planning { background: #e1effe; color: var(--primary); }
+  .card-desc { color: var(--text-secondary); font-size: 14px; margin-bottom: 12px; line-height: 1.5; }
+  .card-meta { display: flex; gap: 16px; font-size: 12px; color: var(--text-secondary); flex-wrap: wrap; }
+  .card-meta span { background: var(--bg); padding: 3px 8px; border-radius: 6px; }
+  .card-link { display: inline-block; margin-top: 12px; color: var(--primary); font-size: 13px; font-weight: 600; text-decoration: none; }
+  .card-link:hover { text-decoration: underline; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+  .stat-chip { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 16px; font-size: 13px; }
+  .stat-chip strong { font-size: 20px; display: block; }
+  .footer { font-size: 12px; color: var(--text-secondary); text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+  @media (max-width: 768px) { .projects { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📋 厉兴 · 项目总览</h1>
+  <p class="subtitle">2026年6月25日 · 5个项目归档</p>
+
+  <div class="stat-row">
+    <div class="stat-chip"><strong>5</strong>活跃项目</div>
+    <div class="stat-chip"><strong>30+</strong>专利持有</div>
+    <div class="stat-chip"><strong>18+</strong>机械臂品牌</div>
+    <div class="stat-chip"><strong>0 RMB</strong>月运维成本</div>
+  </div>
+
+  <div class="projects">
+    <!-- RoboParts -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🤖</span>
+        <span class="card-title">RoboParts 平台</span>
+        <span class="card-status status-main">主线</span>
+      </div>
+      <div class="card-desc">机器人零部件兼容性平台 · roboparts.cc · 4 API端点 · 18+品牌 · 34+夹爪 · Vercel+Supabase</div>
+      <div class="card-meta">
+        <span>API: 2 ready / 1 testing</span>
+        <span>收入: ¥0</span>
+        <span>GitHub: lm203688/roboparts</span>
+      </div>
+      <a class="card-link" href="RoboParts-Project-Docs/index.html">→ 项目文档</a>
+    </div>
+
+    <!-- Agent Swarm -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🧠</span>
+        <span class="card-title">Agent Swarm</span>
+        <span class="card-status status-active">活跃</span>
+      </div>
+      <div class="card-desc">本地5-Agent多智能体系统 · Supervisor + 4专业Agent · Ollama · LangGraph · 零API成本</div>
+      <div class="card-meta">
+        <span>RTX 3090/4090</span>
+        <span>Gemma4 + DeepSeek + Qwen</span>
+        <span>成本: ¥0</span>
+      </div>
+      <a class="card-link" href="agent-swarm/README.md">→ 项目文档</a>
+    </div>
+
+    <!-- ShopFlow -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🛍️</span>
+        <span class="card-title">ShopFlow 图像处理</span>
+        <span class="card-status status-active">活跃</span>
+      </div>
+      <div class="card-desc">电商产品图批量处理 · 20+图片 · 4-Agent流水线 · 800×800/200×200/WebP/水印</div>
+      <div class="card-meta">
+        <span>4 Agent编排</span>
+        <span>待处理: 20+张</span>
+        <span>输出: WebP</span>
+      </div>
+      <a class="card-link" href="ShopFlow-ImageProcessor/README.md">→ 项目文档</a>
+    </div>
+
+    <!-- TrashBin -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🗑️</span>
+        <span class="card-title">电动压缩垃圾桶</span>
+        <span class="card-status status-planning">概念</span>
+      </div>
+      <div class="card-desc">按钮式电动压缩垃圾桶 · ESP32 + L298N · 目标成本300-500 RMB · 安全防夹手</div>
+      <div class="card-meta">
+        <span>BOM: ¥301</span>
+        <span>ESP32-C3</span>
+        <span>DC电机驱动</span>
+      </div>
+      <a class="card-link" href="TrashBin-Hardware/README.md">→ 项目文档</a>
+    </div>
+
+    <!-- AutoResearchPro -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🔬</span>
+        <span class="card-title">AutoResearchPro</span>
+        <span class="card-status status-planning">规划</span>
+      </div>
+      <div class="card-desc">科研自动化系统 · 合并12个开源项目 · 文献检索→筛选→研读→综述全自动</div>
+      <div class="card-meta">
+        <span>12开源项目</span>
+        <span>Semantic Scholar</span>
+        <span>arXiv</span>
+      </div>
+      <a class="card-link" href="AutoResearchPro/README.md">→ 项目文档</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    打包生成于 2026-06-25 · 杭州 · 浙江建科物业管理有限公司 · 厉兴
+  </div>
+</div>
+</body>
+</html>

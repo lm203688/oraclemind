@@ -1,0 +1,260 @@
+{
+  "scout": {
+    "name": "scout",
+    "role": "情报员",
+    "title": "项目情报顾问",
+    "description": "数据采集、竞品监控、论文/专利追踪、行业趋势分析",
+    "capabilities": [
+      "Crossref API论文检索",
+      "PubMed医学文献检索",
+      "GitHub竞品仓库监控",
+      "行业趋势聚类分析",
+      "多源数据融合",
+      "实时情报推送"
+    ],
+    "tools": [
+      "web_search",
+      "crossref_api",
+      "pubmed_api",
+      "github_api",
+      "kb_search"
+    ],
+    "swarmlabs": "145引擎验证数据 + DataCollector多源采集 + SurveyBuilder文献综述",
+    "data_sources": "Crossref(14000+论文) + PubMed + GitHub + 14站知识库(6000+实体)"
+  },
+  "builder": {
+    "name": "builder",
+    "role": "构建师",
+    "title": "部署构建工程师",
+    "description": "代码部署、Cloudflare Pages发布、CI/CD、基础设施管理",
+    "capabilities": [
+      "Cloudflare Pages部署",
+      "GitHub仓库管理",
+      "API服务部署",
+      "GEO资产部署",
+      "多站点批量部署"
+    ],
+    "tools": [
+      "wrangler",
+      "git",
+      "curl",
+      "python"
+    ],
+    "swarmlabs": "14站GEO资产部署 + 蜂群科研前端部署 + MCP Server部署",
+    "data_sources": "14站pages.dev + AIShield 8420/8450 + 蜂群科研8461/8462"
+  },
+  "strategist": {
+    "name": "strategist",
+    "role": "战略师",
+    "title": "商业战略顾问",
+    "description": "商业模式设计、竞争分析、市场定位、定价策略",
+    "capabilities": [
+      "LTV/CAC分析",
+      "竞品功能矩阵",
+      "市场定位地图",
+      "定价策略",
+      "Pareto多目标优化",
+      "三阶段增长路径"
+    ],
+    "tools": [
+      "growth_pulse",
+      "competitor_radar",
+      "launch_kit"
+    ],
+    "swarmlabs": "GrowthPulse(LTV/CAC=11.6) + CompetitorRadar(LangChain 142K) + LaunchKit(17渠道)",
+    "data_sources": "GitHub API竞品 + Creem 6产品定价 + 161引擎能力矩阵"
+  },
+  "growth": {
+    "name": "growth",
+    "role": "增长官",
+    "title": "用户增长专家",
+    "description": "用户获取、留存、漏斗优化、SEO/GEO优化",
+    "capabilities": [
+      "GitHub增长监控",
+      "SEO/IndexNow提交",
+      "GEO资产优化",
+      "漏斗分析",
+      "用户留存",
+      "内容营销"
+    ],
+    "tools": [
+      "seo_pulse",
+      "content_forge",
+      "indexnow"
+    ],
+    "swarmlabs": "SEOPulse(14站) + ContentForge(20篇文章) + IndexNow(94次/100%)",
+    "data_sources": "14站HTTP + IndexNow日志 + GitHub趋势 + Analytics"
+  },
+  "guardian": {
+    "name": "guardian",
+    "role": "守护者",
+    "title": "安全合规官",
+    "description": "AI安全扫描、Prompt注入检测、合规审计",
+    "capabilities": [
+      "MCP工具安全扫描(21个)",
+      "Prompt注入检测(30+规则)",
+      "违禁词检测(6大平台)",
+      "工具投毒检测",
+      "Rug Pull检测",
+      "污点分析"
+    ],
+    "tools": [
+      "aishield_scan",
+      "aishield_guardrail",
+      "aishield_prompt_check"
+    ],
+    "swarmlabs": "AIShield 8420/8450 + 135条审计 + 21个MCP工具扫描",
+    "data_sources": "AIShield API + 6大平台违禁词库 + 30+双语规则"
+  },
+  "designer": {
+    "name": "designer",
+    "role": "设计师",
+    "title": "UI/UX设计师",
+    "description": "前端设计、用户体验、响应式布局",
+    "capabilities": [
+      "响应式HTML/CSS",
+      "暗色主题",
+      "数据可视化",
+      "API Playground",
+      "图表生成",
+      "PWA设计"
+    ],
+    "tools": [
+      "html",
+      "css",
+      "javascript",
+      "chartjs"
+    ],
+    "swarmlabs": "蜂群科研7个前端页面 + 14站UI + AIShield Web",
+    "data_sources": "7前端页面 + 14站统一设计系统"
+  },
+  "operator": {
+    "name": "operator",
+    "role": "运维师",
+    "title": "运维监控工程师",
+    "description": "服务器监控、服务健康检查、告警推送",
+    "capabilities": [
+      "ECS服务监控(8420/8450/8461/8462)",
+      "14站HTTP健康检查",
+      "Creem产品监控",
+      "Bark告警",
+      "日志分析"
+    ],
+    "tools": [
+      "curl",
+      "bark",
+      "gunicorn",
+      "nginx"
+    ],
+    "swarmlabs": "蜂群科研8461 + MCP 8462 + AIShield 8420/8450 + 14站",
+    "data_sources": "每日监控 + 6个Creem产品 + 4个ECS端口 + 14站"
+  },
+  "researcher": {
+    "name": "researcher",
+    "role": "研究员",
+    "title": "科研分析专家",
+    "description": "虚拟实验、参数优化、论文验证、不确定性量化",
+    "capabilities": [
+      "145引擎虚拟实验",
+      "AI参数优化(Pareto)",
+      "真实验证(14423组)",
+      "UQ(蒙特卡洛+Sobol)",
+      "贝叶斯更新",
+      "可靠性分析"
+    ],
+    "tools": [
+      "swarmlabs_engines",
+      "ai_optimizer",
+      "uncertainty_quantification",
+      "repro_pack"
+    ],
+    "swarmlabs": "145引擎 + UQ模块 + ReproPack + 14423组验证",
+    "data_sources": "Crossref(14000+DOI) + 14423组验证 + 24类物理体系"
+  },
+  "data_scientist": {
+    "name": "data_scientist",
+    "role": "数据科学家",
+    "title": "数据分析专家",
+    "description": "统计分析、数据挖掘、机器学习",
+    "capabilities": [
+      "描述性统计(均值4.19%)",
+      "正态性检验",
+      "IQR异常值检测",
+      "Cohen d效应量",
+      "样本量充分性",
+      "数据可视化"
+    ],
+    "tools": [
+      "stats_sanity",
+      "numpy",
+      "scipy",
+      "pandas"
+    ],
+    "swarmlabs": "Stats Sanity(3866组) + 14423组验证数据统计",
+    "data_sources": "14423组验证 + 24类物理体系 + 161引擎误差分布"
+  },
+  "product_manager": {
+    "name": "product_manager",
+    "role": "产品经理",
+    "title": "产品规划专家",
+    "description": "产品需求、用户故事、竞品分析、路线图",
+    "capabilities": [
+      "PRD文档",
+      "用户故事地图",
+      "竞品功能矩阵",
+      "KANO模型",
+      "MoSCoW优先级",
+      "路线图规划"
+    ],
+    "tools": [
+      "competitor_radar",
+      "launch_kit",
+      "growth_pulse"
+    ],
+    "swarmlabs": "161引擎/模块产品矩阵 + 9科研 + 5营销 + 5壁垒",
+    "data_sources": "竞品分析 + 功能矩阵(8项) + 17个发布渠道"
+  },
+  "devops": {
+    "name": "devops",
+    "role": "DevOps",
+    "title": "基础设施工程师",
+    "description": "CI/CD、容器化、云部署、监控",
+    "capabilities": [
+      "CF Pages CI/CD",
+      "GitHub自动化部署",
+      "Gunicorn服务管理",
+      "Nginx反代",
+      "Docker",
+      "基础设施审计"
+    ],
+    "tools": [
+      "wrangler",
+      "git",
+      "docker",
+      "gunicorn",
+      "nginx"
+    ],
+    "swarmlabs": "14站CF Pages + 8461/8462 + 8420/8450 + GitHub",
+    "data_sources": "ECS 150.158.119.19 + CF 13站 + GitHub lm203688"
+  },
+  "tech_writer": {
+    "name": "tech_writer",
+    "role": "技术文档",
+    "title": "文档与变更管理",
+    "description": "技术文档、API文档、Changelog、论文生成",
+    "capabilities": [
+      "IMRAD/CONSORT/STROBE/PRISMA",
+      "API文档(OpenAPI)",
+      "Changelog",
+      "SCI论文素材",
+      "llms.txt"
+    ],
+    "tools": [
+      "scientific_writing",
+      "paper_generator",
+      "openapi"
+    ],
+    "swarmlabs": "Scientific Writing(4模板) + Paper Generator(161引擎) + GEO(10种)",
+    "data_sources": "161引擎×9部分论文 + 4种报告规范 + 10种GEO资产"
+  }
+}

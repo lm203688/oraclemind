@@ -1,0 +1,82 @@
+[
+  {
+    "id": "test_001",
+    "type": "document",
+    "title": "CRISPR基因编辑",
+    "content_hash": "ae091eb3f1f34a1b674d17641442afd1",
+    "content_length": 33,
+    "entities": [
+      "CRISPR",
+      "Cas",
+      "DNA"
+    ],
+    "keywords": [
+      "CRISPR",
+      "Cas",
+      "是一种基",
+      "因编辑技",
+      "可以精确",
+      "修改",
+      "DNA",
+      "序列"
+    ],
+    "metadata": {
+      "category": "基因技术"
+    }
+  },
+  {
+    "id": "entity_f0c1b8c7",
+    "type": "entity",
+    "name": "CRISPR"
+  },
+  {
+    "id": "entity_40fc39ad",
+    "type": "entity",
+    "name": "Cas"
+  },
+  {
+    "id": "entity_396c983d",
+    "type": "entity",
+    "name": "DNA"
+  },
+  {
+    "id": "kw_f0c1b8c7",
+    "type": "keyword",
+    "name": "CRISPR"
+  },
+  {
+    "id": "kw_40fc39ad",
+    "type": "keyword",
+    "name": "Cas"
+  },
+  {
+    "id": "kw_96a6e641",
+    "type": "keyword",
+    "name": "是一种基"
+  },
+  {
+    "id": "kw_cd240d18",
+    "type": "keyword",
+    "name": "因编辑技"
+  },
+  {
+    "id": "kw_66e9feee",
+    "type": "keyword",
+    "name": "可以精确"
+  },
+  {
+    "id": "kw_8347a927",
+    "type": "keyword",
+    "name": "修改"
+  },
+  {
+    "id": "kw_396c983d",
+    "type": "keyword",
+    "name": "DNA"
+  },
+  {
+    "id": "kw_e024d292",
+    "type": "keyword",
+    "name": "序列"
+  }
+]

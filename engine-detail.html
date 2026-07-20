@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>引擎详情 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--orange:#f59e0b;--red:#ef4444;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:var(--muted);font-size:14px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.back-link{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:14px;margin:24px 0}
+.back-link:hover{color:var(--text)}
+.engine-header{padding:16px 0 32px}
+.engine-title{font-size:32px;font-weight:800;margin-bottom:8px}
+.engine-id{font-family:monospace;font-size:14px;color:var(--accent)}
+.engine-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:24px 0}
+@media(max-width:768px){.engine-stats{grid-template-columns:repeat(2,1fr)}}
+.stat-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center}
+.stat-num{font-size:24px;font-weight:700}
+.stat-label{font-size:12px;color:var(--muted);margin-top:4px}
+.section-title{font-size:20px;font-weight:700;margin:32px 0 16px}
+.prediction-panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:24px}
+.input-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px}
+.input-group{display:flex;flex-direction:column}
+.input-label{font-size:12px;color:var(--muted);margin-bottom:4px}
+.input-field{padding:8px 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:14px}
+.btn{padding:10px 24px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}
+.btn:hover{background:#2563eb}
+.result-panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.result-item{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px}
+.result-label{font-size:11px;color:var(--muted)}
+.result-value{font-size:18px;font-weight:600;margin-top:2px}
+.result-unit{font-size:12px;color:var(--muted)}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+.accuracy-bar{height:8px;background:var(--border);border-radius:4px;margin-top:8px;overflow:hidden}
+.accuracy-fill{height:100%;border-radius:4px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html">分子动力学</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="engines.html" class="active">材料预测</a>
+<a href="report.html">报告</a>
+<a href="visualization.html">可视化</a>
+<a href="api-playground.html">API测试</a>
+<a href="docs.html">API文档</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<a href="engines.html" class="back-link">← 返回引擎列表</a>
+
+<div class="engine-header">
+<div class="engine-title" id="engine-name">加载中...</div>
+<div class="engine-id" id="engine-id">—</div>
+</div>
+
+<div class="engine-stats" id="engine-stats">
+<div class="stat-box"><div class="stat-num" id="s-error">—</div><div class="stat-label">平均误差(%)</div></div>
+<div class="stat-box"><div class="stat-num" id="s-validation">—</div><div class="stat-label">验证数据量</div></div>
+<div class="stat-box"><div class="stat-num" id="s-materials">—</div><div class="stat-label">材料种类</div></div>
+<div class="stat-box"><div class="stat-num" id="s-domain">—</div><div class="stat-label">领域</div></div>
+</div>
+
+<div class="prediction-panel">
+<div class="section-title" style="margin-top:0">🧪 运行预测</div>
+<div class="input-row" id="input-row"></div>
+<button class="btn" onclick="runPrediction()">运行预测</button>
+</div>
+
+<div class="result-panel" id="result-panel" style="display:none">
+<div class="section-title" style="margin-top:0">📊 预测结果</div>
+<div class="result-grid" id="result-grid"></div>
+</div>
+
+<div class="result-panel" id="ml-panel" style="display:none;margin-top:20px">
+<div class="section-title" style="margin-top:0">🤖 ML校正预测</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px">
+<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px">
+<div style="font-size:11px;color:var(--muted)">物理方程预测</div>
+<div id="ml-physics" style="font-size:20px;font-weight:700">—</div>
+</div>
+<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px">
+<div style="font-size:11px;color:var(--muted)">ML残差校正</div>
+<div id="ml-correction" style="font-size:20px;font-weight:700;color:var(--accent)">—</div>
+</div>
+<div style="background:var(--bg);border:1px solid var(--green);border-radius:8px;padding:12px">
+<div style="font-size:11px;color:var(--muted)">校正后预测</div>
+<div id="ml-corrected" style="font-size:20px;font-weight:700;color:var(--green)">—</div>
+</div>
+</div>
+<div style="font-size:13px;color:var(--muted)" id="ml-accuracy">—</div>
+</div>
+
+</div>
+
+<footer class="footer"><div class="container"><p>蜂群科研 — 虚拟实验引擎</p></div></footer>
+
+<script>
+const API_BASE = 'http://150.158.119.19:8461';
+const params = new URLSearchParams(location.search);
+const engineId = params.get('engine') || 'photocatalysis';
+
+// 引擎参数配置
+const ENGINE_PARAMS = {
+  'photocatalysis': [{key:'bandgap',label:'带隙(eV)',default:2.5},{key:'surface_area',label:'比表面积(m²/g)',default:50}],
+  'battery': [{key:'voltage',label:'电压(V)',default:3.7},{key:'capacity',label:'容量(mAh/g)',default:150}],
+  'perovskite': [{key:'tolerance_factor',label:'容差因子',default:0.9},{key:'bandgap',label:'带隙(eV)',default:1.5}],
+  'co2': [{key:'temperature',label:'温度(°C)',default:200},{key:'pressure',label:'压力(bar)',default:10}],
+  'suzuki': [{key:'temperature',label:'温度(°C)',default:80},{key:'time',label:'时间(h)',default:12}],
+  'enzyme': [{key:'temperature',label:'温度(°C)',default:37},{key:'ph',label:'pH',default:7.4}],
+  'pcr': [{key:'cycles',label:'循环数',default:30},{key:'annealing',label:'退火温度(°C)',default:55}],
+  'ammonia': [{key:'temperature',label:'温度(°C)',default:450},{key:'pressure',label:'压力(bar)',default:150}],
+  'crystal': [{key:'supersaturation',label:'过饱和度',default:1.5},{key:'cooling_rate',label:'降温速率(°C/h)',default:10}],
+  'polymer': [{key:'mn',label:'分子量',default:100000},{key:'tacticity',label:'立构规整度',default:0.9}],
+  'adsorption': [{key:'pressure',label:'压力(bar)',default:1},{key:'temperature',label:'温度(K)',default:298}],
+  'combustion': [{key:'temperature',label:'温度(°C)',default:1200},{key:'equivalence_ratio',label:'当量比',default:1.0}],
+  'corrosion': [{key:'ph',label:'pH',default:7},{key:'temperature',label:'温度(°C)',default:25}],
+  'default': [{key:'temperature',label:'温度(°C)',default:25},{key:'pressure',label:'压力(bar)',default:1}],
+};
+
+// 引擎材料数
+const ENGINE_MATERIALS = {
+  photocatalysis:50, battery:60, adsorption:50, perovskite:30, co2:25,
+  enzyme:20, ammonia:15, crystal:20, polymer:25, membrane:20,
+  distillation:15, extraction:15, combustion:15, corrosion:10,
+};
+
+async function loadEngineDetail() {
+  try {
+    const resp = await fetch(`${API_BASE}/api/v1/engines/${engineId}`);
+    const d = await resp.json();
+    
+    document.getElementById('engine-name').textContent = d.name || engineId;
+    document.getElementById('engine-id').textContent = `ID: ${d.id || engineId}`;
+    
+    const error = d.mean_error;
+    const errorStr = error === 'N/A' || error === undefined ? 'N/A' : error + '%';
+    document.getElementById('s-error').textContent = errorStr;
+    document.getElementById('s-validation').textContent = d.validation_count || 0;
+    document.getElementById('s-materials').textContent = ENGINE_MATERIALS[engineId] || 10;
+    document.getElementById('s-domain').textContent = d.name || '—';
+    
+    // 精度条
+    if (error && error !== 'N/A') {
+      const color = error < 5 ? '#10b981' : error < 10 ? '#f59e0b' : '#ef4444';
+      const stats = document.getElementById('s-error');
+      const bar = document.createElement('div');
+      bar.className = 'accuracy-bar';
+      bar.innerHTML = `<div class="accuracy-fill" style="width:${Math.min(100, 100-error)}%;background:${color}"></div>`;
+      stats.appendChild(bar);
+    }
+    
+    // 生成输入参数
+    const params = ENGINE_PARAMS[engineId] || ENGINE_PARAMS['default'];
+    const inputRow = document.getElementById('input-row');
+    inputRow.innerHTML = params.map(p => `
+      <div class="input-group">
+        <label class="input-label">${p.label}</label>
+        <input class="input-field" type="number" id="param-${p.key}" value="${p.default}" step="0.1">
+      </div>
+    `).join('');
+    
+  } catch(e) {
+    document.getElementById('engine-name').textContent = 'API连接失败';
+  }
+}
+
+async function runPrediction() {
+  const params = ENGINE_PARAMS[engineId] || ENGINE_PARAMS['default'];
+  const inputParams = {};
+  params.forEach(p => {
+    inputParams[p.key] = parseFloat(document.getElementById(`param-${p.key}`).value);
+  });
+  
+  try {
+    // 先尝试ML校正预测
+    const mlParams = new URLSearchParams(inputParams);
+    const mlResp = await fetch(`${API_BASE}/api/v1/engine_ml/${engineId}?${mlParams}`);
+    const mlData = await mlResp.json();
+    
+    if (mlData.corrected_prediction !== undefined) {
+      // 显示ML校正结果
+      document.getElementById('ml-physics').textContent = mlData.physics_prediction;
+      document.getElementById('ml-correction').textContent = (mlData.ml_correction > 0 ? '+' : '') + mlData.ml_correction;
+      document.getElementById('ml-corrected').textContent = mlData.corrected_prediction;
+      document.getElementById('ml-accuracy').innerHTML = `🎯 精度提升 <strong style="color:var(--green)">${mlData.accuracy.improvement_pct}%</strong> | 物理MAE=${mlData.accuracy.physics_mae} → 校正MAE=${mlData.accuracy.corrected_mae} | 方法: ${mlData.method}`;
+      document.getElementById('ml-panel').style.display = 'block';
+      
+      // 结果网格
+      const grid = document.getElementById('result-grid');
+      grid.innerHTML = `
+        <div class="result-item">
+          <div class="result-label">目标属性</div>
+          <div class="result-value">${mlData.target}</div>
+        </div>
+        <div class="result-item">
+          <div class="result-label">物理方程预测</div>
+          <div class="result-value">${mlData.physics_prediction}</div>
+        </div>
+        <div class="result-item">
+          <div class="result-label">ML校正预测</div>
+          <div class="result-value" style="color:var(--green)">${mlData.corrected_prediction}</div>
+        </div>
+        <div class="result-item">
+          <div class="result-label">精度提升</div>
+          <div class="result-value" style="color:var(--accent)">${mlData.accuracy.improvement_pct}%</div>
+        </div>
+      `;
+      document.getElementById('result-panel').style.display = 'block';
+    } else {
+      // ML不可用——用传统trace API
+      document.getElementById('ml-panel').style.display = 'none';
+      const resp = await fetch(`${API_BASE}/api/v1/trace/${engineId}?${new URLSearchParams(inputParams)}`);
+      const d = await resp.json();
+      const grid = document.getElementById('result-grid');
+      grid.innerHTML = '';
+      const results = d.results || d.prediction || d;
+      if (typeof results === 'object' && !Array.isArray(results)) {
+        Object.entries(results).forEach(([key, value]) => {
+          if (typeof value === 'number' || typeof value === 'string') {
+            grid.innerHTML += `<div class="result-item"><div class="result-label">${key}</div><div class="result-value">${typeof value === 'number' ? value.toFixed(4) : value}</div></div>`;
+          }
+        });
+      }
+      document.getElementById('result-panel').style.display = 'block';
+    }
+  } catch(e) {
+    alert('预测失败: ' + e.message);
+  }
+}
+
+loadEngineDetail();
+</script>
+</body>
+</html>

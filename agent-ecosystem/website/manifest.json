@@ -1,0 +1,9 @@
+{
+  "name": "Agent Ecosystem",
+  "short_name": "Agent Ecosys",
+  "description": "AI Agent ecosystem with 594 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

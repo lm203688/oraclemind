@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>分子动力学模拟 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--orange:#f59e0b;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:var(--muted);font-size:14px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.nav-cta{padding:8px 20px;background:var(--accent);color:#fff;border-radius:8px;font-size:14px;font-weight:600}
+.page-header{padding:48px 0 32px}
+.page-header h1{font-size:36px;font-weight:800;margin-bottom:8px}
+.page-header p{color:var(--muted);font-size:16px}
+.md-layout{display:grid;grid-template-columns:340px 1fr;gap:24px;margin-bottom:48px}
+@media(max-width:768px){.md-layout{grid-template-columns:1fr}}
+.input-panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.input-group{margin-bottom:16px}
+.input-label{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:6px;display:block}
+.input-field{width:100%;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px;font-family:monospace}
+.input-field:focus{outline:none;border-color:var(--accent)}
+.input-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn-run{width:100%;padding:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;margin-top:8px}
+.btn-run:hover{opacity:0.9}
+.btn-run:disabled{opacity:0.5;cursor:not-allowed}
+.preset-mols{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.preset-mol{padding:4px 10px;background:var(--bg);border:1px solid var(--border);border-radius:6px;font-size:12px;cursor:pointer}
+.preset-mol:hover{border-color:var(--accent)}
+.results-panel{display:flex;flex-direction:column;gap:20px}
+.result-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.result-title{font-size:16px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.metric-box{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px}
+.metric-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px}
+.metric-value{font-size:20px;font-weight:700;margin-top:4px}
+.metric-unit{font-size:12px;color:var(--muted);font-weight:400}
+/* Chart */
+.chart-container{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:16px;margin-top:12px}
+.chart-svg{width:100%;height:200px}
+/* Descriptors */
+.desc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.desc-item{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px}
+.desc-label{font-size:11px;color:var(--muted)}
+.desc-value{font-size:16px;font-weight:600;margin-top:2px}
+.desc-status{font-size:11px;margin-top:4px}
+.desc-status.ok{color:var(--green)}
+.desc-status.fail{color:var(--orange)}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+.loading{display:inline-block;width:16px;height:16px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html" class="active">分子动力学</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="engines.html">材料预测</a>
+<a href="forcefields.html">力场引擎</a>
+<a href="report.html">报告</a>
+<a href="visualization.html">可视化</a>
+<a href="api-playground.html">API测试</a>
+<a href="docs.html">API文档</a>
+</div>
+<a href="docs.html" class="nav-cta">开始使用</a>
+</div>
+</nav>
+
+<div class="container">
+<div class="page-header">
+<h1>⚛️ 分子动力学模拟</h1>
+<p>MMFF94力场 + Langevin恒温器 — 有机分子标准精度 ±5%</p>
+</div>
+
+<div class="md-layout">
+<div class="input-panel">
+<div class="input-group">
+<label class="input-label">分子SMILES</label>
+<input type="text" class="input-field" id="smiles-input" value="CCO" placeholder="如 CCO (乙醇)">
+<div class="preset-mols">
+<span class="preset-mol" onclick="setSmiles('CCO')">乙醇 CCO</span>
+<span class="preset-mol" onclick="setSmiles('c1ccccc1')">苯 C6H6</span>
+<span class="preset-mol" onclick="setSmiles('CC(=O)O')">乙酸</span>
+<span class="preset-mol" onclick="setSmiles('CN1C=NC2=C1C(=O)N(C(=O)N2C)C')">咖啡因</span>
+</div>
+</div>
+<div class="input-row">
+<div class="input-group">
+<label class="input-label">模拟步数</label>
+<input type="number" class="input-field" id="steps" value="500" min="100" max="5000">
+</div>
+<div class="input-group">
+<label class="input-label">温度 (K)</label>
+<input type="number" class="input-field" id="temp" value="300" min="100" max="1000">
+</div>
+</div>
+<div class="input-row">
+<div class="input-group">
+<label class="input-label">时间步长 (fs)</label>
+<input type="number" class="input-field" id="dt" value="0.25" step="0.05" min="0.1" max="2">
+</div>
+<div class="input-group">
+<label class="input-label">分析类型</label>
+<select class="input-field" id="analysis-type">
+<option value="simulate">MD模拟</option>
+<option value="optimize">结构优化</option>
+<option value="thermo">热力学扫描</option>
+<option value="compare">多力场对比</option>
+</select>
+</div>
+</div>
+<div class="input-row">
+<div class="input-group">
+<label class="input-label">力场选择</label>
+<select class="input-field" id="forcefield">
+<option value="mmff94">MMFF94 (有机分子, ±5%)</option>
+<option value="mmff94s">MMFF94s (精确构型, ±4%)</option>
+<option value="uff">UFF (通用/全元素, ±10%)</option>
+</select>
+</div>
+<div class="input-group">
+<label class="input-label">力场推荐</label>
+<select class="input-field" id="ff-recommend" onchange="applyFFRecommend()">
+<option value="">— 选择体系类型 —</option>
+<option value="药物">药物分子</option>
+<option value="蛋白质">蛋白质/核酸</option>
+<option value="MOF">MOF/材料</option>
+<option value="反应">反应路径</option>
+<option value="水">水/溶剂</option>
+<option value="通用">通用</option>
+</select>
+</div>
+</div>
+<button class="btn-run" id="run-btn" onclick="runSimulation()">🚀 开始模拟</button>
+<div style="margin-top:16px">
+<div class="input-label">3D分子预览</div>
+<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;height:200px;display:flex;align-items:center;justify-content:center" id="md-3d-preview">
+<div style="color:var(--muted);font-size:12px;text-align:center">输入SMILES后<br>显示3D结构</div>
+</div>
+</div>
+</div>
+
+<div class="results-panel">
+<div class="result-card" id="metrics-card">
+<div class="result-title">📊 模拟结果</div>
+<div class="metric-grid" id="metrics-grid">
+<div class="metric-box"><div class="metric-label">初始能量</div><div class="metric-value">—</div></div>
+<div class="metric-box"><div class="metric-label">最终能量</div><div class="metric-value">—</div></div>
+<div class="metric-box"><div class="metric-label">平均温度</div><div class="metric-value">—</div></div>
+<div class="metric-box"><div class="metric-label">能量变化</div><div class="metric-value">—</div></div>
+<div class="metric-box"><div class="metric-label">扩散系数</div><div class="metric-value">—</div></div>
+<div class="metric-box"><div class="metric-label">MSD</div><div class="metric-value">—</div></div>
+</div>
+</div>
+
+<div class="result-card" id="traj-card">
+<div class="result-title">📈 能量轨迹</div>
+<div class="chart-container">
+<svg class="chart-svg" id="energy-chart"></svg>
+</div>
+</div>
+
+<div class="result-card" id="desc-card" style="display:none">
+<div class="result-title">🧬 分子描述符 + 类药性</div>
+<div class="desc-grid" id="desc-grid"></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="container">
+<p>蜂群科研 — 分子动力学引擎 | RDKit MMFF94 + Langevin Thermostat</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script>
+const API_BASE = 'http://150.158.119.19:8461';
+
+function setSmiles(s) {
+  document.getElementById('smiles-input').value = s;
+}
+
+async function runSimulation() {
+  const smiles = document.getElementById('smiles-input').value.trim();
+  const steps = parseInt(document.getElementById('steps').value);
+  const temp = parseFloat(document.getElementById('temp').value);
+  const dt = parseFloat(document.getElementById('dt').value);
+  const type = document.getElementById('analysis-type').value;
+  
+  if (!smiles) return;
+  
+  const btn = document.getElementById('run-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="loading"></span> 模拟中...';
+  
+  try {
+    let url, body;
+    if (type === 'simulate') {
+      url = `${API_BASE}/api/v1/md/simulate`;
+      body = {smiles, steps, temperature: temp, timestep_fs: dt, forcefield: document.getElementById('forcefield').value};
+    } else if (type === 'optimize') {
+      url = `${API_BASE}/api/v1/md/optimize`;
+      body = {smiles};
+    } else {
+      url = `${API_BASE}/api/v1/md/thermodynamics`;
+      body = {smiles, temperatures: [200, 250, 300, 350, 400, 500]};
+    }
+    
+    const resp = await fetch(url, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body)
+    });
+    const d = await resp.json();
+    
+    if (d.error) {
+      alert('错误: ' + d.error);
+      return;
+    }
+    
+    if (type === 'simulate') displayMDResults(d);
+    else if (type === 'optimize') displayOptimizeResults(d);
+    else if (type === 'compare') runCompare(smiles);
+    else displayThermoResults(d);
+    
+  } catch(e) {
+    alert('API连接失败: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '🚀 开始模拟';
+  }
+}
+
+function displayMDResults(d) {
+  const grid = document.getElementById('metrics-grid');
+  const boxes = grid.children;
+  const r = d.results;
+  const setBox = (i, label, value, unit) => {
+    boxes[i].innerHTML = `<div class="metric-label">${label}</div><div class="metric-value">${value} <span class="metric-unit">${unit}</span></div>`;
+  };
+  setBox(0, '初始能量', r.energy_initial_kcal, 'kcal/mol');
+  setBox(1, '最终能量', r.energy_final_kcal, 'kcal/mol');
+  setBox(2, '平均温度', r.avg_temperature_K, 'K');
+  setBox(3, '能量变化', r.energy_delta_kcal, 'kcal/mol');
+  setBox(4, '扩散系数', r.diffusion_coefficient_A2_ps, 'Ų/ps');
+  setBox(5, 'MSD', r.msd_A2, 'Ų');
+  
+  // 绘制能量轨迹图
+  drawEnergyChart(d.trajectory);
+  
+  // 隐藏描述符
+  document.getElementById('desc-card').style.display = 'none';
+}
+
+function displayOptimizeResults(d) {
+  const grid = document.getElementById('metrics-grid');
+  const boxes = grid.children;
+  const r = d.descriptors;
+  const setBox = (i, label, value, unit) => {
+    boxes[i].innerHTML = `<div class="metric-label">${label}</div><div class="metric-value">${value} <span class="metric-unit">${unit}</span></div>`;
+  };
+  setBox(0, '原子数', d.n_atoms, '个');
+  setBox(1, '分子量', r.molecular_weight, 'g/mol');
+  setBox(2, 'logP', r.logP, '');
+  setBox(3, 'TPSA', r.TPSA, 'Ų');
+  setBox(4, '氢键供体', r.n_h_donors, '个');
+  setBox(5, '氢键受体', r.n_h_acceptors, '个');
+  
+  // 显示描述符
+  const descGrid = document.getElementById('desc-grid');
+  const dl = d.drug_likeness;
+  descGrid.innerHTML = `
+    <div class="desc-item"><div class="desc-label">Lipinski违反</div><div class="desc-value">${dl.lipinski_violations}</div><div class="desc-status ${dl.lipinski_violations === 0 ? 'ok' : 'fail'}">${dl.lipinski_violations === 0 ? '✓ 通过' : '⚠ 不通过'}</div></div>
+    <div class="desc-item"><div class="desc-label">生物利用度</div><div class="desc-value">${dl.bioavailable ? '✓' : '✗'}</div><div class="desc-status ${dl.bioavailable ? 'ok' : 'fail'}">${dl.bioavailable ? '口服可用' : '不可口服'}</div></div>
+    <div class="desc-item"><div class="desc-label">可旋转键</div><div class="desc-value">${r.n_rotatable_bonds}</div></div>
+  `;
+  document.getElementById('desc-card').style.display = 'block';
+  
+  document.getElementById('traj-card').style.display = 'none';
+}
+
+function displayThermoResults(d) {
+  const grid = document.getElementById('metrics-grid');
+  grid.innerHTML = '';
+  d.results.slice(0, 6).forEach(r => {
+    const box = document.createElement('div');
+    box.className = 'metric-box';
+    box.innerHTML = `<div class="metric-label">T = ${r.temperature_K}K</div><div class="metric-value">${r.energy_kcal || '—'}</div><div class="metric-unit">kcal/mol</div>`;
+    grid.appendChild(box);
+  });
+  document.getElementById('desc-card').style.display = 'none';
+  document.getElementById('traj-card').style.display = 'none';
+}
+
+// 3D分子预览（从RDKit API获取3D坐标）
+function renderMD3D(smiles) {
+  const viewer = document.getElementById('md-3d-preview');
+  viewer.innerHTML = '';
+  
+  // 调用optimize API获取3D坐标
+  fetch(`${API_BASE}/api/v1/md/optimize`, {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({smiles})
+  }).then(r=>r.json()).then(d => {
+    if (d.status !== 'success' || !d.positions) {
+      viewer.innerHTML = '<div style="color:var(--muted);font-size:12px">3D生成失败</div>';
+      return;
+    }
+    
+    const positions = d.positions.slice(0, 30); // 限制原子数
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x0f172a);
+    
+    const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+    camera.position.set(5, 3, 5);
+    camera.lookAt(0, 0, 0);
+    
+    const renderer = new THREE.WebGLRenderer({antialias:true});
+    renderer.setSize(200, 200);
+    viewer.appendChild(renderer.domElement);
+    
+    scene.add(new THREE.AmbientLight(0x404060, 0.5));
+    const light = new THREE.DirectionalLight(0x6366f1, 1);
+    light.position.set(5, 10, 5);
+    scene.add(light);
+    
+    const colors = {H:0xffffff,C:0x444444,O:0xff4444,N:0x4444ff,Cl:0x44ff44,F:0x44ffff,S:0xffff44,P:0xff44ff};
+    const sizes = {H:0.25,C:0.4,O:0.4,N:0.4,Cl:0.5,F:0.35,S:0.45,P:0.45};
+    
+    // 计算中心
+    let cx=0,cy=0,cz=0;
+    positions.forEach(p => {cx+=p.x;cy+=p.y;cz+=p.z});
+    cx/=positions.length;cy/=positions.length;cz/=positions.length;
+    
+    // 原子
+    positions.forEach(p => {
+      const sym = p.atom;
+      const geo = new THREE.SphereGeometry(sizes[sym]||0.35, 12, 12);
+      const mat = new THREE.MeshPhongMaterial({color:colors[sym]||0x888888,shininess:100});
+      const mesh = new THREE.Mesh(geo, mat);
+      mesh.position.set(p.x-cx, p.y-cy, p.z-cz);
+      scene.add(mesh);
+    });
+    
+    function animate() {
+      requestAnimationFrame(animate);
+      scene.rotation.y += 0.005;
+      renderer.render(scene, camera);
+    }
+    animate();
+  }).catch(e => {
+    viewer.innerHTML = '<div style="color:var(--muted);font-size:12px">API连接失败</div>';
+  });
+}
+
+// SMILES输入变化时自动渲染3D
+let smilesTimer = null;
+document.getElementById('smiles-input').addEventListener('input', () => {
+  clearTimeout(smilesTimer);
+  smilesTimer = setTimeout(() => {
+    const s = document.getElementById('smiles-input').value.trim();
+    if (s.length >= 2) renderMD3D(s);
+  }, 1000);
+});
+
+// 预设分子点击也渲染3D
+document.querySelectorAll('.preset-mol').forEach(el => {
+  el.addEventListener('click', () => {
+    setTimeout(() => renderMD3D(document.getElementById('smiles-input').value), 100);
+  });
+});
+
+async function applyFFRecommend() {
+  const system = document.getElementById('ff-recommend').value;
+  if (!system) return;
+  
+  try {
+    const resp = await fetch(`${API_BASE}/api/v1/md/recommend_forcefield?system=${encodeURIComponent(system)}`);
+    const d = await resp.json();
+    if (d.recommended && d.recommended.length > 0) {
+      const best = d.recommended[0];
+      if (best.available) {
+        document.getElementById('forcefield').value = best.id;
+      }
+      // 显示推荐信息
+      const recs = d.recommended.map(r => `${r.name}(${r.accuracy}, ${r.available?'✅':'📋'})`).join(' → ');
+      alert(`体系"${system}"推荐力场:\n${recs}\n\n已自动选择: ${best.name}`);
+    }
+  } catch(e) {
+    console.error(e);
+  }
+}
+
+async function runCompare(smiles) {
+  try {
+    const resp = await fetch(`${API_BASE}/api/v1/md/compare_forcefields`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({smiles})
+    });
+    const d = await resp.json();
+    
+    if (d.status !== 'success') {
+      alert('对比失败: ' + (d.error || '?'));
+      return;
+    }
+    
+    // 显示对比结果
+    const grid = document.getElementById('metrics-grid');
+    grid.innerHTML = '';
+    d.results.forEach(r => {
+      const box = document.createElement('div');
+      box.className = 'metric-box';
+      if (r.error) {
+        box.innerHTML = `<div class="metric-label">${r.name}</div><div class="metric-value" style="font-size:14px;color:var(--muted)">${r.error}</div>`;
+      } else {
+        box.innerHTML = `<div class="metric-label">${r.name} (${r.accuracy})</div><div class="metric-value">${r.energy_final}</div><div class="metric-unit">kcal/mol</div>`;
+      }
+      grid.appendChild(box);
+    });
+    
+    document.getElementById('traj-card').style.display = 'none';
+    document.getElementById('desc-card').style.display = 'none';
+    
+    // 显示最稳定
+    if (d.most_stable) {
+      const ms = d.most_stable;
+      const card = document.createElement('div');
+      card.className = 'result-card';
+      card.innerHTML = `<div class="result-title">🏆 最稳定构型</div><div class="result-box"><div class="result-row"><span>力场</span><span>${ms.name}</span></div><div class="result-row"><span>能量</span><span>${ms.energy} kcal/mol</span></div></div>`;
+      grid.parentElement.appendChild(card);
+    }
+  } catch(e) {
+    alert('API连接失败: ' + e.message);
+  }
+}
+
+function drawEnergyChart(traj) {
+  document.getElementById('traj-card').style.display = 'block';
+  const svg = document.getElementById('energy-chart');
+  const w = svg.clientWidth || 600;
+  const h = 200;
+  const padding = 40;
+  
+  if (!traj || traj.length === 0) {
+    svg.innerHTML = '<text x="50%" y="50%" fill="#64748b" text-anchor="middle">无轨迹数据</text>';
+    return;
+  }
+  
+  const energies = traj.map(t => t.energy_kcal).filter(e => e != null);
+  if (energies.length === 0) return;
+  
+  const minE = Math.min(...energies);
+  const maxE = Math.max(...energies);
+  const range = maxE - minE || 1;
+  
+  const points = traj.map((t, i) => {
+    const x = padding + (i / (traj.length - 1)) * (w - 2 * padding);
+    const y = h - padding - ((t.energy_kcal - minE) / range) * (h - 2 * padding);
+    return `${x},${y}`;
+  }).join(' ');
+  
+  svg.innerHTML = `
+    <line x1="${padding}" y1="${h-padding}" x2="${w-padding}" y2="${h-padding}" stroke="#334155" />
+    <line x1="${padding}" y1="${padding}" x2="${padding}" y2="${h-padding}" stroke="#334155" />
+    <polyline points="${points}" fill="none" stroke="#3b82f6" stroke-width="2" />
+    <text x="${padding}" y="${padding-8}" fill="#64748b" font-size="11">能量 (kcal/mol)</text>
+    <text x="${w-padding}" y="${h-padding+16}" fill="#64748b" font-size="11" text-anchor="end">步数</text>
+    <text x="${padding-4}" y="${padding}" fill="#64748b" font-size="10" text-anchor="end">${maxE.toFixed(2)}</text>
+    <text x="${padding-4}" y="${h-padding}" fill="#64748b" font-size="10" text-anchor="end">${minE.toFixed(2)}</text>
+  `;
+}
+
+// URL参数
+const params = new URLSearchParams(location.search);
+if (params.get('smiles')) {
+  document.getElementById('smiles-input').value = params.get('smiles');
+  runSimulation();
+}
+</script>
+</body>
+</html>

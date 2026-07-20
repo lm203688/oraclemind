@@ -1012,6 +1012,264 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - technology: Various advanced reactor technologies
 - description: MIT Technology Review's 2026 Breakthrough Technologies feature highlighted Next-Generation Nuclear Energy as one of the year's top 10 breakthroughs. The feature noted that 2025-2026 marks a turning point for advanced nuclear: TerraPower Natrium construction, Kairos Hermes licensing, multiple SMR deployments (BWRX-300 in Canada, ACP100 in China), and significant fusion progress (CFS SPARC, Helion Polaris). The report emphasized that nuclear energy is experiencing its strongest renaissance in 40 years, driven by data center electricity demand, climate goals, and government support.
 
+### 核三廠
+
+- name: 核三廠
+- type: 核電機組
+- status: 停機除役
+- capacity: 未提供
+- location: 台灣
+- operator: 未提供
+- technology: 未提供
+- description: 台灣最後一部核電機組，於2025年5月17日停機除役，使台灣成為亞洲第一個零核電國家。
+- last_updated: 2026-06-27T15:55:55.725Z
+
+### Ecuador核電計劃
+
+- name: Ecuador核電計劃
+- type: 小型模組化反應堆
+- status: 規劃中
+- capacity: 300 MWe
+- location: 厄瓜多爾
+- operator: 厄瓜多爾政府
+- technology: 小型模組化反應堆
+- description: 厄瓜多爾政府於2025年提出發展300 MWe小型模組化反應堆的計劃，以解決近期能源短缺問題。
+- last_updated: 2026-06-27T15:55:55.726Z
+
+### Idaho National Laboratory反應堆
+
+- name: Idaho National Laboratory反應堆
+- type: 實驗反應堆
+- status: 建設中
+- capacity: 未提供
+- location: 美國愛達荷州
+- operator: Idaho National Laboratory
+- technology: 新反應堆設計
+- description: Idaho National Laboratory負責建設和測試新反應堆設計，已完成新反應堆的建設工作。
+- last_updated: 2026-06-27T15:55:55.726Z
+
+### 全球核電反應堆
+
+- name: 全球核電反應堆
+- type: 商業核電反應堆
+- status: 運行中
+- capacity: 420 GW
+- location: 全球30多個國家
+- operator: 各國核電運營商
+- technology: 各種類型
+- description: 截至2025年底，全球核電容量保持420 GW，在30多個國家運行，2025年有10個新反應堆開始建設。
+- last_updated: 2026-06-27T15:55:55.726Z
+
+### Seabrook Station
+
+- name: Seabrook Station
+- type: PWR
+- status: Operational
+- capacity: 1244
+
+### Vogtle Electric Generating Plant
+
+- name: Vogtle Electric Generating Plant
+- type: PWR
+- status: Operational
+- capacity: 1118
+
+### Callaway Energy Center
+
+- name: Callaway Energy Center
+- type: PWR
+- status: Operational
+- capacity: 1190
+
+### Grand Gulf Nuclear Station
+
+- name: Grand Gulf Nuclear Station
+- type: PWR
+- status: Operational
+- capacity: 1470
+
+### Browns Ferry Nuclear Plant
+
+- name: Browns Ferry Nuclear Plant
+- type: BWR
+- status: Operational
+- capacity: 3510
+
+### Palo Verde Nuclear Generating Station
+
+- name: Palo Verde Nuclear Generating Station
+- type: BWR
+- status: Operational
+- capacity: 3937
+
+### Arkansas Nuclear One
+
+- name: Arkansas Nuclear One
+- type: PWR
+- status: Operational
+- capacity: 1830
+
+### Fort Calhoun Station
+
+- name: Fort Calhoun Station
+- type: BWR
+- status: Decommissioned
+- capacity: 484
+
+### Pebble Bed Modular Reactor
+
+- name: Pebble Bed Modular Reactor
+- type: HTGR
+- status: In Development
+- capacity: 165
+
+### High-Temperature Gas-Cooled Reactor (HTTR)
+
+- name: High-Temperature Gas-Cooled Reactor (HTTR)
+- type: HTGR
+- status: Operational
+- capacity: 30
+
+### Molten Salt Reactor Experiment
+
+- name: Molten Salt Reactor Experiment
+- type: MSR
+- status: Decommissioned
+- capacity: 7.4
+
+### Terrestrial Energy IMSR
+
+- name: Terrestrial Energy IMSR
+- type: MSR
+- status: In Development
+- capacity: 195
+
+### Kairos Power Hermes
+
+- name: Kairos Power Hermes
+- type: MSR
+- status: In Development
+- capacity: 75
+
+### South Texas Project
+
+- name: South Texas Project
+- type: PWR
+- status: Operational
+- capacity: 2712
+
+### Beznau Nuclear Power Plant
+
+- name: Beznau Nuclear Power Plant
+- type: PWR
+- status: Operational
+- capacity: 1750
+
+### Seabrook Station
+
+- name: Seabrook Station
+- type: PWR
+- status: Operational
+- capacity: 1244
+
+### Brunswick Nuclear Plant
+
+- name: Brunswick Nuclear Plant
+- type: BWR
+- status: Decommissioned
+- capacity: 1776
+
+### Pebble Bed Modular Reactor
+
+- name: Pebble Bed Modular Reactor
+- type: HTGR
+- status: In Development
+- capacity: 165
+
+### Ohi Nuclear Power Plant
+
+- name: Ohi Nuclear Power Plant
+- type: PWR
+- status: Operational
+- capacity: 1175
+
+### LaSalle County Generating Station
+
+- name: LaSalle County Generating Station
+- type: BWR
+- status: Operational
+- capacity: 1120
+
+### Fort St. Vrain
+
+- name: Fort St. Vrain
+- type: HTGR
+- status: Decommissioned
+- capacity: 330
+
+### Molten Salt Reactor Experiment
+
+- name: Molten Salt Reactor Experiment
+- type: MSR
+- status: Decommissioned
+- capacity: 7.4
+
+### Vogtle Electric Generating Plant
+
+- name: Vogtle Electric Generating Plant
+- type: PWR
+- status: Operational
+- capacity: 1117
+
+### Dresden Generating Station
+
+- name: Dresden Generating Station
+- type: BWR
+- status: Operational
+- capacity: 867
+
+### HTR-PM
+
+- name: HTR-PM
+- type: HTGR
+- status: Operational
+- capacity: 210
+
+### Windscale Pile 1
+
+- name: Windscale Pile 1
+- type: PWR
+- status: Decommissioned
+- capacity: 42
+
+### Thorium Molten Salt Reactor
+
+- name: Thorium Molten Salt Reactor
+- type: MSR
+- status: In Development
+- capacity: 100
+
+### Cattenom Nuclear Power Plant
+
+- name: Cattenom Nuclear Power Plant
+- type: PWR
+- status: Operational
+- capacity: 5200
+
+### Fukushima Daiichi Unit 1
+
+- name: Fukushima Daiichi Unit 1
+- type: BWR
+- status: Decommissioned
+- capacity: 460
+
+### Kairos Power Hermes
+
+- name: Kairos Power Hermes
+- type: MSR
+- status: In Development
+- capacity: 35
+
 ## fusion
 
 ### Tokamak (Magnetic Confinement)
@@ -1748,6 +2006,216 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - timeline: Final rule expected 2027; commercial fusion plants regulated under this framework from 2030s
 - description: The US Nuclear Regulatory Commission (NRC) published its proposed regulatory framework for commercial fusion energy in February 2026, establishing the first comprehensive rules for licensing and operating fusion power plants in the United States. The framework treats fusion separately from nuclear fission, reflecting fusion's fundamentally different safety profile (no chain reactions, no long-lived nuclear waste, no risk of meltdown). This regulatory clarity is critical for private fusion companies like CFS, Helion, and Pacific Fusion to secure financing and build commercial plants.
 
+### ITER
+
+- name: ITER
+- approach: Tokamak
+- organization: ITER Organization
+- status: Construction
+
+### JET
+
+- name: JET
+- approach: Tokamak
+- organization: UK Atomic Energy Authority
+- status: Decommissioned
+
+### JT-60SA
+
+- name: JT-60SA
+- approach: Tokamak
+- organization: Japan Atomic Energy Agency
+- status: Operational
+
+### SPARC
+
+- name: SPARC
+- approach: Tokamak
+- organization: Commonwealth Fusion Systems
+- status: Construction
+
+### ARC
+
+- name: ARC
+- approach: Tokamak
+- organization: Commonwealth Fusion Systems
+- status: Design
+
+### Wendelstein 7-X
+
+- name: Wendelstein 7-X
+- approach: Stellarator
+- organization: Max Planck Institute for Plasma Physics
+- status: Operational
+
+### HSX
+
+- name: HSX
+- approach: Stellarator
+- organization: University of Wisconsin-Madison
+- status: Operational
+
+### NCSX
+
+- name: NCSX
+- approach: Stellarator
+- organization: Princeton Plasma Physics Laboratory
+- status: Cancelled
+
+### CFETR
+
+- name: CFETR
+- approach: Tokamak
+- organization: Chinese Academy of Sciences
+- status: Design
+
+### National Ignition Facility
+
+- name: National Ignition Facility
+- approach: ICF (Laser)
+- organization: Lawrence Livermore National Laboratory
+- status: Operational
+
+### Z Machine
+
+- name: Z Machine
+- approach: ICF (Z-Pinch)
+- organization: Sandia National Laboratories
+- status: Operational
+
+### HiPER
+
+- name: HiPER
+- approach: ICF (Laser)
+- organization: European Consortium
+- status: Cancelled
+
+### Helios
+
+- name: Helios
+- approach: ICF (Z-Pinch)
+- organization: General Fusion
+- status: Construction
+
+### Demo
+
+- name: Demo
+- approach: Tokamak
+- organization: Eurofusion Consortium
+- status: Design
+
+### TAE Technologies
+
+- name: TAE Technologies
+- approach: Field-Reversed Configuration
+- organization: TAE Technologies
+- status: Operational
+
+### ITER
+
+- name: ITER
+- approach: Magnetic Confinement
+- organization: ITER Organization
+- status: Construction
+
+### SPARC
+
+- name: SPARC
+- approach: Magnetic Confinement
+- organization: Commonwealth Fusion Systems
+- status: Construction
+
+### JT-60SA
+
+- name: JT-60SA
+- approach: Magnetic Confinement
+- organization: QST (Japan)
+- status: Operational
+
+### Wendelstein 7-X
+
+- name: Wendelstein 7-X
+- approach: Stellarator
+- organization: Max Planck Institute for Plasma Physics
+- status: Operational
+
+### JET
+
+- name: JET
+- approach: Magnetic Confinement
+- organization: UK Atomic Energy Authority
+- status: Decommissioned
+
+### National Ignition Facility
+
+- name: National Ignition Facility
+- approach: Inertial Confinement
+- organization: Lawrence Livermore National Laboratory
+- status: Operational
+
+### Demo
+
+- name: Demo
+- approach: Magnetic Confinement
+- organization: EUROfusion Consortium
+- status: Design
+
+### ARC
+
+- name: ARC
+- approach: Magnetic Confinement
+- organization: MIT Plasma Science and Fusion Center
+- status: Research
+
+### Helios
+
+- name: Helios
+- approach: Magnetic Confinement
+- organization: Helios Fusion
+- status: Research
+
+### DIII-D
+
+- name: DIII-D
+- approach: Magnetic Confinement
+- organization: General Atomics
+- status: Operational
+
+### HL-2M
+
+- name: HL-2M
+- approach: Magnetic Confinement
+- organization: Southwestern Institute of Physics
+- status: Operational
+
+### TAE Technologies Copernicus
+
+- name: TAE Technologies Copernicus
+- approach: Magnetic Confinement
+- organization: TAE Technologies
+- status: Construction
+
+### LHD
+
+- name: LHD
+- approach: Stellarator
+- organization: National Institute for Fusion Science (Japan)
+- status: Operational
+
+### Z Machine
+
+- name: Z Machine
+- approach: Inertial Confinement
+- organization: Sandia National Laboratories
+- status: Operational
+
+### ST40
+
+- name: ST40
+- approach: Magnetic Confinement
+- organization: Tokamak Energy
+- status: Operational
+
 ## smr
 
 ### NuScale Power Module
@@ -2310,6 +2778,216 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - location: Wylfa, Wales and Oldbury, England (proposed sites)
 - description: Rolls-Royce SMR is developing a 470 MWe pressurized water reactor for the UK market, with the design undergoing Generic Design Assessment by UK regulators. In 2025, Great British Nuclear selected Rolls-Royce SMR for government support, with proposed sites at Wylfa (Wales) and Oldbury (England). The design uses proven PWR technology in a compact, factory-built format, enabling 80% of construction to occur in factories. Rolls-Royce targets first operational unit by 2029-2030, with potential for 20+ units across the UK.
 
+### NuScale Power Module
+
+- name: NuScale Power Module
+- type: PWR
+- capacity: 77 MWe
+- status: Certified
+
+### NuScale VOYGR Plant
+
+- name: NuScale VOYGR Plant
+- type: PWR
+- capacity: 462 MWe
+- status: Under Construction
+
+### Terrapower TEP-2
+
+- name: Terrapower TEP-2
+- type: SFR
+- capacity: 345 MWe
+- status: In Development
+
+### Rolls-Royce SMR
+
+- name: Rolls-Royce SMR
+- type: PWR
+- capacity: 470 MWe
+- status: Under Construction
+
+### GE-Hitachi PRISM
+
+- name: GE-Hitachi PRISM
+- type: SFR
+- capacity: 311 MWe
+- status: In Development
+
+### Holtec SMR-160
+
+- name: Holtec SMR-160
+- type: PWR
+- capacity: 160 MWe
+- status: In Development
+
+### Kairos Power Hermes
+
+- name: Kairos Power Hermes
+- type: FLiBe
+- capacity: 140 MWe
+- status: In Development
+
+### X-energy Xe-100
+
+- name: X-energy Xe-100
+- type: HTGR
+- capacity: 80 MWe
+- status: Under Construction
+
+### Westinghouse eVinci
+
+- name: Westinghouse eVinci
+- type: PWR
+- capacity: 5 MWe
+- status: In Development
+
+### General Atomics Energy Source
+
+- name: General Atomics Energy Source
+- type: HTGR
+- capacity: 100 MWe
+- status: In Development
+
+### BWX mPower
+
+- name: BWX mPower
+- type: PWR
+- capacity: 300 MWe
+- status: In Development
+
+### Seaborg CMS-300
+
+- name: Seaborg CMS-300
+- type: MSR
+- capacity: 300 MWe
+- status: In Development
+
+### U-Battery
+
+- name: U-Battery
+- type: HTGR
+- capacity: 10 MWe
+- status: In Development
+
+### NuScale-DOE-1
+
+- name: NuScale-DOE-1
+- type: PWR
+- capacity: 77 MWe
+- status: Operational
+
+### Thorcon Power Module
+
+- name: Thorcon Power Module
+- type: MSR
+- capacity: 500 MWe
+- status: In Development
+
+### NuScale Power Module
+
+- name: NuScale Power Module
+- type: PWR
+- capacity: 77 MWe
+- status: Certified
+
+### Nuscale VOYGR Plant
+
+- name: Nuscale VOYGR Plant
+- type: PWR
+- capacity: 462 MWe (6x modules)
+- status: Deployed
+
+### TerraPower Natrium
+
+- name: TerraPower Natrium
+- type: SFR
+- capacity: 345 MWe
+- status: Under Construction
+
+### Rolls-Royce SMR
+
+- name: Rolls-Royce SMR
+- type: PWR
+- capacity: 470 MWe (470 modules)
+- status: Regulatory Design
+
+### GE-Hitachi PRISM
+
+- name: GE-Hitachi PRISM
+- type: SFR
+- capacity: 311 MWe
+- status: Conceptual
+
+### Korea HPR-1000
+
+- name: Korea HPR-1000
+- type: PWR
+- capacity: 100 MWe
+- status: Regulatory Design
+
+### X-energy Xe-100
+
+- name: X-energy Xe-100
+- type: HTGR
+- capacity: 80 MWe
+- status: Construction Permit
+
+### KLT-40S
+
+- name: KLT-40S
+- type: PWR
+- capacity: 35 MWe
+- status: Operational
+
+### BWX mPower
+
+- name: BWX mPower
+- type: PWR
+- capacity: 300 MWe (3x modules)
+- status: Regulatory Design
+
+### Westinghouse eVinci
+
+- name: Westinghouse eVinci
+- type: PWR
+- capacity: 5 MWe
+- status: Prototype Testing
+
+### Holtec SMR-160
+
+- name: Holtec SMR-160
+- type: PWR
+- capacity: 160 MWe
+- status: Construction Permit
+
+### Seaborg CMSR
+
+- name: Seaborg CMSR
+- type: MSR
+- capacity: 200 MWe
+- status: Regulatory Design
+
+### General Atomics Energy Source
+
+- name: General Atomics Energy Source
+- type: HTGR
+- capacity: 100 MWe
+- status: Conceptual
+
+### ThorCon Molten Salt
+
+- name: ThorCon Molten Salt
+- type: MSR
+- capacity: 250 MWe
+- status: Conceptual
+
+### Kaly-Cell
+
+- name: Kaly-Cell
+- type: LMR
+- capacity: 10 MWe
+- status: Conceptual
+
 ## nuclear_fuel
 
 ### HALEU (High-Assay Low-Enriched Uranium)
@@ -2702,6 +3380,96 @@ Nuclear energy knowledge base covering reactors, fusion approaches, SMRs, nuclea
 - description: Multiple countries launched uranium supply security initiatives in 2025-2026 in response to geopolitical disruptions. The US, UK, Canada, Japan, and France formed a coalition to diversify uranium supply chains away from Russia, which previously supplied 35% of US uranium fuel. New uranium mining projects are advancing in Canada (Cigar Lake expansion), Australia (Honeymoon restart), and Namibia. The DOE established a Strategic Uranium Reserve with $700M in funding. Kazakhstan's Kazatomprom remains the world's largest uranium producer, supplying 40%+ of global demand.
 - enrichment: Natural uranium (0.7% U-235) to LEU (3-5%) and HALEU (5-20%)
 - applications: Light water reactor fuel, Advanced reactor fuel, Strategic uranium reserve, International energy security
+
+### 核燃料
+
+- name: 核燃料
+- type: 通用术语
+- description: 用于核反应堆中产生裂变或聚变反应的材料
+- enrichment: 不同燃料类型有不同的富集度要求
+- applications: 核电站发电、核动力舰船、研究反应堆
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### 铀燃料
+
+- name: 铀燃料
+- type: 裂变燃料
+- description: 最常见的核裂变燃料，主要使用铀-235和铀-238
+- enrichment: 轻水堆通常需要3-5%的铀-235富集度
+- applications: 商业核电站、核动力潜艇、航空母舰
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### 钍燃料
+
+- name: 钍燃料
+- type: 裂变燃料
+- description: 潜在的核裂变燃料，通过中子嬗变产生铀-233
+- enrichment: 通常需要转换为铀-233后使用
+- applications: 熔盐堆、钍基核反应堆、先进核能系统
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### 钚燃料
+
+- name: 钚燃料
+- type: 裂变燃料
+- description: 通过铀-238吸收中子产生的可裂变材料
+- enrichment: MOX燃料中钚含量通常5-7%
+- applications: 快中子堆、MOX燃料、核废料嬗变
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### MOX燃料
+
+- name: MOX燃料
+- type: 混合燃料
+- description: 铀和钚的氧化物混合燃料
+- enrichment: 钚含量通常5-7%
+- applications: 轻水堆、快中子堆、核废料管理
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### 氘氚燃料
+
+- name: 氘氚燃料
+- type: 聚变燃料
+- description: 用于核聚变反应的氢同位素组合
+- enrichment: 氘天然存在，氚需要人工生产
+- applications: 聚变反应堆、氢弹、聚变能源研究
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### 低浓铀
+
+- name: 低浓铀
+- type: 裂变燃料
+- description: 铀-235富集度低于20%的铀燃料
+- enrichment: 通常3-5%
+- applications: 商业核电站、研究反应堆、船用反应堆
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### 高浓铀
+
+- name: 高浓铀
+- type: 裂变燃料
+- description: 铀-235富集度高于20%的铀燃料
+- enrichment: 20-90%
+- applications: 研究反应堆、舰船反应堆、武器级材料
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### 熔盐燃料
+
+- name: 熔盐燃料
+- type: 液态燃料
+- description: 溶解在熔融盐中的核燃料
+- enrichment: 根据反应堆设计要求
+- applications: 熔盐堆、钍基反应堆、高温反应堆
+- last_updated: 2026-06-27T15:56:34.179Z
+
+### TRISO燃料
+
+- name: TRISO燃料
+- type: 包覆燃料颗粒
+- description: 多层陶瓷包覆的燃料颗粒
+- enrichment: 根据反应堆设计要求
+- applications: 高温气冷堆、第四代反应堆、模块化反应堆
+- last_updated: 2026-06-27T15:56:34.179Z
 
 ## radiation_applications
 

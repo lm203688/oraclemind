@@ -1,0 +1,92 @@
+[
+  {
+    "name": "TiO2-P25",
+    "formula": "TiO₂",
+    "bandgap_eV": 3.2,
+    "crystal": "锐钛矿+金红石",
+    "surface_area_m2g": 50,
+    "quantum_efficiency": 0.4,
+    "source": "NIST/JARVIS"
+  },
+  {
+    "name": "TiO2-anatase",
+    "formula": "TiO₂",
+    "bandgap_eV": 3.2,
+    "crystal": "锐钛矿",
+    "surface_area_m2g": 80,
+    "quantum_efficiency": 0.45,
+    "source": "JARVIS"
+  },
+  {
+    "name": "TiO2-rutile",
+    "formula": "TiO₂",
+    "bandgap_eV": 3.0,
+    "crystal": "金红石",
+    "surface_area_m2g": 20,
+    "quantum_efficiency": 0.3,
+    "source": "JARVIS"
+  },
+  {
+    "name": "ZnO",
+    "formula": "ZnO",
+    "bandgap_eV": 3.37,
+    "crystal": "纤锌矿",
+    "surface_area_m2g": 30,
+    "quantum_efficiency": 0.35,
+    "source": "JARVIS"
+  },
+  {
+    "name": "WO3",
+    "formula": "WO₃",
+    "bandgap_eV": 2.7,
+    "crystal": "单斜",
+    "surface_area_m2g": 15,
+    "quantum_efficiency": 0.25,
+    "source": "JARVIS"
+  },
+  {
+    "name": "Fe2O3",
+    "formula": "Fe₂O₃",
+    "bandgap_eV": 2.1,
+    "crystal": "赤铁矿",
+    "surface_area_m2g": 40,
+    "quantum_efficiency": 0.15,
+    "source": "JARVIS"
+  },
+  {
+    "name": "CdS",
+    "formula": "CdS",
+    "bandgap_eV": 2.4,
+    "crystal": "纤锌矿",
+    "surface_area_m2g": 25,
+    "quantum_efficiency": 0.5,
+    "source": "文献"
+  },
+  {
+    "name": "g-C3N4",
+    "formula": "C₃N₄",
+    "bandgap_eV": 2.7,
+    "crystal": "石墨相",
+    "surface_area_m2g": 60,
+    "quantum_efficiency": 0.3,
+    "source": "文献"
+  },
+  {
+    "name": "BiVO4",
+    "formula": "BiVO₄",
+    "bandgap_eV": 2.4,
+    "crystal": "单斜白钨矿",
+    "surface_area_m2g": 10,
+    "quantum_efficiency": 0.4,
+    "source": "JARVIS"
+  },
+  {
+    "name": "SrTiO3",
+    "formula": "SrTiO₃",
+    "bandgap_eV": 3.2,
+    "crystal": "钙钛矿",
+    "surface_area_m2g": 5,
+    "quantum_efficiency": 0.5,
+    "source": "JARVIS"
+  }
+]

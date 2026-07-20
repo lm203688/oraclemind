@@ -666,6 +666,116 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - description: The cortex is the largest part of the human brain, divided into lobes that process different types of information. It plays a critical role in consciousness, thought, and voluntary movement. Recent studies highlight its unique connectivity patterns that predict mental functions across the entire brain.
 - sources: [object Object]
 
+### 大脑皮层
+
+- name: 大脑皮层
+- location: 大脑表层
+- function: 负责高级认知功能，如思考、记忆、语言和意识
+- associated_disorders: 阿尔茨海默病、帕金森病、癫痫
+- neurotransmitters: 谷氨酸、GABA、多巴胺
+- description: 大脑皮层是大脑的外层，由灰质组成，是神经细胞体集中的区域。
+- last_updated: 2026-06-27T16:03:53.451Z
+
+### 海马体
+
+- name: 海马体
+- location: 颞叶内侧
+- function: 形成新记忆、空间导航和情绪调节
+- associated_disorders: 阿尔茨海默病、癫痫、焦虑症
+- neurotransmitters: 谷氨酸、乙酰胆碱
+- description: 海马体是大脑中与记忆形成和存储密切相关的关键结构。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 杏仁核
+
+- name: 杏仁核
+- location: 颞叶深部
+- function: 处理情绪反应，特别是恐惧和焦虑
+- associated_disorders: 焦虑症、创伤后应激障碍、抑郁症
+- neurotransmitters: GABA、谷氨酸、血清素
+- description: 杏仁核是情绪处理的核心区域，对威胁检测和恐惧反应至关重要。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 基底神经节
+
+- name: 基底神经节
+- location: 大脑深处
+- function: 运动控制、习惯形成和决策制定
+- associated_disorders: 帕金森病、亨廷顿病、强迫症
+- neurotransmitters: 多巴胺、GABA、乙酰胆碱
+- description: 基底神经节是一组参与运动控制和认知功能的核团。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 小脑
+
+- name: 小脑
+- location: 后颅窝
+- function: 运动协调、平衡和姿势控制
+- associated_disorders: 共济失调、小脑萎缩、小脑肿瘤
+- neurotransmitters: GABA、谷氨酸
+- description: 小脑主要负责精细运动的协调和平衡控制。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 丘脑
+
+- name: 丘脑
+- location: 大脑中心
+- function: 感觉信息中继站和意识调节
+- associated_disorders: 意识障碍、疼痛障碍、睡眠障碍
+- neurotransmitters: 谷氨酸、GABA
+- description: 丘脑是大脑的感觉信息中继中心，对意识状态有重要影响。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 下丘脑
+
+- name: 下丘脑
+- location: 丘脑下方
+- function: 调节自主神经系统、内分泌和基本生理功能
+- associated_disorders: 内分泌失调、体温调节障碍、进食障碍
+- neurotransmitters: 多巴胺、催产素、血管加压素
+- description: 下丘脑是维持体内平衡的关键区域，控制多种基本生理功能。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 脑干
+
+- name: 脑干
+- location: 脊髓上方
+- function: 控制基本生命功能，如呼吸、心跳和血压
+- associated_disorders: 脑干损伤、呼吸衰竭、昏迷
+- neurotransmitters: 乙酰胆碱、去甲肾上腺素
+- description: 脑干是连接大脑和脊髓的结构，维持基本生命活动。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 前额叶皮层
+
+- name: 前额叶皮层
+- location: 额叶前部
+- function: 执行功能、决策制定、社交行为和个性表达
+- associated_disorders: 额颞叶痴呆、注意力缺陷多动障碍、精神分裂症
+- neurotransmitters: 多巴胺、血清素、谷氨酸
+- description: 前额叶皮层负责高级认知功能和复杂行为控制。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### 视觉皮层
+
+- name: 视觉皮层
+- location: 枕叶
+- function: 处理视觉信息
+- associated_disorders: 视觉障碍、枕叶癫痫、皮质盲
+- neurotransmitters: 谷氨酸、GABA
+- description: 视觉皮层是大脑中专门处理视觉信息的区域。
+- last_updated: 2026-06-27T16:03:53.452Z
+
+### hippocampal CA1 region
+
+- name: hippocampal CA1 region
+- location: hippocampus
+- function: major center for memory
+- associated_disorders: 
+- neurotransmitters: 
+- description: Scientists uncovered a surprising four-layer structure hidden inside this region.
+- last_updated: 2026-06-27T16:04:51.240Z
+
 ## bci
 
 ### Neuralink N1
@@ -1528,6 +1638,1601 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - applications: 专注力监测, 疲劳检测, 认知状态追踪, 消费级脑机交互
 - description: Neurable unveiled the MW75 neuro-EEG headphones at CES 2026, representing the consumer EEG neurotechnology wave. The MW75 integrates EEG sensors into premium wireless headphones, enabling real-time monitoring of focus, cognitive fatigue, and mental state throughout the day. The device pairs with a smartphone app that provides personalized recommendations for productivity and rest. Neurable is part of a broader trend of consumer neurotechnology, alongside Emotiv, Guardian 4 ear-EEG, and LumiMind LumiSleep, bringing brain monitoring from clinical settings to everyday consumers.
 
+### N1 Implant
+
+- name: N1 Implant
+- company: Neuralink
+- type: Invasive
+- channels: 100
+
+### Synchron Stentrode
+
+- name: Synchron Stentrode
+- company: Synchron
+- type: Invasive
+- channels: 100
+
+### g.Nautilus
+
+- name: g.Nautilus
+- company: g.tec
+- type: Non-Invasive
+- channels: 100
+
+### Enobio
+
+- name: Enobio
+- company: Neuroelectrics
+- type: Hybrid
+- channels: 100
+
+### fNIRS-100
+
+- name: fNIRS-100
+- company: NIRx
+- type: Non-Invasive
+- channels: 100
+
+### Quick-20
+
+- name: Quick-20
+- company: Quick-20
+- type: Non-Invasive
+- channels: 100
+
+### Blackrock Cerebus
+
+- name: Blackrock Cerebus
+- company: Blackrock Neurotech
+- type: Invasive
+- channels: 100
+
+### B-Alert X10
+
+- name: B-Alert X10
+- company: ACI
+- type: Non-Invasive
+- channels: 100
+
+### Hydra 256
+
+- name: Hydra 256
+- company: Compumedics
+- type: Non-Invasive
+- channels: 100
+
+### EGI HydroCel Geodesic
+
+- name: EGI HydroCel Geodesic
+- company: EGI
+- type: Non-Invasive
+- channels: 100
+
+### Starstim
+
+- name: Starstim
+- company: Neuroelectrics
+- type: Hybrid
+- channels: 100
+
+### Activa PC+S
+
+- name: Activa PC+S
+- company: Medtronic
+- type: Invasive
+- channels: 100
+
+### FOCI-100
+
+- name: FOCI-100
+- company: OT Bioelectronics
+- type: Non-Invasive
+- channels: 100
+
+### BrainOS-100
+
+- name: BrainOS-100
+- company: MindMaze
+- type: Hybrid
+- channels: 100
+
+### Kernel Flow
+
+- name: Kernel Flow
+- company: Kernel
+- type: Invasive
+- channels: 100
+
+### N1 Implant
+
+- name: N1 Implant
+- company: Neuralink
+- type: Invasive
+- channels: 100
+
+### Stentrode
+
+- name: Stentrode
+- company: Synchron
+- type: Invasive
+- channels: 100
+
+### g.tec g.USBamp
+
+- name: g.tec g.USBamp
+- company: g.tec
+- type: Non-Invasive
+- channels: 100
+
+### Brain Products QuickAmp
+
+- name: Brain Products QuickAmp
+- company: Brain Products
+- type: Non-Invasive
+- channels: 100
+
+### EGI HydroCel Geodesic
+
+- name: EGI HydroCel Geodesic
+- company: Electrical Geodesics Inc.
+- type: Non-Invasive
+- channels: 100
+
+### fNIRS NIRx
+
+- name: fNIRS NIRx
+- company: NIRx Medical Technologies
+- type: Non-Invasive
+- channels: 100
+
+### OpenBCI Cyton
+
+- name: OpenBCI Cyton
+- company: OpenBCI
+- type: Non-Invasive
+- channels: 100
+
+### Compumedics OREMA
+
+- name: Compumedics OREMA
+- company: Compumedics
+- type: Non-Invasive
+- channels: 100
+
+### ANT Neuro eego
+
+- name: ANT Neuro eego
+- company: ANT Neuro
+- type: Non-Invasive
+- channels: 100
+
+### Cognionics Quick-20
+
+- name: Cognionics Quick-20
+- company: Cognionics
+- type: Non-Invasive
+- channels: 100
+
+### NIRSIT
+
+- name: NIRSIT
+- company: NIRx Medical Technologies
+- type: Non-Invasive
+- channels: 100
+
+### Enobio
+
+- name: Enobio
+- company: Neuroelectrics
+- type: Non-Invasive
+- channels: 100
+
+### B-Alert X10
+
+- name: B-Alert X10
+- company: Advanced Brain Monitoring
+- type: Non-Invasive
+- channels: 100
+
+### OTB Biosemi
+
+- name: OTB Biosemi
+- company: Biosemi
+- type: Non-Invasive
+- channels: 100
+
+### Compumedics Saltus
+
+- name: Compumedics Saltus
+- company: Compumedics
+- type: Non-Invasive
+- channels: 100
+
+### neuralink_dura_pioneer
+
+- company: Neuralink
+- product: Brain-Computer Interface with Dural-Penetrating Threads
+- status: Clinical Trial
+- location: Toronto Western Hospital, Canada
+- key_event: Global first dural-penetrating implant surgery completed in May 2026
+- technology: Ultra-thin electrodes penetrate dura mater directly without surgical removal
+- features: 1024-channel simultaneous neural recording, Real-time spike detection, Robotic arm implantation via Thread Delivery System, Thought-controlled computer cursor within 1 hour post-surgery
+- patient_outcome: Good recovery, thought-controlled cursor operation within 1 hour
+- significance: Major milestone for invasive BCI - reduces surgical trauma, enables automation and scalability
+- founded: 2016
+- founder: Elon Musk
+- headquarters: San Francisco, CA (registered Nevada 2024)
+- challenges: FDA regulatory approval, Ethical concerns, Long-term safety and reversibility, Scalability of automated surgery
+- 2026_status: Mass production year announced, automated surgical robot achieved
+- competing_technology: Meta Brain2Qwerty v2 (non-invasive MEG-based)
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 马斯克的脑机接口公司Neuralink完成首例经硬膜脑植入手术
+
+- title: 马斯克的脑机接口公司Neuralink完成首例经硬膜脑植入手术
+- source: xiaowu_sync
+- publish_time: 2026-07-03 17:52
+- summary: Neuralink宣布完成全球首例经硬膜脑植入手术，于2026年5月在多伦多西部医院实施。新技术让超细电极丝直接穿透硬脑膜，无需切开移除硬脑膜，大幅降低创伤，术后一小时受试者可意念操控光标。
+- url: https://news.qq.com/rain/a/20260703A09LD500
+- key_points: 首例经硬膜脑植入手术，2026年5月完成, 电极丝直接穿透硬脑膜，省去切膜步骤, 术中用血管造影和光学断层扫描实时监测, 受试者术后一小时可意念操控光标, 与Meta非侵入式方案形成对比
+- technology_details: 优化植入针结构，搭建合成硬膜模型密集测试，依托血管造影、光学断层扫描精准监测技术
+- significance: 侵入式脑机接口技术重要里程碑，为自动化和规模化植入奠定基础
+- synced_at: 2026-07-16
+
+### neuralink_n1
+
+- company_name: Neuralink
+- product_name: N1 Implant / Telepathy
+- country: USA
+- headquarters: San Francisco, California
+- founder: Elon Musk et al.
+- founded_year: 2016
+- status: Clinical trials active
+- implant_technology: Flexible polymer threads with integrated amplifiers and electrodes. Robotic surgical implantation.
+- electrode_count: 1024 channels
+- implant_method: Robotic surgical implantation (fully intracortical)
+- wireless_transmission: Bluetooth/Wireless
+- power_source: Inductive charging
+- data_rate: High-bandwidth real-time
+- clinical_status: FDA HDE approved. 21 patients as of Jan 2026.
+- key_milestones: 2019: First primate. Dec 2024: First human. Jun 2025: 7 active. Jan 2026: 21 cumulative.
+- performance: Computer cursor control, gaming, robotic arm control via thoughts.
+- website: https://neuralink.com/
+- recent_news: 2026-07-02: First transdural implant in Toronto.
+- funding: ~$300M+
+- target_conditions: Paraplegia, quadriplegia, ALS, spinal cord injury
+
+### synchron_stent_net
+
+- company_name: Synchron
+- product_name: Stentrode
+- country: Australia
+- headquarters: Melbourne, Victoria
+- founder: Thomas Oxley
+- founded_year: 2007
+- status: Clinical trials (FDA De Novo)
+- implant_technology: Vascular-brain interface stent via carotid artery. 64 electrode contacts.
+- electrode_count: 64 electrode contacts
+- implant_method: Endovascular (minimally invasive via catheter, no craniotomy)
+- wireless_transmission: Wireless transmitter under skin
+- power_source: Inductive charging
+- data_rate: Real-time intent recognition
+- clinical_status: FDA IDE approved. PULSE trial ongoing.
+- key_milestones: 2011: Animal studies. 2014: First human. 2019: First US. 2020: NEJM.
+- performance: Text messaging, web browsing, smart home control.
+- website: https://synchron.com/
+- recent_news: 2025: Expanded PULSE trial. Leading FDA contender.
+- funding: ~$200M+. Bill Gates Breakthrough Energy
+- target_conditions: ALS, spinal cord injury, stroke
+
+### blackrock_utna
+
+- company_name: Blackrock Neurotech
+- product_name: Utah Array / Chronos
+- country: USA
+- headquarters: Denver, Colorado
+- founder: Richard A. Normann et al.
+- founded_year: 2001
+- status: FDA HDE approved
+- implant_technology: Silicon microelectrode arrays - Utah Array (100 pins) and Grid Array.
+- electrode_count: 100 channels (Utah), 16 (Grid)
+- implant_method: Stereotactic surgical (craniotomy)
+- wireless_transmission: Chronos wireless via inductive coupling
+- power_source: Inductive wireless
+- data_rate: Up to 384 channels
+- clinical_status: FDA HDE approved. Widely used in research.
+- key_milestones: 2004: First implants. 2012: First FDA-approved BCI.
+- performance: Long-term stable recordings (years). Cursor, robotic arm, FES control.
+- website: https://blackrockneurotech.com/
+- recent_news: 2025: Most used BCI in academic research.
+- funding: Private
+- target_conditions: Spinal cord injury, ALS, stroke
+
+### precision_neuro_pn1
+
+- company_name: Precision Neurotechnology
+- product_name: PN1 Implant
+- country: USA
+- headquarters: Berkeley, California
+- founder: Valerie Venart
+- founded_year: 2021
+- status: Pre-clinical
+- implant_technology: Ultra-thin flexible polymer strips with micro-LEDs and electrodes.
+- electrode_count: Not disclosed
+- implant_method: Minimally invasive delivery designed
+- wireless_transmission: Optical wireless (LED)
+- power_source: Wireless
+- data_rate: High-bandwidth bidirectional
+- clinical_status: Pre-clinical. Planning FDA trials.
+- key_milestones: 2021: Founded. 2022-2025: Pre-clinical.
+- performance: Bidirectional read/write neural interface.
+- website: https://precisionneuro.com/
+- recent_news: 2025: Early development.
+- funding: VC-backed
+- target_conditions: Paralysis, sensory restoration
+
+### sarcloptix_sarc_chip
+
+- company_name: Sarcoptix
+- product_name: Sarc Chip
+- country: France
+- headquarters: Paris, France
+- founder: Thibaud Girard
+- founded_year: 2018
+- status: Pre-clinical
+- implant_technology: Dissolvable chip made of silicon and magnesium.
+- electrode_count: Not disclosed
+- implant_method: Direct cortical surface, temporary (dissolvable)
+- wireless_transmission: Wireless during dissolution
+- power_source: Wireless
+- data_rate: Temporary high-fidelity
+- clinical_status: Pre-clinical. No removal surgery needed.
+- key_milestones: 2018: Founded. 2022: First demo.
+- performance: Temporary brain monitoring without removal.
+- website: https://sarcoptix.com/
+- recent_news: 2025: Pre-clinical continues.
+- funding: Early-stage VC
+- target_conditions: Acute monitoring, epilepsy, stroke
+
+### paradromics_arroyo
+
+- company_name: Paradromics
+- product_name: Arroyo Implant
+- country: USA
+- headquarters: New York, NY
+- founder: Shane Ross et al.
+- founded_year: 2016
+- status: Pre-clinical
+- implant_technology: High-density flexible polymer threads with integrated ASIC.
+- electrode_count: Planned: 10,000+ channels
+- implant_method: Surgical implantation into motor cortex
+- wireless_transmission: On-chip processing + wireless
+- power_source: Wireless
+- data_rate: Ultra-high bandwidth
+- clinical_status: Pre-clinical. Planning FDA IND.
+- key_milestones: 2016: Founded. 2021: 10K-channel animal demo.
+- performance: Ultra-high bandwidth with custom ASIC.
+- website: https://www.paradromics.com/
+- recent_news: 2025: Pre-clinical.
+- funding: ~$200M+
+- target_conditions: Paralysis, ALS
+
+### paradym_epic
+
+- company_name: BlackBerry (Paradym)
+- product_name: EPIC Implant
+- country: Canada
+- headquarters: Waterloo, Ontario
+- founder: Paradym (acq. by BlackBerry)
+- founded_year: 2012
+- status: Clinical trials (FDA IDE)
+- implant_technology: Eco-piezo actuator-based delivery with shape-memory alloy.
+- electrode_count: Not disclosed
+- implant_method: Robotic-assisted surgical delivery
+- wireless_transmission: Wireless
+- power_source: Wireless
+- data_rate: Real-time decoding
+- clinical_status: FDA IDE approved. Pre-market trials.
+- key_milestones: 2012: Founded. 2024: Acquired by BlackBerry.
+- performance: Reliable surgical delivery.
+- website: https://www.blackberry.com/
+- recent_news: 2024: BlackBerry acquired for $1.4B CAD.
+- funding: BlackBerry acquisition
+- target_conditions: Spinal cord injury, ALS
+
+### kernel_headset
+
+- company_name: Kernel
+- product_name: Kernel Headset
+- country: USA
+- headquarters: San Francisco, California
+- founder: Doris Taylor
+- founded_year: 2018
+- status: Non-invasive product dev
+- implant_technology: Non-invasive EEG headset sensors.
+- electrode_count: Multiple EEG channels
+- implant_method: Non-invasive wearable
+- wireless_transmission: Bluetooth to phone
+- power_source: Rechargeable battery
+- data_rate: EEG-level
+- clinical_status: Consumer product development.
+- key_milestones: 2018: Founded. 2022: Kernel Read announced.
+- performance: Thought-controlled typing via EEG.
+- website: https://kernel.com/
+- recent_news: 2025: Non-invasive BCI continues.
+- funding: ~$430M+ (SoftBank, CapitalG)
+- target_conditions: Consumer wellness, productivity
+
+### sophon_bci
+
+- company_name: Sophon (兆脑科技)
+- product_name: Sophon BCI Headset
+- country: China
+- headquarters: Beijing, China
+- founder: Chinese research team
+- founded_year: 2020
+- status: Commercial product
+- implant_technology: Dry EEG sensor technology.
+- electrode_count: Multiple dry EEG
+- implant_method: Non-invasive headset
+- wireless_transmission: Bluetooth
+- power_source: Rechargeable battery
+- data_rate: EEG intent recognition
+- clinical_status: Commercial in China.
+- key_milestones: 2020s: Launch. 2024-2025: Expansion.
+- performance: Thought-controlled device operation.
+- website: https://www.sophon.com/
+- recent_news: 2025: Growing in Chinese market.
+- funding: Chinese domestic
+- target_conditions: Consumer, gaming
+
+### epfl_braincom
+
+- company_name: EPFL
+- product_name: BrainCom
+- country: Switzerland
+- headquarters: Lausanne, Switzerland
+- founder: Academic team
+- founded_year: 2010
+- status: Research / Prototype
+- implant_technology: Wireless neural interfaces and chronic implants.
+- electrode_count: Variable
+- implant_method: Experimental
+- wireless_transmission: Experimental wireless
+- power_source: Wireless
+- data_rate: Research-grade
+- clinical_status: Academic research.
+- key_milestones: 2010s+: Neural interface research.
+- performance: Neural coding and decoding research.
+- website: https://www.epfl.ch/
+- recent_news: 2025: Active research.
+- funding: EU grants
+- target_conditions: Research
+
+### Paradromics
+
+- name: Paradromics
+- country: USA
+- headquarters: Redwood City, California
+- founding_year: 2018
+- founder: Dong Soo Pyo, Matthew Fisher (Harvard neuroscientist)
+- technology_type: Invasive - Flexible polymer probes with high-density electrodes
+- total_funding_usd_millions: 200
+- latest_round: Series B
+- investors: Tim Draper, Andreessen Horowitz, Canaan Partners
+- clinical_trials: false
+- first_human_implant: Not yet (animal studies ongoing)
+- key_products: DAISY System, Faraday Interface
+- employee_count: 80
+- description: Focused on developing high-bandwidth, durable neural interface called Faraday. DAISY system aims to record and stimulate millions of neurons simultaneously.
+- website: https://paradromics.com
+- ipo_status: Private
+- key_milestones: Series B $125M 2022; Partnership with Harvard; FDA clearance for clinical trials pending
+- research_focus: High-bandwidth neural recording and stimulation, speech restoration, motor function recovery
+
+### Precision Neuroscience
+
+- name: Precision Neuroscience
+- country: USA
+- headquarters: Madison, Wisconsin
+- founding_year: 2019
+- founder: Spencer Lindblayer (independent spin-off from UW-Madison)
+- technology_type: Invasive - Cortical Grid (flexible polymer mesh)
+- total_funding_usd_millions: 95
+- latest_round: Series A
+- investors: Arcus Capital, Midwest Foundation
+- clinical_trials: false
+- first_human_implant: Not yet (animal studies)
+- key_products: Cortical Grid, Valhalla
+- employee_count: 30
+- description: Created the 'Cortical Grid' - a flexible, ultra-thin polymer mesh placed on the brain surface. Designed for minimal immune response and long-term stability. Spun out of University of Wisconsin-Madison.
+- website: https://precisionneuroscience.com
+- ipo_status: Private
+- key_milestones: Series A $70M 2022; Patent portfolio for cortical grid technology
+- research_focus: Low-immune-response neural interfaces, cortical surface mapping, long-term stable recording
+
+### Kernel
+
+- name: Kernel
+- country: USA
+- headquarters: San Francisco, California
+- founding_year: 2016
+- founder: Jonas Castaneda
+- technology_type: Mixed - Various approaches including non-invasive
+- total_funding_usd_millions: 330
+- latest_round: Series C
+- investors: SoftBank, Cathie Wood ARK Invest, Alibaba, Dustin Moskovitz (Co-founder of Facebook)
+- clinical_trials: false
+- first_human_implant: N/A
+- key_products: Kernel Brain Scanner (non-invasive headband)
+- employee_count: 150
+- description: Aims to build a complete map of the human brain. Originally focused on invasive BCI but shifted to non-invasive approaches. Their headband product claims to read brain signals.
+- website: https://kernel.com
+- ipo_status: Private
+- key_milestones: Series C $200M 2021; Launched non-invasive Brain Scanner headband; Acquired companies for technology
+- research_focus: Brain mapping, non-invasive neural interfaces, consumer neuroscience products
+
+### OpenBCI
+
+- name: OpenBCI
+- country: USA
+- headquarters: San Diego, California
+- founding_year: 2014
+- founder: Batson Cowley, Rick Kuo
+- technology_type: Non-invasive - EEG headsets
+- total_funding_usd_millions: 5
+- latest_round: Seed
+- investors: Angel investors
+- clinical_trials: false
+- first_human_implant: N/A
+- key_products: Cyton Board, Ganglion, Ultracortex headset
+- employee_count: 10
+- description: Open-source hardware and software platform for EEG. Democratizing brain technology for researchers and consumers. Not a medical device company.
+- website: https://openbci.com
+- ipo_status: Private
+- key_milestones: Created open-source EEG platform; Used by universities worldwide; Community-driven development
+- research_focus: Open-source EEG, consumer brain-computer interfaces, educational tools
+
+### Transhumanities
+
+- name: Transhumanities
+- country: USA
+- headquarters: Portland, Oregon
+- founding_year: 2017
+- founder: Kendall Houck
+- technology_type: Non-invasive - DIY EEG
+- total_funding_usd_millions: null
+- latest_round: Bootstrapped
+- inventors: 
+- clinical_trials: false
+- first_human_implant: N/A
+- key_products: DIY EEG kits
+- employee_count: 5
+- description: Small startup focused on accessible, affordable brain-computer interfaces. Known for DIY EEG kits and community-driven approach.
+- website: https://transhumanities.org
+- ipo_status: Private
+- key_milestones: Created accessible DIY EEG tools; Community building
+- research_focus: Accessible BCI, educational tools, open-hardware
+
+### Lockheed Martin - Neuroengineering Team
+
+- name: Lockheed Martin - Neuroengineering Team
+- country: USA
+- headquarters: Bethesda, Maryland
+- founding_year: 2017
+- founder: DARPA initiative (government program)
+- technology_type: Invasive - High-density electrode arrays
+- total_funding_usd_millions: null
+- latest_round: Government contract
+- investors: DARPA
+- clinical_trials: false
+- first_human_implant: N/A
+- key_products: Neurotechnology programs under DARPA contracts
+- employee_count: null
+- description: Government-backed neuroengineering effort under DARPA's N3 program. Focus on military applications including soldier performance enhancement and traumatic brain injury treatment.
+- website: null
+- ipo_status: Government program
+- key_milestones: DARPA N3 program; Partnership with academic institutions
+- research_focus: Military applications, soldier augmentation, TBI treatment, high-density neural interfaces
+
+### Paradict
+
+- name: Paradict
+- country: France
+- headquarters: Paris, France
+- founding_year: 2021
+- founder: Former Thales and startups executives
+- technology_type: Non-invasive - EEG + AI
+- total_funding_usd_millions: 30
+- latest_round: Series A
+- investors: European VC funds
+- clinical_trials: false
+- first_human_implant: N/A
+- key_products: AI-powered EEG analysis platform
+- employee_count: 20
+- description: French startup using AI to decode brain signals from non-invasive EEG. Focus on reducing calibration time and improving accuracy.
+- website: https://paradict.ai
+- ipo_status: Private
+- key_milestones: Series A €25M 2023; Partnership with European research institutions
+- research_focus: EEG signal decoding, AI-based neural interpretation, reduced calibration BCI
+
+### Cyberdyne Inc.
+
+- name: Cyberdyne Inc.
+- country: Japan
+- headquarters: Tsukuba, Japan
+- founding_year: 2004
+- founder: Sankai Hiroyuki
+- technology_type: Hybrid - HAL (hybrid assistive limb) uses EEG + muscle signals
+- total_funding_usd_millions: null
+- latest_round: Public company
+- investors: 
+- clinical_trials: true
+- first_human_implant: N/A (wearable exoskeleton)
+- key_products: HAL (Hybrid Assistive Limb) exoskeleton
+- employee_count: 400
+- description: Japanese company that developed HAL, a wearable exoskeleton controlled by brain signals and muscle activity. First BCI company to receive Japanese medical device approval. Publicly traded.
+- website: https://cyberdyne.jp
+- ipo_status: Public (Tokyo Stock Exchange)
+- key_milestones: First BCI device approved in Japan; Clinical trials for spinal cord injury; IPO on Tokyo Stock Exchange
+- research_focus: Rehabilitation, elderly care, spinal cord injury treatment, muscle weakness
+
+### Emotiv
+
+- name: Emotiv
+- country: USA
+- headquarters: San Francisco, California
+- founding_year: 2003
+- founder: David Favelle
+- technology_type: Non-invasive - Consumer EEG headsets
+- total_funding_usd_millions: 20
+- latest_round: Series A
+- investors: Angel investors
+- clinical_trials: false
+- first_human_implant: N/A
+- key_products: Insight, Envoy, EPOC X headsets
+- employee_count: 30
+- description: Consumer-grade EEG headsets for research and consumer applications. One of the earliest BCI companies. Not for medical use.
+- website: https://emotiv.com
+- ipo_status: Private
+- key_milestones: Launched consumer EEG headsets; Used by NASA and universities; Research-grade products
+- research_focus: Consumer EEG, brain-sensing headsets, research applications
+
+### g.tec Medical Engineering
+
+- name: g.tec Medical Engineering
+- country: Austria
+- headquarters: Graz, Austria
+- founding_year: 2003
+- founder: Johannes Pfurtscheller, Harald Bischoff
+- technology_type: Non-invasive - EEG, fNIRS, ECoG
+- total_funding_usd_millions: null
+- latest_round: Bootstrapped
+- investors: 
+- clinical_trials: true
+- first_human_implant: N/A
+- key_products: g.Mobility, g.BH, g.Hiamp systems
+- employee_count: 80
+- description: Leading European manufacturer of BCI hardware. Provides EEG and other neural recording systems used in research and clinical settings worldwide.
+- website: https://gtec.at
+- ipo_status: Private
+- key_milestones: Over 20 years in BCI hardware; Extensive research partnerships; CE marked medical devices
+- research_focus: EEG hardware, BCI research systems, clinical-grade neural recording
+
+### Neuralink (Updated)
+
+- name: Neuralink (Updated)
+- country: USA
+- headquarters: Fremont, California
+- founding_year: 2016
+- founder: Elon Musk
+- technology_type: Invasive - Ultra-thin flexible polymer threads with gold interconnects
+- total_funding_usd_millions: 300
+- latest_round: Series B
+- investors: Founders Fund, Bezos Expeditions, Theranos alumni investors, Rivian founders
+- clinical_trials: true
+- first_human_implant: January 2024 - Noland Arbaugh (first patient)
+- key_products: N1 Robot (implantation robot), Thread (electrode array), N3 Neural Interface
+- employee_count: 600
+- description: Most well-known BCI company. Developing high-bandwidth brain-machine interface with 3,000+ electrodes per thread. First human implant completed in January 2024.
+- website: https://neuralink.com
+- ipo_status: Private
+- key_milestones: FDA IDE approval May 2019; First human implant January 2024; Animal testing since 2017; Robotic implantation system
+- research_focus: Motor function restoration, potential speech restoration, vision restoration, treating neurological disorders
+
+### Synchron (Updated)
+
+- name: Synchron (Updated)
+- country: Australia/USA
+- headquarters: Melbourne, Australia + New York, USA
+- founding_year: 2007
+- founder: Thomas Oxley
+- technology_type: Minimally Invasive - Stentrode delivered via jugular vein
+- total_funding_usd_millions: 420
+- latest_round: Series D
+- investors: Andreessen Horowitz, Sequoia Capital, Bill Gates, Peter Thiel, Larry Ellison, Founders Fund
+- clinical_trials: true
+- first_human_implant: First patient implanted November 2020 in Australia
+- key_products: Stentrode, Valyra Receiver
+- employee_count: 200
+- description: Leader in minimally invasive BCI. Uses a stent-based electrode delivered through the jugular vein into brain blood vessels. No craniotomy needed. Most advanced human trial data.
+- website: https://synchron.com
+- ipo_status: Private
+- key_milestones: FDA Humanitarian Device Exemption 2021; Multiple human implants; Series D funding $136M 2022; FDA De Novo pathway 2023
+- research_focus: Assistive technology for spinal cord injury and ALS patients, computer control, speech synthesis
+
+### Blackrock Neurotech (Updated)
+
+- name: Blackrock Neurotech (Updated)
+- country: USA
+- headquarters: Cleveland, Ohio
+- founding_year: 2002
+- founder: Gary Steigerwald (spin-off from Ohio State University)
+- technology_type: Invasive - Utah Array (96 electrodes), Colorado Chip, Pod system
+- total_funding_usd_millions: null
+- latest_round: Self-funded/Academic grants
+- investors: 
+- clinical_trials: true
+- first_human_implant: 2010s (used in numerous academic clinical trials)
+- key_products: Utah Array, Colorado Chip, AirWave Wireless System, Pod
+- employee_count: 50
+- description: Creator of the Utah Array, the most widely used BCI research tool globally. Academic spin-off with no VC funding. Gold standard for neural recording research.
+- website: https://blackrockneurotech.com
+- ipo_status: Private
+- key_milestones: Utah Array became industry standard; Used in landmark clinical trials at multiple universities; Extensive peer-reviewed publications
+- research_focus: Research-grade neural interfaces, motor cortex recording, academic collaborations
+
+### Neuralink
+
+- channels: 2048
+- country: USA
+- focus: High-channel invasive BCI
+- founder: Elon Musk
+- founded: 2016
+- key_product: N1 Implant, Teleporter
+- location: Fremont, California
+- major_milestone: First human implant Sept 2024, patient controls cursor
+- name: Neuralink
+- recent_development: 2026: Second patient implanted, improving BCI performance. Working on next-gen chip with more channels.
+- status: Human trials ongoing
+- type: Private
+- website: https://neuralink.com
+
+### Synchron
+
+- channels: 48
+- country: Australia
+- focus: Vascular endovascular BCI
+- founder: Thomas Oxley
+- founded: 2007
+- key_product: Stentrode
+- location: Melbourne
+- major_milestone: First patient implanted 2019, 10+ patients treated
+- name: Synchron
+- recent_development: 2025: FDA approval for expanded trial. 2026: Patent dispute with Neuralink resolved, continuing human trials.
+- status: FDA Breakthrough Device, clinical trials
+- type: Public (ASX: STJ)
+- website: https://synchron.com
+
+### Blackrock Neurotech
+
+- channels: 96
+- country: USA
+- focus: Invasive BCI for research and medical
+- founder: Richard Normann
+- founded: 2004
+- key_product: Utah Array, Cordelia, Nexus
+- location: Dayton, Ohio
+- major_milestone: First human implant 2009, 200+ patients worldwide
+- name: Blackrock Neurotech
+- recent_development: 2026: Continued research deployments at universities. Key partner of DoD Neural Engineering Research Collaborative.
+- status: FDA exempt for research, IDE for clinical
+- type: Private
+- website: https://blackrockneurotech.com
+
+### Kernel
+
+- channels: N/A (non-invasive)
+- country: USA
+- focus: Advanced brain scanning and mapping
+- founder: Daphne Bavelier, Jonathan Sealfon
+- founded: 2016
+- key_product: Kernel Scan (non-invasive fNIRS+EEG headband)
+- location: Los Angeles, California
+- major_milestone: Raised $300M Series D in 2022
+- name: Kernel
+- recent_development: 2026: Developing next-generation brain scanner with higher resolution. Focus on consumer health applications.
+- status: Product development
+- type: Private
+- website: https://kernel.com
+
+### Sensum
+
+- channels: N/A (EEG)
+- country: Sweden
+- focus: Non-invasive BCI for gaming and wellness
+- founded: 2016
+- key_product: Sensum Headband
+- location: Stockholm
+- major_milestone: First non-invasive BCI certified for gaming
+- name: Sensum
+- recent_development: 2026: Partnering with game studios for BCI-integrated gaming experiences.
+- status: Commercial product available
+- type: Private
+- website: https://sensum.se
+
+### Transcend Labs
+
+- channels: N/A (EEG)
+- country: USA
+- focus: Non-invasive BCI for meditation and focus
+- founded: 2014
+- key_product: Muse headband
+- location: San Francisco, California
+- major_milestone: Over 100,000 units sold globally
+- name: Transcend Labs
+- recent_development: 2026: Released Muse 3 with improved EEG sensors and AI-powered analytics.
+- status: Commercial product available
+- type: Private
+- website: https://trancendlabs.com
+
+### ControliX
+
+- channels: N/A (EEG)
+- country: Germany
+- focus: Non-invasive BCI for driver monitoring
+- founded: 2019
+- key_product: ControliX BCI sensor
+- location: Berlin
+- major_milestone: Automotive industry partnerships
+- name: ControliX
+- recent_development: 2026: Expanding partnerships with automotive OEMs for drowsiness detection systems.
+- status: B2B licensing
+- type: Private
+- website: https://controlix.eu
+
+### Emotiv
+
+- channels: 14
+- country: USA
+- focus: Consumer EEG headsets for research and enterprise
+- founded: 2001
+- key_product: EPOC X, Insight
+- location: San Francisco, California
+- major_milestone: Pioneer in consumer-grade EEG
+- name: Emotiv
+- recent_development: 2026: Released new EPOC Gen 3 with higher channel count and improved wireless connectivity.
+- status: Commercial product available
+- type: Private
+- website: https://emotiv.com
+
+### NextMind
+
+- channels: N/A (visual cortex EEG)
+- country: France
+- focus: Non-invasive BCI for visual interface
+- founded: 2016
+- key_product: DVNCT Developer Kit
+- location: Paris
+- major_milestone: Snap acquired for estimated $200M
+- name: NextMind
+- recent_development: 2026: Technology integrated into Snap AR research for vision-based BCI control.
+- status: R&D within Snap
+- type: Acquired by Snap
+
+### InteraXon
+
+- channels: N/A (EEG)
+- country: Canada
+- focus: Consumer meditation BCI
+- founded: 2003
+- key_product: MUSE headband
+- location: Toronto, Ontario
+- major_milestone: Pioneer in consumer neurofeedback
+- name: InteraXon
+- recent_development: 2026: Shifting focus from consumer to B2B mental health analytics platform.
+- status: Pivot to B2B
+- type: Private
+- website: https://choosemuse.com
+
+### Pulstec Medical
+
+- channels: Up to 700 (fNIRS)
+- country: Japan
+- focus: Non-invasive fNIRS-based BCI for rehabilitation
+- founded: 1982
+- key_product: Multi-channel fNIRS system
+- location: Tokyo
+- major_milestone: First multi-channel fNIRS system for BCI
+- name: Pulstec Medical
+- recent_development: 2026: Expanded use in stroke rehabilitation and cognitive assessment.
+- status: Medical device (Japan)
+- type: Public
+
+### g.tec
+
+- channels: Up to 256 (EEG/ECoG)
+- country: Austria
+- focus: Non-invasive BCI research and medical devices
+- founded: 2000
+- key_product: g.BHIVE, g.UI headset
+- location: Graz
+- major_milestone: Longest-standing BCI company
+- name: g.tec
+- recent_development: 2026: Launching new medical-grade BCI system for paralysis patients.
+- status: Commercial product available
+- type: Private
+- website: https://gtec.at
+
+### Paradromics
+
+- channels: ~3000 planned
+- country: USA
+- focus: High-bandwidth invasive BCI
+- founded: 2017
+- key_product: Arc device
+- location: Richmond, California
+- major_milestone: Revolutionary flexible filament-based electrode technology
+- name: Paradromics
+- recent_development: 2026: Preparing for first-in-human trials. Developed ultra-flexible electrode filaments.
+- status: Pre-clinical
+- type: Private
+
+### Sarcron
+
+- channels: N/A (tDCS)
+- country: USA
+- focus: Non-invasive targeted tDCS for BCI
+- founded: 2021
+- key_product: SmartField technology
+- location: Cambridge, Massachusetts
+- major_milestone: Patented spatially focused electrical stimulation
+- name: Sarcron
+- recent_development: 2026: Advancing non-invasive BCI with precise frontal lobe stimulation.
+- status: Series A funded ($5.5M)
+- type: Private
+- website: https://sarcron.com
+
+### Cortivis
+
+- channels: N/A (EEG/fNIRS)
+- country: Italy
+- focus: Non-invasive BCI for speech restoration
+- founded: 2020
+- key_product: Virtual typing system
+- location: Milan
+- major_milestone: AI-powered speech decoding from brain signals
+- name: Cortivis
+- recent_development: 2026: Demonstrating improved speech reconstruction accuracy using hybrid EEG-fNIRS.
+- status: Clinical validation
+- type: Private
+
+### LifeNet Biosystems
+
+- channels: 1024+ planned
+- country: USA
+- focus: Wireless minimally invasive BCI
+- founded: 2021
+- key_product: LifeNet implant
+- location: Berkeley, California
+- major_milestone: Wireless, fully implantable BCI with high channel count
+- name: LifeNet Biosystems
+- recent_development: 2026: Developing next-gen wireless BCI with improved biocompatibility.
+- status: Pre-clinical
+- type: Private
+
+### Pyschemedtech
+
+- channels: N/A (EEG)
+- country: China
+- focus: Non-invasive BCI for sleep and relaxation
+- founded: 2020
+- key_product: Sleep & relaxation BCI devices
+- location: Beijing
+- major_milestone: Growing consumer BCI market in China
+- name: Pyschemedtech
+- recent_development: 2026: Expanding product line for home-use BCI wellness devices.
+- status: Commercial products
+- type: Private
+
+### Tangshan Rongrui Medical
+
+- channels: Custom
+- country: China
+- focus: Flexible brain-machine interface electrodes
+- founded: 2019
+- key_product: Stretchable flexible electrodes
+- location: Tangshan, Hebei
+- major_milestone: Developed ultra-flexible electrodes reducing brain tissue damage
+- name: Tangshan Rongrui Medical
+- recent_development: 2026: Collaborating with research institutes on next-gen flexible electrode materials.
+- status: R&D and early commercialization
+- type: Private
+
+### BrainCo (强脑科技)
+
+- channels: N/A (EEG)
+- country: China
+- focus: Non-invasive BCI for education, healthcare, consumer
+- founded: 2015
+- key_product: FocusCalm headband, smart prosthetics
+- location: Hangzhou / Cambridge, MA
+- major_milestone: First to bring BCI to Chinese university exam halls
+- name: BrainCo (强脑科技)
+- recent_development: 2026: Expanding BCI applications in special education and elderly care in China.
+- status: Commercial products in education and healthcare
+- type: Private
+- website: https://brainco.com.cn
+
+### 清华大学 BCI团队 (Beinao)
+
+- channels: 16-64 (research)
+- country: China
+- focus: Invasive and non-invasive BCI research
+- founded: 2000
+- key_product: 北脑二号/三号
+- location: Beijing
+- major_milestone: 2022: World's first fully implantable wireless BCI (64 channels)
+- name: 清华大学 BCI团队 (Beinao)
+- recent_development: 2026: 北脑三号 project advancing toward higher channel count and clinical translation.
+- status: Research and clinical trials
+- type: University
+
+### 上海交通大学 BCI团队
+
+- channels: Up to 256
+- country: China
+- focus: Non-invasive BCI, ECoG
+- founded: 2010
+- key_product: High-density ECoG system
+- location: Shanghai
+- major_milestone: Developed high-density ECoG for motor rehabilitation
+- name: 上海交通大学 BCI团队
+- recent_development: 2026: Working on wireless ECoG systems for clinical applications.
+- status: Research
+- type: University
+
+### 深圳先进院 (SIAT)
+
+- channels: Multiple
+- country: China
+- focus: Invasive BCI, neural prosthetics
+- founded: 2006
+- key_product: Neural prosthetic systems
+- location: Shenzhen, Guangdong
+- major_milestone: Pioneering work in brain-spine interface
+- name: 深圳先进院 (SIAT)
+- recent_development: 2026: Developing minimally invasive BCI for spinal cord injury patients.
+- status: Research and pre-clinical
+- type: Research Institute
+
+### 浙江大学 BCI团队
+
+- channels: Multi-modal
+- country: China
+- focus: Non-invasive BCI, brain mapping
+- founded: 2012
+- key_product: fNIRS-EEG hybrid system
+- location: Hangzhou, Zhejiang
+- major_milestone: Developed hybrid BCI combining EEG and fNIRS
+- name: 浙江大学 BCI团队
+- recent_development: 2026: Advancing multimodal BCI for cognitive enhancement and rehabilitation.
+- status: Research
+- type: University
+
+### 天津大学 BCI团队
+
+- channels: N/A (EEG)
+- country: China
+- focus: Non-invasive BCI, emotion recognition
+- founded: 2014
+- key_product: Emotion-aware BCI system
+- location: Tianjin
+- major_milestone: Pioneering affective computing with BCI
+- name: 天津大学 BCI团队
+- recent_development: 2026: Developing BCI systems for emotional health monitoring.
+- status: Research
+- type: University
+
+### 南纳科学 (Nana Scientific)
+
+- channels: Custom
+- country: China
+- focus: Minimally invasive BCI for neurological disorders
+- founded: 2021
+- key_product: Neurosurgical BCI platform
+- location: Shanghai
+- major_milestone: Founded by ex-Neuralink scientists
+- name: 南纳科学 (Nana Scientific)
+- recent_development: 2026: Building minimally invasive BCI platform for Parkinson's and epilepsy.
+- status: R&D
+- type: Private
+
+### 脑陆科技 (NeuroLinker)
+
+- channels: N/A (EEG)
+- country: China
+- focus: BCI for smart home and IoT
+- founded: 2022
+- key_product: Smart BCI hub
+- location: Shanghai
+- major_milestone: Concept of BCI-connected smart home ecosystem
+- name: 脑陆科技 (NeuroLinker)
+- recent_development: 2026: Prototyping consumer BCI devices for smart home control.
+- status: Early stage
+- type: Private
+
+### 拼奇梦想 (Ponycemaker)
+
+- channels: N/A
+- country: China
+- focus: Educational BCI kits
+- founded: 2016
+- key_product: BCI educational platforms
+- location: Beijing
+- major_milestone: Popular BCI education brand in China
+- name: 拼奇梦想 (Ponycemaker)
+- recent_development: 2026: Expanding BCI curriculum for K-12 education.
+- status: Commercial
+- type: Private
+
+### 博睿康 (Brain-Quick)
+
+- channels: Up to 512
+- country: China
+- focus: Non-invasive and semi-invasive BCI for medical
+- founded: 2011
+- key_product: NEO system (ECoG)
+- location: Beijing
+- major_milestone: 2026年3月: NEO semi-invasive BCI获NMPA批准用于脊髓损伤康复
+- name: 博睿康 (Brain-Quick)
+- recent_development: 2026: NEO system approved for clinical use, marking China's first semi-invasive BCI medical device approval.
+- status: NMPA approved (2026)
+- type: Private
+- website: https://www.brain-neo.com
+
+### 阶跃星辰 (StepFun)
+
+- channels: N/A (software)
+- country: China
+- focus: AI+BCI for neural signal decoding
+- founded: 2021
+- key_product: Neural decoding AI platform
+- location: Beijing
+- major_milestone: Applying large AI models to BCI signal processing
+- name: 阶跃星辰 (StepFun)
+- recent_development: 2026: Developing foundation models specifically for BCI signal interpretation.
+- status: R&D
+- type: Private
+
+### 强脑科技 (BrainPower Tech)
+
+- channels: N/A
+- country: China
+- focus: BCI for prosthetics and rehabilitation
+- founded: 2013
+- key_product: Smart prosthetic limbs
+- location: Shanghai
+- major_milestone: Leading BCI prosthetics company in China
+- name: 强脑科技 (BrainPower Tech)
+- recent_development: 2026: Launching new generation of BCI-controlled prosthetic arms with haptic feedback.
+- status: Commercial products
+- type: Private
+
+### 科大讯飞 (iFLYTEK)
+
+- channels: N/A
+- country: China
+- focus: AI+BCI for speech and language
+- founded: 1999
+- key_product: BCI-enabled speech synthesis
+- location: Hefei, Anhui
+- major_milestone: Integrating BCI with large language models for speech restoration
+- name: 科大讯飞 (iFLYTEK)
+- recent_development: 2026: Announced collaboration on BCI speech decoding using iFLYTEK's large language models.
+- status: Research and development
+- type: Public
+
+### 华为 (Huawei)
+
+- channels: N/A
+- country: China
+- focus: Wearable BCI sensors, health monitoring
+- founded: 1987
+- key_product: Patents for BCI wearables
+- location: Shenzhen, Guangdong
+- major_milestone: Filed multiple BCI-related patents in 2024-2025
+- name: 华为 (Huawei)
+- recent_development: 2026: Exploring BCI integration with wearable health devices. Patent for non-invasive BCI wristband.
+- status: Patent filing and R&D
+- type: Private (Publicly traded)
+
+### TCL Technology
+
+- channels: N/A
+- country: China
+- focus: BCI for smart display and interaction
+- founded: 1981
+- key_product: BCI-enabled smart displays
+- location: Huizhou, Guangdong
+- major_milestone: Exploring BCI for next-gen TV and display interaction
+- name: TCL Technology
+- recent_development: 2026: Researching gesture-free BCI control for smart home displays.
+- status: R&D
+- type: Public
+
+### Minds + Machines Group
+
+- channels: N/A (software)
+- country: Canada
+- focus: AI-powered BCI signal processing
+- founded: 2017
+- key_product: BCI analytics platform
+- location: Toronto, Ontario
+- major_milestone: Partnership with Interaxon (Muse)
+- name: Minds + Machines Group
+- recent_development: 2026: Providing AI/ML services for BCI companies worldwide.
+- status: Commercial partnerships
+- type: Public (TSX-V: MMG)
+
+### OpenBCI
+
+- channels: Up to 128 (EEG)
+- country: USA
+- focus: Open-source BCI hardware and software
+- founded: 2013
+- key_product: CyberGaze, Ultera headset
+- location: Remote (USA)
+- major_milestone: Pioneer in open-source BCI
+- name: OpenBCI
+- recent_development: 2026: Active open-source community developing new BCI applications and hardware.
+- status: Open source community
+- type: Private
+- website: https://openbci.com
+
+### MIT Media Lab BCI Group
+
+- channels: Varies
+- country: USA
+- focus: Innovative BCI interfaces and materials
+- founded: 1980
+- key_product: Various research prototypes
+- location: Cambridge, Massachusetts
+- major_milestone: Pioneering soft electronics and neural materials
+- name: MIT Media Lab BCI Group
+- recent_development: 2026: Developing new biocompatible materials for long-term BCI implants.
+- status: Research
+- type: University
+
+### Stanford BCI Program
+
+- channels: Varies
+- country: USA
+- focus: Invasive and non-invasive BCI research
+- founded: 2000
+- key_product: Various research projects
+- location: Stanford, California
+- major_milestone: Key contributions to neural decoding algorithms
+- name: Stanford BCI Program
+- recent_development: 2026: Leading research in AI-enhanced BCI for motor restoration.
+- status: Research
+- type: University
+
+### UCSF BCI Initiative
+
+- channels: Varies
+- country: USA
+- focus: Clinical BCI for paralysis and speech
+- founded: 2010
+- key_product: Clinical BCI trials
+- location: San Francisco, California
+- major_milestone: Pioneering work in speech BCI
+- name: UCSF BCI Initiative
+- recent_development: 2026: Conducting clinical trials for BCI-enabled communication in locked-in patients.
+- status: Clinical research
+- type: University
+
+### 鹰眼智能 (Hexeagle)
+
+- channels: N/A (EEG)
+- country: China
+- focus: Non-invasive BCI for cognitive enhancement
+- founded: 2021
+- key_product: Cognitive BCI headset
+- location: Wuhan, Hubei
+- major_milestone: Developing BCI for focus and cognitive performance
+- name: 鹰眼智能 (Hexeagle)
+- recent_development: 2026: Testing consumer BCI devices for study and productivity enhancement.
+- status: Product development
+- type: Private
+
+### NeuroSky
+
+- channels: N/A (single-channel EEG chip)
+- country: USA
+- focus: Consumer EEG chips and BCI sensors
+- founded: 2004
+- key_product: MindWave, EEG chips
+- location: Redwood City, California
+- major_milestone: Pioneer in low-cost EEG chip technology
+- name: NeuroSky
+- recent_development: 2026: Continuing to supply EEG chips for consumer BCI devices globally.
+- status: Commercial chip supplier
+- type: Private
+
+### BCI Defense Products
+
+- channels: N/A
+- country: USA
+- focus: Military BCI applications
+- founded: 2004
+- key_product: BCI for drone control, pilot monitoring
+- location: Virginia
+- major_milestone: Early pioneer in military BCI research
+- name: BCI Defense Products
+- recent_development: 2026: Working on BCI for unmanned vehicle control and soldier cognitive monitoring.
+- status: Defense contracts
+- type: Private
+
+### Paradigm Robotics
+
+- channels: N/A
+- country: USA
+- focus: BCI-driven exoskeletons
+- founded: 2019
+- key_product: Neural exoskeleton
+- location: California
+- major_milestone: Combining BCI with robotic exoskeletons for mobility
+- name: Paradigm Robotics
+- recent_development: 2026: Developing BCI-controlled lower-limb exoskeletons for paraplegic patients.
+- status: Prototype
+- type: Private
+
+### Ekso Bionics
+
+- channels: N/A
+- country: USA
+- focus: Robotic exoskeletons with BCI integration
+- founded: 2005
+- key_product: Ekso GT
+- location: Berkeley, California
+- major_milestone: Leading rehabilitation exoskeleton manufacturer
+- name: Ekso Bionics
+- recent_development: 2026: Exploring BCI integration for enhanced gait rehabilitation.
+- status: FDA cleared exoskeleton
+- type: Public
+
+### Sprinta Health
+
+- channels: N/A (EEG-based)
+- country: USA
+- focus: Digital therapeutic for ADHD via BCI
+- founded: 2021
+- key_product: Recess (prescription digital therapy)
+- location: Boston, Massachusetts
+- major_milestone: First FDA-authorized digital therapeutic for ADHD using EEG
+- name: Sprinta Health
+- recent_development: 2026: Expanding BCI-based digital therapeutics for other neurological conditions.
+- status: FDA authorized
+- type: Private
+- website: https://sprintahealth.com
+
+### Mojo Vision
+
+- channels: N/A
+- country: USA
+- focus: AR contact lens with BCI potential
+- founded: 2015
+- key_product: Mojo Lens
+- location: San Francisco, California
+- major_milestone: Pioneered smart contact lens technology
+- name: Mojo Vision
+- recent_development: 2026: Assets acquired by other companies for AR/BCI applications.
+- status: Liquidated assets
+- type: Bankrupt (2023)
+
+### TMSHealth
+
+- channels: N/A (TMS)
+- country: USA
+- focus: TMS-based BCI for mental health
+- founded: 2006
+- key_product: TMS treatment planning software
+- location: Florida
+- major_milestone: Leading TMS treatment planning platform
+- name: TMSHealth
+- recent_development: 2026: Integrating BCI feedback into TMS treatment for depression and PTSD.
+- status: Commercial
+- type: Private
+
+### MagVenture
+
+- channels: N/A (TMS)
+- country: Denmark
+- focus: TMS devices for BCI and research
+- founded: 1991
+- key_product: Magstim TMS systems
+- location: Frederiksberg
+- major_milestone: Global leader in TMS technology
+- name: MagVenture
+- recent_development: 2026: New TMS systems optimized for BCI research applications.
+- status: Commercial medical devices
+- type: Private
+- website: https://magventure.com
+
+### Magnetec
+
+- channels: N/A
+- country: Japan
+- focus: TMS and TSCS devices for BCI
+- founded: 1978
+- key_product: MagStim-compatible TMS
+- location: Tokyo
+- major_milestone: Long-standing TMS manufacturer
+- name: Magnetec
+- recent_development: 2026: Developing combined TMS-EEG systems for closed-loop BCI.
+- status: Commercial
+- type: Private
+
+### Neuronetics
+
+- channels: N/A (tDCS)
+- country: USA
+- focus: tDCS-based BCI for mental health
+- founded: 2000
+- key_product: Force FDT system
+- location: Malvern, Pennsylvania
+- major_milestone: Pioneer in FDA-cleared tDCS devices
+- name: Neuronetics
+- recent_development: 2026: Technology integrated into MagVenture's BCI product lineup.
+- status: Commercial (now MagVenture)
+- type: Acquired by MagVenture
+
+### NeuroSoft
+
+- channels: N/A (software)
+- country: Russia
+- focus: EEG and BCI analysis software
+- founded: 1993
+- key_product: NeuroSoft EEG/BCI platform
+- location: Moscow
+- major_milestone: One of the oldest BCI software companies
+- name: NeuroSoft
+- recent_development: 2026: Updating BCI analysis tools for modern deep learning integration.
+- status: Commercial software
+- type: Private
+
+### Synchron
+
+- name: Synchron
+- country: USA
+- headquarters: New York, NY
+- founding_year: 2007
+- founder: Thomas Oxley
+- technology_type: Minimally Invasive - Stentrode (vascular approach)
+- total_funding_usd_millions: 420
+- latest_round: Series D
+- investors: Andreessen Horowitz, Sequoia Capital, Bill Gates, Peter Thiel, Larry Ellison
+- clinical_trials: true
+- first_human_implant: 2020 (Australia), US trials 2022
+- key_products: Stentrode, Valyra Receiver
+- employee_count: 200
+- description: Revolutionary vascular approach to BCI using a stent-based electrode delivered through the jugular vein. No craniotomy required. Leading in human trials.
+- website: https://synchron.com
+- ipo_status: Private
+- key_milestones: FDA Humanitarian Device Exemption 2021; First human implant 2020; Second patient implanted 2022; Series D $136M 2022
+- research_focus: Assistive technology for paralyzed patients, speech restoration, wheelchair control, computer use
+
+### Blackrock Neurotech
+
+- name: Blackrock Neurotech
+- country: USA
+- headquarters: Cleveland, Ohio
+- founding_year: 2002
+- founder: Gary Steigerwald (independent spin-off from Ohio State University)
+- technology_type: Invasive - Utah Array, Colorado Chip, Pod
+- total_funding_usd_millions: null
+- latest_round: Bootstrapped/Self-funded
+- investors: 
+- clinical_trials: true
+- first_human_implant: 2010s (extensive clinical research)
+- key_products: Utah Array, Colorado Chip, Pod, AirWave
+- employee_count: 50
+- description: Academic spin-off creating some of the most widely used BCI research tools. Utah Array is the gold standard for neural recording in research.
+- website: https://blackrockneurotech.com
+- ipo_status: Private
+- key_milestones: Developed Utah Array used in landmark clinical trials; Extensive academic partnerships
+- research_focus: Research-grade neural interfaces, motor restoration, extensive clinical collaboration
+
+### Neuralink (Updated)
+
+- name: Neuralink (Updated)
+- country: USA
+- headquarters: Fremont, California
+- founding_year: 2016
+- founder: Elon Musk
+- technology_type: Invasive - Ultra-thin flexible polymer threads with gold interconnects
+- total_funding_usd_millions: 300
+- latest_round: Series B
+- investors: Founders Fund, Bezos Expeditions, Theranos alumni investors, Rivian founders
+- clinical_trials: true
+- first_human_implant: January 2024 - Noland Arbaugh (first patient)
+- key_products: N1 Robot (implantation robot), Thread (electrode array), N3 Neural Interface
+- employee_count: 600
+- description: Most well-known BCI company. Developing high-bandwidth brain-machine interface with 3,000+ electrodes per thread. First human implant completed in January 2024.
+- website: https://neuralink.com
+- ipo_status: Private
+- key_milestones: FDA IDE approval May 2019; First human implant January 2024; Animal testing since 2017; Robotic implantation system
+- research_focus: Motor function restoration, potential speech restoration, vision restoration, treating neurological disorders
+
+### Synchron (Updated)
+
+- name: Synchron (Updated)
+- country: Australia/USA
+- headquarters: Melbourne, Australia + New York, USA
+- founding_year: 2007
+- founder: Thomas Oxley
+- technology_type: Minimally Invasive - Stentrode delivered via jugular vein
+- total_funding_usd_millions: 420
+- latest_round: Series D
+- investors: Andreessen Horowitz, Sequoia Capital, Bill Gates, Peter Thiel, Larry Ellison, Founders Fund
+- clinical_trials: true
+- first_human_implant: First patient implanted November 2020 in Australia
+- key_products: Stentrode, Valyra Receiver
+- employee_count: 200
+- description: Leader in minimally invasive BCI. Uses a stent-based electrode delivered through the jugular vein into brain blood vessels. No craniotomy needed. Most advanced human trial data.
+- website: https://synchron.com
+- ipo_status: Private
+- key_milestones: FDA Humanitarian Device Exemption 2021; Multiple human implants; Series D funding $136M 2022; FDA De Novo pathway 2023
+- research_focus: Assistive technology for spinal cord injury and ALS patients, computer control, speech synthesis
+
+### Blackrock Neurotech (Updated)
+
+- name: Blackrock Neurotech (Updated)
+- country: USA
+- headquarters: Cleveland, Ohio
+- founding_year: 2002
+- founder: Gary Steigerwald (spin-off from Ohio State University)
+- technology_type: Invasive - Utah Array (96 electrodes), Colorado Chip, Pod system
+- total_funding_usd_millions: null
+- latest_round: Self-funded/Academic grants
+- investors: 
+- clinical_trials: true
+- first_human_implant: 2010s (used in numerous academic clinical trials)
+- key_products: Utah Array, Colorado Chip, AirWave Wireless System, Pod
+- employee_count: 50
+- description: Creator of the Utah Array, the most widely used BCI research tool globally. Academic spin-off with no VC funding. Gold standard for neural recording research.
+- website: https://blackrockneurotech.com
+- ipo_status: Private
+- key_milestones: Utah Array became industry standard; Used in landmark clinical trials at multiple universities; Extensive peer-reviewed publications
+- research_focus: Research-grade neural interfaces, motor cortex recording, academic collaborations
+
+### Synchron
+
+- name: Synchron
+- founded: 2012
+- hq: New York, NY, USA
+- ceo: Thomas Oxley
+- cto: Dr. Michael Miller
+- stage: Series D
+- total_funding: $375M+
+- latest_round: $200M Series D (Nov 2024)
+- valuation: ~$1.8B (May 2024)
+- investors: SoftBank Vision Fund 2, Saudi PIF, Fidelity Management, Bill Gates, Jeff Bezos, Founders Fund, IFC, Temasek, Merck Global Health Innovation Fund
+- product: Stentrode
+- technology_type: Interventional Brain-Computer Interface (BCI)
+- implant_method: Endovascular — inserted via jugular vein into brain blood vessels, no craniotomy required
+- procedure_duration: ~2 hours
+- hospital_stay: Most patients go home next day
+- target_population: 15M people with motor impairment (ALS, spinal cord injury, stroke)
+- clinical_trials: First human implant 2020; 14 patients implanted by mid-2024; FDA Breakthrough Device Designation
+- regulatory_status: FDA Breakthrough Device Designation granted; Commercial approval expected 2025
+- key_features: Thought-controlled smartphone/tablet use, Texting, browsing, shopping from brain signals alone, No muscles needed, Minimal invasiveness vs traditional BCI
+- apple_partnership: First company to integrate Apple BCI-HID; developed Bluetooth iOS protocol for thought-controlled interaction
+- competitors: Neuralink (Elon Musk), Blackrock Neurotech, Precision Neuroscience
+- website: https://synchron.com
+
 ## neural_implants
 
 ### Neuralink N1 Implant
@@ -2105,6 +3810,234 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - description: Columbia University developed a next-generation silicon chip BCI for brain surface placement in 2025-2026, integrating 65,536 recording channels with on-chip signal processing and wireless data transmission. The chip uses advanced CMOS technology to perform local neural signal decoding, reducing the data bandwidth needed for wireless transmission by 1000x. The device is designed for epidural placement and can capture neural activity across an entire cortical region. On-chip processing enables real-time decoding of motor intentions and speech imagery without external computing hardware.
 - breakthrough: 65,536-channel silicon chip with on-chip AI processing; 1000x wireless bandwidth reduction
 
+### N1 Implant
+
+- name: N1 Implant
+- company: Neuralink
+- type: Brain-Computer Interface
+- material: Biocompatible Polymer, Electrodes
+
+### Utah Array (Type E)
+
+- name: Utah Array (Type E)
+- company: Blackrock Microsystems
+- type: Electrocorticography (ECoG) Array
+- material: Silicon, Platinum
+
+### Medtronic Activa PC+S
+
+- name: Medtronic Activa PC+S
+- company: Medtronic
+- type: Deep Brain Stimulator (DBS)
+- material: Titanium, Platinum/Iridium
+
+### Argus II Retinal Prosthesis
+
+- name: Argus II Retinal Prosthesis
+- company: Second Sight
+- type: Retinal Implant
+- material: Titanium, Silicone, Gold
+
+### Synchron Stentrode
+
+- name: Synchron Stentrode
+- company: Synchron
+- type: Endovascular BCI
+- material: Nitinol, Platinum
+
+### NeuroPace RNS
+
+- name: NeuroPace RNS
+- company: NeuroPace
+- type: Responsive Neurostimulator
+- material: Titanium, PtIr
+
+### Alpha Omega Epi-Track
+
+- name: Alpha Omega Epi-Track
+- company: Alpha Omega
+- type: Subdural Grid
+- material: Silicone, Electrodes
+
+### Boston Scientific Vercise
+
+- name: Boston Scientific Vercise
+- company: Boston Scientific
+- type: Deep Brain Stimulator (DBS)
+- material: Titanium, PtIr
+
+### Second Sight Orion
+
+- name: Second Sight Orion
+- company: Second Sight
+- type: Cortical Visual Implant
+- material: Titanium, Silicone
+
+### Utah Array (Type 2)
+
+- name: Utah Array (Type 2)
+- company: Blackrock Microsystems
+- type: Utah Array
+- material: Silicon, Platinum
+
+### Kernel Flow
+
+- name: Kernel Flow
+- company: Kernel
+- type: Neural Recording
+- material: Biocompatible Polymer
+
+### Abbott Infinity DBS
+
+- name: Abbott Infinity DBS
+- company: Abbott
+- type: Deep Brain Stimulator (DBS)
+- material: Titanium, PtIr
+
+### Blackrock Neuropixels
+
+- name: Blackrock Neuropixels
+- company: Blackrock Microsystems
+- type: Neuropixels Probe
+- material: Silicon
+
+### Cochlear Implant (Nucleus)
+
+- name: Cochlear Implant (Nucleus)
+- company: Cochlear
+- type: Cochlear Implant
+- material: Titanium, Platinum
+
+### NeuroPort Array
+
+- name: NeuroPort Array
+- company: Cyberkinetics
+- type: Utah Array
+- material: Silicon, Platinum
+
+### N1 Link
+
+- name: N1 Link
+- company: Neuralink
+- type: High-Bandwidth Neural Interface
+- material: Flexible Polymer, Platinum Electrodes
+
+### Utah Array (96-channel)
+
+- name: Utah Array (96-channel)
+- company: Blackrock Microsystems
+- type: Utah Electrode Array
+- material: Silicon, Tungsten
+
+### Medtronic Activa PC+S
+
+- name: Medtronic Activa PC+S
+- company: Medtronic
+- type: Deep Brain Stimulator (DBS)
+- material: Titanium, Silicone, Platinum/Iridium
+
+### Second Sight Argus II
+
+- name: Second Sight Argus II
+- company: Second Sight Medical Products
+- type: Retinal Implant
+- material: Titanium, Silicone, Platinum
+
+### Boston Scientific Vercise
+
+- name: Boston Scientific Vercise
+- company: Boston Scientific
+- type: Deep Brain Stimulator (DBS)
+- material: Titanium, Silicone, Platinum/Iridium
+
+### Abbvie/Otsuka DBS System
+
+- name: Abbvie/Otsuka DBS System
+- company: AbbVie / Otsuka
+- type: Deep Brain Stimulator (DBS)
+- material: Titanium, Silicone, Platinum/Iridium
+
+### Alpha IMS
+
+- name: Alpha IMS
+- company: Retina Implant AG
+- type: Subretinal Implant
+- material: Titanium, Silicone, Silicon
+
+### Utah Array (120-channel)
+
+- name: Utah Array (120-channel)
+- company: Blackrock Microsystems
+- type: Utah Electrode Array
+- material: Silicon, Tungsten
+
+### Neuralink N1 Link (V2)
+
+- name: Neuralink N1 Link (V2)
+- company: Neuralink
+- type: High-Bandwidth Neural Interface
+- material: Flexible Polymer, Gold, Platinum
+
+### St. Jude Medical Brio
+
+- name: St. Jude Medical Brio
+- company: St. Jude Medical (Abbott)
+- type: Deep Brain Stimulator (DBS)
+- material: Titanium, Silicone, Platinum
+
+### Nevstim Cortivis
+
+- name: Nevstim Cortivis
+- company: Nevstim
+- type: Epidural Motor Cortex Stimulator
+- material: Titanium, Silicone, Platinum
+
+### Cyberkinetics NeuroPort
+
+- name: Cyberkinetics NeuroPort
+- company: Cyberkinetics
+- type: Utah Electrode Array
+- material: Silicon, Tungsten
+
+### Boston Scientific Sentierra
+
+- name: Boston Scientific Sentierra
+- company: Boston Scientific
+- type: Spinal Cord Stimulator (SCS)
+- material: Titanium, Silicone, Platinum
+
+### Medtronic Summit RC+S
+
+- name: Medtronic Summit RC+S
+- company: Medtronic
+- type: Spinal Cord Stimulator (SCS)
+- material: Titanium, Silicone, Platinum
+
+### Epi-Retinal Implant (IRIS)
+
+- name: Epi-Retinal Implant (IRIS)
+- company: LambdaVision
+- type: Retinal Implant
+- material: Silicone, Carbon Nanotubes
+
+### neuralink_dura_pioneer
+
+- company: Neuralink
+- product: Brain-Computer Interface with Dural-Penetrating Threads
+- status: Clinical Trial
+- location: Toronto Western Hospital, Canada
+- key_event: Global first dural-penetrating implant surgery completed in May 2026
+- technology: Ultra-thin electrodes penetrate dura mater directly without surgical removal
+- features: 1024-channel simultaneous neural recording, Real-time spike detection, Robotic arm implantation via Thread Delivery System, Thought-controlled computer cursor within 1 hour post-surgery
+- patient_outcome: Good recovery, thought-controlled cursor operation within 1 hour
+- significance: Major milestone for invasive BCI - reduces surgical trauma, enables automation and scalability
+- founded: 2016
+- founder: Elon Musk
+- headquarters: San Francisco, CA (registered Nevada 2024)
+- challenges: FDA regulatory approval, Ethical concerns, Long-term safety and reversibility, Scalability of automated surgery
+- 2026_status: Mass production year announced, automated surgical robot achieved
+- competing_technology: Meta Brain2Qwerty v2 (non-invasive MEG-based)
+
 ## brain_disorders
 
 ### Alzheimer's Disease
@@ -2537,6 +4470,293 @@ Brain science knowledge base covering brain regions, BCI, neural implants, brain
 - treatment: AAV载体基因替代或基因编辑治疗特定遗传性癫痫
 - research_status: 多项Phase 1-2临床试验2025-2026; Stoke Therapeutics STK-001领先
 - description: Gene therapy for genetic epilepsies advanced significantly in 2025-2026, with Stoke Therapeutics' STK-001 (for Dravet syndrome) showing promising Phase 1/2a results. STK-001 uses antisense nucleotides to upregulate productive SCN1A gene expression, addressing the root cause of Dravet syndrome. Other programs target tuberous sclerosis complex (TSC), CDKL5 deficiency, and PCDH19-related epilepsy. These targeted therapies aim to modify disease course rather than just control seizures, potentially offering the first disease-modifying treatments for devastating childhood epilepsies.
+
+### Stroke
+
+- name: Stroke
+- type: Neurological disorder
+- affected_region: Brain
+- prevalence: Leading cause of death and disability globally (2021)
+- treatment: Acute treatment, rehabilitation, preventive measures
+- research_status: Active research ongoing
+- description: Stroke is one of the top 10 neurological conditions contributing to death and disability as of 2021
+- last_updated: 2026-06-27T16:05:45.091Z
+
+### Neonatal encephalopathy
+
+- name: Neonatal encephalopathy
+- type: Neurological disorder
+- affected_region: Brain
+- prevalence: One of the top 10 neurological conditions contributing to death and disability (2021)
+- treatment: Supportive care, therapeutic hypothermia
+- research_status: Active research ongoing
+- description: Neonatal encephalopathy is one of the top 10 neurological conditions contributing to death and disability as of 2021
+- last_updated: 2026-06-27T16:05:45.091Z
+
+### Brain Health Initiative 2025
+
+- name: Brain Health Initiative 2025
+- type: Initiative
+- affected_region: Global
+- prevalence: Not specified
+- treatment: Not specified
+- research_status: Active initiative
+- description: A brain health initiative presenting the latest global research findings in brain science technologies, with a conference scheduled for July 2026.
+- last_updated: 2026-06-27T16:04:51.342Z
+
+### Migraine
+
+- name: Migraine
+- type: Neurological disorder
+- affected_region: Brain
+- prevalence: One of the top 10 neurological conditions contributing to death and disability (2021)
+- treatment: Acute medications, preventive treatments
+- research_status: Active research ongoing
+- description: Migraine is one of the top 10 neurological conditions contributing to death and disability as of 2021
+- last_updated: 2026-06-27T16:05:45.091Z
+
+### Brain disorders
+
+- name: Brain disorders
+- type: General category
+- affected_region: Brain
+- prevalence: Research remains uneven across regions
+- treatment: Varies by specific disorder
+- research_status: Active research with insufficient diversity representation
+- description: Research on brain diseases remains uneven across regions and insufficiently representative of human diversity
+- last_updated: 2026-06-27T16:05:45.091Z
+
+### 脑认知与脑疾病研究所
+
+- name: 脑认知与脑疾病研究所
+- type: Research Institute
+- affected_region: Shenzhen, China
+- prevalence: Not specified
+- treatment: Not specified
+- research_status: Active research
+- description: 深圳先进院脑认知与脑疾病研究所专注于脑认知功能的基础研究以及脑疾病的机理研究和早期诊断手段的研发，致力于在宏观（脑区）层面和介观（环路、细胞）层面对感知觉、学习进行研究。
+- last_updated: 2026-06-27T16:04:51.342Z
+
+### Neurological disorders
+
+- name: Neurological disorders
+- type: General category
+- affected_region: Nervous system
+- prevalence: Global health concern
+- treatment: Varies by specific disorder
+- research_status: Active research with global conferences
+- description: Subject of multiple international conferences including the 7th Global Conclave on Neurology and Neurological Disorders
+- last_updated: 2026-06-27T16:05:45.091Z
+
+### Alzheimer's Disease
+
+- name: Alzheimer's Disease
+- type: Neurodegenerative
+- prevalence: 6.5 million (US adults)
+- brain_regions: Hippocampus, Cortex, Entorhinal Cortex
+
+### Parkinson's Disease
+
+- name: Parkinson's Disease
+- type: Neurodegenerative
+- prevalence: 1 million (US adults)
+- brain_regions: Substantia Nigra, Basal Ganglia, Striatum
+
+### Major Depressive Disorder
+
+- name: Major Depressive Disorder
+- type: Mood Disorder
+- prevalence: 21 million (US adults)
+- brain_regions: Prefrontal Cortex, Amygdala, Hippocampus
+
+### Epilepsy
+
+- name: Epilepsy
+- type: Seizure Disorder
+- prevalence: 3.4 million (US people)
+- brain_regions: Temporal Lobe, Frontal Lobe, Hippocampus
+
+### Autism Spectrum Disorder
+
+- name: Autism Spectrum Disorder
+- type: Neurodevelopmental
+- prevalence: 5.4 million (US children)
+- brain_regions: Prefrontal Cortex, Cerebellum, Amygdala
+
+### Schizophrenia
+
+- name: Schizophrenia
+- type: Psychotic Disorder
+- prevalence: 2.4 million (US adults)
+- brain_regions: Prefrontal Cortex, Hippocampus, Ventricles, Temporal Lobes
+
+### Multiple Sclerosis
+
+- name: Multiple Sclerosis
+- type: Autoimmune
+- prevalence: 1 million (US people)
+- brain_regions: White Matter, Optic Nerves, Spinal Cord, Cerebellum
+
+### Stroke
+
+- name: Stroke
+- type: Vascular
+- prevalence: 795,000 (US cases/year)
+- brain_regions: Middle Cerebral Artery territory, Basal Ganglia, Thalamus
+
+### Bipolar Disorder
+
+- name: Bipolar Disorder
+- type: Mood Disorder
+- prevalence: 7 million (US adults)
+- brain_regions: Prefrontal Cortex, Amygdala, Hippocampus
+
+### Anxiety Disorders
+
+- name: Anxiety Disorders
+- type: Anxiety Disorder
+- prevalence: 19.1% (US adults)
+- brain_regions: Amygdala, Hippocampus, Prefrontal Cortex
+
+### Huntington's Disease
+
+- name: Huntington's Disease
+- type: Neurodegenerative
+- prevalence: 30,000 (US people)
+- brain_regions: Striatum, Cerebral Cortex, Hippocampus
+
+### Obsessive-Compulsive Disorder
+
+- name: Obsessive-Compulsive Disorder
+- type: Anxiety Disorder
+- prevalence: 1.2 million (US adults)
+- brain_regions: Orbitofrontal Cortex, Caudate Nucleus, Thalamus
+
+### Traumatic Brain Injury (TBI)
+
+- name: Traumatic Brain Injury (TBI)
+- type: Acquired
+- prevalence: 5.3 million (US people living with)
+- brain_regions: Frontal Lobe, Temporal Lobe, Brainstem
+
+### Amyotrophic Lateral Sclerosis (ALS)
+
+- name: Amyotrophic Lateral Sclerosis (ALS)
+- type: Neurodegenerative
+- prevalence: 30,000 (US people)
+- brain_regions: Motor Cortex, Brainstem, Spinal Cord
+
+### Attention-Deficit/Hyperactivity Disorder (ADHD)
+
+- name: Attention-Deficit/Hyperactivity Disorder (ADHD)
+- type: Neurodevelopmental
+- prevalence: 6 million (US children)
+- brain_regions: Prefrontal Cortex, Basal Ganglia, Cerebellum
+
+### Alzheimer's Disease
+
+- name: Alzheimer's Disease
+- type: Neurodegenerative
+- prevalence: 6.7 million (US)
+- brain_regions: Hippocampus, Cortex, Amygdala
+
+### Parkinson's Disease
+
+- name: Parkinson's Disease
+- type: Neurodegenerative
+- prevalence: 1 million (US)
+- brain_regions: Substantia Nigra, Basal Ganglia
+
+### Major Depressive Disorder
+
+- name: Major Depressive Disorder
+- type: Mood
+- prevalence: 21 million (US)
+- brain_regions: Prefrontal Cortex, Amygdala, Hippocampus
+
+### Epilepsy
+
+- name: Epilepsy
+- type: Seizure
+- prevalence: 3 million (US)
+- brain_regions: Temporal Lobe, Frontal Lobe, Generalized
+
+### Schizophrenia
+
+- name: Schizophrenia
+- type: Psychotic
+- prevalence: 2.4 million (US)
+- brain_regions: Prefrontal Cortex, Hippocampus, Basal Ganglia
+
+### Autism Spectrum Disorder
+
+- name: Autism Spectrum Disorder
+- type: Neurodevelopmental
+- prevalence: 5.4 million (US)
+- brain_regions: Prefrontal Cortex, Cerebellum, Amygdala
+
+### Attention-Deficit/Hyperactivity Disorder
+
+- name: Attention-Deficit/Hyperactivity Disorder
+- type: Neurodevelopmental
+- prevalence: 6 million (US)
+- brain_regions: Prefrontal Cortex, Basal Ganglia
+
+### Multiple Sclerosis
+
+- name: Multiple Sclerosis
+- type: Autoimmune
+- prevalence: 1 million (US)
+- brain_regions: White Matter, Optic Nerves, Spinal Cord
+
+### Huntington's Disease
+
+- name: Huntington's Disease
+- type: Neurodegenerative
+- prevalence: 30,000 (US)
+- brain_regions: Striatum, Cortex, Cerebellum
+
+### Bipolar Disorder
+
+- name: Bipolar Disorder
+- type: Mood
+- prevalence: 7 million (US)
+- brain_regions: Prefrontal Cortex, Amygdala, Hippocampus
+
+### Anxiety Disorders
+
+- name: Anxiety Disorders
+- type: Anxiety
+- prevalence: 19 million (US)
+- brain_regions: Amygdala, Hippocampus, Prefrontal Cortex
+
+### Stroke
+
+- name: Stroke
+- type: Vascular
+- prevalence: 7.95 million (US)
+- brain_regions: Middle Cerebral Artery, Anterior Cerebral Artery territory
+
+### Amyotrophic Lateral Sclerosis (ALS)
+
+- name: Amyotrophic Lateral Sclerosis (ALS)
+- type: Neurodegenerative
+- prevalence: 31,000 (US)
+- brain_regions: Motor Cortex, Brainstem, Spinal Cord
+
+### Obsessive-Compulsive Disorder
+
+- name: Obsessive-Compulsive Disorder
+- type: Anxiety
+- prevalence: 1.2 million (US)
+- brain_regions: Orbitofrontal Cortex, Basal Ganglia, Thalamus
+
+### Traumatic Brain Injury (TBI)
+
+- name: Traumatic Brain Injury (TBI)
+- type: Acquired
+- prevalence: 5.3 million (US)
+- brain_regions: Frontal Lobe, Temporal Lobe, Diffuse Axonal Injury
 
 ## neuropharmacology
 

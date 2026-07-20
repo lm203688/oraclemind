@@ -1,0 +1,9 @@
+{
+  "name": "Quantum Computing",
+  "short_name": "Quantum Comp",
+  "description": "Quantum computing knowledge base with 459 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>材料属性数据库 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:24px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:13px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.page-header{padding:48px 0 32px}
+.page-header h1{font-size:36px;font-weight:800;margin-bottom:8px}
+.page-header p{color:var(--muted);font-size:16px}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
+@media(max-width:768px){.stats-row{grid-template-columns:repeat(2,1fr)}}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center}
+.stat-num{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:13px;color:var(--muted);margin-top:4px}
+.cat-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.cat-btn{padding:10px 20px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px;cursor:pointer;transition:all .15s}
+.cat-btn:hover{border-color:var(--accent)}
+.cat-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.mat-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.mat-table th{text-align:left;padding:12px;background:var(--bg);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+.mat-table td{padding:12px;border-bottom:1px solid var(--border)}
+.mat-table tr:hover{background:var(--bg)}
+.mat-table .num{font-family:monospace;font-size:13px}
+.mat-table .src{font-size:11px;color:var(--green)}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html">分子动力学</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html" class="active">材料数据库</a>
+<a href="engines.html">材料预测</a>
+<a href="forcefields.html">力场引擎</a>
+<a href="report.html">报告</a>
+<a href="visualization.html">可视化</a>
+<a href="api-playground.html">API测试</a>
+<a href="docs.html">API文档</a>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="page-header">
+<h1>📊 材料属性数据库</h1>
+<p>8类70种材料——每种材料都有真实属性+文献来源(NIST/JARVIS/NREL)</p>
+</div>
+<div class="stats-row">
+<div class="stat-card"><div class="stat-num">70</div><div class="stat-label">材料种类</div></div>
+<div class="stat-card"><div class="stat-num">8</div><div class="stat-label">领域类别</div></div>
+<div class="stat-card"><div class="stat-num">5</div><div class="stat-label">数据来源</div></div>
+<div class="stat-card"><div class="stat-num">100%</div><div class="stat-label">有文献来源</div></div>
+</div>
+<div style="margin-bottom:20px">
+<input type="text" id="mat-search" placeholder="🔍 搜索材料名称或化学式..." 
+  style="width:100%;padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px"
+  oninput="filterTable()">
+</div>
+<div class="cat-tabs" id="cat-tabs">
+<button class="cat-btn active" onclick="loadCategory('photocatalysis')">☀️ 光催化(10)</button>
+<button class="cat-btn" onclick="loadCategory('battery')">🔋 电池(10)</button>
+<button class="cat-btn" onclick="loadCategory('perovskite')">🔷 钙钛矿(10)</button>
+<button class="cat-btn" onclick="loadCategory('adsorption')">📎 吸附(10)</button>
+<button class="cat-btn" onclick="loadCategory('corrosion')">🛡️ 腐蚀(10)</button>
+<button class="cat-btn" onclick="loadCategory('polymer')">🧵 高分子(10)</button>
+<button class="cat-btn" onclick="loadCategory('ammonia')">🌱 合成氨(5)</button>
+<button class="cat-btn" onclick="loadCategory('combustion')">🔥 燃烧(5)</button>
+</div>
+<div id="table-container"></div>
+</div>
+<footer class="footer"><div class="container"><p>蜂群科研 — 材料属性数据库 | NIST/JARVIS/NREL/文献</p></div></footer>
+<script>
+const API='http://150.158.119.19:8461';
+const CAT_COLS={
+  photocatalysis:['name','formula','bandgap_eV','surface_area_m2g','quantum_efficiency','crystal','source'],
+  battery:['name','formula','voltage_V','capacity_mAhg','cycle_life','crystal','source'],
+  perovskite:['name','formula','bandgap_eV','efficiency_pct','crystal','source'],
+  adsorption:['name','formula','surface_area_m2g','pore_size_nm','capacity_mmol_g','source'],
+  corrosion:['name','formula','corrosion_rate_mmy','pitting_potential_V','source'],
+  polymer:['name','formula','Tg_C','Tm_C','tensile_MPa','source'],
+  ammonia:['name','formula','activity_pct','operating_temp_C','pressure_bar','source'],
+  combustion:['name','formula','adiabatic_temp_C','laminar_speed_cms','source'],
+};
+const COL_LABELS={name:'材料名',formula:'化学式',bandgap_eV:'带隙(eV)',surface_area_m2g:'比表面积(m²/g)',quantum_efficiency:'量子效率',crystal:'晶体结构',source:'来源',voltage_V:'电压(V)',capacity_mAhg:'容量(mAh/g)',cycle_life:'循环寿命',efficiency_pct:'效率(%)',pore_size_nm:'孔径(nm)',capacity_mmol_g:'容量(mmol/g)',corrosion_rate_mmy:'腐蚀率(mm/y)',pitting_potential_V:'点蚀电位(V)',Tg_C:'Tg(°C)',Tm_C:'Tm(°C)',tensile_MPa:'拉伸强度(MPa)',activity_pct:'活性(%)',operating_temp_C:'操作温度(°C)',pressure_bar:'压力(bar)',adiabatic_temp_C:'绝热温度(°C)',laminar_speed_cms:'层流速度(cm/s)'};
+
+async function loadCategory(cat){
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+  try{
+    const r=await fetch(`${API}/api/v1/materials_db/${cat}`);
+    const d=await r.json();
+    const cols=CAT_COLS[cat]||Object.keys(d.materials[0]||{});
+    let html='<table class="mat-table"><thead><tr>';
+    cols.forEach(c=>html+=`<th>${COL_LABELS[c]||c}</th>`);
+    html+='</tr></thead><tbody>';
+    d.materials.forEach(m=>{
+      html+='<tr>';
+      cols.forEach(c=>{
+        const v=m[c];
+        const cls = typeof v==='number'?'num':(c==='source'?'src':'');
+        html+=`<td class="${cls}">${v!==undefined?v:'—'}</td>`;
+      });
+      html+='</tr>';
+    });
+    html+='</tbody></table>';
+    document.getElementById('table-container').innerHTML=html;
+  }catch(e){
+    document.getElementById('table-container').innerHTML='<p style="color:#ef4444">API连接失败</p>';
+  }
+}
+function filterTable() {
+  const q = document.getElementById('mat-search').value.toLowerCase();
+  document.querySelectorAll('.mat-table tbody tr').forEach(tr => {
+    const text = tr.textContent.toLowerCase();
+    tr.style.display = text.includes(q) ? '' : 'none';
+  });
+}
+loadCategory('photocatalysis');
+</script>
+</body>
+</html>

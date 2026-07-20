@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "swarmlabs": {
+      "command": "python3",
+      "args": ["/home/z/my-project/swarmlabs-mcp/server.py"],
+      "env": {
+        "SWARMLABS_API_KEY": "gtk_internal_eve_2026"
+      }
+    }
+  }
+}

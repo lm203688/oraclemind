@@ -1,0 +1,52 @@
+[
+  {
+    "name": "MOF-177",
+    "formula": "Zn₄O(BTB)₂",
+    "surface_area_m2g": 4508,
+    "co2_capacity_mmol_g": 33.5,
+    "co2_n2_selectivity": 50,
+    "pore_size_nm": 1.5,
+    "reference": "Nature Sci Rep 11 6850 (2021)",
+    "doi": "10.1038/s41598-021-04168-w"
+  },
+  {
+    "name": "MOF-5",
+    "formula": "Zn₄O(BDC)₃",
+    "surface_area_m2g": 2900,
+    "co2_capacity_mmol_g": 2.1,
+    "co2_n2_selectivity": 8,
+    "pore_size_nm": 1.2,
+    "reference": "Ind Eng Chem Res 48 (2009)",
+    "doi": "10.1021/ie900665f"
+  },
+  {
+    "name": "MOF-808-amine",
+    "formula": "MOF-808·NH₂",
+    "surface_area_m2g": 850,
+    "co2_capacity_mmol_g": 4.23,
+    "co2_n2_selectivity": 82,
+    "pore_size_nm": 0.9,
+    "reference": "PMC11325030 (2024)",
+    "doi": "10.1038/s41598-024-61831-9"
+  },
+  {
+    "name": "UTSA(Zn)-AC",
+    "formula": "UTSA·Zn·AC",
+    "surface_area_m2g": 1200,
+    "co2_capacity_mmol_g": 5.8,
+    "co2_n2_selectivity": 120,
+    "pore_size_nm": 2.0,
+    "reference": "SSRN 2024",
+    "doi": "10.2139/ssrn.4348240"
+  },
+  {
+    "name": "Mg-MOF-74",
+    "formula": "Mg₂(dobdc)",
+    "surface_area_m2g": 1175,
+    "co2_capacity_mmol_g": 8.0,
+    "co2_n2_selectivity": 44,
+    "pore_size_nm": 1.1,
+    "reference": "Nature 495 80 (2013)",
+    "doi": "10.1038/nature11893"
+  }
+]

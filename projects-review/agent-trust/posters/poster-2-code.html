@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgentTrust Protocol — Poster 2 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 900px;
+    height: 1600px;
+    background: #161B22;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #E6EDF3;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* 左侧微弱彩色条 */
+  .side-accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #58A6FF 0%, #3FB950 50%, #F0883E 100%);
+  }
+
+  /* 顶部装饰行 */
+  .editor-chrome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #0D1117;
+    border-bottom: 1px solid #30363D;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 8px;
+  }
+  .chrome-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .chrome-dot.red { background: #FF5F57; }
+  .chrome-dot.yellow { background: #FFBD2E; }
+  .chrome-dot.green { background: #28C840; }
+  .chrome-title {
+    margin-left: 12px;
+    font-size: 12px;
+    color: #8B949E;
+    font-family: 'Fira Code', monospace;
+  }
+  .chrome-badge {
+    margin-left: auto;
+    background: rgba(88,166,255,0.15);
+    border: 1px solid rgba(88,166,255,0.3);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 10px;
+    color: #58A6FF;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    width: 900px;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 56px 48px;
+    margin-top: 40px;
+    height: calc(1600px - 40px);
+  }
+
+  /* 主标题 */
+  .headline-block {
+    margin-bottom: 40px;
+  }
+  .headline-tag {
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    color: #3FB950;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .headline-tag::before {
+    content: '▶';
+    font-size: 10px;
+  }
+  .main-title {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #E6EDF3;
+    letter-spacing: -0.5px;
+  }
+  .main-title .blue { color: #58A6FF; }
+  .main-title .green { color: #3FB950; }
+  .sub-title {
+    font-size: 18px;
+    color: #8B949E;
+    font-weight: 400;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+
+  /* MCP 对话框模拟 */
+  .chat-section {
+    background: #0D1117;
+    border: 1px solid #30363D;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+  .chat-header {
+    background: #161B22;
+    border-bottom: 1px solid #30363D;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .chat-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #58A6FF, #BC8CFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+  }
+  .chat-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #C9D1D9;
+  }
+  .chat-model-tag {
+    margin-left: auto;
+    font-size: 11px;
+    color: #8B949E;
+    font-family: 'Fira Code', monospace;
+    background: rgba(139,148,158,0.1);
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+
+  .chat-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .msg {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .msg-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .msg-avatar.user {
+    background: linear-gradient(135deg, #58A6FF, #BC8CFF);
+    color: white;
+    font-size: 11px;
+  }
+  .msg-avatar.agent {
+    background: #21262D;
+    border: 1px solid #30363D;
+    font-size: 16px;
+  }
+  .msg-content {
+    flex: 1;
+  }
+  .msg-sender {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8B949E;
+    margin-bottom: 6px;
+    font-family: 'Fira Code', monospace;
+  }
+  .msg-text {
+    font-size: 14px;
+    color: #C9D1D9;
+    line-height: 1.5;
+    background: #161B22;
+    border-radius: 8px;
+    padding: 12px 14px;
+    border: 1px solid #30363D;
+  }
+
+  /* 评分卡片 */
+  .score-card {
+    background: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 4px;
+  }
+  .score-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .score-did {
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    color: #8B949E;
+    word-break: break-all;
+  }
+  .score-grade {
+    font-size: 32px;
+    font-weight: 900;
+    color: #3FB950;
+    font-family: 'Fira Code', monospace;
+    line-height: 1;
+  }
+  .score-num {
+    font-size: 14px;
+    color: #8B949E;
+    font-family: 'Fira Code', monospace;
+  }
+  .score-bar-track {
+    height: 6px;
+    background: #30363D;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .score-bar-fill {
+    height: 100%;
+    width: 84%;
+    background: linear-gradient(90deg, #3FB950, #58A6FF);
+    border-radius: 3px;
+  }
+  .score-dims {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .dim-mini {
+    text-align: center;
+  }
+  .dim-mini-val {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Fira Code', monospace;
+    color: #E6EDF3;
+  }
+  .dim-mini-name {
+    font-size: 10px;
+    color: #8B949E;
+    margin-top: 2px;
+  }
+
+  /* MCP Tool Call 展示 */
+  .tool-call-block {
+    background: rgba(88,166,255,0.05);
+    border: 1px solid rgba(88,166,255,0.2);
+    border-left: 3px solid #58A6FF;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+  }
+  .tool-call-label {
+    color: #58A6FF;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .tool-call-params {
+    color: #8B949E;
+  }
+  .tool-call-params .key { color: #79C0FF; }
+  .tool-call-params .val { color: #A5D6FF; }
+
+  /* 配置文件代码块 */
+  .code-section {
+    flex: 1;
+  }
+  .code-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8B949E;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .code-section-title span {
+    height: 1px;
+    flex: 1;
+    background: #30363D;
+  }
+
+  .code-block {
+    background: #0D1117;
+    border: 1px solid #30363D;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .code-header {
+    background: #161B22;
+    border-bottom: 1px solid #30363D;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .code-file-name {
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+    color: #8B949E;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .code-file-name::before {
+    content: '📄';
+    font-size: 11px;
+  }
+  .code-lang {
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    color: #F0883E;
+    background: rgba(240,136,62,0.1);
+    border-radius: 3px;
+    padding: 2px 6px;
+  }
+  .code-body {
+    padding: 20px 24px;
+    font-family: 'Fira Code', monospace;
+    font-size: 13.5px;
+    line-height: 1.8;
+  }
+  .ln { color: #484F58; margin-right: 16px; user-select: none; min-width: 20px; display: inline-block; text-align: right; }
+  .c-gray { color: #8B949E; }
+  .c-blue { color: #79C0FF; }
+  .c-green { color: #A5D6FF; }
+  .c-orange { color: #FFA657; }
+  .c-white { color: #E6EDF3; }
+  .c-string { color: #A5D6FF; }
+  .c-key { color: #7EE787; }
+  .code-line { display: block; }
+
+  /* 底部 */
+  .bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #30363D;
+    margin-top: 24px;
+  }
+  .bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .bottom-tagline {
+    font-size: 18px;
+    font-weight: 700;
+    color: #E6EDF3;
+  }
+  .bottom-sub {
+    font-size: 13px;
+    color: #8B949E;
+    font-family: 'Fira Code', monospace;
+  }
+  .qr-box {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #30363D;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .qr-pattern {
+    display: grid;
+    grid-template-columns: repeat(5, 10px);
+    gap: 2px;
+    padding: 6px;
+  }
+  .qr-c { width: 10px; height: 10px; border-radius: 1px; }
+  .qr-c.d { background: #C9D1D9; }
+  .qr-c.l { background: transparent; }
+  .qr-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0D1117;
+    font-size: 7px;
+    text-align: center;
+    color: #8B949E;
+    padding: 2px 0;
+    font-family: 'Fira Code', monospace;
+  }
+
+  /* 标签行 */
+  .badge-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .pill {
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 0.3px;
+  }
+  .pill-blue { background: rgba(88,166,255,0.12); color: #58A6FF; border: 1px solid rgba(88,166,255,0.25); }
+  .pill-green { background: rgba(63,185,80,0.12); color: #3FB950; border: 1px solid rgba(63,185,80,0.25); }
+  .pill-orange { background: rgba(240,136,62,0.12); color: #F0883E; border: 1px solid rgba(240,136,62,0.25); }
+</style>
+</head>
+<body>
+<div class="side-accent"></div>
+<div class="editor-chrome">
+  <div class="chrome-dot red"></div>
+  <div class="chrome-dot yellow"></div>
+  <div class="chrome-dot green"></div>
+  <span class="chrome-title">Claude Desktop — MCP Tool: agent-trust</span>
+  <span class="chrome-badge">LIVE DEMO</span>
+</div>
+
+<div class="container">
+  <!-- 主标题 -->
+  <div class="headline-block">
+    <div class="headline-tag">30秒接入 · Zero Config</div>
+    <h1 class="main-title">
+      <span class="blue">Claude</span> 现在能<br>
+      查 Agent 的<span class="green">信用分</span>了
+    </h1>
+    <p class="sub-title">MCP Server 一行命令，直接在对话里查任意 Agent 的信任评分</p>
+  </div>
+
+  <div class="badge-row">
+    <span class="pill pill-blue">MCP Server</span>
+    <span class="pill pill-green">npx 一行接入</span>
+    <span class="pill pill-orange">Claude Desktop</span>
+  </div>
+
+  <!-- 模拟对话 -->
+  <div class="chat-section">
+    <div class="chat-header">
+      <div class="chat-avatar">C</div>
+      <span class="chat-name">Claude</span>
+      <span class="chat-model-tag">claude-3-5-sonnet · MCP enabled</span>
+    </div>
+    <div class="chat-body">
+      <!-- 用户消息 -->
+      <div class="msg">
+        <div class="msg-avatar user">你</div>
+        <div class="msg-content">
+          <div class="msg-sender">User</div>
+          <div class="msg-text">
+            查一下 <code style="background:#0D1117;color:#58A6FF;padding:2px 6px;border-radius:4px;font-family:'Fira Code',monospace;font-size:12px;">did:web:alpha.example.com</code> 的信任分，它安全吗？
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool Call -->
+      <div class="tool-call-block">
+        <div class="tool-call-label">⚙ Tool Call: get_agent_trust_score</div>
+        <div class="tool-call-params">
+          { <span class="key">"agentDid"</span>: <span class="val">"did:web:alpha.example.com"</span> }
+        </div>
+      </div>
+
+      <!-- Agent 回复 -->
+      <div class="msg">
+        <div class="msg-avatar agent">🤖</div>
+        <div class="msg-content">
+          <div class="msg-sender">Claude (via AgentTrust MCP)</div>
+          <div class="msg-text">
+            这个 Agent 的信任评分结果：
+            <div class="score-card">
+              <div class="score-header-row">
+                <div>
+                  <div class="score-did">did:web:alpha.example.com</div>
+                  <div class="score-num">综合信任分</div>
+                </div>
+                <div style="text-align:right">
+                  <div class="score-grade">B</div>
+                  <div class="score-num">84 / 100</div>
+                </div>
+              </div>
+              <div class="score-bar-track">
+                <div class="score-bar-fill"></div>
+              </div>
+              <div class="score-dims">
+                <div class="dim-mini">
+                  <div class="dim-mini-val" style="color:#58A6FF">88</div>
+                  <div class="dim-mini-name">性能</div>
+                </div>
+                <div class="dim-mini">
+                  <div class="dim-mini-val" style="color:#3FB950">82</div>
+                  <div class="dim-mini-name">安全</div>
+                </div>
+                <div class="dim-mini">
+                  <div class="dim-mini-val" style="color:#D29922">85</div>
+                  <div class="dim-mini-name">可靠性</div>
+                </div>
+                <div class="dim-mini">
+                  <div class="dim-mini-val" style="color:#BC8CFF">80</div>
+                  <div class="dim-mini-name">合规性</div>
+                </div>
+              </div>
+            </div>
+            <span style="color:#3FB950;font-size:13px;margin-top:8px;display:block">✓ 可信任，建议正常接入</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 配置代码 -->
+  <div class="code-section">
+    <div class="code-section-title">接入方式 <span></span></div>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-file-name">claude_desktop_config.json</span>
+        <span class="code-lang">JSON</span>
+      </div>
+      <div class="code-body">
+        <span class="code-line"><span class="ln">1</span><span class="c-gray">{</span></span>
+        <span class="code-line"><span class="ln">2</span>  <span class="c-key">"mcpServers"</span><span class="c-gray">: {</span></span>
+        <span class="code-line"><span class="ln">3</span>    <span class="c-key">"agent-trust"</span><span class="c-gray">: {</span></span>
+        <span class="code-line"><span class="ln">4</span>      <span class="c-key">"command"</span><span class="c-gray">:</span> <span class="c-string">"npx"</span><span class="c-gray">,</span></span>
+        <span class="code-line"><span class="ln">5</span>      <span class="c-key">"args"</span><span class="c-gray">: [</span></span>
+        <span class="code-line"><span class="ln">6</span>        <span class="c-string" style="color:#3FB950">"-y"</span><span class="c-gray">,</span></span>
+        <span class="code-line"><span class="ln">7</span>        <span class="c-string" style="color:#58A6FF">"agent-trust-mcp-server"</span></span>
+        <span class="code-line"><span class="ln">8</span>      <span class="c-gray">]</span></span>
+        <span class="code-line"><span class="ln">9</span>    <span class="c-gray">}</span></span>
+        <span class="code-line"><span class="ln">10</span>  <span class="c-gray">}</span></span>
+        <span class="code-line"><span class="ln">11</span><span class="c-gray">}</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <div class="bottom-bar">
+    <div class="bottom-left">
+      <div class="bottom-tagline">AgentTrust Protocol</div>
+      <div class="bottom-sub">github.com/agentrust-protocol · Apache 2.0</div>
+    </div>
+    <div class="qr-box">
+      <div class="qr-pattern">
+        <div class="qr-c d"></div><div class="qr-c d"></div><div class="qr-c l"></div><div class="qr-c d"></div><div class="qr-c d"></div>
+        <div class="qr-c d"></div><div class="qr-c l"></div><div class="qr-c d"></div><div class="qr-c l"></div><div class="qr-c d"></div>
+        <div class="qr-c l"></div><div class="qr-c d"></div><div class="qr-c d"></div><div class="qr-c d"></div><div class="qr-c l"></div>
+        <div class="qr-c d"></div><div class="qr-c l"></div><div class="qr-c l"></div><div class="qr-c d"></div><div class="qr-c d"></div>
+        <div class="qr-c d"></div><div class="qr-c d"></div><div class="qr-c d"></div><div class="qr-c l"></div><div class="qr-c d"></div>
+      </div>
+      <div class="qr-caption">扫码访问GitHub</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

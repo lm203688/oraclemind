@@ -1,0 +1,37 @@
+[
+  {
+    "name": "CH4-air",
+    "formula": "CH₄+2O₂",
+    "adiabatic_temp_C": 1950,
+    "laminar_speed_cms": 40,
+    "source": "NIST"
+  },
+  {
+    "name": "H2-air",
+    "formula": "2H₂+O₂",
+    "adiabatic_temp_C": 2100,
+    "laminar_speed_cms": 230,
+    "source": "NIST"
+  },
+  {
+    "name": "C8H18-air",
+    "formula": "C₈H₁₈+12.5O₂",
+    "adiabatic_temp_C": 1980,
+    "laminar_speed_cms": 35,
+    "source": "NIST"
+  },
+  {
+    "name": "CO-air",
+    "formula": "2CO+O₂",
+    "adiabatic_temp_C": 1800,
+    "laminar_speed_cms": 18,
+    "source": "NIST"
+  },
+  {
+    "name": "C2H4-air",
+    "formula": "C₂H₄+3O₂",
+    "adiabatic_temp_C": 2050,
+    "laminar_speed_cms": 75,
+    "source": "NIST"
+  }
+]

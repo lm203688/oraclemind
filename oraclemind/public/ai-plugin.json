@@ -1,0 +1,20 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "oraclemind",
+  "name_for_human": "OracleMind",
+  "description_for_model": "AI-Powered Destiny Forecast. 5 modern AI agents cross-validate with 5 ancient Chinese manuscripts (900+ years old) to predict life outcomes. Not fortune-telling — probability-based fore-sight.",
+  "description_for_human": "AI destiny forecast powered by ancient Eastern mysticism and modern multi-agent AI.",
+  "api": {
+    "type": "openapi",
+    "url": "https://oraclemind.io/api/openapi.json",
+    "has_user_authentication": true
+  },
+  "usage_policy": "Free tier: 5 predictions/day per IP. Premium: $9.99/month unlimited. Deep: $4.99/analysis.",
+  "pricing": "Free $0 → Premium $9.99/month → Deep $4.99/analysis",
+  "auth": {
+    "type": "none"
+  },
+  "contact_email": "support@oraclemind.io",
+  "legal_info_url": "https://oraclemind.io/terms",
+  "logo_url": "https://oraclemind.io/icons/icon-512.png"
+}

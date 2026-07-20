@@ -1,0 +1,38 @@
+{
+  "name": "swarmlabs-molecular-prediction",
+  "version": "1.0.0",
+  "description": "AI-powered molecular property prediction based on 166K+ real molecules",
+  "url": "https://swarmlabs.tools",
+  "api_base": "https://swarmlabs.tools/api/v1",
+  "auth": "API Key (register at /api/v1/register)",
+  "capabilities": [
+    "quantum_chemistry_prediction",
+    "bio_chemical_property_prediction",
+    "toxicity_prediction_27_endpoints",
+    "thermodynamic_prediction",
+    "drug_likeness_assessment",
+    "full_workflow_prediction",
+    "batch_prediction",
+    "gnn_graph_neural_network",
+    "morgan_fingerprint_prediction",
+    "molecular_structure_svg",
+    "citation_generation",
+    "user_feedback_loop"
+  ],
+  "data_sources": {
+    "total_molecules": 166656,
+    "qm9_dft": 130831,
+    "bio_chemical": 26791,
+    "toxcast": 8578,
+    "nist": 271,
+    "pubchem": 185
+  },
+  "models": {
+    "total": 49,
+    "random_forest": 30,
+    "gradient_boosting": 4,
+    "gnn": 3,
+    "tox21_classifiers": 12,
+    "toxcast_regressors": 15
+  }
+}

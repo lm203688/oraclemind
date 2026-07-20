@@ -1,8 +1,7 @@
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { db } from '@/lib/db';
 
-export const authOptions = {
+const authOptions = {
   providers: [
     CredentialsProvider({
       id: 'guest',
@@ -11,23 +10,12 @@ export const authOptions = {
         guestId: { label: 'Guest ID', type: 'text', placeholder: 'auto-generated' },
       },
       async authorize(credentials) {
-        const id = credentials?.guestId || crypto.randomUUID();
-
-        try {
-          const user = await db.user.upsert({
-            where: { id },
-            update: {},
-            create: { id, name: `User_${id.slice(0, 6)}` },
-          });
-
-          return {
-            id: user.id,
-            name: user.name ?? undefined,
-            email: user.email ?? undefined,
-          };
-        } catch {
-          return null;
-        }
+        // 不依赖数据库——直接返回guest用户
+        const id = credentials?.guestId || `guest_${Date.now()}`;
+        return {
+          id: id,
+          name: `Guest_${id.slice(-6)}`,
+        };
       },
     }),
   ],

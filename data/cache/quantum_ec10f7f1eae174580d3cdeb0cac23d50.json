@@ -1,0 +1,1 @@
+{"smiles": "CC(=O)Oc1ccccc1C(=O)O", "accuracy": "fast", "engine": "xTB_approximate", "homo": -5.655, "lumo": -1.393, "gap": 4.262, "energy": -18.016, "dipole": 0.393, "method": "GFN2-xTB近似（RDKit Gasteiger电荷估算，非从头算精度）", "warning": "此为近似计算，如需化学精度请使用standard模式(DFT)"}

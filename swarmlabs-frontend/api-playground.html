@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>API Playground | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--orange:#f59e0b;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:20px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:13px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.page-header{padding:48px 0 32px}
+.page-header h1{font-size:36px;font-weight:800;margin-bottom:8px}
+.page-header p{color:var(--muted);font-size:16px}
+.playground-layout{display:grid;grid-template-columns:300px 1fr;gap:24px;margin-bottom:48px}
+@media(max-width:768px){.playground-layout{grid-template-columns:1fr}}
+.endpoint-list{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;max-height:600px;overflow-y:auto}
+.endpoint-list-title{font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+.endpoint-item{padding:8px 12px;border-radius:6px;cursor:pointer;font-size:13px;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.endpoint-item:hover{background:var(--bg)}
+.endpoint-item.active{background:var(--accent);color:#fff}
+.method-badge{font-size:10px;padding:2px 6px;border-radius:3px;font-weight:700;text-transform:uppercase}
+.method-get{background:rgba(16,185,129,0.2);color:var(--green)}
+.method-post{background:rgba(245,158,11,0.2);color:var(--orange)}
+.endpoint-item.active .method-badge{background:rgba(255,255,255,0.2);color:#fff}
+.api-tester{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.test-url{display:flex;gap:8px;margin-bottom:16px}
+.test-url input{flex:1;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px;font-family:monospace}
+.test-btn{padding:10px 24px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}
+.test-btn:hover{background:#2563eb}
+.param-section{margin-bottom:16px}
+.param-title{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:8px}
+.param-row{display:grid;grid-template-columns:120px 1fr;gap:8px;margin-bottom:8px;align-items:center}
+.param-name{font-family:monospace;font-size:13px;color:var(--accent)}
+.param-input{padding:6px 10px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px}
+.response-section{margin-top:20px}
+.response-title{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:8px}
+.response-box{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px;font-family:monospace;font-size:13px;max-height:300px;overflow-y:auto;white-space:pre-wrap}
+.response-meta{font-size:12px;color:var(--muted);margin-top:8px}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="api-playground.html" class="active">API测试</a>
+<a href="docs.html">API文档</a>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="page-header">
+<h1>🎮 API Playground</h1>
+<p>在线测试所有API端点——输入参数→直接调用→查看结果</p>
+</div>
+<div class="playground-layout">
+<div class="endpoint-list">
+<div class="endpoint-list-title">端点列表 (43个)</div>
+<div id="endpoint-list"></div>
+</div>
+<div class="api-tester">
+<div class="test-url">
+<input id="test-url" value="http://150.158.119.19:8461/api/v1/health" readonly>
+<button class="test-btn" onclick="runTest()">🚀 发送</button>
+</div>
+<div class="param-section" id="param-section"></div>
+<div class="response-section">
+<div class="response-title">响应</div>
+<div class="response-box" id="response">点击"发送"查看结果</div>
+<div class="response-meta" id="response-meta"></div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer"><div class="container"><p>蜂群科研 — API Playground</p></div></footer>
+<script>
+const API='http://150.158.119.19:8461';
+const ENDPOINTS=[
+  {m:'GET',p:'/api/v1/health',d:'健康检查',params:[]},
+  {m:'GET',p:'/api/v1/engines',d:'30引擎列表',params:[]},
+  {m:'GET',p:'/api/v1/quantum_calc/{molecule}',d:'DFT量子计算',params:[{n:'molecule',v:'H2O'}]},
+  {m:'GET',p:'/api/v1/quantum_molecules',d:'可用分子',params:[]},
+  {m:'POST',p:'/api/v1/md/simulate',d:'MD模拟',params:[{n:'smiles',v:'CCO'},{n:'steps',v:'200'},{n:'temperature',v:'300'}]},
+  {m:'GET',p:'/api/v1/md/forcefields',d:'力场列表',params:[]},
+  {m:'GET',p:'/api/v1/md/recommend_forcefield',d:'力场推荐',params:[{n:'system',v:'药物'}]},
+  {m:'POST',p:'/api/v1/md/optimize',d:'结构优化',params:[{n:'smiles',v:'CCO'}]},
+  {m:'GET',p:'/api/v1/ml/predict',d:'ML预测',params:[{n:'smiles',v:'CCO'}]},
+  {m:'GET',p:'/api/v1/ml/benchmark',d:'验证数据集',params:[]},
+  {m:'GET',p:'/api/v1/ml/predict_uq',d:'UQ预测+置信区间',params:[{n:'smiles',v:'CCO'}]},
+  {m:'GET',p:'/api/v1/fusion/predict',d:'融合预测ML+UQ+DFT',params:[{n:'smiles',v:'CCO'}]},
+  {m:'GET',p:'/api/v1/explain/predict',d:'可解释AI(SHAP)',params:[{n:'smiles',v:'CCO'},{n:'target',v:'boiling_point'}]},
+  {m:'GET',p:'/api/v1/multifidelity/predict',d:'多保真度LF+HF',params:[{n:'smiles',v:'O'}]},
+  {m:'GET',p:'/api/v1/materials_db/photocatalysis',d:'光催化材料',params:[]},
+  {m:'GET',p:'/api/v1/materials_db/battery',d:'电池材料',params:[]},
+  {m:'GET',p:'/api/v1/materials_db/perovskite',d:'钙钛矿材料',params:[]},
+  {m:'GET',p:'/api/v1/recommend/materials',d:'材料推荐',params:[{n:'category',v:'photocatalysis'},{n:'bandgap_min',v:'2.0'},{n:'bandgap_max',v:'4.0'}]},
+  {m:'GET',p:'/api/v1/workflow/screen_materials',d:'材料筛选工作流',params:[{n:'category',v:'photocatalysis'},{n:'bandgap_min',v:'2.5'}]},
+  {m:'GET',p:'/api/v1/workflow/compare',d:'材料对比',params:[{n:'category',v:'photocatalysis'},{n:'names',v:'TiO2-P25,ZnO,WO3'}]},
+  {m:'GET',p:'/api/v1/workflow/citation',d:'引用生成器',params:[{n:'smiles',v:'CCO'},{n:'calculation',v:'dft'}]},
+  {m:'GET',p:'/api/v1/mlip/models',d:'MLIP模型列表',params:[]},
+  {m:'GET',p:'/api/v1/mlip/estimate',d:'MLIP加速比',params:[{n:'n_atoms',v:'100'},{n:'model',v:'mace'}]},
+  {m:'GET',p:'/api/v1/bayes/recommend',d:'贝叶斯优化推荐',params:[{n:'ranges',v:'temperature:300-600,pressure:1-50'}]},
+  {m:'GET',p:'/api/v1/engine_ml/list',d:'引擎ML模型',params:[]},
+  {m:'GET',p:'/api/v1/engine_ml/photocatalysis',d:'引擎ML预测',params:[{n:'bandgap',v:'3.2'},{n:'surface_area',v:'50'}]},
+  {m:'GET',p:'/api/v1/cross/sites',d:'14站API列表',params:[]},
+];
+let currentEndpoint=ENDPOINTS[0];
+const listEl=document.getElementById('endpoint-list');
+ENDPOINTS.forEach((ep,i)=>{
+  const div=document.createElement('div');
+  div.className='endpoint-item'+(i===0?' active':'');
+  div.innerHTML=`<span class="method-badge method-${ep.m.toLowerCase()}">${ep.m}</span><span>${ep.d}</span>`;
+  div.onclick=()=>selectEndpoint(i);
+  listEl.appendChild(div);
+});
+function selectEndpoint(i){
+  document.querySelectorAll('.endpoint-item').forEach((el,j)=>el.classList.toggle('active',j===i));
+  currentEndpoint=ENDPOINTS[i];
+  let url=API+currentEndpoint.p.replace('{molecule}','H2O');
+  document.getElementById('test-url').value=url;
+  const ps=document.getElementById('param-section');
+  if(currentEndpoint.params.length===0){
+    ps.innerHTML='<div class="param-title">无参数</div>';
+  }else{
+    ps.innerHTML='<div class="param-title">参数</div>'+currentEndpoint.params.map(p=>`<div class="param-row"><span class="param-name">${p.n}</span><input class="param-input" id="param-${p.n}" value="${p.v}"></div>`).join('');
+  }
+}
+async function runTest(){
+  let url=document.getElementById('test-url').value;
+  const method=currentEndpoint.m;
+  if(method==='GET'){
+    if(currentEndpoint.params.length>0){
+      const qs=currentEndpoint.params.map(p=>`${p.n}=${encodeURIComponent(document.getElementById('param-'+p.n).value)}`).join('&');
+      const base=url.split('?')[0].replace('{molecule}',document.getElementById('param-molecule')?.value||'H2O');
+      url=base+'?'+qs;
+    }
+  }
+  document.getElementById('response').textContent='请求中...';
+  document.getElementById('response-meta').textContent='';
+  const start=Date.now();
+  try{
+    let resp;
+    if(method==='POST'){
+      const body={};
+      currentEndpoint.params.forEach(p=>{body[p.n]=document.getElementById('param-'+p.n).value;});
+      resp=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    }else{
+      resp=await fetch(url);
+    }
+    const data=await resp.json();
+    const elapsed=Date.now()-start;
+    document.getElementById('response').textContent=JSON.stringify(data,null,2);
+    document.getElementById('response-meta').textContent=`${resp.status} ${resp.statusText} | ${elapsed}ms | ${JSON.stringify(data).length}字符`;
+  }catch(e){
+    document.getElementById('response').textContent='错误: '+e.message;
+    document.getElementById('response-meta').textContent='连接失败';
+  }
+}
+selectEndpoint(0);
+
+    function registerKey() {
+        const email = prompt('输入email注册免费Key (30次/小时):');
+        if (!email) return;
+        fetch('/api/v1/register', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({email: email, name: 'Playground User'})
+        })
+        .then(r => r.json())
+        .then(d => {
+            if (d.api_key) {
+                document.getElementById('apiKey').value = d.api_key;
+                document.getElementById('registerResult').innerHTML = 
+                    '<div style="color:#0f0;padding:10px;background:#0a1a0a;border-radius:4px;">✅ 注册成功! Key: ' + d.api_key + '<br>已自动填入上方输入框</div>';
+            } else {
+                document.getElementById('registerResult').innerHTML = 
+                    '<div style="color:#f00;">' + (d.error || JSON.stringify(d)) + '</div>';
+            }
+        });
+    }
+    
+    function getAuthHeader() {
+        const key = document.getElementById('apiKey').value;
+        return key ? {'Authorization': 'Bearer ' + key} : {};
+    }
+</script>
+</body>
+</html>

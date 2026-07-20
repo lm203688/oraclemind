@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Nuclear Energy",
+  "name_for_model": "nuclearenergy",
+  "description_for_human": "Nuclear energy knowledge base with 438 entities",
+  "description_for_model": "Access Nuclear Energy knowledge base via API. Nuclear energy knowledge base with 438 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://nuclear.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://nuclear.genetech.tools/"
+}

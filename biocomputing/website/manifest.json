@@ -1,0 +1,9 @@
+{
+  "name": "Biocomputing",
+  "short_name": "Biocomputing",
+  "description": "Biocomputing database with 234 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

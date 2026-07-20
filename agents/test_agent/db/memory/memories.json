@@ -1,0 +1,24 @@
+[
+  {
+    "id": "b7c69cf19539",
+    "event": "用户要求部署蜂群科研",
+    "context": {
+      "service": "swarmlabs"
+    },
+    "insight": "部署时需要先下载代码再重启",
+    "timestamp": 1783435001.8978572,
+    "layer": "middle",
+    "connections": []
+  },
+  {
+    "id": "f2b46e927012",
+    "event": "小乌频繁504超时",
+    "context": {
+      "api": "xiaowu"
+    },
+    "insight": "小乌504时改用短超时curl",
+    "timestamp": 1783435001.8979893,
+    "layer": "middle",
+    "connections": []
+  }
+]

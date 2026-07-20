@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Brain Science",
+  "name_for_model": "brainscience",
+  "description_for_human": "Brain science database with 536 entities",
+  "description_for_model": "Access Brain Science knowledge base via API. Brain science database with 536 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://brain.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://brain.genetech.tools/"
+}

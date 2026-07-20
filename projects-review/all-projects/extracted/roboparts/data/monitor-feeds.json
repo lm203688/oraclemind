@@ -1,0 +1,183 @@
+{
+  "updatedAt": "2026-06-21 20:00",
+  "weeklyAuditDate": "2026-06-21",
+  "brand": [
+    {
+      "date": "2026-06-16",
+      "title": "阿里发布Qwen-Robot具身智能三大模型（Manip/Nav/World）",
+      "content": "阿里巴巴正式发布首个完整具身智能模型系列，Qwen-RobotManip（VLA操作模型）、Qwen-RobotNav（VLN移动模型）、Qwen-RobotWorld（世界模型）。依托百炼MaaS平台提供全链路服务，将开放部分API接口。首批合作伙伴已包括多家工业机器人和服务机器人企业。",
+      "source": "https://news.qq.com/rain/a/20260616A06VIG00",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-21",
+      "title": "SCHUNK × Bosch Robotics 联合开发工业级人形机器人手",
+      "content": "SCHUNK与Bosch Robotics签署开发合作协议，共同开发可集成到多种人形机器人系统的工业级仿人机器人手。项目融合不同行业需求，为制造和物流场景的人形机器人应用奠定基础。SCHUNK此前已与DLR（德国宇航中心）合作加速人形机器人技术转移。",
+      "source": "https://schunk.com/gb/en/news/schunk-and-bosch-launch-development-cooperation-for-humanoid-robot-hands/39424",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-20",
+      "title": "WOMMER微型电动夹爪发布：宽度<30mm、重150g、±0.01mm精度",
+      "content": "WOMMER沃姆专为狭小空间与轻量化工件设计的微型电动夹爪，整机宽度<30mm，重量低至150g，±0.01mm重复定位精度。一体化精密传动结构，适合3C电子/半导体等精密装配场景。",
+      "source": "https://www.163.com/dy/article/KVS66Q3A0552C3YS.html",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "AWR标准化CNC上下料：用OnRobot 3FG25统一替换6款气动夹爪",
+      "content": "AWR用OnRobot 3FG25三指电动夹爪标准化替换了6款不同气动夹爪作为其新一代车床上下料单元的末端工具。统一末端执行器生态显著减少了换型时间和培训成本。",
+      "source": "https://roboticsandautomationnews.com/2026/06/05/awr-standardizes-cnc-machine-tending-with-onrobot-electric-grippers-to-speed-changeovers/102321/",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "知行机器人发布'优采'数据采集手",
+      "content": "全球首款搭载高精度感知模组的数据采集手，触觉空间分辨率2.34 taxels/cm²，力觉识别精度0.1N，XYZ三轴空间定位精度0.7mm，位姿精度0.01°，整机重量600g，统一输出频率30Hz，面向具身智能算法训练、灵巧操作示教学习、精密装配算法训练。",
+      "source": "https://m.tech.china.com/articles/20260601/202606011883782.html",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "WOMMER全品类国产夹爪矩阵发布",
+      "content": "全品类产品（气动夹爪/电动夹爪/三爪卡盘/浮动模块/快换装置），全系遵循ISO 9409标准接口，适配FANUC/ABB/KUKA/汇川/埃斯顿等主流品牌。部分高端型号集成多维传感器。",
+      "source": "https://www.sohu.com/a/1033383644_121166192",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Festo发布HPPH两指气动平行夹爪",
+      "content": "超轻量0.68kg集成设计，专为协作机器人载荷受限场景优化，阀门/传感器/电气接口全部集成于夹爪本体。最大夹持1kg，协作模式夹持力140N，IO-Link通信，ISO/TS 15066+TÜV Süd安全认证。",
+      "source": "https://www.roboticstomorrow.com/news/2026/05/26/festo-introduces-two-finger-pneumatic-gripper-for-cobot-applications/26618/",
+      "impact": "high"
+    }
+  ],
+  "opensource": [
+    {
+      "date": "2026-06-16",
+      "title": "Qwen-Robot开源生态启动：将开放部分API接口+邀请开发者共建",
+      "content": "阿里宣布将开放Qwen-Robot部分接口，邀请机器人厂商、科研机构和开发者共同完善生态系统。依托百炼MaaS平台提供从模型训练到应用开发的全链路服务。对Bot开放平台集成有直接价值。",
+      "source": "https://finance.sina.com.cn/tech/digi/2026-06-16/doc-inicqnrx4536261.shtml",
+      "impact": "high"
+    },
+    {
+      "date": "2026-05-30",
+      "title": "KH CUBE模块化仿生机械手全开源发布",
+      "content": "面向新工科科创/竞赛/毕设/科研的轻量化末端执行器开发平台。统一通用控制本体+三款快换夹爪（柔性/刚性/精密），提供3D打印文件（3MF格式）。B站播放量较高，社区关注度上升。",
+      "source": "https://www.bilibili.com/video/BV1MmVV6REkd/",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "睿尔曼RMG24两指平行夹爪全开源发布",
+      "content": "睿尔曼正式开源RMG24全套设计文件（3D模型/PCB/Gerber/BOM/上位机/固件），MIT许可证。最大开合65mm，0.4s极速开合，负载4kg，自重0.5kg，负载比8:1。WHJ03集成关节驱动，双通信接口。",
+      "source": "https://github.com/RealManRobot/Two-Finger-Gripper",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "OpenClaw仿生龙虾钳爪全栈开源项目",
+      "content": "欠驱动抓取仿生龙虾钳爪，全栈开源（硬件/电路/固件/ROS2 MoveIt!集成）。支持MG996R/DYNAMIXEL舵机，适配UR5/Franka Panda/DIY臂。control_plugins/目录支持.so插件化第三方夹爪接入。",
+      "source": "https://blog.csdn.net/weixin_29696711/article/details/161579391",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-06",
+      "title": "Millibar DGRM双夹爪安装座",
+      "content": "允许单台机器人手腕同时安装两个末端执行工具，专为机床上下料优化。轻量化铝材+黑色阳极氧化，支持ISO 31.5/40/50/63mm四种法兰规格，兼容FANUC CRX/UR等主流协作臂。提供STEP格式3D模型。",
+      "source": "https://millibar.com/product/dgrm/",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "Millibar RTA-A机器人到工具适配器",
+      "content": "解决EOAT安装孔距与机器人工具法兰孔距不匹配问题。支持ISO 31.5/40/50/63mm四种PCD规格互转，含空白版可自行加工。提供5种型号STEP格式3D模型。",
+      "source": "https://millibar.com/product/rta-a/",
+      "impact": "medium"
+    }
+  ],
+  "standard": [
+    {
+      "date": "2026-06-16",
+      "title": "Qwen-Robot成为国内首个覆盖操作/导航/世界建模的完整具身智能体系",
+      "content": "阿里巴巴Qwen-Robot系列深度继承通义千问3.7全域思考模式（All-field Thinking），首次实现文本、图像、代码和物理动作的统一推理链，打破了海外模型仅支持文本思考链的限制。对机器人控制层的标准化有重要推动作用。",
+      "source": "https://news.qq.com/rain/a/20260616A06VIG00",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-21",
+      "title": "SCHUNK×Bosch人形手合作确立工业级仿人手新标准方向",
+      "content": "SCHUNK与Bosch Robotics合作开发可跨品牌集成的工业级人形机器人手，吸收多行业需求。结合此前SCHUNK×DLR合作，正在形成从科研到工业的人形手技术标准。",
+      "source": "https://schunk.com/gb/en/news/schunk-and-bosch-launch-development-cooperation-for-humanoid-robot-hands/39424",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-06-08",
+      "title": "rmw_zenoh正式晋升ROS 2官方Tier 1支持",
+      "content": "ROS 2首个非DDS官方中间层实现，在Kilted Kaiju LTS中获得Tier 1支持。Zenoh在发现机制扩展性（O(n) vs O(n²)）、WAN/多子网支持方面显著优于DDS。>20台机器人舰队、多站点部署应选择Zenoh。",
+      "source": "https://ros2.tw/ros2/rmw_zenoh/basic/",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-08",
+      "title": "ISO 21423进入FDIS阶段 — 移动机器人互操作性标准即将发布",
+      "content": "ISO/FDIS 21423规定了工业AMR之间互操作性的通信协议，覆盖AMR本体、舰队管理设备。移动机器人领域首个跨品牌互操作性国际标准。",
+      "source": "https://bds-bg.org/en/project/show/iso:proj:86749",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "ISO 10218-2:2025正式出版",
+      "content": "取代2011年版，将ISO/TS 15066核心内容完整纳入，成为传统工业机器人和协作机器人系统安全唯一权威参考标准。术语从'协作机器人'转向'协作应用'，新增网络安全要求。",
+      "source": "https://www.evsint.com/zh-CN/industrial-robot-safety-standards-iso-10218-ce-marking-2026/",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "全国首个人形机器人全生命周期管理平台发布",
+      "content": "每台机器人赋予29位唯一身份编码，覆盖生产/流通/维护/回收全阶段。已覆盖100余家企业、2.8万余台机器人完成赋码。零部件更换需授权+重绑+重测。",
+      "source": "https://finance.sina.com.cn/jjxw/2026-06-05/doc-iniakmqn8296607.shtml",
+      "impact": "high"
+    }
+  ],
+  "qwenRobot": {
+    "releaseDate": "2026-06-16",
+    "models": [
+      {"name": "Qwen-RobotManip", "type": "VLA操作模型", "desc": "视觉-语言-动作一体化，精准抓取/装配/精细操作"},
+      {"name": "Qwen-RobotNav", "type": "VLN移动模型", "desc": "无需预建图，自主导航，可理解人类地图标识"},
+      {"name": "Qwen-RobotWorld", "type": "世界模型", "desc": "理解物理规律，预判物体运动，'看到→做到'完整闭环"}
+    ],
+    "apiStatus": "即将开放",
+    "platform": "阿里云百炼 MaaS",
+    "openSourceStatus": "部分接口将开放",
+    "robopartsIntegration": {
+      "feasibility": "高",
+      "targetEndpoint": "/api/v1/end-effector/capabilities",
+      "estimatedWork": "5-7天（API就绪后）",
+      "currentStatus": "已准备集成规范 docs/llm-integration-spec-v0.1.md，等待API开放"
+    }
+  },
+  "githubHealth": {
+    "commits": 39,
+    "commitsThisWeek": 21,
+    "openIssues": 0,
+    "openPRs": 0,
+    "stars": 0,
+    "forks": 0,
+    "releases": 1,
+    "lastCommit": "2026-06-18",
+    "hasLicense": false,
+    "hasCICD": false,
+    "hasChangelog": false,
+    "hasReadme": true,
+    "healthScore": "3/5"
+  },
+  "siteStatus": {
+    "accessible": true,
+    "wwwAccessible": true,
+    "paymentAPI": "未实测",
+    "supabase": true,
+    "supabaseKeepalive": "client_side_only",
+    "seoComplete": true
+  }
+}

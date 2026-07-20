@@ -1,0 +1,53 @@
+# Swarmlabs - Complete Guide for AI Agents
+
+## Overview
+Swarmlabs is a virtual experiment platform with 145 physics-based engines validated against 7,550 real experimental datasets from peer-reviewed publications. It covers 22 physics categories including catalysis, electrochemistry, membrane separation, crystallization, and more.
+
+## Key Metrics
+- 145 virtual experiment engines
+- 7,550 validation datasets
+- 99.6% have real paper citations
+- 100% of engines achieve <15% mean error
+- 22 physics categories
+- Mean prediction error: 4.6%
+
+## Physics Categories (22)
+1. Catalysis Kinetics (5 engines): Suzuki, Heck, Sonogashira, Buchwald, Olefin Metathesis
+2. Electrochemistry (5 engines): Battery, CO2, Electrolysis, Electroplating, Corrosion
+3. Mass Transfer (4 engines): Distillation, Extraction, Gas Absorption, Leaching
+4. Particle Engineering (4 engines): Crystal, Granulation, Filtration, Flocculation
+5. Heat Transfer (3 engines): Drying, Evaporation, Calcination
+6. Membrane Separation (3 engines): Membrane, Electrodialysis, Membrane Distillation
+7. Reaction Engineering (2 engines): CSTR, PFR
+8. Thermal Decomposition (2 engines): Pyrolysis, Combustion
+9. Phase Equilibrium (2 engines): Azeotropic, Extractive Distillation
+10. Colloid Interface (2 engines): Flotation, Fluidization
+11. Materials Science (2 engines): Perovskite, Polymer
+12. Advanced Oxidation (2 engines): PhotoFenton, Sonochemical
+13-22: Analytical Chemistry, Green Solvent, Molecular Simulation, Biochemistry, Quantum Chemistry, Supercritical Fluid, Multiphysics Coupling, Validation, Nuclear Chemistry, Nanomaterials
+
+## Research Skills (5)
+1. PaperSpine: Paper decomposition from DOI/URL
+2. Citation Verify: 93.3% accuracy DOI verification
+3. Stats Sanity: Statistical analysis of 3866 real datasets
+4. Literature Survey: Systematic review with Crossref API
+5. Scientific Writing: IMRAD/CONSORT/STROBE/PRISMA templates
+
+## Marketing Skills (5)
+1. GrowthPulse: GitHub competitor analysis + LTV/CAC
+2. SEOPulse: 14-site HTTP monitoring + IndexNow logs
+3. ContentForge: SEO articles + Twitter threads + blog posts
+4. CompetitorRadar: Real GitHub data for LangChain/CrewAI/AutoGen
+5. LaunchKit: 17 channels + 6 KPIs + press release generation
+
+## API
+- Base: http://localhost:8461/api/v1
+- POST /run/{engine}: Run virtual experiment
+- POST /optimize/{engine}: AI Pareto optimization
+- GET /engines: List all 145 engines
+- OpenAPI: /openapi.json
+
+## Pricing
+- Free: $0 (all engines, basic features)
+- Pro: $29/month (advanced optimization, paper generation)
+- Enterprise: $499 (full database, custom engines)

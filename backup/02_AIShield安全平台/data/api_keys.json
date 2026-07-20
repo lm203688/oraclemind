@@ -1,0 +1,20 @@
+{
+  "aishield_demo_pro_2026": {
+    "tier": "pro",
+    "name": "演示Pro账号",
+    "created_at": "2026-06-10T19:51:16Z",
+    "email": "demo@aishield.ai"
+  },
+  "aishield_free_9fd38410887e5c99b399": {
+    "tier": "free",
+    "name": "测试用户",
+    "email": "test@example.com",
+    "created_at": "2026-06-10T19:51:16Z"
+  },
+  "aishield_free_267745b275153dd9d766": {
+    "tier": "free",
+    "name": "demo",
+    "email": "demo@aishield.ai",
+    "created_at": "2026-06-10T20:00:22Z"
+  }
+}

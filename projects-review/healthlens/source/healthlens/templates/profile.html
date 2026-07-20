@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - HealthLens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+        .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .input-field { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); transition: border-color 0.2s; }
+        .input-field:focus { border-color: #3b82f6; outline: none; }
+        .tab-active { border-bottom: 2px solid #3b82f6; color: white; }
+        .tab-inactive { border-bottom: 2px solid transparent; color: #9ca3af; }
+        .code-block { background: rgba(0,0,0,0.3); font-family: 'Courier New', monospace; font-size: 12px; }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+    <!-- 导航 -->
+    <nav class="glass sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="/" class="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center text-sm font-bold">H</a>
+                <span class="text-lg font-semibold">HealthLens</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="/" class="text-sm text-gray-300 hover:text-white">首页</a>
+                <a href="/upload" class="text-sm text-gray-300 hover:text-white">上传数据</a>
+                <a href="/dashboard" class="text-sm text-gray-300 hover:text-white">健康面板</a>
+                <a href="/profile" class="text-sm text-white">个人中心</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-8">
+        <h1 class="text-2xl font-bold mb-6">个人中心</h1>
+
+        <!-- Tabs -->
+        <div class="flex gap-6 mb-6 border-b border-white/10">
+            <button onclick="switchTab('profile')" id="tab-profile" class="pb-3 text-sm font-medium tab-active">基本信息</button>
+            <button onclick="switchTab('connectors')" id="tab-connectors" class="pb-3 text-sm font-medium tab-inactive">数据连接</button>
+            <button onclick="switchTab('api')" id="tab-api" class="pb-3 text-sm font-medium tab-inactive">API & 开发者</button>
+            <button onclick="switchTab('export')" id="tab-export" class="pb-3 text-sm font-medium tab-inactive">数据导出</button>
+        </div>
+
+        <!-- 基本信息 -->
+        <div id="panel-profile" class="space-y-6">
+            <div class="glass rounded-xl p-6">
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-sm text-gray-400 block mb-1">用户ID</label>
+                        <div id="userId" class="text-sm bg-white/5 rounded-lg px-4 py-2">-</div>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-400 block mb-1">昵称</label>
+                        <div class="flex gap-2">
+                            <input id="nickname" type="text" class="input-field flex-1 rounded-lg px-4 py-2 text-sm">
+                            <button onclick="updateNickname()" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-sm transition">保存</button>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-400 block mb-1">手机号</label>
+                        <div id="phone" class="text-sm bg-white/5 rounded-lg px-4 py-2">-</div>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-400 block mb-1">注册时间</label>
+                        <div id="createdAt" class="text-sm bg-white/5 rounded-lg px-4 py-2">-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button onclick="logout()" class="px-6 py-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 rounded-lg text-sm transition">退出登录</button>
+            </div>
+        </div>
+
+        <!-- 数据连接 -->
+        <div id="panel-connectors" class="space-y-6 hidden">
+            <div class="glass rounded-xl p-6">
+                <h2 class="font-semibold mb-4">已连接的数据源</h2>
+                <div id="connectionsList" class="space-y-3">
+                    <p class="text-gray-500 text-sm">暂无数据连接</p>
+                </div>
+            </div>
+
+            <div class="glass rounded-xl p-6">
+                <h2 class="font-semibold mb-4">添加数据源</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3" id="connectorGrid">
+                    <!-- 动态加载 -->
+                </div>
+            </div>
+
+            <!-- Webhook说明 -->
+            <div class="glass rounded-xl p-6">
+                <h2 class="font-semibold mb-3">🔗 Webhook 接入</h2>
+                <p class="text-sm text-gray-400 mb-3">通过Webhook推送健康数据到HealthLens，支持任何设备或应用</p>
+                <div class="code-block rounded-lg p-4 text-green-400 overflow-x-auto">
+                    <pre>POST /api/webhook/{your_user_id}
+Header: X-API-Key: hl_live_xxxxx
+Content-Type: application/json
+
+{
+  "source": "my_device",
+  "format": "healthlens",
+  "records": [
+    {
+      "metric_type": "心血管",
+      "metric_name": "心率",
+      "value": 72,
+      "unit": "bpm",
+      "recorded_at": "2026-06-09"
+    }
+  ]
+}</pre>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">也支持自定义格式：直接传 key-value 对，如 {"heart_rate": 72, "steps": 8000}</p>
+            </div>
+        </div>
+
+        <!-- API & 开发者 -->
+        <div id="panel-api" class="space-y-6 hidden">
+            <div class="glass rounded-xl p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="font-semibold">🔑 API Keys</h2>
+                    <button onclick="createApiKey()" class="px-3 py-1.5 bg-blue-500 hover:bg-blue-600 rounded-lg text-sm transition">+ 创建新Key</button>
+                </div>
+                <p class="text-sm text-gray-400 mb-4">API Key用于Webhook认证和第三方应用访问你的健康数据</p>
+                <div id="apiKeysList" class="space-y-3">
+                    <p class="text-gray-500 text-sm">暂无API Key</p>
+                </div>
+            </div>
+
+            <!-- 新Key显示区 -->
+            <div id="newKeyDisplay" class="hidden glass rounded-xl p-6 border border-green-500/30">
+                <h3 class="font-semibold text-green-400 mb-2">✅ API Key 已创建</h3>
+                <p class="text-sm text-yellow-400 mb-3">⚠️ 请立即复制，此Key只显示一次！</p>
+                <div class="code-block rounded-lg p-3 text-green-400 break-all" id="newKeyValue"></div>
+                <button onclick="copyNewKey()" class="mt-3 px-3 py-1.5 bg-white/10 hover:bg-white/20 rounded-lg text-sm transition">📋 复制</button>
+            </div>
+
+            <!-- API文档 -->
+            <div class="glass rounded-xl p-6">
+                <h2 class="font-semibold mb-3">📖 API 文档</h2>
+                <div class="space-y-3 text-sm">
+                    <div class="bg-white/5 rounded-lg p-3">
+                        <div class="text-blue-400 font-mono mb-1">GET /api/health/summary/{user_id}</div>
+                        <div class="text-gray-400">获取健康数据概览</div>
+                    </div>
+                    <div class="bg-white/5 rounded-lg p-3">
+                        <div class="text-blue-400 font-mono mb-1">GET /api/health/trends/{user_id}?type=心血管&days=90</div>
+                        <div class="text-gray-400">获取指标趋势数据</div>
+                    </div>
+                    <div class="bg-white/5 rounded-lg p-3">
+                        <div class="text-blue-400 font-mono mb-1">POST /api/webhook/{user_id}</div>
+                        <div class="text-gray-400">推送健康数据（需API Key）</div>
+                    </div>
+                    <div class="bg-white/5 rounded-lg p-3">
+                        <div class="text-blue-400 font-mono mb-1">POST /api/ask</div>
+                        <div class="text-gray-400">AI健康问答</div>
+                    </div>
+                    <div class="bg-white/5 rounded-lg p-3">
+                        <div class="text-blue-400 font-mono mb-1">POST /api/analyze/{user_id}</div>
+                        <div class="text-gray-400">触发自动分析，返回告警</div>
+                    </div>
+                    <div class="bg-white/5 rounded-lg p-3">
+                        <div class="text-blue-400 font-mono mb-1">GET /api/export/{user_id}?format=json|csv</div>
+                        <div class="text-gray-400">导出全部健康数据</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 数据导出 -->
+        <div id="panel-export" class="space-y-6 hidden">
+            <div class="glass rounded-xl p-6">
+                <h2 class="font-semibold mb-4">📦 数据导出</h2>
+                <p class="text-sm text-gray-400 mb-4">导出你的全部健康数据，数据永远属于你</p>
+                <div class="flex gap-3">
+                    <button onclick="exportData('json')" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-sm transition">导出 JSON</button>
+                    <button onclick="exportData('csv')" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-sm transition">导出 CSV</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let currentUser = null;
+
+        function switchTab(tab) {
+            ['profile', 'connectors', 'api', 'export'].forEach(t => {
+                document.getElementById(`panel-${t}`).classList.toggle('hidden', t !== tab);
+                document.getElementById(`tab-${t}`).className = `pb-3 text-sm font-medium ${t === tab ? 'tab-active' : 'tab-inactive'}`;
+            });
+        }
+
+        async function loadProfile() {
+            try {
+                const res = await fetch('/api/auth/me');
+                const data = await res.json();
+                if (!data.success) {
+                    window.location.href = '/login';
+                    return;
+                }
+                currentUser = data.user;
+                document.getElementById('userId').textContent = data.user.id;
+                document.getElementById('nickname').value = data.user.nickname || '';
+                document.getElementById('phone').textContent = data.user.phone ? data.user.phone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2') : '未绑定';
+                document.getElementById('createdAt').textContent = data.user.created_at || '-';
+            } catch(e) {
+                window.location.href = '/login';
+            }
+        }
+
+        async function updateNickname() {
+            const nickname = document.getElementById('nickname').value.trim();
+            if (!nickname) return;
+            const res = await fetch('/api/user/profile', {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({nickname})
+            });
+            const data = await res.json();
+            if (data.success) showToast('昵称已更新');
+        }
+
+        async function loadConnectors() {
+            const res = await fetch('/api/connectors');
+            const data = await res.json();
+            if (data.success) {
+                const grid = document.getElementById('connectorGrid');
+                grid.innerHTML = data.connectors.map(c => `
+                    <button onclick="connectSource('${c.type}')" 
+                        class="glass rounded-lg p-4 text-center hover:bg-white/10 transition ${c.status === 'coming_soon' ? 'opacity-50 cursor-not-allowed' : ''}"
+                        ${c.status === 'coming_soon' ? 'disabled' : ''}>
+                        <div class="text-2xl mb-1">${c.icon}</div>
+                        <div class="text-sm font-medium">${c.name}</div>
+                        <div class="text-xs text-gray-500 mt-1">${c.description}</div>
+                        ${c.status === 'coming_soon' ? '<div class="text-xs text-yellow-500 mt-1">即将支持</div>' : ''}
+                    </button>
+                `).join('');
+            }
+        }
+
+        async function connectSource(type) {
+            if (!currentUser) return;
+            if (type === 'withings') {
+                const res = await fetch('/api/connect/withings/auth');
+                const data = await res.json();
+                if (data.success) {
+                    window.location.href = data.auth_url;
+                } else {
+                    showToast(data.error || '连接失败');
+                }
+                return;
+            }
+            if (type === 'webhook') {
+                switchTab('api');
+                return;
+            }
+            // 其他数据源：添加连接记录
+            const res = await fetch('/api/connections', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({source_type: type})
+            });
+            const data = await res.json();
+            if (data.success) {
+                showToast('数据连接已添加');
+                loadConnections();
+            }
+        }
+
+        async function loadConnections() {
+            if (!currentUser) return;
+            const res = await fetch('/api/connections');
+            const data = await res.json();
+            if (data.success && data.connections.length > 0) {
+                const el = document.getElementById('connectionsList');
+                el.innerHTML = data.connections.map(c => `
+                    <div class="flex items-center justify-between bg-white/5 rounded-lg px-4 py-3">
+                        <div>
+                            <div class="text-sm font-medium">${c.source_type}</div>
+                            <div class="text-xs text-gray-500">状态: ${c.status} | ${c.last_sync ? '最后同步: ' + c.last_sync : '未同步'}</div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="syncSource('${c.source_type}')" class="text-xs px-2 py-1 bg-blue-500/20 text-blue-400 rounded hover:bg-blue-500/30">同步</button>
+                            <span class="text-xs px-2 py-1 rounded ${c.status === 'active' ? 'bg-green-500/20 text-green-400' : 'bg-gray-500/20 text-gray-400'}">${c.status === 'active' ? '已连接' : '未连接'}</span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        async function syncSource(type) {
+            const res = await fetch(`/api/connect/${type}/sync`, {method: 'POST'});
+            const data = await res.json();
+            if (data.success) {
+                showToast(`同步完成，新增 ${data.new_records} 条记录`);
+                if (data.alerts && data.alerts.length > 0) {
+                    showToast(`⚠️ 发现 ${data.alerts.length} 条健康提醒`);
+                }
+            } else {
+                showToast(data.error || '同步失败');
+            }
+        }
+
+        async function loadApiKeys() {
+            if (!currentUser) return;
+            const res = await fetch('/api/keys');
+            const data = await res.json();
+            if (data.success) {
+                const el = document.getElementById('apiKeysList');
+                if (data.keys.length === 0) {
+                    el.innerHTML = '<p class="text-gray-500 text-sm">暂无API Key，点击上方按钮创建</p>';
+                } else {
+                    el.innerHTML = data.keys.map(k => `
+                        <div class="flex items-center justify-between bg-white/5 rounded-lg px-4 py-3">
+                            <div>
+                                <div class="text-sm font-mono text-blue-400">${k.key_prefix}•••••••</div>
+                                <div class="text-xs text-gray-500">${k.name} | ${k.permissions} | ${k.last_used ? '最后使用: ' + k.last_used : '未使用'}</div>
+                            </div>
+                            <button onclick="deleteApiKey('${k.id}')" class="text-xs px-2 py-1 bg-red-500/10 text-red-400 rounded hover:bg-red-500/20">删除</button>
+                        </div>
+                    `).join('');
+                }
+            }
+        }
+
+        async function createApiKey() {
+            const name = prompt('API Key名称（可选）', '默认Key');
+            if (name === null) return;
+            const res = await fetch('/api/keys', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({name: name || '默认Key', permissions: 'read'})
+            });
+            const data = await res.json();
+            if (data.success) {
+                document.getElementById('newKeyDisplay').classList.remove('hidden');
+                document.getElementById('newKeyValue').textContent = data.api_key;
+                loadApiKeys();
+            }
+        }
+
+        function copyNewKey() {
+            const key = document.getElementById('newKeyValue').textContent;
+            navigator.clipboard.writeText(key).then(() => showToast('已复制到剪贴板'));
+        }
+
+        async function deleteApiKey(keyId) {
+            if (!confirm('确定删除此API Key？删除后使用该Key的应用将无法访问')) return;
+            const res = await fetch(`/api/keys/${keyId}`, {method: 'DELETE'});
+            if ((await res.json()).success) {
+                showToast('API Key已删除');
+                loadApiKeys();
+            }
+        }
+
+        function exportData(format) {
+            if (!currentUser) return;
+            window.open(`/api/export/${currentUser.id}?format=${format}`, '_blank');
+        }
+
+        async function logout() {
+            await fetch('/api/auth/logout', {method: 'POST'});
+            window.location.href = '/login';
+        }
+
+        function showToast(msg) {
+            const t = document.createElement('div');
+            t.className = 'fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-lg text-sm z-50';
+            t.textContent = msg;
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 3000);
+        }
+
+        // 初始化
+        loadProfile().then(() => {
+            loadConnections();
+            loadApiKeys();
+        });
+        loadConnectors();
+    </script>
+</body>
+</html>

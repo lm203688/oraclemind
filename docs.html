@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>API文档 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--green:#10b981;--orange:#f59e0b;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:var(--muted);font-size:14px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.page-header{padding:48px 0 32px}
+.page-header h1{font-size:36px;font-weight:800;margin-bottom:8px}
+.page-header p{color:var(--muted);font-size:16px}
+.api-section{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px}
+.api-section-title{font-size:18px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.endpoint{padding:12px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.endpoint:last-child{border:none}
+.method{padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;text-transform:uppercase}
+.method.get{background:rgba(16,185,129,0.15);color:var(--green)}
+.method.post{background:rgba(245,158,11,0.15);color:var(--orange)}
+.endpoint-path{font-family:monospace;font-size:14px;color:var(--text)}
+.endpoint-desc{font-size:13px;color:var(--muted);margin-left:auto}
+.auth-section{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px}
+.auth-table{width:100%;border-collapse:collapse}
+.auth-table th{text-align:left;padding:10px;background:var(--bg);color:var(--muted);font-size:12px}
+.auth-table td{padding:10px;border-bottom:1px solid var(--border);font-size:14px}
+.code-block{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;font-family:monospace;font-size:13px;overflow-x:auto;margin:12px 0}
+.code-block .comment{color:var(--muted)}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html">分子动力学</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="engines.html">材料预测</a>
+<a href="forcefields.html">力场引擎</a>
+<a href="docs.html" class="active">API文档</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="page-header">
+<h1>📖 API文档</h1>
+<p>20个API端点 — 3级鉴权 — RESTful接口</p>
+</div>
+
+<div class="auth-section">
+<h2 style="font-size:18px;font-weight:700;margin-bottom:16px">🔐 鉴权体系</h2>
+<table class="auth-table">
+<thead><tr><th>Key类型</th><th>格式</th><th>限制</th><th>获取方式</th></tr></thead>
+<tbody>
+<tr><td>内部测试Key</td><td>gtk_internal_*</td><td>无限制</td><td>内部使用</td></tr>
+<tr><td>免费Key</td><td>gtk_*</td><td>30次/小时</td><td>POST /api/register</td></tr>
+<tr><td>Pro Key</td><td>creem_* / license_*</td><td>10000次/天</td><td>Creem购买 $49/月</td></tr>
+</tbody>
+</table>
+
+<div class="auth-section">
+<h2 style="font-size:18px;font-weight:700;margin-bottom:16px">🔑 获取API Key</h2>
+<p style="color:var(--muted);font-size:14px;margin-bottom:16px">免费注册获取API Key，30次/小时免费调用</p>
+<div style="display:flex;gap:12px;margin-bottom:16px">
+<input type="email" id="reg-email" placeholder="your@email.com" style="flex:1;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px">
+<button class="btn" onclick="registerKey()" style="padding:10px 24px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer">注册</button>
+</div>
+<div id="reg-result" style="font-size:13px"></div>
+</div>
+
+</div>
+
+<div class="api-section">
+<div class="api-section-title">🔬 量子化学</div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/quantum_calc/{molecule}</span><span class="endpoint-desc">DFT计算分子性质</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/quantum_molecules</span><span class="endpoint-desc">可用分子列表</span></div>
+</div>
+
+<div class="api-section">
+<div class="api-section-title">⚛️ 分子动力学</div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/md/capabilities</span><span class="endpoint-desc">模拟能力列表</span></div>
+<div class="endpoint"><span class="method post">POST</span><span class="endpoint-path">/api/v1/md/simulate</span><span class="endpoint-desc">MD模拟</span></div>
+<div class="endpoint"><span class="method post">POST</span><span class="endpoint-path">/api/v1/md/optimize</span><span class="endpoint-desc">结构优化</span></div>
+<div class="endpoint"><span class="method post">POST</span><span class="endpoint-path">/api/v1/md/thermodynamics</span><span class="endpoint-desc">热力学扫描</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/md/forcefields</span><span class="endpoint-desc">力场列表(8种)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/md/recommend_forcefield?system=药物</span><span class="endpoint-desc">力场推荐引擎</span></div>
+<div class="endpoint"><span class="method post">POST</span><span class="endpoint-path">/api/v1/md/compare_forcefields</span><span class="endpoint-desc">多力场对比</span></div>
+</div>
+
+<div class="api-section">
+<div class="api-section-title">🌍 反应动力学</div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/world_model/models</span><span class="endpoint-desc">反应动力学列表</span></div>
+<div class="endpoint"><span class="method post">POST</span><span class="endpoint-path">/api/v1/world_model/simulate/reaction</span><span class="endpoint-desc">化学反应模拟</span></div>
+<div class="endpoint"><span class="method post">POST</span><span class="endpoint-path">/api/v1/world_model/simulate/degradation</span><span class="endpoint-desc">材料退化预测</span></div>
+<div class="endpoint"><span class="method post">POST</span><span class="endpoint-path">/api/v1/world_model/counterfactual</span><span class="endpoint-desc">反事实推理</span></div>
+</div>
+
+
+<div class="api-section">
+<div class="api-section-title">🤖 ML预测引擎</div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/ml/predict?smiles=CCO</span><span class="endpoint-desc">ML预测(偶极矩/沸点/生成焓)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/ml/benchmark</span><span class="endpoint-desc">验证数据集(NIST来源)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/engine_ml/list</span><span class="endpoint-desc">8个引擎ML模型</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/engine_ml/photocatalysis?bandgap=3.2</span><span class="endpoint-desc">引擎ML校正(精度+42%)</span></div>
+</div>
+
+<div class="api-section">
+<div class="api-section-title">📊 材料属性数据库</div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/materials_db/photocatalysis</span><span class="endpoint-desc">光催化材料(10种)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/materials_db/battery</span><span class="endpoint-desc">电池材料(10种)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/materials_db/perovskite</span><span class="endpoint-desc">钙钛矿材料(10种)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/materials_db/adsorption</span><span class="endpoint-desc">吸附材料(10种)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/materials_db/corrosion</span><span class="endpoint-desc">腐蚀材料(10种)</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/materials_db/polymer</span><span class="endpoint-desc">高分子(10种)</span></div>
+</div>
+
+<div class="api-section">
+<div class="api-section-title">📊 材料预测 & 跨项目</div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/engines</span><span class="endpoint-desc">30个引擎列表</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/stats</span><span class="endpoint-desc">统计信息</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/cross/sites</span><span class="endpoint-desc">14站API列表</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/cross/{site}/entities</span><span class="endpoint-desc">跨站查询实体</span></div>
+<div class="endpoint"><span class="method get">GET</span><span class="endpoint-path">/api/v1/cross/search?q=关键词</span><span class="endpoint-desc">跨14站搜索</span></div>
+</div>
+
+<div class="api-section">
+<div class="api-section-title">💻 代码示例</div>
+<div class="code-block">
+<span class="comment"># 量子化学计算</span>
+curl http://150.158.119.19:8461/api/v1/quantum_calc/H2O
+
+<span class="comment"># MD模拟（指定力场）</span>
+curl -X POST http://150.158.119.19:8461/api/v1/md/simulate \
+  -H "Content-Type: application/json" \
+  -d '{"smiles":"CCO","steps":500,"temperature":300,"forcefield":"mmff94"}'
+
+<span class="comment"># 力场推荐</span>
+curl "http://150.158.119.19:8461/api/v1/md/recommend_forcefield?system=药物"
+
+<span class="comment"># 多力场对比</span>
+curl -X POST http://150.158.119.19:8461/api/v1/md/compare_forcefields \
+  -H "Content-Type: application/json" \
+  -d '{"smiles":"CCO"}'
+
+<span class="comment"># 跨站搜索（需API Key）</span>
+curl -H "Authorization: Bearer gtk_internal_eve_2026" \
+  http://150.158.119.19:8461/api/v1/cross/search?q=芯片
+</div>
+</div>
+
+</div>
+
+<footer class="footer"><div class="container"><p>蜂群科研 API v1.0 | Base URL: http://150.158.119.19:8461</p></div></footer>
+</body>
+</html>

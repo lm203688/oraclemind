@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>蜂群科研 — 虚拟实验平台</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+h1{font-size:28px;background:linear-gradient(90deg,#6366f1,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+.subtitle{color:#94a3b8;font-size:14px;margin-bottom:24px}
+.stats-bar{display:flex;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.stat-card{background:#1e293b;padding:16px 24px;border-radius:12px;border:1px solid #334155}
+.stat-val{font-size:24px;font-weight:bold;color:#6366f1}
+.stat-label{font-size:12px;color:#94a3b8}
+.tabs{display:flex;gap:8px;margin-bottom:20px;border-bottom:1px solid #334155}
+.tab{padding:12px 24px;cursor:pointer;color:#94a3b8;border-bottom:2px solid transparent;transition:0.3s}
+.tab.active{color:#6366f1;border-bottom-color:#6366f1}
+.panel{display:none}
+.panel.active{display:block}
+.engine-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.engine-card{background:#1e293b;padding:16px;border-radius:8px;border:1px solid #334155;cursor:pointer;transition:0.3s}
+.engine-card:hover{border-color:#6366f1;background:#1e293b;transform:translateY(-2px)}
+.engine-name{font-weight:bold;margin-bottom:4px}
+.engine-err{font-size:12px;color:#94a3b8}
+.confidence-high{color:#22c55e}
+.confidence-medium{color:#eab308}
+.confidence-low{color:#ef4444}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;margin-bottom:4px;color:#94a3b8;font-size:13px}
+.form-group input,.form-group select{width:100%;padding:8px 12px;background:#1e293b;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:14px}
+.btn{padding:10px 24px;background:linear-gradient(90deg,#6366f1,#a855f7);color:white;border:none;border-radius:8px;cursor:pointer;font-size:14px}
+.btn:hover{opacity:0.9}
+.result-card{background:#1e293b;padding:20px;border-radius:12px;border:1px solid #334155;margin-top:16px}
+.result-value{font-size:32px;font-weight:bold;color:#6366f1}
+.result-ci{font-size:14px;color:#94a3b8;margin-top:4px}
+.mo-score{display:flex;gap:8px;margin-top:12px}
+.mo-badge{padding:4px 12px;border-radius:20px;font-size:12px}
+.mo-badge.green{background:#166534;color:#86efac}
+.mo-badge.yellow{background:#854d0e;color:#fde047}
+.mo-badge.red{background:#991b1b;color:#fca5a5}
+.recommendation{margin-top:12px;padding:12px;border-radius:8px;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>蜂群科研 SwarmMind Labs</h1>
+<p class="subtitle">30引擎虚拟实验平台 · 1504组论文验证 · 27类物理体系 · API: http://150.158.119.19:8461</p>
+
+<div class="stats-bar">
+<div class="stat-card"><div class="stat-val" id="stat-engines">30</div><div class="stat-label">虚拟实验引擎</div></div>
+<div class="stat-card"><div class="stat-val" id="stat-validations">1504</div><div class="stat-label">论文验证组数</div></div>
+<div class="stat-card"><div class="stat-val" id="stat-physics">27</div><div class="stat-label">物理体系</div></div>
+<div class="stat-card"><div class="stat-val" id="stat-accuracy">67%</div><div class="stat-label">验证点<15%误差</div></div>
+</div>
+
+<div class="tabs">
+<div class="tab active" onclick="switchTab('engines')">引擎列表</div>
+<div class="tab" onclick="switchTab('experiment')">运行实验</div>
+<div class="tab" onclick="switchTab('multiobjective')">多目标评估</div>
+<div class="tab" onclick="switchTab('feedback')">数据回流</div>
+</div>
+
+<!-- 引擎列表 -->
+<div id="panel-engines" class="panel active">
+<div class="engine-grid" id="engine-grid"></div>
+</div>
+
+<!-- 运行实验 -->
+<div id="panel-experiment" class="panel">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div>
+<div class="form-group">
+<label>选择引擎</label>
+<select id="exp-engine" onchange="loadEngineParams()"></select>
+</div>
+<div id="engine-params"></div>
+<button class="btn" onclick="runExperiment()">运行虚拟实验</button>
+</div>
+<div>
+<div id="exp-result"></div>
+</div>
+</div>
+</div>
+
+<!-- 多目标评估 -->
+<div id="panel-multiobjective" class="panel">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div>
+<div class="form-group">
+<label>选择引擎</label>
+<select id="mo-engine" onchange="loadMoParams()"></select>
+</div>
+<div id="mo-params"></div>
+<button class="btn" onclick="runMultiObjective()">多目标评估</button>
+</div>
+<div>
+<div id="mo-result"></div>
+</div>
+</div>
+</div>
+
+<!-- 数据回流 -->
+<div id="panel-feedback" class="panel">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div>
+<h3>提交真实实验结果</h3>
+<div class="form-group">
+<label>引擎</label>
+<select id="fb-engine"></select>
+</div>
+<div class="form-group">
+<label>预测值</label>
+<input id="fb-predicted" placeholder="如: 0.174">
+</div>
+<div class="form-group">
+<label>真实值</label>
+<input id="fb-actual" placeholder="如: 0.150">
+</div>
+<div class="form-group">
+<label>实验条件（JSON）</label>
+<input id="fb-conditions" placeholder='{"temperature_C":25}'>
+</div>
+<button class="btn" onclick="submitFeedback()">提交反馈</button>
+</div>
+<div>
+<h3>校准历史</h3>
+<div id="fb-history"></div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+const API = 'http://150.158.119.19:8461';
+let engines = [];
+
+async function loadEngines() {
+try {
+const r = await fetch(API + '/api/v1/engines');
+const d = await r.json();
+engines = d.engines;
+document.getElementById('stat-engines').textContent = d.total;
+renderEngines(engines);
+populateSelects(engines);
+} catch(e) {
+console.error(e);
+document.getElementById('engine-grid').innerHTML = '<p style="color:#ef4444">API连接失败，请检查网络</p>';
+}
+}
+
+function renderEngines(list) {
+const grid = document.getElementById('engine-grid');
+grid.innerHTML = list.map(e => `
+<div class="engine-card" onclick="selectEngine('${e.id}')">
+<div class="engine-name">${e.name}</div>
+<div class="engine-err">${e.id}</div>
+</div>
+`).join('');
+}
+
+function populateSelects(list) {
+const opts = list.map(e => `<option value="${e.id}">${e.name}</option>`).join('');
+document.getElementById('exp-engine').innerHTML = opts;
+document.getElementById('mo-engine').innerHTML = opts;
+document.getElementById('fb-engine').innerHTML = opts;
+}
+
+function selectEngine(id) {
+document.getElementById('exp-engine').value = id;
+switchTab('experiment');
+loadEngineParams();
+}
+
+function loadEngineParams() {
+// 简化：通用参数
+const engineId = document.getElementById('exp-engine').value;
+document.getElementById('engine-params').innerHTML = `
+<div class="form-group"><label>温度 (°C)</label><input id="param-T" value="25" type="number"></div>
+<div class="form-group"><label>时间 (min)</label><input id="param-time" value="60" type="number"></div>
+<div class="form-group"><label>pH</label><input id="param-pH" value="7.0" type="number" step="0.1"></div>
+`;
+}
+
+function loadMoParams() {
+loadEngineParams();
+}
+
+async function runExperiment() {
+const engine = document.getElementById('exp-engine').value;
+const T = parseFloat(document.getElementById('param-T')?.value || 25);
+const time = parseFloat(document.getElementById('param-time')?.value || 60);
+const pH = parseFloat(document.getElementById('param-pH')?.value || 7);
+
+document.getElementById('exp-result').innerHTML = '<p>运行中...</p>';
+
+try {
+const r = await fetch(API + '/api/v1/run/' + engine, {
+method: 'POST',
+headers: {'Content-Type': 'application/json'},
+body: JSON.stringify({temperature_C: T, time_min: time, pH: pH})
+});
+const d = await r.json();
+const result = d.result || {};
+const uq = result._uncertainty || {};
+
+let html = '<div class="result-card">';
+// 找主指标
+const keys = ['removal_pct','yield_pct','efficiency_pct','conversion','corrosion_rate_mm_year','desalination_pct','flux_kg_m2_h','thickness_um'];
+for (const k of keys) {
+if (result[k] !== undefined) {
+html += `<div class="result-value">${result[k]}</div>`;
+if (uq.ci_95_lower !== undefined) {
+html += `<div class="result-ci">95%CI: [${uq.ci_95_lower}, ${uq.ci_95_upper}] (${uq.uncertainty_pct})</div>`;
+html += `<div class="result-ci">置信等级: ${uq.confidence_level_cn} | 可靠性: ${(uq.model_reliability*100).toFixed(0)}%</div>`;
+html += `<div class="result-ci">${uq.interpretation}</div>`;
+}
+break;
+}
+}
+html += '<hr style="border-color:#334155;margin:12px 0">';
+for (const [k,v] of Object.entries(result)) {
+if (k !== '_uncertainty' && typeof v !== 'object') {
+html += `<div style="font-size:13px;color:#94a3b8">${k}: ${v}</div>`;
+}
+}
+html += '</div>';
+document.getElementById('exp-result').innerHTML = html;
+} catch(e) {
+document.getElementById('exp-result').innerHTML = '<p style="color:#ef4444">运行失败: ' + e.message + '</p>';
+}
+}
+
+async function runMultiObjective() {
+const engine = document.getElementById('mo-engine').value;
+const T = parseFloat(document.getElementById('param-T')?.value || 25);
+const time = parseFloat(document.getElementById('param-time')?.value || 60);
+
+document.getElementById('mo-result').innerHTML = '<p>评估中...</p>';
+
+try {
+const r = await fetch(API + '/api/v1/multiobjective/' + engine, {
+method: 'POST',
+headers: {'Content-Type': 'application/json'},
+body: JSON.stringify({temperature_C: T, time_min: time})
+});
+const d = await r.json();
+const mo = d.multi_objective || {};
+
+let html = '<div class="result-card">';
+html += `<div class="result-value">${mo.overall_score || 'N/A'}</div>`;
+html += '<div class="result-ci">综合评分 (0-1)</div>';
+html += `<div class="recommendation" style="background:${mo.overall_score>=0.6?'#166534':'#854d0e'};color:white">${mo.recommendation || ''}</div>`;
+
+if (mo.primary) html += `<div style="margin-top:12px"><b>主指标:</b> ${mo.primary.name} = ${mo.primary.value} ${mo.primary.unit||''}</div>`;
+if (mo.secondary) html += `<div><b>选择性:</b> ${mo.secondary.selectivity_pct}% | <b>纯度:</b> ${mo.secondary.purity_pct}%</div>`;
+if (mo.economic) html += `<div><b>成本:</b> ¥${mo.economic.total_cost_CNY} (能耗¥${mo.economic.energy_cost_CNY}+人工¥${mo.economic.time_cost_CNY}+试剂¥${mo.economic.reagent_cost_CNY})</div>`;
+if (mo.environmental) html += `<div><b>绿色评分:</b> ${mo.environmental.green_score} | E因子: ${mo.environmental.e_factor} | 原子经济性: ${mo.environmental.atom_economy_pct}%</div>`;
+if (mo.feasibility) html += `<div><b>设备:</b> ${mo.feasibility.equipment_requirement} | <b>安全:</b> ${mo.feasibility.safety_risk}</div>`;
+
+html += '</div>';
+document.getElementById('mo-result').innerHTML = html;
+} catch(e) {
+document.getElementById('mo-result').innerHTML = '<p style="color:#ef4444">评估失败: ' + e.message + '</p>';
+}
+}
+
+async function submitFeedback() {
+const engine = document.getElementById('fb-engine').value;
+const predicted = parseFloat(document.getElementById('fb-predicted').value);
+const actual = parseFloat(document.getElementById('fb-actual').value);
+const conditions = document.getElementById('fb-conditions').value || '{}';
+
+try {
+const r = await fetch(API + '/api/v1/feedback/submit', {
+method: 'POST',
+headers: {'Content-Type': 'application/json'},
+body: JSON.stringify({
+engine_id: engine,
+conditions: JSON.parse(conditions),
+predicted: {value: predicted},
+actual: {value: actual},
+user_id: 'web_user'
+})
+});
+const d = await r.json();
+let html = `<div class="result-card">
+<div class="result-value">${d.mean_error}%</div>
+<div class="result-ci">预测误差</div>
+<div class="recommendation" style="background:#1e40af;color:white">${d.feedback}</div>
+<div style="margin-top:8px">引擎可靠性: ${(d.engine_reliability*100).toFixed(1)}% | 累计校准: ${d.total_calibrations}次</div>
+</div>`;
+document.getElementById('fb-history').innerHTML = html;
+loadFeedbackHistory();
+} catch(e) {
+alert('提交失败: ' + e.message);
+}
+}
+
+async function loadFeedbackHistory() {
+try {
+const r = await fetch(API + '/api/v1/feedback/report');
+const d = await r.json();
+let html = `<p>总反馈: ${d.total_feedbacks}条 | 已校准引擎: ${d.engines_calibrated}个</p>`;
+if (d.engine_rankings) {
+html += d.engine_rankings.slice(0,5).map(e => 
+`<div style="font-size:13px;color:#94a3b8">${e.engine_id}: ${e.feedbacks}次反馈, 平均误差${e.avg_error}%, 可靠性${(e.reliability*100).toFixed(0)}%</div>`
+).join('');
+}
+document.getElementById('fb-history').innerHTML = html;
+} catch(e) {}
+}
+
+function switchTab(name) {
+document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+event.target.classList.add('active');
+document.getElementById('panel-' + name).classList.add('active');
+}
+
+loadEngines();
+loadFeedbackHistory();
+</script>
+</body>
+</html>

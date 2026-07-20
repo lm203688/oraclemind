@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Alien Minerals",
+  "name_for_model": "alienminerals",
+  "description_for_human": "Mineral database with 392 entities",
+  "description_for_model": "Access Alien Minerals knowledge base via API. Mineral database with 392 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://mineral.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://mineral.genetech.tools/"
+}

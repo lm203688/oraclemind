@@ -1,0 +1,13 @@
+services:
+  healthlens:
+    build: .
+    container_name: healthlens
+    ports:
+      - "8432:8432"
+    environment:
+      - BIT_ASSISTANT_URL=http://150.158.119.19:8431
+      - PORT=8432
+    volumes:
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+    restart: unless-stopped

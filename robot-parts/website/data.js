@@ -1,13 +1,13 @@
 const DB = {
-  "updated": "2026-06-27T16:00:50.311Z",
+  "updated": "2026-06-28T04:01:10.164Z",
   "stats": {
-    "actuators": 117,
-    "chips": 65,
+    "actuators": 147,
+    "chips": 95,
     "interfaces": 14,
     "llms": 27,
     "platforms": 23,
     "protocols": 64,
-    "sensors": 12
+    "sensors": 42
   },
   "actuators": [
     {
@@ -2581,6 +2581,216 @@ const DB = {
       "manufacturer": "AgiBot",
       "application": "人形机器人",
       "last_updated": "2026-06-27T15:57:14.601Z"
+    },
+    {
+      "id": "ACT-118",
+      "name": "MegaTorque Pro-X",
+      "category": "Motor",
+      "manufacturer": "RoboDrive Dynamics",
+      "type": "Brushless DC"
+    },
+    {
+      "id": "ACT-119",
+      "name": "PrecisionGrip Servo",
+      "category": "Servo",
+      "manufacturer": "Synthetic Motion Systems",
+      "type": "Digital"
+    },
+    {
+      "id": "ACT-120",
+      "name": "PowerPak Hydraulic Cylinder",
+      "category": "Hydraulic",
+      "manufacturer": "FluidForce Inc",
+      "type": "Linear Actuator"
+    },
+    {
+      "id": "ACT-121",
+      "name": "AirLift Pneumatic Piston",
+      "category": "Pneumatic",
+      "manufacturer": "CompressTech Solutions",
+      "type": "Linear Actuator"
+    },
+    {
+      "id": "ACT-122",
+      "name": "NanoFlex SMA Wire",
+      "category": "SMA",
+      "manufacturer": "Smart Materials Co",
+      "type": "Muscle Wire"
+    },
+    {
+      "id": "ACT-123",
+      "name": "UltraSonic Piezo Bender",
+      "category": "Piezo",
+      "manufacturer": "Precision Piezo Ceramics",
+      "type": "Bender"
+    },
+    {
+      "id": "ACT-124",
+      "name": "Titanium Gear Servo",
+      "category": "Servo",
+      "manufacturer": "HeavyBot Components",
+      "type": "High-Torque"
+    },
+    {
+      "id": "ACT-125",
+      "name": "Vortex Hydraulic Motor",
+      "category": "Hydraulic",
+      "manufacturer": "FluidForce Inc",
+      "type": "Rotary"
+    },
+    {
+      "id": "ACT-126",
+      "name": "SwiftAir Pneumatic Rotary",
+      "category": "Pneumatic",
+      "manufacturer": "CompressTech Solutions",
+      "type": "Rotary Actuator"
+    },
+    {
+      "id": "ACT-127",
+      "name": "ShapeShift SMA Coil",
+      "category": "SMA",
+      "manufacturer": "Smart Materials Co",
+      "type": "Helical"
+    },
+    {
+      "id": "ACT-128",
+      "name": "MicroStep Piezo Linear",
+      "category": "Piezo",
+      "manufacturer": "Precision Piezo Ceramics",
+      "type": "Linear Actuator"
+    },
+    {
+      "id": "ACT-129",
+      "name": "StealthForce Motor",
+      "category": "Motor",
+      "manufacturer": "RoboDrive Dynamics",
+      "type": "Stepper"
+    },
+    {
+      "id": "ACT-130",
+      "name": "GyroServo 360",
+      "category": "Servo",
+      "manufacturer": "Synthetic Motion Systems",
+      "type": "Continuous Rotation"
+    },
+    {
+      "id": "ACT-131",
+      "name": "PressMaster Hydraulic Press",
+      "category": "Hydraulic",
+      "manufacturer": "FluidForce Inc",
+      "type": "Press"
+    },
+    {
+      "id": "ACT-132",
+      "name": "Diaphragm Pneumatic Actuator",
+      "category": "Pneumatic",
+      "manufacturer": "CompressTech Solutions",
+      "type": "Diaphragm"
+    },
+    {
+      "id": "ACT-133",
+      "name": "TorqueMaster Pro X7",
+      "category": "servo",
+      "manufacturer": "RoboDrive Systems",
+      "type": "digital"
+    },
+    {
+      "id": "ACT-134",
+      "name": "HydraLift 5000",
+      "category": "hydraulic",
+      "manufacturer": "HeavyMotive Inc.",
+      "type": "linear_actuator"
+    },
+    {
+      "id": "ACT-135",
+      "name": "PneuSwift Compact",
+      "category": "pneumatic",
+      "manufacturer": "AirLogic Dynamics",
+      "type": "cylinder"
+    },
+    {
+      "id": "ACT-136",
+      "name": "DynoForce V12",
+      "category": "motor",
+      "manufacturer": "OmniMotors",
+      "type": "brushless_dc"
+    },
+    {
+      "id": "ACT-137",
+      "name": "FlexiWire SMA-50",
+      "category": "SMA",
+      "manufacturer": "Smart Materials Co.",
+      "type": "muscle_wire"
+    },
+    {
+      "id": "ACT-138",
+      "name": "NanoPiezo Z-Axis",
+      "category": "piezo",
+      "manufacturer": "Precision Micro Devices",
+      "type": "stack_actuator"
+    },
+    {
+      "id": "ACT-139",
+      "name": "MicroGrip Servo",
+      "category": "servo",
+      "manufacturer": "Microbotics LLC",
+      "type": "analog"
+    },
+    {
+      "id": "ACT-140",
+      "name": "PressurMax HP-250",
+      "category": "hydraulic",
+      "manufacturer": "FluidPower Solutions",
+      "type": "rotary_actuator"
+    },
+    {
+      "id": "ACT-141",
+      "name": "VacuGrip Series 4",
+      "category": "pneumatic",
+      "manufacturer": "AirLogic Dynamics",
+      "type": "vacuum_generator"
+    },
+    {
+      "id": "ACT-142",
+      "name": "StepperMax NEMA 23",
+      "category": "motor",
+      "manufacturer": "OmniMotors",
+      "type": "stepper"
+    },
+    {
+      "id": "ACT-143",
+      "name": "SmaSpring Actuator",
+      "category": "SMA",
+      "manufacturer": "Smart Materials Co.",
+      "type": "spring_actuator"
+    },
+    {
+      "id": "ACT-144",
+      "name": "BenderPiezo T-100",
+      "category": "piezo",
+      "manufacturer": "Precision Micro Devices",
+      "type": "bender_actuator"
+    },
+    {
+      "id": "ACT-145",
+      "name": "HD Servo 360",
+      "category": "servo",
+      "manufacturer": "RoboDrive Systems",
+      "type": "continuous_rotation"
+    },
+    {
+      "id": "ACT-146",
+      "name": "FlowMaster Valve",
+      "category": "hydraulic",
+      "manufacturer": "HeavyMotive Inc.",
+      "type": "proportional_valve"
+    },
+    {
+      "id": "ACT-147",
+      "name": "TurboSpin PMDC",
+      "category": "motor",
+      "manufacturer": "OmniMotors",
+      "type": "brushed_dc"
     }
   ],
   "chips": [
@@ -4508,6 +4718,216 @@ const DB = {
       "description": "人工智能触觉传感芯片及应用解决方案研发",
       "application": "触觉传感器赛道",
       "last_updated": "2026-06-27T15:57:25.493Z"
+    },
+    {
+      "id": "CHIP-66",
+      "name": "Jetson Orin NX",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System-on-Chip (SoC)"
+    },
+    {
+      "id": "CHIP-67",
+      "name": "Intel RealSense D435i",
+      "category": "Vision Sensor",
+      "manufacturer": "Intel",
+      "type": "Depth Camera Module"
+    },
+    {
+      "id": "CHIP-68",
+      "name": "Qualcomm RB5",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "Robotics Development Kit"
+    },
+    {
+      "id": "CHIP-69",
+      "name": "AMD Aldebaran",
+      "category": "AI Accelerator",
+      "manufacturer": "AMD",
+      "type": "Graphics Processing Unit (GPU)"
+    },
+    {
+      "id": "CHIP-70",
+      "name": "Jetson AGX Xavier",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System-on-Chip (SoC)"
+    },
+    {
+      "id": "CHIP-71",
+      "name": "Intel RealSense L515",
+      "category": "Vision Sensor",
+      "manufacturer": "Intel",
+      "type": "Depth Camera Module"
+    },
+    {
+      "id": "CHIP-72",
+      "name": "Qualcomm Snapdragon Flight",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "System-on-Chip (SoC)"
+    },
+    {
+      "id": "CHIP-73",
+      "name": "AMD Versal AI Edge",
+      "category": "AI Accelerator",
+      "manufacturer": "AMD",
+      "type": "Adaptive SoC"
+    },
+    {
+      "id": "CHIP-74",
+      "name": "Jetson Nano",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System-on-Chip (SoC)"
+    },
+    {
+      "id": "CHIP-75",
+      "name": "Intel Movidius Myriad X",
+      "category": "AI Accelerator",
+      "manufacturer": "Intel",
+      "type": "Vision Processing Unit (VPU)"
+    },
+    {
+      "id": "CHIP-76",
+      "name": "Qualcomm RB3",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "Robotics Development Kit"
+    },
+    {
+      "id": "CHIP-77",
+      "name": "AMD Instinct MI300",
+      "category": "AI Accelerator",
+      "manufacturer": "AMD",
+      "type": "Data Center Accelerator"
+    },
+    {
+      "id": "CHIP-78",
+      "name": "Jetson TX2",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System-on-Chip (SoC)"
+    },
+    {
+      "id": "CHIP-79",
+      "name": "Intel RealSense SR300",
+      "category": "Vision Sensor",
+      "manufacturer": "Intel",
+      "type": "Depth Camera Module"
+    },
+    {
+      "id": "CHIP-80",
+      "name": "Qualcomm QRB5165",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "System-on-Chip (SoC)"
+    },
+    {
+      "id": "CHIP-81",
+      "name": "Jetson Orin NX",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System on Module"
+    },
+    {
+      "id": "CHIP-82",
+      "name": "Jetson AGX Orin",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System on Module"
+    },
+    {
+      "id": "CHIP-83",
+      "name": "RealSense D435i",
+      "category": "Sensor",
+      "manufacturer": "Intel",
+      "type": "Depth Camera"
+    },
+    {
+      "id": "CHIP-84",
+      "name": "RealSense L515",
+      "category": "Sensor",
+      "manufacturer": "Intel",
+      "type": "Depth Camera"
+    },
+    {
+      "id": "CHIP-85",
+      "name": "Snapdragon 8 Gen 3",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "System on Chip"
+    },
+    {
+      "id": "CHIP-86",
+      "name": "Snapdragon X Elite",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "System on Chip"
+    },
+    {
+      "id": "CHIP-87",
+      "name": "AMD Ryzen AI 9 HX",
+      "category": "AI Accelerator",
+      "manufacturer": "AMD",
+      "type": "System on Chip"
+    },
+    {
+      "id": "CHIP-88",
+      "name": "AMD Instinct MI300X",
+      "category": "AI Accelerator",
+      "manufacturer": "AMD",
+      "type": "GPU Accelerator"
+    },
+    {
+      "id": "CHIP-89",
+      "name": "NVIDIA Jetson Nano",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System on Module"
+    },
+    {
+      "id": "CHIP-90",
+      "name": "Intel Movidius VPU",
+      "category": "AI Accelerator",
+      "manufacturer": "Intel",
+      "type": "Vision Processing Unit"
+    },
+    {
+      "id": "CHIP-91",
+      "name": "Qualcomm RB5",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "Development Kit"
+    },
+    {
+      "id": "CHIP-92",
+      "name": "AMD Xilinx Zynq UltraScale+ MPSoC",
+      "category": "AI Accelerator",
+      "manufacturer": "AMD",
+      "type": "Programmable Logic"
+    },
+    {
+      "id": "CHIP-93",
+      "name": "NVIDIA Jetson TX2",
+      "category": "AI Accelerator",
+      "manufacturer": "NVIDIA",
+      "type": "System on Module"
+    },
+    {
+      "id": "CHIP-94",
+      "name": "Intel Neural Compute Stick 2",
+      "category": "AI Accelerator",
+      "manufacturer": "Intel",
+      "type": "USB Accelerator"
+    },
+    {
+      "id": "CHIP-95",
+      "name": "Qualcomm QRB5165",
+      "category": "AI Accelerator",
+      "manufacturer": "Qualcomm",
+      "type": "Robotics Platform"
     }
   ],
   "interfaces": [
@@ -7080,6 +7500,216 @@ const DB = {
       "year": "2025-2026",
       "description": "Unitree H1's advanced perception system featuring 3D LiDAR and depth camera with 360° depth perception. Designed for robust environmental awareness in humanoid robot applications. Paired with high-torque actuators for dynamic locomotion.",
       "source": "Unitree Robotics 2025-2026"
+    },
+    {
+      "id": "SENS-13",
+      "name": "High-Res LiDAR Unit V2",
+      "type": "LiDAR",
+      "range": "180m",
+      "description": "A 360-degree rotating LiDAR sensor with high-resolution point cloud generation for detailed environmental mapping and obstacle detection."
+    },
+    {
+      "id": "SENS-14",
+      "name": "9-Axis IMU Fusion Module",
+      "type": "IMU",
+      "range": "N/A",
+      "description": "A high-precision inertial measurement unit combining accelerometer, gyroscope, and magnetometer data for accurate orientation and motion tracking."
+    },
+    {
+      "id": "SENS-15",
+      "name": "Pan-Tilt-Zoom Optical Camera",
+      "type": "Camera",
+      "range": "50m (daylight)",
+      "description": "A high-definition color camera with motorized pan, tilt, and zoom capabilities for long-range visual inspection and object recognition."
+    },
+    {
+      "id": "SENS-16",
+      "name": "Multi-Spectral Vision Array",
+      "type": "Camera",
+      "range": "30m",
+      "description": "A camera system capturing images in visible, near-infrared, and thermal spectrums for advanced material analysis and thermal anomaly detection."
+    },
+    {
+      "id": "SENS-17",
+      "name": "Electro-Active Tactile Skin",
+      "type": "Tactile",
+      "range": "0-5mm",
+      "description": "A conformable sensor array covering a robotic limb, capable of detecting pressure, vibration, and temperature across its entire surface."
+    },
+    {
+      "id": "SENS-18",
+      "name": "Gripper Contact Array",
+      "type": "Tactile",
+      "range": "N/A",
+      "description": "A dense matrix of force-sensitive resistors located on a robotic gripper to provide fine-grained feedback for delicate manipulation tasks."
+    },
+    {
+      "id": "SENS-19",
+      "name": "Wide-Angle Ultrasonic Array",
+      "type": "Ultrasonic",
+      "range": "6m",
+      "description": "A circular array of ultrasonic transducers providing wide-angle proximity detection and obstacle avoidance in cluttered environments."
+    },
+    {
+      "id": "SENS-20",
+      "name": "6-Axis Force-Torque Sensor",
+      "type": "Force Torque",
+      "range": "N/A",
+      "description": "A high-fidelity sensor mounted between a robotic arm and its end-effector to measure all six components of force and torque."
+    },
+    {
+      "id": "SENS-21",
+      "name": "Solid-State LiDAR Scanner",
+      "type": "LiDAR",
+      "range": "100m",
+      "description": "A no-moving-parts LiDAR sensor with a fixed field of view, providing rapid, vibration-resistant scanning for dynamic environments."
+    },
+    {
+      "id": "SENS-22",
+      "name": "Laser Vibrometer",
+      "type": "Ultrasonic",
+      "range": "10m",
+      "description": "A non-contact optical sensor that uses laser interferometry to measure surface vibrations and acoustic emissions with high precision."
+    },
+    {
+      "id": "SENS-23",
+      "name": "Event-Based Vision Sensor",
+      "type": "Camera",
+      "range": "30m",
+      "description": "A neuromorphic camera that only reports pixel changes, enabling ultra-fast response to motion and low-latency visual processing."
+    },
+    {
+      "id": "SENS-24",
+      "name": "3D Tactile Digit",
+      "type": "Tactile",
+      "range": "N/A",
+      "description": "A single, highly sensitive robotic fingertip with a 3D array of sensors to provide rich feedback on object shape, texture, and slip."
+    },
+    {
+      "id": "SENS-25",
+      "name": "3D Time-of-Flight Camera",
+      "type": "Camera",
+      "range": "5m",
+      "description": "An active depth-sensing camera that illuminates a scene with infrared light to create real-time 3D depth maps for navigation and interaction."
+    },
+    {
+      "id": "SENS-26",
+      "name": "Microphone Array",
+      "type": "Ultrasonic",
+      "range": "N/A",
+      "description": "A multi-element microphone system for beamforming, sound source localization, and acoustic scene analysis."
+    },
+    {
+      "id": "SENS-27",
+      "name": "Strain-Gauge Torque Sensor",
+      "type": "Force Torque",
+      "range": "N/A",
+      "description": "A compact sensor integrated into a joint to measure torque, providing critical feedback for force-controlled movements and safety."
+    },
+    {
+      "id": "SENS-28",
+      "name": "Velodyne VLP-32C LiDAR",
+      "type": "LiDAR",
+      "range": "70 meters",
+      "description": "A 3D spinning LiDAR sensor with 32 channels, providing high-resolution point cloud data for obstacle detection, mapping, and localization."
+    },
+    {
+      "id": "SENS-29",
+      "name": "Xsens MTi-300 IMU",
+      "type": "IMU",
+      "range": "N/A",
+      "description": "A miniature inertial measurement unit providing precise data on orientation, angular velocity, and acceleration for motion tracking and stability control."
+    },
+    {
+      "id": "SENS-30",
+      "name": "Intel RealSense D435i Camera",
+      "type": "Camera",
+      "range": "10 meters (depth)",
+      "description": "An RGB-D camera that captures color images and depth data simultaneously, ideal for 3D perception, gesture recognition, and human-robot interaction."
+    },
+    {
+      "id": "SENS-31",
+      "name": "Robotiq FT 300 Force-Torque Sensor",
+      "type": "Force-Torque",
+      "range": "300 N, 30 Nm",
+      "description": "A sensor mounted on a robotic arm's wrist to measure forces and torques in all six axes, enabling precise force-controlled tasks like assembly and sanding."
+    },
+    {
+      "id": "SENS-32",
+      "name": "MaxBotix MB7066 Ultrasonic Sensor",
+      "type": "Ultrasonic",
+      "range": "10 meters",
+      "description": "A long-range ultrasonic sensor that detects obstacles by emitting sound waves and measuring the time it takes for the echo to return, useful for navigation and collision avoidance."
+    },
+    {
+      "id": "SENS-33",
+      "name": "SynTouch BioTac Tactile Sensor",
+      "type": "Tactile",
+      "range": "N/A",
+      "description": "A biomimetic tactile sensor that mimics the human sense of touch, providing data on pressure, vibration, and temperature for delicate manipulation and object recognition."
+    },
+    {
+      "id": "SENS-34",
+      "name": "Ouster OS1-64 LiDAR",
+      "type": "LiDAR",
+      "range": "120 meters",
+      "description": "A solid-state LiDAR sensor with 64 vertical channels, offering high-resolution 3D point clouds for long-range environmental mapping and perception."
+    },
+    {
+      "id": "SENS-35",
+      "name": "Bosch BNO055 IMU",
+      "type": "IMU",
+      "range": "N/A",
+      "description": "A 9-axis absolute orientation sensor that fuses accelerometer, gyroscope, and magnetometer data to provide accurate heading and tilt information."
+    },
+    {
+      "id": "SENS-36",
+      "name": "FLIR Blackfly S Camera",
+      "type": "Camera",
+      "range": "N/A",
+      "description": "A high-resolution global shutter camera optimized for machine vision applications, capable of capturing fast-moving objects with minimal distortion."
+    },
+    {
+      "id": "SENS-37",
+      "name": "ATI Mini45 Force-Torque Sensor",
+      "type": "Force-Torque",
+      "range": "45 N, 2.25 Nm",
+      "description": "A compact, high-precision force-torque sensor designed for integration into small robotic arms and end-effectors for delicate tasks."
+    },
+    {
+      "id": "SENS-38",
+      "name": "HC-SR04 Ultrasonic Sensor",
+      "type": "Ultrasonic",
+      "range": "2-4 meters",
+      "description": "A low-cost, popular ultrasonic sensor commonly used for short-range obstacle detection and distance measurement in hobbyist and educational robotics projects."
+    },
+    {
+      "id": "SENS-39",
+      "name": "Optoforce Tactile Sensor Array",
+      "type": "Tactile",
+      "range": "N/A",
+      "description": "An array of force-sensitive resistors (FSRs) that maps pressure distribution across a surface, ideal for grip force control and slip detection."
+    },
+    {
+      "id": "SENS-40",
+      "name": "Livox Horizon LiDAR",
+      "type": "LiDAR",
+      "range": "100 meters",
+      "description": "A high-performance, low-cost solid-state LiDAR with a 360-degree horizontal and 25-degree vertical field of view, designed for autonomous navigation."
+    },
+    {
+      "id": "SENS-41",
+      "name": "Sony IMX477 Camera Module",
+      "type": "Camera",
+      "range": "N/A",
+      "description": "A 12.3-megapixel camera module with a large sensor, providing excellent low-light performance and high dynamic range for detailed visual perception."
+    },
+    {
+      "id": "SENS-42",
+      "name": "ATI Nano17 Force-Torque Sensor",
+      "type": "Force-Torque",
+      "range": "17 N, 0.17 Nm",
+      "description": "A miniature, high-sensitivity force-torque sensor perfect for applications requiring precise measurement of very small forces and torques, such as micro-manipulation."
     }
   ]
 };

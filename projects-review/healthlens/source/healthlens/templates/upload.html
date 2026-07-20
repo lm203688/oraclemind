@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>上传数据 - HealthLens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); min-height: 100vh; }
+        .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .upload-zone { background: rgba(255,255,255,0.03); border: 2px dashed rgba(255,255,255,0.15); transition: all 0.2s; }
+        .upload-zone:hover, .upload-zone.dragover { border-color: #3b82f6; background: rgba(59,130,246,0.05); }
+        .upload-zone:active { transform: scale(0.99); }
+        .bottom-nav { padding-bottom: env(safe-area-inset-bottom, 0px); }
+        @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+        .fade-in { animation: fadeIn 0.3s ease-out; }
+        .typing { animation: blink 1s infinite; }
+        @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+    </style>
+</head>
+<body class="gradient-bg text-white">
+
+<!-- 导航 -->
+<nav class="glass sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <a href="/" class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">H</a>
+            <span class="text-lg font-semibold">HealthLens</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-4">
+            <a href="/" class="text-sm text-gray-300 hover:text-white">首页</a>
+            <a href="/upload" class="text-sm text-white">上传数据</a>
+            <a href="/dashboard" class="text-sm text-gray-300 hover:text-white">健康面板</a>
+            <a href="/profile" id="profileLink" class="text-sm text-gray-300 hover:text-white hidden">个人中心</a>
+            <a href="/login" id="loginLink" class="text-sm text-gray-300 hover:text-white">登录</a>
+        </div>
+    </div>
+</nav>
+
+<main class="max-w-3xl mx-auto px-4 py-6 pb-24 md:pb-8">
+    <h1 class="text-2xl md:text-3xl font-bold mb-2">上传健康数据</h1>
+    <p class="text-gray-400 text-sm mb-6">上传体检报告或Apple Health数据，AI自动解析并生成健康洞察</p>
+
+    <!-- 体检报告上传 -->
+    <div class="glass rounded-2xl p-5 mb-5">
+        <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-lg">📋</div>
+            <div>
+                <h2 class="font-semibold">体检报告</h2>
+                <p class="text-xs text-gray-400">支持PDF、JPG、PNG格式</p>
+            </div>
+        </div>
+        <div id="reportZone" class="upload-zone rounded-xl p-8 text-center cursor-pointer"
+             onclick="document.getElementById('reportFile').click()"
+             ondragover="event.preventDefault();this.classList.add('dragover')"
+             ondragleave="this.classList.remove('dragover')"
+             ondrop="event.preventDefault();this.classList.remove('dragover');handleReportDrop(event)">
+            <div class="text-4xl mb-3">📄</div>
+            <p class="text-gray-300 text-sm">拖拽文件到此处，或点击选择</p>
+            <p class="text-xs text-gray-500 mt-2">支持 PDF / JPG / PNG，最大16MB</p>
+            <input id="reportFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.bmp" class="hidden" onchange="uploadReport()">
+        </div>
+        <div id="reportResult" class="mt-4 hidden"></div>
+    </div>
+
+    <!-- Apple Health上传 -->
+    <div class="glass rounded-2xl p-5 mb-5">
+        <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center text-lg">🍎</div>
+            <div>
+                <h2 class="font-semibold">Apple Health</h2>
+                <p class="text-xs text-gray-400">从iPhone「健康」App导出数据</p>
+            </div>
+        </div>
+        <div class="upload-zone rounded-xl p-8 text-center cursor-pointer"
+             onclick="document.getElementById('appleFile').click()">
+            <div class="text-4xl mb-3">📱</div>
+            <p class="text-gray-300 text-sm">上传 export.xml 或 export.zip</p>
+            <p class="text-xs text-gray-500 mt-2">iPhone健康App → 头像 → 导出所有健康数据</p>
+            <input id="appleFile" type="file" accept=".xml,.zip" class="hidden" onchange="uploadAppleHealth()">
+        </div>
+        <div id="appleResult" class="mt-4 hidden"></div>
+    </div>
+
+    <!-- Webhook推送提示 -->
+    <div class="glass rounded-2xl p-5 mb-5">
+        <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-lg">🔗</div>
+            <div>
+                <h2 class="font-semibold">API推送</h2>
+                <p class="text-xs text-gray-400">通过Webhook自动推送数据</p>
+            </div>
+        </div>
+        <div class="bg-white/5 rounded-xl p-4 text-xs font-mono text-gray-400 overflow-x-auto">
+            <div class="text-gray-300 mb-2"># 推送健康数据</div>
+            <div>curl -X POST \</div>
+            <div>&nbsp; http://150.158.119.19:8432/api/webhook/<span class="text-blue-400">YOUR_USER_ID</span> \</div>
+            <div>&nbsp; -H "Content-Type: application/json" \</div>
+            <div>&nbsp; -H "X-API-Key: <span class="text-blue-400">YOUR_API_KEY</span>" \</div>
+            <div>&nbsp; -d '{"format":"healthlens","records":[...]}'</div>
+        </div>
+        <a href="/profile" class="inline-block mt-3 text-xs text-blue-400 hover:text-blue-300">→ 去个人中心创建API Key</a>
+    </div>
+
+    <!-- 查看面板 -->
+    <div class="text-center mt-6">
+        <a href="/dashboard" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-medium transition inline-block active:scale-95">
+            查看健康面板 →
+        </a>
+    </div>
+</main>
+
+<!-- 移动端底部导航 -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 glass bottom-nav z-50">
+    <div class="flex justify-around py-2">
+        <a href="/" class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white transition px-3 py-1">
+            <span class="text-lg">🏠</span><span class="text-[10px]">首页</span>
+        </a>
+        <a href="/upload" class="flex flex-col items-center gap-0.5 text-blue-400 px-3 py-1">
+            <span class="text-lg">📤</span><span class="text-[10px]">上传</span>
+        </a>
+        <a href="/dashboard" class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white transition px-3 py-1">
+            <span class="text-lg">📊</span><span class="text-[10px]">面板</span>
+        </a>
+        <a href="/profile" class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white transition px-3 py-1">
+            <span class="text-lg">👤</span><span class="text-[10px]">我的</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    let currentUserId = 'default';
+
+    // 检查登录
+    fetch('/api/auth/me').then(r=>r.json()).then(data => {
+        if (data.success) {
+            currentUserId = data.user.id;
+            document.getElementById('profileLink')?.classList.remove('hidden');
+            document.getElementById('loginLink')?.classList.add('hidden');
+        }
+    });
+
+    async function uploadReport() {
+        const file = document.getElementById('reportFile').files[0];
+        if (!file) return;
+        const fd = new FormData();
+        fd.append('file', file);
+        fd.append('user_id', currentUserId);
+        
+        const el = document.getElementById('reportResult');
+        el.className = 'mt-4 fade-in';
+        el.innerHTML = '<div class="text-center text-gray-400 py-4"><span class="typing">⏳</span> AI解析中，请稍候...</div>';
+        
+        try {
+            const res = await fetch('/api/upload/report', {method: 'POST', body: fd});
+            const data = await res.json();
+            if (data.success) {
+                let html = `<div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 fade-in">
+                    <div class="font-medium text-green-400 mb-2">✅ 解析成功</div>
+                    <div class="text-sm text-gray-300 mb-2">提取 ${data.metrics_count} 项指标</div>
+                    <div class="text-sm text-gray-400 bg-white/5 rounded-lg p-3 mt-2 whitespace-pre-line">${data.ai_summary}</div>`;
+                if (data.metrics && data.metrics.length > 0) {
+                    const abnormal = data.metrics.filter(m => m.status !== 'normal');
+                    if (abnormal.length) {
+                        html += '<div class="mt-3"><div class="text-xs text-gray-400 mb-1">异常指标：</div>';
+                        abnormal.forEach(m => {
+                            const color = m.status === 'high' ? 'text-red-400 bg-red-500/10' : m.status === 'low' ? 'text-blue-400 bg-blue-500/10' : 'text-yellow-400 bg-yellow-500/10';
+                            html += `<span class="inline-block ${color} rounded-lg px-2 py-1 mr-1 mb-1 text-xs">${m.name} ${m.value}${m.unit} ${m.status === 'high' ? '↑' : m.status === 'low' ? '↓' : '⚠'}</span>`;
+                        });
+                        html += '</div>';
+                    }
+                }
+                html += '</div>';
+                el.innerHTML = html;
+            } else {
+                el.innerHTML = `<div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-red-400">❌ ${data.error}</div>`;
+            }
+        } catch (e) {
+            el.innerHTML = `<div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-red-400">❌ 上传失败: ${e.message}</div>`;
+        }
+    }
+
+    function handleReportDrop(e) {
+        const file = e.dataTransfer.files[0];
+        if (file) {
+            const dt = new DataTransfer();
+            dt.items.add(file);
+            document.getElementById('reportFile').files = dt.files;
+            uploadReport();
+        }
+    }
+
+    async function uploadAppleHealth() {
+        const file = document.getElementById('appleFile').files[0];
+        if (!file) return;
+        const fd = new FormData();
+        fd.append('file', file);
+        fd.append('user_id', currentUserId);
+        
+        const el = document.getElementById('appleResult');
+        el.className = 'mt-4 fade-in';
+        el.innerHTML = '<div class="text-center text-gray-400 py-4"><span class="typing">⏳</span> 解析中...</div>';
+        
+        try {
+            const res = await fetch('/api/upload/apple-health', {method: 'POST', body: fd});
+            const data = await res.json();
+            if (data.success) {
+                el.innerHTML = `<div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 fade-in">
+                    <div class="font-medium text-green-400 mb-2">✅ 导入成功</div>
+                    <div class="text-sm text-gray-300">导入 ${data.records_count} 条记录</div>
+                    <div class="text-xs text-gray-400 mt-2">指标类型: ${data.metric_types.join(', ')}</div>
+                </div>`;
+            } else {
+                el.innerHTML = `<div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-red-400">❌ ${data.error}</div>`;
+            }
+        } catch (e) {
+            el.innerHTML = `<div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-red-400">❌ 上传失败: ${e.message}</div>`;
+        }
+    }
+</script>
+</body>
+</html>

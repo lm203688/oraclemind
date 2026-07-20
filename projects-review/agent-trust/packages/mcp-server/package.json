@@ -1,0 +1,52 @@
+{
+  "name": "agent-trust-mcp-server",
+  "version": "0.2.0",
+  "description": "MCP Server for AI Agent trust scores \u2014 query any agent's reputation (0-100) via 3 tools. Works with Claude Desktop, Cursor, Windsurf. One command: npx -y agent-trust-mcp-server",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "agent-trust-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "agent-trust-core": "^0.1.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "keywords": [
+    "ai-agent",
+    "trust-score",
+    "mcp-server",
+    "mcp",
+    "reputation",
+    "agent-economy",
+    "claude-desktop",
+    "cursor-ide",
+    "llm-tools",
+    "model-context-protocol",
+    "agent-trust",
+    "ai-scoring",
+    "npx-ready"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lm203688/agent-trust-protocol.git"
+  },
+  "homepage": "https://github.com/lm203688/agent-trust-protocol#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}

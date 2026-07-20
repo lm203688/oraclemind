@@ -1,0 +1,24 @@
+[
+  {
+    "id": "d5545f78be17",
+    "event": "部署蜂群科研",
+    "context": {
+      "port": 8460
+    },
+    "insight": "需要先下载代码再重启",
+    "timestamp": 1783435072.2394998,
+    "layer": "middle",
+    "connections": []
+  },
+  {
+    "id": "006c5ac416e7",
+    "event": "小乌504超时",
+    "context": {
+      "api": "xiaowu"
+    },
+    "insight": "改用短超时curl",
+    "timestamp": 1783435072.2396293,
+    "layer": "middle",
+    "connections": []
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "gtk_5b24c127cafb52fc1256d52ceb44ed5c": {
+    "email": "test@swarmlabs.tools",
+    "name": "Anonymous",
+    "tier": "free",
+    "limit": "30/hour",
+    "created_at": "2026-07-18 12:45:08",
+    "usage_count": 0
+  }
+}

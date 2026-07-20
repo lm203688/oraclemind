@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>蜂群科研 — AI科研验证平台</title>
+
+<!-- PWA -->
+<link rel="manifest" href="/static/manifest.json">
+<meta name="theme-color" content="#6c5ce7">
+<meta name="description" content="不是AI论文生成器，是AI科研验证平台。8种蜂协作，验证知识库+引用分润+跨领域发现。">
+
+<!-- iOS PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="蜂群科研">
+<link rel="apple-touch-icon" href="/static/icons/apple-touch-icon.png">
+
+<!-- Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="蜂群科研">
+
+<!-- Windows Tile -->
+<meta name="msapplication-TileColor" content="#6c5ce7">
+<meta name="msapplication-tap-highlight" content="no">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#12121a;--border:#1e1e2e;--text:#e0e0e0;--dim:#888;--accent:#6c5ce7;--accent2:#a29bfe;--green:#00b894;--yellow:#fdcb6e;--red:#e17055;--blue:#0984e3}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text)}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e);padding:16px 0;border-bottom:1px solid var(--border)}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:700;color:var(--accent)}
+.logo span{color:var(--dim);font-size:13px;font-weight:400;margin-left:8px}
+.nav{display:flex;gap:16px}
+.nav a{color:var(--dim);font-size:14px;text-decoration:none}
+.nav a:hover{color:var(--text)}
+.hero{padding:50px 0;text-align:center}
+.hero h1{font-size:36px;margin-bottom:12px;background:linear-gradient(135deg,#6c5ce7,#a29bfe,#74b9ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--dim);font-size:16px;max-width:600px;margin:0 auto 24px}
+.btn{display:inline-block;padding:12px 28px;border-radius:10px;font-weight:600;font-size:16px;text-decoration:none;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-outline{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+.section{padding:40px 0}
+.section h2{font-size:24px;margin-bottom:24px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;transition:border-color .2s}
+.card:hover{border-color:var(--accent)}
+.card h3{font-size:18px;margin-bottom:8px}
+.card .bee-icon{font-size:28px;margin-bottom:8px}
+.card p{color:var(--dim);font-size:14px;margin-bottom:12px}
+.card .cost{color:var(--yellow);font-size:13px;font-weight:600}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.input{width:100%;padding:12px 16px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;margin-bottom:12px}
+.input:focus{outline:none;border-color:var(--accent)}
+textarea.input{min-height:80px;resize:vertical;font-family:inherit}
+select.input{cursor:pointer}
+.result-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-top:16px;max-height:600px;overflow-y:auto}
+.result-box h4{color:var(--accent2);margin-bottom:8px}
+.result-box pre{white-space:pre-wrap;word-wrap:break-word;font-size:14px;line-height:1.6}
+.stats{display:flex;gap:24px;justify-content:center;margin:24px 0}
+.stat{text-align:center}
+.stat-num{font-size:32px;font-weight:700;color:var(--accent)}
+.stat-label{color:var(--dim);font-size:13px}
+.pricing-table{width:100%;border-collapse:collapse;margin-top:16px}
+.pricing-table th,.pricing-table td{padding:12px;border-bottom:1px solid var(--border);text-align:left}
+.pricing-table th{color:var(--accent);font-size:13px}
+.pricing-table td{font-size:14px}
+.badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600}
+.badge-free{background:rgba(0,184,148,.15);color:var(--green)}
+.badge-paid{background:rgba(108,92,231,.15);color:var(--accent2)}
+.badge-byok{background:rgba(253,203,110,.15);color:var(--yellow)}
+.loading{display:inline-block;width:16px;height:16px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.notice{background:rgba(225,112,85,.1);border:1px solid rgba(225,112,85,.3);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--red);margin:12px 0}
+.notice-blue{background:rgba(9,132,227,.1);border:1px solid rgba(9,132,227,.3);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--blue);margin:12px 0}
+.notice-green{background:rgba(0,184,148,.1);border:1px solid rgba(0,184,148,.3);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--green);margin:12px 0}
+.footer{text-align:center;padding:24px;color:var(--dim);font-size:13px;border-top:1px solid var(--border);margin-top:40px}
+.workflow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:24px 0}
+.workflow-step{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 16px;font-size:13px}
+.workflow-arrow{color:var(--dim)}
+.tab-bar{display:flex;gap:4px;border-bottom:1px solid var(--border);margin-bottom:20px}
+.tab{padding:10px 20px;cursor:pointer;color:var(--dim);border-bottom:2px solid transparent;font-size:14px}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.progress-bar{background:var(--border);border-radius:10px;height:8px;overflow:hidden;margin:12px 0}
+.progress-fill{background:linear-gradient(90deg,var(--accent),var(--accent2));height:100%;transition:width .5s;border-radius:10px}
+.step-list{list-style:none;padding:0}
+.step-list li{padding:8px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;font-size:14px}
+.step-list li.done{color:var(--green)}
+.step-list li.active{color:var(--accent);font-weight:600}
+.step-list li.pending{color:var(--dim)}
+.step-icon{width:20px;text-align:center}
+.guidance{background:linear-gradient(135deg,rgba(108,92,231,.1),rgba(162,155,254,.1));border:1px solid var(--accent);border-radius:12px;padding:20px;margin:16px 0}
+.guidance h4{color:var(--accent);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.guidance p{color:var(--text);font-size:14px;line-height:1.6}
+.guidance .next-step{margin-top:12px;padding:12px;background:var(--card);border-radius:8px;border:1px solid var(--accent)}
+.guidance .next-step strong{color:var(--yellow)}
+
+/* ============ 演示动画 ============ */
+.demo-cursor{animation:demo-blink 1s step-end infinite;color:var(--accent)}
+@keyframes demo-blink{50%{opacity:0}}
+.demo-step{animation:demo-fadein .5s ease}
+@keyframes demo-fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ============ 效果展示墙 ============ */
+.showcase-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:all .2s;cursor:pointer}
+.showcase-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.showcase-card .sc-header{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.showcase-card .sc-name{font-size:18px;font-weight:700}
+.showcase-card .sc-smiles{font-size:12px;color:var(--dim);font-family:monospace;background:var(--bg);padding:4px 8px;border-radius:4px;display:inline-block;margin-bottom:12px;word-break:break-all}
+.showcase-card .sc-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.showcase-card .sc-metric{background:var(--bg);border-radius:6px;padding:8px 10px}
+.showcase-card .sc-metric-label{font-size:11px;color:var(--dim)}
+.showcase-card .sc-metric-value{font-size:16px;font-weight:600;color:var(--text)}
+.showcase-card .sc-metric-value.pass{color:var(--green)}
+.showcase-card .sc-metric-value.fail{color:var(--red)}
+.showcase-card .sc-score{text-align:center;padding:8px;border-radius:8px;margin-top:8px}
+.showcase-card .sc-score-num{font-size:28px;font-weight:700}
+.showcase-card .sc-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;margin-right:4px}
+.showcase-tag-green{background:rgba(0,184,148,.15);color:var(--green)}
+.showcase-tag-yellow{background:rgba(253,203,110,.15);color:var(--yellow)}
+
+/* ============ 移动端适配 ============ */
+@media (max-width: 768px) {
+  .container{padding:0 12px}
+  .header{padding:10px 0}
+  .header-inner{flex-direction:column;gap:8px}
+  .logo{font-size:18px}
+  .logo span{display:none}
+  .nav{flex-wrap:wrap;justify-content:center;gap:10px}
+  .nav a{font-size:13px}
+  .hero{padding:30px 0}
+  .hero h1{font-size:24px}
+  .hero p{font-size:14px;padding:0 12px}
+  .btn{padding:10px 20px;font-size:14px}
+  .stats{gap:16px;flex-wrap:wrap}
+  .stat-num{font-size:24px}
+  .stat-label{font-size:11px}
+  .section{padding:24px 0}
+  .section h2{font-size:20px}
+  .cards{grid-template-columns:1fr;gap:12px}
+  .card{padding:16px}
+  .card h3{font-size:16px}
+  .grid-2{grid-template-columns:1fr;gap:16px}
+  .grid-3{grid-template-columns:repeat(2,1fr);gap:8px}
+  .workflow{gap:4px}
+  .workflow-step{padding:6px 10px;font-size:11px}
+  .pricing-table{font-size:12px}
+  .pricing-table th,.pricing-table td{padding:8px 6px}
+  .tab-bar{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tab{padding:8px 12px;font-size:13px;white-space:nowrap}
+  .result-box{padding:14px;font-size:13px}
+  .input{padding:10px 12px;font-size:16px}
+  /* 安全区域适配 */
+  .header{padding-top:max(10px,env(safe-area-inset-top))}
+  .footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
+  /* PWA底部固定操作栏 */
+  #pwa-install-banner{display:none}
+  #pwa-install-banner.show{display:flex}
+}
+
+/* PWA安装提示 */
+#pwa-install-banner{
+  position:fixed;bottom:0;left:0;right:0;
+  background:linear-gradient(135deg,#1a1a2e,#16213e);
+  border-top:1px solid var(--accent);
+  padding:12px 16px;padding-bottom:max(12px,env(safe-area-inset-bottom));
+  display:none;align-items:center;gap:12px;
+  z-index:9999;
+  transition:transform .3s;
+}
+#pwa-install-banner.hidden{transform:translateY(100%)}
+#pwa-install-banner .banner-icon{font-size:28px}
+#pwa-install-banner .banner-text{flex:1;font-size:13px}
+#pwa-install-banner .banner-text strong{color:var(--accent)}
+#pwa-install-banner .banner-btn{
+  background:var(--accent);color:#fff;border:none;
+  padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;
+  cursor:pointer;white-space:nowrap;
+}
+#pwa-install-banner .banner-close{
+  background:none;border:none;color:var(--dim);
+  font-size:20px;cursor:pointer;padding:4px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="container header-inner">
+<div class="logo">🤖 蜂群科研<span>AI自动化科研平台 v0.2</span></div>
+<div class="nav">
+<a href="#platform">平台</a>
+<a href="#workflow">工作流</a>
+<a href="#bees">蜂群</a>
+<a href="#pricing">定价</a>
+<a href="#playground">立即体验</a>
+</div>
+</div>
+</div>
+
+<div class="hero">
+<h1>蜂群科研平台</h1>
+<p>不是AI论文生成器，是AI科研验证平台。8种蜂协作，验证知识库+引用分润+跨领域发现。</p>
+<div style="display:flex;gap:12px;justify-content:center">
+<a href="#playground" class="btn btn-primary">🚀 免费体验</a>
+<a href="#pricing" class="btn btn-outline">💰 查看定价</a>
+</div>
+<div class="stats">
+<div class="stat"><div class="stat-num">8</div><div class="stat-label">Agent角色</div></div>
+<div class="stat"><div class="stat-num">RDKit</div><div class="stat-label">真实化学计算</div></div>
+<div class="stat"><div class="stat-num">✅</div><div class="stat-label">验证知识库</div></div>
+<div class="stat"><div class="stat-num">¥0</div><div class="stat-label">启动成本</div></div>
+</div>
+</div>
+
+<!-- 🎬 演示动画 -->
+<div class="section" id="demo" style="padding:20px 0 10px">
+<div class="container">
+<h2 style="text-align:center">🎬 3分钟看懂蜂群</h2>
+<p style="text-align:center;color:var(--dim);margin-bottom:20px">以阿司匹林ADMET药物评估为例，展示从输入到结果的全过程</p>
+
+<div id="demo-box" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:0;overflow:hidden;max-width:800px;margin:0 auto;position:relative">
+
+<!-- 演示终端头 -->
+<div style="background:linear-gradient(135deg,#1a1a2e,#16213e);padding:12px 20px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)">
+  <span style="width:12px;height:12px;border-radius:50%;background:#e17055;display:inline-block"></span>
+  <span style="width:12px;height:12px;border-radius:50%;background:#fdcb6e;display:inline-block"></span>
+  <span style="width:12px;height:12px;border-radius:50%;background:#00b894;display:inline-block"></span>
+  <span style="color:var(--dim);font-size:13px;margin-left:8px">蜂群科研 — 化学蜂 ADMET 预测</span>
+  <span id="demo-replay" style="margin-left:auto;cursor:pointer;color:var(--accent);font-size:13px" onclick="startDemo()">↻ 重播</span>
+</div>
+
+<!-- 演示内容区 -->
+<div id="demo-content" style="padding:24px;min-height:320px;font-family:monospace;font-size:14px;line-height:1.8">
+<div id="demo-step1" class="demo-step" style="display:none">
+<span style="color:var(--accent)">▸ 步骤1</span> 输入研究主题
+<div style="margin:12px 0;padding:12px;background:var(--bg);border-radius:8px;border:1px solid var(--border)">
+<span style="color:var(--dim)">研究主题:</span> <span id="demo-typing1"></span><span class="demo-cursor">|</span>
+</div>
+</div>
+
+<div id="demo-step2" class="demo-step" style="display:none">
+<span style="color:var(--accent)">▸ 步骤2</span> 选择蜂任务
+<div style="margin:12px 0;padding:12px;background:var(--bg);border-radius:8px;border:1px solid var(--border)">
+<span style="color:var(--dim)">蜂任务:</span> <span style="color:var(--green)">🧪 化学蜂 · ADMET预测</span><br>
+<span style="color:var(--dim)">SMILES:</span> <span style="color:var(--yellow)">CC(=O)Oc1ccccc1C(=O)O</span> <span style="color:var(--dim)">(阿司匹林)</span>
+</div>
+<div style="margin:12px 0;padding:12px;background:var(--bg);border-radius:8px;border:1px solid var(--accent);text-align:center">
+<span class="loading"></span> <span id="demo-loading-text">RDKit真实计算中...</span>
+</div>
+</div>
+
+<div id="demo-step3" class="demo-step" style="display:none">
+<span style="color:var(--green)">✓ 完成</span> ADMET药物发现报告
+<div id="demo-result" style="margin:12px 0;padding:16px;background:var(--bg);border-radius:8px;border:1px solid var(--green);white-space:pre-wrap"></div>
+</div>
+
+<div id="demo-step4" class="demo-step" style="display:none;text-align:center;padding:20px 0">
+<div style="font-size:18px;color:var(--accent);margin-bottom:8px">这就是蜂群的效果</div>
+<div style="color:var(--dim);margin-bottom:16px">30秒出结果，RDKit真实计算，不是AI瞎编</div>
+<a href="#playground" class="btn btn-primary" onclick="document.getElementById('playground').scrollIntoView({behavior:'smooth'})">🚀 立即免费体验</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- 📊 效果展示墙 -->
+<div class="section" id="showcase" style="padding:20px 0">
+<div class="container">
+<h2 style="text-align:center">📊 真实案例展示</h2>
+<p style="text-align:center;color:var(--dim);margin-bottom:24px">三个分子的真实RDKit计算结果，这就是化学蜂的输出</p>
+<div class="cards" id="showcase-cards">
+<!-- JS填充 -->
+</div>
+</div>
+</div>
+
+<!-- 工作流 -->
+<div class="section" id="workflow">
+<div class="container">
+<h2 style="text-align:center">🔬 蜂群工作流</h2>
+<div class="workflow">
+<div class="workflow-step">📚 文献蜂</div>
+<span class="workflow-arrow">→</span>
+<div class="workflow-step">💡 假设蜂</div>
+<span class="workflow-arrow">→</span>
+<div class="workflow-step">🧪 化学蜂</div>
+<span class="workflow-arrow">→</span>
+<div class="workflow-step">📊 分析蜂</div>
+<span class="workflow-arrow">→</span>
+<div class="workflow-step">✍️ 写作蜂</div>
+<span class="workflow-arrow">→</span>
+<div class="workflow-step">🔍 评审蜂</div>
+<span class="workflow-arrow">→</span>
+<div class="workflow-step" style="border-color:var(--accent)">✅ 验证蜂</div>
+</div>
+<p style="text-align:center;color:var(--dim);margin-top:12px">验证蜂把论文声明变成验证过的结论，入库后被引用可获得积分分润</p>
+</div>
+</div>
+
+<!-- 蜂群介绍 -->
+<div class="section" id="bees">
+<div class="container">
+<h2 style="text-align:center">🐝 蜂群Agent</h2>
+<div class="cards">
+<div class="card">
+<div class="bee-icon">📚</div>
+<h3>文献蜂</h3>
+<p>检索学术论文，CrossRef DOI验证，生成结构化综述</p>
+<div class="cost">500积分/次 · 引用验证</div>
+</div>
+<div class="card">
+<div class="bee-icon">💡</div>
+<h3>假设蜂</h3>
+<p>基于文献生成可验证的研究假设，标注置信度</p>
+<div class="cost">300积分/次</div>
+</div>
+<div class="card" style="border-color:var(--accent)">
+<div class="bee-icon">🧪</div>
+<h3>化学蜂 ⭐</h3>
+<p>RDKit真实计算：分子性质/ADMET/反应预测/逆合成/量子化学</p>
+<div class="cost">1000-3000积分/次 · 含ADMET药物发现</div>
+</div>
+<div class="card">
+<div class="bee-icon">🔬</div>
+<h3>ML实验蜂</h3>
+<p>Docker沙箱执行ML实验，自动训练评估</p>
+<div class="cost">5000积分/次</div>
+</div>
+<div class="card">
+<div class="bee-icon">📊</div>
+<h3>分析蜂</h3>
+<p>数据分析、统计检验、可视化建议</p>
+<div class="cost">500积分/次</div>
+</div>
+<div class="card">
+<div class="bee-icon">✍️</div>
+<h3>写作蜂</h3>
+<p>基于研究发现生成完整论文草稿</p>
+<div class="cost">800积分/次</div>
+</div>
+<div class="card">
+<div class="bee-icon">🔍</div>
+<h3>评审蜂</h3>
+<p>跨模型同行评审，3视角+综合报告，BYOK支持</p>
+<div class="cost">1000积分/次</div>
+</div>
+<div class="card" style="border-color:var(--accent);background:linear-gradient(135deg,rgba(0,184,148,.05),rgba(0,184,148,.1))">
+<div class="bee-icon">✅</div>
+<h3>验证蜂 ⭐</h3>
+<p>RDKit真实计算验证论文声明，输出可信标签+验证报告</p>
+<div class="cost">1000积分/次 · 验证知识库基础</div>
+</div>
+<div class="card" style="border-color:var(--accent2);background:linear-gradient(135deg,rgba(108,92,231,.05),rgba(162,155,254,.05))">
+<div class="bee-icon">🧩</div>
+<h3>Skill系统</h3>
+<p>每个蜂=YAML定义，支持社区扩展自定义skill</p>
+<div class="cost">8个内置skill · 可扩展</div>
+</div>
+<div class="card" style="border-color:var(--accent)">
+<div class="bee-icon">🎯</div>
+<h3>完整流程</h3>
+<p>文献→假设→实验→分析→论文→评审，一键全流程</p>
+<div class="cost">8000积分（省2000+）</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 定价 -->
+<div class="section" id="pricing">
+<div class="container">
+<h2 style="text-align:center">💰 积分定价</h2>
+<table class="pricing-table">
+<tr><th>套餐</th><th>价格</th><th>积分</th><th>赠送</th><th>BYOK</th><th>有效期</th></tr>
+<tr><td>免费额度</td><td>¥0</td><td>2,000/天 + 注册10,000</td><td>—</td><td><span class="badge badge-free">❌</span></td><td>—</td></tr>
+<tr><td>基础包</td><td>¥39</td><td>110,000</td><td>10%</td><td><span class="badge badge-free">❌</span></td><td>365天</td></tr>
+<tr><td>研究包</td><td>¥69</td><td>230,000</td><td>15%</td><td><span class="badge badge-byok">✅</span></td><td>365天</td></tr>
+<tr><td>实验室包</td><td>¥199</td><td>500,000</td><td>25%</td><td><span class="badge badge-byok">✅</span></td><td>365天</td></tr>
+<tr><td>企业包</td><td>¥499</td><td>1,350,000</td><td>35%</td><td><span class="badge badge-byok">✅</span></td><td>365天</td></tr>
+</table>
+<div class="notice">⚠️ 积分充值后不可退款，有效期365天。BYOK=自带API Key（¥69以上可用，积分减半）</div>
+<div class="notice-green">💡 验证结果入库获300积分/条，被引用获300积分/次。知识库引用800积分（比自跑验证1000便宜200）</div>
+<div class="notice-blue">🧪 化学蜂已支持ADMET药物发现预测：吸收/分布/代谢/排泄/毒性+药物评分，1500积分/次</div>
+</div>
+</div>
+
+<!-- 体验区 -->
+<div class="section" id="playground">
+<div class="container">
+<h2 style="text-align:center">🚀 立即体验</h2>
+
+<!-- 引导提示 -->
+<div class="guidance" id="guidance-box">
+<h4>📋 操作指南</h4>
+<p>三步完成科研任务：</p>
+<ol style="margin:8px 0 0 20px;font-size:14px;line-height:1.8">
+<li><strong>启动研究</strong> — 填写研究主题，获取研究ID</li>
+<li><strong>执行蜂群</strong> — 选择蜂任务（文献/化学/写作等），点击执行</li>
+<li><strong>查看结果</strong> — 结果自动展示在下方，长任务可轮询进度</li>
+</ol>
+<div class="next-step" id="next-step-hint">
+<strong>👉 当前步骤：</strong>先在下方填写"研究主题"并点击"启动研究项目"
+</div>
+</div>
+
+<div class="tab-bar">
+<div class="tab active" onclick="switchTab('start', this)">① 启动研究</div>
+<div class="tab" onclick="switchTab('run', this)">② 执行蜂群</div>
+<div class="tab" onclick="switchTab('progress', this)">③ 任务进度</div>
+<div class="tab" onclick="switchTab('kb', this)">📚 知识库</div>
+<div class="tab" onclick="switchTab('credits', this)">积分管理</div>
+</div>
+
+<!-- Tab: 启动研究 -->
+<div id="tab-start">
+<div class="grid-2">
+<div>
+<label>用户ID *</label>
+<input class="input" id="user_id" placeholder="your_name" value="demo_user">
+<label>研究主题 *</label>
+<input class="input" id="topic" placeholder="如：AI在药物分子设计中的应用">
+<label>研究描述（可选）</label>
+<textarea class="input" id="description" placeholder="详细描述你的研究问题..."></textarea>
+<button class="btn btn-primary" onclick="startResearch()" id="startBtn">🚀 启动研究项目</button>
+</div>
+<div>
+<h4 style="margin-bottom:12px">研究流程</h4>
+<p style="color:var(--dim);font-size:14px;line-height:1.8">
+1. 填写研究主题启动项目<br>
+2. 切换到"执行蜂群"选择任务<br>
+3. 选择单个蜂或完整流程<br>
+4. 长任务可在"任务进度"查看<br>
+5. 结果自动展示在页面下方<br>
+</p>
+<div class="notice-green">💡 新用户注册送10,000积分，每日免费2,000积分。完整流程消耗8,000积分。</div>
+<div class="notice-blue">🧪 化学蜂已升级：支持ADMET药物发现预测+分子性质+反应预测+逆合成+量子化学</div>
+<div class="notice-blue">✅ 验证蜂：RDKit真实计算验证论文声明，验证后可入库获得积分分润</div>
+</div>
+</div>
+</div>
+
+<!-- Tab: 执行蜂群 -->
+<div id="tab-run" style="display:none">
+<div class="grid-2">
+<div>
+<label>用户ID</label>
+<input class="input" id="run_user_id" placeholder="your_name" value="demo_user">
+<label>研究项目ID</label>
+<input class="input" id="research_id" placeholder="res_xxxx_x" readonly style="opacity:0.7">
+<div class="notice-blue" id="rid-hint" style="display:none">✅ 研究ID已自动填入，可直接执行任务</div>
+<label>选择蜂群任务</label>
+<select class="input" id="bee_type" onchange="onBeeChange()">
+<option value="full_pipeline">🎯 完整流程（文献→假设→论文→评审）— 8000积分</option>
+<option value="literature_bee">📚 文献蜂 — 500积分（含引用验证）</option>
+<option value="literature_bee_deep">🔬 文献蜂·深度调研 — 1500积分（多轮检索+结构化报告）</option>
+<option value="literature_bee_precise">📖 文献蜂·精读 — 800积分（输入论文→结构化精读+可验证声明提取）</option>
+<option value="hypothesis_bee">💡 假设蜂 — 300积分</option>
+<option value="chemistry_bee_property">🧪 化学蜂·分子性质 — 1000积分（RDKit真实计算）</option>
+<option value="chemistry_bee_admet">🧪 化学蜂·ADMET预测 — 1500积分（药物发现核心）</option>
+<option value="chemistry_bee_reaction">🧪 化学蜂·反应预测 — 1500积分</option>
+<option value="chemistry_bee_retro">🧪 化学蜂·逆合成 — 2000积分</option>
+<option value="chemistry_bee_quantum">🧪 化学蜂·量子化学 — 3000积分</option>
+<option value="writing_bee">✍️ 写作蜂 — 800积分</option>
+<option value="analysis_bee">📊 分析蜂 — 500积分</option>
+<option value="review_bee">🔍 评审蜂 — 1000积分（跨模型同行评审）</option>
+<option value="verification_bee">✅ 验证蜂 — 1000积分（RDKit验证论文声明）</option>
+</select>
+
+<!-- Co-Pilot模式选择 -->
+<div id="pipeline_mode_div" style="margin-top:8px">
+<label>执行模式</label>
+<select class="input" id="pipeline_mode">
+<option value="full_auto">🤖 全自动 — 一键执行，无需干预</option>
+<option value="gate_only">⏸ Gate模式 — 每步完成后需批准（免费用户可用）</option>
+<option value="co_pilot">👥 Co-Pilot — 交互式协作，可给反馈（付费功能）</option>
+</select>
+<div style="font-size:12px;color:var(--dim);margin-top:4px">
+全自动：快速出结果 | Gate模式：关键节点审查 | Co-Pilot：每步可给反馈指导方向
+</div>
+</div>
+
+<div id="chem_options" style="display:none;margin-top:8px">
+<label>SMILES分子式</label>
+<input class="input" id="smiles" placeholder="如: CCO" value="CC(=O)Oc1ccccc1C(=O)O">
+<div style="font-size:12px;color:var(--dim);margin-bottom:8px">
+常见分子：阿司匹林 CC(=O)Oc1ccccc1C(=O)O | 咖啡因 CN1C=NC2=C1C(=O)N(C(=O)N2C)C | 乙醇 CCO
+</div>
+</div>
+
+<div id="precise_options" style="display:none;margin-top:8px">
+<label>论文DOI或标题</label>
+<input class="input" id="paper_input" placeholder="DOI如: 10.1021/acs.jmedchem.0b01234 或 论文标题">
+<div style="font-size:12px;color:var(--dim);margin-bottom:8px">
+精读模式：输入论文DOI或标题，自动获取元数据→结构化精读→提取可验证声明→可直接运行验证蜂
+</div>
+</div>
+
+<button class="btn btn-primary" onclick="runBee()" id="runBtn" style="font-size:18px;padding:14px 40px">▶️ 执行任务</button>
+</div>
+<div>
+<h4 style="margin-bottom:12px">BYOK设置（可选）</h4>
+<label>API URL</label>
+<input class="input" id="byok_url" placeholder="如: https://open.bigmodel.cn/api/paas/v4/chat/completions">
+<label>API Key</label>
+<input class="input" id="byok_key" placeholder="你的API Key" type="password">
+<label>模型名称</label>
+<input class="input" id="byok_model" placeholder="如: glm-4">
+<div class="notice">BYOK仅¥69以上套餐可用。不同模型效果不同，平台不保证质量。</div>
+</div>
+</div>
+</div>
+
+<!-- Tab: 任务进度 -->
+<div id="tab-progress" style="display:none">
+<h4 style="margin-bottom:12px">📊 任务执行进度</h4>
+<div id="progress-empty" style="color:var(--dim);padding:20px;text-align:center">
+暂无正在执行的任务。执行任务后可在此查看实时进度。
+</div>
+<div id="progress-content" style="display:none">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+<span id="progress-task-name" style="font-weight:600"></span>
+<span id="progress-status" style="font-size:14px"></span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" id="progress-fill" style="width:0%"></div>
+</div>
+<ul class="step-list" id="step-list"></ul>
+<div id="progress-result"></div>
+</div>
+</div>
+
+<!-- Tab: 积分管理 -->
+<div id="tab-credits" style="display:none">
+<div class="grid-2">
+<div>
+<label>用户ID</label>
+<input class="input" id="credits_user_id" placeholder="your_name" value="demo_user">
+<button class="btn btn-primary" onclick="checkBalance()">📊 查询余额</button>
+<button class="btn btn-outline" onclick="registerUser()">🎁 注册送10,000积分</button>
+</div>
+<div>
+<label>购买积分包</label>
+<select class="input" id="pack">
+<option value="basic">基础包 ¥39 (110,000积分)</option>
+<option value="research">研究包 ¥69 (230,000积分 + BYOK)</option>
+<option value="lab">实验室包 ¥199 (500,000积分)</option>
+<option value="enterprise">企业包 ¥499 (1,350,000积分)</option>
+</select>
+<button class="btn btn-primary" onclick="purchaseCredits()">💰 购买</button>
+</div>
+</div>
+<div id="credits_result" class="result-box" style="display:none"></div>
+</div>
+
+<!-- Tab: 知识库 -->
+<div id="tab-kb" style="display:none">
+<div class="grid-2">
+<div>
+<label>搜索知识库</label>
+<input class="input" id="kb_search_q" placeholder="关键词，如 logP、阿司匹林、Lipinski">
+<button class="btn btn-primary" onclick="kbSearch()">🔍 搜索</button>
+</div>
+<div>
+<label>用户ID</label>
+<input class="input" id="kb_user_id" placeholder="your_name" value="demo_user">
+<button class="btn btn-outline" onclick="kbUserItems()">📦 我的入库</button>
+<button class="btn btn-outline" onclick="kbStats()">📊 知识库统计</button>
+</div>
+</div>
+<div id="kb_result" class="result-box" style="display:none"></div>
+<div class="notice-blue" style="margin-top:12px">
+💡 知识库使用流程：<br>
+1. 运行验证蜂验证论文声明 → 2. 验证通过的结果可入库（+300积分/条） → 3. 其他用户引用你的结果（-800积分，你+300积分） → 4. 花费300积分获取AI跨领域发现建议
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- 结果区 -->
+<div class="section" id="result-section" style="display:none">
+<div class="container">
+<h2>📋 执行结果</h2>
+<div class="result-box" id="result-box"></div>
+</div>
+</div>
+
+<div class="footer">
+<div class="container">
+蜂群科研 v0.2.0 — AI生态缔造者 🌐<br>
+RDKit真实计算 × 引用验证 × 蜂群协作 × 虚拟实验室
+</div>
+</div>
+
+<!-- PWA安装提示横幅 -->
+<div id="pwa-install-banner">
+<div class="banner-icon">🐝</div>
+<div class="banner-text">
+<strong>添加到主屏幕</strong><br>
+离线使用蜂群科研，体验更流畅
+</div>
+<button class="banner-btn" id="pwa-install-btn">安装</button>
+<button class="banner-close" id="pwa-install-close">✕</button>
+</div>
+
+<script>
+// ========== 演示动画引擎 ==========
+let demoTimer = null;
+
+function startDemo() {
+  // 清理
+  if (demoTimer) clearTimeout(demoTimer);
+  document.querySelectorAll('.demo-step').forEach(el => el.style.display = 'none');
+  document.getElementById('demo-typing1').textContent = '';
+  
+  // Step1: 打字效果
+  const step1 = document.getElementById('demo-step1');
+  step1.style.display = 'block';
+  const text = '阿司匹林药物性质评估与ADMET预测';
+  let i = 0;
+  const typing = setInterval(() => {
+    if (i < text.length) {
+      document.getElementById('demo-typing1').textContent = text.slice(0, ++i);
+    } else {
+      clearInterval(typing);
+      // 2秒后进入step2
+      demoTimer = setTimeout(() => { showDemoStep2(); }, 1500);
+    }
+  }, 80);
+}
+
+function showDemoStep2() {
+  document.getElementById('demo-step1').style.display = 'none';
+  document.getElementById('demo-step2').style.display = 'block';
+  
+  // 模拟loading文字变化
+  const loadingTexts = [
+    'RDKit分子解析中...',
+    '计算分子描述符...',
+    '评估Lipinski规则...',
+    '预测ADMET性质...',
+    '生成药物评分...'
+  ];
+  let li = 0;
+  const loadingInterval = setInterval(() => {
+    if (li < loadingTexts.length) {
+      document.getElementById('demo-loading-text').textContent = loadingTexts[li++];
+    } else {
+      clearInterval(loadingInterval);
+      demoTimer = setTimeout(() => { showDemoStep3(); }, 500);
+    }
+  }, 600);
+}
+
+function showDemoStep3() {
+  document.getElementById('demo-step2').style.display = 'none';
+  document.getElementById('demo-step3').style.display = 'block';
+  
+  const result = `分子式: C₉H₈O₄
+分子量: 180.16 g/mol
+LogP: 1.31 (良好)
+氢键供体: 1 | 氢键受体体: 3
+TPSA: 63.60 Å² | 旋转键: 2
+
+✅ Lipinski五规则: 通过
+✅ Veber规则: 通过
+✅ 口服生物利用度: 优秀 (100/100)
+✅ hERG心脏毒性: 低风险
+✅ 药物相似性评分: 90/100
+
+【结论】阿司匹林具有优异的药物分子特性，
+口服吸收良好，心脏毒性低，适合作为药物候选物。`;
+  
+  // 逐行显示
+  const lines = result.split('\n');
+  let lineIdx = 0;
+  const resultEl = document.getElementById('demo-result');
+  resultEl.textContent = '';
+  
+  const lineInterval = setInterval(() => {
+    if (lineIdx < lines.length) {
+      resultEl.textContent += lines[lineIdx++] + '\n';
+    } else {
+      clearInterval(lineInterval);
+      demoTimer = setTimeout(() => { showDemoStep4(); }, 2000);
+    }
+  }, 200);
+}
+
+function showDemoStep4() {
+  document.getElementById('demo-step3').style.display = 'none';
+  document.getElementById('demo-step4').style.display = 'block';
+}
+
+// 页面加载后自动播放
+window.addEventListener('load', () => {
+  setTimeout(() => { startDemo(); }, 1000);
+});
+
+// ========== 效果展示墙 ==========
+const showcaseData = [
+  {
+    emoji: '💊',
+    name: '阿司匹林',
+    enName: 'Aspirin',
+    smiles: 'CC(=O)Oc1ccccc1C(=O)O',
+    formula: 'C₉H₈O₄',
+    mw: 180.16,
+    logp: 1.31,
+    tpsa: 63.60,
+    lipinski: true,
+    veber: true,
+    herg: 'Low',
+    score: 90,
+    tags: ['镇痛', '抗炎', '心血管']
+  },
+  {
+    emoji: '☕',
+    name: '咖啡因',
+    enName: 'Caffeine',
+    smiles: 'CN1C=NC2=C1C(=O)N(C(=O)N2C)C',
+    formula: 'C₈H₁₀N₄O₂',
+    mw: 194.19,
+    logp: -1.03,
+    tpsa: 61.82,
+    lipinski: true,
+    veber: true,
+    herg: 'Low',
+    score: 70,
+    tags: ['兴奋剂', '提神']
+  },
+  {
+    emoji: '🩹',
+    name: '布洛芬',
+    enName: 'Ibuprofen',
+    smiles: 'CC(C)Cc1ccc(cc1)C(C)C(=O)O',
+    formula: 'C₁₃H₁₈O₂',
+    mw: 206.28,
+    logp: 3.07,
+    tpsa: 37.30,
+    lipinski: true,
+    veber: true,
+    herg: 'Low',
+    score: 100,
+    tags: ['镇痛', '抗炎', 'NSAID']
+  }
+];
+
+function renderShowcase() {
+  const container = document.getElementById('showcase-cards');
+  container.innerHTML = showcaseData.map(d => `
+    <div class="showcase-card" onclick="document.getElementById('playground').scrollIntoView({behavior:'smooth'})">
+      <div class="sc-header">
+        <span style="font-size:28px">${d.emoji}</span>
+        <div>
+          <div class="sc-name">${d.name}</div>
+          <div style="font-size:12px;color:var(--dim)">${d.enName} · ${d.formula}</div>
+        </div>
+      </div>
+      <div class="sc-smiles">SMILES: ${d.smiles}</div>
+      <div class="sc-metrics">
+        <div class="sc-metric">
+          <div class="sc-metric-label">分子量</div>
+          <div class="sc-metric-value">${d.mw}</div>
+        </div>
+        <div class="sc-metric">
+          <div class="sc-metric-label">LogP</div>
+          <div class="sc-metric-value">${d.logp}</div>
+        </div>
+        <div class="sc-metric">
+          <div class="sc-metric-label">TPSA</div>
+          <div class="sc-metric-value">${d.tpsa}</div>
+        </div>
+        <div class="sc-metric">
+          <div class="sc-metric-label">hERG毒性</div>
+          <div class="sc-metric-value pass">${d.herg}</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:4px;margin-bottom:8px">
+        ${d.lipinski ? '<span class="sc-tag showcase-tag-green">✅ Lipinski</span>' : '<span class="sc-tag" style="background:rgba(225,112,85,.15);color:var(--red)">❌ Lipinski</span>'}
+        ${d.veber ? '<span class="sc-tag showcase-tag-green">✅ Veber</span>' : ''}
+        ${d.tags.map(t => `<span class="sc-tag showcase-tag-yellow">${t}</span>`).join('')}
+      </div>
+      <div class="sc-score" style="background:${d.score >= 90 ? 'rgba(0,184,148,.1)' : 'rgba(253,203,110,.1)'}">
+        <div class="sc-metric-label">药物相似性评分</div>
+        <div class="sc-score-num" style="color:${d.score >= 90 ? 'var(--green)' : 'var(--yellow)'}">${d.score}<span style="font-size:14px;color:var(--dim)">/100</span></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+window.addEventListener('load', renderShowcase);
+
+// ========== Service Worker 注册 ==========
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/static/sw.js')
+      .then((reg) => {
+        console.log('✅ SW注册成功', reg.scope);
+      })
+      .catch((err) => {
+        console.log('SW注册失败', err);
+      });
+  });
+}
+
+// ========== PWA安装提示 (beforeinstallprompt) ==========
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // 阻止默认弹窗
+  e.preventDefault();
+  deferredPrompt = e;
+  // 显示自定义安装提示
+  const banner = document.getElementById('pwa-install-banner');
+  if (banner) {
+    banner.classList.add('show');
+  }
+});
+
+document.getElementById('pwa-install-btn')?.addEventListener('click', async () => {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  console.log('用户选择:', outcome);
+  deferredPrompt = null;
+  document.getElementById('pwa-install-banner').classList.remove('show');
+  document.getElementById('pwa-install-banner').classList.add('hidden');
+});
+
+document.getElementById('pwa-install-close')?.addEventListener('click', () => {
+  document.getElementById('pwa-install-banner').classList.remove('show');
+  document.getElementById('pwa-install-banner').classList.add('hidden');
+});
+
+// 检测是否已安装
+window.addEventListener('appinstalled', () => {
+  console.log('✅ PWA已安装');
+  const banner = document.getElementById('pwa-install-banner');
+  if (banner) banner.style.display = 'none';
+});
+
+// 检测是否在standalone模式运行
+if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
+  console.log('📱 PWA standalone模式');
+  document.getElementById('pwa-install-banner')?.style.display = 'none';
+}
+
+const API = window.location.origin;
+let currentResearchId = null;
+let progressTimer = null;
+
+// ========== Tab切换 ==========
+function switchTab(tab, el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  if (el) el.classList.add('active');
+  ['start','run','progress','credits'].forEach(t => {
+    const el2 = document.getElementById('tab-'+t);
+    if (el2) el2.style.display = t === tab ? '' : 'none';
+  });
+}
+
+function updateGuidance(text) {
+  const hint = document.getElementById('next-step-hint');
+  if (hint) hint.innerHTML = `<strong>👉 当前步骤：</strong>${text}`;
+}
+
+function showResult(title, content) {
+  document.getElementById('result-section').style.display = '';
+  const box = document.getElementById('result-box');
+  box.innerHTML = `<h4>${title}</h4><pre>${content}</pre>`;
+  box.scrollIntoView({behavior:'smooth'});
+}
+
+async function apiCall(method, path, data) {
+  const opts = {method, headers: {'Content-Type':'application/json'}};
+  if (data) opts.body = JSON.stringify(data);
+  const r = await fetch(API + path, opts);
+  return r.json();
+}
+
+// ========== 蜂任务选择 ==========
+function onBeeChange() {
+  const bee = document.getElementById('bee_type').value;
+  const chemBox = document.getElementById('chem_options');
+  const modeDiv = document.getElementById('pipeline_mode_div');
+  const preciseBox = document.getElementById('precise_options');
+  if (bee.startsWith('chemistry_bee')) {
+    chemBox.style.display = '';
+    modeDiv.style.display = 'none';
+    if (preciseBox) preciseBox.style.display = 'none';
+  } else if (bee === 'literature_bee_precise') {
+    chemBox.style.display = 'none';
+    modeDiv.style.display = 'none';
+    if (preciseBox) preciseBox.style.display = '';
+  } else {
+    chemBox.style.display = 'none';
+    modeDiv.style.display = bee === 'full_pipeline' ? '' : 'none';
+    if (preciseBox) preciseBox.style.display = 'none';
+  }
+}
+
+// ========== 积分 ==========
+async function registerUser() {
+  const uid = document.getElementById('credits_user_id').value;
+  const r = await apiCall('POST', '/api/v1/swarm/register', {user_id: uid, email: uid+'@test.com'});
+  showResult('注册结果', JSON.stringify(r, null, 2));
+}
+
+async function checkBalance() {
+  const uid = document.getElementById('credits_user_id').value;
+  const r = await apiCall('GET', `/api/v1/swarm/credits/balance?user_id=${uid}`);
+  document.getElementById('credits_result').style.display = '';
+  document.getElementById('credits_result').innerHTML = `<h4>积分余额</h4><pre>${JSON.stringify(r, null, 2)}</pre>`;
+}
+
+async function purchaseCredits() {
+  const uid = document.getElementById('credits_user_id').value;
+  const pack = document.getElementById('pack').value;
+  const r = await apiCall('POST', '/api/v1/swarm/credits/purchase', {user_id: uid, pack});
+  showResult('购买结果', JSON.stringify(r, null, 2));
+}
+
+// ========== 知识库 ==========
+async function kbSearch() {
+  const q = document.getElementById('kb_search_q').value;
+  const r = await apiCall('GET', `/api/v1/swarm/kb/search?q=${encodeURIComponent(q)}`);
+  const box = document.getElementById('kb_result');
+  if (r.results && r.results.length > 0) {
+    let html = `<p>找到 ${r.count} 条结果（引用价${r.cite_cost}积分，自跑验证${r.self_verify_cost}积分）</p>`;
+    r.results.forEach(item => {
+      html += `<div style="border:1px solid var(--border);padding:12px;margin:8px 0;border-radius:8px">
+        <div style="font-weight:bold">${item.trust_label} ${item.claim}</div>
+        <div style="color:var(--dim);font-size:13px;margin-top:4px">
+          类型:${item.claim_type} | SMILES:${item.smiles||'无'} | 引用:${item.citations}次 | 实际值:${item.actual_value||'无'}
+        </div>
+        <div style="margin-top:6px">
+          <button class="btn btn-outline" style="font-size:13px;padding:4px 12px" onclick="kbCite('${item.id}')">📋 引用(-800积分)</button>
+          <button class="btn btn-outline" style="font-size:13px;padding:4px 12px" onclick="kbCrossDomain('${item.id}')">🧭 AI跨领域发现(-300积分)</button>
+        </div>
+      </div>`;
+    });
+    box.innerHTML = html;
+  } else {
+    box.innerHTML = '<p>未找到匹配结果</p>';
+  }
+  box.style.display = '';
+}
+
+async function kbCite(kbId) {
+  const uid = document.getElementById('kb_user_id').value;
+  const r = await apiCall('POST', `/api/v1/swarm/kb/${kbId}/cite`, {user_id: uid, research_id: 'manual'});
+  if (r.success) {
+    alert(`✅ 引用成功！消耗${r.cite_cost}积分，原作者获得${r.author_reward}积分\n你的余额: ${r.balance}`);
+  } else {
+    alert(`❌ ${r.error}`);
+  }
+}
+
+async function kbCrossDomain(kbId) {
+  const uid = document.getElementById('kb_user_id').value;
+  const box = document.getElementById('kb_result');
+  box.innerHTML = '<span class="loading"></span> AI分析中...（约30秒）';
+  box.style.display = '';
+  const r = await apiCall('POST', `/api/v1/swarm/kb/${kbId}/cross-domain`, {user_id: uid});
+  if (r.success) {
+    box.innerHTML = `<div style="border:1px solid var(--accent);padding:16px;border-radius:8px">
+      <h3>🧭 跨领域发现报告</h3>
+      <p style="color:var(--dim)">分析对象: ${r.claim}</p>
+      <p style="color:var(--dim)">消耗: ${r.cost}积分 | 余额: ${r.balance}</p>
+      <pre style="white-space:pre-wrap;margin-top:12px;font-size:14px;line-height:1.6">${r.analysis}</pre>
+    </div>`;
+  } else {
+    box.innerHTML = `<p>❌ ${r.error}</p>`;
+  }
+}
+
+async function kbUserItems() {
+  const uid = document.getElementById('kb_user_id').value;
+  const r = await apiCall('GET', `/api/v1/swarm/kb/user/${uid}`);
+  const box = document.getElementById('kb_result');
+  if (r.total > 0) {
+    let html = `<p>你入库了 ${r.total} 条，累计被引用 ${r.total_citations} 次</p>`;
+    r.items.forEach(item => {
+      html += `<div style="border:1px solid var(--border);padding:12px;margin:8px 0;border-radius:8px">
+        <div style="font-weight:bold">${item.trust_label} ${item.claim}</div>
+        <div style="color:var(--dim);font-size:13px;margin-top:4px">
+          引用:${item.citations}次 | 入库:${item.created} | 收益:${item.citations * 300}积分
+        </div>
+      </div>`;
+    });
+    box.innerHTML = html;
+  } else {
+    box.innerHTML = '<p>你还没有入库任何验证结果。运行验证蜂后可入库获得积分。</p>';
+  }
+  box.style.display = '';
+}
+
+async function kbStats() {
+  const r = await apiCall('GET', '/api/v1/swarm/kb/stats');
+  const box = document.getElementById('kb_result');
+  box.innerHTML = `<div style="border:1px solid var(--border);padding:16px;border-radius:8px">
+    <h3>📊 知识库统计</h3>
+    <p>总条目: ${r.total_items}</p>
+    <p>总引用: ${r.total_citations}</p>
+    <p>按类型: ${JSON.stringify(r.by_type)}</p>
+    <p>按信任: ${JSON.stringify(r.by_trust)}</p>
+    <p>Top贡献者: ${r.top_contributors.map(c => `${c.user_id}(${c.deposits}条/${c.citations}引)`).join(', ')}</p>
+  </div>`;
+  box.style.display = '';
+}
+
+// ========== 启动研究 ==========
+async function startResearch() {
+  const btn = document.getElementById('startBtn');
+  btn.innerHTML = '<span class="loading"></span> 启动中...';
+  btn.disabled = true;
+
+  const uid = document.getElementById('user_id').value;
+  const topic = document.getElementById('topic').value;
+  const desc = document.getElementById('description').value;
+
+  if (!topic) { alert('请输入研究主题'); btn.innerHTML='🚀 启动研究项目'; btn.disabled=false; return; }
+
+  try {
+    const r = await apiCall('POST', '/api/v1/swarm/research/start', {user_id: uid, topic, description: desc});
+
+    if (r.research_id) {
+      currentResearchId = r.research_id;
+      document.getElementById('research_id').value = r.research_id;
+      document.getElementById('rid-hint').style.display = '';
+      showResult('✅ 研究项目已启动', `研究ID: ${r.research_id}\n状态: ${r.status}\n\n👉 已自动跳转到"执行蜂群"标签页\n选择一个蜂任务并点击"执行任务"按钮`);
+
+      // 自动跳到执行蜂群tab
+      setTimeout(() => {
+        const tabs = document.querySelectorAll('.tab');
+        switchTab('run', tabs[1]);
+        updateGuidance('研究项目已创建！选择一个蜂任务（推荐先试"文献蜂"或"化学蜂·性质预测"），然后点击"执行任务"');
+        document.getElementById('playground').scrollIntoView({behavior:'smooth'});
+      }, 1500);
+    } else {
+      showResult('启动失败', JSON.stringify(r, null, 2));
+    }
+  } catch(e) {
+    showResult('错误', e.message);
+  }
+
+  btn.innerHTML = '🚀 启动研究项目';
+  btn.disabled = false;
+}
+
+// ========== 执行蜂任务 ==========
+async function runBee() {
+  const btn = document.getElementById('runBtn');
+  btn.innerHTML = '<span class="loading"></span> 执行中...';
+  btn.disabled = true;
+
+  const uid = document.getElementById('run_user_id').value;
+  const rid = document.getElementById('research_id').value;
+  let bee = document.getElementById('bee_type').value;
+
+  if (!rid) {
+    alert('请先在"① 启动研究"标签页创建研究项目');
+    btn.innerHTML = '▶️ 执行任务';
+    btn.disabled = false;
+    return;
+  }
+
+  // 解析化学蜂子模式
+  let chemMode = null;
+  if (bee.startsWith('chemistry_bee_')) {
+    chemMode = bee.split('_')[2]; // property/reaction/retro/quantum
+    bee = 'chemistry_bee';
+  }
+
+  // 解析文献蜂深度调研模式
+  let litMode = null;
+  if (bee === 'literature_bee_deep') {
+    litMode = 'deep';
+    bee = 'literature_bee';
+  } else if (bee === 'literature_bee_precise') {
+    litMode = 'precise';
+    bee = 'literature_bee';
+  }
+
+  const body = {user_id: uid, bee_type: bee};
+  if (chemMode) body.chem_mode = chemMode;
+  if (litMode) body.lit_mode = litMode;
+
+  // 精读模式：传递论文输入
+  if (litMode === 'precise') {
+    const paperInput = document.getElementById('paper_input').value.trim();
+    if (!paperInput) {
+      alert('请输入论文DOI或标题');
+      btn.innerHTML = '▶️ 执行任务';
+      btn.disabled = false;
+      return;
+    }
+    body.search_query = paperInput;
+  }
+
+  // 完整流程模式
+  if (bee === 'full_pipeline') {
+    body.mode = document.getElementById('pipeline_mode').value;
+  }
+
+  // 化学蜂参数
+  if (bee === 'chemistry_bee') {
+    body.smiles = document.getElementById('smiles').value || 'CCO';
+  }
+
+  // BYOK
+  const byokUrl = document.getElementById('byok_url').value;
+  if (byokUrl) {
+    body.user_config = {
+      byok_enabled: true,
+      llm_url: byokUrl,
+      llm_key: document.getElementById('byok_key').value,
+      llm_model: document.getElementById('byok_model').value || 'glm-4',
+    };
+  }
+
+  // 显示进度
+  const taskName = document.getElementById('bee_type').selectedOptions[0].text;
+  showProgress(taskName, rid);
+
+  try {
+    const r = await apiCall('POST', `/api/v1/swarm/research/${rid}/run`, body);
+
+    let resultText = '';
+    if (r.success || r.pending_gate) {
+      resultText += `✅ 执行成功\n`;
+      resultText += `引擎: ${r.engine || 'LLM'}\n`;
+      resultText += `积分消耗: ${r.credits_spent || '?'} | 余额: ${r.balance || '?'}\n\n`;
+
+      // Co-Pilot gate: 显示批准界面
+      if (r.pending_gate) {
+        resultText += `=== ⏸ 等待批准 ===\n`;
+        resultText += `当前步骤: ${r.pending_gate.label}\n`;
+        resultText += `提示: ${r.pending_gate.message}\n\n`;
+        if (r.pending_gate.review_data) {
+          if (r.pending_gate.review_data.papers) {
+            resultText += `--- 文献综述结果 ---\n`;
+            r.pending_gate.review_data.papers.forEach(p => {
+              resultText += `  ${p.title} (${p.year||'?'})\n`;
+            });
+            resultText += '\n';
+          }
+          if (r.pending_gate.review_data.summary) {
+            resultText += `--- 综述摘要 ---\n${r.pending_gate.review_data.summary}\n\n`;
+          }
+          if (r.pending_gate.review_data.hypotheses) {
+            resultText += `--- 研究假设 ---\n`;
+            r.pending_gate.review_data.hypotheses.forEach((h,i) => {
+              resultText += `  ${i+1}. [${h.confidence}] ${h.content}\n`;
+            });
+            resultText += '\n';
+          }
+        }
+        resultText += `👇 在下方选择"批准继续"或"终止流程"`;
+
+        showResult(`⏸ 等待批准: ${r.pending_gate.label}`, resultText);
+        showApprovalButtons(rid, uid, r.pending_gate.step);
+        finishProgress(true);
+        updateGuidance('任务暂停等待批准！查看结果后，在下方点击"批准继续"或"终止流程"');
+        btn.innerHTML = '▶️ 执行任务';
+        btn.disabled = false;
+        return;
+      }
+
+      if (r.verified_count !== undefined) {
+        resultText += `=== 引用验证 ===\n验证通过: ${r.verified_count}/${r.verified_count + r.unverified_count}篇\n`;
+        resultText += `验证层: ${(r.verification_report && r.verification_report.layers) ? r.verification_report.layers.join(' → ') : 'Semantic Scholar'}\n`;
+        if (r.verification_report && r.verification_report.search_rounds) {
+          resultText += `检索轮次: ${r.verification_report.search_rounds}轮\n`;
+        }
+        resultText += '\n';
+      }
+      // 深度调研模式额外信息
+      if (r.sub_questions) {
+        resultText += `=== 深度调研拆解 ===\n`;
+        resultText += `研究范围: ${r.research_scope || '未指定'}\n`;
+        if (r.key_concepts && r.key_concepts.length) {
+          resultText += `核心概念: ${r.key_concepts.join(', ')}\n`;
+        }
+        resultText += `子问题:\n`;
+        r.sub_questions.forEach((sq, i) => {
+          resultText += `  ${i+1}. ${sq.question}\n`;
+          if (sq.keywords_en) resultText += `     🔍 ${sq.keywords_en}\n`;
+        });
+        resultText += '\n';
+      }
+      // 精读模式额外信息
+      if (r.mode === 'precise') {
+        const pi = r.paper_info || {};
+        resultText += `=== 论文信息 ===\n`;
+        resultText += `标题: ${pi.title || ''}\n`;
+        resultText += `作者: ${pi.authors || ''}\n`;
+        resultText += `年份: ${pi.year || '?'} | 期刊: ${pi.journal || '?'}\n`;
+        resultText += `DOI: ${pi.doi || '无'} | 引用数: ${pi.citation_count || 0}\n`;
+        if (pi.match_score) resultText += `匹配度: ${(pi.match_score*100).toFixed(0)}%\n`;
+        resultText += `\n=== 一句话速读 ===\n${r.quick_read || ''}\n\n`;
+        if (r.key_findings && r.key_findings.length) {
+          resultText += `=== 关键发现 ===\n`;
+          r.key_findings.forEach((f,i) => resultText += `${i+1}. ${f}\n`);
+          resultText += '\n';
+        }
+        if (r.methodology && r.methodology.approach) {
+          resultText += `=== 方法拆解 ===\n`;
+          resultText += `路线: ${r.methodology.approach}\n`;
+          resultText += `细节: ${r.methodology.details || ''}\n`;
+          if (r.methodology.datasets) resultText += `数据集: ${r.methodology.datasets}\n`;
+          if (r.methodology.tools) resultText += `工具: ${r.methodology.tools}\n`;
+          resultText += '\n';
+        }
+        if (r.limitations && r.limitations.length) {
+          resultText += `=== 局限性 ===\n`;
+          r.limitations.forEach((l,i) => resultText += `${i+1}. ${l}\n`);
+          resultText += '\n';
+        }
+        if (r.verifiable_claims && r.verifiable_claims.length) {
+          resultText += `=== ✅ 可验证声明 (${r.verifiable_claims.length}条) ===\n`;
+          resultText += `💡 下一步可选择"验证蜂"用RDKit真实计算验证\n`;
+          r.verifiable_claims.forEach((c,i) => {
+            resultText += `${i+1}. [${c.claim_type||'other'}] ${c.claim}\n`;
+            if (c.smiles) resultText += `   SMILES: ${c.smiles}\n`;
+            if (c.expected_value !== null && c.expected_value !== undefined) {
+              resultText += `   预期值: ${c.expected_value} (${c.property_name||''})\n`;
+            }
+          });
+          resultText += '\n';
+        }
+        if (r.research_questions && r.research_questions.length) {
+          resultText += `=== 引发的研究问题 ===\n`;
+          r.research_questions.forEach((q,i) => resultText += `${i+1}. ${q}\n`);
+          resultText += '\n';
+        }
+      }
+      if (r.summary) {
+        const reportTitle = r.mode === 'deep' ? '深度调研报告' : (r.mode === 'precise' ? '精读报告' : '文献综述');
+        resultText += `=== ${reportTitle} ===\n${r.summary}\n\n`;
+      }
+      if (r.hypotheses) {
+        resultText += `=== 研究假设 ===\n`;
+        r.hypotheses.forEach((h,i) => {
+          resultText += `${i+1}. [置信度${h.confidence}] ${h.content}\n`;
+          resultText += `   依据: ${h.basis}\n   验证: ${h.method}\n\n`;
+        });
+      }
+      if (r.report) resultText += `=== 化学计算报告 ===\n${r.report}\n\n`;
+      if (r.paper) resultText += `=== 论文草稿 (${r.word_count}字) ===\n${r.paper}\n\n`;
+      if (r.analysis) resultText += `=== 分析报告 ===\n${r.analysis}\n\n`;
+      if (r.review) resultText += `=== 评审报告 ===\n${r.review}\n\n`;
+      if (r.quantum_analysis) resultText += `=== 量子化学分析 ===\n${r.quantum_analysis}\n\n`;
+      if (r.papers) {
+        resultText += `=== 检索论文 ===\n`;
+        r.papers.forEach(p => {
+          const verified = p.verified ? '✅' : '❌';
+          resultText += `${verified} ${p.title} (${p.year||'?'}) DOI:${p.doi||'无'}\n`;
+        });
+        resultText += '\n';
+      }
+    } else {
+      resultText = `❌ 失败: ${r.error || JSON.stringify(r, null, 2)}`;
+    }
+
+    showResult(`蜂群任务: ${taskName}`, resultText);
+    finishProgress(r.success);
+    updateGuidance('任务执行完成！可在上方查看结果，或选择其他蜂任务继续研究');
+  } catch(e) {
+    showResult('错误', e.message);
+    finishProgress(false, e.message);
+  }
+
+  btn.innerHTML = '▶️ 执行任务';
+  btn.disabled = false;
+}
+
+// ========== 进度展示 ==========
+function showProgress(taskName, rid) {
+  // 切到进度tab
+  const tabs = document.querySelectorAll('.tab');
+  switchTab('progress', tabs[2]);
+
+  document.getElementById('progress-empty').style.display = 'none';
+  document.getElementById('progress-content').style.display = '';
+  document.getElementById('progress-task-name').textContent = taskName;
+  document.getElementById('progress-status').textContent = '执行中...';
+  document.getElementById('progress-fill').style.width = '30%';
+  document.getElementById('progress-result').innerHTML = '';
+
+  const steps = [
+    {name: '提交任务', state: 'done'},
+    {name: '蜂群调度', state: 'active'},
+    {name: '执行中', state: 'pending'},
+    {name: '完成', state: 'pending'},
+  ];
+  renderSteps(steps);
+
+  // 模拟进度推进
+  let pct = 30;
+  if (progressTimer) clearInterval(progressTimer);
+  progressTimer = setInterval(() => {
+    pct = Math.min(pct + 10, 80);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    if (pct >= 50) {
+      steps[2].state = 'active';
+      renderSteps(steps);
+    }
+  }, 2000);
+
+  // 同时轮询真实状态
+  pollStatus(rid);
+}
+
+function renderSteps(steps) {
+  const ul = document.getElementById('step-list');
+  ul.innerHTML = steps.map(s => {
+    const icon = s.state === 'done' ? '✅' : s.state === 'active' ? '⏳' : '⬜';
+    return `<li class="${s.state}"><span class="step-icon">${icon}</span> ${s.name}</li>`;
+  }).join('');
+}
+
+function finishProgress(success, error) {
+  if (progressTimer) { clearInterval(progressTimer); progressTimer = null; }
+  document.getElementById('progress-fill').style.width = '100%';
+  document.getElementById('progress-status').textContent = success ? '✅ 完成' : '❌ 失败';
+  const steps = document.querySelectorAll('#step-list li');
+  steps.forEach(s => { s.className = success ? 'done' : 'pending'; });
+  if (steps.length >= 3) steps[2].querySelector('.step-icon').textContent = success ? '✅' : '❌';
+  if (steps.length >= 4) steps[3].querySelector('.step-icon').textContent = success ? '✅' : '❌';
+}
+
+async function pollStatus(rid) {
+  // 每3秒轮询一次研究状态
+  let count = 0;
+  const timer = setInterval(async () => {
+    count++;
+    if (count > 20) { clearInterval(timer); return; } // 最多60秒
+    try {
+      const r = await apiCall('GET', `/api/v1/swarm/research/${rid}/status`);
+      if (r.status === 'completed' || r.status === 'failed') {
+        clearInterval(timer);
+      }
+    } catch(e) {}
+  }, 3000);
+}
+
+// ========== Co-Pilot: Gate批准 ==========
+function showApprovalButtons(rid, uid, nextStep) {
+  const box = document.getElementById('result-box');
+  const approvalHtml = `
+    <div style="margin-top:16px;padding:16px;background:rgba(108,92,231,.1);border:1px solid var(--accent);border-radius:12px">
+      <h4 style="color:var(--accent);margin-bottom:12px">⏸ 等待你的决定</h4>
+      <div style="margin-bottom:12px">
+        <label style="font-size:14px;color:var(--dim)">反馈（可选，Co-Pilot模式会传给下一步蜂）:</label>
+        <textarea class="input" id="gate_feedback" placeholder="如：假设方向不错，但第2个假设已有相关论文，请调整..." style="margin-top:4px;min-height:60px"></textarea>
+      </div>
+      <div style="display:flex;gap:12px">
+        <button class="btn btn-primary" onclick="approveGate('${rid}','${uid}',true)" style="background:var(--green)">✅ 批准继续</button>
+        <button class="btn btn-outline" onclick="approveGate('${rid}','${uid}',false)" style="border-color:var(--red);color:var(--red)">❌ 终止流程</button>
+      </div>
+    </div>
+  `;
+  // 追加到结果区
+  box.innerHTML += approvalHtml;
+  box.scrollIntoView({behavior:'smooth'});
+}
+
+async function approveGate(rid, uid, approved) {
+  const feedback = document.getElementById('gate_feedback')?.value || '';
+  showResult('⏳ 处理中...', approved ? '正在继续执行...' : '正在终止流程...');
+
+  try {
+    const r = await apiCall('POST', `/api/v1/swarm/research/${rid}/approve`, {
+      user_id: uid,
+      approved: approved,
+      feedback: feedback,
+    });
+
+    let resultText = '';
+    if (r.status === 'cancelled') {
+      resultText = '❌ 流程已终止';
+      showResult('流程终止', resultText);
+      updateGuidance('流程已终止。可在"① 启动研究"重新开始');
+      return;
+    }
+
+    if (r.success !== false) {
+      resultText += `✅ ${approved ? '已批准' : '已处理'}\n`;
+      if (r.steps) {
+        resultText += `\n=== 执行步骤 ===\n`;
+        r.steps.forEach(s => {
+          resultText += `${s.success ? '✅' : '❌'} ${s.bee}`;
+          if (s.word_count) resultText += ` (${s.word_count}字)`;
+          if (s.error) resultText += ` — ${s.error}`;
+          resultText += '\n';
+        });
+      }
+      if (r.paper) {
+        resultText += `\n=== 论文草稿 ===\n${r.paper}\n`;
+      }
+      if (r.pending_gate) {
+        resultText += `\n=== ⏸ 下一个Gate: ${r.pending_gate.label} ===\n`;
+        resultText += `${r.pending_gate.message}\n\n`;
+        if (r.pending_gate.review_data?.hypotheses) {
+          resultText += `--- 研究假设 ---\n`;
+          r.pending_gate.review_data.hypotheses.forEach((h,i) => {
+            resultText += `  ${i+1}. [${h.confidence}] ${h.content}\n`;
+          });
+          resultText += '\n👇 在下方选择"批准继续"或"终止流程"';
+        }
+        showResult(`⏸ 等待批准: ${r.pending_gate.label}`, resultText);
+        showApprovalButtons(rid, uid, r.pending_gate.step);
+        updateGuidance('下一步暂停等待批准！查看结果后继续');
+        return;
+      }
+      if (r.status === 'completed') {
+        resultText += `\n🎉 全流程完成！`;
+        showResult('✅ 全流程完成', resultText);
+        updateGuidance('全流程完成！可在结果区查看论文，或开始新的研究');
+      } else {
+        showResult('执行结果', resultText);
+      }
+    } else {
+      showResult('❌ 失败', r.error || JSON.stringify(r, null, 2));
+    }
+  } catch(e) {
+    showResult('错误', e.message);
+  }
+}
+</script>
+</body>
+</html>

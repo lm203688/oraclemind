@@ -1,0 +1,14 @@
+name: hypothesis_bee
+display_name: 假设蜂
+description: 基于文献综述生成可验证的研究假设，标注置信度
+icon: 💡
+cost_credits: 300
+category: analysis
+module: agents.hypothesis_bee
+pipeline_step: 2
+params:
+  - name: num_hypotheses
+    type: int
+    required: false
+    default: 3
+    description: 生成假设数量

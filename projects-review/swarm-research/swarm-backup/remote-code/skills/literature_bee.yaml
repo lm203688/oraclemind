@@ -1,0 +1,20 @@
+name: literature_bee
+display_name: 文献蜂
+description: 检索学术论文 + 4层引用验证 + 生成结构化综述（支持深度调研模式）
+icon: 📚
+cost_credits: 500
+category: literature
+module: agents.literature_bee
+pipeline_step: 1
+params:
+  - name: search_query
+    type: string
+    required: false
+    default: from_topic
+    description: 检索关键词，默认从研究主题提取
+  - name: mode
+    type: enum
+    required: false
+    default: standard
+    options: [standard, deep, precise]
+    description: "standard=标准检索(500积分), deep=深度调研(1500积分,多轮检索+结构化报告), precise=精读(800积分,输入论文DOI/标题→结构化精读+可验证声明提取)"

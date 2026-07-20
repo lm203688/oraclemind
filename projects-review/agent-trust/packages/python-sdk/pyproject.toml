@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "agent-trust"
+version = "0.2.0"
+description = "Python SDK for AgentTrust Protocol — AI Agent trust scoring, Ed25519 identity, and payment integration. Works with LangChain, CrewAI, AutoGen, Dify."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [{ name = "AgentTrust Protocol", email = "hi@agenttrust.xyz" }]
+keywords = [
+    "ai-agent", "trust", "identity", "did", "ed25519", "langchain",
+    "crewai", "autogen", "mcp", "x402", "reputation", "scoring",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []  # zero external deps for core functionality
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.1.0"]
+crewai = ["crewai>=0.1.0"]
+autogen = ["pyautogen>=0.2.0"]
+all = ["agent-trust[langchain,crewai,autogen]"]
+
+[project.urls]
+Homepage = "https://github.com/lm203688/agent-trust-protocol"
+Documentation = "https://github.com/lm203688/agent-trust-protocol/blob/main/CONTRIBUTING.md"
+Repository = "https://github.com/lm203688/agent-trust-protocol"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent_trust*"]

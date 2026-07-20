@@ -1,0 +1,92 @@
+[
+  {
+    "name": "LiCoO2",
+    "formula": "LiCoO₂",
+    "voltage_V": 3.7,
+    "capacity_mAhg": 140,
+    "cycle_life": 1000,
+    "crystal": "层状",
+    "source": "NIST/JARVIS"
+  },
+  {
+    "name": "LiFePO4",
+    "formula": "LiFePO₄",
+    "voltage_V": 3.3,
+    "capacity_mAhg": 170,
+    "cycle_life": 3000,
+    "crystal": "橄榄石",
+    "source": "JARVIS"
+  },
+  {
+    "name": "LiMn2O4",
+    "formula": "LiMn₂O₄",
+    "voltage_V": 4.0,
+    "capacity_mAhg": 120,
+    "cycle_life": 500,
+    "crystal": "尖晶石",
+    "source": "JARVIS"
+  },
+  {
+    "name": "NMC811",
+    "formula": "LiNi₀.₈Mn₀.₁Co₀.₁O₂",
+    "voltage_V": 3.8,
+    "capacity_mAhg": 200,
+    "cycle_life": 800,
+    "crystal": "层状",
+    "source": "文献"
+  },
+  {
+    "name": "Li4Ti5O12",
+    "formula": "Li₄Ti₅O₁₂",
+    "voltage_V": 1.5,
+    "capacity_mAhg": 175,
+    "cycle_life": 5000,
+    "crystal": "尖晶石",
+    "source": "JARVIS"
+  },
+  {
+    "name": "Graphite",
+    "formula": "C",
+    "voltage_V": 0.1,
+    "capacity_mAhg": 372,
+    "cycle_life": 2000,
+    "crystal": "层状",
+    "source": "NIST"
+  },
+  {
+    "name": "Si",
+    "formula": "Si",
+    "voltage_V": 0.4,
+    "capacity_mAhg": 4200,
+    "cycle_life": 300,
+    "crystal": "金刚石",
+    "source": "文献"
+  },
+  {
+    "name": "Li metal",
+    "formula": "Li",
+    "voltage_V": 0.0,
+    "capacity_mAhg": 3860,
+    "cycle_life": 100,
+    "crystal": "BCC",
+    "source": "文献"
+  },
+  {
+    "name": "Li2S",
+    "formula": "Li₂S",
+    "voltage_V": 2.2,
+    "capacity_mAhg": 1167,
+    "cycle_life": 200,
+    "crystal": "反萤石",
+    "source": "文献"
+  },
+  {
+    "name": "LiMnPO4",
+    "formula": "LiMnPO₄",
+    "voltage_V": 4.1,
+    "capacity_mAhg": 171,
+    "cycle_life": 1000,
+    "crystal": "橄榄石",
+    "source": "JARVIS"
+  }
+]

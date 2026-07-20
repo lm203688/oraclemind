@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Fe-K2O-Al2O3",
+    "formula": "Fe·K₂O·Al₂O₃",
+    "activity_pct": 100,
+    "operating_temp_C": 450,
+    "pressure_bar": 150,
+    "source": "Haber-Bosch文献"
+  },
+  {
+    "name": "Ru-Ba-Cs",
+    "formula": "Ru·Ba·Cs",
+    "activity_pct": 150,
+    "operating_temp_C": 400,
+    "pressure_bar": 100,
+    "source": "文献"
+  },
+  {
+    "name": "Fe-Mo",
+    "formula": "Fe·Mo",
+    "activity_pct": 80,
+    "operating_temp_C": 500,
+    "pressure_bar": 200,
+    "source": "文献"
+  },
+  {
+    "name": "Co3Mo3N",
+    "formula": "Co₃Mo₃N",
+    "activity_pct": 120,
+    "operating_temp_C": 400,
+    "pressure_bar": 50,
+    "source": "文献"
+  },
+  {
+    "name": "Ni-Fe",
+    "formula": "Ni·Fe",
+    "activity_pct": 60,
+    "operating_temp_C": 450,
+    "pressure_bar": 100,
+    "source": "文献"
+  }
+]

@@ -1,0 +1,14 @@
+name: writing_bee
+display_name: 写作蜂
+description: 基于研究发现生成完整论文草稿（Markdown格式）
+icon: ✍️
+cost_credits: 800
+category: writing
+module: agents.writing_bee
+pipeline_step: 3
+params:
+  - name: format
+    type: string
+    required: false
+    default: markdown
+    description: 输出格式(markdown/latex)

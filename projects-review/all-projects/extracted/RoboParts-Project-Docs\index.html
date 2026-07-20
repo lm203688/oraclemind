@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RoboParts 项目总览</title>
+<style>
+  :root {
+    --primary: #1a56db;
+    --success: #057a55;
+    --warning: #c27803;
+    --danger: #c81e1e;
+    --bg: #f8fafc;
+    --card-bg: #fff;
+    --border: #e2e8f0;
+    --text: #1e293b;
+    --text-secondary: #64748b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); padding: 24px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .subtitle { color: var(--text-secondary); margin-bottom: 24px; }
+  .status-bar { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+  .status-card { flex: 1; min-width: 200px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+  .status-card .label { font-size: 12px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+  .status-card .value { font-size: 28px; font-weight: 700; margin-top: 4px; }
+  .status-card .detail { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+  .badge-ok { background: #def7ec; color: var(--success); }
+  .badge-warn { background: #fdf6b2; color: var(--warning); }
+  .badge-pending { background: #e1effe; color: var(--primary); }
+  .badge-danger { background: #fde8e8; color: var(--danger); }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 16px; }
+  .panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 16px; }
+  .panel h2 { font-size: 16px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { font-weight: 600; color: var(--text-secondary); font-size: 12px; text-transform: uppercase; }
+  .todo-list { list-style: none; }
+  .todo-list li { padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; font-size: 14px; }
+  .todo-list li:last-child { border-bottom: none; }
+  .p1, .p2, .p3 { font-weight: 700; font-size: 12px; padding: 2px 6px; border-radius: 4px; min-width: 24px; text-align: center; }
+  .p1 { background: #fde8e8; color: var(--danger); }
+  .p2 { background: #fdf6b2; color: var(--warning); }
+  .p3 { background: #def7ec; color: var(--success); }
+  .footer { font-size: 12px; color: var(--text-secondary); text-align: center; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .link { color: var(--primary); text-decoration: none; }
+  .link:hover { text-decoration: underline; }
+  @media (max-width: 768px) {
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .status-bar { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>🤖 RoboParts 项目总览</h1>
+  <p class="subtitle">机器人零部件兼容性平台 · roboparts.cc · 主理人：厉兴</p>
+
+  <!-- 状态卡片 -->
+  <div class="status-bar">
+    <div class="status-card">
+      <div class="label">API 端点</div>
+      <div class="value">4</div>
+      <div class="detail">2测试中 · 1待调试 · 1待规划</div>
+    </div>
+    <div class="status-card">
+      <div class="label">机械臂品牌</div>
+      <div class="value">18+</div>
+      <div class="detail"></div>
+    </div>
+    <div class="status-card">
+      <div class="label">夹爪型号</div>
+      <div class="value">34+</div>
+      <div class="detail"></div>
+    </div>
+    <div class="status-card">
+      <div class="label">月收入</div>
+      <div class="value" style="color: var(--danger);">¥0</div>
+      <div class="detail">3条路径探索中</div>
+    </div>
+    <div class="status-card">
+      <div class="label">月成本</div>
+      <div class="value" style="color: var(--success);">~¥0</div>
+      <div class="detail">域名年费 ~¥60/年</div>
+    </div>
+  </div>
+
+  <!-- 核心模块 -->
+  <div class="grid-2">
+    <div class="panel">
+      <h2>🔌 API端点状态</h2>
+      <table>
+        <tr><th>端点</th><th>状态</th><th>成本</th></tr>
+        <tr><td>/api/v1/compat-check</td><td><span class="badge badge-ok">已实现</span></td><td>零成本</td></tr>
+        <tr><td>/api/v1/parts-recommend</td><td><span class="badge badge-ok">已实现</span></td><td>零成本</td></tr>
+        <tr><td>/api/v1/nl-compat</td><td><span class="badge badge-warn">待测试</span></td><td>Agnes AI按量</td></tr>
+        <tr><td>/api/v1/[TBD]</td><td><span class="badge badge-pending">待规划</span></td><td>—</td></tr>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>💰 收入路径</h2>
+      <table>
+        <tr><th>路径</th><th>状态</th><th>月目标</th></tr>
+        <tr><td>零件导购佣金</td><td><span class="badge badge-warn">链接待补</span></td><td>¥500</td></tr>
+        <tr><td>STL模型下载</td><td><span class="badge badge-pending">0个文件</span></td><td>¥200</td></tr>
+        <tr><td>3D打印服务</td><td><span class="badge badge-pending">低优先级</span></td><td>¥300</td></tr>
+        <tr><td>B端API订阅</td><td><span class="badge badge-pending">规划中</span></td><td>—</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 待办和问题 -->
+  <div class="grid-2">
+    <div class="panel">
+      <h2>🔴 紧急待办</h2>
+      <ul class="todo-list">
+        <li><span class="p1">P1</span> 验证Agnes API Key（解决401）</li>
+        <li><span class="p1">P1</span> Vercel Production Redeploy</li>
+        <li><span class="p1">P1</span> 测试nl-compat 4个中文用例</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>🟡 重要待办</h2>
+      <ul class="todo-list">
+        <li><span class="p2">P2</span> 虎皮椒支付调试 + 回调验证</li>
+        <li><span class="p2">P2</span> 30款夹爪affiliate链接补充</li>
+        <li><span class="p2">P2</span> RoboLink业务报告评估</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>🧭 AI原生分发路线图</h2>
+    <table>
+      <tr><th>路径</th><th>说明</th><th>优先级</th></tr>
+      <tr><td>MCP工具化</td><td>封装compat-check为Agent工具，集成到Cursor/WorkBuddy</td><td><span class="badge badge-danger">高</span></td></tr>
+      <tr><td>API平台</td><td>加Auth+计费，B端付费订阅</td><td><span class="badge badge-danger">高</span></td></tr>
+      <tr><td>WorkBuddy技能</td><td>发布为WorkBuddy Skill，平台分发</td><td><span class="badge badge-warn">中</span></td></tr>
+      <tr><td>CAD插件</td><td>Fusion360/SolidWorks，按件推荐搭配</td><td><span class="badge badge-pending">低</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    RoboParts Project Docs · 生成于 2026-06-25 · 包含4份Markdown文档 + 1份HTML总览
+  </div>
+</div>
+</body>
+</html>

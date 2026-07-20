@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Deep Sea Tech",
+  "name_for_model": "deepseatech",
+  "description_for_human": "Deep sea technology with 455 entities",
+  "description_for_model": "Access Deep Sea Tech knowledge base via API. Deep sea technology with 455 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://deepsea.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://deepsea.genetech.tools/"
+}

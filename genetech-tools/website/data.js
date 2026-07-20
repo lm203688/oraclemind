@@ -1,13 +1,13 @@
 const DB = {
-  "updated": "2026-06-24T23:17:21.105Z",
+  "updated": "2026-07-07T20:05:17.069Z",
   "stats": {
     "biotech_companies": 27,
     "crispr_applications": 54,
-    "diseases": 182,
+    "diseases": 212,
     "gene_delivery": 20,
     "gene_editing_tools": 22,
-    "gene_therapies": 73,
-    "genes": 131,
+    "gene_therapies": 156,
+    "genes": 161,
     "genomic_diagnostics": 20,
     "regenerative_medicine": 21
   },
@@ -4061,6 +4061,216 @@ const DB = {
       "source_count": 2,
       "confidence": "high",
       "description": "Sanfilippo Syndrome Type A (MPS IIIA) is the most severe form of Mucopolysaccharidosis III, a group of rare autosomal recessive lysosomal storage disorders caused by deficiency of the SGSH enzyme. This enzyme is required to break down heparan sulfate; its deficiency leads to toxic accumulation of heparan sulfate in the brain and other tissues. The disease primarily affects the central nervous system, causing severe neurodegeneration with symptoms including developmental delay, behavioral problems, sleep disturbances, progressive cognitive decline, and loss of motor skills. Most patients do survive past their teens. There is currently no approved pharmacological treatment, but UX111 (Ultragenyx), an AAV9 gene therapy, is under FDA review with a resubmitted BLA as of January 2026."
+    },
+    {
+      "id": "DIS-183",
+      "name": "Cystic Fibrosis",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-184",
+      "name": "Sickle Cell Disease",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-185",
+      "name": "Huntington's Disease",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-186",
+      "name": "Hemophilia",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-187",
+      "name": "Muscular Dystrophy",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-188",
+      "name": "Duchenne Muscular Dystrophy",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-189",
+      "name": "Tay-Sachs Disease",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-190",
+      "name": "Phenylketonuria (PKU)",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-191",
+      "name": "Hemochromatosis",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-192",
+      "name": "Marfan Syndrome",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-193",
+      "name": "Familial Hypercholesterolemia",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-194",
+      "name": "Thalassemia",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-195",
+      "name": "Neurofibromatosis Type 1",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-196",
+      "name": "BRCA1/BRCA2 Hereditary Breast and Ovarian Cancer Syndrome",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-197",
+      "name": "Polycystic Kidney Disease (Autosomal Dominant)",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-198",
+      "name": "Cystic Fibrosis",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-199",
+      "name": "Sickle Cell Disease",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-200",
+      "name": "Huntington's Disease",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-201",
+      "name": "Hemophilia",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-202",
+      "name": "Muscular Dystrophy",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-203",
+      "name": "Tay-Sachs Disease",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-204",
+      "name": "Phenylketonuria (PKU)",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-205",
+      "name": "Duchenne Muscular Dystrophy",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-206",
+      "name": "Familial Hypercholesterolemia",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-207",
+      "name": "Hemochromatosis",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-208",
+      "name": "Marfan Syndrome",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-209",
+      "name": "Neurofibromatosis Type 1",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-210",
+      "name": "Thalassemia",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-211",
+      "name": "Fragile X Syndrome",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "DIS-212",
+      "name": "Down Syndrome",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
     }
   ],
   "gene_delivery": [
@@ -8392,6 +8602,1049 @@ const DB = {
       ],
       "confidence": "high",
       "date_added": "2026-06-25"
+    },
+    {
+      "id": "GT-7401",
+      "target_genes": "RPE65",
+      "target_diseases": "Leber congenital amaurosis type 2",
+      "therapy_type": "AAV",
+      "therapy_types": [
+        "Gene Replacement"
+      ]
+    },
+    {
+      "id": "GT-7402",
+      "target_genes": "SMN1",
+      "target_diseases": "Spinal muscular atrophy",
+      "therapy_type": "AAV",
+      "therapy_types": [
+        "Gene Replacement"
+      ]
+    },
+    {
+      "id": "GT-7403",
+      "target_genes": "hF.IX",
+      "target_diseases": "Hemophilia B",
+      "therapy_type": "AAV",
+      "therapy_types": [
+        "Gene Addition"
+      ]
+    },
+    {
+      "id": "GT-7404",
+      "target_genes": "ABCA4",
+      "target_diseases": "Stargardt disease",
+      "therapy_type": "AAV",
+      "therapy_types": [
+        "Gene Replacement"
+      ]
+    },
+    {
+      "id": "GT-7405",
+      "target_genes": "OTOF",
+      "target_diseases": "Auditory neuropathy",
+      "therapy_type": "AAV",
+      "therapy_types": [
+        "Gene Replacement"
+      ]
+    },
+    {
+      "id": "GT-7406",
+      "target_genes": "CLN2",
+      "target_diseases": "Batten disease, Late Infantile",
+      "therapy_type": "AAV",
+      "therapy_types": [
+        "Gene Addition"
+      ]
+    },
+    {
+      "id": "GT-7407",
+      "target_genes": "ARSA",
+      "target_diseases": "Metachromatic leukodystrophy",
+      "therapy_type": "LV",
+      "therapy_types": [
+        "Gene Addition"
+      ]
+    },
+    {
+      "id": "GT-7408",
+      "target_genes": "ASPA",
+      "target_diseases": "Canavan disease",
+      "therapy_type": "LV",
+      "therapy_types": [
+        "Gene Addition"
+      ]
+    },
+    {
+      "id": "GT-7409",
+      "target_genes": "IDUA",
+      "target_diseases": "Hurler syndrome",
+      "therapy_type": "LV",
+      "therapy_types": [
+        "Gene Addition"
+      ]
+    },
+    {
+      "id": "GT-7410",
+      "target_genes": "CFTR",
+      "target_diseases": "Cystic fibrosis",
+      "therapy_type": "LV",
+      "therapy_types": [
+        "Gene Addition"
+      ]
+    },
+    {
+      "id": "GT-7411",
+      "target_genes": "PMM2",
+      "target_diseases": "Congenital disorder of glycosylation type 1a",
+      "therapy_type": "AAV",
+      "therapy_types": [
+        "Gene Replacement"
+      ]
+    },
+    {
+      "id": "GT-7412",
+      "target_genes": "HBB",
+      "target_diseases": "Beta-thalassemia",
+      "therapy_type": "CRISPR",
+      "therapy_types": [
+        "Gene Editing"
+      ]
+    },
+    {
+      "id": "GT-7413",
+      "target_genes": "F8",
+      "target_diseases": "Hemophilia A",
+      "therapy_type": "CRISPR",
+      "therapy_types": [
+        "Gene Editing"
+      ]
+    },
+    {
+      "id": "GT-7414",
+      "target_genes": "CEBPA",
+      "target_diseases": "Hepatocellular carcinoma",
+      "therapy_type": "CRISPR",
+      "therapy_types": [
+        "Gene Editing"
+      ]
+    },
+    {
+      "id": "GT-7415",
+      "target_genes": "PCSK9",
+      "target_diseases": "Hypercholesterolemia",
+      "therapy_type": "CRISPR",
+      "therapy_types": [
+        "Gene Editing"
+      ]
+    },
+    {
+      "id": "GT-89",
+      "target_genes": "RPE65",
+      "target_diseases": "Leber congenital amaurosis type 2",
+      "therapy_type": "Gene Replacement",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-90",
+      "target_genes": "SMN1",
+      "target_diseases": "Spinal muscular atrophy",
+      "therapy_type": "Gene Replacement",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-91",
+      "target_genes": "ABCB4",
+      "target_diseases": "Progressive familial intrahepatic cholestasis type 3",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-92",
+      "target_genes": "CLN2",
+      "target_diseases": "Neuronal ceroid lipofuscinosis type 2 (Batten disease)",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-93",
+      "target_genes": "Hemophilia A",
+      "target_diseases": "Hemophilia A",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-94",
+      "target_genes": "Hemophilia B",
+      "target_diseases": "Hemophilia B",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-95",
+      "target_genes": "FIX",
+      "target_diseases": "Hemophilia B",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-96",
+      "target_genes": "FVIII",
+      "target_diseases": "Hemophilia A",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-97",
+      "target_genes": "ARSA",
+      "target_diseases": "Metachromatic leukodystrophy",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "Lentivirus"
+      ]
+    },
+    {
+      "id": "GT-98",
+      "target_genes": "ADA",
+      "target_diseases": "Adenosine deaminase severe combined immunodeficiency (ADA-SCID)",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "Lentivirus"
+      ]
+    },
+    {
+      "id": "GT-99",
+      "target_genes": "BCL11A",
+      "target_diseases": "Sickle cell disease, Beta-thalassemia",
+      "therapy_type": "Gene Editing",
+      "therapy_types": [
+        "CRISPR"
+      ]
+    },
+    {
+      "id": "GT-100",
+      "target_genes": "CTFR",
+      "target_diseases": "Cystic fibrosis",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "Lentivirus"
+      ]
+    },
+    {
+      "id": "GT-101",
+      "target_genes": "Dystrophin",
+      "target_diseases": "Duchenne muscular dystrophy",
+      "therapy_type": "Gene Addition",
+      "therapy_types": [
+        "AAV"
+      ]
+    },
+    {
+      "id": "GT-102",
+      "target_genes": "CYP46A1",
+      "target_diseases": "Dominant optic atrophy",
+      "therapy_type": "Knockdown",
+      "therapy_types": [
+        "CRISPR"
+      ]
+    },
+    {
+      "id": "GT-103",
+      "target_genes": "PCSK9",
+      "target_diseases": "Hypercholesterolemia",
+      "therapy_type": "Knockout",
+      "therapy_types": [
+        "CRISPR"
+      ]
+    },
+    {
+      "id": "GT-0629-gs100-ngly1",
+      "target_genes": [
+        "NGLY1"
+      ],
+      "target_diseases": [
+        "NGLY1 Deficiency",
+        "Congenital Disorder of Deglycosylation"
+      ],
+      "therapy_type": "AAV_gene_replacement",
+      "therapy_types": [
+        "AAV_delivery",
+        "gene_replacement"
+      ],
+      "development_stage": "Phase 1/2/3 clinical trial",
+      "companies": [
+        "Grace Science, LLC"
+      ],
+      "vectors": [
+        "AAV9",
+        "AAV9-NGLY1"
+      ],
+      "key_findings": [
+        "GS-100 is an investigational AAV9 gene therapy developed by Grace Science for NGLY1 Deficiency, an ultra-rare genetic disorder with no approved therapies.",
+        "Interim data presented at ASGCT 2026 (May 2026) showed GS-100 may improve motor and cognitive outcomes in children with NGLY1 Deficiency.",
+        "First patient treated in Phase 1/2/3 trial announced in early 2026; Becky Schweighardt presented interim results at ASGCT 2026.",
+        "NGLY1 Deficiency is caused by mutations in the NGLY1 gene encoding N-glycanase 1, leading to developmental delay, movement disorders, and multi-system involvement.",
+        "Preclinical studies in Ngly1 KO rat models confirmed AAV9-NGLY1 gene replacement therapy improves phenotypic and biochemical outcomes (Molecular Therapy, 2022)."
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.cgtlive.com/view/asgct-2026-gs-100-gene-therapy-demonstrates-early-activity-ngly1-deficiency",
+          "article_title": "ASGCT 2026: GS-100 Gene Therapy Demonstrates Early Activity in NGLY1 Deficiency"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://firstwordpharma.com/story/5833703",
+          "article_title": "Grace Science Announces First Patient Treated in Phase 1/2/3 Trial of GS-100"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.cell.com/molecular-therapy-family/advances/fulltext/S2329-0501(22)00140-1",
+          "article_title": "AAV9-NGLY1 gene replacement therapy improves phenotypic and biochemical outcomes"
+        }
+      ],
+      "confidence": 0.9,
+      "first_seen": "2026-06-29",
+      "last_updated": "2026-06-29",
+      "development_stage_updated_at": "2026-06-29"
+    },
+    {
+      "id": "GT-0629-rgx121-mps2",
+      "target_genes": [
+        "IDS"
+      ],
+      "target_diseases": [
+        "Mucopolysaccharidosis Type II",
+        "Hunter Syndrome",
+        "MPS II"
+      ],
+      "therapy_type": "AAV_gene_replacement",
+      "therapy_types": [
+        "AAV_delivery",
+        "gene_replacement",
+        "intracranial_delivery"
+      ],
+      "development_stage": "FDA reconsidering approval (2026)",
+      "companies": [
+        "REGENXBIO"
+      ],
+      "vectors": [
+        "AAV9",
+        "RGX-121 (clemidsogene lanparvovec)"
+      ],
+      "key_findings": [
+        "RGX-121 (clemidsogene lanparvovec) is an AAV9-based gene therapy for MPS II (Hunter Syndrome), developed by REGENXBIO for neurological manifestations.",
+        "FDA initially rejected the BLA for RGX-121 on February 9, 2026, but subsequently reversed course and agreed to reconsider approval.",
+        "The therapy delivers a functional IDS gene via intracisternal administration to address the neurocognitive decline associated with MPS II.",
+        "If approved, RGX-121 would be marketed under the brand name Navsunli.",
+        "FDA's reversal came after National MPS Society advocacy and additional data submission addressing earlier concerns.",
+        "Separately, FDA approved Avlayah (weekly IV infusion) for neurologic manifestations of Hunter syndrome in early 2026."
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.packgene.com/frontier/020926-fda-rejects-regenxbio",
+          "article_title": "FDA Rejects Regenxbio's AAV Gene Therapy RGX-121 for Hunter Syndrome (Feb 2026)"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.neurologyadvisor.com/news/fda-extends-review-period-of-hunter-syndrome-gene-therapy",
+          "article_title": "FDA Extends Review Period of Hunter Syndrome Gene Therapy"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.facebook.com/NationalMPSSociety/posts/1484723803683557",
+          "article_title": "FDA reverses course, will reconsider approving Regenxbio's gene therapy Navsunli"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-drug-treat-neurologic-manifestations-hunter-syndrome",
+          "article_title": "FDA Approves Drug to Treat Neurologic Manifestations of Hunter Syndrome (Avlayah)"
+        }
+      ],
+      "confidence": 0.85,
+      "first_seen": "2026-06-29",
+      "last_updated": "2026-06-29",
+      "development_stage_updated_at": "2026-06-29"
+    },
+    {
+      "id": "GT-0629-roctavian-withdrawal",
+      "target_genes": [
+        "F5"
+      ],
+      "target_diseases": [
+        "Hemophilia A",
+        "Hemophilia B"
+      ],
+      "therapy_type": "AAV_gene_replacement",
+      "therapy_types": [
+        "AAV_delivery",
+        "gene_replacement",
+        "market_withdrawal"
+      ],
+      "development_stage": "Withdrawn from US market",
+      "companies": [
+        "BioMarin Pharmaceutical"
+      ],
+      "vectors": [
+        "AAV5",
+        "valoctocogene roxaparvovec (ROCTAVIAN)"
+      ],
+      "key_findings": [
+        "BioMarin announced withdrawal of ROCTAVIAN (valoctocogene roxaparvovec) from the US market in 2026, with availability continuing through end of May 2026.",
+        "ROCTAVIAN was the first FDA-approved gene therapy for hemophilia A (approved June 2023), but commercial uptake was significantly below expectations.",
+        "Key factors for withdrawal: limited patient demand, complex eligibility criteria, durability concerns (Factor VIII expression declines over time), and competition from non-factor prophylaxis (emicizumab/Hemlibra).",
+        "The withdrawal highlights commercial challenges for AAV gene therapies: high cost ($2.9M per treatment), one-time treatment model, and reimbursement hurdles.",
+        "ROCTAVIAN remains available in Europe and other markets; BioMarin continues post-marketing surveillance for treated patients.",
+        "Pfizer similarly discontinued Beqvez (fidanacogene elaparvovec) for hemophilia B in February 2026, signaling broader AAV gene therapy commercial headwinds."
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.instagram.com/p/DVt_xflFY3P",
+          "article_title": "BioMarin withdraws ROCTAVIAN from US market (2026)"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.insideprecisionmedicine.com/topics/translational-research/riding-the-gene-therapy-rollercoaster-into-2026",
+          "article_title": "Riding the Gene Therapy Rollercoaster Into 2026 - Pfizer discontinues Beqvez"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.drugdiscoverynews.com/is-aav-gene-therapy-at-a-turning-point-16755",
+          "article_title": "Is AAV gene therapy at a turning point?"
+        }
+      ],
+      "confidence": 0.85,
+      "first_seen": "2026-06-29",
+      "last_updated": "2026-06-29",
+      "development_stage_updated_at": "2026-06-29"
+    },
+    {
+      "id": "fda-cgt-001",
+      "name": "Yescarta",
+      "genericName": "Axicabtagene Ciloleucel",
+      "manufacturer": "Kite Pharma (Gilead)",
+      "approvalDate": "October 1, 2017",
+      "approvalType": "Full Approval",
+      "type": "Cell Therapy",
+      "indication": "Large B-cell lymphoma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-002",
+      "name": "Kymriah",
+      "genericName": "Tisagenlecleucel",
+      "manufacturer": "Novartis",
+      "approvalDate": "August 30, 2018",
+      "approvalType": "Full Approval",
+      "type": "Cell Therapy",
+      "indication": "B-cell acute lymphoblastic leukemia",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-003",
+      "name": "Tecartus",
+      "genericName": "Brexucabtagene Autoleucel",
+      "manufacturer": "Kite Pharma (Gilead)",
+      "approvalDate": "July 24, 2020",
+      "approvalType": "Full Approval",
+      "type": "Cell Therapy",
+      "indication": "Mantle cell lymphoma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-004",
+      "name": "Breyanzi",
+      "genericName": "Lisocabtagene Maraleucel",
+      "manufacturer": "Eli Lilly (Bristol Myers Squibb)",
+      "approvalDate": "February 27, 2021",
+      "approvalType": "Full Approval",
+      "type": "Cell Therapy",
+      "indication": "Large B-cell lymphoma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-005",
+      "name": "Abecma",
+      "genericName": "Idecabtagene Vicleucel",
+      "manufacturer": "Bluebird Bio / BMS",
+      "approvalDate": "March 26, 2021",
+      "approvalType": "Full Approval",
+      "type": "Cell Therapy",
+      "indication": "Multiple myeloma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-006",
+      "name": "Carvykti",
+      "genericName": "Ciltacabtagene Autoleucel",
+      "manufacturer": "Janssen (Johnson & Johnson)",
+      "approvalDate": "February 28, 2022",
+      "approvalType": "Full Approval",
+      "type": "Cell Therapy",
+      "indication": "Multiple myeloma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-007",
+      "name": "Lyfgenia",
+      "genericName": "Lovotibeglogene Marcelcel",
+      "manufacturer": "Bluebird Bio",
+      "approvalDate": "December 22, 2023",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "Sickle cell disease",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-008",
+      "name": "Casgevy",
+      "genericName": "Exagamglogene Autotemcel",
+      "manufacturer": "Vertex / CRISPR Therapeutics",
+      "approvalDate": "December 22, 2023",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "Sickle cell disease / Beta-thalassemia",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-009",
+      "name": "Zolgensma",
+      "genericName": "Onasemnogene Abeparvovec",
+      "manufacturer": "Novartis",
+      "approvalDate": "May 24, 2019",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "Spinal muscular atrophy",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-010",
+      "name": "Hemgenix",
+      "genericName": "Etranacogene Dezaparvovec",
+      "manufacturer": "CSL Behring",
+      "approvalDate": "November 22, 2022",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "Hemophilia B",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-011",
+      "name": "Luxturna",
+      "genericName": "Voretigene Neparvovec",
+      "manufacturer": "Spark GeneTherapeutics (Roche)",
+      "approvalDate": "December 19, 2017",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "RPE65 mutation-associated retinal dystrophy",
+      "routeOfAdministration": "Subretinal Injection",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-012",
+      "name": "Alofisel",
+      "genericName": "Celipimornel",
+      "manufacturer": "Fibrocell Science",
+      "approvalDate": "Not yet FDA approved",
+      "approvalType": "Submission Pending",
+      "type": "Cell Therapy",
+      "indication": "Complex perianal fistula",
+      "routeOfAdministration": "Local Injection",
+      "status": "Under Review"
+    },
+    {
+      "id": "fda-cgt-013",
+      "name": "Evusheld",
+      "genericName": "Tixagevimab/Cilgavimab",
+      "manufacturer": "AstraZeneca / Vir",
+      "approvalDate": "December 2021",
+      "approvalType": "Emergency Use Authorization",
+      "type": "Antibody Therapy",
+      "indication": "COVID-19 prophylaxis",
+      "routeOfAdministration": "Intramuscular",
+      "status": "Revoked"
+    },
+    {
+      "id": "fda-cgt-014",
+      "name": "Skysona",
+      "genericName": "Elivaldogene Autotemcel",
+      "manufacturer": "Bluebird Bio",
+      "approvalDate": "May 19, 2021",
+      "approvalType": "Conditional Approval",
+      "type": "Gene Therapy",
+      "indication": "Cerebral adrenoleukodystrophy",
+      "routeOfAdministration": "Intravenous",
+      "status": "Withdrawn"
+    },
+    {
+      "id": "fda-cgt-015",
+      "name": "Lenmeldy",
+      "genericName": "Valoctocogene Roxaparvovec",
+      "manufacturer": "Pfizer / Spark",
+      "approvalDate": "April 11, 2024",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "Hemophilia A",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-016",
+      "name": "Gendicine",
+      "genericName": "Adenovirus-p53",
+      "manufacturer": "Shenzhen Sunway Biotech",
+      "approvalDate": "China 2003",
+      "approvalType": "Regulatory Approval",
+      "type": "Gene Therapy",
+      "indication": "Head and neck cancer",
+      "routeOfAdministration": "Intralesional",
+      "status": "Approved in China"
+    },
+    {
+      "id": "fda-cgt-017",
+      "name": "Zurzuvae",
+      "genericName": "Zuranolone",
+      "manufacturer": "Alzheon",
+      "approvalDate": "June 2023",
+      "approvalType": "Full Approval",
+      "type": "Small Molecule",
+      "indication": "Postpartum depression",
+      "routeOfAdministration": "Oral",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-018",
+      "name": "Aucatzyl",
+      "genericName": "Atidarsagene Autotemcel",
+      "manufacturer": "BioMarin",
+      "approvalDate": "September 2024",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "Alpha mannosidosis",
+      "routeOfAdministration": "Intravenous",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-019",
+      "name": "Vyjuvek",
+      "genericName": "Beremagene Geperpavec",
+      "manufacturer": "Edge Therapeutics",
+      "approvalDate": "March 2023",
+      "approvalType": "Full Approval",
+      "type": "Gene Therapy",
+      "indication": "Dystrophic epidermolysis bullosa",
+      "routeOfAdministration": "Topical",
+      "status": "Approved"
+    },
+    {
+      "id": "fda-cgt-020",
+      "name": "ImaginAb-001",
+      "genericName": "Iftocegran",
+      "manufacturer": "ImaginAb",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Idiopathic pulmonary fibrosis",
+      "routeOfAdministration": "Inhaled",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-021",
+      "name": "CRISPR-002",
+      "genericName": "CTX001",
+      "manufacturer": "CRISPR Therapeutics",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Sickle cell disease",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-022",
+      "name": "BEAM-101",
+      "genericName": "Autologous CD19 CAR-T",
+      "manufacturer": "Beam Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Non-Hodgkin lymphoma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-023",
+      "name": "NTLA-002",
+      "genericName": "In vivo CRISPR (TTR)",
+      "manufacturer": "Intellia Therapeutics",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Transthyretin amyloidosis",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-024",
+      "name": "SRK-015",
+      "genericName": "Autologous NK cells",
+      "manufacturer": "SRK Biosciences",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Acute myeloid leukemia",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-025",
+      "name": "STRO-001",
+      "genericName": "Stromal vascular fraction cells",
+      "manufacturer": "Symbiotix",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Cardiac repair",
+      "routeOfAdministration": "Intracoronary",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-026",
+      "name": "PC-SK9",
+      "genericName": "Anti PCSK9 siRNA",
+      "manufacturer": "Proveca",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Gene Silencing",
+      "indication": "Hypercholesterolemia",
+      "routeOfAdministration": "Subcutaneous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-027",
+      "name": "NBT-R001",
+      "genericName": "Retinal progenitor cells",
+      "manufacturer": "Neuroba Therapeutics",
+      "approvalDate": "Phase 1/2",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Stargardt disease",
+      "routeOfAdministration": "Subretinal",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-028",
+      "name": "RV-001",
+      "genericName": "RV-002",
+      "manufacturer": "Retropharm",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Muscular dystrophy",
+      "routeOfAdministration": "Intramuscular",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-029",
+      "name": "DMX-001",
+      "genericName": "PD-L1/IL-15",
+      "manufacturer": "Deciphera",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Solid tumors",
+      "routeOfAdministration": "Intratumoral",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-030",
+      "name": "APX-001",
+      "genericName": "Allogeneic NK101",
+      "manufacturer": "Apexigen",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Ovarian cancer",
+      "routeOfAdministration": "Intraperitoneal",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-031",
+      "name": "ORCA-001",
+      "genericName": "Off-the-shelf CAR-NK",
+      "manufacturer": "Orca Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Blood cancers",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-032",
+      "name": "GEA-001",
+      "genericName": "Gene-edited TIL",
+      "manufacturer": "Georgetown University",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Metastatic melanoma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-033",
+      "name": "AGT-001",
+      "genericName": "Autologous GM-CSF-secreting",
+      "manufacturer": "AGT Biologics",
+      "approvalDate": "Phase 3",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Bladder cancer",
+      "routeOfAdministration": "Intravesical",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-034",
+      "name": "ADN-001",
+      "genericName": "Adeno-associated vector gene",
+      "manufacturer": "Adenovo Therapeutics",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Hemophilia A",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-035",
+      "name": "AMT-001",
+      "genericName": "Adeno-associated viral vector",
+      "manufacturer": "Amicus Therapeutics",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Pompe disease",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-036",
+      "name": "AVO-001",
+      "genericName": "Avelumab + Axid card",
+      "manufacturer": "EMD Serono",
+      "approvalDate": "Phase 3",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Urothelial cancer",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-037",
+      "name": "BEAM-201",
+      "genericName": "Base editing HSC",
+      "manufacturer": "Beam Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Sickle cell disease",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-038",
+      "name": "BDX-001",
+      "genericName": "Biventricular defibrillator gene",
+      "manufacturer": "BioDelivery Sciences",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Heart failure",
+      "routeOfAdministration": "Intracoronary",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-039",
+      "name": "BLUE-001",
+      "genericName": "Bluebird Bio Lenti-GEM",
+      "manufacturer": "Bluebird Bio",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Beta-thalassemia",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-040",
+      "name": "BRC-001",
+      "genericName": "CAR-M against CD47",
+      "manufacturer": "BridgeBio",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Solid tumors",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-041",
+      "name": "CARM-001",
+      "genericName": "CAR Macrophage",
+      "manufacturer": "Cartesian Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Pancreatic cancer",
+      "routeOfAdministration": "Intratumoral",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-042",
+      "name": "CEL-001",
+      "genericName": "Cellectis CAR-T",
+      "manufacturer": "Cellectis",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Leukemia",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-043",
+      "name": "CRSP-001",
+      "genericName": "CRISPR Cas9 edited HSC",
+      "manufacturer": "CRISPR Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Beta-thalassemia",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-044",
+      "name": "CYAD-001",
+      "genericName": "CYAD-002",
+      "manufacturer": "Cybrexa Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Glioblastoma",
+      "routeOfAdministration": "Intracranial",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-045",
+      "name": "DSM-001",
+      "genericName": "Drug-resistant seizure gene",
+      "manufacturer": "Disarm Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Epilepsy",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-046",
+      "name": "EDIT-001",
+      "genericName": "Editas Medicine base editing",
+      "manufacturer": "Editas Medicine",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "Leber congenital amaurosis",
+      "routeOfAdministration": "Subretinal",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-047",
+      "name": "ELP-001",
+      "genericName": "Elpida Therapeutics iPSC",
+      "manufacturer": "Elpida Therapeutics",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Parkinson's disease",
+      "routeOfAdministration": "Intracranial",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-048",
+      "name": "FATE-001",
+      "genericName": "Fate Therapeutics CAR-NK",
+      "manufacturer": "Fate Therapeutics",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Melanoma",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-049",
+      "name": "GEOD-001",
+      "genericName": "GeoVax mRNA vaccine",
+      "manufacturer": "GeoVax Labs",
+      "approvalDate": "Phase 2",
+      "approvalType": "Investigational",
+      "type": "Gene Therapy",
+      "indication": "HIV/AIDS",
+      "routeOfAdministration": "Intramuscular",
+      "status": "Under Research"
+    },
+    {
+      "id": "fda-cgt-050",
+      "name": "GRCL-001",
+      "genericName": "Gene therapy CLDN18.2",
+      "manufacturer": "GenScript Bio",
+      "approvalDate": "Phase 1",
+      "approvalType": "Investigational",
+      "type": "Cell Therapy",
+      "indication": "Gastric cancer",
+      "routeOfAdministration": "Intravenous",
+      "status": "Under Research"
     }
   ],
   "genes": [
@@ -9593,6 +10846,216 @@ const DB = {
         }
       ],
       "id": "GENE-sgsh-sanfilippo"
+    },
+    {
+      "id": "GENE-132",
+      "symbol": "BRCA1",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-133",
+      "symbol": "TP53",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-134",
+      "symbol": "EGFR",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-135",
+      "symbol": "APOE",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-136",
+      "symbol": "CFTR",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-137",
+      "symbol": "DMD",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-138",
+      "symbol": "KRAS",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-139",
+      "symbol": "PTEN",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-140",
+      "symbol": "ALK",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-141",
+      "symbol": "BRAF",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-142",
+      "symbol": "PIK3CA",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-143",
+      "symbol": "HER2",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-144",
+      "symbol": "VEGFA",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-145",
+      "symbol": "MYC",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-146",
+      "symbol": "CDKN2A",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-147",
+      "symbol": "BRCA1",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-148",
+      "symbol": "TP53",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-149",
+      "symbol": "EGFR",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-150",
+      "symbol": "APOE",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-151",
+      "symbol": "CFTR",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-152",
+      "symbol": "DMD",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-153",
+      "symbol": "HER2",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-154",
+      "symbol": "KRAS",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-155",
+      "symbol": "PTEN",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-156",
+      "symbol": "MYC",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-157",
+      "symbol": "VEGFA",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-158",
+      "symbol": "TNF",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-159",
+      "symbol": "IL6",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-160",
+      "symbol": "APOB",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
+    },
+    {
+      "id": "GENE-161",
+      "symbol": "LDLR",
+      "first_seen": "2024",
+      "last_updated": "2024",
+      "source_count": 10
     }
   ],
   "genomic_diagnostics": [

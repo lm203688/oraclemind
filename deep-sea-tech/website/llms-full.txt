@@ -906,6 +906,231 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - description: 2025年9月在西班牙发布的全球最深潜三人丙烯酸载人潜水器。基于Triton 3300系列底盘设计扩展至全海深能力，获得DNV-GL认证。
 - source: Triton Submarines September 2025
 
+### 蛟龙号
+
+- name: 蛟龙号
+- type: 载人潜水器
+- max_depth: 7000米
+- operator: 自然资源部
+- country: 中国
+- year: 2012年
+- capabilities: 载人深潜、科学考察、资源勘探
+- description: 中国首台自主设计、自主集成的载人潜水器，具备在7000米深度进行作业的能力。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 深海一号
+
+- name: 深海一号
+- type: 科考船
+- max_depth: 无
+- operator: 自然资源部
+- country: 中国
+- year: 2021年
+- capabilities: 深海科考、潜水器支持、资源勘探
+- description: 中国自主设计建造的深海科考船，具备支持载人潜水器进行深海作业的能力。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 奋斗者号
+
+- name: 奋斗者号
+- type: 全海深载人潜水器
+- max_depth: 10000米
+- operator: 中国船舶集团
+- country: 中国
+- year: 2020年
+- capabilities: 全海深载人作业、科学考察、资源勘探
+- description: 中国自主研发的全海深载人潜水器，可在万米深度进行作业和科考。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 阿尔文号
+
+- name: 阿尔文号
+- type: 载人潜水器
+- max_depth: 6500米
+- operator: 伍兹霍尔海洋研究所
+- country: 美国
+- year: 1964年
+- capabilities: 载人深潜、海底采样、科学考察
+- description: 美国著名深海载人潜水器，广泛应用于海洋科学研究和海底勘探。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 深海挑战者号
+
+- name: 深海挑战者号
+- type: 载人潜水器
+- max_depth: 11000米
+- operator: 深海挑战者公司
+- country: 美国
+- year: 2012年
+- capabilities: 极限深潜、科学考察、纪录片拍摄
+- description: 由詹姆斯·卡梅隆驾驶，成功下潜至马里亚纳海沟最深处。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 深海勇士号
+
+- name: 深海勇士号
+- type: 载人潜水器
+- max_depth: 4500米
+- operator: 中国科学院
+- country: 中国
+- year: 2017年
+- capabilities: 载人深潜、科学考察、资源勘探
+- description: 中国自主研发的4500米级载人潜水器，用于深海科学研究和资源勘探。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 鹦鹉螺号
+
+- name: 鹦鹉螺号
+- type: 核动力潜艇
+- max_depth: 无
+- operator: 美国海军
+- country: 美国
+- year: 1954年
+- capabilities: 水下航行、军事任务、科学研究
+- description: 世界上第一艘核动力潜艇，开创了潜艇技术的新纪元。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 深海KONGSBERG
+
+- name: 深海KONGSBERG
+- type: 无人遥控潜水器
+- max_depth: 6000米
+- operator: KONGSBERG
+- country: 挪威
+- year: 2000年
+- capabilities: 无人遥控作业、海底检查、管道维护
+- description: 挪威KONGSBERG公司开发的深海无人遥控潜水器，用于海底工程和检查。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 深海7号
+
+- name: 深海7号
+- type: 载人潜水器
+- max_depth: 7000米
+- operator: 中国大洋矿产资源研究开发协会
+- country: 中国
+- year: 2020年
+- capabilities: 载人深潜、科学考察、资源勘探
+- description: 中国7000米级载人潜水器，用于深海科学研究和资源勘探。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### 深海探索者号
+
+- name: 深海探索者号
+- type: 载人潜水器
+- max_depth: 3000米
+- operator: 海洋探索研究所
+- country: 美国
+- year: 1991年
+- capabilities: 载人深潜、科学考察、纪录片拍摄
+- description: 美国海洋探索研究所开发的载人潜水器，用于深海科学研究和纪录片制作。
+- last_updated: 2026-06-27T16:12:27.537Z
+
+### Abyssal Sentinel
+
+- name: Abyssal Sentinel
+- type: Crewed Research Vehicle
+- max_depth: 4000
+- operator: Oceanic Geosciences Institute
+
+### Trench Walker
+
+- name: Trench Walker
+- type: Crewed Deepsea Excursion Pod
+- max_depth: 4000
+- operator: Nautilus Ventures
+
+### Pelagic Warden
+
+- name: Pelagic Warden
+- type: Autonomous Survey Drone
+- max_depth: 4000
+- operator: Abyssal Dynamics
+
+### Kraken's Eye
+
+- name: Kraken's Eye
+- type: Remotely Operated Vehicle (ROV)
+- max_depth: 4000
+- operator: Marine Archaeological Society
+
+### Midnight Descendant
+
+- name: Midnight Descendant
+- type: Crewed Research Submersible
+- max_depth: 4000
+- operator: Deep Horizon Labs
+
+### Sea-Bed Harvester
+
+- name: Sea-Bed Harvester
+- type: Autonomous Mining Vehicle
+- max_depth: 4000
+- operator: Pelagic Resources Inc.
+
+### The Observer
+
+- name: The Observer
+- type: Crewed Deep-Sea Observatory
+- max_depth: 4000
+- operator: The Cartography Guild
+
+### Goliath
+
+- name: Goliath
+- type: Heavy-Duty Work ROV
+- max_depth: 4000
+- operator: Global Marine Solutions
+
+### Nereus's Folly
+
+- name: Nereus's Folly
+- type: Crewed Exploration Vehicle
+- max_depth: 4000
+- operator: Vanguard Research Group
+
+### Pressure Point
+
+- name: Pressure Point
+- type: Autonomous Sensor Array
+- max_depth: 4000
+- operator: Planetary Oceans Network
+
+### Leviathan's Shadow
+
+- name: Leviathan's Shadow
+- type: Crewed Reconnaissance Sub
+- max_depth: 4000
+- operator: Abyssal Security Division
+
+### Coral Drone-7
+
+- name: Coral Drone-7
+- type: ROV Sample Collector
+- max_depth: 4000
+- operator: Bioprospecting Consortium
+
+### The Mariana
+
+- name: The Mariana
+- type: Crewed Deep-Sea Film Platform
+- max_depth: 4000
+- operator: Blue Planet Studios
+
+### Scavenger IV
+
+- name: Scavenger IV
+- type: Autonomous Recovery Vehicle
+- max_depth: 4000
+- operator: Salvage Operations International
+
+### The Nautilus Prime
+
+- name: The Nautilus Prime
+- type: Crewed Research Vehicle
+- max_depth: 4000
+- operator: Jules Verne Foundation
+
 ## deep_sea_resources
 
 ### Polymetallic Nodules (Manganese Nodules)
@@ -1447,6 +1672,304 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - significance: Deepest seabed mining test in history; demonstrates technical feasibility of rare earth extraction from abyssal depths
 - source: Global Fishing Watch / Benioff Ocean Science Laboratory / NOAA 2026
 
+### 瑙鲁和汤加海底矿区
+
+- name: 瑙鲁和汤加海底矿区
+- resource_type: 多金属结核
+- location: 瑙鲁和汤加专属经济区
+- depth: 深海平原
+- estimated_quantity: 价值236亿美元
+- extraction_status: 预可行性研究阶段
+- description: 2025年TMC发布的国际海底矿区预可行性报告，总价值达236亿美元，内部收益率可高达26.8%-35.6%
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### 深海多金属结核
+
+- name: 深海多金属结核
+- resource_type: 多金属结核
+- location: 国际海底区域
+- depth: 4000-6000米
+- estimated_quantity: 大量
+- extraction_status: 勘探阶段
+- description: 富含锰、镍、铜、钴等战略金属，是深海采矿的主要目标资源
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### 海底多金属硫化物
+
+- name: 海底多金属硫化物
+- resource_type: 多金属硫化物
+- location: 海底热液喷口
+- depth: 1500-3500米
+- estimated_quantity: 中等
+- extraction_status: 勘探阶段
+- description: 富含铜、锌、金、银等贵金属，形成于海底热液活动区域
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### 富钴结壳
+
+- name: 富钴结壳
+- resource_type: 富钴结壳
+- location: 海山和海脊
+- depth: 800-2500米
+- estimated_quantity: 中等
+- extraction_status: 勘探阶段
+- description: 富含钴、铂、稀土等元素，生长在海底山脉表面
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### 深海稀土资源
+
+- name: 深海稀土资源
+- resource_type: 稀土元素
+- location: 深海沉积物
+- depth: 3000-6000米
+- estimated_quantity: 待评估
+- extraction_status: 研究阶段
+- description: 深海沉积物中富含稀土元素，是未来重要战略资源
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### 海底天然气水合物
+
+- name: 海底天然气水合物
+- resource_type: 天然气水合物
+- location: 大陆边缘
+- depth: 500-3000米
+- estimated_quantity: 巨大
+- extraction_status: 试验开采阶段
+- description: 俗称可燃冰，是重要的清洁能源资源，储量巨大
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### 海底热液系统
+
+- name: 海底热液系统
+- resource_type: 热液矿物
+- location: 洋中脊
+- depth: 2000-4000米
+- estimated_quantity: 中等
+- extraction_status: 勘探阶段
+- description: 海底热液喷口形成的硫化物矿床，富含多种金属元素
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### 深海生物基因资源
+
+- name: 深海生物基因资源
+- resource_type: 生物基因资源
+- location: 深海环境
+- depth: 全深度
+- estimated_quantity: 丰富
+- extraction_status: 研究阶段
+- description: 深海生物具有独特的基因资源，在医药和工业领域有巨大应用潜力
+- last_updated: 2026-06-27T16:12:45.927Z
+
+### Abyssal Concretion Field
+
+- name: Abyssal Concretion Field
+- resource_type: Manganese Nodules
+- location: Clarion-Clipperton Zone
+- depth: 4500-5500m
+
+### Poseidon's Forge
+
+- name: Poseidon's Forge
+- resource_type: Hydrothermal Vents
+- location: Mid-Cayman Rise
+- depth: 6500m
+
+### Methane Iceberg
+
+- name: Methane Iceberg
+- resource_type: Gas Hydrates
+- location: Blake Ridge
+- depth: 2900m
+
+### Neodymium Nodule Cluster
+
+- name: Neodymium Nodule Cluster
+- resource_type: Rare Earth Elements
+- location: Central Indian Basin
+- depth: 5000m
+
+### Kairei Vent Field
+
+- name: Kairei Vent Field
+- resource_type: Hydrothermal Vents
+- location: Central Indian Ridge
+- depth: 2420m
+
+### Sulfur Chimney Garden
+
+- name: Sulfur Chimney Garden
+- resource_type: Polymetallic Sulfides
+- location: East Pacific Rise
+- depth: 2200m
+
+### Cobalt-Rich Crust
+
+- name: Cobalt-Rich Crust
+- resource_type: Cobalt-Rich Ferromanganese Crusts
+- location: Seamount Chain, Pacific
+- depth: 1200-3500m
+
+### Hades Lake
+
+- name: Hades Lake
+- resource_type: Gas Hydrates
+- location: Sea of Japan
+- depth: 800m
+
+### Europium Deposit
+
+- name: Europium Deposit
+- resource_type: Phosphorite Nodules
+- location: Namibian Margin
+- depth: 2000m
+
+### Lost City Hydrothermal Field
+
+- name: Lost City Hydrothermal Field
+- resource_type: Carbonate Chimneys
+- location: Mid-Atlantic Ridge
+- depth: 800m
+
+### Yttrium Vein
+
+- name: Yttrium Vein
+- resource_type: Rare Earth Elements
+- location: South China Sea
+- depth: 3800m
+
+### Black Smoker Complex
+
+- name: Black Smoker Complex
+- resource_type: Polymetallic Sulfides
+- location: Explorer Ridge
+- depth: 2000m
+
+### Clathrate Stability Zone
+
+- name: Clathrate Stability Zone
+- resource_type: Gas Hydrates
+- location: Gulf of Mexico
+- depth: 500-1500m
+
+### Tellurium Nodule Field
+
+- name: Tellurium Nodule Field
+- resource_type: Manganese Nodules
+- location: Peru-Chile Trench
+- depth: 4000m
+
+### Scandium Seamount
+
+- name: Scandium Seamount
+- resource_type: Rare Earth Elements
+- location: Western Pacific Seamount Province
+- depth: 1800m
+
+### Abyssal Concretion Field
+
+- name: Abyssal Concretion Field
+- resource_type: Manganese Nodules
+- location: Clarion-Clipperton Zone
+- depth: 4500-5500 meters
+
+### Lost City Hydrothermal Field
+
+- name: Lost City Hydrothermal Field
+- resource_type: Hydrothermal Vents
+- location: Mid-Atlantic Ridge
+- depth: 850-900 meters
+
+### Sagami Trough Deposit
+
+- name: Sagami Trough Deposit
+- resource_type: Gas Hydrates
+- location: Off the coast of Honshu, Japan
+- depth: 1100-2000 meters
+
+### Hatteras Abyssal Plain Veins
+
+- name: Hatteras Abyssal Plain Veins
+- resource_type: Rare Earth Elements
+- location: Northwest Atlantic Ocean
+- depth: 5200-5800 meters
+
+### Dragon's Breath Chimney Complex
+
+- name: Dragon's Breath Chimney Complex
+- resource_type: Hydrothermal Vents
+- location: Bismarck Sea
+- depth: 1950-2200 meters
+
+### Blake Plateau Accumulation
+
+- name: Blake Plateau Accumulation
+- resource_type: Gas Hydrates
+- location: Off the coast of South Carolina, USA
+- depth: 800-1500 meters
+
+### Cayman Trough Nodule Field
+
+- name: Cayman Trough Nodule Field
+- resource_type: Manganese Nodules
+- location: Cayman Trough
+- depth: 5000-6500 meters
+
+### Rio Grande Rise Deposit
+
+- name: Rio Grande Rise Deposit
+- resource_type: Rare Earth Elements
+- location: South Atlantic Ocean
+- depth: 1200-2500 meters
+
+### Guaymas Basin
+
+- name: Guaymas Basin
+- resource_type: Hydrothermal Vents
+- location: Gulf of California
+- depth: 2000-2800 meters
+
+### Nankai Trough Accumulation
+
+- name: Nankai Trough Accumulation
+- resource_type: Gas Hydrates
+- location: Off the coast of Honshu, Japan
+- depth: 1000-2200 meters
+
+### Crozet Plateau Nodule Belt
+
+- name: Crozet Plateau Nodule Belt
+- resource_type: Manganese Nodules
+- location: Indian Ocean
+- depth: 4000-5000 meters
+
+### Benguela Upwelling Zone Veins
+
+- name: Benguela Upwelling Zone Veins
+- resource_type: Rare Earth Elements
+- location: Southeast Atlantic Ocean
+- depth: 3000-4500 meters
+
+### Lau Basin
+
+- name: Lau Basin
+- resource_type: Hydrothermal Vents
+- location: Southwest Pacific Ocean
+- depth: 1900-2200 meters
+
+### Black Sea Methane Seeps
+
+- name: Black Sea Methane Seeps
+- resource_type: Gas Hydrates
+- location: Anoxic waters of the Black Sea
+- depth: 100-2000 meters
+
+### Manus Basin Polymetallic Field
+
+- name: Manus Basin Polymetallic Field
+- resource_type: Rare Earth Elements
+- location: Bismarck Sea
+- depth: 1500-3000 meters
+
 ## deep_sea_ecology
 
 ### Hydrothermal Vent Ecosystems
@@ -1960,6 +2483,86 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - year: 2026
 - description: An international team of experts discovered over two dozen (31) new marine species on a recent expedition off the coast of Brazil in the South Atlantic Ocean. The discoveries were made in just two weeks of deep-sea exploration, highlighting how much remains unknown in the deep ocean.
 - source: Schmidt Ocean Institute June 2026
+
+### 深海生态系统
+
+- name: 深海生态系统
+- ecosystem_type: 深海生态系统
+- depth: 200米以下
+- location: 全球深海区域
+- key_species: 未知
+- description: 深海是生命的秘境，跨越从极微观的细胞代谢到极宏观的地球板块运动，是未来可持续发展的重要战略空间。
+- last_updated: 2026-06-27T16:13:29.819Z
+
+### 深海热液喷口生态系统
+
+- name: 深海热液喷口生态系统
+- ecosystem_type: 化学合成生态系统
+- depth: 2000-4000米
+- location: 海底板块交界处
+- key_species: 管水母、热液虾
+- description: 依赖化学能而非太阳能的极端环境生态系统，支持独特的生物群落。
+- last_updated: 2026-06-27T16:13:29.819Z
+
+### 深海冷泉生态系统
+
+- name: 深海冷泉生态系统
+- ecosystem_type: 化学合成生态系统
+- depth: 1000-5000米
+- location: 海底甲烷渗漏区
+- key_species: 管虫、冷泉蛤
+- description: 以甲烷和硫化物为能量来源的生态系统，具有独特的生物多样性。
+- last_updated: 2026-06-27T16:13:29.819Z
+
+### 深海平原生态系统
+
+- name: 深海平原生态系统
+- ecosystem_type: 深海沉积环境
+- depth: 3000-6000米
+- location: 深海盆地
+- key_species: 深海鱼类、多毛类环节动物
+- description: 以有机碎屑为基础食物链的广阔深海区域，生物密度相对较低。
+- last_updated: 2026-06-27T16:13:29.819Z
+
+### 深海海山生态系统
+
+- name: 深海海山生态系统
+- ecosystem_type: 深海硬底环境
+- depth: 1000-4000米
+- location: 海底山脉
+- key_species: 珊瑚、海绵
+- description: 地形复杂的深海区域，支持较高的生物多样性和特有种。
+- last_updated: 2026-06-27T16:13:29.819Z
+
+### 深渊带生态系统
+
+- name: 深渊带生态系统
+- ecosystem_type: 半深海带
+- depth: 1000-4000米
+- location: 大陆坡
+- key_species: 灯笼鱼、大王乌贼
+- description: 连接浅海与深海的过渡区域，具有独特的垂直分层生物群落。
+- last_updated: 2026-06-27T16:13:29.819Z
+
+### 超深渊带生态系统
+
+- name: 超深渊带生态系统
+- ecosystem_type: 深渊带
+- depth: 4000-6000米
+- location: 海沟
+- key_species: 狮子鱼、深渊巨虫
+- description: 地球上最深的生态系统，生物具有特殊的适应机制。
+- last_updated: 2026-06-27T16:13:29.819Z
+
+### 深海红树林生态系统
+
+- name: 深海红树林生态系统
+- ecosystem_type: 深海边缘环境
+- depth: 潮下带
+- location: 热带亚热带海岸
+- key_species: 深海红树林物种
+- description: 连接陆地与海洋的特殊生态系统，具有重要的生态功能。
+- last_updated: 2026-06-27T16:13:29.819Z
 
 ## underwater_communication
 
@@ -2713,6 +3316,216 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - source: NOAA Ocean Explorer 2026
 - category: government_exploration
 
+### Pentland Firth Tidal Array
+
+- name: Pentland Firth Tidal Array
+- type: Tidal
+- depth: 40-60 meters
+- power_potential: 1.8 GW
+
+### MeyGen Tidal Stream
+
+- name: MeyGen Tidal Stream
+- type: Tidal
+- depth: 20-40 meters
+- power_potential: 0.4 GW
+
+### Alderney Race Tidal Project
+
+- name: Alderney Race Tidal Project
+- type: Tidal
+- depth: 50-80 meters
+- power_potential: 3 GW
+
+### Bay of Fundy Tidal Barrage
+
+- name: Bay of Fundy Tidal Barrage
+- type: Tidal
+- depth: 30-60 meters
+- power_potential: 2.5 GW
+
+### Siemens Pelamis Wave Farm
+
+- name: Siemens Pelamis Wave Farm
+- type: Wave
+- depth: 40-60 meters
+- power_potential: 0.3 GW
+
+### CETO Wave Energy Project
+
+- name: CETO Wave Energy Project
+- type: Wave
+- depth: 15-30 meters
+- power_potential: 0.5 GW
+
+### Agucadoura Wave Park
+
+- name: Agucadoura Wave Park
+- type: Wave
+- depth: 35-50 meters
+- power_potential: 0.3 GW
+
+### Oahu Wave Power Test Site
+
+- name: Oahu Wave Power Test Site
+- type: Wave
+- depth: 60-100 meters
+- power_potential: 0.1 GW
+
+### Hawaii Natural Energy Laboratory (NELHA)
+
+- name: Hawaii Natural Energy Laboratory (NELHA)
+- type: OTEC
+- depth: Surface to 1000m
+- power_potential: 0.25 GW
+
+### Kona Coast OTEC Plant
+
+- name: Kona Coast OTEC Plant
+- type: OTEC
+- depth: Surface to 800m
+- power_potential: 0.1 GW
+
+### La Rance Tidal Power Station
+
+- name: La Rance Tidal Power Station
+- type: Tidal
+- depth: 15-25 meters
+- power_potential: 0.24 GW
+
+### Orkney Tidal Energy Array
+
+- name: Orkney Tidal Energy Array
+- type: Tidal
+- depth: 25-45 meters
+- power_potential: 0.2 GW
+
+### Florida Current Ocean Energy Project
+
+- name: Florida Current Ocean Energy Project
+- type: Current
+- depth: 200-500 meters
+- power_potential: 20 GW
+
+### Straits of Florida Stream Power
+
+- name: Straits of Florida Stream Power
+- type: Current
+- depth: 200-600 meters
+- power_potential: 15 GW
+
+### Sundai Current Turbine Field
+
+- name: Sundai Current Turbine Field
+- type: Current
+- depth: 30-80 meters
+- power_potential: 0.5 GW
+
+### Pentland Firth Array
+
+- name: Pentland Firth Array
+- type: tidal
+- depth: 40-60m
+- power_potential: 1.8 GW
+
+### Bay of Fundy Project
+
+- name: Bay of Fundy Project
+- type: tidal
+- depth: 15-50m
+- power_potential: 2.5 GW
+
+### Aguçadoura Wave Park
+
+- name: Aguçadoura Wave Park
+- type: wave
+- depth: 30-40m
+- power_potential: 2.25 MW
+
+### Orkney Waters Array
+
+- name: Orkney Waters Array
+- type: wave
+- depth: 40-60m
+- power_potential: 4 MW
+
+### Hawaii OTEC Plant
+
+- name: Hawaii OTEC Plant
+- type: OTEC
+- depth: 1000m+
+- power_potential: 100 MW
+
+### Gulf Stream Current Array
+
+- name: Gulf Stream Current Array
+- type: current
+- depth: 200-400m
+- power_potential: 50 GW
+
+### Severn Barrage
+
+- name: Severn Barrage
+- type: tidal
+- depth: 10-30m
+- power_potential: 8.6 GW
+
+### Mutriku Wave Power Plant
+
+- name: Mutriku Wave Power Plant
+- type: wave
+- depth: 20-30m
+- power_potential: 296 kW
+
+### La Rance Tidal Power Station
+
+- name: La Rance Tidal Power Station
+- type: tidal
+- depth: 12-25m
+- power_potential: 240 MW
+
+### Kona Coast OTEC Test Facility
+
+- name: Kona Coast OTEC Test Facility
+- type: OTEC
+- depth: 1000m+
+- power_potential: 100 kW
+
+### Florida Straits Current Project
+
+- name: Florida Straits Current Project
+- type: current
+- depth: 300-500m
+- power_potential: 20 GW
+
+### Shetland Tidal Array
+
+- name: Shetland Tidal Array
+- type: tidal
+- depth: 60-100m
+- power_potential: 600 MW
+
+### Portuguese Pilot Wave Farm
+
+- name: Portuguese Pilot Wave Farm
+- type: wave
+- depth: 50-70m
+- power_potential: 2 MW
+
+### Pacific Equatorial OTEC Corridor
+
+- name: Pacific Equatorial OTEC Corridor
+- type: OTEC
+- depth: 1000m+
+- power_potential: 500 MW
+
+### East Australian Current Array
+
+- name: East Australian Current Array
+- type: current
+- depth: 1000m+
+- power_potential: 10 GW
+
 ## marine_biology
 
 ### Giant Tube Worm (Riftia pachyptila)
@@ -2864,6 +3677,39 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - discovery_year: Known historically
 - unique_features: Sea pig; walks on tube feet; forms herds of hundreds; deposit feeder; indicator of abyssal health
 - description: Sea pigs (Scotoplanes) are among the most abundant large animals on abyssal plains. They walk on elongated tube feet and form herds of hundreds of individuals. As deposit feeders, they process organic matter in deep-sea sediments and are indicators of abyssal ecosystem health.
+
+### Peter Castro & Michael E. Hubber
+
+- name: Peter Castro & Michael E. Hubber
+- species: Marine Biology
+- depth_range: Not specified
+- habitat: Marine environments
+- discovery_year: 11th Edition
+- unique_features: Textbook authors specializing in marine biology education
+- description: Authors of 'Marine Biology, The 11th Edition' published by McGraw-Hill Education (Asia), a comprehensive textbook in the field.
+- last_updated: 2026-06-27T16:13:00.939Z
+
+### James W. Nybakken
+
+- name: James W. Nybakken
+- species: Marine Biology
+- depth_range: Not specified
+- habitat: Marine environments
+- discovery_year: Reference work
+- unique_features: Major reference contributor to marine biology
+- description: Author referenced as a major contributor to marine biology literature, though specific work details not provided in the search results.
+- last_updated: 2026-06-27T16:13:00.939Z
+
+### B.S. in Marine Biology
+
+- name: B.S. in Marine Biology
+- species: Academic program
+- depth_range: Not specified
+- habitat: Educational institution
+- discovery_year: 2025-2026
+- unique_features: Degree program at CSULB
+- description: Bachelor of Science program in Marine Biology offered at California State University, Long Beach for the 2025-2026 academic year, as per the Four Year Degree Worksheet.
+- last_updated: 2026-06-27T16:13:00.939Z
 
 ## ocean_exploration
 
@@ -3179,6 +4025,94 @@ Deep sea technology knowledge base covering submersibles, resources, ecology, un
 - capabilities: AI-driven AUV/ROV cooperative operations; three cooperative modes pairing manned submersibles with AUVs and USVs; scalable deep-sea operations
 - description: 2026年水下干预机器人技术取得重大进展。AI驱动的自主水下系统实现了载人潜水器与AUV、USV的三种协同作业模式，使深海作业可规模化扩展。完全自主的水下机器人系统正从概念走向现实，尽管仍面临通信延迟、能源限制等挑战。
 - source: PatSnap Technology Landscape 2026 / ScienceDirect 2025
+
+### 深海水下技术装备
+
+- name: 深海水下技术装备
+- type: 技术装备
+- depth_rating: 未明确
+- description: 认知深海、开发深海资源以及保护海洋生态的关键技术装备
+- organization: 未明确
+- status: 发展中
+- breakthrough: 支撑深海新空间拓展，应对复杂多变环境挑战
+- last_updated: 2026-06-27T16:13:14.307Z
+
+### 深海探测技术
+
+- name: 深海探测技术
+- type: 探测技术
+- depth_rating: 未明确
+- description: 2019-2025年主要进展包括潜水器、传感器、通信、能源等领域
+- organization: 未明确
+- status: 持续发展
+- breakthrough: 未来5-10年发展趋势明确，重要性不断提升
+- last_updated: 2026-06-27T16:13:14.307Z
+
+### 潜水器技术
+
+- name: 潜水器技术
+- type: 潜水器
+- depth_rating: 未明确
+- description: 深海探测技术的重要组成部分
+- organization: 未明确
+- status: 持续进步
+- breakthrough: 深海探测关键装备之一
+- last_updated: 2026-06-27T16:13:14.307Z
+
+### 水下传感器技术
+
+- name: 水下传感器技术
+- type: 传感器
+- depth_rating: 未明确
+- description: 深海探测技术的重要组成部分
+- organization: 未明确
+- status: 持续进步
+- breakthrough: 深海环境感知关键设备
+- last_updated: 2026-06-27T16:13:14.307Z
+
+### 水下通信技术
+
+- name: 水下通信技术
+- type: 通信
+- depth_rating: 未明确
+- description: 深海探测技术的重要组成部分
+- organization: 未明确
+- status: 持续进步
+- breakthrough: 深海信息传输关键技术
+- last_updated: 2026-06-27T16:13:14.307Z
+
+### 水下能源技术
+
+- name: 水下能源技术
+- type: 能源
+- depth_rating: 未明确
+- description: 深海探测技术的重要组成部分
+- organization: 未明确
+- status: 持续进步
+- breakthrough: 深海设备运行能源保障
+- last_updated: 2026-06-27T16:13:14.307Z
+
+### 水下机器人技术
+
+- name: 水下机器人技术
+- type: 机器人
+- depth_rating: 未明确
+- description: 美国新产品的代表，新兴水下技术
+- organization: 美国
+- status: 新兴
+- breakthrough: 新产品技术，代表水下机器人最新发展
+- last_updated: 2026-06-27T16:13:14.307Z
+
+### 深海科技
+
+- name: 深海科技
+- type: 综合技术
+- depth_rating: 未明确
+- description: 2025年政府工作报告首次纳入的国家战略
+- organization: 国家层面
+- status: 战略提升
+- breakthrough: 首次纳入政府工作报告，提升至国家战略高度
+- last_updated: 2026-06-27T16:13:14.307Z
 
 ## Related Knowledge Bases
 

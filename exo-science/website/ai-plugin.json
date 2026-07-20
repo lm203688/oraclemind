@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Exo Science",
+  "name_for_model": "exoscience",
+  "description_for_human": "Exoplanet science database with 445 entities",
+  "description_for_model": "Access Exo Science knowledge base via API. Exoplanet science database with 445 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://exo.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://exo.genetech.tools/"
+}

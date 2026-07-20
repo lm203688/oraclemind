@@ -1,0 +1,41 @@
+<!-- pages/transactions/transactions.wxml -->
+<view class="tx-page">
+  <view class="section">
+    <text class="section-title">交易记录</text>
+    
+    <!-- 筛选 -->
+    <view class="filter-row">
+      <view class="filter-item {{filter === 'all' ? 'filter-item--active' : ''}}" 
+            bindtap="setFilter" data-filter="all">全部</view>
+      <view class="filter-item {{filter === 'success' ? 'filter-item--active' : ''}}" 
+            bindtap="setFilter" data-filter="success">成功</view>
+      <view class="filter-item {{filter === 'failure' ? 'filter-item--active' : ''}}" 
+            bindtap="setFilter" data-filter="failure">失败</view>
+    </view>
+  </view>
+
+  <!-- 交易列表 -->
+  <view class="tx-list">
+    <view class="tx-item card" wx:for="{{filteredTx}}" wx:key="id">
+      <view class="tx-item__left">
+        <view class="tx-item__icon {{item.status === 'success' ? 'tx-icon--success' : 'tx-icon--fail'}}">
+          {{item.status === 'success' ? '✓' : '✗'}}
+        </view>
+        <view class="tx-item__info">
+          <text class="tx-item__peer">{{item.peerName}}</text>
+          <text class="tx-item__time">{{item.time}}</text>
+        </view>
+      </view>
+      <view class="tx-item__right">
+        <text class="tx-item__amount">${{item.amount}}</text>
+        <text class="tx-item__protocol">{{item.protocol}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-state" wx:if="{{filteredTx.length === 0}}">
+    <text class="empty-state__icon">📭</text>
+    <text class="empty-state__text">暂无交易记录</text>
+  </view>
+</view>

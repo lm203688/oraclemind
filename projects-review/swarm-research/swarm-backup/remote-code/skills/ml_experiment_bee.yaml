@@ -1,0 +1,23 @@
+name: ml_experiment_bee
+display_name: ML实验蜂
+description: Docker沙箱执行ML实验，自动训练评估
+icon: 🔬
+cost_credits: 5000
+category: ml
+module: agents.ml_experiment_bee
+pipeline_step: null
+params:
+  - name: experiment_type
+    type: string
+    required: false
+    description: 实验类型
+  - name: dataset
+    type: string
+    required: false
+    description: 数据集名称
+  - name: use_gpu
+    type: bool
+    required: false
+    default: false
+    description: 是否使用GPU
+premium: true

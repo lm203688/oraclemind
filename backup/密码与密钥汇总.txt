@@ -1,0 +1,72 @@
+============================================
+  所有项目密码与密钥汇总（机密文件）
+============================================
+
+【GitHub】
+用户名: lm203688
+PAT: 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
+仓库列表:
+  - lm203688/kb-ecosystem (14站+Agent+AIShield+OracleMind)
+  - lm203688/swarmlabs (蜂群科研)
+
+【Cloudflare】
+主账户: 463102527@qq.com
+Account ID: ca2b839650877481da6289dd1af8e05b
+API Token: cfut_j3cJdlzdFbPI2DdVodTncAJuNI8CvgcV6p5D3dXU8cf6b00b
+Zone ID: af8613036b8aedcac17933ce230f30fd
+备用账户: 61960005@qq.com
+
+【Creem支付平台】
+商店: FrontierKB
+Store ID: sto_7gBcCekvUKTpsaAFyf
+API Key: creem_4yM8aDDK17QiHjWdiWgQEA
+6个产品:
+  - Daily Brief $19/月 (prod_22YhSbYonX9hiC0OppnXTn)
+  - Intelligence Pro $49/月 (prod_4EpFVQGKm5vWXChbRiFdbE)
+  - API Access $29/月 (prod_pny43rzDa0mmBaj7d9k4w)
+  - 终身会员 $99一次性 (prod_5IooNCEQoCyqp758oeVPGT)
+  - Full DB $499一次性 (prod_5OFcAcJeXzfTMkDDt6woBh)
+  - Single Domain $49一次性 (prod_44o1TOBce0Zt00X4E5ACET)
+Webhook: https://genetech-tools.pages.dev/api/credits/webhook
+
+【腾讯云ECS】
+IP: 150.158.119.19
+服务端口:
+  - 8420: ATEX/AIShield API
+  - 8450: AIShield合规工具
+  - 8460: 蜂群科研
+  - 3003: 小乌AI副手
+  - 8465: Eve总管
+ATEX deploy token: atex_deploy_2026
+Eve API Key: atex_sk_8004cd6fb4ac389e261d11d4d8e01294676018fedb67f557
+
+【小乌AI副手】
+API: http://150.158.119.19:3003/v1/chat/completions
+Key: xiaowu-internal-2026
+模型: xiaowu-agent
+
+【虎皮椒支付】
+AppID: 201906181178
+Secret: d856af3cab45ce0b0ae5d491a2ac94b0
+API: https://api.xunhupay.com/payment/do.html
+
+【Bark推送】
+URL: https://api.day.app/LxB8pdfWq9q72fguikNQoa/
+
+【SEO IndexNow】
+Key: kb3f8a2c9d7e1f4b6a5d8c3e7f9a2b4d
+
+【专利】
+申请号: 202611...（等受理通知书）
+申报网站: https://cponline.cnipa.gov.cn
+待缴费用: 3600元（申请费900+权利要求附加费150+公布费50+实质审查费2500）
+
+【用户信息】
+邮箱: 61960005@qq.com
+GitHub: lm203688
+CF账户: 463102527@qq.com
+时区: Asia/Shanghai
+
+============================================
+  文件生成时间: 2026-07-07
+============================================

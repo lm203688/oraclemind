@@ -1,0 +1,72 @@
+[
+  {
+    "name": "SS316",
+    "formula": "Fe-17Cr-12Ni-2.5Mo",
+    "corrosion_rate_mmy": 0.01,
+    "pitting_potential_V": 0.85,
+    "source": "NIST/ASM"
+  },
+  {
+    "name": "SS304",
+    "formula": "Fe-19Cr-10Ni",
+    "corrosion_rate_mmy": 0.03,
+    "pitting_potential_V": 0.65,
+    "source": "NIST/ASM"
+  },
+  {
+    "name": "Carbon Steel",
+    "formula": "Fe-0.2C",
+    "corrosion_rate_mmy": 0.15,
+    "pitting_potential_V": 0.2,
+    "source": "NIST"
+  },
+  {
+    "name": "Aluminum 6061",
+    "formula": "Al-1Mg-0.6Si",
+    "corrosion_rate_mmy": 0.005,
+    "pitting_potential_V": 0.5,
+    "source": "ASM"
+  },
+  {
+    "name": "Titanium Grade 2",
+    "formula": "Ti",
+    "corrosion_rate_mmy": 0.001,
+    "pitting_potential_V": 1.2,
+    "source": "ASM"
+  },
+  {
+    "name": "Copper",
+    "formula": "Cu",
+    "corrosion_rate_mmy": 0.02,
+    "pitting_potential_V": 0.3,
+    "source": "NIST"
+  },
+  {
+    "name": "Hastelloy C-276",
+    "formula": "Ni-16Cr-16Mo-5Fe",
+    "corrosion_rate_mmy": 0.003,
+    "pitting_potential_V": 1.0,
+    "source": "ASM"
+  },
+  {
+    "name": "Duplex 2205",
+    "formula": "Fe-22Cr-5.5Ni-3Mo",
+    "corrosion_rate_mmy": 0.005,
+    "pitting_potential_V": 0.9,
+    "source": "ASM"
+  },
+  {
+    "name": "Nickel 200",
+    "formula": "Ni",
+    "corrosion_rate_mmy": 0.01,
+    "pitting_potential_V": 0.7,
+    "source": "ASM"
+  },
+  {
+    "name": "Monel 400",
+    "formula": "Ni-30Cu",
+    "corrosion_rate_mmy": 0.008,
+    "pitting_potential_V": 0.6,
+    "source": "ASM"
+  }
+]

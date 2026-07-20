@@ -1,0 +1,9 @@
+{
+  "name": "Life Science",
+  "short_name": "Life Science",
+  "description": "Life science database with 622 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

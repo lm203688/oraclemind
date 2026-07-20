@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>毒性评估 | 蜂群科研</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a1a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6}
+.nav{background:#111128;padding:15px 30px;display:flex;gap:25px;align-items:center;border-bottom:1px solid #1a1a3e;position:sticky;top:0;z-index:100}
+.nav a{color:#aaa;text-decoration:none;font-size:0.9em}
+.nav a:hover{color:#00d4ff}
+.nav .logo{font-size:1.2em;font-weight:bold;color:#00d4ff;margin-right:auto}
+.container{max-width:1100px;margin:0 auto;padding:30px 20px}
+h1{color:#ff4444;font-size:2em;margin-bottom:10px}
+.subtitle{color:#888;margin-bottom:30px}
+.input-section{background:#111128;padding:25px;border-radius:12px;margin-bottom:30px;border:1px solid #1a1a3e}
+.input-section input{width:100%;padding:12px;background:#0a0a1a;border:1px solid #333;color:#fff;border-radius:6px;font-family:monospace;font-size:1em}
+.input-section button{margin-top:12px;padding:12px 30px;background:#ff4444;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:bold;font-size:1em}
+.quick-mols{margin-top:10px}
+.quick-mols button{padding:4px 10px;background:#333;color:#aaa;border:none;border-radius:3px;cursor:pointer;margin-right:5px;font-size:0.85em}
+.results{display:none}
+.risk-card{padding:25px;border-radius:12px;margin-bottom:20px;text-align:center}
+.risk-low{background:rgba(46,139,87,0.15);border:2px solid #2E8B57}
+.risk-medium{background:rgba(255,165,0,0.15);border:2px solid #FFA500}
+.risk-high{background:rgba(255,68,68,0.15);border:2px solid #ff4444}
+.risk-critical{background:rgba(255,0,0,0.2);border:2px solid #ff0000}
+.risk-level{font-size:2em;font-weight:bold;margin-bottom:5px}
+.risk-desc{color:#aaa;margin-bottom:10px}
+.risk-recommendation{padding:10px;background:rgba(0,0,0,0.3);border-radius:6px;margin-top:10px;font-size:0.9em}
+.section{background:#111128;padding:20px;border-radius:12px;margin-bottom:20px;border:1px solid #1a1a3e}
+.section h3{color:#00d4ff;margin-bottom:15px}
+.tox-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.tox-item{background:#0a0a1a;padding:12px;border-radius:8px;border-left:3px solid #333}
+.tox-item.toxic{border-left-color:#ff4444;background:rgba(255,68,68,0.05)}
+.tox-item.safe{border-left-color:#2E8B57}
+.tox-name{font-size:0.9em;color:#aaa;margin-bottom:4px}
+.tox-result{font-size:1.1em;font-weight:bold}
+.tox-conf{font-size:0.8em;color:#666}
+.category{margin-bottom:15px}
+.category-title{color:#ff4444;font-size:0.95em;margin-bottom:8px}
+</style>
+</head>
+<body>
+<nav class="nav">
+<a class="logo" href="index.html">蜂群科研</a>
+<a href="index.html">首页</a>
+<a href="workflow.html">全流程预测</a>
+<a href="toxicity.html" style="color:#ff4444">毒性评估</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="pricing.html">定价</a>
+<a href="docs.html">文档</a>
+</nav>
+<div class="container">
+<h1>🧪 毒性评估</h1>
+<p class="subtitle">27个毒性预测模型——12终点二分类(Tox21) + 15终点回归(ToxCast) + 风险等级评估</p>
+
+<div class="input-section">
+<input type="text" id="smiles" value="CC(=O)Oc1ccccc1C(=O)O" placeholder="输入分子SMILES，如 CC(=O)Oc1ccccc1C(=O)O (阿司匹林)">
+<button onclick="assess()">🧪 开始毒性评估</button>
+<div class="quick-mols">
+<button onclick="document.getElementById('smiles').value='CC(=O)Oc1ccccc1C(=O)O'">阿司匹林</button>
+<button onclick="document.getElementById('smiles').value='CN1C=NC2=C1C(=O)N(C(=O)N2C)C'">咖啡因</button>
+<button onclick="document.getElementById('smiles').value='CCO'">乙醇</button>
+<button onclick="document.getElementById('smiles').value='c1ccccc1'">苯</button>
+<button onclick="document.getElementById('smiles').value='O=C(O)c1ccccc1O'">水杨酸</button>
+</div>
+</div>
+
+<div id="results" class="results">
+<div id="riskSection"></div>
+<div id="tox21Section" class="section"></div>
+<div id="toxcastSection" class="section"></div>
+<div id="categorySection" class="section"></div>
+</div>
+</div>
+
+<script>
+function assess() {
+    const smi = document.getElementById('smiles').value;
+    const key = 'gtk_internal_eve_2026';
+    document.getElementById('results').classList.add('show');
+    document.getElementById('riskSection').innerHTML = '<div style="text-align:center;color:#00d4ff;">⏳ 评估中...</div>';
+    
+    fetch('/api/v1/toxicity/full_assessment?smiles=' + encodeURIComponent(smi), {
+        headers: {'Authorization': 'Bearer ' + key}
+    })
+    .then(r => r.json())
+    .then(d => {
+        if (d.error) {
+            document.getElementById('riskSection').innerHTML = '<div style="color:#f00;">❌ ' + d.error + '</div>';
+            return;
+        }
+        
+        const risk = d.risk_assessment;
+        const riskClass = 'risk-' + risk.risk_level;
+        const riskColor = {low:'#2E8B57', medium:'#FFA500', high:'#ff4444', critical:'#ff0000'}[risk.risk_level];
+        
+        document.getElementById('riskSection').innerHTML = `
+            <div class="risk-card ${riskClass}">
+                <div class="risk-level" style="color:${riskColor}">${risk.risk_level.toUpperCase()}</div>
+                <div class="risk-desc">${risk.risk_description}</div>
+                <div style="margin-top:10px;">毒性阳性: <strong style="color:${riskColor};font-size:1.3em;">${risk.toxic_count}</strong> / ${risk.total_endpoints} 终点</div>
+                <div class="risk-recommendation">💡 ${d.recommendation}</div>
+            </div>
+        `;
+        
+        // Tox21分类
+        const tox21 = d.tox21_classification;
+        let tox21Html = '<h3>📋 Tox21分类 (12终点二分类)</h3><div class="tox-grid">';
+        for (const [ep, r] of Object.entries(tox21)) {
+            tox21Html += `<div class="tox-item ${r.toxic ? 'toxic' : 'safe'}">
+                <div class="tox-name">${ep}</div>
+                <div class="tox-result" style="color:${r.toxic ? '#ff4444' : '#2E8B57'}">${r.toxic ? '⚠️ 阳性' : '✓ 阴性'}</div>
+                <div class="tox-conf">置信度: ${(r.confidence*100).toFixed(1)}%</div>
+            </div>`;
+        }
+        tox21Html += '</div>';
+        document.getElementById('tox21Section').innerHTML = tox21Html;
+        
+        // ToxCast回归
+        const toxcast = d.toxcast_regression;
+        let tcHtml = '<h3>📊 ToxCast回归 (15终点连续值)</h3><div class="tox-grid">';
+        for (const [ep, val] of Object.entries(toxcast)) {
+            const isHigh = val > 0.1;
+            tcHtml += `<div class="tox-item ${isHigh ? 'toxic' : 'safe'}">
+                <div class="tox-name">${ep}</div>
+                <div class="tox-result" style="color:${isHigh ? '#ff4444' : '#2E8B57'}">${val.toFixed(4)}</div>
+                <div class="tox-conf">${isHigh ? '较高活性' : '低活性'}</div>
+            </div>`;
+        }
+        tcHtml += '</div>';
+        document.getElementById('toxcastSection').innerHTML = tcHtml;
+        
+        // 分类
+        const cats = d.tox_categories;
+        let catHtml = '<h3>🔬 毒性类别分组</h3>';
+        for (const [catName, catData] of Object.entries(cats)) {
+            const toxicInCat = Object.values(catData.results).filter(r => r.toxic).length;
+            catHtml += `<div class="category">
+                <div class="category-title">${catName} ${toxicInCat > 0 ? '(' + toxicInCat + '阳性)' : '(全部安全)'}</div>
+            </div>`;
+        }
+        document.getElementById('categorySection').innerHTML = catHtml;
+    });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "信任仪表盘",
+  "navigationBarBackgroundColor": "#0a0a0a",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

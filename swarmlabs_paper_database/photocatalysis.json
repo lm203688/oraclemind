@@ -1,0 +1,57 @@
+[
+  {
+    "name": "TiO2-P25",
+    "formula": "TiO₂",
+    "bandgap_eV": 3.2,
+    "quantum_efficiency": 0.4,
+    "surface_area_m2g": 50,
+    "h2_evolution_mmol_h": 0.35,
+    "crystal": "锐钛矿+金红石",
+    "reference": "MDPI Molecules 26(6) 1687 (2021)",
+    "doi": "10.3390/molecules26061687"
+  },
+  {
+    "name": "N-TiO2/Au/MgO",
+    "formula": "N-TiO₂·Au·MgO",
+    "bandgap_eV": 2.8,
+    "quantum_efficiency": 0.62,
+    "surface_area_m2g": 85,
+    "h2_evolution_mmol_h": 9.5,
+    "crystal": "锐钛矿",
+    "reference": "Nature Comm 10 4627 (2019)",
+    "doi": "10.1038/s41467-019-12385-1"
+  },
+  {
+    "name": "CdS/TiO2",
+    "formula": "CdS·TiO₂",
+    "bandgap_eV": 2.4,
+    "quantum_efficiency": 0.55,
+    "surface_area_m2g": 45,
+    "h2_evolution_mmol_h": 8.7,
+    "crystal": "纤锌矿/锐钛矿",
+    "reference": "Ceramics International 2021",
+    "doi": "10.1016/j.ceramint.2021.12.033"
+  },
+  {
+    "name": "Pt-TiO2",
+    "formula": "Pt·TiO₂",
+    "bandgap_eV": 3.2,
+    "quantum_efficiency": 0.45,
+    "surface_area_m2g": 60,
+    "h2_evolution_mmol_h": 5.2,
+    "crystal": "锐钛矿",
+    "reference": "Fuel 335 (2023) 127028",
+    "doi": "10.1016/j.fuel.2023.127028"
+  },
+  {
+    "name": "g-C3N4/TiO2",
+    "formula": "C₃N₄·TiO₂",
+    "bandgap_eV": 2.7,
+    "quantum_efficiency": 0.38,
+    "surface_area_m2g": 70,
+    "h2_evolution_mmol_h": 3.1,
+    "crystal": "石墨相/锐钛矿",
+    "reference": "MDPI Molecules 30(5) 1127 (2025)",
+    "doi": "10.3390/molecules30051127"
+  }
+]

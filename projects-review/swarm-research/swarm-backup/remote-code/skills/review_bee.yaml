@@ -1,0 +1,14 @@
+name: review_bee
+display_name: 评审蜂
+description: 跨模型同行评审，3位审稿人多视角评审+综合评审报告，支持BYOK跨模型
+icon: 🔍
+cost_credits: 1000
+category: review
+module: agents.review_bee
+pipeline_step: null
+params: []
+premium: true
+features:
+  - 角色模拟模式（默认）：方法论/创新性/实用性3视角评审
+  - 跨模型模式（BYOK）：用户配置多个模型真正跨模型评审
+  - 综合评审报告：共识优点/共识问题/分歧点/修改优先级

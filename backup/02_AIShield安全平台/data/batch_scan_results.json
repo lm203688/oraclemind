@@ -1,0 +1,74 @@
+[
+  {
+    "name": "mcp-official-servers",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "score": 76,
+    "risk": "medium",
+    "badge": "silver",
+    "owasp": 3,
+    "findings": 14
+  },
+  {
+    "name": "fastmcp",
+    "url": "https://github.com/punkpeye/fastmcp",
+    "score": 35,
+    "risk": "critical",
+    "badge": "none",
+    "owasp": 4,
+    "findings": 51
+  },
+  {
+    "name": "fastmcp-jlowin",
+    "url": "https://github.com/jlowin/fastmcp",
+    "score": 81,
+    "risk": "medium",
+    "badge": "silver",
+    "owasp": 1,
+    "findings": 11
+  },
+  {
+    "name": "anthropic-quickstarts",
+    "url": "https://github.com/wong2/anthropic-quickstarts",
+    "score": 72,
+    "risk": "medium",
+    "badge": "silver",
+    "owasp": 0,
+    "findings": 0
+  },
+  {
+    "name": "mcp-playwright",
+    "url": "https://github.com/executeautomation/mcp-playwright",
+    "score": 98,
+    "risk": "safe",
+    "badge": "gold",
+    "owasp": 1,
+    "findings": 3
+  },
+  {
+    "name": "browsermcp",
+    "url": "https://github.com/browsermcp/browsermcp",
+    "score": 72,
+    "risk": "medium",
+    "badge": "silver",
+    "owasp": 0,
+    "findings": 0
+  },
+  {
+    "name": "upsonic-server",
+    "url": "https://github.com/Upsonic/Server",
+    "score": 72,
+    "risk": "medium",
+    "badge": "silver",
+    "owasp": 0,
+    "findings": 0
+  },
+  {
+    "name": "oracle-mcp",
+    "url": "https://github.com/Steveone/Oracle-MCP-Server",
+    "score": 72,
+    "risk": "medium",
+    "badge": "silver",
+    "owasp": 0,
+    "findings": 0
+  }
+]

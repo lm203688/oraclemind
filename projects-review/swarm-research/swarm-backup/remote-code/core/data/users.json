@@ -1,0 +1,75 @@
+{
+  "test_user": {
+    "email": "test@test.com",
+    "created": "2026-06-18 19:41:09",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  },
+  "test_li": {
+    "email": "li@test.com",
+    "created": "2026-06-18 19:43:07",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  },
+  "test_full": {
+    "email": "t@t.com",
+    "created": "2026-06-18 20:00:27",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  },
+  "debug_user2": {
+    "email": "",
+    "created": "2026-06-19 09:14:40",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": "",
+    "byok_eligible": true
+  },
+  "user_alice": {
+    "email": "alice@test.com",
+    "created": "2026-06-20 17:01:41",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  },
+  "user_bob": {
+    "email": "bob@test.com",
+    "created": "2026-06-20 17:01:41",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  },
+  "test_admet": {
+    "email": "test@test.com",
+    "created": "2026-06-20 23:36:59",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  },
+  "test_deploy": {
+    "email": "",
+    "created": "2026-06-29 12:10:53",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  },
+  "test_deploy2": {
+    "email": "",
+    "created": "2026-06-29 12:12:20",
+    "byok_enabled": false,
+    "llm_url": "",
+    "llm_key": "",
+    "llm_model": ""
+  }
+}

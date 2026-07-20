@@ -1,0 +1,9 @@
+{
+  "name": "TCM Tools",
+  "short_name": "TCM Tools",
+  "description": "Traditional Chinese Medicine knowledge base with 427 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

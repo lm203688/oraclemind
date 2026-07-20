@@ -1,0 +1,16 @@
+genetech-tools/
+tcm-tools/
+agent-ecosystem/
+robot-parts/
+quantum-computing/
+brain-science/
+nuclear-energy/
+exo-science/
+alien-minerals/
+deep-sea-tech/
+new-energy/
+life-science/
+biocomputing/
+bionic-ai/
+kb-workflow/
+kb-ecosystem-readme.md

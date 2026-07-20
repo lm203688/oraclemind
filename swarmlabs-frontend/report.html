@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>实验报告生成器 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:20px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:13px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.page-header{padding:48px 0 32px}
+.page-header h1{font-size:36px;font-weight:800;margin-bottom:8px}
+.page-header p{color:var(--muted);font-size:16px}
+.input-panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:24px}
+.input-group{margin-bottom:16px}
+.input-label{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:6px;display:block}
+.input-field{width:100%;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px;font-family:monospace}
+.input-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{padding:12px 32px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer}
+.report-output{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:24px;display:none}
+.report-section{margin-bottom:20px}
+.report-section h3{font-size:16px;font-weight:700;margin-bottom:8px;color:var(--accent)}
+.report-section p,.report-section li{font-size:14px;color:var(--text);margin-bottom:4px}
+.report-section ul{margin-left:20px}
+.report-meta{font-size:12px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px}
+.citation-box{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px;font-family:monospace;font-size:13px;margin-top:8px;white-space:pre-wrap}
+.copy-btn{font-size:12px;padding:4px 10px;background:var(--accent);color:#fff;border:none;border-radius:4px;cursor:pointer;margin-top:8px}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html">分子动力学</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="report.html" class="active">报告生成</a>
+<a href="docs.html">API文档</a>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="page-header">
+<h1>📄 实验报告生成器</h1>
+<p>计算完成后自动生成科研报告——含方法/参数/结果/引用</p>
+</div>
+
+<div class="input-panel">
+<div class="input-row">
+<div class="input-group">
+<label class="input-label">分子SMILES</label>
+<input class="input-field" id="smiles" value="CCO" placeholder="如 CCO">
+</div>
+<div class="input-group">
+<label class="input-label">计算类型</label>
+<select class="input-field" id="calc-type">
+<option value="dft">DFT量子化学计算</option>
+<option value="md">分子动力学模拟</option>
+<option value="ml">ML预测</option>
+<option value="fusion">融合预测</option>
+</select>
+</div>
+</div>
+<button class="btn" onclick="generateReport()">📄 生成报告</button>
+</div>
+
+<div class="report-output" id="report-output">
+<div class="report-section">
+<h3>1. 实验概述</h3>
+<p id="r-overview"></p>
+</div>
+<div class="report-section">
+<h3>2. 计算方法</h3>
+<p id="r-method"></p>
+</div>
+<div class="report-section">
+<h3>3. 结果</h3>
+<ul id="r-results"></ul>
+</div>
+<div class="report-section">
+<h3>4. 不确定性</h3>
+<p id="r-uncertainty"></p>
+</div>
+<div class="report-section">
+<h3>5. 引用</h3>
+<div class="citation-box" id="r-citation"></div>
+<button class="copy-btn" onclick="copyCitation()">复制BibTeX</button>
+</div>
+<div class="report-meta" id="r-meta"></div>
+</div>
+
+</div>
+<footer class="footer"><div class="container"><p>蜂群科研 — 实验报告生成器</p></div></footer>
+<script>
+const API='http://150.158.119.19:8461';
+async function generateReport(){
+  const smi=document.getElementById('smiles').value.trim();
+  const type=document.getElementById('calc-type').value;
+  if(!smi)return;
+  
+  document.getElementById('report-output').style.display='block';
+  document.getElementById('r-overview').textContent='生成中...';
+  
+  try{
+    let apiUrl;
+    if(type==='dft') apiUrl=`${API}/api/v1/quantum_calc/${smi}`;
+    else if(type==='ml') apiUrl=`${API}/api/v1/ml/predict?smiles=${smi}`;
+    else if(type==='fusion') apiUrl=`${API}/api/v1/fusion/predict?smiles=${smi}`;
+    else apiUrl=`${API}/api/v1/md/optimize`;
+    
+    let data;
+    if(type==='md'){
+      const resp=await fetch(apiUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({smiles:smi})});
+      data=await resp.json();
+    } else {
+      const resp=await fetch(apiUrl);
+      data=await resp.json();
+    }
+    
+    // 概述
+    document.getElementById('r-overview').textContent=`对分子${smi}进行${getCalcName(type)}计算。`;
+    
+    // 方法
+    let method='';
+    if(type==='dft') method=`${data.method||'B3LYP/6-31G'} | 引擎: PySCF 2.13.1 | 基组: 6-31G`;
+    else if(type==='ml') method=`${data.model_info?.type||'GradientBoostingRegressor'} | 训练: ${data.model_info?.training_data||'96分子NIST'} | 验证: ${data.model_info?.validation||'5-fold CV'}`;
+    else if(type==='fusion') method='融合预测: ML(快速)+UQ(置信)+DFT(精确)三级联动';
+    else method='MMFF94力场 + Langevin恒温器';
+    document.getElementById('r-method').textContent=method;
+    
+    // 结果
+    let resultsHtml='';
+    if(type==='dft'){
+      resultsHtml=`<li>总能量: ${data.total_energy_hartree} Hartree (${data.total_energy_eV} eV)</li>`;
+      resultsHtml+=`<li>偶极矩: ${data.dipole_moment_debye} Debye</li>`;
+      resultsHtml+=`<li>HOMO: ${data.homo_eV} eV | LUMO: ${data.lumo_eV} eV</li>`;
+      resultsHtml+=`<li>带隙: ${data.band_gap_eV} eV</li>`;
+    } else if(type==='ml'){
+      const p=data.ml_predictions||{};
+      if(p.dipole_debye) resultsHtml+=`<li>偶极矩: ${p.dipole_debye} Debye</li>`;
+      if(p.boiling_point_c) resultsHtml+=`<li>沸点: ${p.boiling_point_c}°C</li>`;
+      if(p.heat_of_formation_kj_mol) resultsHtml+=`<li>生成焓: ${p.heat_of_formation_kj_mol} kJ/mol</li>`;
+    } else if(type==='fusion'){
+      for(let[k,v] of Object.entries(data.predictions||{})){
+        resultsHtml+=`<li>${k}: ${v.ml_prediction}±${v.std} (置信度: ${v.confidence})</li>`;
+      }
+    }
+    document.getElementById('r-results').innerHTML=resultsHtml;
+    
+    // 不确定性
+    let unc='';
+    if(type==='ml'){
+      const loo=data.model_info?.loo_mae;
+      if(loo) unc=`LeaveOneOut MAE: 偶极矩${loo.dipole||'?'} | 沸点${loo.boiling_point||'?'} | 生成焓${loo.heat_of_formation||'?'}`;
+    } else if(type==='fusion'){
+      unc='融合预测含不确定性量化(UQ),低置信建议DFT验证';
+    } else {
+      unc='DFT计算精度<1%(NIST验证)';
+    }
+    document.getElementById('r-uncertainty').textContent=unc;
+    
+    // 引用
+    const citResp=await fetch(`${API}/api/v1/workflow/citation?smiles=${smi}&calculation=${type}`);
+    const citData=await citResp.json();
+    document.getElementById('r-citation').textContent=citData.citations?.bibtex||'';
+    
+    // 元数据
+    document.getElementById('r-meta').textContent=`生成时间: ${new Date().toLocaleString('zh-CN')} | 平台: SwarmLabs | URL: https://swarmlabs.pages.dev`;
+    
+  }catch(e){
+    document.getElementById('r-overview').textContent='生成失败: '+e.message;
+  }
+}
+function getCalcName(t){return {dft:'DFT量子化学',md:'分子动力学',ml:'ML预测',fusion:'融合预测'}[t]||t;}
+function copyCitation(){
+  const text=document.getElementById('r-citation').textContent;
+  navigator.clipboard.writeText(text);
+  alert('BibTeX已复制');
+}
+</script>
+</body>
+</html>

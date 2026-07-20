@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "New Energy",
+  "name_for_model": "newenergy",
+  "description_for_human": "New energy knowledge base with 613 entities",
+  "description_for_model": "Access New Energy knowledge base via API. New energy knowledge base with 613 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://energy.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://energy.genetech.tools/"
+}

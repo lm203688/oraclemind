@@ -1,0 +1,9 @@
+{
+  "name": "Alien Minerals",
+  "short_name": "Alien Minera",
+  "description": "Mineral database with 392 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

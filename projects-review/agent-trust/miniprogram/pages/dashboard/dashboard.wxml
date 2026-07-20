@@ -1,0 +1,107 @@
+<!-- pages/dashboard/dashboard.wxml -->
+<view class="dashboard fade-in">
+  <!-- 顶部欢迎 -->
+  <view class="welcome">
+    <text class="welcome__greeting">下午好 👋</text>
+    <text class="welcome__name">{{userName || 'Agent 开发者'}}</text>
+  </view>
+
+  <!-- 信任分卡片（核心视觉） -->
+  <view class="score-card card">
+    <view class="score-card__header">
+      <text class="score-card__title">信任总分</text>
+      <view class="badge badge--accent">{{confidenceTier}}</view>
+    </view>
+    
+    <view class="trust-score">
+      <text class="trust-score__value">{{overallScore}}</text>
+      <view class="trust-score__bar">
+        <view class="trust-score__bar-fill" style="width: {{overallScore}}%"></view>
+      </view>
+      <text class="trust-score__label">基于 {{transactionCount}} 笔交易</text>
+    </view>
+
+    <view class="score-card__footer">
+      <view class="score-meta">
+        <text class="score-meta__label">排名</text>
+        <text class="score-meta__value">TOP {{rankPercent}}%</text>
+      </view>
+      <view class="score-meta">
+        <text class="score-meta__label">本月变化</text>
+        <text class="score-meta__value {{scoreChange >= 0 ? 'text--success' : 'text--danger'}}">
+          {{scoreChange >= 0 ? '+' : ''}}{{scoreChange}}
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 四维评分 -->
+  <view class="section">
+    <text class="section-title">信任维度</text>
+    <view class="dimensions">
+      <view class="dimension-item card" wx:for="{{dimensions}}" wx:key="key">
+        <view class="dimension-item__header">
+          <text class="dimension-item__name">{{item.name}}</text>
+          <text class="dimension-item__score">{{item.score}}</text>
+        </view>
+        <view class="dimension-item__bar">
+          <view class="dimension-item__bar-fill" style="width: {{item.score}}%; background-color: {{item.color}}"></view>
+        </view>
+        <text class="dimension-item__desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 最近交易 -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">最近交易</text>
+      <text class="section-link" bindtap="goToTransactions">查看全部 →</text>
+    </view>
+    
+    <view class="tx-list">
+      <view class="tx-item card" wx:for="{{recentTx}}" wx:key="id">
+        <view class="tx-item__left">
+          <view class="tx-item__icon {{item.status === 'success' ? 'tx-icon--success' : 'tx-icon--fail'}}">
+            {{item.status === 'success' ? '✓' : '✗'}}
+          </view>
+          <view class="tx-item__info">
+            <text class="tx-item__peer">{{item.peerName}}</text>
+            <text class="tx-item__time">{{item.time}}</text>
+          </view>
+        </view>
+        <view class="tx-item__right">
+          <text class="tx-item__amount">${{item.amount}}</text>
+          <text class="tx-item__protocol">{{item.protocol}}</text>
+        </view>
+      </view>
+      
+      <view class="empty-state" wx:if="{{recentTx.length === 0}}">
+        <text class="empty-state__icon">📭</text>
+        <text class="empty-state__text">暂无交易记录</text>
+        <text class="empty-state__hint">接入 agent-trust 协议后自动记录</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- AI 洞察（差异化功能） -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">🤖 AI 洞察</text>
+      <view class="badge badge--accent">Pro</view>
+    </view>
+    
+    <view class="insight-card card" wx:if="{{aiInsight}}">
+      <text class="insight-card__text">{{aiInsight}}</text>
+      <view class="insight-card__footer">
+        <text class="insight-card__source">由 Agnes AI 分析</text>
+        <text class="insight-card__time">{{insightTime}}</text>
+      </view>
+    </view>
+    
+    <view class="empty-state" wx:else>
+      <text class="empty-state__icon">🧠</text>
+      <text class="empty-state__text">完成 5 笔交易后解锁 AI 洞察</text>
+    </view>
+  </view>
+</view>

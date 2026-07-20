@@ -1,0 +1,970 @@
+{
+  "test_user": {
+    "balance": 100,
+    "total_purchased": 100,
+    "total_spent": 10,
+    "daily_free": 10,
+    "daily_reset": "2026-06-18",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 100,
+        "time": "2026-06-18 19:41:09",
+        "desc": "注册赠送"
+      },
+      {
+        "type": "spend",
+        "amount": -10,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-19 08:27:07",
+        "desc": "消耗10积分(chemistry_bee)"
+      }
+    ],
+    "modules": [],
+    "review_models": [
+      {
+        "key": "sk-test",
+        "model": "gpt-4",
+        "name": "GPT-4",
+        "url": "https://api.openai.com/v1/chat/completions"
+      },
+      {
+        "key": "sk-test",
+        "model": "claude-3",
+        "name": "Claude",
+        "url": "https://api.anthropic.com/v1/chat/completions"
+      },
+      {
+        "key": "test",
+        "model": "gemini-pro",
+        "name": "Gemini",
+        "url": "https://api.google.com/v1/chat/completions"
+      }
+    ],
+    "review_mode": "cross_model"
+  },
+  "test_li": {
+    "balance": 100,
+    "total_purchased": 100,
+    "total_spent": 16,
+    "daily_free": 4,
+    "daily_reset": "2026-06-18",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 100,
+        "time": "2026-06-18 19:43:07",
+        "desc": "注册赠送"
+      },
+      {
+        "type": "spend",
+        "amount": -5,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-18 19:43:07",
+        "desc": "消耗5积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -3,
+        "task": "hypothesis_bee",
+        "byok": null,
+        "time": "2026-06-18 19:43:19",
+        "desc": "消耗3积分(hypothesis_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -8,
+        "task": "writing_bee",
+        "byok": null,
+        "time": "2026-06-18 19:43:32",
+        "desc": "消耗8积分(writing_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "test_full": {
+    "balance": 14,
+    "total_purchased": 100,
+    "total_spent": 106,
+    "daily_free": 0,
+    "daily_reset": "2026-06-18",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 100,
+        "time": "2026-06-18 20:00:27",
+        "desc": "注册赠送"
+      },
+      {
+        "type": "spend",
+        "amount": -3,
+        "task": "hypothesis_bee",
+        "byok": null,
+        "time": "2026-06-18 20:00:27",
+        "desc": "消耗3积分(hypothesis_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -5,
+        "task": "analysis_bee",
+        "byok": null,
+        "time": "2026-06-18 20:00:46",
+        "desc": "消耗5积分(analysis_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -10,
+        "task": "review_bee",
+        "byok": null,
+        "time": "2026-06-18 20:01:04",
+        "desc": "消耗10积分(review_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -10,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-18 20:02:18",
+        "desc": "消耗10积分(chemistry_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -10,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-18 20:03:00",
+        "desc": "消耗10积分(chemistry_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -50,
+        "task": "ml_experiment_bee",
+        "byok": null,
+        "time": "2026-06-18 20:03:03",
+        "desc": "消耗50积分(ml_experiment_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -10,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-18 20:03:39",
+        "desc": "消耗10积分(chemistry_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -8,
+        "task": "writing_bee",
+        "byok": null,
+        "time": "2026-06-18 20:03:50",
+        "desc": "消耗8积分(writing_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "e2e_test": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 5,
+    "daily_free": 15,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -5,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-19 08:27:28",
+        "desc": "消耗5积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "e2e_test2": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 5,
+    "daily_free": 15,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -5,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-19 08:27:45",
+        "desc": "消耗5积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "e2e_test3": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 5,
+    "daily_free": 15,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -5,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-19 08:28:03",
+        "desc": "消耗5积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "e2e_test4": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 5,
+    "daily_free": 15,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -5,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-19 08:28:31",
+        "desc": "消耗5积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "debug_user2": {
+    "balance": 2340,
+    "total_purchased": 2400,
+    "total_spent": 80,
+    "daily_free": 0,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 100,
+        "time": "2026-06-19 09:14:40",
+        "desc": "注册赠送"
+      },
+      {
+        "type": "purchase",
+        "amount": 2300,
+        "pack": "research",
+        "price": 69,
+        "time": "2026-06-19 09:14:40",
+        "desc": "购买研究包(2000+300赠送=2300积分)",
+        "expires": "2027-06-19"
+      },
+      {
+        "type": "spend",
+        "amount": -80,
+        "task": "full_research",
+        "byok": null,
+        "time": "2026-06-19 09:14:46",
+        "desc": "消耗80积分(full_research)"
+      }
+    ],
+    "modules": []
+  },
+  "copilot_e2e": {
+    "balance": 2240,
+    "total_purchased": 2300,
+    "total_spent": 80,
+    "daily_free": 0,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "purchase",
+        "amount": 2300,
+        "pack": "research",
+        "price": 69,
+        "time": "2026-06-19 09:16:26",
+        "desc": "购买研究包(2000+300赠送=2300积分)",
+        "expires": "2027-06-19"
+      },
+      {
+        "type": "spend",
+        "amount": -80,
+        "task": "full_research",
+        "byok": null,
+        "time": "2026-06-19 09:16:26",
+        "desc": "消耗80积分(full_research)"
+      }
+    ],
+    "modules": []
+  },
+  "skill_test": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 10,
+    "daily_free": 10,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -10,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-19 09:21:38",
+        "desc": "消耗10积分(chemistry_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "final_test": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 10,
+    "daily_free": 10,
+    "daily_reset": "2026-06-19",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -10,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-19 09:22:14",
+        "desc": "消耗10积分(chemistry_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "user_alice": {
+    "balance": 13300,
+    "total_purchased": 10000,
+    "total_spent": 0,
+    "daily_free": 2000,
+    "daily_reset": "2026-06-20",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 10000,
+        "time": "2026-06-20 17:01:41",
+        "desc": "注册赠送"
+      },
+      {
+        "type": "earn",
+        "amount": 1500,
+        "time": "2026-06-20 17:01:53",
+        "desc": "验证结果入库奖励(5条)"
+      },
+      {
+        "type": "earn",
+        "amount": 300,
+        "time": "2026-06-20 17:01:53",
+        "desc": "验证结果被引用(+300)",
+        "kb_id": "kb_1781946113089",
+        "cited_by": "user_bob"
+      },
+      {
+        "type": "earn",
+        "amount": 300,
+        "time": "2026-06-20 17:01:53",
+        "desc": "验证结果被引用(+300)",
+        "kb_id": "kb_1781946113089",
+        "cited_by": "user_bob"
+      },
+      {
+        "type": "earn",
+        "amount": 300,
+        "time": "2026-06-20 17:01:53",
+        "desc": "验证结果被引用(+300)",
+        "kb_id": "kb_1781946113089",
+        "cited_by": "user_bob"
+      },
+      {
+        "type": "earn",
+        "amount": 300,
+        "time": "2026-06-20 17:01:53",
+        "desc": "验证结果被引用(+300)",
+        "kb_id": "kb_1781946113089",
+        "cited_by": "user_bob"
+      },
+      {
+        "type": "earn",
+        "amount": 300,
+        "time": "2026-06-20 17:01:53",
+        "desc": "验证结果被引用(+300)",
+        "kb_id": "kb_1781946113089",
+        "cited_by": "user_bob"
+      },
+      {
+        "type": "earn",
+        "amount": 300,
+        "time": "2026-06-20 17:02:05",
+        "desc": "验证结果被引用(+300)",
+        "kb_id": "kb_1781946113089",
+        "cited_by": "user_bob"
+      }
+    ],
+    "modules": [],
+    "total_earned": 3300
+  },
+  "user_bob": {
+    "balance": 6300,
+    "total_purchased": 10000,
+    "total_spent": 5700,
+    "daily_free": 0,
+    "daily_reset": "2026-06-20",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 10000,
+        "time": "2026-06-20 17:01:41",
+        "desc": "注册赠送"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "knowledge_cite",
+        "byok": false,
+        "time": "2026-06-20 17:01:53",
+        "desc": "消耗800积分(knowledge_cite)"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "knowledge_cite",
+        "byok": false,
+        "time": "2026-06-20 17:01:53",
+        "desc": "消耗800积分(knowledge_cite)"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "knowledge_cite",
+        "byok": false,
+        "time": "2026-06-20 17:01:53",
+        "desc": "消耗800积分(knowledge_cite)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "knowledge_cite",
+        "byok": false,
+        "time": "2026-06-20 17:01:53",
+        "desc": "消耗1000积分(knowledge_cite)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "knowledge_cite",
+        "byok": false,
+        "time": "2026-06-20 17:01:53",
+        "desc": "消耗1000积分(knowledge_cite)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "knowledge_cite",
+        "byok": false,
+        "time": "2026-06-20 17:02:05",
+        "desc": "消耗1000积分(knowledge_cite)"
+      },
+      {
+        "type": "spend",
+        "amount": -300,
+        "task": "cross_domain_advice",
+        "byok": false,
+        "time": "2026-06-20 17:58:16",
+        "desc": "消耗300积分(cross_domain_advice)"
+      }
+    ],
+    "modules": []
+  },
+  "test_admet": {
+    "balance": 10000,
+    "total_purchased": 10000,
+    "total_spent": 0,
+    "daily_free": 2000,
+    "daily_reset": "2026-06-20",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 10000,
+        "time": "2026-06-20 23:36:59",
+        "desc": "注册赠送"
+      }
+    ],
+    "modules": []
+  },
+  "test_deep_user": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 1500,
+    "daily_free": 500,
+    "daily_reset": "2026-06-22",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -1500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-22 23:26:07",
+        "desc": "消耗1500积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "test_deep": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 1500,
+    "daily_free": 500,
+    "daily_reset": "2026-06-22",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -1500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-22 23:27:33",
+        "desc": "消耗1500积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "test_precise": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 800,
+    "daily_free": 1200,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 05:58:43",
+        "desc": "消耗800积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "test_chem": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 800,
+    "daily_free": 1200,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 05:59:02",
+        "desc": "消耗800积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "test_chem2": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 800,
+    "daily_free": 1200,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 05:59:14",
+        "desc": "消耗800积分(literature_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "test_loop": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 1800,
+    "daily_free": 200,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 05:59:37",
+        "desc": "消耗800积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "verification_bee",
+        "byok": null,
+        "time": "2026-06-23 06:00:10",
+        "desc": "消耗1000积分(verification_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "test_all": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 1800,
+    "daily_free": 200,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 06:00:33",
+        "desc": "消耗500积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -300,
+        "task": "hypothesis_bee",
+        "byok": null,
+        "time": "2026-06-23 06:00:49",
+        "desc": "消耗300积分(hypothesis_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-23 06:00:59",
+        "desc": "消耗1000积分(chemistry_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "debug_test": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 1600,
+    "daily_free": 400,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 06:01:07",
+        "desc": "消耗500积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -300,
+        "task": "hypothesis_bee",
+        "byok": null,
+        "time": "2026-06-23 06:01:22",
+        "desc": "消耗300积分(hypothesis_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "writing_bee",
+        "byok": null,
+        "time": "2026-06-23 06:01:33",
+        "desc": "消耗800积分(writing_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "debug2": {
+    "balance": 91200,
+    "total_purchased": 0,
+    "total_spent": 10800,
+    "daily_free": 0,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 06:02:01",
+        "desc": "消耗500积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -300,
+        "task": "hypothesis_bee",
+        "byok": null,
+        "time": "2026-06-23 06:02:17",
+        "desc": "消耗300积分(hypothesis_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "writing_bee",
+        "byok": null,
+        "time": "2026-06-23 06:02:24",
+        "desc": "消耗800积分(writing_bee)"
+      },
+      {
+        "type": "earn",
+        "amount": 50000,
+        "time": "2026-06-23 06:02:58",
+        "desc": "测试充值"
+      },
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 06:02:59",
+        "desc": "消耗500积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -300,
+        "task": "hypothesis_bee",
+        "byok": null,
+        "time": "2026-06-23 06:03:23",
+        "desc": "消耗300积分(hypothesis_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "writing_bee",
+        "byok": null,
+        "time": "2026-06-23 06:03:33",
+        "desc": "消耗800积分(writing_bee)"
+      },
+      {
+        "type": "earn",
+        "amount": 50000,
+        "time": "2026-06-23 06:04:05",
+        "desc": "test"
+      },
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 06:04:12",
+        "desc": "消耗500积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "review_bee",
+        "byok": null,
+        "time": "2026-06-23 06:04:15",
+        "desc": "消耗1000积分(review_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "writing_bee",
+        "byok": null,
+        "time": "2026-06-23 06:04:37",
+        "desc": "消耗800积分(writing_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "review_bee",
+        "byok": null,
+        "time": "2026-06-23 06:05:07",
+        "desc": "消耗1000积分(review_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 06:05:27",
+        "desc": "消耗500积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "verification_bee",
+        "byok": null,
+        "time": "2026-06-23 06:05:46",
+        "desc": "消耗1000积分(verification_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -800,
+        "task": "writing_bee",
+        "byok": null,
+        "time": "2026-06-23 06:05:53",
+        "desc": "消耗800积分(writing_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "review_bee",
+        "byok": null,
+        "time": "2026-06-23 06:06:32",
+        "desc": "消耗1000积分(review_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "verification_bee",
+        "byok": null,
+        "time": "2026-06-23 06:07:14",
+        "desc": "消耗1000积分(verification_bee)"
+      }
+    ],
+    "modules": [],
+    "total_earned": 100000
+  },
+  "chem_test": {
+    "balance": 0,
+    "total_purchased": 0,
+    "total_spent": 2000,
+    "daily_free": 0,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "chemistry_bee",
+        "byok": null,
+        "time": "2026-06-23 06:07:22",
+        "desc": "消耗1000积分(chemistry_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -1000,
+        "task": "verification_bee",
+        "byok": null,
+        "time": "2026-06-23 06:07:28",
+        "desc": "消耗1000积分(verification_bee)"
+      }
+    ],
+    "modules": []
+  },
+  "ml_test": {
+    "balance": 46000,
+    "total_purchased": 0,
+    "total_spent": 6000,
+    "daily_free": 0,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "literature_bee",
+        "byok": null,
+        "time": "2026-06-23 06:07:45",
+        "desc": "消耗500积分(literature_bee)"
+      },
+      {
+        "type": "spend",
+        "amount": -500,
+        "task": "analysis_bee",
+        "byok": null,
+        "time": "2026-06-23 06:08:01",
+        "desc": "消耗500积分(analysis_bee)"
+      },
+      {
+        "type": "earn",
+        "amount": 50000,
+        "time": "2026-06-23 06:08:19",
+        "desc": "test"
+      },
+      {
+        "type": "spend",
+        "amount": -5000,
+        "task": "ml_experiment_bee",
+        "byok": null,
+        "time": "2026-06-23 06:08:25",
+        "desc": "消耗5000积分(ml_experiment_bee)"
+      }
+    ],
+    "modules": [],
+    "total_earned": 50000
+  },
+  "pipe_test": {
+    "balance": 14000,
+    "total_purchased": 0,
+    "total_spent": 8000,
+    "daily_free": 0,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "earn",
+        "amount": 20000,
+        "time": "2026-06-23 06:08:57",
+        "desc": "test"
+      },
+      {
+        "type": "spend",
+        "amount": -8000,
+        "task": "full_research",
+        "byok": null,
+        "time": "2026-06-23 06:08:57",
+        "desc": "消耗8000积分(full_research)"
+      }
+    ],
+    "modules": [],
+    "total_earned": 20000
+  },
+  "gate_test": {
+    "balance": 14000,
+    "total_purchased": 0,
+    "total_spent": 8000,
+    "daily_free": 0,
+    "daily_reset": "2026-06-23",
+    "history": [
+      {
+        "type": "earn",
+        "amount": 20000,
+        "time": "2026-06-23 06:10:00",
+        "desc": "test"
+      },
+      {
+        "type": "spend",
+        "amount": -8000,
+        "task": "full_research",
+        "byok": null,
+        "time": "2026-06-23 06:10:00",
+        "desc": "消耗8000积分(full_research)"
+      }
+    ],
+    "modules": [],
+    "total_earned": 20000
+  },
+  "test_deploy": {
+    "balance": 10000,
+    "total_purchased": 10000,
+    "total_spent": 0,
+    "daily_free": 2000,
+    "daily_reset": "2026-06-29",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 10000,
+        "time": "2026-06-29 12:10:53",
+        "desc": "注册赠送"
+      }
+    ],
+    "modules": []
+  },
+  "test_deploy2": {
+    "balance": 10000,
+    "total_purchased": 10000,
+    "total_spent": 0,
+    "daily_free": 2000,
+    "daily_reset": "2026-06-29",
+    "history": [
+      {
+        "type": "register_bonus",
+        "amount": 10000,
+        "time": "2026-06-29 12:12:20",
+        "desc": "注册赠送"
+      }
+    ],
+    "modules": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "date": "2026-07-02",
+  "tasks": {
+    "operator": {
+      "status": "done",
+      "ecs_services": {
+        "aishield_api": 200,
+        "aishield_compliance": 200,
+        "swarm_research": 0,
+        "bit_assistant": 404,
+        "healthlens": 200
+      },
+      "pages_sites": {
+        "genetech": 200,
+        "tcm": 200,
+        "agent": 200,
+        "robot": 200,
+        "quantum": 200,
+        "brain": 200,
+        "nuclear": 200,
+        "exo": 200,
+        "alien": 200,
+        "deepsea": 200,
+        "newenergy": 200,
+        "lifescience": 200,
+        "biocomputing": 200,
+        "bionicai": 200
+      },
+      "issues": [
+        "⚠️ ECS服务 swarm_research 异常: 0",
+        "⚠️ ECS服务 bit_assistant 异常: 404"
+      ],
+      "issue_count": 2
+    },
+    "scout": {
+      "status": "done",
+      "sites_checked": [
+        "genetech",
+        "tcm",
+        "agent"
+      ],
+      "results": {
+        "genetech": {
+          "genetech": []
+        },
+        "tcm": {
+          "tcm": []
+        },
+        "agent": {
+          "agent": []
+        }
+      }
+    },
+    "guardian": {
+      "status": "done",
+      "stats": {
+        "avg_security_score": 72.1,
+        "by_badge": {
+          "gold": 6,
+          "none": 1,
+          "silver": 14
+        },
+        "by_risk": {
+          "critical": 1,
+          "medium": 15,
+          "safe": 5
+        },
+        "by_type": {
+          "mcp": 19,
+          "skill": 2
+        },
+        "total_audits": 135,
+        "total_tools": 21
+      },
+      "aishield_api": "?",
+      "aishield_compliance": "?"
+    },
+    "builder": {
+      "status": "done",
+      "ecs_services": {
+        "aishield_api": 200,
+        "aishield_compliance": 200,
+        "swarm_research": 0,
+        "bit_assistant": 404,
+        "healthlens": 200
+      },
+      "issues": [
+        "ECS服务 swarm_research 异常: 0",
+        "ECS服务 bit_assistant 异常: 404"
+      ]
+    }
+  },
+  "summary": {
+    "total_issues": 4,
+    "questions_for_user": [
+      "【operator】⚠️ ECS服务 swarm_research 异常: 0 — 是否在ECS重启该服务？",
+      "【operator】⚠️ ECS服务 bit_assistant 异常: 404 — 是否需要排查路由配置？",
+      "【builder】ECS服务 swarm_research 异常: 0 — 是否在ECS重启该服务？",
+      "【builder】ECS服务 bit_assistant 异常: 404 — 是否需要排查路由配置？"
+    ],
+    "all_healthy": false
+  }
+}

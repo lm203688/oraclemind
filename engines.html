@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>材料预测引擎 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--orange:#f59e0b;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:var(--muted);font-size:14px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.nav-cta{padding:8px 20px;background:var(--accent);color:#fff;border-radius:8px;font-size:14px;font-weight:600}
+.page-header{padding:48px 0 32px}
+.page-header h1{font-size:36px;font-weight:800;margin-bottom:8px}
+.page-header p{color:var(--muted);font-size:16px}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px}
+@media(max-width:768px){.stats-row{grid-template-columns:repeat(2,1fr)}}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center}
+.stat-num{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:13px;color:var(--muted);margin-top:4px}
+.category-title{font-size:20px;font-weight:700;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--border)}
+.engine-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:32px}
+.engine-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s}
+.engine-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.engine-icon{font-size:24px;margin-bottom:8px}
+.engine-name{font-size:14px;font-weight:600;margin-bottom:2px}
+.engine-id{font-size:11px;color:var(--muted);font-family:monospace}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html">分子动力学</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="engines.html" class="active">材料预测</a>
+<a href="forcefields.html">力场引擎</a>
+<a href="report.html">报告</a>
+<a href="visualization.html">可视化</a>
+<a href="api-playground.html">API测试</a>
+<a href="docs.html">API文档</a>
+</div>
+<a href="docs.html" class="nav-cta">开始使用</a>
+</div>
+</nav>
+<div class="container">
+<div class="page-header">
+<h1>📊 材料预测引擎</h1>
+<p>30个虚拟实验引擎——覆盖化学反应/材料/分离/电化学全领域</p>
+</div>
+<div class="stats-row">
+<div class="stat-card"><div class="stat-num">30</div><div class="stat-label">预测引擎</div></div>
+<div class="stat-card"><div class="stat-num">386</div><div class="stat-label">材料种类</div></div>
+<div class="stat-card"><div class="stat-num">30</div><div class="stat-label">领域覆盖</div></div>
+<div class="stat-card"><div class="stat-num">14</div><div class="stat-label">跨项目数据源</div></div>
+</div>
+
+<div class="category-title">🧪 化学反应类</div>
+<div class="engine-grid">
+<div class="engine-card"><div class="engine-icon">⚗️</div><div class="engine-name">Suzuki偶联</div><div class="engine-id">suzuki</div></div>
+<div class="engine-card"><div class="engine-icon">🔋</div><div class="engine-name">锂电池</div><div class="engine-id">battery</div></div>
+<div class="engine-card"><div class="engine-icon">☀️</div><div class="engine-name">光催化</div><div class="engine-id">photocatalysis</div></div>
+<div class="engine-card"><div class="engine-icon">🧬</div><div class="engine-name">酶催化</div><div class="engine-id">enzyme</div></div>
+<div class="engine-card"><div class="engine-icon">🔬</div><div class="engine-name">PCR</div><div class="engine-id">pcr</div></div>
+<div class="engine-card"><div class="engine-icon">💨</div><div class="engine-name">CO2还原</div><div class="engine-id">co2</div></div>
+<div class="engine-card"><div class="engine-icon">🌱</div><div class="engine-name">合成氨</div><div class="engine-id">ammonia</div></div>
+<div class="engine-card"><div class="engine-icon">🔥</div><div class="engine-name">燃烧</div><div class="engine-id">combustion</div></div>
+<div class="engine-card"><div class="engine-icon">⚡</div><div class="engine-name">光芬顿</div><div class="engine-id">photoFenton</div></div>
+<div class="engine-card"><div class="engine-icon">🔊</div><div class="engine-name">超声空化</div><div class="engine-id">sonochemical</div></div>
+</div>
+
+<div class="category-title">🧱 材料类</div>
+<div class="engine-grid">
+<div class="engine-card"><div class="engine-icon">🔷</div><div class="engine-name">钙钛矿</div><div class="engine-id">perovskite</div></div>
+<div class="engine-card"><div class="engine-icon">💎</div><div class="engine-name">结晶</div><div class="engine-id">crystal</div></div>
+<div class="engine-card"><div class="engine-icon">🧵</div><div class="engine-name">高分子</div><div class="engine-id">polymer</div></div>
+<div class="engine-card"><div class="engine-icon">🛡️</div><div class="engine-name">腐蚀</div><div class="engine-id">corrosion</div></div>
+<div class="engine-card"><div class="engine-icon">💧</div><div class="engine-name">离子液体</div><div class="engine-id">ionic_liquid</div></div>
+</div>
+
+<div class="category-title">🔀 分离类</div>
+<div class="engine-grid">
+<div class="engine-card"><div class="engine-icon">🧮</div><div class="engine-name">膜分离</div><div class="engine-id">membrane</div></div>
+<div class="engine-card"><div class="engine-icon">📎</div><div class="engine-name">吸附</div><div class="engine-id">adsorption</div></div>
+<div class="engine-card"><div class="engine-icon">🌡️</div><div class="engine-name">蒸馏</div><div class="engine-id">distillation</div></div>
+<div class="engine-card"><div class="engine-icon">🧪</div><div class="engine-name">萃取</div><div class="engine-id">extraction</div></div>
+<div class="engine-card"><div class="engine-icon">🔄</div><div class="engine-name">离子交换</div><div class="engine-id">ion_exchange</div></div>
+<div class="engine-card"><div class="engine-icon">🌫️</div><div class="engine-name">超临界流体</div><div class="engine-id">scfluid</div></div>
+<div class="engine-card"><div class="engine-icon">💧</div><div class="engine-name">膜蒸馏</div><div class="engine-id">membrane_distillation</div></div>
+<div class="engine-card"><div class="engine-icon">⚡</div><div class="engine-name">电渗析</div><div class="engine-id">electrodialysis</div></div>
+</div>
+
+<div class="category-title">⚡ 电化学与过程类</div>
+<div class="engine-grid">
+<div class="engine-card"><div class="engine-icon">🔌</div><div class="engine-name">电镀</div><div class="engine-id">electroplating</div></div>
+<div class="engine-card"><div class="engine-icon">🧫</div><div class="engine-name">生物反应器</div><div class="engine-id">bioreactor</div></div>
+<div class="engine-card"><div class="engine-icon">🌀</div><div class="engine-name">絮凝</div><div class="engine-id">flocculation</div></div>
+<div class="engine-card"><div class="engine-icon">💨</div><div class="engine-name">气固反应</div><div class="engine-id">gassolid</div></div>
+<div class="engine-card"><div class="engine-icon">📊</div><div class="engine-name">络合滴定</div><div class="engine-id">complexometric</div></div>
+<div class="engine-card"><div class="engine-icon">🌊</div><div class="engine-name">流态化</div><div class="engine-id">fluidization</div></div>
+<div class="engine-card"><div class="engine-icon">🏜️</div><div class="engine-name">干燥</div><div class="engine-id">drying</div></div>
+</div>
+
+</div>
+<footer class="footer"><div class="container"><p>蜂群科研 — 30个虚拟实验引擎</p></div></footer>
+<script>
+const API_BASE = 'http://150.158.119.19:8461';
+document.querySelectorAll('.engine-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const id = card.querySelector('.engine-id').textContent;
+    location.href = `engine-detail.html?engine=${id}`;
+  });
+});
+</script>
+</body>
+</html>

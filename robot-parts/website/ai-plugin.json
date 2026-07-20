@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Robot Parts",
+  "name_for_model": "robotparts",
+  "description_for_human": "Robotics components database with 560 entities",
+  "description_for_model": "Access Robot Parts knowledge base via API. Robotics components database with 560 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://robot.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://robot.genetech.tools/"
+}

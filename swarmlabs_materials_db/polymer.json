@@ -1,0 +1,82 @@
+[
+  {
+    "name": "PE",
+    "formula": "(C₂H₄)ₙ",
+    "Tg_C": -110,
+    "Tm_C": 135,
+    "tensile_MPa": 30,
+    "source": "NIST/Polymer Handbook"
+  },
+  {
+    "name": "PP",
+    "formula": "(C₃H₆)ₙ",
+    "Tg_C": -20,
+    "Tm_C": 165,
+    "tensile_MPa": 35,
+    "source": "NIST"
+  },
+  {
+    "name": "PVC",
+    "formula": "(C₂H₃Cl)ₙ",
+    "Tg_C": 80,
+    "Tm_C": 180,
+    "tensile_MPa": 50,
+    "source": "NIST"
+  },
+  {
+    "name": "PS",
+    "formula": "(C₈H₈)ₙ",
+    "Tg_C": 100,
+    "Tm_C": 240,
+    "tensile_MPa": 40,
+    "source": "NIST"
+  },
+  {
+    "name": "PET",
+    "formula": "(C₁₀H₈O₄)ₙ",
+    "Tg_C": 75,
+    "Tm_C": 260,
+    "tensile_MPa": 60,
+    "source": "NIST"
+  },
+  {
+    "name": "Nylon-6,6",
+    "formula": "(C₁₂H₂₂N₂O₂)ₙ",
+    "Tg_C": 50,
+    "Tm_C": 265,
+    "tensile_MPa": 80,
+    "source": "NIST"
+  },
+  {
+    "name": "PC",
+    "formula": "(C₁₆H₁₄O₃)ₙ",
+    "Tg_C": 145,
+    "Tm_C": 267,
+    "tensile_MPa": 65,
+    "source": "NIST"
+  },
+  {
+    "name": "PTFE",
+    "formula": "(C₂F₄)ₙ",
+    "Tg_C": -100,
+    "Tm_C": 327,
+    "tensile_MPa": 25,
+    "source": "NIST"
+  },
+  {
+    "name": "PMMA",
+    "formula": "(C₅O₂H₈)ₙ",
+    "Tg_C": 105,
+    "Tm_C": 160,
+    "tensile_MPa": 50,
+    "source": "NIST"
+  },
+  {
+    "name": "ABS",
+    "formula": "(C₈H₈·C₄H₆·C₃H₃N)ₙ",
+    "Tg_C": 105,
+    "Tm_C": 220,
+    "tensile_MPa": 45,
+    "source": "NIST"
+  }
+]

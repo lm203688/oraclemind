@@ -1,0 +1,206 @@
+{
+  "version": "2.0",
+  "updated": "2026-07-13",
+  "description": "跨项目API互调注册表——所有项目可通过统一接口互相调用数据",
+  "swarmlabs": {
+    "name": "蜂群科研",
+    "base_url": "http://150.158.119.19:8461",
+    "endpoints": {
+      "/api/v1/health": "健康检查",
+      "/api/v1/engines": "30个预测引擎列表",
+      "/api/v1/engines/<name>": "单个引擎详情",
+      "/api/v1/materials/<engine>": "获取引擎材料数据",
+      "/api/v1/quantum_calc/<molecule>": "量子化学DFT计算（15个分子）",
+      "/api/v1/quantum_molecules": "可用分子列表",
+      "/api/v1/reaction_energy": "反应能量计算（POST）",
+      "/api/v1/generalization": "模型泛化能力",
+      "/api/v1/uncertainty/<name>": "不确定性量化",
+      "/api/v1/stats": "统计信息",
+      "/api/v1/docs": "API文档"
+    }
+  },
+  "sites": {
+    "genetech-tools": {
+      "name": "基因技术工具",
+      "domain": "genetech.tools",
+      "api_base": "https://genetech-tools.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "tcm-tools": {
+      "name": "中医药工具",
+      "domain": "tcm.genetech.tools",
+      "api_base": "https://tcm-tools.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "brain-science": {
+      "name": "脑科学",
+      "domain": "brain.genetech.tools",
+      "api_base": "https://brainscience.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "quantum-computing": {
+      "name": "量子计算",
+      "domain": "quantum.genetech.tools",
+      "api_base": "https://quantumcomputing.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "nuclear-energy": {
+      "name": "核能",
+      "domain": "nuclear.genetech.tools",
+      "api_base": "https://nuclearenergy.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "exo-science": {
+      "name": "系外科学",
+      "domain": "exo.genetech.tools",
+      "api_base": "https://exoscience.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "alien-minerals": {
+      "name": "外星矿物",
+      "domain": "mineral.genetech.tools",
+      "api_base": "https://alienminerals.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "deep-sea-tech": {
+      "name": "深海技术",
+      "domain": "sea.genetech.tools",
+      "api_base": "https://deepseatech.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "new-energy": {
+      "name": "新能源",
+      "domain": "energy.genetech.tools",
+      "api_base": "https://newenergy-nya.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "life-science": {
+      "name": "生命科学",
+      "domain": "life.genetech.tools",
+      "api_base": "https://lifescience-epe.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "biocomputing": {
+      "name": "生物计算",
+      "domain": "bio.genetech.tools",
+      "api_base": "https://biocomputedb.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "bionic-ai": {
+      "name": "仿生AI",
+      "domain": "bionic.genetech.tools",
+      "api_base": "https://bionicai.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "agent-ecosystem": {
+      "name": "Agent生态",
+      "domain": "agent.genetech.tools",
+      "api_base": "https://agentecosystem.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    },
+    "robot-parts": {
+      "name": "机器人配件",
+      "domain": "robot.genetech.tools",
+      "api_base": "https://robotparts.pages.dev/api",
+      "endpoints": {
+        "/api/entities.json": "所有实体数据（免费层：摘要字段）",
+        "/api/data.json": "完整数据（Pro）",
+        "/api/graph.json": "知识图谱数据",
+        "/api/openapi.json": "OpenAPI规范",
+        "/api/register": "API Key注册",
+        "/api/validate": "许可证验证"
+      }
+    }
+  }
+}

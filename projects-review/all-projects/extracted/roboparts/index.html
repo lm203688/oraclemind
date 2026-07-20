@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RoboLink - 机器人零件对接平台 | 不同品牌的机器人零件，在这里找到连接方式</title>
+<meta name="description" content="RoboLink是面向机器人创客和爱好者的零件对接平台，提供零件选型、兼容性检查、STL转接件下载、3D打印代打和社区交流。">
+<meta name="keywords" content="机器人零件,夹爪转接,机械臂兼容,STL下载,3D打印,创客,机器人DIY,末端执行器,法兰转接件">
+<meta name="author" content="RoboLink">
+<meta name="baidu-site-verification" content="codeva-OWBXQu2L2c" />
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://roboparts.cc/">
+<meta property="og:title" content="RoboLink - 机器人零件对接平台">
+<meta property="og:description" content="不同品牌的机器人零件，在这里找到连接方式。免费STL转接件下载，3D打印代打服务。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://roboparts.cc/">
+<meta property="og:site_name" content="RoboLink">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RoboLink - 机器人零件对接平台">
+<meta name="twitter:description" content="不同品牌的机器人零件，在这里找到连接方式">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='14' width='8' height='8' rx='2' fill='%23378ADD'/><rect x='20' y='2' width='8' height='8' rx='2' fill='%23639922'/><rect x='20' y='20' width='8' height='8' rx='2' fill='%23D85A30'/><line x1='10' y1='18' x2='20' y2='18' stroke='%23378ADD' stroke-width='2' stroke-linecap='round'/><line x1='10' y1='18' x2='10' y2='6' stroke='%23B4B2A9' stroke-width='1.5'/><line x1='10' y1='6' x2='20' y2='6' stroke='%23B4B2A9' stroke-width='1.5'/></svg>">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- JSON-LD 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "RoboLink",
+  "url": "https://roboparts.cc",
+  "description": "面向机器人创客和爱好者的零件对接平台，提供零件选型、兼容性检查、STL转接件下载、3D打印代打和社区交流。",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY",
+    "description": "免费STL转接件下载"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "RoboLink"
+  },
+  "inLanguage": "zh-CN",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "什么是RoboLink?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RoboLink是面向机器人创客和爱好者的零件对接平台，帮助用户找到不同品牌机器人零件之间的连接方案，提供免费STL转接件下载、兼容性检查和3D打印代打服务。访问 roboparts.cc 了解更多。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "RoboLink支持哪些品牌的机械臂和夹爪?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目前支持DOBOT、UR、Franka、HIWIN、AUBO、uArm、Elephant Robotics等18款机械臂，以及Robotiq、OnRobot、慧灵、大寰、柔触等34款末端执行器。覆盖工业协作臂和桌面创客臂两大类。持续更新中。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "STL转接件免费吗?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的，所有STL转接件设计文件完全免费下载。如果你没有3D打印机，可以通过平台委托嘉立创或魔猴网代打，费用约15-50元/件。在 roboparts.cc 的STL库页面可以直接下载。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "DOBOT机械臂能接Robotiq夹爪吗?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DOBOT的M1和CR3型号使用ISO 9409-50法兰（M6螺栓），与Robotiq 2F-85/2F-140的法兰标准一致，可以直接安装。但需要注意协议兼容性：DOBOT使用Modbus RTU，Robotiq也使用Modbus RTU，电信号兼容。安装后需要在DOBOT控制系统中配置夹爪的Modbus地址。DOBOT Magician和Lite 6的法兰是自定义规格，需要3D打印转接件。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "UR机械臂的法兰标准是什么?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UR3e、UR5e、UR10e、UR16e等所有协作臂系列均使用ISO 9409-50-4-M6法兰标准。这是一个行业标准的50mm直径法兰盘，4个M6安装孔，螺距为标准公制。Robotiq、OnRobot、Schunk、Festo等主流工业夹爪都兼容这个法兰，可以直接安装。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Elephant Robotics myCobot 280能接什么夹爪?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "myCobot 280使用自定义M4法兰，与ISO标准法兰不兼容。可以直接接的夹爪包括：慧灵LFG-Micro（M4法兰）、大寰PIKA（M3法兰，需转接）、沃姆WK-01、天机TG-01等小型桌面夹爪。也可以通过3D打印转接件接舵机夹爪（MG996R、SG90等）。RoboParts提供专用的myCobot 280转接件STL文件。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "什么是ISO 9409法兰标准?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISO 9409是国际标准化组织制定的机器人末端接口标准。最常用的是ISO 9409-50-4-M6（50mm法兰盘、4个M6螺栓）和ISO 9409-40-4-M4（40mm法兰盘、4个M4螺栓）。大多数工业协作臂（UR、KUKA、ABB、DOBOT等）使用ISO 9409-50标准。桌面级和教育级机器人通常使用自定义小法兰。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何用3D打印制作机器人转接件?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "制作转接件的步骤：1) 确认你的机械臂法兰尺寸和夹爪法兰尺寸；2) 在RoboParts网站查找对应的STL文件或定制设计；3) 用FDM 3D打印机打印（推荐PLA+或PETG材料，层高0.2mm，填充率40%以上）；4) 安装到机械臂上测试。FDM精度±0.2mm，对于创客和教学应用完全足够。打印成本约5-15元/件。在roboparts.cc可以免费下载STL文件。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "uArm Swift Pro能接什么夹爪?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "uArm Swift Pro使用自定义M4法兰接口。可以直接接的夹爪包括：慧灵LFG-Micro、沃姆WK-01、天机TG-01等M4法兰夹爪。RoboParts提供uArm专用的转接件STL文件，可以让uArm接上更多品牌的夹爪，包括舵机夹爪和MG996R等。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "舵机夹爪和电动夹爪有什么区别?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "舵机夹爪使用PWM信号控制，价格低（5-35元），力量小但简单，适合创客DIY和教育场景，代表型号有MG996R、SG90。电动夹爪使用Modbus/I2C等通信协议，力量大（可达150N），精度高（0.01-0.05mm），价格高（500-12000元），适合工业和精密应用，代表品牌有Robotiq、OnRobot、慧灵、大寰。选择取决于你的应用场景和预算。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "慧灵科技夹爪怎么样，性价比高吗?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "慧灵科技是国内性价比最高的工业夹爪品牌之一。LFG-2T（1680元）对标Robotiq 2F-85（8500元），力量和行程接近，价格仅为前者的20%。LFG-Micro（680元）是桌面级最小巧的电动夹爪之一。支持Modbus RTU和I2C双协议，兼容大多数协作臂。在创客和教学场景中非常推荐。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "大寰机器人和慧灵科技哪个好?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "大寰机器人定位中高端，GECKO系列精度达0.02mm，对标Robotiq，适合精密装配场景，价格2980-5000元。PIKA系列是迷你版，仅9克重，适合微操作。慧灵科技性价比更高，LFG-2T只要1680元但功能完整，适合教学和创客。综合来说：预算有限选慧灵，精度要求高选大寰。两者都兼容ISO 9409-50法兰。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "机器人夹爪多少钱一个?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "价格跨度很大：舵机夹爪5-35元（SG90、MG996R），国产桌面夹爪168-880元（一元YG-100、天机TG-01、沃姆WK-01），国产工业夹爪680-4000元（慧灵LFG系列、大寰GECKO、柔触FG），进口工业夹爪5600-12000元（Robotiq、OnRobot、Schunk）。推荐创客入门从国产桌面夹爪开始，预算1000元以内就能获得不错的体验。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "柔性夹爪适合什么场景?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "柔性夹爪（如柔触FG系列）使用硅胶或弹性材料手指，适合：食品抓取（不会损伤表面）、异形物体抓取（自适应形状）、易碎物品搬运（力度可控）。精度不如刚性夹爪（1-2mm vs 0.02mm），不适合精密装配。价格1680-3680元，在食品、农业、3C组装等领域有独特优势。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3D打印转接件用什么材料?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "推荐材料排序：1) PETG（首选，耐热70°C，强度好，适合大多数场景）；2) PLA+（易打印，强度够，但不耐高温）；3) ABS（耐热好但打印需要封闭环境）；4) 尼龙（最强但打印难度高）。创客和教学场景PLA+就够用。工业场景建议用PETG或铝合金CNC加工。FDM打印精度±0.2mm，对法兰接口来说完全够用。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "不同品牌机械臂的法兰为什么不兼容?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "法兰不兼容主要有三个原因：1) 尺寸不同（ISO 9409-50直径50mm，ISO 9409-40直径40mm，自定义法兰更小）；2) 螺栓孔位不同（M6 vs M4 vs M3，孔数和圆心距不同）；3) 电信号接口不同（有的用法兰内的针脚，有的用外接线缆）。工业臂大多遵循ISO标准可以互换，但桌面创客臂（myCobot、uArm等）多为自定义规格，需要转接件。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "没有3D打印机怎么办?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以通过在线3D打印服务代打。RoboParts平台集成了嘉立创3D打印（jlc-3dp.cn）和魔猴网（mohou.com），一键下单，PLA材料约15-30元/件，PETG约25-50元/件，3-5天发货。也可以找当地创客空间的3D打印机，通常10-20元/件。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "机器人兼容性检查怎么做?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "检查兼容性需要关注三点：1) 法兰物理尺寸（直径、螺栓孔位是否匹配）；2) 电气接口（电压、通信协议是否兼容）；3) 承载能力（夹爪重量是否在机械臂负载范围内）。RoboParts网站提供在线兼容性检查工具，选择你的机械臂和夹爪型号，自动判断是否兼容并给出转接方案。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "入门级机械臂推荐哪款?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "入门推荐：1) DOBOT Magician（约2000元），教学经典，支持多种末端，社区资源丰富；2) Elephant myCobot 280（约1500元），最便宜的6轴协作臂，体积小巧；3) uArm Swift Pro（约3000元），金属结构，精度好。配合慧灵LFG-Micro夹爪（680元）或舵机夹爪（25元），1000-3000元就能搭建完整系统。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "创客做机器人需要什么基础?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基础要求：1) 机械基础（了解螺栓、法兰等连接方式）；2) 电子基础（会接线、理解电压电流）；3) 编程基础（Python或C++，会调用API）；4) 3D打印能力（会使用切片软件）。不需要全部精通，每个领域的基础知识就够起步。RoboParts社区有很多入门教程和经验分享，可以边做边学。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "如何用3D打印为机械臂制作转接件",
+  "description": "详细教程：从确认法兰尺寸到3D打印输出转接件的完整步骤",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "确认法兰尺寸",
+      "text": "查看机械臂末端的法兰规格（直径、螺栓孔数、孔径）。工业臂通常标注在说明书上（如ISO 9409-50-4-M6），桌面臂需要实际测量。记录外径、螺栓孔圆心距、螺栓孔径三个关键尺寸。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "查找或设计STL模型",
+      "text": "在RoboParts网站（roboparts.cc）的STL库中搜索你的机械臂型号，查看是否有现成的转接件设计。如果有，直接下载STL文件。如果没有，可以用Tinkercad或Fusion 360根据测量尺寸自行设计。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "切片设置",
+      "text": "使用Cura或PrusaSlicer打开STL文件。推荐参数：层高0.2mm，填充率40%（网格填充），壁厚3层，支撑自动生成。材料选择PETG（耐热好）或PLA+（易打印）。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "3D打印输出",
+      "text": "发送G-code到3D打印机。PLA+打印温度200-210°C，床温60°C；PETG打印温度230-250°C，床温80°C。打印时间通常1-3小时。如果自己没有打印机，可以在RoboParts平台一键委托嘉立创或魔猴网代打。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "安装测试",
+      "text": "打印完成后取出零件，清理支撑材料。用对应规格的螺栓（M4或M6）将转接件固定到机械臂法兰上，再将夹爪固定到转接件另一端。检查是否稳固，必要时微调尺寸后重新打印。"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "3D打印机（FDM）",
+      "description": "任何FDM 3D打印机均可，推荐打印体积不小于150x150x150mm"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "游标卡尺",
+      "description": "用于精确测量法兰尺寸，精度0.02mm"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "切片软件",
+      "description": "Cura、PrusaSlicer或Mango3D等免费切片软件"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <rect x="2" y="12" width="8" height="8" rx="2" fill="#378ADD"/>
+        <rect x="18" y="2" width="8" height="8" rx="2" fill="#639922"/>
+        <rect x="18" y="18" width="8" height="8" rx="2" fill="#D85A30"/>
+        <line x1="10" y1="16" x2="18" y2="16" stroke="#378ADD" stroke-width="2" stroke-linecap="round"/>
+        <line x1="22" y1="10" x2="22" y2="18" stroke="#639922" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>RoboLink</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#parts">零件库</a></li>
+      <li><a href="#compat">兼容检查</a></li>
+      <li><a href="#community">社区</a></li>
+      <li><a href="#stl">STL下载</a></li>
+      <li><a href="/blog/">📚 选型指南</a></li>
+      <li><a href="#monitor">行业动态</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <!-- 登录按钮（未登录时显示） -->
+      <button class="btn btn-outline btn-sm" id="navAuthBtn" onclick="showAuthModal('login')" style="font-size:13px;padding:6px 16px;">登录 / 注册</button>
+      <!-- 用户菜单（登录后显示） -->
+      <div id="navUserMenu" style="display:none;align-items:center;gap:8px;cursor:pointer;position:relative;" onclick="toggleUserDropdown()">
+        <div class="user-avatar-initial" style="width:32px;height:32px;border-radius:50%;background:var(--blue-400);color:white;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;">U</div>
+        <span class="user-display-name" style="font-size:13px;font-weight:500;color:var(--gray-800);"></span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 5L6 8L9 5" stroke="var(--gray-400)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <!-- 下拉菜单 -->
+        <div id="userDropdown" style="display:none;position:absolute;top:40px;right:0;background:white;border:1px solid var(--gray-100);border-radius:var(--radius-md);padding:8px 0;min-width:140px;box-shadow:var(--shadow-md);z-index:101;">
+          <a href="#" onclick="event.stopPropagation()" style="display:block;padding:8px 16px;font-size:13px;color:var(--gray-600);text-decoration:none;" onmouseover="this.style.background='var(--gray-50)'" onmouseout="this.style.background='transparent'">我的收藏</a>
+          <a href="#" onclick="event.stopPropagation()" style="display:block;padding:8px 16px;font-size:13px;color:var(--gray-600);text-decoration:none;" onmouseover="this.style.background='var(--gray-50)'" onmouseout="this.style.background='transparent'">我的发帖</a>
+          <a href="#" onclick="event.stopPropagation()" style="display:block;padding:8px 16px;font-size:13px;color:var(--gray-600);text-decoration:none;" onmouseover="this.style.background='var(--gray-50)'" onmouseout="this.style.background='transparent'">上传设计</a>
+          <!-- 积分徽章 -->
+          <div id="pointsBadge" style="display:none;padding:8px 16px;font-size:13px;color:var(--amber-600);">
+            <span class="points-value">0</span> 积分
+            <span class="level-badge" style="margin-left:8px;background:var(--amber-100);color:var(--amber-700);padding:2px 8px;border-radius:12px;font-size:12px;">Lv.1</span>
+          </div>
+          <!-- 签到按钮 -->
+          <a href="#" onclick="event.stopPropagation();checkIn()" style="display:block;padding:8px 16px;font-size:13px;color:var(--green-600);text-decoration:none;" onmouseover="this.style.background='var(--green-50)'" onmouseout="this.style.background='transparent'">📅 每日签到 +5 积分</a>
+          <hr style="border:none;border-top:1px solid var(--gray-100);margin:4px 0;">
+          <a href="#" onclick="event.stopPropagation();handleSignOut()" style="display:block;padding:8px 16px;font-size:13px;color:var(--coral-400);text-decoration:none;" onmouseover="this.style.background='var(--coral-50)'" onmouseout="this.style.background='transparent'">退出登录</a>
+        </div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="打开导航菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>不同品牌的机器人零件<br>在这里找到连接方式</h1>
+      <p class="hero-sub">零件选型 + 兼容匹配 + 社区经验 + 3D打印转接件<br>让普通人也能玩转机器人</p>
+      <div class="hero-actions">
+        <a href="#parts" class="btn btn-primary">开始选型</a>
+        <a href="#compat" class="btn btn-secondary">检查兼容性</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">15</span><span class="stat-label">收录品牌</span></div>
+        <div class="stat"><span class="stat-num">34</span><span class="stat-label">零件型号</span></div>
+        <div class="stat"><span class="stat-num">24</span><span class="stat-label">转接件设计</span></div>
+        <div class="stat"><span class="stat-num">340+</span><span class="stat-label">社区用户</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="parts" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>零件选型引擎</h2>
+      <p>从品牌、类型、参数多维度筛选，找到最适合你项目的零件</p>
+    </div>
+    <div class="parts-filters">
+      <div class="filter-group">
+        <label>品类</label>
+        <div class="filter-tags" id="categoryFilter">
+          <button class="tag active" data-value="all">全部</button>
+          <button class="tag" data-value="electric-gripper">电动夹爪</button>
+          <button class="tag" data-value="soft-gripper">柔性夹爪</button>
+          <button class="tag" data-value="servo-gripper">舵机夹爪</button>
+          <button class="tag" data-value="vacuum">真空吸盘</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <label>品牌</label>
+        <div class="filter-tags" id="brandFilter">
+          <button class="tag active" data-value="all">全部</button>
+          <button class="tag" data-value="robotiq">Robotiq</button>
+          <button class="tag" data-value="onrobot">OnRobot</button>
+          <button class="tag" data-value="schunk">Schunk</button>
+          <button class="tag" data-value="festo">Festo</button>
+          <button class="tag" data-value="huiling">慧灵科技</button>
+          <button class="tag" data-value="dahang">大寰机器人</button>
+          <button class="tag" data-value="rouchu">柔触机器人</button>
+          <button class="tag" data-value="zhixing">知行机器人</button>
+          <button class="tag" data-value="worm">沃姆机器人</button>
+          <button class="tag" data-value="tianji">天机机器人</button>
+          <button class="tag" data-value="yiyuan">一元智能</button>
+        </div>
+      </div>
+      <div class="filter-search">
+        <label for="partSearch" class="visually-hidden">搜索零件</label>
+        <input type="text" id="partSearch" placeholder="搜索型号或关键词..." aria-label="搜索零件型号或关键词">
+      </div>
+    </div>
+    <div class="parts-grid" id="partsGrid"></div>
+    <div class="load-more">
+      <button class="btn btn-outline" id="loadMoreParts" aria-label="加载更多零件">加载更多</button>
+    </div>
+  </div>
+</section>
+
+<section id="compat" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>兼容性检查</h2>
+      <p>选择你的机械臂和目标夹爪，一键查看是否兼容以及需要的转接方案</p>
+    </div>
+    <div class="compat-checker">
+      <div class="compat-pair">
+        <div class="compat-card">
+          <div class="compat-card-header">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="8" width="6" height="6" rx="1" stroke="#378ADD" stroke-width="1.5"/><rect x="12" y="2" width="6" height="6" rx="1" stroke="#378ADD" stroke-width="1.5"/><line x1="8" y1="11" x2="12" y2="5" stroke="#378ADD" stroke-width="1.5"/></svg>
+            <span>机械臂 / 机器人本体</span>
+          </div>
+          <label for="robotArm" class="visually-hidden">选择机械臂</label>
+          <select id="robotArm" class="compat-select" aria-label="选择机械臂品牌和型号">
+            <option value="">选择机械臂品牌和型号...</option>
+          </select>
+        </div>
+        <div class="compat-connector">
+          <svg width="40" height="24" viewBox="0 0 40 24"><line x1="0" y1="12" x2="30" y2="12" stroke="#B4B2A9" stroke-width="1.5"/><polygon points="28,8 36,12 28,16" fill="#B4B2A9"/></svg>
+        </div>
+        <div class="compat-card">
+          <div class="compat-card-header">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="10" width="4" height="4" rx="1" stroke="#D85A30" stroke-width="1.5"/><rect x="11" y="10" width="4" height="4" rx="1" stroke="#D85A30" stroke-width="1.5"/><rect x="8" y="4" width="4" height="4" rx="1" stroke="#D85A30" stroke-width="1.5"/></svg>
+            <span>末端执行器 / 夹爪</span>
+          </div>
+          <label for="endEffector" class="visually-hidden">选择夹爪</label>
+          <select id="endEffector" class="compat-select" aria-label="选择夹爪品牌和型号">
+            <option value="">选择夹爪品牌和型号...</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg" id="checkCompat" aria-label="检查机械臂与夹爪的兼容性">检查兼容性</button>
+      <div class="compat-result" id="compatResult" style="display:none;"></div>
+    </div>
+  </div>
+</section>
+
+<section id="community" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>社区动态</h2>
+      <p>创客们的搭配经验、踩坑记录、改装方案</p>
+    </div>
+    <div class="community-tabs">
+      <button class="tab active" data-tab="latest">最新发布</button>
+      <button class="tab" data-tab="popular">热门方案</button>
+      <button class="tab" data-tab="combo">搭配方案</button>
+      <button class="tab" data-tab="tutorial">教程</button>
+      <button class="tab" data-tab="qa">问答求助</button>
+      <button class="tab" data-tab="review">评测</button>
+      <button class="tab post-btn" onclick="togglePostForm()" aria-label="发布新帖子">+ 发帖</button>
+    </div>
+    <div class="new-post-form" id="newPostForm" style="display:none;">
+      <div id="postFormNotice" style="display:none;background:var(--amber-50);border:1px solid var(--amber-400);border-radius:var(--radius-sm);padding:8px 12px;margin-bottom:12px;font-size:13px;color:var(--amber-400);">
+        <a href="#" onclick="event.preventDefault();showAuthModal('register')" style="color:var(--amber-400);text-decoration:underline;">请先登录</a>
+        <span>后才能发帖</span>
+      </div>
+      <div class="form-row">
+        <input type="text" id="newPostTitle" placeholder="标题" style="flex:1;" aria-label="帖子标题" required>
+        <select id="newPostTab" aria-label="帖子类型">
+          <option value="combo">搭配方案</option>
+          <option value="review">评测</option>
+          <option value="qa">问答求助</option>
+          <option value="tutorial">教程</option>
+        </select>
+      </div>
+      <textarea id="newPostContent" rows="3" placeholder="分享你的搭配经验、踩坑记录或改装方案..." aria-label="帖子内容"></textarea>
+      <div style="text-align:right;">
+        <button class="btn btn-primary" onclick="submitPost()">发布</button>
+      </div>
+    </div>
+    <div class="community-feed" id="communityFeed"></div>
+  </div>
+</section>
+
+<section id="stl" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>转接件设计库</h2>
+      <p>免费下载STL文件，自己打印或委托代打</p>
+    </div>
+    <div class="stl-grid" id="stlGrid"></div>
+    <div class="print-service">
+      <div class="service-card">
+        <h3>没有3D打印机?</h3>
+        <p>下载STL文件后，上传到嘉立创3D打印平台下单代打</p>
+        <div class="price-range">单个转接件 <strong>15-50元</strong> · PLA材料 · 3-5天送达</div>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://www.jlc-3dp.cn/" target="_blank" rel="noopener" class="btn btn-primary">前往嘉立创下单</a>
+          <a href="https://www.mohou.com/" target="_blank" rel="noopener" class="btn btn-secondary">魔猴网代打</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="monitor" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>行业动态监控</h2>
+      <p>每日自动追踪品牌新品、开源社区、标准化进展</p>
+    </div>
+    <div class="monitor-tabs">
+      <button class="tab active" data-mtab="brand">品牌动态</button>
+      <button class="tab" data-mtab="opensource">开源社区</button>
+      <button class="tab" data-mtab="standard">标准化</button>
+    </div>
+    <div class="monitor-feed" id="monitorFeed"></div>
+    <div class="monitor-timestamp">
+      <span id="monitorUpdateTime">数据更新于 --</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+            <rect x="2" y="12" width="8" height="8" rx="2" fill="#378ADD"/>
+            <rect x="18" y="2" width="8" height="8" rx="2" fill="#639922"/>
+            <rect x="18" y="18" width="8" height="8" rx="2" fill="#D85A30"/>
+            <line x1="10" y1="16" x2="18" y2="16" stroke="#378ADD" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>RoboLink</span>
+        </div>
+        <p>让普通人也能玩转机器人的零件对接平台</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>平台</h4>
+          <a href="#parts">零件库</a>
+          <a href="#compat">兼容检查</a>
+          <a href="#stl">STL下载</a>
+        </div>
+        <div class="footer-col">
+          <h4>社区</h4>
+          <a href="#community">最新动态</a>
+          <a href="#" onclick="togglePostForm();return false;">发布方案</a>
+          <a href="#">帮助中心</a>
+        </div>
+        <div class="footer-col">
+          <h4>信息</h4>
+          <a href="#monitor">行业动态</a>
+          <a href="#" onclick="showApiInfo();return false;">开发者 API</a>
+          <a href="#">关于我们</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 RoboLink - 机器人零件对接平台 | 数据仅供参考，工业场景请自行验证精度</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 认证弹窗 -->
+<div id="authModal" role="dialog" aria-label="登录或注册" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:2000;justify-content:center;align-items:center;">
+  <div style="background:white;border-radius:16px;padding:32px;max-width:420px;width:90%;position:relative;">
+    <button onclick="closeAuthModal()" aria-label="关闭" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#666;">&times;</button>
+
+    <!-- Auth Tabs -->
+    <div style="display:flex;gap:0;margin-bottom:24px;background:var(--gray-50);border-radius:8px;padding:4px;">
+      <button data-auth-tab="login" class="auth-tab active" onclick="showAuthModal('login')" style="flex:1;padding:8px;border:none;background:white;border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;">登录</button>
+      <button data-auth-tab="register" class="auth-tab" onclick="showAuthModal('register')" style="flex:1;padding:8px;border:none;background:transparent;border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;color:var(--gray-600);">注册</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="authLoginForm" onsubmit="handleLogin(event)">
+      <div style="margin-bottom:16px;">
+        <label for="loginEmail" style="display:block;font-size:13px;font-weight:500;color:var(--gray-600);margin-bottom:6px;">邮箱</label>
+        <input type="email" id="loginEmail" placeholder="your@email.com" required style="width:100%;padding:10px 14px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--blue-400)'" onblur="this.style.borderColor='var(--gray-200)'">
+      </div>
+      <div style="margin-bottom:20px;">
+        <label for="loginPassword" style="display:block;font-size:13px;font-weight:500;color:var(--gray-600);margin-bottom:6px;">密码</label>
+        <input type="password" id="loginPassword" placeholder="输入密码" required style="width:100%;padding:10px 14px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--blue-400)'" onblur="this.style.borderColor='var(--gray-200)'">
+      </div>
+      <button type="submit" id="loginSubmitBtn" class="btn btn-primary" style="width:100%;padding:12px;font-size:15px;">登录</button>
+      <div style="text-align:center;margin-top:12px;">
+        <button type="button" onclick="handleGuestLogin()" style="background:none;border:none;color:var(--gray-400);font-size:13px;cursor:pointer;font-family:inherit;">游客模式浏览</button>
+      </div>
+    </form>
+
+    <!-- Register Form -->
+    <form id="authRegisterForm" style="display:none;" onsubmit="handleRegister(event)">
+      <div style="margin-bottom:12px;">
+        <label for="registerUsername" style="display:block;font-size:13px;font-weight:500;color:var(--gray-600);margin-bottom:6px;">用户名</label>
+        <input type="text" id="registerUsername" placeholder="你的昵称" required style="width:100%;padding:10px 14px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--blue-400)'" onblur="this.style.borderColor='var(--gray-200)'">
+      </div>
+      <div style="margin-bottom:12px;">
+        <label for="registerEmail" style="display:block;font-size:13px;font-weight:500;color:var(--gray-600);margin-bottom:6px;">邮箱</label>
+        <input type="email" id="registerEmail" placeholder="your@email.com" required style="width:100%;padding:10px 14px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--blue-400)'" onblur="this.style.borderColor='var(--gray-200)'">
+      </div>
+      <div style="margin-bottom:20px;">
+        <label for="registerPassword" style="display:block;font-size:13px;font-weight:500;color:var(--gray-600);margin-bottom:6px;">密码</label>
+        <input type="password" id="registerPassword" placeholder="至少6位密码" required minlength="6" style="width:100%;padding:10px 14px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--blue-400)'" onblur="this.style.borderColor='var(--gray-200)'">
+      </div>
+      <button type="submit" id="registerSubmitBtn" class="btn btn-primary" style="width:100%;padding:12px;font-size:15px;">注册</button>
+    </form>
+
+    <p style="text-align:center;margin-top:16px;font-size:12px;color:var(--gray-400);">
+      登录即表示同意 <a href="#" style="color:var(--blue-400);">用户协议</a> 和 <a href="#" style="color:var(--blue-400);">隐私政策</a>
+    </p>
+  </div>
+</div>
+
+<!-- 3D预览弹窗 -->
+<div id="stlPreviewModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:1000;justify-content:center;align-items:center;">
+  <div style="background:white;border-radius:12px;padding:24px;max-width:600px;width:90%;position:relative;">
+    <button onclick="closeSTLPreview()" aria-label="关闭3D预览" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#666;">&times;</button>
+    <h3 style="margin:0 0 16px;color:var(--gray-800);">3D模型预览</h3>
+    <div id="stl3dViewer" style="width:100%;height:400px;border-radius:8px;overflow:hidden;background:#f8f7f4;"></div>
+    <!-- 机械臂+夹爪同屏预览控件 -->
+    <div style="display:flex;gap:8px;margin:12px 0 0;align-items:center;flex-wrap:wrap;">
+      <select id="armSelect" style="padding:6px 12px;border:1px solid var(--gray-200);border-radius:6px;font-size:13px;flex:1;min-width:140px;">
+        <option value="">-- 选择机械臂 --</option>
+        <option value="ur5e">UR5e</option>
+        <option value="dobot-cr3">DOBOT CR3</option>
+        <option value="elephant-630">myCobot 630</option>
+      </select>
+      <button onclick="loadRobotArmModel(document.getElementById('armSelect').value)" class="btn btn-secondary" style="padding:6px 16px;font-size:13px;" id="loadArmBtn" disabled>加载机械臂</button>
+      <button onclick="loadGripperOnArm(currentPreviewId)" class="btn btn-primary" style="padding:6px 16px;font-size:13px;" id="loadGripperBtn" disabled>夹爪装到臂上</button>
+    </div>
+    <p style="margin:12px 0 0;font-size:13px;color:var(--gray-400);text-align:center;">鼠标拖拽旋转 · 滚轮缩放 · 自动旋转中</p>
+  </div>
+</div>
+
+<!-- 脚本加载顺序：config → data → auth → app → stl-viewer -->
+<!-- SEO: 静态内容回退，供无法执行JS的爬虫读取 -->
+<noscript>
+<div style="padding:20px;max-width:800px;margin:0 auto;font-family:sans-serif;">
+<h1>RoboLink - 机器人零件对接平台</h1>
+<p>不同品牌的机器人零件，在这里找到连接方式。免费STL转接件下载，3D打印代打服务。</p>
+<h2>支持的机械臂品牌（18款）</h2>
+<p>DOBOT（Magician、M1、CR3、Lite 6）、Universal Robots（UR3e、UR5e）、Franka Emika（Panda）、HIWIN（RA610-6F）、AUBO（i06）、uArm（Swift Pro Metal）、Elephant Robotics（myCobot 280/320/630）、LoFi Robot（MK2）、矽递科技（reBot-DevArm）、SO-ARM（SO-ARM100）、CRobot（CR4）</p>
+<h2>支持的末端执行器（42款）</h2>
+<p>进口工业夹爪：Robotiq（2F-85、2F-140、Hand-E、EPICK）、OnRobot（RG2、RG6、VGC10）、Schunk（EGP-40）、Festo（DHGP）</p>
+<p>国产工业夹爪：慧灵科技（LFG-2T、LFG-Micro、LFG-3T、LFG-5T、VG-Micro、VG-Pro）、大寰机器人（GECKO、GECKO-Pro、PIKA、PIKA-Mini）、柔触机器人（FG-2、FG-mini、FG-3）、知行机器人（HG-210、HG-120、HG-220）</p>
+<p>国产桌面夹爪：沃姆机器人（WK-01、WK-02）、天机机器人（TG-01）、一元智能（YG-100）</p>
+<p>舵机夹爪：MG996R、MG995、SG90、DS3218</p>
+<h2>免费STL转接件下载</h2>
+<p>提供24款转接件设计，覆盖ISO50/ISO40/自定义法兰/舵机多种接口。基础12款包括：ISO50-M4转接件、ISO40-M4转接件、ISO50-舵机转接件、M4-舵机转接件、双夹爪安装座、线缆拖链支架、被动式工具快换、uArm夹爪转接件、自定义夹爪手指、myCobot舵机转接件、相机安装座、NEMA17步进电机安装座。新增12款：myCobot 280专用转接件、uArm Swift Pro扩展件、ISO50-M3小法兰、双联夹爪座、线缆理线器、磁性快换底座、传感器安装座、夹爪延长杆、多夹爪切换盘、被动快换公头、被动快换母头、桌面工具台。</p>
+<h2>机器人兼容性检查</h2>
+<p>支持4种法兰组自动匹配：ISO 9409-50（M6螺栓）、ISO 9409-40（M4螺栓）、自定义M4、标准舵机。检查法兰尺寸、通信协议和电压兼容性。</p>
+<h2>3D打印代打服务</h2>
+<p>集成嘉立创3D打印和魔猴网，提供三种打印材料选项：</p>
+<ul style="margin:8px 0;padding-left:20px;font-size:14px;line-height:1.8;">
+  <li><strong>PLA材料</strong>（默认）：15-30元/件，易打印，适合原型验证和轻负载场景。</li>
+  <li><strong>PETG材料</strong>（推荐）：25-50元/件，耐热80℃，韧性好，适合实验室和中负载场景。</li>
+  <li><strong>尼龙材料（PA12）</strong>：50-120元/件，强度极高，耐热180℃，适合真实负载和量产场景。需恒温箱打印，建议委托平台代打。</li>
+</ul>
+<p>在 <a href="https://roboparts.cc#print">打印服务页面</a> 可选择材料，系统自动计算价格，3-5天发货。</p>
+<h2>机器人创客社区</h2>
+<p>分享你的机器人项目、转接件设计、使用心得。发帖、评论、点赞，与全国机器人爱好者交流。</p>
+<h2>常见问题</h2>
+<p><strong>DOBOT能接Robotiq夹爪吗？</strong> DOBOT M1/CR3使用ISO 9409-50法兰，与Robotiq 2F-85/2F-140兼容，可直接安装。</p>
+<p><strong>什么是ISO 9409法兰标准？</strong> 国际机器人末端接口标准，ISO 9409-50-4-M6是最常用规格（50mm直径、4个M6螺栓孔）。</p>
+<p><strong>入门机械臂推荐？</strong> DOBOT Magician（约2000元）教学经典，Elephant myCobot 280（约1500元）最便宜6轴协作臂。</p>
+<p><strong>没有3D打印机怎么办？</strong> 通过平台委托嘉立创或魔猴网代打，一键下单。</p>
+</div>
+</noscript>
+
+<!-- 下载成功引导弹窗 -->
+<div id="downloadSuccessModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:1500;justify-content:center;align-items:flex-end;padding-bottom:0;">
+  <div class="dsm-backdrop" onclick="closeDownloadSuccess()"></div>
+  <div class="dsm-card">
+    <div class="dsm-icon">✅</div>
+    <div class="dsm-title">STL 文件已下载！</div>
+    <div class="dsm-desc"><span id="dsm-name"></span><br>准备好打印了吗？</div>
+    <div class="dsm-actions">
+      <button class="btn btn-print dsm-btn" id="dsm-print-btn">🖨 帮我代打</button>
+      <button class="btn btn-outline dsm-btn" id="dsm-showoff-btn">📸 我已打印，去晒图</button>
+    </div>
+    <button class="dsm-close" onclick="closeDownloadSuccess()">稍后再说</button>
+  </div>
+</div>
+
+<!-- 晒图弹窗 -->
+<div id="showoffModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:1600;justify-content:center;align-items:center;">
+  <div class="sf-backdrop" onclick="closeShowoffModal()"></div>
+  <div class="sf-card">
+    <button class="sf-close-btn" onclick="closeShowoffModal()" aria-label="关闭晒图弹窗">×</button>
+    <div class="sf-header">
+      <div class="sf-emoji">📸</div>
+      <h3>晒出你的成品</h3>
+      <p id="showoff-design-name" style="font-size:13px;color:var(--gray-400);margin-top:4px;"></p>
+    </div>
+
+    <!-- 上传照片 -->
+    <div class="sf-upload-area" onclick="document.getElementById('showoff-file-input').click()">
+      <input type="file" id="showoff-file-input" accept="image/*" style="display:none" onchange="handleShowoffFileChange(this)">
+      <img id="showoff-preview-img" alt="成品照片预览" style="display:none;max-height:160px;border-radius:8px;object-fit:cover;width:100%;">
+      <div id="showoff-upload-placeholder" class="sf-upload-placeholder">
+        <span style="font-size:32px;">🖼</span>
+        <p>点击上传成品照片</p>
+        <span style="font-size:12px;color:var(--gray-400);">JPG / PNG / WebP · 最大10MB</span>
+      </div>
+      <p id="showoff-preview-filename" style="font-size:12px;color:var(--gray-400);margin-top:6px;text-align:center;"></p>
+    </div>
+
+    <!-- 描述 -->
+    <textarea id="showoff-desc" class="sf-desc-input" placeholder="分享一下打印效果、使用场景或改进意见（选填）..." rows="2"></textarea>
+
+    <!-- 奖励说明 -->
+    <div class="sf-reward">
+      🎁 晒图即可获得 <strong>5元打印返现券</strong>，下次代打直接抵扣
+    </div>
+
+    <button class="btn btn-print sf-submit" id="showoff-submit-btn" onclick="submitShowoff()" disabled>发布成品</button>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/payment.js"></script>
+<script src="js/marketing.js"></script>
+<script src="js/app.js"></script>
+<script src="js/stl-viewer.js"></script>
+<script src="js/community.js"></script>
+
+<!-- API 信息弹窗 -->
+<div id="apiModal" role="dialog" aria-label="开发者 API 文档" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1700;justify-content:center;align-items:center;padding:20px;box-sizing:border-box;">
+  <div style="background:white;border-radius:16px;max-width:720px;width:100%;max-height:88vh;overflow-y:auto;padding:32px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+    <button onclick="closeApiModal()" aria-label="关闭" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:var(--gray-400);width:32px;height:32px;line-height:1;">×</button>
+
+    <h2 style="margin-top:0;font-size:22px;color:var(--gray-900);">🛠️ 开发者 API</h2>
+    <p style="color:var(--gray-600);font-size:14px;line-height:1.7;">
+      RoboParts 开放零件兼容性和选型推荐 API，供 LLM、控制层软件、第三方工具调用。
+      <strong>所有端点免费</strong>，每天 1000 次配额。
+    </p>
+
+    <h3 style="font-size:15px;color:var(--gray-900);margin-top:24px;">🔑 获取 API Key</h3>
+    <p style="font-size:13px;color:var(--gray-600);">在 <a href="mailto:api@roboparts.cc" style="color:var(--blue-400);">api@roboparts.cc</a> 发送邮件申请，注明用途。格式：<code style="background:var(--gray-50);padding:2px 6px;border-radius:4px;font-family:monospace;">rbp_xxxxxxxx</code></p>
+
+    <h3 style="font-size:15px;color:var(--gray-900);margin-top:24px;">📡 端点 1：兼容性检查</h3>
+    <pre style="background:var(--gray-50);padding:14px;border-radius:8px;overflow-x:auto;font-size:12px;line-height:1.6;font-family:monospace;color:var(--gray-800);">POST https://roboparts.cc/api/v1/compat/check
+Headers:
+  X-API-Key: rbp_xxxxxxxx
+  Content-Type: application/json
+
+Body:
+{
+  "robot_arm": "dobot-magician",
+  "end_effector": "robotiq-2f85"
+}</pre>
+
+    <h3 style="font-size:15px;color:var(--gray-900);margin-top:24px;">🤖 端点 2：零件推荐</h3>
+    <pre style="background:var(--gray-50);padding:14px;border-radius:8px;overflow-x:auto;font-size:12px;line-height:1.6;font-family:monospace;color:var(--gray-800);">POST https://roboparts.cc/api/v1/parts/recommend
+Headers:
+  X-API-Key: rbp_xxxxxxxx
+  Content-Type: application/json
+
+Body:
+{
+  "robot_arm": "dobot-magician",
+  "task": "抓取易碎品",
+  "budget": 2000,
+  "prefer_brand": null
+}</pre>
+
+    <h3 style="font-size:15px;color:var(--gray-900);margin-top:24px;">🧪 在线测试</h3>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
+      <a href="https://roboparts.cc/api/v1/compat-check" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:13px;padding:8px 16px;">查看零件库 (GET)</a>
+      <a href="docs/llm-integration-spec-v0.1.md" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:13px;padding:8px 16px;">完整 API 规范</a>
+    </div>
+
+    <h3 style="font-size:15px;color:var(--gray-900);margin-top:24px;">💡 应用场景</h3>
+    <ul style="font-size:13px;color:var(--gray-600);line-height:1.8;padding-left:20px;">
+      <li><strong>LLM / Agent</strong>：让 ChatGPT / Claude / Qwen 直接查询零件兼容性</li>
+      <li><strong>机器人控制软件</strong>：自动检查选型方案是否可行</li>
+      <li><strong>MCP 集成</strong>：作为 Model Context Protocol Server 注册到 Qwen-Agent</li>
+      <li><strong>选型工具</strong>：嵌入到 ROS / Isaac / MoveIt 等机器人开发环境</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function showApiInfo() {
+  document.getElementById('apiModal').style.display = 'flex';
+}
+function closeApiModal() {
+  document.getElementById('apiModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>虎皮椒支付 - Agent Trust Protocol</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .container {
+      width: 420px;
+      max-width: 95vw;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 36px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    }
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle { text-align: center; color: rgba(255,255,255,0.5); font-size: 13px; margin-bottom: 28px; }
+
+    /* 商品选择 */
+    .products { display: flex; gap: 10px; margin-bottom: 24px; }
+    .product-card {
+      flex: 1;
+      background: rgba(255,255,255,0.06);
+      border: 1.5px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 16px 10px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+    .product-card:hover { border-color: rgba(102,126,234,0.5); transform: translateY(-2px); }
+    .product-card.selected {
+      border-color: #667eea;
+      background: rgba(102,126,234,0.15);
+      box-shadow: 0 0 20px rgba(102,126,234,0.2);
+    }
+    .product-name { font-size: 14px; margin-bottom: 6px; color: rgba(255,255,255,0.9); }
+    .product-price { font-size: 22px; font-weight: 700; color: #4ade80; }
+    .product-price span { font-size: 12px; color: rgba(255,255,255,0.4); font-weight: 400; }
+
+    /* 按钮 */
+    .btn-pay {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      letter-spacing: 2px;
+    }
+    .btn-pay:hover:not(:disabled) { transform: scale(1.02); box-shadow: 0 8px 25px rgba(102,126,234,0.4); }
+    .btn-pay:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* 支付结果区 */
+    #pay-result { display: none; margin-top: 24px; text-align: center; }
+    .qrcode-wrap { background: #fff; border-radius: 16px; padding: 20px; display: inline-block; }
+    .qrcode-wrap img { width: 200px; height: 200px; border-radius: 8px; }
+    .qrcode-tip { margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.5); }
+    .qrcode-tip strong { color: #4ade80; }
+
+    /* 状态 - 默认隐藏，由 JS 控制显隐 */
+    .status-bar {
+      margin-top: 16px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      display: none;
+    }
+    .status-waiting { background: rgba(250,204,21,0.15); color: #fbbf24; }
+    .status-success { background: rgba(74,222,128,0.15); color: #4ade80; }
+    .status-error { background: rgba(248,113,113,0.15); color: #f87171; }
+
+    /* 移动端跳转提示 */
+    .mobile-link {
+      display: none;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .mobile-link a { color: #667eea; text-decoration: none; font-weight: 600; }
+
+    @media (max-width: 480px) {
+      .container { padding: 24px; }
+      h1 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🐯 虎皮椒支付</h1>
+    <p class="subtitle">Agent Trust Protocol · 安全支付</p>
+
+    <!-- 步骤1：选商品 -->
+    <div id="step-select">
+      <div class="products" id="product-list"></div>
+      <button class="btn-pay" id="btn-create" disabled onclick="createOrder()">立即购买</button>
+    </div>
+
+    <!-- 步骤2：支付结果 -->
+    <div id="pay-result">
+      <div class="qrcode-wrap" id="qrcode-area">
+        <!-- 二维码图片 -->
+        <img id="qrcode-img" src="" alt="扫码支付">
+        <div class="qrcode-tip">请用 <strong>微信</strong> 或 <strong>支付宝</strong> 扫码支付</div>
+      </div>
+      <div class="mobile-link" id="mobile-area">
+        <a href="#" id="mobile-link-a" target="_blank">📱 点击跳转支付（手机端）</a>
+      </div>
+      <div class="status-bar status-waiting" id="status-waiting">
+        ⏳ 等待支付中... 请扫码完成付款
+      </div>
+      <div class="status-bar status-success" id="status-success">
+        ✅ 支付成功！感谢您的支持
+      </div>
+      <div class="status-bar status-error" id="status-error"></div>
+      <button class="btn-pay" style="margin-top: 16px;" onclick="location.reload()">← 返回重新下单</button>
+    </div>
+  </div>
+
+  <script>
+    // ============================================================
+    // 配置商品（可自定义）
+    // ============================================================
+    const PRODUCTS = [
+      { id: 'basic',   name: '基础版', price: 9.9,  title: 'AIShield 基础版会员' },
+      { id: 'pro',     name: '专业版', price: 29.9, title: 'AIShield 专业版会员' },
+      { id: 'premium', name: '旗舰版', price: 99.9, title: 'AIShield 旗舰版会员' },
+    ];
+
+    let selectedProduct = null;
+    let currentOrderId = null;
+    let pollTimer = null;
+
+    // 渲染商品列表
+    function renderProducts() {
+      const list = document.getElementById('product-list');
+      list.innerHTML = PRODUCTS.map(p => `
+        <div class="product-card ${selectedProduct?.id === p.id ? 'selected' : ''}" onclick="selectProduct('${p.id}')">
+          <div class="product-name">${p.name}</div>
+          <div class="product-price">¥${p.price}<span>/月</span></div>
+        </div>
+      `).join('');
+    }
+
+    function selectProduct(id) {
+      selectedProduct = PRODUCTS.find(p => p.id === id);
+      renderProducts();
+      document.getElementById('btn-create').disabled = false;
+    }
+
+    // 默认选中第一个
+    selectProduct(PRODUCTS[0].id);
+
+    // ============================================================
+    // 创建订单
+    // ============================================================
+    async function createOrder() {
+      if (!selectedProduct) return;
+
+      const btn = document.getElementById('btn-create');
+      btn.disabled = true;
+      btn.textContent = '创建中...';
+
+      try {
+        const res = await fetch('/api/payment/create', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            title: selectedProduct.title,
+            totalFee: selectedProduct.price,
+            attach: JSON.stringify({ plan: selectedProduct.id }),
+          }),
+        });
+
+        const result = await res.json();
+        if (result.errcode !== 0) throw new Error(result.errmsg);
+
+        currentOrderId = result.data.tradeOrderId;
+
+        // 切换到支付界面
+        document.getElementById('step-select').style.display = 'none';
+        document.getElementById('pay-result').style.display = 'block';
+
+        // 显示二维码 / 移动端链接
+        if (result.data.qrcodeUrl) {
+          // 虎皮椒返回了二维码地址
+          document.getElementById('qrcode-img').src = result.data.qrcodeUrl;
+          document.getElementById('qrcode-area').style.display = 'inline-block';
+        } else if (result.data.payUrl) {
+          // 虎皮椒没返回二维码，用 payUrl 自动生成二维码
+          document.getElementById('qrcode-img').src =
+            'https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=' +
+            encodeURIComponent(result.data.payUrl);
+          document.getElementById('qrcode-area').style.display = 'inline-block';
+        } else {
+          document.getElementById('qrcode-area').style.display = 'none';
+        }
+
+        if (result.data.payUrl) {
+          // 检测是否手机端
+          const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+          if (isMobile) {
+            document.getElementById('mobile-link-a').href = result.data.payUrl;
+            document.getElementById('mobile-area').style.display = 'block';
+            document.getElementById('qrcode-area').style.display = 'none';
+          }
+        }
+
+        // 开始轮询支付状态
+        startPolling();
+
+      } catch (err) {
+        alert('创建订单失败: ' + err.message);
+        btn.disabled = false;
+        btn.textContent = '立即购买';
+      }
+    }
+
+    // ============================================================
+    // 轮询支付状态
+    // ============================================================
+    function startPolling() {
+      // 只显示"等待中"，隐藏其他状态
+      const elWaiting = document.getElementById('status-waiting');
+      const elSuccess = document.getElementById('status-success');
+      const elError = document.getElementById('status-error');
+      elWaiting.style.display = 'block';
+      elSuccess.style.display = 'none';
+      elError.style.display = 'none';
+
+      let count = 0;
+      pollTimer = setInterval(async () => {
+        count++;
+        try {
+          const res = await fetch(`/api/payment/query/${currentOrderId}`);
+          const result = await res.json();
+
+          if (result.data?.status === 'paid') {
+            stopPolling();
+            showSuccess();
+          } else if (count > 60) {
+            // 5分钟超时（每5秒一次）
+            stopPolling();
+            showError('⏰ 查询超时，请刷新页面或联系客服');
+          }
+        } catch {}
+      }, 5000);
+    }
+
+    function stopPolling() {
+      if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+    }
+
+    function showSuccess() {
+      document.getElementById('status-waiting').style.display = 'none';
+      document.getElementById('status-error').style.display = 'none';
+      const el = document.getElementById('status-success');
+      el.style.display = 'block';
+    }
+
+    function showError(msg) {
+      document.getElementById('status-waiting').style.display = 'none';
+      const el = document.getElementById('status-error');
+      el.textContent = msg;
+      el.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

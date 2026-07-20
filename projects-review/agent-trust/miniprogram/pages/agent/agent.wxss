@@ -1,0 +1,272 @@
+/* pages/agent/agent.wxss */
+.agent-page {
+  padding: 24rpx;
+  padding-bottom: 120rpx;
+  min-height: 100vh;
+}
+
+/* 未登录提示 */
+.auth-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64rpx 32rpx;
+  margin-top: 48rpx;
+}
+
+.auth-prompt__icon {
+  font-size: 80rpx;
+  margin-bottom: 24rpx;
+}
+
+.auth-prompt__title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12rpx;
+}
+
+.auth-prompt__desc {
+  font-size: 26rpx;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 32rpx;
+  line-height: 1.8;
+}
+
+/* 统计行 */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+  margin-bottom: 32rpx;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 12rpx;
+}
+
+.stat-card__value {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4rpx;
+}
+
+.stat-card__label {
+  font-size: 22rpx;
+  color: var(--text-tertiary);
+}
+
+/* 分区头部（带操作按钮） */
+.section-action {
+  font-size: 28rpx;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Agent 卡片 */
+.agent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.agent-card__top {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+.agent-card__avatar {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, #ff8555 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.agent-card__avatar-text {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: white;
+}
+
+.agent-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.agent-card__name {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.agent-card__did {
+  display: block;
+  font-size: 22rpx;
+  color: var(--text-tertiary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.agent-card__score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8rpx;
+  flex-shrink: 0;
+}
+
+.agent-card__score-value {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.agent-card__score-bar {
+  width: 80rpx;
+  height: 6rpx;
+  background-color: var(--bg-secondary);
+  border-radius: 3rpx;
+  overflow: hidden;
+}
+
+.agent-card__score-fill {
+  height: 100%;
+  background-color: var(--accent);
+  border-radius: 3rpx;
+}
+
+.agent-card__tags {
+  display: flex;
+  gap: 8rpx;
+  flex-wrap: wrap;
+}
+
+/* 表单弹窗 */
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 100%;
+  max-height: 85vh;
+  background-color: var(--bg-secondary);
+  border-radius: 24rpx 24rpx 0 0;
+  padding: 32rpx;
+  overflow-y: auto;
+}
+
+.modal__title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 32rpx;
+}
+
+/* 表单组件 */
+.form-group {
+  margin-bottom: 24rpx;
+}
+
+.form-label {
+  display: block;
+  font-size: 26rpx;
+  color: var(--text-secondary);
+  margin-bottom: 8rpx;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  height: 80rpx;
+  background-color: var(--bg-card);
+  border: 1rpx solid var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 0 24rpx;
+  font-size: 28rpx;
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 160rpx;
+  background-color: var(--bg-card);
+  border: 1rpx solid var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 20rpx 24rpx;
+  font-size: 28rpx;
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+/* 协议选项 */
+.protocol-options {
+  display: flex;
+  gap: 12rpx;
+}
+
+.protocol-option {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16rpx 8rpx;
+  background-color: var(--bg-card);
+  border: 1rpx solid var(--bg-card);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.protocol-option--active {
+  background-color: rgba(255, 107, 53, 0.1);
+  border-color: var(--accent);
+}
+
+.protocol-option__name {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4rpx;
+}
+
+.protocol-option__desc {
+  font-size: 20rpx;
+  color: var(--text-tertiary);
+}
+
+/* 弹窗底部按钮 */
+.modal__footer {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 32rpx;
+}
+
+.modal__footer .btn {
+  flex: 1;
+}

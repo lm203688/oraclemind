@@ -1,0 +1,6 @@
+name = "swarmlabs-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+BACKEND_URL = "http://150.158.119.19:8460"

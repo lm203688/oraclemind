@@ -1328,6 +1328,3634 @@ Exoplanet and space exploration knowledge base covering exoplanets, missions, te
 - description: Three new hot Jupiter planets orbiting M dwarf stars discovered by NASA's TESS mission in 2026, part of a milestone addition of 114 planets to the NASA Exoplanet Archive. These discoveries are notable because hot Jupiters around M dwarfs are relatively rare.
 - source: NASA Exoplanet Archive 2026
 
+### Heliosgard
+
+- name: Heliosgard
+- type: gas_giant
+- distance: 120
+- mass: 2.1
+
+### Aquaria Prime
+
+- name: Aquaria Prime
+- type: habitable_zone
+- distance: 42
+- mass: 0.9
+
+### Pyroclast
+
+- name: Pyroclast
+- type: super_earth
+- distance: 85
+- mass: 4.5
+
+### Cryovol
+
+- name: Cryovol
+- type: super_earth
+- distance: 210
+- mass: 3.2
+
+### Zephyria
+
+- name: Zephyria
+- type: gas_giant
+- distance: 75
+- mass: 1.8
+
+### Silva
+
+- name: Silva
+- type: habitable_zone
+- distance: 98
+- mass: 1.1
+
+### Oblivion
+
+- name: Oblivion
+- type: gas_giant
+- distance: 340
+- mass: 5.7
+
+### Crystallia
+
+- name: Crystallia
+- type: super_earth
+- distance: 156
+- mass: 2.8
+
+### Verdantia
+
+- name: Verdantia
+- type: habitable_zone
+- distance: 61
+- mass: 1.4
+
+### Scorch
+
+- name: Scorch
+- type: super_earth
+- distance: 180
+- mass: 6.1
+
+### Kraken's Maw
+
+- name: Kraken's Maw
+- type: gas_giant
+- distance: 450
+- mass: 3.9
+
+### Elysium
+
+- name: Elysium
+- type: habitable_zone
+- distance: 33
+- mass: 0.8
+
+### Goliath
+
+- name: Goliath
+- type: gas_giant
+- distance: 280
+- mass: 8.2
+
+### Penumbral
+
+- name: Penumbral
+- type: super_earth
+- distance: 92
+- mass: 5.3
+
+### Eden's Star
+
+- name: Eden's Star
+- type: habitable_zone
+- distance: 150
+- mass: 1.0
+
+### Pandora's Forge
+
+- name: Pandora's Forge
+- type: gas giant
+- distance: 42.5
+- mass: 2.1
+
+### Erebus
+
+- name: Erebus
+- type: super-Earth
+- distance: 187.3
+- mass: 4.8
+
+### Veridia
+
+- name: Veridia
+- type: habitable zone
+- distance: 510.8
+- mass: 1.0
+
+### Cronus
+
+- name: Cronus
+- type: gas giant
+- distance: 89.1
+- mass: 5.6
+
+### Aethelgard
+
+- name: Aethelgard
+- type: super-Earth
+- distance: 312.4
+- mass: 3.2
+
+### Nyx
+
+- name: Nyx
+- type: gas giant
+- distance: 22.6
+- mass: 1.8
+
+### Olympus Mons
+
+- name: Olympus Mons
+- type: habitable zone
+- distance: 765.2
+- mass: 0.9
+
+### Jotunheim
+
+- name: Jotunheim
+- type: gas giant
+- distance: 156.7
+- mass: 3.9
+
+### Pallas
+
+- name: Pallas
+- type: super-Earth
+- distance: 433.9
+- mass: 6.1
+
+### Helios Prime
+
+- name: Helios Prime
+- type: gas giant
+- distance: 71.4
+- mass: 4.3
+
+### Terra Nova
+
+- name: Terra Nova
+- type: habitable zone
+- distance: 298.1
+- mass: 1.2
+
+### Surtur
+
+- name: Surtur
+- type: gas giant
+- distance: 544.0
+- mass: 2.7
+
+### Cimmeria
+
+- name: Cimmeria
+- type: super-Earth
+- distance: 199.5
+- mass: 5.2
+
+### Avalon
+
+- name: Avalon
+- type: habitable zone
+- distance: 618.7
+- mass: 1.1
+
+### Typhon
+
+- name: Typhon
+- type: gas giant
+- distance: 34.2
+- mass: 3.4
+
+### Kepler-442b
+
+- name: Kepler-442b
+- discovery_date: 2015-01-06
+- mass: 2.3 Earth masses
+- radius: 1.34 Earth radii
+- orbital_period: 112.3 days
+- distance_from_earth: 1206 light years
+- constellation: Lyra
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-442
+- equilibrium_temperature: -40°C
+- stellar_type: K-type main-sequence
+- discovery_facility: Kepler Space Telescope
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-452b
+
+- name: Kepler-452b
+- discovery_date: 2015-07-23
+- mass: 5.0 Earth masses
+- radius: 1.63 Earth radii
+- orbital_period: 384.8 days
+- distance_from_earth: 1402 light years
+- constellation: Cygnus
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-452
+- equilibrium_temperature: -5°C
+- stellar_type: G-type main-sequence
+- discovery_facility: Kepler Space Telescope
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: High
+
+### TRAPPIST-1b
+
+- name: TRAPPIST-1b
+- discovery_date: 2016-02-24
+- mass: 1.017 Earth masses
+- radius: 1.116 Earth radii
+- orbital_period: 1.51 days
+- distance_from_earth: 40.7 light years
+- constellation: Aquarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TRAPPIST-1
+- equilibrium_temperature: 220 K
+- stellar_type: M-dwarf
+- discovery_facility: TRAPPIST
+- nasa_mission: Spitzer/TESS
+- atmosphere_detected: true
+- potential_for_life: Low
+
+### TRAPPIST-1c
+
+- name: TRAPPIST-1c
+- discovery_date: 2016-02-24
+- mass: 1.156 Earth masses
+- radius: 1.097 Earth radii
+- orbital_period: 2.42 days
+- distance_from_earth: 40.7 light years
+- constellation: Aquarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TRAPPIST-1
+- equilibrium_temperature: 210 K
+- stellar_type: M-dwarf
+- discovery_facility: TRAPPIST
+- nasa_mission: Spitzer/TESS
+- atmosphere_detected: true
+- potential_for_life: Low
+
+### TRAPPIST-1d
+
+- name: TRAPPIST-1d
+- discovery_date: 2016-02-24
+- mass: 0.297 Earth masses
+- radius: 0.788 Earth radii
+- orbital_period: 4.05 days
+- distance_from_earth: 40.7 light years
+- constellation: Aquarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TRAPPIST-1
+- equilibrium_temperature: 288 K
+- stellar_type: M-dwarf
+- discovery_facility: TRAPPIST
+- nasa_mission: Spitzer/TESS
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### TRAPPIST-1e
+
+- name: TRAPPIST-1e
+- discovery_date: 2017-02-21
+- mass: 0.772 Earth masses
+- radius: 0.920 Earth radii
+- orbital_period: 6.10 days
+- distance_from_earth: 40.7 light years
+- constellation: Aquarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TRAPPIST-1
+- equilibrium_temperature: 251 K
+- stellar_type: M-dwarf
+- discovery_facility: TRAPPIST
+- nasa_mission: Spitzer
+- atmosphere_detected: true
+- potential_for_life: High
+
+### TRAPPIST-1f
+
+- name: TRAPPIST-1f
+- discovery_date: 2017-02-21
+- mass: 0.934 Earth masses
+- radius: 1.045 Earth radii
+- orbital_period: 9.21 days
+- distance_from_earth: 40.7 light years
+- constellation: Aquarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TRAPPIST-1
+- equilibrium_temperature: 218 K
+- stellar_type: M-dwarf
+- discovery_facility: TRAPPIST
+- nasa_mission: Spitzer
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### TRAPPIST-1g
+
+- name: TRAPPIST-1g
+- discovery_date: 2017-02-21
+- mass: 1.209 Earth masses
+- radius: 1.129 Earth radii
+- orbital_period: 12.35 days
+- distance_from_earth: 40.7 light years
+- constellation: Aquarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TRAPPIST-1
+- equilibrium_temperature: 198 K
+- stellar_type: M-dwarf
+- discovery_facility: TRAPPIST
+- nasa_mission: Spitzer
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### TRAPPIST-1h
+
+- name: TRAPPIST-1h
+- discovery_date: 2017-03-24
+- mass: 0.331 Earth masses
+- radius: 0.755 Earth radii
+- orbital_period: 18.77 days
+- distance_from_earth: 40.7 light years
+- constellation: Aquarius
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: TRAPPIST-1
+- equilibrium_temperature: 173 K
+- stellar_type: M-dwarf
+- discovery_facility: TRAPPIST
+- nasa_mission: Spitzer
+- atmosphere_detected: false
+- potential_for_life: Low
+
+### Proxima Centauri b
+
+- name: Proxima Centauri b
+- discovery_date: 2016-08-24
+- mass: 1.17 Earth masses
+- radius: 1.03 Earth radii
+- orbital_period: 11.186 days
+- distance_from_earth: 4.24 light years
+- constellation: Centaurus
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: Proxima Centauri
+- equilibrium_temperature: 234 K
+- stellar_type: M-dwarf
+- discovery_facility: ESO La Silla
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: High
+
+### Kepler-186f
+
+- name: Kepler-186f
+- discovery_date: 2014-12-17
+- mass: 1.4 Earth masses
+- radius: 1.17 Earth radii
+- orbital_period: 129.9 days
+- distance_from_earth: 580 light years
+- constellation: Cygnus
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-186
+- equilibrium_temperature: 188 K
+- stellar_type: M-dwarf
+- discovery_facility: Kepler Space Telescope
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-62f
+
+- name: Kepler-62f
+- discovery_date: 2013-04-18
+- mass: 2.7 Earth masses
+- radius: 1.4 Earth radii
+- orbital_period: 267.29 days
+- distance_from_earth: 1200 light years
+- constellation: Lyra
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-62
+- equilibrium_temperature: 187 K
+- stellar_type: K-type
+- discovery_facility: Kepler Space Telescope
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-62e
+
+- name: Kepler-62e
+- discovery_date: 2013-04-18
+- mass: 4.0 Earth masses
+- radius: 1.61 Earth radii
+- orbital_period: 122.39 days
+- distance_from_earth: 1200 light years
+- constellation: Lyra
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-62
+- equilibrium_temperature: 230 K
+- stellar_type: K-type
+- discovery_facility: Kepler Space Telescope
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### K2-18b
+
+- name: K2-18b
+- discovery_date: 2015-05-25
+- mass: 8.63 Earth masses
+- radius: 2.61 Earth radii
+- orbital_period: 32.94 days
+- distance_from_earth: 124 light years
+- constellation: Leo
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: K2-18
+- equilibrium_temperature: 268 K
+- stellar_type: M-dwarf
+- discovery_facility: K2 Mission
+- nasa_mission: Kepler/K2
+- atmosphere_detected: true
+- potential_for_life: High
+
+### LHS 1140 b
+
+- name: LHS 1140 b
+- discovery_date: 2017-10-18
+- mass: 6.98 Earth masses
+- radius: 1.73 Earth radii
+- orbital_period: 24.73 days
+- distance_from_earth: 40.7 light years
+- constellation: Corvus
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: LHS 1140
+- equilibrium_temperature: 230 K
+- stellar_type: M-dwarf
+- discovery_facility: MEarth Survey
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: High
+
+### Gliese 581g
+
+- name: Gliese 581g
+- discovery_date: 2010-09-29
+- mass: 3.1 Earth masses
+- radius: 1.4 Earth radii
+- orbital_period: 36.56 days
+- distance_from_earth: 20.3 light years
+- constellation: Libra
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: Gliese 581
+- equilibrium_temperature: 238 K
+- stellar_type: M-dwarf
+- discovery_facility: HIRES/Keck
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: Uncertain
+
+### HD 40307 g
+
+- name: HD 40307 g
+- discovery_date: 2012-12-19
+- mass: 7.2 Earth masses
+- radius: 1.8 Earth radii
+- orbital_period: 197.8 days
+- distance_from_earth: 42 light years
+- constellation: Pictor
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: HD 40307
+- equilibrium_temperature: 230 K
+- stellar_type: K-dwarf
+- discovery_facility: HARPS
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### TOI-700 d
+
+- name: TOI-700 d
+- discovery_date: 2020-01-13
+- mass: 1.72 Earth masses
+- radius: 1.19 Earth radii
+- orbital_period: 37.43 days
+- distance_from_earth: 101.4 light years
+- constellation:  Dorado
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TOI-700
+- equilibrium_temperature: 269 K
+- stellar_type: M-dwarf
+- discovery_facility: TESS
+- nasa_mission: TESS
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### WASP-121b
+
+- name: WASP-121b
+- discovery_date: 2015-01-14
+- mass: 1.18 Jupiter masses
+- radius: 1.81 Jupiter radii
+- orbital_period: 1.27 days
+- distance_from_earth: 880 light years
+- constellation: Carina
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: WASP-121
+- equilibrium_temperature: 2325 K
+- stellar_type: F-type
+- discovery_facility: SuperWASP
+- nasa_mission: None
+- atmosphere_detected: true
+- potential_for_life: Very Low
+
+### HD 209458 b
+
+- name: HD 209458 b
+- discovery_date: 1999-11-05
+- mass: 0.69 Jupiter masses
+- radius: 1.35 Jupiter radii
+- orbital_period: 3.52 days
+- distance_from_earth: 159 light years
+- constellation: Pegasus
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: HD 209458
+- equilibrium_temperature: 1254 K
+- stellar_type: G-type
+- discovery_facility: Multiple
+- nasa_mission: Hubble
+- atmosphere_detected: true
+- potential_for_life: Very Low
+
+### 55 Cancri e
+
+- name: 55 Cancri e
+- discovery_date: 2004-06-01
+- mass: 8.0 Earth masses
+- radius: 2.0 Earth radii
+- orbital_period: 0.74 days
+- distance_from_earth: 41 light years
+- constellation: Cancer
+- habitable_zone: false
+- discovery_method: Radial Velocity
+- host_star: 55 Cancri A
+- equilibrium_temperature: 2700 K
+- stellar_type: K-type
+- discovery_facility: Multiple
+- nasa_mission: Spitzer
+- atmosphere_detected: true
+- potential_for_life: Very Low
+
+### GJ 1214 b
+
+- name: GJ 1214 b
+- discovery_date: 2009-12-09
+- mass: 6.55 Earth masses
+- radius: 2.68 Earth radii
+- orbital_period: 1.58 days
+- distance_from_earth: 47.8 light years
+- constellation: Ophiuchus
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: GJ 1214
+- equilibrium_temperature: 390 K
+- stellar_type: M-dwarf
+- discovery_facility: MEarth
+- nasa_mission: Hubble
+- atmosphere_detected: true
+- potential_for_life: Low
+
+### KOI-3144 c
+
+- name: KOI-3144 c
+- discovery_date: 2014-04-23
+- mass: 0.62 Earth masses
+- radius: 0.79 Earth radii
+- orbital_period: 19.64 days
+- distance_from_earth: 700 light years
+- constellation: Sagittarius
+- habitable_zone: true
+- discovery_method: Transit + RV
+- host_star: KOI-3144
+- equilibrium_temperature: 290 K
+- stellar_type: K-type
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-16b
+
+- name: Kepler-16b
+- discovery_date: 2011-09-15
+- mass: 108 Earth masses
+- radius: 8.46 Earth radii
+- orbital_period: 228.77 days
+- distance_from_earth: 2450 light years
+- constellation: Cygnus
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: Kepler-16
+- equilibrium_temperature: 188 K
+- stellar_type: K-type+M-dwarf
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Very Low
+
+### Kepler-438b
+
+- name: Kepler-438b
+- discovery_date: 2015-01-06
+- mass: 1.6 Earth masses
+- radius: 1.12 Earth radii
+- orbital_period: 125.8 days
+- distance_from_earth: 473 light years
+- constellation: Draco
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-438
+- equilibrium_temperature: 270 K
+- stellar_type: M-dwarf
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-442b
+
+- name: Kepler-442b
+- discovery_date: 2015-01-06
+- mass: 2.3 Earth masses
+- radius: 1.34 Earth radii
+- orbital_period: 112.3 days
+- distance_from_earth: 1206 light years
+- constellation: Lyra
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-442
+- equilibrium_temperature: 233 K
+- stellar_type: K-type
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: High
+
+### Kepler-452b
+
+- name: Kepler-452b
+- discovery_date: 2015-07-23
+- mass: 5.0 Earth masses
+- radius: 1.63 Earth radii
+- orbital_period: 384.8 days
+- distance_from_earth: 1402 light years
+- constellation: Cygnus
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-452
+- equilibrium_temperature: 252 K
+- stellar_type: G-type
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: High
+
+### HD 85512 b
+
+- name: HD 85512 b
+- discovery_date: 2011-06-02
+- mass: 3.6 Earth masses
+- radius: 1.56 Earth radii
+- orbital_period: 54.1 days
+- distance_from_earth: 36.4 light years
+- constellation: Vela
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: HD 85512
+- equilibrium_temperature: 260 K
+- stellar_type: K-type
+- discovery_facility: HARPS
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### GJ 667 Cc
+
+- name: GJ 667 Cc
+- discovery_date: 2011-11-18
+- mass: 4.5 Earth masses
+- radius: 1.54 Earth radii
+- orbital_period: 28.15 days
+- distance_from_earth: 23.62 light years
+- constellation: Scorpius
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: GJ 667 C
+- equilibrium_temperature: 277 K
+- stellar_type: M-dwarf
+- discovery_facility: HARPS
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### GJ 1132 b
+
+- name: GJ 1132 b
+- discovery_date: 2015-01-21
+- mass: 1.66 Earth masses
+- radius: 1.14 Earth radii
+- orbital_period: 1.64 days
+- distance_from_earth: 39 light years
+- constellation: Pictor
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: GJ 1132
+- equilibrium_temperature: 550 K
+- stellar_type: M-dwarf
+- discovery_facility: MEarth
+- nasa_mission: Hubble/Spitzer
+- atmosphere_detected: true
+- potential_for_life: Very Low
+
+### GJ 357 d
+
+- name: GJ 357 d
+- discovery_date: 2019-10-01
+- mass: 6.1 Earth masses
+- radius: 1.8 Earth radii
+- orbital_period: 55.7 days
+- distance_from_earth: 31 light years
+- constellation: Hydra
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: GJ 357
+- equilibrium_temperature: 228 K
+- stellar_type: M-dwarf
+- discovery_facility: HARPS
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### LHS 1140 b
+
+- name: LHS 1140 b
+- discovery_date: 2017-10-18
+- mass: 6.98 Earth masses
+- radius: 1.73 Earth radii
+- orbital_period: 24.73 days
+- distance_from_earth: 40.7 light years
+- constellation: Corvus
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: LHS 1140
+- equilibrium_temperature: 230 K
+- stellar_type: M-dwarf
+- discovery_facility: MEarth
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: High
+
+### TOI-178 b
+
+- name: TOI-178 b
+- discovery_date: 2019-11-01
+- mass: 5.7 Earth masses
+- radius: 1.16 Earth radii
+- orbital_period: 1.91 days
+- distance_from_earth: 205 light years
+- constellation: Sagittarius
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: TOI-178
+- equilibrium_temperature: 700 K
+- stellar_type: K-type
+- discovery_facility: TESS
+- nasa_mission: TESS
+- atmosphere_detected: false
+- potential_for_life: Very Low
+
+### TOI-178 c
+
+- name: TOI-178 c
+- discovery_date: 2019-11-01
+- mass: 6.4 Earth masses
+- radius: 1.64 Earth radii
+- orbital_period: 3.24 days
+- distance_from_earth: 205 light years
+- constellation: Sagittarius
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: TOI-178
+- equilibrium_temperature: 550 K
+- stellar_type: K-type
+- discovery_facility: TESS
+- nasa_mission: TESS
+- atmosphere_detected: false
+- potential_for_life: Very Low
+
+### TOI-178 d
+
+- name: TOI-178 d
+- discovery_date: 2019-11-01
+- mass: 6.6 Earth masses
+- radius: 1.87 Earth radii
+- orbital_period: 6.56 days
+- distance_from_earth: 205 light years
+- constellation: Sagittarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TOI-178
+- equilibrium_temperature: 420 K
+- stellar_type: K-type
+- discovery_facility: TESS
+- nasa_mission: TESS
+- atmosphere_detected: false
+- potential_for_life: Low
+
+### TOI-178 e
+
+- name: TOI-178 e
+- discovery_date: 2019-11-01
+- mass: 7.5 Earth masses
+- radius: 1.89 Earth radii
+- orbital_period: 9.96 days
+- distance_from_earth: 205 light years
+- constellation: Sagittarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TOI-178
+- equilibrium_temperature: 350 K
+- stellar_type: K-type
+- discovery_facility: TESS
+- nasa_mission: TESS
+- atmosphere_detected: false
+- potential_for_life: Low
+
+### TOI-178 f
+
+- name: TOI-178 f
+- discovery_date: 2019-11-01
+- mass: 8.8 Earth masses
+- radius: 2.67 Earth radii
+- orbital_period: 15.23 days
+- distance_from_earth: 205 light years
+- constellation: Sagittarius
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: TOI-178
+- equilibrium_temperature: 300 K
+- stellar_type: K-type
+- discovery_facility: TESS
+- nasa_mission: TESS
+- atmosphere_detected: false
+- potential_for_life: Low
+
+### Kepler-1649c
+
+- name: Kepler-1649c
+- discovery_date: 2020-09-14
+- mass: 1.1 Earth masses
+- radius: 1.06 Earth radii
+- orbital_period: 19.53 days
+- distance_from_earth: 300 light years
+- constellation: Lyra
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-1649
+- equilibrium_temperature: 250 K
+- stellar_type: M-dwarf
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: High
+
+### Wolf 1061 c
+
+- name: Wolf 1061 c
+- discovery_date: 2015-12-23
+- mass: 1.59 Earth masses
+- radius: 1.13 Earth radii
+- orbital_period: 17.9 days
+- distance_from_earth: 13.8 light years
+- constellation: Corvus
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: Wolf 1061
+- equilibrium_temperature: 243 K
+- stellar_type: M-dwarf
+- discovery_facility: HARPS
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Ross 128 b
+
+- name: Ross 128 b
+- discovery_date: 2015-09-14
+- mass: 1.35 Earth masses
+- radius: 1.1 Earth radii
+- orbital_period: 9.87 days
+- distance_from_earth: 11 light years
+- constellation: Virgo
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: Ross 128
+- equilibrium_temperature: 273 K
+- stellar_type: M-dwarf
+- discovery_facility: HARPS
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: High
+
+### Teegarden's Star b
+
+- name: Teegarden's Star b
+- discovery_date: 2019-03-01
+- mass: 1.05 Earth masses
+- radius: 1.05 Earth radii
+- orbital_period: 4.91 days
+- distance_from_earth: 12.5 light years
+- constellation: Aries
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: Teegarden's Star
+- equilibrium_temperature: 273 K
+- stellar_type: M-dwarf
+- discovery_facility: CARMENES
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: High
+
+### LFT 472-4 b
+
+- name: LFT 472-4 b
+- discovery_date: 2024-02-15
+- mass: 1.1 Earth masses
+- radius: 1.05 Earth radii
+- orbital_period: 6.3 days
+- distance_from_earth: 12.0 light years
+- constellation: Aries
+- habitable_zone: true
+- discovery_method: Radial Velocity
+- host_star: LFT 472-4
+- equilibrium_temperature: 280 K
+- stellar_type: M-dwarf
+- discovery_facility: CARMENES
+- nasa_mission: None
+- atmosphere_detected: false
+- potential_for_life: High
+
+### K2-41b
+
+- name: K2-41b
+- discovery_date: 2016-04-20
+- mass: 6.0 Earth masses
+- radius: 1.4 Earth radii
+- orbital_period: 28.1 days
+- distance_from_earth: 180 light years
+- constellation: Canis Major
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: K2-41
+- equilibrium_temperature: 250 K
+- stellar_type: M-dwarf
+- discovery_facility: K2 Mission
+- nasa_mission: Kepler/K2
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-1229b
+
+- name: Kepler-1229b
+- discovery_date: 2015-12-23
+- mass: 1.2 Earth masses
+- radius: 1.1 Earth radii
+- orbital_period: 10.67 days
+- distance_from_earth: 410 light years
+- constellation: Draco
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-1229
+- equilibrium_temperature: 280 K
+- stellar_type: M-dwarf
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-102d
+
+- name: Kepler-102d
+- discovery_date: 2014-12-17
+- mass: 2.5 Earth masses
+- radius: 1.4 Earth radii
+- orbital_period: 45.18 days
+- distance_from_earth: 565 light years
+- constellation: Draco
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-102
+- equilibrium_temperature: 260 K
+- stellar_type: M-dwarf
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-283c
+
+- name: Kepler-283c
+- discovery_date: 2015-01-06
+- mass: 2.4 Earth masses
+- radius: 1.3 Earth radii
+- orbital_period: 38.46 days
+- distance_from_earth: 1200 light years
+- constellation: Lyra
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-283
+- equilibrium_temperature: 270 K
+- stellar_type: K-type
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### Kepler-635b
+
+- name: Kepler-635b
+- discovery_date: 2017-06-15
+- mass: 1.8 Earth masses
+- radius: 1.2 Earth radii
+- orbital_period: 23.5 days
+- distance_from_earth: 800 light years
+- constellation: Cygnus
+- habitable_zone: true
+- discovery_method: Transit
+- host_star: Kepler-635
+- equilibrium_temperature: 280 K
+- stellar_type: G-type
+- discovery_facility: Kepler
+- nasa_mission: Kepler
+- atmosphere_detected: false
+- potential_for_life: Moderate
+
+### KELT-9b
+
+- name: KELT-9b
+- discovery_date: 2016-01-18
+- mass: 2.88 Jupiter masses
+- radius: 1.89 Jupiter radii
+- orbital_period: 1.48 days
+- distance_from_earth: 670 light years
+- constellation: Cygnus
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: KELT-9
+- equilibrium_temperature: 4600 K
+- stellar_type: A-type
+- discovery_facility: KELT
+- nasa_mission: None
+- atmosphere_detected: true
+- potential_for_life: Very Low
+
+### HAT-P-11b
+
+- name: HAT-P-11b
+- discovery_date: 2009-11-04
+- mass: 0.084 Jupiter masses
+- radius: 0.42 Jupiter radii
+- orbital_period: 10.46 days
+- distance_from_earth: 123 light years
+- constellation: Scorpius
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: HAT-P-11
+- equilibrium_temperature: 720 K
+- stellar_type: K-dwarf
+- discovery_facility: HATNet
+- nasa_mission: Hubble
+- atmosphere_detected: true
+- potential_for_life: Very Low
+
+### WASP-107b
+
+- name: WASP-107b
+- discovery_date: 2017-09-20
+- mass: 0.1 Jupiter masses
+- radius: 1.02 Jupiter radii
+- orbital_period: 5.72 days
+- distance_from_earth: 200 light years
+- constellation: Virgo
+- habitable_zone: false
+- discovery_method: Transit
+- host_star: WASP-107
+- equilibrium_temperature: 600 K
+- stellar_type: G-type
+- discovery_facility: SuperWASP
+- nasa_mission: None
+- atmosphere_detected: true
+- potential_for_life: Very Low
+
+### TOI-700 d
+
+- name: TOI-700 d
+- discovery_date: 2020-01-06
+- mass_earth: 1.07
+- radius_earth: 1.06
+- orbital_period_days: 37.43
+- distance_light_years: 101.4
+- host_star: TOI-700
+- constellation: Carina (Ship)
+- discovery_method: Transit (TESS)
+- habitable_zone: true
+- planet_type: Terrestrial
+- eccentricity: 0.007
+- equilibrium_temperature_k: 269
+- nasa_exoplanet_archive_id: TOI-700 d
+
+### LHS 3844 b
+
+- name: LHS 3844 b
+- discovery_date: 2019-12-17
+- mass_earth: 0.62
+- radius_earth: 0.78
+- orbital_period_days: 0.46
+- distance_light_years: 49
+- host_star: LHS 3844
+- constellation: Andromeda
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Rocky
+- eccentricity: 0
+- equilibrium_temperature_k: 800
+- nasa_exoplanet_archive_id: LHS 3844 b
+
+### G 9-40 b
+
+- name: G 9-40 b
+- discovery_date: 2021-07-26
+- mass_earth: 3.1
+- radius_earth: 1.6
+- orbital_period_days: 5.5
+- distance_light_years: 32
+- host_star: G 9-40
+- constellation: Andromeda
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0.12
+- equilibrium_temperature_k: 570
+- nasa_exoplanet_archive_id: G 9-40 b
+
+### Pi Mensae c
+
+- name: Pi Mensae c
+- discovery_date: 2018-12-19
+- mass_earth: 1060
+- radius_earth: 4.2
+- orbital_period_days: 66.26
+- distance_light_years: 59.6
+- host_star: Pi Mensae
+- constellation: Mensa
+- discovery_method: Transit + RV (TESS)
+- habitable_zone: true
+- planet_type: Neptune-like
+- eccentricity: 0.12
+- equilibrium_temperature_k: 280
+- nasa_exoplanet_archive_id: Pi Mensae c
+
+### HD 19994 b
+
+- name: HD 19994 b
+- discovery_date: 2019-03-01
+- mass_earth: 380
+- radius_earth: 3.8
+- orbital_period_days: 37.68
+- distance_light_years: 140
+- host_star: HD 19994
+- constellation: Phoenix
+- discovery_method: Transit + RV (TESS)
+- habitable_zone: false
+- planet_type: Hot Jupiter
+- eccentricity: 0.02
+- equilibrium_temperature_k: 750
+- nasa_exoplanet_archive_id: HD 19994 b
+
+### L 98-59 b
+
+- name: L 98-59 b
+- discovery_date: 2019-10-24
+- mass_earth: 0.52
+- radius_earth: 0.73
+- orbital_period_days: 2.25
+- distance_light_years: 34.8
+- host_star: L 98-59
+- constellation: Cetus
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 535
+- nasa_exoplanet_archive_id: L 98-59 b
+
+### L 98-59 c
+
+- name: L 98-59 c
+- discovery_date: 2019-10-24
+- mass_earth: 0.84
+- radius_earth: 0.91
+- orbital_period_days: 3.69
+- distance_light_years: 34.8
+- host_star: L 98-59
+- constellation: Cetus
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 438
+- nasa_exoplanet_archive_id: L 98-59 c
+
+### L 98-59 e
+
+- name: L 98-59 e
+- discovery_date: 2019-10-24
+- mass_earth: 1.39
+- radius_earth: 1.29
+- orbital_period_days: 7.45
+- distance_light_years: 34.8
+- host_star: L 98-59
+- constellation: Cetus
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 325
+- nasa_exoplanet_archive_id: L 98-59 e
+
+### HD 21749 b
+
+- name: HD 21749 b
+- discovery_date: 2020-01-06
+- mass_earth: 23
+- radius_earth: 3.2
+- orbital_period_days: 36.04
+- distance_light_years: 53
+- host_star: HD 21749
+- constellation: Andromeda
+- discovery_method: Transit + RV (TESS)
+- habitable_zone: false
+- planet_type: Mini-Neptune
+- eccentricity: 0.01
+- equilibrium_temperature_k: 430
+- nasa_exoplanet_archive_id: HD 21749 b
+
+### HD 21749 c
+
+- name: HD 21749 c
+- discovery_date: 2020-01-06
+- mass_earth: 1.03
+- radius_earth: 1.06
+- orbital_period_days: 8.13
+- distance_light_years: 53
+- host_star: HD 21749
+- constellation: Andromeda
+- discovery_method: Transit + RV (TESS)
+- habitable_zone: false
+- planet_type: Terrestrial
+- eccentricity: 0
+- equilibrium_temperature_k: 640
+- nasa_exoplanet_archive_id: HD 21749 c
+
+### Wolf 386 b
+
+- name: Wolf 386 b
+- discovery_date: 2019-06-13
+- mass_earth: 10.3
+- radius_earth: 2.53
+- orbital_period_days: 6.13
+- distance_light_years: 116
+- host_star: Wolf 386
+- constellation: Apus
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Mini-Neptune
+- eccentricity: 0
+- equilibrium_temperature_k: 480
+- nasa_exoplanet_archive_id: Wolf 386 b
+
+### K2-288 B b
+
+- name: K2-288 B b
+- discovery_date: 2018-02-01
+- mass_earth: 2
+- radius_earth: 1.61
+- orbital_period_days: 18.83
+- distance_light_years: 196
+- host_star: K2-288 B
+- constellation: Gemini
+- discovery_method: Transit (Kepler/K2+TESS)
+- habitable_zone: true
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 270
+- nasa_exoplanet_archive_id: K2-288 B b
+
+### TOI-1231 b
+
+- name: TOI-1231 b
+- discovery_date: 2021-04-06
+- mass_earth: 11.1
+- radius_earth: 3.35
+- orbital_period_days: 24.1
+- distance_light_years: 90
+- host_star: TOI-1231
+- constellation: Fornax
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Mini-Neptune
+- eccentricity: 0.06
+- equilibrium_temperature_k: 360
+- nasa_exoplanet_archive_id: TOI-1231 b
+
+### LP 890-9 b
+
+- name: LP 890-9 b
+- discovery_date: 2022-10-13
+- mass_earth: 1.68
+- radius_earth: 1.29
+- orbital_period_days: 2.75
+- distance_light_years: 38
+- host_star: LP 890-9
+- constellation: Piscis Austrinus
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 550
+- nasa_exoplanet_archive_id: LP 890-9 b
+
+### SPECULOOS-3 b
+
+- name: SPECULOOS-3 b
+- discovery_date: 2023-01-05
+- mass_earth: 0.69
+- radius_earth: 0.91
+- orbital_period_days: 0.84
+- distance_light_years: 87
+- host_star: SPECULOOS-3
+- constellation: Pegasus
+- discovery_method: Transit (TESS+SPECULOOS)
+- habitable_zone: false
+- planet_type: Terrestrial
+- eccentricity: 0
+- equilibrium_temperature_k: 800
+- nasa_exoplanet_archive_id: SPECULOOS-3 b
+
+### TOI-561 b
+
+- name: TOI-561 b
+- discovery_date: 2021-11-09
+- mass_earth: 3
+- radius_earth: 1.47
+- orbital_period_days: 0.46
+- distance_light_years: 260
+- host_star: TOI-561
+- constellation: Lyra
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 1750
+- nasa_exoplanet_archive_id: TOI-561 b
+
+### TOI-1227 b
+
+- name: TOI-1227 b
+- discovery_date: 2021-09-15
+- mass_earth: 12
+- radius_earth: 3
+- orbital_period_days: 11.59
+- distance_light_years: 113
+- host_star: TOI-1227
+- constellation: Corona Australis
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Mini-Neptune
+- eccentricity: 0.04
+- equilibrium_temperature_k: 390
+- nasa_exoplanet_archive_id: TOI-1227 b
+
+### TOI-1452 b
+
+- name: TOI-1452 b
+- discovery_date: 2022-01-12
+- mass_earth: 4.7
+- radius_earth: 1.66
+- orbital_period_days: 11.06
+- distance_light_years: 100.7
+- host_star: TOI-1452
+- constellation: Andromeda
+- discovery_method: Transit (TESS)
+- habitable_zone: true
+- planet_type: Ocean Planet Candidate
+- eccentricity: 0
+- equilibrium_temperature_k: 290
+- nasa_exoplanet_archive_id: TOI-1452 b
+
+### GJ 1252 b
+
+- name: GJ 1252 b
+- discovery_date: 2021-09-08
+- mass_earth: 0.53
+- radius_earth: 0.76
+- orbital_period_days: 0.64
+- distance_light_years: 42.2
+- host_star: GJ 1252
+- constellation: Lacerta
+- discovery_method: Transit (TESS+Ground)
+- habitable_zone: false
+- planet_type: Terrestrial
+- eccentricity: 0
+- equilibrium_temperature_k: 700
+- nasa_exoplanet_archive_id: GJ 1252 b
+
+### TOI-1759 b
+
+- name: TOI-1759 b
+- discovery_date: 2021-02-23
+- mass_earth: 5.7
+- radius_earth: 2.09
+- orbital_period_days: 4.55
+- distance_light_years: 320
+- host_star: TOI-1759
+- constellation: Hydra
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Mini-Neptune
+- eccentricity: 0
+- equilibrium_temperature_k: 620
+- nasa_exoplanet_archive_id: TOI-1759 b
+
+### HD 15337 b
+
+- name: HD 15337 b
+- discovery_date: 2019-01-15
+- mass_earth: 380
+- radius_earth: 4
+- orbital_period_days: 2.89
+- distance_light_years: 140
+- host_star: HD 15337
+- constellation: Pictor
+- discovery_method: Transit + RV (TESS)
+- habitable_zone: false
+- planet_type: Hot Jupiter
+- eccentricity: 0
+- equilibrium_temperature_k: 1600
+- nasa_exoplanet_archive_id: HD 15337 b
+
+### LP 791-18 d
+
+- name: LP 791-18 d
+- discovery_date: 2023-07-06
+- mass_earth: 0.88
+- radius_earth: 0.96
+- orbital_period_days: 2.26
+- distance_light_years: 90
+- host_star: LP 791-18
+- constellation: Hydra
+- discovery_method: Transit (TESS+Spitzer)
+- habitable_zone: false
+- planet_type: Terrestrial
+- eccentricity: 0
+- equilibrium_temperature_k: 520
+- nasa_exoplanet_archive_id: LP 791-18 d
+
+### TOI-270 d
+
+- name: TOI-270 d
+- discovery_date: 2019-08-15
+- mass_earth: 6.3
+- radius_earth: 2.39
+- orbital_period_days: 18.36
+- distance_light_years: 63
+- host_star: TOI-270
+- constellation: Piscis Austrinus
+- discovery_method: Transit + RV (TESS)
+- habitable_zone: true
+- planet_type: Super-Earth
+- eccentricity: 0.02
+- equilibrium_temperature_k: 260
+- nasa_exoplanet_archive_id: TOI-270 d
+
+### TOI-1266 b
+
+- name: TOI-1266 b
+- discovery_date: 2021-04-13
+- mass_earth: 6.6
+- radius_earth: 2.35
+- orbital_period_days: 17.54
+- distance_light_years: 98
+- host_star: TOI-1266
+- constellation: Corona Australis
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Mini-Neptune
+- eccentricity: 0.03
+- equilibrium_temperature_k: 360
+- nasa_exoplanet_archive_id: TOI-1266 b
+
+### GJ 357 d
+
+- name: GJ 357 d
+- discovery_date: 2019-12-01
+- mass_earth: 6.1
+- radius_earth: 2.1
+- orbital_period_days: 55.7
+- distance_light_years: 31
+- host_star: GJ 357
+- constellation: Dorado
+- discovery_method: Radial Velocity (TESS-assisted)
+- habitable_zone: true
+- planet_type: Super-Earth
+- eccentricity: 0.36
+- equilibrium_temperature_k: 255
+- nasa_exoplanet_archive_id: GJ 357 d
+
+### TOI-216 b
+
+- name: TOI-216 b
+- discovery_date: 2021-01-20
+- mass_earth: 135
+- radius_earth: 5.5
+- orbital_period_days: 1.61
+- distance_light_years: 270
+- host_star: TOI-216
+- constellation: Lynx
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Hot Jupiter
+- eccentricity: 0
+- equilibrium_temperature_k: 1400
+- nasa_exoplanet_archive_id: TOI-216 b
+
+### TOI-1233 b
+
+- name: TOI-1233 b
+- discovery_date: 2022-05-12
+- mass_earth: 4.6
+- radius_earth: 1.93
+- orbital_period_days: 8.82
+- distance_light_years: 80
+- host_star: TOI-1233
+- constellation: Fornax
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 420
+- nasa_exoplanet_archive_id: TOI-1233 b
+
+### TOI-520 b
+
+- name: TOI-520 b
+- discovery_date: 2022-07-18
+- mass_earth: 3
+- radius_earth: 1.58
+- orbital_period_days: 5.59
+- distance_light_years: 260
+- host_star: TOI-520
+- constellation: Canes Venatici
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Super-Earth
+- eccentricity: 0
+- equilibrium_temperature_k: 560
+- nasa_exoplanet_archive_id: TOI-520 b
+
+### L 168-9 b
+
+- name: L 168-9 b
+- discovery_date: 2019-08-06
+- mass_earth: 0.73
+- radius_earth: 0.88
+- orbital_period_days: 2.03
+- distance_light_years: 37
+- host_star: L 168-9
+- constellation: Chamaeleon
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Terrestrial
+- eccentricity: 0
+- equilibrium_temperature_k: 600
+- nasa_exoplanet_archive_id: L 168-9 b
+
+### HD 110067 b
+
+- name: HD 110067 b
+- discovery_date: 2023-05-03
+- mass_earth: 8.3
+- radius_earth: 2.65
+- orbital_period_days: 5.76
+- distance_light_years: 105
+- host_star: HD 110067
+- constellation: Coma Berenices
+- discovery_method: Transit (TESS)
+- habitable_zone: false
+- planet_type: Mini-Neptune
+- eccentricity: 0
+- equilibrium_temperature_k: 450
+- nasa_exoplanet_archive_id: HD 110067 b
+
+### NASA001
+
+- missionName: Kepler
+- planetName: Kepler-22b
+- hostStar: Kepler-22
+- discoveryDate: 2011-12-05
+- method: Transit
+- radiusKm: 24600
+- massKg: 
+- orbitalPeriodDays: 289.96
+- semiMajorAxisAU: 0.849
+- eccentricity: 0
+- temperatureK: 262
+- distanceLy: 640
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: First confirmed planet in habitable zone discovered by Kepler
+
+### NASA002
+
+- missionName: TESS
+- planetName: TOI-700 d
+- hostStar: TOI-700
+- discoveryDate: 2020-01-13
+- method: Transit
+- radiusKm: 12400
+- massKg: 
+- orbitalPeriodDays: 37.43
+- semiMajorAxisAU: 0.163
+- eccentricity: 0
+- temperatureK: 269
+- distanceLy: 101.4
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: First Earth-sized planet in habitable zone found by TESS
+
+### NASA003
+
+- missionName: JWST
+- planetName: K2-18 b
+- hostStar: K2-18
+- discoveryDate: 2015-05-29
+- method: Transit
+- radiusKm: 27100
+- massKg: 
+- orbitalPeriodDays: 32.94
+- semiMajorAxisAU: 0.103
+- eccentricity: 0.19
+- temperatureK: 283
+- distanceLy: 124
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: JWST detected water vapor and possible biosignature gases (DMS)
+
+### NASA004
+
+- missionName: Kepler
+- planetName: Kepler-442b
+- hostStar: Kepler-442
+- discoveryDate: 2015-01-06
+- method: Transit
+- radiusKm: 16500
+- massKg: 
+- orbitalPeriodDays: 112.3
+- semiMajorAxisAU: 0.409
+- eccentricity: 0.06
+- temperatureK: 252
+- distanceLy: 1206
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Super-Earth in habitable zone with high Earth Similarity Index
+
+### NASA005
+
+- missionName: Kepler
+- planetName: Kepler-186f
+- hostStar: Kepler-186
+- discoveryDate: 2014-12-17
+- method: Transit
+- radiusKm: 12900
+- massKg: 
+- orbitalPeriodDays: 129.94
+- semiMajorAxisAU: 0.356
+- eccentricity: 0
+- temperatureK: 188
+- distanceLy: 582
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: First Earth-size planet in habitable zone of another star
+
+### NASA006
+
+- missionName: TESS
+- planetName: LHS 3844 b
+- hostStar: LHS 3844
+- discoveryDate: 2019-09-18
+- method: Transit
+- radiusKm: 6350
+- massKg: 
+- orbitalPeriodDays: 0.46
+- semiMajorAxisAU: 0.006
+- eccentricity: 0
+- temperatureK: 915
+- distanceLy: 102
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Rocky world with no atmosphere, surface molten lava
+
+### NASA007
+
+- missionName: Kepler
+- planetName: Kepler-16b
+- hostStar: Kepler-16 (binary)
+- discoveryDate: 2011-09-15
+- method: Transit
+- radiusKm: 75000
+- massKg: 1.3e+27
+- orbitalPeriodDays: 228.77
+- semiMajorAxisAU: 0.705
+- eccentricity: 0.09
+- temperatureK: 188
+- distanceLy: 245
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Tatooine-like circumbinary planet, Saturn-sized
+
+### NASA008
+
+- missionName: JWST
+- planetName: HD 209458 b (Osiris)
+- hostStar: HD 209458
+- discoveryDate: 1999-11-05
+- method: Transit
+- radiusKm: 117000
+- massKg: 2.2e+27
+- orbitalPeriodDays: 3.52
+- semiMajorAxisAU: 0.047
+- eccentricity: 0
+- temperatureK: 1450
+- distanceLy: 159
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Pioneering hot Jupiter, first atmosphere detected
+
+### NASA009
+
+- missionName: Kepler
+- planetName: Kepler-10c
+- hostStar: Kepler-10
+- discoveryDate: 2014-01-06
+- method: Transit
+- radiusKm: 21000
+- massKg: 1.46e+26
+- orbitalPeriodDays: 45.29
+- semiMajorAxisAU: 0.243
+- eccentricity: 0.04
+- temperatureK: 700
+- distanceLy: 564
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Mega-Earth, unexpectedly massive rocky planet
+
+### NASA010
+
+- missionName: TESS
+- planetName: AU Microscopii b
+- hostStar: AU Mic
+- discoveryDate: 2020-09-09
+- method: Transit
+- radiusKm: 65000
+- massKg: 
+- orbitalPeriodDays: 8.46
+- semiMajorAxisAU: 0.065
+- eccentricity: 0
+- temperatureK: 800
+- distanceLy: 33.4
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Young star with forming planetary system
+
+### NASA011
+
+- missionName: Kepler
+- planetName: Kepler-62f
+- hostStar: Kepler-62
+- discoveryDate: 2013-04-18
+- method: Transit
+- radiusKm: 14000
+- massKg: 
+- orbitalPeriodDays: 267.29
+- semiMajorAxisAU: 0.718
+- eccentricity: 0
+- temperatureK: 208
+- distanceLy: 1200
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: One of most promising habitable zone planets from Kepler
+
+### NASA012
+
+- missionName: JWST
+- planetName: WASP-39 b
+- hostStar: WASP-39
+- discoveryDate: 2011-09-08
+- method: Transit
+- radiusKm: 121000
+- massKg: 1.59e+27
+- orbitalPeriodDays: 4.05
+- semiMajorAxisAU: 0.048
+- eccentricity: 0
+- temperatureK: 1140
+- distanceLy: 700
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: JWST detected CO2 and water in atmosphere
+
+### NASA013
+
+- missionName: Kepler
+- planetName: Kepler-452b
+- hostStar: Kepler-452
+- discoveryDate: 2015-07-23
+- method: Transit
+- radiusKm: 17200
+- massKg: 
+- orbitalPeriodDays: 384.84
+- semiMajorAxisAU: 1.046
+- eccentricity: 0
+- temperatureK: 265
+- distanceLy: 1800
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Earth cousin, similar size and orbit around G-type star
+
+### NASA014
+
+- missionName: TESS
+- planetName: Luyten b
+- hostStar: GJ 273
+- discoveryDate: 2019-06-01
+- method: Radial Velocity
+- radiusKm: 13700
+- massKg: 1.6e+25
+- orbitalPeriodDays: 13.03
+- semiMajorAxisAU: 0.078
+- eccentricity: 0
+- temperatureK: 262
+- distanceLy: 12.5
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Nearby super-Earth in habitable zone of red dwarf
+
+### NASA015
+
+- missionName: Kepler
+- planetName: Kepler-1649c
+- hostStar: Kepler-1649
+- discoveryDate: 2020-05-26
+- method: Transit
+- radiusKm: 11500
+- massKg: 
+- orbitalPeriodDays: 19.53
+- semiMajorAxisAU: 0.093
+- eccentricity: 0
+- temperatureK: 247
+- distanceLy: 300
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Earth-sized planet in habitable zone
+
+### NASA016
+
+- missionName: JWST
+- planetName: TRAPPIST-1 e
+- hostStar: TRAPPIST-1
+- discoveryDate: 2017-02-22
+- method: Transit
+- radiusKm: 12500
+- massKg: 
+- orbitalPeriodDays: 6.1
+- semiMajorAxisAU: 0.022
+- eccentricity: 0
+- temperatureK: 251
+- distanceLy: 40.7
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Most likely to have liquid water in TRAPPIST-1 system
+
+### NASA017
+
+- missionName: TESS
+- planetName: GJ 357 d
+- hostStar: GJ 357
+- discoveryDate: 2019-10-01
+- method: Radial Velocity
+- radiusKm: 14000
+- massKg: 6.1e+24
+- orbitalPeriodDays: 55.7
+- semiMajorAxisAU: 0.26
+- eccentricity: 0.38
+- temperatureK: 251
+- distanceLy: 31
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Super-Earth in habitable zone of nearby red dwarf
+
+### NASA018
+
+- missionName: Kepler
+- planetName: Kepler-20e
+- hostStar: Kepler-20
+- discoveryDate: 2011-12-20
+- method: Transit
+- radiusKm: 6350
+- massKg: 
+- orbitalPeriodDays: 6.1
+- semiMajorAxisAU: 0.046
+- eccentricity: 0
+- temperatureK: 700
+- distanceLy: 950
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: First Earth-size exoplanet found around sun-like star
+
+### NASA019
+
+- missionName: JWST
+- planetName: HD 189733 b
+- hostStar: HD 189733
+- discoveryDate: 2005-10-05
+- method: Transit
+- radiusKm: 90000
+- massKg: 6.3e+27
+- orbitalPeriodDays: 2.22
+- semiMajorAxisAU: 0.031
+- eccentricity: 0
+- temperatureK: 1340
+- distanceLy: 64.5
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Deep blue hot Jupiter, JWST mapped surface temperature
+
+### NASA020
+
+- missionName: TESS
+- planetName: TOI-715 b
+- hostStar: TOI-715
+- discoveryDate: 2024-02-01
+- method: Transit
+- radiusKm: 20000
+- massKg: 
+- orbitalPeriodDays: 19.3
+- semiMajorAxisAU: 0.13
+- eccentricity: 0
+- temperatureK: 
+- distanceLy: 137
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Super-Earth around evolving red dwarf
+
+### NASA021
+
+- missionName: Kepler
+- planetName: Kepler-90 i
+- hostStar: Kepler-90
+- discoveryDate: 2017-10-17
+- method: Transit
+- radiusKm: 12000
+- massKg: 
+- orbitalPeriodDays: 331.6
+- semiMajorAxisAU: 0.84
+- eccentricity: 0
+- temperatureK: 423
+- distanceLy: 2545
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: 8th planet in Kepler-90 system, ties Solar System count
+
+### NASA022
+
+- missionName: JWST
+- planetName: GJ 1214 b
+- hostStar: GJ 1214
+- discoveryDate: 2009-12-16
+- method: Transit
+- radiusKm: 14600
+- massKg: 
+- orbitalPeriodDays: 1.58
+- semiMajorAxisAU: 0.014
+- eccentricity: 0
+- temperatureK: 555
+- distanceLy: 47.8
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Ocean world candidate with possible steam atmosphere
+
+### NASA023
+
+- missionName: TESS
+- planetName: TOI-1231 b
+- hostStar: TOI-1231
+- discoveryDate: 2022-10-05
+- method: Transit
+- radiusKm: 44000
+- massKg: 3.6e+26
+- orbitalPeriodDays: 24.1
+- semiMajorAxisAU: 0.14
+- eccentricity: 0
+- temperatureK: 324
+- distanceLy: 93
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Sub-Neptune in habitable zone, good JWST target
+
+### NASA024
+
+- missionName: Kepler
+- planetName: Kepler-438b
+- hostStar: Kepler-438
+- discoveryDate: 2015-01-06
+- method: Transit
+- radiusKm: 13200
+- massKg: 
+- orbitalPeriodDays: 35.23
+- semiMajorAxisAU: 0.148
+- eccentricity: 0
+- temperatureK: 273
+- distanceLy: 640
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: One of most habitable planets, ESI 0.85
+
+### NASA025
+
+- missionName: JWST
+- planetName: 55 Cancri e
+- hostStar: 55 Cancri A
+- discoveryDate: 2004-06-01
+- method: Transit
+- radiusKm: 14000
+- massKg: 7.8e+25
+- orbitalPeriodDays: 0.74
+- semiMajorAxisAU: 0.015
+- eccentricity: 0
+- temperatureK: 2300
+- distanceLy: 41
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Carbon-rich planet, JWST detected bare rock atmosphere
+
+### NASA026
+
+- missionName: TESS
+- planetName: Pi Mensae c
+- hostStar: Pi Mensae
+- discoveryDate: 2018-10-01
+- method: Radial Velocity
+- radiusKm: 15000
+- massKg: 1.1e+25
+- orbitalPeriodDays: 66.1
+- semiMajorAxisAU: 0.405
+- eccentricity: 0.15
+- temperatureK: 
+- distanceLy: 59.7
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Super-Earth found transiting previously RV-only planet
+
+### NASA027
+
+- missionName: Kepler
+- planetName: Kepler-444 system
+- hostStar: Kepler-444
+- discoveryDate: 2015-01-06
+- method: Transit
+- radiusKm: 
+- massKg: 
+- orbitalPeriodDays: 3.7
+- semiMajorAxisAU: 0.044
+- eccentricity: 0
+- temperatureK: 
+- distanceLy: 117
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Ancient star with 5 sub-Earth planets
+
+### NASA028
+
+- missionName: JWST
+- planetName: WASP-107 b
+- hostStar: WASP-107
+- discoveryDate: 2017-01-10
+- method: Transit
+- radiusKm: 84000
+- massKg: 6.1e+25
+- orbitalPeriodDays: 5.72
+- semiMajorAxisAU: 0.063
+- eccentricity: 0.26
+- temperatureK: 488
+- distanceLy: 200
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Low-density puffy planet, JWST detected sulfur dioxide
+
+### NASA029
+
+- missionName: TESS
+- planetName: L 98-59 b
+- hostStar: L 98-59
+- discoveryDate: 2019-07-01
+- method: Transit
+- radiusKm: 7600
+- massKg: 
+- orbitalPeriodDays: 2.25
+- semiMajorAxisAU: 0.03
+- eccentricity: 0
+- temperatureK: 510
+- distanceLy: 35
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Venus-sized planet, compact multi-planet system
+
+### NASA030
+
+- missionName: Kepler
+- planetName: Kepler-138 d
+- hostStar: Kepler-138
+- discoveryDate: 2014-04-10
+- method: Transit
+- radiusKm: 14000
+- massKg: 
+- orbitalPeriodDays: 34
+- semiMajorAxisAU: 0.13
+- eccentricity: 0
+- temperatureK: 
+- distanceLy: 218
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Water-world candidate, possibly half water by mass
+
+### NASA031
+
+- missionName: JWST
+- planetName: HAT-P-11 b
+- hostStar: HAT-P-11
+- discoveryDate: 2009-11-01
+- method: Transit
+- radiusKm: 52000
+- massKg: 1.9e+26
+- orbitalPeriodDays: 4.95
+- semiMajorAxisAU: 0.054
+- eccentricity: 0
+- temperatureK: 700
+- distanceLy: 123
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Sub-Neptune with hydrogen atmosphere
+
+### NASA032
+
+- missionName: TESS
+- planetName: EV Lac b
+- hostStar: EV Lacertae
+- discoveryDate: 2021-07-01
+- method: Radial Velocity
+- radiusKm: 11000
+- massKg: 3.9e+24
+- orbitalPeriodDays: 3.68
+- semiMajorAxisAU: 0.025
+- eccentricity: 0
+- temperatureK: 388
+- distanceLy: 15.7
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Super-Earth around nearby red dwarf flare star
+
+### NASA033
+
+- missionName: Kepler
+- planetName: Kepler-62e
+- hostStar: Kepler-62
+- discoveryDate: 2013-04-18
+- method: Transit
+- radiusKm: 18000
+- massKg: 
+- orbitalPeriodDays: 122.39
+- semiMajorAxisAU: 0.428
+- eccentricity: 0
+- temperatureK: 195
+- distanceLy: 1200
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Mini-Neptune at inner edge of habitable zone
+
+### NASA034
+
+- missionName: JWST
+- planetName: TOI-421 b
+- hostStar: TOI-421
+- discoveryDate: 2021-04-01
+- method: Transit
+- radiusKm: 58000
+- massKg: 1.8e+26
+- orbitalPeriodDays: 11.2
+- semiMajorAxisAU: 0.07
+- eccentricity: 0
+- temperatureK: 750
+- distanceLy: 260
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Sub-Saturn in young moving group
+
+### NASA035
+
+- missionName: TESS
+- planetName: Wolf 1069 b
+- hostStar: Wolf 1069
+- discoveryDate: 2020-06-01
+- method: Radial Velocity
+- radiusKm: 
+- massKg: 3.9e+24
+- orbitalPeriodDays: 15.6
+- semiMajorAxisAU: 0.09
+- eccentricity: 0
+- temperatureK: 224
+- distanceLy: 14
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Super-Earth in habitable zone of nearby red dwarf
+
+### NASA036
+
+- missionName: Kepler
+- planetName: Kepler-47c
+- hostStar: Kepler-47 (binary)
+- discoveryDate: 2012-09-13
+- method: Transit
+- radiusKm: 28000
+- massKg: 
+- orbitalPeriodDays: 303.2
+- semiMajorAxisAU: 0.99
+- eccentricity: 0
+- temperatureK: 225
+- distanceLy: 3490
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: First circumbinary planet in habitable zone
+
+### NASA037
+
+- missionName: JWST
+- planetName: GJ 3470 b
+- hostStar: GJ 3470
+- discoveryDate: 2012-05-01
+- method: Transit
+- radiusKm: 72000
+- massKg: 1.3e+26
+- orbitalPeriodDays: 3.34
+- semiMajorAxisAU: 0.025
+- eccentricity: 0
+- temperatureK: 1050
+- distanceLy: 95
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Ultra-low density warm Neptune, escaping atmosphere
+
+### NASA038
+
+- missionName: TESS
+- planetName: Gliese 12 b
+- hostStar: Gliese 12
+- discoveryDate: 2021-08-01
+- method: Transit
+- radiusKm: 9900
+- massKg: 
+- orbitalPeriodDays: 1.5
+- semiMajorAxisAU: 0.016
+- eccentricity: 0
+- temperatureK: 538
+- distanceLy: 48
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Sub-Earth, closest TESS planet discovered
+
+### NASA039
+
+- missionName: Kepler
+- planetName: Kepler-78 b
+- hostStar: Kepler-78
+- discoveryDate: 2013-09-01
+- method: Transit
+- radiusKm: 6400
+- massKg: 
+- orbitalPeriodDays: 0.35
+- semiMajorAxisAU: 0.009
+- eccentricity: 0
+- temperatureK: 2200
+- distanceLy: 410
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Earth-density planet, ultra-short period
+
+### NASA040
+
+- missionName: JWST
+- planetName: KELT-9 b
+- hostStar: KELT-9
+- discoveryDate: 2017-01-01
+- method: Transit
+- radiusKm: 146000
+- massKg: 3.2e+27
+- orbitalPeriodDays: 1.48
+- semiMajorAxisAU: 0.034
+- eccentricity: 0
+- temperatureK: 4640
+- distanceLy: 680
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Hottest known exoplanet, hotter than some stars
+
+### NASA041
+
+- missionName: TESS
+- planetName: AU Mic c
+- hostStar: AU Mic
+- discoveryDate: 2020-09-09
+- method: Transit
+- radiusKm: 58000
+- massKg: 
+- orbitalPeriodDays: 18.86
+- semiMajorAxisAU: 0.11
+- eccentricity: 0
+- temperatureK: 
+- distanceLy: 33.4
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Second planet in AU Mic protoplanetary disk system
+
+### NASA042
+
+- missionName: Kepler
+- planetName: Kepler-1658 b
+- hostStar: Kepler-1658
+- discoveryDate: 2016-01-01
+- method: Transit
+- radiusKm: 116000
+- massKg: 
+- orbitalPeriodDays: 3.61
+- semiMajorAxisAU: 0.05
+- eccentricity: 0.15
+- temperatureK: 1800
+- distanceLy: 2800
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Hot Jupiter on decaying orbit
+
+### NASA043
+
+- missionName: JWST
+- planetName: TOI-270 b
+- hostStar: TOI-270
+- discoveryDate: 2019-07-01
+- method: Transit
+- radiusKm: 24000
+- massKg: 
+- orbitalPeriodDays: 11.07
+- semiMajorAxisAU: 0.07
+- eccentricity: 0
+- temperatureK: 580
+- distanceLy: 47
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Part of compact multi-planet system
+
+### NASA044
+
+- missionName: TESS
+- planetName: CoRoT-3 b
+- hostStar: CoRoT-3
+- discoveryDate: 2008-04-01
+- method: Transit
+- radiusKm: 107000
+- massKg: 2.2e+28
+- orbitalPeriodDays: 4.25
+- semiMajorAxisAU: 0.05
+- eccentricity: 0
+- temperatureK: 1500
+- distanceLy: 2800
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: High mass planet near brown dwarf boundary
+
+### NASA045
+
+- missionName: Kepler
+- planetName: Kepler-36 b
+- hostStar: Kepler-36
+- discoveryDate: 2012-12-01
+- method: Transit
+- radiusKm: 18000
+- massKg: 
+- orbitalPeriodDays: 13.84
+- semiMajorAxisAU: 0.116
+- eccentricity: 0.02
+- temperatureK: 
+- distanceLy: 1270
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Density twin companion, dramatic density difference
+
+### NASA046
+
+- missionName: JWST
+- planetName: WASP-12 b
+- hostStar: WASP-12
+- discoveryDate: 2008-12-01
+- method: Transit
+- radiusKm: 125000
+- massKg: 2e+27
+- orbitalPeriodDays: 1.09
+- semiMajorAxisAU: 0.023
+- eccentricity: 0
+- temperatureK: 2800
+- distanceLy: 1410
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Being consumed by host star, highly distorted
+
+### NASA047
+
+- missionName: TESS
+- planetName: GJ 367 b
+- hostStar: GJ 367
+- discoveryDate: 2020-11-01
+- method: Transit
+- radiusKm: 5800
+- massKg: 
+- orbitalPeriodDays: 0.32
+- semiMajorAxisAU: 0.004
+- eccentricity: 0
+- temperatureK: 1600
+- distanceLy: 30.7
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Ultra-short period sub-Earth, possibly iron-rich
+
+### NASA048
+
+- missionName: Kepler
+- planetName: Kepler-10b
+- hostStar: Kepler-10
+- discoveryDate: 2011-01-01
+- method: Transit
+- radiusKm: 7100
+- massKg: 
+- orbitalPeriodDays: 0.84
+- semiMajorAxisAU: 0.017
+- eccentricity: 0
+- temperatureK: 1970
+- distanceLy: 564
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: First confirmed rocky planet by Kepler
+
+### NASA049
+
+- missionName: JWST
+- planetName: WASP-104 b
+- hostStar: WASP-104
+- discoveryDate: 2019-01-01
+- method: Transit
+- radiusKm: 118000
+- massKg: 8.7e+26
+- orbitalPeriodDays: 1.87
+- semiMajorAxisAU: 0.026
+- eccentricity: 0
+- temperatureK: 2300
+- distanceLy: 840
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Ultra-hot Jupiter, JWST detected thermal inversion
+
+### NASA050
+
+- missionName: TESS
+- planetName: Pi Mensae d
+- hostStar: Pi Mensae
+- discoveryDate: 2018-10-01
+- method: Radial Velocity
+- radiusKm: 
+- massKg: 
+- orbitalPeriodDays: 4500
+- semiMajorAxisAU: 3.3
+- eccentricity: 0.1
+- temperatureK: 50
+- distanceLy: 59.7
+- status: Confirmed
+- source: NASA Exoplanet Archive
+- retrievedDate: 2026-06-30
+- notes: Long-period super-Neptune, outer planet
+
+### 开普勒-442b
+
+- name: 开普勒-442b
+- name_en: Kepler-442b
+- type: Super-Earth
+- radius_km: 9338
+- radius_earth: 1.34
+- mass_earth: 2.3
+- orbital_period_days: 112.3
+- habitable_zone: true
+- host_star: Kepler-442
+- constellation: Lyra
+- discovery_year: 2015
+- distance_ly: 1206
+- equilibrium_temp_c: -40
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-442b","hipparcos":"HIP 79244","gaia":"GAIA DR3"}
+- hab_index: 0.83
+
+### 开普勒-62f
+
+- name: 开普勒-62f
+- name_en: Kepler-62f
+- type: Super-Earth
+- radius_km: 10048
+- radius_earth: 1.41
+- mass_earth: 2.8
+- orbital_period_days: 267.29
+- habitable_zone: true
+- host_star: Kepler-62
+- constellation: Lyra
+- discovery_year: 2013
+- distance_ly: 1200
+- equilibrium_temp_c: -37
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-62f","hipparcos":"HIP 77591","gaia":"GAIA DR3"}
+- hab_index: 0.81
+
+### 开普勒-186f
+
+- name: 开普勒-186f
+- name_en: Kepler-186f
+- type: Earth-like
+- radius_km: 8376
+- radius_earth: 1.17
+- mass_earth: 1.4
+- orbital_period_days: 129.94
+- habitable_zone: true
+- host_star: Kepler-186
+- constellation: Cygnus
+- discovery_year: 2014
+- distance_ly: 582
+- equilibrium_temp_c: -74
+- atmosphere: None detected
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-186f","hipparcos":"HIP 79225","gaia":"GAIA DR3"}
+- hab_index: 0.69
+
+### 格利泽667Cc
+
+- name: 格利泽667Cc
+- name_en: Gliese 667Cc
+- type: Super-Earth
+- radius_km: 8654
+- radius_earth: 1.23
+- mass_earth: 3.8
+- orbital_period_days: 28.15
+- habitable_zone: true
+- host_star: Gliese 667C
+- constellation: Scorpius
+- discovery_year: 2011
+- distance_ly: 23.62
+- equilibrium_temp_c: -14
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"gliese":"GJ 667C c","hd":"HD 156668"}
+- hab_index: 0.77
+
+### 格利泽832C
+
+- name: 格利泽832C
+- name_en: Gliese 832c
+- type: Super-Earth
+- radius_km: 10000
+- radius_earth: 1.4
+- mass_earth: 5.4
+- orbital_period_days: 35.37
+- habitable_zone: true
+- host_star: Gliese 832
+- constellation: Octans
+- discovery_year: 2014
+- distance_ly: 16
+- equilibrium_temp_c: -18
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"gliese":"GJ 832 c","hd":"HD 202206"}
+- hab_index: 0.74
+
+### 天苑四e
+
+- name: 天苑四e
+- name_en: Tau Ceti e
+- type: Super-Earth
+- radius_km: 8900
+- radius_earth: 1.27
+- mass_earth: 3.93
+- orbital_period_days: 168
+- habitable_zone: true
+- host_star: Tau Ceti
+- constellation: Cetus
+- discovery_year: 2012
+- distance_ly: 11.9
+- equilibrium_temp_c: -32
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hipparcos":"HIP 10220","simbad":"HR 1000"}
+- hab_index: 0.73
+
+### 天箭座ε星b
+
+- name: 天箭座ε星b
+- name_en: Epsilon Eridani b
+- type: Gas Giant
+- radius_km: 71492
+- radius_earth: 10
+- mass_earth: 1420
+- orbital_period_days: 2502
+- habitable_zone: false
+- host_star: Epsilon Eridani
+- constellation: Eridanus
+- discovery_year: 2000
+- distance_ly: 10.52
+- equilibrium_temp_c: -173
+- atmosphere: Hydrogen/Helium
+- mission: Direct Imaging
+- confirmation: Radial Velocity
+- catalog_ids: {"hipparcos":"HIP 16950","hd":"HD 22049"}
+- hab_index: 0.15
+
+### HD 40307g
+
+- name: HD 40307g
+- name_en: HD 40307g
+- type: Super-Earth
+- radius_km: 9000
+- radius_earth: 1.28
+- mass_earth: 7.1
+- orbital_period_days: 197.8
+- habitable_zone: true
+- host_star: HD 40307
+- constellation: Pictor
+- discovery_year: 2012
+- distance_ly: 42
+- equilibrium_temp_c: -10
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hd":"HD 40307"}
+- hab_index: 0.7
+
+### Wolf 1061c
+
+- name: Wolf 1061c
+- name_en: Wolf 1061c
+- type: Super-Earth
+- radius_km: 8800
+- radius_earth: 1.25
+- mass_earth: 1.59
+- orbital_period_days: 17.9
+- habitable_zone: true
+- host_star: Wolf 1061
+- constellation: Ophiuchus
+- discovery_year: 2015
+- distance_ly: 13.8
+- equilibrium_temp_c: -42
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"simbad":"HL 842"}
+- hab_index: 0.72
+
+### HD 85512b
+
+- name: HD 85512b
+- name_en: HD 85512b
+- type: Super-Earth
+- radius_km: 8600
+- radius_earth: 1.22
+- mass_earth: 3.6
+- orbital_period_days: 54.35
+- habitable_zone: true
+- host_star: HD 85512
+- constellation: Vela
+- discovery_year: 2011
+- distance_ly: 36.4
+- equilibrium_temp_c: -16
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hd":"HD 85512"}
+- hab_index: 0.71
+
+### K2-18b
+
+- name: K2-18b
+- name_en: K2-18b
+- type: Mini-Neptune/Super-Earth
+- radius_km: 11000
+- radius_earth: 1.57
+- mass_earth: 8.63
+- orbital_period_days: 32.94
+- habitable_zone: true
+- host_star: K2-18
+- constellation: Leo
+- discovery_year: 2015
+- distance_ly: 124
+- equilibrium_temp_c: 26
+- atmosphere: H2O detected!
+- mission: Kepler/Spitzer
+- confirmation: Transit
+- catalog_ids: {"eclat":"ECLAT 210.08363+11.03962"}
+- hab_index: 0.85
+
+### 开普勒-16b
+
+- name: 开普勒-16b
+- name_en: Kepler-16b
+- type: Gas Giant
+- radius_km: 54800
+- radius_earth: 7.7
+- mass_earth: 103
+- orbital_period_days: 228.778
+- habitable_zone: false
+- host_star: Kepler-16
+- constellation: Cygnus
+- discovery_year: 2011
+- distance_ly: 245
+- equilibrium_temp_c: -100
+- atmosphere: Hydrogen/Helium
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-16b","hipparcos":"HIP 79243"}
+- hab_index: 0.12
+
+### TRAPPIST-1b
+
+- name: TRAPPIST-1b
+- name_en: TRAPPIST-1b
+- type: Earth-like
+- radius_km: 5842
+- radius_earth: 1.12
+- mass_earth: 1.02
+- orbital_period_days: 1.51
+- habitable_zone: false
+- host_star: TRAPPIST-1
+- constellation: Aquarius
+- discovery_year: 2016
+- distance_ly: 40.7
+- equilibrium_temp_c: 162
+- atmosphere: Thin/None
+- mission: TRAPPIST/Spitzer
+- confirmation: Transit
+- catalog_ids: {"ultrapop":"UltraPop 1"}
+- hab_index: 0.3
+
+### TRAPPIST-1c
+
+- name: TRAPPIST-1c
+- name_en: TRAPPIST-1c
+- type: Earth-like
+- radius_km: 6052
+- radius_earth: 1.15
+- mass_earth: 1.15
+- orbital_period_days: 2.42
+- habitable_zone: false
+- host_star: TRAPPIST-1
+- constellation: Aquarius
+- discovery_year: 2016
+- distance_ly: 40.7
+- equilibrium_temp_c: 93
+- atmosphere: Thin
+- mission: TRAPPIST/Spitzer
+- confirmation: Transit
+- catalog_ids: {"ultrapop":"UltraPop 2"}
+- hab_index: 0.4
+
+### TRAPPIST-1d
+
+- name: TRAPPIST-1d
+- name_en: TRAPPIST-1d
+- type: Earth-like
+- radius_km: 4980
+- radius_earth: 0.77
+- mass_earth: 0.297
+- orbital_period_days: 4.05
+- habitable_zone: true
+- host_star: TRAPPIST-1
+- constellation: Aquarius
+- discovery_year: 2016
+- distance_ly: 40.7
+- equilibrium_temp_c: 53
+- atmosphere: Unknown
+- mission: TRAPPIST/Spitzer
+- confirmation: Transit
+- catalog_ids: {"ultrapop":"UltraPop 3"}
+- hab_index: 0.68
+
+### TRAPPIST-1e
+
+- name: TRAPPIST-1e
+- name_en: TRAPPIST-1e
+- type: Earth-like
+- radius_km: 5390
+- radius_earth: 0.92
+- mass_earth: 0.772
+- orbital_period_days: 6.1
+- habitable_zone: true
+- host_star: TRAPPIST-1
+- constellation: Aquarius
+- discovery_year: 2017
+- distance_ly: 40.7
+- equilibrium_temp_c: -12
+- atmosphere: Possible atmosphere
+- mission: TRAPPIST/Spitzer/Hubble
+- confirmation: Transit
+- catalog_ids: {"ultrapop":"UltraPop 4"}
+- hab_index: 0.86
+
+### TRAPPIST-1f
+
+- name: TRAPPIST-1f
+- name_en: TRAPPIST-1f
+- type: Super-Earth
+- radius_km: 7182
+- radius_earth: 1.04
+- mass_earth: 0.934
+- orbital_period_days: 9.21
+- habitable_zone: true
+- host_star: TRAPPIST-1
+- constellation: Aquarius
+- discovery_year: 2017
+- distance_ly: 40.7
+- equilibrium_temp_c: -29
+- atmosphere: Unknown
+- mission: TRAPPIST/Spitzer
+- confirmation: Transit
+- catalog_ids: {"ultrapop":"UltraPop 5"}
+- hab_index: 0.78
+
+### TRAPPIST-1g
+
+- name: TRAPPIST-1g
+- name_en: TRAPPIST-1g
+- type: Super-Earth
+- radius_km: 7450
+- radius_earth: 1.13
+- mass_earth: 1.39
+- orbital_period_days: 12.35
+- habitable_zone: true
+- host_star: TRAPPIST-1
+- constellation: Aquarius
+- discovery_year: 2017
+- distance_ly: 40.7
+- equilibrium_temp_c: -47
+- atmosphere: Unknown
+- mission: TRAPPIST/Spitzer
+- confirmation: Transit
+- catalog_ids: {"ultrapop":"UltraPop 6"}
+- hab_index: 0.75
+
+### TRAPPIST-1h
+
+- name: TRAPPIST-1h
+- name_en: TRAPPIST-1h
+- type: Mars-like
+- radius_km: 5328
+- radius_earth: 0.76
+- mass_earth: 0.326
+- orbital_period_days: 18.77
+- habitable_zone: false
+- host_star: TRAPPIST-1
+- constellation: Aquarius
+- discovery_year: 2017
+- distance_ly: 40.7
+- equilibrium_temp_c: -65
+- atmosphere: None
+- mission: TRAPPIST/Spitzer
+- confirmation: Transit
+- catalog_ids: {"ultrapop":"UltraPop 7"}
+- hab_index: 0.25
+
+### 比邻星b
+
+- name: 比邻星b
+- name_en: Proxima Centauri b
+- type: Earth-like
+- radius_km: 7860
+- radius_earth: 1.1
+- mass_earth: 1.17
+- orbital_period_days: 11.186
+- habitable_zone: true
+- host_star: Proxima Centauri
+- constellation: Centaurus
+- discovery_year: 2016
+- distance_ly: 4.24
+- equilibrium_temp_c: -39
+- atmosphere: Possible
+- mission: HARPS/PFS
+- confirmation: Radial Velocity
+- catalog_ids: {"hipparcos":"HIP 70890"}
+- hab_index: 0.76
+
+### Groombridge 183B
+
+- name: Groombridge 183B
+- name_en: Groombridge 183 B
+- type: Super-Earth
+- radius_km: 8600
+- radius_earth: 1.22
+- mass_earth: 3.4
+- orbital_period_days: 15.2
+- habitable_zone: true
+- host_star: Groombridge 183
+- constellation: Camelopardalis
+- discovery_year: 2023
+- distance_ly: 11.6
+- equilibrium_temp_c: -20
+- atmosphere: Unknown
+- mission: NEID
+- confirmation: Radial Velocity
+- catalog_ids: {"hipparcos":"HIP 1920"}
+- hab_index: 0.68
+
+### L 98-59 b
+
+- name: L 98-59 b
+- name_en: L 98-59 b
+- type: Venus-like
+- radius_km: 6132
+- radius_earth: 0.8
+- mass_earth: 0.5
+- orbital_period_days: 2.25
+- habitable_zone: false
+- host_star: L 98-59
+- constellation: Volans
+- discovery_year: 2019
+- distance_ly: 31
+- equilibrium_temp_c: 145
+- atmosphere: None detected
+- mission: TESS/JWST
+- confirmation: Transit
+- catalog_ids: {"eclat":"ECLAT 215.62757-42.34765"}
+- hab_index: 0.15
+
+### L 98-59 c
+
+- name: L 98-59 c
+- name_en: L 98-59 c
+- type: Earth-like
+- radius_km: 6700
+- radius_earth: 0.88
+- mass_earth: 0.8
+- orbital_period_days: 3.67
+- habitable_zone: true
+- host_star: L 98-59
+- constellation: Volans
+- discovery_year: 2019
+- distance_ly: 31
+- equilibrium_temp_c: 40
+- atmosphere: Unknown
+- mission: TESS/JWST
+- confirmation: Transit
+- catalog_ids: {"eclat":"ECLAT 215.62757-42.34765"}
+- hab_index: 0.55
+
+### L 98-59 d
+
+- name: L 98-59 d
+- name_en: L 98-59 d
+- type: Super-Earth
+- radius_km: 8600
+- radius_earth: 1.22
+- mass_earth: 2.2
+- orbital_period_days: 6.64
+- habitable_zone: true
+- host_star: L 98-59
+- constellation: Volans
+- discovery_year: 2019
+- distance_ly: 31
+- equilibrium_temp_c: -10
+- atmosphere: Unknown
+- mission: TESS/JWST
+- confirmation: Transit
+- catalog_ids: {"eclat":"ECLAT 215.62757-42.34765"}
+- hab_index: 0.65
+
+### HD 63433 g
+
+- name: HD 63433 g
+- name_en: HD 63433 g
+- type: Super-Earth
+- radius_km: 9000
+- radius_earth: 1.28
+- mass_earth: 5.5
+- orbital_period_days: 161.2
+- habitable_zone: true
+- host_star: HD 63433
+- constellation: Pisces
+- discovery_year: 2020
+- distance_ly: 26
+- equilibrium_temp_c: -15
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hd":"HD 63433"}
+- hab_index: 0.69
+
+### HD 101807 h
+
+- name: HD 101807 h
+- name_en: HD 101807 h
+- type: Super-Earth
+- radius_km: 9200
+- radius_earth: 1.31
+- mass_earth: 2.7
+- orbital_period_days: 60.1
+- habitable_zone: true
+- host_star: HD 101807
+- constellation: Hydrus
+- discovery_year: 2010
+- distance_ly: 63
+- equilibrium_temp_c: -25
+- atmosphere: Unknown
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hd":"HD 101807"}
+- hab_index: 0.67
+
+### HD 20794 b
+
+- name: HD 20794 b
+- name_en: HD 20794 b
+- type: Gas Giant
+- radius_km: 67500
+- radius_earth: 9.5
+- mass_earth: 1200
+- orbital_period_days: 575.6
+- habitable_zone: false
+- host_star: HD 20794
+- constellation: Phoenix
+- discovery_year: 2006
+- distance_ly: 20
+- equilibrium_temp_c: -145
+- atmosphere: Hydrogen/Helium
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hd":"HD 20794"}
+- hab_index: 0.18
+
+### HD 20794 h
+
+- name: HD 20794 h
+- name_en: HD 20794 h
+- type: Earth-like
+- radius_km: 8000
+- radius_earth: 1.13
+- mass_earth: 1.2
+- orbital_period_days: 1.99
+- habitable_zone: false
+- host_star: HD 20794
+- constellation: Phoenix
+- discovery_year: 2006
+- distance_ly: 20
+- equilibrium_temp_c: 150
+- atmosphere: None
+- mission: HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hd":"HD 20794"}
+- hab_index: 0.2
+
+### HD 45350 b
+
+- name: HD 45350 b
+- name_en: HD 45350 b
+- type: Gas Giant
+- radius_km: 75000
+- radius_earth: 10.5
+- mass_earth: 1800
+- orbital_period_days: 404.8
+- habitable_zone: false
+- host_star: HD 45350
+- constellation: Ara
+- discovery_year: 2004
+- distance_ly: 160
+- equilibrium_temp_c: -113
+- atmosphere: Hydrogen/Helium
+- mission: Keck/HARPS
+- confirmation: Radial Velocity
+- catalog_ids: {"hd":"HD 45350"}
+- hab_index: 0.1
+
+### 开普勒-22b
+
+- name: 开普勒-22b
+- name_en: Kepler-22b
+- type: Super-Earth/Gas Mini
+- radius_km: 15000
+- radius_earth: 2.14
+- mass_earth: null
+- orbital_period_days: 289.9
+- habitable_zone: true
+- host_star: Kepler-22
+- constellation: Cygnus
+- discovery_year: 2011
+- distance_ly: 638
+- equilibrium_temp_c: 266
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-22b"}
+- hab_index: 0.45
+
+### 开普勒-438b
+
+- name: 开普勒-438b
+- name_en: Kepler-438b
+- type: Earth-like
+- radius_km: 8200
+- radius_earth: 1.16
+- mass_earth: 1.3
+- orbital_period_days: 35.17
+- habitable_zone: true
+- host_star: Kepler-438
+- constellation: Draco
+- discovery_year: 2015
+- distance_ly: 666
+- equilibrium_temp_c: -12
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-438b"}
+- hab_index: 0.8
+
+### 开普勒-440b
+
+- name: 开普勒-440b
+- name_en: Kepler-440b
+- type: Earth-like
+- radius_km: 8100
+- radius_earth: 1.15
+- mass_earth: 1.2
+- orbital_period_days: 4.8
+- habitable_zone: false
+- host_star: Kepler-440
+- constellation: Draco
+- discovery_year: 2015
+- distance_ly: 1200
+- equilibrium_temp_c: 250
+- atmosphere: None
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-440b"}
+- hab_index: 0.25
+
+### 开普勒-452b
+
+- name: 开普勒-452b
+- name_en: Kepler-452b
+- type: Super-Earth
+- radius_km: 11000
+- radius_earth: 1.6
+- mass_earth: 5
+- orbital_period_days: 384.84
+- habitable_zone: true
+- host_star: Kepler-452
+- constellation: Cygnus
+- discovery_year: 2015
+- distance_ly: 1402
+- equilibrium_temp_c: -20
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-452b"}
+- hab_index: 0.78
+
+### 开普勒-1229b
+
+- name: 开普勒-1229b
+- name_en: Kepler-1229b
+- type: Earth-like
+- radius_km: 7700
+- radius_earth: 1.09
+- mass_earth: 1
+- orbital_period_days: 10.26
+- habitable_zone: true
+- host_star: Kepler-1229
+- constellation: Cygnus
+- discovery_year: 2015
+- distance_ly: 650
+- equilibrium_temp_c: -18
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-1229b"}
+- hab_index: 0.76
+
+### 开普勒-1649c
+
+- name: 开普勒-1649c
+- name_en: Kepler-1649c
+- type: Earth-like
+- radius_km: 7752
+- radius_earth: 1.1
+- mass_earth: 1.1
+- orbital_period_days: 19.53
+- habitable_zone: true
+- host_star: Kepler-1649
+- constellation: Draco
+- discovery_year: 2020
+- distance_ly: 300
+- equilibrium_temp_c: -3
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-1649c"}
+- hab_index: 0.82
+
+### 开普勒-296e
+
+- name: 开普勒-296e
+- name_en: Kepler-296e
+- type: Earth-like
+- radius_km: 7742
+- radius_earth: 1.1
+- mass_earth: null
+- orbital_period_days: 47.26
+- habitable_zone: true
+- host_star: Kepler-296
+- constellation: Lyra
+- discovery_year: 2014
+- distance_ly: 640
+- equilibrium_temp_c: -40
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-296e"}
+- hab_index: 0.68
+
+### 开普勒-296f
+
+- name: 开普勒-296f
+- name_en: Kepler-296f
+- type: Earth-like
+- radius_km: 8050
+- radius_earth: 1.14
+- mass_earth: null
+- orbital_period_days: 123.6
+- habitable_zone: true
+- host_star: Kepler-296
+- constellation: Lyra
+- discovery_year: 2014
+- distance_ly: 640
+- equilibrium_temp_c: -60
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-296f"}
+- hab_index: 0.65
+
+### 开普勒-263b
+
+- name: 开普勒-263b
+- name_en: Kepler-263b
+- type: Earth-like
+- radius_km: 8130
+- radius_earth: 1.15
+- mass_earth: null
+- orbital_period_days: 29.4
+- habitable_zone: true
+- host_star: Kepler-263
+- constellation: Cygnus
+- discovery_year: 2014
+- distance_ly: 2500
+- equilibrium_temp_c: -20
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-263b"}
+- hab_index: 0.68
+
+### 开普勒-1545b
+
+- name: 开普勒-1545b
+- name_en: Kepler-1545b
+- type: Earth-like
+- radius_km: 7900
+- radius_earth: 1.12
+- mass_earth: null
+- orbital_period_days: 25.3
+- habitable_zone: true
+- host_star: Kepler-1545
+- constellation: Cygnus
+- discovery_year: 2015
+- distance_ly: 2700
+- equilibrium_temp_c: -10
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-1545b"}
+- hab_index: 0.7
+
+### 开普勒-283c
+
+- name: 开普勒-283c
+- name_en: Kepler-283c
+- type: Earth-like
+- radius_km: 8000
+- radius_earth: 1.13
+- mass_earth: null
+- orbital_period_days: 192
+- habitable_zone: true
+- host_star: Kepler-283
+- constellation: Cygnus
+- discovery_year: 2014
+- distance_ly: 1600
+- equilibrium_temp_c: -50
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-283c"}
+- hab_index: 0.62
+
+### 开普勒-62e
+
+- name: 开普勒-62e
+- name_en: Kepler-62e
+- type: Super-Earth
+- radius_km: 9250
+- radius_earth: 1.31
+- mass_earth: 3.5
+- orbital_period_days: 122.38
+- habitable_zone: true
+- host_star: Kepler-62
+- constellation: Lyra
+- discovery_year: 2013
+- distance_ly: 1200
+- equilibrium_temp_c: -40
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-62e"}
+- hab_index: 0.68
+
+### 开普勒-280c
+
+- name: 开普勒-280c
+- name_en: Kepler-280c
+- type: Earth-like
+- radius_km: 8600
+- radius_earth: 1.22
+- mass_earth: null
+- orbital_period_days: 66.8
+- habitable_zone: true
+- host_star: Kepler-280
+- constellation: Cygnus
+- discovery_year: 2013
+- distance_ly: 1600
+- equilibrium_temp_c: -30
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-280c"}
+- hab_index: 0.65
+
+### 开普勒-290b
+
+- name: 开普勒-290b
+- name_en: Kepler-290b
+- type: Earth-like
+- radius_km: 8300
+- radius_earth: 1.18
+- mass_earth: null
+- orbital_period_days: 182
+- habitable_zone: true
+- host_star: Kepler-290
+- constellation: Cygnus
+- discovery_year: 2013
+- distance_ly: 3200
+- equilibrium_temp_c: -55
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-290b"}
+- hab_index: 0.6
+
+### 开普勒-61b
+
+- name: 开普勒-61b
+- name_en: Kepler-61b
+- type: Earth-like
+- radius_km: 7500
+- radius_earth: 1.06
+- mass_earth: null
+- orbital_period_days: 122.6
+- habitable_zone: true
+- host_star: Kepler-61
+- constellation: Cygnus
+- discovery_year: 2010
+- distance_ly: 270
+- equilibrium_temp_c: -30
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-61b"}
+- hab_index: 0.65
+
+### 开普勒-432b
+
+- name: 开普勒-432b
+- name_en: Kepler-432b
+- type: Gas Giant
+- radius_km: 72000
+- radius_earth: 10
+- mass_earth: null
+- orbital_period_days: 665
+- habitable_zone: false
+- host_star: Kepler-432
+- constellation: Cygnus
+- discovery_year: 2014
+- distance_ly: 2700
+- equilibrium_temp_c: -100
+- atmosphere: Hydrogen/Helium
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-432b"}
+- hab_index: 0.15
+
+### 开普勒-441b
+
+- name: 开普勒-441b
+- name_en: Kepler-441b
+- type: Earth-like
+- radius_km: 8200
+- radius_earth: 1.16
+- mass_earth: null
+- orbital_period_days: 112
+- habitable_zone: true
+- host_star: Kepler-441
+- constellation: Cygnus
+- discovery_year: 2015
+- distance_ly: 2900
+- equilibrium_temp_c: -40
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-441b"}
+- hab_index: 0.65
+
+### 开普勒-451b
+
+- name: 开普勒-451b
+- name_en: Kepler-451b
+- type: Earth-like
+- radius_km: 8100
+- radius_earth: 1.15
+- mass_earth: null
+- orbital_period_days: 76.7
+- habitable_zone: true
+- host_star: Kepler-451
+- constellation: Cygnus
+- discovery_year: 2014
+- distance_ly: 1200
+- equilibrium_temp_c: -10
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-451b"}
+- hab_index: 0.72
+
+### 开普勒-102d
+
+- name: 开普勒-102d
+- name_en: Kepler-102d
+- type: Earth-like
+- radius_km: 7400
+- radius_earth: 1.05
+- mass_earth: null
+- orbital_period_days: 45.2
+- habitable_zone: true
+- host_star: Kepler-102
+- constellation: Ursa Minor
+- discovery_year: 2014
+- distance_ly: 564
+- equilibrium_temp_c: -30
+- atmosphere: Unknown
+- mission: Kepler
+- confirmation: Transit
+- catalog_ids: {"kepler":"Kepler-102d"}
+- hab_index: 0.68
+
 ## space_missions
 
 ### James Webb Space Telescope (JWST)
@@ -2103,6 +5731,216 @@ Exoplanet and space exploration knowledge base covering exoplanets, missions, te
 - description: In 2026, NASA's TESS mission achieved a major milestone with 114 new planets added to the Exoplanet Archive, including three new hot Jupiters orbiting M dwarfs, WISPIT 2 c, and CWISEP J193518.59-154620.3 b. By this time, TESS had discovered over 7,000 planetary candidates and confirmed 679+ exoplanets since launch.
 - source: NASA Exoplanet Archive 2026
 
+### Europa Clipper
+
+- name: Europa Clipper
+- agency: NASA
+- type: Orbiter
+- target: Jupiter's Moon Europa
+
+### Artemis III
+
+- name: Artemis III
+- agency: NASA
+- type: Human Landing
+- target: Lunar South Pole
+
+### Dragonfly
+
+- name: Dragonfly
+- agency: NASA
+- type: Rotorcraft Lander
+- target: Saturn's Moon Titan
+
+### Euclid
+
+- name: Euclid
+- agency: ESA
+- type: Space Observatory
+- target: Sun-Earth L2 Lagrange Point
+
+### JUICE (Jupiter Icy Moons Explorer)
+
+- name: JUICE (Jupiter Icy Moons Explorer)
+- agency: ESA
+- type: Orbiter
+- target: Jupiter System (Ganymede, Callisto, Europa)
+
+### AIDA (Asteroid Impact & Deflection Assessment)
+
+- name: AIDA (Asteroid Impact & Deflection Assessment)
+- agency: NASA/ESA
+- type: Impactor/Observer
+- target: Asteroid Didymos
+
+### MMX (Martian Moons eXploration)
+
+- name: MMX (Martian Moons eXploration)
+- agency: JAXA
+- type: Sample Return
+- target: Mars' Moon Phobos
+
+### X-ray Imaging and Spectroscopy Mission (XRISM)
+
+- name: X-ray Imaging and Spectroscopy Mission (XRISM)
+- agency: JAXA
+- type: Space Observatory
+- target: Low Earth Orbit
+
+### Change'e-6
+
+- name: Change'e-6
+- agency: CNSA
+- type: Sample Return
+- target: Lunar South Pole-Aitken Basin
+
+### Chang'e-7
+
+- name: Chang'e-7
+- agency: CNSA
+- type: Lander/Rover
+- target: Lunar South Pole
+
+### Interstellar Probe
+
+- name: Interstellar Probe
+- agency: NASA
+- type: Probe
+- target: Interstellar Space
+
+### Venus Life Finder
+
+- name: Venus Life Finder
+- agency: NASA
+- type: Atmospheric Probe
+- target: Venus
+
+### PLATO (PLAnetary Transits and Oscillations of stars)
+
+- name: PLATO (PLAnetary Transits and Oscillations of stars)
+- agency: ESA
+- type: Space Observatory
+- target: L2 Lagrange Point
+
+### Lunar Gateway
+
+- name: Lunar Gateway
+- agency: NASA/ESA/CSA/JAXA
+- type: Space Station
+- target: Lunar Orbit
+
+### Tianwen-3
+
+- name: Tianwen-3
+- agency: CNSA
+- type: Mars Sample Return
+- target: Mars
+
+### Europa Clipper
+
+- name: Europa Clipper
+- agency: NASA
+- type: Orbiter
+- target: Jupiter's Moon Europa
+
+### Artemis III
+
+- name: Artemis III
+- agency: NASA
+- type: Lander
+- target: Moon
+
+### Ariane 6
+
+- name: Ariane 6
+- agency: ESA
+- type: Launch Vehicle
+- target: Earth Orbit
+
+### JUICE
+
+- name: JUICE
+- agency: ESA
+- type: Orbiter
+- target: Jupiter's Moon Ganymede
+
+### MMX
+
+- name: MMX
+- agency: JAXA
+- type: Sample Return
+- target: Mars' Moon Phobos
+
+### Chang'e-7
+
+- name: Chang'e-7
+- agency: CNSA
+- type: Lander/Rover
+- target: Moon's South Pole
+
+### Europa Lander
+
+- name: Europa Lander
+- agency: NASA
+- type: Lander
+- target: Jupiter's Moon Europa
+
+### Voyager 3
+
+- name: Voyager 3
+- agency: NASA
+- type: Probe
+- target: Interstellar Space
+
+### Mars Sample Return
+
+- name: Mars Sample Return
+- agency: NASA/ESA
+- type: Sample Return
+- target: Mars
+
+### Dragonfly
+
+- name: Dragonfly
+- agency: NASA
+- type: Rotorcraft
+- target: Saturn's Moon Titan
+
+### LISA
+
+- name: LISA
+- agency: ESA
+- type: Observatory
+- target: Sun-Earth L2
+
+### XRISM
+
+- name: XRISM
+- agency: JAXA
+- type: Observatory
+- target: Earth Orbit
+
+### Chang'e-8
+
+- name: Chang'e-8
+- agency: CNSA
+- type: Lander/Rover
+- target: Moon's South Pole
+
+### NEO Surveyor
+
+- name: NEO Surveyor
+- agency: NASA
+- type: Space Telescope
+- target: Near-Earth Objects
+
+### Hera
+
+- name: Hera
+- agency: ESA
+- type: Probe
+- target: Asteroid Didymos
+
 ## space_telescopes
 
 ### Hubble Space Telescope
@@ -2414,6 +6252,556 @@ Exoplanet and space exploration knowledge base covering exoplanets, missions, te
 - status: Operational - first light June 2025
 - description: 世界最大数码相机，配备32亿像素。2025年6月23日首次亮光，揭示了一个不断变化的宇宙。将在10年巡天任务中反复拍摄整个南天，预计发现数百万太阳系天体、数十亿恒星和星系。其时域巡天能力将捕捉超新星、小行星和任何移动或变化的天体。
 - key_discoveries: First light imagery revealed millions of galaxies and thousands of asteroids in single frames; most efficient Solar System discovery machine ever built
+
+### Nancy Grace Roman Space Telescope
+
+- name: Nancy Grace Roman Space Telescope
+- type: General Purpose Observatory
+- wavelength: Ultraviolet to Near-Infrared
+- launch_year: 2024
+
+### Euclid
+
+- name: Euclid
+- type: Dark Energy & Cosmology
+- wavelength: Visible to Near-Infrared
+- launch_year: 2024
+
+### PLATO
+
+- name: PLATO
+- type: Exoplanet Transit Finder
+- wavelength: Visible
+- launch_year: 2024
+
+### SPHEREx
+
+- name: SPHEREx
+- type: All-Sky Infrared Survey
+- wavelength: Near-Infrared
+- launch_year: 2024
+
+### Lynx
+
+- name: Lynx
+- type: X-ray Observatory
+- wavelength: X-ray
+- launch_year: 2024
+
+### AXIS
+
+- name: AXIS
+- type: X-ray Observatory
+- wavelength: X-ray
+- launch_year: 2024
+
+### Origins Space Telescope
+
+- name: Origins Space Telescope
+- type: Mid-Infrared Observatory
+- wavelength: Mid-Infrared
+- launch_year: 2024
+
+### Far-IR Probe
+
+- name: Far-IR Probe
+- type: Far-Infrared Observatory
+- wavelength: Far-Infrared
+- launch_year: 2024
+
+### UVEX
+
+- name: UVEX
+- type: Ultraviolet Observatory
+- wavelength: Ultraviolet
+- launch_year: 2024
+
+### X-ray Surveyor
+
+- name: X-ray Surveyor
+- type: X-ray Observatory
+- wavelength: X-ray
+- launch_year: 2024
+
+### Cosmic Origins Explorer
+
+- name: Cosmic Origins Explorer
+- type: Ultraviolet to Near-Infrared
+- wavelength: Ultraviolet to Near-Infrared
+- launch_year: 2024
+
+### Galaxy And Mass Assembly (GAMA) Observer
+
+- name: Galaxy And Mass Assembly (GAMA) Observer
+- type: Optical/IR Imaging Spectroscopy
+- wavelength: Visible to Near-Infrared
+- launch_year: 2024
+
+### Star Formation Observer
+
+- name: Star Formation Observer
+- type: Far-Infrared/Submillimeter
+- wavelength: Far-Infrared/Submillimeter
+- launch_year: 2024
+
+### Advanced Solar Coronagraph
+
+- name: Advanced Solar Coronagraph
+- type: Solar Ultraviolet
+- wavelength: Extreme Ultraviolet
+- launch_year: 2024
+
+### Stellar Imager
+
+- name: Stellar Imager
+- type: Extreme Ultraviolet
+- wavelength: Extreme Ultraviolet
+- launch_year: 2024
+
+### Nancy Grace Roman Space Telescope
+
+- name: Nancy Grace Roman Space Telescope
+- type: General Purpose
+- wavelength: Optical / Near-Infrared
+- launch_year: 2024
+
+### Euclid
+
+- name: Euclid
+- type: Survey
+- wavelength: Optical / Near-Infrared
+- launch_year: 2024
+
+### PLATO
+
+- name: PLATO
+- type: Exoplanet Finder
+- wavelength: Optical
+- launch_year: 2024
+
+### SPHEREx
+
+- name: SPHEREx
+- type: All-Sky Survey
+- wavelength: Near-Infrared
+- launch_year: 2024
+
+### XRISM (X-Ray Imaging and Spectroscopy Mission)
+
+- name: XRISM (X-Ray Imaging and Spectroscopy Mission)
+- type: X-ray Observatory
+- wavelength: X-ray
+- launch_year: 2024
+
+### Athena (Advanced Telescope for High-ENergy Astrophysics)
+
+- name: Athena (Advanced Telescope for High-ENergy Astrophysics)
+- type: X-ray Observatory
+- wavelength: X-ray
+- launch_year: 2024
+
+### Lynx X-ray Observatory
+
+- name: Lynx X-ray Observatory
+- type: X-ray Observatory
+- wavelength: X-ray
+- launch_year: 2024
+
+### Origins Space Telescope
+
+- name: Origins Space Telescope
+- type: Far-Infrared
+- wavelength: Far-Infrared
+- launch_year: 2024
+
+### LUVOIR (Large UV/Optical/IR Surveyor)
+
+- name: LUVOIR (Large UV/Optical/IR Surveyor)
+- type: General Purpose
+- wavelength: Ultraviolet / Optical / Near-Infrared
+- launch_year: 2024
+
+### HabEx (Habitable Exoplanet Observatory)
+
+- name: HabEx (Habitable Exoplanet Observatory)
+- type: Exoplanet Characterizer
+- wavelength: Ultraviolet / Optical / Near-Infrared
+- launch_year: 2024
+
+### OST ( Origins Space Telescope)
+
+- name: OST ( Origins Space Telescope)
+- type: Far-Infrared
+- wavelength: Far-Infrared
+- launch_year: 2024
+
+### Cosmic Dawn
+
+- name: Cosmic Dawn
+- type: Far-Infrared
+- wavelength: Far-Infrared
+- launch_year: 2024
+
+### UVEX (Ultraviolet EXplorer)
+
+- name: UVEX (Ultraviolet EXplorer)
+- type: Ultraviolet
+- wavelength: Ultraviolet
+- launch_year: 2024
+
+### Arcus
+
+- name: Arcus
+- type: X-ray Observatory
+- wavelength: X-ray
+- launch_year: 2024
+
+### Comet Interceptor
+
+- name: Comet Interceptor
+- type: Comet Flyby
+- wavelength: Optical / UV
+- launch_year: 2024
+
+### FSR-402 Force Sensing Resistor
+
+- name: FSR-402 Force Sensing Resistor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Standard force sensing resistor with flexible polyamide film construction. Measures force from light touch to approximately 30lbs. Thin, flexible design allows integration into tight spaces.
+- sensing_range: 0.11N - 133N
+- resolution: 0.05N
+- accuracy: +/-5%
+- dimensions: 0.4mm x 4.5mm active area
+- price_usd: 2.50
+- moq: 1
+- delivery_weeks: 2-4
+- source_url: https://interlinkelectronics.com/fsr-series.html
+- last_verified: 2025-01-15
+
+### FSR-406 Force Sensing Resistor
+
+- name: FSR-406 Force Sensing Resistor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Larger active area FSR for distributed force measurement. Flexible construction suitable for wearable and touch applications.
+- sensing_range: 0.11N - 133N
+- resolution: 0.05N
+- accuracy: +/-5%
+- dimensions: 0.4mm x 12.7mm active area
+- price_usd: 3.20
+- moq: 1
+- delivery_weeks: 2-4
+- source_url: https://interlinkelectronics.com/fsr-series.html
+- last_verified: 2025-01-15
+
+### FSR-400A Force Sensing Resistor
+
+- name: FSR-400A Force Sensing Resistor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Industrial grade FSR with enhanced durability and temperature stability. Suitable for high-volume production integration.
+- sensing_range: 0N - 340N
+- resolution: 0.01N
+- accuracy: +/-3%
+- dimensions: Customizable
+- price_usd: 8.00
+- moq: 100
+- delivery_weeks: 4-6
+- source_url: https://interlinkelectronics.com/fsr-series.html
+- last_verified: 2025-01-15
+
+### FlexiForce A201 Miniature Force Sensor
+
+- name: FlexiForce A201 Miniature Force Sensor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Ultra-miniature force sensor with 0.45 inch diameter active area. Ideal for robotic gripper and medical device applications.
+- sensing_range: 0N - 44.5N
+- resolution: 0.01N
+- accuracy: +/-5%
+- dimensions: 11.4mm diameter x 0.4mm
+- price_usd: 45.00
+- moq: 1
+- delivery_weeks: 2-4
+- source_url: https://interlinkelectronics.com/flexiforce.html
+- last_verified: 2025-01-15
+
+### FlexiForce A201-L100 Heavy Duty Force Sensor
+
+- name: FlexiForce A201-L100 Heavy Duty Force Sensor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Heavy duty version of FlexiForce for higher force range applications. Rated for up to 100lbs force measurement.
+- sensing_range: 0N - 445N
+- resolution: 0.1N
+- accuracy: +/-5%
+- dimensions: 19mm diameter x 0.5mm
+- price_usd: 65.00
+- moq: 1
+- delivery_weeks: 2-4
+- source_url: https://interlinkelectronics.com/flexiforce.html
+- last_verified: 2025-01-15
+
+### FF402-FT Force Sensor with Tab Termination
+
+- name: FF402-FT Force Sensor with Tab Termination
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: FSR with tab termination for easy PCB mounting. Low profile design for embedded force detection applications.
+- sensing_range: 0.11N - 133N
+- resolution: 0.05N
+- accuracy: +/-5%
+- dimensions: 0.4mm x 4.5mm active area
+- price_usd: 3.80
+- moq: 10
+- delivery_weeks: 2-4
+- source_url: https://interlinkelectronics.com/fsr-series.html
+- last_verified: 2025-01-15
+
+### Multi-FS Array Force Sensor
+
+- name: Multi-FS Array Force Sensor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Multi-element force sensing array for pressure mapping applications. Multiple sensing elements in a single package.
+- sensing_range: 0N - 340N per element
+- resolution: 0.01N
+- accuracy: +/-5%
+- dimensions: Customizable array layout
+- price_usd: 250.00
+- moq: 1
+- delivery_weeks: 6-8
+- source_url: https://interlinkelectronics.com/multifs.html
+- last_verified: 2025-01-15
+
+### FlexiForce QF Series Industrial Force Sensor
+
+- name: FlexiForce QF Series Industrial Force Sensor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Industrial-grade force sensor designed for harsh environments. Enhanced packaging for industrial automation and manufacturing.
+- sensing_range: 0N - 500N
+- resolution: 0.1N
+- accuracy: +/-3%
+- dimensions: Customizable
+- price_usd: 120.00
+- moq: 50
+- delivery_weeks: 4-6
+- source_url: https://interlinkelectronics.com/qf-series.html
+- last_verified: 2025-01-15
+
+### FF406-MT Force Sensor with Molded Tip
+
+- name: FF406-MT Force Sensor with Molded Tip
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: FSR with molded tip for point force measurement. Rugged construction for repeated use in industrial settings.
+- sensing_range: 0.11N - 133N
+- resolution: 0.05N
+- accuracy: +/-5%
+- dimensions: 10mm tip diameter x 4.5mm active
+- price_usd: 5.50
+- moq: 10
+- delivery_weeks: 2-4
+- source_url: https://interlinkelectronics.com/fsr-series.html
+- last_verified: 2025-01-15
+
+### FlexiForce Thin Force Sensor
+
+- name: FlexiForce Thin Force Sensor
+- manufacturer: Interlink Electronics
+- country: US
+- category: Force Sensor
+- description: Ultra-thin force sensor for space-constrained applications. Can be integrated into surfaces for touch-sensitive interfaces.
+- sensing_range: 0N - 222N
+- resolution: 0.05N
+- accuracy: +/-5%
+- dimensions: 0.3mm thickness
+- price_usd: 35.00
+- moq: 5
+- delivery_weeks: 2-4
+- source_url: https://interlinkelectronics.com/flexiforce.html
+- last_verified: 2025-01-15
+
+### HSA DT400 Series Precision Force Sensor
+
+- name: HSA DT400 Series Precision Force Sensor
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Force Sensor
+- description: High precision strain gauge force sensor with stainless steel construction. Suitable for testing machines, material testing, and automated assembly.
+- sensing_range: 5N - 500kN
+- resolution: 0.01% FS
+- accuracy: +/-0.03%
+- dimensions: Various sizes available
+- price_usd: 150.00
+- moq: 1
+- delivery_weeks: 1-2
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA U9C Wireless Dynamic Force Sensor
+
+- name: HSA U9C Wireless Dynamic Force Sensor
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Dynamic Force Sensor
+- description: Wireless force sensor with real-time transmission. Built-in battery and Bluetooth connectivity for dynamic force measurement in moving platforms.
+- sensing_range: 10N - 50kN
+- resolution: 0.001N
+- accuracy: +/-0.05% FS
+- dimensions: 36mm diameter x 48mm
+- price_usd: 3800.00
+- moq: 1
+- delivery_weeks: 1-2
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA AT58 Multi-Axis Force/Torque Sensor
+
+- name: HSA AT58 Multi-Axis Force/Torque Sensor
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Force/Torque Sensor
+- description: Six-axis force/torque sensor for robot wrist mounting. Compact design with high precision for robotics applications.
+- sensing_range: Fx,Fy: +/-500N, Fz: +/-1000N, Tx,Ty: +/-50Nm, Tz: +/-100Nm
+- resolution: 0.01N / 0.001Nm
+- accuracy: +/-0.2% FS
+- dimensions: 58mm diameter x 43mm
+- price_usd: 6500.00
+- moq: 1
+- delivery_weeks: 2-3
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA AT30 Mini Six-Axis Force Sensor
+
+- name: HSA AT30 Mini Six-Axis Force Sensor
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Force/Torque Sensor
+- description: Miniature six-axis force/torque sensor for small robot wrists and precise manipulation tasks.
+- sensing_range: Fx,Fy: +/-100N, Fz: +/-200N, Tx,Ty: +/-10Nm, Tz: +/-20Nm
+- resolution: 0.01N / 0.001Nm
+- accuracy: +/-0.3% FS
+- dimensions: 30mm diameter x 25mm
+- price_usd: 4800.00
+- moq: 1
+- delivery_weeks: 2-3
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA L620 Load Cell
+
+- name: HSA L620 Load Cell
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Load Cell
+- description: Single point load cell for platform scales and weighing systems. High accuracy with overload protection.
+- sensing_range: 1kg - 1000kg
+- resolution: 0.001% FS
+- accuracy: +/-0.03% FS
+- dimensions: 62mm diameter x 35mm
+- price_usd: 85.00
+- moq: 10
+- delivery_weeks: 1-2
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA S-Type Load Cell SLS136
+
+- name: HSA S-Type Load Cell SLS136
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Load Cell
+- description: S-type tension/compression load cell for force measurement in both directions. Commonly used in material testing.
+- sensing_range: 50N - 50kN
+- resolution: 0.001% FS
+- accuracy: +/-0.03% FS
+- dimensions: Various sizes
+- price_usd: 120.00
+- moq: 5
+- delivery_weeks: 1-2
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA Beam Load Cell YZL107
+
+- name: HSA Beam Load Cell YZL107
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Load Cell
+- description: Beam type load cell for industrial weighing and force monitoring. Robust aluminum alloy construction.
+- sensing_range: 10kg - 10t
+- resolution: 0.002% FS
+- accuracy: +/-0.02% FS
+- dimensions: Customizable
+- price_usd: 95.00
+- moq: 10
+- delivery_weeks: 1-2
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA Ring Load Cell YZL105
+
+- name: HSA Ring Load Cell YZL105
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Load Cell
+- description: Ring type load cell for compact force measurement applications. Shear beam technology for high accuracy.
+- sensing_range: 500N - 500kN
+- resolution: 0.001% FS
+- accuracy: +/-0.05% FS
+- dimensions: Various ring diameters
+- price_usd: 110.00
+- moq: 5
+- delivery_weeks: 1-2
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA Button Load Cell YZL102
+
+- name: HSA Button Load Cell YZL102
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Load Cell
+- description: Compact button-style load cell for space-limited applications. High overload capacity with sealed construction.
+- sensing_range: 50N - 5kN
+- resolution: 0.001% FS
+- accuracy: +/-0.05% FS
+- dimensions: 16mm - 50mm diameter
+- price_usd: 75.00
+- moq: 10
+- delivery_weeks: 1-2
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
+
+### HSA Pressure Sensor HTF810
+
+- name: HSA Pressure Sensor HTF810
+- manufacturer: HESAITE (Beijing Haisha Technology)
+- country: CN
+- category: Pressure Sensor
+- description: High temperature pressure sensor for extreme environment applications. Ceramic core with titanium alloy housing.
+- sensing_range: 0 - 60MPa
+- resolution: 0.01% FS
+- accuracy: +/-0.25% FS
+- dimensions: 20mm diameter x 60mm
+- price_usd: 450.00
+- moq: 1
+- delivery_weeks: 2-3
+- source_url: https://www.heagong.com
+- last_verified: 2025-01-15
 
 ## astrobiology
 

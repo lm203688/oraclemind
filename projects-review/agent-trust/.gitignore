@@ -1,0 +1,18 @@
+node_modules/
+dist/
+*.js
+*.d.ts
+*.d.ts.map
+*.js.map
+.env
+.env.local
+coverage/
+.npmrc
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+# AgentTrust identity files (contain private keys!)
+.agent-trust.json

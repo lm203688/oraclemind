@@ -1,0 +1,9 @@
+name: analysis_bee
+display_name: 分析蜂
+description: 数据分析、统计检验、可视化建议
+icon: 📊
+cost_credits: 500
+category: analysis
+module: agents.analysis_bee
+pipeline_step: null
+params: []

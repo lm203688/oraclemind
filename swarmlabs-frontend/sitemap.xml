@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://swarmlabs.pages.dev/</loc><changefreq>daily</changefreq><priority>1.0</url>
+<url><loc>https://swarmlabs.pages.dev/engines.html</loc><changefreq>weekly</changefreq><priority>0.9</url>
+<url><loc>https://swarmlabs.pages.dev/research-skills.html</loc><changefreq>weekly</changefreq><priority>0.9</url>
+<url><loc>https://swarmlabs.pages.dev/marketing-skills.html</loc><changefreq>weekly</changefreq><priority>0.9</url>
+<url><loc>https://swarmlabs.pages.dev/paper-generator.html</loc><changefreq>weekly</changefreq><priority>0.8</url>
+<url><loc>https://swarmlabs.pages.dev/api-playground.html</loc><changefreq>weekly</changefreq><priority>0.8</url>
+<url><loc>https://swarmlabs.pages.dev/docs.html</loc><changefreq>monthly</changefreq><priority>0.7</url>
+<url><loc>https://swarmlabs.pages.dev/about.html</loc><changefreq>monthly</changefreq><priority>0.6</url>
+</urlset>

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "MAPbI3",
+    "formula": "CH₃NH₃PbI₃",
+    "bandgap_eV": 1.55,
+    "efficiency_pct": 25.5,
+    "voc_V": 1.18,
+    "jsc_mAcm2": 25.8,
+    "ff": 0.84,
+    "reference": "NREL效率表 2024",
+    "doi": "NREL"
+  },
+  {
+    "name": "FAPbI3",
+    "formula": "HC(NH₂)₂PbI₃",
+    "bandgap_eV": 1.48,
+    "efficiency_pct": 25.8,
+    "voc_V": 1.2,
+    "jsc_mAcm2": 26.5,
+    "ff": 0.81,
+    "reference": "Nature Light 13 22 (2024)",
+    "doi": "10.1038/s41377-024-01461-x"
+  },
+  {
+    "name": "Perovskite-Si tandem (LONGi)",
+    "formula": "Perovskite/Si",
+    "bandgap_eV": 1.68,
+    "efficiency_pct": 34.6,
+    "voc_V": 1.97,
+    "jsc_mAcm2": 21.5,
+    "ff": 0.82,
+    "reference": "LONGi 2024 world record",
+    "doi": "Fluxim 2026"
+  },
+  {
+    "name": "D4PA-based PSC",
+    "formula": "D4PA·MAPbI₃",
+    "bandgap_eV": 1.55,
+    "efficiency_pct": 26.83,
+    "voc_V": 1.19,
+    "jsc_mAcm2": 27.1,
+    "ff": 0.83,
+    "reference": "PMC12804561 (2025)",
+    "doi": "10.1038/s41598-025-01990-0"
+  },
+  {
+    "name": "PA-modified PSC",
+    "formula": "PA·FAPbI₃",
+    "bandgap_eV": 1.48,
+    "efficiency_pct": 25.66,
+    "voc_V": 1.17,
+    "jsc_mAcm2": 26.3,
+    "ff": 0.83,
+    "reference": "RSC Energy Environ Sci 2025",
+    "doi": "10.1039/d5ee00189g"
+  },
+  {
+    "name": "Perovskite-Si tandem (34.85%)",
+    "formula": "Perovskite/Si",
+    "bandgap_eV": 1.7,
+    "efficiency_pct": 34.85,
+    "voc_V": 1.99,
+    "jsc_mAcm2": 21.8,
+    "ff": 0.8,
+    "reference": "LONGi April 2025",
+    "doi": "Fluxim 2026"
+  }
+]

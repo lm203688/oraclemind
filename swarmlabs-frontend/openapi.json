@@ -1,0 +1,29 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Swarmlabs Virtual Experiment API",
+    "version": "1.0.0",
+    "description": "145 physics-based virtual experiment engines with 7550+ real paper validations"
+  },
+  "servers": [{"url": "http://localhost:8461/api/v1"}],
+  "paths": {
+    "/run/{engine}": {
+      "post": {
+        "summary": "Run a virtual experiment",
+        "parameters": [{"name": "engine", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "requestBody": {"content": {"application/json": {"schema": {"type": "object"}}}},
+        "responses": {"200": {"description": "Experiment result"}}
+      }
+    },
+    "/optimize/{engine}": {
+      "post": {
+        "summary": "AI-driven parameter optimization",
+        "parameters": [{"name": "engine", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "Optimal parameters"}}
+      }
+    },
+    "/engines": {
+      "get": {"summary": "List all 145 engines", "responses": {"200": {"description": "Engine list"}}}
+    }
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>API文档 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--green:#10b981;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:20px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:13px;font-weight:500;text-decoration:none}
+.nav-links a.active{color:var(--text)}
+.hero{padding:40px 0 24px;text-align:center}
+.hero h1{font-size:32px;font-weight:800;margin-bottom:8px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.section{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px}
+.section h2{font-size:20px;font-weight:700;margin-bottom:12px;color:var(--accent)}
+.code-block{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;font-family:'JetBrains Mono',monospace;font-size:13px;overflow-x:auto;margin:12px 0;white-space:pre}
+.endpoint{padding:12px;border-bottom:1px solid var(--border)}
+.method{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:8px}
+.get{background:rgba(16,185,129,0.15);color:var(--green)}
+.post{background:rgba(59,130,246,0.15);color:var(--accent)}
+.badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;background:rgba(16,185,129,0.15);color:var(--green);margin-bottom:12px}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container nav-inner">
+<div class="logo">蜂群<span>科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="engines.html">引擎</a>
+<a href="api-docs.html" class="active">API文档</a>
+<a href="tech-barriers.html">技术壁垒</a>
+<a href="agents.html">Agent</a>
+</div>
+</div></nav>
+<div class="container">
+<div class="hero">
+<h1>API文档</h1>
+<p>166引擎全部可调用 | Python SDK | 免费API Key</p>
+</div>
+
+<div class="section">
+<span class="badge">166引擎全部可调用</span>
+<h2>快速开始</h2>
+<div class="code-block">pip install swarmlabs
+
+from swarmlabs import Swarmlabs
+client = Swarmlabs()
+
+# 列出166个引擎
+engines = client.list_engines()
+
+# 运行虚拟实验
+result = client.run('suzuki', temperature_C=80, time_h=4)
+print(result['result']['result'])  # 89.9%
+
+# AI参数优化
+opt = client.optimize('suzuki', n_iterations=100)
+print(opt['optimization']['best_result'])  # 95.0%
+
+# 验证精度
+val = client.validate('suzuki')
+print(val['validation']['mean_error'])  # 6.26%</div>
+</div>
+
+<div class="section">
+<h2>API端点</h2>
+<div class="endpoint"><span class="method get">GET</span><code>/api/v1/engines/all</code> — 列出全部166个引擎</div>
+<div class="endpoint"><span class="method post">POST</span><code>/api/v2/run/{engine}</code> — 运行虚拟实验</div>
+<div class="endpoint"><span class="method post">POST</span><code>/api/v2/optimize/{engine}</code> — AI参数优化</div>
+<div class="endpoint"><span class="method get">GET</span><code>/api/v2/validate/{engine}</code> — 验证引擎精度</div>
+<div class="endpoint"><span class="method get">GET</span><code>/api/v2/info/{engine}</code> — 引擎信息</div>
+<div class="endpoint"><span class="method post">POST</span><code>/api/v1/register</code> — 注册免费API Key</div>
+<div class="endpoint"><span class="method get">GET</span><code>/api/v1/health</code> — 健康检查</div>
+</div>
+
+<div class="section">
+<h2>定价</h2>
+<div class="endpoint"><span class="badge">免费</span> 30次/小时 — 所有引擎可调用</div>
+<div class="endpoint"><span class="badge">Pro $29/月</span> 无限调用 + AI优化 + 论文生成</div>
+<div class="endpoint"><span class="badge">Enterprise $499</span> 私有部署 + 自定义引擎</div>
+</div>
+
+<div class="section">
+<h2>注册API Key</h2>
+<div class="code-block">curl -X POST http://localhost:8461/api/v1/register \
+  -H "Content-Type: application/json" \
+  -d '{"email": "your@email.com"}'</div>
+</div>
+</div>
+</body>
+</html>

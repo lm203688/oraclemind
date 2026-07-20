@@ -1,0 +1,26 @@
+name: chemistry_bee
+display_name: 化学蜂
+description: RDKit真实计算 — 分子性质/ADMET/反应预测/逆合成/量子化学
+icon: 🧪
+cost_credits: 1000
+category: chemistry
+module: agents.chemistry_bee
+pipeline_step: null
+params:
+  - name: smiles
+    type: string
+    required: true
+    description: 分子SMILES字符串
+  - name: mode
+    type: enum
+    required: false
+    default: property
+    options: [property, admet, fast, retro, deep]
+    description: |
+      计算模式:
+      property=分子性质预测(RDKit,1000积分)
+      admet=ADMET药物发现预测(吸收/分布/代谢/排泄/毒性,1500积分)
+      fast=反应预测(IBM RXN,1500积分)
+      retro=逆合成分析(IBM RXN,2000积分)
+      deep=量子化学估算(Gasteiger,3000积分)
+premium: true

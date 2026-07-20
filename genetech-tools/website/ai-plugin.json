@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "GeneTech Tools",
+  "name_for_model": "genetechtools",
+  "description_for_human": "Gene technology knowledge base with 698 entities",
+  "description_for_model": "Access GeneTech Tools knowledge base via API. Gene technology knowledge base with 698 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://genetech.tools/"
+}

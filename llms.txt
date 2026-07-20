@@ -1,0 +1,68 @@
+# 蜂群科研 - 虚拟加速实验器
+
+> 用物理方程+材料数据库在虚拟环境中模拟真实实验。30引擎×376材料×989组验证数据，泛化精度100%测试集<10%。
+
+## 核心能力
+
+- 大规模筛选: 从376种材料自动选出Top-K
+- 加速老化: 模拟数月/数年老化(6种环境)
+- 配方搜索: 参数空间搜索最优配比
+- 成本约束优化: 预算内搜索最优方案
+- 安全边界检测: 极端条件可靠性降级
+- 实验流程串联: 多引擎串联模拟工艺链
+
+## API
+
+Base URL: http://150.158.119.19:8461
+
+### 运行实验
+POST /api/v1/run/{engine}
+Body: {"conditions": {}}
+Returns: {"result": {...}, "_uncertainty": {"uncertainty_pct": "±5%", "confidence_level_cn": "高"}}
+
+### 自动筛选
+POST /api/v1/auto_screen
+Body: {"engine": "photocatalysis", "top_k": 5}
+Returns: {"top_k": [...], "recommendation": "..."}
+
+### 加速老化
+POST /api/v1/aging_eval
+Body: {"engine": "perovskite", "conditions": {}, "duration_years": 5, "environment": "outdoor"}
+Returns: {"retention_pct": 86.1, "usable": "good", "recommendation": "..."}
+
+### 成本约束优化
+POST /api/v1/cost_search
+Body: {"engine": "adsorption", "param_ranges": {}, "cost_model": {}, "budget": 50}
+Returns: {"optimal_in_budget": {...}, "performance_loss_pct": 0}
+
+### 安全检测
+POST /api/v1/safety_check
+Body: {"engine": "adsorption", "conditions": {}}
+Returns: {"safety_level_cn": "安全/警告/危险", "estimated_error": "±5%"}
+
+### 流程串联
+POST /api/v1/process_chain
+Body: {"steps": [{"engine": "photocatalysis", "conditions": {}}]}
+Returns: {"steps": [...], "uncertainty_propagation": "±6.6%"}
+
+## 覆盖领域
+
+光催化, 电池, 吸附, 腐蚀, 钙钛矿, CO2还原, 合成氨, 生物反应器, 燃烧, 结晶, 蒸馏, 干燥, 电渗析, 电镀, 酶催化, 萃取, 絮凝, 流态化, 气固反应, 离子交换, 离子液体, 膜分离, 膜蒸馏, PCR, 光芬顿, 高分子, 超临界, 超声, Suzuki偶联, 络合滴定
+
+## Dashboard
+
+https://swarmlabs.pages.dev
+
+## 使用场景
+
+1. 做实验前虚拟筛选Top 5材料→减少实验次数
+2. 模拟材料5年户外老化→预判寿命
+3. 配方优化→减少试错次数
+4. 极端条件安全评估→判断模型可靠性
+5. 工艺流程串联→全流程模拟
+
+## 文档
+
+- API文档: http://150.158.119.19:8461/api/v1/docs
+- 泛化精度: http://150.158.119.19:8461/api/v1/generalization
+- GitHub: https://github.com/lm203688/swarmlabs

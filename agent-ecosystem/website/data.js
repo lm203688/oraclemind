@@ -1,8 +1,16 @@
 const DB = {
-  "updated": "2026-06-23T23:13:14.962Z",
+  "updated": "2026-06-28T04:01:10.288Z",
   "stats": {
     "agent_frameworks": 14,
-    "tool_platforms": 6
+    "agent_sdks": 38,
+    "benchmarks": 10,
+    "mcp_servers": 273,
+    "memory_systems": 25,
+    "model_apis": 16,
+    "protocols": 72,
+    "sdks": 103,
+    "tool_platforms": 6,
+    "vector_dbs": 37
   },
   "agent_frameworks": [
     {
@@ -189,9353 +197,10136 @@ const DB = {
       "status": "active"
     }
   ],
-  "agent_sdks": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-26T06:21:42.677Z",
-    "description": "agent_sdks库",
-    "entities": [
-      {
-        "id": "ASDK-001",
-        "name": "Vercel AI SDK",
-        "vendor": "Vercel",
-        "language": "TypeScript",
-        "type": "AI SDK",
-        "version": "4.x",
-        "license": "Apache-2.0",
-        "features": [
-          "统一API",
-          "Streaming",
-          "Tool Calling",
-          "RAG",
-          "Middleware",
-          "React/Svelte/Vue组件"
-        ],
-        "pros": [
-          "前端集成最好",
-          "SSR友好",
-          "框架无关"
-        ],
-        "cons": [
-          "JS/TS only",
-          "无内置多Agent"
-        ],
-        "maturity": "生产可用",
-        "docs": "https://sdk.vercel.ai/docs"
-      },
-      {
-        "id": "ASDK-002",
-        "name": "LangChain",
-        "vendor": "LangChain",
-        "language": "Python/JS",
-        "type": "AI框架",
-        "version": "0.3+",
-        "license": "MIT",
-        "features": [
-          "Chain编排",
-          "Memory",
-          "Retrieval",
-          "Agent",
-          "Callbacks",
-          "200+集成"
-        ],
-        "pros": [
-          "集成最多",
-          "社区最大",
-          "文档丰富"
-        ],
-        "cons": [
-          "抽象层太多",
-          "性能差",
-          "调试难"
-        ],
-        "maturity": "生产可用",
-        "docs": "https://python.langchain.com/docs"
-      },
-      {
-        "id": "ASDK-003",
-        "name": "LlamaIndex",
-        "vendor": "LlamaIndex",
-        "language": "Python/TS",
-        "type": "RAG框架",
-        "version": "0.12+",
-        "license": "Apache-2.0",
-        "features": [
-          "数据摄取",
-          "索引构建",
-          "查询引擎",
-          "Agent",
-          "Workflow"
-        ],
-        "pros": [
-          "RAG最强",
-          "数据连接器多",
-          "灵活"
-        ],
-        "cons": [
-          "RAG外功能弱",
-          "学习曲线"
-        ],
-        "maturity": "生产可用",
-        "docs": "https://docs.llamaindex.ai"
-      },
-      {
-        "id": "ASDK-004",
-        "name": "Haystack",
-        "vendor": "deepset",
-        "language": "Python",
-        "type": "RAG/搜索框架",
-        "version": "2.x",
-        "license": "Apache-2.0",
-        "features": [
-          "Pipeline",
-          "组件化",
-          "RAG",
-          "Agent",
-          "搜索"
-        ],
-        "pros": [
-          "组件化设计",
-          "生产级",
-          "可测试"
-        ],
-        "cons": [
-          "社区比LangChain小",
-          "文档一般"
-        ],
-        "maturity": "生产可用",
-        "docs": "https://docs.haystack.deepset.ai"
-      },
-      {
-        "id": "ASDK-005",
-        "name": "Semantic Kernel",
-        "vendor": "Microsoft",
-        "language": "C#/Python/Java",
-        "type": "AI SDK",
-        "version": "1.x",
-        "license": "MIT",
-        "features": [
-          "Plugin系统",
-          "Planner",
-          "Memory",
-          "Connector"
-        ],
-        "pros": [
-          "企业级",
-          ".NET生态",
-          "微软背书"
-        ],
-        "cons": [
-          "C#优先",
-          "Python版落后",
-          "社区小"
-        ],
-        "maturity": "生产可用",
-        "docs": "https://learn.microsoft.com/en-us/semantic-kernel"
-      },
-      {
-        "id": "ASDK-006",
-        "name": "Rig",
-        "vendor": "0xPlay",
-        "language": "Rust",
-        "type": "AI SDK",
-        "version": "0.8+",
-        "license": "MIT",
-        "features": [
-          "LLM调用",
-          "Agent",
-          "Tool",
-          "RAG",
-          "Embedding"
-        ],
-        "pros": [
-          "Rust性能",
-          "类型安全",
-          "轻量"
-        ],
-        "cons": [
-          "Rust only",
-          "生态小",
-          "文档少"
-        ],
-        "maturity": "早期",
-        "docs": "https://rig.rs/docs"
-      },
-      {
-        "id": "ASDK-007",
-        "name": "Portkey AI Gateway",
-        "vendor": "Portkey",
-        "language": "TypeScript",
-        "type": "AI网关",
-        "version": "1.x",
-        "license": "MIT",
-        "features": [
-          "多模型路由",
-          "Fallback",
-          "缓存",
-          "限流",
-          "Observability"
-        ],
-        "pros": [
-          "模型无关",
-          "生产监控",
-          "成本控制"
-        ],
-        "cons": [
-          "网关层开销",
-          "依赖第三方"
-        ],
-        "maturity": "生产可用",
-        "docs": "https://portkey.ai/docs"
-      },
-      {
-        "id": "ASDK-008",
-        "name": "Helicone",
-        "vendor": "Helicone",
-        "language": "TypeScript",
-        "type": "AI可观测性",
-        "version": "2.x",
-        "license": "Apache-2.0",
-        "features": [
-          "日志",
-          "监控",
-          "缓存",
-          "速率限制",
-          "实验"
-        ],
-        "pros": [
-          "开箱即用",
-          "多模型支持",
-          "免费层"
-        ],
-        "cons": [
-          "需代理层",
-          "延迟增加"
-        ],
-        "maturity": "生产可用",
-        "docs": "https://docs.helicone.ai"
-      }
-    ]
-  },
-  "benchmarks": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-20T08:00:00Z",
-    "description": "benchmarks库",
-    "entities": [
-      {
-        "id": "BENCH-001",
-        "name": "SWE-bench",
-        "focus": "代码修复",
-        "description": "真实GitHub issue自动修复",
-        "top_score": "Claude 3.5 Sonnet ~49%",
-        "adoption": "广泛"
-      },
-      {
-        "id": "BENCH-002",
-        "name": "WebArena",
-        "focus": "网页操作",
-        "description": "真实网页环境任务完成",
-        "top_score": "~35%",
-        "adoption": "学术"
-      },
-      {
-        "id": "BENCH-003",
-        "name": "AgentBench",
-        "focus": "多任务",
-        "description": "多场景Agent能力评估",
-        "top_score": "GPT-4 ~36.9",
-        "adoption": "学术"
-      },
-      {
-        "id": "BENCH-004",
-        "name": "BFCL v3",
-        "focus": "函数调用",
-        "description": "多语言函数调用评估",
-        "top_score": "GPT-4o ~90%",
-        "adoption": "广泛"
-      },
-      {
-        "id": "BENCH-005",
-        "name": "MCP兼容性测试",
-        "focus": "MCP",
-        "description": "MCP Server兼容性验证",
-        "top_score": "N/A",
-        "adoption": "新兴"
-      },
-      {
-        "id": "BENCH-006",
-        "name": "LoCoMo",
-        "type": "memory_benchmark",
-        "description": "LoCoMo，2026年Agent记忆评估标准基准，用于比较不同记忆架构的长期对话能力",
-        "category": "memory",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "BENCH-007",
-        "name": "LongMemEval",
-        "type": "memory_benchmark",
-        "description": "LongMemEval，2026年Agent长期记忆评估基准，测试Agent跨会话记忆召回和推理能力",
-        "category": "memory",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "BENCH-008",
-        "name": "BEAM",
-        "type": "memory_benchmark",
-        "description": "BEAM，2026年Agent记忆评估基准，标准化Agent记忆系统性能比较框架",
-        "category": "memory",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "name": "GAIA",
-        "type": "Benchmark",
-        "description": "A general-assistant benchmark measuring AI agents' ability to perform tasks requiring web search, file manipulation, and multi-step reasoning.",
-        "metrics": [
-          "Task success rate",
-          "Cost per evaluation"
-        ],
-        "status": "Active",
-        "sources": [
-          "https://www.spheron.network/blog/ai-agent-benchmarking-gpu-cloud-swebench-gaia",
-          "https://www.reddit.com/r/LocalLLaMA/comments/1hqt79i/top_agent_only_27_away_from_degreeholding_humans",
-          "https://decodethefuture.org/en/ai-agent-benchmarks-2026"
-        ],
-        "id": "BENCH-009"
-      },
-      {
-        "name": "Terminal-Bench",
-        "type": "Benchmark",
-        "description": "A benchmark evaluating AI coding agents' capabilities in terminal-based interactions and command-line operations beyond traditional code repositories.",
-        "metrics": [
-          "Command execution accuracy",
-          "Terminal interaction success"
-        ],
-        "status": "Active",
-        "sources": [
-          "https://www.birjob.com/blog/agent-benchmarks-2026"
-        ],
-        "id": "BENCH-010"
-      }
-    ]
-  },
-  "main": {
-    "version": "2.0.0",
-    "last_updated": "2026-05-31T22:05:17.921Z",
-    "domain": "agent-ecosystem",
-    "total_entities": 264,
-    "categories": [
-      {
-        "id": "agent_frameworks",
-        "entity_count": 0,
-        "file": "agent_frameworks.json"
-      },
-      {
-        "id": "agent_sdks",
-        "entity_count": 8,
-        "file": "agent_sdks.json"
-      },
-      {
-        "id": "benchmarks",
-        "entity_count": 5,
-        "file": "benchmarks.json"
-      },
-      {
-        "id": "mcp_servers",
-        "entity_count": 108,
-        "file": "mcp_servers.json"
-      },
-      {
-        "id": "memory_systems",
-        "entity_count": 12,
-        "file": "memory_systems.json"
-      },
-      {
-        "id": "model_apis",
-        "entity_count": 12,
-        "file": "model_apis.json"
-      },
-      {
-        "id": "protocols",
-        "entity_count": 40,
-        "file": "protocols.json"
-      },
-      {
-        "id": "sdks",
-        "entity_count": 61,
-        "file": "sdks.json"
-      },
-      {
-        "id": "tool_platforms",
-        "entity_count": 0,
-        "file": "tool_platforms.json"
-      },
-      {
-        "id": "vector_dbs",
-        "entity_count": 18,
-        "file": "vector_dbs.json"
-      }
-    ]
-  },
-  "mcp_servers": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-24T07:12:27Z",
-    "description": "mcp_servers库",
-    "entities": [
-      {
-        "id": "MCP-001",
-        "name": "server-filesystem",
-        "full_name": "@modelcontextprotocol/server-filesystem",
-        "category": "文件系统",
-        "description": "读写本地文件系统",
-        "protocol_version": "2025-03-26",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code",
-          "Cursor"
-        ],
-        "security": "本地沙箱",
-        "stars": 13000,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "读写文件",
-          "目录列表",
-          "文件搜索"
-        ]
-      },
-      {
-        "id": "MCP-002",
-        "name": "server-postgres",
-        "full_name": "@modelcontextprotocol/server-postgres",
-        "category": "数据库",
-        "description": "PostgreSQL 数据库查询",
-        "protocol_version": "2025-03-26",
-        "auth": "connection_string",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code"
-        ],
-        "security": "只读查询模式",
-        "stars": 8500,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SQL查询",
-          "schema浏览",
-          "只读模式"
-        ]
-      },
-      {
-        "id": "MCP-003",
-        "name": "server-github",
-        "full_name": "@modelcontextprotocol/server-github",
-        "category": "API",
-        "description": "GitHub API 操作",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth token",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code",
-          "Cursor"
-        ],
-        "security": "token权限控制",
-        "stars": 7200,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "创建PR/Issue",
-          "搜索代码",
-          "文件操作"
-        ]
-      },
-      {
-        "id": "MCP-004",
-        "name": "server-puppeteer",
-        "full_name": "@modelcontextprotocol/server-puppeteer",
-        "category": "浏览器",
-        "description": "浏览器自动化",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "沙箱浏览器",
-        "stars": 6800,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "网页截图",
-          "表单填写",
-          "点击交互"
-        ]
-      },
-      {
-        "id": "MCP-005",
-        "name": "server-sqlite",
-        "full_name": "@modelcontextprotocol/server-sqlite",
-        "category": "数据库",
-        "description": "SQLite 本地数据库",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code"
-        ],
-        "security": "本地文件",
-        "stars": 5900,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SQL查询",
-          "建表",
-          "数据导入"
-        ]
-      },
-      {
-        "id": "MCP-006",
-        "name": "server-brave-search",
-        "full_name": "@modelcontextprotocol/server-brave-search",
-        "category": "搜索",
-        "description": "Brave 搜索引擎",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API限流",
-        "stars": 4500,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "网页搜索",
-          "结果过滤"
-        ]
-      },
-      {
-        "id": "MCP-007",
-        "name": "server-memory",
-        "full_name": "@modelcontextprotocol/server-memory",
-        "category": "记忆",
-        "description": "Agent 持久化记忆",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "本地存储",
-        "stars": 5200,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "知识图谱",
-          "实体关系",
-          "持久化"
-        ]
-      },
-      {
-        "id": "MCP-008",
-        "name": "firecrawl-mcp-server",
-        "full_name": "firecrawl-mcp-server",
-        "category": "网页抓取",
-        "description": "网页内容提取和爬取",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API限流",
-        "stars": 3800,
-        "maintainer": "Mendable",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "网页抓取",
-          "批量爬取",
-          "结构化提取"
-        ]
-      },
-      {
-        "id": "MCP-009",
-        "name": "server-sequential-thinking",
-        "full_name": "@modelcontextprotocol/server-sequential-thinking",
-        "category": "推理",
-        "description": "结构化思维链推理",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "无风险",
-        "stars": 4100,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "思维链",
-          "分步推理",
-          "动态调整"
-        ]
-      },
-      {
-        "id": "MCP-010",
-        "name": "notion-mcp-server",
-        "full_name": "@notionhq/notion-mcp-server",
-        "category": "生产力",
-        "description": "Notion 页面和数据库操作",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "token权限",
-        "stars": 3200,
-        "maintainer": "Notion",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "页面CRUD",
-          "数据库查询",
-          "搜索"
-        ]
-      },
-      {
-        "id": "MCP-011",
-        "name": "server-slack",
-        "full_name": "@modelcontextprotocol/server-slack",
-        "category": "通信",
-        "description": "Slack 消息和频道操作",
-        "protocol_version": "2025-03-26",
-        "auth": "Bot token",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "token权限",
-        "stars": 2800,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "发消息",
-          "读频道",
-          "搜索"
-        ]
-      },
-      {
-        "id": "MCP-012",
-        "name": "supabase-mcp-server",
-        "full_name": "supabase-mcp-server",
-        "category": "数据库",
-        "description": "Supabase 数据库和认证",
-        "protocol_version": "2025-03-26",
-        "auth": "Service key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "key权限",
-        "stars": 2600,
-        "maintainer": "Supabase",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SQL查询",
-          "Auth管理",
-          "Storage操作"
-        ]
-      },
-      {
-        "id": "MCP-013",
-        "name": "Context7",
-        "full_name": "@upstash/context7-mcp",
-        "category": "文档",
-        "description": "实时获取最新库文档和代码示例",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code",
-          "Cursor"
-        ],
-        "security": "只读",
-        "stars": 4200,
-        "maintainer": "Upstash",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "实时文档",
-          "代码示例",
-          "版本感知"
-        ]
-      },
-      {
-        "id": "MCP-014",
-        "name": "Exa MCP Server",
-        "full_name": "exa-mcp-server",
-        "category": "搜索",
-        "description": "AI原生高级网络搜索引擎",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API限流",
-        "stars": 3100,
-        "maintainer": "Exa",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "语义搜索",
-          "内容提取",
-          "相似度搜索"
-        ]
-      },
-      {
-        "id": "MCP-015",
-        "name": "Browserbase",
-        "full_name": "@browserbasehq/mcp-server",
-        "category": "浏览器",
-        "description": "云端浏览器自动化，支持多会话",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "云端沙箱",
-        "stars": 2800,
-        "maintainer": "Browserbase",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "云端浏览器",
-          "多会话",
-          "截图/PDF"
-        ]
-      },
-      {
-        "id": "MCP-016",
-        "name": "server-docker",
-        "full_name": "@modelcontextprotocol/server-docker",
-        "category": "DevOps",
-        "description": "Docker容器管理",
-        "protocol_version": "2025-03-26",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "Docker socket权限",
-        "stars": 2400,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "容器管理",
-          "镜像操作",
-          "日志查看"
-        ]
-      },
-      {
-        "id": "MCP-017",
-        "name": "server-git",
-        "full_name": "@modelcontextprotocol/server-git",
-        "category": "版本控制",
-        "description": "Git仓库操作",
-        "protocol_version": "2025-03-26",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code"
-        ],
-        "security": "本地权限",
-        "stars": 2200,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Git操作",
-          "diff查看",
-          "分支管理"
-        ]
-      },
-      {
-        "id": "MCP-018",
-        "name": "server-google-maps",
-        "full_name": "@modelcontextprotocol/server-google-maps",
-        "category": "地图",
-        "description": "Google Maps API集成",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API限流",
-        "stars": 1800,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "地理编码",
-          "路线规划",
-          "地点搜索"
-        ]
-      },
-      {
-        "id": "MCP-019",
-        "name": "server-fetch",
-        "full_name": "@modelcontextprotocol/server-fetch",
-        "category": "网络",
-        "description": "HTTP请求和网页内容获取",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code",
-          "Cursor"
-        ],
-        "security": "沙箱请求",
-        "stars": 3500,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "HTTP GET/POST",
-          "HTML转Markdown",
-          "内容提取"
-        ]
-      },
-      {
-        "id": "MCP-020",
-        "name": "server-time",
-        "full_name": "@modelcontextprotocol/server-time",
-        "category": "工具",
-        "description": "时间查询和时区转换",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "无风险",
-        "stars": 1200,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "当前时间",
-          "时区转换",
-          "时间计算"
-        ]
-      },
-      {
-        "id": "MCP-021",
-        "name": "Figma MCP Server",
-        "full_name": "@figma/mcp-server",
-        "category": "设计",
-        "description": "Figma设计文件读取和代码生成",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "token权限",
-        "stars": 3600,
-        "maintainer": "Figma",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "设计读取",
-          "代码生成",
-          "布局分析"
-        ]
-      },
-      {
-        "id": "MCP-022",
-        "name": "Linear MCP Server",
-        "full_name": "linear-mcp-server",
-        "category": "项目管理",
-        "description": "Linear项目管理工具集成",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API权限",
-        "stars": 1900,
-        "maintainer": "Linear",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Issue管理",
-          "项目追踪",
-          "团队协作"
-        ]
-      },
-      {
-        "id": "MCP-023",
-        "name": "Jira MCP Server",
-        "full_name": "jira-mcp-server",
-        "category": "项目管理",
-        "description": "Jira项目管理集成",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth/API token",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "token权限",
-        "stars": 1500,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Issue CRUD",
-          "Sprint管理",
-          "JQL查询"
-        ]
-      },
-      {
-        "id": "MCP-024",
-        "name": "server-sentry",
-        "full_name": "@modelcontextprotocol/server-sentry",
-        "category": "监控",
-        "description": "Sentry错误追踪集成",
-        "protocol_version": "2025-03-26",
-        "auth": "API token",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "token权限",
-        "stars": 1400,
-        "maintainer": "Sentry",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "错误查看",
-          "性能监控",
-          "Release追踪"
-        ]
-      },
-      {
-        "id": "MCP-025",
-        "name": "Stripe MCP Server",
-        "full_name": "stripe-mcp-server",
-        "category": "支付",
-        "description": "Stripe支付平台集成",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "受限key",
-        "stars": 1600,
-        "maintainer": "Stripe",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "客户管理",
-          "订阅管理",
-          "发票操作"
-        ]
-      },
-      {
-        "id": "MCP-026",
-        "name": "Shopify MCP Server",
-        "full_name": "shopify-mcp-server",
-        "category": "电商",
-        "description": "Shopify电商平台集成",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth权限",
-        "stars": 1100,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "产品管理",
-          "订单管理",
-          "库存查询"
-        ]
-      },
-      {
-        "id": "MCP-027",
-        "name": "MongoDB MCP Server",
-        "full_name": "mongodb-mcp-server",
-        "category": "数据库",
-        "description": "MongoDB数据库操作",
-        "protocol_version": "2025-03-26",
-        "auth": "connection_string",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code"
-        ],
-        "security": "连接权限",
-        "stars": 2100,
-        "maintainer": "MongoDB",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "CRUD操作",
-          "聚合查询",
-          "索引管理"
-        ]
-      },
-      {
-        "id": "MCP-028",
-        "name": "Redis MCP Server",
-        "full_name": "redis-mcp-server",
-        "category": "数据库",
-        "description": "Redis缓存和消息队列操作",
-        "protocol_version": "2025-03-26",
-        "auth": "connection_string",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "连接权限",
-        "stars": 1700,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "键值操作",
-          "发布订阅",
-          "缓存管理"
-        ]
-      },
-      {
-        "id": "MCP-029",
-        "name": "Anki MCP Server",
-        "full_name": "anki-mcp-server",
-        "category": "教育",
-        "description": "Anki间隔重复闪卡应用集成",
-        "protocol_version": "2025-03-26",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "本地API",
-        "stars": 900,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "创建卡片",
-          "查询卡片",
-          "学习进度"
-        ]
-      },
-      {
-        "id": "MCP-030",
-        "name": "server-google-drive",
-        "full_name": "@modelcontextprotocol/server-google-drive",
-        "category": "文件系统",
-        "description": "Google Drive文件操作",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth权限",
-        "stars": 2000,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "文件搜索",
-          "读写文档",
-          "列表查看"
-        ]
-      },
-      {
-        "id": "MCP-031",
-        "name": "server-aws",
-        "full_name": "aws-mcp-server",
-        "category": "云服务",
-        "description": "AWS服务集成（S3/Lambda/DynamoDB等）",
-        "protocol_version": "2025-03-26",
-        "auth": "IAM credentials",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "IAM权限",
-        "stars": 2300,
-        "maintainer": "AWS",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "S3操作",
-          "Lambda管理",
-          "DynamoDB查询"
-        ]
-      },
-      {
-        "id": "MCP-032",
-        "name": "server-kubernetes",
-        "full_name": "kubernetes-mcp-server",
-        "category": "DevOps",
-        "description": "Kubernetes集群管理",
-        "protocol_version": "2025-03-26",
-        "auth": "kubeconfig",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "RBAC权限",
-        "stars": 1800,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Pod管理",
-          "部署操作",
-          "日志查看"
-        ]
-      },
-      {
-        "id": "MCP-033",
-        "name": "Terraform MCP Server",
-        "full_name": "terraform-mcp-server",
-        "category": "DevOps",
-        "description": "Terraform基础设施即代码",
-        "protocol_version": "2025-03-26",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "本地权限",
-        "stars": 1300,
-        "maintainer": "HashiCorp",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Plan/Apply",
-          "State查看",
-          "模块浏览"
-        ]
-      },
-      {
-        "id": "MCP-034",
-        "name": "Playwright MCP Server",
-        "full_name": "@playwright/mcp-server",
-        "category": "浏览器",
-        "description": "Playwright浏览器自动化，支持多浏览器",
-        "protocol_version": "2025-03-26",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code",
-          "Cursor"
-        ],
-        "security": "沙箱浏览器",
-        "stars": 3200,
-        "maintainer": "Microsoft",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "多浏览器",
-          "截图/PDF",
-          "网络拦截"
-        ]
-      },
-      {
-        "id": "MCP-035",
-        "name": "server-echosign",
-        "full_name": "adobe-mcp-server",
-        "category": "文档",
-        "description": "Adobe文档服务集成（PDF操作等）",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth权限",
-        "stars": 800,
-        "maintainer": "Adobe",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "PDF操作",
-          "签名管理",
-          "文档转换"
-        ]
-      },
-      {
-        "id": "MCP-036",
-        "name": "Sysdig MCP Server",
-        "full_name": "sysdig-mcp-server",
-        "category": "安全",
-        "description": "云安全监控和威胁检测",
-        "protocol_version": "2025-03-26",
-        "auth": "API token",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "token权限",
-        "stars": 700,
-        "maintainer": "Sysdig",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "安全事件",
-          "合规检查",
-          "漏洞扫描"
-        ]
-      },
-      {
-        "id": "MCP-037",
-        "name": "server-twitter",
-        "full_name": "twitter-mcp-server",
-        "category": "社交媒体",
-        "description": "Twitter/X平台操作",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth 2.0",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth权限",
-        "stars": 1500,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "发推文",
-          "搜索推文",
-          "用户信息"
-        ]
-      },
-      {
-        "id": "MCP-038",
-        "name": "server-discord",
-        "full_name": "discord-mcp-server",
-        "category": "通信",
-        "description": "Discord消息和频道操作",
-        "protocol_version": "2025-03-26",
-        "auth": "Bot token",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "Bot权限",
-        "stars": 1200,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "发消息",
-          "读频道",
-          "服务器管理"
-        ]
-      },
-      {
-        "id": "MCP-039",
-        "name": "server-email (IMAP/SMTP)",
-        "full_name": "email-mcp-server",
-        "category": "通信",
-        "description": "邮件收发操作（IMAP/SMTP）",
-        "protocol_version": "2025-03-26",
-        "auth": "credentials",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "加密连接",
-        "stars": 1100,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "收邮件",
-          "发邮件",
-          "搜索邮件"
-        ]
-      },
-      {
-        "id": "MCP-040",
-        "name": "server-calendar (Google Calendar)",
-        "full_name": "google-calendar-mcp-server",
-        "category": "生产力",
-        "description": "Google日历操作",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth权限",
-        "stars": 1600,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "创建事件",
-          "查询日程",
-          "冲突检测"
-        ]
-      },
-      {
-        "id": "MCP-041",
-        "name": "server-airtable",
-        "full_name": "airtable-mcp-server",
-        "category": "数据库",
-        "description": "Airtable数据库操作",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API权限",
-        "stars": 1000,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "记录CRUD",
-          "视图查询",
-          "字段操作"
-        ]
-      },
-      {
-        "id": "MCP-042",
-        "name": "server-snowflake",
-        "full_name": "snowflake-mcp-server",
-        "category": "数据库",
-        "description": "Snowflake数据仓库查询",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth/key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "RBAC权限",
-        "stars": 900,
-        "maintainer": "Snowflake",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SQL查询",
-          "数据仓库",
-          "分析函数"
-        ]
-      },
-      {
-        "id": "MCP-043",
-        "name": "server-elasticsearch",
-        "full_name": "elasticsearch-mcp-server",
-        "category": "搜索",
-        "description": "Elasticsearch全文搜索集成",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API权限",
-        "stars": 1300,
-        "maintainer": "Elastic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "全文搜索",
-          "聚合分析",
-          "索引管理"
-        ]
-      },
-      {
-        "id": "MCP-044",
-        "name": "server-langchain",
-        "full_name": "langchain-mcp-server",
-        "category": "AI",
-        "description": "LangChain工具和链集成",
-        "protocol_version": "2025-03-26",
-        "auth": "varies",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "工具权限",
-        "stars": 1800,
-        "maintainer": "LangChain",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "链调用",
-          "RAG管道",
-          "工具集成"
-        ]
-      },
-      {
-        "id": "MCP-045",
-        "name": "server-computer-use",
-        "full_name": "@anthropic/server-computer-use",
-        "category": "桌面自动化",
-        "description": "桌面GUI自动化操作",
-        "protocol_version": "2025-03-26",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "本地沙箱",
-        "stars": 2900,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "屏幕截图",
-          "鼠标键盘",
-          "应用操作"
-        ]
-      },
-      {
-        "id": "MCP-046",
-        "name": "Vercel MCP Server",
-        "full_name": "vercel-mcp-server",
-        "category": "部署",
-        "description": "Vercel部署平台集成",
-        "protocol_version": "2025-03-26",
-        "auth": "API token",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "token权限",
-        "stars": 1700,
-        "maintainer": "Vercel",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "部署管理",
-          "域名操作",
-          "日志查看"
-        ]
-      },
-      {
-        "id": "MCP-047",
-        "name": "Neon MCP Server",
-        "full_name": "neon-mcp-server",
-        "category": "数据库",
-        "description": "Neon Serverless Postgres操作",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API权限",
-        "stars": 1100,
-        "maintainer": "Neon",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "分支管理",
-          "SQL查询",
-          "自动扩缩"
-        ]
-      },
-      {
-        "id": "MCP-048",
-        "name": "Cloudflare MCP Server",
-        "full_name": "cloudflare-mcp-server",
-        "category": "云服务",
-        "description": "Cloudflare Workers和DNS管理",
-        "protocol_version": "2025-03-26",
-        "auth": "API token",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "token权限",
-        "stars": 1400,
-        "maintainer": "Cloudflare",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Workers部署",
-          "DNS管理",
-          "缓存清除"
-        ]
-      },
-      {
-        "id": "MCP-049",
-        "name": "server-huggingface",
-        "full_name": "huggingface-mcp-server",
-        "category": "AI",
-        "description": "HuggingFace模型和数据集操作",
-        "protocol_version": "2025-03-26",
-        "auth": "API token",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "token权限",
-        "stars": 1500,
-        "maintainer": "HuggingFace",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "模型搜索",
-          "推理调用",
-          "数据集浏览"
-        ]
-      },
-      {
-        "id": "MCP-050",
-        "name": "server-openapi",
-        "full_name": "@modelcontextprotocol/server-openapi",
-        "category": "API",
-        "description": "OpenAPI规范自动生成MCP工具",
-        "protocol_version": "2025-03-26",
-        "auth": "varies",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "规范定义",
-        "stars": 1900,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "自动工具生成",
-          "API发现",
-          "参数验证"
-        ]
-      },
-      {
-        "id": "MCP-051",
-        "name": "server-mysql",
-        "full_name": "mysql-mcp-server",
-        "category": "数据库",
-        "description": "MySQL数据库查询操作",
-        "protocol_version": "2025-03-26",
-        "auth": "connection_string",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code"
-        ],
-        "security": "连接权限",
-        "stars": 1600,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SQL查询",
-          "Schema浏览",
-          "数据导入导出"
-        ]
-      },
-      {
-        "id": "MCP-052",
-        "name": "server-zapier",
-        "full_name": "zapier-mcp-server",
-        "category": "自动化",
-        "description": "Zapier工作流自动化集成",
-        "protocol_version": "2025-03-26",
-        "auth": "API key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API权限",
-        "stars": 1300,
-        "maintainer": "Zapier",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "触发器管理",
-          "动作执行",
-          "工作流编排"
-        ]
-      },
-      {
-        "id": "MCP-google-cloud-db",
-        "name": "Google Cloud Database MCP Servers",
-        "type": "database",
-        "company": "Google Cloud",
-        "key_features": [
-          "Managed remote MCP for AlloyDB PostgreSQL, Spanner, Cloud SQL, Bigtable, Firestore",
-          "Enterprise-grade auditing, observability and governance",
-          "Natural language database interaction",
-          "Schema creation, query diagnosis, vector similarity search"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-oracle-sqlcl",
-        "name": "Oracle SQLcl MCP Server",
-        "type": "database",
-        "company": "Oracle",
-        "key_features": [
-          "MCP server for Oracle Database via SQLcl",
-          "AI agents can connect, run SQL/PLSQL queries and scripts",
-          "Credentials managed locally on user machine",
-          "All interactions logged in DBTOOLS$MCP_LOG",
-          "VS Code SQL Developer integration with auto-registration"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-database-mcp",
-        "name": "@cocaxcode/database-mcp",
-        "type": "database",
-        "company": "Community",
-        "key_features": [
-          "33 tools across 3 engines (PostgreSQL, MySQL, SQLite)",
-          "Connection groups, named connection management",
-          "Automatic rollback with reverse SQL",
-          "Schema auto-discovery via MCP Resources",
-          "Zero config, 100% local credentials",
-          "Works with Claude Code, Cursor, Windsurf, VS Code, Gemini CLI"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-universal-db",
-        "name": "universal-db-mcp",
-        "type": "database",
-        "company": "Community (Anarkh-Lee)",
-        "key_features": [
-          "Supports 17 databases: MySQL, PostgreSQL, Oracle, MongoDB, etc.",
-          "Natural language query and analysis",
-          "Compatible with 50+ platforms (Claude Desktop, Cursor, VS Code, ChatGPT)",
-          "44 releases, active development"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-data-commons",
-        "name": "Google Data Commons MCP Server",
-        "type": "data_analysis",
-        "company": "Google",
-        "key_features": [
-          "Access to Google Data Commons public datasets",
-          "Statistical data about populations, economics, environment",
-          "Seamless integration with Google Cloud ecosystem"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-truefoundry-gateway",
-        "name": "TrueFoundry MCP Gateway",
-        "type": "gateway",
-        "company": "TrueFoundry",
-        "key_features": [
-          "3-4ms latency (10ms under load)",
-          "350+ requests per second",
-          "Enterprise-grade MCP gateway for AI agent security",
-          "Centralized tool management and access control"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-skyvia",
-        "name": "Skyvia MCP Server",
-        "full_name": "Skyvia MCP",
-        "category": "数据集成",
-        "description": "云端数据集成平台MCP Server，支持ETL/ELT数据管道",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 800,
-        "maintainer": "Skyvia",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "数据集成",
-          "ETL管道",
-          "云数据库连接"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-ahrefs",
-        "name": "Ahrefs MCP Server",
-        "full_name": "ahrefs-mcp",
-        "category": "SEO",
-        "description": "SEO分析工具MCP Server，提供关键词研究、反向链接分析",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 500,
-        "maintainer": "Ahrefs",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "关键词研究",
-          "反向链接分析",
-          "SEO审计"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-mikrotik",
-        "name": "MikroTik Router MCP Server",
-        "full_name": "io.github.kivanccakmak/yaver",
-        "category": "网络管理",
-        "description": "MikroTik路由器管理MCP Server，支持防火墙、NAT、DHCP、DNS、WireGuard",
-        "protocol_version": "2025-11-25",
-        "auth": "SSH",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "SSH密钥",
-        "stars": 200,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "Python",
-        "features": [
-          "防火墙管理",
-          "NAT配置",
-          "WireGuard VPN",
-          "DHCP/DNS"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-fastmcp",
-        "name": "FastMCP Server",
-        "full_name": "@fastmcp/server",
-        "category": "开发框架",
-        "description": "高性能MCP Server开发框架，用于快速构建自定义MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "本地沙箱",
-        "stars": 3500,
-        "maintainer": "FastMCP",
-        "status": "active",
-        "language": "Python",
-        "features": [
-          "快速开发",
-          "热重载",
-          "类型安全",
-          "自动文档"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-vercel-v0",
-        "name": "Vercel v0 MCP Server",
-        "full_name": "@vercel/v0-mcp",
-        "category": "前端开发",
-        "description": "Vercel v0 AI前端生成工具MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 2800,
-        "maintainer": "Vercel",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "AI前端生成",
-          "组件创建",
-          "代码生成"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-razorpay",
-        "name": "Razorpay MCP Server",
-        "full_name": "razorpay-mcp",
-        "category": "支付",
-        "description": "印度支付平台Razorpay的MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API Key",
-        "stars": 150,
-        "maintainer": "Razorpay",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "支付处理",
-          "退款管理",
-          "订阅管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-linear-v2",
-        "name": "Linear MCP Server v2",
-        "full_name": "@linear/mcp-server",
-        "category": "项目管理",
-        "description": "Linear项目管理工具MCP Server升级版，支持更丰富的查询和操作",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 1200,
-        "maintainer": "Linear",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "项目管理",
-          "Issue追踪",
-          "团队协作",
-          "工作流自动化"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-1password",
-        "name": "1Password MCP Server",
-        "full_name": "@1password/mcp-server",
-        "category": "安全",
-        "description": "1Password密码管理器MCP Server，安全访问密钥和凭证",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "端到端加密",
-        "stars": 900,
-        "maintainer": "1Password",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "密钥管理",
-          "凭证访问",
-          "安全存储"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-hubspot",
-        "name": "HubSpot MCP Server",
-        "full_name": "hubspot-mcp",
-        "category": "CRM",
-        "description": "HubSpot CRM平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 600,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "CRM操作",
-          "联系人管理",
-          "交易追踪"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-resend",
-        "name": "Resend MCP Server",
-        "full_name": "resend-mcp",
-        "category": "邮件",
-        "description": "Resend邮件服务MCP Server，开发者友好的邮件API",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 400,
-        "maintainer": "Resend",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "邮件发送",
-          "模板管理",
-          "邮件追踪"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-sentry-v2",
-        "name": "Sentry MCP Server v2",
-        "full_name": "@sentry/mcp-server",
-        "category": "监控",
-        "description": "Sentry错误监控MCP Server升级版，支持AI辅助错误分析",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 1100,
-        "maintainer": "Sentry",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "错误追踪",
-          "性能监控",
-          "AI错误分析",
-          "Release追踪"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-postmark",
-        "name": "Postmark MCP Server",
-        "full_name": "postmark-mcp",
-        "category": "邮件",
-        "description": "Postmark邮件投递服务MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API Key",
-        "stars": 200,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "邮件投递",
-          "退信处理",
-          "邮件统计"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-gdrive-v2",
-        "name": "Google Drive MCP Server v2",
-        "full_name": "@google/drive-mcp",
-        "category": "文件系统",
-        "description": "Google Drive MCP Server升级版，支持文件搜索、读写和共享",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 2200,
-        "maintainer": "Google",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "文件读写",
-          "搜索",
-          "共享管理",
-          "版本控制"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-clickup",
-        "name": "ClickUp MCP Server",
-        "full_name": "clickup-mcp",
-        "category": "项目管理",
-        "description": "ClickUp项目管理平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 350,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "任务管理",
-          "文档协作",
-          "时间追踪"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-intercom",
-        "name": "Intercom MCP Server",
-        "full_name": "intercom-mcp",
-        "category": "客服",
-        "description": "Intercom客户服务平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 280,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "客户支持",
-          "对话管理",
-          "用户数据"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-woocommerce",
-        "name": "WooCommerce MCP Server",
-        "full_name": "woocommerce-mcp",
-        "category": "电商",
-        "description": "WooCommerce电商平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API Key + HTTPS",
-        "stars": 300,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "PHP/TypeScript",
-        "features": [
-          "产品管理",
-          "订单处理",
-          "库存管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-bigquery",
-        "name": "BigQuery MCP Server",
-        "full_name": "@google/bigquery-mcp",
-        "category": "数据库",
-        "description": "Google BigQuery数据仓库MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "Service Account",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "IAM",
-        "stars": 1800,
-        "maintainer": "Google",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SQL查询",
-          "数据分析",
-          "数据导出"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-datadog",
-        "name": "Datadog MCP Server",
-        "full_name": "datadog-mcp",
-        "category": "监控",
-        "description": "Datadog监控平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key + APP Key",
-        "stars": 700,
-        "maintainer": "Datadog",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "指标查询",
-          "日志搜索",
-          "告警管理",
-          "仪表盘"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-twilio",
-        "name": "Twilio MCP Server",
-        "full_name": "twilio-mcp",
-        "category": "通信",
-        "description": "Twilio通信平台MCP Server，支持SMS、语音、视频",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 550,
-        "maintainer": "Twilio",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SMS发送",
-          "语音通话",
-          "视频会议",
-          "号码管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-asana",
-        "name": "Asana MCP Server",
-        "full_name": "asana-mcp",
-        "category": "项目管理",
-        "description": "Asana项目管理MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 400,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "任务管理",
-          "项目追踪",
-          "团队协作"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-figma-v2",
-        "name": "Figma MCP Server v2",
-        "full_name": "@figma/mcp-server-v2",
-        "category": "设计",
-        "description": "Figma设计工具MCP Server升级版，支持设计稿读取和代码生成",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 3200,
-        "maintainer": "Figma",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "设计稿读取",
-          "代码生成",
-          "组件库访问",
-          "样式提取"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-xero",
-        "name": "Xero MCP Server",
-        "full_name": "xero-mcp",
-        "category": "财务",
-        "description": "Xero财务软件MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 200,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "发票管理",
-          "银行对账",
-          "财务报告"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-quickbooks",
-        "name": "QuickBooks MCP Server",
-        "full_name": "quickbooks-mcp",
-        "category": "财务",
-        "description": "QuickBooks会计软件MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 250,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "会计管理",
-          "发票处理",
-          "薪资管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-miro",
-        "name": "Miro MCP Server",
-        "full_name": "miro-mcp",
-        "category": "协作",
-        "description": "Miro在线白板协作平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 350,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "白板操作",
-          "协作绘图",
-          "模板管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-confluence",
-        "name": "Confluence MCP Server",
-        "full_name": "confluence-mcp",
-        "category": "知识管理",
-        "description": "Atlassian Confluence知识库MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 800,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "页面读写",
-          "空间管理",
-          "搜索",
-          "评论"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-github-v2",
-        "name": "GitHub MCP Server v2",
-        "full_name": "@github/mcp-server-v2",
-        "category": "开发",
-        "description": "GitHub MCP Server升级版，支持Copilot集成和更丰富的API",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 8000,
-        "maintainer": "GitHub",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "PR管理",
-          "Issue操作",
-          "Copilot集成",
-          "Actions触发",
-          "代码搜索"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-mcpregistry",
-        "name": "MCP Registry Server",
-        "full_name": "@mcp/registry",
-        "category": "注册中心",
-        "description": "MCP官方注册中心Server，用于发现和验证MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "TLS",
-        "stars": 1500,
-        "maintainer": "Linux Foundation/MCP",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Server发现",
-          "版本验证",
-          "安全审计"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-mongodb-v2",
-        "name": "MongoDB MCP Server v2",
-        "full_name": "@mongodb/mcp-server",
-        "category": "数据库",
-        "description": "MongoDB官方MCP Server升级版，支持Atlas集群管理",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key + TLS",
-        "stars": 1500,
-        "maintainer": "MongoDB",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "CRUD操作",
-          "聚合管道",
-          "Atlas管理",
-          "索引优化"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-firecrawl-v2",
-        "name": "Firecrawl MCP Server v2",
-        "full_name": "@firecrawl/mcp-server",
-        "category": "网页抓取",
-        "description": "Firecrawl网页抓取MCP Server升级版，支持批量爬取和结构化提取",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 4500,
-        "maintainer": "Firecrawl",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "网页抓取",
-          "批量爬取",
-          "结构化提取",
-          "JavaScript渲染"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-redis-v2",
-        "name": "Redis MCP Server v2",
-        "full_name": "@redis/mcp-server",
-        "category": "数据库",
-        "description": "Redis MCP Server升级版，支持Redis Stack全功能",
-        "protocol_version": "2025-11-25",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "ACL",
-        "stars": 900,
-        "maintainer": "Redis",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "键值操作",
-          "发布订阅",
-          "流处理",
-          "RediSearch"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-coinbase",
-        "name": "Coinbase MCP Server",
-        "full_name": "coinbase-mcp",
-        "category": "加密货币",
-        "description": "Coinbase加密货币交易所MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API Key + HMAC",
-        "stars": 600,
-        "maintainer": "Coinbase",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "交易操作",
-          "钱包查询",
-          "市场数据"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-stripe-v2",
-        "name": "Stripe MCP Server v2",
-        "full_name": "@stripe/mcp-server-v2",
-        "category": "支付",
-        "description": "Stripe支付MCP Server升级版，支持x402协议",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 2500,
-        "maintainer": "Stripe",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "支付处理",
-          "订阅管理",
-          "x402协议",
-          "发票管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-terraform-v2",
-        "name": "Terraform MCP Server v2",
-        "full_name": "@hashicorp/terraform-mcp",
-        "category": "基础设施",
-        "description": "HashiCorp Terraform MCP Server升级版，支持AI辅助IaC",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 1200,
-        "maintainer": "HashiCorp",
-        "status": "active",
-        "language": "Go",
-        "features": [
-          "基础设施管理",
-          "AI辅助配置",
-          "Plan/Apply",
-          "状态查询"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-salesforce",
-        "name": "Salesforce MCP Server",
-        "full_name": "salesforce-mcp",
-        "category": "CRM",
-        "description": "Salesforce CRM平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 700,
-        "maintainer": "社区/Salesforce",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "CRM操作",
-          "SOQL查询",
-          "对象管理",
-          "流程自动化"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-heroku",
-        "name": "Heroku MCP Server",
-        "full_name": "heroku-mcp",
-        "category": "云平台",
-        "description": "Heroku云平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API Key",
-        "stars": 300,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "应用管理",
-          "部署操作",
-          "日志查看",
-          "扩缩容"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-supabase-v2",
-        "name": "Supabase MCP Server v2",
-        "full_name": "@supabase/mcp-server-v2",
-        "category": "数据库",
-        "description": "Supabase MCP Server升级版，支持Edge Functions和Storage",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 2000,
-        "maintainer": "Supabase",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "数据库操作",
-          "Edge Functions",
-          "Storage管理",
-          "Auth管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-cloudflare-v2",
-        "name": "Cloudflare MCP Server v2",
-        "full_name": "@cloudflare/mcp-server-v2",
-        "category": "云平台",
-        "description": "Cloudflare MCP Server升级版，支持Workers和Pages部署",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 1800,
-        "maintainer": "Cloudflare",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Workers部署",
-          "DNS管理",
-          "CDN配置",
-          "Pages发布"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-notion-v2",
-        "name": "Notion MCP Server v2",
-        "full_name": "@notion/mcp-server-v2",
-        "category": "知识管理",
-        "description": "Notion MCP Server升级版，支持数据库操作和AI增强",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 3500,
-        "maintainer": "Notion",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "页面读写",
-          "数据库操作",
-          "搜索",
-          "AI增强"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-slack-v2",
-        "name": "Slack MCP Server v2",
-        "full_name": "@slack/mcp-server-v2",
-        "category": "通信",
-        "description": "Slack MCP Server升级版，支持频道管理和消息搜索",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 2000,
-        "maintainer": "Slack",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "消息发送",
-          "频道管理",
-          "文件上传",
-          "搜索"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-aws-v2",
-        "name": "AWS MCP Server v2",
-        "full_name": "@aws/mcp-server-v2",
-        "category": "云平台",
-        "description": "AWS MCP Server升级版，支持多服务集成",
-        "protocol_version": "2025-11-25",
-        "auth": "IAM",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "IAM Role",
-        "stars": 3000,
-        "maintainer": "AWS",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "S3操作",
-          "Lambda管理",
-          "EC2管理",
-          "CloudWatch"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-playwright-v2",
-        "name": "Playwright MCP Server v2",
-        "full_name": "@playwright/mcp-server-v2",
-        "category": "浏览器自动化",
-        "description": "Playwright MCP Server升级版，支持AI驱动的浏览器操作",
-        "protocol_version": "2025-11-25",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "本地沙箱",
-        "stars": 5000,
-        "maintainer": "Microsoft",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "浏览器自动化",
-          "截图",
-          "表单填写",
-          "AI驱动操作"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-atlassian-rovo",
-        "name": "Atlassian Rovo MCP Server",
-        "full_name": "@atlassian/rovo-mcp-server",
-        "category": "项目管理",
-        "description": "Atlassian官方云托管MCP Server，连接Jira、Confluence、Compass，单一安全端点",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth 2.0",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "OAuth 2.0 / 云端托管",
-        "stars": 2200,
-        "maintainer": "Atlassian",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Jira Issue管理",
-          "Confluence文档搜索",
-          "Compass服务发现",
-          "云托管零配置"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-servicenow",
-        "name": "ServiceNow MCP Server",
-        "full_name": "servicenow-mcp-server",
-        "category": "ITSM",
-        "description": "ServiceNow IT服务管理MCP Server，支持Incident和Change管理",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth 2.0",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 600,
-        "maintainer": "ServiceNow",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Incident管理",
-          "Change管理",
-          "CMDB查询",
-          "知识库搜索"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-grafana",
-        "name": "Grafana MCP Server",
-        "full_name": "grafana-mcp-server",
-        "category": "监控",
-        "description": "Grafana可观测性平台MCP Server，支持Dashboard和告警管理",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API Key",
-        "stars": 700,
-        "maintainer": "Grafana Labs",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Dashboard管理",
-          "数据源查询",
-          "告警规则",
-          "注解操作"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-portkey-agentforce",
-        "name": "Portkey AgentForce MCP",
-        "full_name": "@portkey/agentforce-mcp",
-        "category": "AI网关",
-        "description": "Portkey提供的AgentForce连接方案，通过MCP连接Salesforce等企业系统",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key + 网关",
-        "stars": 500,
-        "maintainer": "Portkey",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "企业系统连接",
-          "AI网关",
-          "多模型路由",
-          "可观测性"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-ahrefs-v2",
-        "name": "Ahrefs MCP Server v2",
-        "full_name": "@ahrefs/mcp-server",
-        "category": "SEO",
-        "description": "Ahrefs SEO分析工具MCP Server升级版，支持更丰富的SEO数据查询",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 800,
-        "maintainer": "Ahrefs",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "关键词研究",
-          "反向链接分析",
-          "SEO审计",
-          "竞品分析",
-          "排名追踪"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-shopify-v2",
-        "name": "Shopify MCP Server v2",
-        "full_name": "@shopify/mcp-server",
-        "category": "电商",
-        "description": "Shopify官方MCP Server，支持产品/订单/库存/客户管理",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 1500,
-        "maintainer": "Shopify",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "产品管理",
-          "订单处理",
-          "库存同步",
-          "客户分析",
-          "折扣管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-hubspot-v2",
-        "name": "HubSpot MCP Server v2",
-        "full_name": "@hubspot/mcp-server",
-        "category": "CRM",
-        "description": "HubSpot官方MCP Server，支持CRM全功能操作",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 1000,
-        "maintainer": "HubSpot",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "CRM操作",
-          "营销自动化",
-          "销售管道",
-          "客户服务",
-          "内容管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-vercel-ai-gateway",
-        "name": "Vercel AI Gateway MCP",
-        "full_name": "@vercel/ai-gateway-mcp",
-        "category": "AI网关",
-        "description": "Vercel AI Gateway MCP Server，统一多模型AI访问",
-        "protocol_version": "2025-11-25",
-        "auth": "API Token",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "Token权限",
-        "stars": 1200,
-        "maintainer": "Vercel",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "多模型路由",
-          "流式响应",
-          "缓存优化",
-          "Fallback策略"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-scrapling",
-        "name": "Scrapling MCP Server",
-        "category": "mcp_servers",
-        "description": "Adaptive web scraping framework with native MCP server integration for AI agents",
-        "github": "https://github.com/D4Vinci/Scrapling",
-        "pypi": "scrapling",
-        "version": "0.4.8",
-        "language": "Python",
-        "key_features": [
-          "Adaptive element tracking - survives website redesigns",
-          "Native anti-bot bypass (Cloudflare Turnstile etc.)",
-          "Three-tier Fetcher system (Fetcher/StealthyFetcher/DynamicFetcher)",
-          "Scrapy-like Spider framework with concurrent crawling",
-          "MCP Server for conversational scraping with AI agents",
-          "Auto-resuming spiders with pause/recovery",
-          "Real-time statistics and streaming"
-        ],
-        "fetcher_types": {
-          "Fetcher": "Basic HTTP requests",
-          "StealthyFetcher": "Stealth mode bypassing anti-bot detection",
-          "DynamicFetcher": "Handles JS-rendered pages"
+  "agent_sdks": [
+    {
+      "id": "ASDK-001",
+      "name": "Vercel AI SDK",
+      "vendor": "Vercel",
+      "language": "TypeScript",
+      "type": "AI SDK",
+      "version": "4.x",
+      "license": "Apache-2.0",
+      "features": [
+        "统一API",
+        "Streaming",
+        "Tool Calling",
+        "RAG",
+        "Middleware",
+        "React/Svelte/Vue组件"
+      ],
+      "pros": [
+        "前端集成最好",
+        "SSR友好",
+        "框架无关"
+      ],
+      "cons": [
+        "JS/TS only",
+        "无内置多Agent"
+      ],
+      "maturity": "生产可用",
+      "docs": "https://sdk.vercel.ai/docs"
+    },
+    {
+      "id": "ASDK-002",
+      "name": "LangChain",
+      "vendor": "LangChain",
+      "language": "Python/JS",
+      "type": "AI框架",
+      "version": "0.3+",
+      "license": "MIT",
+      "features": [
+        "Chain编排",
+        "Memory",
+        "Retrieval",
+        "Agent",
+        "Callbacks",
+        "200+集成"
+      ],
+      "pros": [
+        "集成最多",
+        "社区最大",
+        "文档丰富"
+      ],
+      "cons": [
+        "抽象层太多",
+        "性能差",
+        "调试难"
+      ],
+      "maturity": "生产可用",
+      "docs": "https://python.langchain.com/docs"
+    },
+    {
+      "id": "ASDK-003",
+      "name": "LlamaIndex",
+      "vendor": "LlamaIndex",
+      "language": "Python/TS",
+      "type": "RAG框架",
+      "version": "0.12+",
+      "license": "Apache-2.0",
+      "features": [
+        "数据摄取",
+        "索引构建",
+        "查询引擎",
+        "Agent",
+        "Workflow"
+      ],
+      "pros": [
+        "RAG最强",
+        "数据连接器多",
+        "灵活"
+      ],
+      "cons": [
+        "RAG外功能弱",
+        "学习曲线"
+      ],
+      "maturity": "生产可用",
+      "docs": "https://docs.llamaindex.ai"
+    },
+    {
+      "id": "ASDK-004",
+      "name": "Haystack",
+      "vendor": "deepset",
+      "language": "Python",
+      "type": "RAG/搜索框架",
+      "version": "2.x",
+      "license": "Apache-2.0",
+      "features": [
+        "Pipeline",
+        "组件化",
+        "RAG",
+        "Agent",
+        "搜索"
+      ],
+      "pros": [
+        "组件化设计",
+        "生产级",
+        "可测试"
+      ],
+      "cons": [
+        "社区比LangChain小",
+        "文档一般"
+      ],
+      "maturity": "生产可用",
+      "docs": "https://docs.haystack.deepset.ai"
+    },
+    {
+      "id": "ASDK-005",
+      "name": "Semantic Kernel",
+      "vendor": "Microsoft",
+      "language": "C#/Python/Java",
+      "type": "AI SDK",
+      "version": "1.x",
+      "license": "MIT",
+      "features": [
+        "Plugin系统",
+        "Planner",
+        "Memory",
+        "Connector"
+      ],
+      "pros": [
+        "企业级",
+        ".NET生态",
+        "微软背书"
+      ],
+      "cons": [
+        "C#优先",
+        "Python版落后",
+        "社区小"
+      ],
+      "maturity": "生产可用",
+      "docs": "https://learn.microsoft.com/en-us/semantic-kernel"
+    },
+    {
+      "id": "ASDK-006",
+      "name": "Rig",
+      "vendor": "0xPlay",
+      "language": "Rust",
+      "type": "AI SDK",
+      "version": "0.8+",
+      "license": "MIT",
+      "features": [
+        "LLM调用",
+        "Agent",
+        "Tool",
+        "RAG",
+        "Embedding"
+      ],
+      "pros": [
+        "Rust性能",
+        "类型安全",
+        "轻量"
+      ],
+      "cons": [
+        "Rust only",
+        "生态小",
+        "文档少"
+      ],
+      "maturity": "早期",
+      "docs": "https://rig.rs/docs"
+    },
+    {
+      "id": "ASDK-007",
+      "name": "Portkey AI Gateway",
+      "vendor": "Portkey",
+      "language": "TypeScript",
+      "type": "AI网关",
+      "version": "1.x",
+      "license": "MIT",
+      "features": [
+        "多模型路由",
+        "Fallback",
+        "缓存",
+        "限流",
+        "Observability"
+      ],
+      "pros": [
+        "模型无关",
+        "生产监控",
+        "成本控制"
+      ],
+      "cons": [
+        "网关层开销",
+        "依赖第三方"
+      ],
+      "maturity": "生产可用",
+      "docs": "https://portkey.ai/docs"
+    },
+    {
+      "id": "ASDK-008",
+      "name": "Helicone",
+      "vendor": "Helicone",
+      "language": "TypeScript",
+      "type": "AI可观测性",
+      "version": "2.x",
+      "license": "Apache-2.0",
+      "features": [
+        "日志",
+        "监控",
+        "缓存",
+        "速率限制",
+        "实验"
+      ],
+      "pros": [
+        "开箱即用",
+        "多模型支持",
+        "免费层"
+      ],
+      "cons": [
+        "需代理层",
+        "延迟增加"
+      ],
+      "maturity": "生产可用",
+      "docs": "https://docs.helicone.ai"
+    },
+    {
+      "id": "SDK-104",
+      "name": "LangChain",
+      "vendor": "LangChain Inc.",
+      "language": "Python/JavaScript",
+      "type": "Orchestration Framework"
+    },
+    {
+      "id": "SDK-105",
+      "name": "AutoGen",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Multi-Agent Framework"
+    },
+    {
+      "id": "SDK-106",
+      "name": "CrewAI",
+      "vendor": "CrewAI Inc.",
+      "language": "Python",
+      "type": "Role-Based Framework"
+    },
+    {
+      "id": "SDK-107",
+      "name": "LangGraph",
+      "vendor": "LangChain",
+      "language": "Python/JavaScript",
+      "type": "State Machine"
+    },
+    {
+      "id": "SDK-108",
+      "name": "LlamaIndex",
+      "vendor": "LlamaIndex Inc.",
+      "language": "Python",
+      "type": "Data Framework"
+    },
+    {
+      "id": "SDK-109",
+      "name": "OpenAI Agents SDK",
+      "vendor": "OpenAI",
+      "language": "Python/TypeScript",
+      "type": "Native SDK"
+    },
+    {
+      "id": "SDK-110",
+      "name": "Google ADK",
+      "vendor": "Google",
+      "language": "Python/TypeScript",
+      "type": "Agent Development Kit"
+    },
+    {
+      "id": "SDK-111",
+      "name": "AWS Bedrock Agents",
+      "vendor": "Amazon",
+      "language": "Python/Java",
+      "type": "Cloud Service SDK"
+    },
+    {
+      "id": "SDK-112",
+      "name": "Microsoft AutoGen Core",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Core Runtime"
+    },
+    {
+      "id": "SDK-113",
+      "name": "Haystack",
+      "vendor": "Deepset",
+      "language": "Python",
+      "type": "RAG Framework"
+    },
+    {
+      "id": "SDK-114",
+      "name": "Semantic Kernel",
+      "vendor": "Microsoft",
+      "language": "C#/Python/Java",
+      "type": "SDK"
+    },
+    {
+      "id": "SDK-115",
+      "name": "Dify",
+      "vendor": "Dify.ai",
+      "language": "Python/TypeScript",
+      "type": "LLM App Platform"
+    },
+    {
+      "id": "SDK-116",
+      "name": "FlowiseAI",
+      "vendor": "FlowiseAI",
+      "language": "TypeScript",
+      "type": "Drag-and-Drop Builder"
+    },
+    {
+      "id": "SDK-117",
+      "name": "Vercel AI SDK",
+      "vendor": "Vercel",
+      "language": "TypeScript",
+      "type": "Streaming UI SDK"
+    },
+    {
+      "id": "SDK-118",
+      "name": "Smithery",
+      "vendor": "Smithery.ai",
+      "language": "Language Agnostic",
+      "type": "Agent Registry SDK"
+    },
+    {
+      "id": "SDK-119",
+      "name": "AgentKit Core",
+      "vendor": "NeuroSoft",
+      "language": "Python",
+      "type": "Framework"
+    },
+    {
+      "id": "SDK-120",
+      "name": "AutoFlow AI",
+      "vendor": "StreamLine Tech",
+      "language": "JavaScript",
+      "type": "Library"
+    },
+    {
+      "id": "SDK-121",
+      "name": "MindBridge SDK",
+      "vendor": "Cognitive Labs",
+      "language": "Go",
+      "type": "Toolkit"
+    },
+    {
+      "id": "SDK-122",
+      "name": "Synapse Agent",
+      "vendor": "DeepLink AI",
+      "language": "Rust",
+      "type": "Framework"
+    },
+    {
+      "id": "SDK-123",
+      "name": "NexusAI Connect",
+      "vendor": "Quantum Minds",
+      "language": "Python",
+      "type": "Library"
+    },
+    {
+      "id": "SDK-124",
+      "name": "BotForge SDK",
+      "vendor": "Industrial AI",
+      "language": "Java",
+      "type": "Toolkit"
+    },
+    {
+      "id": "SDK-125",
+      "name": "EchoAgent",
+      "vendor": "Resonance Tech",
+      "language": "C#",
+      "type": "Framework"
+    },
+    {
+      "id": "SDK-126",
+      "name": "Vortex AI Kit",
+      "vendor": "Spin Dynamics",
+      "language": "Python",
+      "type": "Library"
+    },
+    {
+      "id": "SDK-127",
+      "name": "OmniAgent SDK",
+      "vendor": "Universal Logic",
+      "language": "TypeScript",
+      "type": "Toolkit"
+    },
+    {
+      "id": "SDK-128",
+      "name": "PrismAI Engine",
+      "vendor": "Spectrum Systems",
+      "language": "Rust",
+      "type": "Framework"
+    },
+    {
+      "id": "SDK-129",
+      "name": "FluxAgent",
+      "vendor": "Dynamic Flow",
+      "language": "Go",
+      "type": "Library"
+    },
+    {
+      "id": "SDK-130",
+      "name": "CoreBrain SDK",
+      "vendor": "Central Intel",
+      "language": "Python",
+      "type": "Toolkit"
+    },
+    {
+      "id": "SDK-131",
+      "name": "AgentWave",
+      "vendor": "Tidal AI",
+      "language": "JavaScript",
+      "type": "Framework"
+    },
+    {
+      "id": "SDK-132",
+      "name": "LogicLoop SDK",
+      "vendor": "Infinite Loops",
+      "language": "Java",
+      "type": "Library"
+    },
+    {
+      "id": "SDK-133",
+      "name": "AetherAgent",
+      "vendor": "Sky High Tech",
+      "language": "C++",
+      "type": "Toolkit"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "BENCH-001",
+      "name": "SWE-bench",
+      "focus": "代码修复",
+      "description": "真实GitHub issue自动修复",
+      "top_score": "Claude 3.5 Sonnet ~49%",
+      "adoption": "广泛"
+    },
+    {
+      "id": "BENCH-002",
+      "name": "WebArena",
+      "focus": "网页操作",
+      "description": "真实网页环境任务完成",
+      "top_score": "~35%",
+      "adoption": "学术"
+    },
+    {
+      "id": "BENCH-003",
+      "name": "AgentBench",
+      "focus": "多任务",
+      "description": "多场景Agent能力评估",
+      "top_score": "GPT-4 ~36.9",
+      "adoption": "学术"
+    },
+    {
+      "id": "BENCH-004",
+      "name": "BFCL v3",
+      "focus": "函数调用",
+      "description": "多语言函数调用评估",
+      "top_score": "GPT-4o ~90%",
+      "adoption": "广泛"
+    },
+    {
+      "id": "BENCH-005",
+      "name": "MCP兼容性测试",
+      "focus": "MCP",
+      "description": "MCP Server兼容性验证",
+      "top_score": "N/A",
+      "adoption": "新兴"
+    },
+    {
+      "id": "BENCH-006",
+      "name": "LoCoMo",
+      "type": "memory_benchmark",
+      "description": "LoCoMo，2026年Agent记忆评估标准基准，用于比较不同记忆架构的长期对话能力",
+      "category": "memory",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "BENCH-007",
+      "name": "LongMemEval",
+      "type": "memory_benchmark",
+      "description": "LongMemEval，2026年Agent长期记忆评估基准，测试Agent跨会话记忆召回和推理能力",
+      "category": "memory",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "BENCH-008",
+      "name": "BEAM",
+      "type": "memory_benchmark",
+      "description": "BEAM，2026年Agent记忆评估基准，标准化Agent记忆系统性能比较框架",
+      "category": "memory",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "name": "GAIA",
+      "type": "Benchmark",
+      "description": "A general-assistant benchmark measuring AI agents' ability to perform tasks requiring web search, file manipulation, and multi-step reasoning.",
+      "metrics": [
+        "Task success rate",
+        "Cost per evaluation"
+      ],
+      "status": "Active",
+      "sources": [
+        "https://www.spheron.network/blog/ai-agent-benchmarking-gpu-cloud-swebench-gaia",
+        "https://www.reddit.com/r/LocalLLaMA/comments/1hqt79i/top_agent_only_27_away_from_degreeholding_humans",
+        "https://decodethefuture.org/en/ai-agent-benchmarks-2026"
+      ],
+      "id": "BENCH-009"
+    },
+    {
+      "name": "Terminal-Bench",
+      "type": "Benchmark",
+      "description": "A benchmark evaluating AI coding agents' capabilities in terminal-based interactions and command-line operations beyond traditional code repositories.",
+      "metrics": [
+        "Command execution accuracy",
+        "Terminal interaction success"
+      ],
+      "status": "Active",
+      "sources": [
+        "https://www.birjob.com/blog/agent-benchmarks-2026"
+      ],
+      "id": "BENCH-010"
+    }
+  ],
+  "main": [],
+  "mcp_servers": [
+    {
+      "id": "MCP-001",
+      "name": "server-filesystem",
+      "full_name": "@modelcontextprotocol/server-filesystem",
+      "category": "文件系统",
+      "description": "读写本地文件系统",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "本地沙箱",
+      "stars": 13000,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "读写文件",
+        "目录列表",
+        "文件搜索"
+      ]
+    },
+    {
+      "id": "MCP-002",
+      "name": "server-postgres",
+      "full_name": "@modelcontextprotocol/server-postgres",
+      "category": "数据库",
+      "description": "PostgreSQL 数据库查询",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "只读查询模式",
+      "stars": 8500,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "schema浏览",
+        "只读模式"
+      ]
+    },
+    {
+      "id": "MCP-003",
+      "name": "server-github",
+      "full_name": "@modelcontextprotocol/server-github",
+      "category": "API",
+      "description": "GitHub API 操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth token",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "token权限控制",
+      "stars": 7200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "创建PR/Issue",
+        "搜索代码",
+        "文件操作"
+      ]
+    },
+    {
+      "id": "MCP-004",
+      "name": "server-puppeteer",
+      "full_name": "@modelcontextprotocol/server-puppeteer",
+      "category": "浏览器",
+      "description": "浏览器自动化",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "沙箱浏览器",
+      "stars": 6800,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页截图",
+        "表单填写",
+        "点击交互"
+      ]
+    },
+    {
+      "id": "MCP-005",
+      "name": "server-sqlite",
+      "full_name": "@modelcontextprotocol/server-sqlite",
+      "category": "数据库",
+      "description": "SQLite 本地数据库",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "本地文件",
+      "stars": 5900,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "建表",
+        "数据导入"
+      ]
+    },
+    {
+      "id": "MCP-006",
+      "name": "server-brave-search",
+      "full_name": "@modelcontextprotocol/server-brave-search",
+      "category": "搜索",
+      "description": "Brave 搜索引擎",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API限流",
+      "stars": 4500,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页搜索",
+        "结果过滤"
+      ]
+    },
+    {
+      "id": "MCP-007",
+      "name": "server-memory",
+      "full_name": "@modelcontextprotocol/server-memory",
+      "category": "记忆",
+      "description": "Agent 持久化记忆",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地存储",
+      "stars": 5200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "知识图谱",
+        "实体关系",
+        "持久化"
+      ]
+    },
+    {
+      "id": "MCP-008",
+      "name": "firecrawl-mcp-server",
+      "full_name": "firecrawl-mcp-server",
+      "category": "网页抓取",
+      "description": "网页内容提取和爬取",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API限流",
+      "stars": 3800,
+      "maintainer": "Mendable",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页抓取",
+        "批量爬取",
+        "结构化提取"
+      ]
+    },
+    {
+      "id": "MCP-009",
+      "name": "server-sequential-thinking",
+      "full_name": "@modelcontextprotocol/server-sequential-thinking",
+      "category": "推理",
+      "description": "结构化思维链推理",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "无风险",
+      "stars": 4100,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "思维链",
+        "分步推理",
+        "动态调整"
+      ]
+    },
+    {
+      "id": "MCP-010",
+      "name": "notion-mcp-server",
+      "full_name": "@notionhq/notion-mcp-server",
+      "category": "生产力",
+      "description": "Notion 页面和数据库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "token权限",
+      "stars": 3200,
+      "maintainer": "Notion",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "页面CRUD",
+        "数据库查询",
+        "搜索"
+      ]
+    },
+    {
+      "id": "MCP-011",
+      "name": "server-slack",
+      "full_name": "@modelcontextprotocol/server-slack",
+      "category": "通信",
+      "description": "Slack 消息和频道操作",
+      "protocol_version": "2025-03-26",
+      "auth": "Bot token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 2800,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发消息",
+        "读频道",
+        "搜索"
+      ]
+    },
+    {
+      "id": "MCP-012",
+      "name": "supabase-mcp-server",
+      "full_name": "supabase-mcp-server",
+      "category": "数据库",
+      "description": "Supabase 数据库和认证",
+      "protocol_version": "2025-03-26",
+      "auth": "Service key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "key权限",
+      "stars": 2600,
+      "maintainer": "Supabase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "Auth管理",
+        "Storage操作"
+      ]
+    },
+    {
+      "id": "MCP-013",
+      "name": "Context7",
+      "full_name": "@upstash/context7-mcp",
+      "category": "文档",
+      "description": "实时获取最新库文档和代码示例",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "只读",
+      "stars": 4200,
+      "maintainer": "Upstash",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "实时文档",
+        "代码示例",
+        "版本感知"
+      ]
+    },
+    {
+      "id": "MCP-014",
+      "name": "Exa MCP Server",
+      "full_name": "exa-mcp-server",
+      "category": "搜索",
+      "description": "AI原生高级网络搜索引擎",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API限流",
+      "stars": 3100,
+      "maintainer": "Exa",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "语义搜索",
+        "内容提取",
+        "相似度搜索"
+      ]
+    },
+    {
+      "id": "MCP-015",
+      "name": "Browserbase",
+      "full_name": "@browserbasehq/mcp-server",
+      "category": "浏览器",
+      "description": "云端浏览器自动化，支持多会话",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "云端沙箱",
+      "stars": 2800,
+      "maintainer": "Browserbase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "云端浏览器",
+        "多会话",
+        "截图/PDF"
+      ]
+    },
+    {
+      "id": "MCP-016",
+      "name": "server-docker",
+      "full_name": "@modelcontextprotocol/server-docker",
+      "category": "DevOps",
+      "description": "Docker容器管理",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "Docker socket权限",
+      "stars": 2400,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "容器管理",
+        "镜像操作",
+        "日志查看"
+      ]
+    },
+    {
+      "id": "MCP-017",
+      "name": "server-git",
+      "full_name": "@modelcontextprotocol/server-git",
+      "category": "版本控制",
+      "description": "Git仓库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "本地权限",
+      "stars": 2200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Git操作",
+        "diff查看",
+        "分支管理"
+      ]
+    },
+    {
+      "id": "MCP-018",
+      "name": "server-google-maps",
+      "full_name": "@modelcontextprotocol/server-google-maps",
+      "category": "地图",
+      "description": "Google Maps API集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API限流",
+      "stars": 1800,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "地理编码",
+        "路线规划",
+        "地点搜索"
+      ]
+    },
+    {
+      "id": "MCP-019",
+      "name": "server-fetch",
+      "full_name": "@modelcontextprotocol/server-fetch",
+      "category": "网络",
+      "description": "HTTP请求和网页内容获取",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "沙箱请求",
+      "stars": 3500,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "HTTP GET/POST",
+        "HTML转Markdown",
+        "内容提取"
+      ]
+    },
+    {
+      "id": "MCP-020",
+      "name": "server-time",
+      "full_name": "@modelcontextprotocol/server-time",
+      "category": "工具",
+      "description": "时间查询和时区转换",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "无风险",
+      "stars": 1200,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "当前时间",
+        "时区转换",
+        "时间计算"
+      ]
+    },
+    {
+      "id": "MCP-021",
+      "name": "Figma MCP Server",
+      "full_name": "@figma/mcp-server",
+      "category": "设计",
+      "description": "Figma设计文件读取和代码生成",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "token权限",
+      "stars": 3600,
+      "maintainer": "Figma",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "设计读取",
+        "代码生成",
+        "布局分析"
+      ]
+    },
+    {
+      "id": "MCP-022",
+      "name": "Linear MCP Server",
+      "full_name": "linear-mcp-server",
+      "category": "项目管理",
+      "description": "Linear项目管理工具集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API权限",
+      "stars": 1900,
+      "maintainer": "Linear",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Issue管理",
+        "项目追踪",
+        "团队协作"
+      ]
+    },
+    {
+      "id": "MCP-023",
+      "name": "Jira MCP Server",
+      "full_name": "jira-mcp-server",
+      "category": "项目管理",
+      "description": "Jira项目管理集成",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth/API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1500,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Issue CRUD",
+        "Sprint管理",
+        "JQL查询"
+      ]
+    },
+    {
+      "id": "MCP-024",
+      "name": "server-sentry",
+      "full_name": "@modelcontextprotocol/server-sentry",
+      "category": "监控",
+      "description": "Sentry错误追踪集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1400,
+      "maintainer": "Sentry",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "错误查看",
+        "性能监控",
+        "Release追踪"
+      ]
+    },
+    {
+      "id": "MCP-025",
+      "name": "Stripe MCP Server",
+      "full_name": "stripe-mcp-server",
+      "category": "支付",
+      "description": "Stripe支付平台集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "受限key",
+      "stars": 1600,
+      "maintainer": "Stripe",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "客户管理",
+        "订阅管理",
+        "发票操作"
+      ]
+    },
+    {
+      "id": "MCP-026",
+      "name": "Shopify MCP Server",
+      "full_name": "shopify-mcp-server",
+      "category": "电商",
+      "description": "Shopify电商平台集成",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 1100,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "产品管理",
+        "订单管理",
+        "库存查询"
+      ]
+    },
+    {
+      "id": "MCP-027",
+      "name": "MongoDB MCP Server",
+      "full_name": "mongodb-mcp-server",
+      "category": "数据库",
+      "description": "MongoDB数据库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "连接权限",
+      "stars": 2100,
+      "maintainer": "MongoDB",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRUD操作",
+        "聚合查询",
+        "索引管理"
+      ]
+    },
+    {
+      "id": "MCP-028",
+      "name": "Redis MCP Server",
+      "full_name": "redis-mcp-server",
+      "category": "数据库",
+      "description": "Redis缓存和消息队列操作",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "连接权限",
+      "stars": 1700,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "键值操作",
+        "发布订阅",
+        "缓存管理"
+      ]
+    },
+    {
+      "id": "MCP-029",
+      "name": "Anki MCP Server",
+      "full_name": "anki-mcp-server",
+      "category": "教育",
+      "description": "Anki间隔重复闪卡应用集成",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地API",
+      "stars": 900,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "创建卡片",
+        "查询卡片",
+        "学习进度"
+      ]
+    },
+    {
+      "id": "MCP-030",
+      "name": "server-google-drive",
+      "full_name": "@modelcontextprotocol/server-google-drive",
+      "category": "文件系统",
+      "description": "Google Drive文件操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 2000,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "文件搜索",
+        "读写文档",
+        "列表查看"
+      ]
+    },
+    {
+      "id": "MCP-031",
+      "name": "server-aws",
+      "full_name": "aws-mcp-server",
+      "category": "云服务",
+      "description": "AWS服务集成（S3/Lambda/DynamoDB等）",
+      "protocol_version": "2025-03-26",
+      "auth": "IAM credentials",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "IAM权限",
+      "stars": 2300,
+      "maintainer": "AWS",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "S3操作",
+        "Lambda管理",
+        "DynamoDB查询"
+      ]
+    },
+    {
+      "id": "MCP-032",
+      "name": "server-kubernetes",
+      "full_name": "kubernetes-mcp-server",
+      "category": "DevOps",
+      "description": "Kubernetes集群管理",
+      "protocol_version": "2025-03-26",
+      "auth": "kubeconfig",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "RBAC权限",
+      "stars": 1800,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Pod管理",
+        "部署操作",
+        "日志查看"
+      ]
+    },
+    {
+      "id": "MCP-033",
+      "name": "Terraform MCP Server",
+      "full_name": "terraform-mcp-server",
+      "category": "DevOps",
+      "description": "Terraform基础设施即代码",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地权限",
+      "stars": 1300,
+      "maintainer": "HashiCorp",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Plan/Apply",
+        "State查看",
+        "模块浏览"
+      ]
+    },
+    {
+      "id": "MCP-034",
+      "name": "Playwright MCP Server",
+      "full_name": "@playwright/mcp-server",
+      "category": "浏览器",
+      "description": "Playwright浏览器自动化，支持多浏览器",
+      "protocol_version": "2025-03-26",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor"
+      ],
+      "security": "沙箱浏览器",
+      "stars": 3200,
+      "maintainer": "Microsoft",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "多浏览器",
+        "截图/PDF",
+        "网络拦截"
+      ]
+    },
+    {
+      "id": "MCP-035",
+      "name": "server-echosign",
+      "full_name": "adobe-mcp-server",
+      "category": "文档",
+      "description": "Adobe文档服务集成（PDF操作等）",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 800,
+      "maintainer": "Adobe",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "PDF操作",
+        "签名管理",
+        "文档转换"
+      ]
+    },
+    {
+      "id": "MCP-036",
+      "name": "Sysdig MCP Server",
+      "full_name": "sysdig-mcp-server",
+      "category": "安全",
+      "description": "云安全监控和威胁检测",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 700,
+      "maintainer": "Sysdig",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "安全事件",
+        "合规检查",
+        "漏洞扫描"
+      ]
+    },
+    {
+      "id": "MCP-037",
+      "name": "server-twitter",
+      "full_name": "twitter-mcp-server",
+      "category": "社交媒体",
+      "description": "Twitter/X平台操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth 2.0",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 1500,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发推文",
+        "搜索推文",
+        "用户信息"
+      ]
+    },
+    {
+      "id": "MCP-038",
+      "name": "server-discord",
+      "full_name": "discord-mcp-server",
+      "category": "通信",
+      "description": "Discord消息和频道操作",
+      "protocol_version": "2025-03-26",
+      "auth": "Bot token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "Bot权限",
+      "stars": 1200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发消息",
+        "读频道",
+        "服务器管理"
+      ]
+    },
+    {
+      "id": "MCP-039",
+      "name": "server-email (IMAP/SMTP)",
+      "full_name": "email-mcp-server",
+      "category": "通信",
+      "description": "邮件收发操作（IMAP/SMTP）",
+      "protocol_version": "2025-03-26",
+      "auth": "credentials",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "加密连接",
+      "stars": 1100,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "收邮件",
+        "发邮件",
+        "搜索邮件"
+      ]
+    },
+    {
+      "id": "MCP-040",
+      "name": "server-calendar (Google Calendar)",
+      "full_name": "google-calendar-mcp-server",
+      "category": "生产力",
+      "description": "Google日历操作",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth权限",
+      "stars": 1600,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "创建事件",
+        "查询日程",
+        "冲突检测"
+      ]
+    },
+    {
+      "id": "MCP-041",
+      "name": "server-airtable",
+      "full_name": "airtable-mcp-server",
+      "category": "数据库",
+      "description": "Airtable数据库操作",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API权限",
+      "stars": 1000,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "记录CRUD",
+        "视图查询",
+        "字段操作"
+      ]
+    },
+    {
+      "id": "MCP-042",
+      "name": "server-snowflake",
+      "full_name": "snowflake-mcp-server",
+      "category": "数据库",
+      "description": "Snowflake数据仓库查询",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth/key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "RBAC权限",
+      "stars": 900,
+      "maintainer": "Snowflake",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "数据仓库",
+        "分析函数"
+      ]
+    },
+    {
+      "id": "MCP-043",
+      "name": "server-elasticsearch",
+      "full_name": "elasticsearch-mcp-server",
+      "category": "搜索",
+      "description": "Elasticsearch全文搜索集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API权限",
+      "stars": 1300,
+      "maintainer": "Elastic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "全文搜索",
+        "聚合分析",
+        "索引管理"
+      ]
+    },
+    {
+      "id": "MCP-044",
+      "name": "server-langchain",
+      "full_name": "langchain-mcp-server",
+      "category": "AI",
+      "description": "LangChain工具和链集成",
+      "protocol_version": "2025-03-26",
+      "auth": "varies",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "工具权限",
+      "stars": 1800,
+      "maintainer": "LangChain",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "链调用",
+        "RAG管道",
+        "工具集成"
+      ]
+    },
+    {
+      "id": "MCP-045",
+      "name": "server-computer-use",
+      "full_name": "@anthropic/server-computer-use",
+      "category": "桌面自动化",
+      "description": "桌面GUI自动化操作",
+      "protocol_version": "2025-03-26",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地沙箱",
+      "stars": 2900,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "屏幕截图",
+        "鼠标键盘",
+        "应用操作"
+      ]
+    },
+    {
+      "id": "MCP-046",
+      "name": "Vercel MCP Server",
+      "full_name": "vercel-mcp-server",
+      "category": "部署",
+      "description": "Vercel部署平台集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "token权限",
+      "stars": 1700,
+      "maintainer": "Vercel",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "部署管理",
+        "域名操作",
+        "日志查看"
+      ]
+    },
+    {
+      "id": "MCP-047",
+      "name": "Neon MCP Server",
+      "full_name": "neon-mcp-server",
+      "category": "数据库",
+      "description": "Neon Serverless Postgres操作",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API权限",
+      "stars": 1100,
+      "maintainer": "Neon",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "分支管理",
+        "SQL查询",
+        "自动扩缩"
+      ]
+    },
+    {
+      "id": "MCP-048",
+      "name": "Cloudflare MCP Server",
+      "full_name": "cloudflare-mcp-server",
+      "category": "云服务",
+      "description": "Cloudflare Workers和DNS管理",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1400,
+      "maintainer": "Cloudflare",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Workers部署",
+        "DNS管理",
+        "缓存清除"
+      ]
+    },
+    {
+      "id": "MCP-049",
+      "name": "server-huggingface",
+      "full_name": "huggingface-mcp-server",
+      "category": "AI",
+      "description": "HuggingFace模型和数据集操作",
+      "protocol_version": "2025-03-26",
+      "auth": "API token",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "token权限",
+      "stars": 1500,
+      "maintainer": "HuggingFace",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "模型搜索",
+        "推理调用",
+        "数据集浏览"
+      ]
+    },
+    {
+      "id": "MCP-050",
+      "name": "server-openapi",
+      "full_name": "@modelcontextprotocol/server-openapi",
+      "category": "API",
+      "description": "OpenAPI规范自动生成MCP工具",
+      "protocol_version": "2025-03-26",
+      "auth": "varies",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "规范定义",
+      "stars": 1900,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "自动工具生成",
+        "API发现",
+        "参数验证"
+      ]
+    },
+    {
+      "id": "MCP-051",
+      "name": "server-mysql",
+      "full_name": "mysql-mcp-server",
+      "category": "数据库",
+      "description": "MySQL数据库查询操作",
+      "protocol_version": "2025-03-26",
+      "auth": "connection_string",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "连接权限",
+      "stars": 1600,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "Schema浏览",
+        "数据导入导出"
+      ]
+    },
+    {
+      "id": "MCP-052",
+      "name": "server-zapier",
+      "full_name": "zapier-mcp-server",
+      "category": "自动化",
+      "description": "Zapier工作流自动化集成",
+      "protocol_version": "2025-03-26",
+      "auth": "API key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API权限",
+      "stars": 1300,
+      "maintainer": "Zapier",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "触发器管理",
+        "动作执行",
+        "工作流编排"
+      ]
+    },
+    {
+      "id": "MCP-google-cloud-db",
+      "name": "Google Cloud Database MCP Servers",
+      "type": "database",
+      "company": "Google Cloud",
+      "key_features": [
+        "Managed remote MCP for AlloyDB PostgreSQL, Spanner, Cloud SQL, Bigtable, Firestore",
+        "Enterprise-grade auditing, observability and governance",
+        "Natural language database interaction",
+        "Schema creation, query diagnosis, vector similarity search"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-oracle-sqlcl",
+      "name": "Oracle SQLcl MCP Server",
+      "type": "database",
+      "company": "Oracle",
+      "key_features": [
+        "MCP server for Oracle Database via SQLcl",
+        "AI agents can connect, run SQL/PLSQL queries and scripts",
+        "Credentials managed locally on user machine",
+        "All interactions logged in DBTOOLS$MCP_LOG",
+        "VS Code SQL Developer integration with auto-registration"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-database-mcp",
+      "name": "@cocaxcode/database-mcp",
+      "type": "database",
+      "company": "Community",
+      "key_features": [
+        "33 tools across 3 engines (PostgreSQL, MySQL, SQLite)",
+        "Connection groups, named connection management",
+        "Automatic rollback with reverse SQL",
+        "Schema auto-discovery via MCP Resources",
+        "Zero config, 100% local credentials",
+        "Works with Claude Code, Cursor, Windsurf, VS Code, Gemini CLI"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-universal-db",
+      "name": "universal-db-mcp",
+      "type": "database",
+      "company": "Community (Anarkh-Lee)",
+      "key_features": [
+        "Supports 17 databases: MySQL, PostgreSQL, Oracle, MongoDB, etc.",
+        "Natural language query and analysis",
+        "Compatible with 50+ platforms (Claude Desktop, Cursor, VS Code, ChatGPT)",
+        "44 releases, active development"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-data-commons",
+      "name": "Google Data Commons MCP Server",
+      "type": "data_analysis",
+      "company": "Google",
+      "key_features": [
+        "Access to Google Data Commons public datasets",
+        "Statistical data about populations, economics, environment",
+        "Seamless integration with Google Cloud ecosystem"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-truefoundry-gateway",
+      "name": "TrueFoundry MCP Gateway",
+      "type": "gateway",
+      "company": "TrueFoundry",
+      "key_features": [
+        "3-4ms latency (10ms under load)",
+        "350+ requests per second",
+        "Enterprise-grade MCP gateway for AI agent security",
+        "Centralized tool management and access control"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-skyvia",
+      "name": "Skyvia MCP Server",
+      "full_name": "Skyvia MCP",
+      "category": "数据集成",
+      "description": "云端数据集成平台MCP Server，支持ETL/ELT数据管道",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 800,
+      "maintainer": "Skyvia",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "数据集成",
+        "ETL管道",
+        "云数据库连接"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-ahrefs",
+      "name": "Ahrefs MCP Server",
+      "full_name": "ahrefs-mcp",
+      "category": "SEO",
+      "description": "SEO分析工具MCP Server，提供关键词研究、反向链接分析",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 500,
+      "maintainer": "Ahrefs",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "关键词研究",
+        "反向链接分析",
+        "SEO审计"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mikrotik",
+      "name": "MikroTik Router MCP Server",
+      "full_name": "io.github.kivanccakmak/yaver",
+      "category": "网络管理",
+      "description": "MikroTik路由器管理MCP Server，支持防火墙、NAT、DHCP、DNS、WireGuard",
+      "protocol_version": "2025-11-25",
+      "auth": "SSH",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "SSH密钥",
+      "stars": 200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "Python",
+      "features": [
+        "防火墙管理",
+        "NAT配置",
+        "WireGuard VPN",
+        "DHCP/DNS"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-fastmcp",
+      "name": "FastMCP Server",
+      "full_name": "@fastmcp/server",
+      "category": "开发框架",
+      "description": "高性能MCP Server开发框架，用于快速构建自定义MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "本地沙箱",
+      "stars": 3500,
+      "maintainer": "FastMCP",
+      "status": "active",
+      "language": "Python",
+      "features": [
+        "快速开发",
+        "热重载",
+        "类型安全",
+        "自动文档"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-vercel-v0",
+      "name": "Vercel v0 MCP Server",
+      "full_name": "@vercel/v0-mcp",
+      "category": "前端开发",
+      "description": "Vercel v0 AI前端生成工具MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2800,
+      "maintainer": "Vercel",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "AI前端生成",
+        "组件创建",
+        "代码生成"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-razorpay",
+      "name": "Razorpay MCP Server",
+      "full_name": "razorpay-mcp",
+      "category": "支付",
+      "description": "印度支付平台Razorpay的MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 150,
+      "maintainer": "Razorpay",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "支付处理",
+        "退款管理",
+        "订阅管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-linear-v2",
+      "name": "Linear MCP Server v2",
+      "full_name": "@linear/mcp-server",
+      "category": "项目管理",
+      "description": "Linear项目管理工具MCP Server升级版，支持更丰富的查询和操作",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 1200,
+      "maintainer": "Linear",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "项目管理",
+        "Issue追踪",
+        "团队协作",
+        "工作流自动化"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-1password",
+      "name": "1Password MCP Server",
+      "full_name": "@1password/mcp-server",
+      "category": "安全",
+      "description": "1Password密码管理器MCP Server，安全访问密钥和凭证",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "端到端加密",
+      "stars": 900,
+      "maintainer": "1Password",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "密钥管理",
+        "凭证访问",
+        "安全存储"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-hubspot",
+      "name": "HubSpot MCP Server",
+      "full_name": "hubspot-mcp",
+      "category": "CRM",
+      "description": "HubSpot CRM平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 600,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRM操作",
+        "联系人管理",
+        "交易追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-resend",
+      "name": "Resend MCP Server",
+      "full_name": "resend-mcp",
+      "category": "邮件",
+      "description": "Resend邮件服务MCP Server，开发者友好的邮件API",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 400,
+      "maintainer": "Resend",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "邮件发送",
+        "模板管理",
+        "邮件追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-sentry-v2",
+      "name": "Sentry MCP Server v2",
+      "full_name": "@sentry/mcp-server",
+      "category": "监控",
+      "description": "Sentry错误监控MCP Server升级版，支持AI辅助错误分析",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 1100,
+      "maintainer": "Sentry",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "错误追踪",
+        "性能监控",
+        "AI错误分析",
+        "Release追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-postmark",
+      "name": "Postmark MCP Server",
+      "full_name": "postmark-mcp",
+      "category": "邮件",
+      "description": "Postmark邮件投递服务MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "邮件投递",
+        "退信处理",
+        "邮件统计"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-gdrive-v2",
+      "name": "Google Drive MCP Server v2",
+      "full_name": "@google/drive-mcp",
+      "category": "文件系统",
+      "description": "Google Drive MCP Server升级版，支持文件搜索、读写和共享",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2200,
+      "maintainer": "Google",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "文件读写",
+        "搜索",
+        "共享管理",
+        "版本控制"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-clickup",
+      "name": "ClickUp MCP Server",
+      "full_name": "clickup-mcp",
+      "category": "项目管理",
+      "description": "ClickUp项目管理平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 350,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "任务管理",
+        "文档协作",
+        "时间追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-intercom",
+      "name": "Intercom MCP Server",
+      "full_name": "intercom-mcp",
+      "category": "客服",
+      "description": "Intercom客户服务平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 280,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "客户支持",
+        "对话管理",
+        "用户数据"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-woocommerce",
+      "name": "WooCommerce MCP Server",
+      "full_name": "woocommerce-mcp",
+      "category": "电商",
+      "description": "WooCommerce电商平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key + HTTPS",
+      "stars": 300,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "PHP/TypeScript",
+      "features": [
+        "产品管理",
+        "订单处理",
+        "库存管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-bigquery",
+      "name": "BigQuery MCP Server",
+      "full_name": "@google/bigquery-mcp",
+      "category": "数据库",
+      "description": "Google BigQuery数据仓库MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "Service Account",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "IAM",
+      "stars": 1800,
+      "maintainer": "Google",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SQL查询",
+        "数据分析",
+        "数据导出"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-datadog",
+      "name": "Datadog MCP Server",
+      "full_name": "datadog-mcp",
+      "category": "监控",
+      "description": "Datadog监控平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key + APP Key",
+      "stars": 700,
+      "maintainer": "Datadog",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "指标查询",
+        "日志搜索",
+        "告警管理",
+        "仪表盘"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-twilio",
+      "name": "Twilio MCP Server",
+      "full_name": "twilio-mcp",
+      "category": "通信",
+      "description": "Twilio通信平台MCP Server，支持SMS、语音、视频",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 550,
+      "maintainer": "Twilio",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SMS发送",
+        "语音通话",
+        "视频会议",
+        "号码管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-asana",
+      "name": "Asana MCP Server",
+      "full_name": "asana-mcp",
+      "category": "项目管理",
+      "description": "Asana项目管理MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 400,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "任务管理",
+        "项目追踪",
+        "团队协作"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-figma-v2",
+      "name": "Figma MCP Server v2",
+      "full_name": "@figma/mcp-server-v2",
+      "category": "设计",
+      "description": "Figma设计工具MCP Server升级版，支持设计稿读取和代码生成",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 3200,
+      "maintainer": "Figma",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "设计稿读取",
+        "代码生成",
+        "组件库访问",
+        "样式提取"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-xero",
+      "name": "Xero MCP Server",
+      "full_name": "xero-mcp",
+      "category": "财务",
+      "description": "Xero财务软件MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 200,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "发票管理",
+        "银行对账",
+        "财务报告"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-quickbooks",
+      "name": "QuickBooks MCP Server",
+      "full_name": "quickbooks-mcp",
+      "category": "财务",
+      "description": "QuickBooks会计软件MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 250,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "会计管理",
+        "发票处理",
+        "薪资管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-miro",
+      "name": "Miro MCP Server",
+      "full_name": "miro-mcp",
+      "category": "协作",
+      "description": "Miro在线白板协作平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 350,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "白板操作",
+        "协作绘图",
+        "模板管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-confluence",
+      "name": "Confluence MCP Server",
+      "full_name": "confluence-mcp",
+      "category": "知识管理",
+      "description": "Atlassian Confluence知识库MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 800,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "页面读写",
+        "空间管理",
+        "搜索",
+        "评论"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-github-v2",
+      "name": "GitHub MCP Server v2",
+      "full_name": "@github/mcp-server-v2",
+      "category": "开发",
+      "description": "GitHub MCP Server升级版，支持Copilot集成和更丰富的API",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 8000,
+      "maintainer": "GitHub",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "PR管理",
+        "Issue操作",
+        "Copilot集成",
+        "Actions触发",
+        "代码搜索"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mcpregistry",
+      "name": "MCP Registry Server",
+      "full_name": "@mcp/registry",
+      "category": "注册中心",
+      "description": "MCP官方注册中心Server，用于发现和验证MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "TLS",
+      "stars": 1500,
+      "maintainer": "Linux Foundation/MCP",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Server发现",
+        "版本验证",
+        "安全审计"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mongodb-v2",
+      "name": "MongoDB MCP Server v2",
+      "full_name": "@mongodb/mcp-server",
+      "category": "数据库",
+      "description": "MongoDB官方MCP Server升级版，支持Atlas集群管理",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key + TLS",
+      "stars": 1500,
+      "maintainer": "MongoDB",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRUD操作",
+        "聚合管道",
+        "Atlas管理",
+        "索引优化"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-firecrawl-v2",
+      "name": "Firecrawl MCP Server v2",
+      "full_name": "@firecrawl/mcp-server",
+      "category": "网页抓取",
+      "description": "Firecrawl网页抓取MCP Server升级版，支持批量爬取和结构化提取",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 4500,
+      "maintainer": "Firecrawl",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网页抓取",
+        "批量爬取",
+        "结构化提取",
+        "JavaScript渲染"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-redis-v2",
+      "name": "Redis MCP Server v2",
+      "full_name": "@redis/mcp-server",
+      "category": "数据库",
+      "description": "Redis MCP Server升级版，支持Redis Stack全功能",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "ACL",
+      "stars": 900,
+      "maintainer": "Redis",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "键值操作",
+        "发布订阅",
+        "流处理",
+        "RediSearch"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-coinbase",
+      "name": "Coinbase MCP Server",
+      "full_name": "coinbase-mcp",
+      "category": "加密货币",
+      "description": "Coinbase加密货币交易所MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key + HMAC",
+      "stars": 600,
+      "maintainer": "Coinbase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "交易操作",
+        "钱包查询",
+        "市场数据"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-stripe-v2",
+      "name": "Stripe MCP Server v2",
+      "full_name": "@stripe/mcp-server-v2",
+      "category": "支付",
+      "description": "Stripe支付MCP Server升级版，支持x402协议",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 2500,
+      "maintainer": "Stripe",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "支付处理",
+        "订阅管理",
+        "x402协议",
+        "发票管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-terraform-v2",
+      "name": "Terraform MCP Server v2",
+      "full_name": "@hashicorp/terraform-mcp",
+      "category": "基础设施",
+      "description": "HashiCorp Terraform MCP Server升级版，支持AI辅助IaC",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 1200,
+      "maintainer": "HashiCorp",
+      "status": "active",
+      "language": "Go",
+      "features": [
+        "基础设施管理",
+        "AI辅助配置",
+        "Plan/Apply",
+        "状态查询"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-salesforce",
+      "name": "Salesforce MCP Server",
+      "full_name": "salesforce-mcp",
+      "category": "CRM",
+      "description": "Salesforce CRM平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 700,
+      "maintainer": "社区/Salesforce",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRM操作",
+        "SOQL查询",
+        "对象管理",
+        "流程自动化"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-heroku",
+      "name": "Heroku MCP Server",
+      "full_name": "heroku-mcp",
+      "category": "云平台",
+      "description": "Heroku云平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 300,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "应用管理",
+        "部署操作",
+        "日志查看",
+        "扩缩容"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-supabase-v2",
+      "name": "Supabase MCP Server v2",
+      "full_name": "@supabase/mcp-server-v2",
+      "category": "数据库",
+      "description": "Supabase MCP Server升级版，支持Edge Functions和Storage",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 2000,
+      "maintainer": "Supabase",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "数据库操作",
+        "Edge Functions",
+        "Storage管理",
+        "Auth管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-cloudflare-v2",
+      "name": "Cloudflare MCP Server v2",
+      "full_name": "@cloudflare/mcp-server-v2",
+      "category": "云平台",
+      "description": "Cloudflare MCP Server升级版，支持Workers和Pages部署",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 1800,
+      "maintainer": "Cloudflare",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Workers部署",
+        "DNS管理",
+        "CDN配置",
+        "Pages发布"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-notion-v2",
+      "name": "Notion MCP Server v2",
+      "full_name": "@notion/mcp-server-v2",
+      "category": "知识管理",
+      "description": "Notion MCP Server升级版，支持数据库操作和AI增强",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 3500,
+      "maintainer": "Notion",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "页面读写",
+        "数据库操作",
+        "搜索",
+        "AI增强"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-slack-v2",
+      "name": "Slack MCP Server v2",
+      "full_name": "@slack/mcp-server-v2",
+      "category": "通信",
+      "description": "Slack MCP Server升级版，支持频道管理和消息搜索",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2000,
+      "maintainer": "Slack",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "消息发送",
+        "频道管理",
+        "文件上传",
+        "搜索"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-aws-v2",
+      "name": "AWS MCP Server v2",
+      "full_name": "@aws/mcp-server-v2",
+      "category": "云平台",
+      "description": "AWS MCP Server升级版，支持多服务集成",
+      "protocol_version": "2025-11-25",
+      "auth": "IAM",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "IAM Role",
+      "stars": 3000,
+      "maintainer": "AWS",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "S3操作",
+        "Lambda管理",
+        "EC2管理",
+        "CloudWatch"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-playwright-v2",
+      "name": "Playwright MCP Server v2",
+      "full_name": "@playwright/mcp-server-v2",
+      "category": "浏览器自动化",
+      "description": "Playwright MCP Server升级版，支持AI驱动的浏览器操作",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "本地沙箱",
+      "stars": 5000,
+      "maintainer": "Microsoft",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "浏览器自动化",
+        "截图",
+        "表单填写",
+        "AI驱动操作"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-atlassian-rovo",
+      "name": "Atlassian Rovo MCP Server",
+      "full_name": "@atlassian/rovo-mcp-server",
+      "category": "项目管理",
+      "description": "Atlassian官方云托管MCP Server，连接Jira、Confluence、Compass，单一安全端点",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth 2.0",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0 / 云端托管",
+      "stars": 2200,
+      "maintainer": "Atlassian",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Jira Issue管理",
+        "Confluence文档搜索",
+        "Compass服务发现",
+        "云托管零配置"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-servicenow",
+      "name": "ServiceNow MCP Server",
+      "full_name": "servicenow-mcp-server",
+      "category": "ITSM",
+      "description": "ServiceNow IT服务管理MCP Server，支持Incident和Change管理",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth 2.0",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 600,
+      "maintainer": "ServiceNow",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Incident管理",
+        "Change管理",
+        "CMDB查询",
+        "知识库搜索"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-grafana",
+      "name": "Grafana MCP Server",
+      "full_name": "grafana-mcp-server",
+      "category": "监控",
+      "description": "Grafana可观测性平台MCP Server，支持Dashboard和告警管理",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 700,
+      "maintainer": "Grafana Labs",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Dashboard管理",
+        "数据源查询",
+        "告警规则",
+        "注解操作"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-portkey-agentforce",
+      "name": "Portkey AgentForce MCP",
+      "full_name": "@portkey/agentforce-mcp",
+      "category": "AI网关",
+      "description": "Portkey提供的AgentForce连接方案，通过MCP连接Salesforce等企业系统",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key + 网关",
+      "stars": 500,
+      "maintainer": "Portkey",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "企业系统连接",
+        "AI网关",
+        "多模型路由",
+        "可观测性"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-ahrefs-v2",
+      "name": "Ahrefs MCP Server v2",
+      "full_name": "@ahrefs/mcp-server",
+      "category": "SEO",
+      "description": "Ahrefs SEO分析工具MCP Server升级版，支持更丰富的SEO数据查询",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 800,
+      "maintainer": "Ahrefs",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "关键词研究",
+        "反向链接分析",
+        "SEO审计",
+        "竞品分析",
+        "排名追踪"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-shopify-v2",
+      "name": "Shopify MCP Server v2",
+      "full_name": "@shopify/mcp-server",
+      "category": "电商",
+      "description": "Shopify官方MCP Server，支持产品/订单/库存/客户管理",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 1500,
+      "maintainer": "Shopify",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "产品管理",
+        "订单处理",
+        "库存同步",
+        "客户分析",
+        "折扣管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-hubspot-v2",
+      "name": "HubSpot MCP Server v2",
+      "full_name": "@hubspot/mcp-server",
+      "category": "CRM",
+      "description": "HubSpot官方MCP Server，支持CRM全功能操作",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 1000,
+      "maintainer": "HubSpot",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRM操作",
+        "营销自动化",
+        "销售管道",
+        "客户服务",
+        "内容管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-vercel-ai-gateway",
+      "name": "Vercel AI Gateway MCP",
+      "full_name": "@vercel/ai-gateway-mcp",
+      "category": "AI网关",
+      "description": "Vercel AI Gateway MCP Server，统一多模型AI访问",
+      "protocol_version": "2025-11-25",
+      "auth": "API Token",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "Token权限",
+      "stars": 1200,
+      "maintainer": "Vercel",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "多模型路由",
+        "流式响应",
+        "缓存优化",
+        "Fallback策略"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-scrapling",
+      "name": "Scrapling MCP Server",
+      "category": "mcp_servers",
+      "description": "Adaptive web scraping framework with native MCP server integration for AI agents",
+      "github": "https://github.com/D4Vinci/Scrapling",
+      "pypi": "scrapling",
+      "version": "0.4.8",
+      "language": "Python",
+      "key_features": [
+        "Adaptive element tracking - survives website redesigns",
+        "Native anti-bot bypass (Cloudflare Turnstile etc.)",
+        "Three-tier Fetcher system (Fetcher/StealthyFetcher/DynamicFetcher)",
+        "Scrapy-like Spider framework with concurrent crawling",
+        "MCP Server for conversational scraping with AI agents",
+        "Auto-resuming spiders with pause/recovery",
+        "Real-time statistics and streaming"
+      ],
+      "fetcher_types": {
+        "Fetcher": "Basic HTTP requests",
+        "StealthyFetcher": "Stealth mode bypassing anti-bot detection",
+        "DynamicFetcher": "Handles JS-rendered pages"
+      },
+      "use_cases": [
+        "Data collection for knowledge bases",
+        "Anti-bot protected site scraping",
+        "Large-scale concurrent crawling",
+        "AI agent web interaction",
+        "Website change monitoring"
+      ],
+      "adaptive_feature": "Elements tracked by smart structure analysis, not fragile CSS selectors - survives website redesigns automatically",
+      "anti_bot": [
+        "Cloudflare Turnstile",
+        "DataDome",
+        "PerimeterX",
+        "Akamai Bot Manager"
+      ],
+      "installation": "pip install scrapling",
+      "mcp_setup": "Built-in MCP server for Claude/AI agent integration",
+      "stars": "5k+",
+      "license": "BSD-3",
+      "sources": [
+        "web_search",
+        "github"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T22:02:40.222Z",
+      "last_updated": "2026-05-31T22:02:40.222Z"
+    },
+    {
+      "id": "MCP-atlassian-remote",
+      "name": "Atlassian Remote MCP Server",
+      "full_name": "@atlassian/mcp-server",
+      "category": "项目管理",
+      "description": "Atlassian官方远程MCP Server，覆盖Jira、Confluence、Compass，2026年2月GA",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2100,
+      "maintainer": "Atlassian",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Jira操作",
+        "Confluence文档",
+        "Compass组件",
+        "远程部署"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-codex",
+      "name": "OpenAI Codex MCP Server",
+      "full_name": "@openai/codex-mcp",
+      "category": "代码",
+      "description": "OpenAI Codex代码生成和执行MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 1800,
+      "maintainer": "OpenAI",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "代码生成",
+        "代码执行",
+        "代码审查",
+        "多语言支持"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-truto",
+      "name": "Truto MCP Server",
+      "full_name": "truto-mcp-server",
+      "category": "API",
+      "description": "统一API集成平台MCP Server，支持100+ SaaS应用",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 600,
+      "maintainer": "Truto",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "100+ SaaS集成",
+        "统一API",
+        "数据同步",
+        "CRUD操作"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-skyvia-v2",
+      "name": "Skyvia MCP Server v2",
+      "full_name": "skyvia-mcp-v2",
+      "category": "数据集成",
+      "description": "Skyvia数据集成平台MCP Server升级版，支持实时数据管道",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 900,
+      "maintainer": "Skyvia",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "实时数据管道",
+        "ETL/ELT",
+        "云数据库同步",
+        "数据备份"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-prefect",
+      "name": "Prefect MCP Server",
+      "full_name": "prefect-mcp-server",
+      "category": "工作流",
+      "description": "Prefect工作流编排平台MCP Server，AI Agent工作流管理",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 700,
+      "maintainer": "Prefect",
+      "status": "active",
+      "language": "Python",
+      "features": [
+        "工作流编排",
+        "任务调度",
+        "监控告警",
+        "数据管道"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-titanapps",
+      "name": "Titan Apps Jira MCP",
+      "full_name": "titanapps-jira-mcp",
+      "category": "项目管理",
+      "description": "云端托管的Jira MCP Server，支持Jira/Confluence/Compass",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "云端OAuth",
+      "stars": 400,
+      "maintainer": "Titan Apps",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "云端部署",
+        "Jira集成",
+        "Confluence集成",
+        "无需本地安装"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-instatunnel",
+      "name": "Instatunnel MCP Server",
+      "full_name": "instatunnel-mcp",
+      "category": "安全",
+      "description": "MCP Server安全隧道，保护远程MCP连接",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "端到端加密",
+      "stars": 300,
+      "maintainer": "Instatunnel",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "安全隧道",
+        "远程访问",
+        "加密传输",
+        "审计日志"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mcpmarket",
+      "name": "MCPMarket Registry",
+      "full_name": "mcpmarket-registry",
+      "category": "发现",
+      "description": "MCP Server市场与注册中心，每日更新排名",
+      "protocol_version": "2025-11-25",
+      "auth": "none",
+      "hosts": [
+        "Web"
+      ],
+      "security": "公开",
+      "stars": 500,
+      "maintainer": "MCPMarket",
+      "status": "active",
+      "language": "Web",
+      "features": [
+        "Server发现",
+        "排名追踪",
+        "社区评价",
+        "每日更新"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-totalum",
+      "name": "Totalum MCP Server",
+      "full_name": "totalum-mcp",
+      "category": "CRM",
+      "description": "Totalum CRM/ERP平台MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 200,
+      "maintainer": "Totalum",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "CRM操作",
+        "ERP集成",
+        "数据管理",
+        "报表生成"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-tokenmix",
+      "name": "TokenMix MCP Directory",
+      "full_name": "tokenmix-mcp-directory",
+      "category": "发现",
+      "description": "70+生产级MCP Server目录，2026完整指南",
+      "protocol_version": "2025-11-25",
+      "auth": "none",
+      "hosts": [
+        "Web"
+      ],
+      "security": "公开",
+      "stars": 300,
+      "maintainer": "TokenMix",
+      "status": "active",
+      "language": "Web",
+      "features": [
+        "Server目录",
+        "生产级筛选",
+        "使用指南",
+        "分类浏览"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-cf-d1",
+      "name": "Cloudflare D1 Remote MCP Server",
+      "type": "mcp_server",
+      "category": "database",
+      "description": "Cloudflare D1 SQLite数据库远程MCP Server，2026年4月发布，支持AI Agent直接查询D1数据库",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-r2",
+      "name": "Cloudflare R2 Remote MCP Server",
+      "type": "mcp_server",
+      "category": "storage",
+      "description": "Cloudflare R2对象存储远程MCP Server，2026年4月发布，支持AI Agent读写R2存储桶",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-workers-logs",
+      "name": "Cloudflare Workers Logs MCP Server",
+      "type": "mcp_server",
+      "category": "monitoring",
+      "description": "Cloudflare Workers日志远程MCP Server，2026年4月发布，支持AI Agent查询和分析Workers运行日志",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-containers",
+      "name": "Cloudflare Containers MCP Server",
+      "type": "mcp_server",
+      "category": "compute",
+      "description": "Cloudflare容器服务远程MCP Server，2026年4月发布，支持AI Agent管理容器化工作负载",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-kv",
+      "name": "Cloudflare KV Remote MCP Server",
+      "type": "mcp_server",
+      "category": "database",
+      "description": "Cloudflare KV键值存储远程MCP Server，支持AI Agent读写全球分布式KV存储",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-queues",
+      "name": "Cloudflare Queues MCP Server",
+      "type": "mcp_server",
+      "category": "messaging",
+      "description": "Cloudflare消息队列远程MCP Server，支持AI Agent发送和消费队列消息",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-durable-objects",
+      "name": "Cloudflare Durable Objects MCP Server",
+      "type": "mcp_server",
+      "category": "compute",
+      "description": "Cloudflare Durable Objects远程MCP Server，支持AI Agent管理有状态计算对象",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-workers-ai",
+      "name": "Cloudflare Workers AI MCP Server",
+      "type": "mcp_server",
+      "category": "ai_inference",
+      "description": "Cloudflare Workers AI推理远程MCP Server，支持AI Agent调用边缘AI模型推理",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-pages",
+      "name": "Cloudflare Pages MCP Server",
+      "type": "mcp_server",
+      "category": "deployment",
+      "description": "Cloudflare Pages部署远程MCP Server，支持AI Agent管理静态站点和全栈应用部署",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-images",
+      "name": "Cloudflare Images MCP Server",
+      "type": "mcp_server",
+      "category": "media",
+      "description": "Cloudflare图片服务远程MCP Server，支持AI Agent上传、转换和管理图片",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-stream",
+      "name": "Cloudflare Stream MCP Server",
+      "type": "mcp_server",
+      "category": "media",
+      "description": "Cloudflare视频流远程MCP Server，支持AI Agent上传和管理视频内容",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-email-workers",
+      "name": "Cloudflare Email Workers MCP Server",
+      "type": "mcp_server",
+      "category": "email",
+      "description": "Cloudflare邮件Workers远程MCP Server，支持AI Agent处理和发送电子邮件",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-cf-turnstile",
+      "name": "Cloudflare Turnstile MCP Server",
+      "type": "mcp_server",
+      "category": "security",
+      "description": "Cloudflare Turnstile验证远程MCP Server，支持AI Agent管理CAPTCHA验证和机器人防护",
+      "vendor": "Cloudflare",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2026-04",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-exa-search",
+      "name": "Exa Real-Time Web Search MCP Server",
+      "type": "mcp_server",
+      "category": "search",
+      "description": "Exa高级实时网络搜索MCP Server，支持语义搜索和实时信息检索，2026年Vibe Coding热门工具",
+      "vendor": "Exa",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2025",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-context7-docs",
+      "name": "Context7 Documentation MCP Server",
+      "type": "mcp_server",
+      "category": "documentation",
+      "description": "Context7最新代码文档MCP Server，支持AI Agent获取最新的库和框架文档，2026年Vibe Coding热门工具",
+      "vendor": "Context7",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2025",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-firecrawl-scraping",
+      "name": "Firecrawl Web Scraping MCP Server",
+      "type": "mcp_server",
+      "category": "web_scraping",
+      "description": "Firecrawl网页抓取MCP Server，支持AI Agent抓取和解析网页内容，2026年开发者Top 10 MCP Server",
+      "vendor": "Firecrawl",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2025",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MCP-browserbase",
+      "name": "Browserbase Browser Automation MCP Server",
+      "type": "mcp_server",
+      "category": "browser_automation",
+      "description": "Browserbase浏览器自动化MCP Server，支持AI Agent在云端浏览器中执行操作，2026年开发者Top 10",
+      "vendor": "Browserbase",
+      "protocol": "MCP",
+      "deployment": "remote",
+      "release_date": "2025",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "mcp-speakeasy",
+      "name": "Speakeasy MCP Server",
+      "type": "api_tooling",
+      "description": "Speakeasy提供的MCP Server，用于API开发和SDK生成，支持MCP协议规范发布管理",
+      "company": "Speakeasy",
+      "category": "developer_tools",
+      "key_features": [
+        "API SDK生成",
+        "MCP规范发布管理",
+        "多语言SDK支持",
+        "API测试"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-pgedge",
+      "name": "pgEdge MCP Server",
+      "type": "database",
+      "description": "pgEdge分布式PostgreSQL的MCP Server，支持多区域数据库管理和低延迟数据访问",
+      "company": "pgEdge",
+      "category": "database",
+      "key_features": [
+        "分布式PostgreSQL",
+        "多区域复制",
+        "低延迟访问",
+        "SQL操作"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-scalekit",
+      "name": "Scalekit MCP Server",
+      "type": "auth_benchmark",
+      "description": "Scalekit认证和基准测试MCP Server，提供MCP Server性能基准测试数据",
+      "company": "Scalekit",
+      "category": "developer_tools",
+      "key_features": [
+        "MCP性能基准",
+        "认证集成",
+        "SAML/SSO",
+        "多租户"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-composio",
+      "name": "Composio MCP Server",
+      "type": "tool_integration",
+      "description": "Composio工具集成平台MCP Server，支持250+工具和应用集成，Agent工具调用中间件",
+      "company": "Composio",
+      "category": "integration",
+      "key_features": [
+        "250+工具集成",
+        "Agent工具调用",
+        "OAuth管理",
+        "多平台支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-smithery",
+      "name": "Smithery MCP Registry",
+      "type": "registry",
+      "description": "Smithery MCP Server市场，MCP Server发现和部署平台，提供服务器目录和一键部署",
+      "company": "Smithery",
+      "category": "registry",
+      "key_features": [
+        "MCP Server市场",
+        "一键部署",
+        "服务器发现",
+        "版本管理"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-cursor",
+      "name": "Cursor MCP Server",
+      "type": "ide_integration",
+      "description": "Cursor IDE的MCP Server集成，支持AI编程助手的工具调用和代码上下文管理",
+      "company": "Cursor/Anysphere",
+      "category": "developer_tools",
+      "key_features": [
+        "IDE集成",
+        "代码上下文",
+        "AI编程助手",
+        "工具调用"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-claude-desktop",
+      "name": "Claude Desktop MCP Host",
+      "type": "desktop_host",
+      "description": "Claude Desktop作为MCP Host，支持连接多个MCP Server，是MCP生态最广泛使用的客户端",
+      "company": "Anthropic",
+      "category": "host",
+      "key_features": [
+        "MCP Host客户端",
+        "多Server连接",
+        "桌面集成",
+        "工具发现"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-replit",
+      "name": "Replit MCP Server",
+      "type": "development",
+      "description": "Replit开发环境的MCP Server，支持云端开发环境的工具调用和代码执行",
+      "company": "Replit",
+      "category": "developer_tools",
+      "key_features": [
+        "云端开发",
+        "代码执行",
+        "环境管理",
+        "协作开发"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-stainless",
+      "name": "Stainless MCP Server",
+      "type": "api_tooling",
+      "description": "Stainless API标准MCP Server，支持API规范生成和SDK自动构建",
+      "company": "Stainless",
+      "category": "developer_tools",
+      "key_features": [
+        "API规范生成",
+        "SDK自动构建",
+        "OpenAPI支持",
+        "多语言"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "mcp-tyk-security",
+      "name": "Tyk MCP Security Gateway",
+      "type": "security",
+      "description": "Tyk企业MCP安全网关，提供MCP Server安全策略执行、认证和监控",
+      "company": "Tyk",
+      "category": "security",
+      "key_features": [
+        "安全策略执行",
+        "认证管理",
+        "性能监控",
+        "企业级"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-stackgen",
+      "name": "StackGen MCP Server",
+      "full_name": "stackgen-mcp",
+      "category": "部署",
+      "description": "StackGen部署自动化MCP Server，减少部署时间从天到分钟",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 400,
+      "maintainer": "StackGen",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "部署自动化",
+        "基础设施生成",
+        "分钟级部署"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-mcpmanager",
+      "name": "MCP Manager Server",
+      "full_name": "mcpmanager-mcp",
+      "category": "管理",
+      "description": "MCP Server管理工具，支持发现、安装和配置MCP Server",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地沙箱",
+      "stars": 800,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Server发现",
+        "安装管理",
+        "配置同步"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-workos",
+      "name": "WorkOS MCP Server",
+      "full_name": "workos-mcp",
+      "category": "认证",
+      "description": "WorkOS身份认证MCP Server，支持SSO、目录同步和身份管理",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "API Key",
+      "stars": 500,
+      "maintainer": "WorkOS",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "SSO认证",
+        "目录同步",
+        "身份管理"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-shareuhack",
+      "name": "Shareuhack Dev MCP",
+      "full_name": "shareuhack-dev-mcp",
+      "category": "开发",
+      "description": "开发者工具MCP Server集合，集成多种开发辅助工具",
+      "protocol_version": "2025-11-25",
+      "auth": "none",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "本地沙箱",
+      "stars": 300,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "代码辅助",
+        "开发工具",
+        "调试支持"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-rasa",
+      "name": "Rasa MCP Server",
+      "full_name": "rasa-mcp",
+      "category": "AI",
+      "description": "Rasa对话AI平台MCP Server，支持企业级对话Agent构建",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "API Key",
+      "stars": 700,
+      "maintainer": "Rasa",
+      "status": "active",
+      "language": "Python",
+      "features": [
+        "对话AI",
+        "意图识别",
+        "企业级NLU"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-context7",
+      "name": "Context7 MCP Server",
+      "full_name": "context7-mcp",
+      "category": "文档",
+      "description": "Context7拉取最新版本特定文档和代码示例到LLM上下文，解决过时文档问题",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "security": "API Key",
+      "stars": 5000,
+      "maintainer": "Context7",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "实时文档",
+        "版本特定",
+        "代码示例",
+        "自动更新"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-proxyman",
+      "name": "Proxyman MCP Server",
+      "full_name": "proxyman-mcp",
+      "category": "调试",
+      "description": "Proxyman网络调试MCP Server，支持HTTP/HTTPS流量检查和分析",
+      "protocol_version": "2025-11-25",
+      "auth": "local",
+      "hosts": [
+        "Claude Desktop"
+      ],
+      "security": "本地沙箱",
+      "stars": 1500,
+      "maintainer": "Proxyman",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "网络调试",
+        "流量分析",
+        "HTTP检查",
+        "HTTPS解密"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-atlassian",
+      "name": "Atlassian MCP Server",
+      "full_name": "atlassian-mcp",
+      "category": "项目管理",
+      "description": "Atlassian Jira/Confluence集成MCP Server，支持项目管理和知识库操作",
+      "protocol_version": "2025-11-25",
+      "auth": "OAuth",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "security": "OAuth 2.0",
+      "stars": 2500,
+      "maintainer": "Atlassian",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "Jira集成",
+        "Confluence操作",
+        "项目管理",
+        "知识库"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-tessl",
+      "name": "Tessl MCP Server",
+      "full_name": "tessl-mcp",
+      "category": "开发",
+      "description": "Tessl开发工具MCP Server，12种开发者生产力工具集合",
+      "protocol_version": "2025-11-25",
+      "auth": "API Key",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "security": "API Key",
+      "stars": 800,
+      "maintainer": "Tessl",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "开发工具",
+        "生产力",
+        "多工具集成",
+        "代码辅助"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-playwright-mcp",
+      "name": "Playwright MCP",
+      "category": "browser-automation",
+      "description": "Playwright MCP server ranked #1 globally in 2026, beating GitHub and Figma MCP servers. Enables browser automation via MCP protocol.",
+      "features": [
+        "browser automation",
+        "web scraping",
+        "page interaction",
+        "screenshot capture"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://mcpmanager.ai/blog/most-popular-mcp-servers",
+        "https://www.reddit.com/r/mcp/comments/1s3fu45/top_50_most_popular_mcp_servers_in_2026"
+      ]
+    },
+    {
+      "id": "MCP-registry",
+      "name": "MCP Registry",
+      "category": "registry",
+      "description": "Official MCP Registry launched September 2025, growing to nearly 2,000 server entries within months. Central hub for discovering MCP servers.",
+      "features": [
+        "server discovery",
+        "registry",
+        "metadata indexing",
+        "community catalog"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://workos.com/blog/everything-your-team-needs-to-know-about-mcp-in-2026"
+      ]
+    },
+    {
+      "id": "MCP-firecrawl",
+      "name": "Firecrawl MCP Server",
+      "category": "web-scraping",
+      "description": "Web scraping MCP server by Firecrawl. Listed among top 10 MCP servers for developers in 2026.",
+      "features": [
+        "web scraping",
+        "data extraction",
+        "crawling",
+        "structured output"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.firecrawl.dev/blog/best-mcp-servers-for-developers"
+      ]
+    },
+    {
+      "id": "MCP-knit",
+      "name": "Knit MCP Server",
+      "category": "integration",
+      "description": "MCP integration server by GetKnit. Part of the 2026 MCP roadmap for AI integration.",
+      "features": [
+        "AI integration",
+        "tool connectivity",
+        "data bridging"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://www.getknit.dev/blog/the-future-of-mcp-roadmap-enhancements-and-whats-next"
+      ]
+    },
+    {
+      "id": "MCP-mcpmanager",
+      "name": "MCP Manager",
+      "category": "management",
+      "description": "MCP server management platform tracking top 50 most popular MCP servers globally. Provides analytics and rankings.",
+      "features": [
+        "server management",
+        "analytics",
+        "rankings",
+        "popularity tracking"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://mcpmanager.ai/blog/most-popular-mcp-servers"
+      ]
+    },
+    {
+      "id": "MCP-extensions-2026",
+      "name": "MCP Extensions Framework",
+      "full_name": "Model Context Protocol Extensions",
+      "category": "协议扩展",
+      "description": "MCP 2026-07-28 RC版本引入Extensions框架，允许社区扩展MCP核心协议而不破坏兼容性，支持自定义工具类型和资源格式",
+      "protocol_version": "2026-07-28-RC",
+      "auth": "varies",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code",
+        "所有MCP客户端"
+      ],
+      "security": "扩展沙箱",
+      "stars": 0,
+      "maintainer": "Anthropic + 社区",
+      "status": "active",
+      "language": "TypeScript/Python",
+      "features": [
+        "自定义工具类型",
+        "资源格式扩展",
+        "协议兼容性保证",
+        "社区扩展生态"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-stateless-core",
+      "name": "MCP Stateless Protocol Core",
+      "full_name": "MCP Stateless Core",
+      "category": "协议核心",
+      "description": "MCP 2026-07-28 RC版本引入无状态协议核心，解决有状态连接的可扩展性问题，支持HTTP无状态调用和大规模Agent部署",
+      "protocol_version": "2026-07-28-RC",
+      "auth": "varies",
+      "hosts": [
+        "所有MCP客户端"
+      ],
+      "security": "无状态安全",
+      "stars": 0,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "TypeScript",
+      "features": [
+        "无状态调用",
+        "HTTP扩展",
+        "大规模部署支持",
+        "向后兼容"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-aishield-scanner",
+      "name": "AIShield MCP Scanner",
+      "full_name": "aishield-mcp",
+      "category": "安全扫描",
+      "description": "Agent原生AI工具安全扫描器。扫描MCP Server/GPT/Skill/Prompt的安全风险，4维评分(安全/隐私/质量/性能)，119条规则覆盖OWASP MCP Top 10",
+      "protocol_version": "2025-03-26",
+      "auth": "API Key (免费5次/天)",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code",
+        "Cline"
+      ],
+      "security": "4维评分+认证徽章",
+      "stars": 0,
+      "maintainer": "lm203688",
+      "status": "active",
+      "language": "JavaScript/Python",
+      "features": [
+        "MCP安全扫描",
+        "GPT安全扫描",
+        "Prompt注入检测",
+        "供应链分析",
+        "凭证泄露检测",
+        "认证徽章",
+        "批量扫描"
+      ],
+      "install": "npx aishield-mcp",
+      "github": "https://github.com/lm203688/aishield",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://github.com/lm203688/aishield",
+          "collected_at": "2026-06-18T09:19:49.000Z"
+        }
+      ]
+    },
+    {
+      "id": "MCP-aishield-guardrail",
+      "name": "AIShield Guardrail MCP",
+      "full_name": "aishield-guardrail",
+      "category": "安全防护",
+      "description": "杀手级产品：拦截Agent工具安装，自动触发安全扫描。放在MCP列表第一个，所有tool_install请求先扫描后放行",
+      "protocol_version": "2025-03-26",
+      "auth": "API Key (可选)",
+      "hosts": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code",
+        "Cline"
+      ],
+      "security": "主动拦截+自动阻断",
+      "stars": 0,
+      "maintainer": "lm203688",
+      "status": "active",
+      "language": "JavaScript",
+      "features": [
+        "工具安装拦截",
+        "自动安全扫描",
+        "不安全工具阻断",
+        "可配置阈值",
+        "实时告警"
+      ],
+      "install": "npx aishield-guardrail",
+      "github": "https://github.com/lm203688/aishield",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://github.com/lm203688/aishield",
+          "collected_at": "2026-06-18T09:19:49.000Z"
+        }
+      ]
+    },
+    {
+      "name": "GitHub MCP Server",
+      "full_name": "Official GitHub MCP Server",
+      "category": "Code Repository Integration",
+      "description": "Official server providing GitHub repository integration for AI models, enabling code browsing, PR management, and issue tracking.",
+      "protocol_version": "2025-04-public-preview",
+      "auth": "OAuth (GitHub PAT)",
+      "hosts": [
+        "GitHub",
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "features": [
+        "Repository search",
+        "PR review",
+        "Issue management",
+        "Code browsing"
+      ],
+      "sources": [
+        "[2]"
+      ],
+      "id": "MCP-164"
+    },
+    {
+      "name": "Anthropic MCP SDK",
+      "full_name": "Model Context Protocol SDK (Anthropic)",
+      "category": "Core SDK / Reference Implementation",
+      "description": "Reference implementation and SDK for building MCP-compatible clients and servers, developed by Anthropic.",
+      "protocol_version": "2025-03-26",
+      "auth": "N/A",
+      "hosts": [
+        "Anthropic Claude",
+        "Open-source"
+      ],
+      "features": [
+        "Client library",
+        "Server framework",
+        "JSON-RPC transport",
+        "Tool/resource/prompt definitions"
+      ],
+      "sources": [
+        "[7]",
+        "[9]",
+        "[10]"
+      ],
+      "id": "MCP-165"
+    },
+    {
+      "name": "WorkOS MCP Integration",
+      "full_name": "WorkOS MCP Server",
+      "category": "Authentication & User Management",
+      "description": "Server integrating WorkOS authentication and user management capabilities into MCP-enabled AI applications.",
+      "protocol_version": "2025-03-26",
+      "auth": "WorkOS API Key + OAuth",
+      "hosts": [
+        "WorkOS Platform"
+      ],
+      "features": [
+        "SSO/OIDC",
+        "User provisioning",
+        "Role-based access",
+        "Directory sync"
+      ],
+      "sources": [
+        "[3]"
+      ],
+      "id": "MCP-166"
+    },
+    {
+      "name": "Linux Foundation MCP WG",
+      "full_name": "Model Context Protocol Working Group (Linux Foundation)",
+      "category": "Standardization / Governance Body",
+      "description": "Multi-company open standard governance body under the Linux Foundation managing MCP specification evolution through Working Groups.",
+      "protocol_version": "SEP-1302",
+      "auth": "LF Membership",
+      "hosts": [
+        "Linux Foundation",
+        "modelcontextprotocol.io"
+      ],
+      "features": [
+        "Specification management",
+        "Working groups",
+        "Interest groups",
+        "Release candidates"
+      ],
+      "sources": [
+        "[1]",
+        "[4]"
+      ],
+      "id": "MCP-167"
+    },
+    {
+      "name": "Firecrawl MCP",
+      "full_name": "Firecrawl Web Scraping MCP Server",
+      "category": "Web Data Extraction",
+      "description": "MCP server for web scraping, crawling, and extracting structured data from websites.",
+      "protocol_version": "2025-03-26",
+      "auth": "API Key",
+      "hosts": [
+        "firecrawl.dev"
+      ],
+      "features": [
+        "Web scraping",
+        "Browser automation",
+        "Data extraction",
+        "Site crawling"
+      ],
+      "sources": [
+        "[6]"
+      ],
+      "id": "MCP-168"
+    },
+    {
+      "name": "Speakeasy MCP",
+      "full_name": "Speakeasy SDK Generation MCP Server",
+      "category": "Developer Tooling",
+      "description": "MCP server supporting API SDK generation, tool standardization, and authorization transport for developer workflows.",
+      "protocol_version": "2025-03-26",
+      "auth": "API Key / OAuth",
+      "hosts": [
+        "speakeasy.com"
+      ],
+      "features": [
+        "SDK generation",
+        "Tool standardization",
+        "Authorization management",
+        "Transport layer support"
+      ],
+      "sources": [
+        "[7]"
+      ],
+      "id": "MCP-169"
+    },
+    {
+      "name": "WorkOS MCP",
+      "full_name": "WorkOS Identity & Auth MCP Server",
+      "category": "Authentication & Identity",
+      "description": "MCP server integrating AI models with external identity providers, authentication flows, and user management systems.",
+      "protocol_version": "2025-03-26",
+      "auth": "OAuth / SSO",
+      "hosts": [
+        "workos.com"
+      ],
+      "features": [
+        "User authentication",
+        "SSO integration",
+        "Identity provisioning",
+        "External tool connectivity"
+      ],
+      "sources": [
+        "[3]"
+      ],
+      "id": "MCP-170"
+    },
+    {
+      "name": "Anthropic Code Execution MCP",
+      "full_name": "Anthropic Code Execution MCP Server",
+      "category": "Code Execution & Agent Tools",
+      "description": "MCP server enabling AI agents to execute code safely in sandboxed environments and interact with external systems programmatically.",
+      "protocol_version": "2025-03-26",
+      "auth": "Anthropic API Key",
+      "hosts": [
+        "anthropic.com"
+      ],
+      "features": [
+        "Secure code execution",
+        "Sandboxed runtime",
+        "Agent tool integration",
+        "Two-way data connection"
+      ],
+      "sources": [
+        "[10]",
+        "[9]"
+      ],
+      "id": "MCP-171"
+    },
+    {
+      "id": "MCP-172",
+      "name": "MCP 2026-07 规范候选版",
+      "full_name": "MCP Specification 2026-07-28 RC",
+      "category": "协议规范",
+      "description": "MCP 2026年7月规范候选版发布：无状态协议核心、Extensions框架、Tasks、MCP Apps等重大更新",
+      "protocol_version": "2026-07-28",
+      "auth": "OAuth 2.1",
+      "hosts": [
+        "Claude Desktop",
+        "VS Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "security": "企业级",
+      "stars": 0,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "N/A",
+      "features": [
+        "无状态协议核心",
+        "Extensions框架",
+        "Tasks",
+        "MCP Apps"
+      ]
+    },
+    {
+      "id": "MCP-173",
+      "name": "MCP企业部署指南 2026",
+      "full_name": "MCP Enterprise Deployment Guide",
+      "category": "企业部署",
+      "description": "2026年MCP企业部署完整指南：JSON-RPC规范、OAuth 2.1安全、可观测性模式和部署路线图",
+      "protocol_version": "2025-06-18+",
+      "auth": "OAuth 2.1",
+      "hosts": [
+        "Enterprise"
+      ],
+      "security": "企业级安全",
+      "stars": 0,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "N/A",
+      "features": [
+        "OAuth 2.1",
+        "可观测性",
+        "企业部署路线图"
+      ]
+    },
+    {
+      "id": "MCP-174",
+      "name": "MCP Extensions框架",
+      "full_name": "MCP Extensions Framework",
+      "category": "扩展框架",
+      "description": "MCP Extensions框架允许社区构建可复用的协议扩展，支持自定义能力和工具集成",
+      "protocol_version": "2026-07-28",
+      "auth": "varies",
+      "hosts": [
+        "兼容MCP客户端"
+      ],
+      "security": "扩展定义",
+      "stars": 0,
+      "maintainer": "Anthropic+社区",
+      "status": "active",
+      "language": "TypeScript/Python",
+      "features": [
+        "可扩展架构",
+        "社区扩展",
+        "自定义工具"
+      ]
+    },
+    {
+      "id": "MCP-175",
+      "name": "MCP Apps",
+      "full_name": "MCP Apps",
+      "category": "应用框架",
+      "description": "MCP Apps是MCP 2026规范引入的应用层概念，支持构建完整的MCP原生应用",
+      "protocol_version": "2026-07-28",
+      "auth": "varies",
+      "hosts": [
+        "MCP兼容平台"
+      ],
+      "security": "应用级",
+      "stars": 0,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "Multi",
+      "features": [
+        "应用层抽象",
+        "原生MCP应用",
+        "端到端工具链"
+      ]
+    },
+    {
+      "id": "MCP-176",
+      "name": "MCP Tasks",
+      "full_name": "MCP Tasks",
+      "category": "任务调度",
+      "description": "MCP Tasks是2026规范引入的任务调度机制，支持异步任务和长运行操作",
+      "protocol_version": "2026-07-28",
+      "auth": "varies",
+      "hosts": [
+        "MCP兼容客户端"
+      ],
+      "security": "任务级",
+      "stars": 0,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "Multi",
+      "features": [
+        "异步任务",
+        "长运行操作",
+        "任务状态追踪"
+      ]
+    },
+    {
+      "id": "MCP-177",
+      "name": "MCP无状态协议核心",
+      "full_name": "MCP Stateless Core",
+      "category": "协议核心",
+      "description": "MCP 2026规范将协议核心重构为无状态设计，简化扩展和部署，提高可伸缩性",
+      "protocol_version": "2026-07-28",
+      "auth": "varies",
+      "hosts": [
+        "全平台"
+      ],
+      "security": "无状态安全",
+      "stars": 0,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "language": "N/A",
+      "features": [
+        "无状态设计",
+        "高可伸缩",
+        "简化部署"
+      ]
+    },
+    {
+      "id": "MCP-178",
+      "name": "MCP生态统计 2026",
+      "full_name": "MCP Ecosystem Stats 2026",
+      "category": "生态统计",
+      "description": "2026年MCP采用统计：已验证服务器数量、GitHub生态信号、企业生产数据和集成覆盖",
+      "protocol_version": "N/A",
+      "auth": "N/A",
+      "hosts": [
+        "N/A"
+      ],
+      "security": "N/A",
+      "stars": 0,
+      "maintainer": "社区",
+      "status": "active",
+      "language": "N/A",
+      "features": [
+        "生态数据",
+        "采用统计",
+        "企业生产指标"
+      ]
+    },
+    {
+      "id": "MCP-179",
+      "name": "postgres-connector",
+      "full_name": "PostgreSQL Database Connector",
+      "category": "Database",
+      "description": "Read/write access to PostgreSQL databases with query validation and parameterized statement support."
+    },
+    {
+      "id": "MCP-180",
+      "name": "sqlite-tools",
+      "full_name": "SQLite File System Connector",
+      "category": "Database",
+      "description": "Lightweight local SQLite database integration for schema inspection and data queries."
+    },
+    {
+      "id": "MCP-181",
+      "name": "rest-api-client",
+      "full_name": "Generic REST API Tool",
+      "category": "API",
+      "description": "Execute HTTP requests against arbitrary REST endpoints with configurable headers and authentication."
+    },
+    {
+      "id": "MCP-182",
+      "name": "graphql-fetcher",
+      "full_name": "GraphQL Schema Explorer",
+      "category": "API",
+      "description": "Introspect and query GraphQL APIs with schema discovery and typed response handling."
+    },
+    {
+      "id": "MCP-183",
+      "name": "local-fs",
+      "full_name": "Local File System Connector",
+      "category": "File System",
+      "description": "Safe read/write/list operations on local directories with path traversal protection."
+    },
+    {
+      "id": "MCP-184",
+      "name": "s3-storage",
+      "full_name": "AWS S3 Cloud Storage",
+      "category": "Cloud Service",
+      "description": "Upload, download, and list objects in Amazon S3 buckets with IAM credential support."
+    },
+    {
+      "id": "MCP-185",
+      "name": "gcp-cloudsql",
+      "full_name": "Google Cloud SQL Connector",
+      "category": "Database",
+      "description": "Connect to Google Cloud SQL instances for MySQL and PostgreSQL with managed authentication."
+    },
+    {
+      "id": "MCP-186",
+      "name": "azure-blob",
+      "full_name": "Azure Blob Storage Connector",
+      "category": "Cloud Service",
+      "description": "Manage Azure Blob Storage containers and blobs with SAS token or managed identity auth."
+    },
+    {
+      "id": "MCP-187",
+      "name": "docker-manager",
+      "full_name": "Docker Container Tool",
+      "category": "Dev Tool",
+      "description": "Inspect, start, stop, and list Docker containers and images via the local Docker daemon."
+    },
+    {
+      "id": "MCP-188",
+      "name": "k8s-cluster",
+      "full_name": "Kubernetes Cluster Connector",
+      "category": "Dev Tool",
+      "description": "Query pods, services, deployments, and events from a Kubernetes cluster using kubeconfig."
+    },
+    {
+      "id": "MCP-189",
+      "name": "github-repo",
+      "full_name": "GitHub Repository Tool",
+      "category": "Dev Tool",
+      "description": "List repos, read files, search issues, and manage pull requests via the GitHub API."
+    },
+    {
+      "id": "MCP-190",
+      "name": "gitlab-project",
+      "full_name": "GitLab Project Connector",
+      "category": "Dev Tool",
+      "description": "Access GitLab projects, read source files, and query merge requests programmatically."
+    },
+    {
+      "id": "MCP-191",
+      "name": "mongodb-driver",
+      "full_name": "MongoDB NoSQL Connector",
+      "category": "Database",
+      "description": "Query and aggregate data from MongoDB instances with connection string authentication."
+    },
+    {
+      "id": "MCP-192",
+      "name": "redis-cache",
+      "full_name": "Redis Cache Manager",
+      "category": "Database",
+      "description": "Read/write/cache keys in Redis with support for string, hash, and list data structures."
+    },
+    {
+      "id": "MCP-193",
+      "name": "terraform-state",
+      "full_name": "Terraform State Remote Backend",
+      "category": "Dev Tool",
+      "description": "Read and inspect Terraform state files stored in remote backends like S3 or GCS."
+    },
+    {
+      "id": "MCP-194",
+      "name": "postgres-server",
+      "full_name": "PostgreSQL Database Connector",
+      "category": "Database Connector",
+      "description": "Connects to PostgreSQL databases for querying, schema inspection, and transactional operations."
+    },
+    {
+      "id": "MCP-195",
+      "name": "mysql-server",
+      "full_name": "MySQL Database Connector",
+      "category": "Database Connector",
+      "description": "Provides read/write access to MySQL databases with support for complex queries and migrations."
+    },
+    {
+      "id": "MCP-196",
+      "name": "sqlite-server",
+      "full_name": "SQLite File-Based Database",
+      "category": "Database Connector",
+      "description": "Lightweight serverless SQLite connector for local development and small-scale data storage."
+    },
+    {
+      "id": "MCP-197",
+      "name": "mongodb-server",
+      "full_name": "MongoDB Document Store Connector",
+      "category": "Database Connector",
+      "description": "Connects to MongoDB clusters for document CRUD, aggregation pipelines, and indexing."
+    },
+    {
+      "id": "MCP-198",
+      "name": "github-server",
+      "full_name": "GitHub Repository & API Tool",
+      "category": "API Tool",
+      "description": "Interacts with GitHub REST/GraphQL APIs for issues, PRs, repos, and code review workflows."
+    },
+    {
+      "id": "MCP-199",
+      "name": "gitlab-server",
+      "full_name": "GitLab CI/CD & Repo Tool",
+      "category": "API Tool",
+      "description": "Manages GitLab projects, merge requests, CI pipelines, and issues via the GitLab API."
+    },
+    {
+      "id": "MCP-200",
+      "name": "slack-server",
+      "full_name": "Slack Messaging Connector",
+      "category": "API Tool",
+      "description": "Sends messages, manages channels, and integrates with Slack workspaces for team communication."
+    },
+    {
+      "id": "MCP-201",
+      "name": "jira-server",
+      "full_name": "Atlassian Jira Project Tracker",
+      "category": "API Tool",
+      "description": "Queries and updates Jira tickets, sprints, and boards for agile project management."
+    },
+    {
+      "id": "MCP-202",
+      "name": "filesystem-server",
+      "full_name": "Local File System Access",
+      "category": "File System",
+      "description": "Reads, writes, searches, and manipulates files on the local disk with path-safe operations."
+    },
+    {
+      "id": "MCP-203",
+      "name": "gdrive-server",
+      "full_name": "Google Drive Cloud Storage",
+      "category": "Cloud Service",
+      "description": "Accesses Google Drive for file upload, download, sharing, and folder management."
+    },
+    {
+      "id": "MCP-204",
+      "name": "aws-s3-server",
+      "full_name": "AWS S3 Object Storage",
+      "category": "Cloud Service",
+      "description": "Interacts with Amazon S3 buckets for storing and retrieving objects and managing permissions."
+    },
+    {
+      "id": "MCP-205",
+      "name": "docker-server",
+      "full_name": "Docker Container Management",
+      "category": "Dev Tool",
+      "description": "Manages Docker containers, images, and networks for local development and testing environments."
+    },
+    {
+      "id": "MCP-206",
+      "name": "kubernetes-server",
+      "full_name": "Kubernetes Cluster Orchestrator",
+      "category": "Dev Tool",
+      "description": "Deploys, scales, and monitors Kubernetes pods, services, and configurations remotely."
+    },
+    {
+      "id": "MCP-207",
+      "name": "redis-server",
+      "full_name": "Redis Cache & Session Store",
+      "category": "Database Connector",
+      "description": "Connects to Redis instances for caching, pub/sub messaging, and session data management."
+    },
+    {
+      "id": "MCP-208",
+      "name": "vercel-server",
+      "full_name": "Vercel Deployment Platform",
+      "category": "Cloud Service",
+      "description": "Triggers deployments, manages projects, and retrieves logs from the Vercel hosting platform."
+    },
+    {
+      "id": "MCP-209",
+      "name": "postgres-connector",
+      "full_name": "PostgreSQL Database Connector",
+      "category": "Database Connector",
+      "description": "Connects to PostgreSQL databases for querying, inserting, updating, and managing relational data with full transaction support."
+    },
+    {
+      "id": "MCP-210",
+      "name": "mysql-toolkit",
+      "full_name": "MySQL Database Toolkit",
+      "category": "Database Connector",
+      "description": "Provides read/write access to MySQL databases with schema inspection, query execution, and migration capabilities."
+    },
+    {
+      "id": "M211",
+      "name": "redis-cache",
+      "full_name": "Redis Cache & Session Store",
+      "category": "Database Connector",
+      "description": "Interacts with Redis instances for caching, session management, pub/sub messaging, and key-value operations."
+    },
+    {
+      "id": "MCP-212",
+      "name": "mongo-db",
+      "full_name": "MongoDB Document Store",
+      "category": "Database Connector",
+      "description": "Connects to MongoDB for document CRUD operations, aggregation pipelines, and index management."
+    },
+    {
+      "id": "MCP-213",
+      "name": "sqlite-manager",
+      "full_name": "SQLite Local Database Manager",
+      "category": "Database Connector",
+      "description": "Manages local SQLite databases for lightweight prototyping and embedded application storage."
+    },
+    {
+      "id": "MCP-214",
+      "name": "rest-api-client",
+      "full_name": "RESTful API Tool Client",
+      "category": "API Tool",
+      "description": "Executes HTTP requests against REST APIs with support for authentication headers, query params, and body payloads."
+    },
+    {
+      "id": "MCP-215",
+      "name": "graphql-proxy",
+      "full_name": "GraphQL Query Proxy",
+      "category": "API Tool",
+      "description": "Executes GraphQL queries and mutations against remote endpoints with schema introspection and variable support."
+    },
+    {
+      "id": "MCP-216",
+      "name": "openapi-spec-gen",
+      "full_name": "OpenAPI Specification Generator",
+      "category": "API Tool",
+      "description": "Generates OpenAPI 3.0/3.1 specifications from live API traffic or annotated source code."
+    },
+    {
+      "id": "MCP-217",
+      "name": "swagger-ui-server",
+      "full_name": "Swagger UI Interactive Server",
+      "category": "API Tool",
+      "description": "Serves interactive Swagger UI documentation for discovered APIs with inline try-it-out functionality."
+    },
+    {
+      "id": "MCP-218",
+      "name": "webhook-dispatcher",
+      "full_name": "Webhook Dispatcher Service",
+      "category": "API Tool",
+      "description": "Sends outbound webhook payloads with retry logic, signature signing, and delivery status tracking."
+    },
+    {
+      "id": "MCP-219",
+      "name": "local-fs",
+      "full_name": "Local File System Bridge",
+      "category": "File System",
+      "description": "Provides secure read/write/list/search operations on the local filesystem with path validation and permission checks."
+    },
+    {
+      "id": "MCP-220",
+      "name": "s3-storage",
+      "full_name": "Amazon S3 Object Storage",
+      "category": "Cloud Service",
+      "description": "Manages objects in Amazon S3 buckets including upload, download, listing, and lifecycle policy configuration."
+    },
+    {
+      "id": "MCP-221",
+      "name": "gcs-bridge",
+      "full_name": "Google Cloud Storage Bridge",
+      "category": "Cloud Service",
+      "description": "Interfaces with Google Cloud Storage for blob uploads, downloads, bucket management, and signed URL generation."
+    },
+    {
+      "id": "MCP-222",
+      "name": "azure-blob",
+      "full_name": "Azure Blob Storage Connector",
+      "category": "Cloud Service",
+      "description": "Connects to Azure Blob Storage for managing containers, uploading blobs, and retrieving access policies."
+    },
+    {
+      "id": "MCP-223",
+      "name": "docker-manager",
+      "full_name": "Docker Container Manager",
+      "category": "Dev Tool",
+      "description": "Controls Docker containers—building images, starting/stopping services, inspecting logs, and managing networks."
+    },
+    {
+      "id": "MCP-224",
+      "name": "k8s-controller",
+      "full_name": "Kubernetes Cluster Controller",
+      "category": "Dev Tool",
+      "description": "Interacts with Kubernetes clusters to manage pods, deployments, services, and configmaps via kubectl-like operations."
+    },
+    {
+      "id": "MCP-225",
+      "name": "git-repo-tool",
+      "full_name": "Git Repository Management Tool",
+      "category": "Dev Tool",
+      "description": "Performs git operations including clone, commit, push, diff, branch creation, and log inspection on local repositories."
+    },
+    {
+      "id": "MCP-226",
+      "name": "terraform-plan",
+      "full_name": "Terraform Infrastructure Planner",
+      "category": "Dev Tool",
+      "description": "Executes Terraform plan and apply workflows to provision and manage cloud infrastructure as code."
+    },
+    {
+      "id": "MCP-227",
+      "name": "prometheus-metrics",
+      "full_name": "Prometheus Metrics Collector",
+      "category": "Dev Tool",
+      "description": "Queries Prometheus for application metrics, generates alerts, and exports service health dashboards."
+    },
+    {
+      "id": "MCP-228",
+      "name": "vault-secrets",
+      "full_name": "HashiCorp Vault Secrets Manager",
+      "category": "Cloud Service",
+      "description": "Reads and writes secrets from HashiCorp Vault with dynamic credential rotation and audit logging."
+    },
+    {
+      "id": "MCP-224",
+      "name": "PostgreSQL Connector",
+      "full_name": "PostgreSQL Database MCP Server",
+      "category": "database",
+      "description": "Connects to PostgreSQL databases for querying, schema inspection, and transaction management."
+    },
+    {
+      "id": "MCP-225",
+      "name": "MySQL Bridge",
+      "full_name": "MySQL Database MCP Server",
+      "category": "database",
+      "description": "Enables read/write operations on MySQL instances with support for stored procedures and migrations."
+    },
+    {
+      "id": "MCP-226",
+      "name": "MongoDB Atlas",
+      "full_name": "MongoDB Atlas Cloud Database Server",
+      "category": "database",
+      "description": "Provides access to MongoDB Atlas clusters for document-based data operations and aggregation pipelines."
+    },
+    {
+      "id": "MCP-227",
+      "name": "REST API Client",
+      "full_name": "Generic REST API Tool Server",
+      "category": "api",
+      "description": "Executes HTTP requests against RESTful APIs with configurable headers, auth, and response parsing."
+    },
+    {
+      "id": "MCP-228",
+      "name": "GraphQL Gateway",
+      "full_name": "GraphQL Schema Explorer Server",
+      "category": "api",
+      "description": "Introspects and executes GraphQL queries against remote or local schema endpoints."
+    },
+    {
+      "id": "MCP-229",
+      "name": "Local File System",
+      "full_name": "Local Filesystem MCP Server",
+      "category": "filesystem",
+      "description": "Reads, writes, and navigates the local filesystem with safe path resolution and filtering."
+    },
+    {
+      "id": "MCP-230",
+      "name": "S3 Storage",
+      "full_name": "AWS S3 Cloud Storage Server",
+      "category": "cloud",
+      "description": "Manages objects in Amazon S3 buckets including upload, download, list, and delete operations."
+    },
+    {
+      "id": "MCP-231",
+      "name": "Azure Blob",
+      "full_name": "Azure Blob Storage MCP Server",
+      "category": "cloud",
+      "description": "Interacts with Azure Blob Storage for managing containers, blobs, and metadata."
+    },
+    {
+      "id": "MCP-232",
+      "name": "Docker Engine",
+      "full_name": "Docker Container Management Server",
+      "category": "devtool",
+      "description": "Controls Docker containers, images, and networks via the Docker daemon API."
+    },
+    {
+      "id": "MCP-233",
+      "name": "Git Repo Manager",
+      "full_name": "Git Repository MCP Server",
+      "category": "devtool",
+      "description": "Performs Git operations including clone, commit, branch, diff, and log retrieval."
+    },
+    {
+      "id": "MCP-234",
+      "name": "Redis Cache",
+      "full_name": "Redis In-Memory Store Server",
+      "category": "database",
+      "description": "Connects to Redis for key-value caching, pub/sub messaging, and session management."
+    },
+    {
+      "id": "MCP-235",
+      "name": "Slack Bot",
+      "full_name": "Slack Workspace Integration Server",
+      "category": "api",
+      "description": "Reads and sends messages in Slack channels and direct messages via the Slack API."
+    },
+    {
+      "id": "MCP-236",
+      "name": "Elasticsearch",
+      "full_name": "Elasticsearch Search Engine Server",
+      "category": "database",
+      "description": "Indexes and searches documents using Elasticsearch with full-text query capabilities."
+    },
+    {
+      "id": "MCP-237",
+      "name": "Kubernetes Controller",
+      "full_name": "K8s Cluster Management Server",
+      "category": "cloud",
+      "description": "Manages Kubernetes pods, deployments, services, and configmaps across clusters."
+    },
+    {
+      "id": "MCP-238",
+      "name": "GitHub Actions",
+      "full_name": "GitHub CI/CD Pipeline Server",
+      "category": "devtool",
+      "description": "Triggers and monitors GitHub Actions workflows for continuous integration and deployment."
+    },
+    {
+      "id": "MCP-179",
+      "name": "Filesystem Server",
+      "full_name": "Model Context Protocol Filesystem Server",
+      "category": "System",
+      "description": "Provides read and write access to the local file system with secure path resolution."
+    },
+    {
+      "id": "MCP-180",
+      "name": "Postgres Server",
+      "full_name": "PostgreSQL Database Server",
+      "category": "Database",
+      "description": "Enables querying and managing PostgreSQL databases with transaction support."
+    },
+    {
+      "id": "MCP-181",
+      "name": "GitHub Server",
+      "full_name": "GitHub Integration Server",
+      "category": "DevOps",
+      "description": "Connects to GitHub API for repository management, issue tracking, and pull request operations."
+    },
+    {
+      "id": "MCP-182",
+      "name": "GitLab Server",
+      "full_name": "GitLab Integration Server",
+      "category": "DevOps",
+      "description": "Integrates with GitLab for project management, CI/CD pipeline monitoring, and code review."
+    },
+    {
+      "id": "MCP-183",
+      "name": "Slack Server",
+      "full_name": "Slack Messaging Server",
+      "category": "Communication",
+      "description": "Facilitates sending messages, channels management, and notifications via Slack API."
+    },
+    {
+      "id": "MCP-184",
+      "name": "Google Drive Server",
+      "full_name": "Google Drive File Server",
+      "category": "Storage",
+      "description": "Provides access to Google Drive for uploading, downloading, and organizing cloud files."
+    },
+    {
+      "id": "MCP-185",
+      "name": "Sentry Server",
+      "full_name": "Sentry Error Tracking Server",
+      "category": "Monitoring",
+      "description": "Connects to Sentry for real-time error monitoring, alerting, and stack trace analysis."
+    },
+    {
+      "id": "MCP-186",
+      "name": "Puppeteer Server",
+      "full_name": "Browser Automation Server",
+      "category": "Web",
+      "description": "Uses Puppeteer for headless browser automation, screenshot capture, and web scraping."
+    },
+    {
+      "id": "MCP-187",
+      "name": "Linear Server",
+      "full_name": "Linear Project Management Server",
+      "category": "Project Management",
+      "description": "Integrates with Linear for issue tracking, sprint planning, and team workflow management."
+    },
+    {
+      "id": "MCP-188",
+      "name": "Redis Server",
+      "full_name": "Redis Cache Server",
+      "category": "Database",
+      "description": "Provides fast key-value store operations including caching, pub/sub, and session management."
+    },
+    {
+      "id": "MCP-189",
+      "name": "Elasticsearch Server",
+      "full_name": "Elasticsearch Search Server",
+      "category": "Search",
+      "description": "Enables full-text search, indexing, and analytics on large datasets via Elasticsearch."
+    },
+    {
+      "id": "MCP-190",
+      "name": "Docker Server",
+      "full_name": "Docker Container Server",
+      "category": "DevOps",
+      "description": "Manages Docker containers, images, and networks for containerized application workflows."
+    },
+    {
+      "id": "MCP-191",
+      "name": "Notion Server",
+      "full_name": "Notion Workspace Server",
+      "category": "Productivity",
+      "description": "Connects to Notion API for reading, creating, and updating pages and databases."
+    },
+    {
+      "id": "MCP-192",
+      "name": "AWS S3 Server",
+      "full_name": "Amazon S3 Storage Server",
+      "category": "Cloud",
+      "description": "Provides object storage operations for Amazon S3 including bucket management and file transfers."
+    },
+    {
+      "id": "MCP-193",
+      "name": "Terminal Server",
+      "full_name": "Interactive Terminal Server",
+      "category": "System",
+      "description": "Executes shell commands securely with output streaming and timeout controls."
+    },
+    {
+      "id": "MCP-194",
+      "name": "File System Server",
+      "full_name": "Model Context Protocol File System Server",
+      "category": "System",
+      "description": "Provides secure file system operations including reading, writing, and listing files within designated directories."
+    },
+    {
+      "id": "MCP-195",
+      "name": "PostgreSQL Server",
+      "full_name": "Model Context Protocol PostgreSQL Database Server",
+      "category": "Database",
+      "description": "Enables read-only querying of PostgreSQL databases with support for complex SQL queries and schema inspection."
+    },
+    {
+      "id": "MCP-196",
+      "name": "GitHub Server",
+      "full_name": "Model Context Protocol GitHub Integration Server",
+      "category": "Development",
+      "description": "Connects to GitHub API to manage repositories, issues, pull requests, and code reviews programmatically."
+    },
+    {
+      "id": "MCP-197",
+      "name": "Memory Store Server",
+      "full_name": "Model Context Protocol Persistent Memory Store Server",
+      "category": "Storage",
+      "description": "Implements a key-value memory store for persisting context and conversation state across sessions."
+    },
+    {
+      "id": "MCP-198",
+      "name": "Web Browser Server",
+      "full_name": "Model Context Protocol Web Browser Automation Server",
+      "category": "Automation",
+      "description": "Controls headless browser instances for web scraping, testing, and interactive web page navigation."
+    },
+    {
+      "id": "MCP-199",
+      "name": "Puppeteer Server",
+      "full_name": "Model Context Protocol Puppeteer Automation Server",
+      "category": "Automation",
+      "description": "Leverages Puppeteer for advanced browser automation, screenshot capture, and DOM interaction capabilities."
+    },
+    {
+      "id": "MCP-200",
+      "name": "Sentry Server",
+      "full_name": "Model Context Protocol Sentry Error Monitoring Server",
+      "category": "Observability",
+      "description": "Integrates with Sentry to fetch error reports, trace stack details, and monitor application health metrics."
+    },
+    {
+      "id": "MCP-201",
+      "name": "Git Server",
+      "full_name": "Model Context Protocol Local Git Repository Server",
+      "category": "Development",
+      "description": "Interacts with local Git repositories for commit history, branch management, diff viewing, and log analysis."
+    },
+    {
+      "id": "MCP-202",
+      "name": "Slack Server",
+      "full_name": "Model Context Protocol Slack Messaging Server",
+      "category": "Communication",
+      "description": "Connects to Slack workspace to read channels, send messages, and retrieve conversation history."
+    },
+    {
+      "id": "MCP-203",
+      "name": "Linear Server",
+      "full_name": "Model Context Protocol Linear Project Management Server",
+      "category": "Project Management",
+      "description": "Interfaces with Linear API for managing issues, projects, sprints, and team workflows."
+    },
+    {
+      "id": "MCP-204",
+      "name": "Vector DB Server",
+      "full_name": "Model Context Protocol Vector Database Retrieval Server",
+      "category": "AI/ML",
+      "description": "Provides semantic search and similarity retrieval over vector embeddings stored in supported vector databases."
+    },
+    {
+      "id": "MCP-205",
+      "name": "Time Tracking Server",
+      "full_name": "Model Context Protocol Time Intelligence Server",
+      "category": "Productivity",
+      "description": "Offers timezone conversion, calendar integration, and time-based scheduling utilities for task planning."
+    },
+    {
+      "id": "MCP-206",
+      "name": "Docker Server",
+      "full_name": "Model Context Protocol Docker Container Management Server",
+      "category": "DevOps",
+      "description": "Manages Docker containers including listing images, starting/stopping services, and inspecting container logs."
+    },
+    {
+      "id": "MCP-207",
+      "name": "LLM Gateway Server",
+      "full_name": "Model Context Protocol Large Language Model Gateway Server",
+      "category": "AI/ML",
+      "description": "Acts as an abstraction layer for multiple LLM providers, standardizing prompt templates and response formats."
+    },
+    {
+      "id": "MCP-208",
+      "name": "Search Engine Server",
+      "full_name": "Model Context Protocol Web Search Aggregation Server",
+      "category": "Information Retrieval",
+      "description": "Aggregates results from multiple search engines and provides deduplicated, ranked search answer summaries."
+    }
+  ],
+  "memory_systems": [
+    {
+      "id": "MEM-001",
+      "name": "mem0",
+      "type": "向量+图谱",
+      "architecture": "混合",
+      "features": [
+        "自动记忆提取",
+        "用户画像",
+        "时间衰减"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/Pro$29/月",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-002",
+      "name": "Zep",
+      "type": "向量+图谱",
+      "architecture": "混合",
+      "features": [
+        "对话记忆",
+        "实体提取",
+        "知识图谱"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "pricing": "免费/Cloud付费",
+      "language": "Python/TS"
+    },
+    {
+      "id": "MEM-003",
+      "name": "Letta (MemGPT)",
+      "type": "分层记忆",
+      "architecture": "上下文+归档",
+      "features": [
+        "虚拟上下文管理",
+        "自动分页",
+        "无限上下文"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "pricing": "免费/Cloud付费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-004",
+      "name": "Cognee",
+      "type": "知识图谱",
+      "architecture": "Graph RAG",
+      "features": [
+        "自动知识图谱构建",
+        "实体关系推理"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "早期",
+      "pricing": "免费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-005",
+      "name": "Graphiti",
+      "type": "知识图谱",
+      "architecture": "时序图谱",
+      "features": [
+        "自动演化图谱",
+        "时间推理",
+        "非结构化输入"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "早期",
+      "pricing": "免费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-006",
+      "name": "Hindsight",
+      "type": "对话记忆",
+      "architecture": "向量",
+      "features": [
+        "对话摘要",
+        "关键信息提取",
+        "上下文窗口"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "早期",
+      "pricing": "免费",
+      "language": "Python"
+    },
+    {
+      "id": "MEM-007",
+      "name": "LangMem",
+      "type": "工作流记忆",
+      "architecture": "LangGraph集成",
+      "features": [
+        "LangGraph原生记忆",
+        "工作流编排集成",
+        "记忆工具链",
+        "语义搜索"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费",
+      "language": "Python",
+      "benchmarks": "LangGraph生态",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-008",
+      "name": "Memvid",
+      "type": "多模态记忆",
+      "architecture": "视频编码",
+      "features": [
+        "视频记忆编码",
+        "多模态记忆检索",
+        "视觉上下文保存"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "实验性",
+      "pricing": "免费",
+      "language": "Python",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-009",
+      "name": "MemoClaw",
+      "type": "跨平台记忆",
+      "architecture": "分布式",
+      "features": [
+        "Agent记忆管理",
+        "跨平台记忆同步",
+        "结构化记忆存储"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/付费",
+      "language": "Python/TS",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-010",
+      "name": "EverMind",
+      "type": "长期记忆",
+      "architecture": "个性化",
+      "features": [
+        "Zep替代方案",
+        "长期记忆管理",
+        "对话理解",
+        "个性化记忆"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/付费",
+      "language": "Python",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-011",
+      "name": "Pinecone Memory",
+      "type": "向量记忆",
+      "architecture": "托管向量",
+      "features": [
+        "Pinecone托管向量",
+        "Serverless部署",
+        "命名空间隔离",
+        "高可用"
+      ],
+      "open_source": false,
+      "license": "Commercial",
+      "maturity": "生产可用",
+      "pricing": "按用量付费",
+      "language": "Cloud API",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-012",
+      "name": "Mem0 v2 (Graph Memory)",
+      "type": "向量+图谱",
+      "architecture": "图记忆增强",
+      "features": [
+        "图记忆功能",
+        "自动记忆提取",
+        "跨会话持久化",
+        "55K+ Stars",
+        "LoCoMo/LongMemEval/BEAM基准测试领先"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "maturity": "生产可用",
+      "pricing": "免费/Pro$29/月/图记忆$249/月",
+      "language": "Python/TS",
+      "benchmarks": "LoCoMo/LongMemEval/BEAM标准",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:54.619Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-013",
+      "name": "Hindsight v2",
+      "type": "memory_system",
+      "description": "Hindsight v2，2026年Agent记忆系统，准确率91.4%，支持层次化记忆架构和知识图谱",
+      "accuracy": "91.4%",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MEM-014",
+      "name": "Cognee v2",
+      "type": "memory_system",
+      "description": "Cognee v2，2026年知识图谱记忆系统升级版，支持多Agent共享记忆和类型化关系",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MEM-015",
+      "name": "Zep v2",
+      "type": "memory_system",
+      "description": "Zep v2，2026年Agent长期记忆系统升级版，支持结构化知识提取和对话记忆管理",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "MEM-016",
+      "name": "LangChain Memory",
+      "category": "memory-framework",
+      "description": "LangChain's built-in memory module for AI agents. Supports conversation buffer, summary, and entity memory patterns.",
+      "features": [
+        "conversation buffer",
+        "summary memory",
+        "entity memory",
+        "LangChain integration"
+      ],
+      "status": "active",
+      "year": 2024,
+      "sources": [
+        "https://machinelearningmastery.com/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026"
+      ]
+    },
+    {
+      "id": "MEM-017",
+      "name": "LlamaIndex Memory",
+      "category": "memory-framework",
+      "description": "LlamaIndex's memory module for AI agents with document-indexed retrieval and context management.",
+      "features": [
+        "document indexing",
+        "retrieval memory",
+        "context management",
+        "LlamaIndex integration"
+      ],
+      "status": "active",
+      "year": 2024,
+      "sources": [
+        "https://machinelearningmastery.com/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026"
+      ]
+    },
+    {
+      "id": "MEM-018",
+      "name": "ICLR 2026 Agent Memory Workshop",
+      "category": "research",
+      "description": "ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems. Advances design of memory layer for agentic systems.",
+      "features": [
+        "academic research",
+        "memory architecture",
+        "agentic systems",
+        "workshop proceedings"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://iclr.cc/virtual/2026/workshop/10000792"
+      ]
+    },
+    {
+      "id": "MEM-019",
+      "name": "Mem0 State of Agent Memory 2026",
+      "category": "benchmark",
+      "description": "Comprehensive report on AI agent memory in 2026 by Mem0. Production engineering discipline with real benchmarks and measurable trade-offs.",
+      "features": [
+        "benchmark report",
+        "production metrics",
+        "memory evaluation",
+        "industry survey"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://mem0.ai/blog/state-of-ai-agent-memory-2026"
+      ]
+    },
+    {
+      "id": "MEM-020",
+      "name": "SitePoint Agent Memory Guide",
+      "category": "guide",
+      "description": "Complete guide to agent memory in 2026 covering memory architecture concepts and five most destructive memory failure modes.",
+      "features": [
+        "memory architecture",
+        "failure modes",
+        "production guide",
+        "best practices"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://www.sitepoint.com/the-new-reality-of-agent-memory-the-complete-guide-2026"
+      ]
+    },
+    {
+      "id": "MEM-021",
+      "name": "LoCoMo Benchmark",
+      "full_name": "LoCoMo Long-term Conversation Memory Benchmark",
+      "category": "记忆基准",
+      "description": "LoCoMo是2026年Agent记忆架构比较的标准基准之一，用于评估长期对话记忆能力，与LongMemEval和BEAM并列为三大记忆基准",
+      "key_features": [
+        "长期对话记忆评估",
+        "多轮交互测试",
+        "记忆检索准确率",
+        "行业标准基准"
+      ],
+      "status": "active",
+      "year": 2026,
+      "maintainer": "学术界",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-022",
+      "name": "LongMemEval Benchmark",
+      "full_name": "LongMemEval Long-term Memory Retrieval Benchmark",
+      "category": "记忆基准",
+      "description": "LongMemEval (ICLR 2025)是长期记忆检索评估基准，每个问题约48个会话(S变体500题、~115K tokens)，已成为Agent记忆系统标准评估工具",
+      "key_features": [
+        "48会话/问题",
+        "500题(S变体)",
+        "~115K tokens/问题",
+        "ICLR 2025论文"
+      ],
+      "status": "active",
+      "year": 2025,
+      "maintainer": "学术界",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://github.com/rohitg00/agentmemory/blob/main/benchmark/COMPARISON.md",
+          "collected_at": "2026-06-16T22:31:38.000Z"
         },
-        "use_cases": [
-          "Data collection for knowledge bases",
-          "Anti-bot protected site scraping",
-          "Large-scale concurrent crawling",
-          "AI agent web interaction",
-          "Website change monitoring"
-        ],
-        "adaptive_feature": "Elements tracked by smart structure analysis, not fragile CSS selectors - survives website redesigns automatically",
-        "anti_bot": [
-          "Cloudflare Turnstile",
-          "DataDome",
-          "PerimeterX",
-          "Akamai Bot Manager"
-        ],
-        "installation": "pip install scrapling",
-        "mcp_setup": "Built-in MCP server for Claude/AI agent integration",
-        "stars": "5k+",
-        "license": "BSD-3",
-        "sources": [
-          "web_search",
-          "github"
-        ],
-        "confidence": "high",
-        "first_seen": "2026-05-31T22:02:40.222Z",
-        "last_updated": "2026-05-31T22:02:40.222Z"
-      },
-      {
-        "id": "MCP-atlassian-remote",
-        "name": "Atlassian Remote MCP Server",
-        "full_name": "@atlassian/mcp-server",
-        "category": "项目管理",
-        "description": "Atlassian官方远程MCP Server，覆盖Jira、Confluence、Compass，2026年2月GA",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 2100,
-        "maintainer": "Atlassian",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Jira操作",
-          "Confluence文档",
-          "Compass组件",
-          "远程部署"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-codex",
-        "name": "OpenAI Codex MCP Server",
-        "full_name": "@openai/codex-mcp",
-        "category": "代码",
-        "description": "OpenAI Codex代码生成和执行MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 1800,
-        "maintainer": "OpenAI",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "代码生成",
-          "代码执行",
-          "代码审查",
-          "多语言支持"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-truto",
-        "name": "Truto MCP Server",
-        "full_name": "truto-mcp-server",
-        "category": "API",
-        "description": "统一API集成平台MCP Server，支持100+ SaaS应用",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 600,
-        "maintainer": "Truto",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "100+ SaaS集成",
-          "统一API",
-          "数据同步",
-          "CRUD操作"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-skyvia-v2",
-        "name": "Skyvia MCP Server v2",
-        "full_name": "skyvia-mcp-v2",
-        "category": "数据集成",
-        "description": "Skyvia数据集成平台MCP Server升级版，支持实时数据管道",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 900,
-        "maintainer": "Skyvia",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "实时数据管道",
-          "ETL/ELT",
-          "云数据库同步",
-          "数据备份"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-prefect",
-        "name": "Prefect MCP Server",
-        "full_name": "prefect-mcp-server",
-        "category": "工作流",
-        "description": "Prefect工作流编排平台MCP Server，AI Agent工作流管理",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 700,
-        "maintainer": "Prefect",
-        "status": "active",
-        "language": "Python",
-        "features": [
-          "工作流编排",
-          "任务调度",
-          "监控告警",
-          "数据管道"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-titanapps",
-        "name": "Titan Apps Jira MCP",
-        "full_name": "titanapps-jira-mcp",
-        "category": "项目管理",
-        "description": "云端托管的Jira MCP Server，支持Jira/Confluence/Compass",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "云端OAuth",
-        "stars": 400,
-        "maintainer": "Titan Apps",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "云端部署",
-          "Jira集成",
-          "Confluence集成",
-          "无需本地安装"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-instatunnel",
-        "name": "Instatunnel MCP Server",
-        "full_name": "instatunnel-mcp",
-        "category": "安全",
-        "description": "MCP Server安全隧道，保护远程MCP连接",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "端到端加密",
-        "stars": 300,
-        "maintainer": "Instatunnel",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "安全隧道",
-          "远程访问",
-          "加密传输",
-          "审计日志"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-mcpmarket",
-        "name": "MCPMarket Registry",
-        "full_name": "mcpmarket-registry",
-        "category": "发现",
-        "description": "MCP Server市场与注册中心，每日更新排名",
-        "protocol_version": "2025-11-25",
-        "auth": "none",
-        "hosts": [
-          "Web"
-        ],
-        "security": "公开",
-        "stars": 500,
-        "maintainer": "MCPMarket",
-        "status": "active",
-        "language": "Web",
-        "features": [
-          "Server发现",
-          "排名追踪",
-          "社区评价",
-          "每日更新"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-totalum",
-        "name": "Totalum MCP Server",
-        "full_name": "totalum-mcp",
-        "category": "CRM",
-        "description": "Totalum CRM/ERP平台MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 200,
-        "maintainer": "Totalum",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "CRM操作",
-          "ERP集成",
-          "数据管理",
-          "报表生成"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-tokenmix",
-        "name": "TokenMix MCP Directory",
-        "full_name": "tokenmix-mcp-directory",
-        "category": "发现",
-        "description": "70+生产级MCP Server目录，2026完整指南",
-        "protocol_version": "2025-11-25",
-        "auth": "none",
-        "hosts": [
-          "Web"
-        ],
-        "security": "公开",
-        "stars": 300,
-        "maintainer": "TokenMix",
-        "status": "active",
-        "language": "Web",
-        "features": [
-          "Server目录",
-          "生产级筛选",
-          "使用指南",
-          "分类浏览"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-cf-d1",
-        "name": "Cloudflare D1 Remote MCP Server",
-        "type": "mcp_server",
-        "category": "database",
-        "description": "Cloudflare D1 SQLite数据库远程MCP Server，2026年4月发布，支持AI Agent直接查询D1数据库",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-r2",
-        "name": "Cloudflare R2 Remote MCP Server",
-        "type": "mcp_server",
-        "category": "storage",
-        "description": "Cloudflare R2对象存储远程MCP Server，2026年4月发布，支持AI Agent读写R2存储桶",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-workers-logs",
-        "name": "Cloudflare Workers Logs MCP Server",
-        "type": "mcp_server",
-        "category": "monitoring",
-        "description": "Cloudflare Workers日志远程MCP Server，2026年4月发布，支持AI Agent查询和分析Workers运行日志",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-containers",
-        "name": "Cloudflare Containers MCP Server",
-        "type": "mcp_server",
-        "category": "compute",
-        "description": "Cloudflare容器服务远程MCP Server，2026年4月发布，支持AI Agent管理容器化工作负载",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-kv",
-        "name": "Cloudflare KV Remote MCP Server",
-        "type": "mcp_server",
-        "category": "database",
-        "description": "Cloudflare KV键值存储远程MCP Server，支持AI Agent读写全球分布式KV存储",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-queues",
-        "name": "Cloudflare Queues MCP Server",
-        "type": "mcp_server",
-        "category": "messaging",
-        "description": "Cloudflare消息队列远程MCP Server，支持AI Agent发送和消费队列消息",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-durable-objects",
-        "name": "Cloudflare Durable Objects MCP Server",
-        "type": "mcp_server",
-        "category": "compute",
-        "description": "Cloudflare Durable Objects远程MCP Server，支持AI Agent管理有状态计算对象",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-workers-ai",
-        "name": "Cloudflare Workers AI MCP Server",
-        "type": "mcp_server",
-        "category": "ai_inference",
-        "description": "Cloudflare Workers AI推理远程MCP Server，支持AI Agent调用边缘AI模型推理",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-pages",
-        "name": "Cloudflare Pages MCP Server",
-        "type": "mcp_server",
-        "category": "deployment",
-        "description": "Cloudflare Pages部署远程MCP Server，支持AI Agent管理静态站点和全栈应用部署",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-images",
-        "name": "Cloudflare Images MCP Server",
-        "type": "mcp_server",
-        "category": "media",
-        "description": "Cloudflare图片服务远程MCP Server，支持AI Agent上传、转换和管理图片",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-stream",
-        "name": "Cloudflare Stream MCP Server",
-        "type": "mcp_server",
-        "category": "media",
-        "description": "Cloudflare视频流远程MCP Server，支持AI Agent上传和管理视频内容",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-email-workers",
-        "name": "Cloudflare Email Workers MCP Server",
-        "type": "mcp_server",
-        "category": "email",
-        "description": "Cloudflare邮件Workers远程MCP Server，支持AI Agent处理和发送电子邮件",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-cf-turnstile",
-        "name": "Cloudflare Turnstile MCP Server",
-        "type": "mcp_server",
-        "category": "security",
-        "description": "Cloudflare Turnstile验证远程MCP Server，支持AI Agent管理CAPTCHA验证和机器人防护",
-        "vendor": "Cloudflare",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2026-04",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-exa-search",
-        "name": "Exa Real-Time Web Search MCP Server",
-        "type": "mcp_server",
-        "category": "search",
-        "description": "Exa高级实时网络搜索MCP Server，支持语义搜索和实时信息检索，2026年Vibe Coding热门工具",
-        "vendor": "Exa",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2025",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-context7-docs",
-        "name": "Context7 Documentation MCP Server",
-        "type": "mcp_server",
-        "category": "documentation",
-        "description": "Context7最新代码文档MCP Server，支持AI Agent获取最新的库和框架文档，2026年Vibe Coding热门工具",
-        "vendor": "Context7",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2025",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-firecrawl-scraping",
-        "name": "Firecrawl Web Scraping MCP Server",
-        "type": "mcp_server",
-        "category": "web_scraping",
-        "description": "Firecrawl网页抓取MCP Server，支持AI Agent抓取和解析网页内容，2026年开发者Top 10 MCP Server",
-        "vendor": "Firecrawl",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2025",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MCP-browserbase",
-        "name": "Browserbase Browser Automation MCP Server",
-        "type": "mcp_server",
-        "category": "browser_automation",
-        "description": "Browserbase浏览器自动化MCP Server，支持AI Agent在云端浏览器中执行操作，2026年开发者Top 10",
-        "vendor": "Browserbase",
-        "protocol": "MCP",
-        "deployment": "remote",
-        "release_date": "2025",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "mcp-speakeasy",
-        "name": "Speakeasy MCP Server",
-        "type": "api_tooling",
-        "description": "Speakeasy提供的MCP Server，用于API开发和SDK生成，支持MCP协议规范发布管理",
-        "company": "Speakeasy",
-        "category": "developer_tools",
-        "key_features": [
-          "API SDK生成",
-          "MCP规范发布管理",
-          "多语言SDK支持",
-          "API测试"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-pgedge",
-        "name": "pgEdge MCP Server",
-        "type": "database",
-        "description": "pgEdge分布式PostgreSQL的MCP Server，支持多区域数据库管理和低延迟数据访问",
-        "company": "pgEdge",
-        "category": "database",
-        "key_features": [
-          "分布式PostgreSQL",
-          "多区域复制",
-          "低延迟访问",
-          "SQL操作"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-scalekit",
-        "name": "Scalekit MCP Server",
-        "type": "auth_benchmark",
-        "description": "Scalekit认证和基准测试MCP Server，提供MCP Server性能基准测试数据",
-        "company": "Scalekit",
-        "category": "developer_tools",
-        "key_features": [
-          "MCP性能基准",
-          "认证集成",
-          "SAML/SSO",
-          "多租户"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-composio",
-        "name": "Composio MCP Server",
-        "type": "tool_integration",
-        "description": "Composio工具集成平台MCP Server，支持250+工具和应用集成，Agent工具调用中间件",
-        "company": "Composio",
-        "category": "integration",
-        "key_features": [
-          "250+工具集成",
-          "Agent工具调用",
-          "OAuth管理",
-          "多平台支持"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-smithery",
-        "name": "Smithery MCP Registry",
-        "type": "registry",
-        "description": "Smithery MCP Server市场，MCP Server发现和部署平台，提供服务器目录和一键部署",
-        "company": "Smithery",
-        "category": "registry",
-        "key_features": [
-          "MCP Server市场",
-          "一键部署",
-          "服务器发现",
-          "版本管理"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-cursor",
-        "name": "Cursor MCP Server",
-        "type": "ide_integration",
-        "description": "Cursor IDE的MCP Server集成，支持AI编程助手的工具调用和代码上下文管理",
-        "company": "Cursor/Anysphere",
-        "category": "developer_tools",
-        "key_features": [
-          "IDE集成",
-          "代码上下文",
-          "AI编程助手",
-          "工具调用"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-claude-desktop",
-        "name": "Claude Desktop MCP Host",
-        "type": "desktop_host",
-        "description": "Claude Desktop作为MCP Host，支持连接多个MCP Server，是MCP生态最广泛使用的客户端",
-        "company": "Anthropic",
-        "category": "host",
-        "key_features": [
-          "MCP Host客户端",
-          "多Server连接",
-          "桌面集成",
-          "工具发现"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-replit",
-        "name": "Replit MCP Server",
-        "type": "development",
-        "description": "Replit开发环境的MCP Server，支持云端开发环境的工具调用和代码执行",
-        "company": "Replit",
-        "category": "developer_tools",
-        "key_features": [
-          "云端开发",
-          "代码执行",
-          "环境管理",
-          "协作开发"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-stainless",
-        "name": "Stainless MCP Server",
-        "type": "api_tooling",
-        "description": "Stainless API标准MCP Server，支持API规范生成和SDK自动构建",
-        "company": "Stainless",
-        "category": "developer_tools",
-        "key_features": [
-          "API规范生成",
-          "SDK自动构建",
-          "OpenAPI支持",
-          "多语言"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "mcp-tyk-security",
-        "name": "Tyk MCP Security Gateway",
-        "type": "security",
-        "description": "Tyk企业MCP安全网关，提供MCP Server安全策略执行、认证和监控",
-        "company": "Tyk",
-        "category": "security",
-        "key_features": [
-          "安全策略执行",
-          "认证管理",
-          "性能监控",
-          "企业级"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-stackgen",
-        "name": "StackGen MCP Server",
-        "full_name": "stackgen-mcp",
-        "category": "部署",
-        "description": "StackGen部署自动化MCP Server，减少部署时间从天到分钟",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 400,
-        "maintainer": "StackGen",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "部署自动化",
-          "基础设施生成",
-          "分钟级部署"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-mcpmanager",
-        "name": "MCP Manager Server",
-        "full_name": "mcpmanager-mcp",
-        "category": "管理",
-        "description": "MCP Server管理工具，支持发现、安装和配置MCP Server",
-        "protocol_version": "2025-11-25",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "本地沙箱",
-        "stars": 800,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Server发现",
-          "安装管理",
-          "配置同步"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-workos",
-        "name": "WorkOS MCP Server",
-        "full_name": "workos-mcp",
-        "category": "认证",
-        "description": "WorkOS身份认证MCP Server，支持SSO、目录同步和身份管理",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "API Key",
-        "stars": 500,
-        "maintainer": "WorkOS",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "SSO认证",
-          "目录同步",
-          "身份管理"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-shareuhack",
-        "name": "Shareuhack Dev MCP",
-        "full_name": "shareuhack-dev-mcp",
-        "category": "开发",
-        "description": "开发者工具MCP Server集合，集成多种开发辅助工具",
-        "protocol_version": "2025-11-25",
-        "auth": "none",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code"
-        ],
-        "security": "本地沙箱",
-        "stars": 300,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "代码辅助",
-          "开发工具",
-          "调试支持"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-rasa",
-        "name": "Rasa MCP Server",
-        "full_name": "rasa-mcp",
-        "category": "AI",
-        "description": "Rasa对话AI平台MCP Server，支持企业级对话Agent构建",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "API Key",
-        "stars": 700,
-        "maintainer": "Rasa",
-        "status": "active",
-        "language": "Python",
-        "features": [
-          "对话AI",
-          "意图识别",
-          "企业级NLU"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-context7",
-        "name": "Context7 MCP Server",
-        "full_name": "context7-mcp",
-        "category": "文档",
-        "description": "Context7拉取最新版本特定文档和代码示例到LLM上下文，解决过时文档问题",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code"
-        ],
-        "security": "API Key",
-        "stars": 5000,
-        "maintainer": "Context7",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "实时文档",
-          "版本特定",
-          "代码示例",
-          "自动更新"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-proxyman",
-        "name": "Proxyman MCP Server",
-        "full_name": "proxyman-mcp",
-        "category": "调试",
-        "description": "Proxyman网络调试MCP Server，支持HTTP/HTTPS流量检查和分析",
-        "protocol_version": "2025-11-25",
-        "auth": "local",
-        "hosts": [
-          "Claude Desktop"
-        ],
-        "security": "本地沙箱",
-        "stars": 1500,
-        "maintainer": "Proxyman",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "网络调试",
-          "流量分析",
-          "HTTP检查",
-          "HTTPS解密"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-atlassian",
-        "name": "Atlassian MCP Server",
-        "full_name": "atlassian-mcp",
-        "category": "项目管理",
-        "description": "Atlassian Jira/Confluence集成MCP Server，支持项目管理和知识库操作",
-        "protocol_version": "2025-11-25",
-        "auth": "OAuth",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "security": "OAuth 2.0",
-        "stars": 2500,
-        "maintainer": "Atlassian",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "Jira集成",
-          "Confluence操作",
-          "项目管理",
-          "知识库"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-tessl",
-        "name": "Tessl MCP Server",
-        "full_name": "tessl-mcp",
-        "category": "开发",
-        "description": "Tessl开发工具MCP Server，12种开发者生产力工具集合",
-        "protocol_version": "2025-11-25",
-        "auth": "API Key",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code"
-        ],
-        "security": "API Key",
-        "stars": 800,
-        "maintainer": "Tessl",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "开发工具",
-          "生产力",
-          "多工具集成",
-          "代码辅助"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-playwright-mcp",
-        "name": "Playwright MCP",
-        "category": "browser-automation",
-        "description": "Playwright MCP server ranked #1 globally in 2026, beating GitHub and Figma MCP servers. Enables browser automation via MCP protocol.",
-        "features": [
-          "browser automation",
-          "web scraping",
-          "page interaction",
-          "screenshot capture"
-        ],
-        "status": "active",
-        "year": 2025,
-        "sources": [
-          "https://mcpmanager.ai/blog/most-popular-mcp-servers",
-          "https://www.reddit.com/r/mcp/comments/1s3fu45/top_50_most_popular_mcp_servers_in_2026"
-        ]
-      },
-      {
-        "id": "MCP-registry",
-        "name": "MCP Registry",
-        "category": "registry",
-        "description": "Official MCP Registry launched September 2025, growing to nearly 2,000 server entries within months. Central hub for discovering MCP servers.",
-        "features": [
-          "server discovery",
-          "registry",
-          "metadata indexing",
-          "community catalog"
-        ],
-        "status": "active",
-        "year": 2025,
-        "sources": [
-          "https://workos.com/blog/everything-your-team-needs-to-know-about-mcp-in-2026"
-        ]
-      },
-      {
-        "id": "MCP-firecrawl",
-        "name": "Firecrawl MCP Server",
-        "category": "web-scraping",
-        "description": "Web scraping MCP server by Firecrawl. Listed among top 10 MCP servers for developers in 2026.",
-        "features": [
-          "web scraping",
-          "data extraction",
-          "crawling",
-          "structured output"
-        ],
-        "status": "active",
-        "year": 2025,
-        "sources": [
-          "https://www.firecrawl.dev/blog/best-mcp-servers-for-developers"
-        ]
-      },
-      {
-        "id": "MCP-knit",
-        "name": "Knit MCP Server",
-        "category": "integration",
-        "description": "MCP integration server by GetKnit. Part of the 2026 MCP roadmap for AI integration.",
-        "features": [
-          "AI integration",
-          "tool connectivity",
-          "data bridging"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://www.getknit.dev/blog/the-future-of-mcp-roadmap-enhancements-and-whats-next"
-        ]
-      },
-      {
-        "id": "MCP-mcpmanager",
-        "name": "MCP Manager",
-        "category": "management",
-        "description": "MCP server management platform tracking top 50 most popular MCP servers globally. Provides analytics and rankings.",
-        "features": [
-          "server management",
-          "analytics",
-          "rankings",
-          "popularity tracking"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://mcpmanager.ai/blog/most-popular-mcp-servers"
-        ]
-      },
-      {
-        "id": "MCP-extensions-2026",
-        "name": "MCP Extensions Framework",
-        "full_name": "Model Context Protocol Extensions",
-        "category": "协议扩展",
-        "description": "MCP 2026-07-28 RC版本引入Extensions框架，允许社区扩展MCP核心协议而不破坏兼容性，支持自定义工具类型和资源格式",
-        "protocol_version": "2026-07-28-RC",
-        "auth": "varies",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code",
-          "所有MCP客户端"
-        ],
-        "security": "扩展沙箱",
-        "stars": 0,
-        "maintainer": "Anthropic + 社区",
-        "status": "active",
-        "language": "TypeScript/Python",
-        "features": [
-          "自定义工具类型",
-          "资源格式扩展",
-          "协议兼容性保证",
-          "社区扩展生态"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-stateless-core",
-        "name": "MCP Stateless Protocol Core",
-        "full_name": "MCP Stateless Core",
-        "category": "协议核心",
-        "description": "MCP 2026-07-28 RC版本引入无状态协议核心，解决有状态连接的可扩展性问题，支持HTTP无状态调用和大规模Agent部署",
-        "protocol_version": "2026-07-28-RC",
-        "auth": "varies",
-        "hosts": [
-          "所有MCP客户端"
-        ],
-        "security": "无状态安全",
-        "stars": 0,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "TypeScript",
-        "features": [
-          "无状态调用",
-          "HTTP扩展",
-          "大规模部署支持",
-          "向后兼容"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-aishield-scanner",
-        "name": "AIShield MCP Scanner",
-        "full_name": "aishield-mcp",
-        "category": "安全扫描",
-        "description": "Agent原生AI工具安全扫描器。扫描MCP Server/GPT/Skill/Prompt的安全风险，4维评分(安全/隐私/质量/性能)，119条规则覆盖OWASP MCP Top 10",
-        "protocol_version": "2025-03-26",
-        "auth": "API Key (免费5次/天)",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code",
-          "Cline"
-        ],
-        "security": "4维评分+认证徽章",
-        "stars": 0,
-        "maintainer": "lm203688",
-        "status": "active",
-        "language": "JavaScript/Python",
-        "features": [
-          "MCP安全扫描",
-          "GPT安全扫描",
-          "Prompt注入检测",
-          "供应链分析",
-          "凭证泄露检测",
-          "认证徽章",
-          "批量扫描"
-        ],
-        "install": "npx aishield-mcp",
-        "github": "https://github.com/lm203688/aishield",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://github.com/lm203688/aishield",
-            "collected_at": "2026-06-18T09:19:49.000Z"
-          }
-        ]
-      },
-      {
-        "id": "MCP-aishield-guardrail",
-        "name": "AIShield Guardrail MCP",
-        "full_name": "aishield-guardrail",
-        "category": "安全防护",
-        "description": "杀手级产品：拦截Agent工具安装，自动触发安全扫描。放在MCP列表第一个，所有tool_install请求先扫描后放行",
-        "protocol_version": "2025-03-26",
-        "auth": "API Key (可选)",
-        "hosts": [
-          "Claude Desktop",
-          "Cursor",
-          "VS Code",
-          "Cline"
-        ],
-        "security": "主动拦截+自动阻断",
-        "stars": 0,
-        "maintainer": "lm203688",
-        "status": "active",
-        "language": "JavaScript",
-        "features": [
-          "工具安装拦截",
-          "自动安全扫描",
-          "不安全工具阻断",
-          "可配置阈值",
-          "实时告警"
-        ],
-        "install": "npx aishield-guardrail",
-        "github": "https://github.com/lm203688/aishield",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://github.com/lm203688/aishield",
-            "collected_at": "2026-06-18T09:19:49.000Z"
-          }
-        ]
-      },
-      {
-        "name": "GitHub MCP Server",
-        "full_name": "Official GitHub MCP Server",
-        "category": "Code Repository Integration",
-        "description": "Official server providing GitHub repository integration for AI models, enabling code browsing, PR management, and issue tracking.",
-        "protocol_version": "2025-04-public-preview",
-        "auth": "OAuth (GitHub PAT)",
-        "hosts": [
-          "GitHub",
-          "Claude Desktop",
-          "Cursor"
-        ],
-        "features": [
-          "Repository search",
-          "PR review",
-          "Issue management",
-          "Code browsing"
-        ],
-        "sources": [
-          "[2]"
-        ],
-        "id": "MCP-164"
-      },
-      {
-        "name": "Anthropic MCP SDK",
-        "full_name": "Model Context Protocol SDK (Anthropic)",
-        "category": "Core SDK / Reference Implementation",
-        "description": "Reference implementation and SDK for building MCP-compatible clients and servers, developed by Anthropic.",
-        "protocol_version": "2025-03-26",
-        "auth": "N/A",
-        "hosts": [
-          "Anthropic Claude",
-          "Open-source"
-        ],
-        "features": [
-          "Client library",
-          "Server framework",
-          "JSON-RPC transport",
-          "Tool/resource/prompt definitions"
-        ],
-        "sources": [
-          "[7]",
-          "[9]",
-          "[10]"
-        ],
-        "id": "MCP-165"
-      },
-      {
-        "name": "WorkOS MCP Integration",
-        "full_name": "WorkOS MCP Server",
-        "category": "Authentication & User Management",
-        "description": "Server integrating WorkOS authentication and user management capabilities into MCP-enabled AI applications.",
-        "protocol_version": "2025-03-26",
-        "auth": "WorkOS API Key + OAuth",
-        "hosts": [
-          "WorkOS Platform"
-        ],
-        "features": [
-          "SSO/OIDC",
-          "User provisioning",
-          "Role-based access",
-          "Directory sync"
-        ],
-        "sources": [
-          "[3]"
-        ],
-        "id": "MCP-166"
-      },
-      {
-        "name": "Linux Foundation MCP WG",
-        "full_name": "Model Context Protocol Working Group (Linux Foundation)",
-        "category": "Standardization / Governance Body",
-        "description": "Multi-company open standard governance body under the Linux Foundation managing MCP specification evolution through Working Groups.",
-        "protocol_version": "SEP-1302",
-        "auth": "LF Membership",
-        "hosts": [
-          "Linux Foundation",
-          "modelcontextprotocol.io"
-        ],
-        "features": [
-          "Specification management",
-          "Working groups",
-          "Interest groups",
-          "Release candidates"
-        ],
-        "sources": [
-          "[1]",
-          "[4]"
-        ],
-        "id": "MCP-167"
-      },
-      {
-        "name": "Firecrawl MCP",
-        "full_name": "Firecrawl Web Scraping MCP Server",
-        "category": "Web Data Extraction",
-        "description": "MCP server for web scraping, crawling, and extracting structured data from websites.",
-        "protocol_version": "2025-03-26",
-        "auth": "API Key",
-        "hosts": [
-          "firecrawl.dev"
-        ],
-        "features": [
-          "Web scraping",
-          "Browser automation",
-          "Data extraction",
-          "Site crawling"
-        ],
-        "sources": [
-          "[6]"
-        ],
-        "id": "MCP-168"
-      },
-      {
-        "name": "Speakeasy MCP",
-        "full_name": "Speakeasy SDK Generation MCP Server",
-        "category": "Developer Tooling",
-        "description": "MCP server supporting API SDK generation, tool standardization, and authorization transport for developer workflows.",
-        "protocol_version": "2025-03-26",
-        "auth": "API Key / OAuth",
-        "hosts": [
-          "speakeasy.com"
-        ],
-        "features": [
-          "SDK generation",
-          "Tool standardization",
-          "Authorization management",
-          "Transport layer support"
-        ],
-        "sources": [
-          "[7]"
-        ],
-        "id": "MCP-169"
-      },
-      {
-        "name": "WorkOS MCP",
-        "full_name": "WorkOS Identity & Auth MCP Server",
-        "category": "Authentication & Identity",
-        "description": "MCP server integrating AI models with external identity providers, authentication flows, and user management systems.",
-        "protocol_version": "2025-03-26",
-        "auth": "OAuth / SSO",
-        "hosts": [
-          "workos.com"
-        ],
-        "features": [
-          "User authentication",
-          "SSO integration",
-          "Identity provisioning",
-          "External tool connectivity"
-        ],
-        "sources": [
-          "[3]"
-        ],
-        "id": "MCP-170"
-      },
-      {
-        "name": "Anthropic Code Execution MCP",
-        "full_name": "Anthropic Code Execution MCP Server",
-        "category": "Code Execution & Agent Tools",
-        "description": "MCP server enabling AI agents to execute code safely in sandboxed environments and interact with external systems programmatically.",
-        "protocol_version": "2025-03-26",
-        "auth": "Anthropic API Key",
-        "hosts": [
-          "anthropic.com"
-        ],
-        "features": [
-          "Secure code execution",
-          "Sandboxed runtime",
-          "Agent tool integration",
-          "Two-way data connection"
-        ],
-        "sources": [
-          "[10]",
-          "[9]"
-        ],
-        "id": "MCP-171"
-      },
-      {
-        "id": "MCP-172",
-        "name": "MCP 2026-07 规范候选版",
-        "full_name": "MCP Specification 2026-07-28 RC",
-        "category": "协议规范",
-        "description": "MCP 2026年7月规范候选版发布：无状态协议核心、Extensions框架、Tasks、MCP Apps等重大更新",
-        "protocol_version": "2026-07-28",
-        "auth": "OAuth 2.1",
-        "hosts": [
-          "Claude Desktop",
-          "VS Code",
-          "Cursor",
-          "Gemini"
-        ],
-        "security": "企业级",
-        "stars": 0,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "N/A",
-        "features": [
-          "无状态协议核心",
-          "Extensions框架",
-          "Tasks",
-          "MCP Apps"
-        ]
-      },
-      {
-        "id": "MCP-173",
-        "name": "MCP企业部署指南 2026",
-        "full_name": "MCP Enterprise Deployment Guide",
-        "category": "企业部署",
-        "description": "2026年MCP企业部署完整指南：JSON-RPC规范、OAuth 2.1安全、可观测性模式和部署路线图",
-        "protocol_version": "2025-06-18+",
-        "auth": "OAuth 2.1",
-        "hosts": [
-          "Enterprise"
-        ],
-        "security": "企业级安全",
-        "stars": 0,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "N/A",
-        "features": [
-          "OAuth 2.1",
-          "可观测性",
-          "企业部署路线图"
-        ]
-      },
-      {
-        "id": "MCP-174",
-        "name": "MCP Extensions框架",
-        "full_name": "MCP Extensions Framework",
-        "category": "扩展框架",
-        "description": "MCP Extensions框架允许社区构建可复用的协议扩展，支持自定义能力和工具集成",
-        "protocol_version": "2026-07-28",
-        "auth": "varies",
-        "hosts": [
-          "兼容MCP客户端"
-        ],
-        "security": "扩展定义",
-        "stars": 0,
-        "maintainer": "Anthropic+社区",
-        "status": "active",
-        "language": "TypeScript/Python",
-        "features": [
-          "可扩展架构",
-          "社区扩展",
-          "自定义工具"
-        ]
-      },
-      {
-        "id": "MCP-175",
-        "name": "MCP Apps",
-        "full_name": "MCP Apps",
-        "category": "应用框架",
-        "description": "MCP Apps是MCP 2026规范引入的应用层概念，支持构建完整的MCP原生应用",
-        "protocol_version": "2026-07-28",
-        "auth": "varies",
-        "hosts": [
-          "MCP兼容平台"
-        ],
-        "security": "应用级",
-        "stars": 0,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "Multi",
-        "features": [
-          "应用层抽象",
-          "原生MCP应用",
-          "端到端工具链"
-        ]
-      },
-      {
-        "id": "MCP-176",
-        "name": "MCP Tasks",
-        "full_name": "MCP Tasks",
-        "category": "任务调度",
-        "description": "MCP Tasks是2026规范引入的任务调度机制，支持异步任务和长运行操作",
-        "protocol_version": "2026-07-28",
-        "auth": "varies",
-        "hosts": [
-          "MCP兼容客户端"
-        ],
-        "security": "任务级",
-        "stars": 0,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "Multi",
-        "features": [
-          "异步任务",
-          "长运行操作",
-          "任务状态追踪"
-        ]
-      },
-      {
-        "id": "MCP-177",
-        "name": "MCP无状态协议核心",
-        "full_name": "MCP Stateless Core",
-        "category": "协议核心",
-        "description": "MCP 2026规范将协议核心重构为无状态设计，简化扩展和部署，提高可伸缩性",
-        "protocol_version": "2026-07-28",
-        "auth": "varies",
-        "hosts": [
-          "全平台"
-        ],
-        "security": "无状态安全",
-        "stars": 0,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "language": "N/A",
-        "features": [
-          "无状态设计",
-          "高可伸缩",
-          "简化部署"
-        ]
-      },
-      {
-        "id": "MCP-178",
-        "name": "MCP生态统计 2026",
-        "full_name": "MCP Ecosystem Stats 2026",
-        "category": "生态统计",
-        "description": "2026年MCP采用统计：已验证服务器数量、GitHub生态信号、企业生产数据和集成覆盖",
-        "protocol_version": "N/A",
-        "auth": "N/A",
-        "hosts": [
-          "N/A"
-        ],
-        "security": "N/A",
-        "stars": 0,
-        "maintainer": "社区",
-        "status": "active",
-        "language": "N/A",
-        "features": [
-          "生态数据",
-          "采用统计",
-          "企业生产指标"
-        ]
-      }
-    ]
-  },
-  "memory_systems": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-20T08:00:00Z",
-    "description": "memory_systems库",
-    "entities": [
-      {
-        "id": "MEM-001",
-        "name": "mem0",
-        "type": "向量+图谱",
-        "architecture": "混合",
-        "features": [
-          "自动记忆提取",
-          "用户画像",
-          "时间衰减"
-        ],
-        "open_source": true,
-        "license": "MIT",
-        "maturity": "生产可用",
-        "pricing": "免费/Pro$29/月",
-        "language": "Python"
-      },
-      {
-        "id": "MEM-002",
-        "name": "Zep",
-        "type": "向量+图谱",
-        "architecture": "混合",
-        "features": [
-          "对话记忆",
-          "实体提取",
-          "知识图谱"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "生产可用",
-        "pricing": "免费/Cloud付费",
-        "language": "Python/TS"
-      },
-      {
-        "id": "MEM-003",
-        "name": "Letta (MemGPT)",
-        "type": "分层记忆",
-        "architecture": "上下文+归档",
-        "features": [
-          "虚拟上下文管理",
-          "自动分页",
-          "无限上下文"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "生产可用",
-        "pricing": "免费/Cloud付费",
-        "language": "Python"
-      },
-      {
-        "id": "MEM-004",
-        "name": "Cognee",
-        "type": "知识图谱",
-        "architecture": "Graph RAG",
-        "features": [
-          "自动知识图谱构建",
-          "实体关系推理"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "早期",
-        "pricing": "免费",
-        "language": "Python"
-      },
-      {
-        "id": "MEM-005",
-        "name": "Graphiti",
-        "type": "知识图谱",
-        "architecture": "时序图谱",
-        "features": [
-          "自动演化图谱",
-          "时间推理",
-          "非结构化输入"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "早期",
-        "pricing": "免费",
-        "language": "Python"
-      },
-      {
-        "id": "MEM-006",
-        "name": "Hindsight",
-        "type": "对话记忆",
-        "architecture": "向量",
-        "features": [
-          "对话摘要",
-          "关键信息提取",
-          "上下文窗口"
-        ],
-        "open_source": true,
-        "license": "MIT",
-        "maturity": "早期",
-        "pricing": "免费",
-        "language": "Python"
-      },
-      {
-        "id": "MEM-007",
-        "name": "LangMem",
-        "type": "工作流记忆",
-        "architecture": "LangGraph集成",
-        "features": [
-          "LangGraph原生记忆",
-          "工作流编排集成",
-          "记忆工具链",
-          "语义搜索"
-        ],
-        "open_source": true,
-        "license": "MIT",
-        "maturity": "生产可用",
-        "pricing": "免费",
-        "language": "Python",
-        "benchmarks": "LangGraph生态",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:54.619Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-008",
-        "name": "Memvid",
-        "type": "多模态记忆",
-        "architecture": "视频编码",
-        "features": [
-          "视频记忆编码",
-          "多模态记忆检索",
-          "视觉上下文保存"
-        ],
-        "open_source": true,
-        "license": "MIT",
-        "maturity": "实验性",
-        "pricing": "免费",
-        "language": "Python",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-05-30T13:38:54.619Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-009",
-        "name": "MemoClaw",
-        "type": "跨平台记忆",
-        "architecture": "分布式",
-        "features": [
-          "Agent记忆管理",
-          "跨平台记忆同步",
-          "结构化记忆存储"
-        ],
-        "open_source": true,
-        "license": "MIT",
-        "maturity": "生产可用",
-        "pricing": "免费/付费",
-        "language": "Python/TS",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-05-30T13:38:54.619Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-010",
-        "name": "EverMind",
-        "type": "长期记忆",
-        "architecture": "个性化",
-        "features": [
-          "Zep替代方案",
-          "长期记忆管理",
-          "对话理解",
-          "个性化记忆"
-        ],
-        "open_source": true,
-        "license": "MIT",
-        "maturity": "生产可用",
-        "pricing": "免费/付费",
-        "language": "Python",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-05-30T13:38:54.619Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-011",
-        "name": "Pinecone Memory",
-        "type": "向量记忆",
-        "architecture": "托管向量",
-        "features": [
-          "Pinecone托管向量",
-          "Serverless部署",
-          "命名空间隔离",
-          "高可用"
-        ],
-        "open_source": false,
-        "license": "Commercial",
-        "maturity": "生产可用",
-        "pricing": "按用量付费",
-        "language": "Cloud API",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:54.619Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-012",
-        "name": "Mem0 v2 (Graph Memory)",
-        "type": "向量+图谱",
-        "architecture": "图记忆增强",
-        "features": [
-          "图记忆功能",
-          "自动记忆提取",
-          "跨会话持久化",
-          "55K+ Stars",
-          "LoCoMo/LongMemEval/BEAM基准测试领先"
-        ],
-        "open_source": true,
-        "license": "MIT",
-        "maturity": "生产可用",
-        "pricing": "免费/Pro$29/月/图记忆$249/月",
-        "language": "Python/TS",
-        "benchmarks": "LoCoMo/LongMemEval/BEAM标准",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:54.619Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-013",
-        "name": "Hindsight v2",
-        "type": "memory_system",
-        "description": "Hindsight v2，2026年Agent记忆系统，准确率91.4%，支持层次化记忆架构和知识图谱",
-        "accuracy": "91.4%",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MEM-014",
-        "name": "Cognee v2",
-        "type": "memory_system",
-        "description": "Cognee v2，2026年知识图谱记忆系统升级版，支持多Agent共享记忆和类型化关系",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MEM-015",
-        "name": "Zep v2",
-        "type": "memory_system",
-        "description": "Zep v2，2026年Agent长期记忆系统升级版，支持结构化知识提取和对话记忆管理",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "MEM-016",
-        "name": "LangChain Memory",
-        "category": "memory-framework",
-        "description": "LangChain's built-in memory module for AI agents. Supports conversation buffer, summary, and entity memory patterns.",
-        "features": [
-          "conversation buffer",
-          "summary memory",
-          "entity memory",
-          "LangChain integration"
-        ],
-        "status": "active",
-        "year": 2024,
-        "sources": [
-          "https://machinelearningmastery.com/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026"
-        ]
-      },
-      {
-        "id": "MEM-017",
-        "name": "LlamaIndex Memory",
-        "category": "memory-framework",
-        "description": "LlamaIndex's memory module for AI agents with document-indexed retrieval and context management.",
-        "features": [
-          "document indexing",
-          "retrieval memory",
-          "context management",
-          "LlamaIndex integration"
-        ],
-        "status": "active",
-        "year": 2024,
-        "sources": [
-          "https://machinelearningmastery.com/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026"
-        ]
-      },
-      {
-        "id": "MEM-018",
-        "name": "ICLR 2026 Agent Memory Workshop",
-        "category": "research",
-        "description": "ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems. Advances design of memory layer for agentic systems.",
-        "features": [
-          "academic research",
-          "memory architecture",
-          "agentic systems",
-          "workshop proceedings"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://iclr.cc/virtual/2026/workshop/10000792"
-        ]
-      },
-      {
-        "id": "MEM-019",
-        "name": "Mem0 State of Agent Memory 2026",
-        "category": "benchmark",
-        "description": "Comprehensive report on AI agent memory in 2026 by Mem0. Production engineering discipline with real benchmarks and measurable trade-offs.",
-        "features": [
-          "benchmark report",
-          "production metrics",
-          "memory evaluation",
-          "industry survey"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://mem0.ai/blog/state-of-ai-agent-memory-2026"
-        ]
-      },
-      {
-        "id": "MEM-020",
-        "name": "SitePoint Agent Memory Guide",
-        "category": "guide",
-        "description": "Complete guide to agent memory in 2026 covering memory architecture concepts and five most destructive memory failure modes.",
-        "features": [
-          "memory architecture",
-          "failure modes",
-          "production guide",
-          "best practices"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://www.sitepoint.com/the-new-reality-of-agent-memory-the-complete-guide-2026"
-        ]
-      },
-      {
-        "id": "MEM-021",
-        "name": "LoCoMo Benchmark",
-        "full_name": "LoCoMo Long-term Conversation Memory Benchmark",
-        "category": "记忆基准",
-        "description": "LoCoMo是2026年Agent记忆架构比较的标准基准之一，用于评估长期对话记忆能力，与LongMemEval和BEAM并列为三大记忆基准",
-        "key_features": [
-          "长期对话记忆评估",
-          "多轮交互测试",
-          "记忆检索准确率",
-          "行业标准基准"
-        ],
-        "status": "active",
-        "year": 2026,
-        "maintainer": "学术界",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-022",
-        "name": "LongMemEval Benchmark",
-        "full_name": "LongMemEval Long-term Memory Retrieval Benchmark",
-        "category": "记忆基准",
-        "description": "LongMemEval (ICLR 2025)是长期记忆检索评估基准，每个问题约48个会话(S变体500题、~115K tokens)，已成为Agent记忆系统标准评估工具",
-        "key_features": [
-          "48会话/问题",
-          "500题(S变体)",
-          "~115K tokens/问题",
-          "ICLR 2025论文"
-        ],
-        "status": "active",
-        "year": 2025,
-        "maintainer": "学术界",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://github.com/rohitg00/agentmemory/blob/main/benchmark/COMPARISON.md",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          },
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "id": "MEM-023",
-        "name": "BEAM Benchmark",
-        "full_name": "BEAM Agent Memory Benchmark",
-        "category": "记忆基准",
-        "description": "BEAM是2026年三大Agent记忆基准之一(与LoCoMo和LongMemEval并列)，用于全面评估Agent记忆架构性能",
-        "key_features": [
-          "Agent记忆综合评估",
-          "与LoCoMo/LongMemEval并列",
-          "行业标准"
-        ],
-        "status": "active",
-        "year": 2026,
-        "maintainer": "学术界",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "name": "Letta",
-        "type": "Framework",
-        "description": "An open-source community-led approach to AI agent memory management.",
-        "features": [
-          "Open source",
-          "Community-driven",
-          "Long-term memory"
-        ],
-        "status": "Battle-Tested",
-        "sources": [
-          "https://medium.com/asymptotic-spaghetti-integration/from-beta-to-battle-tested-picking-between-letta-mem0-zep-for-ai-memory-6850ca8703d1",
-          "https://forum.letta.com/t/agent-memory-letta-vs-mem0-vs-zep-vs-cognee/88"
-        ],
-        "id": "MEM-024"
-      },
-      {
-        "name": "IBM AI Agent Memory",
-        "type": "Concept/Resource",
-        "description": "IBM's perspective on AI agent memory, focusing on Long-term memory (LTM) for personalization and intelligence.",
-        "features": [
-          "Long-term memory (LTM)",
-          "Personalization",
-          "Cross-session recall"
-        ],
-        "status": "Reference",
-        "sources": [
-          "https://www.ibm.com/think/topics/ai-agent-memory"
-        ],
-        "id": "MEM-025"
-      }
-    ]
-  },
-  "model_apis": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-24T07:13:00Z",
-    "description": "model_apis库",
-    "entities": [
-      {
-        "id": "API-001",
-        "name": "OpenAI API",
-        "vendor": "OpenAI",
-        "type": "LLM API",
-        "models": [
-          "GPT-4o",
-          "GPT-4o-mini",
-          "o1",
-          "o3-mini",
-          "DALL-E 3",
-          "Whisper",
-          "TTS"
-        ],
-        "pricing_input": "$2.5/1M tokens (GPT-4o)",
-        "pricing_output": "$10/1M tokens (GPT-4o)",
-        "context_window": "128K",
-        "features": [
-          "Chat Completions",
-          "Function Calling",
-          "Vision",
-          "Structured Output",
-          "Batch API",
-          "Fine-tuning",
-          "Assistants API"
-        ],
-        "rate_limit": "Tier1: 500 RPM",
-        "sdk_languages": [
-          "Python",
-          "Node.js",
-          "Go",
-          "Java",
-          "C#"
-        ],
-        "docs": "https://platform.openai.com/docs",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-002",
-        "name": "Anthropic API",
-        "vendor": "Anthropic",
-        "type": "LLM API",
-        "models": [
-          "Claude 3.5 Sonnet",
-          "Claude 3.5 Haiku",
-          "Claude 3 Opus"
-        ],
-        "pricing_input": "$3/1M tokens (Sonnet)",
-        "pricing_output": "$15/1M tokens (Sonnet)",
-        "context_window": "200K",
-        "features": [
-          "Messages API",
-          "Tool Use",
-          "Vision",
-          "MCP Support",
-          "Prompt Caching",
-          "Extended Thinking"
-        ],
-        "rate_limit": "Tier1: 1000 RPM",
-        "sdk_languages": [
-          "Python",
-          "Node.js"
-        ],
-        "docs": "https://docs.anthropic.com",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-003",
-        "name": "Google Gemini API",
-        "vendor": "Google",
-        "type": "LLM API",
-        "models": [
-          "Gemini 2.0 Flash",
-          "Gemini 2.5 Pro",
-          "Gemini 1.5 Pro"
-        ],
-        "pricing_input": "$1.25/1M tokens (Flash)",
-        "pricing_output": "$5/1M tokens (Flash)",
-        "context_window": "1M-2M",
-        "features": [
-          "Generate Content",
-          "Function Calling",
-          "Vision",
-          "Code Execution",
-          "Grounding",
-          "Context Caching"
-        ],
-        "rate_limit": "Free: 15 RPM, Pay: 2000 RPM",
-        "sdk_languages": [
-          "Python",
-          "Node.js",
-          "Go",
-          "Java",
-          "Dart"
-        ],
-        "docs": "https://ai.google.dev/docs",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-004",
-        "name": "DeepSeek API",
-        "vendor": "DeepSeek",
-        "type": "LLM API",
-        "models": [
-          "DeepSeek-V3",
-          "DeepSeek-R1"
-        ],
-        "pricing_input": "$0.27/1M tokens",
-        "pricing_output": "$1.1/1M tokens",
-        "context_window": "128K",
-        "features": [
-          "Chat Completions",
-          "FIM",
-          "JSON Output",
-          "Function Calling"
-        ],
-        "rate_limit": "按余额",
-        "sdk_languages": [
-          "OpenAI兼容"
-        ],
-        "docs": "https://platform.deepseek.com/api-docs",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-005",
-        "name": "智谱AI API",
-        "vendor": "智谱AI",
-        "type": "LLM API",
-        "models": [
-          "GLM-4",
-          "GLM-4V",
-          "GLM-4-Flash"
-        ],
-        "pricing_input": "¥0.1/1M tokens (Flash)",
-        "pricing_output": "¥0.1/1M tokens (Flash)",
-        "context_window": "128K",
-        "features": [
-          "Chat Completions",
-          "Function Calling",
-          "Vision",
-          "Web Search",
-          "Code Interpreter"
-        ],
-        "rate_limit": "按套餐",
-        "sdk_languages": [
-          "Python",
-          "Node.js",
-          "Java"
-        ],
-        "docs": "https://open.bigmodel.cn/dev/api",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-006",
-        "name": "Mistral API",
-        "vendor": "Mistral AI",
-        "type": "LLM API",
-        "models": [
-          "Mistral Large",
-          "Mistral Medium",
-          "Codestral",
-          "Pixtral"
-        ],
-        "pricing_input": "$2/1M tokens (Large)",
-        "pricing_output": "$6/1M tokens (Large)",
-        "context_window": "128K",
-        "features": [
-          "Chat Completions",
-          "Function Calling",
-          "Vision",
-          "Embeddings",
-          "Agents API"
-        ],
-        "rate_limit": "按套餐",
-        "sdk_languages": [
-          "Python",
-          "Node.js"
-        ],
-        "docs": "https://docs.mistral.ai",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-007",
-        "name": "Cohere API",
-        "vendor": "Cohere",
-        "type": "LLM/RAG API",
-        "models": [
-          "Command R+",
-          "Command R",
-          "Embed v3",
-          "Rerank v3"
-        ],
-        "pricing_input": "$2.5/1M tokens (R+)",
-        "pricing_output": "$10/1M tokens (R+)",
-        "context_window": "128K",
-        "features": [
-          "Chat",
-          "RAG",
-          "Embeddings",
-          "Rerank",
-          "Connectors",
-          "Fine-tuning"
-        ],
-        "rate_limit": "按套餐",
-        "sdk_languages": [
-          "Python",
-          "Node.js"
-        ],
-        "docs": "https://docs.cohere.com",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-008",
-        "name": "Groq API",
-        "vendor": "Groq",
-        "type": "推理加速API",
-        "models": [
-          "Llama 3.3 70B",
-          "Mixtral 8x7B",
-          "Gemma 2 9B"
-        ],
-        "pricing_input": "$0.59/1M tokens",
-        "pricing_output": "$0.79/1M tokens",
-        "context_window": "128K",
-        "features": [
-          "超低延迟推理",
-          "OpenAI兼容",
-          "Chat Completions",
-          "Vision"
-        ],
-        "rate_limit": "按套餐",
-        "sdk_languages": [
-          "OpenAI兼容"
-        ],
-        "docs": "https://console.groq.com/docs",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-009",
-        "name": "Together AI API",
-        "vendor": "Together AI",
-        "type": "推理平台",
-        "models": [
-          "200+开源模型",
-          "Llama 3",
-          "Qwen 2.5",
-          "DeepSeek"
-        ],
-        "pricing_input": "$0.18/1M tokens (Llama3)",
-        "pricing_output": "$0.18/1M tokens",
-        "context_window": "128K",
-        "features": [
-          "Serverless推理",
-          "Fine-tuning",
-          "Embeddings",
-          "Image Gen"
-        ],
-        "rate_limit": "按余额",
-        "sdk_languages": [
-          "OpenAI兼容"
-        ],
-        "docs": "https://docs.together.ai",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-010",
-        "name": "Fireworks AI API",
-        "vendor": "Fireworks AI",
-        "type": "推理平台",
-        "models": [
-          "Llama 3.3",
-          "Qwen 2.5",
-          "Mixtral",
-          "Whisper"
-        ],
-        "pricing_input": "$0.2/1M tokens",
-        "pricing_output": "$0.2/1M tokens",
-        "context_window": "128K",
-        "features": [
-          "Serverless推理",
-          "Fine-tuning",
-          "Vision",
-          "Function Calling"
-        ],
-        "rate_limit": "按余额",
-        "sdk_languages": [
-          "OpenAI兼容"
-        ],
-        "docs": "https://docs.fireworks.ai",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-011",
-        "name": "Perplexity API",
-        "vendor": "Perplexity",
-        "type": "搜索AI API",
-        "models": [
-          "Sonar",
-          "Sonar Pro",
-          "Sonar Reasoning"
-        ],
-        "pricing_input": "$1/1M tokens",
-        "pricing_output": "$1/1M tokens",
-        "context_window": "128K",
-        "features": [
-          "实时搜索",
-          "引用来源",
-          "Pro深度搜索"
-        ],
-        "rate_limit": "按套餐",
-        "sdk_languages": [
-          "Python",
-          "Node.js"
-        ],
-        "docs": "https://docs.perplexity.ai",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-012",
-        "name": "ElevenLabs API",
-        "vendor": "ElevenLabs",
-        "type": "TTS/STT API",
-        "models": [
-          "eleven_multilingual_v2",
-          "eleven_turbo_v2",
-          "eleven_monolingual_v1"
-        ],
-        "pricing_input": "$0.18/1K chars",
-        "pricing_output": "N/A",
-        "context_window": "N/A",
-        "features": [
-          "TTS",
-          "STT",
-          "Voice Cloning",
-          "Sound Effects",
-          "Dubbing"
-        ],
-        "rate_limit": "按套餐",
-        "sdk_languages": [
-          "Python",
-          "Node.js"
-        ],
-        "docs": "https://elevenlabs.io/docs/api-reference",
-        "status": "生产可用"
-      },
-      {
-        "id": "API-013",
-        "name": "Claude Agent SDK API",
-        "full_name": "Anthropic Agent SDK API",
-        "category": "Agent API",
-        "description": "Anthropic Claude Agent SDK于2026年6月15日开始从独立月度Agent SDK额度计费，支持文件存储和事件构建",
-        "maintainer": "Anthropic",
-        "status": "active",
-        "features": [
-          "独立计费",
-          "文件存储",
-          "事件构建",
-          "Agent原生"
-        ]
-      },
-      {
-        "id": "API-014",
-        "name": "Google ADK API",
-        "full_name": "Google Agent Development Kit API",
-        "category": "Agent API",
-        "description": "Google ADK提供Agent开发API，优化Google Cloud集成，支持层级Agent树和多Agent编排",
-        "maintainer": "Google",
-        "status": "active",
-        "features": [
-          "Google Cloud优化",
-          "层级Agent树",
-          "多Agent编排",
-          "Vertex AI集成"
-        ]
-      },
-      {
-        "id": "API-015",
-        "name": "OpenAI Agents API",
-        "full_name": "OpenAI Agents API",
-        "category": "Agent API",
-        "description": "OpenAI Agents SDK配套API，支持Handoff模式、工具调用和多Agent协作，1030万月下载量",
-        "maintainer": "OpenAI",
-        "status": "active",
-        "features": [
-          "Handoff模式",
-          "工具调用",
-          "多Agent协作",
-          "大规模采用"
-        ]
-      },
-      {
-        "id": "API-016",
-        "name": "MCP Tasks API",
-        "full_name": "MCP Tasks API",
-        "category": "协议API",
-        "description": "MCP 2026规范引入的Tasks API，支持异步任务调度和长运行操作管理",
-        "maintainer": "Anthropic",
-        "status": "active",
-        "features": [
-          "异步任务",
-          "长运行操作",
-          "任务状态追踪",
-          "2026规范"
-        ]
-      }
-    ]
-  },
-  "protocols": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-20T08:00:00Z",
-    "description": "protocols库",
-    "entities": [
-      {
-        "id": "PROTO-001",
-        "name": "MCP (Model Context Protocol)",
-        "vendor": "Anthropic",
-        "version": "2026-07-28-rc",
-        "layer": "Agent-Tool",
-        "description": "让AI Agent连接外部工具和数据源的开放协议，2026年最大版本更新",
-        "architecture": "Client-Server",
-        "transport": "stdio/SSE/StreamableHTTP",
-        "security": "进程隔离/权限控制/OAuth",
-        "adoption": "广泛（13000+ MCP Server）",
-        "github_stars": "30000+",
-        "status": "事实标准"
-      },
-      {
-        "id": "PROTO-002",
-        "name": "A2A (Agent-to-Agent)",
-        "vendor": "Google",
-        "version": "0.1",
-        "layer": "Agent-Agent",
-        "description": "让不同框架的AI Agent互相通信和协作",
-        "architecture": "P2P/Hub",
-        "transport": "HTTP/JSON-RPC",
-        "security": "Agent Card认证",
-        "adoption": "快速增长(50+合作伙伴)",
-        "github_stars": "5000+",
-        "status": "快速增长"
-      },
-      {
-        "id": "PROTO-003",
-        "name": "ACP (Agent Communication Protocol)",
-        "vendor": "IBM/BEA",
-        "version": "0.1",
-        "layer": "Agent-Agent",
-        "description": "IBM主导的Agent通信协议",
-        "architecture": "Hub-Spoke",
-        "transport": "HTTP/gRPC",
-        "security": "企业级安全",
-        "adoption": "IBM生态",
-        "github_stars": "500",
-        "status": "早期"
-      },
-      {
-        "id": "PROTO-004",
-        "name": "OpenClaw Skill Protocol",
-        "vendor": "OpenClaw",
-        "version": "1.0",
-        "layer": "Agent-Skill",
-        "description": "Agent技能描述和分发协议",
-        "architecture": "Registry",
-        "transport": "npm/git",
-        "security": "沙箱执行/权限声明",
-        "adoption": "OpenClaw生态",
-        "github_stars": "2000",
-        "status": "活跃"
-      },
-      {
-        "id": "PROTO-005",
-        "name": "LSP (Language Server Protocol)",
-        "vendor": "Microsoft",
-        "version": "3.17",
-        "layer": "Editor-Language",
-        "description": "编辑器与语言服务通信协议",
-        "architecture": "Client-Server",
-        "transport": "stdio/HTTP",
-        "security": "进程隔离",
-        "adoption": "广泛",
-        "github_stars": "11000",
-        "status": "成熟标准"
-      },
-      {
-        "id": "PROTO-006",
-        "name": "AG-UI (Agent User Interaction Protocol)",
-        "vendor": "CopilotKit",
-        "version": "0.1",
-        "layer": "Agent-UI",
-        "description": "Agent与前端UI交互的开放协议，定义Agent事件流到UI组件的映射",
-        "architecture": "Event Stream",
-        "transport": "SSE/WebSocket",
-        "security": "CORS/认证",
-        "adoption": "CopilotKit生态",
-        "github_stars": "8000+",
-        "status": "快速增长"
-      },
-      {
-        "id": "PROTO-007",
-        "name": "ANP (Agent Network Protocol)",
-        "vendor": "ANP社区",
-        "version": "0.2",
-        "layer": "Agent-Network",
-        "description": "去中心化Agent网络协议，支持Agent发现和互操作",
-        "architecture": "P2P/DID",
-        "transport": "HTTP/DID Comm",
-        "security": "DID认证/加密",
-        "adoption": "W3C DID生态",
-        "github_stars": "3000",
-        "status": "活跃"
-      },
-      {
-        "id": "PROTO-008",
-        "name": "OpenAPI/Swagger",
-        "vendor": "Linux Foundation",
-        "version": "3.1",
-        "layer": "API-Description",
-        "description": "REST API描述标准，MCP Server可从OpenAPI自动生成",
-        "architecture": "Specification",
-        "transport": "HTTP",
-        "security": "OAuth/API Key",
-        "adoption": "广泛",
-        "github_stars": "29000",
-        "status": "成熟标准"
-      },
-      {
-        "id": "PROTO-009",
-        "name": "gRPC",
-        "vendor": "Google",
-        "version": "1.6x",
-        "layer": "RPC",
-        "description": "高性能RPC框架，Agent间低延迟通信",
-        "architecture": "Client-Server/Streaming",
-        "transport": "HTTP/2",
-        "security": "TLS/Token",
-        "adoption": "广泛",
-        "github_stars": "41000",
-        "status": "成熟标准"
-      },
-      {
-        "id": "PROTO-010",
-        "name": "GraphQL",
-        "vendor": "GraphQL Foundation",
-        "version": "October 2021",
-        "layer": "API-Query",
-        "description": "灵活的API查询语言，Agent按需获取数据",
-        "architecture": "Client-Server",
-        "transport": "HTTP/WebSocket",
-        "security": "查询深度限制/认证",
-        "adoption": "广泛",
-        "github_stars": "14000",
-        "status": "成熟标准"
-      },
-      {
-        "id": "PROTO-011",
-        "name": "WASM Component Model",
-        "vendor": "Bytecode Alliance",
-        "version": "0.2",
-        "layer": "Agent-Sandbox",
-        "description": "WebAssembly组件模型，Agent安全沙箱执行",
-        "architecture": "Component",
-        "transport": "WASM Runtime",
-        "security": "沙箱隔离/能力控制",
-        "adoption": "增长中",
-        "github_stars": "1000",
-        "status": "活跃"
-      },
-      {
-        "id": "PROTO-012",
-        "name": "JSON-RPC 2.0",
-        "vendor": "JSON-RPC社区",
-        "version": "2.0",
-        "layer": "RPC",
-        "description": "轻量级远程过程调用协议，MCP底层传输之一",
-        "architecture": "Client-Server",
-        "transport": "HTTP/WebSocket/stdio",
-        "security": "传输层安全",
-        "adoption": "广泛",
-        "github_stars": "N/A",
-        "status": "成熟标准"
-      },
-      {
-        "id": "PROTO-013",
-        "name": "Server-Sent Events (SSE)",
-        "vendor": "W3C",
-        "version": "Living Standard",
-        "layer": "Transport",
-        "description": "服务器推送事件流，MCP远程传输方式",
-        "architecture": "Server-Push",
-        "transport": "HTTP",
-        "security": "CORS/认证",
-        "adoption": "广泛",
-        "github_stars": "N/A",
-        "status": "成熟标准"
-      },
-      {
-        "id": "PROTO-014",
-        "name": "DAP (Debug Adapter Protocol)",
-        "vendor": "Microsoft",
-        "version": "1.6x",
-        "layer": "Agent-Debug",
-        "description": "调试适配器协议，Agent调试和可观测性",
-        "architecture": "Client-Server",
-        "transport": "stdio/HTTP",
-        "security": "进程隔离",
-        "adoption": "IDE广泛",
-        "github_stars": "2000",
-        "status": "成熟"
-      },
-      {
-        "id": "PROTO-015",
-        "name": "OpenTelemetry",
-        "vendor": "CNCF",
-        "version": "1.x",
-        "layer": "Observability",
-        "description": "可观测性标准，Agent tracing/metrics/logs",
-        "architecture": "Collector/Export",
-        "transport": "OTLP/gRPC/HTTP",
-        "security": "TLS/Token",
-        "adoption": "广泛",
-        "github_stars": "4500",
-        "status": "事实标准"
-      },
-      {
-        "id": "PROTO-016",
-        "name": "FHIR (Healthcare API)",
-        "vendor": "HL7",
-        "version": "R4B/R5",
-        "layer": "Domain-API",
-        "description": "医疗健康数据交换标准，医疗Agent场景",
-        "architecture": "RESTful",
-        "transport": "HTTP",
-        "security": "OAuth2/SMART",
-        "adoption": "医疗行业广泛",
-        "github_stars": "2000",
-        "status": "行业标准"
-      },
-      {
-        "id": "PROTO-017",
-        "name": "Stainless API Standard",
-        "vendor": "Stainless",
-        "version": "1.0",
-        "layer": "API-SDK-Gen",
-        "description": "API到SDK自动生成标准，MCP Server SDK生成",
-        "architecture": "Generator",
-        "transport": "HTTP",
-        "security": "规范定义",
-        "adoption": "增长中",
-        "github_stars": "3000",
-        "status": "活跃"
-      },
-      {
-        "id": "PROTO-018",
-        "name": "Semantic Protocol (SP)",
-        "vendor": "W3C",
-        "version": "Draft",
-        "layer": "Agent-Semantic",
-        "description": "语义网协议栈，Agent知识表示和推理",
-        "architecture": "RDF/OWL/SPARQL",
-        "transport": "HTTP",
-        "security": "访问控制",
-        "adoption": "知识图谱领域",
-        "github_stars": "N/A",
-        "status": "标准草案"
-      },
-      {
-        "id": "PROTO-019",
-        "name": "OAuth 2.1 / DPoP",
-        "vendor": "IETF",
-        "version": "RFC 9449",
-        "layer": "Auth",
-        "description": "Agent认证和授权标准，MCP远程安全基础",
-        "architecture": "Token-based",
-        "transport": "HTTP",
-        "security": "PKCE/DPoP",
-        "adoption": "广泛",
-        "github_stars": "N/A",
-        "status": "成熟标准"
-      },
-      {
-        "id": "PROTO-020",
-        "name": "Tool Call Protocol (OpenAI)",
-        "vendor": "OpenAI",
-        "version": "2024-12",
-        "layer": "Agent-Tool",
-        "description": "OpenAI定义的函数调用协议，事实上的工具调用标准",
-        "architecture": "Request-Response",
-        "transport": "HTTP API",
-        "security": "API Key",
-        "adoption": "广泛（OpenAI兼容模型）",
-        "github_stars": "N/A",
-        "status": "事实标准"
-      },
-      {
-        "id": "PROTO-021",
-        "name": "Agent Gateway Protocol (AGP)",
-        "vendor": "社区",
-        "version": "0.1",
-        "layer": "Agent-Gateway",
-        "description": "Agent网关协议，统一多Agent系统的入口和路由",
-        "architecture": "Gateway",
-        "transport": "HTTP/gRPC",
-        "security": "mTLS/RBAC",
-        "adoption": "早期",
-        "github_stars": "1500",
-        "status": "早期"
-      },
-      {
-        "id": "PROTO-022",
-        "name": "x402 (HTTP 402 Payment Protocol)",
-        "vendor": "Coinbase/社区",
-        "version": "1.0",
-        "layer": "Agent-Payment",
-        "description": "基于HTTP 402状态码的机器对机器微支付协议，已处理7500万+交易",
-        "architecture": "HTTP-native",
-        "transport": "HTTP/HTTPS",
-        "security": "加密签名/区块链",
-        "adoption": "快速增长（75M+交易/月）",
-        "github_stars": "5000+",
-        "status": "生产可用"
-      },
-      {
-        "id": "PROTO-023",
-        "name": "AP2 (Agent Payment Protocol)",
-        "vendor": "Google",
-        "version": "0.1",
-        "layer": "Agent-Payment",
-        "description": "Google推出的Agent预授权支付协议，60+合作组织",
-        "architecture": "Pre-authorized",
-        "transport": "HTTP/gRPC",
-        "security": "OAuth/加密",
-        "adoption": "早期（60+合作伙伴）",
-        "github_stars": "N/A",
-        "status": "早期"
-      },
-      {
-        "id": "PROTO-024",
-        "name": "ACP (Agent Commerce Protocol)",
-        "vendor": "Stripe",
-        "version": "1.0",
-        "layer": "Agent-Payment",
-        "description": "Stripe推出的Agent商务协议，已集成到ChatGPT",
-        "architecture": "Commerce-focused",
-        "transport": "HTTPS",
-        "security": "Stripe安全",
-        "adoption": "ChatGPT集成",
-        "github_stars": "N/A",
-        "status": "生产可用"
-      },
-      {
-        "id": "PROTO-025",
-        "name": "UCP (Universal Commerce Protocol)",
-        "vendor": "Google",
-        "version": "0.1",
-        "layer": "Agent-Payment",
-        "description": "Google推出的通用商务协议，用于Agent间交易",
-        "architecture": "Universal",
-        "transport": "HTTP/gRPC",
-        "security": "加密",
-        "adoption": "早期",
-        "github_stars": "N/A",
-        "status": "早期"
-      },
-      {
-        "id": "PROTO-027",
-        "name": "A2UI (Agent-to-UI Protocol)",
-        "vendor": "社区",
-        "version": "0.1",
-        "layer": "Agent-UI",
-        "description": "Agent到用户界面的直接交互协议",
-        "architecture": "Component-based",
-        "transport": "WebSocket",
-        "security": "Sandbox",
-        "adoption": "早期",
-        "github_stars": "500",
-        "status": "早期"
-      },
-      {
-        "id": "PROTO-028",
-        "name": "Web Bot Auth",
-        "vendor": "IETF/社区",
-        "version": "draft",
-        "layer": "Agent-Auth",
-        "description": "Web机器人身份认证标准，定义Agent在Web上的身份验证",
-        "architecture": "Certificate-based",
-        "transport": "HTTPS",
-        "security": "PKI/OAuth",
-        "adoption": "标准化中",
-        "github_stars": "N/A",
-        "status": "草案"
-      },
-      {
-        "id": "PROTO-029",
-        "name": "MCP 2026-07-28 RC",
-        "vendor": "Linux Foundation/MCP",
-        "version": "2026-07-28-rc",
-        "layer": "Agent-Tool",
-        "description": "MCP协议2026年重大更新，引入无状态协议、Tasks原语、MCP Apps",
-        "architecture": "Stateless Client-Server",
-        "transport": "StreamableHTTP/SSE/stdio",
-        "security": "OAuth 2.1/权限控制/审计日志",
-        "adoption": "即将发布",
-        "github_stars": "30000+",
-        "status": "RC"
-      },
-      {
-        "id": "PROTO-030",
-        "name": "MCP Registry Protocol",
-        "vendor": "Linux Foundation/MCP",
-        "version": "0.1",
-        "layer": "Agent-Discovery",
-        "description": "MCP Server注册与发现协议，用于Server目录和安全验证",
-        "architecture": "Registry",
-        "transport": "HTTPS",
-        "security": "TLS/签名验证",
-        "adoption": "预览版",
-        "github_stars": "1500",
-        "status": "预览"
-      },
-      {
-        "id": "PROTO-031",
-        "name": "MCP Tasks Protocol",
-        "vendor": "Linux Foundation/MCP",
-        "version": "draft",
-        "layer": "Agent-Task",
-        "description": "MCP 2026路线图新增Tasks原语，支持Agent自主通信",
-        "architecture": "Task-oriented",
-        "transport": "StreamableHTTP",
-        "security": "OAuth/权限",
-        "adoption": "规划中",
-        "github_stars": "N/A",
-        "status": "规划"
-      },
-      {
-        "id": "PROTO-032",
-        "name": "A2A v1",
-        "vendor": "Google",
-        "version": "1.0",
-        "layer": "Agent-Agent",
-        "description": "Agent间通信协议正式版，IBM ACP已合并入A2A",
-        "architecture": "P2P/Hub",
-        "transport": "HTTP/gRPC",
-        "security": "mTLS/OAuth",
-        "adoption": "广泛（IBM合并）",
-        "github_stars": "15000+",
-        "status": "正式版"
-      },
-      {
-        "id": "PROTO-033",
-        "name": "Agent Pay (Mastercard)",
-        "vendor": "Mastercard",
-        "version": "1.0",
-        "layer": "Agent-Payment",
-        "description": "Mastercard Agent Pay协议，支持AI Agent安全支付",
-        "architecture": "Payment Gateway",
-        "transport": "HTTPS",
-        "security": "Token化/3DS",
-        "adoption": "发布",
-        "github_stars": "N/A",
-        "status": "生产可用"
-      },
-      {
-        "id": "PROTO-034",
-        "name": "Visa Trusted Agent",
-        "vendor": "Visa",
-        "version": "1.0",
-        "layer": "Agent-Payment",
-        "description": "Visa可信Agent支付协议",
-        "architecture": "Trusted Execution",
-        "transport": "HTTPS",
-        "security": "Token化/生物识别",
-        "adoption": "发布",
-        "github_stars": "N/A",
-        "status": "生产可用"
-      },
-      {
-        "id": "PROTO-035",
-        "name": "llms.txt Standard",
-        "vendor": "社区",
-        "version": "0.3",
-        "layer": "Agent-Content",
-        "description": "为LLM Agent提供网站内容摘要的标准格式",
-        "architecture": "File-based",
-        "transport": "HTTPS",
-        "security": "CORS",
-        "adoption": "广泛",
-        "github_stars": "4000+",
-        "status": "事实标准"
-      },
-      {
-        "id": "PROTO-036",
-        "name": "Agent Identity Protocol (AIP)",
-        "vendor": "社区",
-        "version": "0.1",
-        "layer": "Agent-Identity",
-        "description": "定义AI Agent身份标识和验证的协议",
-        "architecture": "DID-based",
-        "transport": "HTTPS",
-        "security": "DID/VC",
-        "adoption": "早期",
-        "github_stars": "200",
-        "status": "草案"
-      },
-      {
-        "id": "PROTO-037",
-        "name": "AGORA Protocol",
-        "vendor": "Oxford University",
-        "version": "0.1",
-        "layer": "Agent-Agent",
-        "description": "牛津大学提出的自然语言动态协议设计，Agent自适应任务协商，无需预定义协议",
-        "architecture": "Natural Language Protocol",
-        "transport": "HTTP/LLM",
-        "security": "协商式安全",
-        "adoption": "研究阶段",
-        "github_stars": "500",
-        "status": "研究"
-      },
-      {
-        "id": "PROTO-038",
-        "name": "APEX Standard",
-        "vendor": "APEX Community",
-        "version": "0.1",
-        "layer": "Agent-Interaction",
-        "description": "开放Agent交互协议标准，定义Agent间发现、协商和执行的通用框架",
-        "architecture": "Registry + P2P",
-        "transport": "HTTP/WebSocket",
-        "security": "OAuth/签名",
-        "adoption": "早期",
-        "github_stars": "300",
-        "status": "草案"
-      },
-      {
-        "id": "PROTO-039",
-        "name": "MCP Streamable HTTP",
-        "vendor": "Linux Foundation/MCP",
-        "version": "2026-07-28",
-        "layer": "Agent-Transport",
-        "description": "MCP 2026新增StreamableHTTP传输方式，替代SSE，支持无状态请求",
-        "architecture": "Stateless HTTP",
-        "transport": "HTTP/HTTPS",
-        "security": "OAuth 2.1/CORS",
-        "adoption": "即将发布",
-        "github_stars": "N/A",
-        "status": "RC"
-      },
-      {
-        "id": "PROTO-040",
-        "name": "MCP Apps Protocol",
-        "vendor": "Linux Foundation/MCP",
-        "version": "draft",
-        "layer": "Agent-App",
-        "description": "MCP 2026路线图新增MCP Apps概念，定义可组合的Agent应用协议",
-        "architecture": "Composable App",
-        "transport": "StreamableHTTP",
-        "security": "OAuth/权限",
-        "adoption": "规划中",
-        "github_stars": "N/A",
-        "status": "规划"
-      },
-      {
-        "id": "PROTO-041",
-        "name": "Agent Trust Protocol (ATP)",
-        "vendor": "社区",
-        "version": "0.1",
-        "layer": "Agent-Trust",
-        "description": "定义Agent信任评估和声誉系统的协议，支持跨平台Agent可信度验证",
-        "architecture": "Reputation-based",
-        "transport": "HTTPS",
-        "security": "PKI/签名验证",
-        "adoption": "早期",
-        "github_stars": "200",
-        "status": "草案"
-      },
-      {
-        "id": "PROTO-042",
-        "name": "MCP 2026-07-28 RC (Stateless)",
-        "vendor": "Linux Foundation/MCP",
-        "version": "2026-07-28-rc",
-        "layer": "Agent-Tool",
-        "description": "MCP 2026最大版本更新，引入无状态协议核心、StreamableHTTP传输、Tasks原语、MCP Apps概念",
-        "architecture": "Stateless Client-Server",
-        "transport": "StreamableHTTP/SSE/stdio",
-        "security": "OAuth 2.1/权限控制/审计日志",
-        "adoption": "即将发布（RC阶段）",
-        "github_stars": "30000+",
-        "status": "RC",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-043",
-        "name": "AGP (Agent Gateway Protocol)",
-        "vendor": "社区",
-        "version": "0.2",
-        "layer": "Agent-Gateway",
-        "description": "Agent网关协议升级版，统一多Agent系统入口、路由和安全策略",
-        "architecture": "Gateway + Mesh",
-        "transport": "HTTP/gRPC/WS",
-        "security": "mTLS/RBAC/审计",
-        "adoption": "增长中",
-        "github_stars": "2000",
-        "status": "活跃",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-044",
-        "name": "MPP (Model Payment Protocol)",
-        "vendor": "社区",
-        "version": "0.1",
-        "layer": "Agent-Payment",
-        "description": "模型支付协议，定义AI模型调用和支付的标准化流程",
-        "architecture": "Request-Payment-Response",
-        "transport": "HTTPS",
-        "security": "加密签名/区块链",
-        "adoption": "早期",
-        "github_stars": "300",
-        "status": "草案",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-045",
-        "name": "Agent Stack Protocol Suite",
-        "vendor": "多厂商",
-        "version": "2026",
-        "layer": "Agent-Full-Stack",
-        "description": "2026年Agent协议栈：MCP + A2A + x402 + AP2 + Web Bot Auth + llms.txt，形成完整Agent通信标准",
-        "architecture": "Layered Stack",
-        "transport": "Multiple",
-        "security": "多层安全",
-        "adoption": "行业趋势",
-        "github_stars": "N/A",
-        "status": "趋势",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-046",
-        "name": "UCP (Universal Commerce Protocol) v2",
-        "vendor": "Google",
-        "version": "0.2",
-        "layer": "Agent-Payment",
-        "description": "Google通用商务协议升级版，与AP2合并，支持Agent间复杂交易",
-        "architecture": "Universal + Pre-authorized",
-        "transport": "HTTP/gRPC",
-        "security": "OAuth/加密/审计",
-        "adoption": "早期（60+合作伙伴）",
-        "github_stars": "N/A",
-        "status": "早期",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-047",
-        "name": "TAP (Tool Access Protocol)",
-        "type": "agent_tool_protocol",
-        "layer": "Agent-Tool",
-        "description": "Tool Access Protocol，AI Agent工具访问协议，标准化Agent对工具的发现、调用和管理",
-        "status": "draft",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "PROTO-048",
-        "name": "AGP v2 (Agent Gateway Protocol v2)",
-        "type": "agent_gateway_protocol",
-        "layer": "Agent-Agent",
-        "description": "Agent Gateway Protocol v2，Agent网关协议升级版，支持更安全的多Agent路由和通信",
-        "status": "draft",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "PROTO-049",
-        "name": "MCP Extensions Protocol",
-        "type": "agent_tool_protocol",
-        "layer": "Agent-Tool",
-        "description": "MCP扩展协议，2026-07-28 RC引入，支持MCP Server的扩展机制和插件系统",
-        "status": "rc",
-        "release_date": "2026-07",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "PROTO-050",
-        "name": "MCP Stateless Core Protocol",
-        "type": "agent_tool_protocol",
-        "layer": "Agent-Tool",
-        "description": "MCP无状态核心协议，2026-07-28 RC引入，将MCP核心改为无状态设计以支持水平扩展",
-        "status": "rc",
-        "release_date": "2026-07",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "PROTO-051",
-        "name": "Agent Security Protocol (ASP)",
-        "type": "agent_security_protocol",
-        "layer": "Agent-Security",
-        "description": "Agent安全协议，2026年MCP安全指南提出，解决AI工具隧道安全和Agent认证问题",
-        "status": "proposal",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "proto-agora-v2",
-        "name": "AGORA Protocol v2",
-        "type": "agent_communication",
-        "description": "AGORA v2，牛津大学开发的自然语言动态协议，Agent自适应任务协商，支持复杂多Agent协作场景",
-        "organization": "Oxford University",
-        "key_features": [
-          "自然语言协议",
-          "动态协议生成",
-          "Agent自适应协商",
-          "多Agent协作"
-        ],
-        "status": "research",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "proto-apex-v2",
-        "name": "APEX Standard v2",
-        "type": "agent_interaction",
-        "description": "APEX v2开放Agent交互协议标准，Registry + P2P架构，增强Agent发现和信任机制",
-        "organization": "APEX Consortium",
-        "key_features": [
-          "Registry架构",
-          "P2P通信",
-          "Agent发现",
-          "信任机制"
-        ],
-        "status": "draft",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "proto-agent-stack-2026",
-        "name": "Agent Stack 2026 Protocol Suite",
-        "type": "protocol_suite",
-        "description": "2026年Agent协议栈：MCP + A2A + x402 + AP2 + Web Bot Auth + llms.txt，定义Agent生态完整协议层",
-        "organization": "Industry Consortium",
-        "key_features": [
-          "MCP工具层",
-          "A2A通信层",
-          "x402支付层",
-          "Web Bot Auth认证层",
-          "llms.txt发现层"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "proto-mcp-stateless-rc",
-        "name": "MCP Stateless Protocol RC",
-        "type": "mcp_extension",
-        "description": "MCP 2026-07-28 RC引入的无状态协议核心，支持StreamableHTTP传输和Tasks原语",
-        "organization": "Anthropic",
-        "key_features": [
-          "无状态核心",
-          "StreamableHTTP",
-          "Tasks原语",
-          "MCP Apps"
-        ],
-        "status": "rc",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "proto-a2a-v1-ibm-acp",
-        "name": "A2A v1 + IBM ACP Merged",
-        "type": "agent_communication",
-        "description": "A2A v1.0正式版，IBM ACP已合并入A2A，150+组织采用，15000+ GitHub Stars",
-        "organization": "Google/IBM",
-        "key_features": [
-          "A2A正式版",
-          "IBM ACP合并",
-          "150+组织采用",
-          "15000+ Stars"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-agui",
-        "name": "AG-UI (Agent GUI Protocol)",
-        "vendor": "CopilotKit",
-        "version": "0.2",
-        "layer": "Agent-UI",
-        "description": "Agent GUI交互协议，定义Agent与前端UI组件的实时交互标准，SSE事件流驱动",
-        "architecture": "Event Stream + Components",
-        "transport": "SSE/WebSocket",
-        "security": "CORS/认证",
-        "adoption": "CopilotKit生态+扩展",
-        "github_stars": "10000+",
-        "status": "快速增长",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-x42",
-        "name": "X42 (HTTP 402 Micro-Payment)",
-        "vendor": "Coinbase/社区",
-        "version": "1.0",
-        "layer": "Agent-Payment",
-        "description": "X42微支付协议，HTTP 402状态码驱动的机器对机器支付，与x402互补",
-        "architecture": "HTTP-native",
-        "transport": "HTTP/HTTPS",
-        "security": "加密签名",
-        "adoption": "增长中",
-        "github_stars": "2000+",
-        "status": "生产可用",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-mcp-server-cards",
-        "name": "MCP Server Cards",
-        "vendor": "Linux Foundation/MCP",
-        "version": "draft",
-        "layer": "Agent-Discovery",
-        "description": "MCP Server Cards标准，通过.well-known URL暴露结构化Server元数据，支持浏览器和注册表发现",
-        "architecture": "File-based Discovery",
-        "transport": "HTTPS",
-        "security": "TLS/签名",
-        "adoption": "规划中",
-        "github_stars": "N/A",
-        "status": "规划",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-mpp",
-        "name": "MPP (Merchant Payment Protocol)",
-        "vendor": "行业联盟",
-        "version": "draft",
-        "layer": "Agent-Payment",
-        "description": "商户支付协议，定义Agent与商户间的支付交互标准",
-        "architecture": "Payment-native",
-        "transport": "HTTPS",
-        "security": "加密签名",
-        "adoption": "增长中",
-        "github_stars": "N/A",
-        "status": "规划",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-agui",
-        "name": "AGUI (Agent GUI Protocol)",
-        "category": "agent-protocol",
-        "description": "Agent GUI protocol standardizing how agents interact with user interfaces. One of the six key agent protocols in 2026.",
-        "features": [
-          "agent-UI interaction",
-          "GUI standardization",
-          "user interaction protocol",
-          "interface abstraction"
-        ],
-        "status": "active",
-        "year": 2025,
-        "sources": [
-          "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
-          "https://sanbi.ai/blog/agent-stack-protocols-2026"
-        ]
-      },
-      {
-        "id": "PROTO-a2ui",
-        "name": "A2UI (Agent to UI Protocol)",
-        "category": "agent-protocol",
-        "description": "Protocol for agent-to-user-interface communication. Complements A2A for inter-agent communication.",
-        "features": [
-          "agent-to-UI",
-          "interface communication",
-          "user interaction"
-        ],
-        "status": "emerging",
-        "year": 2025,
-        "sources": [
-          "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026"
-        ]
-      },
-      {
-        "id": "PROTO-ap2",
-        "name": "AP2 (Agent Protocol 2)",
-        "category": "agent-protocol",
-        "description": "Next-generation agent protocol. One of the six key protocols shaping AI agent interactions in 2026.",
-        "features": [
-          "agent communication",
-          "protocol standardization",
-          "interoperability"
-        ],
-        "status": "emerging",
-        "year": 2026,
-        "sources": [
-          "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
-          "https://sanbi.ai/blog/agent-stack-protocols-2026"
-        ]
-      },
-      {
-        "id": "PROTO-x42",
-        "name": "X42 Protocol",
-        "category": "payment-protocol",
-        "description": "Payment protocol for AI agents enabling autonomous transactions. Part of the 2026 agent stack.",
-        "features": [
-          "agent payments",
-          "autonomous transactions",
-          "economic protocol",
-          "agent commerce"
-        ],
-        "status": "emerging",
-        "year": 2026,
-        "sources": [
-          "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
-          "https://sanbi.ai/blog/agent-stack-protocols-2026"
-        ]
-      },
-      {
-        "id": "PROTO-streamable-http",
-        "name": "StreamableHTTP (MCP Transport)",
-        "category": "transport-protocol",
-        "description": "New MCP transport layer introduced November 2025 replacing SSE. Uses chunked HTTP streaming for better reliability.",
-        "features": [
-          "HTTP streaming",
-          "SSE replacement",
-          "chunked transfer",
-          "MCP transport"
-        ],
-        "status": "active",
-        "year": 2025,
-        "sources": [
-          "https://www.speakeasy.com/mcp/release-notes",
-          "https://workos.com/blog/everything-your-team-needs-to-know-about-mcp-in-2026"
-        ]
-      },
-      {
-        "id": "PROTO-mcp-2026-rc",
-        "name": "MCP 2026-07-28 Release Candidate",
-        "type": "协议规范",
-        "description": "Model Context Protocol 2026年7月28日发布候选版本：无状态协议核心 + Extensions框架，是MCP自发布以来最大架构升级",
-        "key_features": [
-          "无状态协议核心",
-          "Extensions扩展框架",
-          "HTTP无状态调用",
-          "大规模Agent部署支持",
-          "向后兼容"
-        ],
-        "status": "release_candidate",
-        "year": 2026,
-        "maintainer": "Anthropic",
-        "adoption": "9700万下载量(截至2026年)",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          },
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "article_url": "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "id": "PROTO-a2a-2026",
-        "name": "A2A (Agent-to-Agent) Protocol",
-        "type": "Agent间通信协议",
-        "description": "A2A协议是2026年AI Agent生态中Agent间通信的标准协议之一，与MCP(Agent-to-Tool)互补，解决多Agent协作问题",
-        "key_features": [
-          "Agent间通信",
-          "任务委派",
-          "状态同步",
-          "多Agent协作"
-        ],
-        "status": "emerging",
-        "year": 2026,
-        "maintainer": "社区",
-        "adoption": "快速增长",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "article_url": "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "name": "Agent2Agent Protocol (A2A)",
-        "type": "Communication Protocol",
-        "description": "An open protocol enabling AI agents to securely exchange information, discover capabilities, and coordinate actions across different enterprise systems.",
-        "status": "Active",
-        "features": [
-          "Secure information exchange",
-          "Agent capability discovery",
-          "Cross-agent action coordination",
-          "Enterprise interoperability"
-        ],
-        "sources": [
-          "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability",
-          "https://arxiv.org/html/2505.02279v1",
-          "https://www.linkedin.com/posts/rakeshgohel01_starting-2025-ai-agent-interoperability-activity-7330572530061103105-ssMh",
-          "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
-          "https://blogs.cisco.com/ai/mcp-and-a2a-a-network-engineers-mental-model-for-agentic-ai",
-          "https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp",
-          "https://www.reddit.com/r/datascience/comments/1lq79vo/a_breakdown_of_a2a_mcp_and_agentic"
-        ],
-        "id": "PROTO-067"
-      },
-      {
-        "name": "Model Context Protocol (MCP)",
-        "type": "Tool Exposure Protocol",
-        "description": "A standardized protocol designed to expose AI tools and models to agents, enabling seamless integration and interaction between AI systems and external resources.",
-        "status": "Active",
-        "features": [
-          "Tool exposure to AI agents",
-          "Seamless system integration",
-          "External resource interaction",
-          "Complementary to A2A"
-        ],
-        "sources": [
-          "https://arxiv.org/html/2505.02279v1",
-          "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
-          "https://www.youtube.com/watch?v=BMDFPOyezH4",
-          "https://blogs.cisco.com/ai/mcp-and-a2a-a-network-engineers-mental-model-for-agentic-ai",
-          "https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp",
-          "https://www.reddit.com/r/datascience/comments/1lq79vo/a_breakdown_of_a2a_mcp_and_agentic"
-        ],
-        "id": "PROTO-068"
-      },
-      {
-        "name": "Agent Communication Protocol (ACP)",
-        "type": "Interoperability Standard",
-        "description": "An open governance standard allowing AI agents to communicate across diverse frameworks and technologies, promoting multi-framework agent interoperability.",
-        "status": "Active",
-        "features": [
-          "Multi-framework compatibility",
-          "Open governance model",
-          "Cross-technology communication",
-          "Standardized agent interaction"
-        ],
-        "sources": [
-          "https://arxiv.org/html/2505.02279v1",
-          "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
-          "https://www.ibm.com/think/topics/agent-communication-protocol"
-        ],
-        "id": "PROTO-069"
-      },
-      {
-        "name": "Linux Foundation Agent Communication Protocol (ACP)",
-        "type": "Open Standard",
-        "description": "An open standard developed under the Linux Foundation with BeeAI as its reference implementation, emphasizing transparent community-driven governance for agent interoperability.",
-        "status": "Active",
-        "features": [
-          "Community-driven governance",
-          "Transparent development",
-          "BeeAI reference implementation",
-          "Linux Foundation backing"
-        ],
-        "sources": [
-          "https://agentcommunicationprotocol.dev/introduction/welcome"
-        ],
-        "id": "PROTO-070"
-      },
-      {
-        "name": "BeeAI",
-        "type": "Reference Implementation",
-        "description": "The reference implementation for the Linux Foundation's Agent Communication Protocol (ACP), serving as a practical example of how agents can interoperate using standardized protocols.",
-        "status": "Active",
-        "features": [
-          "ACP reference implementation",
-          "Demonstrates protocol interoperability",
-          "Linux Foundation project",
-          "Practical agent communication example"
-        ],
-        "sources": [
-          "https://agentcommunicationprotocol.dev/introduction/welcome"
-        ],
-        "id": "PROTO-071"
-      },
-      {
-        "name": "OpenTelemetry (OTEL)",
-        "type": "Observability Framework",
-        "description": "An observability framework that will be supported alongside A2A and MCP to enable monitoring and traceability for agentic AI systems.",
-        "status": "Upcoming Support",
-        "features": [
-          "System observability",
-          "Tracing and monitoring",
-          "Integration with A2A/MCP",
-          "Open standard"
-        ],
-        "sources": [
-          "https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp"
-        ],
-        "id": "PROTO-072"
-      }
-    ]
-  },
-  "sdks": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-24T07:13:00Z",
-    "description": "sdks库",
-    "entities": [
-      {
-        "id": "SDK-001",
-        "name": "Claude Agent SDK",
-        "vendor": "Anthropic",
-        "language": "Python",
-        "type": "Agent SDK",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "原生MCP支持",
-          "多步骤agent",
-          "guardrails"
-        ],
-        "pros": [
-          "Anthropic官方",
-          "MCP原生集成",
-          "安全护栏"
-        ],
-        "cons": [
-          "仅Claude模型",
-          "较新生态小"
-        ]
-      },
-      {
-        "id": "SDK-002",
-        "name": "OpenAI Agents SDK",
-        "vendor": "OpenAI",
-        "language": "Python",
-        "type": "Agent SDK",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "Agent交接",
-          "guardrails",
-          "tracing"
-        ],
-        "pros": [
-          "OpenAI官方",
-          "Agent交接优雅",
-          "内置tracing"
-        ],
-        "cons": [
-          "仅OpenAI模型",
-          "无内置记忆"
-        ]
-      },
-      {
-        "id": "SDK-003",
-        "name": "Google ADK",
-        "vendor": "Google",
-        "language": "Python",
-        "type": "Agent SDK",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "A2A协议原生",
-          "多Agent编排",
-          "内置评估"
-        ],
-        "pros": [
-          "A2A原生",
-          "Google生态",
-          "多模型支持"
-        ],
-        "cons": [
-          "非常新",
-          "文档少",
-          "生态小"
-        ]
-      },
-      {
-        "id": "SDK-004",
-        "name": "LangGraph",
-        "vendor": "LangChain",
-        "language": "Python/JS",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "状态图",
-          "持久化",
-          "人机协作",
-          "时间旅行调试"
-        ],
-        "pros": [
-          "最成熟",
-          "社区大",
-          "可视化调试"
-        ],
-        "cons": [
-          "学习曲线陡",
-          "复杂度高",
-          "性能开销大"
-        ]
-      },
-      {
-        "id": "SDK-005",
-        "name": "CrewAI",
-        "vendor": "CrewAI",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "角色定义",
-          "任务委派",
-          "流程编排",
-          "记忆系统"
-        ],
-        "pros": [
-          "概念直观",
-          "上手快",
-          "角色扮演模式"
-        ],
-        "cons": [
-          "灵活性有限",
-          "调试困难",
-          "企业版收费"
-        ]
-      },
-      {
-        "id": "SDK-006",
-        "name": "AutoGen/AG2",
-        "vendor": "Microsoft",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "对话式多Agent",
-          "代码执行",
-          "人机协作"
-        ],
-        "pros": [
-          "微软背书",
-          "研究导向",
-          "灵活对话模式"
-        ],
-        "cons": [
-          "API不稳定",
-          "文档混乱",
-          "版本迁移痛苦"
-        ]
-      },
-      {
-        "id": "SDK-007",
-        "name": "Smolagents",
-        "vendor": "HuggingFace",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "轻量级",
-          "代码Agent",
-          "HF模型集成"
-        ],
-        "pros": [
-          "极简",
-          "HF生态",
-          "代码优先"
-        ],
-        "cons": [
-          "单Agent",
-          "功能少",
-          "生态小"
-        ]
-      },
-      {
-        "id": "SDK-008",
-        "name": "Pydantic AI",
-        "vendor": "Pydantic",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "类型安全",
-          "依赖注入",
-          "多模型支持"
-        ],
-        "pros": [
-          "类型安全",
-          "Pydantic生态",
-          "模型无关"
-        ],
-        "cons": [
-          "单Agent",
-          "无记忆",
-          "新项目"
-        ]
-      },
-      {
-        "id": "SDK-009",
-        "name": "Mastra",
-        "vendor": "Mastra",
-        "language": "TypeScript",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "TypeScript原生",
-          "工作流",
-          "RAG集成"
-        ],
-        "pros": [
-          "TS开发者友好",
-          "全栈方案"
-        ],
-        "cons": [
-          "TS only",
-          "新项目",
-          "社区小"
-        ]
-      },
-      {
-        "id": "SDK-010",
-        "name": "Dify",
-        "vendor": "LangGenius",
-        "language": "Python/TS",
-        "type": "Agent平台",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "可视化编排",
-          "插件市场",
-          "RAG",
-          "工作流"
-        ],
-        "pros": [
-          "低代码",
-          "可视化",
-          "插件生态",
-          "中文友好"
-        ],
-        "cons": [
-          "定制性差",
-          "性能开销",
-          "复杂场景受限"
-        ]
-      },
-      {
-        "id": "SDK-011",
-        "name": "Semantic Kernel",
-        "vendor": "Microsoft",
-        "language": "C#/Python/Java",
-        "type": "Agent SDK",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "企业级",
-          "多语言",
-          "插件系统",
-          "流程编排"
-        ],
-        "pros": [
-          "企业级支持",
-          "多语言",
-          "Azure集成",
-          "成熟稳定"
-        ],
-        "cons": [
-          "C#优先",
-          "学习曲线陡",
-          "Python支持弱于C#"
-        ]
-      },
-      {
-        "id": "SDK-012",
-        "name": "Phidata",
-        "vendor": "Phidata",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "Agent类",
-          "工具集成",
-          "知识库",
-          "多模型"
-        ],
-        "pros": [
-          "简单易用",
-          "内置知识库",
-          "快速原型"
-        ],
-        "cons": [
-          "社区小",
-          "定制性有限",
-          "文档不完善"
-        ]
-      },
-      {
-        "id": "SDK-013",
-        "name": "LlamaIndex",
-        "vendor": "LlamaIndex",
-        "language": "Python/TS",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "RAG专精",
-          "数据连接器",
-          "Agent工作流",
-          "查询引擎"
-        ],
-        "pros": [
-          "RAG最强",
-          "数据连接器丰富",
-          "文档好"
-        ],
-        "cons": [
-          "RAG偏重",
-          "Agent功能较新",
-          "性能开销"
-        ]
-      },
-      {
-        "id": "SDK-014",
-        "name": "Haystack",
-        "vendor": "deepset",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "Pipeline架构",
-          "RAG",
-          "搜索",
-          "Agent"
-        ],
-        "pros": [
-          "Pipeline灵活",
-          "生产就绪",
-          "搜索专精"
-        ],
-        "cons": [
-          "Agent功能较新",
-          "社区小于LangChain",
-          "学习曲线"
-        ]
-      },
-      {
-        "id": "SDK-015",
-        "name": "Agency Swarm",
-        "vendor": "VRSEN",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "Agent层级",
-          "角色化",
-          "自动工具创建"
-        ],
-        "pros": [
-          "层级结构清晰",
-          "自动工具生成",
-          "OpenAI原生"
-        ],
-        "cons": [
-          "仅OpenAI",
-          "社区小",
-          "文档少"
-        ]
-      },
-      {
-        "id": "SDK-016",
-        "name": "TaskWeaver",
-        "vendor": "Microsoft",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "代码解释器",
-          "数据分析",
-          "插件系统"
-        ],
-        "pros": [
-          "数据分析专精",
-          "代码执行安全",
-          "微软支持"
-        ],
-        "cons": [
-          "单Agent",
-          "数据分析偏重",
-          "社区小"
-        ]
-      },
-      {
-        "id": "SDK-017",
-        "name": "Camel-AI",
-        "vendor": "Camel-AI",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "角色扮演",
-          "多Agent协作",
-          "社会模拟"
-        ],
-        "pros": [
-          "角色扮演创新",
-          "研究导向",
-          "多Agent交互"
-        ],
-        "cons": [
-          "研究阶段",
-          "生产就绪度低",
-          "文档少"
-        ]
-      },
-      {
-        "id": "SDK-018",
-        "name": "Vercel AI SDK",
-        "vendor": "Vercel",
-        "language": "TypeScript",
-        "type": "Agent SDK",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "全栈AI",
-          "流式UI",
-          "多模型",
-          "工具调用"
-        ],
-        "pros": [
-          "Next.js集成",
-          "流式渲染",
-          "多模型支持",
-          "生产就绪"
-        ],
-        "cons": [
-          "TS only",
-          "前端偏重",
-          "复杂Agent逻辑受限"
-        ]
-      },
-      {
-        "id": "SDK-019",
-        "name": "Rig",
-        "vendor": "0xPlaygrounds",
-        "language": "Rust",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "Rust原生",
-          "高性能",
-          "Agent编排"
-        ],
-        "pros": [
-          "极致性能",
-          "类型安全",
-          "Rust生态"
-        ],
-        "cons": [
-          "Rust only",
-          "极新",
-          "社区极小"
-        ]
-      },
-      {
-        "id": "SDK-020",
-        "name": "Portkey AI Gateway",
-        "vendor": "Portkey",
-        "language": "Python/TS",
-        "type": "Agent网关",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "多模型路由",
-          "可观测性",
-          "Fallback",
-          "缓存"
-        ],
-        "pros": [
-          "模型无关",
-          "生产级网关",
-          "监控完善"
-        ],
-        "cons": [
-          "网关非框架",
-          "无Agent逻辑",
-          "付费功能"
-        ]
-      },
-      {
-        "id": "SDK-021",
-        "name": "Coze",
-        "vendor": "字节跳动",
-        "language": "Python/TS",
-        "type": "Agent平台",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "可视化编排",
-          "插件市场",
-          "多模型",
-          "工作流"
-        ],
-        "pros": [
-          "中文友好",
-          "低代码",
-          "字节生态",
-          "免费额度"
-        ],
-        "cons": [
-          "定制性差",
-          "平台锁定",
-          "复杂场景受限"
-        ]
-      },
-      {
-        "id": "SDK-022",
-        "name": "Flowise",
-        "vendor": "FlowiseAI",
-        "language": "TypeScript",
-        "type": "Agent平台",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "拖拽式编排",
-          "LangChain集成",
-          "API导出"
-        ],
-        "pros": [
-          "零代码",
-          "可视化",
-          "快速原型"
-        ],
-        "cons": [
-          "定制性差",
-          "性能开销",
-          "复杂逻辑受限"
-        ]
-      },
-      {
-        "id": "SDK-023",
-        "name": "n8n AI Agent",
-        "vendor": "n8n",
-        "language": "TypeScript",
-        "type": "Agent平台",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "工作流自动化",
-          "AI节点",
-          "400+集成",
-          "自托管"
-        ],
-        "pros": [
-          "集成最多",
-          "自托管",
-          "可视化",
-          "开源"
-        ],
-        "cons": [
-          "Agent功能新",
-          "AI深度有限",
-          "复杂推理受限"
-        ]
-      },
-      {
-        "id": "SDK-024",
-        "name": "AgentScope",
-        "vendor": "Alibaba",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "分布式Agent",
-          "消息机制",
-          "服务集成"
-        ],
-        "pros": [
-          "分布式设计",
-          "阿里背书",
-          "中文文档"
-        ],
-        "cons": [
-          "新项目",
-          "社区小",
-          "文档不完善"
-        ]
-      },
-      {
-        "id": "SDK-025",
-        "name": "Bee Agent Framework",
-        "vendor": "IBM",
-        "language": "TypeScript",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "企业级",
-          "可观测性",
-          "多模型",
-          "工具集成"
-        ],
-        "pros": [
-          "IBM背书",
-          "企业级设计",
-          "TypeScript"
-        ],
-        "cons": [
-          "极新",
-          "社区小",
-          "文档少"
-        ]
-      },
-      {
-        "id": "SDK-026",
-        "name": "AutoGen Studio",
-        "vendor": "Microsoft",
-        "language": "Python",
-        "type": "Agent平台",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "可视化AutoGen",
-          "拖拽编排",
-          "Web UI"
-        ],
-        "pros": [
-          "AutoGen可视化",
-          "微软支持",
-          "快速原型"
-        ],
-        "cons": [
-          "功能有限",
-          "不稳定",
-          "生产就绪度低"
-        ]
-      },
-      {
-        "id": "SDK-027",
-        "name": "Instructor",
-        "vendor": "Jason Liu",
-        "language": "Python/TS",
-        "type": "Agent工具库",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "结构化输出",
-          "Pydantic验证",
-          "重试机制"
-        ],
-        "pros": [
-          "结构化输出最强",
-          "简单可靠",
-          "多模型支持"
-        ],
-        "cons": [
-          "非Agent框架",
-          "无编排",
-          "工具库定位"
-        ]
-      },
-      {
-        "id": "SDK-028",
-        "name": "Mirage",
-        "vendor": "Mirage",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "多Agent沙箱",
-          "安全执行",
-          "代码Agent"
-        ],
-        "pros": [
-          "安全沙箱",
-          "代码执行安全",
-          "多Agent"
-        ],
-        "cons": [
-          "极新",
-          "社区小",
-          "文档少"
-        ]
-      },
-      {
-        "id": "SDK-029",
-        "name": "DSPy",
-        "vendor": "Stanford",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "声明式编程",
-          "自动优化",
-          "模块化"
-        ],
-        "pros": [
-          "学术前沿",
-          "自动Prompt优化",
-          "模块化设计"
-        ],
-        "cons": [
-          "学习曲线陡",
-          "生产就绪度低",
-          "社区小"
-        ]
-      },
-      {
-        "id": "SDK-030",
-        "name": "Fixpoint/Wordware",
-        "vendor": "Fixpoint",
-        "language": "Python/TS",
-        "type": "Agent平台",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "可视化编排",
-          "自然语言编程",
-          "API导出"
-        ],
-        "pros": [
-          "自然语言编程",
-          "可视化",
-          "快速迭代"
-        ],
-        "cons": [
-          "新项目",
-          "社区小",
-          "定制性有限"
-        ]
-      },
-      {
-        "id": "SDK-031",
-        "name": "Letta (MemGPT)",
-        "vendor": "Letta",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "虚拟上下文管理",
-          "无限记忆",
-          "自动分页",
-          "状态管理"
-        ],
-        "pros": [
-          "记忆管理最强",
-          "无限上下文",
-          "研究背书"
-        ],
-        "cons": [
-          "复杂度高",
-          "部署要求高",
-          "社区中等"
-        ]
-      },
-      {
-        "id": "SDK-032",
-        "name": "OpenRouter SDK",
-        "vendor": "OpenRouter",
-        "language": "Python/TS",
-        "type": "Agent网关",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "100+模型路由",
-          "统一API",
-          "价格比较"
-        ],
-        "pros": [
-          "模型最多",
-          "统一接口",
-          "价格透明"
-        ],
-        "cons": [
-          "网关非框架",
-          "延迟较高",
-          "无Agent逻辑"
-        ]
-      },
-      {
-        "id": "SDK-openai-agents",
-        "name": "OpenAI Agents SDK",
-        "type": "agent_framework",
-        "company": "OpenAI",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "Released March 2025, replaced experimental Swarm framework",
-          "Production-grade toolkit with handoff pattern",
-          "Tight integration with OpenAI Responses API and function calling",
-          "Native MCP support",
-          "Guardrails and tracing built-in",
-          "Best for OpenAI-native workloads"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-ms-agent-framework",
-        "name": "Microsoft Agent Framework 1.0",
-        "type": "agent_framework",
-        "company": "Microsoft",
-        "language": "Python/.NET",
-        "license": "MIT",
-        "key_features": [
-          "GA release April 3, 2026",
-          "Unified AutoGen + Semantic Kernel into single production SDK",
-          "Stable APIs across .NET and Python",
-          "GraphFlow for explicit workflow control",
-          "AgentSession for persistent conversation state",
-          "MCP server support for standardized tool integration",
-          "Hosted tools for Azure-native execution"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-mastra",
-        "name": "Mastra",
-        "type": "agent_framework",
-        "company": "Mastra",
-        "language": "TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "TypeScript-first AI agent framework",
-          "Built-in RAG, evals, and observability",
-          "Production-ready with deployment tooling"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-pydantic-ai",
-        "name": "Pydantic AI",
-        "type": "agent_framework",
-        "company": "Pydantic Team",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "Type-safe agent framework built on Pydantic",
-          "Model-agnostic with structured output",
-          "Zero overhead (0-10ms per call)",
-          "Best for teams wanting minimal framework lock-in"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-smolagents",
-        "name": "Smolagents",
-        "type": "agent_framework",
-        "company": "Hugging Face",
-        "language": "Python",
-        "license": "Apache-2.0",
-        "key_features": [
-          "Lightweight agent framework from Hugging Face",
-          "Code-based agent actions (not just tool calls)",
-          "Minimal abstraction, easy to understand"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-29T14:25:59.103Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-hermes",
-        "name": "Hermes Agent",
-        "type": "agent_framework",
-        "company": "Hermes AI",
-        "language": "Python/TypeScript",
-        "license": "Apache-2.0",
-        "key_features": [
-          "从经验中创建技能",
-          "使用中改进技能",
-          "构建用户模型",
-          "长期自主运行",
-          "安全架构"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-openclaw",
-        "name": "OpenClaw",
-        "type": "agent_framework",
-        "company": "开源社区",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "最广泛的集成支持",
-          "社区构建技能",
-          "多渠道支持",
-          "开源Agent平台"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-deerflow",
-        "name": "DeerFlow",
-        "type": "agent_framework",
-        "company": "ByteDance",
-        "language": "Python",
-        "license": "Apache-2.0",
-        "key_features": [
-          "多Agent协作",
-          "研究导向",
-          "深度搜索集成",
-          "报告生成"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-agno",
-        "name": "AGNO (Phidata v2)",
-        "type": "agent_framework",
-        "company": "AGNO",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "轻量级Agent框架",
-          "多模型支持",
-          "工具集成",
-          "Agent团队协作"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-mem0",
-        "name": "Mem0 SDK",
-        "type": "memory_sdk",
-        "company": "Mem0",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "AI Agent记忆层",
-          "图记忆",
-          "自动记忆提取",
-          "跨会话持久化",
-          "55K+ GitHub Stars"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-zep",
-        "name": "Zep",
-        "type": "memory_sdk",
-        "company": "Zep",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "时序关系记忆",
-          "知识图谱",
-          "对话历史管理",
-          "结构化记忆提取"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-langmem",
-        "name": "LangMem",
-        "type": "memory_sdk",
-        "company": "LangChain",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "LangGraph原生记忆",
-          "工作流编排集成",
-          "记忆工具链",
-          "语义搜索"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-hindsight",
-        "name": "Hindsight",
-        "type": "memory_sdk",
-        "company": "Hindsight AI",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "记忆准确率91.4%",
-          "自动记忆管理",
-          "上下文感知检索",
-          "轻量级部署"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-cognee",
-        "name": "Cognee",
-        "type": "memory_sdk",
-        "company": "Cognee",
-        "language": "Python",
-        "license": "Apache-2.0",
-        "key_features": [
-          "认知记忆架构",
-          "知识图谱构建",
-          "多模态记忆",
-          "可扩展存储"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-memvid",
-        "name": "Memvid",
-        "type": "memory_sdk",
-        "company": "开源社区",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "视频记忆编码",
-          "多模态记忆检索",
-          "视觉上下文保存"
-        ],
-        "status": "experimental",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-memoclaw",
-        "name": "MemoClaw",
-        "type": "memory_sdk",
-        "company": "MemoClaw",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "Agent记忆管理",
-          "跨平台记忆同步",
-          "结构化记忆存储"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-evermind",
-        "name": "EverMind",
-        "type": "memory_sdk",
-        "company": "EverMind AI",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "Zep替代方案",
-          "长期记忆管理",
-          "对话理解",
-          "个性化记忆"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "C",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-fastmcp",
-        "name": "FastMCP SDK",
-        "type": "mcp_sdk",
-        "company": "FastMCP",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "快速MCP Server开发",
-          "类型安全",
-          "自动文档生成",
-          "热重载"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-crewai-v2",
-        "name": "CrewAI v2",
-        "type": "agent_framework",
-        "company": "CrewAI",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "多Agent协作",
-          "角色定义",
-          "任务委派",
-          "流程编排",
-          "企业版支持"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-autogen-v2",
-        "name": "AutoGen v0.5 (AG2)",
-        "type": "agent_framework",
-        "company": "Microsoft",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "多Agent对话",
-          "代码执行",
-          "人机协作",
-          "可组合Agent"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-semantic-kernel-v2",
-        "name": "Semantic Kernel v2",
-        "type": "agent_sdk",
-        "company": "Microsoft",
-        "language": "C#/Python/Java",
-        "license": "MIT",
-        "key_features": [
-          "企业级Agent SDK",
-          "多语言支持",
-          "插件架构",
-          "AI编排"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-bee-v2",
-        "name": "Bee Agent Framework v2",
-        "type": "agent_framework",
-        "company": "IBM",
-        "language": "TypeScript",
-        "license": "Apache-2.0",
-        "key_features": [
-          "IBM官方Agent框架",
-          "TypeScript原生",
-          "企业集成",
-          "ACP协议支持"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-inngest",
-        "name": "Inngest",
-        "type": "agent_orchestration",
-        "company": "Inngest",
-        "language": "TypeScript/Python",
-        "license": "MIT",
-        "key_features": [
-          "Durable execution for AI agents",
-          "Event-driven workflow orchestration",
-          "Automatic retries and timeouts",
-          "Step functions for long-running agents",
-          "Production-grade reliability"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-trigger-dev",
-        "name": "Trigger.dev",
-        "type": "agent_orchestration",
-        "company": "Trigger.dev",
-        "language": "TypeScript",
-        "license": "Apache-2.0",
-        "key_features": [
-          "TypeScript-native AI workflow platform",
-          "Durable tasks with automatic retries",
-          "Background AI jobs",
-          "Real-time streaming",
-          "Integration with OpenAI/Anthropic"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-temporal-agents",
-        "name": "Temporal Agent Workflow",
-        "type": "agent_orchestration",
-        "company": "Temporal",
-        "language": "TypeScript/Go/Python",
-        "license": "MIT",
-        "key_features": [
-          "Stateful workflow engine for AI agents",
-          "Durable execution with exact-once semantics",
-          "Long-running agent orchestration",
-          "Built-in observability and debugging",
-          "Scales to millions of concurrent workflows"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-google-a2a",
-        "name": "Google A2A SDK",
-        "type": "agent_protocol_sdk",
-        "company": "Google",
-        "language": "Python/TypeScript",
-        "license": "Apache-2.0",
-        "key_features": [
-          "Official SDK for Agent-to-Agent protocol",
-          "Agent Card discovery and registration",
-          "Task-based communication",
-          "150+ organizations adopted",
-          "Native integration with Google ADK"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-openai-responses",
-        "name": "OpenAI Responses API SDK",
-        "type": "agent_sdk",
-        "company": "OpenAI",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "New Responses API for agent interactions",
-          "Built-in tool use and function calling",
-          "Streaming support",
-          "MCP integration",
-          "Replaces Chat Completions for agents"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-langgraph-platform",
-        "name": "LangGraph Platform",
-        "type": "agent_platform",
-        "company": "LangChain",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "Managed LangGraph deployment platform",
-          "Built-in persistence and memory",
-          "Cron triggers and webhooks",
-          "Real-time streaming",
-          "Human-in-the-loop support"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-31T13:41:37.338Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-scrapling",
-        "name": "Scrapling",
-        "category": "sdks",
-        "type": "Web Scraping Framework",
-        "language": "Python",
-        "version": "0.4.8",
-        "github": "https://github.com/D4Vinci/Scrapling",
-        "pypi": "scrapling",
-        "description": "Adaptive web scraping framework with anti-bot bypass, smart element tracking, and AI agent integration",
-        "key_features": [
-          "Adaptive element selection (no fragile selectors)",
-          "Native Cloudflare/anti-bot bypass",
-          "Three-tier fetcher system",
-          "Built-in Spider framework",
-          "MCP Server for AI agents",
-          "Auto-resuming crawls"
-        ],
-        "installation": "pip install scrapling",
-        "license": "BSD-3",
-        "sources": [
-          "web_search",
-          "github"
-        ],
-        "confidence": "high",
-        "first_seen": "2026-05-31T22:02:40.222Z",
-        "last_updated": "2026-05-31T22:02:40.222Z"
-      },
-      {
-        "id": "SDK-hermes-v2",
-        "name": "Hermes Agent v2",
-        "type": "agent_framework",
-        "company": "Hermes AI",
-        "language": "Python/TypeScript",
-        "license": "Apache-2.0",
-        "key_features": [
-          "从经验中创建技能",
-          "使用中改进技能",
-          "构建用户模型",
-          "长期自主运行",
-          "Forbes报道超越OpenClaw",
-          "企业级安全架构"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-pickaxe",
-        "name": "Pickaxe AI Agent Framework",
-        "type": "agent_framework",
-        "company": "Pickaxe",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "2026 Top 15 AI Agent框架",
-          "多模型支持",
-          "快速部署",
-          "可视化编排"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-flowtivity",
-        "name": "Flowtivity",
-        "type": "agent_orchestration",
-        "company": "Flowtivity",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "Agent工作流编排",
-          "Hermes/OpenClaw对比",
-          "预算优化模型",
-          "企业集成"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-akka-agents",
-        "name": "Akka Agent Runtime",
-        "type": "agent_orchestration",
-        "company": "Akka",
-        "language": "TypeScript/Java/Scala",
-        "license": "Apache-2.0",
-        "key_features": [
-          "分布式Agent运行时",
-          "事件驱动架构",
-          "Inngest vs Temporal对比",
-          "云原生部署"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-vellum",
-        "name": "Vellum AI",
-        "type": "agent_platform",
-        "company": "Vellum",
-        "language": "Python/TypeScript",
-        "license": "Commercial",
-        "key_features": [
-          "Top 11 AI Agent框架2026",
-          "LLM编排",
-          "Prompt管理",
-          "工作流测试"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-gurusup",
-        "name": "GuruSup Multi-Agent",
-        "type": "agent_framework",
-        "company": "GuruSup",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "2026最佳多Agent框架",
-          "OpenAI Agents SDK集成",
-          "CrewAI对比",
-          "生产部署指南"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-vercel-ai-v2",
-        "name": "Vercel AI SDK v2",
-        "type": "agent_framework",
-        "description": "Vercel AI SDK v2，2026年更新版本，支持多模型Agent编排、流式响应和边缘部署",
-        "vendor": "Vercel",
-        "language": "TypeScript",
-        "github_stars": "15000+",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "SDK-crewai-enterprise",
-        "name": "CrewAI Enterprise",
-        "type": "agent_platform",
-        "description": "CrewAI企业版，支持多Agent协作、企业级安全和监控，2026年推出",
-        "vendor": "CrewAI",
-        "language": "Python",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "SDK-langgraph-studio",
-        "name": "LangGraph Studio",
-        "type": "agent_platform",
-        "description": "LangGraph Studio可视化Agent开发平台，支持拖拽式Agent工作流设计和调试",
-        "vendor": "LangChain",
-        "language": "Python/TypeScript",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "SDK-google-a2a-v2",
-        "name": "Google A2A SDK v2",
-        "type": "agent_protocol_sdk",
-        "description": "Google A2A SDK v2，支持A2A v1协议，15000+ GitHub stars，多Agent间安全通信和协作",
-        "vendor": "Google",
-        "language": "Python/TypeScript",
-        "github_stars": "15000+",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "SDK-openai-agents-v2",
-        "name": "OpenAI Agents SDK v2",
-        "type": "agent_framework",
-        "description": "OpenAI Agents SDK v2，19000+ GitHub stars，1030万月下载量，生产级多Agent框架",
-        "vendor": "OpenAI",
-        "language": "Python",
-        "github_stars": "19000+",
-        "monthly_downloads": "10.3M",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "SDK-claude-agent-v2",
-        "name": "Claude Agent SDK v2",
-        "type": "agent_framework",
-        "description": "Anthropic Claude Agent SDK v2，2026年增长最快的Agent框架之一，原生支持Claude模型",
-        "vendor": "Anthropic",
-        "language": "Python",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "SDK-ms-maf-v2",
-        "name": "Microsoft Agent Framework v2",
-        "type": "agent_framework",
-        "description": "Microsoft Agent Framework v2，支持.NET和Python多语言Agent开发，生产级多Agent工作流",
-        "vendor": "Microsoft",
-        "language": ".NET/Python",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "sdk-mastra-v2",
-        "name": "Mastra v2",
-        "type": "agent_framework",
-        "description": "Mastra v2 TypeScript原生Agent框架，专为构建AI Agent和编排工作流设计，高度专业化",
-        "company": "Mastra",
-        "language": "TypeScript",
-        "license": "Apache-2.0",
-        "key_features": [
-          "TypeScript原生",
-          "Agent编排",
-          "工作流引擎",
-          "RAG集成",
-          "MCP支持"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "sdk-deerflow-v2",
-        "name": "DeerFlow v2",
-        "type": "agent_framework",
-        "description": "DeerFlow v2多Agent编排框架，支持复杂工作流和Agent协作",
-        "company": "ByteDance",
-        "language": "Python",
-        "license": "Apache-2.0",
-        "key_features": [
-          "多Agent编排",
-          "工作流引擎",
-          "Agent协作",
-          "可视化调试"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "sdk-agno-v2",
-        "name": "AGNO v2 (Phidata v3)",
-        "type": "agent_framework",
-        "description": "AGNO v2（原Phidata），轻量级Agent框架，支持多模型和工具集成",
-        "company": "AGNO",
-        "language": "Python",
-        "license": "MIT",
-        "key_features": [
-          "轻量级",
-          "多模型支持",
-          "工具集成",
-          "Agent工作流"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "sdk-llamaindex-v2",
-        "name": "LlamaIndex v2",
-        "type": "rag_framework",
-        "description": "LlamaIndex v2，RAG框架升级版，增强Agent能力和数据处理",
-        "company": "LlamaIndex",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "RAG增强",
-          "Agent框架",
-          "数据处理管道",
-          "多模态支持"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "sdk-flowise-v2",
-        "name": "Flowise v2",
-        "type": "visual_agent_builder",
-        "description": "Flowise v2可视化Agent构建器，拖拽式Agent工作流设计",
-        "company": "Flowise",
-        "language": "TypeScript/Python",
-        "license": "Apache-2.0",
-        "key_features": [
-          "可视化构建",
-          "拖拽式设计",
-          "Agent工作流",
-          "LLM集成"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "sdk-n8n-v2",
-        "name": "n8n AI Agent v2",
-        "type": "workflow_automation",
-        "description": "n8n AI Agent v2，工作流自动化平台升级版，增强AI Agent节点和工具集成",
-        "company": "n8n",
-        "language": "TypeScript",
-        "license": "Sustainable Use",
-        "key_features": [
-          "工作流自动化",
-          "AI Agent节点",
-          "400+集成",
-          "自托管"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "sdk-dify-v2",
-        "name": "Dify v2",
-        "type": "llm_app_platform",
-        "description": "Dify v2 LLM应用开发平台，增强Agent能力和RAG管道",
-        "company": "Dify",
-        "language": "Python/TypeScript",
-        "license": "Apache-2.0",
-        "key_features": [
-          "LLM应用平台",
-          "Agent工作流",
-          "RAG管道",
-          "可视化编排"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "sdk-composio",
-        "name": "Composio Agent SDK",
-        "type": "tool_integration",
-        "description": "Composio Agent SDK，250+工具集成中间件，为Agent提供工具调用能力",
-        "company": "Composio",
-        "language": "Python/TypeScript",
-        "license": "MIT",
-        "key_features": [
-          "250+工具集成",
-          "OAuth管理",
-          "Agent工具调用",
-          "多框架兼容"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-rasa-calm",
-        "name": "Rasa CALM",
-        "vendor": "Rasa",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "企业级对话AI",
-          "CALM架构",
-          "对话管理",
-          "NLU引擎"
-        ],
-        "pros": [
-          "企业级",
-          "对话AI专精",
-          "成熟稳定"
-        ],
-        "cons": [
-          "对话AI偏重",
-          "非通用Agent",
-          "学习曲线"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-morph-llm",
-        "name": "Morph LLM Agent",
-        "vendor": "Morph",
-        "language": "Python/TypeScript",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "8框架对比",
-          "ACP协议支持",
-          "轻量级",
-          "快速推理"
-        ],
-        "pros": [
-          "轻量级",
-          "ACP原生",
-          "快速"
-        ],
-        "cons": [
-          "新项目",
-          "社区小",
-          "功能有限"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-rhesis",
-        "name": "Rhesis AI",
-        "vendor": "Rhesis AI",
-        "language": "Python",
-        "type": "Agent测试",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "Agent测试框架",
-          "8框架对比",
-          "质量评估",
-          "红队测试"
-        ],
-        "pros": [
-          "测试专精",
-          "框架对比",
-          "质量保障"
-        ],
-        "cons": [
-          "非Agent框架",
-          "测试工具",
-          "新项目"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-objectbox",
-        "name": "ObjectBox Agent Memory",
-        "vendor": "ObjectBox",
-        "language": "Python/C++",
-        "type": "记忆SDK",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": true,
-        "streaming": false,
-        "maturity": "生产可用",
-        "features": [
-          "设备端向量数据库",
-          "嵌入式记忆",
-          "低延迟",
-          "离线运行"
-        ],
-        "pros": [
-          "设备端运行",
-          "超低延迟",
-          "离线可用"
-        ],
-        "cons": [
-          "嵌入式场景",
-          "非云端",
-          "规模受限"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:03:15.064Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-agno",
-        "name": "Agno",
-        "vendor": "社区",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "Agent构建",
-          "工具集成",
-          "记忆管理"
-        ],
-        "pros": [
-          "简洁",
-          "Python原生",
-          "易上手"
-        ],
-        "cons": [
-          "新项目",
-          "社区小",
-          "功能有限"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-sim-studio",
-        "name": "Sim Studio",
-        "vendor": "Sim Studio",
-        "language": "TypeScript",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "可视化构建",
-          "Agent编排",
-          "工作流设计"
-        ],
-        "pros": [
-          "可视化",
-          "易用",
-          "工作流"
-        ],
-        "cons": [
-          "新项目",
-          "功能有限",
-          "社区小"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-genta",
-        "name": "Genta",
-        "vendor": "Genta",
-        "language": "Python",
-        "type": "Agent工具",
-        "multi_agent": false,
-        "tool_use": true,
-        "memory": false,
-        "streaming": true,
-        "maturity": "早期",
-        "features": [
-          "Agent工具集",
-          "框架比较",
-          "评估工具"
-        ],
-        "pros": [
-          "工具丰富",
-          "评估功能",
-          "比较功能"
-        ],
-        "cons": [
-          "非完整框架",
-          "新项目",
-          "社区小"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-alice-labs",
-        "name": "Alice Labs Agent Framework",
-        "vendor": "Alice Labs",
-        "language": "Python",
-        "type": "Agent框架",
-        "multi_agent": true,
-        "tool_use": true,
-        "memory": true,
-        "streaming": true,
-        "maturity": "生产可用",
-        "features": [
-          "生产测试",
-          "7框架排名",
-          "18+部署经验"
-        ],
-        "pros": [
-          "生产验证",
-          "丰富经验",
-          "企业级"
-        ],
-        "cons": [
-          "商业产品",
-          "定制化有限",
-          "成本"
-        ],
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-04T14:05:21.771Z"
-          }
-        ]
-      },
-      {
-        "id": "SDK-microsoft-agent-framework",
-        "name": "Microsoft Agent Framework (MAF)",
-        "category": "agent-framework",
-        "description": "Microsoft Agent Framework reached 1.0 GA on April 2, 2026, merging AutoGen and Semantic Kernel into a single supported platform. Supports .NET, Python, and Java.",
-        "features": [
-          ".NET support",
-          "Python support",
-          "Java support",
-          "AutoGen convergence",
-          "Semantic Kernel convergence",
-          "function calling",
-          "planning",
-          "multi-agent orchestration"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce",
-          "https://learn.microsoft.com/en-us/agent-framework/overview"
-        ]
-      },
-      {
-        "id": "SDK-morph",
-        "name": "Morph Agent Framework",
-        "category": "agent-framework",
-        "description": "Deep comparison framework covering 8 AI agent SDKs including Claude Agent SDK, OpenAI Agents SDK, Google ADK, LangGraph, CrewAI, Smolagents.",
-        "features": [
-          "multi-SDK comparison",
-          "agent orchestration",
-          "framework analysis"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://www.morphllm.com/ai-agent-framework"
-        ]
-      },
-      {
-        "id": "SDK-rhesis",
-        "name": "Rhesis AI Framework",
-        "category": "agent-framework",
-        "description": "Framework for picking the right agentic framework in 2026. Side-by-side comparison of 8 agent frameworks.",
-        "features": [
-          "framework comparison",
-          "agent testing",
-          "framework selection"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://rhesis.ai/post/picking-agentic-framework-2026"
-        ]
-      },
-      {
-        "id": "SDK-alicelabs",
-        "name": "AliceLabs Agent Framework",
-        "category": "agent-framework",
-        "description": "7 AI agent frameworks ranked by production-readiness: LangGraph #1, Claude Agent SDK #2, CrewAI #3.",
-        "features": [
-          "production ranking",
-          "agent benchmarking",
-          "framework evaluation"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://alicelabs.ai/en/insights/best-ai-agent-framework-2026"
-        ]
-      },
-      {
-        "name": "LangChain / LangGraph",
-        "type": "Framework",
-        "language": [
-          "Python",
-          "JavaScript",
-          "TypeScript"
-        ],
-        "features": [
-          "Production-grade AI agent engineering platform",
-          "State management for complex agentic workflows",
-          "Multi-agent orchestration"
-        ],
-        "description": "A leading open-source framework providing tools to build, test, and deploy reliable AI agents with strong support for stateful, multi-step applications.",
-        "status": "Stable / Production-Ready",
-        "sources": [
-          "[1]",
-          "[2]",
-          "[3]",
-          "[6]",
-          "[7]"
-        ],
-        "id": "SDK-033"
-      },
-      {
-        "name": "AutoGen / AG2",
-        "type": "Framework",
-        "language": [
-          "Python"
-        ],
-        "features": [
-          "Multi-agent conversation patterns",
-          "Group chat capabilities"
-        ],
-        "description": "A Microsoft-backed framework focused on conversational multi-agent interactions, now consolidated under the AG2 branding.",
-        "status": "Stable / Consolidated",
-        "sources": [
-          "[2]",
-          "[3]",
-          "[5]",
-          "[8]",
-          "[9]"
-        ],
-        "id": "SDK-034"
-      },
-      {
-        "name": "LangChain",
-        "type": "Framework",
-        "language": "Python, JavaScript/TypeScript",
-        "features": [
-          "Engineering platform for building AI agents",
-          "Open source frameworks",
-          "Build, test, and deploy reliable AI agents"
-        ],
-        "description": "LangChain provides the engineering platform and open source frameworks developers use to build, test, and deploy reliable AI agents.",
-        "status": "Production",
-        "sources": [
-          "[1]",
-          "[3]",
-          "[6]",
-          "[7]"
-        ],
-        "id": "SDK-035"
-      },
-      {
-        "name": "AutoGen (AG2)",
-        "type": "Framework",
-        "language": "Python",
-        "features": [
-          "Multi-agent conversation framework",
-          "Consolidated major player in 2026"
-        ],
-        "description": "One of the four major players in the 2026 AI agent framework landscape, formerly known as AutoGen and now AG2.",
-        "status": "Production",
-        "sources": [
-          "[2]",
-          "[3]",
-          "[5]",
-          "[8]"
-        ],
-        "id": "SDK-036"
-      },
-      {
-        "id": "SDK-037",
-        "name": "Google ADK SDK",
-        "full_name": "@google/adk",
-        "category": "Agent SDK",
-        "description": "Google Agent Development Kit SDK，2025年4月发布，提供层级Agent树构建、多Agent编排和Google Cloud深度集成",
-        "language": "Python",
-        "stars": 15000,
-        "maintainer": "Google",
-        "status": "active",
-        "features": [
-          "层级Agent树",
-          "Google Cloud集成",
-          "多Agent编排",
-          "开源"
-        ]
-      },
-      {
-        "id": "SDK-038",
-        "name": "Claude Agent SDK",
-        "full_name": "@anthropic/agent-sdk",
-        "category": "Agent SDK",
-        "description": "Anthropic Claude Agent SDK，2026年6月15日起独立计费，支持文件存储、事件构建和Claude强指令跟随",
-        "language": "Python",
-        "stars": 12000,
-        "maintainer": "Anthropic",
-        "status": "active",
-        "features": [
-          "Claude原生",
-          "文件存储/加载",
-          "事件构建",
-          "指令跟随"
-        ]
-      },
-      {
-        "id": "SDK-039",
-        "name": "OpenAI Agents SDK Python",
-        "full_name": "openai-agents",
-        "category": "Agent SDK",
-        "description": "OpenAI Agents SDK，2025年3月发布，轻量Python框架，26900+ Stars，1030万月下载，支持Handoff和工具集成",
-        "language": "Python",
-        "stars": 26900,
-        "maintainer": "OpenAI",
-        "status": "active",
-        "features": [
-          "轻量框架",
-          "Handoff模式",
-          "工具集成",
-          "1030万月下载"
-        ]
-      },
-      {
-        "id": "SDK-040",
-        "name": "Smolagents",
-        "full_name": "smolagents",
-        "category": "Agent SDK",
-        "description": "HuggingFace推出的轻量Agent框架，专注简洁和可理解性，适合快速原型和教育场景",
-        "language": "Python",
-        "stars": 7000,
-        "maintainer": "HuggingFace",
-        "status": "active",
-        "features": [
-          "轻量简洁",
-          "HuggingFace生态",
-          "快速原型",
-          "可理解性"
-        ]
-      },
-      {
-        "id": "SDK-041",
-        "name": "Microsoft Agent Framework SDK",
-        "full_name": "microsoft-agents",
-        "category": "Agent SDK",
-        "description": "微软统一Agent框架SDK，整合AutoGen/AG2能力，支持Python和C#多语言企业级开发",
-        "language": "Python/C#",
-        "stars": 30000,
-        "maintainer": "Microsoft",
-        "status": "active",
-        "features": [
-          "AutoGen整合",
-          "多语言",
-          "企业级",
-          "Azure集成"
-        ]
-      }
-    ]
-  },
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "MEM-023",
+      "name": "BEAM Benchmark",
+      "full_name": "BEAM Agent Memory Benchmark",
+      "category": "记忆基准",
+      "description": "BEAM是2026年三大Agent记忆基准之一(与LoCoMo和LongMemEval并列)，用于全面评估Agent记忆架构性能",
+      "key_features": [
+        "Agent记忆综合评估",
+        "与LoCoMo/LongMemEval并列",
+        "行业标准"
+      ],
+      "status": "active",
+      "year": 2026,
+      "maintainer": "学术界",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "name": "Letta",
+      "type": "Framework",
+      "description": "An open-source community-led approach to AI agent memory management.",
+      "features": [
+        "Open source",
+        "Community-driven",
+        "Long-term memory"
+      ],
+      "status": "Battle-Tested",
+      "sources": [
+        "https://medium.com/asymptotic-spaghetti-integration/from-beta-to-battle-tested-picking-between-letta-mem0-zep-for-ai-memory-6850ca8703d1",
+        "https://forum.letta.com/t/agent-memory-letta-vs-mem0-vs-zep-vs-cognee/88"
+      ],
+      "id": "MEM-024"
+    },
+    {
+      "name": "IBM AI Agent Memory",
+      "type": "Concept/Resource",
+      "description": "IBM's perspective on AI agent memory, focusing on Long-term memory (LTM) for personalization and intelligence.",
+      "features": [
+        "Long-term memory (LTM)",
+        "Personalization",
+        "Cross-session recall"
+      ],
+      "status": "Reference",
+      "sources": [
+        "https://www.ibm.com/think/topics/ai-agent-memory"
+      ],
+      "id": "MEM-025"
+    }
+  ],
+  "model_apis": [
+    {
+      "id": "API-001",
+      "name": "OpenAI API",
+      "vendor": "OpenAI",
+      "type": "LLM API",
+      "models": [
+        "GPT-4o",
+        "GPT-4o-mini",
+        "o1",
+        "o3-mini",
+        "DALL-E 3",
+        "Whisper",
+        "TTS"
+      ],
+      "pricing_input": "$2.5/1M tokens (GPT-4o)",
+      "pricing_output": "$10/1M tokens (GPT-4o)",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "Function Calling",
+        "Vision",
+        "Structured Output",
+        "Batch API",
+        "Fine-tuning",
+        "Assistants API"
+      ],
+      "rate_limit": "Tier1: 500 RPM",
+      "sdk_languages": [
+        "Python",
+        "Node.js",
+        "Go",
+        "Java",
+        "C#"
+      ],
+      "docs": "https://platform.openai.com/docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-002",
+      "name": "Anthropic API",
+      "vendor": "Anthropic",
+      "type": "LLM API",
+      "models": [
+        "Claude 3.5 Sonnet",
+        "Claude 3.5 Haiku",
+        "Claude 3 Opus"
+      ],
+      "pricing_input": "$3/1M tokens (Sonnet)",
+      "pricing_output": "$15/1M tokens (Sonnet)",
+      "context_window": "200K",
+      "features": [
+        "Messages API",
+        "Tool Use",
+        "Vision",
+        "MCP Support",
+        "Prompt Caching",
+        "Extended Thinking"
+      ],
+      "rate_limit": "Tier1: 1000 RPM",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.anthropic.com",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-003",
+      "name": "Google Gemini API",
+      "vendor": "Google",
+      "type": "LLM API",
+      "models": [
+        "Gemini 2.0 Flash",
+        "Gemini 2.5 Pro",
+        "Gemini 1.5 Pro"
+      ],
+      "pricing_input": "$1.25/1M tokens (Flash)",
+      "pricing_output": "$5/1M tokens (Flash)",
+      "context_window": "1M-2M",
+      "features": [
+        "Generate Content",
+        "Function Calling",
+        "Vision",
+        "Code Execution",
+        "Grounding",
+        "Context Caching"
+      ],
+      "rate_limit": "Free: 15 RPM, Pay: 2000 RPM",
+      "sdk_languages": [
+        "Python",
+        "Node.js",
+        "Go",
+        "Java",
+        "Dart"
+      ],
+      "docs": "https://ai.google.dev/docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-004",
+      "name": "DeepSeek API",
+      "vendor": "DeepSeek",
+      "type": "LLM API",
+      "models": [
+        "DeepSeek-V3",
+        "DeepSeek-R1"
+      ],
+      "pricing_input": "$0.27/1M tokens",
+      "pricing_output": "$1.1/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "FIM",
+        "JSON Output",
+        "Function Calling"
+      ],
+      "rate_limit": "按余额",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://platform.deepseek.com/api-docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-005",
+      "name": "智谱AI API",
+      "vendor": "智谱AI",
+      "type": "LLM API",
+      "models": [
+        "GLM-4",
+        "GLM-4V",
+        "GLM-4-Flash"
+      ],
+      "pricing_input": "¥0.1/1M tokens (Flash)",
+      "pricing_output": "¥0.1/1M tokens (Flash)",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "Function Calling",
+        "Vision",
+        "Web Search",
+        "Code Interpreter"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js",
+        "Java"
+      ],
+      "docs": "https://open.bigmodel.cn/dev/api",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-006",
+      "name": "Mistral API",
+      "vendor": "Mistral AI",
+      "type": "LLM API",
+      "models": [
+        "Mistral Large",
+        "Mistral Medium",
+        "Codestral",
+        "Pixtral"
+      ],
+      "pricing_input": "$2/1M tokens (Large)",
+      "pricing_output": "$6/1M tokens (Large)",
+      "context_window": "128K",
+      "features": [
+        "Chat Completions",
+        "Function Calling",
+        "Vision",
+        "Embeddings",
+        "Agents API"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.mistral.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-007",
+      "name": "Cohere API",
+      "vendor": "Cohere",
+      "type": "LLM/RAG API",
+      "models": [
+        "Command R+",
+        "Command R",
+        "Embed v3",
+        "Rerank v3"
+      ],
+      "pricing_input": "$2.5/1M tokens (R+)",
+      "pricing_output": "$10/1M tokens (R+)",
+      "context_window": "128K",
+      "features": [
+        "Chat",
+        "RAG",
+        "Embeddings",
+        "Rerank",
+        "Connectors",
+        "Fine-tuning"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.cohere.com",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-008",
+      "name": "Groq API",
+      "vendor": "Groq",
+      "type": "推理加速API",
+      "models": [
+        "Llama 3.3 70B",
+        "Mixtral 8x7B",
+        "Gemma 2 9B"
+      ],
+      "pricing_input": "$0.59/1M tokens",
+      "pricing_output": "$0.79/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "超低延迟推理",
+        "OpenAI兼容",
+        "Chat Completions",
+        "Vision"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://console.groq.com/docs",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-009",
+      "name": "Together AI API",
+      "vendor": "Together AI",
+      "type": "推理平台",
+      "models": [
+        "200+开源模型",
+        "Llama 3",
+        "Qwen 2.5",
+        "DeepSeek"
+      ],
+      "pricing_input": "$0.18/1M tokens (Llama3)",
+      "pricing_output": "$0.18/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "Serverless推理",
+        "Fine-tuning",
+        "Embeddings",
+        "Image Gen"
+      ],
+      "rate_limit": "按余额",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://docs.together.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-010",
+      "name": "Fireworks AI API",
+      "vendor": "Fireworks AI",
+      "type": "推理平台",
+      "models": [
+        "Llama 3.3",
+        "Qwen 2.5",
+        "Mixtral",
+        "Whisper"
+      ],
+      "pricing_input": "$0.2/1M tokens",
+      "pricing_output": "$0.2/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "Serverless推理",
+        "Fine-tuning",
+        "Vision",
+        "Function Calling"
+      ],
+      "rate_limit": "按余额",
+      "sdk_languages": [
+        "OpenAI兼容"
+      ],
+      "docs": "https://docs.fireworks.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-011",
+      "name": "Perplexity API",
+      "vendor": "Perplexity",
+      "type": "搜索AI API",
+      "models": [
+        "Sonar",
+        "Sonar Pro",
+        "Sonar Reasoning"
+      ],
+      "pricing_input": "$1/1M tokens",
+      "pricing_output": "$1/1M tokens",
+      "context_window": "128K",
+      "features": [
+        "实时搜索",
+        "引用来源",
+        "Pro深度搜索"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://docs.perplexity.ai",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-012",
+      "name": "ElevenLabs API",
+      "vendor": "ElevenLabs",
+      "type": "TTS/STT API",
+      "models": [
+        "eleven_multilingual_v2",
+        "eleven_turbo_v2",
+        "eleven_monolingual_v1"
+      ],
+      "pricing_input": "$0.18/1K chars",
+      "pricing_output": "N/A",
+      "context_window": "N/A",
+      "features": [
+        "TTS",
+        "STT",
+        "Voice Cloning",
+        "Sound Effects",
+        "Dubbing"
+      ],
+      "rate_limit": "按套餐",
+      "sdk_languages": [
+        "Python",
+        "Node.js"
+      ],
+      "docs": "https://elevenlabs.io/docs/api-reference",
+      "status": "生产可用"
+    },
+    {
+      "id": "API-013",
+      "name": "Claude Agent SDK API",
+      "full_name": "Anthropic Agent SDK API",
+      "category": "Agent API",
+      "description": "Anthropic Claude Agent SDK于2026年6月15日开始从独立月度Agent SDK额度计费，支持文件存储和事件构建",
+      "maintainer": "Anthropic",
+      "status": "active",
+      "features": [
+        "独立计费",
+        "文件存储",
+        "事件构建",
+        "Agent原生"
+      ]
+    },
+    {
+      "id": "API-014",
+      "name": "Google ADK API",
+      "full_name": "Google Agent Development Kit API",
+      "category": "Agent API",
+      "description": "Google ADK提供Agent开发API，优化Google Cloud集成，支持层级Agent树和多Agent编排",
+      "maintainer": "Google",
+      "status": "active",
+      "features": [
+        "Google Cloud优化",
+        "层级Agent树",
+        "多Agent编排",
+        "Vertex AI集成"
+      ]
+    },
+    {
+      "id": "API-015",
+      "name": "OpenAI Agents API",
+      "full_name": "OpenAI Agents API",
+      "category": "Agent API",
+      "description": "OpenAI Agents SDK配套API，支持Handoff模式、工具调用和多Agent协作，1030万月下载量",
+      "maintainer": "OpenAI",
+      "status": "active",
+      "features": [
+        "Handoff模式",
+        "工具调用",
+        "多Agent协作",
+        "大规模采用"
+      ]
+    },
+    {
+      "id": "API-016",
+      "name": "MCP Tasks API",
+      "full_name": "MCP Tasks API",
+      "category": "协议API",
+      "description": "MCP 2026规范引入的Tasks API，支持异步任务调度和长运行操作管理",
+      "maintainer": "Anthropic",
+      "status": "active",
+      "features": [
+        "异步任务",
+        "长运行操作",
+        "任务状态追踪",
+        "2026规范"
+      ]
+    }
+  ],
+  "protocols": [
+    {
+      "id": "PROTO-001",
+      "name": "MCP (Model Context Protocol)",
+      "vendor": "Anthropic",
+      "version": "2026-07-28-rc",
+      "layer": "Agent-Tool",
+      "description": "让AI Agent连接外部工具和数据源的开放协议，2026年最大版本更新",
+      "architecture": "Client-Server",
+      "transport": "stdio/SSE/StreamableHTTP",
+      "security": "进程隔离/权限控制/OAuth",
+      "adoption": "广泛（13000+ MCP Server）",
+      "github_stars": "30000+",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-002",
+      "name": "A2A (Agent-to-Agent)",
+      "vendor": "Google",
+      "version": "0.1",
+      "layer": "Agent-Agent",
+      "description": "让不同框架的AI Agent互相通信和协作",
+      "architecture": "P2P/Hub",
+      "transport": "HTTP/JSON-RPC",
+      "security": "Agent Card认证",
+      "adoption": "快速增长(50+合作伙伴)",
+      "github_stars": "5000+",
+      "status": "快速增长"
+    },
+    {
+      "id": "PROTO-003",
+      "name": "ACP (Agent Communication Protocol)",
+      "vendor": "IBM/BEA",
+      "version": "0.1",
+      "layer": "Agent-Agent",
+      "description": "IBM主导的Agent通信协议",
+      "architecture": "Hub-Spoke",
+      "transport": "HTTP/gRPC",
+      "security": "企业级安全",
+      "adoption": "IBM生态",
+      "github_stars": "500",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-004",
+      "name": "OpenClaw Skill Protocol",
+      "vendor": "OpenClaw",
+      "version": "1.0",
+      "layer": "Agent-Skill",
+      "description": "Agent技能描述和分发协议",
+      "architecture": "Registry",
+      "transport": "npm/git",
+      "security": "沙箱执行/权限声明",
+      "adoption": "OpenClaw生态",
+      "github_stars": "2000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-005",
+      "name": "LSP (Language Server Protocol)",
+      "vendor": "Microsoft",
+      "version": "3.17",
+      "layer": "Editor-Language",
+      "description": "编辑器与语言服务通信协议",
+      "architecture": "Client-Server",
+      "transport": "stdio/HTTP",
+      "security": "进程隔离",
+      "adoption": "广泛",
+      "github_stars": "11000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-006",
+      "name": "AG-UI (Agent User Interaction Protocol)",
+      "vendor": "CopilotKit",
+      "version": "0.1",
+      "layer": "Agent-UI",
+      "description": "Agent与前端UI交互的开放协议，定义Agent事件流到UI组件的映射",
+      "architecture": "Event Stream",
+      "transport": "SSE/WebSocket",
+      "security": "CORS/认证",
+      "adoption": "CopilotKit生态",
+      "github_stars": "8000+",
+      "status": "快速增长"
+    },
+    {
+      "id": "PROTO-007",
+      "name": "ANP (Agent Network Protocol)",
+      "vendor": "ANP社区",
+      "version": "0.2",
+      "layer": "Agent-Network",
+      "description": "去中心化Agent网络协议，支持Agent发现和互操作",
+      "architecture": "P2P/DID",
+      "transport": "HTTP/DID Comm",
+      "security": "DID认证/加密",
+      "adoption": "W3C DID生态",
+      "github_stars": "3000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-008",
+      "name": "OpenAPI/Swagger",
+      "vendor": "Linux Foundation",
+      "version": "3.1",
+      "layer": "API-Description",
+      "description": "REST API描述标准，MCP Server可从OpenAPI自动生成",
+      "architecture": "Specification",
+      "transport": "HTTP",
+      "security": "OAuth/API Key",
+      "adoption": "广泛",
+      "github_stars": "29000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-009",
+      "name": "gRPC",
+      "vendor": "Google",
+      "version": "1.6x",
+      "layer": "RPC",
+      "description": "高性能RPC框架，Agent间低延迟通信",
+      "architecture": "Client-Server/Streaming",
+      "transport": "HTTP/2",
+      "security": "TLS/Token",
+      "adoption": "广泛",
+      "github_stars": "41000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-010",
+      "name": "GraphQL",
+      "vendor": "GraphQL Foundation",
+      "version": "October 2021",
+      "layer": "API-Query",
+      "description": "灵活的API查询语言，Agent按需获取数据",
+      "architecture": "Client-Server",
+      "transport": "HTTP/WebSocket",
+      "security": "查询深度限制/认证",
+      "adoption": "广泛",
+      "github_stars": "14000",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-011",
+      "name": "WASM Component Model",
+      "vendor": "Bytecode Alliance",
+      "version": "0.2",
+      "layer": "Agent-Sandbox",
+      "description": "WebAssembly组件模型，Agent安全沙箱执行",
+      "architecture": "Component",
+      "transport": "WASM Runtime",
+      "security": "沙箱隔离/能力控制",
+      "adoption": "增长中",
+      "github_stars": "1000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-012",
+      "name": "JSON-RPC 2.0",
+      "vendor": "JSON-RPC社区",
+      "version": "2.0",
+      "layer": "RPC",
+      "description": "轻量级远程过程调用协议，MCP底层传输之一",
+      "architecture": "Client-Server",
+      "transport": "HTTP/WebSocket/stdio",
+      "security": "传输层安全",
+      "adoption": "广泛",
+      "github_stars": "N/A",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-013",
+      "name": "Server-Sent Events (SSE)",
+      "vendor": "W3C",
+      "version": "Living Standard",
+      "layer": "Transport",
+      "description": "服务器推送事件流，MCP远程传输方式",
+      "architecture": "Server-Push",
+      "transport": "HTTP",
+      "security": "CORS/认证",
+      "adoption": "广泛",
+      "github_stars": "N/A",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-014",
+      "name": "DAP (Debug Adapter Protocol)",
+      "vendor": "Microsoft",
+      "version": "1.6x",
+      "layer": "Agent-Debug",
+      "description": "调试适配器协议，Agent调试和可观测性",
+      "architecture": "Client-Server",
+      "transport": "stdio/HTTP",
+      "security": "进程隔离",
+      "adoption": "IDE广泛",
+      "github_stars": "2000",
+      "status": "成熟"
+    },
+    {
+      "id": "PROTO-015",
+      "name": "OpenTelemetry",
+      "vendor": "CNCF",
+      "version": "1.x",
+      "layer": "Observability",
+      "description": "可观测性标准，Agent tracing/metrics/logs",
+      "architecture": "Collector/Export",
+      "transport": "OTLP/gRPC/HTTP",
+      "security": "TLS/Token",
+      "adoption": "广泛",
+      "github_stars": "4500",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-016",
+      "name": "FHIR (Healthcare API)",
+      "vendor": "HL7",
+      "version": "R4B/R5",
+      "layer": "Domain-API",
+      "description": "医疗健康数据交换标准，医疗Agent场景",
+      "architecture": "RESTful",
+      "transport": "HTTP",
+      "security": "OAuth2/SMART",
+      "adoption": "医疗行业广泛",
+      "github_stars": "2000",
+      "status": "行业标准"
+    },
+    {
+      "id": "PROTO-017",
+      "name": "Stainless API Standard",
+      "vendor": "Stainless",
+      "version": "1.0",
+      "layer": "API-SDK-Gen",
+      "description": "API到SDK自动生成标准，MCP Server SDK生成",
+      "architecture": "Generator",
+      "transport": "HTTP",
+      "security": "规范定义",
+      "adoption": "增长中",
+      "github_stars": "3000",
+      "status": "活跃"
+    },
+    {
+      "id": "PROTO-018",
+      "name": "Semantic Protocol (SP)",
+      "vendor": "W3C",
+      "version": "Draft",
+      "layer": "Agent-Semantic",
+      "description": "语义网协议栈，Agent知识表示和推理",
+      "architecture": "RDF/OWL/SPARQL",
+      "transport": "HTTP",
+      "security": "访问控制",
+      "adoption": "知识图谱领域",
+      "github_stars": "N/A",
+      "status": "标准草案"
+    },
+    {
+      "id": "PROTO-019",
+      "name": "OAuth 2.1 / DPoP",
+      "vendor": "IETF",
+      "version": "RFC 9449",
+      "layer": "Auth",
+      "description": "Agent认证和授权标准，MCP远程安全基础",
+      "architecture": "Token-based",
+      "transport": "HTTP",
+      "security": "PKCE/DPoP",
+      "adoption": "广泛",
+      "github_stars": "N/A",
+      "status": "成熟标准"
+    },
+    {
+      "id": "PROTO-020",
+      "name": "Tool Call Protocol (OpenAI)",
+      "vendor": "OpenAI",
+      "version": "2024-12",
+      "layer": "Agent-Tool",
+      "description": "OpenAI定义的函数调用协议，事实上的工具调用标准",
+      "architecture": "Request-Response",
+      "transport": "HTTP API",
+      "security": "API Key",
+      "adoption": "广泛（OpenAI兼容模型）",
+      "github_stars": "N/A",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-021",
+      "name": "Agent Gateway Protocol (AGP)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Gateway",
+      "description": "Agent网关协议，统一多Agent系统的入口和路由",
+      "architecture": "Gateway",
+      "transport": "HTTP/gRPC",
+      "security": "mTLS/RBAC",
+      "adoption": "早期",
+      "github_stars": "1500",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-022",
+      "name": "x402 (HTTP 402 Payment Protocol)",
+      "vendor": "Coinbase/社区",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "基于HTTP 402状态码的机器对机器微支付协议，已处理7500万+交易",
+      "architecture": "HTTP-native",
+      "transport": "HTTP/HTTPS",
+      "security": "加密签名/区块链",
+      "adoption": "快速增长（75M+交易/月）",
+      "github_stars": "5000+",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-023",
+      "name": "AP2 (Agent Payment Protocol)",
+      "vendor": "Google",
+      "version": "0.1",
+      "layer": "Agent-Payment",
+      "description": "Google推出的Agent预授权支付协议，60+合作组织",
+      "architecture": "Pre-authorized",
+      "transport": "HTTP/gRPC",
+      "security": "OAuth/加密",
+      "adoption": "早期（60+合作伙伴）",
+      "github_stars": "N/A",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-024",
+      "name": "ACP (Agent Commerce Protocol)",
+      "vendor": "Stripe",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "Stripe推出的Agent商务协议，已集成到ChatGPT",
+      "architecture": "Commerce-focused",
+      "transport": "HTTPS",
+      "security": "Stripe安全",
+      "adoption": "ChatGPT集成",
+      "github_stars": "N/A",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-025",
+      "name": "UCP (Universal Commerce Protocol)",
+      "vendor": "Google",
+      "version": "0.1",
+      "layer": "Agent-Payment",
+      "description": "Google推出的通用商务协议，用于Agent间交易",
+      "architecture": "Universal",
+      "transport": "HTTP/gRPC",
+      "security": "加密",
+      "adoption": "早期",
+      "github_stars": "N/A",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-027",
+      "name": "A2UI (Agent-to-UI Protocol)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-UI",
+      "description": "Agent到用户界面的直接交互协议",
+      "architecture": "Component-based",
+      "transport": "WebSocket",
+      "security": "Sandbox",
+      "adoption": "早期",
+      "github_stars": "500",
+      "status": "早期"
+    },
+    {
+      "id": "PROTO-028",
+      "name": "Web Bot Auth",
+      "vendor": "IETF/社区",
+      "version": "draft",
+      "layer": "Agent-Auth",
+      "description": "Web机器人身份认证标准，定义Agent在Web上的身份验证",
+      "architecture": "Certificate-based",
+      "transport": "HTTPS",
+      "security": "PKI/OAuth",
+      "adoption": "标准化中",
+      "github_stars": "N/A",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-029",
+      "name": "MCP 2026-07-28 RC",
+      "vendor": "Linux Foundation/MCP",
+      "version": "2026-07-28-rc",
+      "layer": "Agent-Tool",
+      "description": "MCP协议2026年重大更新，引入无状态协议、Tasks原语、MCP Apps",
+      "architecture": "Stateless Client-Server",
+      "transport": "StreamableHTTP/SSE/stdio",
+      "security": "OAuth 2.1/权限控制/审计日志",
+      "adoption": "即将发布",
+      "github_stars": "30000+",
+      "status": "RC"
+    },
+    {
+      "id": "PROTO-030",
+      "name": "MCP Registry Protocol",
+      "vendor": "Linux Foundation/MCP",
+      "version": "0.1",
+      "layer": "Agent-Discovery",
+      "description": "MCP Server注册与发现协议，用于Server目录和安全验证",
+      "architecture": "Registry",
+      "transport": "HTTPS",
+      "security": "TLS/签名验证",
+      "adoption": "预览版",
+      "github_stars": "1500",
+      "status": "预览"
+    },
+    {
+      "id": "PROTO-031",
+      "name": "MCP Tasks Protocol",
+      "vendor": "Linux Foundation/MCP",
+      "version": "draft",
+      "layer": "Agent-Task",
+      "description": "MCP 2026路线图新增Tasks原语，支持Agent自主通信",
+      "architecture": "Task-oriented",
+      "transport": "StreamableHTTP",
+      "security": "OAuth/权限",
+      "adoption": "规划中",
+      "github_stars": "N/A",
+      "status": "规划"
+    },
+    {
+      "id": "PROTO-032",
+      "name": "A2A v1",
+      "vendor": "Google",
+      "version": "1.0",
+      "layer": "Agent-Agent",
+      "description": "Agent间通信协议正式版，IBM ACP已合并入A2A",
+      "architecture": "P2P/Hub",
+      "transport": "HTTP/gRPC",
+      "security": "mTLS/OAuth",
+      "adoption": "广泛（IBM合并）",
+      "github_stars": "15000+",
+      "status": "正式版"
+    },
+    {
+      "id": "PROTO-033",
+      "name": "Agent Pay (Mastercard)",
+      "vendor": "Mastercard",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "Mastercard Agent Pay协议，支持AI Agent安全支付",
+      "architecture": "Payment Gateway",
+      "transport": "HTTPS",
+      "security": "Token化/3DS",
+      "adoption": "发布",
+      "github_stars": "N/A",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-034",
+      "name": "Visa Trusted Agent",
+      "vendor": "Visa",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "Visa可信Agent支付协议",
+      "architecture": "Trusted Execution",
+      "transport": "HTTPS",
+      "security": "Token化/生物识别",
+      "adoption": "发布",
+      "github_stars": "N/A",
+      "status": "生产可用"
+    },
+    {
+      "id": "PROTO-035",
+      "name": "llms.txt Standard",
+      "vendor": "社区",
+      "version": "0.3",
+      "layer": "Agent-Content",
+      "description": "为LLM Agent提供网站内容摘要的标准格式",
+      "architecture": "File-based",
+      "transport": "HTTPS",
+      "security": "CORS",
+      "adoption": "广泛",
+      "github_stars": "4000+",
+      "status": "事实标准"
+    },
+    {
+      "id": "PROTO-036",
+      "name": "Agent Identity Protocol (AIP)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Identity",
+      "description": "定义AI Agent身份标识和验证的协议",
+      "architecture": "DID-based",
+      "transport": "HTTPS",
+      "security": "DID/VC",
+      "adoption": "早期",
+      "github_stars": "200",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-037",
+      "name": "AGORA Protocol",
+      "vendor": "Oxford University",
+      "version": "0.1",
+      "layer": "Agent-Agent",
+      "description": "牛津大学提出的自然语言动态协议设计，Agent自适应任务协商，无需预定义协议",
+      "architecture": "Natural Language Protocol",
+      "transport": "HTTP/LLM",
+      "security": "协商式安全",
+      "adoption": "研究阶段",
+      "github_stars": "500",
+      "status": "研究"
+    },
+    {
+      "id": "PROTO-038",
+      "name": "APEX Standard",
+      "vendor": "APEX Community",
+      "version": "0.1",
+      "layer": "Agent-Interaction",
+      "description": "开放Agent交互协议标准，定义Agent间发现、协商和执行的通用框架",
+      "architecture": "Registry + P2P",
+      "transport": "HTTP/WebSocket",
+      "security": "OAuth/签名",
+      "adoption": "早期",
+      "github_stars": "300",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-039",
+      "name": "MCP Streamable HTTP",
+      "vendor": "Linux Foundation/MCP",
+      "version": "2026-07-28",
+      "layer": "Agent-Transport",
+      "description": "MCP 2026新增StreamableHTTP传输方式，替代SSE，支持无状态请求",
+      "architecture": "Stateless HTTP",
+      "transport": "HTTP/HTTPS",
+      "security": "OAuth 2.1/CORS",
+      "adoption": "即将发布",
+      "github_stars": "N/A",
+      "status": "RC"
+    },
+    {
+      "id": "PROTO-040",
+      "name": "MCP Apps Protocol",
+      "vendor": "Linux Foundation/MCP",
+      "version": "draft",
+      "layer": "Agent-App",
+      "description": "MCP 2026路线图新增MCP Apps概念，定义可组合的Agent应用协议",
+      "architecture": "Composable App",
+      "transport": "StreamableHTTP",
+      "security": "OAuth/权限",
+      "adoption": "规划中",
+      "github_stars": "N/A",
+      "status": "规划"
+    },
+    {
+      "id": "PROTO-041",
+      "name": "Agent Trust Protocol (ATP)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Trust",
+      "description": "定义Agent信任评估和声誉系统的协议，支持跨平台Agent可信度验证",
+      "architecture": "Reputation-based",
+      "transport": "HTTPS",
+      "security": "PKI/签名验证",
+      "adoption": "早期",
+      "github_stars": "200",
+      "status": "草案"
+    },
+    {
+      "id": "PROTO-042",
+      "name": "MCP 2026-07-28 RC (Stateless)",
+      "vendor": "Linux Foundation/MCP",
+      "version": "2026-07-28-rc",
+      "layer": "Agent-Tool",
+      "description": "MCP 2026最大版本更新，引入无状态协议核心、StreamableHTTP传输、Tasks原语、MCP Apps概念",
+      "architecture": "Stateless Client-Server",
+      "transport": "StreamableHTTP/SSE/stdio",
+      "security": "OAuth 2.1/权限控制/审计日志",
+      "adoption": "即将发布（RC阶段）",
+      "github_stars": "30000+",
+      "status": "RC",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-043",
+      "name": "AGP (Agent Gateway Protocol)",
+      "vendor": "社区",
+      "version": "0.2",
+      "layer": "Agent-Gateway",
+      "description": "Agent网关协议升级版，统一多Agent系统入口、路由和安全策略",
+      "architecture": "Gateway + Mesh",
+      "transport": "HTTP/gRPC/WS",
+      "security": "mTLS/RBAC/审计",
+      "adoption": "增长中",
+      "github_stars": "2000",
+      "status": "活跃",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-044",
+      "name": "MPP (Model Payment Protocol)",
+      "vendor": "社区",
+      "version": "0.1",
+      "layer": "Agent-Payment",
+      "description": "模型支付协议，定义AI模型调用和支付的标准化流程",
+      "architecture": "Request-Payment-Response",
+      "transport": "HTTPS",
+      "security": "加密签名/区块链",
+      "adoption": "早期",
+      "github_stars": "300",
+      "status": "草案",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-045",
+      "name": "Agent Stack Protocol Suite",
+      "vendor": "多厂商",
+      "version": "2026",
+      "layer": "Agent-Full-Stack",
+      "description": "2026年Agent协议栈：MCP + A2A + x402 + AP2 + Web Bot Auth + llms.txt，形成完整Agent通信标准",
+      "architecture": "Layered Stack",
+      "transport": "Multiple",
+      "security": "多层安全",
+      "adoption": "行业趋势",
+      "github_stars": "N/A",
+      "status": "趋势",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-046",
+      "name": "UCP (Universal Commerce Protocol) v2",
+      "vendor": "Google",
+      "version": "0.2",
+      "layer": "Agent-Payment",
+      "description": "Google通用商务协议升级版，与AP2合并，支持Agent间复杂交易",
+      "architecture": "Universal + Pre-authorized",
+      "transport": "HTTP/gRPC",
+      "security": "OAuth/加密/审计",
+      "adoption": "早期（60+合作伙伴）",
+      "github_stars": "N/A",
+      "status": "早期",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-047",
+      "name": "TAP (Tool Access Protocol)",
+      "type": "agent_tool_protocol",
+      "layer": "Agent-Tool",
+      "description": "Tool Access Protocol，AI Agent工具访问协议，标准化Agent对工具的发现、调用和管理",
+      "status": "draft",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-048",
+      "name": "AGP v2 (Agent Gateway Protocol v2)",
+      "type": "agent_gateway_protocol",
+      "layer": "Agent-Agent",
+      "description": "Agent Gateway Protocol v2，Agent网关协议升级版，支持更安全的多Agent路由和通信",
+      "status": "draft",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-049",
+      "name": "MCP Extensions Protocol",
+      "type": "agent_tool_protocol",
+      "layer": "Agent-Tool",
+      "description": "MCP扩展协议，2026-07-28 RC引入，支持MCP Server的扩展机制和插件系统",
+      "status": "rc",
+      "release_date": "2026-07",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-050",
+      "name": "MCP Stateless Core Protocol",
+      "type": "agent_tool_protocol",
+      "layer": "Agent-Tool",
+      "description": "MCP无状态核心协议，2026-07-28 RC引入，将MCP核心改为无状态设计以支持水平扩展",
+      "status": "rc",
+      "release_date": "2026-07",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "PROTO-051",
+      "name": "Agent Security Protocol (ASP)",
+      "type": "agent_security_protocol",
+      "layer": "Agent-Security",
+      "description": "Agent安全协议，2026年MCP安全指南提出，解决AI工具隧道安全和Agent认证问题",
+      "status": "proposal",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "proto-agora-v2",
+      "name": "AGORA Protocol v2",
+      "type": "agent_communication",
+      "description": "AGORA v2，牛津大学开发的自然语言动态协议，Agent自适应任务协商，支持复杂多Agent协作场景",
+      "organization": "Oxford University",
+      "key_features": [
+        "自然语言协议",
+        "动态协议生成",
+        "Agent自适应协商",
+        "多Agent协作"
+      ],
+      "status": "research",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-apex-v2",
+      "name": "APEX Standard v2",
+      "type": "agent_interaction",
+      "description": "APEX v2开放Agent交互协议标准，Registry + P2P架构，增强Agent发现和信任机制",
+      "organization": "APEX Consortium",
+      "key_features": [
+        "Registry架构",
+        "P2P通信",
+        "Agent发现",
+        "信任机制"
+      ],
+      "status": "draft",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-agent-stack-2026",
+      "name": "Agent Stack 2026 Protocol Suite",
+      "type": "protocol_suite",
+      "description": "2026年Agent协议栈：MCP + A2A + x402 + AP2 + Web Bot Auth + llms.txt，定义Agent生态完整协议层",
+      "organization": "Industry Consortium",
+      "key_features": [
+        "MCP工具层",
+        "A2A通信层",
+        "x402支付层",
+        "Web Bot Auth认证层",
+        "llms.txt发现层"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-mcp-stateless-rc",
+      "name": "MCP Stateless Protocol RC",
+      "type": "mcp_extension",
+      "description": "MCP 2026-07-28 RC引入的无状态协议核心，支持StreamableHTTP传输和Tasks原语",
+      "organization": "Anthropic",
+      "key_features": [
+        "无状态核心",
+        "StreamableHTTP",
+        "Tasks原语",
+        "MCP Apps"
+      ],
+      "status": "rc",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "proto-a2a-v1-ibm-acp",
+      "name": "A2A v1 + IBM ACP Merged",
+      "type": "agent_communication",
+      "description": "A2A v1.0正式版，IBM ACP已合并入A2A，150+组织采用，15000+ GitHub Stars",
+      "organization": "Google/IBM",
+      "key_features": [
+        "A2A正式版",
+        "IBM ACP合并",
+        "150+组织采用",
+        "15000+ Stars"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-agui",
+      "name": "AG-UI (Agent GUI Protocol)",
+      "vendor": "CopilotKit",
+      "version": "0.2",
+      "layer": "Agent-UI",
+      "description": "Agent GUI交互协议，定义Agent与前端UI组件的实时交互标准，SSE事件流驱动",
+      "architecture": "Event Stream + Components",
+      "transport": "SSE/WebSocket",
+      "security": "CORS/认证",
+      "adoption": "CopilotKit生态+扩展",
+      "github_stars": "10000+",
+      "status": "快速增长",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-x42",
+      "name": "X42 (HTTP 402 Micro-Payment)",
+      "vendor": "Coinbase/社区",
+      "version": "1.0",
+      "layer": "Agent-Payment",
+      "description": "X42微支付协议，HTTP 402状态码驱动的机器对机器支付，与x402互补",
+      "architecture": "HTTP-native",
+      "transport": "HTTP/HTTPS",
+      "security": "加密签名",
+      "adoption": "增长中",
+      "github_stars": "2000+",
+      "status": "生产可用",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-mcp-server-cards",
+      "name": "MCP Server Cards",
+      "vendor": "Linux Foundation/MCP",
+      "version": "draft",
+      "layer": "Agent-Discovery",
+      "description": "MCP Server Cards标准，通过.well-known URL暴露结构化Server元数据，支持浏览器和注册表发现",
+      "architecture": "File-based Discovery",
+      "transport": "HTTPS",
+      "security": "TLS/签名",
+      "adoption": "规划中",
+      "github_stars": "N/A",
+      "status": "规划",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-mpp",
+      "name": "MPP (Merchant Payment Protocol)",
+      "vendor": "行业联盟",
+      "version": "draft",
+      "layer": "Agent-Payment",
+      "description": "商户支付协议，定义Agent与商户间的支付交互标准",
+      "architecture": "Payment-native",
+      "transport": "HTTPS",
+      "security": "加密签名",
+      "adoption": "增长中",
+      "github_stars": "N/A",
+      "status": "规划",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-agui",
+      "name": "AGUI (Agent GUI Protocol)",
+      "category": "agent-protocol",
+      "description": "Agent GUI protocol standardizing how agents interact with user interfaces. One of the six key agent protocols in 2026.",
+      "features": [
+        "agent-UI interaction",
+        "GUI standardization",
+        "user interaction protocol",
+        "interface abstraction"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
+        "https://sanbi.ai/blog/agent-stack-protocols-2026"
+      ]
+    },
+    {
+      "id": "PROTO-a2ui",
+      "name": "A2UI (Agent to UI Protocol)",
+      "category": "agent-protocol",
+      "description": "Protocol for agent-to-user-interface communication. Complements A2A for inter-agent communication.",
+      "features": [
+        "agent-to-UI",
+        "interface communication",
+        "user interaction"
+      ],
+      "status": "emerging",
+      "year": 2025,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026"
+      ]
+    },
+    {
+      "id": "PROTO-ap2",
+      "name": "AP2 (Agent Protocol 2)",
+      "category": "agent-protocol",
+      "description": "Next-generation agent protocol. One of the six key protocols shaping AI agent interactions in 2026.",
+      "features": [
+        "agent communication",
+        "protocol standardization",
+        "interoperability"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
+        "https://sanbi.ai/blog/agent-stack-protocols-2026"
+      ]
+    },
+    {
+      "id": "PROTO-x42",
+      "name": "X42 Protocol",
+      "category": "payment-protocol",
+      "description": "Payment protocol for AI agents enabling autonomous transactions. Part of the 2026 agent stack.",
+      "features": [
+        "agent payments",
+        "autonomous transactions",
+        "economic protocol",
+        "agent commerce"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "sources": [
+        "https://www.mindstudio.ai/blog/six-agent-protocols-ai-builders-2026",
+        "https://sanbi.ai/blog/agent-stack-protocols-2026"
+      ]
+    },
+    {
+      "id": "PROTO-streamable-http",
+      "name": "StreamableHTTP (MCP Transport)",
+      "category": "transport-protocol",
+      "description": "New MCP transport layer introduced November 2025 replacing SSE. Uses chunked HTTP streaming for better reliability.",
+      "features": [
+        "HTTP streaming",
+        "SSE replacement",
+        "chunked transfer",
+        "MCP transport"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.speakeasy.com/mcp/release-notes",
+        "https://workos.com/blog/everything-your-team-needs-to-know-about-mcp-in-2026"
+      ]
+    },
+    {
+      "id": "PROTO-mcp-2026-rc",
+      "name": "MCP 2026-07-28 Release Candidate",
+      "type": "协议规范",
+      "description": "Model Context Protocol 2026年7月28日发布候选版本：无状态协议核心 + Extensions框架，是MCP自发布以来最大架构升级",
+      "key_features": [
+        "无状态协议核心",
+        "Extensions扩展框架",
+        "HTTP无状态调用",
+        "大规模Agent部署支持",
+        "向后兼容"
+      ],
+      "status": "release_candidate",
+      "year": 2026,
+      "maintainer": "Anthropic",
+      "adoption": "9700万下载量(截至2026年)",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        },
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "article_url": "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "PROTO-a2a-2026",
+      "name": "A2A (Agent-to-Agent) Protocol",
+      "type": "Agent间通信协议",
+      "description": "A2A协议是2026年AI Agent生态中Agent间通信的标准协议之一，与MCP(Agent-to-Tool)互补，解决多Agent协作问题",
+      "key_features": [
+        "Agent间通信",
+        "任务委派",
+        "状态同步",
+        "多Agent协作"
+      ],
+      "status": "emerging",
+      "year": 2026,
+      "maintainer": "社区",
+      "adoption": "快速增长",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "name": "Agent2Agent Protocol (A2A)",
+      "type": "Communication Protocol",
+      "description": "An open protocol enabling AI agents to securely exchange information, discover capabilities, and coordinate actions across different enterprise systems.",
+      "status": "Active",
+      "features": [
+        "Secure information exchange",
+        "Agent capability discovery",
+        "Cross-agent action coordination",
+        "Enterprise interoperability"
+      ],
+      "sources": [
+        "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability",
+        "https://arxiv.org/html/2505.02279v1",
+        "https://www.linkedin.com/posts/rakeshgohel01_starting-2025-ai-agent-interoperability-activity-7330572530061103105-ssMh",
+        "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
+        "https://blogs.cisco.com/ai/mcp-and-a2a-a-network-engineers-mental-model-for-agentic-ai",
+        "https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp",
+        "https://www.reddit.com/r/datascience/comments/1lq79vo/a_breakdown_of_a2a_mcp_and_agentic"
+      ],
+      "id": "PROTO-067"
+    },
+    {
+      "name": "Model Context Protocol (MCP)",
+      "type": "Tool Exposure Protocol",
+      "description": "A standardized protocol designed to expose AI tools and models to agents, enabling seamless integration and interaction between AI systems and external resources.",
+      "status": "Active",
+      "features": [
+        "Tool exposure to AI agents",
+        "Seamless system integration",
+        "External resource interaction",
+        "Complementary to A2A"
+      ],
+      "sources": [
+        "https://arxiv.org/html/2505.02279v1",
+        "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
+        "https://www.youtube.com/watch?v=BMDFPOyezH4",
+        "https://blogs.cisco.com/ai/mcp-and-a2a-a-network-engineers-mental-model-for-agentic-ai",
+        "https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp",
+        "https://www.reddit.com/r/datascience/comments/1lq79vo/a_breakdown_of_a2a_mcp_and_agentic"
+      ],
+      "id": "PROTO-068"
+    },
+    {
+      "name": "Agent Communication Protocol (ACP)",
+      "type": "Interoperability Standard",
+      "description": "An open governance standard allowing AI agents to communicate across diverse frameworks and technologies, promoting multi-framework agent interoperability.",
+      "status": "Active",
+      "features": [
+        "Multi-framework compatibility",
+        "Open governance model",
+        "Cross-technology communication",
+        "Standardized agent interaction"
+      ],
+      "sources": [
+        "https://arxiv.org/html/2505.02279v1",
+        "https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp",
+        "https://www.ibm.com/think/topics/agent-communication-protocol"
+      ],
+      "id": "PROTO-069"
+    },
+    {
+      "name": "Linux Foundation Agent Communication Protocol (ACP)",
+      "type": "Open Standard",
+      "description": "An open standard developed under the Linux Foundation with BeeAI as its reference implementation, emphasizing transparent community-driven governance for agent interoperability.",
+      "status": "Active",
+      "features": [
+        "Community-driven governance",
+        "Transparent development",
+        "BeeAI reference implementation",
+        "Linux Foundation backing"
+      ],
+      "sources": [
+        "https://agentcommunicationprotocol.dev/introduction/welcome"
+      ],
+      "id": "PROTO-070"
+    },
+    {
+      "name": "BeeAI",
+      "type": "Reference Implementation",
+      "description": "The reference implementation for the Linux Foundation's Agent Communication Protocol (ACP), serving as a practical example of how agents can interoperate using standardized protocols.",
+      "status": "Active",
+      "features": [
+        "ACP reference implementation",
+        "Demonstrates protocol interoperability",
+        "Linux Foundation project",
+        "Practical agent communication example"
+      ],
+      "sources": [
+        "https://agentcommunicationprotocol.dev/introduction/welcome"
+      ],
+      "id": "PROTO-071"
+    },
+    {
+      "name": "OpenTelemetry (OTEL)",
+      "type": "Observability Framework",
+      "description": "An observability framework that will be supported alongside A2A and MCP to enable monitoring and traceability for agentic AI systems.",
+      "status": "Upcoming Support",
+      "features": [
+        "System observability",
+        "Tracing and monitoring",
+        "Integration with A2A/MCP",
+        "Open standard"
+      ],
+      "sources": [
+        "https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp"
+      ],
+      "id": "PROTO-072"
+    }
+  ],
+  "sdks": [
+    {
+      "id": "SDK-001",
+      "name": "Claude Agent SDK",
+      "vendor": "Anthropic",
+      "language": "Python",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "原生MCP支持",
+        "多步骤agent",
+        "guardrails"
+      ],
+      "pros": [
+        "Anthropic官方",
+        "MCP原生集成",
+        "安全护栏"
+      ],
+      "cons": [
+        "仅Claude模型",
+        "较新生态小"
+      ]
+    },
+    {
+      "id": "SDK-002",
+      "name": "OpenAI Agents SDK",
+      "vendor": "OpenAI",
+      "language": "Python",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "Agent交接",
+        "guardrails",
+        "tracing"
+      ],
+      "pros": [
+        "OpenAI官方",
+        "Agent交接优雅",
+        "内置tracing"
+      ],
+      "cons": [
+        "仅OpenAI模型",
+        "无内置记忆"
+      ]
+    },
+    {
+      "id": "SDK-003",
+      "name": "Google ADK",
+      "vendor": "Google",
+      "language": "Python",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "A2A协议原生",
+        "多Agent编排",
+        "内置评估"
+      ],
+      "pros": [
+        "A2A原生",
+        "Google生态",
+        "多模型支持"
+      ],
+      "cons": [
+        "非常新",
+        "文档少",
+        "生态小"
+      ]
+    },
+    {
+      "id": "SDK-004",
+      "name": "LangGraph",
+      "vendor": "LangChain",
+      "language": "Python/JS",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "状态图",
+        "持久化",
+        "人机协作",
+        "时间旅行调试"
+      ],
+      "pros": [
+        "最成熟",
+        "社区大",
+        "可视化调试"
+      ],
+      "cons": [
+        "学习曲线陡",
+        "复杂度高",
+        "性能开销大"
+      ]
+    },
+    {
+      "id": "SDK-005",
+      "name": "CrewAI",
+      "vendor": "CrewAI",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "角色定义",
+        "任务委派",
+        "流程编排",
+        "记忆系统"
+      ],
+      "pros": [
+        "概念直观",
+        "上手快",
+        "角色扮演模式"
+      ],
+      "cons": [
+        "灵活性有限",
+        "调试困难",
+        "企业版收费"
+      ]
+    },
+    {
+      "id": "SDK-006",
+      "name": "AutoGen/AG2",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "对话式多Agent",
+        "代码执行",
+        "人机协作"
+      ],
+      "pros": [
+        "微软背书",
+        "研究导向",
+        "灵活对话模式"
+      ],
+      "cons": [
+        "API不稳定",
+        "文档混乱",
+        "版本迁移痛苦"
+      ]
+    },
+    {
+      "id": "SDK-007",
+      "name": "Smolagents",
+      "vendor": "HuggingFace",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "轻量级",
+        "代码Agent",
+        "HF模型集成"
+      ],
+      "pros": [
+        "极简",
+        "HF生态",
+        "代码优先"
+      ],
+      "cons": [
+        "单Agent",
+        "功能少",
+        "生态小"
+      ]
+    },
+    {
+      "id": "SDK-008",
+      "name": "Pydantic AI",
+      "vendor": "Pydantic",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "类型安全",
+        "依赖注入",
+        "多模型支持"
+      ],
+      "pros": [
+        "类型安全",
+        "Pydantic生态",
+        "模型无关"
+      ],
+      "cons": [
+        "单Agent",
+        "无记忆",
+        "新项目"
+      ]
+    },
+    {
+      "id": "SDK-009",
+      "name": "Mastra",
+      "vendor": "Mastra",
+      "language": "TypeScript",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "TypeScript原生",
+        "工作流",
+        "RAG集成"
+      ],
+      "pros": [
+        "TS开发者友好",
+        "全栈方案"
+      ],
+      "cons": [
+        "TS only",
+        "新项目",
+        "社区小"
+      ]
+    },
+    {
+      "id": "SDK-010",
+      "name": "Dify",
+      "vendor": "LangGenius",
+      "language": "Python/TS",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "可视化编排",
+        "插件市场",
+        "RAG",
+        "工作流"
+      ],
+      "pros": [
+        "低代码",
+        "可视化",
+        "插件生态",
+        "中文友好"
+      ],
+      "cons": [
+        "定制性差",
+        "性能开销",
+        "复杂场景受限"
+      ]
+    },
+    {
+      "id": "SDK-011",
+      "name": "Semantic Kernel",
+      "vendor": "Microsoft",
+      "language": "C#/Python/Java",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "企业级",
+        "多语言",
+        "插件系统",
+        "流程编排"
+      ],
+      "pros": [
+        "企业级支持",
+        "多语言",
+        "Azure集成",
+        "成熟稳定"
+      ],
+      "cons": [
+        "C#优先",
+        "学习曲线陡",
+        "Python支持弱于C#"
+      ]
+    },
+    {
+      "id": "SDK-012",
+      "name": "Phidata",
+      "vendor": "Phidata",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "Agent类",
+        "工具集成",
+        "知识库",
+        "多模型"
+      ],
+      "pros": [
+        "简单易用",
+        "内置知识库",
+        "快速原型"
+      ],
+      "cons": [
+        "社区小",
+        "定制性有限",
+        "文档不完善"
+      ]
+    },
+    {
+      "id": "SDK-013",
+      "name": "LlamaIndex",
+      "vendor": "LlamaIndex",
+      "language": "Python/TS",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "RAG专精",
+        "数据连接器",
+        "Agent工作流",
+        "查询引擎"
+      ],
+      "pros": [
+        "RAG最强",
+        "数据连接器丰富",
+        "文档好"
+      ],
+      "cons": [
+        "RAG偏重",
+        "Agent功能较新",
+        "性能开销"
+      ]
+    },
+    {
+      "id": "SDK-014",
+      "name": "Haystack",
+      "vendor": "deepset",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "Pipeline架构",
+        "RAG",
+        "搜索",
+        "Agent"
+      ],
+      "pros": [
+        "Pipeline灵活",
+        "生产就绪",
+        "搜索专精"
+      ],
+      "cons": [
+        "Agent功能较新",
+        "社区小于LangChain",
+        "学习曲线"
+      ]
+    },
+    {
+      "id": "SDK-015",
+      "name": "Agency Swarm",
+      "vendor": "VRSEN",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "Agent层级",
+        "角色化",
+        "自动工具创建"
+      ],
+      "pros": [
+        "层级结构清晰",
+        "自动工具生成",
+        "OpenAI原生"
+      ],
+      "cons": [
+        "仅OpenAI",
+        "社区小",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-016",
+      "name": "TaskWeaver",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "代码解释器",
+        "数据分析",
+        "插件系统"
+      ],
+      "pros": [
+        "数据分析专精",
+        "代码执行安全",
+        "微软支持"
+      ],
+      "cons": [
+        "单Agent",
+        "数据分析偏重",
+        "社区小"
+      ]
+    },
+    {
+      "id": "SDK-017",
+      "name": "Camel-AI",
+      "vendor": "Camel-AI",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "角色扮演",
+        "多Agent协作",
+        "社会模拟"
+      ],
+      "pros": [
+        "角色扮演创新",
+        "研究导向",
+        "多Agent交互"
+      ],
+      "cons": [
+        "研究阶段",
+        "生产就绪度低",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-018",
+      "name": "Vercel AI SDK",
+      "vendor": "Vercel",
+      "language": "TypeScript",
+      "type": "Agent SDK",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "全栈AI",
+        "流式UI",
+        "多模型",
+        "工具调用"
+      ],
+      "pros": [
+        "Next.js集成",
+        "流式渲染",
+        "多模型支持",
+        "生产就绪"
+      ],
+      "cons": [
+        "TS only",
+        "前端偏重",
+        "复杂Agent逻辑受限"
+      ]
+    },
+    {
+      "id": "SDK-019",
+      "name": "Rig",
+      "vendor": "0xPlaygrounds",
+      "language": "Rust",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "Rust原生",
+        "高性能",
+        "Agent编排"
+      ],
+      "pros": [
+        "极致性能",
+        "类型安全",
+        "Rust生态"
+      ],
+      "cons": [
+        "Rust only",
+        "极新",
+        "社区极小"
+      ]
+    },
+    {
+      "id": "SDK-020",
+      "name": "Portkey AI Gateway",
+      "vendor": "Portkey",
+      "language": "Python/TS",
+      "type": "Agent网关",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "多模型路由",
+        "可观测性",
+        "Fallback",
+        "缓存"
+      ],
+      "pros": [
+        "模型无关",
+        "生产级网关",
+        "监控完善"
+      ],
+      "cons": [
+        "网关非框架",
+        "无Agent逻辑",
+        "付费功能"
+      ]
+    },
+    {
+      "id": "SDK-021",
+      "name": "Coze",
+      "vendor": "字节跳动",
+      "language": "Python/TS",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "可视化编排",
+        "插件市场",
+        "多模型",
+        "工作流"
+      ],
+      "pros": [
+        "中文友好",
+        "低代码",
+        "字节生态",
+        "免费额度"
+      ],
+      "cons": [
+        "定制性差",
+        "平台锁定",
+        "复杂场景受限"
+      ]
+    },
+    {
+      "id": "SDK-022",
+      "name": "Flowise",
+      "vendor": "FlowiseAI",
+      "language": "TypeScript",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "拖拽式编排",
+        "LangChain集成",
+        "API导出"
+      ],
+      "pros": [
+        "零代码",
+        "可视化",
+        "快速原型"
+      ],
+      "cons": [
+        "定制性差",
+        "性能开销",
+        "复杂逻辑受限"
+      ]
+    },
+    {
+      "id": "SDK-023",
+      "name": "n8n AI Agent",
+      "vendor": "n8n",
+      "language": "TypeScript",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "工作流自动化",
+        "AI节点",
+        "400+集成",
+        "自托管"
+      ],
+      "pros": [
+        "集成最多",
+        "自托管",
+        "可视化",
+        "开源"
+      ],
+      "cons": [
+        "Agent功能新",
+        "AI深度有限",
+        "复杂推理受限"
+      ]
+    },
+    {
+      "id": "SDK-024",
+      "name": "AgentScope",
+      "vendor": "Alibaba",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "分布式Agent",
+        "消息机制",
+        "服务集成"
+      ],
+      "pros": [
+        "分布式设计",
+        "阿里背书",
+        "中文文档"
+      ],
+      "cons": [
+        "新项目",
+        "社区小",
+        "文档不完善"
+      ]
+    },
+    {
+      "id": "SDK-025",
+      "name": "Bee Agent Framework",
+      "vendor": "IBM",
+      "language": "TypeScript",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "企业级",
+        "可观测性",
+        "多模型",
+        "工具集成"
+      ],
+      "pros": [
+        "IBM背书",
+        "企业级设计",
+        "TypeScript"
+      ],
+      "cons": [
+        "极新",
+        "社区小",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-026",
+      "name": "AutoGen Studio",
+      "vendor": "Microsoft",
+      "language": "Python",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "可视化AutoGen",
+        "拖拽编排",
+        "Web UI"
+      ],
+      "pros": [
+        "AutoGen可视化",
+        "微软支持",
+        "快速原型"
+      ],
+      "cons": [
+        "功能有限",
+        "不稳定",
+        "生产就绪度低"
+      ]
+    },
+    {
+      "id": "SDK-027",
+      "name": "Instructor",
+      "vendor": "Jason Liu",
+      "language": "Python/TS",
+      "type": "Agent工具库",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "结构化输出",
+        "Pydantic验证",
+        "重试机制"
+      ],
+      "pros": [
+        "结构化输出最强",
+        "简单可靠",
+        "多模型支持"
+      ],
+      "cons": [
+        "非Agent框架",
+        "无编排",
+        "工具库定位"
+      ]
+    },
+    {
+      "id": "SDK-028",
+      "name": "Mirage",
+      "vendor": "Mirage",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "多Agent沙箱",
+        "安全执行",
+        "代码Agent"
+      ],
+      "pros": [
+        "安全沙箱",
+        "代码执行安全",
+        "多Agent"
+      ],
+      "cons": [
+        "极新",
+        "社区小",
+        "文档少"
+      ]
+    },
+    {
+      "id": "SDK-029",
+      "name": "DSPy",
+      "vendor": "Stanford",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "声明式编程",
+        "自动优化",
+        "模块化"
+      ],
+      "pros": [
+        "学术前沿",
+        "自动Prompt优化",
+        "模块化设计"
+      ],
+      "cons": [
+        "学习曲线陡",
+        "生产就绪度低",
+        "社区小"
+      ]
+    },
+    {
+      "id": "SDK-030",
+      "name": "Fixpoint/Wordware",
+      "vendor": "Fixpoint",
+      "language": "Python/TS",
+      "type": "Agent平台",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "可视化编排",
+        "自然语言编程",
+        "API导出"
+      ],
+      "pros": [
+        "自然语言编程",
+        "可视化",
+        "快速迭代"
+      ],
+      "cons": [
+        "新项目",
+        "社区小",
+        "定制性有限"
+      ]
+    },
+    {
+      "id": "SDK-031",
+      "name": "Letta (MemGPT)",
+      "vendor": "Letta",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "虚拟上下文管理",
+        "无限记忆",
+        "自动分页",
+        "状态管理"
+      ],
+      "pros": [
+        "记忆管理最强",
+        "无限上下文",
+        "研究背书"
+      ],
+      "cons": [
+        "复杂度高",
+        "部署要求高",
+        "社区中等"
+      ]
+    },
+    {
+      "id": "SDK-032",
+      "name": "OpenRouter SDK",
+      "vendor": "OpenRouter",
+      "language": "Python/TS",
+      "type": "Agent网关",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "100+模型路由",
+        "统一API",
+        "价格比较"
+      ],
+      "pros": [
+        "模型最多",
+        "统一接口",
+        "价格透明"
+      ],
+      "cons": [
+        "网关非框架",
+        "延迟较高",
+        "无Agent逻辑"
+      ]
+    },
+    {
+      "id": "SDK-openai-agents",
+      "name": "OpenAI Agents SDK",
+      "type": "agent_framework",
+      "company": "OpenAI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "Released March 2025, replaced experimental Swarm framework",
+        "Production-grade toolkit with handoff pattern",
+        "Tight integration with OpenAI Responses API and function calling",
+        "Native MCP support",
+        "Guardrails and tracing built-in",
+        "Best for OpenAI-native workloads"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-ms-agent-framework",
+      "name": "Microsoft Agent Framework 1.0",
+      "type": "agent_framework",
+      "company": "Microsoft",
+      "language": "Python/.NET",
+      "license": "MIT",
+      "key_features": [
+        "GA release April 3, 2026",
+        "Unified AutoGen + Semantic Kernel into single production SDK",
+        "Stable APIs across .NET and Python",
+        "GraphFlow for explicit workflow control",
+        "AgentSession for persistent conversation state",
+        "MCP server support for standardized tool integration",
+        "Hosted tools for Azure-native execution"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-mastra",
+      "name": "Mastra",
+      "type": "agent_framework",
+      "company": "Mastra",
+      "language": "TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "TypeScript-first AI agent framework",
+        "Built-in RAG, evals, and observability",
+        "Production-ready with deployment tooling"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-pydantic-ai",
+      "name": "Pydantic AI",
+      "type": "agent_framework",
+      "company": "Pydantic Team",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "Type-safe agent framework built on Pydantic",
+        "Model-agnostic with structured output",
+        "Zero overhead (0-10ms per call)",
+        "Best for teams wanting minimal framework lock-in"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-smolagents",
+      "name": "Smolagents",
+      "type": "agent_framework",
+      "company": "Hugging Face",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "Lightweight agent framework from Hugging Face",
+        "Code-based agent actions (not just tool calls)",
+        "Minimal abstraction, easy to understand"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-29T14:25:59.103Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-hermes",
+      "name": "Hermes Agent",
+      "type": "agent_framework",
+      "company": "Hermes AI",
+      "language": "Python/TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "从经验中创建技能",
+        "使用中改进技能",
+        "构建用户模型",
+        "长期自主运行",
+        "安全架构"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-openclaw",
+      "name": "OpenClaw",
+      "type": "agent_framework",
+      "company": "开源社区",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "最广泛的集成支持",
+        "社区构建技能",
+        "多渠道支持",
+        "开源Agent平台"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-deerflow",
+      "name": "DeerFlow",
+      "type": "agent_framework",
+      "company": "ByteDance",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "多Agent协作",
+        "研究导向",
+        "深度搜索集成",
+        "报告生成"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-agno",
+      "name": "AGNO (Phidata v2)",
+      "type": "agent_framework",
+      "company": "AGNO",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "轻量级Agent框架",
+        "多模型支持",
+        "工具集成",
+        "Agent团队协作"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-mem0",
+      "name": "Mem0 SDK",
+      "type": "memory_sdk",
+      "company": "Mem0",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "AI Agent记忆层",
+        "图记忆",
+        "自动记忆提取",
+        "跨会话持久化",
+        "55K+ GitHub Stars"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-zep",
+      "name": "Zep",
+      "type": "memory_sdk",
+      "company": "Zep",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "时序关系记忆",
+        "知识图谱",
+        "对话历史管理",
+        "结构化记忆提取"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-langmem",
+      "name": "LangMem",
+      "type": "memory_sdk",
+      "company": "LangChain",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "LangGraph原生记忆",
+        "工作流编排集成",
+        "记忆工具链",
+        "语义搜索"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-hindsight",
+      "name": "Hindsight",
+      "type": "memory_sdk",
+      "company": "Hindsight AI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "记忆准确率91.4%",
+        "自动记忆管理",
+        "上下文感知检索",
+        "轻量级部署"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-cognee",
+      "name": "Cognee",
+      "type": "memory_sdk",
+      "company": "Cognee",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "认知记忆架构",
+        "知识图谱构建",
+        "多模态记忆",
+        "可扩展存储"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-memvid",
+      "name": "Memvid",
+      "type": "memory_sdk",
+      "company": "开源社区",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "视频记忆编码",
+        "多模态记忆检索",
+        "视觉上下文保存"
+      ],
+      "status": "experimental",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-memoclaw",
+      "name": "MemoClaw",
+      "type": "memory_sdk",
+      "company": "MemoClaw",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "Agent记忆管理",
+        "跨平台记忆同步",
+        "结构化记忆存储"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-evermind",
+      "name": "EverMind",
+      "type": "memory_sdk",
+      "company": "EverMind AI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "Zep替代方案",
+        "长期记忆管理",
+        "对话理解",
+        "个性化记忆"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "C",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-fastmcp",
+      "name": "FastMCP SDK",
+      "type": "mcp_sdk",
+      "company": "FastMCP",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "快速MCP Server开发",
+        "类型安全",
+        "自动文档生成",
+        "热重载"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-crewai-v2",
+      "name": "CrewAI v2",
+      "type": "agent_framework",
+      "company": "CrewAI",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "多Agent协作",
+        "角色定义",
+        "任务委派",
+        "流程编排",
+        "企业版支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-autogen-v2",
+      "name": "AutoGen v0.5 (AG2)",
+      "type": "agent_framework",
+      "company": "Microsoft",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "多Agent对话",
+        "代码执行",
+        "人机协作",
+        "可组合Agent"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-semantic-kernel-v2",
+      "name": "Semantic Kernel v2",
+      "type": "agent_sdk",
+      "company": "Microsoft",
+      "language": "C#/Python/Java",
+      "license": "MIT",
+      "key_features": [
+        "企业级Agent SDK",
+        "多语言支持",
+        "插件架构",
+        "AI编排"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-bee-v2",
+      "name": "Bee Agent Framework v2",
+      "type": "agent_framework",
+      "company": "IBM",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "IBM官方Agent框架",
+        "TypeScript原生",
+        "企业集成",
+        "ACP协议支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-inngest",
+      "name": "Inngest",
+      "type": "agent_orchestration",
+      "company": "Inngest",
+      "language": "TypeScript/Python",
+      "license": "MIT",
+      "key_features": [
+        "Durable execution for AI agents",
+        "Event-driven workflow orchestration",
+        "Automatic retries and timeouts",
+        "Step functions for long-running agents",
+        "Production-grade reliability"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-trigger-dev",
+      "name": "Trigger.dev",
+      "type": "agent_orchestration",
+      "company": "Trigger.dev",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "TypeScript-native AI workflow platform",
+        "Durable tasks with automatic retries",
+        "Background AI jobs",
+        "Real-time streaming",
+        "Integration with OpenAI/Anthropic"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-temporal-agents",
+      "name": "Temporal Agent Workflow",
+      "type": "agent_orchestration",
+      "company": "Temporal",
+      "language": "TypeScript/Go/Python",
+      "license": "MIT",
+      "key_features": [
+        "Stateful workflow engine for AI agents",
+        "Durable execution with exact-once semantics",
+        "Long-running agent orchestration",
+        "Built-in observability and debugging",
+        "Scales to millions of concurrent workflows"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-google-a2a",
+      "name": "Google A2A SDK",
+      "type": "agent_protocol_sdk",
+      "company": "Google",
+      "language": "Python/TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "Official SDK for Agent-to-Agent protocol",
+        "Agent Card discovery and registration",
+        "Task-based communication",
+        "150+ organizations adopted",
+        "Native integration with Google ADK"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-openai-responses",
+      "name": "OpenAI Responses API SDK",
+      "type": "agent_sdk",
+      "company": "OpenAI",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "New Responses API for agent interactions",
+        "Built-in tool use and function calling",
+        "Streaming support",
+        "MCP integration",
+        "Replaces Chat Completions for agents"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-langgraph-platform",
+      "name": "LangGraph Platform",
+      "type": "agent_platform",
+      "company": "LangChain",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "Managed LangGraph deployment platform",
+        "Built-in persistence and memory",
+        "Cron triggers and webhooks",
+        "Real-time streaming",
+        "Human-in-the-loop support"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-31T13:41:37.338Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-scrapling",
+      "name": "Scrapling",
+      "category": "sdks",
+      "type": "Web Scraping Framework",
+      "language": "Python",
+      "version": "0.4.8",
+      "github": "https://github.com/D4Vinci/Scrapling",
+      "pypi": "scrapling",
+      "description": "Adaptive web scraping framework with anti-bot bypass, smart element tracking, and AI agent integration",
+      "key_features": [
+        "Adaptive element selection (no fragile selectors)",
+        "Native Cloudflare/anti-bot bypass",
+        "Three-tier fetcher system",
+        "Built-in Spider framework",
+        "MCP Server for AI agents",
+        "Auto-resuming crawls"
+      ],
+      "installation": "pip install scrapling",
+      "license": "BSD-3",
+      "sources": [
+        "web_search",
+        "github"
+      ],
+      "confidence": "high",
+      "first_seen": "2026-05-31T22:02:40.222Z",
+      "last_updated": "2026-05-31T22:02:40.222Z"
+    },
+    {
+      "id": "SDK-hermes-v2",
+      "name": "Hermes Agent v2",
+      "type": "agent_framework",
+      "company": "Hermes AI",
+      "language": "Python/TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "从经验中创建技能",
+        "使用中改进技能",
+        "构建用户模型",
+        "长期自主运行",
+        "Forbes报道超越OpenClaw",
+        "企业级安全架构"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-pickaxe",
+      "name": "Pickaxe AI Agent Framework",
+      "type": "agent_framework",
+      "company": "Pickaxe",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "2026 Top 15 AI Agent框架",
+        "多模型支持",
+        "快速部署",
+        "可视化编排"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-flowtivity",
+      "name": "Flowtivity",
+      "type": "agent_orchestration",
+      "company": "Flowtivity",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "Agent工作流编排",
+        "Hermes/OpenClaw对比",
+        "预算优化模型",
+        "企业集成"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-akka-agents",
+      "name": "Akka Agent Runtime",
+      "type": "agent_orchestration",
+      "company": "Akka",
+      "language": "TypeScript/Java/Scala",
+      "license": "Apache-2.0",
+      "key_features": [
+        "分布式Agent运行时",
+        "事件驱动架构",
+        "Inngest vs Temporal对比",
+        "云原生部署"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-vellum",
+      "name": "Vellum AI",
+      "type": "agent_platform",
+      "company": "Vellum",
+      "language": "Python/TypeScript",
+      "license": "Commercial",
+      "key_features": [
+        "Top 11 AI Agent框架2026",
+        "LLM编排",
+        "Prompt管理",
+        "工作流测试"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-gurusup",
+      "name": "GuruSup Multi-Agent",
+      "type": "agent_framework",
+      "company": "GuruSup",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "2026最佳多Agent框架",
+        "OpenAI Agents SDK集成",
+        "CrewAI对比",
+        "生产部署指南"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-vercel-ai-v2",
+      "name": "Vercel AI SDK v2",
+      "type": "agent_framework",
+      "description": "Vercel AI SDK v2，2026年更新版本，支持多模型Agent编排、流式响应和边缘部署",
+      "vendor": "Vercel",
+      "language": "TypeScript",
+      "github_stars": "15000+",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "SDK-crewai-enterprise",
+      "name": "CrewAI Enterprise",
+      "type": "agent_platform",
+      "description": "CrewAI企业版，支持多Agent协作、企业级安全和监控，2026年推出",
+      "vendor": "CrewAI",
+      "language": "Python",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "SDK-langgraph-studio",
+      "name": "LangGraph Studio",
+      "type": "agent_platform",
+      "description": "LangGraph Studio可视化Agent开发平台，支持拖拽式Agent工作流设计和调试",
+      "vendor": "LangChain",
+      "language": "Python/TypeScript",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "SDK-google-a2a-v2",
+      "name": "Google A2A SDK v2",
+      "type": "agent_protocol_sdk",
+      "description": "Google A2A SDK v2，支持A2A v1协议，15000+ GitHub stars，多Agent间安全通信和协作",
+      "vendor": "Google",
+      "language": "Python/TypeScript",
+      "github_stars": "15000+",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "SDK-openai-agents-v2",
+      "name": "OpenAI Agents SDK v2",
+      "type": "agent_framework",
+      "description": "OpenAI Agents SDK v2，19000+ GitHub stars，1030万月下载量，生产级多Agent框架",
+      "vendor": "OpenAI",
+      "language": "Python",
+      "github_stars": "19000+",
+      "monthly_downloads": "10.3M",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "SDK-claude-agent-v2",
+      "name": "Claude Agent SDK v2",
+      "type": "agent_framework",
+      "description": "Anthropic Claude Agent SDK v2，2026年增长最快的Agent框架之一，原生支持Claude模型",
+      "vendor": "Anthropic",
+      "language": "Python",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "SDK-ms-maf-v2",
+      "name": "Microsoft Agent Framework v2",
+      "type": "agent_framework",
+      "description": "Microsoft Agent Framework v2，支持.NET和Python多语言Agent开发，生产级多Agent工作流",
+      "vendor": "Microsoft",
+      "language": ".NET/Python",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "sdk-mastra-v2",
+      "name": "Mastra v2",
+      "type": "agent_framework",
+      "description": "Mastra v2 TypeScript原生Agent框架，专为构建AI Agent和编排工作流设计，高度专业化",
+      "company": "Mastra",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "TypeScript原生",
+        "Agent编排",
+        "工作流引擎",
+        "RAG集成",
+        "MCP支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "sdk-deerflow-v2",
+      "name": "DeerFlow v2",
+      "type": "agent_framework",
+      "description": "DeerFlow v2多Agent编排框架，支持复杂工作流和Agent协作",
+      "company": "ByteDance",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "多Agent编排",
+        "工作流引擎",
+        "Agent协作",
+        "可视化调试"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "sdk-agno-v2",
+      "name": "AGNO v2 (Phidata v3)",
+      "type": "agent_framework",
+      "description": "AGNO v2（原Phidata），轻量级Agent框架，支持多模型和工具集成",
+      "company": "AGNO",
+      "language": "Python",
+      "license": "MIT",
+      "key_features": [
+        "轻量级",
+        "多模型支持",
+        "工具集成",
+        "Agent工作流"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "sdk-llamaindex-v2",
+      "name": "LlamaIndex v2",
+      "type": "rag_framework",
+      "description": "LlamaIndex v2，RAG框架升级版，增强Agent能力和数据处理",
+      "company": "LlamaIndex",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "RAG增强",
+        "Agent框架",
+        "数据处理管道",
+        "多模态支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "sdk-flowise-v2",
+      "name": "Flowise v2",
+      "type": "visual_agent_builder",
+      "description": "Flowise v2可视化Agent构建器，拖拽式Agent工作流设计",
+      "company": "Flowise",
+      "language": "TypeScript/Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "可视化构建",
+        "拖拽式设计",
+        "Agent工作流",
+        "LLM集成"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "sdk-n8n-v2",
+      "name": "n8n AI Agent v2",
+      "type": "workflow_automation",
+      "description": "n8n AI Agent v2，工作流自动化平台升级版，增强AI Agent节点和工具集成",
+      "company": "n8n",
+      "language": "TypeScript",
+      "license": "Sustainable Use",
+      "key_features": [
+        "工作流自动化",
+        "AI Agent节点",
+        "400+集成",
+        "自托管"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "sdk-dify-v2",
+      "name": "Dify v2",
+      "type": "llm_app_platform",
+      "description": "Dify v2 LLM应用开发平台，增强Agent能力和RAG管道",
+      "company": "Dify",
+      "language": "Python/TypeScript",
+      "license": "Apache-2.0",
+      "key_features": [
+        "LLM应用平台",
+        "Agent工作流",
+        "RAG管道",
+        "可视化编排"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "sdk-composio",
+      "name": "Composio Agent SDK",
+      "type": "tool_integration",
+      "description": "Composio Agent SDK，250+工具集成中间件，为Agent提供工具调用能力",
+      "company": "Composio",
+      "language": "Python/TypeScript",
+      "license": "MIT",
+      "key_features": [
+        "250+工具集成",
+        "OAuth管理",
+        "Agent工具调用",
+        "多框架兼容"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-rasa-calm",
+      "name": "Rasa CALM",
+      "vendor": "Rasa",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "企业级对话AI",
+        "CALM架构",
+        "对话管理",
+        "NLU引擎"
+      ],
+      "pros": [
+        "企业级",
+        "对话AI专精",
+        "成熟稳定"
+      ],
+      "cons": [
+        "对话AI偏重",
+        "非通用Agent",
+        "学习曲线"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-morph-llm",
+      "name": "Morph LLM Agent",
+      "vendor": "Morph",
+      "language": "Python/TypeScript",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "8框架对比",
+        "ACP协议支持",
+        "轻量级",
+        "快速推理"
+      ],
+      "pros": [
+        "轻量级",
+        "ACP原生",
+        "快速"
+      ],
+      "cons": [
+        "新项目",
+        "社区小",
+        "功能有限"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-rhesis",
+      "name": "Rhesis AI",
+      "vendor": "Rhesis AI",
+      "language": "Python",
+      "type": "Agent测试",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "Agent测试框架",
+        "8框架对比",
+        "质量评估",
+        "红队测试"
+      ],
+      "pros": [
+        "测试专精",
+        "框架对比",
+        "质量保障"
+      ],
+      "cons": [
+        "非Agent框架",
+        "测试工具",
+        "新项目"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-objectbox",
+      "name": "ObjectBox Agent Memory",
+      "vendor": "ObjectBox",
+      "language": "Python/C++",
+      "type": "记忆SDK",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": true,
+      "streaming": false,
+      "maturity": "生产可用",
+      "features": [
+        "设备端向量数据库",
+        "嵌入式记忆",
+        "低延迟",
+        "离线运行"
+      ],
+      "pros": [
+        "设备端运行",
+        "超低延迟",
+        "离线可用"
+      ],
+      "cons": [
+        "嵌入式场景",
+        "非云端",
+        "规模受限"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:03:15.064Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-agno",
+      "name": "Agno",
+      "vendor": "社区",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "Agent构建",
+        "工具集成",
+        "记忆管理"
+      ],
+      "pros": [
+        "简洁",
+        "Python原生",
+        "易上手"
+      ],
+      "cons": [
+        "新项目",
+        "社区小",
+        "功能有限"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-sim-studio",
+      "name": "Sim Studio",
+      "vendor": "Sim Studio",
+      "language": "TypeScript",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "可视化构建",
+        "Agent编排",
+        "工作流设计"
+      ],
+      "pros": [
+        "可视化",
+        "易用",
+        "工作流"
+      ],
+      "cons": [
+        "新项目",
+        "功能有限",
+        "社区小"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-genta",
+      "name": "Genta",
+      "vendor": "Genta",
+      "language": "Python",
+      "type": "Agent工具",
+      "multi_agent": false,
+      "tool_use": true,
+      "memory": false,
+      "streaming": true,
+      "maturity": "早期",
+      "features": [
+        "Agent工具集",
+        "框架比较",
+        "评估工具"
+      ],
+      "pros": [
+        "工具丰富",
+        "评估功能",
+        "比较功能"
+      ],
+      "cons": [
+        "非完整框架",
+        "新项目",
+        "社区小"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-alice-labs",
+      "name": "Alice Labs Agent Framework",
+      "vendor": "Alice Labs",
+      "language": "Python",
+      "type": "Agent框架",
+      "multi_agent": true,
+      "tool_use": true,
+      "memory": true,
+      "streaming": true,
+      "maturity": "生产可用",
+      "features": [
+        "生产测试",
+        "7框架排名",
+        "18+部署经验"
+      ],
+      "pros": [
+        "生产验证",
+        "丰富经验",
+        "企业级"
+      ],
+      "cons": [
+        "商业产品",
+        "定制化有限",
+        "成本"
+      ],
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-04T14:05:21.771Z"
+        }
+      ]
+    },
+    {
+      "id": "SDK-microsoft-agent-framework",
+      "name": "Microsoft Agent Framework (MAF)",
+      "category": "agent-framework",
+      "description": "Microsoft Agent Framework reached 1.0 GA on April 2, 2026, merging AutoGen and Semantic Kernel into a single supported platform. Supports .NET, Python, and Java.",
+      "features": [
+        ".NET support",
+        "Python support",
+        "Java support",
+        "AutoGen convergence",
+        "Semantic Kernel convergence",
+        "function calling",
+        "planning",
+        "multi-agent orchestration"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce",
+        "https://learn.microsoft.com/en-us/agent-framework/overview"
+      ]
+    },
+    {
+      "id": "SDK-morph",
+      "name": "Morph Agent Framework",
+      "category": "agent-framework",
+      "description": "Deep comparison framework covering 8 AI agent SDKs including Claude Agent SDK, OpenAI Agents SDK, Google ADK, LangGraph, CrewAI, Smolagents.",
+      "features": [
+        "multi-SDK comparison",
+        "agent orchestration",
+        "framework analysis"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://www.morphllm.com/ai-agent-framework"
+      ]
+    },
+    {
+      "id": "SDK-rhesis",
+      "name": "Rhesis AI Framework",
+      "category": "agent-framework",
+      "description": "Framework for picking the right agentic framework in 2026. Side-by-side comparison of 8 agent frameworks.",
+      "features": [
+        "framework comparison",
+        "agent testing",
+        "framework selection"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://rhesis.ai/post/picking-agentic-framework-2026"
+      ]
+    },
+    {
+      "id": "SDK-alicelabs",
+      "name": "AliceLabs Agent Framework",
+      "category": "agent-framework",
+      "description": "7 AI agent frameworks ranked by production-readiness: LangGraph #1, Claude Agent SDK #2, CrewAI #3.",
+      "features": [
+        "production ranking",
+        "agent benchmarking",
+        "framework evaluation"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://alicelabs.ai/en/insights/best-ai-agent-framework-2026"
+      ]
+    },
+    {
+      "name": "LangChain / LangGraph",
+      "type": "Framework",
+      "language": [
+        "Python",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "features": [
+        "Production-grade AI agent engineering platform",
+        "State management for complex agentic workflows",
+        "Multi-agent orchestration"
+      ],
+      "description": "A leading open-source framework providing tools to build, test, and deploy reliable AI agents with strong support for stateful, multi-step applications.",
+      "status": "Stable / Production-Ready",
+      "sources": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[6]",
+        "[7]"
+      ],
+      "id": "SDK-033"
+    },
+    {
+      "name": "AutoGen / AG2",
+      "type": "Framework",
+      "language": [
+        "Python"
+      ],
+      "features": [
+        "Multi-agent conversation patterns",
+        "Group chat capabilities"
+      ],
+      "description": "A Microsoft-backed framework focused on conversational multi-agent interactions, now consolidated under the AG2 branding.",
+      "status": "Stable / Consolidated",
+      "sources": [
+        "[2]",
+        "[3]",
+        "[5]",
+        "[8]",
+        "[9]"
+      ],
+      "id": "SDK-034"
+    },
+    {
+      "name": "LangChain",
+      "type": "Framework",
+      "language": "Python, JavaScript/TypeScript",
+      "features": [
+        "Engineering platform for building AI agents",
+        "Open source frameworks",
+        "Build, test, and deploy reliable AI agents"
+      ],
+      "description": "LangChain provides the engineering platform and open source frameworks developers use to build, test, and deploy reliable AI agents.",
+      "status": "Production",
+      "sources": [
+        "[1]",
+        "[3]",
+        "[6]",
+        "[7]"
+      ],
+      "id": "SDK-035"
+    },
+    {
+      "name": "AutoGen (AG2)",
+      "type": "Framework",
+      "language": "Python",
+      "features": [
+        "Multi-agent conversation framework",
+        "Consolidated major player in 2026"
+      ],
+      "description": "One of the four major players in the 2026 AI agent framework landscape, formerly known as AutoGen and now AG2.",
+      "status": "Production",
+      "sources": [
+        "[2]",
+        "[3]",
+        "[5]",
+        "[8]"
+      ],
+      "id": "SDK-036"
+    },
+    {
+      "id": "SDK-037",
+      "name": "Google ADK SDK",
+      "full_name": "@google/adk",
+      "category": "Agent SDK",
+      "description": "Google Agent Development Kit SDK，2025年4月发布，提供层级Agent树构建、多Agent编排和Google Cloud深度集成",
+      "language": "Python",
+      "stars": 15000,
+      "maintainer": "Google",
+      "status": "active",
+      "features": [
+        "层级Agent树",
+        "Google Cloud集成",
+        "多Agent编排",
+        "开源"
+      ]
+    },
+    {
+      "id": "SDK-038",
+      "name": "Claude Agent SDK",
+      "full_name": "@anthropic/agent-sdk",
+      "category": "Agent SDK",
+      "description": "Anthropic Claude Agent SDK，2026年6月15日起独立计费，支持文件存储、事件构建和Claude强指令跟随",
+      "language": "Python",
+      "stars": 12000,
+      "maintainer": "Anthropic",
+      "status": "active",
+      "features": [
+        "Claude原生",
+        "文件存储/加载",
+        "事件构建",
+        "指令跟随"
+      ]
+    },
+    {
+      "id": "SDK-039",
+      "name": "OpenAI Agents SDK Python",
+      "full_name": "openai-agents",
+      "category": "Agent SDK",
+      "description": "OpenAI Agents SDK，2025年3月发布，轻量Python框架，26900+ Stars，1030万月下载，支持Handoff和工具集成",
+      "language": "Python",
+      "stars": 26900,
+      "maintainer": "OpenAI",
+      "status": "active",
+      "features": [
+        "轻量框架",
+        "Handoff模式",
+        "工具集成",
+        "1030万月下载"
+      ]
+    },
+    {
+      "id": "SDK-040",
+      "name": "Smolagents",
+      "full_name": "smolagents",
+      "category": "Agent SDK",
+      "description": "HuggingFace推出的轻量Agent框架，专注简洁和可理解性，适合快速原型和教育场景",
+      "language": "Python",
+      "stars": 7000,
+      "maintainer": "HuggingFace",
+      "status": "active",
+      "features": [
+        "轻量简洁",
+        "HuggingFace生态",
+        "快速原型",
+        "可理解性"
+      ]
+    },
+    {
+      "id": "SDK-041",
+      "name": "Microsoft Agent Framework SDK",
+      "full_name": "microsoft-agents",
+      "category": "Agent SDK",
+      "description": "微软统一Agent框架SDK，整合AutoGen/AG2能力，支持Python和C#多语言企业级开发",
+      "language": "Python/C#",
+      "stars": 30000,
+      "maintainer": "Microsoft",
+      "status": "active",
+      "features": [
+        "AutoGen整合",
+        "多语言",
+        "企业级",
+        "Azure集成"
+      ]
+    }
+  ],
   "tool_platforms": [
     {
       "id": "TPLAT-001",
@@ -9596,725 +10387,720 @@ const DB = {
       "status": "active"
     }
   ],
-  "vector_dbs": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-20T08:00:00Z",
-    "description": "vector_dbs库",
-    "entities": [
-      {
-        "id": "VDB-001",
-        "name": "Pinecone",
-        "type": "托管向量数据库",
-        "pricing": "免费/Starter$25/月",
-        "features": [
-          "自动扩缩",
-          "元数据过滤",
-          "命名空间",
-          "稀疏向量"
-        ],
-        "open_source": false,
-        "maturity": "生产可用",
-        "language": "Python/Node.js"
-      },
-      {
-        "id": "VDB-002",
-        "name": "Weaviate",
-        "type": "向量+图谱数据库",
-        "pricing": "免费/Cloud付费",
-        "features": [
-          "混合搜索",
-          "多模态",
-          "RAG模块",
-          "GraphQL"
-        ],
-        "open_source": true,
-        "license": "BSD-3",
-        "maturity": "生产可用",
-        "language": "Python/Node.js/Go/Java"
-      },
-      {
-        "id": "VDB-003",
-        "name": "Qdrant",
-        "type": "向量数据库",
-        "pricing": "免费/Cloud付费",
-        "features": [
-          "高性嫩过滤",
-          "量化压缩",
-          "命名空间",
-          "Payload过滤"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "生产可用",
-        "language": "Python/Node.js/Rust"
-      },
-      {
-        "id": "VDB-004",
-        "name": "ChromaDB",
-        "type": "嵌入式向量数据库",
-        "pricing": "免费",
-        "features": [
-          "嵌入式/Server",
-          "自动嵌入",
-          "元数据",
-          "相似度搜索"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "生产可用",
-        "language": "Python/JS"
-      },
-      {
-        "id": "VDB-005",
-        "name": "Milvus",
-        "type": "分布式向量数据库",
-        "pricing": "免费/Cloud付费",
-        "features": [
-          "十亿级向量",
-          "GPU加速",
-          "多索引",
-          "标量过滤"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "生产可用",
-        "language": "Python/Node.js/Go/Java/C++"
-      },
-      {
-        "id": "VDB-006",
-        "name": "pgvector",
-        "type": "PostgreSQL扩展",
-        "pricing": "免费",
-        "features": [
-          "SQL集成",
-          "IVFFlat/HNSW索引",
-          "无需新基础设施"
-        ],
-        "open_source": true,
-        "license": "PostgreSQL",
-        "maturity": "生产可用",
-        "language": "SQL"
-      },
-      {
-        "id": "VDB-007",
-        "name": "LanceDB",
-        "type": "Serverless向量数据库",
-        "pricing": "免费",
-        "features": [
-          "嵌入式",
-          "列存储",
-          "版本管理",
-          "零拷贝"
-        ],
-        "open_source": true,
-        "license": "Apache-2.0",
-        "maturity": "早期",
-        "language": "Python/Node.js/Rust"
-      },
-      {
-        "id": "VDB-008",
-        "name": "Neo4j + Vector",
-        "type": "图+向量数据库",
-        "pricing": "免费/Enterprise",
-        "features": [
-          "知识图谱+向量",
-          "Cypher查询",
-          "GDS算法"
-        ],
-        "open_source": true,
-        "license": "GPLv3(社区)",
-        "maturity": "生产可用",
-        "language": "Python/JS/Java/Go"
-      },
-      {
-        "id": "VDB-pinecone-v2",
-        "name": "Pinecone Serverless v2",
-        "type": "managed",
-        "company": "Pinecone",
-        "language": "Cloud API",
-        "license": "Commercial",
-        "key_features": [
-          "Serverless架构",
-          "数十亿向量存储",
-          "新定价模型",
-          "命名空间隔离"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-chroma-cloud",
-        "name": "Chroma Cloud",
-        "type": "managed",
-        "company": "Chroma",
-        "language": "Python/Cloud API",
-        "license": "Commercial",
-        "key_features": [
-          "Chroma Cloud分布式模式",
-          "2026年初发布",
-          "嵌入式优先",
-          "开发者友好"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-qdrant-hybrid",
-        "name": "Qdrant Hybrid Search v2",
-        "type": "open_source",
-        "company": "Qdrant",
-        "language": "Rust",
-        "license": "Apache-2.0",
-        "key_features": [
-          "混合搜索升级",
-          "稀疏+密集向量",
-          "Rust高性能",
-          "过滤优化"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-weaviate-v2",
-        "name": "Weaviate v2",
-        "type": "open_source",
-        "company": "Weaviate",
-        "language": "Go",
-        "license": "BSD-3",
-        "key_features": [
-          "多模态搜索",
-          "生成式搜索",
-          "模块化架构",
-          "GraphQL API"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-milvus-v3",
-        "name": "Milvus v3",
-        "type": "open_source",
-        "company": "Zilliz",
-        "language": "Go/C++",
-        "license": "Apache-2.0",
-        "key_features": [
-          "云原生架构",
-          "十亿级向量",
-          "GPU加速",
-          "多索引支持"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-pgvector-v2",
-        "name": "pgvector v2 (PostgreSQL)",
-        "type": "extension",
-        "company": "社区",
-        "language": "C",
-        "license": "PostgreSQL",
-        "key_features": [
-          "PostgreSQL扩展",
-          "HNSW索引",
-          "IVFFlat索引",
-          "半精度向量"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-vald",
-        "name": "Vald",
-        "type": "open_source",
-        "company": "Yahoo Japan",
-        "language": "Go",
-        "license": "Apache-2.0",
-        "key_features": [
-          "云原生",
-          "自动索引",
-          "高可用",
-          "gRPC接口"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-vespa",
-        "name": "Vespa",
-        "type": "open_source",
-        "company": "Yahoo/Vespa.ai",
-        "language": "Java/C++",
-        "license": "Apache-2.0",
-        "key_features": [
-          "实时向量+文本搜索",
-          "低延迟",
-          "自动缩放",
-          "内容推荐"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-typesense",
-        "name": "Typesense",
-        "type": "open_source",
-        "company": "Typesense",
-        "language": "C++",
-        "license": "GPL-3.0",
-        "key_features": [
-          "即时搜索",
-          "向量搜索集成",
-          "拼写纠错",
-          "嵌入式"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-marqo",
-        "name": "Marqo",
-        "type": "open_source",
-        "company": "Marqo",
-        "language": "Python",
-        "license": "Apache-2.0",
-        "key_features": [
-          "端到端向量搜索",
-          "内置嵌入模型",
-          "多模态",
-          "张量搜索"
-        ],
-        "status": "production",
-        "year": 2025,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-05-30T13:38:30.808Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-supabase-pgvector",
-        "name": "Supabase pgvector",
-        "type": "managed",
-        "company": "Supabase",
-        "language": "SQL/TypeScript",
-        "license": "PostgreSQL/Apache",
-        "key_features": [
-          "Supabase托管pgvector",
-          "50亿美元估值2026",
-          "PostgreSQL生态",
-          "实时订阅",
-          "Edge Functions集成"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-faiss-v2",
-        "name": "FAISS v2 (Meta)",
-        "type": "open_source",
-        "company": "Meta",
-        "language": "C++/Python",
-        "license": "MIT",
-        "key_features": [
-          "Meta开源向量搜索库",
-          "GPU加速",
-          "十亿级索引",
-          "量化压缩",
-          "2026性能优化"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "A",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-lancedb-v2",
-        "name": "LanceDB v2",
-        "type": "open_source",
-        "company": "LanceDB",
-        "language": "Rust/Python/TS",
-        "license": "Apache-2.0",
-        "key_features": [
-          "Serverless向量数据库v2",
-          "Lance列式格式",
-          "多模态支持",
-          "零拷贝读取",
-          "版本管理"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-chromadb-cloud-v2",
-        "name": "Chroma Cloud v2",
-        "type": "managed",
-        "company": "Chroma",
-        "language": "Python/Rust",
-        "license": "Apache-2.0",
-        "key_features": [
-          "Chroma Cloud分布式v2",
-          "嵌入式优先",
-          "自动嵌入",
-          "混合搜索",
-          "2026全面发布"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-01T13:48:20.198Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-mongodb-atlas",
-        "name": "MongoDB Atlas Vector Search",
-        "type": "vector_database",
-        "description": "MongoDB Atlas向量搜索，2026年主流向量数据库之一，支持原生向量索引和混合查询",
-        "vendor": "MongoDB",
-        "deployment": "cloud",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "VDB-milvus-v4",
-        "name": "Milvus v4",
-        "type": "vector_database",
-        "description": "Milvus v4，2026年最新版本，增强分布式性能和GPU加速向量搜索",
-        "vendor": "Zilliz",
-        "deployment": "hybrid",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "VDB-qdrant-v3",
-        "name": "Qdrant v3",
-        "type": "vector_database",
-        "description": "Qdrant v3，2026年最新版本，改进混合搜索性能和过滤能力",
-        "vendor": "Qdrant",
-        "deployment": "hybrid",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "VDB-weaviate-v3",
-        "name": "Weaviate v3",
-        "type": "vector_database",
-        "description": "Weaviate v3，2026年最新版本，增强多模态搜索和Agent记忆集成",
-        "vendor": "Weaviate",
-        "deployment": "hybrid",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "VDB-pinecone-v3",
-        "name": "Pinecone v3",
-        "type": "vector_database",
-        "description": "Pinecone v3，2026年最新版本，改进Serverless性能和命名空间隔离",
-        "vendor": "Pinecone",
-        "deployment": "cloud",
-        "release_date": "2026",
-        "source": "web_search_2026"
-      },
-      {
-        "id": "VDB-turbopuffer",
-        "name": "Turbopuffer",
-        "type": "serverless_vector_search",
-        "description": "Turbopuffer Serverless向量搜索，2026年新进入者，低延迟托管向量搜索服务",
-        "company": "Turbopuffer",
-        "language": "Cloud API",
-        "license": "Commercial",
-        "key_features": [
-          "Serverless",
-          "低延迟",
-          "托管向量搜索",
-          "自动扩缩"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-myscale",
-        "name": "MyScale",
-        "type": "sql_vector_db",
-        "description": "MyScale SQL向量数据库，基于ClickHouse的向量搜索，支持SQL+向量混合查询",
-        "company": "MyScale",
-        "language": "SQL/Python",
-        "license": "Apache-2.0",
-        "key_features": [
-          "SQL+向量混合",
-          "ClickHouse引擎",
-          "高性能分析",
-          "结构化+非结构化"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-singlestore",
-        "name": "SingleStore Vector",
-        "type": "distributed_sql_vector",
-        "description": "SingleStore分布式SQL+向量数据库，支持实时分析和向量搜索",
-        "company": "SingleStore",
-        "language": "SQL",
-        "license": "Commercial",
-        "key_features": [
-          "分布式SQL",
-          "实时分析",
-          "向量搜索",
-          "混合事务分析"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-kdbai",
-        "name": "KDB.AI",
-        "type": "timeseries_vector_db",
-        "description": "KDB.AI时序向量数据库，专为金融和IoT时序数据+向量搜索设计",
-        "company": "KX Systems",
-        "language": "Python/q",
-        "license": "Commercial",
-        "key_features": [
-          "时序数据",
-          "金融级",
-          "向量搜索",
-          "实时分析"
-        ],
-        "status": "production",
-        "year": 2026,
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "collected_at": "2026-06-03T13:52:48.985531Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-objectbox",
-        "name": "ObjectBox Vector Database",
-        "category": "on-device-vector-db",
-        "description": "On-device vector database engineered for phones, ECUs, and other restricted environments. The missing on-device memory layer for AI.",
-        "features": [
-          "on-device",
-          "edge computing",
-          "mobile support",
-          "embedded systems",
-          "low resource"
-        ],
-        "status": "active",
-        "year": 2026,
-        "sources": [
-          "https://objectbox.io/262454-2"
-        ]
-      },
-      {
-        "id": "VDB-cassandra5",
-        "name": "Apache Cassandra 5.0 (Vector Search)",
-        "category": "distributed-vector-db",
-        "description": "Apache Cassandra 5.0 introduced vector search support for AI and machine learning workloads.",
-        "features": [
-          "vector search",
-          "distributed",
-          "cloud-native",
-          "scalable",
-          "AI workloads"
-        ],
-        "status": "active",
-        "year": 2025,
-        "sources": [
-          "https://www.instaclustr.com/education/vector-database/best-open-source-vector-database-solutions-top-5-in-2026"
-        ]
-      },
-      {
-        "id": "VDB-pinecone-2026",
-        "name": "Pinecone 2026",
-        "full_name": "Pinecone Vector Database",
-        "category": "向量数据库",
-        "description": "Pinecone在2026年保持托管型向量数据库领导地位，是AI Agent生产系统的首选方案，支持大规模向量检索和混合查询",
-        "key_features": [
-          "全托管服务",
-          "大规模向量检索",
-          "混合查询",
-          "Serverless架构"
-        ],
-        "status": "production",
-        "year": 2026,
-        "maintainer": "Pinecone",
-        "language": "Rust/Go",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "article_url": "https://karthikeyanrathinam.medium.com/top-10-vector-databases-in-2026-ultimate-comparison-benchmarks-use-cases-6b0e878256b5",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "id": "VDB-qdrant-2026",
-        "name": "Qdrant 2026 Major Update",
-        "full_name": "Qdrant Vector Search Engine",
-        "category": "向量数据库",
-        "description": "Qdrant在2026年发布重大更新，作为Rust编写的开源向量数据库速度领导者，在AI Agent工作负载中表现突出",
-        "key_features": [
-          "Rust实现",
-          "开源",
-          "速度领先",
-          "2026重大更新",
-          "高效过滤"
-        ],
-        "status": "production",
-        "year": 2026,
-        "maintainer": "Qdrant",
-        "language": "Rust",
-        "sources": [
-          {
-            "source_type": "web",
-            "source_credibility": "B",
-            "article_url": "https://karthikeyanrathinam.medium.com/top-10-vector-databases-in-2026-ultimate-comparison-benchmarks-use-cases-6b0e878256b5",
-            "collected_at": "2026-06-16T22:31:38.000Z"
-          }
-        ]
-      },
-      {
-        "name": "Chroma",
-        "type": "Vector Database",
-        "description": "A modern vector database designed for AI and machine learning applications with ease of use and integration.",
-        "features": [
-          "Developer-friendly API",
-          "Seamless ML integration",
-          "Lightweight deployment"
-        ],
-        "status": "Active",
-        "sources": [
-          "https://www.datacamp.com/blog/the-top-5-vector-databases"
-        ],
-        "id": "VDB-036"
-      },
-      {
-        "name": "Oracle AI Vector Search",
-        "type": "Vector Database Feature",
-        "description": "Oracle's AI-powered vector search capability within Oracle AI Database 26ai, enabling fast similarity searches using AI-generated embeddings.",
-        "features": [
-          "AI-generated vector embeddings",
-          "Lightning-fast similarity search",
-          "Integration with Oracle Database ecosystem"
-        ],
-        "status": "Active",
-        "sources": [
-          "https://www.oracle.com/database/ai-vector-search"
-        ],
-        "id": "VDB-037"
-      }
-    ]
-  }
+  "vector_dbs": [
+    {
+      "id": "VDB-001",
+      "name": "Pinecone",
+      "type": "托管向量数据库",
+      "pricing": "免费/Starter$25/月",
+      "features": [
+        "自动扩缩",
+        "元数据过滤",
+        "命名空间",
+        "稀疏向量"
+      ],
+      "open_source": false,
+      "maturity": "生产可用",
+      "language": "Python/Node.js"
+    },
+    {
+      "id": "VDB-002",
+      "name": "Weaviate",
+      "type": "向量+图谱数据库",
+      "pricing": "免费/Cloud付费",
+      "features": [
+        "混合搜索",
+        "多模态",
+        "RAG模块",
+        "GraphQL"
+      ],
+      "open_source": true,
+      "license": "BSD-3",
+      "maturity": "生产可用",
+      "language": "Python/Node.js/Go/Java"
+    },
+    {
+      "id": "VDB-003",
+      "name": "Qdrant",
+      "type": "向量数据库",
+      "pricing": "免费/Cloud付费",
+      "features": [
+        "高性嫩过滤",
+        "量化压缩",
+        "命名空间",
+        "Payload过滤"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "language": "Python/Node.js/Rust"
+    },
+    {
+      "id": "VDB-004",
+      "name": "ChromaDB",
+      "type": "嵌入式向量数据库",
+      "pricing": "免费",
+      "features": [
+        "嵌入式/Server",
+        "自动嵌入",
+        "元数据",
+        "相似度搜索"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "language": "Python/JS"
+    },
+    {
+      "id": "VDB-005",
+      "name": "Milvus",
+      "type": "分布式向量数据库",
+      "pricing": "免费/Cloud付费",
+      "features": [
+        "十亿级向量",
+        "GPU加速",
+        "多索引",
+        "标量过滤"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "生产可用",
+      "language": "Python/Node.js/Go/Java/C++"
+    },
+    {
+      "id": "VDB-006",
+      "name": "pgvector",
+      "type": "PostgreSQL扩展",
+      "pricing": "免费",
+      "features": [
+        "SQL集成",
+        "IVFFlat/HNSW索引",
+        "无需新基础设施"
+      ],
+      "open_source": true,
+      "license": "PostgreSQL",
+      "maturity": "生产可用",
+      "language": "SQL"
+    },
+    {
+      "id": "VDB-007",
+      "name": "LanceDB",
+      "type": "Serverless向量数据库",
+      "pricing": "免费",
+      "features": [
+        "嵌入式",
+        "列存储",
+        "版本管理",
+        "零拷贝"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "maturity": "早期",
+      "language": "Python/Node.js/Rust"
+    },
+    {
+      "id": "VDB-008",
+      "name": "Neo4j + Vector",
+      "type": "图+向量数据库",
+      "pricing": "免费/Enterprise",
+      "features": [
+        "知识图谱+向量",
+        "Cypher查询",
+        "GDS算法"
+      ],
+      "open_source": true,
+      "license": "GPLv3(社区)",
+      "maturity": "生产可用",
+      "language": "Python/JS/Java/Go"
+    },
+    {
+      "id": "VDB-pinecone-v2",
+      "name": "Pinecone Serverless v2",
+      "type": "managed",
+      "company": "Pinecone",
+      "language": "Cloud API",
+      "license": "Commercial",
+      "key_features": [
+        "Serverless架构",
+        "数十亿向量存储",
+        "新定价模型",
+        "命名空间隔离"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-chroma-cloud",
+      "name": "Chroma Cloud",
+      "type": "managed",
+      "company": "Chroma",
+      "language": "Python/Cloud API",
+      "license": "Commercial",
+      "key_features": [
+        "Chroma Cloud分布式模式",
+        "2026年初发布",
+        "嵌入式优先",
+        "开发者友好"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-qdrant-hybrid",
+      "name": "Qdrant Hybrid Search v2",
+      "type": "open_source",
+      "company": "Qdrant",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "key_features": [
+        "混合搜索升级",
+        "稀疏+密集向量",
+        "Rust高性能",
+        "过滤优化"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-weaviate-v2",
+      "name": "Weaviate v2",
+      "type": "open_source",
+      "company": "Weaviate",
+      "language": "Go",
+      "license": "BSD-3",
+      "key_features": [
+        "多模态搜索",
+        "生成式搜索",
+        "模块化架构",
+        "GraphQL API"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-milvus-v3",
+      "name": "Milvus v3",
+      "type": "open_source",
+      "company": "Zilliz",
+      "language": "Go/C++",
+      "license": "Apache-2.0",
+      "key_features": [
+        "云原生架构",
+        "十亿级向量",
+        "GPU加速",
+        "多索引支持"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-pgvector-v2",
+      "name": "pgvector v2 (PostgreSQL)",
+      "type": "extension",
+      "company": "社区",
+      "language": "C",
+      "license": "PostgreSQL",
+      "key_features": [
+        "PostgreSQL扩展",
+        "HNSW索引",
+        "IVFFlat索引",
+        "半精度向量"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-vald",
+      "name": "Vald",
+      "type": "open_source",
+      "company": "Yahoo Japan",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "key_features": [
+        "云原生",
+        "自动索引",
+        "高可用",
+        "gRPC接口"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-vespa",
+      "name": "Vespa",
+      "type": "open_source",
+      "company": "Yahoo/Vespa.ai",
+      "language": "Java/C++",
+      "license": "Apache-2.0",
+      "key_features": [
+        "实时向量+文本搜索",
+        "低延迟",
+        "自动缩放",
+        "内容推荐"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-typesense",
+      "name": "Typesense",
+      "type": "open_source",
+      "company": "Typesense",
+      "language": "C++",
+      "license": "GPL-3.0",
+      "key_features": [
+        "即时搜索",
+        "向量搜索集成",
+        "拼写纠错",
+        "嵌入式"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-marqo",
+      "name": "Marqo",
+      "type": "open_source",
+      "company": "Marqo",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "端到端向量搜索",
+        "内置嵌入模型",
+        "多模态",
+        "张量搜索"
+      ],
+      "status": "production",
+      "year": 2025,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-05-30T13:38:30.808Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-supabase-pgvector",
+      "name": "Supabase pgvector",
+      "type": "managed",
+      "company": "Supabase",
+      "language": "SQL/TypeScript",
+      "license": "PostgreSQL/Apache",
+      "key_features": [
+        "Supabase托管pgvector",
+        "50亿美元估值2026",
+        "PostgreSQL生态",
+        "实时订阅",
+        "Edge Functions集成"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-faiss-v2",
+      "name": "FAISS v2 (Meta)",
+      "type": "open_source",
+      "company": "Meta",
+      "language": "C++/Python",
+      "license": "MIT",
+      "key_features": [
+        "Meta开源向量搜索库",
+        "GPU加速",
+        "十亿级索引",
+        "量化压缩",
+        "2026性能优化"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "A",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-lancedb-v2",
+      "name": "LanceDB v2",
+      "type": "open_source",
+      "company": "LanceDB",
+      "language": "Rust/Python/TS",
+      "license": "Apache-2.0",
+      "key_features": [
+        "Serverless向量数据库v2",
+        "Lance列式格式",
+        "多模态支持",
+        "零拷贝读取",
+        "版本管理"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-chromadb-cloud-v2",
+      "name": "Chroma Cloud v2",
+      "type": "managed",
+      "company": "Chroma",
+      "language": "Python/Rust",
+      "license": "Apache-2.0",
+      "key_features": [
+        "Chroma Cloud分布式v2",
+        "嵌入式优先",
+        "自动嵌入",
+        "混合搜索",
+        "2026全面发布"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-01T13:48:20.198Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-mongodb-atlas",
+      "name": "MongoDB Atlas Vector Search",
+      "type": "vector_database",
+      "description": "MongoDB Atlas向量搜索，2026年主流向量数据库之一，支持原生向量索引和混合查询",
+      "vendor": "MongoDB",
+      "deployment": "cloud",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "VDB-milvus-v4",
+      "name": "Milvus v4",
+      "type": "vector_database",
+      "description": "Milvus v4，2026年最新版本，增强分布式性能和GPU加速向量搜索",
+      "vendor": "Zilliz",
+      "deployment": "hybrid",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "VDB-qdrant-v3",
+      "name": "Qdrant v3",
+      "type": "vector_database",
+      "description": "Qdrant v3，2026年最新版本，改进混合搜索性能和过滤能力",
+      "vendor": "Qdrant",
+      "deployment": "hybrid",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "VDB-weaviate-v3",
+      "name": "Weaviate v3",
+      "type": "vector_database",
+      "description": "Weaviate v3，2026年最新版本，增强多模态搜索和Agent记忆集成",
+      "vendor": "Weaviate",
+      "deployment": "hybrid",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "VDB-pinecone-v3",
+      "name": "Pinecone v3",
+      "type": "vector_database",
+      "description": "Pinecone v3，2026年最新版本，改进Serverless性能和命名空间隔离",
+      "vendor": "Pinecone",
+      "deployment": "cloud",
+      "release_date": "2026",
+      "source": "web_search_2026"
+    },
+    {
+      "id": "VDB-turbopuffer",
+      "name": "Turbopuffer",
+      "type": "serverless_vector_search",
+      "description": "Turbopuffer Serverless向量搜索，2026年新进入者，低延迟托管向量搜索服务",
+      "company": "Turbopuffer",
+      "language": "Cloud API",
+      "license": "Commercial",
+      "key_features": [
+        "Serverless",
+        "低延迟",
+        "托管向量搜索",
+        "自动扩缩"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-myscale",
+      "name": "MyScale",
+      "type": "sql_vector_db",
+      "description": "MyScale SQL向量数据库，基于ClickHouse的向量搜索，支持SQL+向量混合查询",
+      "company": "MyScale",
+      "language": "SQL/Python",
+      "license": "Apache-2.0",
+      "key_features": [
+        "SQL+向量混合",
+        "ClickHouse引擎",
+        "高性能分析",
+        "结构化+非结构化"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-singlestore",
+      "name": "SingleStore Vector",
+      "type": "distributed_sql_vector",
+      "description": "SingleStore分布式SQL+向量数据库，支持实时分析和向量搜索",
+      "company": "SingleStore",
+      "language": "SQL",
+      "license": "Commercial",
+      "key_features": [
+        "分布式SQL",
+        "实时分析",
+        "向量搜索",
+        "混合事务分析"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-kdbai",
+      "name": "KDB.AI",
+      "type": "timeseries_vector_db",
+      "description": "KDB.AI时序向量数据库，专为金融和IoT时序数据+向量搜索设计",
+      "company": "KX Systems",
+      "language": "Python/q",
+      "license": "Commercial",
+      "key_features": [
+        "时序数据",
+        "金融级",
+        "向量搜索",
+        "实时分析"
+      ],
+      "status": "production",
+      "year": 2026,
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "collected_at": "2026-06-03T13:52:48.985531Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-objectbox",
+      "name": "ObjectBox Vector Database",
+      "category": "on-device-vector-db",
+      "description": "On-device vector database engineered for phones, ECUs, and other restricted environments. The missing on-device memory layer for AI.",
+      "features": [
+        "on-device",
+        "edge computing",
+        "mobile support",
+        "embedded systems",
+        "low resource"
+      ],
+      "status": "active",
+      "year": 2026,
+      "sources": [
+        "https://objectbox.io/262454-2"
+      ]
+    },
+    {
+      "id": "VDB-cassandra5",
+      "name": "Apache Cassandra 5.0 (Vector Search)",
+      "category": "distributed-vector-db",
+      "description": "Apache Cassandra 5.0 introduced vector search support for AI and machine learning workloads.",
+      "features": [
+        "vector search",
+        "distributed",
+        "cloud-native",
+        "scalable",
+        "AI workloads"
+      ],
+      "status": "active",
+      "year": 2025,
+      "sources": [
+        "https://www.instaclustr.com/education/vector-database/best-open-source-vector-database-solutions-top-5-in-2026"
+      ]
+    },
+    {
+      "id": "VDB-pinecone-2026",
+      "name": "Pinecone 2026",
+      "full_name": "Pinecone Vector Database",
+      "category": "向量数据库",
+      "description": "Pinecone在2026年保持托管型向量数据库领导地位，是AI Agent生产系统的首选方案，支持大规模向量检索和混合查询",
+      "key_features": [
+        "全托管服务",
+        "大规模向量检索",
+        "混合查询",
+        "Serverless架构"
+      ],
+      "status": "production",
+      "year": 2026,
+      "maintainer": "Pinecone",
+      "language": "Rust/Go",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://karthikeyanrathinam.medium.com/top-10-vector-databases-in-2026-ultimate-comparison-benchmarks-use-cases-6b0e878256b5",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "VDB-qdrant-2026",
+      "name": "Qdrant 2026 Major Update",
+      "full_name": "Qdrant Vector Search Engine",
+      "category": "向量数据库",
+      "description": "Qdrant在2026年发布重大更新，作为Rust编写的开源向量数据库速度领导者，在AI Agent工作负载中表现突出",
+      "key_features": [
+        "Rust实现",
+        "开源",
+        "速度领先",
+        "2026重大更新",
+        "高效过滤"
+      ],
+      "status": "production",
+      "year": 2026,
+      "maintainer": "Qdrant",
+      "language": "Rust",
+      "sources": [
+        {
+          "source_type": "web",
+          "source_credibility": "B",
+          "article_url": "https://karthikeyanrathinam.medium.com/top-10-vector-databases-in-2026-ultimate-comparison-benchmarks-use-cases-6b0e878256b5",
+          "collected_at": "2026-06-16T22:31:38.000Z"
+        }
+      ]
+    },
+    {
+      "name": "Chroma",
+      "type": "Vector Database",
+      "description": "A modern vector database designed for AI and machine learning applications with ease of use and integration.",
+      "features": [
+        "Developer-friendly API",
+        "Seamless ML integration",
+        "Lightweight deployment"
+      ],
+      "status": "Active",
+      "sources": [
+        "https://www.datacamp.com/blog/the-top-5-vector-databases"
+      ],
+      "id": "VDB-036"
+    },
+    {
+      "name": "Oracle AI Vector Search",
+      "type": "Vector Database Feature",
+      "description": "Oracle's AI-powered vector search capability within Oracle AI Database 26ai, enabling fast similarity searches using AI-generated embeddings.",
+      "features": [
+        "AI-generated vector embeddings",
+        "Lightning-fast similarity search",
+        "Integration with Oracle Database ecosystem"
+      ],
+      "status": "Active",
+      "sources": [
+        "https://www.oracle.com/database/ai-vector-search"
+      ],
+      "id": "VDB-037"
+    }
+  ]
 };

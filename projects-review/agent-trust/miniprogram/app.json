@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/dashboard/dashboard",
+    "pages/agent/agent",
+    "pages/transactions/transactions",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0a0a0a",
+    "navigationBarTitleText": "AgentTrust",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0a0a0a"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ff6b35",
+    "backgroundColor": "#141414",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/dashboard/dashboard",
+        "text": "仪表盘",
+        "iconPath": "static/tab-dashboard.png",
+        "selectedIconPath": "static/tab-dashboard-active.png"
+      },
+      {
+        "pagePath": "pages/agent/agent",
+        "text": "我的Agent",
+        "iconPath": "static/tab-agent.png",
+        "selectedIconPath": "static/tab-agent-active.png"
+      },
+      {
+        "pagePath": "pages/transactions/transactions",
+        "text": "交易",
+        "iconPath": "static/tab-tx.png",
+        "selectedIconPath": "static/tab-tx-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "static/tab-profile.png",
+        "selectedIconPath": "static/tab-profile-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

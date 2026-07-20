@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /export/
+Sitemap: https://oraclemind.app/sitemap.xml

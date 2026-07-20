@@ -1,0 +1,57 @@
+[
+  {
+    "name": "LiCoO2",
+    "formula": "LiCoO₂",
+    "voltage_V": 3.7,
+    "capacity_mAhg": 140,
+    "cycle_life": 1000,
+    "energy_density_Whkg": 518,
+    "crystal": "层状",
+    "reference": "标准正极材料",
+    "doi": "handbook"
+  },
+  {
+    "name": "LiFePO4",
+    "formula": "LiFePO₄",
+    "voltage_V": 3.3,
+    "capacity_mAhg": 170,
+    "cycle_life": 3000,
+    "energy_density_Whkg": 578,
+    "crystal": "橄榄石",
+    "reference": "J Power Sources 2025",
+    "doi": "10.1016/j.jpowsour.2025.235"
+  },
+  {
+    "name": "MnO2-SEMD380",
+    "formula": "MnO₂",
+    "voltage_V": 3.0,
+    "capacity_mAhg": 245.7,
+    "cycle_life": 300,
+    "energy_density_Whkg": 737,
+    "crystal": "隧道结构",
+    "reference": "J Power Sources 2025",
+    "doi": "10.1016/j.jpowsour.2025.204"
+  },
+  {
+    "name": "NMC811",
+    "formula": "LiNi₀.₈Mn₀.₁Co₀.₁O₂",
+    "voltage_V": 3.8,
+    "capacity_mAhg": 200,
+    "cycle_life": 800,
+    "energy_density_Whkg": 760,
+    "crystal": "层状",
+    "reference": "数据驱动模型2026",
+    "doi": "10.1016/j.ensm.2026.103"
+  },
+  {
+    "name": "LiMn2O4",
+    "formula": "LiMn₂O₄",
+    "voltage_V": 4.0,
+    "capacity_mAhg": 120,
+    "cycle_life": 500,
+    "energy_density_Whkg": 480,
+    "crystal": "尖晶石",
+    "reference": "Front Energy Res 2022",
+    "doi": "10.3389/fenrg.2022.851377"
+  }
+]

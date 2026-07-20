@@ -1,0 +1,10 @@
+[
+  {"id":"mt_001","class":"小分子抑制剂","scaffold":"嘧啶环","examples":["吉非替尼","奥希替尼"],"synthesis_difficulty":"中等","key_reactions":["Suzuki偶联","胺缩合"]},
+  {"id":"mt_002","class":"抗体偶联药物(ADC)","scaffold":"单抗+连接子+毒素","examples":["T-DXd","恩美曲妥珠单抗"],"synthesis_difficulty":"高","key_reactions":["抗体工程","定点偶联"]},
+  {"id":"mt_003","class":"PROTAC","scaffold":"目标蛋白配体-E3连接酶配体","examples":["ARV-110","ARV-471"],"synthesis_difficulty":"高","key_reactions":["PEG连接子合成","点击化学"]},
+  {"id":"mt_004","class":"mRNA疫苗","scaffold":"脂质纳米颗粒+mRNA","examples":["新冠mRNA疫苗"],"synthesis_difficulty":"高","key_reactions":["体外转录","LNP包封"]},
+  {"id":"mt_005","class":"反义寡核苷酸","scaffold":"硫代磷酸骨架","examples":["诺西那生","米泊美生"],"synthesis_difficulty":"高","key_reactions":["固相合成","硫代修饰"]},
+  {"id":"mt_006","class":"中药复方","scaffold":"多成分协同","examples":["连花清瘟","血必净"],"synthesis_difficulty":"中等","key_reactions":["水提醇沉","色谱纯化"]},
+  {"id":"mt_007","class":"基因治疗载体","scaffold":"AAV衣壳","examples":["Zolgensma","Luxturna"],"synthesis_difficulty":"极高","key_reactions":["三质粒转染","超速离心"]},
+  {"id":"mt_008","class":"CAR-T细胞","scaffold":"慢病毒载体+T细胞","examples":["Kymriah","Yescarta"],"synthesis_difficulty":"极高","key_reactions":["病毒包装","T细胞激活转导"]}
+]

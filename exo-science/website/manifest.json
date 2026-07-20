@@ -1,0 +1,9 @@
+{
+  "name": "Exo Science",
+  "short_name": "Exo Science",
+  "description": "Exoplanet science database with 445 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

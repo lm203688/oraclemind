@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ML预测引擎 | 蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--orange:#f59e0b;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:24px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:13px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.page-header{padding:48px 0 32px}
+.page-header h1{font-size:36px;font-weight:800;margin-bottom:8px}
+.page-header p{color:var(--muted);font-size:16px}
+.input-panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:24px}
+.input-group{margin-bottom:16px}
+.input-label{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:6px;display:block}
+.input-field{width:100%;padding:12px 16px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:15px;font-family:monospace}
+.btn{padding:12px 32px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer}
+.preset-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.preset-btn{padding:4px 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;font-size:12px;cursor:pointer}
+.preset-btn:hover{border-color:var(--accent)}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+@media(max-width:768px){.result-grid{grid-template-columns:1fr}}
+.result-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.result-title{font-size:14px;color:var(--muted);margin-bottom:8px}
+.result-value{font-size:28px;font-weight:700}
+.result-unit{font-size:14px;color:var(--muted)}
+.exp-value{font-size:13px;color:var(--green);margin-top:8px}
+.exp-label{font-size:11px;color:var(--muted)}
+.compare-table{width:100%;border-collapse:collapse;font-size:13px}
+.compare-table th{text-align:left;padding:10px;background:var(--bg);color:var(--muted);font-size:11px;text-transform:uppercase}
+.compare-table td{padding:10px;border-bottom:1px solid var(--border)}
+.compare-table .num{font-family:monospace}
+.compare-table .exp{color:var(--green)}
+.compare-table .ml{color:var(--accent)}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html">分子动力学</a>
+<a href="ml-predict.html" class="active">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="engines.html">材料预测</a>
+<a href="forcefields.html">力场引擎</a>
+<a href="report.html">报告</a>
+<a href="visualization.html">可视化</a>
+<a href="api-playground.html">API测试</a>
+<a href="docs.html">API文档</a>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="page-header">
+<h1>🤖 ML预测引擎</h1>
+<p>30分子真实实验数据训练 | LeaveOneOut交叉验证 | 诚实报告精度</p>
+</div>
+
+<div class="input-panel">
+<div class="input-group">
+<label class="input-label">分子SMILES</label>
+<input class="input-field" id="smiles-input" value="CCO" placeholder="如 CCO (乙醇)">
+<div class="preset-row">
+<span class="preset-btn" onclick="setSmiles('O')">水 O</span>
+<span class="preset-btn" onclick="setSmiles('CCO')">乙醇</span>
+<span class="preset-btn" onclick="setSmiles('c1ccccc1')">苯</span>
+<span class="preset-btn" onclick="setSmiles('CC(=O)O')">乙酸</span>
+<span class="preset-btn" onclick="setSmiles('CN1C=NC2=C1C(=O)N(C(=O)N2C)C')">咖啡因</span>
+</div>
+</div>
+<button class="btn" onclick="predict()">🤖 ML预测</button>
+</div>
+
+<div class="result-grid" id="results" style="display:none">
+<div class="result-card">
+<div class="result-title">偶极矩</div>
+<div class="result-value" id="r-dipole">—</div>
+<div class="result-unit">Debye</div>
+<div class="exp-value" id="r-dipole-exp"></div>
+</div>
+<div class="result-card">
+<div class="result-title">沸点</div>
+<div class="result-value" id="r-bp">—</div>
+<div class="result-unit">°C</div>
+<div class="exp-value" id="r-bp-exp"></div>
+</div>
+<div class="result-card">
+<div class="result-title">生成焓</div>
+<div class="result-value" id="r-hf">—</div>
+<div class="result-unit">kJ/mol</div>
+<div class="exp-value" id="r-hf-exp"></div>
+</div>
+</div>
+
+<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:24px">
+<h2 style="font-size:18px;font-weight:700;margin-bottom:8px">📊 验证集——30个分子真实实验值</h2>
+<p style="font-size:13px;color:var(--muted);margin-bottom:16px">LeaveOneOut交叉验证: 偶极矩MAE=1.02D | 沸点MAE=49.2°C | 生成焓MAE=113.7kJ/mol</p>
+<table class="compare-table">
+<thead><tr><th>分子</th><th>SMILES</th><th>实验偶极矩(D)</th><th>实验沸点(°C)</th><th>实验生成焓(kJ/mol)</th><th>来源</th></tr></thead>
+<tbody id="benchmark-body"></tbody>
+</table>
+</div>
+
+</div>
+<footer class="footer"><div class="container"><p>蜂群科研 — ML预测引擎 | GradientBoostingRegressor + NIST CCCBDB训练数据</p></div></footer>
+<script>
+const API='http://150.158.119.19:8461';
+function setSmiles(s){document.getElementById('smiles-input').value=s}
+async function predict(){
+  const s=document.getElementById('smiles-input').value.trim();if(!s)return;
+  try{
+    const r=await fetch(`${API}/api/v1/ml/predict?smiles=${encodeURIComponent(s)}`);
+    const d=await r.json();
+    if(d.status!=='success'){alert('错误: '+d.error);return}
+    document.getElementById('results').style.display='grid';
+    document.getElementById('r-dipole').textContent=d.ml_predictions.dipole_debye||'—';
+    document.getElementById('r-bp').textContent=d.ml_predictions.boiling_point_c||'—';
+    document.getElementById('r-hf').textContent=d.ml_predictions.heat_of_formation_kj_mol||'—';
+    if(d.experimental){
+      document.getElementById('r-dipole-exp').textContent='实验: '+d.experimental.dipole_debye+'D';
+      document.getElementById('r-bp-exp').textContent='实验: '+d.experimental.boiling_point_c+'°C';
+    }
+  }catch(e){alert('API连接失败')}
+}
+// 验证集
+// 30分子验证集——真实实验值(NIST CCCBDB + 文献)
+// LOO-MAE: 偶极矩1.02D | 沸点49°C | 生成焓114kJ/mol
+const bm=[
+  {n:'水',smi:'O',exp_d:1.85,exp_bp:100,exp_hf:-241.8,src:'NIST'},
+  {n:'甲烷',smi:'C',exp_d:0.0,exp_bp:-161.5,exp_hf:-74.6,src:'NIST'},
+  {n:'氨',smi:'N',exp_d:1.47,exp_bp:-33.3,exp_hf:-45.9,src:'NIST'},
+  {n:'CO2',smi:'O=C=O',exp_d:0.0,exp_bp:-78.5,exp_hf:-393.5,src:'NIST'},
+  {n:'乙烷',smi:'CC',exp_d:0.0,exp_bp:-88.6,exp_hf:-84.0,src:'NIST'},
+  {n:'乙烯',smi:'C=C',exp_d:0.0,exp_bp:-103.7,exp_hf:52.3,src:'NIST'},
+  {n:'苯',smi:'c1ccccc1',exp_d:0.0,exp_bp:80.1,exp_hf:49.0,src:'NIST'},
+  {n:'甲醇',smi:'CO',exp_d:1.71,exp_bp:64.7,exp_hf:-201.0,src:'NIST'},
+  {n:'乙醇',smi:'CCO',exp_d:1.69,exp_bp:78.2,exp_hf:-277.7,src:'NIST'},
+  {n:'乙酸',smi:'CC(=O)O',exp_d:1.74,exp_bp:118.1,exp_hf:-484.5,src:'NIST'},
+  {n:'丙烷',smi:'CCC',exp_d:0.0,exp_bp:-42.1,exp_hf:-104.7,src:'NIST'},
+  {n:'丁烷',smi:'CCCC',exp_d:0.0,exp_bp:-0.5,exp_hf:-125.6,src:'NIST'},
+  {n:'丙醇',smi:'CCCO',exp_d:1.68,exp_bp:97.0,exp_hf:-302.6,src:'文献'},
+  {n:'丙酮',smi:'CC(=O)C',exp_d:2.88,exp_bp:56.0,exp_hf:-217.3,src:'文献'},
+  {n:'甲醛',smi:'C=O',exp_d:2.33,exp_bp:-19.3,exp_hf:-108.6,src:'NIST'},
+  {n:'乙醛',smi:'CC=O',exp_d:2.69,exp_bp:20.2,exp_hf:-166.2,src:'NIST'},
+  {n:'甲苯',smi:'Cc1ccccc1',exp_d:0.36,exp_bp:110.6,exp_hf:50.0,src:'文献'},
+  {n:'苯酚',smi:'Oc1ccccc1',exp_d:1.45,exp_bp:181.7,exp_hf:-165.0,src:'文献'},
+  {n:'苯胺',smi:'Nc1ccccc1',exp_d:1.59,exp_bp:184.1,exp_hf:87.5,src:'文献'},
+  {n:'THF',smi:'C1CCCO1',exp_d:1.75,exp_bp:66.0,exp_hf:-184.2,src:'文献'},
+  {n:'乙醚',smi:'CCOCC',exp_d:1.15,exp_bp:34.6,exp_hf:-252.1,src:'文献'},
+  {n:'乙腈',smi:'CC#N',exp_d:3.92,exp_bp:81.6,exp_hf:31.4,src:'文献'},
+  {n:'硝基甲烷',smi:'C[N+](=O)[O-]',exp_d:3.46,exp_bp:101.2,exp_hf:-113.1,src:'文献'},
+  {n:'二氯甲烷',smi:'ClCCl',exp_d:1.60,exp_bp:39.6,exp_hf:-95.7,src:'NIST'},
+  {n:'氯仿',smi:'ClC(Cl)Cl',exp_d:1.15,exp_bp:61.2,exp_hf:-134.1,src:'NIST'},
+  {n:'四氯化碳',smi:'ClC(Cl)(Cl)Cl',exp_d:0.0,exp_bp:76.8,exp_hf:-95.7,src:'NIST'},
+  {n:'CS2',smi:'S=C=S',exp_d:0.0,exp_bp:46.3,exp_hf:117.4,src:'NIST'},
+  {n:'SO2',smi:'O=S=O',exp_d:1.63,exp_bp:-10.0,exp_hf:-296.8,src:'NIST'},
+  {n:'CO',smi:'[C-]#[O+]',exp_d:0.11,exp_bp:-191.5,exp_hf:-110.5,src:'NIST'},
+  {n:'H2O2',smi:'OO',exp_d:2.10,exp_bp:150.2,exp_hf:-136.3,src:'NIST'},
+];
+const tbody=document.getElementById('benchmark-body');
+bm.forEach(b=>{
+  tbody.innerHTML+=`<tr><td><strong>${b.n}</strong></td><td style="font-family:monospace;font-size:12px">${b.smi}</td><td class="exp">${b.exp_d}</td><td class="exp">${b.exp_bp}</td><td class="exp">${b.exp_hf}</td><td>${b.src}</td></tr>`;
+});
+</script>
+
+    <div style="margin-top:40px;padding:25px;background:rgba(0,212,255,0.05);border:2px solid #00d4ff;border-radius:12px;">
+        <h2 style="color:#00d4ff;">🧠 GNN图神经网络预测 <span style="font-size:0.6em;background:#00d4ff;color:#000;padding:2px 8px;border-radius:4px;">NEW</span></h2>
+        <p style="color:#aaa;">使用3D分子图结构(原子坐标+化学键)的图神经网络模型,与RandomForest双模型对比</p>
+        
+        <div style="margin:20px 0;">
+            <label style="display:block;margin-bottom:8px;">分子SMILES:</label>
+            <div style="display:flex;gap:10px;">
+                <input type="text" id="gnnSmiles" value="CCO" placeholder="输入SMILES,如CCO(乙醇)" style="flex:1;padding:10px;background:#1a1a2e;border:1px solid #333;color:#fff;border-radius:6px;font-family:monospace;">
+                <button onclick="predictGNN()" style="padding:10px 20px;background:#00d4ff;color:#000;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">GNN预测</button>
+            </div>
+            <div style="margin-top:8px;">
+                <button onclick="setSmiles('CCO')" style="padding:4px 10px;background:#333;color:#fff;border:none;border-radius:3px;cursor:pointer;margin-right:5px;">乙醇</button>
+                <button onclick="setSmiles('c1ccccc1')" style="padding:4px 10px;background:#333;color:#fff;border:none;border-radius:3px;cursor:pointer;margin-right:5px;">苯</button>
+                <button onclick="setSmiles('CC(=O)Oc1ccccc1C(=O)O')" style="padding:4px 10px;background:#333;color:#fff;border:none;border-radius:3px;cursor:pointer;margin-right:5px;">阿司匹林</button>
+                <button onclick="setSmiles('CN1C=NC2=C1C(=O)N(C(=O)N2C)C')" style="padding:4px 10px;background:#333;color:#fff;border:none;border-radius:3px;cursor:pointer;margin-right:5px;">咖啡因</button>
+            </div>
+        </div>
+        
+        <div id="gnnResult" style="margin-top:20px;"></div>
+    </div>
+
+    <script>
+    function setSmiles(smi) {
+        document.getElementById('gnnSmiles').value = smi;
+    }
+    
+    function predictGNN() {
+        const smi = document.getElementById('gnnSmiles').value;
+        const key = document.getElementById('apiKey')?.value || 'gtk_internal_eve_2026';
+        const resultDiv = document.getElementById('gnnResult');
+        
+        resultDiv.innerHTML = '<div style="color:#00d4ff;">⏳ GNN预测中(需要生成3D结构+图神经网络推理)...</div>';
+        
+        fetch('/api/v1/gnn/predict?smiles=' + encodeURIComponent(smi), {
+            headers: {'Authorization': 'Bearer ' + key}
+        })
+        .then(r => r.json())
+        .then(d => {
+            if (d.error) {
+                resultDiv.innerHTML = '<div style="color:#f00;">❌ ' + d.error + '</div>';
+                return;
+            }
+            
+            let html = '<div style="background:#0a1a2a;padding:20px;border-radius:8px;">';
+            html += '<h3 style="color:#00d4ff;margin-bottom:15px;">📊 双模型预测结果</h3>';
+            html += '<table style="width:100%;border-collapse:collapse;">';
+            html += '<tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:8px;color:#aaa;">属性</th><th style="text-align:center;padding:8px;color:#00d4ff;">GNN(图神经网络)</th><th style="text-align:center;padding:8px;color:#aaa;">RF(随机森林)</th><th style="text-align:center;padding:8px;color:#888;">差异</th></tr>';
+            
+            for (const [key, val] of Object.entries(d.predictions)) {
+                const diff = (val.gnn_value && val.rf_value && val.rf_value !== 'N/A') ? Math.abs(val.gnn_value - val.rf_value).toFixed(3) : '—';
+                html += '<tr style="border-bottom:1px solid #222;"><td style="padding:8px;">' + val.label + '</td>';
+                html += '<td style="text-align:center;padding:8px;color:#00d4ff;font-size:1.1em;font-weight:bold;">' + val.gnn_value + '</td>';
+                html += '<td style="text-align:center;padding:8px;color:#aaa;">' + val.rf_value + '</td>';
+                html += '<td style="text-align:center;padding:8px;color:#888;">' + diff + '</td></tr>';
+            }
+            html += '</table>';
+            html += '<div style="margin-top:15px;padding:10px;background:#111;border-radius:4px;font-size:0.85em;color:#888;">';
+            html += '🧠 <b>GNN:</b> ' + (d.model_info?.gnn || 'MPNN 3层') + '<br>';
+            html += '🌳 <b>RF:</b> ' + (d.model_info?.rf || 'RandomForest') + '<br>';
+            html += '💡 <b>GNN优势:</b> ' + (d.model_info?.gnn_advantage || '使用3D分子图结构');
+            html += '</div></div>';
+            
+            resultDiv.innerHTML = html;
+        })
+        .catch(e => {
+            resultDiv.innerHTML = '<div style="color:#f00;">❌ ' + e.message + '</div>';
+        });
+    }
+    </script>
+</body>
+</html>

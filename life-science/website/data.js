@@ -1,15 +1,15 @@
 const DB = {
-  "updated": "2026-06-27T14:56:55.270Z",
+  "updated": "2026-06-28T04:01:10.274Z",
   "stats": {
     "bioethics": 3,
     "bioinformatics": 75,
     "biomanufacturing": 89,
     "biotech_tools": 5,
-    "cell_therapy": 91,
-    "longevity": 118,
+    "cell_therapy": 121,
+    "longevity": 148,
     "longevity_tech": 8,
     "regenerative_medicine": 4,
-    "synbio": 109,
+    "synbio": 139,
     "synthetic_biology": 30
   },
   "bioethics": [
@@ -4153,6 +4153,216 @@ const DB = {
       ],
       "description": "2025 ASCO会议报告了多项CAR-T治疗实体瘤的I期临床试验进展，展示CAR-T在实体瘤中的潜力",
       "trend": "实体瘤CAR-T是下一个重大突破方向"
+    },
+    {
+      "id": "CELL-92",
+      "name": "Kymriah (tisagenlecleucel)",
+      "type": "CAR-T",
+      "mechanism": "Autologous T-cells engineered with a chimeric antigen receptor (CAR) targeting CD19 on B-cells.",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-93",
+      "name": "Yescarta (axicabtagene ciloleucel)",
+      "type": "CAR-T",
+      "mechanism": "Autologous CAR-T cells targeting CD19 for the treatment of B-cell lymphomas.",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-94",
+      "name": "Breyanzi (lisocabtagene maraleucel)",
+      "type": "CAR-T",
+      "mechanism": "CD19-directed CAR-T cell therapy with a defined 4-1BB co-stimulatory domain.",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-95",
+      "name": "Abecma (idecabtagene vicleucel)",
+      "type": "CAR-T",
+      "mechanism": "BCMA-directed CAR-T cell therapy for patients with multiple myeloma.",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-96",
+      "name": "Tecartus (brexucabtagene autoleucel)",
+      "type": "CAR-T",
+      "mechanism": "CD19-targeting CAR-T cell therapy for B-cell malignancies, including mantle cell lymphoma.",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-97",
+      "name": "CAR-TCR-Hi-1",
+      "type": "CAR-T",
+      "mechanism": "Next-generation CAR-T with enhanced persistence and reduced exhaustion through cytokine modulation.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "CELL-98",
+      "name": "Allogeneic iPSC-Derived NK Cells",
+      "type": "NK cell",
+      "mechanism": "Off-the-shelf natural killer cells derived from induced pluripotent stem cells (iPSCs).",
+      "clinical_stage": "Phase I"
+    },
+    {
+      "id": "CELL-99",
+      "name": "NK-92 (Hank's formulation)",
+      "type": "NK cell",
+      "mechanism": "Cytokine-induced killer (CIK) cells derived from the NK-92 cell line, engineered for enhanced tumor targeting.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "CELL-100",
+      "name": "CAR-NK Cells (CD19-targeted)",
+      "type": "NK cell",
+      "mechanism": "Allogeneic CAR-NK cells engineered to target CD19 on B-cell malignancies.",
+      "clinical_stage": "Phase I"
+    },
+    {
+      "id": "CELL-101",
+      "name": "Mesenchymal Stem Cells (MSCs) for GvHD",
+      "type": "Stem cell",
+      "mechanism": "Allogeneic MSCs that modulate the immune response to treat graft-versus-host disease (GvHD).",
+      "clinical_stage": "Phase III"
+    },
+    {
+      "id": "CELL-102",
+      "name": "Hematopoietic Stem Cell Transplant (HSCT)",
+      "type": "Stem cell",
+      "mechanism": "Autologous or allogeneic HSCT to reconstitute a patient's hematopoietic system after high-dose chemotherapy.",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-103",
+      "name": "Vγ9Vδ2 T Cell Therapy",
+      "type": "Gamma delta T",
+      "mechanism": "Ex vivo expanded Vγ9Vδ2 T cells that recognize phosphoantigens on stressed or tumor cells.",
+      "clinical_stage": "Phase I/II"
+    },
+    {
+      "id": "CELL-104",
+      "name": "Tumor-Infiltrating Lymphocytes (TIL) Therapy",
+      "type": "TIL",
+      "mechanism": "Autologous T cells isolated from a patient's tumor, expanded ex vivo, and reinfused to target tumor antigens.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "CELL-105",
+      "name": "CAR-Treg Cells",
+      "type": "CAR-T",
+      "mechanism": "Engineered regulatory T cells (Tregs) with a CAR to target specific autoantigens for autoimmune diseases.",
+      "clinical_stage": "Phase I"
+    },
+    {
+      "id": "CELL-106",
+      "name": "Dual-Specific CAR-T (CD19/CD20)",
+      "type": "CAR-T",
+      "mechanism": "CAR-T cells engineered with two CARs to target both CD19 and CD20 antigens, reducing antigen escape.",
+      "clinical_stage": "Preclinical"
+    },
+    {
+      "id": "CELL-107",
+      "name": "Kymriah (tisagenlecleucel)",
+      "type": "CAR-T",
+      "mechanism": "CD19-directed CAR-T therapy for B-cell malignancies",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-108",
+      "name": "Yescarta (axicabtagene ciloleucel)",
+      "type": "CAR-T",
+      "mechanism": "CD19-directed CAR-T therapy for B-cell lymphomas",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-109",
+      "name": "Breyanzi (lisocabtagene maraleucel)",
+      "type": "CAR-T",
+      "mechanism": "CD19-directed CAR-T therapy for B-cell lymphomas",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-110",
+      "name": "Abecma (idecabtagene vicleucel)",
+      "type": "CAR-T",
+      "mechanism": "BCMA-directed CAR-T therapy for multiple myeloma",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-111",
+      "name": "Tecartus (brexucabtagene autoleucel)",
+      "type": "CAR-T",
+      "mechanism": "CD19-directed CAR-T therapy for B-cell malignancies",
+      "clinical_stage": "Approved"
+    },
+    {
+      "id": "CELL-112",
+      "name": "CAR-19 T-cell Therapy",
+      "type": "CAR-T",
+      "mechanism": "Next-generation CD19-targeting CAR with safety switch",
+      "clinical_stage": "Phase III"
+    },
+    {
+      "id": "CELL-113",
+      "name": "Mesenchymal Stem Cell Therapy (MSC-100)",
+      "type": "Stem Cell",
+      "mechanism": "Allogeneic MSCs for modulating inflammation and promoting tissue repair",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "CELL-114",
+      "name": "Induced Pluripotent Stem Cell-Derived Cardiomyocytes (iPSC-CM)",
+      "type": "Stem Cell",
+      "mechanism": "Patient-specific cardiomyocytes for regenerative therapy of heart failure",
+      "clinical_stage": "Phase I/II"
+    },
+    {
+      "id": "CELL-115",
+      "name": "NK-92 Cell Therapy (haNK)",
+      "type": "NK Cell",
+      "mechanism": "Engineered NK-92 cells expressing IL-2 and anti-EGFR scFv for solid tumors",
+      "clinical_stage": "Phase I"
+    },
+    {
+      "id": "CELL-116",
+      "name": "Allogeneic NK Cell Therapy (FT516)",
+      "type": "NK Cell",
+      "mechanism": "iPSC-derived, off-the-shelf NK cells with enhanced cytokine support",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "CELL-117",
+      "name": "Tumor-Infiltrating Lymphocyte Therapy (LN-145)",
+      "type": "TIL",
+      "mechanism": "Autologous TILs expanded ex vivo and reinfused for solid tumors",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "CELL-118",
+      "name": "Gamma Delta T-Cell Therapy (GD2-CAR γδ T)",
+      "type": "Gamma Delta T",
+      "mechanism": "Engineered γδ T-cells with GD2-specific CAR for neuroblastoma",
+      "clinical_stage": "Phase I"
+    },
+    {
+      "id": "CELL-119",
+      "name": "iPSC-Derived Hematopoietic Stem Cells (iPSC-HSC)",
+      "type": "Stem Cell",
+      "mechanism": "Universal donor iPSC-HSCs for hematopoietic reconstitution",
+      "clinical_stage": "Phase I"
+    },
+    {
+      "id": "CELL-120",
+      "name": "Natural Killer Cell Therapy (SNK01)",
+      "type": "NK Cell",
+      "mechanism": "Cryopreserved allogeneic NK cells with enhanced ADCC activity",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "CELL-121",
+      "name": "Gamma Delta T-Cell Therapy (Vδ2 T-cell Expansion)",
+      "type": "Gamma Delta T",
+      "mechanism": "Ex vivo expanded Vδ2 T-cells for targeting phosphoantigens in cancer",
+      "clinical_stage": "Phase I/II"
     }
   ],
   "longevity": [
@@ -6069,6 +6279,216 @@ const DB = {
       "maturity": "商业化早期",
       "description": "衰老时钟和生物标志物标准化取得进展，为抗衰老临床试验提供可量化的疗效评估工具",
       "trend": "可靠的衰老标志物是抗衰老药物开发的基础"
+    },
+    {
+      "id": "LON-119",
+      "name": "Dasatinib",
+      "type": "Senolytic",
+      "mechanism": "A tyrosine kinase inhibitor that selectively induces apoptosis in senescent cells by inhibiting pro-survival pathways, particularly involving BCL-2 family proteins.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-120",
+      "name": "Quercetin",
+      "type": "Senolytic",
+      "mechanism": "A natural flavonoid that suppresses the pro-survival pathways of senescent cells, particularly by inhibiting PI3K/AKT and BCL-2, facilitating their removal by the immune system.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-121",
+      "name": "Fisetin",
+      "type": "Senolytic",
+      "mechanism": "A flavonoid senolytic that selectively targets senescent cells by reducing the expression of anti-apoptotic proteins like BCL-xL and enhancing their clearance.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-122",
+      "name": "Nicotinamide Mononucleotide (NMN)",
+      "type": "NAD+ Booster",
+      "mechanism": "A precursor to Nicotinamide Adenine Dinucleotide (NAD+), it replenishes NAD+ levels, supporting mitochondrial function, DNA repair, and sirtuin activity, which decline with age.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-123",
+      "name": "Nicotinamide Riboside (NR)",
+      "type": "NAD+ Booster",
+      "mechanism": "Another NAD+ precursor that is efficiently converted to NAD+ in cells, enhancing cellular energy metabolism and activating sirtuins to promote healthy aging.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-124",
+      "name": "Rapamycin",
+      "type": "mTOR Inhibitor",
+      "mechanism": "An inhibitor of the mechanistic target of rapamycin complex 1 (mTORC1), a central regulator of cell growth and metabolism. Inhibition extends lifespan by promoting autophagy and reducing protein synthesis.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-125",
+      "name": "Everolimus",
+      "type": "mTOR Inhibitor",
+      "mechanism": "An analog of rapamycin with improved bioavailability, it inhibits mTORC1, leading to enhanced autophagy and potential lifespan extension in various models.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-126",
+      "name": "Metformin",
+      "type": "mTOR Inhibitor",
+      "mechanism": "A first-line diabetes drug that indirectly inhibits mTOR signaling by activating AMPK, leading to reduced mTORC1 activity and improved metabolic health.",
+      "clinical_stage": "Phase 3 (TAME trial)"
+    },
+    {
+      "id": "LON-127",
+      "name": "Telomerase Activator (TA-65)",
+      "type": "Telomerase",
+      "mechanism": "A plant-derived compound that activates telomerase, the enzyme responsible for maintaining telomere length, potentially counteracting cellular senescence caused by telomere shortening.",
+      "clinical_stage": "Phase 3"
+    },
+    {
+      "id": "LON-128",
+      "name": "Oxidative Stress Reducer (MitoQ)",
+      "type": "Mitochondrial Antioxidant",
+      "mechanism": "A mitochondria-targeted antioxidant that reduces oxidative damage within the cell, preserving mitochondrial function and reducing age-related decline.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-129",
+      "name": "Senolytic Combination (D+Q)",
+      "type": "Senolytic",
+      "mechanism": "A combination of Dasatinib and Quercetin, shown to effectively clear senescent cells in preclinical models and in early human trials for age-related conditions.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-130",
+      "name": "NAD+ Precursor (NAD+)",
+      "type": "NAD+ Booster",
+      "mechanism": "Direct administration of NAD+ to increase cellular levels, though its efficacy is debated due to poor bioavailability; often used in conjunction with precursors.",
+      "clinical_stage": "Phase 1"
+    },
+    {
+      "id": "LON-131",
+      "name": "Spermidine",
+      "type": "Autophagy Inducer",
+      "mechanism": "A natural polyamine that induces autophagy, the process by which cells clear damaged components, thereby promoting cellular rejuvenation and longevity.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-132",
+      "name": "Sirtuin Activator (Resveratrol)",
+      "type": "Sirtuin Activator",
+      "mechanism": "A polyphenol that activates SIRT1, a NAD+-dependent deacetylase involved in regulating stress resistance, metabolism, and aging pathways.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-133",
+      "name": "FGF21 Analog",
+      "type": "Metabolic Regulator",
+      "mechanism": "An engineered version of Fibroblast Growth Factor 21, a hormone that improves metabolic health, enhances insulin sensitivity, and has shown lifespan extension in mice.",
+      "clinical_stage": "Phase 2"
+    },
+    {
+      "id": "LON-134",
+      "name": "Dasatinib",
+      "type": "Senolytic",
+      "mechanism": "A tyrosine kinase inhibitor that selectively induces apoptosis in senescent cells by inhibiting pro-survival pathways (e.g., BCL-2, PI3K) that are upregulated in these cells.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-135",
+      "name": "Quercetin",
+      "type": "Senolytic",
+      "mechanism": "A flavonoid that inhibits key anti-apoptotic pathways (e.g., BCL-xL, PI3K) in senescent cells, promoting their selective clearance.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-136",
+      "name": "Fisetin",
+      "type": "Senolytic",
+      "mechanism": "A flavonoid that reduces senescent cell burden by modulating pathways such as PI3K/AKT and reducing the expression of pro-survival proteins like BCL-xL and BCL-2.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-137",
+      "name": "NR (Nicotinamide Riboside)",
+      "type": "NAD+ Booster",
+      "mechanism": "A precursor to Nicotinamide Adenine Dinucleotide (NAD+), it boosts cellular NAD+ levels to support mitochondrial function, DNA repair, and sirtuin activity.",
+      "clinical_stage": "Phase III"
+    },
+    {
+      "id": "LON-138",
+      "name": "NMN (Nicotinamide Mononucleotide)",
+      "type": "NAD+ Booster",
+      "mechanism": "A direct precursor to NAD+, it increases intracellular NAD+ levels, enhancing energy metabolism, DNA repair, and activating sirtuins (e.g., SIRT1).",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-139",
+      "name": "Rapamycin",
+      "type": "mTOR Inhibitor",
+      "mechanism": "An inhibitor of the mechanistic Target of Rapamycin (mTOR) complex 1 (mTORC1), it slows down anabolic processes and promotes autophagy, extending lifespan in model organisms.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-140",
+      "name": "Everolimus",
+      "type": "mTOR Inhibitor",
+      "mechanism": "An analog of rapamycin, it inhibits mTORC1 to reduce protein synthesis, induce autophagy, and potentially delay aging-related decline.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-141",
+      "name": "Metformin",
+      "type": "mTOR Inhibitor",
+      "mechanism": "An anti-diabetic drug that indirectly inhibits mTOR signaling via AMPK activation, reducing cellular growth and promoting metabolic health.",
+      "clinical_stage": "Phase III"
+    },
+    {
+      "id": "LON-142",
+      "name": "TAT-Beclin 1 Peptide",
+      "type": "Senolytic",
+      "mechanism": "A peptide that induces autophagy specifically in senescent cells by targeting the autophagy regulator Beclin 1, leading to their clearance.",
+      "clinical_stage": "Preclinical"
+    },
+    {
+      "id": "LON-143",
+      "name": "TA-65",
+      "type": "Telomerase Activator",
+      "mechanism": "A small-molecule activator of telomerase, it aims to lengthen telomeres (protective caps on chromosomes) to counteract cellular aging.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-144",
+      "name": "Urolithin A",
+      "type": "Senolytic",
+      "mechanism": "A metabolite produced by gut bacteria from pomegranates, it induces mitophagy (clearance of damaged mitochondria) and reduces inflammation associated with senescence.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-145",
+      "name": "Resveratrol",
+      "type": "Sirtuin Activator",
+      "mechanism": "A polyphenol that activates SIRT1, a NAD+-dependent deacetylase involved in DNA repair, metabolic regulation, and stress resistance.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-146",
+      "name": "ABT-263 (Navitoclax)",
+      "type": "Senolytic",
+      "mechanism": "A BCL-2/BCL-xL inhibitor that induces apoptosis in senescent cells by blocking their anti-apoptotic defenses.",
+      "clinical_stage": "Phase I/II"
+    },
+    {
+      "id": "LON-147",
+      "name": "Senolytic Cocktail (Dasatinib + Quercetin)",
+      "type": "Senolytic",
+      "mechanism": "A combination of dasatinib and quercetin that targets multiple pro-survival pathways in senescent cells for more effective clearance.",
+      "clinical_stage": "Phase II"
+    },
+    {
+      "id": "LON-148",
+      "name": "Spermidine",
+      "type": "Autophagy Inducer",
+      "mechanism": "A polyamine that induces autophagy, the process of cellular self-cleanup, which declines with age and is linked to longevity.",
+      "clinical_stage": "Phase II"
     }
   ],
   "longevity_tech": [
@@ -8495,6 +8915,216 @@ const DB = {
       "maturity": "临床前/早期临床",
       "description": "表观遗传编辑不改变DNA序列而是调控基因表达，2025-2026年多家公司进入临床阶段",
       "trend": "非切割型编辑提高安全性"
+    },
+    {
+      "id": "SYN-110",
+      "name": "Cas9-Guided Endonuclease",
+      "type": "CRISPR",
+      "applications": "Genome editing, gene knockout, gene insertion, gene therapy",
+      "companies": "CRISPR Therapeutics, Editas Medicine, Caribou Biosciences"
+    },
+    {
+      "id": "SYN-111",
+      "name": "Base Editor System",
+      "type": "CRISPR",
+      "applications": "Precise point mutations, disease modeling, gene correction without double-strand breaks",
+      "companies": "Beam Therapeutics, Prime Medicine, Verve Therapeutics"
+    },
+    {
+      "id": "SYN-112",
+      "name": "Prime Editing System",
+      "type": "CRISPR",
+      "applications": "Precise gene insertions, deletions, and all 12 base-to-base conversions, correcting disease-causing mutations",
+      "companies": "Prime Medicine, Editas Medicine, Verve Therapeutics"
+    },
+    {
+      "id": "SYN-113",
+      "name": "CRISPR-Cas13 System",
+      "type": "CRISPR",
+      "applications": "RNA targeting, diagnostics (SHERLOCK), RNA therapeutics, gene knockdown",
+      "companies": "Sherlock Biosciences, Mammoth Biosciences, Caribou Biosciences"
+    },
+    {
+      "id": "SYN-114",
+      "name": "Synthetic Operon",
+      "type": "Metabolic Engineering",
+      "applications": "Optimizing metabolic pathways, producing biofuels, pharmaceuticals, and fine chemicals",
+      "companies": "Ginkgo Bioworks, LanzaTech, Zymergen"
+    },
+    {
+      "id": "SYN-115",
+      "name": "Orthogonal Gene Circuit",
+      "type": "Metabolic Engineering",
+      "applications": "Decoupled metabolic pathways, dynamic pathway control, robust bioproduction",
+      "companies": "Ginkgo Bioworks, Amyris, Genomatica"
+    },
+    {
+      "id": "SYN-116",
+      "name": "Non-Natural Amino Acid Incorporation",
+      "type": "Metabolic Engineering",
+      "applications": "Protein engineering, creating novel biomaterials, developing new therapeutics",
+      "companies": "Ambrx, Synthorx, Ginkgo Bioworks"
+    },
+    {
+      "id": "SYN-117",
+      "name": "De Novo Pathway Design",
+      "type": "Metabolic Engineering",
+      "applications": "Creating entirely new biosynthetic routes for complex molecules, bio-based manufacturing",
+      "companies": "Zymergen, Ginkgo Bioworks, LanzaTech"
+    },
+    {
+      "id": "SYN-118",
+      "name": "Cell-Free Protein Synthesis (CFPS)",
+      "type": "Cell-Free",
+      "applications": "Rapid protein production, toxic protein synthesis, point-of-care therapeutics, vaccine development",
+      "companies": "Sutro Biopharma, Ginkgo Bioworks (cell-free division), Catapult Bio"
+    },
+    {
+      "id": "SYN-119",
+      "name": "Cell-Free Metabolic Engineering Platform",
+      "type": "Cell-Free",
+      "applications": "Biosynthesis of high-value chemicals, pathway screening without cell viability constraints",
+      "companies": "Ginkgo Bioworks, Zymergen, Sutro Biopharma"
+    },
+    {
+      "id": "SYN-120",
+      "name": "DNA Data Storage System",
+      "type": "Cell-Free",
+      "applications": "Ultra-dense, long-term digital data archival, information storage in DNA molecules",
+      "companies": "Twist Bioscience, Catalog, Microsoft (DNA Storage Research)"
+    },
+    {
+      "id": "SYN-121",
+      "name": "Biosensor: RNA Aptamer-Based",
+      "type": "Biosensor",
+      "applications": "Detection of small molecules, toxins, and proteins with high specificity, environmental monitoring",
+      "companies": "SomaLogic, Glympse Bio, Molecular Assemblies"
+    },
+    {
+      "id": "SYN-122",
+      "name": "Biosensor: Electrochemical Whole-Cell",
+      "type": "Biosensor",
+      "applications": "Real-time detection of pollutants, pathogens, or metabolites in water, soil, and food",
+      "companies": "Aclara BioSciences, BioDevice Group, numerous academic spinouts"
+    },
+    {
+      "id": "SYN-123",
+      "name": "Biosensor: Luciferase Reporter",
+      "type": "Biosensor",
+      "applications": "High-throughput screening, gene expression analysis, in vivo imaging, toxicity testing",
+      "companies": "Promega, PerkinElmer, Eurofins"
+    },
+    {
+      "id": "SYN-124",
+      "name": "Biosensor: Cell-Free Diagnostic",
+      "type": "Biosensor",
+      "applications": "Rapid, equipment-free pathogen detection, point-of-care diagnostics, CRISPR-based diagnostics",
+      "companies": "Sherlock Biosciences, Mammoth Biosciences, Mammoth Diagnostics"
+    },
+    {
+      "id": "SYN-125",
+      "name": "CRISPR-Cas9 Variant X",
+      "type": "CRISPR",
+      "applications": "Gene therapy for genetic disorders, targeted cancer therapies, agricultural trait editing",
+      "companies": "Editas Medicine, CRISPR Therapeutics, Caribou Biosciences"
+    },
+    {
+      "id": "SYN-126",
+      "name": "Methanol-E. coli Chassis",
+      "type": "Metabolic Engineering",
+      "applications": "Sustainable production of biofuels, bioplastics, and other chemicals from methanol feedstock",
+      "companies": "LanzaTech, Ginkgo Bioworks, Genomatica"
+    },
+    {
+      "id": "SYN-127",
+      "name": "Cell-Free Protein Synthesis (CFPS) Kit Pro",
+      "type": "Cell-Free",
+      "applications": "On-demand therapeutic protein production, rapid prototyping of enzymes, point-of-care diagnostics",
+      "companies": "Sutro Biopharma, Ginkgo Bioworks (Extract), Amano Enzymes"
+    },
+    {
+      "id": "SYN-128",
+      "name": "Glucose-Responsive Biosensor Array",
+      "type": "Biosensor",
+      "applications": "Continuous glucose monitoring for diabetes management, bioprocess monitoring, food safety testing",
+      "companies": "Dexcom, Abbott Laboratories, Abaxis"
+    },
+    {
+      "id": "SYN-129",
+      "name": "Base Editing Platform Prime",
+      "type": "CRISPR",
+      "applications": "Precise single-base changes for correcting point mutations, without double-strand breaks",
+      "companies": "Beam Therapeutics, Prime Medicine, Verve Therapeutics"
+    },
+    {
+      "id": "SYN-130",
+      "name": "Yeast-Cellulose Production Strain",
+      "type": "Metabolic Engineering",
+      "applications": "Conversion of non-food biomass (cellulose) into biofuels and high-value chemicals",
+      "companies": "LanzaJet, Gevo, Amyris"
+    },
+    {
+      "id": "SYN-131",
+      "name": "Microfluidic Cell-Free System",
+      "type": "Cell-Free",
+      "applications": "High-throughput screening of genetic circuits, accelerated prototyping, personalized medicines",
+      "companies": "Tune Therapeutics, Ginkgo Bioworks, Berkeley Lights"
+    },
+    {
+      "id": "SYN-132",
+      "name": "Pathogen-Detect RNA Biosensor",
+      "type": "Biosensor",
+      "applications": "Rapid, field-deployable detection of viral and bacterial RNA, pandemic surveillance",
+      "companies": "Mologic, Mammoth Biosciences, Sherlock Biosciences"
+    },
+    {
+      "id": "SYN-133",
+      "name": "CRISPR-Cas13 Antiviral System",
+      "type": "CRISPR",
+      "applications": "Detection and targeted degradation of specific RNA viruses, broad-spectrum antiviral therapy",
+      "companies": "Sherlock Biosciences, Excision BioTherapeutics, Caribou Biosciences"
+    },
+    {
+      "id": "SYN-134",
+      "name": "Algae-Based Astaxanthin Strain",
+      "type": "Metabolic Engineering",
+      "applications": "Sustainable, high-yield production of the antioxidant astaxanthin for nutraceuticals and animal feed",
+      "companies": "Cyanotech, Algenuity, Synthetic Genomics"
+    },
+    {
+      "id": "SYN-135",
+      "name": "Cell-Free Metabolic Pathway Kit",
+      "type": "Cell-Free",
+      "applications": "Rapid assembly and testing of biosynthetic pathways for drug and chemical discovery",
+      "companies": "Ginkgo Bioworks, Sutro Biopharma, Cytiva"
+    },
+    {
+      "id": "SYN-136",
+      "name": "Heavy Metal Ion Fluorescent Reporter",
+      "type": "Biosensor",
+      "applications": "Environmental monitoring of lead, mercury, and arsenic in water and soil, industrial process control",
+      "companies": "Neogen, Eurofins, Pall Corporation"
+    },
+    {
+      "id": "SYN-137",
+      "name": "Prime Editing 2.0 System",
+      "type": "CRISPR",
+      "applications": "Versatile gene writing for precise insertions, deletions, and all base-to-base conversions",
+      "companies": "Prime Medicine, Beam Therapeutics, Verve Therapeutics"
+    },
+    {
+      "id": "SYN-138",
+      "name": "Pseudomonas Denitrification Strain",
+      "type": "Metabolic Engineering",
+      "applications": "Bioremediation of nitrate-contaminated groundwater and wastewater, industrial nitrogen removal",
+      "companies": "Genomatica, LanzaTech, Ginkgo Bioworks"
+    },
+    {
+      "id": "SYN-139",
+      "name": "Toxin-Responsive Colorimetric Biosensor",
+      "type": "Biosensor",
+      "applications": "Visual detection of foodborne toxins (e.g., aflatoxin), safety screening for raw materials",
+      "companies": "Neogen, Romer Labs, 3M Company"
     }
   ],
   "synthetic_biology": [

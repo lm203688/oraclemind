@@ -1,0 +1,116 @@
+{
+  "platform": "SwarmLabs",
+  "version": "1.0",
+  "description": "分子性质预测工作流Skill系统",
+  "credit_anchors": {
+    "data_source": "9个学术界标准数据集(QM9/ChEMBL/Tox21/NIST等)",
+    "model_validation": "5-fold CV + 80/20 split,精度范围0.5-11.3%",
+    "citation": "自动生成BibTeX/APA/RIS引文"
+  },
+  "skills": [
+    {
+      "id": "skill_01_input",
+      "name": "分子输入解析",
+      "input": "SMILES或原子组成",
+      "output": "RDKit分子对象+13描述符",
+      "api": "/api/v1/ml/predict"
+    },
+    {
+      "id": "skill_02_quantum",
+      "name": "量子化学预测",
+      "input": "原子组成(C/H/N/O/F)",
+      "output": "偶极矩/HOMO/LUMO/带隙/极化率/零点能",
+      "api": "/api/v1/qm9/predict",
+      "model": "RandomForest 13万分子训练",
+      "precision": "3.2-7.4%"
+    },
+    {
+      "id": "skill_03_gnn",
+      "name": "GNN图神经网络预测",
+      "input": "SMILES→3D结构→分子图",
+      "output": "6个量子化学属性(GNN+RF双模型对比)",
+      "api": "/api/v1/gnn/predict",
+      "model": "MPNN v2 (5层128维)",
+      "advantage": "使用3D分子拓扑结构"
+    },
+    {
+      "id": "skill_04_bio",
+      "name": "生物/化学性质预测",
+      "input": "SMILES",
+      "output": "logD/logS/水合自由能/pIC50/Tox21(12毒性)",
+      "api": "/api/v1/bio/predict",
+      "model": "4回归+12分类",
+      "precision": "2.5-11.3% | Tox21 85-97%"
+    },
+    {
+      "id": "skill_05_thermo",
+      "name": "热力学预测",
+      "input": "SMILES",
+      "output": "沸点/生成焓",
+      "api": "/api/v1/ml/predict",
+      "model": "RF 13特征",
+      "precision": "5.2% / 4.4%"
+    },
+    {
+      "id": "skill_06_uncertainty",
+      "name": "不确定性量化",
+      "input": "SMILES",
+      "output": "预测值+置信区间(P5-P95)",
+      "api": "/api/v1/ml/predict_uq",
+      "advantage": "标记低置信度预测需要实验验证"
+    },
+    {
+      "id": "skill_07_explain",
+      "name": "可解释分析",
+      "input": "SMILES",
+      "output": "SHAP特征贡献分解",
+      "api": "/api/v1/explain/predict",
+      "advantage": "从黑箱到顾问,指导结构优化"
+    },
+    {
+      "id": "skill_08_multifidelity",
+      "name": "多保真度融合",
+      "input": "SMILES批量",
+      "output": "三层漏斗筛选(ML→高精度→DFT)",
+      "api": "/api/v1/multifidelity/predict",
+      "advantage": "计算成本降低90%+"
+    },
+    {
+      "id": "skill_09_citation",
+      "name": "引文生成",
+      "input": "预测结果",
+      "output": "BibTeX/APA/RIS格式引文",
+      "api": "/api/v1/workflow/citation",
+      "advantage": "确保API结果可引用到论文"
+    },
+    {
+      "id": "skill_10_workflow",
+      "name": "全流程工作流",
+      "input": "SMILES",
+      "output": "一键并行调用skill_02~08,汇总报告",
+      "api": "/api/v1/workflow/full_predict",
+      "advantage": "一次调用获取分子全维度画像"
+    }
+  ],
+  "pipeline": {
+    "stage_0_input": "SMILES解析+3D结构生成",
+    "stage_1_quantum": "QM9 RF + GNNv2 双模型",
+    "stage_2_bio": "logD/logS/毒性同时预测",
+    "stage_3_thermo": "沸点/生成焓",
+    "stage_4_uncertainty": "UQ置信区间",
+    "stage_5_explain": "SHAP特征贡献",
+    "stage_6_report": "JSON报告+引文生成"
+  },
+  "traceability": {
+    "format": "swarmlabs_trace.json",
+    "fields": [
+      "timestamp",
+      "smiles",
+      "skills_called",
+      "predictions",
+      "model_versions",
+      "data_sources"
+    ],
+    "purpose": "每次预测可追溯,确保学术规范"
+  }
+}

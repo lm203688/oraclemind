@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蜂群科研 - 虚拟加速实验器</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+.header { background: linear-gradient(135deg, #1e293b, #334155); padding: 20px 30px; border-bottom: 1px solid #475569; }
+.header h1 { font-size: 24px; color: #38bdf8; }
+.header p { font-size: 14px; color: #94a3b8; margin-top: 5px; }
+.container { display: flex; gap: 20px; padding: 20px; max-width: 1400px; margin: 0 auto; }
+.sidebar { width: 280px; background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; }
+.main { flex: 1; background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; min-height: 600px; }
+.section-title { font-size: 16px; color: #38bdf8; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 1px solid #334155; }
+.mode-btn { display: block; width: 100%; padding: 12px; margin-bottom: 8px; background: #334155; border: 1px solid #475569; border-radius: 8px; color: #e2e8f0; cursor: pointer; text-align: left; transition: all 0.2s; }
+.mode-btn:hover { background: #475569; border-color: #38bdf8; }
+.mode-btn.active { background: #0ea5e9; border-color: #38bdf8; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-size: 13px; color: #94a3b8; margin-bottom: 5px; }
+.form-group select, .form-group input { width: 100%; padding: 8px 12px; background: #0f172a; border: 1px solid #475569; border-radius: 6px; color: #e2e8f0; font-size: 14px; }
+.form-group select:focus, .form-group input:focus { outline: none; border-color: #38bdf8; }
+.btn-run { width: 100%; padding: 12px; background: linear-gradient(135deg, #0ea5e9, #2563eb); border: none; border-radius: 8px; color: white; font-size: 16px; cursor: pointer; transition: all 0.2s; }
+.btn-run:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(14,165,233,0.4); }
+.btn-run:disabled { opacity: 0.5; cursor: not-allowed; }
+.result-card { background: #0f172a; border-radius: 8px; padding: 15px; margin-bottom: 10px; border: 1px solid #334155; }
+.result-label { font-size: 12px; color: #64748b; }
+.result-value { font-size: 20px; font-weight: bold; color: #38bdf8; }
+.result-bar { height: 8px; background: #334155; border-radius: 4px; margin-top: 8px; overflow: hidden; }
+.result-bar-fill { height: 100%; background: linear-gradient(90deg, #0ea5e9, #2563eb); border-radius: 4px; transition: width 0.5s; }
+.rank-item { display: flex; align-items: center; padding: 10px; background: #0f172a; border-radius: 6px; margin-bottom: 6px; border: 1px solid #334155; }
+.rank-num { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 12px; }
+.rank-1 { background: #f59e0b; color: #000; }
+.rank-2 { background: #94a3b8; color: #000; }
+.rank-3 { background: #b45309; color: #000; }
+.rank-4plus { background: #334155; color: #e2e8f0; }
+.rank-info { flex: 1; }
+.rank-name { font-size: 14px; font-weight: 500; }
+.rank-value { font-size: 12px; color: #64748b; }
+.loading { text-align: center; padding: 40px; color: #64748b; }
+.spinner { display: inline-block; width: 40px; height: 40px; border: 3px solid #334155; border-top: 3px solid #38bdf8; border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+.badge-safe { background: #065f46; color: #34d399; }
+.badge-caution { background: #78350f; color: #fbbf24; }
+.badge-danger { background: #7f1d1d; color: #f87171; }
+.badge-high { background: #065f46; color: #34d399; }
+.badge-medium { background: #78350f; color: #fbbf24; }
+.badge-low { background: #7f1d1d; color: #f87171; }
+.chart-container { background: #0f172a; border-radius: 8px; padding: 15px; margin-top: 10px; }
+canvas { max-width: 100%; }
+.aging-curve { display: flex; align-items: end; gap: 4px; height: 120px; padding: 10px 0; }
+.aging-bar { flex: 1; background: linear-gradient(180deg, #38bdf8, #0ea5e9); border-radius: 4px 4px 0 0; position: relative; min-height: 4px; transition: height 0.5s; }
+.aging-bar:hover { background: linear-gradient(180deg, #fbbf24, #f59e0b); }
+.aging-label { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #64748b; white-space: nowrap; }
+.aging-value { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #38bdf8; }
+.tag { display: inline-block; padding: 2px 6px; background: #334155; border-radius: 4px; font-size: 11px; margin: 2px; }
+.param-input-row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+.param-input-row label { width: 120px; font-size: 13px; color: #94a3b8; }
+.param-input-row input { flex: 1; }
+
+@media print {
+    .sidebar { display: none; }
+    .container { padding: 0; }
+    .main { border: none; }
+}
+.btn-export { padding: 8px 16px; background: linear-gradient(135deg, #059669, #047857); border: none; border-radius: 8px; color: white; font-size: 14px; cursor: pointer; margin-left: 10px; }
+.btn-export:hover { transform: translateY(-1px); }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>蜂群科研 - 虚拟加速实验器</h1>
+    <p>30引擎 × 278种材料 × 加速老化 × 成本优化 × 安全检测</p>
+</div>
+<div class="container">
+    <div class="sidebar">
+        <div class="section-title">实验模式</div>
+        <button class="mode-btn active" onclick="switchMode('overview')" id="btn-overview">📊 平台概览</button>
+        <button class="mode-btn" onclick="switchMode('screen')" id="btn-screen">筛选材料（从库中选Top）</button>
+        <button class="mode-btn" onclick="switchMode('run')" id="btn-run">运行实验（输入条件预测）</button>
+        <button class="mode-btn" onclick="switchMode('aging')" id="btn-aging">加速老化（模拟N年）</button>
+        <button class="mode-btn" onclick="switchMode('formulation')" id="btn-formulation">配方搜索（找最优配比）</button>
+        <button class="mode-btn" onclick="switchMode('safety')" id="btn-safety">安全检测（极端条件）</button>
+        <button class="mode-btn" onclick="switchMode('chain')" id="btn-chain">流程串联（多步工艺）</button>
+        <button class="mode-btn" onclick="switchMode('report')" id="btn-report">精度报告（泛化验证）</button>
+        <button class="mode-btn" onclick="switchMode('compare')" id="btn-compare">实验对比（A/B对照）</button>
+        <button class="mode-btn" onclick="switchMode('materials')" id="btn-materials">材料库（426种）</button>
+        
+        <div style="margin-top: 20px;">
+            <div class="section-title">API状态</div>
+            <div id="api-status" style="font-size: 13px; color: #64748b;">检查中...</div>
+        </div>
+        <div style="margin-top: 20px;">
+            <div class="section-title">历史记录</div>
+            <div id="history-list" style="font-size: 12px; color: #64748b;"></div>
+            <button onclick="clearHistory()" style="margin-top:5px;padding:4px 8px;background:#334155;border:none;border-radius:4px;color:#94a3b8;cursor:pointer;font-size:11px;">清空</button>
+        </div>
+    </div>
+    
+    <div class="main" id="main-content">
+        <!-- 动态内容 -->
+    </div>
+</div>
+
+<script>
+const API_BASE = 'http://150.158.119.19:8461';
+let currentMode = 'overview';
+let enginesCache = null;
+
+async function api(path, options = {}) {
+    const url = API_BASE + path;
+    const resp = await fetch(url, { ...options, headers: { 'Content-Type': 'application/json', ...options.headers } });
+    return resp.json();
+}
+
+async function checkAPI() {
+    try {
+        const data = await api('/api/v1/health');
+        document.getElementById('api-status').innerHTML = `<span style="color:#34d399;">● 在线</span> — ${data.engines}引擎`;
+        return true;
+    } catch {
+        document.getElementById('api-status').innerHTML = '<span style="color:#f87171;">● 离线</span>';
+        return false;
+    }
+}
+
+async function loadEngines() {
+    if (enginesCache) return enginesCache;
+    const data = await api('/api/v1/engines');
+    enginesCache = data.engines;
+    return enginesCache;
+}
+
+function switchMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('btn-' + mode).classList.add('active');
+    renderMode();
+}
+
+async function renderMode() {
+    const main = document.getElementById('main-content');
+    const engines = await loadEngines();
+    
+    if (currentMode === 'overview') {
+        main.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>';
+        loadOverview(engines);
+    } else if (currentMode === 'screen') {
+        main.innerHTML = `
+            <div class="section-title">筛选材料 — 从材料库自动选出Top-K</div>
+            <div class="form-group">
+                <label>实验领域</label>
+                <select id="screen-engine">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+            </div>
+            <div class="form-group">
+                <label>选出前几名</label>
+                <select id="screen-topk">
+                    <option value="3">Top 3</option>
+                    <option value="5" selected>Top 5</option>
+                    <option value="10">Top 10</option>
+                </select>
+            </div>
+            <button class="btn-run" onclick="runScreening()">开始筛选</button>
+            <div id="screen-result" style="margin-top: 20px;"></div>
+        `;
+    } else if (currentMode === 'run') {
+        main.innerHTML = `
+            <div class="section-title">运行实验 — 输入条件预测结果</div>
+            <div class="form-group">
+                <label>实验领域</label>
+                <select id="run-engine" onchange="loadEngineParams()">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+            </div>
+            <div id="run-params"></div>
+            <button class="btn-run" onclick="runExperiment()">运行实验</button>
+            <div id="run-result" style="margin-top: 20px;"></div>
+        `;
+        loadEngineParams();
+    } else if (currentMode === 'aging') {
+        main.innerHTML = `
+            <div class="section-title">加速老化 — 模拟数月/数年老化</div>
+            <div class="form-group">
+                <label>实验领域</label>
+                <select id="aging-engine" onchange="loadAgingParams()">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+            </div>
+            <div id="aging-params"></div>
+            <div class="form-group">
+                <label>模拟时长（年）</label>
+                <input type="number" id="aging-years" value="5" min="0.1" max="50" step="0.5">
+            </div>
+            <div class="form-group">
+                <label>环境类型</label>
+                <select id="aging-env">
+                    <option value="standard">标准条件（实验室）</option>
+                    <option value="outdoor" selected>户外（风吹日晒）</option>
+                    <option value="humid">高湿环境</option>
+                    <option value="uv">强紫外照射</option>
+                    <option value="thermal_cycle">温度循环</option>
+                    <option value="corrosive">腐蚀环境</option>
+                </select>
+            </div>
+            <button class="btn-run" onclick="runAging()">开始老化模拟</button>
+            <div id="aging-result" style="margin-top: 20px;"></div>
+        `;
+        loadAgingParams();
+    } else if (currentMode === 'formulation') {
+        main.innerHTML = `
+            <div class="section-title">配方搜索 — 在参数空间搜索最优配比</div>
+            <div class="form-group">
+                <label>实验领域</label>
+                <select id="form-engine">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+            </div>
+            <div class="form-group">
+                <label>预算约束（元，0=无约束）</label>
+                <input type="number" id="form-budget" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label>最大评估次数</label>
+                <input type="number" id="form-maxeval" value="50" min="10" max="500">
+            </div>
+            <button class="btn-run" onclick="runFormulation()">搜索最优配比</button>
+            <div id="form-result" style="margin-top: 20px;"></div>
+        `;
+    } else if (currentMode === 'chain') {
+        main.innerHTML = `
+            <div class="section-title">流程串联 — 多引擎串联模拟完整工艺链</div>
+            <div style="background:#0f172a;border-radius:8px;padding:15px;margin-bottom:15px;border:1px solid #334155;">
+                <div style="font-size:13px;color:#94a3b8;margin-bottom:8px;">流程示例：光催化产氢 → 膜分离纯化 → 结晶</div>
+                <div id="chain-steps"></div>
+                <button class="btn-run" style="margin-top:10px;width:auto;padding:8px 16px;font-size:14px;" onclick="addChainStep()">+ 添加步骤</button>
+                <button class="btn-run" style="margin-top:10px;width:auto;padding:8px 16px;font-size:14px;margin-left:10px;background:linear-gradient(135deg,#f59e0b,#d97706);" onclick="runChain()">运行流程</button>
+            </div>
+            <div id="chain-result" style="margin-top: 20px;"></div>
+        `;
+        addChainStep();
+    } else if (currentMode === 'report') {
+        main.innerHTML = `
+            <div class="section-title">泛化精度验证报告 — 80/20拆分测试</div>
+            <div id="report-content"><div class="loading"><div class="spinner"></div><p>正在加载...</p></div></div>
+        `;
+        loadReport();
+    } else if (currentMode === 'compare') {
+        main.innerHTML = `
+            <div class="section-title">实验对比 — A/B条件对照</div>
+            <div style="display:flex;gap:15px;">
+                <div style="flex:1;background:#0f172a;border-radius:8px;padding:15px;border:1px solid #334155;">
+                    <div style="font-size:14px;color:#38bdf8;margin-bottom:10px;">方案A</div>
+                    <div class="form-group">
+                        <label>实验领域</label>
+                        <select id="compare-engine-a">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+                    </div>
+                    <div class="form-group">
+                        <label>温度（°C）</label>
+                        <input type="number" id="compare-temp-a" value="25">
+                    </div>
+                    <div class="form-group">
+                        <label>pH</label>
+                        <input type="number" id="compare-ph-a" value="7" step="0.5">
+                    </div>
+                </div>
+                <div style="flex:1;background:#0f172a;border-radius:8px;padding:15px;border:1px solid #334155;">
+                    <div style="font-size:14px;color:#f59e0b;margin-bottom:10px;">方案B</div>
+                    <div class="form-group">
+                        <label>实验领域</label>
+                        <select id="compare-engine-b">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+                    </div>
+                    <div class="form-group">
+                        <label>温度（°C）</label>
+                        <input type="number" id="compare-temp-b" value="60">
+                    </div>
+                    <div class="form-group">
+                        <label>pH</label>
+                        <input type="number" id="compare-ph-b" value="5" step="0.5">
+                    </div>
+                </div>
+            </div>
+            <button class="btn-run" onclick="runCompare()">对比运行</button>
+            <div id="compare-result" style="margin-top: 20px;"></div>
+        `;
+    } else if (currentMode === 'materials') {
+        main.innerHTML = `
+            <div class="section-title">材料库 — 30领域426种材料</div>
+            <div class="form-group">
+                <label>选择领域</label>
+                <select id="mat-engine" onchange="loadMaterials()">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+            </div>
+            <div id="mat-list"></div>
+        `;
+        loadMaterials();
+    } else if (currentMode === 'safety') {
+        main.innerHTML = `
+            <div class="section-title">安全检测 — 极端条件可靠性评估</div>
+            <div class="form-group">
+                <label>实验领域</label>
+                <select id="safety-engine" onchange="loadSafetyParams()">${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}</select>
+            </div>
+            <div id="safety-params"></div>
+            <button class="btn-run" onclick="runSafety()">安全检测</button>
+            <div id="safety-result" style="margin-top: 20px;"></div>
+        `;
+        loadSafetyParams();
+    }
+}
+
+async function loadEngineParams() {
+    const engine = document.getElementById('run-engine').value;
+    const materials = await api('/api/v1/materials/' + engine);
+    let html = '<div class="form-group"><label>选择材料</label><select id="run-material">';
+    html += materials.materials.map(m => `<option value="${m}">${m}</option>`).join('');
+    html += '</select></div>';
+    html += `<div class="form-group"><label>温度（°C）</label><input type="number" id="run-temp" value="25"></div>`;
+    html += `<div class="form-group"><label>pH</label><input type="number" id="run-ph" value="7" step="0.5"></div>`;
+    document.getElementById('run-params').innerHTML = html;
+}
+
+async function loadAgingParams() {
+    const engine = document.getElementById('aging-engine').value;
+    const materials = await api('/api/v1/materials/' + engine);
+    let html = '<div class="form-group"><label>选择材料</label><select id="aging-material">';
+    html += materials.materials.map(m => `<option value="${m}">${m}</option>`).join('');
+    html += '</select></div>';
+    document.getElementById('aging-params').innerHTML = html;
+}
+
+async function loadSafetyParams() {
+    const engine = document.getElementById('safety-engine').value;
+    const materials = await api('/api/v1/materials/' + engine);
+    let html = '<div class="form-group"><label>选择材料</label><select id="safety-material">';
+    html += materials.materials.map(m => `<option value="${m}">${m}</option>`).join('');
+    html += '</select></div>';
+    html += `<div class="form-group"><label>温度（°C）— 试试极端值</label><input type="number" id="safety-temp" value="25"></div>`;
+    html += `<div class="form-group"><label>pH — 试试1或14</label><input type="number" id="safety-ph" value="7" step="0.5"></div>`;
+    document.getElementById('safety-params').innerHTML = html;
+}
+
+async function getMaterialConditions(engine, materialName) {
+    const materials = await api('/api/v1/materials/' + engine);
+    const materialsData = materials.materials;
+    // 从material library获取条件——这里简化用默认条件
+    return { material: materialName };
+}
+
+let chainStepCount = 0;
+
+async function addChainStep() {
+    chainStepCount++;
+    const engines = await loadEngines();
+    const div = document.getElementById('chain-steps');
+    const stepDiv = document.createElement('div');
+    stepDiv.id = 'chain-step-' + chainStepCount;
+    stepDiv.className = 'rank-item';
+    stepDiv.style.cssText = 'margin-bottom:8px;flex-direction:column;align-items:stretch;';
+    stepDiv.innerHTML = `
+        <div style="display:flex;align-items:center;width:100%;">
+            <div class="rank-num rank-4plus" style="margin-right:8px;">${chainStepCount}</div>
+            <select id="chain-engine-${chainStepCount}" style="flex:1;margin-right:8px;" onchange="loadChainMaterials(${chainStepCount})">
+                ${engines.map(e => `<option value="${e.id}">${e.name}</option>`).join('')}
+            </select>
+            <button onclick="document.getElementById('chain-step-${chainStepCount}').remove()" style="padding:4px 8px;background:#7f1d1d;border:none;border-radius:4px;color:#f87171;cursor:pointer;">删除</button>
+        </div>
+        <div id="chain-params-${chainStepCount}" style="margin-top:8px;width:100%;"></div>
+    `;
+    div.appendChild(stepDiv);
+    loadChainMaterials(chainStepCount);
+}
+
+async function loadChainMaterials(stepNum) {
+    const engine = document.getElementById('chain-engine-' + stepNum).value;
+    const materials = await api('/api/v1/materials/' + engine);
+    const paramsDiv = document.getElementById('chain-params-' + stepNum);
+    let html = '<div style="display:flex;gap:8px;align-items:center;">';
+    html += '<label style="font-size:12px;color:#94a3b8;width:60px;">材料:</label>';
+    html += `<select id="chain-material-${stepNum}" style="flex:1;">${materials.materials.map(m => `<option value="${m}">${m}</option>`).join('')}</select>`;
+    html += '</div>';
+    paramsDiv.innerHTML = html;
+}
+
+async function runChain() {
+    const resultDiv = document.getElementById('chain-result');
+    resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在运行流程串联...</p></div>';
+    
+    const steps = [];
+    for (let i = 1; i <= chainStepCount; i++) {
+        const stepDiv = document.getElementById('chain-step-' + i);
+        if (!stepDiv) continue;
+        const engine = document.getElementById('chain-engine-' + i).value;
+        const material = document.getElementById('chain-material-' + i).value;
+        steps.push({
+            engine: engine,
+            conditions: { material: material },
+        });
+    }
+    
+    if (steps.length < 2) {
+        resultDiv.innerHTML = '<div style="color:#fbbf24;">请至少添加2个步骤</div>';
+        return;
+    }
+    
+    try {
+        const data = await api('/api/v1/process_chain', {
+            method: 'POST',
+            body: JSON.stringify({ steps: steps })
+        });
+        
+        let html = '<div class="section-title">流程结果</div>';
+        
+        // 流程步骤展示
+        data.steps.forEach((step, i) => {
+            const val = step.primary_value !== null ? step.primary_value.toFixed(3) : 'N/A';
+            html += `
+                <div class="result-card">
+                    <div style="display:flex;align-items:center;">
+                        <div class="rank-num ${i < 3 ? 'rank-' + (i+1) : 'rank-4plus'}" style="margin-right:12px;">${step.step}</div>
+                        <div style="flex:1;">
+                            <div class="result-label">Step ${step.step}: ${step.engine}</div>
+                            <div class="result-value" style="font-size:16px;">${step.primary_metric} = ${val}</div>
+                            <div style="font-size:12px;color:#64748b;">不确定性: ${step.uncertainty} | 可靠性: ${step.reliability}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        // 累积不确定性
+        const unc = data.accumulated_uncertainty_pct;
+        const uncColor = unc < 10 ? '#34d399' : unc < 20 ? '#fbbf24' : '#f87171';
+        html += `
+            <div class="result-card" style="border-color:${uncColor};">
+                <div class="result-label">累积不确定性（误差传播）</div>
+                <div class="result-value" style="color:${uncColor};">±${unc}%</div>
+                <div style="margin-top:8px;font-size:13px;color:#94a3b8;">${data.process_summary.split('\n').pop()}</div>
+            </div>
+        `;
+        
+        resultDiv.innerHTML = html;
+    } catch (e) {
+        resultDiv.innerHTML = `<div style="color:#f87171;">错误: ${e.message}</div>`;
+    }
+}
+
+async function loadOverview(engines) {
+    try {
+        const stats = await api('/api/v1/stats');
+        const gen = await api('/api/v1/generalization');
+        
+        const testH8 = gen.test_accuracy['<8%'];
+        const testH10 = gen.test_accuracy['<10%'];
+        const totalEngines = gen.total_engines;
+        
+        let html = '<div class="section-title">平台概览</div>';
+        
+        // 核心数据卡片
+        html += '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px;">';
+        html += `<div class="result-card" style="text-align:center;"><div class="result-label">实验引擎</div><div class="result-value">${stats.total_engines}</div></div>`;
+        html += `<div class="result-card" style="text-align:center;"><div class="result-label">材料库</div><div class="result-value">${stats.total_validations}</div><div style="font-size:11px;color:#64748b;">组验证数据</div></div>`;
+        html += `<div class="result-card" style="text-align:center;"><div class="result-label">物理规则</div><div class="result-value">${stats.physics_systems}</div><div style="font-size:11px;color:#64748b;">条</div></div>`;
+        html += `<div class="result-card" style="text-align:center;"><div class="result-label">代码量</div><div class="result-value">${(stats.code_lines/1000).toFixed(1)}K</div><div style="font-size:11px;color:#64748b;">行</div></div>`;
+        html += '</div>';
+        
+        // 精度展示
+        html += '<div class="result-card"><div class="result-label">泛化精度（80/20测试集）</div>';
+        html += '<div style="display:flex;gap:15px;margin-top:10px;">';
+        html += `<div style="flex:1;text-align:center;"><div style="font-size:24px;font-weight:bold;color:#34d399;">${testH10}/${totalEngines}</div><div style="font-size:12px;color:#64748b;">测试集<10%</div></div>`;
+        html += `<div style="flex:1;text-align:center;"><div style="font-size:24px;font-weight:bold;color:#38bdf8;">${testH8}/${totalEngines}</div><div style="font-size:12px;color:#64748b;">测试集<8%</div></div>`;
+        html += `<div style="flex:1;text-align:center;"><div style="font-size:24px;font-weight:bold;color:#fbbf24;">${gen.test_accuracy['<5%']}/${totalEngines}</div><div style="font-size:12px;color:#64748b;">测试集<5%</div></div>`;
+        html += '</div></div>';
+        
+        // 功能列表
+        html += '<div class="section-title" style="margin-top:20px;">核心功能</div>';
+        html += '<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">';
+        const features = [
+            ['🔍 材料筛选', '从376种材料自动选Top-K'],
+            ['⏱️ 加速老化', '模拟数月/数年老化(6种环境)'],
+            ['📊 老化评估', '老化后性能→判断可用性'],
+            ['🧪 配方搜索', '参数空间搜索最优配比'],
+            ['💰 成本优化', '预算内搜索最优方案'],
+            ['⚠️ 安全检测', '极端条件可靠性降级'],
+            ['🔗 流程串联', '多引擎串联模拟工艺链'],
+            ['📋 A/B对比', '两个条件并排对比'],
+            ['✅ 用户反馈', '上传真实结果改进模型'],
+            ['📄 报告导出', '导出实验报告'],
+        ];
+        features.forEach(f => {
+            html += `<div class="rank-item" style="margin:0;"><div style="flex:1;"><div class="rank-name">${f[0]}</div><div class="rank-value">${f[1]}</div></div></div>`;
+        });
+        html += '</div>';
+        
+        // 引擎列表
+        html += '<div class="section-title" style="margin-top:20px;">实验引擎（' + engines.length + '个）</div>';
+        html += '<div>';
+        engines.forEach(e => {
+            html += `<span class="tag">${e.name}</span>`;
+        });
+        html += '</div>';
+        
+        document.getElementById('main-content').innerHTML = html;
+    } catch (e) {
+        document.getElementById('main-content').innerHTML = '<div style="color:#f87171;">错误: ' + e.message + '</div>';
+    }
+}
+
+async function loadMaterials() {
+    const engine = document.getElementById('mat-engine').value;
+    const div = document.getElementById('mat-list');
+    div.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+    
+    try {
+        const data = await api('/api/v1/materials/' + engine);
+        let html = `<div style="margin-bottom:10px;font-size:14px;color:#94a3b8;">共${data.count}种材料</div>`;
+        data.materials.forEach((m, i) => {
+            html += `<span class="tag" style="font-size:13px;padding:4px 8px;">${m}</span>`;
+        });
+        div.innerHTML = html;
+    } catch (e) {
+        div.innerHTML = '<div style="color:#f87171;">错误: ' + e.message + '</div>';
+    }
+}
+
+async function loadReport() {
+    try {
+        const data = await api('/api/v1/generalization');
+        let html = '<div class="result-card"><div class="result-label">验证方法</div>';
+        html += '<div style="margin-top:8px;">' + data.method + '</div>';
+        html += '<div style="margin-top:5px;font-size:13px;color:#94a3b8;">总引擎数: ' + data.total_engines + '</div></div>';
+        
+        // 精度对比
+        html += '<div class="result-card"><div class="result-label">精度对比（训练集 vs 测试集）</div>';
+        html += '<table style="width:100%;margin-top:10px;border-collapse:collapse;">';
+        html += '<tr style="border-bottom:1px solid #334155;"><th style="text-align:left;padding:8px;">精度</th><th style="text-align:center;padding:8px;">训练集</th><th style="text-align:center;padding:8px;">测试集</th></tr>';
+        for (const metric of ['<3%', '<5%', '<8%', '<10%']) {
+            const t = data.train_accuracy[metric] || 0;
+            const te = data.test_accuracy[metric] || 0;
+            const pct = (te / data.total_engines * 100).toFixed(0);
+            html += `<tr style="border-bottom:1px solid #1e293b;"><td style="padding:8px;">${metric}</td><td style="text-align:center;padding:8px;">${t}/${data.total_engines}</td><td style="text-align:center;padding:8px;color:#38bdf8;font-weight:bold;">${te}/${data.total_engines} (${pct}%)</td></tr>`;
+        }
+        html += '</table></div>';
+        
+        // 各引擎详情
+        html += '<div class="section-title" style="margin-top:15px;">各引擎详情</div>';
+        data.details.forEach(d => {
+            const status = d.test_mean < 5 ? '✅' : d.test_mean < 10 ? '✅' : '⚠️';
+            const color = d.test_mean < 5 ? '#34d399' : d.test_mean < 10 ? '#38bdf8' : '#fbbf24';
+            const overfit = Math.abs(d.overfit_pct) > 30 ? ` <span style="color:#fbbf24;font-size:11px;">过拟合${d.overfit_pct.toFixed(0)}%</span>` : '';
+            html += `<div class="rank-item"><div class="rank-num ${d.test_mean < 5 ? 'rank-1' : d.test_mean < 10 ? 'rank-2' : 'rank-4plus'}">${status}</div>`;
+            html += `<div class="rank-info"><div class="rank-name">${d.engine}</div>`;
+            html += `<div class="rank-value">训练=${d.train_mean.toFixed(1)}% 测试=<span style="color:${color};font-weight:bold;">${d.test_mean.toFixed(1)}%</span> ${overfit}</div></div></div>`;
+        });
+        
+        document.getElementById('report-content').innerHTML = html;
+    } catch (e) {
+        document.getElementById('report-content').innerHTML = '<div style="color:#f87171;">错误: ' + e.message + '</div>';
+    }
+}
+
+async function runCompare() {
+    const resultDiv = document.getElementById('compare-result');
+    resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在对比运行...</p></div>';
+    
+    const engineA = document.getElementById('compare-engine-a').value;
+    const engineB = document.getElementById('compare-engine-b').value;
+    const tempA = parseFloat(document.getElementById('compare-temp-a').value);
+    const tempB = parseFloat(document.getElementById('compare-temp-b').value);
+    const phA = parseFloat(document.getElementById('compare-ph-a').value);
+    const phB = parseFloat(document.getElementById('compare-ph-b').value);
+    
+    try {
+        const [rA, rB] = await Promise.all([
+            api('/api/v1/run/' + engineA, { method: 'POST', body: JSON.stringify({ conditions: { temperature: tempA, temperature_C: tempA, pH: phA } }) }),
+            api('/api/v1/run/' + engineB, { method: 'POST', body: JSON.stringify({ conditions: { temperature: tempB, temperature_C: tempB, pH: phB } }) }),
+        ]);
+        
+        const resA = rA.result || {};
+        const resB = rB.result || {};
+        const pmA = resA._primary_metric || '';
+        const pmB = resB._primary_metric || '';
+        const valA = pmA ? (resA[pmA] || 0) : 0;
+        const valB = pmB ? (resB[pmB] || 0) : 0;
+        const uncA = (resA._uncertainty || {}).uncertainty_pct || '±5%';
+        const uncB = (resB._uncertainty || {}).uncertainty_pct || '±5%';
+        
+        const diff = valB - valA;
+        const diffPct = valA > 0 ? (diff / valA * 100).toFixed(1) : 'N/A';
+        const diffColor = diff > 0 ? '#34d399' : diff < 0 ? '#f87171' : '#94a3b8';
+        
+        let html = '<div class="section-title">对比结果</div>';
+        html += '<div style="display:flex;gap:15px;">';
+        // 方案A
+        html += `<div class="result-card" style="flex:1;border-color:#38bdf8;">
+            <div class="result-label">方案A — ${engineA}</div>
+            <div class="result-value" style="color:#38bdf8;">${valA.toFixed(3)}</div>
+            <div style="font-size:12px;color:#64748b;">${pmA} | ${uncA}</div>
+            <div style="font-size:12px;color:#64748b;margin-top:5px;">温度=${tempA}°C pH=${phA}</div>
+        </div>`;
+        // 方案B
+        html += `<div class="result-card" style="flex:1;border-color:#f59e0b;">
+            <div class="result-label">方案B — ${engineB}</div>
+            <div class="result-value" style="color:#f59e0b;">${valB.toFixed(3)}</div>
+            <div style="font-size:12px;color:#64748b;">${pmB} | ${uncB}</div>
+            <div style="font-size:12px;color:#64748b;margin-top:5px;">温度=${tempB}°C pH=${phB}</div>
+        </div>`;
+        html += '</div>';
+        
+        // 差异
+        html += `<div class="result-card" style="border-color:${diffColor};">
+            <div class="result-label">差异 (B - A)</div>
+            <div class="result-value" style="color:${diffColor};">${diff > 0 ? '+' : ''}${diff.toFixed(3)} (${diffPct}%)</div>
+            <div style="margin-top:8px;font-size:13px;">${diff > 0 ? '方案B更优' : diff < 0 ? '方案A更优' : '两者相当'}</div>
+        </div>`;
+        
+        resultDiv.innerHTML = html + '<button class="btn-export" onclick="window.print()">📄 导出报告</button>';
+    } catch (e) {
+        resultDiv.innerHTML = `<div style="color:#f87171;">错误: ${e.message}</div>`;
+    }
+}
+
+// ========== 筛选模式 ==========
+async function runScreening() {
+    const engine = document.getElementById('screen-engine').value;
+    const topK = parseInt(document.getElementById('screen-topk').value);
+    const resultDiv = document.getElementById('screen-result');
+    resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在从材料库筛选...</p></div>';
+    
+    try {
+        const data = await api('/api/v1/auto_screen', {
+            method: 'POST',
+            body: JSON.stringify({ engine: engine, top_k: topK })
+        });
+        
+        let html = `<div class="section-title">筛选结果 — 从${data.total_candidates}种材料中选出Top ${topK}</div>`;
+        html += '<div style="margin-bottom:15px; font-size:14px; color:#94a3b8;">' + data.recommendation.replace(/\n/g, '<br>') + '</div>';
+        
+        data.top_k.forEach((item, i) => {
+            const rank = i + 1;
+            const rankClass = rank <= 3 ? `rank-${rank}` : 'rank-4plus';
+            const val = item.primary_value !== null ? item.primary_value.toFixed(2) : 'N/A';
+            html += `
+                <div class="rank-item">
+                    <div class="rank-num ${rankClass}">${rank}</div>
+                    <div class="rank-info">
+                        <div class="rank-name">${item.label}</div>
+                        <div class="rank-value">${item.primary_metric} = ${val} | 不确定性: ${item.uncertainty} | 可靠性: ${item.reliability}</div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        resultDiv.innerHTML = html + '<button class="btn-export" onclick="window.print()">📄 导出报告</button>';
+    } catch (e) {
+        resultDiv.innerHTML = `<div style="color:#f87171;">错误: ${e.message}</div>`;
+    }
+}
+
+// ========== 运行实验模式 ==========
+async function runExperiment() {
+    const engine = document.getElementById('run-engine').value;
+    const material = document.getElementById('run-material').value;
+    const temp = parseFloat(document.getElementById('run-temp').value);
+    const pH = parseFloat(document.getElementById('run-ph').value);
+    const resultDiv = document.getElementById('run-result');
+    resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在运行虚拟实验...</p></div>';
+    
+    try {
+        // 获取材料默认条件
+        const conditions = await getMaterialConditions(engine, material);
+        conditions.temperature = temp;
+        conditions.temperature_C = temp;
+        conditions.pH = pH;
+        
+        const data = await api('/api/v1/run/' + engine, {
+            method: 'POST',
+            body: JSON.stringify({ conditions: conditions })
+        });
+        
+        const result = data.result || {};
+        const unc = result._uncertainty || {};
+        const pm = result._primary_metric || '';
+        
+        let html = '<div class="section-title">实验结果</div>';
+        
+        // 主指标卡片
+        if (pm && result[pm] !== undefined) {
+            const val = result[pm];
+            const pct = Math.min(100, Math.abs(val) * 10); // 简化百分比
+            html += `
+                <div class="result-card">
+                    <div class="result-label">主指标: ${pm}</div>
+                    <div class="result-value">${val.toFixed(3)}</div>
+                    <div class="result-bar"><div class="result-bar-fill" style="width:${pct}%"></div></div>
+                    <div style="margin-top:8px;">
+                        <span class="badge badge-${unc.confidence_level || 'high'}">${unc.uncertainty_pct || '±5%'} | 可靠性: ${unc.confidence_level_cn || '高'}</span>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // 其他结果
+        html += '<div class="result-card"><div class="result-label">完整结果</div>';
+        for (const [key, val] of Object.entries(result)) {
+            if (key.startsWith('_')) continue;
+            if (typeof val === 'number') {
+                html += `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #1e293b;"><span style="color:#94a3b8;">${key}</span><span style="color:#38bdf8;font-weight:bold;">${val.toFixed(4)}</span></div>`;
+            } else if (typeof val === 'string') {
+                html += `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #1e293b;"><span style="color:#94a3b8;">${key}</span><span>${val}</span></div>`;
+            }
+        }
+        html += '</div>';
+        
+        // 添加反馈入口
+        html += `<div class="result-card" style="border-color:#059669;">
+            <div class="result-label">📊 实验验证反馈</div>
+            <div style="font-size:13px;color:#94a3b8;margin-top:8px;margin-bottom:10px;">做了真实实验？上传结果帮我们改进模型：</div>
+            <div id="feedback-form" style="display:block;">
+                <div class="form-group">
+                    <label>你的真实实验结果（数值）</label>
+                    <input type="number" id="feedback-actual" placeholder="例如：85.5" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label>备注（可选）</label>
+                    <input type="text" id="feedback-note" placeholder="实验条件/材料批次等">
+                </div>
+                <button class="btn-run" style="background:linear-gradient(135deg,#059669,#047857);width:auto;padding:8px 16px;font-size:14px;" onclick="submitFeedback('${engine}')">提交反馈</button>
+            </div>
+            <div id="feedback-result" style="margin-top:10px;"></div>
+        </div>`;
+        
+        // 保存当前预测结果供反馈使用
+        window._lastPredicted = result;
+        window._lastConditions = conditions;
+        
+        saveHistory('筛选', data.top_k ? data.top_k[0].label : '');
+        resultDiv.innerHTML = html + '<button class="btn-export" onclick="window.print()">📄 导出报告</button>';
+    } catch (e) {
+        resultDiv.innerHTML = `<div style="color:#f87171;">错误: ${e.message}</div>`;
+    }
+}
+
+async function submitFeedback(engine) {
+    const actual = parseFloat(document.getElementById('feedback-actual').value);
+    const note = document.getElementById('feedback-note').value;
+    
+    if (isNaN(actual)) {
+        document.getElementById('feedback-result').innerHTML = '<div style="color:#fbbf24;">请输入数值</div>';
+        return;
+    }
+    
+    document.getElementById('feedback-result').innerHTML = '<div class="loading"><div class="spinner" style="width:20px;height:20px;border-width:2px;"></div></div>';
+    
+    try {
+        const predicted = window._lastPredicted || {};
+        const pm = predicted._primary_metric || '';
+        const predValue = predicted[pm] || 0;
+        
+        const resp = await fetch(API_BASE + '/api/v1/feedback/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                engine_id: engine,
+                conditions: window._lastConditions || {},
+                predicted: { [pm]: predValue },
+                actual: { [pm]: actual },
+            })
+        });
+        
+        const data = await resp.json();
+        
+        const errPct = ((predValue - actual) / Math.abs(actual) * 100).toFixed(1);
+        const errColor = Math.abs(errPct) < 5 ? '#34d399' : Math.abs(errPct) < 10 ? '#fbbf24' : '#f87171';
+        
+        document.getElementById('feedback-result').innerHTML = `
+            <div style="padding:10px;background:#0f172a;border-radius:6px;border:1px solid #334155;">
+                <div style="font-size:13px;color:#94a3b8;">预测值: ${predValue.toFixed(3)} | 真实值: ${actual}</div>
+                <div style="font-size:16px;color:${errColor};font-weight:bold;margin-top:5px;">误差: ${errPct}%</div>
+                <div style="font-size:12px;color:#64748b;margin-top:5px;">✅ 反馈已记录，感谢贡献！模型将据此持续优化。</div>
+            </div>
+        `;
+    } catch (e) {
+        document.getElementById('feedback-result').innerHTML = `<div style="color:#f87171;">提交失败: ${e.message}</div>`;
+    }
+}
+
+// ========== 加速老化模式 ==========
+async function runAging() {
+    const engine = document.getElementById('aging-engine').value;
+    const material = document.getElementById('aging-material').value;
+    const years = parseFloat(document.getElementById('aging-years').value);
+    const env = document.getElementById('aging-env').value;
+    const resultDiv = document.getElementById('aging-result');
+    resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在模拟加速老化...</p></div>';
+    
+    try {
+        const conditions = await getMaterialConditions(engine, material);
+        
+        const data = await api('/api/v1/aging_eval', {
+            method: 'POST',
+            body: JSON.stringify({
+                engine: engine,
+                conditions: conditions,
+                duration_years: years,
+                environment: env
+            })
+        });
+        
+        let html = '<div class="section-title">老化模拟结果</div>';
+        
+        // 概要卡片
+        const retention = data.retention_pct;
+        const retentionColor = retention > 80 ? '#34d399' : retention > 60 ? '#fbbf24' : '#f87171';
+        html += `
+            <div class="result-card">
+                <div class="result-label">${data.duration_years}年${data.environment}环境后性能保持率</div>
+                <div class="result-value" style="color:${retentionColor};">${retention}%</div>
+                <div class="result-bar"><div class="result-bar-fill" style="width:${retention}%; background:linear-gradient(90deg, ${retentionColor}, ${retentionColor});"></div></div>
+                <div style="margin-top:10px;">
+                    <span class="badge badge-${data.usable === 'good' ? 'safe' : data.usable === 'acceptable' ? 'caution' : 'danger'}">${{good:'良好', acceptable:'勉强可用', replace:'建议更换'}[data.usable]}</span>
+                </div>
+            </div>
+        `;
+        
+        // 初始vs老化后对比
+        html += `
+            <div class="result-card">
+                <div class="result-label">初始 vs 老化后</div>
+                <div style="display:flex;justify-content:space-between;margin-top:8px;">
+                    <div><span style="color:#64748b;font-size:12px;">初始性能</span><br><span style="color:#38bdf8;font-size:18px;font-weight:bold;">${data.initial_performance.value.toFixed(3)}</span></div>
+                    <div style="text-align:right;"><span style="color:#64748b;font-size:12px;">老化后</span><br><span style="color:${retentionColor};font-size:18px;font-weight:bold;">${data.aged_performance.value.toFixed(3)}</span></div>
+                </div>
+                <div style="margin-top:8px;font-size:13px;color:#94a3b8;">年衰减率: ${data.degradation_rate}%/年 | 预计寿命: ${data.lifetime_estimate}</div>
+            </div>
+        `;
+        
+        // 老化曲线
+        html += '<div class="chart-container"><div class="result-label">老化曲线</div><div class="aging-curve">';
+        data.aging_curve.forEach((point, i) => {
+            const height = point.performance_retention;
+            html += `<div class="aging-bar" style="height:${height}%;" title="${point.time_human}: ${point.performance_retention}%">
+                <div class="aging-value">${point.performance_retention}%</div>
+                <div class="aging-label">${point.time_human}</div>
+            </div>`;
+        });
+        html += '</div></div>';
+        
+        // 建议
+        html += `<div class="result-card" style="border-color:${retentionColor};"><div class="result-label">建议</div><div style="margin-top:8px;">${data.recommendation}</div></div>`;
+        
+        resultDiv.innerHTML = html + '<button class="btn-export" onclick="window.print()">📄 导出报告</button>';
+    } catch (e) {
+        resultDiv.innerHTML = `<div style="color:#f87171;">错误: ${e.message}</div>`;
+    }
+}
+
+// ========== 配方搜索模式 ==========
+async function runFormulation() {
+    const engine = document.getElementById('form-engine').value;
+    const budget = parseFloat(document.getElementById('form-budget').value);
+    const maxEval = parseInt(document.getElementById('form-maxeval').value);
+    const resultDiv = document.getElementById('form-result');
+    resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在搜索最优配比...</p></div>';
+    
+    try {
+        // 使用通用参数范围
+        const paramRanges = {
+            'temperature_C': [20, 80, 10],
+            'pH': [3, 9, 1],
+        };
+        
+        let data;
+        if (budget > 0) {
+            // 成本约束搜索
+            data = await api('/api/v1/cost_search', {
+                method: 'POST',
+                body: JSON.stringify({
+                    engine: engine,
+                    param_ranges: paramRanges,
+                    cost_model: { 'temperature_C': 0.5, 'pH': 5 },
+                    budget: budget,
+                    max_evaluations: maxEval,
+                })
+            });
+        } else {
+            // 无约束搜索
+            data = await api('/api/v1/formulation', {
+                method: 'POST',
+                body: JSON.stringify({
+                    engine: engine,
+                    param_ranges: paramRanges,
+                    max_evaluations: maxEval,
+                })
+            });
+        }
+        
+        let html = '<div class="section-title">配方搜索结果</div>';
+        
+        if (data.error) {
+            html += `<div style="color:#f87171;">${data.error}</div>`;
+        } else if (data.optimal_in_budget) {
+            // 成本约束结果
+            html += `
+                <div class="result-card">
+                    <div class="result-label">预算内最优方案（预算${data.budget}元）</div>
+                    <div class="result-value">${data.optimal_in_budget.value.toFixed(2)}</div>
+                    <div style="margin-top:8px;font-size:13px;color:#94a3b8;">成本: ${data.optimal_in_budget.cost}元 | 性价比: ${data.optimal_in_budget.cost_efficiency}</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">无预算约束最优</div>
+                    <div style="font-size:18px;color:#94a3b8;">${data.optimal_no_budget.value.toFixed(2)} <span style="font-size:13px;">(成本${data.optimal_no_budget.cost}元)</span></div>
+                    <div style="margin-top:5px;font-size:13px;color:#fbbf24;">性能损失: ${data.performance_loss_pct}%</div>
+                </div>
+            `;
+            // Top 5
+            html += '<div class="section-title" style="margin-top:15px;">Top 5方案</div>';
+            data.top_5_in_budget.forEach((item, i) => {
+                html += `
+                    <div class="rank-item">
+                        <div class="rank-num ${i < 3 ? 'rank-' + (i+1) : 'rank-4plus'}">${i+1}</div>
+                        <div class="rank-info">
+                            <div class="rank-name">性能=${item.value.toFixed(2)} | 成本=${item.cost}元</div>
+                            <div class="rank-value">${JSON.stringify(item.conditions)}</div>
+                        </div>
+                    </div>
+                `;
+            });
+        } else if (data.optimal_conditions) {
+            // 无约束结果
+            html += `
+                <div class="result-card">
+                    <div class="result-label">最优配比</div>
+                    <div class="result-value">${data.optimal_value.toFixed(2)}</div>
+                    <div style="margin-top:8px;font-size:13px;color:#94a3b8;">${JSON.stringify(data.optimal_conditions)}</div>
+                    <div style="margin-top:5px;">搜索空间: ${data.search_space_size} | 评估: ${data.evaluated}组</div>
+                </div>
+            `;
+            // Top 5
+            html += '<div class="section-title" style="margin-top:15px;">Top 5方案</div>';
+            data.top_5.forEach((item, i) => {
+                html += `
+                    <div class="rank-item">
+                        <div class="rank-num ${i < 3 ? 'rank-' + (i+1) : 'rank-4plus'}">${i+1}</div>
+                        <div class="rank-info">
+                            <div class="rank-name">性能=${item.value.toFixed(2)}</div>
+                            <div class="rank-value">${JSON.stringify(item.conditions)}</div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+        
+        resultDiv.innerHTML = html;
+    } catch (e) {
+        resultDiv.innerHTML = `<div style="color:#f87171;">错误: ${e.message}</div>`;
+    }
+}
+
+// ========== 安全检测模式 ==========
+async function runSafety() {
+    const engine = document.getElementById('safety-engine').value;
+    const material = document.getElementById('safety-material').value;
+    const temp = parseFloat(document.getElementById('safety-temp').value);
+    const pH = parseFloat(document.getElementById('safety-ph').value);
+    const resultDiv = document.getElementById('safety-result');
+    resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在检测安全边界...</p></div>';
+    
+    try {
+        const conditions = await getMaterialConditions(engine, material);
+        conditions.temperature = temp;
+        conditions.temperature_C = temp;
+        conditions.pH = pH;
+        
+        const data = await api('/api/v1/safety_check', {
+            method: 'POST',
+            body: JSON.stringify({ engine: engine, conditions: conditions })
+        });
+        
+        let html = '<div class="section-title">安全检测结果</div>';
+        
+        const levelColor = data.safety_level === 'safe' ? '#34d399' : data.safety_level === 'caution' ? '#fbbf24' : '#f87171';
+        html += `
+            <div class="result-card" style="border-color:${levelColor};">
+                <div class="result-label">安全等级</div>
+                <div class="result-value" style="color:${levelColor};">${data.safety_level_cn}</div>
+                <div style="margin-top:10px;">
+                    <span class="badge badge-${data.safety_level}">${data.estimated_error}</span>
+                    <span style="margin-left:8px;font-size:13px;color:#94a3b8;">误差倍增: ${data.error_multiplier}x</span>
+                </div>
+            </div>
+        `;
+        
+        if (data.warnings.length > 0) {
+            html += '<div class="result-card"><div class="result-label">警告信息</div>';
+            data.warnings.forEach(w => {
+                html += `<div style="padding:8px 0;color:#fbbf24;">⚠ ${w}</div>`;
+            });
+            html += '</div>';
+        }
+        
+        html += `<div class="result-card"><div class="result-label">建议</div><div style="margin-top:8px;">${data.recommendation}</div></div>`;
+        
+        resultDiv.innerHTML = html;
+    } catch (e) {
+        resultDiv.innerHTML = `<div style="color:#f87171;">错误: ${e.message}</div>`;
+    }
+}
+
+// 历史记录
+function saveHistory(mode, summary) {
+    let history = JSON.parse(localStorage.getItem('swarmlabs_history') || '[]');
+    history.unshift({ mode, summary, time: new Date().toLocaleTimeString('zh-CN', {hour:'2-digit',minute:'2-digit'}) });
+    history = history.slice(0, 10);
+    localStorage.setItem('swarmlabs_history', JSON.stringify(history));
+    renderHistory();
+}
+
+function renderHistory() {
+    const history = JSON.parse(localStorage.getItem('swarmlabs_history') || '[]');
+    const div = document.getElementById('history-list');
+    if (!div) return;
+    if (history.length === 0) {
+        div.innerHTML = '<div style="color:#475569;">暂无记录</div>';
+        return;
+    }
+    div.innerHTML = history.map(h => `<div style="padding:3px 0;border-bottom:1px solid #1e293b;"><span style="color:#38bdf8;">${h.time}</span> ${h.mode}<br><span style="color:#475569;font-size:11px;">${h.summary}</span></div>`).join('');
+}
+
+function clearHistory() {
+    localStorage.removeItem('swarmlabs_history');
+    renderHistory();
+}
+
+// 初始化
+checkAPI();
+renderMode();
+renderHistory();
+</script>
+</body>
+</html>

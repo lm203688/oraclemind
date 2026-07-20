@@ -1,0 +1,82 @@
+[
+  {
+    "name": "MAPbI3",
+    "formula": "CH₃NH₃PbI₃",
+    "bandgap_eV": 1.55,
+    "efficiency_pct": 25.5,
+    "crystal": "四方钙钛矿",
+    "source": "NREL效率表"
+  },
+  {
+    "name": "FAPbI3",
+    "formula": "HC(NH₂)₂PbI₃",
+    "bandgap_eV": 1.48,
+    "efficiency_pct": 25.8,
+    "crystal": "立方钙钛矿",
+    "source": "NREL"
+  },
+  {
+    "name": "MAPbBr3",
+    "formula": "CH₃NH₃PbBr₃",
+    "bandgap_eV": 2.3,
+    "efficiency_pct": 18.0,
+    "crystal": "立方钙钛矿",
+    "source": "NREL"
+  },
+  {
+    "name": "CsPbI3",
+    "formula": "CsPbI₃",
+    "bandgap_eV": 1.73,
+    "efficiency_pct": 20.0,
+    "crystal": "立方钙钛矿",
+    "source": "文献"
+  },
+  {
+    "name": "MAPbCl3",
+    "formula": "CH₃NH₃PbCl₃",
+    "bandgap_eV": 3.0,
+    "efficiency_pct": 5.0,
+    "crystal": "立方钙钛矿",
+    "source": "文献"
+  },
+  {
+    "name": "FASnI3",
+    "formula": "HC(NH₂)₂SnI₃",
+    "bandgap_eV": 1.4,
+    "efficiency_pct": 14.0,
+    "crystal": "四方钙钛矿",
+    "source": "文献"
+  },
+  {
+    "name": "MASnI3",
+    "formula": "CH₃NH₃SnI₃",
+    "bandgap_eV": 1.3,
+    "efficiency_pct": 6.0,
+    "crystal": "四方钙钛矿",
+    "source": "文献"
+  },
+  {
+    "name": "CsPbBr3",
+    "formula": "CsPbBr₃",
+    "bandgap_eV": 2.3,
+    "efficiency_pct": 17.0,
+    "crystal": "立方钙钛矿",
+    "source": "文献"
+  },
+  {
+    "name": "MAPbI2Br",
+    "formula": "CH₃NH₃PbI₂Br",
+    "bandgap_eV": 1.75,
+    "efficiency_pct": 15.0,
+    "crystal": "四方钙钛矿",
+    "source": "文献"
+  },
+  {
+    "name": "Cs2AgBiBr6",
+    "formula": "Cs₂AgBiBr₆",
+    "bandgap_eV": 2.2,
+    "efficiency_pct": 3.0,
+    "crystal": "双钙钛矿",
+    "source": "文献"
+  }
+]

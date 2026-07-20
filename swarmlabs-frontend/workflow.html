@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全流程分子预测 | 蜂群科研</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a1a; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; }
+        .nav { background: #111128; padding: 15px 30px; display: flex; gap: 25px; align-items: center; border-bottom: 1px solid #1a1a3e; position: sticky; top: 0; z-index: 100; }
+        .nav a { color: #aaa; text-decoration: none; font-size: 0.9em; transition: color 0.2s; }
+        .nav a:hover { color: #00d4ff; }
+        .nav .logo { font-size: 1.2em; font-weight: bold; color: #00d4ff; margin-right: auto; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+        h1 { color: #00d4ff; font-size: 2em; margin-bottom: 10px; }
+        .subtitle { color: #888; margin-bottom: 30px; }
+        
+        .input-section { background: #111128; padding: 25px; border-radius: 12px; margin-bottom: 25px; border: 1px solid #1a1a3e; }
+        .input-section label { display: block; margin-bottom: 8px; color: #aaa; font-size: 0.9em; }
+        .input-row { display: flex; gap: 12px; flex-wrap: wrap; }
+        .input-row input { flex: 1; min-width: 300px; padding: 12px; background: #0a0a1a; border: 1px solid #333; color: #fff; border-radius: 8px; font-family: monospace; font-size: 1em; }
+        .input-row button { padding: 12px 30px; background: #00d4ff; color: #000; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1em; transition: background 0.2s; }
+        .input-row button:hover { background: #00b8d9; }
+        .input-row button:disabled { background: #333; color: #666; cursor: not-allowed; }
+        
+        .quick-mols { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+        .quick-mols button { padding: 5px 12px; background: #1a1a3e; color: #aaa; border: 1px solid #333; border-radius: 4px; cursor: pointer; font-size: 0.85em; transition: all 0.2s; }
+        .quick-mols button:hover { background: #00d4ff; color: #000; }
+        
+        .api-key-row { margin-top: 15px; display: flex; gap: 10px; align-items: center; }
+        .api-key-row input { flex: 1; padding: 8px; background: #0a0a1a; border: 1px solid #333; color: #666; border-radius: 4px; font-family: monospace; font-size: 0.85em; }
+        
+        .pipeline { display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap; }
+        .pipeline-step { flex: 1; min-width: 150px; background: #111128; padding: 15px; border-radius: 8px; border: 1px solid #1a1a3e; text-align: center; transition: all 0.3s; }
+        .pipeline-step.active { border-color: #00d4ff; background: rgba(0,212,255,0.05); }
+        .pipeline-step.done { border-color: #2E8B57; }
+        .pipeline-step .icon { font-size: 1.5em; margin-bottom: 5px; }
+        .pipeline-step .name { font-size: 0.85em; color: #aaa; }
+        .pipeline-step .status { font-size: 0.75em; margin-top: 5px; color: #666; }
+        .pipeline-step.done .status { color: #2E8B57; }
+        
+        .result-section { display: none; }
+        .result-section.show { display: block; }
+        
+        .result-card { background: #111128; padding: 20px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #1a1a3e; }
+        .result-card h3 { color: #00d4ff; margin-bottom: 15px; font-size: 1.1em; display: flex; align-items: center; gap: 8px; }
+        .result-card h3 .badge { background: #00d4ff; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.7em; }
+        
+        .props-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+        .prop-item { background: #0a0a1a; padding: 12px; border-radius: 6px; border: 1px solid #1a1a3e; }
+        .prop-item .label { color: #888; font-size: 0.8em; margin-bottom: 4px; }
+        .prop-item .value { color: #00d4ff; font-size: 1.3em; font-weight: bold; }
+        .prop-item .unit { color: #666; font-size: 0.85em; }
+        
+        .tox-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+        .tox-item { padding: 8px 12px; border-radius: 4px; font-size: 0.85em; display: flex; justify-content: space-between; align-items: center; }
+        .tox-item.toxic { background: rgba(220,38,38,0.15); border: 1px solid rgba(220,38,38,0.3); color: #f87171; }
+        .tox-item.safe { background: rgba(46,139,87,0.1); border: 1px solid rgba(46,139,87,0.2); color: #6ee7b7; }
+        
+        .summary-bar { background: linear-gradient(135deg, #111128, #1a1a3e); padding: 20px; border-radius: 10px; margin-bottom: 20px; display: flex; gap: 30px; flex-wrap: wrap; }
+        .summary-item { text-align: center; }
+        .summary-item .num { font-size: 1.8em; font-weight: bold; color: #00d4ff; }
+        .summary-item .desc { font-size: 0.8em; color: #888; }
+        
+        .citation-box { background: #0a0a1a; padding: 15px; border-radius: 6px; border-left: 3px solid #00d4ff; font-family: monospace; font-size: 0.85em; color: #aaa; white-space: pre-wrap; word-break: break-all; }
+        
+        .loading { text-align: center; padding: 40px; color: #00d4ff; }
+        .loading .spinner { display: inline-block; width: 40px; height: 40px; border: 3px solid #1a1a3e; border-top: 3px solid #00d4ff; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 15px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        .error { color: #f87171; padding: 15px; background: rgba(220,38,38,0.1); border-radius: 8px; border: 1px solid rgba(220,38,38,0.3); }
+        
+        .drug-likeness { display: flex; gap: 20px; align-items: center; }
+        .drug-likeness .pass { color: #6ee7b7; font-size: 1.5em; font-weight: bold; }
+        .drug-likeness .fail { color: #f87171; font-size: 1.5em; font-weight: bold; }
+    </style>
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">蜂群科研</div>
+        <a href="index.html">首页</a>
+        <a href="ml-predict.html">ML预测</a>
+        <a href="workflow.html" style="color:#00d4ff;">全流程预测</a>
+        <a href="api-playground.html">API测试</a>
+        <a href="docs.html">文档</a>
+    </nav>
+    
+    <div class="container">
+        <h1>🚀 全流程分子性质预测</h1>
+        <p class="subtitle">一次API调用，并行执行5个Skill，获取分子全维度画像——量子化学+生物活性+毒性+热力学+药物相似性</p>
+        
+        <div class="input-section">
+            <label>分子SMILES结构式：</label>
+            <div class="input-row">
+                <input type="text" id="smilesInput" value="CCO" placeholder="输入SMILES，如CCO(乙醇)">
+                <button id="predictBtn" onclick="runWorkflow()">🚀 全流程预测</button>
+            </div>
+            <div class="quick-mols">
+                <button onclick="setSmiles('CCO')">乙醇</button>
+                <button onclick="setSmiles('c1ccccc1')">苯</button>
+                <button onclick="setSmiles('CC(=O)Oc1ccccc1C(=O)O')">阿司匹林</button>
+                <button onclick="setSmiles('CN1C=NC2=C1C(=O)N(C(=O)N2C)C')">咖啡因</button>
+                <button onclick="setSmiles('CC(C)CC1=CC=C(C=C1)C(C)C(=O)O')">布洛芬</button>
+                <button onclick="setSmiles('CC(=O)NC1=CC=C(C=C1)O')">对乙酰氨基酚</button>
+                <button onclick="setSmiles('OC(=O)C1=CC=CC=C1')">苯甲酸</button>
+                <button onclick="setSmiles('CCCCCC=O')">己醛</button>
+            </div>
+            <div class="api-key-row">
+                <input type="text" id="apiKey" value="gtk_internal_eve_2026" placeholder="API Key">
+                <span style="font-size:0.8em;color:#666;">免费注册: POST /api/v1/register</span>
+            </div>
+        </div>
+        
+        <div class="pipeline" id="pipeline">
+            <div class="pipeline-step" id="step-quantum">
+                <div class="icon">⚛️</div>
+                <div class="name">量子化学</div>
+                <div class="status">等待中</div>
+            </div>
+            <div class="pipeline-step" id="step-bio">
+                <div class="icon">🧬</div>
+                <div class="name">生物/化学</div>
+                <div class="status">等待中</div>
+            </div>
+            <div class="pipeline-step" id="step-thermo">
+                <div class="icon">🔥</div>
+                <div class="name">热力学</div>
+                <div class="status">等待中</div>
+            </div>
+            <div class="pipeline-step" id="step-tox">
+                <div class="icon">⚠️</div>
+                <div class="name">毒性评估</div>
+                <div class="status">等待中</div>
+            </div>
+            <div class="pipeline-step" id="step-drug">
+                <div class="icon">💊</div>
+                <div class="name">药物相似性</div>
+                <div class="status">等待中</div>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading" style="display:none;">
+            <div class="spinner"></div>
+            <p>正在执行全流程预测...</p>
+        </div>
+        
+        <div id="error" class="error" style="display:none;"></div>
+        
+        <div id="results" class="result-section">
+            <div class="summary-bar" id="summaryBar"></div>
+            
+            <div class="result-card">
+                <h3>⚛️ 量子化学属性 <span class="badge">QM9 DFT</span></h3>
+                <div class="props-grid" id="quantumGrid"></div>
+            </div>
+            
+            <div class="result-card">
+                <h3>🧬 生物/化学性质 <span class="badge">18K分子训练</span></h3>
+                <div class="props-grid" id="bioGrid"></div>
+            </div>
+            
+            <div class="result-card">
+                <h3>⚠️ Tox21毒性预测 <span class="badge">12终点</span></h3>
+                <div class="tox-grid" id="toxGrid"></div>
+            </div>
+            
+            <div class="result-card">
+                <h3>🔥 热力学属性 <span class="badge">NIST实验数据</span></h3>
+                <div class="props-grid" id="thermoGrid"></div>
+            </div>
+            
+            <div class="result-card">
+                <h3>💊 药物相似性评估 <span class="badge">Lipinski五规则</span></h3>
+                <div id="drugLikeness"></div>
+            </div>
+            
+            <div class="result-card">
+                <h3>📄 引文生成</h3>
+                <div class="citation-box" id="citation"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    function setSmiles(smi) {
+        document.getElementById('smilesInput').value = smi;
+    }
+    
+    function setStepStatus(stepId, status, text) {
+        const step = document.getElementById(stepId);
+        step.className = 'pipeline-step ' + status;
+        step.querySelector('.status').textContent = text;
+    }
+    
+    function resetSteps() {
+        ['step-quantum', 'step-bio', 'step-thermo', 'step-tox', 'step-drug'].forEach(id => {
+            setStepStatus(id, '', '等待中');
+        });
+    }
+    
+    async function runWorkflow() {
+        const smi = document.getElementById('smilesInput').value;
+        const key = document.getElementById('apiKey').value;
+        
+        if (!smi) { alert('请输入SMILES'); return; }
+        
+        document.getElementById('predictBtn').disabled = true;
+        document.getElementById('loading').style.display = 'block';
+        document.getElementById('error').style.display = 'none';
+        document.getElementById('results').classList.remove('show');
+        resetSteps();
+        
+        // 标记所有步骤为active
+        ['step-quantum', 'step-bio', 'step-thermo', 'step-tox', 'step-drug'].forEach(id => {
+            setStepStatus(id, 'active', '执行中...');
+        });
+        
+        try {
+            const resp = await fetch('/api/v1/workflow/full_predict?smiles=' + encodeURIComponent(smi), {
+                headers: {'Authorization': 'Bearer ' + key}
+            });
+            const d = await resp.json();
+            
+            document.getElementById('loading').style.display = 'none';
+            
+            if (d.error) {
+                document.getElementById('error').textContent = d.error;
+                document.getElementById('error').style.display = 'block';
+                resetSteps();
+                return;
+            }
+            
+            displayResults(d);
+        } catch(e) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error').textContent = '请求失败: ' + e.message;
+            document.getElementById('error').style.display = 'block';
+            resetSteps();
+        }
+        
+        document.getElementById('predictBtn').disabled = false;
+    }
+    
+    function displayResults(d) {
+        // 标记步骤完成
+        setStepStatus('step-quantum', 'done', '✓ 完成');
+        setStepStatus('step-bio', 'done', '✓ 完成');
+        setStepStatus('step-thermo', 'done', '✓ 完成');
+        setStepStatus('step-tox', 'done', '✓ 完成');
+        setStepStatus('step-drug', 'done', '✓ 完成');
+        
+        // 汇总
+        const s = d.summary || {};
+        const toxCount = d.bio_chemistry?.tox21?.toxic_count || 0;
+        const drugPass = d.drug_likeness?.lipinski_violations <= 1;
+        document.getElementById('summaryBar').innerHTML = `
+            <div class="summary-item"><div class="num">${s.total_skills_called || 5}</div><div class="desc">Skills执行</div></div>
+            <div class="summary-item"><div class="num">${s.elapsed_seconds || '?'}s</div><div class="desc">耗时</div></div>
+            <div class="summary-item"><div class="num">${(s.data_sources || []).length}</div><div class="desc">数据源</div></div>
+            <div class="summary-item"><div class="num" style="color:${toxCount > 0 ? '#f87171' : '#6ee7b7'}">${toxCount}/12</div><div class="desc">毒性阳性</div></div>
+            <div class="summary-item"><div class="num" style="color:${drugPass ? '#6ee7b7' : '#f87171'}">${drugPass ? '✓' : '✗'}</div><div class="desc">Lipinski</div></div>
+        `;
+        
+        // 量子化学
+        const q = d.quantum_chemistry || {};
+        document.getElementById('quantumGrid').innerHTML = Object.values(q).map(v => `
+            <div class="prop-item">
+                <div class="label">${v.label}</div>
+                <div class="value">${v.value}</div>
+            </div>
+        `).join('');
+        
+        // 生物/化学
+        const b = d.bio_chemistry || {};
+        const bioItems = [];
+        for (const [k, v] of Object.entries(b)) {
+            if (k === 'tox21') continue;
+            bioItems.push(`<div class="prop-item"><div class="label">${v.label}</div><div class="value">${v.value}</div></div>`);
+        }
+        document.getElementById('bioGrid').innerHTML = bioItems.join('');
+        
+        // 毒性
+        const tox = (b.tox21 || {}).details || {};
+        const toxLabels = {
+            'NR-AR': '雄激素受体', 'NR-AR-LBD': '雄激素受体LBD', 'NR-AhR': '芳香烃受体',
+            'NR-Aromatase': '芳香化酶', 'NR-ER': '雌激素受体', 'NR-ER-LBD': '雌激素受体LBD',
+            'NR-PPAR-gamma': 'PPAR-gamma', 'SR-ARE': '抗氧化反应', 'SR-ATAD5': 'DNA损伤',
+            'SR-HSE': '热休克', 'SR-MMP': '线粒体毒性', 'SR-p53': '肿瘤抑制'
+        };
+        document.getElementById('toxGrid').innerHTML = Object.entries(tox).map(([k, v]) => {
+            const cls = v.toxic === 1 ? 'toxic' : 'safe';
+            const label = toxLabels[k] || k;
+            const status = v.toxic === 1 ? '⚠️ 阳性' : '✓ 阴性';
+            return `<div class="tox-item ${cls}"><span>${label}</span><span>${status}</span></div>`;
+        }).join('');
+        
+        // 热力学
+        const t = d.thermodynamics || {};
+        document.getElementById('thermoGrid').innerHTML = Object.values(t).map(v => `
+            <div class="prop-item">
+                <div class="label">${v.label}</div>
+                <div class="value">${v.value}</div>
+            </div>
+        `).join('');
+        
+        // 药物相似性
+        const dl = d.drug_likeness || {};
+        const passClass = dl.lipinski_violations <= 1 ? 'pass' : 'fail';
+        const passText = dl.lipinski_violations <= 1 ? '✓ 通过' : '✗ 不通过';
+        const details = dl.details || {};
+        document.getElementById('drugLikeness').innerHTML = `
+            <div class="drug-likeness">
+                <div class="${passClass}">${passText}</div>
+                <div style="flex:1;">
+                    <div style="color:#888;font-size:0.85em;margin-bottom:8px;">${dl.assessment || ''} | ${dl.rule || ''}</div>
+                    <div class="props-grid">
+                        <div class="prop-item"><div class="label">分子量</div><div class="value">${details.molecular_weight || '?'}</div><div class="unit">≤500</div></div>
+                        <div class="prop-item"><div class="label">LogP</div><div class="value">${details.logp || '?'}</div><div class="unit">≤5</div></div>
+                        <div class="prop-item"><div class="label">氢键供体</div><div class="value">${details.h_donors || '?'}</div><div class="unit">≤5</div></div>
+                        <div class="prop-item"><div class="label">氢键受体</div><div class="value">${details.h_acceptors || '?'}</div><div class="unit">≤10</div></div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // 引文
+        const c = d.citation || {};
+        document.getElementById('citation').textContent = c.bibtex || c.apa || '引文生成中...';
+        
+        // 3D分子渲染
+        try {
+            const viewer = $3Dmol.createViewer('mol3DViewer', {backgroundColor: 'white'});
+            viewer.addModel(await fetch('/api/v1/molecule/info?smiles=' + encodeURIComponent(smi)).then(r=>r.json()).then(d=>d.canonical_smiles || smi).catch(()=>smi), 'sdf');
+            viewer.setStyle({}, {stick: {radius: 0.15}, sphere: {scale: 0.25}});
+            viewer.zoomTo();
+            viewer.render();
+        } catch(e) {
+            document.getElementById('mol3DViewer').innerHTML = '<div style="color:#999;padding:20px;font-size:0.8em;">3D渲染需<br>RDKit SDF</div>';
+        }
+        
+        document.getElementById('results').classList.add('show');
+    }
+    </script>
+</body>
+</html>

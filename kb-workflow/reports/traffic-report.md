@@ -1,82 +1,57 @@
-# Cloudflare Pages 周报
+# 流量周报 2026-06-29
 
-**报告周期：** 2026-06-15 ~ 2026-06-21  
-**生成时间：** 2026-06-22 11:20 (Asia/Shanghai)
+## Cloudflare Analytics
 
----
+**状态**: 无法获取 — CF API Token (`cfut_j3cJdlzdFbPI2DdVodTncAJuNI8CvgcV6p5D3dXU8cf6b00b`) 仅有 Pages 部署权限，缺少 `zone.analytics.read` 权限。
 
-## 1. 部署状态
+**错误信息**: `Actor does not have permission 'com.cloudflare.api.account.zone.analytics.read' for zone af8613036b8aedcac17933ce230f30fd`
 
-全部 **12/12** 知识库站点部署成功 ✅
+**解决方案**: 需在 Cloudflare Dashboard 创建包含 Zone Analytics Read 权限的新 API Token。
 
-| # | 站点目录 | 项目名 | 自定义域名 | 部署日期 | 状态 |
-|---|---------|--------|-----------|----------|------|
-| 1 | genetech-tools | genetech-tools | genetech.tools | 2026-06-22 | ✅ |
-| 2 | tcm-tools | tcm-tools | tcm.genetech.tools | 2026-06-22 | ✅ |
-| 3 | agent-ecosystem | agentecosystem | agent.genetech.tools | 2026-06-22 | ✅ |
-| 4 | robot-parts | robotparts | robot.genetech.tools | 2026-06-22 | ✅ |
-| 5 | quantum-computing | quantumcomputing | quantum.genetech.tools | 2026-06-22 | ✅ |
-| 6 | brain-science | brainscience | brain.genetech.tools | 2026-06-22 | ✅ |
-| 7 | nuclear-energy | nuclearenergy | nuclear.genetech.tools | 2026-06-22 | ✅ |
-| 8 | exo-science | exoscience | exo.genetech.tools | 2026-06-22 | ✅ |
-| 9 | alien-minerals | alienminerals | mineral.genetech.tools | 2026-06-22 | ✅ |
-| 10 | deep-sea-tech | deepseatech | deepsea.genetech.tools | 2026-06-22 | ✅ |
-| 11 | new-energy | newenergy | energy.genetech.tools | 2026-06-21 | ✅ |
-| 12 | life-science | lifescience | life.genetech.tools | 2026-06-21 | ✅ |
+## 部署验证
 
----
+| 站点 | Pages URL | 实体数 | 状态 |
+|------|-----------|--------|------|
+| genetech-tools | genetech-tools.pages.dev | 643 | ✅ 已部署 |
+| tcm-tools | tcm-tools.pages.dev | 294 | ✅ 已部署 |
 
-## 2. ATEX 平台健康检查
+## AIShield 服务状态
 
-**端点：** http://150.158.119.19:8420
+| 服务 | 端点 | HTTP | 状态 |
+|------|------|------|------|
+| API Gateway | http://150.158.119.19:8420/api/v1/status | 200 | ⚠️ 品牌仍显示"ATEX" |
+| 合规服务 | http://150.158.119.19:8450/api/v1/health | 200 | ✅ healthy (135 audits, 21 tools, v2.0.0) |
+| llms.txt | http://150.158.119.19:8420/llms.txt | 200 | ✅ |
+| ai-plugin.json | http://150.158.119.19:8420/.well-known/ai-plugin.json | 200 | ✅ |
+| MCP dist | /home/z/my-project/aishield/mcp/dist/index.js | — | ✅ 文件存在 |
 
-### 基本状态
-| 指标 | 值 |
-|------|-----|
-| 平台版本 | 6.0 |
-| 注册用户 | 46 |
-| 服务数 | 23 |
-| 挂单数 | 3 |
-| 总交易数 | 2 |
-| 总佣金 | ¥66.87 |
-| 最新价格 | ¥1.5 |
-| 日交易量 | 0 |
-| 佣金费率 | maker 3.0% / taker 5.0% |
+## SEO IndexNow 提交
 
-### 端点检查
-| 端点 | 状态 |
+| 项目 | 数量 |
 |------|------|
-| `/api/v1/status` | ✅ 正常 |
-| `/llms.txt` | ✅ 正常（含4个合规工具 + 12个AI能力） |
-| `/.well-known/ai-plugin.json` | ✅ 正常（schema v1） |
+| 14站GET提交 | 13站×2URL×3端点 = 78 |
+| AIShield POST提交 | 6URL×3端点 = 18 |
+| AIShield GET提交 | 3URL×3端点 = 9 |
+| POST批量提交 | ~43 |
+| **总计** | **148条** |
+| 成功 (200/202) | 141 (95.3%) |
+| 失败 (Yandex 403) | 7 (4.7%) |
 
----
+## 渠道收录状态
 
-## 3. Cloudflare 流量数据
+| 渠道 | 状态 | 备注 |
+|------|------|------|
+| Smithery | 404 | 未收录 @aishield/mcp-server |
+| Glama | 404 | 未收录 |
+| mcp.so | 403 | Cloudflare封锁 |
+| npm | Not found | @aishield/mcp-server 未发布 |
+| GitHub lm203688/aishield | 0 stars, 0 forks | 仓库存在，无社区互动 |
+| Bing site:genetech.tools | 无数据 | 未显示收录数 |
 
-> ⚠️ 注意：当前API Token缺少 Zone Analytics Read 权限，无法获取域名级HTTP请求统计。以下为 Pages Functions 调用数据。
+## 待修复项
 
-### Pages Functions 调用（近7天）
-
-| 日期 | 请求数 |
-|------|--------|
-| 2026-06-15 ~ 06-19 | 0（无数据） |
-| 2026-06-20 | 263 |
-| 2026-06-21 | 34 |
-| **合计** | **297** |
-
-### 自定义域名清单
-12个站点全部绑定 `*.genetech.tools` 子域名：
-- genetech.tools（主站）
-- tcm / agent / robot / quantum / brain / nuclear / exo / mineral / deepsea / energy / life .genetech.tools
-
----
-
-## 4. 总结
-
-- **部署：** 12/12 站点全部部署成功，10个于本周日更新，2个保持上周部署
-- **ATEX：** 平台运行正常，46用户，23个服务在线，合规工具+AI能力均可用
-- **流量：** 本周Pages Functions调用297次（6/20-6/21有数据），流量较低
-- **建议：** 
-  - 为API Token添加 `Zone Analytics Read` 权限以获取完整流量数据
-  - 本周流量偏低，可考虑增加内容更新频率和SEO优化
+1. **AIShield API 8420 品牌未更新**: status返回 `"exchange": "ATEX"`，应改为 `"aishield"`
+2. **CF Analytics Token权限不足**: 需创建新Token含analytics读取权限
+3. **npm包未发布**: @aishield/mcp-server 仍未发布到npm registry
+4. **渠道收录全空白**: Smithery/Glama/mcp.so均未收录AIShield MCP
+5. **Bing收录不可见**: 需手动在Bing Webmaster Tools查看

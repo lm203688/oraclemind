@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "TCM Tools",
+  "name_for_model": "tcmtools",
+  "description_for_human": "Traditional Chinese Medicine knowledge base with 427 entities",
+  "description_for_model": "Access TCM Tools knowledge base via API. Traditional Chinese Medicine knowledge base with 427 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://tcm.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://tcm.genetech.tools/"
+}

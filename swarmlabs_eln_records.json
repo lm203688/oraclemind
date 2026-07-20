@@ -1,0 +1,117 @@
+[
+  {
+    "id": "ELN-3e6509c3a798",
+    "timestamp": 1784432477.4148972,
+    "datetime": "2026-07-19 11:41:17",
+    "engine": "suzuki",
+    "hypothesis": "在suzuki中,标准条件下可达高转化率",
+    "parameters": {
+      "temperature_C": 80,
+      "concentration": 1.0,
+      "time_h": 4
+    },
+    "result": 42.0,
+    "uncertainty": 2.75,
+    "confidence_interval": [
+      36.5,
+      47.5
+    ],
+    "model": "universal_knn_interpolation",
+    "notes": "使用universal_knn_interpolation模型预测",
+    "tags": [
+      "suzuki"
+    ]
+  },
+  {
+    "id": "ELN-6d83c5d2347e",
+    "timestamp": 1784432477.415484,
+    "datetime": "2026-07-19 11:41:17",
+    "engine": "photocatalysis",
+    "hypothesis": "在photocatalysis中,标准条件下可达高转化率",
+    "parameters": {
+      "temperature_C": 80,
+      "concentration": 1.0,
+      "time_h": 4
+    },
+    "result": 20.0,
+    "uncertainty": 1.95,
+    "confidence_interval": [
+      16.1,
+      23.9
+    ],
+    "model": "universal_knn_interpolation",
+    "notes": "使用universal_knn_interpolation模型预测",
+    "tags": [
+      "photocatalysis"
+    ]
+  },
+  {
+    "id": "ELN-98ab076410d8",
+    "timestamp": 1784432477.4169688,
+    "datetime": "2026-07-19 11:41:17",
+    "engine": "battery",
+    "hypothesis": "在battery中,标准条件下可达高转化率",
+    "parameters": {
+      "temperature_C": 80,
+      "concentration": 1.0,
+      "time_h": 4
+    },
+    "result": 68.0,
+    "uncertainty": 2.0,
+    "confidence_interval": [
+      64.0,
+      72.0
+    ],
+    "model": "universal_knn_interpolation",
+    "notes": "使用universal_knn_interpolation模型预测",
+    "tags": [
+      "battery"
+    ]
+  },
+  {
+    "id": "ELN-f0ce6e298951",
+    "timestamp": 1784432477.4175992,
+    "datetime": "2026-07-19 11:41:17",
+    "engine": "membrane",
+    "hypothesis": "在membrane中,标准条件下可达高转化率",
+    "parameters": {
+      "temperature_C": 80,
+      "concentration": 1.0,
+      "time_h": 4
+    },
+    "result": 20.0,
+    "uncertainty": 2.5,
+    "confidence_interval": [
+      15.0,
+      25.0
+    ],
+    "model": "universal_knn_interpolation",
+    "notes": "使用universal_knn_interpolation模型预测",
+    "tags": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "ELN-4f165c570552",
+    "timestamp": 1784432477.418643,
+    "datetime": "2026-07-19 11:41:17",
+    "engine": "crystal",
+    "hypothesis": "在crystal中,标准条件下可达高转化率",
+    "parameters": {
+      "temperature_C": 80,
+      "concentration": 1.0,
+      "time_h": 4
+    },
+    "result": 50.0,
+    "uncertainty": 2.05,
+    "confidence_interval": [
+      45.9,
+      54.1
+    ],
+    "model": "universal_knn_interpolation",
+    "notes": "使用universal_knn_interpolation模型预测",
+    "tags": [
+      "crystal"
+    ]
+  }
+]

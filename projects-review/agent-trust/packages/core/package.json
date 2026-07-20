@@ -1,0 +1,57 @@
+{
+  "name": "agent-trust-core",
+  "version": "0.2.0",
+  "description": "AI Agent trust scoring engine — assign reputation scores (0-100) to any agent via DID, with W3C Verifiable Credentials output. For MCP servers, x402 payment listeners, and agent-to-agent economy.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "keywords": [
+    "ai-agent",
+    "trust-score",
+    "reputation",
+    "did",
+    "verifiable-credentials",
+    "mcp",
+    "x402",
+    "ai-reputation",
+    "agent-scoring",
+    "trust-protocol",
+    "llm-agent",
+    "agent-economy",
+    "machine-trust",
+    "credit-score",
+    "open-source-trust",
+    "w3c-verifiable-credentials",
+    "decentralized-id",
+    "did-resolver"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lm203688/agent-trust-protocol.git"
+  },
+  "homepage": "https://github.com/lm203688/agent-trust-protocol#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}

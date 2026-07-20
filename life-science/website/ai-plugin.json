@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Life Science",
+  "name_for_model": "lifescience",
+  "description_for_human": "Life science database with 622 entities",
+  "description_for_model": "Access Life Science knowledge base via API. Life science database with 622 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://life.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://life.genetech.tools/"
+}

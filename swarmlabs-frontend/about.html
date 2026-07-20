@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>关于蜂群科研</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--radius:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+.container{max-width:800px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:18px;font-weight:700}
+.logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:20px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:13px;font-weight:500}
+.nav-links a.active{color:var(--text)}
+.section{padding:48px 0}
+.section h1{font-size:32px;font-weight:800;margin-bottom:16px}
+.section h2{font-size:22px;font-weight:700;margin:32px 0 12px}
+.section p{color:var(--muted);margin-bottom:12px}
+.tech-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}
+.tech-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px}
+.tech-name{font-size:15px;font-weight:600;color:var(--accent)}
+.tech-desc{font-size:13px;color:var(--muted);margin-top:4px}
+.tech-ver{font-size:12px;color:var(--green);margin-top:4px}
+.info-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:20px 0}
+.info-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)}
+.info-row:last-child{border:none}
+.footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<div class="logo">🐝 <span>蜂群科研</span></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="quantum.html">量子计算</a>
+<a href="md.html">分子动力学</a>
+<a href="ml-predict.html">ML预测</a>
+<a href="materials.html">材料数据库</a>
+<a href="about.html" class="active">关于</a>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="section">
+<h1>关于蜂群科研</h1>
+<p>蜂群科研（SwarmLabs）是AI驱动的材料模拟平台，提供从量子到宏观的全尺度物理模拟+ML预测能力。</p>
+
+<h2>核心技术栈</h2>
+<div class="tech-grid">
+<div class="tech-item"><div class="tech-name">PySCF</div><div class="tech-desc">量子化学DFT计算</div><div class="tech-ver">v2.13.1 | 误差<1%</div></div>
+<div class="tech-item"><div class="tech-name">OpenMM</div><div class="tech-desc">分子动力学(TIP3P+Langevin)</div><div class="tech-ver">v8.5.2 | 温度误差42K</div></div>
+<div class="tech-item"><div class="tech-name">RDKit MMFF94</div><div class="tech-desc">有机分子力场+SMILES→3D</div><div class="tech-ver">v2026.03.3 | ±5%</div></div>
+<div class="tech-item"><div class="tech-name">scikit-learn</div><div class="tech-desc">ML预测模型(GradientBoosting)</div><div class="tech-ver">4模型 | 30分子NIST训练 | LOO验证</div></div>
+</div>
+
+<h2>4层模拟栈</h2>
+<div class="info-box">
+<div class="info-row"><span>1. 量子级（PySCF DFT）</span><span style="color:var(--green)">误差0.05-0.38% | NIST验证</span></div>
+<div class="info-row"><span>2. 原子级（OpenMM/MMFF94 MD）</span><span style="color:var(--green)">误差±5% | 8种力场</span></div>
+<div class="info-row"><span>3. ML预测（物理方程+ML残差）</span><span style="color:var(--accent)">3个GBR模型</span></div>
+<div class="info-row"><span>4. 宏观级（反应动力学方程）</span><span style="color:var(--accent)">Arrhenius+幂律退化</span></div>
+</div>
+
+<h2>真实验证数据</h2>
+<p>30个分子的真实实验值（偶极矩/沸点/熔点/生成焓），来源NIST CCCBDB + NIST WebBook + 文献。LeaveOneOut交叉验证。</p>
+<div class="info-box">
+<div class="info-row"><span>DFT能量</span><span style="color:var(--green)">NIST CCCBDB (B3LYP/6-31G*)</span></div>
+<div class="info-row"><span>实验偶极矩</span><span style="color:var(--green)">NIST CCCBDB + McClellan(1963)</span></div>
+<div class="info-row"><span>热力学数据</span><span style="color:var(--green)">NIST WebBook</span></div>
+<div class="info-row"><span>验证分子数</span><span>30个</span></div>
+<div class="info-row"><span>LOO-MAE 偶极矩</span><span style="color:var(--green)">1.02 Debye</span></div>
+<div class="info-row"><span>LOO-MAE 沸点</span><span style="color:var(--green)">49.2°C</span></div>
+<div class="info-row"><span>LOO-MAE 生成焓</span><span style="color:var(--green)">113.7 kJ/mol</span></div>
+</div>
+
+<h2>材料属性数据库</h2>
+<p>8类70种材料，每种都有真实属性+文献来源。</p>
+<div class="info-box">
+<div class="info-row"><span>光催化</span><span>10种 (带隙/比表面积/量子效率)</span></div>
+<div class="info-row"><span>电池</span><span>10种 (电压/容量/循环寿命)</span></div>
+<div class="info-row"><span>钙钛矿</span><span>10种 (带隙/效率/晶体)</span></div>
+<div class="info-row"><span>吸附/腐蚀/高分子/合成氨/燃烧</span><span>30种</span></div>
+<div class="info-row"><span>数据来源</span><span style="color:var(--green)">NIST/JARVIS/NREL/文献</span></div>
+</div>
+
+<h2>API能力</h2>
+<div class="info-box">
+<div class="info-row"><span>API端点</span><span>25+个</span></div>
+<div class="info-row"><span>预测引擎</span><span>30个</span></div>
+<div class="info-row"><span>ML模型</span><span>4个分子级 + 8个引擎级 (GradientBoosting)</span></div>
+<div class="info-row"><span>ML训练数据</span><span style="color:var(--green)">30分子真实实验值 (NIST)</span></div>
+<div class="info-row"><span>ML验证方式</span><span style="color:var(--green)">LeaveOneOut交叉验证</span></div>
+<div class="info-row"><span>力场</span><span>8种 (3可用+5planned)</span></div>
+<div class="info-row"><span>材料数据库</span><span>70种 (8类)</span></div>
+<div class="info-row"><span>验证分子</span><span>30个 (NIST+文献来源)</span></div>
+</div>
+
+<h2>开源</h2>
+<p>GitHub: <a href="https://github.com/lm203688/swarmlabs" style="color:var(--accent)">github.com/lm203688/swarmlabs</a></p>
+</div>
+</div>
+<footer class="footer"><div class="container"><p>© 2026 SwarmLabs. PySCF + OpenMM + RDKit + scikit-learn</p></div></footer>
+</body>
+</html>

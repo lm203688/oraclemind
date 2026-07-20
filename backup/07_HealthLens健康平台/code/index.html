@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HealthLens - 健康全景</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); min-height: 100vh; }
+        .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .glow { box-shadow: 0 0 30px rgba(59,130,246,0.15); }
+        .pulse-dot { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+        @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+        .float { animation: float 3s ease-in-out infinite; }
+        .bottom-nav { padding-bottom: env(safe-area-inset-bottom, 0px); }
+    </style>
+</head>
+<body class="gradient-bg text-white">
+
+<!-- 导航 -->
+<nav class="glass sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">H</div>
+            <span class="text-lg font-semibold">HealthLens</span>
+            <span class="text-xs text-gray-400 ml-1 hidden sm:inline">健康全景</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-4">
+            <a href="/" class="text-sm text-white">首页</a>
+            <a href="/upload" class="text-sm text-gray-300 hover:text-white transition">上传数据</a>
+            <a href="/dashboard" class="text-sm text-gray-300 hover:text-white transition">健康面板</a>
+            <a href="/login" id="navLogin" class="text-sm text-gray-300 hover:text-white transition">登录</a>
+            <a href="/profile" id="navProfile" class="text-sm text-gray-300 hover:text-white transition hidden">个人中心</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="max-w-7xl mx-auto px-4 py-12 md:py-20 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-xs text-blue-300 mb-6">
+        <span class="w-2 h-2 rounded-full bg-green-400 pulse-dot"></span>
+        跨生态健康数据聚合
+    </div>
+    <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        你的健康数据<br>
+        <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">第一次放在一起看</span>
+    </h1>
+    <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10">
+        体检报告、Apple Health、智能设备——散落各处的健康数据，HealthLens帮你聚合、关联、洞察。
+    </p>
+    <div class="flex items-center justify-center gap-4">
+        <a href="/upload" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-medium transition active:scale-95">
+            开始上传
+        </a>
+        <a href="/dashboard" class="px-6 py-3 glass hover:bg-white/10 rounded-xl font-medium transition active:scale-95">
+            查看面板
+        </a>
+    </div>
+</section>
+
+<!-- 三步流程 -->
+<section class="max-w-7xl mx-auto px-4 py-8 md:py-16">
+    <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div class="glass rounded-2xl p-6 glow">
+            <div class="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center text-2xl mb-4 float">📤</div>
+            <h3 class="font-semibold text-lg mb-2">上传数据</h3>
+            <p class="text-gray-400 text-sm">上传体检报告PDF/照片，或导入Apple Health数据。支持Withings等智能设备自动同步。</p>
+        </div>
+        <div class="glass rounded-2xl p-6 glow">
+            <div class="w-12 h-12 rounded-lg bg-cyan-500/20 flex items-center justify-center text-2xl mb-4 float" style="animation-delay:0.5s">🔗</div>
+            <h3 class="font-semibold text-lg mb-2">AI关联分析</h3>
+            <p class="text-gray-400 text-sm">跨数据源关联——"手环睡眠变差+体检甲状腺结节增大"，这种洞察只有你能看到。</p>
+        </div>
+        <div class="glass rounded-2xl p-6 glow">
+            <div class="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center text-2xl mb-4 float" style="animation-delay:1s">🛡️</div>
+            <h3 class="font-semibold text-lg mb-2">主动预警</h3>
+            <p class="text-gray-400 text-sm">趋势追踪+异常预警——在你的血糖进入糖尿病区间之前提醒你，而不是之后。</p>
+        </div>
+    </div>
+</section>
+
+<!-- 数据源 -->
+<section class="max-w-7xl mx-auto px-4 py-8 md:py-16">
+    <h2 class="text-2xl font-bold text-center mb-10">支持的数据源</h2>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4">
+        <div class="glass rounded-xl p-4 text-center">
+            <div class="text-3xl mb-2">🏥</div>
+            <div class="font-medium text-sm">体检报告</div>
+            <div class="text-xs text-green-400 mt-1">✅ 已支持</div>
+        </div>
+        <div class="glass rounded-xl p-4 text-center">
+            <div class="text-3xl mb-2">🍎</div>
+            <div class="font-medium text-sm">Apple Health</div>
+            <div class="text-xs text-green-400 mt-1">✅ 已支持</div>
+        </div>
+        <div class="glass rounded-xl p-4 text-center">
+            <div class="text-3xl mb-2">⚖️</div>
+            <div class="font-medium text-sm">Withings</div>
+            <div class="text-xs text-green-400 mt-1">✅ 已支持</div>
+        </div>
+        <div class="glass rounded-xl p-4 text-center">
+            <div class="text-3xl mb-2">🔗</div>
+            <div class="font-medium text-sm">Webhook</div>
+            <div class="text-xs text-green-400 mt-1">✅ 已支持</div>
+        </div>
+        <div class="glass rounded-xl p-4 text-center">
+            <div class="text-3xl mb-2">⌚</div>
+            <div class="font-medium text-sm">更多设备</div>
+            <div class="text-xs text-gray-400 mt-1">即将支持</div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="max-w-7xl mx-auto px-4 py-8 text-center text-gray-500 text-sm border-t border-white/5">
+    <p>HealthLens - 健康数据仅供参考，不能替代医疗诊断</p>
+</footer>
+
+<!-- 移动端底部导航 -->
+<div class="sm:hidden fixed bottom-0 left-0 right-0 glass bottom-nav z-50">
+    <div class="flex justify-around py-2">
+        <a href="/" class="flex flex-col items-center gap-0.5 text-blue-400 px-3 py-1">
+            <span class="text-lg">🏠</span><span class="text-[10px]">首页</span>
+        </a>
+        <a href="/upload" class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white transition px-3 py-1">
+            <span class="text-lg">📤</span><span class="text-[10px]">上传</span>
+        </a>
+        <a href="/dashboard" class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white transition px-3 py-1">
+            <span class="text-lg">📊</span><span class="text-[10px]">面板</span>
+        </a>
+        <a href="/profile" class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white transition px-3 py-1">
+            <span class="text-lg">👤</span><span class="text-[10px]">我的</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    fetch('/api/auth/me').then(r=>r.json()).then(data => {
+        if (data.success) {
+            document.getElementById('navLogin')?.classList.add('hidden');
+            document.getElementById('navProfile')?.classList.remove('hidden');
+        }
+    });
+</script>
+</body>
+</html>

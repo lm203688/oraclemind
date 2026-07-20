@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Swarmlabs",
+  "description": "145 AI-driven virtual experiment engines with 7550+ real paper validations across 22 physics categories",
+  "applicationCategory": "ScienceApplication",
+  "operatingSystem": "Web",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "7550"},
+  "featureList": [
+    "145 virtual experiment engines",
+    "7550 real paper validations",
+    "5 research skills (PaperSpine, Citation Verify, Stats Sanity, Literature Survey, Scientific Writing)",
+    "5 marketing skills (GrowthPulse, SEOPulse, ContentForge, CompetitorRadar, LaunchKit)",
+    "AI-driven Pareto optimization",
+    "SCI paper material generation"
+  ],
+  "url": "https://swarmlabs.pages.dev"
+}

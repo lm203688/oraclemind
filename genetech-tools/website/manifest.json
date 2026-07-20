@@ -1,0 +1,9 @@
+{
+  "name": "GeneTech Tools",
+  "short_name": "GeneTech Too",
+  "description": "Gene technology knowledge base with 698 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

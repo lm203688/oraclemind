@@ -1,0 +1,51 @@
+{
+  "AS17810964938b13d649": {
+    "order_id": "AS17810964938b13d649",
+    "product_id": "pro_monthly",
+    "product_name": "AIShield Pro月度",
+    "amount": 99.0,
+    "tier": "pro",
+    "duration_days": 30,
+    "email": "test@example.com",
+    "pay_type": "alipay",
+    "status": "pending",
+    "created_at": "2026-06-10T21:01:33Z"
+  },
+  "AS1781096520ccd3c3a8": {
+    "order_id": "AS1781096520ccd3c3a8",
+    "product_id": "pro_monthly",
+    "product_name": "AIShield Pro月度",
+    "amount": 99.0,
+    "tier": "pro",
+    "duration_days": 30,
+    "email": "test@test.com",
+    "pay_type": "wechat",
+    "status": "pending",
+    "created_at": "2026-06-10T21:02:00Z"
+  },
+  "AS17810981033f33edfc": {
+    "order_id": "AS17810981033f33edfc",
+    "product_id": "pro_monthly",
+    "product_name": "AIShield Pro月度",
+    "amount": 29.0,
+    "tier": "pro",
+    "duration_days": 30,
+    "email": "test@test.com",
+    "pay_type": "alipay",
+    "status": "pending",
+    "created_at": "2026-06-10T21:28:23Z"
+  },
+  "AS1781098129b3c7fd0c": {
+    "order_id": "AS1781098129b3c7fd0c",
+    "product_id": "scan_pack_10",
+    "product_name": "AIShield 10次扫描包",
+    "amount": 9.9,
+    "tier": "scan_pack",
+    "duration_days": 0,
+    "scan_count": 10,
+    "email": "test@test.com",
+    "pay_type": "wechat",
+    "status": "pending",
+    "created_at": "2026-06-10T21:28:49Z"
+  }
+}

@@ -849,6 +849,216 @@ Extraterrestrial mineral database covering space minerals, asteroids, mining tec
 - source: GFZ German Research Centre for Geosciences 2020/2026
 - description: 欧洲研究团队在月球陨石Oued Awlitis 001中发现了一种新的高压矿物donwilhelmsite (CaAl₄Si₂O₁₁)。这种矿物以月球地质学家Don Wilhelms命名，是在月球陨石中发现的少数高压矿物之一，为理解月球撞击过程和深部地壳物质组成提供了重要线索。
 
+### Andradite
+
+- name: Andradite
+- formula: Ca3Fe2(SiO4)3
+- crystal_system: Isometric
+- hardness: 6.5
+
+### Cassiterite
+
+- name: Cassiterite
+- formula: SnO2
+- crystal_system: Tetragonal
+- hardness: 6.5
+
+### Chalcopyrite
+
+- name: Chalcopyrite
+- formula: CuFeS2
+- crystal_system: Tetragonal
+- hardness: 3.5
+
+### Grossular
+
+- name: Grossular
+- formula: Ca3Al2(SiO4)3
+- crystal_system: Isometric
+- hardness: 6.5
+
+### Hematite
+
+- name: Hematite
+- formula: Fe2O3
+- crystal_system: Trigonal
+- hardness: 5.5
+
+### Ilmenite
+
+- name: Ilmenite
+- formula: FeTiO3
+- crystal_system: Trigonal
+- hardness: 5.5
+
+### Limonite
+
+- name: Limonite
+- formula: FeO(OH)·nH2O
+- crystal_system: Amorphous
+- hardness: 4
+
+### Magnesite
+
+- name: Magnesite
+- formula: MgCO3
+- crystal_system: Trigonal
+- hardness: 3.5
+
+### Pyrite
+
+- name: Pyrite
+- formula: FeS2
+- crystal_system: Isometric
+- hardness: 6
+
+### Rutile
+
+- name: Rutile
+- formula: TiO2
+- crystal_system: Tetragonal
+- hardness: 6
+
+### Siderite
+
+- name: Siderite
+- formula: FeCO3
+- crystal_system: Trigonal
+- hardness: 4
+
+### Sphalerite
+
+- name: Sphalerite
+- formula: ZnS
+- crystal_system: Isometric
+- hardness: 3.5
+
+### Uvarovite
+
+- name: Uvarovite
+- formula: Ca3Cr2(SiO4)3
+- crystal_system: Isometric
+- hardness: 6.5
+
+### Willemite
+
+- name: Willemite
+- formula: Zn2SiO4
+- crystal_system: Trigonal
+- hardness: 5.5
+
+### Zircon
+
+- name: Zircon
+- formula: ZrSiO4
+- crystal_system: Tetragonal
+- hardness: 7.5
+
+### Almandine
+
+- name: Almandine
+- formula: Fe3Al2(SiO4)3
+- crystal_system: Cubic
+- hardness: 5
+
+### Andradite
+
+- name: Andradite
+- formula: Ca3Fe2(SiO4)3
+- crystal_system: Cubic
+- hardness: 5
+
+### Grossular
+
+- name: Grossular
+- formula: Ca3Al2(SiO4)3
+- crystal_system: Cubic
+- hardness: 5
+
+### Pyrope
+
+- name: Pyrope
+- formula: Mg3Al2(SiO4)3
+- crystal_system: Cubic
+- hardness: 5
+
+### Spessartine
+
+- name: Spessartine
+- formula: Mn3Al2(SiO4)3
+- crystal_system: Cubic
+- hardness: 5
+
+### Uvarovite
+
+- name: Uvarovite
+- formula: Ca3Cr2(SiO4)3
+- crystal_system: Cubic
+- hardness: 5
+
+### Andalusite
+
+- name: Andalusite
+- formula: Al2SiO5
+- crystal_system: Orthorhombic
+- hardness: 5
+
+### Kyanite
+
+- name: Kyanite
+- formula: Al2SiO5
+- crystal_system: Triclinic
+- hardness: 5
+
+### Sillimanite
+
+- name: Sillimanite
+- formula: Al2SiO5
+- crystal_system: Orthorhombic
+- hardness: 5
+
+### Enstatite
+
+- name: Enstatite
+- formula: MgSiO3
+- crystal_system: Orthorhombic
+- hardness: 5
+
+### Fayalite
+
+- name: Fayalite
+- formula: Fe2SiO4
+- crystal_system: Orthorhombic
+- hardness: 5
+
+### Forsterite
+
+- name: Forsterite
+- formula: Mg2SiO4
+- crystal_system: Orthorhombic
+- hardness: 5
+
+### Hematite
+
+- name: Hematite
+- formula: Fe2O3
+- crystal_system: Trigonal
+- hardness: 5
+
+### Pyrolusite
+
+- name: Pyrolusite
+- formula: MnO2
+- crystal_system: Tetragonal
+- hardness: 5
+
+### Galena
+
+- name: Galena
+- formula: PbS
+- crystal_system: Cubic
+- hardness: 5
+
 ## asteroids
 
 ### 16 Psyche
@@ -1458,6 +1668,216 @@ Extraterrestrial mineral database covering space minerals, asteroids, mining tec
 - description: Target of NASA's Psyche mission. The spacecraft completed its Mars gravity-assist flyby on May 15, 2026, coming within 4,609 km of Mars' surface. The flyby provided a critical speed boost and orbital plane adjustment without using fuel. The mission will enter orbit around 16 Psyche in 2029, marking the first up-close exploration of a metal-rich asteroid.
 - source: NASA Psyche Mission 2026
 
+### Ceres
+
+- name: Ceres
+- designation: 1 Ceres
+- type: C-type
+- diameter_km: 1
+
+### Vesta
+
+- name: Vesta
+- designation: 4 Vesta
+- type: S-type
+- diameter_km: 1
+
+### Pallas
+
+- name: Pallas
+- designation: 2 Pallas
+- type: M-type
+- diameter_km: 1
+
+### Eros
+
+- name: Eros
+- designation: 433 Eros
+- type: S-type
+- diameter_km: 1
+
+### Itokawa
+
+- name: Itokawa
+- designation: 25143 Itokawa
+- type: S-type
+- diameter_km: 1
+
+### Bennu
+
+- name: Bennu
+- designation: 101955 Bennu
+- type: C-type
+- diameter_km: 1
+
+### Psyche
+
+- name: Psyche
+- designation: 16 Psyche
+- type: M-type
+- diameter_km: 1
+
+### Hygiea
+
+- name: Hygiea
+- designation: 10 Hygiea
+- type: C-type
+- diameter_km: 1
+
+### Davida
+
+- name: Davida
+- designation: 511 Davida
+- type: C-type
+- diameter_km: 1
+
+### Interamnia
+
+- name: Interamnia
+- designation: 704 Interamnia
+- type: F-type
+- diameter_km: 1
+
+### Eunomia
+
+- name: Eunomia
+- designation: 15 Eunomia
+- type: S-type
+- diameter_km: 1
+
+### Flora
+
+- name: Flora
+- designation: 8 Flora
+- type: S-type
+- diameter_km: 1
+
+### Amor
+
+- name: Amor
+- designation: 1221 Amor
+- type: A-type
+- diameter_km: 1
+
+### Apollo
+
+- name: Apollo
+- designation: 1862 Apollo
+- type: Q-type
+- diameter_km: 1
+
+### Icarus
+
+- name: Icarus
+- designation: 1566 Icarus
+- type: S-type
+- diameter_km: 1
+
+### Ceres
+
+- name: Ceres
+- designation: 1 Ceres
+- type: C-type
+- diameter_km: 1
+
+### Vesta
+
+- name: Vesta
+- designation: 4 Vesta
+- type: S-type
+- diameter_km: 1
+
+### Psyche
+
+- name: Psyche
+- designation: 16 Psyche
+- type: M-type
+- diameter_km: 1
+
+### Eros
+
+- name: Eros
+- designation: 433 Eros
+- type: S-type
+- diameter_km: 1
+
+### Bennu
+
+- name: Bennu
+- designation: 101955 Bennu
+- type: C-type
+- diameter_km: 1
+
+### Itokawa
+
+- name: Itokawa
+- designation: 25143 Itokawa
+- type: S-type
+- diameter_km: 1
+
+### Ida
+
+- name: Ida
+- designation: 243 Ida
+- type: S-type
+- diameter_km: 1
+
+### Mathilde
+
+- name: Mathilde
+- designation: 253 Mathilde
+- type: C-type
+- diameter_km: 1
+
+### Lutetia
+
+- name: Lutetia
+- designation: 21 Lutetia
+- type: C-type
+- diameter_km: 1
+
+### Gaspra
+
+- name: Gaspra
+- designation: 951 Gaspra
+- type: S-type
+- diameter_km: 1
+
+### Eunomia
+
+- name: Eunomia
+- designation: 15 Eunomia
+- type: S-type
+- diameter_km: 1
+
+### Juno
+
+- name: Juno
+- designation: 3 Juno
+- type: S-type
+- diameter_km: 1
+
+### Hebe
+
+- name: Hebe
+- designation: 6 Hebe
+- type: S-type
+- diameter_km: 1
+
+### Davida
+
+- name: Davida
+- designation: 511 Davida
+- type: C-type
+- diameter_km: 1
+
+### Interamnia
+
+- name: Interamnia
+- designation: 704 Interamnia
+- type: F-type
+- diameter_km: 1
+
 ## mining_tech
 
 ### Molten Regolith Electrolysis
@@ -2043,6 +2463,216 @@ Extraterrestrial mineral database covering space minerals, asteroids, mining tec
 - year: 2025 (project completed)
 - description: NASA's MRE technology developed to extract oxygen and metals from minerals in lunar regolith. The MRE project was completed in 2025, advancing capabilities for in-situ resource utilization on the Moon. The system heats regolith to molten temperatures and electrolyzes it to produce oxygen and metal byproducts.
 - source: NASA Lunar Surface Technology 2025
+
+### Vulcan Extractor
+
+- name: Vulcan Extractor
+- type: Surface Mining Platform
+- description: A semi-autonomous, multi-purpose surface mining platform designed for extracting volatile ices and minerals from cometary and planetary bodies. It utilizes a combination of precision drills, vapor collection systems, and in-situ resource processing.
+- trl: 5
+
+### Asteroid Tug
+
+- name: Asteroid Tug
+- type: Orbital Transfer Vehicle
+- description: A heavy-duty robotic tug designed to capture and maneuver small to medium-sized asteroids into stable orbits for processing. Equipped with advanced guidance, navigation, and propulsion systems.
+- trl: 5
+
+### Cryo-Refinery
+
+- name: Cryo-Refinery
+- type: In-Situ Processing Unit
+- description: A compact, modular refinery capable of processing raw asteroid material, separating water ice, metals, and rare elements. It uses sublimation and fractional distillation techniques in a vacuum environment.
+- trl: 5
+
+### Deep-Core Borer
+
+- name: Deep-Core Borer
+- type: Subsurface Mining Drill
+- description: A high-temperature, high-pressure drilling apparatus designed to bore into the crust of terrestrial planets and moons to access deep mineral veins and geothermal energy sources.
+- trl: 5
+
+### Plasma Torch Excavator
+
+- name: Plasma Torch Excavator
+- type: Surface Mining Tool
+- description: An excavator attachment that uses a focused plasma torch to vaporize and excavate regolith, particularly effective on hard, rocky surfaces like the lunar highlands or metallic asteroids.
+- trl: 5
+
+### Gravitational Tractor
+
+- name: Gravitational Tractor
+- type: Orbital Manipulation System
+- description: A passive propulsion system that uses a spacecraft's gravitational field to minutely alter the trajectory of a large asteroid over time, without physical contact, for long-term mining operations.
+- trl: 5
+
+### Helios-3 Solar Smelter
+
+- name: Helios-3 Solar Smelter
+- type: In-Situ Refining Furnace
+- description: A large, parabolic concentrator that focuses solar energy to melt and refine metallic ores in space. It produces pure ingots and slag for further processing or disposal.
+- trl: 5
+
+### Nanite Swarm Harvester
+
+- name: Nanite Swarm Harvester
+- type: Micro-Mining System
+- description: A swarm of microscopic, programmable robots that disperse across an asteroid's surface, breaking down rock at a molecular level and collecting specific elements for reassembly into useful products.
+- trl: 5
+
+### Regolith Sifter
+
+- name: Regolith Sifter
+- type: Ore Separation Device
+- description: A vibrating screen and electrostatic separator designed to process loose regolith, separating it by mass, charge, and density to concentrate valuable minerals like platinum-group metals.
+- trl: 5
+
+### Vacuum Arc Furnace
+
+- name: Vacuum Arc Furnace
+- type: Metal Refining System
+- description: An electric arc furnace that operates in a vacuum to smelt and refine refractory metals and alloys that would otherwise oxidize in an atmosphere, such as titanium and tungsten.
+- trl: 5
+
+### Orbital Depot
+
+- name: Orbital Depot
+- type: Logistics & Storage Platform
+- description: A large, modular space station serving as a central hub for storing raw materials, refined products, and fuel, facilitating transfer between mining operations and transport vessels.
+- trl: 5
+
+### Magnetohydrodynamic (MHD) Separator
+
+- name: Magnetohydrodynamic (MHD) Separator
+- type: Ore Concentration System
+- description: A device that uses powerful magnetic fields and electric currents to separate metallic ores from non-magnetic silicates and other materials in a molten state.
+- trl: 5
+
+### Cryo-Dredge
+
+- name: Cryo-Dredge
+- type: Ice Mining System
+- description: A mechanical dredge equipped with insulated scoops and conveyors designed to excavate and transport large quantities of water ice from the subsurface of moons and asteroids.
+- trl: 5
+
+### Autonomous Prospector Drone
+
+- name: Autonomous Prospector Drone
+- type: Survey & Analysis Vehicle
+- description: A long-range, AI-driven drone equipped with advanced spectrometers and ground-penetrating radar to map and analyze mineral composition across vast, unexplored regions of a celestial body.
+- trl: 5
+
+### Electrostatic Beneficiation Plant
+
+- name: Electrostatic Beneficiation Plant
+- type: Mineral Concentration Facility
+- description: A large-scale facility that uses electrostatic charges to separate minerals based on their conductivity, ideal for purifying ilmenite from lunar regolith for oxygen and iron extraction.
+- trl: 5
+
+### Asteroid Redirect Vessel (ARV) Helios
+
+- name: Asteroid Redirect Vessel (ARV) Helios
+- type: Vehicle
+- description: A solar-sail equipped robotic tug designed to gently alter the trajectory of near-Earth asteroids, moving them into stable orbital positions for resource extraction without high-energy propulsion.
+- trl: 5
+
+### Regolith Drill Matrix-7 (RDM-7)
+
+- name: Regolith Drill Matrix-7 (RDM-7)
+- type: Drilling/Excavation
+- description: A multi-head sonic drill system that uses high-frequency vibrations to fracture and dislodge regolith and subsurface ice, capable of operating in vacuum and extreme temperatures.
+- trl: 5
+
+### Cryo-Refinery Unit CRU-500
+
+- name: Cryo-Refinery Unit CRU-500
+- type: Processing/Refining
+- description: A modular, automated facility designed to process water ice extracted from asteroids, separating it into hydrogen and oxygen for rocket propellant and life support systems.
+- trl: 5
+
+### Neutron Flux Spectrometer
+
+- name: Neutron Flux Spectrometer
+- type: Prospecting/Sensing
+- description: A compact, radiation-hardened sensor payload that maps the internal composition of asteroids by analyzing secondary neutron fluxes generated by cosmic ray interactions.
+- trl: 5
+
+### Vacuum Arc Melter (VAM) Genesis
+
+- name: Vacuum Arc Melter (VAM) Genesis
+- type: Processing/Refining
+- description: An industrial-scale furnace that uses an electric arc in a vacuum to melt and refine metallic asteroids, separating them into their constituent elements like iron, nickel, and cobalt.
+- trl: 5
+
+### HiveNet Swarm Drone
+
+- name: HiveNet Swarm Drone
+- type: Robotics
+- description: A collective of small, AI-coordinated drones that can autonomously survey, map, and sample an asteroid's surface, adapting to terrain and sharing data in real-time.
+- trl: 5
+
+### Electromagnetic Mass Driver
+
+- name: Electromagnetic Mass Driver
+- type: Transport/Logistics
+- description: A ground-based linear accelerator that uses magnetic fields to propel mined material from an asteroid's surface into an orbital collection vessel or processing plant.
+- trl: 5
+
+### Autonomous Tug & Transport System (ATTS)
+
+- name: Autonomous Tug & Transport System (ATTS)
+- type: Vehicle
+- description: A ruggedized, AI-controlled cargo hauler designed to transport refined ore and raw materials from a mining operation to a space station or orbital refinery.
+- trl: 5
+
+### Plasma Torch Cutter
+
+- name: Plasma Torch Cutter
+- type: Drilling/Excavation
+- description: A high-precision tool that uses a focused stream of ionized gas to cut through asteroid rock and metal, enabling the extraction of specific ore veins with minimal waste.
+- trl: 5
+
+### Xenon-Argon Ion Extractor
+
+- name: Xenon-Argon Ion Extractor
+- type: Processing/Refining
+- description: A specialized refining system designed to separate noble gases like xenon and argon from volatiles in mined material, for use in ion thruster propulsion.
+- trl: 5
+
+### Graviton Grasper
+
+- name: Graviton Grasper
+- type: Handling/Manipulation
+- description: A device that generates a localized, manipulable gravitational field to gently lift, move, and position large, irregularly shaped asteroids or asteroid fragments.
+- trl: 5
+
+### In-Situ Resource Utilization (ISRU) Plant
+
+- name: In-Situ Resource Utilization (ISRU) Plant
+- type: Processing/Refining
+- description: A fully automated factory complex that uses mined asteroid material to manufacture essential components, such as structural beams, solar panels, and shielding.
+- trl: 5
+
+### Gamma-Ray Imager (GRI)
+
+- name: Gamma-Ray Imager (GRI)
+- type: Prospecting/Sensing
+- description: A passive sensor that detects and maps gamma-ray emissions from naturally occurring radioactive elements within an asteroid to identify rich uranium or thorium deposits.
+- trl: 5
+
+### Nano-Fabrication Forge
+
+- name: Nano-Fabrication Forge
+- type: Processing/Refining
+- description: A molecular-level manufacturing unit that uses nanobots to re-assemble raw asteroid metals into high-purity industrial products like microchips and specialized alloys.
+- trl: 5
+
+### Tethered Orbital Platform (TOP)
+
+- name: Tethered Orbital Platform (TOP)
+- type: Infrastructure
+- description: A semi-permanent station anchored to a large asteroid by a tether, serving as a central hub for mining operations, processing, and crew habitation.
+- trl: 5
 
 ## lunar_resources
 

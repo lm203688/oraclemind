@@ -1,0 +1,57 @@
+[
+  {
+    "source": "test_001",
+    "target": "entity_f0c1b8c7",
+    "type": "mentions"
+  },
+  {
+    "source": "test_001",
+    "target": "entity_40fc39ad",
+    "type": "mentions"
+  },
+  {
+    "source": "test_001",
+    "target": "entity_396c983d",
+    "type": "mentions"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_f0c1b8c7",
+    "type": "about"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_40fc39ad",
+    "type": "about"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_96a6e641",
+    "type": "about"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_cd240d18",
+    "type": "about"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_66e9feee",
+    "type": "about"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_8347a927",
+    "type": "about"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_396c983d",
+    "type": "about"
+  },
+  {
+    "source": "test_001",
+    "target": "kw_e024d292",
+    "type": "about"
+  }
+]

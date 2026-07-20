@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Swarmlabs Virtual Experiments",
+  "name_for_model": "swarmlabs",
+  "description_for_human": "145 AI-driven virtual experiment engines with 7550+ real paper validations.",
+  "description_for_model": "Run virtual experiments across 145 physics-based engines validated against real published data.",
+  "auth": {"type": "none"},
+  "api": {"type": "openapi", "url": "https://swarmlabs.pages.dev/openapi.json"},
+  "contact_email": "research@swarmlabs.tools",
+  "legal_info_url": "https://swarmlabs.pages.dev/about.html"
+}

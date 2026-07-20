@@ -1,0 +1,26 @@
+{
+  "updatedAt": "2026-06-15 08:51",
+  "items": [
+    {
+      "date": "2026-06-02",
+      "title": "Robotiq发布TSF-85触觉传感器数字孪生（NVIDIA Isaac Sim）",
+      "content": "首个搭载在商用协作夹爪上的工业级触觉传感器数字孪生，支持Isaac Sim 5.1，通过自定义UI面板生成合成触觉图，超弹性模型仿真精度达97% SSIM（经同行评审论文验证），支持HDF5格式导出。TSF-85硬件经230万次循环测试验证。开源地址：github.com/Lab-CORO/TSF-85",
+      "source": "https://blog.robotiq.com/robotiq-releases-tsf-85-digital-twin-on-nvidia-isaac-sim",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "知行机器人发布\"优采\"数据采集手",
+      "content": "全球首款搭载高精度感知模组的数据采集手，触觉空间分辨率2.34 taxels/cm²，力觉识别精度0.1N，XYZ定位精度0.7mm，位姿精度0.01°，整机重量600g，统一输出频率30Hz，面向具身智能算法训练。",
+      "source": "https://www.cinn.cn/hz/2026/06-01/Nk07LPlD.html",
+      "impact": "high"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Festo发布HPPH两指气动平行夹爪",
+      "content": "超轻量集成式两指气动平行夹爪，专为协作机器人设计，重量0.68kg，将气动控制阀、位置传感器和电气接口集成到夹爪本体，减少外部布线和控制元件，降低安装复杂度。M8x1 8针PNP接口。",
+      "source": "https://www.roboticstomorrow.com/news/2026/05/26/festo-introduces-two-finger-pneumatic-gripper-for-cobot-applications/26618/",
+      "impact": "medium"
+    }
+  ]
+}

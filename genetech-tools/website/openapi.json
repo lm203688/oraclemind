@@ -1,0 +1,64 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "GeneTech Tools API",
+    "version": "1.0.0",
+    "description": "Gene technology knowledge base with 698 entities"
+  },
+  "servers": [
+    {
+      "url": "https://genetech.tools/api"
+    }
+  ],
+  "paths": {
+    "/entities.json": {
+      "get": {
+        "summary": "Get all entities",
+        "responses": {
+          "200": {
+            "description": "Entity list"
+          }
+        }
+      }
+    },
+    "/entities/{id}": {
+      "get": {
+        "summary": "Get entity by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Entity detail"
+          }
+        }
+      }
+    },
+    "/search": {
+      "get": {
+        "summary": "Search entities",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Search results"
+          }
+        }
+      }
+    }
+  }
+}

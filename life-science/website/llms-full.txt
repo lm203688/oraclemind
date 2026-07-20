@@ -1,78 +1,5203 @@
-# LifeDB - 生命科学知识引擎 - 合成生物学、长寿科技、再生医学
+# LifeDB - 生命科学知识引擎
 
-Life science knowledge base - synthetic biology, longevity, regenerative medicine
+Life science knowledge base covering synthetic biology, longevity tech, cell therapy, bioinformatics, and biomanufacturing
 
-## bioethics
+## synthetic_biology
 
-### BETH-001
+### CRISPR-Cas9
 
-- name: Human Germline Editing Moratorium
-- topic: Gene editing ethics
-- description: International consensus against heritable human genome editing until safety and societal implications are resolved. He Jiankui's 2018 CRISPR babies violated this consensus.
-- controversy: Potential to eliminate genetic diseases vs. risk of eugenics, unintended consequences, and inequality
-- regulation: 73 countries ban or restrict heritable genome editing; WHO global governance framework (2021)
+- name: CRISPR-Cas9
+- type: 基因编辑
+- applications: 基因治疗, 作物改良, 基因驱动
+- companies: Editas, CRISPR Therapeutics, Intellia
+- maturity: 临床阶段/已上市(Casgevy)
+- description: 第三代基因编辑工具，2020年诺贝尔奖，Casgevy成为首个FDA批准CRISPR疗法
+- trend: 2025年7款FDA批准CAR-T/基因编辑产品；递送系统(LNP)持续改进
 
-### BETH-002
+### 碱基编辑Base Editing
 
-- name: Synthetic Biology Biosecurity
-- topic: Dual-use research
-- description: The same tools that enable beneficial synthetic biology (DNA synthesis, gene editing) could be used to create harmful pathogens. DNA screening and biosecurity frameworks are evolving.
-- controversy: Open science vs. security; democratization of biotech increases both innovation and risk
-- regulation: US DNA synthesis screening guidelines (2024); HHS Tier 1 select agent oversight; IBBS international biosecurity
+- name: 碱基编辑Base Editing
+- type: 基因编辑
+- applications: 遗传病治疗, 心血管风险降低
+- companies: Beam Therapeutics, Verve Therapeutics
+- maturity: 临床阶段
+- description: 精确单碱基替换(C→T/A→G)，无需双链断裂，脱靶效应极低
+- trend: Verve碱基编辑降胆固醇进入临床；Beam多款管线推进
 
-### BETH-003
+### 先导编辑Prime Editing
 
-- name: Longevity Inequality
-- topic: Social justice
-- description: If anti-aging therapies work, they may initially be available only to the wealthy, exacerbating health and lifespan inequality.
-- controversy: Life extension as a human right vs. luxury good; who pays for longevity treatments?
-- regulation: No specific regulation; Medicare/insurance coverage debates will intensify as therapies emerge
+- name: 先导编辑Prime Editing
+- type: 基因编辑
+- applications: 复杂突变修复, 精准基因校正
+- companies: Prime Medicine
+- maturity: 临床前/临床早期
+- description: 搜索-替换式编辑，可做任意小编辑(替换/插入/删除)，无需供体DNA
+- trend: 效率持续提升；Prime Medicine多管线进入临床
 
-## biotech_tools
+### mRNA疗法
 
-### BTOOL-001
+- name: mRNA疗法
+- type: 核酸药物
+- applications: 疫苗, 蛋白替代, 癌症, 罕见病
+- companies: Moderna, BioNTech, CureVac
+- maturity: 已上市(疫苗)/临床(其他)
+- description: mRNA编码治疗性蛋白，LNP递送，COVID疫苗验证平台
+- trend: RSV疫苗/流感疫苗/个性化癌症疫苗推进；LNP肝外递送突破
 
-- name: AlphaFold / AlphaFold3
-- type: Protein structure prediction
-- description: DeepMind's AI that predicts 3D protein structures from amino acid sequences. AlphaFold2 solved the 50-year protein folding problem; AlphaFold3 predicts protein-ligand, DNA, RNA interactions.
-- application: Drug design, enzyme engineering, understanding disease mutations
-- developer: Google DeepMind / Isomorphic Labs
+### CRISPR基因驱动
 
-### BTOOL-002
+- name: CRISPR基因驱动
+- type: 基因编辑应用
+- applications: 疟疾防控, 入侵物种控制, 农业害虫
+- companies: Target Malaria, UC San Diego
+- maturity: 实验室/受限田间试验
+- description: 自传播基因修饰，可在野生种群中扩散，实验室蚊子种群减少90%+
+- trend: 2025年基因驱动研究取得重要进展；监管和伦理争议显著；布基纳法索首次受限田间研究
 
-- name: CRISPR-Cas13 (RNA Editing)
-- type: Gene editing tool
-- description: Targets RNA instead of DNA, enabling transient gene regulation without permanent genome changes. Safer for therapeutic use as effects are reversible.
-- application: Viral infection, RNA splicing disorders, transient gene knockdown
-- developer: Astellas (acquired Editas RNA program), Aera Therapeutics
+### 无细胞蛋白合成CFPS
 
-### BTOOL-003
+- name: 无细胞蛋白合成CFPS
+- type: 生物制造
+- applications: 药物蛋白, 有毒蛋白, 快速原型
+- companies: Sutro Biopharma, Tierra Biosciences
+- maturity: 商用
+- description: 无活细胞条件下合成蛋白，24小时设计到蛋白，Sutro卵巢癌药luvelta进入III期
+- trend: 快速原型周期是核心优势；与AI蛋白设计结合
 
-- name: Base Editing
-- type: Gene editing tool
-- description: Precise single-nucleotide changes without double-strand breaks. Converts C→T or A→G with minimal off-target effects. Verve Therapeutics using base editing to permanently lower cholesterol.
-- application: Point mutation diseases, cardiovascular risk reduction, sickle cell disease
-- developer: Beam Therapeutics, Verve Therapeutics, Prime Medicine
+### 最小合成细胞
 
-### BTOOL-004
+- name: 最小合成细胞
+- type: 合成生物体
+- applications: 定制微生物, 基础生物学研究
+- companies: J. Craig Venter Institute
+- maturity: 实验室里程碑
+- description: JCVI-syn3.0仅473基因的最小基因组细菌，定义了细胞生命最小基因集
+- trend: syn3A(493基因)修正版2021年发表；定制合成生物体基础
 
-- name: Prime Editing
-- type: Gene editing tool
-- description: Search-and-replace genome editing that can make any small edit (substitutions, insertions, deletions) without double-strand breaks or donor DNA templates.
-- application: Precise correction of disease-causing mutations
-- developer: Prime Medicine (IPO 2022); David Liu lab (Broad Institute)
+### Xenobots/Anthrobots
 
-### BTOOL-005
+- name: Xenobots/Anthrobots
+- type: 活体机器人
+- applications: 药物递送, 组织修复, 环境清理
+- companies: Tufts University, UVM
+- maturity: 实验室
+- description: 青蛙(Xenobots)或人类(Anthrobots)细胞自组装活体机器人，可运动/愈合/载物
+- trend: Xenobot 3.0可自我复制；Anthrobots可修复受损神经组织
 
-- name: Spatial Transcriptomics
-- type: Analytical tool
-- description: Measuring gene expression while preserving spatial location in tissue. Reveals cellular neighborhoods and tissue organization at unprecedented resolution.
-- application: Cancer microenvironment, brain cell atlas, developmental biology
-- developer: 10x Genomics (Visium, Xenium), Vizgen (MERFISH), NanoString (CosMx)
+### 精密发酵Precision Fermentation
+
+- name: 精密发酵Precision Fermentation
+- type: 食品/生物制造
+- applications: 无动物乳蛋白, 特殊脂肪, 食品原料
+- companies: Perfect Day, Motif FoodWorks, Geltor, EVERY Company
+- maturity: 商用
+- description: 工程微生物生产与动物源完全相同的食品蛋白/脂肪
+- trend: Perfect Day无动物乳清蛋白2020年上市；成本持续下降
+
+### DNA数据存储
+
+- name: DNA数据存储
+- type: 信息技术
+- applications: 长期归档存储, 高密度数据存储
+- companies: Microsoft/UW MISL, Catalog, Iridia
+- maturity: 概念验证
+- description: 数字数据编码入合成DNA，理论密度215PB/克
+- trend: Microsoft 2019年存储200MB；Iridia开发芯片级DNA写入器；读写速度是瓶颈
+
+### 工程活体材料ELM
+
+- name: 工程活体材料ELM
+- type: 材料科学
+- applications: 自修复混凝土, 活体传感器, 智能材料
+- companies: MIT Lu Lab, Wyss Institute, Basilisk
+- maturity: 研究/部分商用
+- description: 活细胞制成的材料，可生长/自修复/响应环境
+- trend: Basilisk自修复混凝土减少80%裂缝；活体传感器开发中
+
+### 代谢工程/气体发酵
+
+- name: 代谢工程/气体发酵
+- type: 工业生物技术
+- applications: 生物燃料, 生物化学品, 碳回收
+- companies: LanzaTech, Ginkgo Bioworks, Genomatica
+- maturity: 商用
+- description: 工程微生物从糖或CO₂生产化学品/燃料/材料，替代石油路线
+- trend: LanzaTech中国钢厂废气制乙醇运营中；Genomatica生物BDO规模化生产
+
+### AI设计酶/蛋白
+
+- name: AI设计酶/蛋白
+- type: 计算生物设计
+- applications: 新酶设计, 药物蛋白优化, 工业催化剂
+- companies: Arzeda, Cyrus Biotechnology, Absci
+- maturity: 商用初期
+- description: AI/ML驱动的蛋白质从头设计，创造自然界不存在的功能蛋白
+- trend: SynBioBeta 2026聚焦AI设计酶和蛋白；蛋白质设计语言模型快速发展
+
+### 可编程RNA药物
+
+- name: 可编程RNA药物
+- type: 核酸药物
+- applications: 遗传病, 癌症, 传染病
+- companies: AstraZeneca, Moderna, 多个初创
+- maturity: 临床阶段
+- description: 可编程RNA平台，快速设计针对不同靶点的RNA疗法
+- trend: SynBioBeta 2026展示可编程RNA药物初创；AI+RNA设计结合
+
+### 虚拟细胞模型
+
+- name: 虚拟细胞模型
+- type: 计算生物学
+- applications: 药物筛选, 疾病建模, 生物学预测
+- companies: 多个AI生物初创
+- maturity: 研究/早期开发
+- description: AI驱动的完整细胞计算模型，可模拟细胞行为和药物反应
+- trend: 2025-2026年AI增强生物科学热点；减少实验试错成本
+
+### 合成生物学市场平台
+
+- name: 合成生物学市场平台
+- type: 基础设施
+- applications: 生物铸造厂, 自动化实验, 设计-构建-测试-学习
+- companies: Ginkgo Bioworks, Twist Bioscience, Synthego
+- maturity: 商用
+- description: 自动化生物铸造厂和DNA合成平台，降低合成生物学开发门槛
+- trend: 2026年合成生物学市场$26.87Bn，预计2033年$112.51Bn(CAGR 22.7%)
+
+### 生物传感器/诊断
+
+- name: 生物传感器/诊断
+- type: 检测技术
+- applications: 环境监测, 疾病诊断, 食品安全
+- companies: Synlogic, Zymergen(Ginkgo)
+- maturity: 临床/商用
+- description: 工程微生物作为活体传感器，检测和报告特定分子
+- trend: Synlogic工程益生菌进入临床；与可穿戴设备结合
+
+### 合成基因组学
+
+- name: 合成基因组学
+- type: 基因组工程
+- applications: 合成染色体, 基因组最小化, 密码子重编码
+- companies: Synthego, Ginkgo Bioworks
+- maturity: 研究
+- description: 从头合成完整基因组或染色体，Sc2.0项目合成酵母基因组
+- trend: Sc2.0合成酵母染色体项目持续进展；密码子重编码创造抗病毒细胞
+
+### 生物计算/生物电路
+
+- name: 生物计算/生物电路
+- type: 生物信息处理
+- applications: 智能疗法, 条件性药物释放, 生物逻辑门
+- companies: 多个学术实验室
+- maturity: 研究
+- description: 在细胞内构建基因电路/逻辑门，实现可编程生物行为
+- trend: 智能CAR-T(条件激活)应用；合成生物学与计算科学交叉
+
+### 替代蛋白/细胞培养肉
+
+- name: 替代蛋白/细胞培养肉
+- type: 食品科技
+- applications: 培养肉, 植物蛋白, 发酵蛋白
+- companies: Upside Foods, GOOD Meat, Beyond Meat, Impossible Foods
+- maturity: 商用初期
+- description: 细胞培养或植物基替代传统动物蛋白，减少环境影响
+- trend: 美国/新加坡批准培养肉销售；成本下降但规模化挑战大
+
+### 生物固碳/碳利用
+
+- name: 生物固碳/碳利用
+- type: 气候技术
+- applications: CO₂转化, 生物燃料, 生物材料
+- companies: LanzaTech, Novomer, Zymergen
+- maturity: 示范/商用
+- description: 工程微生物将CO₂转化为有价值产品，碳负排放路径
+- trend: 与碳捕集(DAC)结合；LanzaTech气体发酵平台商业化
+
+### 合成生物学监管框架
+
+- name: 合成生物学监管框架
+- type: 政策/伦理
+- applications: 安全评估, 生物安全, 公众接受
+- companies: WHO, 各国监管机构
+- maturity: 持续演进
+- description: 合成生物学产品的安全评估和监管框架，平衡创新与风险
+- trend: 2025年DNA合成筛查指南更新；生物安全与开放科学持续博弈
+
+### 无糖甜蛋白
+
+- name: 无糖甜蛋白
+- type: 食品科技
+- applications: 代糖, 食品饮料, 健康
+- companies: 多个SynBioBeta 2026展示初创
+- maturity: 开发中
+- description: AI设计的蛋白质替代糖，提供甜味但零热量
+- trend: SynBioBeta 2026重点展示方向；健康饮食趋势驱动
+
+### 工程噬菌体疗法
+
+- name: 工程噬菌体疗法
+- type: 抗菌治疗
+- applications: 超级细菌感染, 农业, 食品防腐
+- companies: Adaptive Phage Therapeutics, PhagoMed, Locus Biosciences
+- maturity: 临床阶段
+- description: 工程化噬菌体精准杀灭耐药细菌，应对AMR危机
+- trend: AMR全球威胁加剧；CRISPR-Cas13武装噬菌体增强杀伤力
+
+### 合成生物学与AI融合
+
+- name: 合成生物学与AI融合
+- type: 跨领域融合
+- applications: 全流程AI设计, 自动化DBTL循环, 预测性生物学
+- companies: Ginkgo Bioworks, Recursion, Insilico Medicine
+- maturity: 快速崛起
+- description: AI+合成生物学深度融合，从基因设计到实验优化的全流程智能化
+- trend: 2025-2026年最热趋势；AI设计→自动化实验→数据反馈闭环
+
+### Chai-2抗体设计AI
+
+- name: Chai-2抗体设计AI
+- type: AI+蛋白质设计
+- applications: 抗体工程, 药物发现
+- companies: Chai Discovery
+- maturity: 快速崛起
+- description: 2025年7月Chai-2实现从头设计抗体16%成功率，Stanford SETR 2026报告重点提及
+- trend: AI抗体设计变革药物发现流程；从筛选到设计的范式转变
+- sources: [object Object]
+
+### 通用抗蛇毒血清
+
+- name: 通用抗蛇毒血清
+- type: 合成生物应用
+- applications: 抗蛇毒, 热带医学
+- companies: SynBioBeta社区
+- maturity: 研究阶段
+- description: 合成生物学和抗体工程指向通用抗蛇毒血清，可中和多种蛇毒
+- trend: SynBioBeta 2026重点议题；从物种特异性到广谱抗毒
+- sources: [object Object]
+
+### iGEM塑料降解生物
+
+- name: iGEM塑料降解生物
+- type: 环境生物技术
+- applications: 塑料降解, 环境修复
+- companies: iGEM社区
+- maturity: 研究/原型
+- description: iGEM 2025亮点：工程微生物降解塑料，合成生物学应对塑料污染
+- trend: 从实验室到环境应用；PETase/MHETase工程化改进
+- sources: [object Object]
+
+### AI对齐监管框架
+
+- name: AI对齐监管框架
+- type: 政策/标准
+- applications: 生物安全, AI监管
+- companies: 各国监管机构
+- maturity: 制定中
+- description: 2026年生物技术突破包括AI对齐监管框架、人源化测试模型、下一代生物制造
+- trend: AI+生物安全交叉；DNA合成筛查强制化；双用途研究管控
+- sources: [object Object]
+
+### SynbiTECH 2026趋势
+
+- name: SynbiTECH 2026趋势
+- type: 行业趋势
+- applications: 全行业
+- companies: SynbiCITE
+- maturity: 参考
+- description: SynbiTECH 2025揭示2026年合成生物学趋势：工程化、规模化、AI融合
+- trend: 从概念验证到工业规模；自动化DBTL循环成为标配
+- sources: [object Object]
+
+## longevity
+
+### NAD+补充
+
+- name: NAD+补充
+- type: 代谢调节
+- mechanism: 提升NAD+水平(NMN/NR前体)
+- clinical_stage: II期
+- potential: 中等
+- description: 补充随年龄下降的关键辅酶NAD+，改善线粒体功能
+- trend: NMN/NR补充剂广泛可用；FDA 2023年挑战NMN作为补充剂地位；Metro Biotech临床推进
+
+### 雷帕霉素mTOR抑制
+
+- name: 雷帕霉素mTOR抑制
+- type: mTOR抑制
+- mechanism: 抑制mTORC1/增加自噬/模拟饮食限制
+- clinical_stage: I期/犬类试验
+- potential: 高
+- description: 小鼠中延长寿命25%+，即使晚年开始也有效，最可靠的哺乳动物延寿药物
+- trend: 犬类长寿试验(RAPID/TRUTH)进行中；AgelessRx人体试验规划；off-label使用增长
+
+### 二甲双胍(TAME研究)
+
+- name: 二甲双胍(TAME研究)
+- type: 代谢调节
+- mechanism: AMPK激活/抑制线粒体复合体I
+- clinical_stage: III期(TAME)
+- potential: 中等
+- description: 糖尿病药物，糖尿病患者全因死亡率低于非糖尿病患者，TAME研究旨在证明衰老可被治疗
+- trend: TAME研究$65M+资助，3000+参与者(65-79岁)，结果预计2026-2028年
+
+### 表观遗传重编程(Yamanaka因子)
+
+- name: 表观遗传重编程(Yamanaka因子)
+- type: 细胞重编程
+- mechanism: OSKM因子周期性表达重置表观遗传年龄
+- clinical_stage: 临床前
+- potential: 极高
+- description: 部分重编程逆转表观遗传年龄而不去分化，最令人兴奋的 rejuvenation 方案
+- trend: Altos Labs($3B融资)/Turn Bio/Ovelle Therapeutics；小鼠多组织 rejuvenation 已验证
+
+### 衰老细胞清除Senolytics
+
+- name: 衰老细胞清除Senolytics
+- type: 细胞治疗
+- mechanism: 达沙替尼+槲皮素/非瑟酮/Navitoclax诱导衰老细胞凋亡
+- clinical_stage: II期
+- potential: 高
+- description: 选择性清除随年龄积累的'僵尸'细胞，减少炎症和组织功能障碍
+- trend: Unity Biotechnology UBX1325 II期(年龄相关眼病)；2025年小分子和化合物直接靶向衰老标志物
+
+### 端粒延长
+
+- name: 端粒延长
+- type: 基因组稳定性
+- mechanism: 端粒酶基因治疗(AAV-TERT)/TERT mRNA瞬时递送
+- clinical_stage: 临床前/早期临床
+- potential: 中高
+- description: 延长染色体保护帽(端粒)，延缓细胞衰老，短端粒是衰老标志
+- trend: BioViva/Libella Gene Therapeutics哥伦比亚临床试验；无FDA批准疗法
+
+### Klotho蛋白
+
+- name: Klotho蛋白
+- type: 循环长寿因子
+- mechanism: 调节矿物质代谢/减少氧化应激/增强突触可塑性
+- clinical_stage: 临床前
+- potential: 高
+- description: 随年龄下降的蛋白，额外Klotho小鼠寿命延长20-30%，增强认知
+- trend: UCSF 2023年证明Klotho提升老年猴认知；人体试验规划中
+
+### GLP-1受体激动剂(减肥药抗衰)
+
+- name: GLP-1受体激动剂(减肥药抗衰)
+- type: 代谢调节
+- mechanism: GLP-1受体激活/减重/抗炎/心血管保护
+- clinical_stage: 已上市(糖尿病/肥胖)/探索(抗衰)
+- potential: 中高
+- description: 司美格鲁肽/替尔泊肽等GLP-1药物，2025年研究显示可能延缓衰老
+- trend: 2025年研究显示GLP-1药物可能减缓衰老；心血管/肾脏保护效应超出减重预期
+
+### GDF11/年轻血液因子
+
+- name: GDF11/年轻血液因子
+- type: 异体共生衍生因子
+- mechanism: Rejuvenates aged stem cells/组织功能
+- clinical_stage: 争议中/临床前
+- potential: 不确定
+- description: 随年龄下降的循环蛋白，异体共生实验暗示可 rejuvenate 心脏/肌肉/大脑
+- trend: 部分团队无法重复；Alkahest(现Grifols)开发血浆衍生疗法
+
+### 自噬增强剂
+
+- name: 自噬增强剂
+- type: 细胞清理
+- mechanism: 增强自噬流/清除受损细胞器/蛋白聚集体
+- clinical_stage: 临床前/早期临床
+- potential: 中高
+- description: 增强细胞自噬清除功能，减少与衰老相关的蛋白聚集和细胞器损伤
+- trend: 雷帕霉素间接增强自噬；特异性自噬增强剂开发中；与mTOR抑制协同
+
+### 线粒体疗法
+
+- name: 线粒体疗法
+- type: 细胞器修复
+- mechanism: 线粒体替换/线粒体自噬增强/线粒体生物发生
+- clinical_stage: 临床前
+- potential: 中
+- description: 修复随年龄退化的线粒体功能，线粒体DNA突变积累是衰老核心机制
+- trend: 线粒体替代疗法(MRT)已批准用于线粒体疾病；抗衰应用探索中
+
+### 表观遗传时钟/生物年龄检测
+
+- name: 表观遗传时钟/生物年龄检测
+- type: 诊断/监测
+- mechanism: DNA甲基化模式评估生物学年龄
+- clinical_stage: 商用
+- potential: 高(作为工具)
+- description: 通过DNA甲基化模式精确测量生物学年龄，评估抗衰干预效果
+- trend: 2026年生物年龄检测将像年度体检一样常规化；Horvath时钟/GrimAge/多个商业检测
+
+### 干细胞外泌体疗法
+
+- name: 干细胞外泌体疗法
+- type: 旁分泌信号
+- mechanism: 干细胞外泌体递送再生信号
+- clinical_stage: II期
+- potential: 中
+- description: 无细胞移植风险的再生方案，外泌体递送修复信号
+- trend: 美容应用已商用；心衰/伤口愈合临床试验进行中
+
+### 热量限制模拟物
+
+- name: 热量限制模拟物
+- type: 饮食干预
+- mechanism: 模拟热量限制的代谢效应/不减少实际摄入
+- clinical_stage: 临床前/早期临床
+- potential: 中
+- description: 药物/补充剂模拟热量限制延寿效应，无需实际节食
+- trend: 雷帕霉素/二甲双胍/NAD+前体均可视为CR模拟物；特异性CR模拟物开发中
+
+### 长寿初创公司生态
+
+- name: 长寿初创公司生态
+- type: 产业生态
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高(推动整体进展)
+- description: 2026年9+家抗衰初创公司受关注，覆盖表观遗传重编程/衰老细胞清除/代谢药物
+- trend: 2026年长寿科学跨越临床门槛；JPM Week衰老生物技术公司集中展示
+
+### sirtuin激活剂
+
+- name: sirtuin激活剂
+- type: 代谢调节
+- mechanism: 激活SIRT1等去乙酰化酶/模拟热量限制
+- clinical_stage: II期
+- potential: 中
+- description: Sirtuin家族蛋白与寿命调控相关，白藜芦醇/NAD+前体间接激活
+- trend: 特异性sirtuin激活剂开发中；白藜芦醇人体效果争议
+
+### 免疫衰老逆转
+
+- name: 免疫衰老逆转
+- type: 免疫重建
+- mechanism: 重建老年免疫系统/胸腺再生/造血干细胞更新
+- clinical_stage: 临床前
+- potential: 高
+- description: 逆转随年龄的免疫功能下降，老年人感染/癌症风险增加的核心原因
+- trend: IL-7胸腺再生/造血干细胞移植；与CAR-T/细胞治疗交叉
+
+### 蛋白质稳态修复
+
+- name: 蛋白质稳态修复
+- type: 蛋白质量控制
+- mechanism: 增强蛋白酶体/分子伴侣/减少蛋白聚集
+- clinical_stage: 临床前
+- potential: 中
+- description: 修复随年龄下降的蛋白质折叠和清除系统，减少毒性蛋白聚集
+- trend: 与神经退行性疾病(阿尔茨海默/帕金森)直接相关；分子伴侣疗法开发中
+
+### 间充质干细胞MSC疗法
+
+- name: 间充质干细胞MSC疗法
+- type: 细胞治疗
+- mechanism: MSC旁分泌/免疫调节/组织修复
+- clinical_stage: II/III期
+- potential: 中高
+- description: 间充质干细胞抗炎和组织修复，2026年成为长寿标准护理候选
+- trend: ForeverLabs预测2026年MSC疗法成为长寿标准护理；生物年龄检测常规化
+
+### 衰老标志物全景监测
+
+- name: 衰老标志物全景监测
+- type: 诊断平台
+- mechanism: 多标志物整合评估/衰老时钟组合
+- clinical_stage: 商用/开发中
+- potential: 高(作为工具)
+- description: 整合表观遗传时钟/端粒长度/炎症标志物/代谢组学等多维度衰老评估
+- trend: 2026年长寿科学跨越临床阈值的关键工具；小分子直接靶向衰老标志物
+
+### Partial Epigenetic Reprogramming (Izpisua)
+
+- name: Partial Epigenetic Reprogramming (Izpisua)
+- type: longevity_technology
+- company: Altos Labs
+- key_findings: Aging defined as 'loss of identity at cellular level' — epithelial-mesenchymal transition (EMT), Blood proteins linked to EMT most strongly associated with mortality in UK Biobank analysis, Partial cellular reprogramming (2 days/week) extends lifespan in mice, Reverses liver and metabolic damage, regenerates damaged muscle, 7000+ mice treated with no embryonic cell differentiation observed, Ex vivo reprogramming of donated human organs planned with Hospital Clínic de Barcelona
+- sources: [object Object]
+
+### Universal Transcriptomic Aging Clocks
+
+- name: Universal Transcriptomic Aging Clocks
+- type: longevity_technology
+- company: Harvard Medical School / Brigham and Women's Hospital
+- key_findings: Analyzed 11,000+ transcriptomes across mice, rats, monkeys, and humans, Biological hallmarks of aging highly conserved across species and tissues, Same genes associated with aging in liver and heart across rats and humans, TACO (Transcriptomic Age Calculator Online) tool developed for age prediction, Published in Nature May 2026
+- sources: [object Object]
+
+### Life Biosciences Partial Epigenetic Reprogramming
+
+- name: Life Biosciences Partial Epigenetic Reprogramming
+- type: longevity_technology
+- company: Life Biosciences
+- key_findings: Preclinical data shows cross-system therapeutic impact of partial epigenetic reprogramming, Human trials planned for 2026 for gene therapy to reverse cellular aging, Boston-based company targeting tissue function restoration
+- sources: [object Object]
+
+### 2026长寿初创公司9强
+
+- name: 2026长寿初创公司9强
+- type: 产业生态
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高(推动整体进展)
+- description: 2026年9家最受关注的抗衰长寿初创公司，覆盖表观遗传重编程/衰老细胞清除/代谢药物重定位
+- trend: 长寿赛道从概念验证走向临床验证；资本持续涌入
+- sources: [object Object]
+
+### 2025十大长寿突破
+
+- name: 2025十大长寿突破
+- type: 年度回顾
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 2025年十大长寿抗衰突破：代谢药物重定位抗衰、GLP-1抗衰效应、衰老标志物直接靶向
+- trend: 从单一靶点到多靶点联合干预；小分子直接靶向衰老标志物
+- sources: [object Object]
+
+### 表观遗传时钟革新
+
+- name: 表观遗传时钟革新
+- type: 诊断/监测
+- mechanism: DNA甲基化模式→生物学年龄
+- clinical_stage: 商用扩张
+- potential: 高(核心工具)
+- description: 2026年表观遗传时钟重新定义衰老测量：生日≠身体实际年龄，DNA甲基化模式精确评估
+- trend: GrimAge/PhenoAge/多种商业时钟；抗衰临床试验必备终点指标
+- sources: [object Object]
+
+### Aging Pharma衰老制药
+
+- name: Aging Pharma衰老制药
+- type: 产业生态
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: Aging Pharma等新公司专注衰老药物开发，开辟化妆品创新新纪元
+- trend: 衰老从'自然过程'到'可治疗疾病'的范式转变；监管路径逐步明确
+- sources: [object Object]
+
+### 2025长寿研究时间线
+
+- name: 2025长寿研究时间线
+- type: 年度回顾
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 2025年长寿研究突破时间线：衰老可被测量、减缓、甚至逆转，提供真正希望
+- trend: 从基础研究到临床转化的加速期；多款抗衰药物进入临床
+- sources: [object Object]
+
+### 2026长寿初创公司9强
+
+- name: 2026长寿初创公司9强
+- type: 行业趋势
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 2026年9家最值得关注抗衰老/长寿初创公司：表观遗传重编程、细胞再生、代谢干预等多路线
+- trend: 长寿初创从概念验证到临床转化加速；投资持续增长
+- sources: [object Object]
+
+### 2025十大长寿突破
+
+- name: 2025十大长寿突破
+- type: 年度回顾
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 2025年十大长寿/抗衰老突破：代谢药物抗衰再定位、表观遗传时钟优化、GLP-1长寿关联等
+- trend: 老药新用成为抗衰捷径；GLP-1类药物长寿证据增强
+- sources: [object Object]
+
+### 2026长寿元年
+
+- name: 2026长寿元年
+- type: 行业趋势
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: ForeverLabs称2026年为'长寿元年'：生物年龄检测像年度体检一样常规化，间充质干细胞疗法进展
+- trend: 长寿从'抗衰老'到'健康寿命管理'范式转变；检测标准化
+- sources: [object Object]
+
+### 11家抗衰老生物技术公司2026
+
+- name: 11家抗衰老生物技术公司2026
+- type: 行业趋势
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 2026年11家领先抗衰老生物技术公司：从表观遗传重编程到细胞衰老清除，多路线并行
+- trend: 抗衰从单一靶点到多靶点组合疗法；临床管线快速扩张
+- sources: [object Object]
+
+### GLP-1长寿关联
+
+- name: GLP-1长寿关联
+- type: 代谢调节
+- mechanism: GLP-1受体激动→减重→降低全因死亡率
+- clinical_stage: IV期/真实世界
+- potential: 高
+- description: 2025年研究显示GLP-1类药物(Wegovy/Ozempic)与全因死亡率降低相关，4大抗衰途径之一
+- trend: GLP-1从糖尿病/肥胖药到长寿药的重定位；真实世界证据积累
+- sources: [object Object]
+
+### 维生素D抗衰老证据
+
+- name: 维生素D抗衰老证据
+- type: 营养干预
+- mechanism: 维生素D→减缓端粒缩短/抗炎/免疫调节
+- clinical_stage: 流行病学/III期
+- potential: 中等
+- description: 2025年研究揭示维生素D可能减缓衰老过程，4大抗衰途径之一
+- trend: 维生素D从骨骼健康到长寿干预的扩展；剂量和人群需优化
+- sources: [object Object]
+
+### 冥想长寿关联
+
+- name: 冥想长寿关联
+- type: 行为干预
+- mechanism: 冥想→降低皮质醇/减缓端粒缩短/表观遗传改变
+- clinical_stage: 临床研究
+- potential: 中等
+- description: 2025年研究显示冥想练习可能促进长寿，通过降低压力激素和减缓细胞衰老
+- trend: 生活方式干预获得科学验证；与药物干预互补
+- sources: [object Object]
+
+### 20大长寿趋势2026
+
+- name: 20大长寿趋势2026
+- type: 行业趋势
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: A4M 2026年20大长寿趋势：循证实践、先进技术整合、个性化长寿方案
+- trend: 长寿从边缘到主流医疗；证据驱动取代营销驱动
+- sources: [object Object]
+
+### 表观遗传时钟2.0
+
+- name: 表观遗传时钟2.0
+- type: 衰老生物标志物
+- mechanism: DNA甲基化模式→生物年龄评估
+- clinical_stage: 商用/临床验证
+- potential: 极高
+- description: 表观遗传时钟重新定义衰老测量：生日≠身体实际年龄，DNA甲基化模式分析精确评估生物年龄
+- trend: 从研究工具到临床标准；2026年多种时钟算法优化和验证
+- sources: [object Object]
+
+### ARDD 2026衰老药物大会
+
+- name: ARDD 2026衰老药物大会
+- type: 行业会议
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: Aging Research & Drug Discovery (ARDD) 2026大会：推动健康衰老突破，开辟化妆品创新新纪元
+- trend: 衰老从'自然过程'到'可治疗疾病'的范式转变；监管路径逐步明确
+- sources: [object Object]
+
+### 部分重编程in vivo
+
+- name: 部分重编程in vivo
+- type: 表观遗传重编程
+- mechanism: OSKM因子瞬时表达→细胞年轻化→不丧失身份
+- clinical_stage: 临床前/早期临床
+- potential: 极高
+- description: 体内部分重编程：短暂激活Yamanaka因子使细胞年轻化而不去分化，2025-2026年多项突破
+- trend: Turn Biotechniques/Altos Labs/Life Biosciences；2026年临床前数据密集发布
+- sources: [object Object]
+
+### 衰老细胞清除Senolytics 2.0
+
+- name: 衰老细胞清除Senolytics 2.0
+- type: 细胞衰老清除
+- mechanism: 选择性清除衰老细胞→减轻SASP炎症
+- clinical_stage: I/II期
+- potential: 高
+- description: 第二代衰老细胞清除疗法：更选择性/更安全/更长效，靶向特定组织衰老细胞
+- trend: Unity Biotechnology/Oisín Biotechnologies/Siwa Therapeutics；2026年临床数据读出
+- sources: [object Object]
+
+### 长寿多组学整合
+
+- name: 长寿多组学整合
+- type: 生物标志物
+- mechanism: 基因组+表观组+蛋白质组+代谢组→综合衰老评估
+- clinical_stage: 研究/商用
+- potential: 高
+- description: 多组学数据整合评估生物年龄和衰老速率，比单一标志物更准确预测健康结局
+- trend: AI驱动多组学衰老时钟；2026年个性化长寿方案基础
+- sources: [object Object]
+
+### NAD+前体临床进展
+
+- name: NAD+前体临床进展
+- type: 代谢调节
+- mechanism: NMN/NR→提升NAD+水平→改善线粒体功能
+- clinical_stage: II/III期
+- potential: 中等
+- description: NAD+前体(NMN/NR)临床试验进展：Metro Biotech NMN药物推进，补充剂市场持续增长
+- trend: FDA对NMN补充剂立场反复；药物级NMN临床数据2026年读出
+- sources: [object Object]
+
+### 间充质干细胞长寿疗法
+
+- name: 间充质干细胞长寿疗法
+- type: 细胞治疗
+- mechanism: MSC→免疫调节/抗炎/组织修复
+- clinical_stage: I/II期
+- potential: 高
+- description: 间充质干细胞(MSC)用于抗衰老和长寿：免疫调节、抗炎、组织修复多重机制
+- trend: ForeverLabs等推动MSC长寿应用；2026年临床数据积累
+- sources: [object Object]
+
+### Harvard WGS 2026衰老可逆声明
+
+- name: Harvard WGS 2026衰老可逆声明
+- type: 表观遗传重编程
+- mechanism: 表观遗传重编程恢复细胞年轻态
+- clinical_stage: 即将开始临床试验
+- potential: 极高
+- description: Harvard科学家在WGS 2026宣布衰老可能很快可逆，表观遗传重编程疗法即将进入临床试验
+- trend: 衰老逆转从理论到临床；表观遗传重编程是最有希望的路线
+- sources: [object Object]
+
+### NYT细胞 rejuvenation 2026
+
+- name: NYT细胞 rejuvenation 2026
+- type: 细胞 rejuvenation
+- mechanism: 细胞 rejuvenation 治疗数百种疾病+逆转衰老
+- clinical_stage: 早期临床
+- potential: 极高
+- description: NYT 2026年4月报道：细胞 rejuvenation 有潜力治愈数百种疾病甚至逆转衰老
+- trend: 细胞 rejuvenation 从实验室到临床；可能改变医学范式
+- sources: [object Object]
+
+### Cambridge皮肤细胞逆转30年
+
+- name: Cambridge皮肤细胞逆转30年
+- type: 表观遗传重编程
+- mechanism: Yamanaka因子部分重编程
+- clinical_stage: 实验室
+- potential: 高
+- description: Cambridge研究人员通过修饰Yamanaka因子将人类皮肤细胞生物年龄逆转约30年
+- trend: 部分重编程避免完全去分化；精准控制重编程深度
+- sources: [object Object]
+
+### AFAR衰老研究顶级突破
+
+- name: AFAR衰老研究顶级突破
+- type: 综合
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: AFAR专家发现清除衰老细胞可延长寿命改善健康，即使晚期治疗也有效
+- trend: 衰老细胞清除(senolytics)从动物到人体试验；联合用药策略
+- sources: [object Object]
+
+### 基因治疗延长小鼠寿命20%
+
+- name: 基因治疗延长小鼠寿命20%
+- type: 基因治疗
+- mechanism: 基因治疗延长寿命
+- clinical_stage: 动物模型
+- potential: 高
+- description: Liv Hospital报告：基因治疗突破在小鼠模型中延长寿命20%，为人类抗衰老开辟新途径
+- trend: 基因治疗从遗传病到衰老；多靶点联合策略
+- sources: [object Object]
+
+### 9大抗衰老长寿初创公司2026
+
+- name: 9大抗衰老长寿初创公司2026
+- type: 行业报告
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Cure.评选2026年9大抗衰老长寿初创公司：表观遗传重编程/衰老细胞清除/代谢调节
+- trend: 长寿初创公司从概念到临床数据；2026年关键数据读出年
+- sources: [object Object]
+
+### 2025年10大长寿突破
+
+- name: 2025年10大长寿突破
+- type: 年度回顾
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Healthspan评选2025年10大长寿突破：代谢药物抗衰老再定位/衰老细胞清除/表观遗传重编程
+- trend: 代谢药物(二甲双胍/SGLT2i)抗衰老临床数据积累；从延长寿命到延长健康寿命
+- sources: [object Object]
+
+### 2026年龄逆转5大创新
+
+- name: 2026年龄逆转5大创新
+- type: 行业趋势
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: 2026年5大年龄逆转创新：长寿科学近期突破汇总
+- trend: 长寿科学从缓慢进展到加速突破；2026年可能是转折年
+- sources: [object Object]
+
+### 11大抗衰老生物技术公司2026
+
+- name: 11大抗衰老生物技术公司2026
+- type: 行业报告
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Labiotech评选11大抗衰老生物技术公司：利用长寿技术延缓或停止衰老
+- trend: 抗衰老公司从单一靶点到多靶点组合；投资从冷到热
+- sources: [object Object]
+
+### ForeverLabs 2026长寿年
+
+- name: ForeverLabs 2026长寿年
+- type: 行业趋势
+- mechanism: MSC+生物年龄检测
+- clinical_stage: I/II期
+- potential: 高
+- description: ForeverLabs: 2026年是长寿年，生物年龄检测像年度体检一样常规，MSC疗法推进
+- trend: 生物年龄检测标准化；MSC长寿应用临床数据积累
+- sources: [object Object]
+
+### Harvard科学家WGS 2026衰老可逆
+
+- name: Harvard科学家WGS 2026衰老可逆
+- type: 学术声明
+- mechanism: 表观遗传重编程
+- clinical_stage: 临床前
+- potential: 极高
+- description: 哈佛科学家在世界政府峰会2026年声明：衰老可能很快可逆，消除所有癌症仅增加2.5年平均寿命
+- trend: 衰老逆转从理论到实践；表观遗传重编程是核心路径
+- sources: [object Object]
+
+### ARDD 2026衰老药物发现
+
+- name: ARDD 2026衰老药物发现
+- type: 学术会议
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: ARDD 2026(Aging Research & Drug Discovery): 开创健康衰老未来，推动长寿研究突破和化妆品创新
+- trend: 长寿研究从延长寿命到健康寿命；药物发现加速
+- sources: [object Object]
+
+### LongevityFest 2026 A4M
+
+- name: LongevityFest 2026 A4M
+- type: 行业会议
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: LongevityFest 2026 by A4M: 面向医疗专业人员和领导者，推进长寿医学/健康衰老/整合医学专业知识
+- trend: 长寿医学从替代到主流；医疗专业人员培训需求增长
+- sources: [object Object]
+
+### NYT Altos Labs细胞 rejuvenation
+
+- name: NYT Altos Labs细胞 rejuvenation
+- type: 深度报道
+- mechanism: 细胞重编程
+- clinical_stage: 临床前
+- potential: 极高
+- description: NYT深度报道：Altos Labs细胞重编程研究可能治愈数百种疾病甚至逆转衰老，但长寿科学被过度炒作
+- trend: 细胞重编程从炒作到务实；Altos Labs引领领域
+- sources: [object Object]
+
+### 2026年龄逆转5大真实创新
+
+- name: 2026年龄逆转5大真实创新
+- type: 行业趋势
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: 2026年5大年龄逆转真实创新：长寿科学近期突破汇总，从实验室到临床的进展
+- trend: 年龄逆转从科幻到现实；多路线并行推进
+- sources: [object Object]
+
+### 9大抗衰老长寿初创2026
+
+- name: 9大抗衰老长寿初创2026
+- type: 初创公司
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: 2026年9大抗衰老和长寿初创公司：表观遗传重编程/细胞疗法/代谢调节等多路线
+- trend: 长寿初创公司融资活跃；表观遗传重编程最受关注
+- sources: [object Object]
+
+### David Sinclair 2026年龄逆转预测
+
+- name: David Sinclair 2026年龄逆转预测
+- type: 专家观点
+- mechanism: 表观遗传重编程
+- clinical_stage: 临床前
+- potential: 极高
+- description: David Sinclair: 其实验室6周内将动物生物年龄逆转50-75%，预测2026年将是人类年龄逆转突破之年
+- trend: Sinclair实验室成果引人注目；从动物到人类仍有距离
+- sources: [object Object]
+
+### 2025十大长寿抗衰老突破
+
+- name: 2025十大长寿抗衰老突破
+- type: 年度回顾
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Healthspan盘点2025年十大长寿抗衰老突破：代谢药物重新定位用于抗衰老的研究和临床关注增强
+- trend: 代谢药物抗衰老重新定位成为热点；从二甲双胍到新靶点
+- sources: [object Object]
+
+### 长寿肽类研究2026全景
+
+- name: 长寿肽类研究2026全景
+- type: 肽类疗法
+- mechanism: 多肽机制
+- clinical_stage: 临床前/临床
+- potential: 高
+- description: Viking Labs 2026年长寿肽类研究全景：NAD+前体/衰老细胞清除剂/端粒酶激活剂/线粒体肽
+- trend: 肽类长寿疗法从基础到临床；NAD+前体和senolytics领先
+- sources: [object Object]
+
+### 表观遗传时钟标准化2026
+
+- name: 表观遗传时钟标准化2026
+- type: 生物标志物
+- mechanism: DNA甲基化
+- clinical_stage: 商用
+- potential: 高
+- description: 表观遗传时钟标准化2026年进展：多种时钟算法(GrimAge/PhenoAge/DunedinPACE)精度提升，临床应用扩展
+- trend: 生物年龄检测从研究到临床；标准化和监管框架建立
+- sources: [object Object]
+
+### Senolytics衰老细胞清除2026
+
+- name: Senolytics衰老细胞清除2026
+- type: 药物疗法
+- mechanism: 清除衰老细胞
+- clinical_stage: I/II期
+- potential: 高
+- description: Senolytics衰老细胞清除疗法2026年进展：多种药物组合在动物模型中显示延寿效果，人体试验推进
+- trend: Senolytics从动物到人体；联合用药策略优化
+- sources: [object Object]
+
+### 线粒体功能恢复疗法
+
+- name: 线粒体功能恢复疗法
+- type: 代谢疗法
+- mechanism: 线粒体生物发生
+- clinical_stage: 临床前/临床
+- potential: 中高
+- description: 线粒体功能恢复疗法2026年进展：NAD+补充/线粒体移植/线粒体肽等多种策略改善线粒体功能
+- trend: 线粒体从辅助靶点到核心靶点；多策略组合提升效果
+- sources: [object Object]
+
+### 长寿投资市场2026
+
+- name: 长寿投资市场2026
+- type: 投资市场
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 长寿投资市场2026年动态：Altos Labs/Calico/Retro Biosciences等获大额融资，长寿赛道投资热度持续
+- trend: 长寿投资从早期到成长期；大型药企入场加速
+- sources: [object Object]
+
+### 自噬激活剂2026进展
+
+- name: 自噬激活剂2026进展
+- type: 药物疗法
+- mechanism: 激活自噬
+- clinical_stage: I/II期
+- potential: 中高
+- description: 自噬激活剂2026年进展：雷帕霉素类似物/天然自噬激活剂/组合策略在抗衰老中应用
+- trend: 自噬从基础到转化；选择性自噬激活成为新方向
+- sources: [object Object]
+
+### 肠道微生物与长寿2026
+
+- name: 肠道微生物与长寿2026
+- type: 微生物组
+- mechanism: 肠道菌群调节
+- clinical_stage: 临床前/临床
+- potential: 中
+- description: 肠道微生物与长寿2026年进展：百岁老人菌群特征/菌群移植/益生菌干预研究
+- trend: 肠道菌群从关联到因果；精准益生菌干预探索
+- sources: [object Object]
+
+### 长寿监管框架2026
+
+- name: 长寿监管框架2026
+- type: 监管
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 长寿监管框架2026年进展：FDA/EMA对衰老相关药物审批路径讨论，生物年龄作为临床终点探索
+- trend: 监管从疾病到衰老；生物年龄作为终点获关注
+- sources: [object Object]
+
+### 部分重编程in vivo 2026
+
+- name: 部分重编程in vivo 2026
+- type: 重编程
+- mechanism: OSKM因子部分激活
+- clinical_stage: 临床前
+- potential: 极高
+- description: 体内部分重编程2026年进展：OSKM因子短暂激活逆转衰老表型而不致瘤，动物模型效果显著
+- trend: 部分重编程安全性改善；从小鼠到灵长类推进
+- sources: [object Object]
+
+### 长寿生活方式干预2026
+
+- name: 长寿生活方式干预2026
+- type: 生活方式
+- mechanism: 多机制
+- clinical_stage: 商用
+- potential: 中
+- description: 长寿生活方式干预2026年进展：饮食限制模拟/运动处方/睡眠优化/压力管理综合方案
+- trend: 生活方式干预从经验到循证；个性化长寿方案兴起
+- sources: [object Object]
+
+### 科学家绘制50年人类衰老图谱
+
+- name: 科学家绘制50年人类衰老图谱
+- type: 研究突破
+- efficiency: N/A
+- cost: N/A
+- maturity: 研究前沿
+- companies: 多研究机构
+- description: 科学家绘制跨越50年的人类衰老图谱突破，为个性化抗衰老干预和靶向再生治疗提供基础
+- trend: 衰老图谱从定性到定量；个性化长寿干预成为可能
+- sources: [object Object]
+
+### 2026长寿 owning your biology
+
+- name: 2026长寿 owning your biology
+- type: 行业趋势
+- efficiency: N/A
+- cost: N/A
+- maturity: 行业趋势
+- companies: Forever Labs
+- description: Forever Labs: 2026年是长寿和掌控自己生物学之年，长寿从生物黑客走向主流标准
+- trend: 长寿从边缘到主流；个性化长寿方案普及化
+- sources: [object Object]
+
+### BofA长寿科学AI加速
+
+- name: BofA长寿科学AI加速
+- type: 行业分析
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: Bank of America
+- description: Bank of America Breakthrough Technology Summit: AI加速长寿科学进步，重新定义衰老的含义
+- trend: AI成为长寿研究加速器；金融界关注长寿经济
+- sources: [object Object]
+
+### Top 10长寿突破2025
+
+- name: Top 10长寿突破2025
+- type: 年度回顾
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: 多研究机构
+- description: 2025年十大长寿抗衰老突破：代谢药物重定位抗衰老研究增强，临床关注提升
+- trend: 老药新用成为长寿研究热点；临床转化加速
+- sources: [object Object]
+
+### Harvard WGS 2026衰老可逆声明确认
+
+- name: Harvard WGS 2026衰老可逆声明确认
+- type: 表观遗传重编程
+- mechanism: 表观遗传重编程恢复细胞年轻态
+- clinical_stage: 即将开始临床试验
+- potential: 极高
+- description: 哈佛科学家在WGS 2026宣布衰老可能很快可逆，消除所有癌症仅增加2.5年平均寿命，衰老逆转才是根本
+- trend: 衰老逆转从理论到临床；表观遗传重编程是最有希望的路线
+- sources: [object Object]
+
+### NYT细胞rejuvenation深度报道2026
+
+- name: NYT细胞rejuvenation深度报道2026
+- type: 深度报道
+- mechanism: 细胞rejuvenation治疗数百种疾病+逆转衰老
+- clinical_stage: 早期临床
+- potential: 极高
+- description: NYT 2026年4月深度报道：细胞rejuvenation有潜力治愈数百种疾病甚至逆转衰老，但长寿科学被过度炒作
+- trend: 细胞rejuvenation从实验室到临床；可能改变医学范式
+- sources: [object Object]
+
+### Bank of America AI加速长寿科学
+
+- name: Bank of America AI加速长寿科学
+- type: 行业分析
+- mechanism: AI加速研究
+- clinical_stage: N/A
+- potential: 高
+- description: Bank of America Breakthrough Technology Summit: AI加速长寿科学进步，重新定义衰老的含义
+- trend: AI成为长寿研究加速器；金融界关注长寿经济
+- sources: [object Object]
+
+### ARDD 2026衰老研究药物发现大会
+
+- name: ARDD 2026衰老研究药物发现大会
+- type: 行业会议
+- mechanism: 全领域
+- clinical_stage: N/A
+- potential: 参考
+- description: ARDD 2026大会：开创健康衰老未来，推动长寿研究突破，开启精准长寿医学新时代
+- trend: 衰老研究从基础到转化；精准长寿医学兴起
+- sources: [object Object]
+
+### LongevityFest 2026 A4M大会
+
+- name: LongevityFest 2026 A4M大会
+- type: 行业会议
+- mechanism: 全领域
+- clinical_stage: N/A
+- potential: 参考
+- description: A4M LongevityFest 2026：面向医疗专业人员和领导者，推进长寿医学专业知识
+- trend: 长寿医学从研究到临床实践；专业教育需求增长
+- sources: [object Object]
+
+### FDA批准细胞rejuvenation疗法人体试验
+
+- name: FDA批准细胞rejuvenation疗法人体试验
+- type: 监管突破
+- mechanism: 表观遗传重编程
+- clinical_stage: I期临床
+- potential: 极高
+- description: Nature Biotechnology报道：FDA批准细胞rejuvenation疗法人体试验，表观遗传重编程首次进入临床
+- trend: 表观遗传重编程从动物到人体；FDA开绿灯
+- sources: [object Object]
+
+### Life Biosciences ER-100 IND获批
+
+- name: Life Biosciences ER-100 IND获批
+- type: 监管突破
+- mechanism: 表观遗传重编程ER-100
+- clinical_stage: I期临床
+- potential: 极高
+- description: Life Biosciences 2026年1月获FDA IND批准ER-100：表观遗传治疗设计实现近乎完全的rejuvenating reset，逆转视力丧失
+- trend: 表观遗传重编程首次人体试验；从视力丧失开始
+- sources: [object Object]
+
+### FDA对rejuvenation态度转变
+
+- name: FDA对rejuvenation态度转变
+- type: 监管趋势
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: Life Bio试验显示FDA对rejuvenation疗法态度正在转变，从保守到开放
+- trend: FDA从保守到开放；rejuvenation疗法监管路径清晰化
+- sources: [object Object]
+
+### 部分重编程表观遗传rejuvenation综述
+
+- name: 部分重编程表观遗传rejuvenation综述
+- type: 学术综述
+- mechanism: 部分重编程
+- clinical_stage: 临床前
+- potential: 极高
+- description: 体内外研究证明部分重编程逆转衰老表型/增强组织修复的潜力，表观遗传rejuvenation前景综述
+- trend: 部分重编程从概念到系统研究；安全性和有效性平衡
+- sources: [object Object]
+
+### Harvard科学家WGS 2026: 衰老可逆
+
+- name: Harvard科学家WGS 2026: 衰老可逆
+- type: 学术突破
+- mechanism: 表观遗传重编程
+- clinical_stage: 临床前
+- potential: 极高
+- description: 哈佛科学家在世界政府峰会2026宣布衰老可能很快可逆：消除所有癌症仅增加2.5年平均寿命，逆转衰老才是关键
+- trend: 衰老逆转从理论到可能；消除癌症不如逆转衰老
+- sources: [object Object]
+
+### NYT: 细胞rejuvenation疗法可能治愈数百种疾病
+
+- name: NYT: 细胞rejuvenation疗法可能治愈数百种疾病
+- type: 媒体报道
+- mechanism: 细胞rejuvenation
+- clinical_stage: 临床前
+- potential: 极高
+- description: 纽约时报深度报道：新疗法有潜力治愈数百种疾病甚至逆转衰老，Altos Labs等公司推动
+- trend: 细胞rejuvenation从实验室到媒体主流；Altos Labs引领
+- sources: [object Object]
+
+### 2026年龄逆转5大真实创新
+
+- name: 2026年龄逆转5大真实创新
+- type: 行业分析
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Longevity Science News盘点2026年龄逆转5大真实创新：长寿科学最近几周突破令人难以置信
+- trend: 年龄逆转从科幻到现实；多个创新同时突破
+- sources: [object Object]
+
+### TIME: Steve Horvath谈衰老测量与逆转
+
+- name: TIME: Steve Horvath谈衰老测量与逆转
+- type: 专家访谈
+- mechanism: 表观遗传时钟
+- clinical_stage: N/A
+- potential: 高
+- description: TIME采访遗传学家Steve Horvath：表观遗传时钟发明者谈衰老测量和人类寿命延长可能性
+- trend: 表观遗传时钟从发明到应用；衰老可测量是逆转前提
+- sources: [object Object]
+
+### 2026年9大抗衰老长寿初创公司
+
+- name: 2026年9大抗衰老长寿初创公司
+- type: 公司盘点
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Cure盘点2026年9大抗衰老长寿初创公司：表观遗传重编程、senolytics、NAD+等方向
+- trend: 长寿初创公司从概念到临床；多机制并行探索
+- sources: [object Object]
+
+### Healthspan: 2025十大长寿抗衰老突破
+
+- name: Healthspan: 2025十大长寿抗衰老突破
+- type: 年度回顾
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Healthspan盘点2025十大长寿抗衰老突破：强调临床试验设计，从动物模型到转化飞跃
+- trend: 长寿研究从动物到临床转化；试验设计更严谨
+- sources: [object Object]
+
+### Targeting Longevity世界大会2026柏林
+
+- name: Targeting Longevity世界大会2026柏林
+- type: 行业会议
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: N/A
+- description: Targeting Longevity世界大会2026(4月8-9日柏林)：世界线粒体学会组织，聚焦长寿靶点
+- trend: 长寿从研究到靶向治疗；线粒体是关键靶点
+- sources: [object Object]
+
+### ForeverLabs: 2026长寿与掌控生物学之年
+
+- name: ForeverLabs: 2026长寿与掌控生物学之年
+- type: 行业观点
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: ForeverLabs: 2026是长寿与掌控生物学之年，生物年龄检测将像年度体检一样常规
+- trend: 生物年龄检测从研究到常规；长寿成为医疗标准
+- sources: [object Object]
+
+### Labiotech: 2026年11家抗衰老生物技术公司
+
+- name: Labiotech: 2026年11家抗衰老生物技术公司
+- type: 公司盘点
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: Labiotech盘点2026年11家领先抗衰老生物技术公司：利用长寿技术延长寿命
+- trend: 抗衰老公司从少数到群雄；多技术路线并行
+- sources: [object Object]
+
+### Biohacker Alliance: 2026长寿科学实证指南
+
+- name: Biohacker Alliance: 2026长寿科学实证指南
+- type: 消费者指南
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 中-高
+- description: Biohacker Alliance 2026长寿科学指南：哪些机制驱动生物衰老、哪些干预有最强证据、如何构建长寿方案
+- trend: 长寿科学从学术到消费者；实证指南降低信息门槛
+- sources: [object Object]
+
+### Altos Labs细胞rejuvenation 2026进展
+
+- name: Altos Labs细胞rejuvenation 2026进展
+- type: 公司进展
+- mechanism: 部分重编程
+- clinical_stage: 临床前
+- potential: 极高
+- description: Altos Labs 2026年细胞rejuvenation进展：部分重编程技术从实验室向临床推进
+- trend: Altos Labs从科学到临床；部分重编程安全性改善
+- sources: [object Object]
+
+### senolytics药物2026临床试验进展
+
+- name: senolytics药物2026临床试验进展
+- type: 药物开发
+- mechanism: senolytics
+- clinical_stage: 临床I/II期
+- potential: 高
+- description: 2026年senolytics药物临床试验进展：清除衰老细胞的药物进入早期临床试验
+- trend: senolytics从概念到临床；清除衰老细胞是长寿关键策略
+- sources: [object Object]
+
+### NAD+补充剂2026临床证据更新
+
+- name: NAD+补充剂2026临床证据更新
+- type: 营养干预
+- mechanism: NAD+通路
+- clinical_stage: 临床试验中
+- potential: 中
+- description: 2026年NAD+补充剂临床证据更新：NMN和NR的人体试验结果混合，部分指标改善
+- trend: NAD+补充剂从炒作到实证；临床结果喜忧参半
+- sources: [object Object]
+
+### 间充质干细胞抗衰老2026进展
+
+- name: 间充质干细胞抗衰老2026进展
+- type: 细胞疗法
+- mechanism: 间充质干细胞
+- clinical_stage: 临床前/早期临床
+- potential: 中-高
+- description: 2026年间充质干细胞抗衰老进展：Advanced Mesenchymal Stem Cell疗法从实验室到临床
+- trend: 间充质干细胞从再生医学到抗衰老；临床转化加速
+- sources: [object Object]
+
+### 表观遗传时钟2026新版本
+
+- name: 表观遗传时钟2026新版本
+- type: 诊断工具
+- mechanism: DNA甲基化
+- clinical_stage: 商业化
+- potential: 高
+- description: 2026年表观遗传时钟新版本：更精准的生物年龄测量，多组织适用性提升
+- trend: 表观遗传时钟持续迭代；精准度提升
+- sources: [object Object]
+
+### mTOR抑制剂抗衰老2026临床进展
+
+- name: mTOR抑制剂抗衰老2026临床进展
+- type: 药物开发
+- mechanism: mTOR通路
+- clinical_stage: 临床试验中
+- potential: 中-高
+- description: 2026年mTOR抑制剂(如雷帕霉素类似物)抗衰老临床试验进展：低剂量长期方案探索
+- trend: mTOR抑制剂从免疫抑制到抗衰老；低剂量方案优化
+- sources: [object Object]
+
+### 长寿生物标志物2026标准化进展
+
+- name: 长寿生物标志物2026标准化进展
+- type: 诊断标准
+- mechanism: 多标志物
+- clinical_stage: 标准化中
+- potential: 高
+- description: 2026年长寿生物标志物标准化进展：从研究工具到临床可用的生物年龄检测标准
+- trend: 生物标志物从研究到临床标准；长寿医学规范化
+- sources: [object Object]
+
+### 线粒体功能障碍与衰老2026新机制
+
+- name: 线粒体功能障碍与衰老2026新机制
+- type: 基础研究
+- mechanism: 线粒体
+- clinical_stage: 基础研究
+- potential: 高
+- description: 2026年线粒体功能障碍与衰老新机制发现：线粒体质量控制、mtDNA突变等新靶点
+- trend: 线粒体从旁观者到核心靶点；新机制指导干预策略
+- sources: [object Object]
+
+### 肠道微生物与衰老2026关联研究
+
+- name: 肠道微生物与衰老2026关联研究
+- type: 基础研究
+- mechanism: 肠道微生物组
+- clinical_stage: 基础研究
+- potential: 中-高
+- description: 2026年肠道微生物与衰老关联研究：特定菌群与生物年龄、炎症衰老的关系
+- trend: 肠道微生物从消化到衰老调控；微生物组干预新方向
+- sources: [object Object]
+
+### 长寿药物开发2026管线分析
+
+- name: 长寿药物开发2026管线分析
+- type: 行业分析
+- mechanism: 多机制
+- clinical_stage: 多阶段
+- potential: 高
+- description: 2026年长寿药物开发管线分析：从senolytics到重编程因子，多条路线并行推进
+- trend: 长寿药物管线从稀疏到密集；多机制并行降低风险
+- sources: [object Object]
+
+### Life Biosciences ER-100首次人体注射
+
+- name: Life Biosciences ER-100首次人体注射
+- type: 表观遗传重编程
+- efficiency: 首次人体给药
+- cost: 极高
+- maturity: 临床I期
+- companies: Life Biosciences
+- description: 2026年6月Life Biosciences宣布首位患者接受ER-100细胞重编程注射，这是史上首次逆转衰老相关变化的注射治疗，通过部分'重置'细胞生物学年龄实现
+- trend: 首次逆转衰老人体注射是里程碑事件；表观遗传重编程从概念走向临床
+- sources: [object Object]
+
+### 哈佛表观遗传重编程人体试验2026
+
+- name: 哈佛表观遗传重编程人体试验2026
+- type: 衰老逆转
+- efficiency: 即将开始
+- cost: 极高
+- maturity: 临床I期
+- companies: 哈佛大学, Life Biosciences
+- description: 哈佛科学家在2026年世界政府峰会上宣布衰老可能很快可逆，表观遗传重编程疗法试验即将开始，旨在将细胞恢复到更年轻状态
+- trend: 哈佛背书推动衰老逆转研究主流化；表观遗传重编程成为最前沿方向
+- sources: [object Object]
+
+### Life Biosciences细胞 rejuvenation平台
+
+- name: Life Biosciences细胞 rejuvenation平台
+- type: 细胞 rejuvenation
+- efficiency: 临床推进
+- cost: 极高
+- maturity: 临床I期
+- companies: Life Biosciences
+- description: Life Biosciences开创表观遗传修复技术逆转衰老相关疾病，2026年计划开展人体试验测试基因疗法逆转细胞衰老并恢复组织功能
+- trend: 细胞 rejuvenation 从抗衰研究走向临床应用；表观遗传修复成为核心策略
+- sources: [object Object], [object Object]
+
+### Rapamycin
+
+- name: Rapamycin
+- type: Drug Compound
+- mechanism: Inhibits mTOR pathway to modulate cellular metabolism and autophagy, showing synergistic effects when combined with acarbose.
+- target: Aging-related pathways, Alzheimer's disease onset, and general age-related memory decline.
+- status: Clinically studied in animal models with demonstrated lifespan extension up to 36.6% in median lifespan.
+- description: Rapamycin is a well-researched drug compound known for its ability to extend lifespan and delay age-related diseases in mice. It works by inhibiting the mTOR pathway, which plays a crucial role in regulating cell growth and metabolism. Studies show that combining rapamycin with acarbose yields superior benefits compared to either drug alone. Its potential applications include treating neurodegenerative conditions and preserving heart function in aging populations.
+
+### Epigenetic Reprogramming
+
+- name: Epigenetic Reprogramming
+- type: Biotechnological Technique
+- mechanism: Utilizes partial reprogramming to reverse multiple hallmarks of aging, including genomic instability and dysbiosis.
+- target: Aging cells and tissues, aiming to restore youthful epigenetic patterns.
+- status: Under active investigation with recent breakthroughs highlighted in 2025-2026 research.
+- description: Epigenetic reprogramming represents a cutting-edge approach to reversing the biological signs of aging by resetting cellular identity. This technique targets key aging markers such as genomic instability and microbial imbalance, offering potential regenerative benefits. Recent studies have demonstrated its efficacy in both laboratory settings and preliminary clinical trials. As part of the broader longevity science movement, it is considered one of the most promising innovations for extending healthspan.
+
+### Metformin
+
+- name: Metformin
+- type: Drug Compound
+- mechanism: Activates AMPK pathway to improve metabolic regulation and reduce inflammation associated with aging.
+- target: Age-related metabolic disorders and general aging processes.
+- status: Widely used in diabetes treatment and increasingly explored for anti-aging applications.
+- description: Metformin is a commonly prescribed medication for type 2 diabetes that has gained attention for its potential anti-aging properties. By activating the AMPK pathway, it helps regulate energy balance and reduces inflammatory responses linked to aging. Clinical trials are ongoing to evaluate its effectiveness in extending lifespan and improving health outcomes in non-diabetic individuals. Its repurposing for longevity highlights the growing intersection between metabolic health and aging research.
+
+### NAD+ Precursors
+
+- name: NAD+ Precursors
+- type: Supplement Class
+- mechanism: Boosts cellular NAD+ levels to enhance mitochondrial function and support DNA repair mechanisms.
+- target: Cells experiencing age-related declines in NAD+ production.
+- status: Available as dietary supplements with ongoing research into optimal dosing and efficacy.
+- description: NAD+ precursors are compounds designed to increase levels of nicotinamide adenine dinucleotide (NAD+) in the body, a molecule critical for cellular health. As NAD+ levels naturally decline with age, supplementation aims to mitigate associated functional losses, particularly in mitochondria and DNA repair pathways. These supplements are widely accessible and form a cornerstone of many anti-aging regimens. Current research focuses on determining the most effective forms and doses for maximizing longevity benefits.
+
+### Sinclair Lab
+
+- name: Sinclair Lab
+- type: Research Institution
+- mechanism: Focuses on nerve regeneration and reversal of aging symptoms through genetic and epigenetic interventions.
+- target: Humans and companion animals, aiming to develop scalable anti-aging therapies.
+- status: Actively conducting research with published findings on aging reversal strategies.
+- description: The Sinclair Lab, led by prominent aging researcher David Sinclair, is dedicated to understanding and reversing the biological processes of aging. Their work emphasizes nerve regeneration and the application of epigenetic modifications to restore youthful traits in cells. The lab explores therapeutic possibilities for both humans and pets, leveraging advancements in genetics and molecular biology. With significant contributions to the field, the Sinclair Lab remains at the forefront of longevity science innovation.
+
+### 哈佛化学重编程逆转衰老
+
+- name: 哈佛化学重编程逆转衰老
+- type: 表观遗传重编程
+- applications: 衰老逆转, 再生医学
+- companies: Life Biosciences
+- maturity: 实验室验证
+- description: 哈佛医学院团队首次发表化学方法将细胞重编程至更年轻状态，发现可逆转衰老的小分子化合物
+- trend: 化学重编程是表观遗传逆转的突破性路径
+
+### 表观遗传重编程人体试验
+
+- name: 表观遗传重编程人体试验
+- type: 表观遗传重编程
+- applications: 衰老逆转
+- companies: Altos Labs, Turn Biotechnologies
+- maturity: 早期人体试验
+- description: 表观遗传重编程技术接近首次人体试验，通过OSKM因子部分激活实现细胞 rejuvenation
+- trend: 重编程从动物模型迈向人体
+
+### Senolytic药物开发
+
+- name: Senolytic药物开发
+- type: Senolytic
+- applications: 清除衰老细胞, 抗衰老
+- companies: Unity Biotechnology, Rubedo Life Sciences
+- maturity: II期临床
+- description: Senolytic药物选择性清除衰老细胞，2025-2026年多个候选药物进入II期临床试验
+- trend: 清除衰老细胞是抗衰老最有希望的策略之一
+
+### 2026抗衰老初创企业
+
+- name: 2026抗衰老初创企业
+- type: 长寿生态
+- applications: 长寿治疗, 生物标志物
+- companies: Retro Biosciences, NewLimit, Hevolution
+- maturity: 研发阶段
+- description: 2026年最值得关注的抗衰老和长寿初创公司，涵盖表观遗传重编程、代谢干预和衰老生物标志物
+- trend: 长寿赛道投资热度持续升温
+
+### 小分子驱动的细胞重编程
+
+- name: 小分子驱动的细胞重编程
+- type: 小分子重编程
+- applications: 衰老逆转, 细胞再生
+- companies: 学术研究
+- maturity: 实验室验证
+- description: 研究发现小分子可驱动细胞重编程逆转衰老表型，通过重塑表观遗传和基因网络实现细胞年轻化
+- trend: 小分子方法比基因疗法更易成药
+
+### 衰老生物标志物标准化
+
+- name: 衰老生物标志物标准化
+- type: 生物标志物
+- applications: 衰老评估, 临床试验终点
+- companies: Clock Foundation, Elysia Health
+- maturity: 商业化早期
+- description: 衰老时钟和生物标志物标准化取得进展，为抗衰老临床试验提供可量化的疗效评估工具
+- trend: 可靠的衰老标志物是抗衰老药物开发的基础
+
+### Dasatinib
+
+- name: Dasatinib
+- type: Senolytic
+- mechanism: A tyrosine kinase inhibitor that selectively induces apoptosis in senescent cells by inhibiting pro-survival pathways, particularly involving BCL-2 family proteins.
+- clinical_stage: Phase 2
+
+### Quercetin
+
+- name: Quercetin
+- type: Senolytic
+- mechanism: A natural flavonoid that suppresses the pro-survival pathways of senescent cells, particularly by inhibiting PI3K/AKT and BCL-2, facilitating their removal by the immune system.
+- clinical_stage: Phase 2
+
+### Fisetin
+
+- name: Fisetin
+- type: Senolytic
+- mechanism: A flavonoid senolytic that selectively targets senescent cells by reducing the expression of anti-apoptotic proteins like BCL-xL and enhancing their clearance.
+- clinical_stage: Phase 2
+
+### Nicotinamide Mononucleotide (NMN)
+
+- name: Nicotinamide Mononucleotide (NMN)
+- type: NAD+ Booster
+- mechanism: A precursor to Nicotinamide Adenine Dinucleotide (NAD+), it replenishes NAD+ levels, supporting mitochondrial function, DNA repair, and sirtuin activity, which decline with age.
+- clinical_stage: Phase 2
+
+### Nicotinamide Riboside (NR)
+
+- name: Nicotinamide Riboside (NR)
+- type: NAD+ Booster
+- mechanism: Another NAD+ precursor that is efficiently converted to NAD+ in cells, enhancing cellular energy metabolism and activating sirtuins to promote healthy aging.
+- clinical_stage: Phase 2
+
+### Rapamycin
+
+- name: Rapamycin
+- type: mTOR Inhibitor
+- mechanism: An inhibitor of the mechanistic target of rapamycin complex 1 (mTORC1), a central regulator of cell growth and metabolism. Inhibition extends lifespan by promoting autophagy and reducing protein synthesis.
+- clinical_stage: Phase 2
+
+### Everolimus
+
+- name: Everolimus
+- type: mTOR Inhibitor
+- mechanism: An analog of rapamycin with improved bioavailability, it inhibits mTORC1, leading to enhanced autophagy and potential lifespan extension in various models.
+- clinical_stage: Phase 2
+
+### Metformin
+
+- name: Metformin
+- type: mTOR Inhibitor
+- mechanism: A first-line diabetes drug that indirectly inhibits mTOR signaling by activating AMPK, leading to reduced mTORC1 activity and improved metabolic health.
+- clinical_stage: Phase 3 (TAME trial)
+
+### Telomerase Activator (TA-65)
+
+- name: Telomerase Activator (TA-65)
+- type: Telomerase
+- mechanism: A plant-derived compound that activates telomerase, the enzyme responsible for maintaining telomere length, potentially counteracting cellular senescence caused by telomere shortening.
+- clinical_stage: Phase 3
+
+### Oxidative Stress Reducer (MitoQ)
+
+- name: Oxidative Stress Reducer (MitoQ)
+- type: Mitochondrial Antioxidant
+- mechanism: A mitochondria-targeted antioxidant that reduces oxidative damage within the cell, preserving mitochondrial function and reducing age-related decline.
+- clinical_stage: Phase 2
+
+### Senolytic Combination (D+Q)
+
+- name: Senolytic Combination (D+Q)
+- type: Senolytic
+- mechanism: A combination of Dasatinib and Quercetin, shown to effectively clear senescent cells in preclinical models and in early human trials for age-related conditions.
+- clinical_stage: Phase 2
+
+### NAD+ Precursor (NAD+)
+
+- name: NAD+ Precursor (NAD+)
+- type: NAD+ Booster
+- mechanism: Direct administration of NAD+ to increase cellular levels, though its efficacy is debated due to poor bioavailability; often used in conjunction with precursors.
+- clinical_stage: Phase 1
+
+### Spermidine
+
+- name: Spermidine
+- type: Autophagy Inducer
+- mechanism: A natural polyamine that induces autophagy, the process by which cells clear damaged components, thereby promoting cellular rejuvenation and longevity.
+- clinical_stage: Phase 2
+
+### Sirtuin Activator (Resveratrol)
+
+- name: Sirtuin Activator (Resveratrol)
+- type: Sirtuin Activator
+- mechanism: A polyphenol that activates SIRT1, a NAD+-dependent deacetylase involved in regulating stress resistance, metabolism, and aging pathways.
+- clinical_stage: Phase 2
+
+### FGF21 Analog
+
+- name: FGF21 Analog
+- type: Metabolic Regulator
+- mechanism: An engineered version of Fibroblast Growth Factor 21, a hormone that improves metabolic health, enhances insulin sensitivity, and has shown lifespan extension in mice.
+- clinical_stage: Phase 2
+
+### Dasatinib
+
+- name: Dasatinib
+- type: Senolytic
+- mechanism: A tyrosine kinase inhibitor that selectively induces apoptosis in senescent cells by inhibiting pro-survival pathways (e.g., BCL-2, PI3K) that are upregulated in these cells.
+- clinical_stage: Phase II
+
+### Quercetin
+
+- name: Quercetin
+- type: Senolytic
+- mechanism: A flavonoid that inhibits key anti-apoptotic pathways (e.g., BCL-xL, PI3K) in senescent cells, promoting their selective clearance.
+- clinical_stage: Phase II
+
+### Fisetin
+
+- name: Fisetin
+- type: Senolytic
+- mechanism: A flavonoid that reduces senescent cell burden by modulating pathways such as PI3K/AKT and reducing the expression of pro-survival proteins like BCL-xL and BCL-2.
+- clinical_stage: Phase II
+
+### NR (Nicotinamide Riboside)
+
+- name: NR (Nicotinamide Riboside)
+- type: NAD+ Booster
+- mechanism: A precursor to Nicotinamide Adenine Dinucleotide (NAD+), it boosts cellular NAD+ levels to support mitochondrial function, DNA repair, and sirtuin activity.
+- clinical_stage: Phase III
+
+### NMN (Nicotinamide Mononucleotide)
+
+- name: NMN (Nicotinamide Mononucleotide)
+- type: NAD+ Booster
+- mechanism: A direct precursor to NAD+, it increases intracellular NAD+ levels, enhancing energy metabolism, DNA repair, and activating sirtuins (e.g., SIRT1).
+- clinical_stage: Phase II
+
+### Rapamycin
+
+- name: Rapamycin
+- type: mTOR Inhibitor
+- mechanism: An inhibitor of the mechanistic Target of Rapamycin (mTOR) complex 1 (mTORC1), it slows down anabolic processes and promotes autophagy, extending lifespan in model organisms.
+- clinical_stage: Phase II
+
+### Everolimus
+
+- name: Everolimus
+- type: mTOR Inhibitor
+- mechanism: An analog of rapamycin, it inhibits mTORC1 to reduce protein synthesis, induce autophagy, and potentially delay aging-related decline.
+- clinical_stage: Phase II
+
+### Metformin
+
+- name: Metformin
+- type: mTOR Inhibitor
+- mechanism: An anti-diabetic drug that indirectly inhibits mTOR signaling via AMPK activation, reducing cellular growth and promoting metabolic health.
+- clinical_stage: Phase III
+
+### TAT-Beclin 1 Peptide
+
+- name: TAT-Beclin 1 Peptide
+- type: Senolytic
+- mechanism: A peptide that induces autophagy specifically in senescent cells by targeting the autophagy regulator Beclin 1, leading to their clearance.
+- clinical_stage: Preclinical
+
+### TA-65
+
+- name: TA-65
+- type: Telomerase Activator
+- mechanism: A small-molecule activator of telomerase, it aims to lengthen telomeres (protective caps on chromosomes) to counteract cellular aging.
+- clinical_stage: Phase II
+
+### Urolithin A
+
+- name: Urolithin A
+- type: Senolytic
+- mechanism: A metabolite produced by gut bacteria from pomegranates, it induces mitophagy (clearance of damaged mitochondria) and reduces inflammation associated with senescence.
+- clinical_stage: Phase II
+
+### Resveratrol
+
+- name: Resveratrol
+- type: Sirtuin Activator
+- mechanism: A polyphenol that activates SIRT1, a NAD+-dependent deacetylase involved in DNA repair, metabolic regulation, and stress resistance.
+- clinical_stage: Phase II
+
+### ABT-263 (Navitoclax)
+
+- name: ABT-263 (Navitoclax)
+- type: Senolytic
+- mechanism: A BCL-2/BCL-xL inhibitor that induces apoptosis in senescent cells by blocking their anti-apoptotic defenses.
+- clinical_stage: Phase I/II
+
+### Senolytic Cocktail (Dasatinib + Quercetin)
+
+- name: Senolytic Cocktail (Dasatinib + Quercetin)
+- type: Senolytic
+- mechanism: A combination of dasatinib and quercetin that targets multiple pro-survival pathways in senescent cells for more effective clearance.
+- clinical_stage: Phase II
+
+### Spermidine
+
+- name: Spermidine
+- type: Autophagy Inducer
+- mechanism: A polyamine that induces autophagy, the process of cellular self-cleanup, which declines with age and is linked to longevity.
+- clinical_stage: Phase II
+
+## cell_therapy
+
+### CAR-T细胞治疗
+
+- name: CAR-T细胞治疗
+- type: 免疫细胞治疗
+- mechanism: 嵌合抗原受体T细胞靶向杀伤肿瘤
+- clinical_stage: 已上市(血液瘤)/临床(实体瘤)
+- potential: 极高(血液瘤)/高(实体瘤)
+- description: 患者T细胞基因工程改造后回输，精准杀伤表达特定抗原的癌细胞
+- trend: 截至2025年7款FDA批准CAR-T产品；2026年市场$4.83Bn→2033年$18.46Bn
+
+### CAR-NK细胞治疗
+
+- name: CAR-NK细胞治疗
+- type: 免疫细胞治疗
+- mechanism: 嵌合抗原受体NK细胞杀伤肿瘤
+- clinical_stage: 临床I/II期
+- potential: 高
+- description: NK细胞CAR改造，无需HLA匹配，异体使用潜力大，CRS风险低
+- trend: Fate Therapeutics/NKarta/赛诺菲；现货型(off-the-shelf)产品开发
+
+### TCR-T细胞治疗
+
+- name: TCR-T细胞治疗
+- type: 免疫细胞治疗
+- mechanism: T细胞受体工程靶向胞内抗原
+- clinical_stage: 已上市(afamitresgene)/临床
+- potential: 高
+- description: 工程化T细胞受体识别MHC呈递的胞内抗原，可靶向CAR-T无法触及的靶点
+- trend: afamitresgene autoleucel获FDA批准(实体瘤)；实体瘤治疗突破
+
+### TIL肿瘤浸润淋巴细胞
+
+- name: TIL肿瘤浸润淋巴细胞
+- type: 免疫细胞治疗
+- mechanism: 扩增肿瘤内天然T细胞回输
+- clinical_stage: 已上市(Amtagvi)
+- potential: 高
+- description: 从患者肿瘤中提取天然识别肿瘤的T细胞，体外扩增后回输
+- trend: Iovance/Amtagvi 2024年获FDA批准(黑色素瘤)；实体瘤新选择
+
+### iPSC来源细胞治疗
+
+- name: iPSC来源细胞治疗
+- type: 干细胞治疗
+- mechanism: iPSC分化为功能细胞替代损伤组织
+- clinical_stage: 已上市(日本)/临床
+- potential: 极高
+- description: 诱导多能干细胞分化为角膜/NK/心肌/神经等细胞用于治疗
+- trend: 日本iPSC角膜细胞(2023)/NK细胞(2024)获批；全球大量临床试验
+
+### 通用型CAR-T(异体)
+
+- name: 通用型CAR-T(异体)
+- type: 免疫细胞治疗
+- mechanism: 健康供者T细胞CAR改造/基因编辑消除排斥
+- clinical_stage: 临床I/II期
+- potential: 极高
+- description: 现货型CAR-T产品，无需患者自体细胞，可大规模生产
+- trend: CRISPR编辑消除TCR/HLA；Allogene/Cellectis/Caribou Biosciences推进
+
+### CAR-巨噬细胞CAR-M
+
+- name: CAR-巨噬细胞CAR-M
+- type: 免疫细胞治疗
+- mechanism: 巨噬细胞CAR改造吞噬肿瘤
+- clinical_stage: 临床I期
+- potential: 中高
+- description: 工程化巨噬细胞可吞噬肿瘤并重塑肿瘤微环境，适合实体瘤
+- trend: Carisma Therapeutics领先；实体瘤微环境调控新策略
+
+### 基因治疗(AAV递送)
+
+- name: 基因治疗(AAV递送)
+- type: 基因治疗
+- mechanism: AAV载体递送功能基因替代缺陷基因
+- clinical_stage: 已上市(多款)
+- potential: 高
+- description: 腺相关病毒载体递送治疗性基因，一次性治疗遗传病
+- trend: Hemgenix/Zolgensma/Casgevy已上市；AAV衣壳工程改进靶向性；免疫原性挑战
+
+### LNP递送基因编辑
+
+- name: LNP递送基因编辑
+- type: 基因治疗
+- mechanism: 脂质纳米颗粒递送CRISPR/mRNA至靶器官
+- clinical_stage: 临床I/II期
+- potential: 极高
+- description: 非病毒递送基因编辑工具，LNP可靶向肝脏，肝外递送突破中
+- trend: Intellia LNP-CRISPR肝脏靶向临床成功；肝外递送(肺/脑/肌肉)是前沿
+
+### CAR-T实体瘤策略
+
+- name: CAR-T实体瘤策略
+- type: 免疫细胞治疗
+- mechanism: 多靶点/装甲CAR/微环境调控
+- clinical_stage: 临床I/II期
+- potential: 高
+- description: 克服实体瘤微环境抑制的CAR-T策略：双靶点/分泌细胞因子/检查点阻断
+- trend: 2026年CAR-T从血液瘤向实体瘤突破的关键年；数十款产品预计获批
+
+### 间充质干细胞MSC
+
+- name: 间充质干细胞MSC
+- type: 干细胞治疗
+- mechanism: 旁分泌/免疫调节/组织修复
+- clinical_stage: II/III期(多适应症)
+- potential: 中高
+- description: 多能间充质干细胞抗炎和组织修复，移植物抗宿主病/骨关节炎等
+- trend: 全球1000+临床试验；与长寿科技交叉；外泌体作为无细胞替代
+
+### 3D生物打印组织/器官
+
+- name: 3D生物打印组织/器官
+- type: 组织工程
+- mechanism: 逐层打印活细胞和生物材料构建功能组织
+- clinical_stage: 临床(皮肤/软骨)/临床前(器官)
+- potential: 极高(远期)
+- description: 3D打印活体组织用于移植，最终目标是打印完整器官
+- trend: 3D打印耳朵(2022)/皮肤已临床使用；完整器官仍需数年
+
+### 体内CAR-T疗法
+
+- name: 体内CAR-T疗法
+- type: 免疫细胞治疗
+- mechanism: LNP/AAV递送CAR基因在体内直接改造T细胞
+- clinical_stage: 临床I期
+- potential: 极高
+- description: 无需体外培养T细胞，直接在体内将T细胞改造为CAR-T，大幅降低成本和等待时间
+- trend: 2025年ASH年会最新进展；Interius Bio/Myeloid Therapeutics/Umoja Biopharma领先
+- sources: [object Object]
+
+### 现货型CAR-T(Off-the-Shelf)
+
+- name: 现货型CAR-T(Off-the-Shelf)
+- type: 免疫细胞治疗
+- mechanism: 异体供体CAR-T/基因编辑消除GVHD
+- clinical_stage: 临床I/II期
+- potential: 极高
+- description: 通用型CAR-T无需患者自体细胞，可即用即取，降低成本和等待时间
+- trend: 2025-2026年临床进展显著但仍为研究性；CRISPR编辑消除TCR/MHC
+- sources: [object Object]
+
+### CAR-T实体瘤突破2026
+
+- name: CAR-T实体瘤突破2026
+- type: 免疫细胞治疗
+- mechanism: 双靶点/装甲CAR-T/肿瘤微环境调控
+- clinical_stage: 临床I/II期
+- potential: 极高
+- description: CAR-T从血液瘤向实体瘤突破的关键年，数十款产品预计获批
+- trend: 2017-2025年6款自体CAR-T获FDA批准；2026年实体瘤突破窗口
+- sources: [object Object]
+
+### CAR-T多发性骨髓瘤II期
+
+- name: CAR-T多发性骨髓瘤II期
+- type: 免疫细胞治疗
+- mechanism: BCMA靶向CAR-T
+- clinical_stage: II期(ASH 2025)
+- potential: 高
+- description: ASH 2025: CAR-T多发性骨髓瘤II期试验12个月PFS 79%，18个月PFS 66%，OS 95%/90%
+- trend: MD Anderson Cancer Center数据；长期生存数据支持CAR-T在骨髓瘤中的地位
+- sources: [object Object]
+
+### 下一代CAR-T市场
+
+- name: 下一代CAR-T市场
+- type: 市场趋势
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 高
+- description: 下一代CAR-T疗法市场预测：新靶点/新适应症/新制造工艺驱动增长
+- trend: 自动化制造降低成本；新靶点(GPRC5D/SLAMF7)拓展适应症
+- sources: [object Object]
+
+### CRISPR临床试验2026更新
+
+- name: CRISPR临床试验2026更新
+- type: 基因编辑治疗
+- mechanism: CRISPR-Cas9/碱基编辑/先导编辑
+- clinical_stage: 多适应症临床
+- potential: 极高
+- description: 2026年CRISPR临床试验最新进展：Casgevy后更多基因编辑疗法进入临床
+- trend: IGI 2026更新：体内递送/碱基编辑/表观遗传编辑新方向
+- sources: [object Object]
+
+### 现货型CAR-T(allogeneic)
+
+- name: 现货型CAR-T(allogeneic)
+- type: 免疫细胞治疗
+- mechanism: 异体来源CAR-T细胞，即用型无需自体采集
+- clinical_stage: 临床I/II期
+- potential: 极高
+- description: 现货型CAR-T：异体来源，无需患者自体细胞采集和培养，大幅降低成本和等待时间
+- trend: 2025-2026年临床进展显著但仍处研究阶段；CRS/GvHD风险管控是关键
+- sources: [object Object]
+
+### CAR-T多发性骨髓瘤II期
+
+- name: CAR-T多发性骨髓瘤II期
+- type: 免疫细胞治疗
+- mechanism: BCMA靶向CAR-T
+- clinical_stage: II期
+- potential: 高
+- description: ASH 2025：CAR-T多发性骨髓瘤II期试验12个月PFS 79%，18个月PFS 66%，OS 95%/90%
+- trend: 多发性骨髓瘤CAR-T疗效数据持续改善；长期生存数据积累
+- sources: [object Object]
+
+### 体内CAR-T(in vivo)
+
+- name: 体内CAR-T(in vivo)
+- type: 免疫细胞治疗
+- mechanism: 体内递送CAR基因→T细胞原位改造
+- clinical_stage: 临床I期
+- potential: 极高
+- description: 体内CAR-T：通过载体直接在体内将CAR基因递送至T细胞，无需体外培养，ASH 2025最新进展
+- trend: 从体外到体内是CAR-T革命性转变；LNP/病毒载体递送技术突破
+- sources: [object Object]
+
+### CAR-T实体瘤突破
+
+- name: CAR-T实体瘤突破
+- type: 免疫细胞治疗
+- mechanism: 新靶点/新策略攻克实体瘤
+- clinical_stage: 临床I/II期
+- potential: 极高
+- description: 2026年CAR-T从血液癌到实体瘤：新靶点(GPC3/CLDN18.2/MUC1)/新策略(双靶点/装甲CAR)
+- trend: 实体瘤是CAR-T下一个前沿；6款自体CAR-T已获批(2017-2025)
+- sources: [object Object]
+
+### AACR 2026 CAR-T早期研究
+
+- name: AACR 2026 CAR-T早期研究
+- type: 免疫细胞治疗
+- mechanism: 高风险冒烟型多发性骨髓瘤CAR-T
+- clinical_stage: 早期临床
+- potential: 高
+- description: AACR 2026年会：CAR-T用于高风险冒烟型多发性骨髓瘤早期研究，AI诊断模型同步展示
+- trend: CAR-T从晚期治疗向早期干预扩展；AI辅助患者筛选
+- sources: [object Object]
+
+### CAR-T未来十年展望
+
+- name: CAR-T未来十年展望
+- type: 行业趋势
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 极高
+- description: BioInformant预测未来十年数十款CAR-T疗法将获批，覆盖多种血液癌和实体瘤
+- trend: 从自体到异体/体内；从血液瘤到实体瘤；从末线到前线
+- sources: [object Object]
+
+### CAR-T FDA里程碑(2017-2025)
+
+- name: CAR-T FDA里程碑(2017-2025)
+- type: 行业回顾
+- mechanism: N/A
+- clinical_stage: 已上市
+- potential: 高
+- description: 2017-2025年6款自体CAR-T产品获FDA批准：Kymriah/Yescarta/Tecartus/Breyanzi/Abecma/Carvykti
+- trend: CAR-T从突破性疗法到标准治疗；适应症从后线向前线推进
+- sources: [object Object]
+
+### TIL肿瘤浸润淋巴细胞疗法
+
+- name: TIL肿瘤浸润淋巴细胞疗法
+- type: 免疫细胞治疗
+- mechanism: 扩增肿瘤浸润T细胞→回输杀伤肿瘤
+- clinical_stage: 已上市(Iovance)/临床
+- potential: 高
+- description: 从患者肿瘤中提取浸润淋巴细胞，体外扩增后回输，对实体瘤(黑色素瘤)有效
+- trend: Amtagvi(lifileucel)2024年获FDA批准；更多实体瘤适应症拓展
+- sources: [object Object]
+
+### TCR-T细胞治疗
+
+- name: TCR-T细胞治疗
+- type: 免疫细胞治疗
+- mechanism: 工程化T细胞受体识别胞内抗原
+- clinical_stage: 已上市(Adaptimmune)/临床
+- potential: 高
+- description: TCR-T识别细胞内抗原(MHC呈递)，可靶向CAR-T无法触及的胞内靶点
+- trend: Tecelra(afamitresgene autoleucel)2024年获FDA批准；实体瘤新选择
+- sources: [object Object]
+
+### CAR-M巨噬细胞治疗
+
+- name: CAR-M巨噬细胞治疗
+- type: 免疫细胞治疗
+- mechanism: CAR修饰巨噬细胞吞噬肿瘤
+- clinical_stage: 临床I期
+- potential: 高
+- description: CAR修饰巨噬细胞，既可直接吞噬肿瘤，又可重塑肿瘤微环境，实体瘤潜力大
+- trend: Carisma Therapeutics领先；实体瘤微环境突破新策略
+- sources: [object Object]
+
+### KIR-CAR T细胞治疗
+
+- name: KIR-CAR T细胞治疗
+- type: 免疫细胞治疗
+- mechanism: KIR-CAR T细胞靶向杀伤肿瘤
+- clinical_stage: 临床I期(AACR 2026)
+- potential: 高
+- description: AACR 2026: KIR-CAR T细胞治疗在多发性骨髓瘤中安全，剂量递增疗效增加
+- trend: 新型CAR设计突破传统scFv限制；KIR-CAR开辟新靶点空间
+- sources: [object Object]
+
+### 免化疗CAR-T疗法
+
+- name: 免化疗CAR-T疗法
+- type: 免疫细胞治疗
+- mechanism: 改良CAR-T免去预处理化疗
+- clinical_stage: 临床早期
+- potential: 高
+- description: Reuters 2026: 改良型CAR-T疗法可能让血液癌患者免受毒性预处理化疗
+- trend: CAR-T从高毒性到低毒性；免化疗预处理改善患者体验
+- sources: [object Object]
+
+### FDA扩展CAR-T适应症
+
+- name: FDA扩展CAR-T适应症
+- type: 监管批准
+- mechanism: axi-cabtagene ciloleucel扩展
+- clinical_stage: 已上市(新适应症)
+- potential: 高
+- description: FDA扩展axi-cabtagene ciloleucel (axi-cel) CAR-T疗法适应症，覆盖罕见患者群体
+- trend: CAR-T从血液瘤到更广适应症；FDA加速审批路径
+- sources: [object Object]
+
+### CAR-T实体瘤进展2026
+
+- name: CAR-T实体瘤进展2026
+- type: 免疫细胞治疗
+- mechanism: CAR-T杀伤可检测肿瘤+免疫微环境调控
+- clinical_stage: 临床I/II期
+- potential: 高
+- description: CAR-T 2026年从血液瘤到实体瘤进展：杀伤可检测部分+免疫微环境调控
+- trend: 实体瘤CAR-T从概念到早期临床；联合免疫检查点策略
+- sources: [object Object]
+
+### 现货型CAR-T真相2026
+
+- name: 现货型CAR-T真相2026
+- type: 免疫细胞治疗
+- mechanism: 异体CAR-T(allogeneic)
+- clinical_stage: 研究性
+- potential: 高
+- description: 2025-2026年现货型(off-the-shelf) CAR-T取得实质性临床进展但仍为研究性
+- trend: 异体CAR-T从概念到临床数据；GVHD和持久性仍是挑战
+- sources: [object Object]
+
+### CAR-T未来十年发展策略
+
+- name: CAR-T未来十年发展策略
+- type: 行业展望
+- mechanism: 多策略
+- clinical_stage: 多阶段
+- potential: 极高
+- description: Bioinformant: 未来十年数十种CAR-T疗法可能获批，覆盖液体瘤和实体瘤
+- trend: CAR-T从7款到数十款；实体瘤突破是下一个里程碑
+- sources: [object Object]
+
+### uPAR靶向CAR-T实体瘤突破
+
+- name: uPAR靶向CAR-T实体瘤突破
+- type: 实体瘤CAR-T
+- mechanism: uPAR靶向CAR-T细胞
+- clinical_stage: 临床前/早期临床
+- potential: 极高
+- description: uPAR靶向CAR-T细胞缩小实体瘤并清除转移灶，为CAR-T治疗实体瘤提供新策略
+- trend: CAR-T从血液瘤到实体瘤突破；uPAR靶点前景广阔
+- sources: [object Object]
+
+### WashU CAR-T FDA突破性疗法认定
+
+- name: WashU CAR-T FDA突破性疗法认定
+- type: T细胞血癌CAR-T
+- mechanism: 创新CAR-T免疫疗法
+- clinical_stage: FDA突破性疗法认定
+- potential: 极高
+- description: 华盛顿大学医学院开发的侵袭性T细胞血癌CAR-T免疫疗法获FDA突破性疗法认定，加速审批路径
+- trend: CAR-T疗法审批加速；T细胞恶性肿瘤新选择
+- sources: [object Object]
+
+### AACR 2026 CAR-T早期研究亮点
+
+- name: AACR 2026 CAR-T早期研究亮点
+- type: 学术会议
+- mechanism: 多策略
+- clinical_stage: 多阶段
+- potential: 高
+- description: AACR 2026年会CAR-T早期研究亮点：高风险冒烟型多发性骨髓瘤CAR-T应用和AI诊断模型
+- trend: CAR-T适应症扩展到早期疾病；AI辅助CAR-T治疗决策
+- sources: [object Object]
+
+### iwCAR-T 2026国际研讨会
+
+- name: iwCAR-T 2026国际研讨会
+- type: 学术会议
+- mechanism: 多策略
+- clinical_stage: 多阶段
+- potential: 高
+- description: iwCAR-T 2026: 年度国际CAR-T和细胞治疗研讨会，汇聚全球顶尖临床和转化研究人才
+- trend: CAR-T国际合作加强；从血液瘤到实体瘤策略讨论
+- sources: [object Object]
+
+### CAR-T长期疗效Nature数据
+
+- name: CAR-T长期疗效Nature数据
+- type: 临床数据
+- mechanism: CD19靶向CAR-T
+- clinical_stage: 已上市
+- potential: 高
+- description: Nature发表CAR-T长期疗效数据：CD19靶向CAR-T细胞可在B细胞恶性肿瘤中诱导长期缓解，长期毒性极小
+- trend: CAR-T长期疗效数据积累；安全性优于预期
+- sources: [object Object]
+
+### CAR-T市场2026-2033预测
+
+- name: CAR-T市场2026-2033预测
+- type: 市场数据
+- mechanism: N/A
+- clinical_stage: N/A
+- potential: 极高
+- description: 全球CAR-T细胞治疗市场预计从2026年48.3亿美元增长到2033年184.6亿美元，CAGR 21.1%
+- trend: CAR-T市场持续高速增长；新适应症和通用型产品驱动
+- sources: [object Object]
+
+### CAR-T实体瘤免疫逃逸机制
+
+- name: CAR-T实体瘤免疫逃逸机制
+- type: 机制研究
+- mechanism: 免疫逃逸
+- clinical_stage: 研究
+- potential: 高
+- description: CAR-T治疗实体瘤免疫逃逸机制研究：CAR-T细胞杀伤可检测部分但剩余部分增殖(Lei et al., 2026)
+- trend: 实体瘤免疫逃逸机制深入理解；联合策略克服逃逸
+- sources: [object Object]
+
+### MSK CAR-T进展时间线
+
+- name: MSK CAR-T进展时间线
+- type: 历史回顾
+- mechanism: 多策略
+- clinical_stage: 多阶段
+- potential: 高
+- description: Memorial Sloan Kettering CAR-T进展时间线：从免疫细胞保护小鼠到7款FDA批准产品的完整历程
+- trend: CAR-T从实验室到临床的完整路径；未来十年数十种疗法可能获批
+- sources: [object Object]
+
+### 通用型CAR-T(allogeneic)2026
+
+- name: 通用型CAR-T(allogeneic)2026
+- type: 异体CAR-T
+- mechanism: 异体T细胞CAR改造
+- clinical_stage: I/II期
+- potential: 极高
+- description: 通用型(异体)CAR-T 2026年进展：现货型产品降低成本和等待时间，但GVHD和持久性挑战仍存
+- trend: 异体CAR-T从概念到临床；成本和可及性改善
+- sources: [object Object]
+
+### CAR-NK细胞治疗2026进展
+
+- name: CAR-NK细胞治疗2026进展
+- type: CAR-NK
+- mechanism: NK细胞CAR改造
+- clinical_stage: I/II期
+- potential: 高
+- description: CAR-NK细胞治疗2026年进展：无需HLA匹配，异体使用潜力大，CRS风险低，实体瘤应用探索
+- trend: CAR-NK安全性优势明显；与CAR-T互补而非替代
+- sources: [object Object]
+
+### CAR-T联合免疫检查点抑制剂
+
+- name: CAR-T联合免疫检查点抑制剂
+- type: 联合疗法
+- mechanism: CAR-T+PD-1/CTLA-4抑制
+- clinical_stage: I/II期
+- potential: 高
+- description: CAR-T联合免疫检查点抑制剂2026年进展：克服实体瘤免疫抑制微环境，提升CAR-T持久性和疗效
+- trend: 联合疗法成为实体瘤CAR-T标准策略；免疫微环境调控
+- sources: [object Object]
+
+### CAR-T制造自动化2026
+
+- name: CAR-T制造自动化2026
+- type: 制造技术
+- mechanism: 自动化生产
+- clinical_stage: N/A
+- potential: 高
+- description: CAR-T制造自动化2026年进展：封闭式自动化生产系统降低成本和变异，缩短vein-to-vein时间
+- trend: CAR-T制造从手工到自动化；成本下降推动可及性
+- sources: [object Object]
+
+### TCR-T细胞治疗2026
+
+- name: TCR-T细胞治疗2026
+- type: TCR-T
+- mechanism: T细胞受体工程
+- clinical_stage: I/II期
+- potential: 高
+- description: TCR-T细胞治疗2026年进展：识别细胞内抗原，拓展实体瘤治疗靶点范围
+- trend: TCR-T与CAR-T互补；细胞内靶点识别优势
+- sources: [object Object]
+
+### TIL肿瘤浸润淋巴细胞疗法
+
+- name: TIL肿瘤浸润淋巴细胞疗法
+- type: TIL疗法
+- mechanism: 肿瘤浸润淋巴细胞扩增
+- clinical_stage: 已上市(I期)
+- potential: 高
+- description: TIL疗法2026年进展：Amtagvi(Lifileucel)获批后市场扩展，实体瘤治疗新选择
+- trend: TIL从黑色素瘤到其他实体瘤；制造工艺优化
+- sources: [object Object]
+
+### CAR-T安全性管理2026
+
+- name: CAR-T安全性管理2026
+- type: 安全管理
+- mechanism: CRS/ICANS管理
+- clinical_stage: 已上市
+- potential: 高
+- description: CAR-T安全性管理2026年进展：CRS和ICANS预测/预防/治疗策略优化，死亡率持续下降
+- trend: CAR-T安全性持续改善；早期干预和精准管理
+- sources: [object Object]
+
+### CRDWC 2026 CAR-T临床进展挑战
+
+- name: CRDWC 2026 CAR-T临床进展挑战
+- type: 学术会议
+- mechanism: 多策略
+- clinical_stage: 多阶段
+- potential: 高
+- description: CRDWC 2026年9月迈阿密：CAR-T细胞治疗临床进展与挑战专题，全球肿瘤专家和生物技术领袖
+- trend: CAR-T全球合作加强；临床挑战和解决方案讨论
+- sources: [object Object]
+
+### KIR-CAR T实体瘤I期临床
+
+- name: KIR-CAR T实体瘤I期临床
+- type: 免疫疗法
+- efficiency: N/A
+- cost: 高
+- maturity: I期临床
+- companies: Penn Medicine
+- description: Penn Medicine首创KIR-CAR T细胞疗法I期临床试验，模仿自然杀伤细胞设计，限制T细胞毒性，针对实体瘤
+- trend: CAR-T从血液瘤到实体瘤突破；NK细胞设计策略降低毒性
+- sources: [object Object]
+
+### In vivo CAR-T体内制造
+
+- name: In vivo CAR-T体内制造
+- type: 免疫疗法
+- efficiency: N/A
+- cost: 潜在低
+- maturity: 临床前
+- companies: Innovative Genomics Institute
+- description: IGI开发体内CAR-T疗法：在体内直接制造抗癌免疫细胞，小鼠实验杀死癌症，有望实现免化疗off-the-shelf治疗
+- trend: 从体外到体内制造CAR-T；免化疗成为可能；off-the-shelf前景
+- sources: [object Object]
+
+### Mayo Clinic CAR-T实体瘤突破
+
+- name: Mayo Clinic CAR-T实体瘤突破
+- type: 免疫疗法
+- efficiency: N/A
+- cost: 高
+- maturity: 临床突破
+- companies: Mayo Clinic
+- description: Mayo Clinic跨学科合作实现CAR-T治疗实体瘤突破性进展
+- trend: 跨学科合作推动CAR-T实体瘤突破；工程化改造是关键
+- sources: [object Object]
+
+### City of Hope CAR-T胶质母细胞瘤
+
+- name: City of Hope CAR-T胶质母细胞瘤
+- type: 免疫疗法
+- efficiency: N/A
+- cost: 高
+- maturity: 临床研究
+- companies: City of Hope
+- description: City of Hope Christine Brown团队改造CAR-T治疗胶质母细胞瘤，为实体瘤CAR-T提供工程化改造经验
+- trend: 脑瘤CAR-T从实验到临床；工程化改造策略多样化
+- sources: [object Object]
+
+### Cancer Research UK CAR-T国际试验
+
+- name: Cancer Research UK CAR-T国际试验
+- type: 免疫疗法
+- efficiency: N/A
+- cost: 高
+- maturity: 临床试验
+- companies: Cancer Research UK
+- description: Cancer Research UK 2026年4月启动突破性国际CAR-T临床试验，针对年轻人实体癌
+- trend: CAR-T临床试验从血液瘤扩展到实体瘤；国际合作加速
+- sources: [object Object]
+
+### TIM-3诱饵增强CAR-T
+
+- name: TIM-3诱饵增强CAR-T
+- type: 免疫疗法
+- efficiency: N/A
+- cost: 高
+- maturity: 临床前
+- companies: Avance Bio
+- description: TIM-3诱饵策略增强CAR-T疗效，目前聚焦血液癌但原理可适配实体瘤CAR-T
+- trend: 免疫检查点诱饵策略增强CAR-T；从血液癌到实体瘤扩展
+- sources: [object Object]
+
+### Nature CAR-T当前挑战与未来方向
+
+- name: Nature CAR-T当前挑战与未来方向
+- type: 学术综述
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: 多研究机构
+- description: Nature综述CAR-T当前挑战与未来方向：实体瘤尚未批准但其他T细胞疗法已获授权，新策略不断涌现
+- trend: CAR-T从血液瘤到实体瘤的攻坚；工程化/联合疗法/新型靶点
+- sources: [object Object]
+
+### Penn Medicine KIR-CAR T实体瘤I期
+
+- name: Penn Medicine KIR-CAR T实体瘤I期
+- type: 免疫疗法
+- mechanism: KIR-CAR T细胞靶向杀伤实体瘤
+- clinical_stage: I期临床
+- potential: 极高
+- companies: Penn Medicine
+- description: Penn Medicine首创KIR-CAR T细胞疗法I期临床试验，模仿自然杀伤细胞设计，限制T细胞毒性，针对实体瘤
+- trend: CAR-T从血液瘤到实体瘤突破；NK细胞设计策略降低毒性
+- sources: [object Object]
+
+### IGI体内CAR-T免化疗突破
+
+- name: IGI体内CAR-T免化疗突破
+- type: 免疫疗法
+- mechanism: 体内直接制造CAR-T
+- clinical_stage: 临床前
+- potential: 极高
+- companies: Innovative Genomics Institute
+- description: IGI开发体内CAR-T疗法：在体内直接制造抗癌免疫细胞，小鼠实验杀死癌症，有望实现免化疗off-the-shelf治疗
+- trend: 从体外到体内制造CAR-T；免化疗成为可能
+- sources: [object Object]
+
+### Mayo Clinic CAR-T实体瘤跨学科突破
+
+- name: Mayo Clinic CAR-T实体瘤跨学科突破
+- type: 免疫疗法
+- mechanism: 跨学科合作CAR-T实体瘤
+- clinical_stage: 临床突破
+- potential: 极高
+- companies: Mayo Clinic
+- description: Mayo Clinic跨学科合作实现CAR-T治疗实体瘤突破性进展
+- trend: 跨学科合作推动CAR-T实体瘤突破；工程化改造是关键
+- sources: [object Object]
+
+### Cancer Research UK CAR-T国际试验启动
+
+- name: Cancer Research UK CAR-T国际试验启动
+- type: 免疫疗法
+- mechanism: CAR-T治疗年轻人实体癌
+- clinical_stage: 临床试验
+- potential: 高
+- companies: Cancer Research UK
+- description: Cancer Research UK 2026年4月启动突破性国际CAR-T临床试验，针对年轻人实体癌
+- trend: CAR-T临床试验从血液瘤扩展到实体瘤；国际合作加速
+- sources: [object Object]
+
+### CAR-T全球多维分析Nature子刊
+
+- name: CAR-T全球多维分析Nature子刊
+- type: 学术综述
+- mechanism: CAR-T
+- clinical_stage: 综合分析
+- potential: 参考
+- companies: 多机构
+- description: Nature子刊发表CAR-T全球多维分析：血液恶性肿瘤取得实质性进展，实体瘤仍是挑战
+- trend: CAR-T血液瘤成熟/实体瘤突破中；全球研发格局分析
+- sources: [object Object]
+
+### WashU CAR-T获FDA突破性疗法认定
+
+- name: WashU CAR-T获FDA突破性疗法认定
+- type: 监管突破
+- mechanism: CAR-T
+- clinical_stage: 突破性疗法
+- potential: 极高
+- companies: Washington University
+- description: Washington University CAR-T疗法获FDA突破性疗法认定，加速审批路径
+- trend: FDA加速CAR-T审批；突破性疗法认定增加
+- sources: [object Object]
+
+### Reuters免化疗CAR-T报道
+
+- name: Reuters免化疗CAR-T报道
+- type: 行业报道
+- mechanism: 体内CAR-T
+- clinical_stage: 临床前
+- potential: 极高
+- companies: 多公司
+- description: Reuters报道免化疗CAR-T疗法：在体内直接制造抗癌免疫细胞，无需化疗预处理
+- trend: 免化疗是CAR-T终极目标；体内制造技术突破
+- sources: [object Object]
+
+### 基因驱动蚊子抑制疟疾患者来源寄生虫
+
+- name: 基因驱动蚊子抑制疟疾患者来源寄生虫
+- type: 基因驱动+免疫
+- mechanism: 基因驱动蚊子+免疫
+- clinical_stage: 临床前
+- potential: 极高
+- companies: 多研究机构
+- description: 基因驱动蚊子抑制患者来源疟疾寄生虫：基因驱动技术引入野生蚊子遗传修饰，减少疟疾传播
+- trend: 基因驱动从实验室到接近受控释放；疟疾防控新希望
+- sources: [object Object]
+
+### uPAR靶向CAR-T缩小实体瘤并清除转移
+
+- name: uPAR靶向CAR-T缩小实体瘤并清除转移
+- type: 实体瘤CAR-T
+- mechanism: uPAR靶向CAR-T
+- clinical_stage: 临床前
+- potential: 极高
+- companies: 多研究机构
+- description: uPAR靶向CAR-T细胞缩小实体瘤并清除转移灶，突破CAR-T在实体瘤中的应用瓶颈
+- trend: CAR-T从血液癌到实体瘤突破；uPAR是新靶点
+- sources: [object Object]
+
+### AACR 2026: CAR-T早期研究亮点
+
+- name: AACR 2026: CAR-T早期研究亮点
+- type: 会议报告
+- mechanism: CAR-T
+- clinical_stage: 早期临床
+- potential: 高
+- companies: 多机构
+- description: AACR 2026年会CAR-T早期研究亮点：高风险冒烟型多发性骨髓瘤CAR-T治疗、AI诊断模型
+- trend: CAR-T从晚期到早期疾病干预；AI辅助诊断
+- sources: [object Object]
+
+### Blood ICT: 扩大CAR-T可及性真实世界经验
+
+- name: Blood ICT: 扩大CAR-T可及性真实世界经验
+- type: 临床研究
+- mechanism: CAR-T
+- clinical_stage: 临床应用
+- potential: 高
+- companies: 多中心
+- description: Blood ICT发表扩大CAR-T可及性真实世界经验：从专科中心到更广泛医疗系统
+- trend: CAR-T从专科到普及；真实世界数据指导推广
+- sources: [object Object]
+
+### CAR-T细胞治疗市场4.83B→18.46B预测
+
+- name: CAR-T细胞治疗市场4.83B→18.46B预测
+- type: 市场数据
+- mechanism: CAR-T
+- clinical_stage: N/A
+- potential: N/A
+- companies: Coherent Market Insights
+- description: CAR-T细胞治疗市场2026年48.3亿美元，预计2033年达184.6亿美元，CAGR 21.1%
+- trend: CAR-T市场持续高速增长；适应症扩展驱动
+- sources: [object Object]
+
+### CAR-T 2026: 从血液癌到实体瘤
+
+- name: CAR-T 2026: 从血液癌到实体瘤
+- type: 行业分析
+- mechanism: CAR-T
+- clinical_stage: 多阶段
+- potential: 极高
+- companies: 多公司
+- description: CAR-T 2026年从血液癌到实体瘤：免疫抑制肿瘤微环境(TME)是主要挑战，新策略突破中
+- trend: CAR-T实体瘤是下一个前沿；TME调控是关键
+- sources: [object Object]
+
+### CAR-T现状挑战与前景综述
+
+- name: CAR-T现状挑战与前景综述
+- type: 学术综述
+- mechanism: CAR-T
+- clinical_stage: N/A
+- potential: 高
+- companies: 多机构
+- description: Wiley发表CAR-T现状挑战与前景综述：生物学基础、当前挑战和未来方向
+- trend: CAR-T从突破到优化；挑战和前景并存
+- sources: [object Object]
+
+### BioInformant: CAR-T疗法开发未来策略
+
+- name: BioInformant: CAR-T疗法开发未来策略
+- type: 行业分析
+- mechanism: CAR-T
+- clinical_stage: 多阶段
+- potential: 高
+- companies: 多公司
+- description: BioInformant分析CAR-T疗法开发未来策略：未来十年数十种CAR-T疗法可能获批
+- trend: CAR-T从少数到数十种；液体癌和实体瘤双线推进
+- sources: [object Object]
+
+### CAR-T Summit 2026临床进展版
+
+- name: CAR-T Summit 2026临床进展版
+- type: 行业会议
+- mechanism: CAR-T
+- clinical_stage: N/A
+- potential: N/A
+- companies: 多公司
+- description: CAR-T Cell Therapy Summit 2026临床进展第2版(9月21-23日)
+- trend: CAR-T年度峰会持续；临床进展是核心议题
+- sources: [object Object]
+
+### MSK: CAR-T细胞进展时间线
+
+- name: MSK: CAR-T细胞进展时间线
+- type: 历史回顾
+- mechanism: CAR-T
+- clinical_stage: N/A
+- potential: N/A
+- companies: MSK
+- description: Memorial Sloan Kettering CAR-T细胞进展时间线：从第二代CAR到临床突破
+- trend: CAR-T从概念到治愈；历史回顾显示加速趋势
+- sources: [object Object]
+
+### 同种异体(off-the-shelf)CAR-T 2026进展
+
+- name: 同种异体(off-the-shelf)CAR-T 2026进展
+- type: 通用型CAR-T
+- mechanism: 同种异体CAR-T
+- clinical_stage: 临床I/II期
+- potential: 极高
+- companies: 多公司
+- description: 2026年同种异体(off-the-shelf)CAR-T进展：从自体到通用型，降低成本和等待时间
+- trend: CAR-T从自体到通用型；成本和时间大幅降低
+- sources: [object Object]
+
+### CAR-T神经毒性2026管理策略
+
+- name: CAR-T神经毒性2026管理策略
+- type: 安全性
+- mechanism: CAR-T
+- clinical_stage: 临床管理
+- potential: N/A
+- companies: 多中心
+- description: 2026年CAR-T神经毒性(ICANS)管理策略进展：早期识别、分级管理、新干预手段
+- trend: CAR-T安全性从被动到主动管理；神经毒性可控性提升
+- sources: [object Object]
+
+### CRISPR临床试验2026全景
+
+- name: CRISPR临床试验2026全景
+- type: 基因编辑临床
+- efficiency: 250+项试验
+- cost: 高
+- maturity: 临床推进
+- companies: CRISPR Therapeutics, Vertex, Intellia, Editas
+- description: 截至2026年初，全球约250项CRISPR基因编辑治疗临床试验正在进行，其中150+项处于活跃状态，覆盖血红蛋白病、癌症、自身免疫病等多领域
+- trend: CRISPR从实验室走向临床加速；血液病领域领先，实体瘤和HIV快速推进
+- sources: [object Object], [object Object]
+
+### Christiana Care CRISPR头颈癌疗法
+
+- name: Christiana Care CRISPR头颈癌疗法
+- type: CRISPR癌症疗法
+- efficiency: I期临床试验
+- cost: 高
+- maturity: 临床I期
+- companies: Christiana Care Health System
+- description: 2026年1月报道Christiana Care团队利用CRISPR基因编辑技术恢复化疗对耐药头颈癌肿瘤的疗效，为耐药癌症治疗提供新方案
+- trend: CRISPR用于克服化疗耐药性；实体瘤CRISPR疗法取得早期突破
+- sources: [object Object]
+
+### CAR-T cell therapy
+
+- name: CAR-T cell therapy
+- type: Therapy
+- target: Cancer (hematologic and solid tumors)
+- companies: 
+- status: Clinical Trials
+- description: CAR-T cell therapy represents a significant advancement in cancer treatment, particularly for hematological malignancies. It involves genetically modifying a patient's own T cells to better recognize and attack cancer cells. The therapy has shown remarkable success in treating certain types of leukemia and lymphoma, though challenges remain in applying it to solid tumors.
+
+### UT MD Anderson
+
+- name: UT MD Anderson
+- type: Institution
+- target: Novel CAR T cell therapy development
+- companies: 
+- status: Clinical Studies
+- description: UT MD Anderson is a leading cancer research institution that has developed a novel CAR T cell therapy. This therapy is currently moving into clinical studies, indicating progress towards potential approval and wider use. The institution continues to innovate in the field of cell-based cancer treatments.
+
+### KIR-CAR T cell therapy
+
+- name: KIR-CAR T cell therapy
+- type: Therapy
+- target: Multiple solid cancers
+- companies: 
+- status: Clinical Trials
+- description: KIR-CAR T cell therapy is an innovative type of CAR T cell therapy that has shown promise in treating multiple solid cancers. Early results indicate that it is safe and that efficacy increases with higher doses. This therapy represents a potential breakthrough in overcoming the limitations of traditional CAR-T approaches in solid tumor treatment.
+
+### CAR-NK cell therapy
+
+- name: CAR-NK cell therapy
+- type: Therapy
+- target: Solid tumors
+- companies: 
+- status: Research
+- description: CAR-NK cell therapy is an emerging field focused on engineering next-generation therapies using Natural Killer (NK) cells. It aims to address the challenges associated with treating solid tumors, which have been difficult to manage with conventional CAR-T therapies. Research is ongoing to optimize the effectiveness and safety of these engineered NK cells.
+
+### Triple Threat CAR T-Cell Therapy
+
+- name: Triple Threat CAR T-Cell Therapy
+- type: Therapy
+- target: CD19, CD20, CD22 antigens
+- companies: 
+- status: Phase 1 Clinical Trial
+- description: Triple Threat CAR T-Cell Therapy is a novel approach that targets three different antigens (CD19, CD20, and CD22) overexpressed in B-cell malignancies. Currently in Phase 1 clinical trials at KU Cancer Center, this therapy aims to improve treatment outcomes by simultaneously attacking multiple cancer cell markers. The multi-target strategy could potentially reduce the likelihood of cancer cells evading treatment.
+
+### Nanoparticle-Enhanced CAR-T/NK Combination Therapy
+
+- name: Nanoparticle-Enhanced CAR-T/NK Combination Therapy
+- type: Combined CAR-T and NK Cell Therapy
+- target: CD19-targeted cells with IL-15 delivery support
+- technology: Lipid nanoparticles (LNPs) delivering IL-15 to enhance NK and CAR-T cell activity
+- status: Clinical trial NCT05341409 ongoing
+- description: This clinical trial assesses a combined therapeutic approach involving CD19-targeted CAR-T therapy alongside IL-15 delivery via lipid nanoparticles (LNPs). The IL-15 is designed to support and enhance the activity of both NK cells and CAR-T cells. Published in PMC, this nanoparticle-enhanced strategy represents an emerging technique to improve cellular immunotherapy outcomes through synergistic cell support mechanisms.
+
+### Novel CAR T Cell Therapy (UT MD Anderson)
+
+- name: Novel CAR T Cell Therapy (UT MD Anderson)
+- type: CAR-T Cell Therapy
+- target: Cancer cells (specific targets not detailed in snippet)
+- technology: Novel CAR T cell engineering developed by UT MD Anderson researchers
+- status: Moved into clinical studies as of May 15, 2026
+- description: Researchers at UT MD Anderson have developed a novel CAR T cell therapy that has progressed into clinical studies. Announced in a news release on May 15, 2026, this therapy represents new innovations in CAR T cell engineering from the MD Anderson team. While specific targets were not detailed in the provided information, the advancement into clinical trials indicates promising preclinical results.
+
+### Next-Generation CAR-NK Cell Therapy
+
+- name: Next-Generation CAR-NK Cell Therapy
+- type: CAR-NK Cell Therapy
+- target: Solid tumors
+- technology: Engineered CAR-NK cells with next-generation modifications
+- status: Under active research and review for solid tumor applications
+- description: CAR-NK cell therapy represents an emerging approach focusing on engineering natural killer cells with chimeric antigen receptors for improved anti-tumor activity. Current reviews discuss trends and concepts in next-generation CAR-NK therapies, particularly their application in treating solid tumors which remain challenging for conventional cell therapies. This approach leverages the unique properties of NK cells while enhancing their targeting specificity through CAR engineering.
+
+### A2B543 CAR-T Fast Track
+
+- name: A2B543 CAR-T Fast Track
+- type: CAR-T
+- target: HLA-A*02
+- maturity: Fast Track
+- companies: A2Bio
+- description: FDA 2026年4月授予A2B543自体CAR-T细胞疗法快速通道资格，用于治疗胚系杂合HLA-A*02成人患者
+- trend: CAR-T向实体瘤和罕见靶点扩展
+
+### soficabtagene geleucel 突破性认定
+
+- name: soficabtagene geleucel 突破性认定
+- type: CAR-T
+- target: T-Cell Lymphoma
+- maturity: 突破性疗法
+- companies: Allogene
+- description: FDA授予soficabtagene geleucel突破性疗法认定，治疗复发/难治性T细胞淋巴瘤患者
+- trend: 异体CAR-T取得突破性进展
+
+### WU-CART-007 突破性认定
+
+- name: WU-CART-007 突破性认定
+- type: CAR-T
+- target: R/R T-ALL
+- maturity: 突破性疗法
+- companies: Wugen
+- description: FDA授予Wugen的WU-CART-007突破性疗法认定，治疗复发/难治性T细胞急性淋巴细胞白血病
+- trend: CAR-T覆盖更多血液肿瘤亚型
+
+### 11款自体CAR-T获批
+
+- name: 11款自体CAR-T获批
+- type: CAR-T
+- target: 血液肿瘤
+- maturity: 已上市
+- companies: Novartis, Gilead/Kite, BMS, Janssen, 百济神州
+- description: 截至2025年已有11款自体CAR-T细胞疗法获批上市，覆盖多种血液肿瘤适应症
+- trend: CAR-T从前沿疗法走向标准治疗
+
+### ASCO 2025 实体瘤CAR-T I期进展
+
+- name: ASCO 2025 实体瘤CAR-T I期进展
+- type: CAR-T
+- target: 实体瘤
+- maturity: I期临床
+- companies: 多家中美药企
+- description: 2025 ASCO会议报告了多项CAR-T治疗实体瘤的I期临床试验进展，展示CAR-T在实体瘤中的潜力
+- trend: 实体瘤CAR-T是下一个重大突破方向
+
+### Kymriah (tisagenlecleucel)
+
+- name: Kymriah (tisagenlecleucel)
+- type: CAR-T
+- mechanism: Autologous T-cells engineered with a chimeric antigen receptor (CAR) targeting CD19 on B-cells.
+- clinical_stage: Approved
+
+### Yescarta (axicabtagene ciloleucel)
+
+- name: Yescarta (axicabtagene ciloleucel)
+- type: CAR-T
+- mechanism: Autologous CAR-T cells targeting CD19 for the treatment of B-cell lymphomas.
+- clinical_stage: Approved
+
+### Breyanzi (lisocabtagene maraleucel)
+
+- name: Breyanzi (lisocabtagene maraleucel)
+- type: CAR-T
+- mechanism: CD19-directed CAR-T cell therapy with a defined 4-1BB co-stimulatory domain.
+- clinical_stage: Approved
+
+### Abecma (idecabtagene vicleucel)
+
+- name: Abecma (idecabtagene vicleucel)
+- type: CAR-T
+- mechanism: BCMA-directed CAR-T cell therapy for patients with multiple myeloma.
+- clinical_stage: Approved
+
+### Tecartus (brexucabtagene autoleucel)
+
+- name: Tecartus (brexucabtagene autoleucel)
+- type: CAR-T
+- mechanism: CD19-targeting CAR-T cell therapy for B-cell malignancies, including mantle cell lymphoma.
+- clinical_stage: Approved
+
+### CAR-TCR-Hi-1
+
+- name: CAR-TCR-Hi-1
+- type: CAR-T
+- mechanism: Next-generation CAR-T with enhanced persistence and reduced exhaustion through cytokine modulation.
+- clinical_stage: Phase II
+
+### Allogeneic iPSC-Derived NK Cells
+
+- name: Allogeneic iPSC-Derived NK Cells
+- type: NK cell
+- mechanism: Off-the-shelf natural killer cells derived from induced pluripotent stem cells (iPSCs).
+- clinical_stage: Phase I
+
+### NK-92 (Hank's formulation)
+
+- name: NK-92 (Hank's formulation)
+- type: NK cell
+- mechanism: Cytokine-induced killer (CIK) cells derived from the NK-92 cell line, engineered for enhanced tumor targeting.
+- clinical_stage: Phase II
+
+### CAR-NK Cells (CD19-targeted)
+
+- name: CAR-NK Cells (CD19-targeted)
+- type: NK cell
+- mechanism: Allogeneic CAR-NK cells engineered to target CD19 on B-cell malignancies.
+- clinical_stage: Phase I
+
+### Mesenchymal Stem Cells (MSCs) for GvHD
+
+- name: Mesenchymal Stem Cells (MSCs) for GvHD
+- type: Stem cell
+- mechanism: Allogeneic MSCs that modulate the immune response to treat graft-versus-host disease (GvHD).
+- clinical_stage: Phase III
+
+### Hematopoietic Stem Cell Transplant (HSCT)
+
+- name: Hematopoietic Stem Cell Transplant (HSCT)
+- type: Stem cell
+- mechanism: Autologous or allogeneic HSCT to reconstitute a patient's hematopoietic system after high-dose chemotherapy.
+- clinical_stage: Approved
+
+### Vγ9Vδ2 T Cell Therapy
+
+- name: Vγ9Vδ2 T Cell Therapy
+- type: Gamma delta T
+- mechanism: Ex vivo expanded Vγ9Vδ2 T cells that recognize phosphoantigens on stressed or tumor cells.
+- clinical_stage: Phase I/II
+
+### Tumor-Infiltrating Lymphocytes (TIL) Therapy
+
+- name: Tumor-Infiltrating Lymphocytes (TIL) Therapy
+- type: TIL
+- mechanism: Autologous T cells isolated from a patient's tumor, expanded ex vivo, and reinfused to target tumor antigens.
+- clinical_stage: Phase II
+
+### CAR-Treg Cells
+
+- name: CAR-Treg Cells
+- type: CAR-T
+- mechanism: Engineered regulatory T cells (Tregs) with a CAR to target specific autoantigens for autoimmune diseases.
+- clinical_stage: Phase I
+
+### Dual-Specific CAR-T (CD19/CD20)
+
+- name: Dual-Specific CAR-T (CD19/CD20)
+- type: CAR-T
+- mechanism: CAR-T cells engineered with two CARs to target both CD19 and CD20 antigens, reducing antigen escape.
+- clinical_stage: Preclinical
+
+### Kymriah (tisagenlecleucel)
+
+- name: Kymriah (tisagenlecleucel)
+- type: CAR-T
+- mechanism: CD19-directed CAR-T therapy for B-cell malignancies
+- clinical_stage: Approved
+
+### Yescarta (axicabtagene ciloleucel)
+
+- name: Yescarta (axicabtagene ciloleucel)
+- type: CAR-T
+- mechanism: CD19-directed CAR-T therapy for B-cell lymphomas
+- clinical_stage: Approved
+
+### Breyanzi (lisocabtagene maraleucel)
+
+- name: Breyanzi (lisocabtagene maraleucel)
+- type: CAR-T
+- mechanism: CD19-directed CAR-T therapy for B-cell lymphomas
+- clinical_stage: Approved
+
+### Abecma (idecabtagene vicleucel)
+
+- name: Abecma (idecabtagene vicleucel)
+- type: CAR-T
+- mechanism: BCMA-directed CAR-T therapy for multiple myeloma
+- clinical_stage: Approved
+
+### Tecartus (brexucabtagene autoleucel)
+
+- name: Tecartus (brexucabtagene autoleucel)
+- type: CAR-T
+- mechanism: CD19-directed CAR-T therapy for B-cell malignancies
+- clinical_stage: Approved
+
+### CAR-19 T-cell Therapy
+
+- name: CAR-19 T-cell Therapy
+- type: CAR-T
+- mechanism: Next-generation CD19-targeting CAR with safety switch
+- clinical_stage: Phase III
+
+### Mesenchymal Stem Cell Therapy (MSC-100)
+
+- name: Mesenchymal Stem Cell Therapy (MSC-100)
+- type: Stem Cell
+- mechanism: Allogeneic MSCs for modulating inflammation and promoting tissue repair
+- clinical_stage: Phase II
+
+### Induced Pluripotent Stem Cell-Derived Cardiomyocytes (iPSC-CM)
+
+- name: Induced Pluripotent Stem Cell-Derived Cardiomyocytes (iPSC-CM)
+- type: Stem Cell
+- mechanism: Patient-specific cardiomyocytes for regenerative therapy of heart failure
+- clinical_stage: Phase I/II
+
+### NK-92 Cell Therapy (haNK)
+
+- name: NK-92 Cell Therapy (haNK)
+- type: NK Cell
+- mechanism: Engineered NK-92 cells expressing IL-2 and anti-EGFR scFv for solid tumors
+- clinical_stage: Phase I
+
+### Allogeneic NK Cell Therapy (FT516)
+
+- name: Allogeneic NK Cell Therapy (FT516)
+- type: NK Cell
+- mechanism: iPSC-derived, off-the-shelf NK cells with enhanced cytokine support
+- clinical_stage: Phase II
+
+### Tumor-Infiltrating Lymphocyte Therapy (LN-145)
+
+- name: Tumor-Infiltrating Lymphocyte Therapy (LN-145)
+- type: TIL
+- mechanism: Autologous TILs expanded ex vivo and reinfused for solid tumors
+- clinical_stage: Phase II
+
+### Gamma Delta T-Cell Therapy (GD2-CAR γδ T)
+
+- name: Gamma Delta T-Cell Therapy (GD2-CAR γδ T)
+- type: Gamma Delta T
+- mechanism: Engineered γδ T-cells with GD2-specific CAR for neuroblastoma
+- clinical_stage: Phase I
+
+### iPSC-Derived Hematopoietic Stem Cells (iPSC-HSC)
+
+- name: iPSC-Derived Hematopoietic Stem Cells (iPSC-HSC)
+- type: Stem Cell
+- mechanism: Universal donor iPSC-HSCs for hematopoietic reconstitution
+- clinical_stage: Phase I
+
+### Natural Killer Cell Therapy (SNK01)
+
+- name: Natural Killer Cell Therapy (SNK01)
+- type: NK Cell
+- mechanism: Cryopreserved allogeneic NK cells with enhanced ADCC activity
+- clinical_stage: Phase II
+
+### Gamma Delta T-Cell Therapy (Vδ2 T-cell Expansion)
+
+- name: Gamma Delta T-Cell Therapy (Vδ2 T-cell Expansion)
+- type: Gamma Delta T
+- mechanism: Ex vivo expanded Vδ2 T-cells for targeting phosphoantigens in cancer
+- clinical_stage: Phase I/II
+
+## bioinformatics
+
+### 单细胞多组学Single-Cell Multi-Omics
+
+- name: 单细胞多组学Single-Cell Multi-Omics
+- type: 分析平台
+- description: 同时测量单个细胞的多个分子层(基因组/表观组/转录组/蛋白质组)，揭示细胞异质性
+- application: 癌症异质性/免疫细胞图谱/发育生物学/药物耐药
+- tool: 10x Genomics Multiome/Parse Biosciences/BD Rhapsody
+- trend: 空间+单细胞融合；百万细胞级实验成为常规
+
+### 长读长测序PacBio/Oxford Nanopore
+
+- name: 长读长测序PacBio/Oxford Nanopore
+- type: 测序技术
+- description: 单次读取>10000碱基，解析重复区域/结构变异/表观修饰
+- application: 完整基因组组装/结构变异检测/直接RNA测序/甲基化检测
+- tool: PacBio Revio/Oxford Nanopore PromethION
+- trend: 成本快速下降；人类泛基因组参考使用长读长；$100基因组目标接近
+
+### AI驱动药物发现
+
+- name: AI驱动药物发现
+- type: 计算药物设计
+- description: ML预测药物-靶点相互作用/优化先导化合物/设计新分子，大幅缩短药物开发时间
+- application: 从头药物设计/虚拟筛选/ADMET预测/临床试验优化
+- tool: Insilico Medicine/Recursion/Exscientia/Absci
+- trend: AI设计分子进入临床；Recursion/NVIDIA合作加速；生成式AI药物设计
+
+### AlphaFold/蛋白质结构预测
+
+- name: AlphaFold/蛋白质结构预测
+- type: 蛋白质结构预测
+- description: DeepMind AI从氨基酸序列预测3D蛋白结构，AlphaFold3预测蛋白-配体/DNA/RNA相互作用
+- application: 药物设计/酶工程/疾病突变理解
+- tool: Google DeepMind/Isomorphic Labs
+- trend: AlphaFold3 2024年发布；蛋白质-蛋白质/蛋白质-药物相互作用预测
+
+### 空间转录组学Spatial Transcriptomics
+
+- name: 空间转录组学Spatial Transcriptomics
+- type: 分析工具
+- description: 保留组织空间位置测量基因表达，揭示细胞邻域和组织结构
+- application: 癌症微环境/脑细胞图谱/发育生物学
+- tool: 10x Genomics Visium/Xenium/Vizgen MERFISH/NanoString CosMx
+- trend: 亚细胞分辨率；与单细胞数据整合分析；Nature Methods年度技术
+
+### 蛋白质组学Mass Spectrometry
+
+- name: 蛋白质组学Mass Spectrometry
+- type: 蛋白质分析
+- description: 质谱大规模鉴定和定量蛋白质，补充基因组/转录组信息
+- application: 生物标志物发现/药物靶点验证/翻译后修饰分析
+- tool: Thermo Fisher Orbitrap/Bruker timsTOF/Somalogic SomaScan
+- trend: 单细胞蛋白质组学突破；SomaScan 7000+蛋白检测；与基因组学整合
+
+### 基因组组装与泛基因组
+
+- name: 基因组组装与泛基因组
+- type: 基因组学
+- description: 完整基因组组装和人类泛基因组参考，代表全球遗传多样性
+- application: 结构变异检测/群体遗传学/精准医学
+- tool: T2T Consortium/HPRC/PacBio+HiC+Ont
+- trend: T2T完整人类基因组2022年发布；人类泛基因组参考(HPRC)2023年发布；350+个体组装
+
+### 生物信息学流程与云平台
+
+- name: 生物信息学流程与云平台
+- type: 计算基础设施
+- description: 可重复的生物信息学分析流程和云计算平台
+- application: 基因组分析/RNA-seq/变异调用/多组学整合
+- tool: Nextflow/Snakemake/Terra/DNAnexus/BaseSpace
+- trend: FAIR原则推动；容器化(Docker/Singularity)标准化；云端分析成为主流
+
+### AI/LLM在生物学中的应用
+
+- name: AI/LLM在生物学中的应用
+- type: AI for Biology
+- description: 大语言模型和AI在生物学文本挖掘/知识图谱/实验设计中的应用
+- application: 文献挖掘/假设生成/实验设计优化/蛋白质语言模型
+- tool: ESMFold/ProtGPT2/BioGPT/GeneGPT
+- trend: 蛋白质语言模型(ESM-2/3)预测结构和功能；LLM辅助实验设计
+
+### 表观基因组学Epigenomics
+
+- name: 表观基因组学Epigenomics
+- type: 表观遗传分析
+- description: 全基因组DNA甲基化/组蛋白修饰/染色质可及性分析
+- application: 衰老时钟/癌症表观遗传/发育重编程/环境暴露
+- tool: ATAC-seq/ChIP-seq/Bisulfite-seq/Nanopore直接甲基化检测
+- trend: 表观遗传时钟(GrimAge/PhenoAge)用于衰老评估；单细胞表观组学
+
+### 代谢组学Metabolomics
+
+- name: 代谢组学Metabolomics
+- type: 代谢分析
+- description: 大规模检测和定量生物样本中的代谢物
+- application: 疾病诊断/药物代谢/营养学/微生物组
+- tool: Metabolon/Agilent/Bruker/Mass Spectrometry+NMR
+- trend: 与基因组学/蛋白质组学整合；精准营养学应用；微生物组代谢
+
+### 微生物组分析Microbiome
+
+- name: 微生物组分析Microbiome
+- type: 微生物组学
+- description: 16S/宏基因组/宏转录组分析微生物群落
+- application: 肠道健康/免疫调节/药物代谢/农业
+- tool: QIIME2/MetaPhlAn/HUMAnN/Shotgun metagenomics
+- trend: 肠-脑轴研究热点；粪菌移植(FMT)规范化；合成生物学改造微生物组
+
+### AI蛋白质结构预测AlphaFold3+
+
+- name: AI蛋白质结构预测AlphaFold3+
+- type: AI+结构生物学
+- description: AlphaFold3预测蛋白质-配体/DNA/RNA相互作用；2026年AI蛋白质设计从预测到创造
+- application: 药物设计/酶工程/理解疾病突变
+- tool: AlphaFold3/ESMFold/RoseTTAFold2/Chai-2
+- trend: 从结构预测到蛋白质设计；Chai-2抗体设计16%成功率；ESM3生成全新蛋白质
+
+### 空间多组学Spatial Multi-Omics
+
+- name: 空间多组学Spatial Multi-Omics
+- type: 分析平台
+- description: 空间转录组+空间蛋白质组+空间表观组融合，同时保留空间位置和多个分子层信息
+- application: 肿瘤微环境/脑细胞图谱/发育生物学
+- tool: 10x Genomics Xenium/Vizgen MERFISH/NanoString CosMx
+- trend: 2026年空间组学从单模态到多模态融合；亚细胞分辨率成为标配
+
+### AI驱动的基因组解读
+
+- name: AI驱动的基因组解读
+- type: AI+基因组学
+- description: AI模型自动解读基因组变异的临床意义，加速精准诊断
+- application: 罕见病诊断/癌症基因组/药物基因组学
+- tool: DeepVariant/GATK/临床AI解读平台
+- trend: 从人工解读到AI辅助解读；VUS(意义不明变异)率显著降低
+
+### 数字孪生人体模型
+
+- name: 数字孪生人体模型
+- type: 计算模型
+- description: 基于多组学数据构建个体化数字孪生，模拟疾病进展和药物反应
+- application: 药物筛选/个性化治疗/临床试验模拟
+- tool: Aitia/Dana-Farber/计算系统生物学平台
+- trend: 从群体统计到个体化预测；与AI/ML深度整合
+
+### 长读长单细胞测序
+
+- name: 长读长单细胞测序
+- type: 测序技术
+- description: 长读长测序与单细胞技术结合，同时获得转录本异构体和细胞身份信息
+- application: 可变剪接/融合基因/等位基因特异性表达
+- tool: PacBio MAS-Seq/Oxford Nanopore单细胞
+- trend: 2026年单细胞长读长从概念到常规；揭示短读长遗漏的转录组复杂性
+
+### AI蛋白质结构预测AlphaFold3
+
+- name: AI蛋白质结构预测AlphaFold3
+- type: AI工具
+- description: AlphaFold3预测蛋白质-配体/蛋白质-核酸复合物结构，扩展到药物设计应用
+- application: 药物设计/蛋白质工程/靶点发现
+- tool: DeepMind AlphaFold3
+- trend: 从结构预测到药物设计全流程；2026年与实验验证闭环
+
+### AI基因组解读
+
+- name: AI基因组解读
+- type: AI工具
+- description: AI自动解读基因组变异的临床意义，从VUS(意义不明变异)到明确诊断
+- application: 罕见病诊断/癌症基因组/药物基因组学
+- tool: DeepVariant/GATK/AI解读平台
+- trend: AI解读准确率接近专家水平；2026年临床部署加速
+
+### 空间转录组学Spatial Transcriptomics
+
+- name: 空间转录组学Spatial Transcriptomics
+- type: 分析平台
+- description: 保留组织空间位置信息的转录组分析，揭示细胞在组织中的空间关系
+- application: 肿瘤微环境/发育生物学/脑科学
+- tool: 10x Visium/MERFISH/Vizgen/Resolve Biosciences
+- trend: 2026年空间组学从研究到临床病理；与单细胞数据融合
+
+### 多模态生物AI
+
+- name: 多模态生物AI
+- type: AI工具
+- description: 整合基因组/蛋白质组/影像/临床数据的多模态AI模型，实现跨尺度生物预测
+- application: 药物发现/精准医学/临床试验优化
+- tool: Google DeepMind/Recursion/Insilico Medicine
+- trend: 从单模态到多模态融合；2026年药物发现AI平台成熟化
+
+### 联邦学习基因组分析
+
+- name: 联邦学习基因组分析
+- type: 隐私计算
+- description: 联邦学习实现多机构基因组数据联合分析，保护数据隐私
+- application: 多中心临床研究/罕见病/药物基因组学
+- tool: NVIDIA FLARE/OpenFL/TensorFlow Federated
+- trend: 数据隐私法规推动；2026年跨国基因组协作项目采用
+
+### 蛋白质组学质谱4D
+
+- name: 蛋白质组学质谱4D
+- type: 分析平台
+- description: timsTOF等4D质谱技术实现更高通量/灵敏度蛋白质组分析
+- application: 生物标志物发现/精准医学/药物靶点验证
+- tool: Bruker timsTOF/Thermo Orbitrap
+- trend: 2026年单细胞蛋白质组学突破；与基因组数据整合
+
+### 临床NLP电子病历挖掘
+
+- name: 临床NLP电子病历挖掘
+- type: AI工具
+- description: 自然语言处理挖掘电子病历中的临床信息，辅助研究和诊断
+- application: 临床研究/药物警戒/患者队列识别
+- tool: GPT-4/Med-PaLM/ClinicalBERT
+- trend: LLM驱动的临床NLP 2026年快速成熟；从研究到临床部署
+
+### 表观基因组图谱
+
+- name: 表观基因组图谱
+- type: 分析平台
+- description: 全基因组表观修饰(DNA甲基化/组蛋白修饰/染色质开放性)系统分析
+- application: 衰老研究/癌症表观遗传/发育生物学
+- tool: ENCODE/Roadmap/IHEC
+- trend: 表观遗传时钟与疾病预测；2026年临床表观基因组学起步
+
+### 微生物组分析平台
+
+- name: 微生物组分析平台
+- type: 分析平台
+- description: 宏基因组/宏转录组分析肠道/皮肤/环境微生物组，揭示微生物-宿主互作
+- application: 肠道健康/免疫疾病/药物代谢
+- tool: QIIME2/MetaPhlAn/HUMAnN
+- trend: 微生物组从关联到因果；2026年活体生物药临床推进
+
+### AI药物发现平台
+
+- name: AI药物发现平台
+- type: AI工具
+- description: AI驱动的端到端药物发现：靶点识别→分子设计→优化→临床试验设计
+- application: 新药研发/老药新用/临床试验优化
+- tool: Insilico Medicine/Recursion/Exscientia/Relay Therapeutics
+- trend: AI设计药物2026年多个进入临床II期；从概念验证到疗效验证
+
+### 空间组学临床转化2026
+
+- name: 空间组学临床转化2026
+- type: 分析平台
+- description: 空间组学从研究到临床转化：空间转录组/空间蛋白质组进入诊断应用
+- application: 肿瘤诊断/药物开发/精准医疗
+- tool: 10x Visium/MERFISH/CosMx
+- trend: 空间组学2026年临床转化加速；从科研工具到诊断平台
+
+### AI对齐监管框架生物技术
+
+- name: AI对齐监管框架生物技术
+- type: AI工具
+- description: AI成为受监管药物开发的一部分，AI对齐监管框架在生物技术领域建立
+- application: 药物开发/临床试验/监管提交
+- tool: FDA/EMA AI指南
+- trend: AI从辅助到核心工具；监管框架2026年初步成型
+
+### Prime editing扩展应用
+
+- name: Prime editing扩展应用
+- type: 基因编辑工具
+- description: Prime editing从早期领先扩展到更广泛应用，精度和效率持续提升
+- application: 遗传病治疗/作物改良/功能基因组学
+- tool: Prime Medicine/PTC Therapeutics
+- trend: Prime editing 2026年从罕见病到更广适应症；精度优势明显
+
+### Nature BME 2026前沿
+
+- name: Nature BME 2026前沿
+- type: 学术综述
+- description: Nature BME: 生物医学工程前沿快速重塑转化研究和医学
+- application: 全行业
+- tool: 多平台
+- trend: 生物医学工程从辅助到主导；跨学科融合加速
+
+### Nature BME 2026生物医学工程前沿
+
+- name: Nature BME 2026生物医学工程前沿
+- type: 学术综述
+- description: Nature BME: 生物医学工程前沿快速重塑转化研究和医学，跨学科融合加速
+- application: 全行业
+- tool: 多平台
+- trend: 生物医学工程从辅助到主导；跨学科融合加速
+- sources: [object Object]
+
+### 2026生物技术10大突破趋势
+
+- name: 2026生物技术10大突破趋势
+- type: 行业趋势
+- description: Atlantis Bioscience: 2026年10大生物技术趋势，从体内编辑和RNA疗法到空间组学和再生医学创新
+- application: 全行业
+- tool: 多平台
+- trend: 体内编辑/RNA疗法/空间组学/再生医学四大热点
+- sources: [object Object]
+
+### BIOENG-2026 AI时代生物工程
+
+- name: BIOENG-2026 AI时代生物工程
+- type: 学术会议
+- description: BIOENG-2026: 以'AI时代的生物工程'为主题，推动生物工程研究前沿
+- application: 全行业
+- tool: AI+生物
+- trend: AI+生物工程深度融合；从辅助工具到核心方法
+- sources: [object Object]
+
+### 基因驱动逆转杀虫剂抗性
+
+- name: 基因驱动逆转杀虫剂抗性
+- type: 基因驱动
+- description: 新基因驱动技术逆转害虫杀虫剂抗性，保护作物并大幅减少化学农药使用
+- application: 农业/害虫防控
+- tool: 基因驱动系统
+- trend: 基因驱动从灭虫到恢复敏感性；农业应用前景广阔
+- sources: [object Object]
+
+### Science基因驱动技术监管
+
+- name: Science基因驱动技术监管
+- type: 政策讨论
+- description: Science讨论：如何监管争议性基因驱动技术，平衡创新潜力和生态风险
+- application: 政策/监管
+- tool: N/A
+- trend: 基因驱动监管框架从空白到建立；国际治理机制讨论
+- sources: [object Object]
+
+### 基因驱动抗疟疾非洲应用
+
+- name: 基因驱动抗疟疾非洲应用
+- type: 公共卫生
+- description: MESA: 基因驱动技术在非洲疟疾消除中的应用，为政策制定者提供指导建议
+- application: 疟疾防控
+- tool: 基因驱动蚊子
+- trend: 基因驱动从实验室到受控释放；非洲疟疾防控新工具
+- sources: [object Object]
+
+### Nature基因驱动疟疾控制替代方案
+
+- name: Nature基因驱动疟疾控制替代方案
+- type: 学术综述
+- description: Nature发表基因驱动用于媒介控制特别是疟疾的综述：使用和进展讨论
+- application: 疟疾防控
+- tool: 基因驱动
+- trend: 基因驱动疟疾控制从概念到评估；安全性和有效性并行研究
+- sources: [object Object]
+
+### 空间组学Spatial Omics 2026
+
+- name: 空间组学Spatial Omics 2026
+- type: 分析平台
+- description: 空间组学2026年进展：在组织原位测量基因表达，保留空间信息，揭示组织微环境
+- application: 癌症/发育生物学/神经科学
+- tool: 10x Visium/MERFISH/Vizgen
+- trend: 空间组学从转录组到多组学；亚细胞分辨率突破
+- sources: [object Object]
+
+### AI蛋白质结构预测2026
+
+- name: AI蛋白质结构预测2026
+- type: 计算工具
+- description: AI蛋白质结构预测2026年进展：AlphaFold3/ESMFold等工具精度持续提升，从结构到功能预测
+- application: 药物发现/酶工程/蛋白质设计
+- tool: AlphaFold3/ESMFold/RoseTTAFold
+- trend: 从结构预测到功能设计；蛋白质工程加速
+- sources: [object Object]
+
+### 多组学数据整合AI 2026
+
+- name: 多组学数据整合AI 2026
+- type: 数据分析
+- description: 多组学数据整合AI 2026年进展：基因组/转录组/蛋白质组/代谢组数据整合分析，揭示疾病机制
+- application: 精准医学/药物发现
+- tool: 多平台AI
+- trend: 多组学整合从数据到知识；AI驱动的系统生物学
+- sources: [object Object]
+
+### 液体活检ctDNA 2026
+
+- name: 液体活检ctDNA 2026
+- type: 诊断技术
+- description: 液体活检ctDNA 2026年进展：循环肿瘤DNA检测灵敏度提升，早期癌症筛查和疗效监测应用扩展
+- application: 癌症早筛/疗效监测/复发检测
+- tool: Guardant Health/Grail/Natera
+- trend: 液体活检从晚期到早期癌症；多癌种早筛应用
+- sources: [object Object]
+
+### 数字病理AI 2026
+
+- name: 数字病理AI 2026
+- type: 诊断技术
+- description: 数字病理AI 2026年进展：AI辅助病理诊断精度提升，从组织学到分子分型
+- application: 癌症诊断/分级/预后
+- tool: Paige/Proscia/PathAI
+- trend: 数字病理从辅助到决策支持；AI+病理标准化
+- sources: [object Object]
+
+### 单细胞ATAC-seq表观基因组
+
+- name: 单细胞ATAC-seq表观基因组
+- type: 分析平台
+- description: 单细胞ATAC-seq表观基因组2026年进展：单细胞水平染色质可及性分析，揭示基因调控机制
+- application: 发育生物学/癌症/免疫学
+- tool: 10x Genomics/Parse Biosciences
+- trend: 单细胞多组学从转录组到表观组；空间+单细胞融合
+- sources: [object Object]
+
+### 临床基因组学AI解读2026
+
+- name: 临床基因组学AI解读2026
+- type: 临床应用
+- description: 临床基因组学AI解读2026年进展：AI辅助变异解读和临床决策，提升遗传病诊断率
+- application: 遗传病诊断/药物基因组学
+- tool: Illumina/Invitae/GeneDx
+- trend: AI基因组解读从研究到临床；诊断率持续提升
+- sources: [object Object]
+
+### BMES 2026年会生物信息学
+
+- name: BMES 2026年会生物信息学
+- type: 学术会议
+- description: BMES 2026年会10月Orlando：工程师赋能人类健康主题，生物信息学相关议题
+- application: 全行业
+- tool: 多平台
+- trend: 生物医学工程+信息学深度融合；跨学科合作加速
+- sources: [object Object]
+
+### Nature生物医学工程前沿2026
+
+- name: Nature生物医学工程前沿2026
+- type: 学术综述
+- efficiency: N/A
+- cost: N/A
+- maturity: 研究前沿
+- companies: 多研究机构
+- description: Nature Biomedical Engineering 2026前沿：生物医学工程进展快速重塑转化研究和医学前沿
+- trend: 生物医学工程从辅助到主导；AI+数据驱动成为核心
+- sources: [object Object]
+
+### JHU BME 2026年3月发现
+
+- name: JHU BME 2026年3月发现
+- type: 研究突破
+- efficiency: N/A
+- cost: N/A
+- maturity: 研究前沿
+- companies: Johns Hopkins University
+- description: JHU生物医学工程2026年3月5大发现：VR假肢训练/癌症转移解码/3D骨骼成像/可靠AI
+- trend: BME从单一技术到系统解决方案；AI+VR+3D成像融合
+- sources: [object Object]
+
+### Pittsburgh生物医学工程未来路线图
+
+- name: Pittsburgh生物医学工程未来路线图
+- type: 学术综述
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: University of Pittsburgh
+- description: Pittsburgh发布生物医学工程未来综合路线图：未来十年变革医学格局的突破性研究
+- trend: BME从技术驱动到需求驱动；跨学科融合加速
+- sources: [object Object]
+
+### BIOENG 2026 AI时代生物工程
+
+- name: BIOENG 2026 AI时代生物工程
+- type: 行业会议
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: 多机构
+- description: BIOENG 2026第二届国际生物工程会议：AI时代生物工程主题，推动生物工程研究前沿
+- trend: AI成为生物工程核心驱动力；从辅助工具到设计引擎
+- sources: [object Object]
+
+### Atlantis Bioscience 2026十大生物技术趋势
+
+- name: Atlantis Bioscience 2026十大生物技术趋势
+- type: 行业趋势
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: Atlantis Bioscience
+- description: 2026年十大生物技术趋势：体内编辑/RNA治疗/空间组学/再生医学创新等
+- trend: 生物技术从体外到体内；从单一到多组学整合
+- sources: [object Object]
+
+### AIChE GEAR 2026基因编辑RNA技术
+
+- name: AIChE GEAR 2026基因编辑RNA技术
+- type: 行业会议
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: AIChE
+- description: AIChE GEAR 2026：CRISPR和新兴基因编辑工具/RNA干扰/mRNA平台/新型递送技术前沿研究
+- trend: 基因编辑从CRISPR到多样化工具；RNA治疗平台化
+- sources: [object Object]
+
+### Pittsburgh BME未来路线图
+
+- name: Pittsburgh BME未来路线图
+- type: 学术综述
+- description: Pittsburgh发布生物医学工程未来综合路线图：未来十年变革医学格局的突破性研究
+- application: 全行业
+- tool: 多平台
+- trend: BME从技术驱动到需求驱动；跨学科融合加速
+- sources: [object Object]
+
+### Nature BME 2026前沿展望
+
+- name: Nature BME 2026前沿展望
+- type: 学术综述
+- description: Nature BME 2026前沿展望：生物医学工程前沿快速重塑转化研究，多学科交叉加速
+- application: 全行业
+- tool: 多平台
+- trend: BME前沿从单一技术到系统整合；转化研究加速
+- sources: [object Object]
+
+### JHU BME 2026年3月5大发现
+
+- name: JHU BME 2026年3月5大发现
+- type: 学术突破
+- description: Johns Hopkins BME 2026年3月5大发现：生物医学工程前沿突破性研究
+- application: 多领域
+- tool: 多平台
+- trend: JHU持续引领BME前沿；月度突破频出
+- sources: [object Object]
+
+### 2026年AI药物发现权力转移
+
+- name: 2026年AI药物发现权力转移
+- type: 行业趋势
+- description: Drug Discovery News 2026：生物技术行业从AI初始兴奋转向更复杂现实，AI权力转移正在进行
+- application: 药物发现
+- tool: AI/ML
+- trend: AI药物发现从炒作到务实；权力从IT向生物转移
+- sources: [object Object]
+
+### WEF AI重塑药物发现
+
+- name: WEF AI重塑药物发现
+- type: 行业分析
+- description: 世界经济论坛：AI可帮助药物发现中最困难步骤更快更智能，包括靶点识别/分子生成/临床试验设计
+- application: 药物发现
+- tool: AI/ML
+- trend: AI从辅助到主导药物发现；WEF背书加速采纳
+- sources: [object Object]
+
+### Ardigen 2026 AI药物发现趋势
+
+- name: Ardigen 2026 AI药物发现趋势
+- type: 行业分析
+- description: Ardigen 2026 AI药物发现趋势：自动化/多模态数据/预测模型是关键方向
+- application: 药物发现
+- tool: AI/ML
+- trend: AI药物发现从单模态到多模态；自动化加速
+- sources: [object Object]
+
+### HIMSS AI革命生物信息学
+
+- name: HIMSS AI革命生物信息学
+- type: 行业分析
+- description: HIMSS：AI正在革命生物信息学，提供前所未有的精度，大幅削减R&D成本，加速救命药物开发
+- application: 生物信息学
+- tool: AI/ML
+- trend: AI从辅助到革命性改变生物信息学；成本和时间大幅降低
+- sources: [object Object]
+
+### AI驱动药物发现Front Line Genomics 2026
+
+- name: AI驱动药物发现Front Line Genomics 2026
+- type: 行业会议
+- description: Front Line Genomics 2026年4月AI驱动药物发现在线会议：AI突破重塑药物发现
+- application: 药物发现
+- tool: AI/ML
+- trend: AI药物发现从学术到产业；在线会议降低参与门槛
+- sources: [object Object]
+
+### Atlantis Bioscience: 2026十大生物技术趋势
+
+- name: Atlantis Bioscience: 2026十大生物技术趋势
+- type: 行业预测
+- description: Atlantis Bioscience 2026十大生物技术趋势：体内编辑、RNA治疗、空间组学、再生医学创新
+- application: 多领域
+- tool: 多技术
+- trend: 生物技术从单一到融合；体内编辑和空间组学是热点
+- sources: [object Object]
+
+### Nature BME: 2026生物医学工程前沿
+
+- name: Nature BME: 2026生物医学工程前沿
+- type: 学术前沿
+- description: Nature BME 2026生物医学工程前沿：快速重塑转化研究和医学前沿的进展
+- application: 生物医学工程
+- tool: 多技术
+- trend: BME从辅助到引领；转化研究加速
+- sources: [object Object]
+
+### CellGS: 2026生物医学趋势
+
+- name: CellGS: 2026生物医学趋势
+- type: 行业分析
+- description: CellGS 2026生物医学趋势：工程细胞因子、胞外囊泡、基因治疗等成熟平台碰撞
+- application: 生物医学
+- tool: 多平台
+- trend: 成熟平台碰撞产生新机会；工程细胞因子和EV是焦点
+- sources: [object Object]
+
+### JHU BME: 2026年3月最新发现
+
+- name: JHU BME: 2026年3月最新发现
+- type: 学术发现
+- description: JHU BME 2026年3月5大突破：VR假肢训练、解码癌症转移、3D骨成像、可靠AI
+- application: 多领域
+- tool: VR/AI/3D成像
+- trend: BME从传统到数字；VR和AI赋能新发现
+- sources: [object Object]
+
+### 空间组学2026技术突破
+
+- name: 空间组学2026技术突破
+- type: 技术突破
+- description: 2026年空间组学技术突破：从转录组到多组学空间分析，分辨率和通量大幅提升
+- application: 组织分析
+- tool: 空间组学
+- trend: 空间组学从转录组到多组学；分辨率和通量双提升
+- sources: [object Object]
+
+### 单细胞多组学2026整合分析
+
+- name: 单细胞多组学2026整合分析
+- type: 技术进展
+- description: 2026年单细胞多组学整合分析进展：同时测量转录组、表观基因组和蛋白质组
+- application: 细胞异质性
+- tool: 单细胞多组学
+- trend: 单细胞从单组学到多组学；整合分析揭示细胞状态全貌
+- sources: [object Object]
+
+### AI蛋白质结构预测2026新进展
+
+- name: AI蛋白质结构预测2026新进展
+- type: AI应用
+- description: 2026年AI蛋白质结构预测新进展：从静态结构到动态构象，药物设计应用扩展
+- application: 药物设计
+- tool: AI/AlphaFold
+- trend: 蛋白质预测从静态到动态；药物设计从辅助到核心
+- sources: [object Object]
+
+### 液体活检2026临床应用扩展
+
+- name: 液体活检2026临床应用扩展
+- type: 诊断技术
+- description: 2026年液体活检临床应用扩展：从癌症早筛到治疗监测，多癌种覆盖
+- application: 癌症诊断
+- tool: ctDNA/CTC
+- trend: 液体活检从单一到多癌种；早筛到全病程管理
+- sources: [object Object]
+
+### 生物信息学云计算2026平台化
+
+- name: 生物信息学云计算2026平台化
+- type: 基础设施
+- description: 2026年生物信息学云计算平台化：从自建集群到云原生分析，降低计算门槛
+- application: 多领域
+- tool: 云计算
+- trend: 生物信息学从本地到云端；平台化降低使用门槛
+- sources: [object Object]
+
+### 多组学数据整合AI 2026框架
+
+- name: 多组学数据整合AI 2026框架
+- type: AI框架
+- description: 2026年多组学数据整合AI框架：深度学习整合基因组、转录组、蛋白质组数据
+- application: 系统生物学
+- tool: 深度学习
+- trend: 多组学整合从简单拼接到深度学习；系统生物学新范式
+- sources: [object Object]
+
+### AlphaFold
+
+- name: AlphaFold
+- type: AI System
+- technology: Deep Learning / Neural Networks
+- application: Protein 3D Structure Prediction
+- status: Active and Widely Adopted
+- description: AlphaFold is an advanced artificial intelligence system developed by Google DeepMind designed to predict the three-dimensional structure of proteins from their amino acid sequences. It achieved breakthrough accuracy that was recognized as Science's 2021 Breakthrough of the Year. The system utilizes novel neural network architectures and training procedures to significantly improve upon previous methods. Its predictions have become a cornerstone resource for biological and medical research worldwide.
+
+### AlphaFold Protein Structure Database (AFDB)
+
+- name: AlphaFold Protein Structure Database (AFDB)
+- type: Database
+- technology: Open Access Repository
+- application: Structural Biology Data Storage
+- status: Publicly Available
+- description: The AlphaFold Protein Structure Database provides open access to hundreds of millions of high-accuracy predicted protein structures generated by the AlphaFold model. Hosted primarily through the European Bioinformatics Institute (EBI), it serves as a central hub for researchers needing structural data. The database enables scientists to bypass time-consuming experimental structure determination for many proteins. It supports broad investigations into protein function, evolution, and drug discovery.
+
+### AlphaFold 3
+
+- name: AlphaFold 3
+- type: AI Model Version
+- technology: Transformer-based AI / Deep Learning
+- application: Multi-molecule Structure Prediction
+- status: Released / In Use
+- description: AlphaFold 3 represents the latest iteration of the AlphaFold suite, offering transformative capabilities beyond static protein structures. It enables researchers to model dynamic protein conformations and interactions with other molecules such as DNA and RNA. Recent studies highlight its significant impact on accelerating biomedical research and understanding complex biological mechanisms. The model continues to refine accuracy in predicting intricate molecular assemblies.
+
+### RoseTTAFold
+
+- name: RoseTTAFold
+- type: AI System
+- technology: Deep Learning / Neural Networks
+- application: Protein Structure and Complex Prediction
+- status: Active Research Tool
+- description: RoseTTAFold is a competing AI-driven method for protein structure prediction developed by researchers at Washington University and others. It is capable of predicting the structures of proteins and protein complexes with high accuracy. The tool has been used to predict structures for billions of proteins, expanding the coverage of known protein space. It offers an alternative approach utilizing three-track neural networks for efficient computation.
+
+### Protein Structure Prediction
+
+- name: Protein Structure Prediction
+- type: Scientific Field / Task
+- technology: Computational Biology / AI
+- application: Drug Discovery / Functional Annotation
+- status: Rapidly Advancing
+- description: Protein structure prediction involves determining the native 3D shape of a protein based on its amino acid sequence using computational methods. This field has been revolutionized by AI breakthroughs, allowing for the prediction of thousands of structures quickly and accurately. It plays a critical role in understanding protein function, designing new drugs, and elucidating disease mechanisms. The field continues to evolve with new models improving reliability and scope.
+
+## biomanufacturing
+
+### undefined
+
+- version: 1.0.0
+- last_updated: 2026-06-24T07:11:45Z
+- description: 生物制造库 - 新增类别
+- entities: [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+
+### 黄芪
+
+- name: 黄芪
+- latin_name: Astragalus membranaceus
+- family: 豆科（Fabaceae）
+- genus: 黄芪属（Astragalus）
+- species: 蒙古黄芪 Astragalus membranaceus var. mongholicus, 膜荚黄芪 Astragalus membranaceus
+- part_used: 干燥根
+- nature_flavor: 甘，微温
+- meridian_entrada: 脾、肺经
+- functions: 补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌
+- indications: 气虚乏力，食少便溏，中气下陷，表虚自汗，水肿尿少，血虚萎黄，内外疮疡，久溃不敛
+- dosage: 9-30g
+- contraindications: 实热证、阴虚火旺、气滞湿阻者慎用
+- processing_methods: 生黄芪, 蜜炙黄芪
+- distribution: 中国内蒙古、黑龙江、辽宁、河北、山西、甘肃等地
+- harvest_time: 秋季采挖
+- source_references: 百度百科, 中医百科, 知乎
+
+### 黄连
+
+- name: 黄连
+- latin_name: Coptis chinensis / Coptis deltoidea / Coptis teeta
+- family: 毛茛科（Ranunculaceae）
+- genus: 黄连属（Coptis）
+- species: 味连 Coptis chinensis, 雅连 Coptis deltoidea, 云连 Coptis teeta
+- part_used: 干燥根茎
+- nature_flavor: 苦，寒
+- meridian_entrada: 心、脾、胃、胆、大肠经
+- functions: 清热燥湿，泻火解毒
+- active_compounds: 小檗碱（黄连素）、黄连碱、甲基黄连碱等生物碱
+- indications: 湿热痞满，呕吐吞酸，泻痢黄疸，高热神昏，心火亢盛，心烦不寐，目赤牙痛
+- dosage: 2-5g
+- contraindications: 脾胃虚寒者慎用
+- processing_methods: 生黄连, 炒黄连, 姜黄连, 萸黄连
+- distribution: 四川、贵州、湖南、湖北、陕西南部
+- harvest_time: 秋季采挖
+- source_references: 百度百科, 中医百科, 知乎, 南京中医药大学
+
+### 黄柏
+
+- name: 黄柏
+- latin_name: Phellodendron chinense / Phellodendron amurense
+- family: 芸香科（Rutaceae）
+- genus: 黄檗属（Phellodendron）
+- species: 川黄柏 Phellodendron chinense, 关黄柏 Phellodendron amurense
+- part_used: 干燥树皮
+- nature_flavor: 苦，寒
+- meridian_entrada: 肾、膀胱经
+- functions: 清热燥湿，泻火除蒸，解毒疗疮
+- indications: 湿热泻痢，黄疸尿赤，带下阴痒，热淋涩痛，脚气痿躄，骨蒸劳热，盗汗遗精
+- dosage: 6-12g
+- special_note: 专清下焦湿热，为下焦清湿猛将
+- contraindications: 苦寒伤胃，脾胃虚寒者慎用
+- processing_methods: 生黄柏, 盐黄柏, 黄酒黄柏, 炒黄柏
+- distribution: 四川、湖北、贵州、云南、江西、浙江等省，海拔900米以上杂木林
+- harvest_time: 剥取树皮后除去粗皮晒干
+- source_references: 百度百科, 中医百科, 搜狐健康
+
+### 黄芩
+
+- name: 黄芩
+- latin_name: Scutellaria baicalensis
+- family: 唇形科（Lamiaceae）
+- genus: 黄芩属（Scutellaria）
+- part_used: 干燥根
+- nature_flavor: 苦，寒
+- meridian_entrada: 肺、胆、脾、大肠、小肠经
+- functions: 清热燥湿，泻火解毒，止血，安胎
+- indications: 湿温暑湿，胸闷呕恶，湿热痞满，泻痢黄疸，肺热咳嗽，高热烦渴，血热吐衄，胎动不安
+- dosage: 3-10g
+- key_difference: 与黄连黄柏并称三黄：黄芩走上焦清肺热，黄连清中焦心胃火，黄柏清下焦肾膀胱湿热
+- common_pairings: 柴胡（小柴胡汤）, 芍药甘草大枣（黄芩汤）
+- processing_methods: 生黄芩, 酒黄芩
+- distribution: 中国北部、西北和西南；苏联、蒙古、朝鲜、日本亦有分布
+- characteristics: 喜阳喜温耐旱抗严寒，中性或微酸性土壤均可
+- source_references: 百度百科, 中医百科, 知乎, 腾讯新闻
+
+## synbio
+
+### CRISPR-Cas9
+
+- name: CRISPR-Cas9
+- type: 基因编辑
+- applications: 基因治疗, 作物改良
+- companies: Editas, CRISPR Therapeutics
+- maturity: 临床阶段
+
+### 碱基编辑
+
+- name: 碱基编辑
+- type: 基因编辑
+- applications: 遗传病治疗
+- companies: Beam Therapeutics
+- maturity: 临床阶段
+
+### 先导编辑
+
+- name: 先导编辑
+- type: 基因编辑
+- applications: 复杂突变修复
+- companies: Prime Medicine
+- maturity: 临床前
+
+### mRNA疗法
+
+- name: mRNA疗法
+- type: 核酸药物
+- applications: 疫苗, 蛋白替代, 癌症
+- companies: Moderna, BioNTech
+- maturity: 已上市
+
+### CAR-T
+
+- name: CAR-T
+- type: 细胞治疗
+- applications: 血液肿瘤
+- companies: 诺华, 吉利德, 传奇生物
+- maturity: 已上市
+
+### 生物制造
+
+- name: 生物制造
+- type: 合成生物
+- applications: 生物塑料, 食品蛋白
+- companies: Ginkgo, 华熙生物
+- maturity: 商用
+
+### AI生成基因组Evo 2
+
+- name: AI生成基因组Evo 2
+- type: AI+合成生物
+- applications: 全基因组设计, 蛋白质工程
+- companies: Arc Institute, Rice University
+- maturity: 实验室突破
+- description: Evo 2模型2025年扩展至9.3万亿碱基对，实现全基因组设计；Rice University 2026年1月宣布AI生成基因组突破
+- trend: AI从辅助工具到基因组设计核心引擎；后达尔文时代基因设计
+- sources: [object Object]
+
+### Chai-2抗体设计
+
+- name: Chai-2抗体设计
+- type: AI蛋白质设计
+- applications: 抗体药物, 蛋白治疗
+- companies: Chai Discovery
+- maturity: 实验室验证
+- description: Chai-2 2025年7月实现从头设计抗体16%成功率，AI驱动的蛋白质设计重大突破
+- trend: AI蛋白质设计从概念到实用；SETR 2026报告重点技术
+- sources: [object Object]
+
+### Genyro后达尔文基因设计
+
+- name: Genyro后达尔文基因设计
+- type: 合成生物
+- applications: 基因组工程, 新物种设计
+- companies: Genyro
+- maturity: 早期研发
+- description: Genyro提出'后达尔文时代'基因组设计愿景，百万分之一突破性设计策略
+- trend: 从自然选择到理性设计；SynBioBeta 2026重点讨论
+- sources: [object Object]
+
+### iGEM 2025合成生物创新
+
+- name: iGEM 2025合成生物创新
+- type: 合成生物
+- applications: 环境修复, AI治疗, 生物材料
+- companies: iGEM参赛团队
+- maturity: 概念验证
+- description: iGEM 2025展示前沿创新：吃塑料植物、AI引导治疗、新型生物材料等
+- trend: 合成生物学从学术竞赛到产业转化加速；学生创新推动前沿
+- sources: [object Object]
+
+### SynBioBeta 2026大会
+
+- name: SynBioBeta 2026大会
+- type: 行业会议
+- applications: AI+生物, 精准医学, 长寿
+- companies: 全行业
+- maturity: 参考
+- description: SynBioBeta 2026(5月4-7日圣何塞)：AI驱动治疗、精准医学、长寿成为核心议题
+- trend: AI与生物学深度融合；投资从工具平台向治疗应用转移
+- sources: [object Object]
+
+### SEED 2026合成生物会议
+
+- name: SEED 2026合成生物会议
+- type: 行业会议
+- applications: 合成生物工程, 进化, 设计
+- companies: 全行业
+- maturity: 参考
+- description: SEED 2026：合成生物学领先技术会议，覆盖从基础到商业应用全链条
+- trend: 合成生物从工程化到进化设计；商业化路径多元化
+- sources: [object Object]
+
+### 先导编辑Prime Editing
+
+- name: 先导编辑Prime Editing
+- type: 基因编辑
+- applications: 精准基因修正, 遗传病治疗
+- companies: Prime Medicine, PTC Therapeutics
+- maturity: 临床I期
+- description: 先导编辑实现任意碱基替换/插入/删除，比CRISPR-Cas9更精准，无需双链断裂
+- trend: 2026年多个先导编辑疗法进入临床；体内递送是关键突破点
+- sources: [object Object]
+
+### 表观遗传编辑
+
+- name: 表观遗传编辑
+- type: 基因编辑
+- applications: 基因调控, 长寿, 癌症
+- companies: Tune Therapeutics, Epic Bio
+- maturity: 临床前
+- description: 不改变DNA序列，通过表观修饰(甲基化/乙酰化)调控基因表达，可逆且更安全
+- trend: 2026年表观编辑成为基因编辑新前沿；可逆性是关键优势
+- sources: [object Object]
+
+### DNA数据存储
+
+- name: DNA数据存储
+- type: 合成生物应用
+- applications: 数据存储, 归档
+- companies: Catalog, Twist Bioscience, Iridia
+- maturity: 概念验证
+- description: 用合成DNA作为超高密度数据存储介质，1克DNA可存储215PB数据
+- trend: 读写成本快速下降；2026年微软/Catalog原型系统演示
+- sources: [object Object]
+
+### 细胞工厂Cell Factory
+
+- name: 细胞工厂Cell Factory
+- type: 生物制造
+- applications: 化学品, 燃料, 材料
+- companies: Ginkgo Bioworks, Zymergen, Amyris
+- maturity: 商用
+- description: 工程化微生物作为微型化工厂，精确生产目标分子，替代石化路线
+- trend: 从专用菌株到通用平台；AI加速DBTL循环
+- sources: [object Object]
+
+### 合成生物学安全与治理
+
+- name: 合成生物学安全与治理
+- type: 政策/伦理
+- applications: 生物安全, 监管
+- companies: WHO, NSABB, 各国家监管机构
+- maturity: 持续完善
+- description: 合成生物学快速发展带来的生物安全/双用性/知识产权等治理挑战
+- trend: 2026年全球生物安全框架持续完善；AI+生物交叉领域监管加强
+- sources: [object Object]
+
+### 无细胞合成生物学
+
+- name: 无细胞合成生物学
+- type: 合成生物
+- applications: 快速原型, 诊断, 生物传感
+- companies: Sutro Biopharma, Tierra Biosciences, Synthelis
+- maturity: 商用初期
+- description: 无活细胞系统进行转录翻译，快速原型验证，避免细胞毒性限制
+- trend: 从研究工具到商业化产品；现场诊断/生物传感应用
+- sources: [object Object]
+
+### 生物传感器Biosensor
+
+- name: 生物传感器Biosensor
+- type: 合成生物应用
+- applications: 环境监测, 医疗诊断, 食品安全
+- companies: Synlogic, Ginkgo Bioworks
+- maturity: 临床/商用
+- description: 工程化生物体感知特定分子并输出信号，用于疾病诊断/环境监测/食品安全
+- trend: 活体生物传感器从概念到产品；2026年多个临床项目推进
+- sources: [object Object]
+
+### SynbiCITE 2026趋势
+
+- name: SynbiCITE 2026趋势
+- type: 行业趋势
+- applications: 合成生物产业化
+- companies: SynbiCITE
+- maturity: 参考
+- description: SynbiTECH 2025揭示2026年合成生物学趋势：AI驱动、可持续性、监管成熟化
+- trend: 从技术突破到产业规模化的过渡期；英国合成生物创新中心引领
+- sources: [object Object]
+
+### SETR 2026生物技术报告
+
+- name: SETR 2026生物技术报告
+- type: 行业报告
+- applications: AI+生物, 合成生物, 基因编辑
+- companies: Stanford
+- maturity: 参考
+- description: Stanford SETR 2026报告：AI增强生物科学、可扩展个性化医学、超越CRISPR的编辑工具
+- trend: 三大技术将塑造2026年生物技术：AI+生物、精准医学、新一代基因编辑
+- sources: [object Object]
+
+### Nature七技术2026
+
+- name: Nature七技术2026
+- type: 行业报告
+- applications: 量子计算, mRNA治疗, 基因编辑
+- companies: Nature
+- maturity: 参考
+- description: Nature 2026年七项值得关注技术：从量子计算到mRNA治疗，基因驱动技术入选
+- trend: 跨学科融合加速；基因驱动从实验室到受控释放的关键年
+- sources: [object Object]
+
+### 碱基编辑Base Editing
+
+- name: 碱基编辑Base Editing
+- type: 基因编辑
+- applications: 遗传病, 血液病, 代谢病
+- companies: Beam Therapeutics, Verve Therapeutics
+- maturity: 临床I/II期
+- description: 精确转换单个碱基(C→T, A→G)而不产生双链断裂，更安全的基因编辑方式
+- trend: Verve VERVE-101降胆固醇疗法临床数据积极；2026年更多适应症
+- sources: [object Object]
+
+### 合成基因组学
+
+- name: 合成基因组学
+- type: 合成生物
+- applications: 最小基因组, 新物种, 工业菌株
+- companies: JCVI, Ginkgo Bioworks
+- maturity: 实验室
+- description: 从零合成完整基因组，设计最小基因组生物体，创建自然界不存在的生物系统
+- trend: Sc2.0合成酵母基因组项目接近完成；AI加速基因组设计
+- sources: [object Object]
+
+### 工程化活体材料ELM
+
+- name: 工程化活体材料ELM
+- type: 合成生物应用
+- applications: 自修复材料, 生物建筑, 智能材料
+- companies: 多所大学研究组
+- maturity: 实验室
+- description: 工程化活体微生物制造的功能材料，可自修复/自组装/响应环境
+- trend: 从概念到原型；建筑/航天/医疗应用探索
+- sources: [object Object]
+
+### 合成生物学投资趋势2026
+
+- name: 合成生物学投资趋势2026
+- type: 投资/市场
+- applications: 融资, IPO, 并购
+- companies: 全行业
+- maturity: 参考
+- description: 2026年合成生物学投资从工具平台向治疗应用转移，AI+生物成为投资热点
+- trend: 资本从Ginkgo模式(平台)向精准治疗模式转移；AI驱动估值重估
+- sources: [object Object]
+
+### 生物计算Biocomputing
+
+- name: 生物计算Biocomputing
+- type: 合成生物+计算
+- applications: 生物计算, 智能决策
+- companies: 多所大学研究组
+- maturity: 概念验证
+- description: 利用生物分子/DNA/细胞进行信息处理和计算，与电子计算互补
+- trend: DNA计算/细胞逻辑门/类器官智能；2026年基础研究突破
+- sources: [object Object]
+
+### CRISPR诊断CRISPR-Dx
+
+- name: CRISPR诊断CRISPR-Dx
+- type: 合成生物应用
+- applications: 快速诊断, POCT, 传染病检测
+- companies: Mammoth Biosciences, Sherlock Biosciences
+- maturity: 已上市/临床
+- description: CRISPR用于核酸检测，快速/低成本/现场部署，替代传统PCR
+- trend: SHERLOCK/DETECTR平台商业化；2026年POCT市场快速增长
+- sources: [object Object]
+
+### 合成生物学市场预测2026-2033
+
+- name: 合成生物学市场预测2026-2033
+- type: 市场数据
+- applications: 全行业
+- companies: 全行业
+- maturity: 快速增长
+- description: 合成生物学市场2026年68.7亿，预计2033年达125.1亿，CAGR 22.7%
+- trend: AI+合成生物深度融合；从概念验证到规模化生产
+- sources: [object Object]
+
+### 2026生物技术10大突破趋势
+
+- name: 2026生物技术10大突破趋势
+- type: 行业趋势
+- applications: 全行业
+- companies: 多公司
+- maturity: 参考
+- description: Atlantis Bioscience 2026年10大生物技术趋势：体内编辑/RNA治疗/空间组学/再生医学创新
+- trend: 体内基因编辑从罕见病到常见病；RNA治疗从疫苗到通用平台
+- sources: [object Object]
+
+### BioTechniques 2026生物技术发展
+
+- name: BioTechniques 2026生物技术发展
+- type: 行业趋势
+- applications: 全行业
+- companies: 多公司
+- maturity: 参考
+- description: BioTechniques 2026年生物技术发展：监管更新/重点领域/新兴技术
+- trend: 监管框架适应新技术；人类相关测试模型替代动物实验
+- sources: [object Object]
+
+### Zageno 2026生物技术突破
+
+- name: Zageno 2026生物技术突破
+- type: 行业趋势
+- applications: 全行业
+- companies: 多公司
+- maturity: 参考
+- description: Zageno 2026年生物技术突破：AI对齐监管框架/人类相关测试模型/下一代基因编辑
+- trend: AI成为受监管药物开发的一部分；Prime editing扩展应用
+- sources: [object Object]
+
+### 基因驱动2025研究回顾
+
+- name: 基因驱动2025研究回顾
+- type: 基因驱动
+- applications: 疟疾防控, 入侵物种管理, 农业
+- companies: UCMI, Imperial College, CSIRO
+- maturity: 受控释放前
+- description: 2025年基因驱动研究：科学进展+战略合作+政策里程碑，从实验室走向受控释放
+- trend: 基因驱动从概念到受控释放；治理框架逐步完善
+- sources: [object Object]
+
+### Imperial基因驱动抗疟蚊子
+
+- name: Imperial基因驱动抗疟蚊子
+- type: 基因驱动
+- applications: 疟疾防控
+- companies: Imperial College, UCMI
+- maturity: 受控释放前
+- description: Imperial College基因驱动蚊子项目接近现实，与UCMI合作推进受控释放
+- trend: 基因驱动蚊子从实验室到受控释放；疟疾根除新工具
+- sources: [object Object]
+
+### 基因驱动治理挑战
+
+- name: 基因驱动治理挑战
+- type: 基因驱动
+- applications: 治理, 政策
+- companies: ISAAA, USDA
+- maturity: 政策讨论
+- description: 基因驱动面临长期资金激励质疑和治理挑战，AJTMH发表讨论文章
+- trend: 基因驱动技术成熟但治理框架滞后；国际共识待形成
+- sources: [object Object]
+
+### SynbiTECH 2025→2026趋势
+
+- name: SynbiTECH 2025→2026趋势
+- type: 行业趋势
+- applications: 全行业
+- companies: SynbiCITE
+- maturity: 参考
+- description: SynbiTECH 2025揭示2026年合成生物学趋势：AI+生物融合/规模化生产/监管适应
+- trend: 合成生物学从实验室到工厂；AI加速DBTL循环
+- sources: [object Object]
+
+### SynBioBeta 2026 AI+生物学
+
+- name: SynBioBeta 2026 AI+生物学
+- type: 行业会议
+- applications: 全行业
+- companies: 多公司
+- maturity: 参考
+- description: SynBioBeta 2026: AI+生物学主题，可编程RNA药物/虚拟细胞模型/AI设计酶/替代糖蛋白
+- trend: AI驱动的生物设计成为主流；可编程RNA药物新赛道
+- sources: [object Object]
+
+### AI生成基因组突破
+
+- name: AI生成基因组突破
+- type: AI+合成生物
+- applications: 基因组设计, 合成生物学
+- companies: Rice University, Arc Institute
+- maturity: 研究前沿
+- description: Evo 2模型扩展到9.3万亿碱基对，Rice University 2026年1月宣布AI生成基因组突破
+- trend: AI从蛋白质设计到全基因组设计；后达尔文时代生物工程
+- sources: [object Object]
+
+### iGEM 2025合成生物学未来
+
+- name: iGEM 2025合成生物学未来
+- type: 学生竞赛
+- applications: 全行业
+- companies: iGEM
+- maturity: 参考
+- description: iGEM 2025亮点：吃塑料植物/AI引导治疗/合成生物学创新定义未来
+- trend: 下一代合成生物学家关注环境+健康；AI工具降低入门门槛
+- sources: [object Object]
+
+### SETR 2026生物技术与合成生物
+
+- name: SETR 2026生物技术与合成生物
+- type: 学术报告
+- applications: 全行业
+- companies: Stanford SETR
+- maturity: 参考
+- description: Stanford SETR 2026报告：Chai-2抗体设计16%成功率；AI设计抗体进入临床
+- trend: AI抗体设计从概念到管线；2026年AI设计抗体进入临床
+- sources: [object Object]
+
+### GESDA后合成生物学时代
+
+- name: GESDA后合成生物学时代
+- type: 前沿概念
+- applications: 全系统设计
+- companies: GESDA
+- maturity: 概念阶段
+- description: GESDA高级科学预测会议探讨后合成生物学时代：超越基因编辑，设计整个生物系统
+- trend: 从基因编辑到系统设计；合成生物学进入新范式
+- sources: [object Object]
+
+### SEED 2026合成生物学会议
+
+- name: SEED 2026合成生物学会议
+- type: 学术会议
+- applications: 全行业
+- companies: SEED
+- maturity: 参考
+- description: SEED 2026合成生物学工程/进化/设计会议：合成生物学领域领先技术会议，从基础到商业应用
+- trend: 合成生物学从学术到产业；工程化思维深入
+- sources: [object Object]
+
+### 合成生物学市场2026-2033
+
+- name: 合成生物学市场2026-2033
+- type: 市场数据
+- applications: 全行业
+- companies: 全行业
+- maturity: 市场增长
+- description: 合成生物学市场2026年268.7亿美元，预计2033年达1125.1亿美元，CAGR 22.7%
+- trend: 合成生物学市场高速增长；DNA测序成本下降和AI进步驱动
+- sources: [object Object]
+
+### SynBioBeta 2026 AI与生物学
+
+- name: SynBioBeta 2026 AI与生物学
+- type: 行业会议
+- applications: AI+生物
+- companies: SynBioBeta
+- maturity: 参考
+- description: SynBioBeta 2026: AI与生物学交叉，可编程RNA药物/虚拟细胞模型/AI设计酶/替代糖蛋白质等前沿
+- trend: AI+生物学深度融合；可编程RNA和AI设计酶成为热点
+- sources: [object Object]
+
+### Xaira AI药物设计进展
+
+- name: Xaira AI药物设计进展
+- type: AI药物
+- applications: 药物发现
+- companies: Xaira
+- maturity: 临床前
+- description: SynBioBeta 2026: Xaira生命科学负责人和CEO展示AI药物设计领域进展和剩余挑战
+- trend: AI药物设计从概念到管线；计算生物学加速药物发现
+- sources: [object Object]
+
+### Nature合成生物学2020-2030六产品
+
+- name: Nature合成生物学2020-2030六产品
+- type: 学术综述
+- applications: 全行业
+- companies: 多公司
+- maturity: 参考
+- description: Nature综述合成生物学2020-2030年六个商业化产品：从食品到材料到药物的全面转型
+- trend: 合成生物学商业化产品持续增加；从实验室到货架
+- sources: [object Object]
+
+### MIT Technology Review 2026三大生物技术
+
+- name: MIT Technology Review 2026三大生物技术
+- type: 行业趋势
+- applications: 全行业
+- companies: 多公司
+- maturity: 多阶段
+- description: MIT Technology Review: 2026年三大塑造生物技术的技术：AI增强生物科学/可扩展个性化医学/超越CRISPR
+- trend: AI+生物科学融合加速；个性化医学规模化；基因编辑工具多元化
+- sources: [object Object]
+
+### Wellcome合成生物学健康可持续
+
+- name: Wellcome合成生物学健康可持续
+- type: 学术会议
+- applications: 健康/可持续
+- companies: Wellcome
+- maturity: 参考
+- description: Wellcome Genome Campus 2026年3月会议：合成生物学改善人类健康和可持续性
+- trend: 合成生物学从工业到健康；可持续发展应用增长
+- sources: [object Object]
+
+### 全球合成生物学市场研究2026-2036
+
+- name: 全球合成生物学市场研究2026-2036
+- type: 市场研究
+- applications: 全行业
+- companies: 全行业
+- maturity: 市场增长
+- description: DNA测序成本下降和AI进步推动合成生物学创新，尤其在制药领域药物发现应用
+- trend: 测序成本下降+AI进步双驱动；制药领域合成生物学应用领先
+- sources: [object Object]
+
+### DDW全球合成生物学进展
+
+- name: DDW全球合成生物学进展
+- type: 行业综述
+- applications: 药物发现
+- companies: 多公司
+- maturity: 参考
+- description: Drug Discovery World: 全球合成生物学创新精选，及其在药物发现中的潜力
+- trend: 合成生物学在药物发现中应用扩展；从靶点到先导化合物
+- sources: [object Object]
+
+### 可编程RNA药物
+
+- name: 可编程RNA药物
+- type: RNA疗法
+- applications: 基因治疗/疫苗
+- companies: 多初创公司
+- maturity: 临床前/临床
+- description: SynBioBeta 2026亮点：可编程RNA药物平台，精确调控基因表达，治疗遗传病和癌症
+- trend: RNA疗法从疫苗到药物；可编程性提升治疗精准度
+- sources: [object Object]
+
+### 虚拟细胞模型
+
+- name: 虚拟细胞模型
+- type: 计算生物学
+- applications: 药物筛选/疾病建模
+- companies: 多初创公司
+- maturity: 研发中
+- description: 虚拟细胞模型：AI驱动的全细胞计算模拟，预测药物反应和疾病进展
+- trend: 虚拟细胞从概念到工具；AI+多组学数据驱动
+- sources: [object Object]
+
+### AI设计酶
+
+- name: AI设计酶
+- type: 蛋白质工程
+- applications: 工业催化/药物合成
+- companies: 多公司
+- maturity: 研发/中试
+- description: AI设计酶：利用深度学习设计全新酶催化剂，催化自然界不存在的反应
+- trend: AI蛋白质设计从结构到功能；定制化酶催化新化学
+- sources: [object Object]
+
+### 替代糖蛋白质
+
+- name: 替代糖蛋白质
+- type: 食品科技
+- applications: 食品/甜味剂
+- companies: 多初创公司
+- maturity: 商业化初期
+- description: 合成生物学开发替代糖的蛋白质甜味剂，解决糖健康问题同时保持甜味体验
+- trend: 合成生物学食品应用从概念到产品；健康甜味剂市场需求大
+- sources: [object Object]
+
+### 合成生物学细胞工厂
+
+- name: 合成生物学细胞工厂
+- type: 代谢工程
+- applications: 化学品/材料/燃料
+- companies: Ginkgo Bioworks, Zymergen
+- maturity: 商用扩张
+- description: 合成生物学细胞工厂：工程化微生物作为微型化工厂，精确生产目标分子
+- trend: 细胞工厂从单一产品到平台化；自动化DBTL循环加速
+- sources: [object Object]
+
+### 合成生物学标准化2026
+
+- name: 合成生物学标准化2026
+- type: 标准
+- applications: 全行业
+- companies: 多机构
+- maturity: 制定中
+- description: 合成生物学标准化进展：生物元件标准化/数据格式统一/安全规范制定
+- trend: 标准化推动合成生物学工程化；从艺术到工程
+- sources: [object Object]
+
+### 合成生物学生物安全2026
+
+- name: 合成生物学生物安全2026
+- type: 安全
+- applications: 全行业
+- companies: 多机构
+- maturity: 持续关注
+- description: 合成生物学生物安全2026年进展：双用途研究监管/生物安全框架/国际治理机制
+- trend: 生物安全从被动到主动；AI+合成生物学双用途风险关注
+- sources: [object Object]
+
+### 合成生物学教育人才培养2026
+
+- name: 合成生物学教育人才培养2026
+- type: 教育
+- applications: 人才培养
+- companies: iGEM, 多大学
+- maturity: 扩张期
+- description: 合成生物学教育和人才培养2026年进展：iGEM竞赛扩大/大学课程增设/跨学科培养
+- trend: 合成生物学人才需求增长；跨学科教育模式推广
+- sources: [object Object]
+
+### SEED 2026合成生物学技术会议
+
+- name: SEED 2026合成生物学技术会议
+- type: 行业会议
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: SEED
+- description: SEED 2026合成生物学工程/进化/设计会议：涵盖从基础到商业应用的全领域
+- trend: 合成生物学从学术到产业转化加速；工程化设计成为核心
+- sources: [object Object]
+
+### Xaira AI+生物学进展
+
+- name: Xaira AI+生物学进展
+- type: 技术趋势
+- efficiency: N/A
+- cost: N/A
+- maturity: 前沿
+- companies: Xaira
+- description: SynBioBeta 2026上Xaira展示AI+生命科学进展：AI公司生命科学负责人和Xaira CEO阐述领域进展和挑战
+- trend: AI驱动的药物发现加速；AI+生物学投资持续升温
+- sources: [object Object]
+
+### Wellcome合成生物学健康可持续会议
+
+- name: Wellcome合成生物学健康可持续会议
+- type: 行业会议
+- efficiency: N/A
+- cost: N/A
+- maturity: 参考
+- companies: Wellcome
+- description: Wellcome Genome Campus 2026年3月11-13日举办合成生物学健康与可持续会议，线上线下同步
+- trend: 合成生物学应用从医疗扩展到可持续发展；全球协作加速
+- sources: [object Object]
+
+### FII Priority AI+合成生物学
+
+- name: FII Priority AI+合成生物学
+- type: 前沿趋势
+- efficiency: N/A
+- cost: N/A
+- maturity: 前沿
+- companies: FII
+- description: FII Priority Miami 2026：未来十年风投回报将来自高速封闭创新生态系统，AI+合成生物学是核心
+- trend: AI+合成生物学成为风投热点；封闭创新生态系统模式兴起
+- sources: [object Object]
+
+### 合成生物学2026最变革技术
+
+- name: 合成生物学2026最变革技术
+- type: 行业趋势
+- applications: 全行业
+- companies: 多公司
+- maturity: 参考
+- description: 2026年合成生物学代表最具变革性技术之一：工程细菌代谢塑料废物/合成细胞设计用于药物递送/AI设计酶
+- trend: 合成生物学从实验室到实际应用加速；AI+生物深度融合
+- sources: [object Object]
+
+### Nature合成生物学六产品2020-2030
+
+- name: Nature合成生物学六产品2020-2030
+- type: 学术综述
+- applications: 全行业
+- companies: 多公司
+- maturity: 参考
+- description: Nature综述合成生物学2020-2030年六个商业化产品：从食品到材料到药物的全面转型
+- trend: 合成生物学商业化产品持续增加；从实验室到货架
+- sources: [object Object]
+
+### SynBioBeta 2026 AI+生物学大会
+
+- name: SynBioBeta 2026 AI+生物学大会
+- type: 行业会议
+- applications: AI+生物
+- companies: SynBioBeta
+- maturity: 参考
+- description: SynBioBeta 2026大会主题AI和生物学：展示可编程RNA药物/虚拟细胞模型/AI设计酶/可编程生物
+- trend: AI+生物学成为合成生物学核心主题；可编程生物时代
+- sources: [object Object]
+
+### Chai-2抗体设计16%成功率突破
+
+- name: Chai-2抗体设计16%成功率突破
+- type: AI药物设计
+- applications: 抗体设计
+- companies: Chai Discovery
+- maturity: 工具突破
+- description: Chai Discovery发布Chai-2：AI抗体设计16%成功率，从序列到结构预测，大幅超越传统方法
+- trend: AI抗体设计从概念到实用；成功率大幅提升
+- sources: [object Object]
+
+### Rice University AI生成基因组突破
+
+- name: Rice University AI生成基因组突破
+- type: AI+生物
+- applications: 基因组设计
+- companies: Rice University
+- maturity: 实验室突破
+- description: Rice University利用Evo 2等AI模型实现基因组设计突破，AI可生成功能性基因组序列
+- trend: AI从分析到设计基因组；合成生物学新范式
+- sources: [object Object]
+
+### 合成生物学市场6.87B→12.51B预测
+
+- name: 合成生物学市场6.87B→12.51B预测
+- type: 市场数据
+- applications: 全行业
+- companies: 全行业
+- maturity: 市场预测
+- description: 合成生物学市场2026年估值268.7亿美元，预计2033年达1125.1亿美元，CAGR 22.4%
+- trend: 合成生物学市场高速增长；从利基到主流
+- sources: [object Object]
+
+### 基因驱动逆转害虫杀虫剂抗性
+
+- name: 基因驱动逆转害虫杀虫剂抗性
+- type: 基因驱动
+- applications: 农业
+- companies: 多研究机构
+- maturity: 实验室突破
+- description: 新基因驱动技术可逆转害虫杀虫剂抗性，保护作物并大幅减少化学农药使用
+- trend: 基因驱动从疾病防控到农业应用；逆转抗性是新方向
+- sources: [object Object]
+
+### Transmission Zero基因驱动新方法
+
+- name: Transmission Zero基因驱动新方法
+- type: 基因驱动
+- applications: 疟疾防控
+- companies: Transmission Zero
+- maturity: 实验室开发
+- description: Transmission Zero开发新基因驱动方法：结合抑制和修饰策略，防止蚊子传播疟疾
+- trend: 基因驱动从单一策略到组合策略；安全性和有效性兼顾
+- sources: [object Object]
+
+### 最大蚊子遗传研究揭示杀虫剂抗性传播
+
+- name: 最大蚊子遗传研究揭示杀虫剂抗性传播
+- type: 学术研究
+- applications: 疟疾防控
+- companies: 多研究机构
+- maturity: 参考
+- description: 最大规模蚊子遗传研究揭示杀虫剂抗性传播机制，发现基因驱动对大多数蚊子基因可能无效
+- trend: 基因驱动局限性被认识；需要更精准的靶点选择
+- sources: [object Object]
+
+### 合成生物学市场26.87B→112.51B预测
+
+- name: 合成生物学市场26.87B→112.51B预测
+- type: 市场数据
+- applications: 多行业
+- companies: Coherent Market Insights
+- maturity: 市场预测
+- description: 合成生物学市场2026年估值268.7亿美元，预计2033年达1125.1亿美元，CAGR 22.7%
+- trend: 合成生物学市场高速增长；从利基到主流
+- sources: [object Object]
+
+### GESDA: 后合成生物学时代探索
+
+- name: GESDA: 后合成生物学时代探索
+- type: 学术前沿
+- applications: 多领域
+- companies: GESDA
+- maturity: 概念阶段
+- description: GESDA高级科学预测会议探索后合成生物学时代：从编辑基因到设计整个生物系统
+- trend: 从基因编辑到系统设计；后合成生物学时代来临
+- sources: [object Object]
+
+### SynBioBeta 2026: AI与生物学融合
+
+- name: SynBioBeta 2026: AI与生物学融合
+- type: 行业会议
+- applications: 多领域
+- companies: SynBioBeta
+- maturity: 参考
+- description: SynBioBeta 2026(5月4-7日圣何塞)：可编程RNA药物、虚拟细胞模型、AI设计酶、替代糖蛋白质
+- trend: AI+生物学从概念到产品；可编程RNA和虚拟细胞是热点
+- sources: [object Object]
+
+### Nature: 合成生物学2020-2030六大商业产品
+
+- name: Nature: 合成生物学2020-2030六大商业产品
+- type: 学术综述
+- applications: 食品, 材料, 医药
+- companies: 多公司
+- maturity: 参考
+- description: Nature综述合成生物学2020-2030六大商业可用产品：改变食物、材料、医药来源
+- trend: 合成生物学从实验室到货架；六大产品类别商业化
+- sources: [object Object]
+
+### DDW: 全球合成生物学进展
+
+- name: DDW: 全球合成生物学进展
+- type: 行业分析
+- applications: 药物发现
+- companies: 多公司
+- maturity: 参考
+- description: Drug Discovery World精选近期合成生物学创新及其药物发现潜力
+- trend: 合成生物学赋能药物发现；从工具到平台
+- sources: [object Object]
+
+### FII Priority Miami 2026: AI+合成生物学投资
+
+- name: FII Priority Miami 2026: AI+合成生物学投资
+- type: 行业会议
+- applications: 投资
+- companies: 多投资机构
+- maturity: 参考
+- description: FII Priority Miami 2026: 下一个十年风投回报来自高速封闭创新生态系统，AI+合成生物学是核心
+- trend: AI+合成生物学成为风投焦点；封闭创新生态系统模式
+- sources: [object Object]
+
+### BioIVT: 2026生命科学重大影响领域
+
+- name: BioIVT: 2026生命科学重大影响领域
+- type: 行业预测
+- applications: 多领域
+- companies: BioIVT
+- maturity: 参考
+- description: BioIVT 2026生命科学预测：NAMs、AI驱动R&D、液体活检进展、细胞和基因治疗新兴创新
+- trend: NAMs和AI驱动R&D变革；多领域交叉创新
+- sources: [object Object]
+
+### Reddit: 合成生物学突破在哪里
+
+- name: Reddit: 合成生物学突破在哪里
+- type: 社区讨论
+- applications: 多领域
+- companies: Filipe Pereira Lab
+- maturity: 参考
+- description: Reddit r/biotech讨论合成生物学突破：Filipe Pereira Lab被认为是真正合成生物学愿景的代表
+- trend: 社区对合成生物学突破的期待；从概念到实际应用
+- sources: [object Object]
+
+### SynBioBeta: AI公司生命科学负责人与Xaira CEO对话
+
+- name: SynBioBeta: AI公司生命科学负责人与Xaira CEO对话
+- type: 行业对话
+- applications: AI+生物学
+- companies: Xaira
+- maturity: 参考
+- description: SynBioBeta 2026: AI公司生命科学负责人和Xaira CEO讨论AI+生物学进展和剩余挑战
+- trend: AI+生物学从兴奋到务实；挑战仍然巨大
+- sources: [object Object]
+
+### SEED 2025合成生物学工程进化设计会议
+
+- name: SEED 2025合成生物学工程进化设计会议
+- type: 行业会议
+- applications: 多领域
+- companies: 多机构
+- maturity: 参考
+- description: SEED是合成生物学领先技术会议，覆盖从基础到商业应用
+- trend: 合成生物学从基础到商业全链条；SEED连接学术和产业
+- sources: [object Object]
+
+### 基因驱动逆转昆虫抗药性
+
+- name: 基因驱动逆转昆虫抗药性
+- type: 基因驱动
+- applications: 农业, 害虫防控
+- companies: 多研究机构
+- maturity: 实验室开发
+- description: 新基因驱动技术可逆转害虫杀虫剂抗性，保护作物并大幅减少化学农药使用
+- trend: 基因驱动从传播到逆转；农业应用新方向
+- sources: [object Object]
+
+### Science: 基因驱动技术如何监管
+
+- name: Science: 基因驱动技术如何监管
+- type: 监管讨论
+- applications: 多领域
+- companies: 多机构
+- maturity: 参考
+- description: Science杂志讨论基因驱动技术监管：如何控制这种争议性基因扩散方法
+- trend: 基因驱动监管从空白到框架；争议性技术需要审慎治理
+- sources: [object Object]
+
+### MESA: 基因驱动技术用于非洲疟疾消除
+
+- name: MESA: 基因驱动技术用于非洲疟疾消除
+- type: 政策建议
+- applications: 疟疾防控
+- companies: MESA
+- maturity: 政策建议
+- description: MESA为政策制定者提供基因驱动技术用于非洲疟疾防控的指导建议
+- trend: 基因驱动从研究到政策；非洲疟疾防控新工具
+- sources: [object Object]
+
+### Nature: 基因驱动技术需要彻底审查
+
+- name: Nature: 基因驱动技术需要彻底审查
+- type: 学术评论
+- applications: 多领域
+- companies: 多机构
+- maturity: 参考
+- description: Nature评论：基因驱动技术需要彻底审查，确保安全性和可控性
+- trend: 基因驱动安全性审查加强；科学界呼吁审慎推进
+- sources: [object Object]
+
+### GEAR 2026基因编辑和RNA技术会议
+
+- name: GEAR 2026基因编辑和RNA技术会议
+- type: 行业会议
+- applications: 基因编辑, RNA技术
+- companies: AIChE
+- maturity: 参考
+- description: GEAR 2026(9月15-17日)：CRISPR和新兴基因编辑前沿研究
+- trend: 基因编辑从CRISPR到多元化；RNA技术崛起
+- sources: [object Object]
+
+### 第7届基因组编辑治疗峰会2026
+
+- name: 第7届基因组编辑治疗峰会2026
+- type: 行业会议
+- applications: 基因治疗
+- companies: 多公司
+- maturity: 参考
+- description: 第7届基因组编辑治疗峰会：联合制药、生物技术和学术领袖加速安全有效基因组编辑疗法开发
+- trend: 基因组编辑从工具到疗法；安全性和有效性是焦点
+- sources: [object Object]
+
+### Gene Drive Network: 基因驱动技术健康保护进展
+
+- name: Gene Drive Network: 基因驱动技术健康保护进展
+- type: 行业分析
+- applications: 健康, 保护
+- companies: Gene Drive Network
+- maturity: 参考
+- description: Gene Drive Network: 基因驱动技术在健康、保护和治理方面的最新进展
+- trend: 基因驱动多领域应用探索；治理框架同步发展
+- sources: [object Object]
+
+### 可编程RNA药物2026进展
+
+- name: 可编程RNA药物2026进展
+- type: RNA技术
+- applications: 药物开发
+- companies: 多公司
+- maturity: 临床阶段
+- description: 2026年可编程RNA药物进展：从mRNA疫苗到可编程RNA疗法，精准调控基因表达
+- trend: RNA从疫苗到可编程疗法；精准调控基因表达
+- sources: [object Object]
+
+### AI设计酶2026突破
+
+- name: AI设计酶2026突破
+- type: AI蛋白设计
+- applications: 催化, 工业
+- companies: 多公司
+- maturity: 实验室阶段
+- description: 2026年AI设计酶技术突破：从序列到功能，AI加速酶工程
+- trend: AI从辅助到主导酶设计；催化效率大幅提升
+- sources: [object Object]
+
+### 替代糖蛋白质2026商业化
+
+- name: 替代糖蛋白质2026商业化
+- type: 替代蛋白
+- applications: 食品
+- companies: 多公司
+- maturity: 商业化早期
+- description: 2026年替代糖蛋白质商业化：合成生物学生产的蛋白质替代传统糖，健康和可持续
+- trend: 替代蛋白从概念到产品；健康和可持续双驱动
+- sources: [object Object]
+
+### 虚拟细胞模型2026进展
+
+- name: 虚拟细胞模型2026进展
+- type: 计算生物学
+- applications: 药物发现, 基础研究
+- companies: 多公司
+- maturity: 早期开发
+- description: 2026年虚拟细胞模型进展：AI驱动的细胞模拟从概念到原型，加速生物学理解
+- trend: 虚拟细胞从概念到原型；AI+生物学新范式
+- sources: [object Object]
+
+### 合成基因组学2026里程碑
+
+- name: 合成基因组学2026里程碑
+- type: 合成基因组学
+- applications: 基础研究, 生物制造
+- companies: 多研究机构
+- maturity: 实验室阶段
+- description: 2026年合成基因组学里程碑：从合成酵母基因组到更复杂生物基因组设计
+- trend: 合成基因组学从酵母到更复杂生物；基因组设计能力提升
+- sources: [object Object]
+
+### 生物计算2026新架构
+
+- name: 生物计算2026新架构
+- type: 生物计算
+- applications: 计算, 传感
+- companies: 多研究机构
+- maturity: 概念验证
+- description: 2026年生物计算新架构：DNA存储、细胞计算、生物传感器等新范式探索
+- trend: 生物计算从概念到架构；DNA存储和细胞计算突破
+- sources: [object Object]
+
+### 合成生物学监管2026全球趋势
+
+- name: 合成生物学监管2026全球趋势
+- type: 监管趋势
+- applications: 多领域
+- companies: 多机构
+- maturity: 参考
+- description: 2026年合成生物学监管全球趋势：各国从各自为政到协调框架，安全与创新平衡
+- trend: 监管从碎片化到协调；安全与创新平衡
+- sources: [object Object]
+
+### 生物固碳合成生物学2026进展
+
+- name: 生物固碳合成生物学2026进展
+- type: 生物固碳
+- applications: 碳捕获, 可持续
+- companies: 多公司
+- maturity: 实验室阶段
+- description: 2026年生物固碳合成生物学进展：工程微生物固定CO2，从概念到中试
+- trend: 生物固碳从概念到中试；合成生物学赋能碳捕获
+- sources: [object Object]
+
+### CRISPR基因与细胞治疗临床多领域突破
+
+- name: CRISPR基因与细胞治疗临床多领域突破
+- type: 基因编辑临床
+- efficiency: 多疾病 promising
+- cost: 高
+- maturity: 临床推进
+- companies: CRISPR Therapeutics, 多研究机构
+- description: 2025年ScienceDirect综述：CRISPR基因与细胞治疗已进入多疾病临床试验，早期结果令人鼓舞，但关键挑战仍存，包括脱靶效应、递送效率和免疫反应
+- trend: CRISPR疗法从血液病扩展到实体瘤、HIV和自身免疫病；递送技术是关键瓶颈
+- sources: [object Object]
+
+### AlphaGenome
+
+- name: AlphaGenome
+- type: AI Model
+- applications: genome design, synthetic biology, personalized medicine
+- companies: 
+- maturity: Early-stage development
+- description: AlphaGenome is an emerging AI model capable of designing functional genomes, which could revolutionize synthetic biology by accelerating the creation of new forms of life. It represents a significant advancement in bridging AI capabilities with biological engineering. Researchers believe this technology will transform medicine and biotechnology by enabling precise genome manipulation.
+- trend: Rapidly growing research interest
+- sources: https://www.instagram.com/reel/DOC9kuZDDRx, https://www.hpcwire.com/aiwire/2026/03/11/a-new-ai-model-could-help-scientists-design-new-forms-of-life
+
+### CRISPR
+
+- name: CRISPR
+- type: Gene Editing Technology
+- applications: genome editing, microbial cell factories, synthetic gene circuits, gene regulation
+- companies: 
+- maturity: Established and widely adopted
+- description: CRISPR has become a cornerstone tool in synthetic biology for programmable genome editing. Recent advancements include expanded CRISPR toolboxes for constructing microbial cell factories and building synthetic gene circuits. Its applications span from basic research to industrial biotechnology, making it one of the most impactful technologies in the field.
+- trend: Continuously expanding applications
+- sources: https://www.sciencedirect.com/science/article/pii/S2405805X26000189, https://pubs.acs.org/doi/10.1021/acssynbio.0c00349
+
+### SynBioBeta
+
+- name: SynBioBeta
+- type: Conference/Community
+- applications: industry networking, knowledge sharing, biological engineering innovation
+- companies: 
+- maturity: Established annual event
+- description: SynBioBeta is a global community and conference bringing together biological engineers, entrepreneurs, investors, and innovators. The 2026 event focuses on AI and biology integration, highlighting programmable genome editing systems and other breakthroughs. It serves as a key platform for advancing synthetic biology through collaboration and education.
+- trend: Growing influence in synthetic biology ecosystem
+- sources: https://www.syntheticbiologysummit.com/agenda-main, https://www.synbiobeta.com/watch/bridging-biology-and-ai-for-genome-design
+
+### Generative AI for Synthetic Biology
+
+- name: Generative AI for Synthetic Biology
+- type: AI Application Area
+- applications: designing biological parts, biological circuits, genome design, high-throughput genetic design space mapping
+- companies: 
+- maturity: Emerging research field
+- description: Generative AI is being applied to synthetic biology for designing biological parts, circuits, and entire genomes. This approach enables ultra-high throughput mapping of genetic design spaces, significantly accelerating bioengineering workflows. Published research demonstrates its potential to unlock innovations in medicine, agriculture, and sustainability.
+- trend: Fast-growing research and investment area
+- sources: https://www.cell.com/cell-systems/abstract/S2405-4712(26)00015-3, https://www.nature.com/articles/s44385-025-00021-1, https://pubmed.ncbi.nlm.nih.gov/40553349
+
+### AI in Synthetic Biology Market
+
+- name: AI in Synthetic Biology Market
+- type: Industry Sector
+- applications: medicine, agriculture, sustainability, metabolic pathway optimization
+- companies: 
+- maturity: Early growth phase
+- description: The global AI in synthetic biology market was valued at USD 110.78 million in 2025 and is projected to reach USD 492.73 million by 2035. This rapid growth reflects increasing integration of AI tools across bioengineering workflows. Key application areas include medicine, agriculture, and sustainability initiatives driven by metabolic pathway optimization and biological system design.
+- trend: Strong upward trajectory with 5x projected growth
+- sources: https://www.cervicornconsulting.com/artificial-intelligence-in-synthetic-biology-market
+
+### AI-driven synthetic biology tools
+
+- name: AI-driven synthetic biology tools
+- type: Technology Platform
+- applications: Metabolic pathway optimization, High-throughput genome editing, Biological circuit design
+- companies: 
+- maturity: Emerging
+- description: These tools leverage artificial intelligence to streamline bioengineering workflows, from designing genetic parts to optimizing metabolic pathways. They are transforming synthetic biology by accelerating innovation across medicine, agriculture, and sustainability sectors.
+- trend: Rapidly growing
+
+### Microbial cell factories
+
+- name: Microbial cell factories
+- type: Bioproduction System
+- applications: Industrial biotechnology, Metabolic engineering, Sustainable manufacturing
+- companies: 
+- maturity: Commercializing
+- description: Microbial cell factories are engineered organisms designed to produce valuable compounds such as pharmaceuticals, biofuels, and chemicals. By combining synthetic biology with AI-driven design, these systems are becoming more efficient and scalable for industrial applications.
+- trend: Growing
+
+### CRISPR 250项临床试验
+
+- name: CRISPR 250项临床试验
+- type: 基因编辑
+- applications: 基因治疗, 血液病, 遗传病
+- companies: Vertex, CRISPR Therapeutics, Editas, Beam
+- maturity: 临床阶段
+- description: 截至2026年CRISPR Medicine News监测约250项涉及基因编辑治疗候选药物的临床试验，其中150+项正在进行
+- trend: CRISPR从首个批准走向广泛应用
+
+### Cleveland Clinic CRISPR降脂
+
+- name: Cleveland Clinic CRISPR降脂
+- type: 基因编辑
+- applications: 高胆固醇血症, 心血管疾病
+- companies: Verve Therapeutics
+- maturity: I期临床
+- description: Cleveland Clinic首次人体试验显示CRISPR-Cas9一次性输注可将LDL胆固醇降低50%、甘油三酯降低55%
+- trend: 体内CRISPR编辑从罕见病走向常见病
+
+### Casgevy后续扩展
+
+- name: Casgevy后续扩展
+- type: 基因编辑
+- applications: 镰刀型贫血, β地中海贫血
+- companies: Vertex, CRISPR Therapeutics
+- maturity: 已上市
+- description: Casgevy 2023年12月获FDA批准治疗SCD后，持续扩展适应症，2024年EMA批准，2025-2026年推进新适应症
+- trend: 首个CRISPR疗法进入商业化扩展期
+
+### 先导编辑临床推进
+
+- name: 先导编辑临床推进
+- type: 基因编辑
+- applications: 遗传病治疗, 精准修复
+- companies: Prime Medicine
+- maturity: I期临床
+- description: 先导编辑(Prime Editing)可实现大片段精准插入和修复，2025-2026年推进多项I/II期临床试验
+- trend: 先导编辑是CRISPR 2.0核心技术
+
+### 表观遗传编辑
+
+- name: 表观遗传编辑
+- type: 表观遗传编辑
+- applications: 基因调控, 表观治疗
+- companies: Tune Therapeutics, Chroma Medicine
+- maturity: 临床前/早期临床
+- description: 表观遗传编辑不改变DNA序列而是调控基因表达，2025-2026年多家公司进入临床阶段
+- trend: 非切割型编辑提高安全性
+
+### Cas9-Guided Endonuclease
+
+- name: Cas9-Guided Endonuclease
+- type: CRISPR
+- applications: Genome editing, gene knockout, gene insertion, gene therapy
+- companies: CRISPR Therapeutics, Editas Medicine, Caribou Biosciences
+
+### Base Editor System
+
+- name: Base Editor System
+- type: CRISPR
+- applications: Precise point mutations, disease modeling, gene correction without double-strand breaks
+- companies: Beam Therapeutics, Prime Medicine, Verve Therapeutics
+
+### Prime Editing System
+
+- name: Prime Editing System
+- type: CRISPR
+- applications: Precise gene insertions, deletions, and all 12 base-to-base conversions, correcting disease-causing mutations
+- companies: Prime Medicine, Editas Medicine, Verve Therapeutics
+
+### CRISPR-Cas13 System
+
+- name: CRISPR-Cas13 System
+- type: CRISPR
+- applications: RNA targeting, diagnostics (SHERLOCK), RNA therapeutics, gene knockdown
+- companies: Sherlock Biosciences, Mammoth Biosciences, Caribou Biosciences
+
+### Synthetic Operon
+
+- name: Synthetic Operon
+- type: Metabolic Engineering
+- applications: Optimizing metabolic pathways, producing biofuels, pharmaceuticals, and fine chemicals
+- companies: Ginkgo Bioworks, LanzaTech, Zymergen
+
+### Orthogonal Gene Circuit
+
+- name: Orthogonal Gene Circuit
+- type: Metabolic Engineering
+- applications: Decoupled metabolic pathways, dynamic pathway control, robust bioproduction
+- companies: Ginkgo Bioworks, Amyris, Genomatica
+
+### Non-Natural Amino Acid Incorporation
+
+- name: Non-Natural Amino Acid Incorporation
+- type: Metabolic Engineering
+- applications: Protein engineering, creating novel biomaterials, developing new therapeutics
+- companies: Ambrx, Synthorx, Ginkgo Bioworks
+
+### De Novo Pathway Design
+
+- name: De Novo Pathway Design
+- type: Metabolic Engineering
+- applications: Creating entirely new biosynthetic routes for complex molecules, bio-based manufacturing
+- companies: Zymergen, Ginkgo Bioworks, LanzaTech
+
+### Cell-Free Protein Synthesis (CFPS)
+
+- name: Cell-Free Protein Synthesis (CFPS)
+- type: Cell-Free
+- applications: Rapid protein production, toxic protein synthesis, point-of-care therapeutics, vaccine development
+- companies: Sutro Biopharma, Ginkgo Bioworks (cell-free division), Catapult Bio
+
+### Cell-Free Metabolic Engineering Platform
+
+- name: Cell-Free Metabolic Engineering Platform
+- type: Cell-Free
+- applications: Biosynthesis of high-value chemicals, pathway screening without cell viability constraints
+- companies: Ginkgo Bioworks, Zymergen, Sutro Biopharma
+
+### DNA Data Storage System
+
+- name: DNA Data Storage System
+- type: Cell-Free
+- applications: Ultra-dense, long-term digital data archival, information storage in DNA molecules
+- companies: Twist Bioscience, Catalog, Microsoft (DNA Storage Research)
+
+### Biosensor: RNA Aptamer-Based
+
+- name: Biosensor: RNA Aptamer-Based
+- type: Biosensor
+- applications: Detection of small molecules, toxins, and proteins with high specificity, environmental monitoring
+- companies: SomaLogic, Glympse Bio, Molecular Assemblies
+
+### Biosensor: Electrochemical Whole-Cell
+
+- name: Biosensor: Electrochemical Whole-Cell
+- type: Biosensor
+- applications: Real-time detection of pollutants, pathogens, or metabolites in water, soil, and food
+- companies: Aclara BioSciences, BioDevice Group, numerous academic spinouts
+
+### Biosensor: Luciferase Reporter
+
+- name: Biosensor: Luciferase Reporter
+- type: Biosensor
+- applications: High-throughput screening, gene expression analysis, in vivo imaging, toxicity testing
+- companies: Promega, PerkinElmer, Eurofins
+
+### Biosensor: Cell-Free Diagnostic
+
+- name: Biosensor: Cell-Free Diagnostic
+- type: Biosensor
+- applications: Rapid, equipment-free pathogen detection, point-of-care diagnostics, CRISPR-based diagnostics
+- companies: Sherlock Biosciences, Mammoth Biosciences, Mammoth Diagnostics
+
+### CRISPR-Cas9 Variant X
+
+- name: CRISPR-Cas9 Variant X
+- type: CRISPR
+- applications: Gene therapy for genetic disorders, targeted cancer therapies, agricultural trait editing
+- companies: Editas Medicine, CRISPR Therapeutics, Caribou Biosciences
+
+### Methanol-E. coli Chassis
+
+- name: Methanol-E. coli Chassis
+- type: Metabolic Engineering
+- applications: Sustainable production of biofuels, bioplastics, and other chemicals from methanol feedstock
+- companies: LanzaTech, Ginkgo Bioworks, Genomatica
+
+### Cell-Free Protein Synthesis (CFPS) Kit Pro
+
+- name: Cell-Free Protein Synthesis (CFPS) Kit Pro
+- type: Cell-Free
+- applications: On-demand therapeutic protein production, rapid prototyping of enzymes, point-of-care diagnostics
+- companies: Sutro Biopharma, Ginkgo Bioworks (Extract), Amano Enzymes
+
+### Glucose-Responsive Biosensor Array
+
+- name: Glucose-Responsive Biosensor Array
+- type: Biosensor
+- applications: Continuous glucose monitoring for diabetes management, bioprocess monitoring, food safety testing
+- companies: Dexcom, Abbott Laboratories, Abaxis
+
+### Base Editing Platform Prime
+
+- name: Base Editing Platform Prime
+- type: CRISPR
+- applications: Precise single-base changes for correcting point mutations, without double-strand breaks
+- companies: Beam Therapeutics, Prime Medicine, Verve Therapeutics
+
+### Yeast-Cellulose Production Strain
+
+- name: Yeast-Cellulose Production Strain
+- type: Metabolic Engineering
+- applications: Conversion of non-food biomass (cellulose) into biofuels and high-value chemicals
+- companies: LanzaJet, Gevo, Amyris
+
+### Microfluidic Cell-Free System
+
+- name: Microfluidic Cell-Free System
+- type: Cell-Free
+- applications: High-throughput screening of genetic circuits, accelerated prototyping, personalized medicines
+- companies: Tune Therapeutics, Ginkgo Bioworks, Berkeley Lights
+
+### Pathogen-Detect RNA Biosensor
+
+- name: Pathogen-Detect RNA Biosensor
+- type: Biosensor
+- applications: Rapid, field-deployable detection of viral and bacterial RNA, pandemic surveillance
+- companies: Mologic, Mammoth Biosciences, Sherlock Biosciences
+
+### CRISPR-Cas13 Antiviral System
+
+- name: CRISPR-Cas13 Antiviral System
+- type: CRISPR
+- applications: Detection and targeted degradation of specific RNA viruses, broad-spectrum antiviral therapy
+- companies: Sherlock Biosciences, Excision BioTherapeutics, Caribou Biosciences
+
+### Algae-Based Astaxanthin Strain
+
+- name: Algae-Based Astaxanthin Strain
+- type: Metabolic Engineering
+- applications: Sustainable, high-yield production of the antioxidant astaxanthin for nutraceuticals and animal feed
+- companies: Cyanotech, Algenuity, Synthetic Genomics
+
+### Cell-Free Metabolic Pathway Kit
+
+- name: Cell-Free Metabolic Pathway Kit
+- type: Cell-Free
+- applications: Rapid assembly and testing of biosynthetic pathways for drug and chemical discovery
+- companies: Ginkgo Bioworks, Sutro Biopharma, Cytiva
+
+### Heavy Metal Ion Fluorescent Reporter
+
+- name: Heavy Metal Ion Fluorescent Reporter
+- type: Biosensor
+- applications: Environmental monitoring of lead, mercury, and arsenic in water and soil, industrial process control
+- companies: Neogen, Eurofins, Pall Corporation
+
+### Prime Editing 2.0 System
+
+- name: Prime Editing 2.0 System
+- type: CRISPR
+- applications: Versatile gene writing for precise insertions, deletions, and all base-to-base conversions
+- companies: Prime Medicine, Beam Therapeutics, Verve Therapeutics
+
+### Pseudomonas Denitrification Strain
+
+- name: Pseudomonas Denitrification Strain
+- type: Metabolic Engineering
+- applications: Bioremediation of nitrate-contaminated groundwater and wastewater, industrial nitrogen removal
+- companies: Genomatica, LanzaTech, Ginkgo Bioworks
+
+### Toxin-Responsive Colorimetric Biosensor
+
+- name: Toxin-Responsive Colorimetric Biosensor
+- type: Biosensor
+- applications: Visual detection of foodborne toxins (e.g., aflatoxin), safety screening for raw materials
+- companies: Neogen, Romer Labs, 3M Company
 
 ## longevity_tech
 
-### LONG-001
+### Senolytics
 
 - name: Senolytics
 - type: Anti-aging therapy
@@ -81,7 +5206,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: Clinical trials; Unity Biotechnology's UBX1325 in Phase 2 for age-related eye disease
 - developer: Unity Biotechnology, Oisín Biotechnologies, Mayo Clinic
 
-### LONG-002
+### NAD+ Repletion
 
 - name: NAD+ Repletion
 - type: Metabolic enhancement
@@ -90,7 +5215,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: NMN/NR supplements widely available; clinical trials ongoing; FDA challenged NMN as supplement in 2023
 - developer: ChromaDex (NR), Metro Biotech (NMN), Elysium Health
 
-### LONG-003
+### mTOR Inhibition (Rapamycin)
 
 - name: mTOR Inhibition (Rapamycin)
 - type: Drug-based longevity
@@ -99,7 +5224,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: Off-label use growing; dog longevity trials (RAPID, TRUTH); human trials planned
 - developer: ResTORbio (now part of EQRx), AgelessRx, University of Washington
 
-### LONG-004
+### Epigenetic Reprogramming (Yamanaka Factors)
 
 - name: Epigenetic Reprogramming (Yamanaka Factors)
 - type: Cellular rejuvenation
@@ -108,7 +5233,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: Altos Labs ($3B funded); Turn Biotechnologies; in vivo mouse studies show rejuvenation of multiple tissues
 - developer: Altos Labs, Turn Bio, AgeX, Ovelle Therapeutics
 
-### LONG-005
+### Metformin (TAME Study)
 
 - name: Metformin (TAME Study)
 - type: Drug-based longevity
@@ -117,7 +5242,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: TAME study funded ($65M+); enrolling 3,000+ participants aged 65-79; results expected 2026-2028
 - developer: AFAR (American Federation for Aging Research), Nir Barzilai (Einstein)
 
-### LONG-006
+### Telomere Extension
 
 - name: Telomere Extension
 - type: Genomic stability
@@ -126,7 +5251,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: BioViva CEO received telomerase gene therapy (2015, unverified); Libella Gene Therapeutics clinical trial in Colombia; no FDA-approved treatment
 - developer: BioViva, Libella Gene Therapeutics, Sierra Sciences
 
-### LONG-007
+### Growth Differentiation Factor 11 (GDF11)
 
 - name: Growth Differentiation Factor 11 (GDF11)
 - type: Parabiosis-derived factor
@@ -135,7 +5260,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: Controversial - some groups couldn't replicate; Alkahest (now Grifols) developing plasma-derived therapies
 - developer: Alkahest/Grifols, Wyss-Coray lab (Stanford)
 
-### LONG-008
+### Klotho Protein
 
 - name: Klotho Protein
 - type: Circulating longevity factor
@@ -144,9 +5269,51 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - status: UCSF showing Klotho boosts cognition in old monkeys (2023); human trials being planned
 - developer: UCSF (Dena Dubal), Klogene Therapeutics
 
+## biotech_tools
+
+### AlphaFold / AlphaFold3
+
+- name: AlphaFold / AlphaFold3
+- type: Protein structure prediction
+- description: DeepMind's AI that predicts 3D protein structures from amino acid sequences. AlphaFold2 solved the 50-year protein folding problem; AlphaFold3 predicts protein-ligand, DNA, RNA interactions.
+- application: Drug design, enzyme engineering, understanding disease mutations
+- developer: Google DeepMind / Isomorphic Labs
+
+### CRISPR-Cas13 (RNA Editing)
+
+- name: CRISPR-Cas13 (RNA Editing)
+- type: Gene editing tool
+- description: Targets RNA instead of DNA, enabling transient gene regulation without permanent genome changes. Safer for therapeutic use as effects are reversible.
+- application: Viral infection, RNA splicing disorders, transient gene knockdown
+- developer: Astellas (acquired Editas RNA program), Aera Therapeutics
+
+### Base Editing
+
+- name: Base Editing
+- type: Gene editing tool
+- description: Precise single-nucleotide changes without double-strand breaks. Converts C→T or A→G with minimal off-target effects. Verve Therapeutics using base editing to permanently lower cholesterol.
+- application: Point mutation diseases, cardiovascular risk reduction, sickle cell disease
+- developer: Beam Therapeutics, Verve Therapeutics, Prime Medicine
+
+### Prime Editing
+
+- name: Prime Editing
+- type: Gene editing tool
+- description: Search-and-replace genome editing that can make any small edit (substitutions, insertions, deletions) without double-strand breaks or donor DNA templates.
+- application: Precise correction of disease-causing mutations
+- developer: Prime Medicine (IPO 2022); David Liu lab (Broad Institute)
+
+### Spatial Transcriptomics
+
+- name: Spatial Transcriptomics
+- type: Analytical tool
+- description: Measuring gene expression while preserving spatial location in tissue. Reveals cellular neighborhoods and tissue organization at unprecedented resolution.
+- application: Cancer microenvironment, brain cell atlas, developmental biology
+- developer: 10x Genomics (Visium, Xenium), Vizgen (MERFISH), NanoString (CosMx)
+
 ## regenerative_medicine
 
-### REGEN-001
+### iPSC-Derived Cell Therapies
 
 - name: iPSC-Derived Cell Therapies
 - type: Cell therapy
@@ -154,7 +5321,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - application: Macular degeneration, Parkinson's, heart failure, spinal cord injury
 - status: iPSC-derived corneal cells (2023) and NK cells (2024) approved in Japan; many trials globally
 
-### REGEN-002
+### 3D Bioprinting of Organs
 
 - name: 3D Bioprinting of Organs
 - type: Tissue engineering
@@ -162,7 +5329,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - application: Skin grafts, cartilage, blood vessels, kidney, liver, heart
 - status: 3D-printed ear (3DBio/Princeton, 2022) and skin (POIETIS) in clinical use; whole organs still years away
 
-### REGEN-003
+### Exosome Therapy
 
 - name: Exosome Therapy
 - type: Paracrine signaling
@@ -170,7 +5337,7 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - application: Wound healing, cardiac repair, neuroprotection, hair growth
 - status: Cosmetic applications commercial; clinical trials for heart failure and wound healing
 
-### REGEN-004
+### Gene Therapy for Regeneration
 
 - name: Gene Therapy for Regeneration
 - type: Gene therapy
@@ -178,3 +5345,35 @@ Life science knowledge base - synthetic biology, longevity, regenerative medicin
 - application: Heart failure, peripheral artery disease, spinal cord injury
 - status: Adstiladrin (adenoviral IFNα2b for bladder cancer) approved; regenerative gene therapies in Phase 2-3
 
+## bioethics
+
+### Human Germline Editing Moratorium
+
+- name: Human Germline Editing Moratorium
+- topic: Gene editing ethics
+- description: International consensus against heritable human genome editing until safety and societal implications are resolved. He Jiankui's 2018 CRISPR babies violated this consensus.
+- controversy: Potential to eliminate genetic diseases vs. risk of eugenics, unintended consequences, and inequality
+- regulation: 73 countries ban or restrict heritable genome editing; WHO global governance framework (2021)
+
+### Synthetic Biology Biosecurity
+
+- name: Synthetic Biology Biosecurity
+- topic: Dual-use research
+- description: The same tools that enable beneficial synthetic biology (DNA synthesis, gene editing) could be used to create harmful pathogens. DNA screening and biosecurity frameworks are evolving.
+- controversy: Open science vs. security; democratization of biotech increases both innovation and risk
+- regulation: US DNA synthesis screening guidelines (2024); HHS Tier 1 select agent oversight; IBBS international biosecurity
+
+### Longevity Inequality
+
+- name: Longevity Inequality
+- topic: Social justice
+- description: If anti-aging therapies work, they may initially be available only to the wealthy, exacerbating health and lifespan inequality.
+- controversy: Life extension as a human right vs. luxury good; who pays for longevity treatments?
+- regulation: No specific regulation; Medicare/insurance coverage debates will intensify as therapies emerge
+
+## Related Knowledge Bases
+
+- GeneTech (https://genetech.tools): Gene editing enables synthetic biology
+- TCMDB (https://tcm.genetech.tools): Natural compounds in synthetic biology
+- EnergyDB (https://energy.genetech.tools): Biofuels and bioenergy
+- BioComputeDB (https://biocompute.genetech.tools): Synthetic biology gene circuits for biocomputing

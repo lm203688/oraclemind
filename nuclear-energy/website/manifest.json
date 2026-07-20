@@ -1,0 +1,9 @@
+{
+  "name": "Nuclear Energy",
+  "short_name": "Nuclear Ener",
+  "description": "Nuclear energy knowledge base with 438 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "agent-trust-videos",
+  "version": "1.0.0",
+  "description": "TikTok promo videos for agent-trust-protocol",
+  "scripts": {
+    "render:demo": "remotion render src/index.tsx AgentTrustDemo out/agent-trust-demo.mp4",
+    "render:story": "remotion render src/index.tsx AgentTrustStory out/agent-trust-story.mp4",
+    "render:all": "remotion render src/index.tsx AgentTrustDemo out/agent-trust-demo.mp4 && remotion render src/index.tsx AgentTrustStory out/agent-trust-story.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.290",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.290"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "@types/web": "0.0.150",
+    "typescript": "5.6.3"
+  }
+}

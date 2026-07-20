@@ -1,0 +1,9 @@
+{
+  "name": "Deep Sea Tech",
+  "short_name": "Deep Sea Tec",
+  "description": "Deep sea technology with 455 entities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6"
+}

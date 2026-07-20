@@ -1,11 +1,11 @@
 const DB = {
-  "updated": "2026-06-27T14:56:55.216Z",
+  "updated": "2026-06-28T04:01:10.257Z",
   "stats": {
-    "energy_storage": 8,
+    "energy_storage": 38,
     "grid_tech": 76,
-    "hydrogen_energy": 95,
+    "hydrogen_energy": 125,
     "nuclear_renewable": 2,
-    "solar": 136,
+    "solar": 166,
     "solar_tech": 8,
     "storage": 113,
     "wind_energy": 75
@@ -82,6 +82,216 @@ const DB = {
       "efficiency": "80-85% (projected)",
       "description": "Raises heavy blocks or masses using excess electricity, then lowers them to generate power. Energy Vault's EVx uses composite blocks in a tower. Simple, long-life, no degradation.",
       "developer": "Energy Vault, Gravitricity, Gravity Power"
+    },
+    {
+      "id": "STO-114",
+      "name": "NMC 811 Grid Pack",
+      "type": "Li-ion",
+      "energy_density": "250 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-115",
+      "name": "LFP Home Battery",
+      "type": "Li-ion",
+      "energy_density": "160 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-116",
+      "name": "Sulfur-Based Solid-State",
+      "type": "solid-state",
+      "energy_density": "400 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-117",
+      "name": "Oxide Ceramic Solid-State",
+      "type": "solid-state",
+      "energy_density": "350 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-118",
+      "name": "Vanadium Redox Flow",
+      "type": "flow battery",
+      "energy_density": "25 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-119",
+      "name": "Zinc-Bromine Flow",
+      "type": "flow battery",
+      "energy_density": "50 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-120",
+      "name": "Advanced Gravity Storage",
+      "type": "gravity",
+      "energy_density": "5 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-121",
+      "name": "Diabatic CAES Unit",
+      "type": "CAES",
+      "energy_density": "2 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-122",
+      "name": "Adiabatic CAES Unit",
+      "type": "CAES",
+      "energy_density": "3 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-123",
+      "name": "Molten Salt Thermal",
+      "type": "thermal",
+      "energy_density": "30 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-124",
+      "name": "Pumped Heat Thermal",
+      "type": "thermal",
+      "energy_density": "15 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-125",
+      "name": "Silicon-Anode Li-ion",
+      "type": "Li-ion",
+      "energy_density": "450 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-126",
+      "name": "Solid Polymer Electrolyte",
+      "type": "solid-state",
+      "energy_density": "300 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-127",
+      "name": "Organic Flow Battery",
+      "type": "flow battery",
+      "energy_density": "35 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-128",
+      "name": "Concrete Gravity Blocks",
+      "type": "gravity",
+      "energy_density": "4 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-129",
+      "name": "NMC-811 Li-ion Pack",
+      "type": "Li-ion",
+      "energy_density": "250 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-130",
+      "name": "LFP Prismatic Cell Module",
+      "type": "Li-ion",
+      "energy_density": "160 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-131",
+      "name": "Solid-State Electrolyte Unit",
+      "type": "solid-state",
+      "energy_density": "400 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-132",
+      "name": "Sulfide-Based Solid-State Battery",
+      "type": "solid-state",
+      "energy_density": "350 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-133",
+      "name": "Vanadium Redox Flow System",
+      "type": "flow battery",
+      "energy_density": "25 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-134",
+      "name": "Zinc-Bromine Flow Battery",
+      "type": "flow battery",
+      "energy_density": "50 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-135",
+      "name": "Iron-Chromium Flow Unit",
+      "type": "flow battery",
+      "energy_density": "15 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-136",
+      "name": "Pumped Hydro Gravity Storage",
+      "type": "gravity",
+      "energy_density": "0.5 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-137",
+      "name": "Advanced Rock Mass Lift System",
+      "type": "gravity",
+      "energy_density": "1.0 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-138",
+      "name": "Diabatic CAES Plant",
+      "type": "CAES",
+      "energy_density": "2.0 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-139",
+      "name": "Adiabatic CAES Module",
+      "type": "CAES",
+      "energy_density": "3.0 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-140",
+      "name": "Molten Salt Thermal Tank",
+      "type": "thermal",
+      "energy_density": "30 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-141",
+      "name": "Packed Bed Rock Storage",
+      "type": "thermal",
+      "energy_density": "5 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-142",
+      "name": "Phase Change Material Unit",
+      "type": "thermal",
+      "energy_density": "80 Wh/L",
+      "cycles": 1000
+    },
+    {
+      "id": "STO-143",
+      "name": "Liquid Air Energy Storage",
+      "type": "thermal",
+      "energy_density": "20 Wh/L",
+      "cycles": 1000
     }
   ],
   "grid_tech": [
@@ -2705,6 +2915,216 @@ const DB = {
       ],
       "description": "Synergen双共产品电解槽同时生产绿氢和高价值化学品，通过副产物收入降低绿氢平准化成本",
       "trend": "绿氢+化学品联产提升经济性"
+    },
+    {
+      "id": "HYD-96",
+      "name": "Proton Exchange Membrane Electrolyzer",
+      "type": "Electrolysis",
+      "efficiency": "70-80%",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-97",
+      "name": "Solid Oxide Electrolyzer Cell",
+      "type": "Electrolysis",
+      "efficiency": "85-95%",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-98",
+      "name": "Alkaline Water Electrolyzer",
+      "type": "Electrolysis",
+      "efficiency": "60-70%",
+      "cost": "Low"
+    },
+    {
+      "id": "HYD-99",
+      "name": "PEM Fuel Cell Stack",
+      "type": "Fuel Cell",
+      "efficiency": "40-60%",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-100",
+      "name": "Solid Oxide Fuel Cell",
+      "type": "Fuel Cell",
+      "efficiency": "50-65%",
+      "cost": "Very High"
+    },
+    {
+      "id": "HYD-101",
+      "name": "Molten Carbonate Fuel Cell",
+      "type": "Fuel Cell",
+      "efficiency": "45-60%",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-102",
+      "name": "High-Pressure Gaseous Storage",
+      "type": "Storage",
+      "efficiency": "N/A",
+      "cost": "Low"
+    },
+    {
+      "id": "HYD-103",
+      "name": "Liquid Organic Hydrogen Carrier (LOHC)",
+      "type": "Storage",
+      "efficiency": "N/A",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-104",
+      "name": "Metal Hydride Storage",
+      "type": "Storage",
+      "efficiency": "N/A",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-105",
+      "name": "Cryogenic Liquid Hydrogen Tank",
+      "type": "Storage",
+      "efficiency": "N/A",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-106",
+      "name": "Tube Trailer Transport",
+      "type": "Transport",
+      "efficiency": "N/A",
+      "cost": "Low"
+    },
+    {
+      "id": "HYD-107",
+      "name": "Liquid Hydrogen Tanker Truck",
+      "type": "Transport",
+      "efficiency": "N/A",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-108",
+      "name": "Pipeline Network",
+      "type": "Transport",
+      "efficiency": "N/A",
+      "cost": "Very High"
+    },
+    {
+      "id": "HYD-109",
+      "name": "Ammonia Carrier Ship",
+      "type": "Transport",
+      "efficiency": "N/A",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-110",
+      "name": "Solid-State Hydrogen Transport",
+      "type": "Transport",
+      "efficiency": "N/A",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-111",
+      "name": "Alkaline Water Electrolyzer",
+      "type": "electrolysis",
+      "efficiency": "60-70%",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-112",
+      "name": "PEM (Proton Exchange Membrane) Electrolyzer",
+      "type": "electrolysis",
+      "efficiency": "70-80%",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-113",
+      "name": "Solid Oxide Electrolyzer Cell (SOEC)",
+      "type": "electrolysis",
+      "efficiency": "85-95%",
+      "cost": "Very High"
+    },
+    {
+      "id": "HYD-114",
+      "name": "Anion Exchange Membrane (AEM) Electrolyzer",
+      "type": "electrolysis",
+      "efficiency": "60-75%",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-115",
+      "name": "Proton Exchange Membrane (PEM) Fuel Cell",
+      "type": "fuel_cell",
+      "efficiency": "40-60%",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-116",
+      "name": "Solid Oxide Fuel Cell (SOFC)",
+      "type": "fuel_cell",
+      "efficiency": "50-65%",
+      "cost": "Very High"
+    },
+    {
+      "id": "HYD-117",
+      "name": "Molten Carbonate Fuel Cell (MCFC)",
+      "type": "fuel_cell",
+      "efficiency": "45-60%",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-118",
+      "name": "Phosphoric Acid Fuel Cell (PAFC)",
+      "type": "fuel_cell",
+      "efficiency": "40-50%",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-119",
+      "name": "High-Pressure Gas Storage (Type IV Tank)",
+      "type": "storage",
+      "efficiency": "N/A",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-120",
+      "name": "Liquid Organic Hydrogen Carrier (LOHC)",
+      "type": "storage",
+      "efficiency": "N/A",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-121",
+      "name": "Underground Hydrogen Storage (Salt Cavern)",
+      "type": "storage",
+      "efficiency": "N/A",
+      "cost": "Very High (Setup), Low (Operational)"
+    },
+    {
+      "id": "HYD-122",
+      "name": "Metal Hydride Storage",
+      "type": "storage",
+      "efficiency": "N/A",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-123",
+      "name": "Compressed Hydrogen Tube Trailers",
+      "type": "transport",
+      "efficiency": "N/A",
+      "cost": "Medium"
+    },
+    {
+      "id": "HYD-124",
+      "name": "Liquid Hydrogen Tankers",
+      "type": "transport",
+      "efficiency": "N/A",
+      "cost": "High"
+    },
+    {
+      "id": "HYD-125",
+      "name": "Pipeline Transport (Dedicated H2)",
+      "type": "transport",
+      "efficiency": "N/A",
+      "cost": "Very High (Setup), Low (Operational)"
     }
   ],
   "main": [],
@@ -5303,6 +5723,216 @@ const DB = {
       ],
       "description": "TOPCon电池量产效率持续提升至26.5%以上，已成为新建产能主流选择，加速替代PERC",
       "trend": "TOPCon是当前PV产业主力，叠层是下一代方向"
+    },
+    {
+      "id": "SOL-137",
+      "name": "QuantumDot Perovskite",
+      "type": "perovskite",
+      "efficiency": "25.8%",
+      "cost": "0.18 USD/W"
+    },
+    {
+      "id": "SOL-138",
+      "name": "Stability Shield Tandem",
+      "type": "tandem",
+      "efficiency": "31.2%",
+      "cost": "0.25 USD/W"
+    },
+    {
+      "id": "SOL-139",
+      "name": "Helios CPV Array",
+      "type": "CPV",
+      "efficiency": "38.5%",
+      "cost": "0.45 USD/W"
+    },
+    {
+      "id": "SOL-140",
+      "name": "CIGS Ultra-Thin",
+      "type": "thin film",
+      "efficiency": "18.7%",
+      "cost": "0.15 USD/W"
+    },
+    {
+      "id": "SOL-141",
+      "name": "Silicon HJT Alpha",
+      "type": "heterojunction",
+      "efficiency": "26.4%",
+      "cost": "0.22 USD/W"
+    },
+    {
+      "id": "SOL-142",
+      "name": "Perovskite-on-Silicon Tandem",
+      "type": "tandem",
+      "efficiency": "33.1%",
+      "cost": "0.28 USD/W"
+    },
+    {
+      "id": "SOL-143",
+      "name": "Triple-Junction CPV-X",
+      "type": "CPV",
+      "efficiency": "40.1%",
+      "cost": "0.55 USD/W"
+    },
+    {
+      "id": "SOL-144",
+      "name": "CdTe FlexFilm",
+      "type": "thin film",
+      "efficiency": "19.2%",
+      "cost": "0.17 USD/W"
+    },
+    {
+      "id": "SOL-145",
+      "name": "Tandem Organic PV",
+      "type": "tandem",
+      "efficiency": "17.5%",
+      "cost": "0.12 USD/W"
+    },
+    {
+      "id": "SOL-146",
+      "name": "IBC HJT Premium",
+      "type": "heterojunction",
+      "efficiency": "25.1%",
+      "cost": "0.24 USD/W"
+    },
+    {
+      "id": "SOL-147",
+      "name": "Perovskite Industrial Coating",
+      "type": "perovskite",
+      "efficiency": "22.3%",
+      "cost": "0.16 USD/W"
+    },
+    {
+      "id": "SOL-148",
+      "name": "GaAs Thin-Film CPV",
+      "type": "CPV",
+      "efficiency": "29.8%",
+      "cost": "0.60 USD/W"
+    },
+    {
+      "id": "SOL-149",
+      "name": "a-Si/μc-Si Tandem",
+      "type": "tandem",
+      "efficiency": "13.8%",
+      "cost": "0.10 USD/W"
+    },
+    {
+      "id": "SOL-150",
+      "name": "Perovskite PV-Ready Module",
+      "type": "perovskite",
+      "efficiency": "21.0%",
+      "cost": "0.20 USD/W"
+    },
+    {
+      "id": "SOL-151",
+      "name": "HJT Low-B Silicon",
+      "type": "heterojunction",
+      "efficiency": "24.5%",
+      "cost": "0.21 USD/W"
+    },
+    {
+      "id": "SOL-152",
+      "name": "Helios Perovskite Coating",
+      "type": "perovskite",
+      "efficiency": "25.4%",
+      "cost": "$0.18/W"
+    },
+    {
+      "id": "SOL-153",
+      "name": "Quantum Dot Tandem Cell",
+      "type": "tandem",
+      "efficiency": "31.2%",
+      "cost": "$0.35/W"
+    },
+    {
+      "id": "SOL-154",
+      "name": "Aurora HJT Module",
+      "type": "heterojunction",
+      "efficiency": "24.1%",
+      "cost": "$0.28/W"
+    },
+    {
+      "id": "SOL-155",
+      "name": "Canyon CPV Array",
+      "type": "CPV",
+      "efficiency": "29.8%",
+      "cost": "$0.42/W"
+    },
+    {
+      "id": "SOL-156",
+      "name": "Cadmium Telluride FlexFilm",
+      "type": "thin film",
+      "efficiency": "19.5%",
+      "cost": "$0.15/W"
+    },
+    {
+      "id": "SOL-157",
+      "name": "Perovskite-Silicon Tandem Gen 2",
+      "type": "tandem",
+      "efficiency": "33.7%",
+      "cost": "$0.40/W"
+    },
+    {
+      "id": "SOL-158",
+      "name": "CIGS Ultra-Thin",
+      "type": "thin film",
+      "efficiency": "22.3%",
+      "cost": "$0.22/W"
+    },
+    {
+      "id": "SOL-159",
+      "name": "Silicon HJT Evo",
+      "type": "heterojunction",
+      "efficiency": "25.0%",
+      "cost": "$0.30/W"
+    },
+    {
+      "id": "SOL-160",
+      "name": "Triple-Junction CPV System",
+      "type": "CPV",
+      "efficiency": "37.9%",
+      "cost": "$0.85/W"
+    },
+    {
+      "id": "SOL-161",
+      "name": "Stable Lead-Free Perovskite",
+      "type": "perovskite",
+      "efficiency": "23.8%",
+      "cost": "$0.25/W"
+    },
+    {
+      "id": "SOL-162",
+      "name": "Perovskite-PVDF Hybrid Film",
+      "type": "thin film",
+      "efficiency": "21.0%",
+      "cost": "$0.20/W"
+    },
+    {
+      "id": "SOL-163",
+      "name": " tandem CIGS-Silicon",
+      "type": "tandem",
+      "efficiency": "28.5%",
+      "cost": "$0.32/W"
+    },
+    {
+      "id": "SOL-164",
+      "name": "Smart HJT bifacial",
+      "type": "heterojunction",
+      "efficiency": "26.2%",
+      "cost": "$0.33/W"
+    },
+    {
+      "id": "SOL-165",
+      "name": "Organic Perovskite Cell",
+      "type": "perovskite",
+      "efficiency": "18.9%",
+      "cost": "$0.12/W"
+    },
+    {
+      "id": "SOL-166",
+      "name": "a-Si/μc-Si Thin Film Stack",
+      "type": "thin film",
+      "efficiency": "13.8%",
+      "cost": "$0.10/W"
     }
   ],
   "solar_tech": [

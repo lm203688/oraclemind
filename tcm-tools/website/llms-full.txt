@@ -1,420 +1,112 @@
-# TCMDB - 中药方剂知识引擎 - 中药、方剂、疾病、药理
+# TCMDB - 中药方剂知识引擎
 
-Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmacology
-
-## diseases
-
-### TCMBANKDI000001
-
-- name: Stomach Neoplasms
-- category: diseases
-- description: Stomach Neoplasms — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000002
-
-- name: Hyperalgesia
-- category: diseases
-- description: Hyperalgesia — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000003
-
-- name: Encephalitis
-- category: diseases
-- description: Encephalitis — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000004
-
-- name: Chronic pain
-- category: diseases
-- description: Chronic pain — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000005
-
-- name: Autoimmune Diseases
-- category: diseases
-- description: Autoimmune Diseases — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000006
-
-- name: Nasopharyngeal Neoplasms
-- category: diseases
-- description: Nasopharyngeal Neoplasms — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000007
-
-- name: melanoma
-- category: diseases
-- description: melanoma — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000008
-
-- name: Brain Neoplasms
-- category: diseases
-- description: Brain Neoplasms — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000009
-
-- name: Glioma
-- category: diseases
-- description: Glioma — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000022
-
-- name: Prostatic Neoplasms
-- category: diseases
-- description: Prostatic Neoplasms — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000053
-
-- name: leukemia
-- category: diseases
-- description: leukemia — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000082
-
-- name: Nasopharyngeal carcinoma
-- category: diseases
-- description: Nasopharyngeal carcinoma — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000085
-
-- name: Inflammation
-- category: diseases
-- description: Inflammation — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000086
-
-- name: Colonic Neoplasms
-- category: diseases
-- description: Colonic Neoplasms — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000090
-
-- name: Acute kidney injury
-- category: diseases
-- description: Acute kidney injury — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000047
-
-- name: Neoplasm Metastasis
-- category: diseases
-- description: Neoplasm Metastasis — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000038
-
-- name: Vomiting
-- category: diseases
-- description: Vomiting — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000080
-
-- name: Anemia
-- category: diseases
-- description: Anemia — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000450
-
-- name: Hypertrophic Cardiomyopathy
-- category: diseases
-- description: Hypertrophic Cardiomyopathy — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000019
-
-- name: Parkinson Disease
-- category: diseases
-- description: Parkinson Disease — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000023
-
-- name: Lupus Erythematosus, Systemic
-- category: diseases
-- description: Lupus Erythematosus, Systemic — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000017
-
-- name: Liver Cirrhosis
-- category: diseases
-- description: Liver Cirrhosis — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000018
-
-- name: Pancreatic Neoplasm
-- category: diseases
-- description: Pancreatic Neoplasm — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000026
-
-- name: Obesity
-- category: diseases
-- description: Obesity — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000027
-
-- name: Cardiovascular Diseases
-- category: diseases
-- description: Cardiovascular Diseases — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000031
-
-- name: Insulin Resistance
-- category: diseases
-- description: Insulin Resistance — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000015
-
-- name: Lichen Planus, Oral
-- category: diseases
-- description: Lichen Planus, Oral — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000012
-
-- name: Immunosuppression
-- category: diseases
-- description: Immunosuppression — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000028
-
-- name: Body mass index
-- category: diseases
-- description: Body mass index — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI003326
-
-- name: High density lipoprotein measurement
-- category: diseases
-- description: High density lipoprotein measurement — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI007408
-
-- name: Corpuscular Hemoglobin Concentration Mean
-- category: diseases
-- description: Corpuscular Hemoglobin Concentration Mean — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI007749
-
-- name: Hematocrit procedure
-- category: diseases
-- description: Hematocrit procedure — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI008850
-
-- name: Malignant neoplasm of stomach
-- category: diseases
-- description: Malignant neoplasm of stomach — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000048
-
-- name: Neoplasms
-- category: diseases
-- description: Neoplasms — TCMBANK收录的疾病/适应症实体
-
-### TCMBANKDI000813
-
-- name: CAMPOMELIC DYSPLASIA
-- category: diseases
-- description: CAMPOMELIC DYSPLASIA — TCMBANK收录的疾病/适应症实体
-
-### DISEASE-abc123
-
-- name: 慢性阻塞性肺疾病
-- type: 呼吸系统疾病
-- prevalence: 全球主要公共卫生负担之一
-- genetic_cause: 
-- available_therapies: 中西医结合治疗
-- clinical_trials: 2023年成立共识专家组围绕临床关键问题研究
-- description: 严重危害人类健康，是全球主要公共卫生负担之一，2023年成立共识专家组围绕中西医结合临床关键问题进行研究
-- last_updated: 2026-06-27T15:55:11.625Z
-
-### DISEASE-def456
-
-- name: 类风湿关节炎
-- type: 自身免疫性疾病
-- prevalence: 
-- genetic_cause: 
-- available_therapies: 有毒中药治疗
-- clinical_trials: 有毒中药治疗类风湿关节炎合理应用指南
-- description: 有毒中药治疗类风湿关节炎合理应用指南相关疾病
-- last_updated: 2026-06-27T15:55:11.625Z
-
-### DISEASE-ghi789
-
-- name: 冠心病血瘀证
-- type: 心血管疾病
-- prevalence: 
-- genetic_cause: 
-- available_therapies: 
-- clinical_trials: 国际冠心病血瘀证诊断指南
-- description: 国际冠心病血瘀证诊断指南相关疾病
-- last_updated: 2026-06-27T15:55:11.625Z
-
-### DISEASE-jkl012
-
-- name: 睡眠障碍
-- type: 神经系统疾病
-- prevalence: 
-- genetic_cause: 
-- available_therapies: 
-- clinical_trials: 
-- description: 睡眠相关疾病
-- last_updated: 2026-06-27T15:55:11.625Z
-
-## formulas
-
-### FORMULA-abc123
-
-- name_cn: 红景天方
-- name_en: Rhodiola Formula
-- composition: 红景天
-- indication: 高原反应、疲劳、免疫力低下
-- mechanism: 提高机体抗缺氧能力，增强免疫功能
-- description: 用于缓解高原反应，改善疲劳状态，增强机体抵抗力
-- last_updated: 2026-06-27T15:55:02.954Z
-
-### FORMULA-def456
-
-- name_cn: 川贝母方
-- name_en: Fritillaria Formula
-- composition: 川贝母
-- indication: 咳嗽、痰多、咽喉肿痛
-- mechanism: 清热润肺，化痰止咳
-- description: 用于治疗肺热咳嗽，痰多粘稠，咽喉肿痛等症状
-- last_updated: 2026-06-27T15:55:02.954Z
-
-### FORMULA-ghi789
-
-- name_cn: 人工麝香方
-- name_en: Artificial Musk Formula
-- composition: 人工麝香
-- indication: 胸痹心痛、心绞痛
-- mechanism: 活血化瘀，通络止痛
-- description: 用于治疗胸痹心痛，心绞痛等心血管疾病
-- last_updated: 2026-06-27T15:55:02.954Z
-
-### FORMULA-jkl012
-
-- name_cn: 中药配方颗粒
-- name_en: Chinese Medicine Formula Granules
-- composition: 多种中药提取物
-- indication: 多种疾病治疗
-- mechanism: 根据方剂配伍理论，发挥综合治疗作用
-- description: 现代中药剂型，便于携带和使用，符合传统方剂配伍理论
-- last_updated: 2026-06-27T15:55:02.954Z
-
-### FORMULA-mno345
-
-- name_cn: 中成药
-- name_en: Chinese Patent Medicine
-- composition: 多种中药成分
-- indication: 多种疾病治疗
-- mechanism: 根据经典方剂制成，具有特定治疗作用
-- description: 经国家批准生产的标准化中药制剂，便于临床使用
-- last_updated: 2026-06-27T15:55:02.954Z
+Traditional Chinese Medicine knowledge base with herbs, diseases, innovative drugs, pharmacology research, and clinical/market data
 
 ## herbs
 
-### TCMBANKHE000001
+### Turpentine Oil
 
 - name: Turpentine Oil
 - category: herbs
 - description: Turpentine Oil — TCMBANK收录的中药材实体
 
-### TCMBANKHE000022
+### Echinacea
 
 - name: Echinacea
 - category: herbs
 - description: Echinacea — TCMBANK收录的中药材实体
 
-### TCMBANKHE000298
+### Leaf of Pendulous Monkshood
 
 - name: Leaf of Pendulous Monkshood
 - category: herbs
 - description: Leaf of Pendulous Monkshood — TCMBANK收录的中药材实体
 
-### TCMBANKHE002073
+### Hemsley Rockvine Root
 
 - name: Hemsley Rockvine Root
 - category: herbs
 - description: Hemsley Rockvine Root — TCMBANK收录的中药材实体
 
-### TCMBANKHE002865
+### Spiceleaf Kernel Oil
 
 - name: Spiceleaf Kernel Oil
 - category: herbs
 - description: Spiceleaf Kernel Oil — TCMBANK收录的中药材实体
 
-### TCMBANKHE000667
+### Pig Theroid
 
 - name: Pig Theroid
 - category: herbs
 - description: Pig Theroid — TCMBANK收录的中药材实体
 
-### TCMBANKHE000969
+### Sea-ear Shell
 
 - name: Sea-ear Shell
 - category: herbs
 - description: Sea-ear Shell — TCMBANK收录的中药材实体
 
-### TCMBANKHE000081
+### Flos Citri grandis
 
 - name: Flos Citri grandis
 - category: herbs
 - description: Flos Citri grandis — TCMBANK收录的中药材实体
 
-### TCMBANKHE000105
+### Et Radix Patriniae Rhizoma
 
 - name: Et Radix Patriniae Rhizoma
 - category: herbs
 - description: Et Radix Patriniae Rhizoma — TCMBANK收录的中药材实体
 
-### TCMBANKHE009036
+### leafy twigs of Oriental Arborvitae;CE BAI YE;Chinese Arborvitae Leaf
 
 - name: leafy twigs of Oriental Arborvitae;CE BAI YE;Chinese Arborvitae Leaf
 - category: herbs
 - description: leafy twigs of Oriental Arborvitae;CE BAI YE;Chinese Arborvitae Leaf — TCMBANK收录的中药材实体
 
-### TCMBANKHE003737
+### Common Tobacco
 
 - name: Common Tobacco
 - category: herbs
 - description: Common Tobacco — TCMBANK收录的中药材实体
 
-### TCMBANKHE000005
+### Spirulina major Kuetz.
 
 - name: Spirulina major Kuetz.
 - category: herbs
 - description: Spirulina major Kuetz. — TCMBANK收录的中药材实体
 
-### TCMBANKHE003727
+### Cabbage
 
 - name: Cabbage
 - category: herbs
 - description: Cabbage — TCMBANK收录的中药材实体
 
-### TCMBANKHE000002
+### Pomegranate fruit
 
 - name: Pomegranate fruit
 - category: herbs
 - description: Pomegranate fruit — TCMBANK收录的中药材实体
 
-### TCMBANKHE003732
+### Lucid Ganoderma
 
 - name: Lucid Ganoderma
 - category: herbs
 - description: Lucid Ganoderma — TCMBANK收录的中药材实体
 
-### TCMBANKHE003724
+### rhizome of Common Turmeric
 
 - name: rhizome of Common Turmeric
 - category: herbs
 - description: rhizome of Common Turmeric — TCMBANK收录的中药材实体
 
-### TCMBANKHE003734
+### root of common htreewingnut
 
 - name: root of common htreewingnut
 - category: herbs
 - description: root of common htreewingnut — TCMBANK收录的中药材实体
 
-### TCMBANKHE005001
+### 雷公藤 (Tripterygium wilfordii)
 
 - name: 雷公藤 (Tripterygium wilfordii)
 - category: herbs
@@ -423,19 +115,19 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - part_used: 根木质部
 - nature_flavor: 苦、辛，寒，有大毒
 - meridian_tropism: 肝、肾经
-- functions: 祛风除湿,活血通络,消肿止痛,杀虫解毒
-- clinical_applications: 类风湿关节炎,系统性红斑狼疮,肾病综合征,银屑病
-- key_compounds: 雷公藤甲素 (Triptolide),雷公藤内酯醇,雷公藤红素
+- functions: 祛风除湿, 活血通络, 消肿止痛, 杀虫解毒
+- clinical_applications: 类风湿关节炎, 系统性红斑狼疮, 肾病综合征, 银屑病
+- key_compounds: 雷公藤甲素 (Triptolide), 雷公藤内酯醇, 雷公藤红素
 - modern_research: 2025年ARD发表研究证实雷公藤甲素纳米制剂治疗RA疗效与甲氨蝶呤相当且肝毒性更低
 - toxicity: 生殖毒性、肝毒性、肾毒性，需严格控制剂量
 - dosage: 10-25g/日（去根皮），煎服
-- contraindications: 孕妇禁用,育龄期慎用,肝肾功能不全禁用
+- contraindications: 孕妇禁用, 育龄期慎用, 肝肾功能不全禁用
 - description: 雷公藤为卫矛科植物，根入药，性苦辛寒有大毒，归肝肾经。功效祛风除湿、活血通络、消肿止痛。现代研究发现其活性成分雷公藤甲素具有显著抗炎免疫抑制作用，被广泛用于自身免疫疾病治疗。2025年纳米脂质体递送技术突破了毒性瓶颈。
 - sources: [object Object]
 - confidence: high
 - date_added: 2026-06-25
 
-### TCMBANKHE005002
+### 青蒿 (Artemisia annua)
 
 - name: 青蒿 (Artemisia annua)
 - category: herbs
@@ -444,17 +136,17 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - part_used: 地上部分
 - nature_flavor: 苦、辛，寒
 - meridian_tropism: 肝、胆经
-- functions: 清透虚热,凉血除蒸,解暑截疟,退虚热
-- clinical_applications: 疟疾,阴虚发热,暑热外感,肿瘤（辅助治疗）
-- key_compounds: 青蒿素 (Artemisinin),双氢青蒿素 (DHA),青蒿琥酯
+- functions: 清透虚热, 凉血除蒸, 解暑截疟, 退虚热
+- clinical_applications: 疟疾, 阴虚发热, 暑热外感, 肿瘤（辅助治疗）
+- key_compounds: 青蒿素 (Artemisinin), 双氢青蒿素 (DHA), 青蒿琥酯
 - modern_research: 2025年Phytomedicine发表DHA抗肿瘤机制研究，通过TfR1选择性内吞诱导铁死亡
 - dosage: 6-15g/日，煎服（后下）或鲜品绞汁
 - description: 青蒿为菊科一年生草本，地上部分入药。性苦辛寒，归肝胆经。功效清透虚热、凉血除蒸、解暑截疟。其活性成分青蒿素由屠呦呦团队发现并因此获2015年诺贝尔生理学或医学奖。2025年研究发现青蒿素衍生物通过铁死亡机制具有抗肿瘤活性。
-- sources: [object Object],[object Object]
+- sources: [object Object], [object Object]
 - confidence: high
 - date_added: 2026-06-25
 
-### TCMBANKHE005003
+### 三七 (Panax notoginseng)
 
 - name: 三七 (Panax notoginseng)
 - category: herbs
@@ -463,9 +155,9 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - part_used: 根及根茎
 - nature_flavor: 甘、微苦，温
 - meridian_tropism: 肝、胃经
-- functions: 散瘀止血,消肿定痛
-- clinical_applications: 各种出血证,跌打损伤,胸痹心痛,缺血性脑血管病
-- key_compounds: 三七皂苷R1,人参皂苷Rg1,人参皂苷Rb1,三七素
+- functions: 散瘀止血, 消肿定痛
+- clinical_applications: 各种出血证, 跌打损伤, 胸痹心痛, 缺血性脑血管病
+- key_compounds: 三七皂苷R1, 人参皂苷Rg1, 人参皂苷Rb1, 三七素
 - modern_research: 三七总皂苷(PNS)具有抗血小板、改善微循环、心肌保护作用，以岭药业通心络胶囊核心组分之一
 - dosage: 3-9g/日，研粉吞服1-3g
 - description: 三七为五加科人参属植物，以根及根茎入药。主产于云南文山、广西田阳。性甘微苦温，归肝胃经。功效益气活血、散瘀止血、消肿定痛，被誉为'金不换'和'血管清道夫'。其活性成分三七总皂苷具有显著的抗血小板和改善微循环作用，是通心络、血塞通等中成药的核心原料。
@@ -473,7 +165,7 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - confidence: high
 - date_added: 2026-06-25
 
-### TCMBANKHE005004
+### 黄芪 (Astragalus membranaceus)
 
 - name: 黄芪 (Astragalus membranaceus)
 - category: herbs
@@ -482,9 +174,9 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - part_used: 根
 - nature_flavor: 甘，微温
 - meridian_tropism: 肺、脾经
-- functions: 补气升阳,固表止汗,利水消肿,托毒生肌
-- clinical_applications: 气虚乏力,自汗易感冒,水肿,疮疡久不收口,慢性肾病
-- key_compounds: 黄芪甲苷 (Astragaloside IV),黄芪多糖(APS),异黄酮类
+- functions: 补气升阳, 固表止汗, 利水消肿, 托毒生肌
+- clinical_applications: 气虚乏力, 自汗易感冒, 水肿, 疮疡久不收口, 慢性肾病
+- key_compounds: 黄芪甲苷 (Astragaloside IV), 黄芪多糖(APS), 异黄酮类
 - modern_research: 黄芪多糖(APS)具有免疫调节和抗肿瘤辅助作用；黄芪甲苷具有心肌保护和抗纤维化活性
 - dosage: 9-30g/日，煎服
 - description: 黄芪为豆科黄耆属植物，以根入药。主产于内蒙古、山西、甘肃。性甘微温，归肺脾经。功效补气升阳、固表止汗、利水消肿、托毒生肌，为补气要药。现代研究表明黄芪多糖和黄芪甲苷具有免疫调节、心肌保护、抗纤维化等多重药理活性。是玉屏风散、补中益气汤等经典名方的核心组成。
@@ -492,7 +184,7 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - confidence: high
 - date_added: 2026-06-25
 
-### TCMBANKHE005005
+### 丹参 (Salvia miltiorrhiza)
 
 - name: 丹参 (Salvia miltiorrhiza)
 - category: herbs
@@ -501,9 +193,9 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - part_used: 根及根茎
 - nature_flavor: 苦，微寒
 - meridian_tropism: 心、心包、肝经
-- functions: 活血祛瘀,通经止痛,清心除烦,凉血消痈
-- clinical_applications: 胸痹心痛（冠心病）,月经不调,疮疡痈肿,失眠
-- key_compounds: 丹参酮IIA (Tanshinone IIA),丹酚酸B (Salvianolic acid B),隐丹参酮
+- functions: 活血祛瘀, 通经止痛, 清心除烦, 凉血消痈
+- clinical_applications: 胸痹心痛（冠心病）, 月经不调, 疮疡痈肿, 失眠
+- key_compounds: 丹参酮IIA (Tanshinone IIA), 丹酚酸B (Salvianolic acid B), 隐丹参酮
 - modern_research: 丹参酮IIA具有抗炎、抗氧化、抗肿瘤血管生成活性；丹参多酚酸盐已开发为注射用丹参多酚酸盐(上市药物)
 - dosage: 10-15g/日，煎服
 - description: 丹参为唇形科鼠尾草属植物，以根及根茎入药。性苦微寒，归心、心包、肝经。功效活血祛瘀、通经止痛、清心除烦、凉血消痈。'一味丹参散，功同四物汤'，是活血化瘀要药。现代药理证实丹参酮和丹酚酸具有改善心肌缺血、抗血小板、抗炎抗氧化等多重活性。已衍生出复方丹参滴丸、丹参注射液等多个中成药大品种。
@@ -576,119 +268,5085 @@ Traditional Chinese Medicine knowledge base - herbs, formulas, diseases, pharmac
 - description: 印度传统医学体系使用的草药，通过量子技术提高生物利用度和靶向性
 - last_updated: 2026-06-27T15:54:53.481Z
 
-## ingredients
+### Ginseng
 
-### INGREDIENT-a1b2c3
+- name: Ginseng
+- category: Qi Tonics
+- description: Sweet, slightly bitter; neutral. Greatly tonifies original Qi, calms spirit, generates fluids.
 
-- name: 四季青
-- source_herb: 冬青科植物四季青
-- type: 配方颗粒
-- pharmacology: 清热解毒，凉血止血
-- description: 用于肺热咳嗽，咽喉肿痛，热病烦渴，疮疡肿毒
-- last_updated: 2026-06-27T15:55:23.935Z
+### Astragalus
 
-### INGREDIENT-d4e5f6
+- name: Astragalus
+- category: Qi Tonics
+- description: Sweet, slightly warm. Tonifies Qi, raises Yang, consolidates the exterior, promotes diuresis.
 
-- name: 绵萆薢
-- source_herb: 薯蓣科植物绵萆薢
-- type: 配方颗粒
-- pharmacology: 利湿去浊，祛风除痹
-- description: 用于小便浑浊，淋沥涩痛，风湿痹痛，腰膝酸痛
-- last_updated: 2026-06-27T15:55:23.935Z
+### Rehmannia Root
 
-### INGREDIENT-g7h8i9
+- name: Rehmannia Root
+- category: Blood Tonics
+- description: Sweet, slightly bitter, slightly warm. Nourishes Yin and Blood, enriches essence and marrow.
+
+### Angelica Sinensis
+
+- name: Angelica Sinensis
+- category: Blood Tonics
+- description: Sweet, acrid, warm. Tonifies blood, invigorates blood circulation, regulates menstruation.
+
+### Licorice Root
+
+- name: Licorice Root
+- category: Harmonizing Herbs
+- description: Sweet, neutral. Tonifies spleen Qi, clears heat, detoxifies, moderates spasmodic pain.
+
+### Goji Berry
+
+- name: Goji Berry
+- category: Yin Tonics
+- description: Sweet, neutral. Nourishes liver and kidney Yin, improves vision, benefits essence.
+
+### Dang Shen
+
+- name: Dang Shen
+- category: Qi Tonics
+- description: Sweet, neutral. Tonifies middle Jiao Qi, nourishes stomach fluids, aids respiration.
+
+### Cordyceps
+
+- name: Cordyceps
+- category: Yang Tonics
+- description: Sweet, warm. Tonifies kidney Yang, nourishes lung Yin, stops bleeding and phlegm.
+
+### Schisandra Berry
+
+- name: Schisandra Berry
+- category: Astringent Herbs
+- description: Sweet, sour, warm. Astringes Lung Qi, nourishes Kidney, calms heart, generates fluids.
+
+### Ophiopogon
+
+- name: Ophiopogon
+- category: Yin Tonics
+- description: Sweet, slightly bitter, slightly cold. Nourishes Yin, clears heart heat, generates fluids.
+
+### Dried Ginger
+
+- name: Dried Ginger
+- category: Interior Warmers
+- description: Pungent, hot. Warms middle Jiao, dispels cold, restores devastated Yang, warns lungs.
+
+### Cinnamon Bark
+
+- name: Cinnamon Bark
+- category: Interior Warmers
+- description: Sweet, pungent, hot. Warms channels, disperses cold, unblocks circulation, directs rebellious Qi downward.
+
+### Gastrodia
+
+- name: Gastrodia
+- category: Herbs for Internal Wind
+- description: Sweet, neutral. Calms liver wind, extinguishes convulsions, relieves spastic pain.
+
+### Gypsum
+
+- name: Gypsum
+- category: Heat Clearing Herbs
+- description: Sweet, pungent, very cold. Clears excess heat from Qi level, purges fire, quenches thirst.
+
+### Scutellaria
+
+- name: Scutellaria
+- category: Heat Clearing Herbs
+- description: Bitter, cold. Clears damp-heat, purges fire, detoxifies, calms fetus.
+
+### Phellodendron Bark
+
+- name: Phellodendron Bark
+- category: Heat Clearing Herbs
+- description: Bitter, cold. Drains fire, dries dampness, clears deficiency heat, detoxifies.
+
+### Immortals
+
+- name: Immortals
+- category: Qi Tonics
+- description: Sweet, neutral. Tonifies spleen and lung Qi, boosts immunity, benefits organs.
+
+### Polygala
+
+- name: Polygala
+- category: Phlegm Resolving Herbs
+- description: Bitter, pungent, warm. Invigorates intelligence, calms spirit, resolves phlegm.
+
+### Ziziphus Seed
+
+- name: Ziziphus Seed
+- category: Calming Herbs
+- description: Sweet, sour, neutral. Nourishes heart Yin, calms spirit, benefits spleen.
+
+### Evodia Fruit
+
+- name: Evodia Fruit
+- category: Interior Warmers
+- description: Acrid, hot, toxic. Warms middle, directs rebellious Qi downward, stops pain.
+
+### Ginseng
+
+- name: Ginseng
+- category: Qi Tonics
+- description: Sweet, slightly bitter; mildly warm. Greatly tonifies primordial Qi, nourishes Yin, clears heat, calms spirit.
+
+### Astragalus Root
+
+- name: Astragalus Root
+- category: Qi Tonics
+- description: Sweet, slightly warm. Tonifies Qi, raises Yang, consolidates exterior, promotes urination, reduces edema.
+
+### Angelica Sinensis
+
+- name: Angelica Sinensis
+- category: Blood Tonics
+- description: Sweet, acrid, warm. Tonifies blood, invigorates blood, regulates menstruation, relieves pain.
+
+### Rehmannia Root
+
+- name: Rehmannia Root
+- category: Yin Tonics
+- description: Sweet, bitter, cold. Nourishes Yin, clears heat, generates fluids, cools blood, stops bleeding.
+
+### Licorice Root
+
+- name: Licorice Root
+- category: Harmonizers
+- description: Sweet, neutral. Tonifies spleen Qi, clears heat, detoxifies, moistens lungs, moderates spasms.
+
+### Goji Berry
+
+- name: Goji Berry
+- category: Yin Tonics
+- description: Sweet, neutral. Nourishes liver and kidney Yin, improves vision, benefits essence and marrow.
+
+### Cordyceps
+
+- name: Cordyceps
+- category: Yang Tonics
+- description: Sweet, warm. Tonifies kidney Yang, nourishes lung Yin, stops bleeding, resolves phlegm.
+
+### Dang Shen
+
+- name: Dang Shen
+- category: Qi Tonics
+- description: Sweet, neutral. Tonifies middle burner Qi, nourishes blood, generates fluids, calms spirit.
+
+### Bupleurum Root
+
+- name: Bupleurum Root
+- category: Harmonizers
+- description: Acrid, slightly bitter, cool. Relieves exterior, soothes liver, raises Yang, separates yang from yin.
+
+### Chinese Goldthread
+
+- name: Chinese Goldthread
+- category: Heat-Clearers
+- description: Bitter, cold. Clears heat, dries dampness, purges fire, detoxifies. Treats damp-heat and fire toxicity.
+
+### Phellodendron Bark
+
+- name: Phellodendron Bark
+- category: Heat-Clearers
+- description: Bitter, cold. Clears heat, dries dampness, purges fire, detoxifies. Especially clears lower jiao damp-heat.
+
+### Anemarrhena Rhizome
+
+- name: Anemarrhena Rhizome
+- category: Heat-Clearers
+- description: Bitter, sweet, cold. Clears heat, purges fire, nourishes Yin, moistens dryness, generates fluids.
+
+### Scutellaria Root
+
+- name: Scutellaria Root
+- category: Heat-Clearers
+- description: Bitter, cold. Clears heat, dries dampness, purges fire, detoxifies, calms fetus, stops bleeding.
+
+### Gardenia Fruit
+
+- name: Gardenia Fruit
+- category: Heat-Clearers
+- description: Bitter, cold. Clears heat, eliminates irritability, drains damp-heat, cools blood, resolves swelling.
+
+### Forsythia Fruit
+
+- name: Forsythia Fruit
+- category: Heat-Clearers
+- description: Sweet, cold. Clears heat, detoxifies, disperses wind-heat, reduces swelling, treats sores.
+
+### Honeysuckle Flower
+
+- name: Honeysuckle Flower
+- category: Heat-Clearers
+- description: Sweet, cold. Clears heat, detoxifies, disperses wind-heat, treats sores and carbuncles.
+
+### Isatis Root
+
+- name: Isatis Root
+- category: Heat-Clearers
+- description: Acrid, slightly cold. Clears heat, detoxifies, cools blood, reduces swelling, benefits throat.
+
+### Coptis Rhizome
+
+- name: Coptis Rhizome
+- category: Heat-Clearers
+- description: Bitter, cold. Clears heat, dries dampness, purges fire, detoxifies. Strongest herb for clearing heart fire.
+
+### Evodia Fruit
+
+- name: Evodia Fruit
+- category: Interior-Warming
+- description: Acrid, hot. Warms middle, disperses cold, stops vomiting, directs rebellious Qi downward, stops pain.
+
+### Dried Ginger
+
+- name: Dried Ginger
+- category: Interior-Warming
+- description: Acrid, hot. Warms middle, disperses cold, restores devastated Yang, warms lungs to transform phlegm.
+
+### 人参
+
+- name: 人参
+- category: 补气药
+- description: 大补元气，复脉固脱，补脾益肺，生津养血，安神益智
+
+### 黄芪
+
+- name: 黄芪
+- category: 补气药
+- description: 补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌
+
+### 白术
+
+- name: 白术
+- category: 补气药
+- description: 健脾益气，燥湿利水，止汗，安胎
+
+### 甘草
+
+- name: 甘草
+- category: 补气药
+- description: 补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药
+
+### 当归
+
+- name: 当归
+- category: 补血药
+- description: 补血活血，调经止痛，润肠通便
+
+### 熟地黄
+
+- name: 熟地黄
+- category: 补血药
+- description: 补血滋阴，益精填髓
+
+### 白芍
+
+- name: 白芍
+- category: 补血药
+- description: 养血调经，敛阴止汗，柔肝止痛，平抑肝阳
+
+### 川芎
+
+- name: 川芎
+- category: 活血祛瘀药
+- description: 活血行气，祛风止痛
+
+### 丹参
+
+- name: 丹参
+- category: 活血祛瘀药
+- description: 活血祛瘀，通经止痛，清心除烦，凉血消痈
+
+### 三七
+
+- name: 三七
+- category: 活血祛瘀药
+- description: 散瘀止血，消肿定痛
+
+### 黄连
+
+- name: 黄连
+- category: 清热药
+- description: 清热燥湿，泻火解毒
+
+### 黄芩
+
+- name: 黄芩
+- category: 清热药
+- description: 清热燥湿，泻火解毒，止血，安胎
+
+### 金银花
+
+- name: 金银花
+- category: 清热药
+- description: 清热解毒，疏散风热
+
+### 板蓝根
+
+- name: 板蓝根
+- category: 清热药
+- description: 清热解毒，凉血利咽
+
+### 枸杞子
+
+- name: 枸杞子
+- category: 补阴药
+- description: 滋补肝肾，益精明目
+
+### 麦冬
+
+- name: 麦冬
+- category: 补阴药
+- description: 养阴生津，润肺清心
+
+### 五味子
+
+- name: 五味子
+- category: 收涩药
+- description: 收敛固涩，益气生津，补肾宁心
+
+### 茯苓
+
+- name: 茯苓
+- category: 利水渗湿药
+- description: 利水渗湿，健脾，宁心
+
+### 陈皮
+
+- name: 陈皮
+- category: 理气药
+- description: 理气健脾，燥湿化痰
+
+### 半夏
+
+- name: 半夏
+- category: 化痰止咳平喘药
+- description: 燥湿化痰，降逆止呕，消痞散结
+
+### 人参 (Ginseng)
+
+- name: 人参 (Ginseng)
+- category: 补气药
+- description: 大补元气，复脉固脱，补脾益肺，生津养血，安神益智
+
+### 黄芪 (Astragalus)
+
+- name: 黄芪 (Astragalus)
+- category: 补气药
+- description: 补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌
+
+### 白术 (Atractylodes)
+
+- name: 白术 (Atractylodes)
+- category: 补气药
+- description: 健脾益气，燥湿利水，止汗，安胎
+
+### 甘草 (Licorice Root)
+
+- name: 甘草 (Licorice Root)
+- category: 补气药
+- description: 补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药
+
+### 当归 (Angelica Sinensis)
+
+- name: 当归 (Angelica Sinensis)
+- category: 补血药
+- description: 补血活血，调经止痛，润肠通便
+
+### 熟地黄 (Rehmannia Root)
+
+- name: 熟地黄 (Rehmannia Root)
+- category: 补血药
+- description: 滋阴补血，益精填髓
+
+### 白芍 (White Peony Root)
+
+- name: 白芍 (White Peony Root)
+- category: 补血药
+- description: 养血调经，敛阴止汗，柔肝止痛，平抑肝阳
+
+### 川芎 (Chuanxiong)
+
+- name: 川芎 (Chuanxiong)
+- category: 活血化瘀药
+- description: 活血行气，祛风止痛
+
+### 丹参 (Salvia Miltiorrhiza)
+
+- name: 丹参 (Salvia Miltiorrhiza)
+- category: 活血化瘀药
+- description: 活血调经，祛瘀止痛，凉血消痈，除烦安神
+
+### 三七 (Panax Notoginseng)
+
+- name: 三七 (Panax Notoginseng)
+- category: 活血化瘀药
+- description: 散瘀止血，消肿定痛
+
+### 黄连 (Coptis Rhizome)
+
+- name: 黄连 (Coptis Rhizome)
+- category: 清热药
+- description: 清热燥湿，泻火解毒
+
+### 黄芩 (Scutellaria Root)
+
+- name: 黄芩 (Scutellaria Root)
+- category: 清热药
+- description: 清热燥湿，泻火解毒，止血，安胎
+
+### 金银花 (Honeysuckle Flower)
+
+- name: 金银花 (Honeysuckle Flower)
+- category: 清热药
+- description: 清热解毒，疏散风热
+
+### 连翘 (Forsythia Fruit)
+
+- name: 连翘 (Forsythia Fruit)
+- category: 清热药
+- description: 清热解毒，消肿散结，疏散风热
+
+### 枸杞子 (Goji Berry)
+
+- name: 枸杞子 (Goji Berry)
+- category: 补阴药
+- description: 滋补肝肾，益精明目
+
+### 麦冬 (Ophiopogon Tuber)
+
+- name: 麦冬 (Ophiopogon Tuber)
+- category: 补阴药
+- description: 养阴生津，润肺清心
+
+### 枸杞子 (Goji Berry)
+
+- name: 枸杞子 (Goji Berry)
+- category: 补阴药
+- description: 滋补肝肾，益精明目
+
+### 茯苓 (Poria)
+
+- name: 茯苓 (Poria)
+- category: 利水渗湿药
+- description: 利水渗湿，健脾宁心
+
+### 陈皮 (Tangerine Peel)
+
+- name: 陈皮 (Tangerine Peel)
+- category: 理气药
+- description: 理气健脾，燥湿化痰
+
+### 半夏 (Pinellia Tuber)
+
+- name: 半夏 (Pinellia Tuber)
+- category: 化痰止咳平喘药
+- description: 燥湿化痰，降逆止呕，消痞散结
+
+### 桂枝 (Cinnamon Twig)
+
+- name: 桂枝 (Cinnamon Twig)
+- category: 解表药
+- description: 发汗解肌，温通经脉，助阳化气
+
+### Ginseng
+
+- name: Ginseng
+- category: Adaptogen
+- description: Tonifies Qi, nourishes Yin, calms spirit
+
+### Astragalus
+
+- name: Astragalus
+- category: Qi Tonic
+- description: Boosts immune system, tonifies spleen Qi
+
+### Goji Berry
+
+- name: Goji Berry
+- category: Yin Tonic
+- description: Nourishes liver and kidney Yin, improves vision
+
+### Reishi Mushroom
+
+- name: Reishi Mushroom
+- category: Adaptogen
+- description: Calms spirit, boosts immunity, anti-inflammatory
+
+### Dong Quai
+
+- name: Dong Quai
+- category: Blood Tonic
+- description: Nourishes blood, regulates menstruation
+
+### Schisandra
+
+- name: Schisandra
+- category: Astringent
+- description: Conserves essence, calms spirit, stops sweating
+
+### Chrysanthemum
+
+- name: Chrysanthemum
+- category: Heat Clearer
+- description: Clears liver heat, improves vision, detoxifies
+
+### Honeysuckle
+
+- name: Honeysuckle
+- category: Heat Clearer
+- description: Clears heat, detoxifies, treats infections
+
+### Licorice Root
+
+- name: Licorice Root
+- category: Harmonizer
+- description: Harmonizes formulas, tonifies spleen, detoxifies
+
+### Angelica Sinensis
+
+- name: Angelica Sinensis
+- category: Blood Tonic
+- description: Nourishes blood, invigorates circulation
+
+### Cordyceps
+
+- name: Cordyceps
+- category: Yang Tonic
+- description: Tonifies kidney Yang, benefits lungs
+
+### Polygala
+
+- name: Polygala
+- category: Spirit Calmer
+- description: Calms spirit, benefits intelligence, resolves phlegm
+
+### Asparagus Fern
+
+- name: Asparagus Fern
+- category: Yin Tonic
+- description: Nourishes Yin, clears deficiency heat
+
+### Longan Fruit
+
+- name: Longan Fruit
+- category: Qi & Blood Tonic
+- description: Tonifies heart and spleen, calms spirit
+
+### Schizonepeta
+
+- name: Schizonepeta
+- category: Wind-Heat Dispeller
+- description: Disperses wind, clears heat, stops itching
+
+### Lindera
+
+- name: Lindera
+- category: Qi Regulator
+- description: Regulates Qi, relieves pain, warms kidneys
+
+### Gardenia
+
+- name: Gardenia
+- category: Heat Clearer
+- description: Clears heart fire, resolves dampness, cools blood
+
+### Phellodendron
+
+- name: Phellodendron
+- category: Damp-Heat Clearer
+- description: Clears damp-heat, purges fire, detoxifies
+
+### Anemarrhena
+
+- name: Anemarrhena
+- category: Yin Tonic
+- description: Nourishes Yin, clears heat, generates fluids
+
+### Cistanche
+
+- name: Cistanche
+- category: Yang Tonic
+- description: Tonifies kidney Yang, moistens intestines
+
+### Eucommia
+
+- name: Eucommia
+- category: Kidney Tonic
+- description: Strengthens bones and muscles, lowers blood pressure
+
+### Cistanche
+
+- name: Cistanche
+- category: Yang Tonic
+- description: Tonifies kidney Yang, moistens intestines
+
+### Cornus
+
+- name: Cornus
+- category: Astringent
+- description: Conserves essence, tonifies liver and kidneys
+
+### Huang Qi
+
+- name: Huang Qi
+- category: Qi Tonics
+- description: Astragalus membranaceus root; sweet, slightly warm; tonifies Qi, raises Yang, consolidates exterior, promotes diuresis
+
+### Dang Shen
+
+- name: Dang Shen
+- category: Qi Tonics
+- description: Codonopsis pilosula root; sweet, neutral; tonifies middle Jiao, enriches Qi, nourishes fluids
+
+### Bai Zhu
+
+- name: Bai Zhu
+- category: Qi Tonics
+- description: Atractylodes macrocephala rhizome; bitter, sweet, warm; strengthens spleen, dries dampness, promotes diuresis, calms fetus
+
+### Gan Cao
+
+- name: Gan Cao
+- category: Harmonizing Herbs
+- description: Glycyrrhiza uralensis root; sweet, neutral; tonifies spleen Qi, clears heat, resolves toxicity, moderates spasms
+
+### Ren Shen
+
+- name: Ren Shen
+- category: Qi Tonics
+- description: Panax ginseng root; sweet, slightly bitter, slightly warm; powerfully tonifies primal Qi, calms spirit, generates fluids
+
+### Lu Rong
+
+- name: Lu Rong
+- category: Yang Tonics
+- description: Cervus nippon antler; salty, warm; tonifies Kidney Yang, benefits essence and blood, strengthens bones and sinews
+
+### Tu Si Zi
+
+- name: Tu Si Zi
+- category: Yang Tonics
+- description: Cuscuta chinensis seed; sweet, pungent, neutral; tonifies Kidney Yang and Yin, secures essence, brightens eyes
+
+### Ba Ji Tian
+
+- name: Ba Ji Tian
+- category: Yang Tonics
+- description: Morinda officinalis root; sweet, pungent, warm; tonifies Kidney Yang, strengthens sinews and bones, dispels wind-damp
+
+### Yin Yang Huo
+
+- name: Yin Yang Huo
+- category: Yang Tonics
+- description: Epimedium brevicornum leaf; acrid, sweet, warm; tonifies Kidney Yang, strengthens bones, dispels wind-damp obstruction
+
+### Du Zhong
+
+- name: Du Zhong
+- category: Yang Tonics
+- description: Eucommia ulmoides bark; sweet, warm; tonifies Liver and Kidney, strengthens sinews and bones, calms fetus
+
+### Gou Qi Zi
+
+- name: Gou Qi Zi
+- category: Blood/Yin Tonics
+- description: Lycium barbarum fruit; sweet, neutral; nourishes Liver and Kidney Yin, benefits essence and blood, improves vision
+
+### Shu Di Huang
+
+- name: Shu Di Huang
+- category: Blood/Yin Tonics
+- description: Rehmannia glutinosa root (processed); sweet, slightly warm; nourishes Yin, tonifies Blood, enriches Kidney essence
+
+### Mai Men Dong
+
+- name: Mai Men Dong
+- category: Yin Tonics
+- description: Ophiopogon japonicus tuber; sweet, slightly bitter, slightly cold; nourishes stomach Yin, clears heart heat, generates fluids
+
+### Bai Shao
+
+- name: Bai Shao
+- category: Blood/Yin Tonics
+- description: Paeonia lactiflora root; sour, bitter, slightly cold; nourishes Blood, preserves Yin, softens Liver, stops pain
+
+### E Jiao
+
+- name: E Jiao
+- category: Blood Tonics
+- description: Donkey-hide gelatin; sweet, neutral; nourishes Blood, stops bleeding, moistens dryness, calms fetus
+
+### Jue Ming Zi
+
+- name: Jue Ming Zi
+- category: Heat-Clearing Herbs
+- description: Cassia obtusifolia seed; sweet, bitter, salty, slightly cold; clears Liver heat, improves vision, moistens intestines
+
+### Ye Ju Hua
+
+- name: Ye Ju Hua
+- category: Heat-Clearing Herbs
+- description: Dendranthema indicum flower; sweet, bitter, slightly cold; disperses wind-heat, clears Liver heat, improves vision
+
+### Yu Zhu
+
+- name: Yu Zhu
+- category: Yin Tonics
+- description: Polygonatum odoratum rhizome; sweet, slightly cold; nourishes Yin, moistens dryness, generates fluids, quells thirst
+
+### Tian Dong
+
+- name: Tian Dong
+- category: Yin Tonics
+- description: Akebia quinata fruit; sweet, cold; clears heat, nourishes Yin, generates fluids, promotes urination
+
+### Zhu Ru
+
+- name: Zhu Ru
+- category: Phlegm-Heat Clearing
+- description: Bambusa textilis stem wall; sweet, slightly cold; clears heat, resolves phlegm, harmonizes Stomach, calms fetus
+
+### 枸杞
+
+- name: 枸杞
+- name_en: Goji Berry / Wolfberry
+- latin_name: Lycium barbarum
+- family: 茄科 (Solanaceae)
+- description: 枸杞是药食同源的明星食材，自古以来就被列为上品。现代研究证实其富含枸杞多糖、类胡萝卜素、甜菜碱、维生素A/B1/C及多种矿物质，具有增强免疫、护肝明目、抗衰老等多重功效。
+- nutrition: 多糖、类胡萝卜素、甜菜碱、维生素A、维生素B1、维生素C、钙、铁、锌
+- health_benefits: 增强免疫力：每日15克枸杞，三个月后T淋巴细胞活性提升约15%, 护肝养肝：坚持食用3个月，脂肪肝患者ALT下降约12.6%, 明目护眼：每天20粒，30天眼疲劳症状减轻率60%以上, 延缓衰老：多酚和多糖类物质清除自由基, 调节血脂血糖：坚持10-15克/天，8周空腹血糖下降3.5-5%, 增强体力与抗疲劳, 促进睡眠安神, 辅助调节血压保护心血管
+- edible_methods: 泡水喝（水温不超85℃，喝完嚼食枸杞）, 煲汤煮粥（弱火煮30分钟以上）, 直接嚼食（每日10-15克）, 打粉制膏（加蜂蜜冲服）
+- recommended_daily_dose: 10-20克（约15-20粒）
+- contraindications: 体质偏热易上火者减量；感冒发烧期间暂停；腹泻者慎用
+- source: https://zhuanlan.zhihu.com/p/500102737, https://www.sohu.com/a/938609590_121948382
+- retrieved_date: 2026-07-09
+- language: zh
+
+### 红枸杞
+
+- name: 红枸杞
+- name_en: Red Goji Berry
+- latin_name: Lycium barbarum
+- type: 红果枸杞
+- description: 最常见的枸杞品种，药性偏平，适合多数人日常调理。富含枸杞多糖、胡萝卜素、甜菜碱等，具有补肝肾、益精明目的功效。
+- key_components: 枸杞多糖、β-胡萝卜素、甜菜碱、维生素A、维生素C、铁、锌
+- health_benefits: 增强免疫力、护肝明目、延缓衰老、调节血糖血脂
+- edible_methods: 泡水、煲汤、嚼食、打粉
+- contraindications: 体质偏热者减量
+- source: https://www.sohu.com/a/938609590_121948382
+- retrieved_date: 2026-07-09
+- language: zh
+
+### 黑枸杞
+
+- name: 黑枸杞
+- name_en: Black Goji Berry
+- latin_name: Lycium barbarum (black variant)
+- type: 黑果枸杞
+- description: 黑枸杞与普通红枸杞属同种异型，但花青素含量远高于红枸杞。花青素是强效抗氧化剂，对视力保护、防晒抗老化效果尤为突出。
+- key_components: 花青素（极高）、枸杞多糖、微量元素
+- unique_features: 花青素含量极高，泡水温度务必控制在60℃以下以保护花青素不被破坏
+- health_benefits: 抗辐射、抗衰老、保护视力、清除自由基
+- comparison_with_red: 红枸杞药性偏平适合日常调理；黑枸杞花青素更多适合抗老防辐射
+- edible_methods: 低温水冲泡（60℃以下）、泡茶
+- source: https://www.sohu.com/a/938609590_121948382
+- retrieved_date: 2026-07-09
+- language: zh
+
+### 枸杞多糖
+
+- name: 枸杞多糖
+- name_en: Polysaccharides from Goji Berry
+- latin_name: N/A
+- type: 活性成分
+- description: 枸杞中最核心的活性成分之一，是从枸杞中提取的多糖类物质。具有显著的免疫调节、抗肿瘤、降血糖、降血脂等生物学活性。
+- functions: 增强免疫：提升T淋巴细胞活性, 调节血糖：改善胰岛素敏感性, 调节血脂：降低胆固醇, 抗肿瘤：抑制癌细胞生长, 抗氧化：清除自由基, 保护肝脏：减轻肝细胞脂肪变性
+- scientific_evidence: 多项动物和人体实验证实，每日食用15克枸杞可使T淋巴细胞活性提升约15%，坚持8周空腹血糖下降3.5-5%
+- source: https://zhuanlan.zhihu.com/p/500102737, https://www.sohu.com/a/938609590_121948382
+- retrieved_date: 2026-07-09
+- language: zh
+
+### 甜菜碱
+
+- name: 甜菜碱
+- name_en: Betaine
+- latin_name: N/A
+- type: 活性成分
+- description: 枸杞中重要的活性成分之一，是一种天然甲基供体。在肝脏中发挥重要作用，有助减轻肝细胞脂肪变性，保护肝脏组织。
+- functions: 护肝：减轻肝细胞脂肪变性，辅助治疗脂肪肝, 降低同型半胱氨酸水平, 参与甲基化反应, 调节渗透压
+- clinical_evidence: 纳入216例脂肪肝患者的临床随访发现，坚持食用枸杞3个月，肝功能指标ALT下降约12.6%
+- source: https://www.sohu.com/a/938609590_121948382
+- retrieved_date: 2026-07-09
+- language: zh
+
+### 类胡萝卜素
+
+- name: 类胡萝卜素
+- name_en: Carotenoids
+- latin_name: N/A
+- type: 活性成分
+- description: 枸杞中丰富的色素类化合物，包括β-胡萝卜素、玉米黄质等。是维生素A的前体物质，对眼睛健康和抗氧化至关重要。
+- key_types: β-胡萝卜素、玉米黄质、叶黄素
+- health_benefits: 护眼明目：为视网膜提供充足维生素A，缓解干涩和视力模糊, 抗氧化：清除自由基, 增强免疫
+- clinical_data: 每天食用20颗枸杞，连续30天后，主观眼疲劳症状减轻率在60%以上
+- source: https://zhuanlan.zhihu.com/p/500102737, https://www.sohu.com/a/938609590_121948382
+- retrieved_date: 2026-07-09
+- language: zh
+
+### 黄柏
+
+- name: 黄柏
+- latin_name: Phellodendron chinense / Phellodendron amurense
+- family: 芸香科（Rutaceae）
+- genus: 黄檗属（Phellodendron）
+- species: 川黄柏 Phellodendron chinense, 关黄柏 Phellodendron amurense
+- part_used: 干燥树皮
+- nature_flavor: 苦，寒
+- meridian_entrada: 肾、膀胱经
+- functions: 清热燥湿，泻火除蒸，解毒疗疮
+- indications: 湿热泻痢，黄疸尿赤，带下阴痒，热淋涩痛，脚气痿躄，骨蒸劳热，盗汗遗精
+- dosage: 6-12g
+- special_note: 专清下焦湿热，为下焦清湿猛将
+- contraindications: 苦寒伤胃，脾胃虚寒者慎用
+- processing_methods: 生黄柏, 盐黄柏, 黄酒黄柏, 炒黄柏
+- distribution: 四川、湖北、贵州、云南、江西、浙江等省，海拔900米以上杂木林
+- harvest_time: 剥取树皮后除去粗皮晒干
+- source_references: 百度百科, 中医百科, 搜狐健康
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 麻黄
+
+- name: 麻黄
+- latin_name: Ephedra sinica
+- family: 麻黄科
+- origin: 中国北方
+- active_component: 麻黄碱(ephedrine)
+- dose: 2-9g
+- toxicity: 低毒
+- function: 发汗散寒，宣肺平喘，利水消肿
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 附子
+
+- name: 附子
+- latin_name: Aconiti Lateralis Radix Praeparata
+- family: 毛茛科
+- origin: 四川
+- active_component: 乌头碱(aconitine)
+- dose: 3-15g(先煎)
+- toxicity: 大毒
+- function: 回阳救逆，补火助阳，散寒止痛
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 连翘
+
+- name: 连翘
+- latin_name: Forsythiae Fructus
+- family: 木樨科
+- origin: 河南
+- active_component: 连翘酯苷(forsythin)
+- dose: 6-15g
+- toxicity: 无毒
+- function: 清热解毒，消肿散结，疏散风热
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 大青叶
+
+- name: 大青叶
+- latin_name: Isatidis Folium
+- family: 十字花科
+- origin: 江苏
+- active_component: 靛玉红(indirubin)
+- dose: 9-15g
+- toxicity: 无毒
+- function: 清热解毒，凉血消斑
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 柴胡
+
+- name: 柴胡
+- latin_name: Bupleuri Radix
+- family: 伞形科
+- origin: 辽宁
+- active_component: 柴胡皂苷(saikosaponin)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 疏散退热，疏肝解郁，升举阳气
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 酸枣仁
+
+- name: 酸枣仁
+- latin_name: Ziziphi Spinosae Semen
+- family: 鼠李科
+- origin: 陕西
+- active_component: 斯皮诺素(spinosin)
+- dose: 9-15g
+- toxicity: 无毒
+- function: 养心补肝，宁心安神，敛汗，生津
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 桃仁
+
+- name: 桃仁
+- latin_name: Persicae Semen
+- family: 蔷薇科
+- origin: 山东
+- active_component: 苦杏仁酶
+- dose: 6-12g
+- toxicity: 小毒
+- function: 活血祛瘀，润肠通便，止咳平喘
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 红花
+
+- name: 红花
+- latin_name: Carthami Flos
+- family: 菊科
+- origin: 新疆
+- active_component: 红花黄色素
+- dose: 3-10g
+- toxicity: 无毒
+- function: 活血通经，散瘀止痛
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 蒲公英
+
+- name: 蒲公英
+- latin_name: Taraxaci Herba
+- family: 菊科
+- origin: 全国
+- active_component: 蒲公英醇
+- dose: 10-15g
+- toxicity: 无毒
+- function: 清热解毒，消肿散结，利湿通淋
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 鱼腥草
+
+- name: 鱼腥草
+- latin_name: Houttuyniae Herba
+- family: 三白草科
+- origin: 四川
+- active_component: 鱼腥草素(hordenine)
+- dose: 15-25g
+- toxicity: 无毒
+- function: 清热解毒，消痈排脓，利尿通淋
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 泽泻
+
+- name: 泽泻
+- latin_name: Alismatis Rhizoma
+- family: 泽泻科
+- origin: 福建
+- active_component: 泽泻醇(zeaxanthin)
+- dose: 6-10g
+- toxicity: 无毒
+- function: 利水渗湿，泄热，化浊降脂
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 车前子
+
+- name: 车前子
+- latin_name: Plantaginis Semen
+- family: 车前草科
+- origin: 河南
+- active_component: 车前子胶
+- dose: 9-15g(包煎)
+- toxicity: 无毒
+- function: 清热利尿通淋，渗湿止泻，明目，祛痰
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 薏苡仁
+
+- name: 薏苡仁
+- latin_name: Coicis Semen
+- family: 禾本科
+- origin: 黑龙江
+- active_component: 薏苡仁酯
+- dose: 9-30g
+- toxicity: 无毒
+- function: 利水渗湿，健脾止泻，除痹，排脓，解毒散结
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 天南星
+
+- name: 天南星
+- latin_name: Arisaema Rhizoma
+- family: 天南星科
+- origin: 山西
+- active_component: 去氧升麻素
+- dose: 3-9g
+- toxicity: 有毒
+- function: 燥湿化痰，祛风止痉，散结消肿
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 桔梗
+
+- name: 桔梗
+- latin_name: Platycodonis Radix
+- family: 桔梗科
+- origin: 吉林
+- active_component: 桔梗皂苷(platycodin)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 宣肺，利咽，祛痰，排脓
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 贝母
+
+- name: 贝母
+- latin_name: Fritillariae Cirrhosae Bulbus
+- family: 百合科
+- origin: 四川
+- active_component: 贝母素(peiminine)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 清热润肺，化痰止咳，散结消痈
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 瓜蒌
+
+- name: 瓜蒌
+- latin_name: Trichosanthis Fructus
+- family: 葫芦科
+- origin: 河南
+- active_component: 天花粉蛋白
+- dose: 10-15g
+- toxicity: 无毒
+- function: 清热涤痰，宽胸散结，润燥滑肠
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 枳实
+
+- name: 枳实
+- latin_name: Aurantii Fructus Immaturus
+- family: 芸香科
+- origin: 江西
+- active_component: 新橙皮苷(neohesperidin)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 破气消积，化痰散痞
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 香附
+
+- name: 香附
+- latin_name: Cyperi Rhizoma
+- family: 莎草科
+- origin: 山东
+- active_component: 香附子烯(cyperene)
+- dose: 6-9g
+- toxicity: 无毒
+- function: 疏肝解郁，理气宽中，调经止痛
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 木香
+
+- name: 木香
+- latin_name: Aucklandiae Radix
+- family: 菊科
+- origin: 云南
+- active_component: 土木香内酯(alantolactone)
+- dose: 3-6g
+- toxicity: 无毒
+- function: 行气止痛，健脾消食
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 厚朴
+
+- name: 厚朴
+- latin_name: Magnoliae Officinalis Cortex
+- family: 木兰科
+- origin: 四川
+- active_component: 厚朴酚(magnolol)
+- dose: 3-12g
+- toxicity: 无毒
+- function: 燥湿消痰，下气除满
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 干姜
+
+- name: 干姜
+- latin_name: Zingiberis Rhizoma Consectum
+- family: 姜科
+- origin: 广西
+- active_component: 姜辣素(gingerol)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 温中散寒，回阳通脉，温肺化饮
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 肉桂
+
+- name: 肉桂
+- latin_name: Cinnamomi Cortex
+- family: 樟科
+- origin: 广西
+- active_component: 桂皮醛(cinnamaldehyde)
+- dose: 2-5g
+- toxicity: 无毒
+- function: 补火助阳，散寒止痛，温通经脉，引火归元
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 小茴香
+
+- name: 小茴香
+- latin_name: Foeniculi Fructus
+- family: 伞形科
+- origin: 新疆
+- active_component: 茴香脑(anethole)
+- dose: 3-6g
+- toxicity: 无毒
+- function: 散寒止痛，理气和胃
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 吴茱萸
+
+- name: 吴茱萸
+- latin_name: Evodiae Fructus
+- family: 芸香科
+- origin: 贵州
+- active_component: 吴茱萸碱(evodiamine)
+- dose: 1.5-6g
+- toxicity: 有小毒
+- function: 散寒止痛，降逆止呕，助阳止泻
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 延胡索
+
+- name: 延胡索
+- latin_name: Corydalisis Rhizoma
+- family: 罂粟科
+- origin: 浙江
+- active_component: 延胡索乙素(tetrahydropalmatine)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 活血，行气，止痛
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 郁金
+
+- name: 郁金
+- latin_name: Curcumae Radix
+- family: 姜科
+- origin: 云南
+- active_component: 莪术醇(curcumol)
+- dose: 6-12g
+- toxicity: 无毒
+- function: 活血止痛，行气解郁，清心凉血，利胆退黄
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 乳香
+
+- name: 乳香
+- latin_name: Olibanum
+- family: 橄榄科
+- origin: 进口
+- active_component: 乳香酸(boswellic acid)
+- dose: 3-5g
+- toxicity: 无毒
+- function: 活血定痛，消肿生肌
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 没药
+
+- name: 没药
+- latin_name: Myrrha
+- family: 橄榄科
+- origin: 进口
+- active_component: 没药树脂
+- dose: 3-10g
+- toxicity: 无毒
+- function: 散瘀定痛，消肿生肌
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 桂枝
+
+- name: 桂枝
+- category: 藤木类
+- nature: 温
+- flavor: 辛、甘
+- meridian: 心、肺、膀胱
+- function: 发汗解肌，温通经脉，助阳化气
+- usage: 3-6g
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 白及
+
+- name: 白及
+- category: 根茎类
+- nature: 微寒
+- flavor: 苦、甘、涩
+- meridian: 肺、肝、胃
+- function: 收敛止血，消肿生肌
+- usage: 3-10g
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 阿胶
+
+- name: 阿胶
+- category: 动物类
+- nature: 平
+- flavor: 甘
+- meridian: 肺、肝、肾
+- function: 补血滋阴，润燥，止血
+- usage: 3-9g
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### 山茱萸
+
+- name: 山茱萸
+- category: 果实类
+- nature: 微温
+- flavor: 酸、涩
+- meridian: 肝、肾
+- function: 补益肝肾，收涩固脱
+- usage: 6-12g
+- source: xiaowu_sync
+- synced_at: 2026-07-16
+
+### tcm-herb-001
+
+- name_cn: 冬虫夏草
+- name_en: Cordyceps Sinensis
+- latin_name: Cordyceps sinensis
+- family: 麦角菌科 Cordycipitaceae
+- part_used: 子座及幼虫尸体的干燥复合体
+- origin: 中国西藏、青海、四川、甘肃等高寒地带
+- price_range_cny_per_gram: 3-10
+- active_compounds: 虫草素(cordycepin)、腺苷、多糖、甘露醇
+- properties_tcm: 甘，平
+- meridians_tcm: 归肺、肾经
+- functions_tcm: 补肾益肺，止血化痰
+- indications_tcm: 肾虚精亏，阳痿遗精，腰膝酸痛；久咳虚喘，劳嗽咯血，自汗盗汗
+- dosage_g: 3-9
+- contraindications: 外邪亢盛者忌服
+- modern_research: 免疫调节、抗疲劳、改善心血管功能、抗肿瘤活性
+- status: 野生濒危，CITES附录II
+
+### tcm-herb-002
+
+- name_cn: 灵芝
+- name_en: Reishi Mushroom
+- latin_name: Ganoderma lucidum
+- family: 灵芝科 Ganodermataceae
+- part_used: 子实体
+- origin: 中国吉林、辽宁、河北、安徽、浙江、广东等地
+- price_range_cny_per_gram: 0.5-5
+- active_compounds: 三萜类化合物、多糖、核苷类、甾醇类
+- properties_tcm: 甘，平
+- meridians_tcm: 归心、肺、肝、肾经
+- functions_tcm: 补气安神，止咳平喘
+- indications_tcm: 心神不宁，失眠心悸，虚劳咳喘，气短乏力
+- dosage_g: 6-12
+- contraindications: 有湿邪者慎用
+- modern_research: 增强免疫力、镇静催眠、保肝、降血糖、抗肿瘤
+- status: 可人工栽培
+
+### tcm-herb-003
+
+- name_cn: 藏红花
+- name_en: Saffron
+- latin_name: Crocus sativus
+- family: 鸢尾科 Iridaceae
+- part_used: 柱头
+- origin: 原产伊朗，现中国西藏、北京、上海、浙江、江苏等地有栽培
+- price_range_cny_per_gram: 1-5
+- active_compounds: 藏红花素、藏红花醛、苦杏仁苷
+- properties_tcm: 甘，平
+- meridians_tcm: 归心、肝经
+- functions_tcm: 活血化瘀，凉血解毒，解郁安神
+- indications_tcm: 经闭癥瘕，产后瘀阻，温毒发斑，忧郁痞闷，惊悸发狂
+- dosage_g: 1-3
+- contraindications: 孕妇禁用
+- modern_research: 抗抑郁、抗氧化、保护心脑血管、抗癌活性
+- status: 可人工栽培
+
+### tcm-herb-004
+
+- name_cn: 鹿茸
+- name_en: Velvet Antler
+- latin_name: Cervus nippon (未骨化密生绒毛的幼角)
+- family: 鹿科 Cervidae
+- part_used: 雄鹿未骨化的幼角
+- origin: 中国吉林、黑龙江、辽宁、内蒙古、新疆等地
+- price_range_cny_per_gram: 0.5-3
+- active_compounds: 鹿茸精、生长因子、氨基酸、磷脂、胆固醇
+- properties_tcm: 甘、咸，温
+- meridians_tcm: 归肾、肝经
+- functions_tcm: 壮肾阳，益精血，强筋骨，调冲任，托疮毒
+- indications_tcm: 肾阳不足，精血亏虚，阳痿滑精，宫冷不孕，羸瘦，神疲，畏寒；眩晕耳鸣，腰膝冷痛；崩漏下血，宫寒不孕；阴疽不敛
+- dosage_g: 1-2
+- contraindications: 阴虚火旺者忌服
+- modern_research: 促进生长发育、增强免疫功能、抗衰老、促进骨折愈合
+- status: 人工养殖
+
+### tcm-herb-005
+
+- name_cn: 人参
+- name_en: Ginseng
+- latin_name: Panax ginseng C.A.Mey.
+- family: 五加科 Araliaceae
+- part_used: 根
+- origin: 中国吉林、辽宁、黑龙江；朝鲜、韩国、俄罗斯远东地区
+- price_range_cny_per_gram: 0.2-50
+- active_compounds: 人参皂苷(ginsenosides)、多糖、挥发油、氨基酸
+- properties_tcm: 甘、微苦，平
+- meridians_tcm: 归脾、肺、心、肾经
+- functions_tcm: 大补元气，复脉固脱，补脾益肺，生津养血，安神益智
+- indications_tcm: 大失血、大泻痢、大病之后导致的元气虚脱证；肺气虚弱，咳喘气短；脾气不足，倦怠食少；热病气津两伤，口渴；心气不足，心悸失眠
+- dosage_g: 3-9
+- contraindications: 实证、热证而正气不虚者忌服；反藜芦，恶五灵脂
+- modern_research: 增强免疫力、抗疲劳、改善认知功能、调节血糖血压、抗衰老
+- status: 可人工栽培
+
+### tcm-herb-006
+
+- name_cn: 黄芪
+- name_en: Astragalus
+- latin_name: Astragalus membranaceus
+- family: 豆科 Fabaceae
+- part_used: 根
+- origin: 中国内蒙古、山西、甘肃、黑龙江、宁夏、陕西等地
+- price_range_cny_per_gram: 0.02-0.1
+- active_compounds: 黄芪甲苷、黄芪多糖、皂苷类、氨基酸
+- properties_tcm: 甘，微温
+- meridians_tcm: 归脾、肺经
+- functions_tcm: 补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌
+- indications_tcm: 气虚乏力，食少便溏；中气下陷，脏器脱垂；表虚自汗；气虚水肿，小便不利；气血不足，面色萎黄；气虚血滞，半身不遂；痈疽不溃，久不收口
+- dosage_g: 9-30
+- contraindications: 表实邪盛，气滞湿阻，食积内停，阴虚阳亢，疟疾，疔疮肿毒者慎用
+- modern_research: 增强免疫功能、利尿保肝、降压降糖、抗骨质疏松
+- status: 可人工栽培
+
+### tcm-herb-007
+
+- name_cn: 当归
+- name_en: Angelica Sinensis
+- latin_name: Angelica sinensis (Oliv.) Diels
+- family: 伞形科 Apiaceae
+- part_used: 根
+- origin: 中国甘肃、云南、四川、湖北、陕西、贵州等地；甘肃岷县为最佳产区
+- price_range_cny_per_gram: 0.03-0.15
+- active_compounds: 阿魏酸、藁本内酯、多糖、挥发油
+- properties_tcm: 甘、辛，温
+- meridians_tcm: 归肝、心、脾经
+- functions_tcm: 补血活血，调经止痛，润肠通便
+- indications_tcm: 血虚萎黄，眩晕心悸，月经不调，经闭痛经，虚寒腹痛，风湿痹痛，跌扑损伤，痈疽疮疡，肠燥便秘
+- dosage_g: 6-12
+- contraindications: 湿盛中满，大便溏泄者慎用
+- modern_research: 补血、调节子宫功能、抗血小板聚集、保护心血管、抗氧化
+- status: 可人工栽培
+
+### tcm-herb-008
+
+- name_cn: 枸杞子
+- name_en: Goji Berry
+- latin_name: Lycium barbarum
+- family: 茄科 Solanaceae
+- part_used: 成熟果实
+- origin: 中国宁夏、甘肃、青海、新疆、内蒙古、河北等地；宁夏中宁为道地药材
+- price_range_cny_per_gram: 0.03-0.2
+- active_compounds: 枸杞多糖、甜菜碱、胡萝卜素、玉米黄素
+- properties_tcm: 甘，平
+- meridians_tcm: 归肝、肾经
+- functions_tcm: 滋补肝肾，益精明目
+- indications_tcm: 肝肾阴虚，眩晕耳鸣，腰膝酸软，内热消渴，血虚萎黄，目昏不明
+- dosage_g: 6-12
+- contraindications: 外邪实热，脾虚便溏者慎用
+- modern_research: 增强免疫、抗衰老、保护视力、降血脂、保肝
+- status: 可人工栽培
+
+### tcm-herb-009
+
+- name_cn: 三七
+- name_en: Notoginseng
+- latin_name: Panax notoginseng (Burk.) F.H.Chen
+- family: 五加科 Araliaceae
+- part_used: 根和根茎
+- origin: 中国云南文山、广西靖西、田阳；云南为道地产区
+- price_range_cny_per_gram: 0.1-2
+- active_compounds: 三七总皂苷(PNS)、田七氨酸、黄酮类
+- properties_tcm: 甘、微苦，温
+- meridians_tcm: 归肝、胃经
+- functions_tcm: 散瘀止血，消肿定痛
+- indications_tcm: 咯血，吐血，衄血，便血，崩漏，外伤出血，胸腹刺痛，跌扑肿痛
+- dosage_g: 3-9
+- contraindications: 孕妇慎用
+- modern_research: 止血、活血化瘀、保护心血管、抗炎、镇痛
+- status: 可人工栽培
+
+### tcm-herb-010
+
+- name_cn: 川贝母
+- name_en: Fritillaria Cirrhosa
+- latin_name: Fritillaria cirrhosa
+- family: 百合科 Liliaceae
+- part_used: 鳞茎
+- origin: 中国四川、云南、西藏、青海、甘肃、贵州、陕西等地；四川为道地产区
+- price_range_cny_per_gram: 0.8-3
+- active_compounds: 生物碱(川贝碱、西贝素)、皂苷、淀粉
+- properties_tcm: 苦、甘，微寒
+- meridians_tcm: 归肺、心经
+- functions_tcm: 清热润肺，化痰止咳，散结消痈
+- indications_tcm: 肺热燥咳，干咳少痰，阴虚劳嗽，咯血，瘰疬，乳痈，肺痈
+- dosage_g: 3-10
+- contraindications: 不宜与乌头类药材同用；脾胃虚寒及湿痰者慎用
+- modern_research: 镇咳祛痰、平喘、降压、抗癌
+- status: 可人工栽培
+
+### tcm-herb-011
+
+- name_cn: 天麻
+- name_en: Gastrodia
+- latin_name: Gastrodia elata Blume
+- family: 兰科 Orchidaceae
+- part_used: 块茎
+- origin: 中国贵州、云南、四川、湖北、陕西、甘肃、吉林、辽宁等地
+- price_range_cny_per_gram: 0.3-2
+- active_compounds: 天麻素(gastrodin)、香荚兰醇、多糖
+- properties_tcm: 甘，平
+- meridians_tcm: 归肝经
+- functions_tcm: 息风止痉，平抑肝阳，祛风通络
+- indications_tcm: 小儿惊风，癫痫抽搐，破伤风；肝阳上亢，头痛眩晕；肢体麻木，筋脉拘挛，风湿痹痛
+- dosage_g: 3-10
+- contraindications: 气血亏虚所致之眩晕惊厥慎用
+- modern_research: 镇静催眠、抗惊厥、改善脑循环、降血压、神经保护
+- status: 可人工栽培
+
+### tcm-herb-012
+
+- name_cn: 金银花
+- name_en: Honeysuckle
+- latin_name: Lonicera japonica Thunb.
+- family: 忍冬科 Caprifoliaceae
+- part_used: 花蕾或带初开的花
+- origin: 中国山东、河南、河北、安徽、辽宁、云南、广西等地；山东平邑为道地产区
+- price_range_cny_per_gram: 0.02-0.1
+- active_compounds: 绿原酸、木犀草素、挥发油
+- properties_tcm: 甘，寒
+- meridians_tcm: 归肺、心、胃经
+- functions_tcm: 清热解毒，疏散风热
+- indications_tcm: 痈肿疔疮，喉痹，丹毒，热毒血痢，风热感冒，温病发热
+- dosage_g: 6-15
+- contraindications: 脾胃虚寒及气虚疮疡脓清者慎用
+- modern_research: 广谱抗菌、抗病毒、抗炎、解热、保肝利胆
+- status: 可人工栽培
+
+### tcm-herb-013
+
+- name_cn: 石斛
+- name_en: Dendrobium
+- latin_name: Dendrobium officinale Kimura et Migo
+- family: 兰科 Orchidaceae
+- part_used: 茎
+- origin: 中国云南、贵州、广西、四川、湖北、福建、广东、安徽、浙江等地；霍山石斛为道地药材
+- price_range_cny_per_gram: 0.1-3
+- active_compounds: 石斛碱、石斛多糖、氨基酸、微量元素
+- properties_tcm: 甘，微寒
+- meridians_tcm: 归胃、肾经
+- functions_tcm: 益胃生津，滋阴清热
+- indications_tcm: 热病津伤，口干烦渴，胃阴不足，胃痛干呕，病后虚热，目暗不明
+- dosage_g: 6-12
+- contraindications: 湿温病尚未化燥者慎用
+- modern_research: 养胃生津、增强免疫、抗氧化、降血糖、保护视力
+- status: 可人工栽培
+
+### tcm-herb-014
+
+- name_cn: 阿胶
+- name_en: Donkey-Hide Gelatin
+- latin_name: Colla Corii Asini
+- family: 动物胶（驴皮）
+- part_used: 驴皮经煎煮浓缩制成的固体胶
+- origin: 中国山东东阿镇为道地产区
+- price_range_cny_per_gram: 0.2-1
+- active_compounds: 胶原蛋白、多种氨基酸、微量元素
+- properties_tcm: 甘，平
+- meridians_tcm: 归肺、肝、肾经
+- functions_tcm: 补血滋阴，润燥，止血
+- indications_tcm: 血虚萎黄，眩晕心悸，肌痿无力，心烦不眠，虚风内动，肺燥咳嗽，劳嗽咯血，吐血尿血，妇人崩漏，妊娠胎漏，跌打损伤
+- dosage_g: 3-9
+- contraindications: 脾胃虚弱，食欲不振，脘腹胀满，大便溏泄者慎用
+- modern_research: 补血、改善钙代谢、抗休克、增强免疫力
+- status: 传统工艺制品
+
+### tcm-herb-015
+
+- name_cn: 党参
+- name_en: Codonopsis
+- latin_name: Codonopsis pilosula
+- family: 桔梗科 Campanulaceae
+- part_used: 根
+- origin: 中国山西、甘肃、陕西、四川、河南、湖北、安徽等地；山西上党为道地产区
+- price_range_cny_per_gram: 0.02-0.1
+- active_compounds: 党参多糖、党参皂苷、氨基酸、微量元素
+- properties_tcm: 甘，平
+- meridians_tcm: 归脾、肺经
+- functions_tcm: 健脾益肺，养血生津
+- indications_tcm: 脾肺气虚，食少便溏，咳嗽气短，气血不足，心悸失眠，面色萎黄，内热消渴
+- dosage_g: 9-30
+- contraindications: 实证、热证慎用；不宜与藜芦同用
+- modern_research: 增强免疫力、改善贫血、调节胃肠功能、抗溃疡、抗肿瘤
+- status: 可人工栽培
+
+### tcm-herb-016
+
+- name_cn: 白术
+- name_en: Atractylodes Macrocephala
+- latin_name: Atractylodes macrocephala Koidz.
+- family: 菊科 Asteraceae
+- part_used: 根茎
+- origin: 中国浙江、湖南、湖北、江西、安徽、福建、四川等地；浙江于潜为道地产区
+- price_range_cny_per_gram: 0.03-0.1
+- active_compounds: 苍术酮、苍术素、白术内酯、多糖
+- properties_tcm: 苦、甘，温
+- meridians_tcm: 归脾、胃经
+- functions_tcm: 健脾益气，燥湿利水，止汗，安胎
+- indications_tcm: 脾虚食少，腹胀泄泻，痰饮眩悸，水肿，自汗，胎动不安
+- dosage_g: 6-12
+- contraindications: 阴虚内热，津液亏耗者慎用
+- modern_research: 调节胃肠运动、利尿、保肝、增强免疫、抗肿瘤
+- status: 可人工栽培
+
+### tcm-herb-017
+
+- name_cn: 甘草
+- name_en: Licorice
+- latin_name: Glycyrrhiza uralensis Fisch.
+- family: 豆科 Fabaceae
+- part_used: 根和根茎
+- origin: 中国内蒙古、甘肃、新疆、宁夏、山西、陕西等地；内蒙古为道地产区
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 甘草酸、甘草苷、异甘草素
+- properties_tcm: 甘，平
+- meridians_tcm: 归心、肺、脾、胃经
+- functions_tcm: 补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药
+- indications_tcm: 脾胃虚弱，倦怠乏力，心悸气短；咳嗽气喘；脘腹或四肢挛急疼痛；痈肿疮毒，药食中毒
+- dosage_g: 2-10
+- contraindications: 湿盛胀满，浮肿者慎用；不宜与大戟、芫花、海藻、甘遂同用；长期大量使用可引起假醛固酮增多症
+- modern_research: 抗炎、抗过敏、保肝解毒、镇咳祛痰、肾上腺皮质激素样作用
+- status: 可人工栽培
+
+### tcm-herb-018
+
+- name_cn: 杜仲
+- name_en: Eucommia Bark
+- latin_name: Eucommia ulmoides Oliv.
+- family: 杜仲科 Eucommiaceae
+- part_used: 树皮
+- origin: 中国贵州、四川、湖北、陕西、云南、湖南、甘肃、重庆等地；贵州为道地产区
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 杜仲胶、松脂醇二葡萄糖苷、绿原酸
+- properties_tcm: 甘，温
+- meridians_tcm: 归肝、肾经
+- functions_tcm: 补肝肾，强筋骨，安胎
+- indications_tcm: 肝肾不足，腰膝酸痛，筋骨无力；头晕目眩，妊娠漏血，胎动不安
+- dosage_g: 6-12
+- contraindications: 阴虚火旺者慎用
+- modern_research: 降血压、强筋骨、利尿、抗炎、调节血脂
+- status: 可人工栽培
+
+### tcm-herb-019
+
+- name_cn: 丹参
+- name_en: Salvia Miltiorrhiza
+- latin_name: Salvia miltiorrhiza Bunge
+- family: 唇形科 Lamiaceae
+- part_used: 根及根茎
+- origin: 中国山东、河南、广东、广西、四川、江苏、安徽、陕西等地；山东为道地产区
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 丹参酮、丹酚酸、鼠尾草酸
+- properties_tcm: 苦，微寒
+- meridians_tcm: 归心、肝经
+- functions_tcm: 活血祛瘀，通经止痛，清心除烦，凉血消痈
+- indications_tcm: 胸痹心痛，脘腹胁痛，癥瘕积聚，跌打损伤，月经不调，痛经经闭，心烦不寐，疮疡肿毒
+- dosage_g: 6-15
+- contraindications: 孕妇慎用；不宜与藜芦同用
+- modern_research: 改善微循环、抗血栓、保护心肌、保肝、抗氧化
+- status: 可人工栽培
+
+### tcm-herb-020
+
+- name_cn: 麦冬
+- name_en: Ophiopogon
+- latin_name: Ophiopogon japonicus (L.f.) Ker-Gawl.
+- family: 百合科 Liliaceae
+- part_used: 块根
+- origin: 中国浙江、江苏、湖北、陕西、广东、福建、山东、安徽等地；浙江慈溪为道地产区
+- price_range_cny_per_gram: 0.05-0.2
+- active_compounds: 甾体皂苷、高异黄酮类、多糖
+- properties_tcm: 甘、微苦，微寒
+- meridians_tcm: 归心、肺、胃经
+- functions_tcm: 养阴生津，润肺清心
+- indications_tcm: 肺燥干咳，阴虚痨嗽，喉痹咽痛，津伤口渴，内热消渴，心烦失眠，肠燥便秘
+- dosage_g: 6-12
+- contraindications: 外感风寒或肺胃有痰湿者慎用
+- modern_research: 增强免疫、抗炎、保护心血管、镇静催眠、降血糖
+- status: 可人工栽培
+
+### tcm-herb-021
+
+- name_cn: 茯苓
+- name_en: Poria
+- latin_name: Poria cocos (Schw.) Wolf
+- family: 多孔科 Polyporaceae
+- part_used: 菌核
+- origin: 中国云南、安徽、湖北、河南、四川、贵州、江西等地；云南茯苓为道地产区
+- price_range_cny_per_gram: 0.02-0.06
+- active_compounds: 茯苓酸、茯苓聚糖、粗蛋白
+- properties_tcm: 甘、淡，平
+- meridians_tcm: 归心、肺、脾、肾经
+- functions_tcm: 利水渗湿，健脾，宁心
+- indications_tcm: 水肿尿少，痰饮眩悸，脾虚食少，便溏泄泻，心神不安，惊悸失眠
+- dosage_g: 9-15
+- contraindications: 虚寒精滑者慎用
+- modern_research: 利尿、增强免疫、抗肿瘤、镇静、保肝
+- status: 可人工栽培
+
+### tcm-herb-022
+
+- name_cn: 陈皮
+- name_en: Tangerine Peel
+- latin_name: Citrus reticulata Blanco 及栽培变种的干燥果皮
+- family: 芸科 Rutaceae
+- part_used: 成熟果皮
+- origin: 中国广东、福建、浙江、江苏、四川、江西、湖南等地；广东新会为道地产区
+- price_range_cny_per_gram: 0.02-0.15
+- active_compounds: 挥发油、橙皮苷、花椒油脂素
+- properties_tcm: 苦、辛，温
+- meridians_tcm: 归肺、脾经
+- functions_tcm: 理气健脾，燥湿化痰
+- indications_tcm: 脘腹胀满，食少吐泻，咳嗽痰多
+- dosage_g: 3-10
+- contraindications: 气虚及阴虚燥咳者慎用
+- modern_research: 促消化、祛痰平喘、抗炎、抗氧化、降血脂
+- status: 可人工栽培
+
+### tcm-herb-023
+
+- name_cn: 黄芩
+- name_en: Scutellaria
+- latin_name: Scutellaria baicalensis Georgi
+- family: 唇形科 Lamiaceae
+- part_used: 根
+- origin: 中国内蒙古、辽宁、河北、山西、陕西、甘肃、山东、四川、贵州等地；河北、山西为道地产区
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 黄芩苷、黄芩素、汉黄芩素
+- properties_tcm: 苦，寒
+- meridians_tcm: 归肺、胆、脾、大肠、小肠经
+- functions_tcm: 清热燥湿，泻火解毒，止血，安胎
+- indications_tcm: 湿温暑湿，胸闷呕恶，湿热痞满，泻痢，黄疸，肺热咳嗽，高热烦渴，血热吐衄，痈肿疮毒，胎动不安
+- dosage_g: 3-10
+- contraindications: 苦寒伤胃，脾胃虚寒者慎用
+- modern_research: 抗菌抗病毒、抗炎、解热、降压、保肝利胆、抗肿瘤
+- status: 可人工栽培
+
+### tcm-herb-024
+
+- name_cn: 黄连
+- name_en: Coptis
+- latin_name: Coptis chinensis Franch.
+- family: 毛茛科 Ranunculaceae
+- part_used: 根茎
+- origin: 中国重庆石柱县、湖北、湖南、四川、贵州、陕西、甘肃等地；重庆石柱为道地产区
+- price_range_cny_per_gram: 0.1-0.5
+- active_compounds: 小檗碱(berberine)、黄连碱、甲基黄连碱
+- properties_tcm: 苦，寒
+- meridians_tcm: 归心、脾、胃、肝、胆、大肠经
+- functions_tcm: 清热燥湿，泻火解毒
+- indications_tcm: 湿热痞满，呕吐吞酸，泻痢，黄疸，高热神昏，心火亢盛，心烦不寐，血热吐衄，目赤吞酸，牙痛，消渴，痈肿疔疮；外治湿疹，湿疮，耳道流脓
+- dosage_g: 2-5
+- contraindications: 苦寒伤胃，脾胃虚寒者慎用；苦燥伤阴，阴虚津伤者慎用
+- modern_research: 抗菌、抗腹泻、降血糖、降血脂、抗心律失常、抗肿瘤
+- status: 可人工栽培
+
+### tcm-herb-025
+
+- name_cn: 枸杞叶
+- name_en: Goji Leaf
+- latin_name: Lycium barbarum L.
+- family: 茄科 Solanaceae
+- part_used: 叶
+- origin: 中国宁夏、甘肃、青海、新疆、内蒙古、河北等地
+- price_range_cny_per_gram: 0.01-0.05
+- active_compounds: 甜菜碱、枸杞多糖、维生素C、β-胡萝卜素
+- properties_tcm: 甘、苦，寒
+- meridians_tcm: 归肝、心、肾经
+- functions_tcm: 补虚益精，清热明目，祛风除湿
+- indications_tcm: 虚劳发热，烦渴，目赤昏蒙，眩晕，瘰疬，风湿痹痛
+- dosage_g: 6-12
+- contraindications: 脾胃虚寒者慎用
+- modern_research: 降血糖、降血脂、增强免疫、抗氧化、神经保护
+- status: 可人工栽培
+
+### tcm-herb-026
+
+- name_cn: 白芍
+- name_en: White Peony Root
+- latin_name: Paeonia lactiflora Pall.
+- family: 芍药科 Paeoniaceae
+- part_used: 根
+- origin: 中国安徽、湖北、四川、云南、贵州、山东、陕西、甘肃、内蒙古等地；安徽铜陵为道地产区
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 芍药苷、苯甲酸、挥发油
+- properties_tcm: 苦、酸，微寒
+- meridians_tcm: 归肝、脾经
+- functions_tcm: 养血调经，敛阴止汗，柔肝止痛，平抑肝阳
+- indications_tcm: 血虚萎黄，月经不调，自汗，盗汗，胁肋脘腹疼痛，四肢挛急疼痛，肝阳上亢，头痛眩晕
+- dosage_g: 6-15
+- contraindications: 虚寒证慎用
+- modern_research: 镇静镇痛、解痉、抗炎、免疫调节、保肝
+- status: 可人工栽培
+
+### tcm-herb-027
+
+- name_cn: 薏苡仁
+- name_en: Coix Seed
+- latin_name: Coix lacryma-jobi L.
+- family: 禾本科 Poaceae
+- part_used: 种仁
+- origin: 中国辽宁、内蒙古、河北、山东、江苏、安徽、台湾、福建、江西、广东、广西、四川、贵州、云南等地
+- price_range_cny_per_gram: 0.005-0.02
+- active_compounds: 薏苡仁酯、薏苡仁油、薏苡仁多糖、蛋白质
+- properties_tcm: 甘、淡，凉
+- meridians_tcm: 归脾、胃、肺经
+- functions_tcm: 利水渗湿，健脾止泻，除痹，排脓，解毒散结
+- indications_tcm: 水肿，脚气，小便不利，湿痹拘挛，脾虚泄泻，肺痈，肠痈
+- dosage_g: 9-30
+- contraindications: 孕妇慎用；津亏口燥，大便坚结，经前期慎用
+- modern_research: 抗肿瘤、免疫调节、降血糖、降血脂、保护心血管
+- status: 可人工栽培
+
+### tcm-herb-028
+
+- name_cn: 板蓝根
+- name_en: Isatis Root
+- latin_name: Isatis indigotica Fort.
+- family: 十字花科 Brassicaceae
+- part_used: 根
+- origin: 中国东北、华北、西北、华东；河北、黑龙江、江苏为道地产区
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 靛蓝、靛玉红、氨基酸、核苷类
+- properties_tcm: 苦，寒
+- meridians_tcm: 归心、胃经
+- functions_tcm: 清热解毒，凉血利咽
+- indications_tcm: 温疫时毒，发热咽痛，温毒发斑，痄腮，烂喉丹痧，大头瘟，丹毒，痈肿
+- dosage_g: 9-15
+- contraindications: 脾胃虚寒者慎用
+- modern_research: 抗病毒、抗菌、抗炎、解热、增强免疫
+- status: 可人工栽培
+
+### tcm-herb-029
+
+- name_cn: 连翘
+- name_en: Forsythia
+- latin_name: Forsythia suspensa (Thunb.) Vahl
+- family: 木犀科 Oleaceae
+- part_used: 果实
+- origin: 中国河北、河南、山东、安徽、江苏、江西、湖北、四川、陕西、山西、云南、贵州等地
+- price_range_cny_per_gram: 0.03-0.15
+- active_compounds: 连翘酯苷、连翘苷、挥发油
+- properties_tcm: 苦，微寒
+- meridians_tcm: 归肺、心、小肠经
+- functions_tcm: 清热解毒，消肿散结，疏散风热
+- indications_tcm: 痈肿疮毒，瘰疬痰核，风热外感，温病初起，热病口渴，小便短赤
+- dosage_g: 6-15
+- contraindications: 气虚疮疡脓清者慎用；脾胃虚寒者慎用
+- modern_research: 广谱抗菌、抗病毒、抗炎、解热、保护肝脏
+- status: 可人工栽培
+
+### tcm-herb-030
+
+- name_cn: 西洋参
+- name_en: American Ginseng
+- latin_name: Panax quinquefolius L.
+- family: 五加科 Araliaceae
+- part_used: 根
+- origin: 原产北美，现中国北京、河北、山西、吉林、辽宁、黑龙江、山东、安徽等地有栽培
+- price_range_cny_per_gram: 0.5-5
+- active_compounds: 人参皂苷(Rb1为主)、多糖、挥发油
+- properties_tcm: 甘、微苦，凉
+- meridians_tcm: 归心、肺、肾经
+- functions_tcm: 补气养阴，清热生津
+- indications_tcm: 气阴两伤，湿热未清，倦怠乏力，咽干口燥，胃阴不足，胃脘隐痛，火热内盛，气虚外感
+- dosage_g: 3-6
+- contraindications: 中阳衰微，胃有寒湿者忌服
+- modern_research: 增强免疫、抗疲劳、改善认知、调节血糖、适应原样作用
+- status: 可人工栽培
+
+### tcm-herb-031
+
+- name_cn: 胖大海
+- name_en: Sterculia Lychnophora
+- latin_name: Sterculia lychnophora Hance
+- family: 梧桐科 Sterculiaceae
+- part_used: 种子
+- origin: 中国广东、广西、云南；越南、柬埔寨、泰国、老挝等东南亚国家
+- price_range_cny_per_gram: 0.05-0.3
+- active_compounds: 胖大海素、半乳糖、阿拉伯糖
+- properties_tcm: 甘，寒
+- meridians_tcm: 归肺、大肠经
+- functions_tcm: 清热润肺，利咽开音，润肠通便
+- indications_tcm: 肺热声哑，咽喉疼痛，咳嗽，燥热便秘
+- dosage_g: 2-3
+- contraindications: 脾胃虚寒，大便溏泄者慎用；孕妇慎用
+- modern_research: 抗炎、镇痛、保肝、降血压、抗肿瘤
+- status: 进口为主
+
+### tcm-herb-032
+
+- name_cn: 肉桂
+- name_en: Cinnamon Bark
+- latin_name: Cinnamomum cassia Presl
+- family: 樟科 Lauraceae
+- part_used: 树皮
+- origin: 中国广东、广西、云南、福建；越南、印度、印度尼西亚也有分布
+- price_range_cny_per_gram: 0.02-0.1
+- active_compounds: 桂皮醛、桂皮酸、桂皮醇
+- properties_tcm: 辛、甘，大热
+- meridians_tcm: 归肾、脾、心、肝经
+- functions_tcm: 补火助阳，引火归元，散寒止痛，温通经脉
+- indications_tcm: 阳痿宫冷，腹中冷痛，经闭久瘕，心腹冷痛，寒痹腰痛，寒凝血瘀之经痛，虚寒吐泻
+- dosage_g: 2-5
+- contraindications: 孕妇禁用；阴虚火旺、里有实热、血热妄行者慎用
+- modern_research: 抗菌、抗真菌、抗炎、镇痛、降血糖、改善循环
+- status: 可人工栽培
+
+### tcm-herb-033
+
+- name_cn: 菊花
+- name_en: Chrysanthemum
+- latin_name: Chrysanthemum morifolium Ramat.
+- family: 菊科 Asteraceae
+- part_used: 头状花序
+- origin: 中国浙江桐乡、安徽亳州、安徽黄山、河南焦作、河北邢台等地；杭菊为道地药材
+- price_range_cny_per_gram: 0.01-0.08
+- active_compounds: 黄酮类、挥发油、胆碱、腺嘌呤
+- properties_tcm: 辛、甘、苦，微寒
+- meridians_tcm: 归肺、肝经
+- functions_tcm: 散风清热，平肝明目，清热解毒
+- indications_tcm: 风热感冒，头痛眩晕，目赤肿痛，眼目昏花，疮痈肿毒
+- dosage_g: 6-12
+- contraindications: 气血虚者慎用
+- modern_research: 抗炎、抗菌、抗病毒、解热、降血压、保护视力
+- status: 可人工栽培
+
+### tcm-herb-034
+
+- name_cn: 决明子
+- name_en: Cassia Seed
+- latin_name: Cassia tora L. 或 Cassia obtusifolia L.
+- family: 豆科 Fabaceae
+- part_used: 成熟种子
+- origin: 中国广西、广东、四川、安徽、浙江、湖北、江西、福建、云南、贵州等地
+- price_range_cny_per_gram: 0.01-0.05
+- active_compounds: 大黄酚、大黄素、决明子苷
+- properties_tcm: 甘、苦、咸，微寒
+- meridians_tcm: 归肝、大肠经
+- functions_tcm: 清热明目，润肠通便
+- indications_tcm: 目赤涩痛，羞明多泪，目暗不明，头痛眩晕，肠燥便秘
+- dosage_g: 9-15
+- contraindications: 低血压患者慎用；孕妇慎用
+- modern_research: 降血脂、降血压、润肠通便、抗菌、护肝
+- status: 可人工栽培
+
+### tcm-herb-035
+
+- name_cn: 薄荷
+- name_en: Peppermint
+- latin_name: Mentha haplocalyx Briq.
+- family: 唇形科 Lamiaceae
+- part_used: 地上部分
+- origin: 中国江苏、浙江、安徽、湖北、四川、广东、贵州、江西等地；江苏为道地产区
+- price_range_cny_per_gram: 0.01-0.05
+- active_compounds: 薄荷醇、薄荷酮、薄荷苷
+- properties_tcm: 辛，凉
+- meridians_tcm: 归肺、肝经
+- functions_tcm: 疏散风热，清利头目，利咽，透疹，疏肝行气
+- indications_tcm: 风热感冒，温病初起，头痛目赤，喉痹，口疮，风疹麻疹，胸胁胀闷
+- dosage_g: 3-6
+- contraindications: 体虚多汗者慎用；不宜久煎
+- modern_research: 解热镇痛、抗炎、抗菌、抗病毒、促进消化
+- status: 可人工栽培
+
+### tcm-herb-036
+
+- name_cn: 牛黄
+- name_en: Calculus Bovis
+- latin_name: 牛的胆结石
+- family: 动物药
+- part_used: 胆结石
+- origin: 中国内蒙古、河北、山东、河南、江苏、安徽、四川等地；以内蒙古产量最大
+- price_range_cny_per_gram: 50-100
+- active_compounds: 胆红素、胆酸、胆固醇、氨基酸
+- properties_tcm: 甘，凉
+- meridians_tcm: 归心、肝经
+- functions_tcm: 化痰开窍，凉肝息风，清热解毒
+- indications_tcm: 热病神昏，中风痰迷，癫痫发狂，小儿惊风，口舌生疮，喉痹，痈肿疮毒
+- dosage_g: 0.15-0.35
+- contraindications: 孕妇慎用
+- modern_research: 镇静抗惊厥、解热、保护心脏、保肝利胆
+- status: 天然牛黄稀缺，有人工牛黄替代
+
+### tcm-herb-037
+
+- name_cn: 附子
+- name_en: Aconite Lateral Root
+- latin_name: Aconitum carmichaelii Debx (子根的加工品)
+- family: 毛茛科 Ranunculaceae
+- part_used: 侧根(子根)
+- origin: 中国四川、湖北、陕西、湖南、江西、浙江、安徽等地；四川江油为道地产区
+- price_range_cny_per_gram: 0.02-0.1
+- active_compounds: 乌头碱(aconitine)、次乌头碱、新乌头碱
+- properties_tcm: 辛、甘，大热；有毒
+- meridians_tcm: 归心、肾、脾经
+- functions_tcm: 回阳救逆，补火助阳，散寒止痛
+- indications_tcm: 亡阳虚脱，肢冷脉微；阳气不足，畏寒肢冷，阳虚水肿；心腹冷痛，寒痹剧痛
+- dosage_g: 3-15
+- contraindications: 孕妇禁用；不宜与半夏、瓜蒌、瓜蒌子、瓜蒌仁、天花粉、川贝母、浙贝母、平贝母、伊贝母、湖北贝母、白蔹、白及同用；必须先煎、久煎
+- modern_research: 强心、抗炎、镇痛、增强免疫、改善微循环
+- status: 需炮制后使用，有毒
+
+### tcm-herb-038
+
+- name_cn: 延胡索
+- name_en: Corydalis
+- latin_name: Corydalis yanhusuo W.T.Wang
+- family: 罂粟科 Papaveraceae
+- part_used: 块茎
+- origin: 中国浙江、湖北、江苏、安徽、辽宁、江西、四川等地；浙江为道地产区
+- price_range_cny_per_gram: 0.03-0.1
+- active_compounds: 延胡索乙素(tetrahydropalmatine)、甲素、丑素
+- properties_tcm: 辛、苦，温
+- meridians_tcm: 归肝、脾、心经
+- functions_tcm: 活血，行气，止痛
+- indications_tcm: 胸胁刺痛，产后瘀阻腹痛，跌扑肿痛，各种痛证
+- dosage_g: 3-10
+- contraindications: 孕妇慎用
+- modern_research: 镇痛、镇静催眠、抗溃疡、抗心律失常、抗抑郁
+- status: 可人工栽培
+
+### tcm-herb-039
+
+- name_cn: 远志
+- name_en: Polygala Root
+- latin_name: Polygala tenuifolia Willd.
+- family: 远志科 Polygalaceae
+- part_used: 根
+- origin: 中国内蒙古、辽宁、河北、山西、黑龙江、吉林、山东、河南、陕西、甘肃、湖北、江苏、浙江等地
+- price_range_cny_per_gram: 0.03-0.15
+- active_compounds: 远志皂苷、远志碱、挥发油
+- properties_tcm: 苦、辛，温
+- meridians_tcm: 归心、肾、肺经
+- functions_tcm: 安神益智，交通心肾，祛痰开窍，消散痈肿
+- indications_tcm: 心神不安，惊悸失眠，健忘；痰阻心窍，癫痫发狂，神昏谵语；咳嗽痰多，痈疽疮毒，乳房肿痛，喉痹
+- dosage_g: 3-10
+- contraindications: 有胃炎及胃溃疡者慎用
+- modern_research: 镇静催眠、改善记忆、祛痰、抗惊厥、抗菌、神经保护
+- status: 可人工栽培
+
+### tcm-herb-040
+
+- name_cn: 葛根
+- name_en: Kudzu Root
+- latin_name: Pueraria lobata (Willd.) Ohwi
+- family: 豆科 Fabaceae
+- part_used: 根
+- origin: 中国安徽、河南、浙江、湖北、江苏、广东、广西、湖南、江西、福建、贵州、四川等地
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 葛根素(puerarin)、大豆苷、染料木苷
+- properties_tcm: 甘、辛，凉
+- meridians_tcm: 归脾、胃经
+- functions_tcm: 解肌退热，生津止渴，透疹，升阳止泻，通经活络，解酒毒
+- indications_tcm: 表证发热，项背强痛，麻疹不透，热病口渴，消渴，泄泻，醉酒
+- dosage_g: 10-15
+- contraindications: 胃寒呕吐者慎用；表虚多汗者慎用
+- modern_research: 扩张脑血管和冠状动脉、降血压、降血糖、解酒、改善更年期症状
+- status: 可人工栽培
+
+### tcm-herb-041
+
+- name_cn: 益母草
+- name_en: Motherwort
+- latin_name: Leonurus japonicus Houtt.
+- family: 唇形科 Lamiaceae
+- part_used: 地上部分
+- origin: 中国东北、华北、华东、华中、西南、西北；全国各地均有分布
+- price_range_cny_per_gram: 0.01-0.03
+- active_compounds: 益母草碱、水苏碱、哈巴俄苷
+- properties_tcm: 辛、苦，微寒
+- meridians_tcm: 归肝、心包、膀胱经
+- functions_tcm: 活血调经，利尿消肿，清热解毒
+- indications_tcm: 月经不调，痛经经闭，恶露不尽，水肿尿少，疮疡肿毒
+- dosage_g: 9-30
+- contraindications: 孕妇禁用；无瘀滞者慎用
+- modern_research: 收缩子宫、利尿、改善微循环、抗炎、保护心血管
+- status: 可人工栽培
+
+### tcm-herb-042
+
+- name_cn: 泽兰
+- name_en: Eupatorium
+- latin_name: Lycopus lucidus Turcz. var. hirtus Regel
+- family: 唇形科 Lamiaceae
+- part_used: 地上部分
+- origin: 中国黑龙江、吉林、辽宁、内蒙古、河北、山西、山东、江苏、安徽、浙江、福建、江西、湖北、湖南、广东、广西、四川
+- price_range_cny_per_gram: 0.01-0.05
+- active_compounds: 泽兰苷、齐墩果酸、熊果酸
+- properties_tcm: 苦、辛，微温
+- meridians_tcm: 归肝、脾经
+- functions_tcm: 活血调经，祛瘀消痈，利水消肿
+- indications_tcm: 月经不调，经闭痛经，产后瘀滞腹痛，水肿，跌打损伤，痈肿疮毒
+- dosage_g: 6-12
+- contraindications: 孕妇慎用
+- modern_research: 活血、抗炎、利尿、抑菌
+- status: 可人工栽培
+
+### tcm-herb-043
+
+- name_cn: 紫苏
+- name_en: Perilla
+- latin_name: Perilla frutescens (L.) Britt.
+- family: 唇形科 Lamiaceae
+- part_used: 叶、梗、籽
+- origin: 中国浙江、湖北、辽宁、江苏、广东等地；全国各地广泛栽培
+- price_range_cny_per_gram: 0.01-0.05
+- active_compounds: 紫苏醛、紫苏酮、挥发油
+- properties_tcm: 辛，温
+- meridians_tcm: 归肺、脾经
+- functions_tcm: 解表散寒，行气和胃
+- indications_tcm: 风寒感冒，咳嗽气喘，脾胃气滞，脘腹胀满，食少纳呆，妊娠呕吐，鱼蟹中毒
+- dosage_g: 6-10
+- contraindications: 表虚自汗者慎用
+- modern_research: 解热抗炎、抗菌、抗病毒、镇咳祛痰、保护胃黏膜
+- status: 可人工栽培
+
+### tcm-herb-044
+
+- name_cn: 桑寄生
+- name_en: Taxillus
+- latin_name: Taxillus chinensis (DC.) Danser
+- family: 桑寄生科 Loranthaceae
+- part_used: 带叶茎枝
+- origin: 中国广东、广西、湖南、湖北、四川、贵州、云南、浙江、安徽、江西、福建、台湾
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 槲皮素、金丝桃苷、桑寄生黄酮
+- properties_tcm: 苦、甘，平
+- meridians_tcm: 归肝、肾经
+- functions_tcm: 祛风湿，补肝肾，强筋骨，安胎
+- indications_tcm: 风湿痹痛，腰膝酸软，筋骨无力，崩漏经多，妊娠漏血，胎动不安
+- dosage_g: 9-15
+- contraindications: 无明显禁忌
+- modern_research: 降血压、镇静、利尿、抗炎、抗肿瘤
+- status: 半寄生植物，可人工培育
+
+### tcm-herb-045
+
+- name_cn: 何首乌
+- name_en: Polygonum Multiflorum
+- latin_name: Polygonum multiflorum Thunb.
+- family: 蓼科 Polygonaceae
+- part_used: 块根
+- origin: 中国河北、河南、湖北、广西、广东、贵州、四川、山东、江苏、浙江、安徽、福建、江西、辽宁等地
+- price_range_cny_per_gram: 0.02-0.1
+- active_compounds: 结合型蒽醌、游离型蒽醌、二苯乙烯苷、磷脂
+- properties_tcm: 苦、甘、涩，温；制何首乌无毒，生何首乌有小毒
+- meridians_tcm: 归肝、心、肾经
+- functions_tcm: 制何首乌：补肝肾，益精血，乌须发，强筋骨，化浊降脂；生何首乌：解毒，消痈，润肠通便
+- indications_tcm: 制：肝肾精血不足，眩晕耳鸣，腰膝酸软，遗精崩带，须发早白，耳鸣目暗，肢体麻木，高脂血症；生：瘰疬疮痈，风疹瘙痒，肠燥便秘
+- dosage_g: 6-12
+- contraindications: 有肝病史者慎用制何首乌；便溏泄泻者慎用生何首乌
+- modern_research: 降血脂、抗氧化、抗衰老、增强免疫、促进造血
+- status: 可人工栽培；注意肝毒性风险
+
+### tcm-herb-046
+
+- name_cn: 熟地黄
+- name_en: Prepared Rehmannia Root
+- latin_name: Rehmannia glutinosa Libosch. (经炮制的根)
+- family: 玄参科 Scrophulariaceae
+- part_used: 根(蒸晒至黑色)
+- origin: 中国河北、河南、山东、江苏、安徽、山西、陕西、四川、贵州、辽宁等地；河南为道地产区
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 梓醇、毛蕊花糖苷、环烯醚萜苷
+- properties_tcm: 甘，微温
+- meridians_tcm: 归肝、肾经
+- functions_tcm: 补血滋阴，益精填髓
+- indications_tcm: 血虚萎黄，眩晕心悸，月经不调，崩漏下血；肝肾阴虚，腰膝酸软，骨蒸潮热，盗汗遗精，内热消渴，耳鸣耳聋，须发早白，小儿囟门不合
+- dosage_g: 9-15
+- contraindications: 气滞痰多，脘腹胀痛，食少便溏者慎用
+- modern_research: 增强免疫、促进造血、降血糖、抗衰老、神经保护
+- status: 可人工栽培
+
+### tcm-herb-047
+
+- name_cn: 龟甲
+- name_en: Tartarise Turtle Shell
+- latin_name: Trionyx sinensis Wiegmann (背甲及腹甲)
+- family: 动物药-鳖科
+- part_used: 背甲及腹甲
+- origin: 中国湖北、江苏、安徽、江西、湖南、广东、广西、四川、河南等地
+- price_range_cny_per_gram: 0.05-0.3
+- active_compounds: 胶原蛋白、钙、多种氨基酸
+- properties_tcm: 甘、咸，寒
+- meridians_tcm: 归肝、肾、心经
+- functions_tcm: 滋阴潜阳，益肾强骨，养血补心，固经止崩
+- indications_tcm: 阴虚潮热，骨蒸盗汗，头晕目眩，虚风内动；肾阴不足，筋骨不健，囟门不合，腰膝酸痛；阴虚血热，月经量多，经血不下，崩漏
+- dosage_g: 6-24
+- contraindications: 脾胃虚弱者慎用
+- modern_research: 补钙、增强免疫、镇静、促进骨折愈合
+- status: 传统药材
+
+### tcm-herb-048
+
+- name_cn: 牛膝
+- name_en: Achyranthes Root
+- latin_name: Achyranthes bidentata Blume
+- family: 苋科 Amaranthaceae
+- part_used: 根
+- origin: 中国河北、山东、河南、安徽、江苏、湖北、四川、贵州、广西、广东、云南等地；牛膝以山西、河北、河南、山东为道地
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 蜕皮激素、皂苷、多糖
+- properties_tcm: 苦、甘、酸，平
+- meridians_tcm: 归肝、肾经
+- functions_tcm: 逐瘀通经，通利关节，利尿通淋，引血下行
+- indications_tcm: 经闭癥瘕，胞衣不下，跌扑伤痛，筋骨痿软，湿热下注，足膝痿软肿胀，淋证，尿血，牙龈肿痛，头痛眩晕
+- dosage_g: 6-12
+- contraindications: 孕妇慎用；中气下陷，脾虚泄泻，下元不固之多尿、遗精慎用
+- modern_research: 抗炎、镇痛、促进骨折愈合、降血压、调节血脂
+- status: 可人工栽培
+
+### tcm-herb-049
+
+- name_cn: 沙苑子
+- name_en: Astragalus Complanatus
+- latin_name: Astragalus complanatus R.Br.
+- family: 豆科 Fabaceae
+- part_used: 成熟种子
+- origin: 中国内蒙古、山西、河北、山东、陕西、甘肃、江苏、安徽等地；内蒙古乌兰察布为道地产区
+- price_range_cny_per_gram: 0.03-0.1
+- active_compounds: 沙苑子苷、黄芪碱、皂苷
+- properties_tcm: 甘，温
+- meridians_tcm: 归肝、肾经
+- functions_tcm: 补肾助阳，固精缩尿，养肝明目
+- indications_tcm: 肾虚腰痛，阳痿遗精，遗尿尿频，白浊带下，视物昏花
+- dosage_g: 9-15
+- contraindications: 相火炽盛，小便不利者慎用
+- modern_research: 降血压、降血糖、增强免疫、改善肾功能
+- status: 可人工栽培
+
+### tcm-herb-050
+
+- name_cn: 女贞子
+- name_en: Privet Fruit
+- latin_name: Ligustrum lucidum Ait.
+- family: 木犀科 Oleaceae
+- part_used: 成熟果实
+- origin: 中国江苏、安徽、浙江、江西、山东、湖南、湖北、福建、广东、广西、四川、贵州、云南等地
+- price_range_cny_per_gram: 0.02-0.08
+- active_compounds: 齐墩果酸、女贞子苷、甘露醇
+- properties_tcm: 甘、苦，凉
+- meridians_tcm: 归肝、肾经
+- functions_tcm: 滋补肝肾，明目乌发
+- indications_tcm: 肝肾阴虚，眩晕耳鸣，腰膝酸软，须发早白，目暗不明，内热消渴，骨蒸潮热
+- dosage_g: 6-12
+- contraindications: 脾胃虚寒，泄泻者慎用
+- modern_research: 增强免疫、保肝、降血脂、抗衰老、神经保护
+- status: 可人工栽培
+
+### 人参
+
+- name: 人参
+- category: 补气药
+- nature: 甘、微苦
+- taste: 微温
+- meridian: 脾、肺、心经
+- functions: 大补元气，复脉固脱，补脾益肺，生津养血，安神益智
+- source: 五加科植物人参的干燥根和根茎
+- dosage: 3～9g
+- note: 不宜与藜芦同用
+- status: active
+
+### 黄芪
+
+- name: 黄芪
+- category: 补气药
+- nature: 甘
+- taste: 微温
+- meridian: 脾、肺经
+- functions: 补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌
+- source: 豆科植物蒙古黄芪或膜荚黄芪的干燥根
+- dosage: 9～30g
+- note: 表实邪盛、气滞湿阻者慎用
+- status: active
+
+### 当归
+
+- name: 当归
+- category: 补血药
+- nature: 甘、辛
+- taste: 温
+- meridian: 肝、心、脾经
+- functions: 补血活血，调经止痛，润肠通便
+- source: 伞形科植物当归的干燥根
+- dosage: 6～12g
+- note: 湿盛中满、大便泄泻者慎用
+- status: active
+
+### 枸杞子
+
+- name: 枸杞子
+- category: 补阴药
+- nature: 甘
+- taste: 平
+- meridian: 肝、肾经
+- functions: 滋补肝肾，益精明目
+- source: 茄科植物宁夏枸杞的干燥成熟果实
+- dosage: 6～12g
+- note: 外邪实热、脾虚便溏者慎用
+- status: active
+
+### 甘草
+
+- name: 甘草
+- category: 补气药
+- nature: 甘
+- taste: 平
+- meridian: 心、肺、脾、胃经
+- functions: 补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药
+- source: 豆科植物甘草、胀果甘草或光果甘草的干燥根和根茎
+- dosage: 2～10g
+- note: 不宜与大戟、芫花、甘遂、海藻同用
+- status: active
+
+### 金银花
+
+- name: 金银花
+- category: 清热解毒药
+- nature: 甘
+- taste: 寒
+- meridian: 肺、心、胃经
+- functions: 清热解毒，疏散风热
+- source: 忍冬科植物忍冬的干燥花蕾或带初开的花
+- dosage: 6～15g
+- note: 脾胃气虚、肠滑泄泻者慎用
+- status: active
+
+### 川芎
+
+- name: 川芎
+- category: 活血化瘀药
+- nature: 辛
+- taste: 温
+- meridian: 肝、胆、心包经
+- functions: 活血行气，祛风止痛
+- source: 伞形科植物川芎的干燥根茎
+- dosage: 3～10g
+- note: 阴虚火旺、月经过多者慎用
+- status: active
+
+### 白术
+
+- name: 白术
+- category: 补气药
+- nature: 苦、甘
+- taste: 温
+- meridian: 脾、胃经
+- functions: 健脾益气，燥湿利水，止汗，安胎
+- source: 菊科植物白术的干燥根茎
+- dosage: 6～12g
+- note: 阴虚燥渴、多汗者慎用
+- status: active
+
+### 茯苓
+
+- name: 茯苓
+- category: 利水渗湿药
+- nature: 甘、淡
+- taste: 平
+- meridian: 心、肺、脾、肾经
+- functions: 利水渗湿，健脾，宁心
+- source: 多孔菌科真菌茯苓的干燥菌核
+- dosage: 9～15g
+- note: 虚寒小便不利者慎用
+- status: active
+
+### 陈皮
+
+- name: 陈皮
+- category: 理气药
+- nature: 辛、苦
+- taste: 温
+- meridian: 肺、脾经
+- functions: 理气健脾，燥湿化痰
+- source: 芸香科植物橘及其栽培变种的干燥成熟果皮
+- dosage: 3～10g
+- note: 阴虚燥咳、吐血者慎用
+- status: active
+
+### 丹参
+
+- name: 丹参
+- category: 活血化瘀药
+- nature: 苦
+- taste: 微寒
+- meridian: 心、心包、肝经
+- functions: 活血调经，祛瘀止痛，凉血消痈，除烦安神
+- source: 唇形科植物丹参的干燥根和根茎
+- dosage: 9～15g
+- note: 不宜与藜芦同用
+- status: active
+
+### 半夏
+
+- name: 半夏
+- category: 化痰止咳平喘药
+- nature: 辛
+- taste: 温
+- meridian: 脾、胃、肺经
+- functions: 燥湿化痰，降逆止呕，消痞散结
+- source: 天南星科植物半夏的干燥块茎
+- dosage: 3～9g
+- note: 阴虚燥咳、津伤口渴者慎用
+- status: active
+
+### 黄连
+
+- name: 黄连
+- category: 清热燥湿药
+- nature: 苦
+- taste: 寒
+- meridian: 心、脾、胃、肝、胆、大肠经
+- functions: 清热燥湿，泻火解毒
+- source: 毛茛科植物黄连、三角叶黄连或云连的干燥根茎
+- dosage: 2～5g
+- note: 脾胃虚寒者慎用
+- status: active
+
+### 麻黄
+
+- name: 麻黄
+- category: 解表药
+- nature: 辛、微苦
+- taste: 温
+- meridian: 肺、膀胱经
+- functions: 发汗解表，宣肺平喘，利水消肿
+- source: 麻黄科植物草麻黄、木贼麻黄或中麻黄的干燥草质茎
+- dosage: 2～10g
+- note: 表虚自汗、阴虚盗汗及肺肾虚喘者慎用
+- status: active
+
+### 桂枝
+
+- name: 桂枝
+- category: 解表药
+- nature: 辛、甘
+- taste: 温
+- meridian: 心、肺、膀胱经
+- functions: 发汗解肌，温通经脉，助阳化气
+- source: 樟科植物肉桂的干燥嫩枝
+- dosage: 3～10g
+- note: 温热病、阴虚火旺者慎用
+- status: active
+
+### 白芍
+
+- name: 白芍
+- category: 补血药
+- nature: 苦、酸
+- taste: 微寒
+- meridian: 肝、脾经
+- functions: 养血调经，敛阴止汗，柔肝止痛，平抑肝阳
+- source: 毛茛科植物芍药的干燥根
+- dosage: 6～15g
+- note: 反藜芦
+- status: active
+
+### 熟地黄
+
+- name: 熟地黄
+- category: 补血药
+- nature: 甘
+- taste: 微温
+- meridian: 肝、肾经
+- functions: 补血滋阴，益精填髓
+- source: 玄参科植物地黄的块根经炮制加工而成
+- dosage: 9～15g
+- note: 脾虚湿滞、腹满便溏者慎用
+- status: active
+
+### 泽泻
+
+- name: 泽泻
+- category: 利水渗湿药
+- nature: 甘、淡
+- taste: 寒
+- meridian: 肾、膀胱经
+- functions: 利水渗湿，泄热，化浊降脂
+- source: 泽泻科植物泽泻的干燥块茎
+- dosage: 6～10g
+- note: 肾虚滑精、无湿热者慎用
+- status: active
+
+### 厚朴
+
+- name: 厚朴
+- category: 理气药
+- nature: 苦、辛
+- taste: 温
+- meridian: 脾、胃、肺、大肠经
+- functions: 燥湿消痰，下气除满
+- source: 木兰科植物厚朴或凹叶厚朴的干燥树皮
+- dosage: 3～10g
+- note: 孕妇慎用
+- status: active
+
+### 柴胡
+
+- name: 柴胡
+- category: 解表药
+- nature: 辛、苦
+- taste: 微寒
+- meridian: 肝、胆、肺经
+- functions: 疏散退热，疏肝解郁，升举阳气
+- source: 伞形科植物柴胡或狭叶柴胡的干燥根
+- dosage: 3～10g
+- note: 肝阳上亢、头痛眩晕者慎用
+- status: active
+
+### 黄芩
+
+- name: 黄芩
+- category: 清热燥湿药
+- nature: 苦
+- taste: 寒
+- meridian: 肺、胆、脾、大肠、小肠经
+- functions: 清热燥湿，泻火解毒，止血，安胎
+- source: 唇形科植物黄芩的干燥根
+- dosage: 3～10g
+- note: 脾胃虚寒者慎用
+- status: active
+
+### 连翘
+
+- name: 连翘
+- category: 清热解毒药
+- nature: 苦
+- taste: 微寒
+- meridian: 肺、心、小肠经
+- functions: 清热解毒，消肿散结，疏散风热
+- source: 木犀科植物连翘的干燥果实
+- dosage: 6～15g
+- note: 气虚疮疡脓少者慎用
+- status: active
+
+### 板蓝根
+
+- name: 板蓝根
+- category: 清热解毒药
+- nature: 苦
+- taste: 寒
+- meridian: 心、胃经
+- functions: 清热解毒，凉血利咽
+- source: 十字花科植物菘蓝的干燥根
+- dosage: 9～15g
+- note: 脾胃虚寒者慎用
+- status: active
+
+### 菊花
+
+- name: 菊花
+- category: 解表药
+- nature: 辛、甘、苦
+- taste: 微寒
+- meridian: 肺、肝经
+- functions: 疏散风热，平抑肝阳，清肝明目，清热解毒
+- source: 菊科植物菊的干燥头状花序
+- dosage: 6～12g
+- note: 气虚胃寒、脾胃虚弱者慎用
+- status: active
+
+### 薄荷
+
+- name: 薄荷
+- category: 解表药
+- nature: 辛
+- taste: 凉
+- meridian: 肺、肝经
+- functions: 疏散风热，清利头目，利咽，透疹，疏肝行气
+- source: 唇形科植物薄荷的干燥地上部分
+- dosage: 3～6g
+- note: 体虚多汗者慎用
+- status: active
+
+### 附子
+
+- name: 附子
+- category: 温里药
+- nature: 辛、甘
+- taste: 大热
+- meridian: 心、肾、脾经
+- functions: 回阳救逆，补火助阳，散寒止痛
+- source: 毛茛科植物乌头的子根的加工品
+- dosage: 3～15g
+- note: 孕妇禁用，不宜与半夏、瓜蒌、贝母、白蔹同用
+- status: active
+
+### 干姜
+
+- name: 干姜
+- category: 温里药
+- nature: 辛
+- taste: 热
+- meridian: 脾、胃、肾、心、肺经
+- functions: 温中散寒，回阳通脉，温肺化饮
+- source: 姜科植物姜的干燥根茎
+- dosage: 3～10g
+- note: 孕妇及阴虚火旺者慎用
+- status: active
+
+### 党参
+
+- name: 党参
+- category: 补气药
+- nature: 甘
+- taste: 平
+- meridian: 脾、肺经
+- functions: 补中益气，健脾益肺，生津养血
+- source: 桔梗科植物党参、素花党参或川党参的干燥根
+- dosage: 9～30g
+- note: 不宜与藜芦同用
+- status: active
+
+### 砂仁
+
+- name: 砂仁
+- category: 化湿药
+- nature: 辛
+- taste: 温
+- meridian: 脾、胃、肾经
+- functions: 化湿开胃，温脾止泻，理气安胎
+- source: 姜科植物阳春砂、绿壳砂或海南砂的干燥成熟果实
+- dosage: 3～6g
+- note: 阴虚血燥者慎用
+- status: active
+
+### 山药
+
+- name: 山药
+- category: 补气药
+- nature: 甘
+- taste: 平
+- meridian: 脾、肺、肾经
+- functions: 补脾养胃，生津益肺，补肾涩精
+- source: 薯蓣科植物薯蓣的干燥根茎
+- dosage: 15～30g
+- note: 湿盛中满、积滞者慎用
+- status: active
+
+### 杜仲
+
+- name: 杜仲
+- category: 补阳药
+- nature: 甘
+- taste: 温
+- meridian: 肝、肾经
+- functions: 补肝肾，强筋骨，安胎
+- source: 杜仲科植物杜仲的干燥树皮
+- dosage: 6～12g
+- note: 阴虚火旺者慎用
+- status: active
+
+### 淫羊藿
 
 - name: 淫羊藿
-- source_herb: 小檗科植物柔毛淫羊藿
-- type: 配方颗粒
-- pharmacology: 补肾阳，强筋骨，祛风湿
-- description: 用于肾阳虚衰，阳痿遗精，筋骨痿软，风湿痹痛
-- last_updated: 2026-06-27T15:55:23.935Z
+- category: 补阳药
+- nature: 辛、甘
+- taste: 温
+- meridian: 肝、肾经
+- functions: 补肾阳，强筋骨，祛风湿
+- source: 小檗科植物淫羊藿、箭叶淫羊藿或柔毛淫羊藿的干燥叶
+- dosage: 6～10g
+- note: 阴虚火旺者慎用
+- status: active
 
-### INGREDIENT-j0k1l2
+### 女贞子
 
-- name: 伸筋草
-- source_herb: 石松科植物石松
-- type: 配方颗粒
-- pharmacology: 祛风除湿，舒筋活络
-- description: 用于关节酸痛，屈伸不利，跌打损伤
-- last_updated: 2026-06-27T15:55:23.935Z
+- name: 女贞子
+- category: 补阴药
+- nature: 甘、苦
+- taste: 凉
+- meridian: 肝、肾经
+- functions: 滋补肝肾，明目乌发
+- source: 木犀科植物女贞子的干燥成熟果实
+- dosage: 6～12g
+- note: 脾胃虚寒泄泻者慎用
+- status: active
 
-### INGREDIENT-m3n4o5
+### 麦冬
 
-- name: 中药配方颗粒
-- source_herb: 单味中药饮片
-- type: 现代中药剂型
-- pharmacology: 保持传统中药药效，便于质量控制
-- description: 由单味中药饮片经现代工艺提取制成的颗粒剂，便于临床调配
-- last_updated: 2026-06-27T15:55:23.935Z
+- name: 麦冬
+- category: 补阴药
+- nature: 甘、微苦
+- taste: 微寒
+- meridian: 心、肺、胃经
+- functions: 养阴生津，润肺清心
+- source: 百合科植物麦冬的干燥块根
+- dosage: 6～12g
+- note: 脾胃虚寒、湿痰者慎用
+- status: active
 
-### INGREDIENT-p6q7r8
+### 五味子
 
-- name: 中药饮片
-- source_herb: 中药材
-- type: 传统中药剂型
-- pharmacology: 根据炮制方法不同而异
-- description: 中药材经过净制、切制、炮制等加工制成的药材，是中医临床用药的基础
-- last_updated: 2026-06-27T15:55:23.935Z
+- name: 五味子
+- category: 收涩药
+- nature: 酸、甘
+- taste: 温
+- meridian: 肺、心、肾经
+- functions: 收敛固涩，益气生津，补肾宁心
+- source: 木兰科植物五味子或华中五味子的干燥成熟果实
+- dosage: 2～6g
+- note: 表邪未解、内有实热、咳嗽初起者慎用
+- status: active
 
-### INGREDIENT-s9t0u1
+### 山楂
 
-- name: 中成药
-- source_herb: 中药复方或单味药
-- type: 现代中药制剂
-- pharmacology: 根据处方组成而定
-- description: 以中药材为原料，按照规定的处方和工艺制成的制剂，如丸剂、片剂、胶囊剂等
-- last_updated: 2026-06-27T15:55:23.935Z
+- name: 山楂
+- category: 消食药
+- nature: 酸、甘
+- taste: 微温
+- meridian: 脾、胃、肝经
+- functions: 消食健胃，行气散瘀，化浊降脂
+- source: 蔷薇科植物山里红或山楂的干燥成熟果实
+- dosage: 9～15g
+- note: 脾胃虚弱无积滞者及孕妇慎用
+- status: active
 
-### INGREDIENT-v2w3x4
+### 莱菔子
 
-- name: 中药工业
-- source_herb: 中药材资源
-- type: 产业领域
-- pharmacology: 现代化生产技术
-- description: 指中药材种植、加工、制剂生产的产业体系，是中医药现代化发展的重要支撑
-- last_updated: 2026-06-27T15:55:23.935Z
+- name: 莱菔子
+- category: 消食药
+- nature: 辛、甘
+- taste: 平
+- meridian: 肺、脾、胃经
+- functions: 消食除胀，降气化痰
+- source: 十字花科植物萝卜的干燥成熟种子
+- dosage: 6～10g
+- note: 气虚及无食积气滞者慎用
+- status: active
 
-## pharmacology
+### 大黄
 
-### PHARMACOLOGY-abc123
+- name: 大黄
+- category: 泻下药
+- nature: 苦
+- taste: 寒
+- meridian: 脾、胃、大肠、肝、心包经
+- functions: 泻下攻积，清热泻火，止血，解毒，活血祛瘀
+- source: 蓼科植物掌叶大黄、唐古特大黄或药用大黄的干燥根和根茎
+- dosage: 3～30g
+- note: 孕妇禁用，哺乳期及月经期慎用
+- status: active
 
-- name: 参苓白术散
-- mechanism: 改善腹泻型肠易激综合征（IBS-D）大鼠情绪状态
-- evidence_level: 实验研究
-- description: 以潞党参为君药，评价其药理学效应及潜在作用机制
-- last_updated: 2026-06-27T15:55:32.849Z
+### 芒硝
 
-### PHARMACOLOGY-def456
+- name: 芒硝
+- category: 泻下药
+- nature: 咸、苦
+- taste: 寒
+- meridian: 胃、大肠经
+- functions: 泻下通便，润燥软坚，清火消肿
+- source: 硫酸盐类矿物芒硝族的天然芒硝
+- dosage: 6～12g
+- note: 孕妇禁用
+- status: active
 
-- name: 中药新药研究
-- mechanism: 促进中药现代化
-- evidence_level: 专业刊物报道
-- description: 全面报道中药新药研究与开发，宣传国内外中药新药及临床药理研究成果
-- last_updated: 2026-06-27T15:55:32.849Z
+### 枳实
 
-### PHARMACOLOGY-ghi789
+- name: 枳实
+- category: 理气药
+- nature: 苦、辛、酸
+- taste: 微寒
+- meridian: 脾、胃经
+- functions: 破气消积，化痰散痞
+- source: 芸香科植物酸橙或其栽培变种的干燥幼果
+- dosage: 3～10g
+- note: 孕妇慎用
+- status: active
 
-- name: 医院中药饮片管理
-- mechanism: 规范中药饮片使用
-- evidence_level: 官方规范
-- description: 《医院中药饮片管理规范（2026版）》由国家中医药局和国家卫生健康委联合印发
-- last_updated: 2026-06-27T15:55:32.849Z
+### 香附
 
-### PHARMACOLOGY-jkl012
+- name: 香附
+- category: 理气药
+- nature: 辛、微苦、微甘
+- taste: 平
+- meridian: 肝、脾、三焦经
+- functions: 疏肝解郁，理气宽中，调经止痛
+- source: 莎草科植物莎草的干燥根茎
+- dosage: 6～9g
+- note: 阴血亏虚者慎用
+- status: active
 
-- name: 中药企业东南亚市场战略
-- mechanism: 基于博弈论的市场适配
-- evidence_level: 学术研究
-- description: 研究中药企业在东南亚市场的战略适配机制
-- last_updated: 2026-06-27T15:55:32.849Z
+### 益母草
 
-### PHARMACOLOGY-mno345
+- name: 益母草
+- category: 活血化瘀药
+- nature: 辛、苦
+- taste: 微寒
+- meridian: 肝、心包、膀胱经
+- functions: 活血调经，利尿消肿，清热解毒
+- source: 唇形科植物益母草的干燥地上部分
+- dosage: 9～15g
+- note: 孕妇禁用，无瘀滞者慎用
+- status: active
 
-- name: 医药领域补交实验数据
-- mechanism: 行政和司法审理考量
-- evidence_level: 学术分析
-- description: 基于行政和司法视角分析医药领域补交实验数据的审理与考量
-- last_updated: 2026-06-27T15:55:32.849Z
+### 红花
 
+- name: 红花
+- category: 活血化瘀药
+- nature: 辛
+- taste: 温
+- meridian: 心、肝经
+- functions: 活血通经，散瘀止痛
+- source: 菊科植物红花的干燥花
+- dosage: 3～10g
+- note: 孕妇禁用，有出血倾向者慎用
+- status: active
+
+### 桃仁
+
+- name: 桃仁
+- category: 活血化瘀药
+- nature: 苦、甘
+- taste: 平
+- meridian: 心、肝、大肠经
+- functions: 活血祛瘀，润肠通便，止咳平喘
+- source: 蔷薇科植物桃或山桃的干燥成熟种子
+- dosage: 6～10g
+- note: 孕妇禁用，便溏者慎用
+- status: active
+
+### 牛膝
+
+- name: 牛膝
+- category: 活血化瘀药
+- nature: 苦、甘、酸
+- taste: 平
+- meridian: 肝、肾经
+- functions: 逐瘀通经，补肝肾，强筋骨，利尿通淋，引血下行
+- source: 苋科植物牛膝或川牛膝的干燥根
+- dosage: 6～12g
+- note: 孕妇慎用，中寒泄泻者慎用
+- status: active
+
+### 桔梗
+
+- name: 桔梗
+- category: 化痰止咳平喘药
+- nature: 苦、辛
+- taste: 平
+- meridian: 肺经
+- functions: 宣肺，利咽，祛痰，排脓
+- source: 桔梗科植物桔梗的干燥根
+- dosage: 3～10g
+- note: 阴虚久咳、出血证及呕吐慎用
+- status: active
+
+### 杏仁
+
+- name: 杏仁
+- category: 化痰止咳平喘药
+- nature: 苦
+- taste: 微温
+- meridian: 肺、大肠经
+- functions: 止咳平喘，润肠通便
+- source: 蔷薇科植物山杏、西伯利亚杏、东北杏或杏的干燥成熟种子
+- dosage: 3～10g
+- note: 阴虚咳喘及大便溏泻者慎用
+- status: active
+
+### 天麻
+
+- name: 天麻
+- category: 平肝息风药
+- nature: 甘
+- taste: 平
+- meridian: 肝经
+- functions: 息风止痉，平抑肝阳，祛风通络
+- source: 兰科植物天麻的干燥块茎
+- dosage: 3～10g
+- note: 气血亏虚者慎用
+- status: active
+
+### 三七
+
+- name: 三七
+- category: 活血化瘀药
+- nature: 甘、微苦
+- taste: 温
+- meridian: 肝、胃经
+- functions: 散瘀止血，消肿定痛
+- source: 五加科植物三七的干燥根和根茎
+- dosage: 3～9g
+- note: 孕妇慎用
+- status: active
+
+### 灵芝
+
+- name: 灵芝
+- category: 补气药
+- nature: 甘
+- taste: 平
+- meridian: 心、肺、肝、肾经
+- functions: 补气安神，止咳平喘
+- source: 多孔菌科真菌赤芝或紫芝的干燥子实体
+- dosage: 6～12g
+- note: 对本品过敏者禁用
+- status: active
+
+### TCM001
+
+- chineseName: 人参
+- englishName: Ginseng
+- latinName: Panax ginseng C.A.Mey.
+- category: 补气药
+- efficacy: 大补元气，复脉固脱，补脾益肺，生津养血，安神益智
+- activeConstituents: 人参皂苷(Rg1,Rb1,Rg3等)、多糖、氨基酸、微量元素
+- dosage: 3-9g
+- source: 五加科植物人参的干燥根和根茎
+
+### TCM002
+
+- chineseName: 黄芪
+- englishName: Astragalus
+- latinName: Astragalus membranaceus (Fisch.) Bunge
+- category: 补气药
+- efficacy: 补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌
+- activeConstituents: 黄芪皂苷(黄芪甲苷)、黄芪多糖、黄酮类、氨基酸
+- dosage: 9-30g
+- source: 豆科植物蒙古黄芪或膜荚黄芪的干燥根
+
+### TCM003
+
+- chineseName: 当归
+- englishName: Angelica sinensis
+- latinName: Angelica sinensis (Oliv.) Diels
+- category: 补血药
+- efficacy: 补血活血，调经止痛，润肠通便
+- activeConstituents: 阿魏酸、藁本内酯、挥发油、多糖、氨基酸
+- dosage: 6-12g
+- source: 伞形科植物当归的干燥根
+
+### TCM004
+
+- chineseName: 枸杞子
+- englishName: Goji Berry
+- latinName: Lycium barbarum L.
+- category: 补阴药
+- efficacy: 滋补肝肾，益精明目
+- activeConstituents: 枸杞多糖、甜菜红素、胡萝卜素、维生素C、微量元素
+- dosage: 6-12g
+- source: 茄科植物宁夏枸杞的干燥成熟果实
+
+### TCM005
+
+- chineseName: 金银花
+- englishName: Honeysuckle
+- latinName: Lonicera japonica Thunb.
+- category: 清热解毒药
+- efficacy: 清热解毒，疏散风热
+- activeConstituents: 绿原酸、木犀草素、忍冬苷、挥发油
+- dosage: 6-15g
+- source: 忍冬科植物忍冬的干燥花蕾或带初开的花
+
+### TCM006
+
+- chineseName: 甘草
+- englishName: Licorice
+- latinName: Glycyrrhiza uralensis Fisch.
+- category: 补气药
+- efficacy: 补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药
+- activeConstituents: 甘草酸、甘草苷、异甘草素、黄酮类
+- dosage: 2-10g
+- source: 豆科植物甘草、胀果甘草或光果甘草的干燥根和根茎
+
+### TCM007
+
+- chineseName: 白术
+- englishName: Atractylodes
+- latinName: Atractylodes macrocephala Koidz.
+- category: 补气药
+- efficacy: 健脾益气，燥湿利水，止汗，安胎
+- activeConstituents: 白术内酯、苍术酮、挥发油、多糖
+- dosage: 6-12g
+- source: 菊科植物白术的干燥根茎
+
+### TCM008
+
+- chineseName: 茯苓
+- englishName: Poria
+- latinName: Poria cocos (Schw.) Wolf
+- category: 利水渗湿药
+- efficacy: 利水渗湿，健脾宁心
+- activeConstituents: 茯苓酸、茯苓多糖、三萜类、蛋白质
+- dosage: 9-15g
+- source: 多孔菌科真菌茯苓的干燥菌核
+
+### TCM009
+
+- chineseName: 川芎
+- englishName: Chuanxiong
+- latinName: Ligusticum chuanhong Hort.
+- category: 活血化瘀药
+- efficacy: 活血行气，祛风止痛
+- activeConstituents: 川芎嗪(四甲基吡嗪)、阿魏酸、藁本内酯、挥发油
+- dosage: 3-10g
+- source: 伞形科植物川芎的干燥根茎
+
+### TCM010
+
+- chineseName: 丹参
+- englishName: Salvia miltiorrhiza
+- latinName: Salvia miltiorrhiza Bunge
+- category: 活血化瘀药
+- efficacy: 活血祛瘀，通经止痛，清心除烦，凉血消痈
+- activeConstituents: 丹参酮(I,IIA,IIB等)、丹酚酸(SA、SB、SC等)、隐丹参酮
+- dosage: 9-15g
+- source: 唇形科植物丹参的干燥根和根茎
+
+### TCM011
+
+- chineseName: 黄连
+- englishName: Coptis
+- latinName: Coptis chinensis Franch.
+- category: 清热药
+- efficacy: 清热燥湿，泻火解毒
+- activeConstituents: 小檗碱(黄连素)、巴马汀、药根碱、黄连碱
+- dosage: 2-5g
+- source: 毛茛科植物黄连、三角叶黄连或云连的干燥根茎
+
+### TCM012
+
+- chineseName: 黄芩
+- englishName: Scutellaria
+- latinName: Scutellaria baicalensis Georgi
+- category: 清热药
+- efficacy: 清热燥湿，泻火解毒，止血，安胎
+- activeConstituents: 黄芩苷、黄芩素、汉黄芩素、汉黄芩苷
+- dosage: 3-10g
+- source: 唇形科植物黄芩的干燥根
+
+### TCM013
+
+- chineseName: 麻黄
+- englishName: Ephedra
+- latinName: Ephedra sinica Stapf
+- category: 解表药
+- efficacy: 发汗解表，宣肺平喘，利水消肿
+- activeConstituents: 麻黄碱、伪麻黄碱、麻黄新碱、挥发油
+- dosage: 2-9g
+- source: 麻黄科植物草麻黄、中麻黄或木贼麻黄的干燥草质茎
+
+### TCM014
+
+- chineseName: 桂枝
+- englishName: Cinnamon Twig
+- latinName: Cinnamomum cassia Presl
+- category: 解表药
+- efficacy: 发汗解肌，温通经脉，助阳化气
+- activeConstituents: 桂皮醛、桂皮酸、挥发油、鞣质
+- dosage: 3-9g
+- source: 樟科植物肉桂的干燥嫩枝
+
+### TCM015
+
+- chineseName: 白芍
+- englishName: White Peony Root
+- latinName: Paeonia lactiflora Pall.
+- category: 补血药
+- efficacy: 养血调经，敛阴止汗，柔肝止痛，平抑肝阳
+- activeConstituents: 芍药苷、氧化芍药苷、苯甲酰芍药苷、儿茶素
+- dosage: 6-15g
+- source: 毛茛科植物芍药的干燥根
+
+### TCM016
+
+- chineseName: 熟地黄
+- englishName: Rehmannia (prepared)
+- latinName: Rehmannia glutinosa Libosch. (processed)
+- category: 补血药
+- efficacy: 补血滋阴，益精填髓
+- activeConstituents: 梓醇、毛蕊花糖苷、地黄苷、多糖、氨基酸
+- dosage: 9-15g
+- source: 玄参科植物地黄的块根经炮制加工而成
+
+### TCM017
+
+- chineseName: 半夏
+- englishName: Pinellia
+- latinName: Pinellia ternata (Thunb.) Breit.
+- category: 化痰止咳平喘药
+- efficacy: 燥湿化痰，降逆止呕，消痞散结
+- activeConstituents: 胆碱、高龙胆碱、半夏生物碱、半夏多糖
+- dosage: 3-9g
+- source: 天南星科植物半夏的干燥块茎
+
+### TCM018
+
+- chineseName: 陈皮
+- englishName: Tangerine Peel
+- latinName: Citrus reticulata Blanco
+- category: 理气药
+- efficacy: 理气健脾，燥湿化痰
+- activeConstituents: 橙皮苷、川陈皮素、挥发油(柠檬烯)、黄酮类
+- dosage: 3-10g
+- source: 芸香科植物橘及其栽培变种的干燥成熟果皮
+
+### TCM019
+
+- chineseName: 泽兰
+- englishName: Eupatorium
+- latinName: Eupatorium fortunei Turcz.
+- category: 活血化瘀药
+- efficacy: 活血调经，祛瘀消痈，利尿消肿，清热解毒
+- activeConstituents: 泽兰苷、齐墩果酸、黄酮类、挥发油
+- dosage: 6-12g
+- source: 唇形科植物毛叶地瓜儿苗的干燥地上部分
+
+### TCM020
+
+- chineseName: 蒲公英
+- englishName: Dandelion
+- latinName: Taraxacum mongolicum Hand.-Mazz.
+- category: 清热解毒药
+- efficacy: 清热解毒，消肿散结，利湿通淋
+- activeConstituents: 蒲公英甾醇、蒲公英醇、β-胡萝卜素、多糖、绿原酸
+- dosage: 9-15g
+- source: 菊科植物蒲公英或同属数种植物的干燥全草
+
+### TCM021
+
+- chineseName: 柴胡
+- englishName: Bupleurum
+- latinName: Bupleurum chinense DC.
+- category: 解表药
+- efficacy: 疏散退热，疏肝解郁，升举阳气
+- activeConstituents: 柴胡皂苷(a、b、d等)、柴胡皂苷元、挥发油、多糖
+- dosage: 3-10g
+- source: 伞形科植物柴胡或狭叶柴胡的干燥根
+
+### TCM022
+
+- chineseName: 板蓝根
+- englishName: Isatis Root
+- latinName: Isatis indigotica Fort.
+- category: 清热解毒药
+- efficacy: 清热解毒，凉血利咽
+- activeConstituents: 靛蓝、靛玉红、腺嘌呤、β-谷固醇、多糖
+- dosage: 9-15g
+- source: 十字花科植物菘蓝的干燥根
+
+### TCM023
+
+- chineseName: 连翘
+- englishName: Forsythia
+- latinName: Forsythia suspensa (Thunb.) Vahl
+- category: 清热解毒药
+- efficacy: 清热解毒，消肿散结，疏散风热
+- activeConstituents: 连翘脂素、连翘苷、挥发油、黄酮类
+- dosage: 6-15g
+- source: 木犀科植物连翘的干燥果实
+
+### TCM024
+
+- chineseName: 薄荷
+- englishName: Peppermint
+- latinName: Mentha haplocalyx Briq.
+- category: 解表药
+- efficacy: 疏散风热，清利头目，利咽，透疹，疏肝行气
+- activeConstituents: 薄荷脑(薄荷醇)、薄荷酮、薄荷素油、黄酮类
+- dosage: 3-6g
+- source: 唇形科植物薄荷的干燥地上部分
+
+### TCM025
+
+- chineseName: 菊花
+- englishName: Chrysanthemum
+- latinName: Chrysanthemum morifolium Ramat.
+- category: 解表药
+- efficacy: 疏散风热，平抑肝阳，清肝明目，清热解毒
+- activeConstituents: 菊花苷、木犀草素、黄酮类、挥发油、氨基酸
+- dosage: 6-12g
+- source: 菊科植物菊头的干燥头状花序
+
+### TCM026
+
+- chineseName: 栀子
+- englishName: Gardenia
+- latinName: Gardenia jasminoides Ellis
+- category: 清热药
+- efficacy: 泻火除烦，清热利湿，凉血解毒
+- activeConstituents: 栀子苷、藏红花素、藏红花酸、京尼平苷
+- dosage: 6-10g
+- source: 茜草科植物栀子的干燥成熟果实
+
+### TCM027
+
+- chineseName: 附子
+- englishName: Aconite (prepared)
+- latinName: Aconitum carmichaelii Debx. (processed)
+- category: 温里药
+- efficacy: 回阳救逆，补火助阳，散寒止痛
+- activeConstituents: 乌头碱、次乌头碱、新乌头碱(经炮制后降低毒性)、苯甲酰乌头原碱
+- dosage: 3-15g(先煎)
+- source: 毛茛科植物乌头的子根的加工品
+
+### TCM028
+
+- chineseName: 干姜
+- englishName: Dried Ginger
+- latinName: Zingiber officinale Rosc. (dried)
+- category: 温里药
+- efficacy: 温中散寒，回阳通脉，温肺化饮
+- activeConstituents: 姜辣素(gingerols)、姜烯酚(shogaols)、挥发油、氨基酸
+- dosage: 3-10g
+- source: 姜科植物姜的干燥根茎
+
+### TCM029
+
+- chineseName: 五味子
+- englishName: Schisandra
+- latinName: Schisandra chinensis (Turcz.) Baill.
+- category: 收涩药
+- efficacy: 收敛固涩，益气生津，补肾宁心
+- activeConstituents: 五味子素(木脂素类)、有机酸、挥发油、多糖
+- dosage: 2-6g
+- source: 木兰科植物五味子的干燥成熟果实
+
+### TCM030
+
+- chineseName: 麦冬
+- englishName: Ophiopogon
+- latinName: Ophiopogon japonicus (L.f.) Ker-Gawl.
+- category: 补阴药
+- efficacy: 养阴生津，润肺清心
+- activeConstituents: 麦冬皂苷、高异黄酮、葡萄糖、果糖、甾体皂苷
+- dosage: 6-12g
+- source: 百合科植物麦冬的干燥块根
+
+### TCM031
+
+- chineseName: 山茱萸
+- englishName: Cornus Fruit
+- latinName: Cornus officinalis Siebold & Zucc.
+- category: 收涩药
+- efficacy: 补益肝肾，收敛固涩
+- activeConstituents: 莫诺苷、马钱子苷、连翘苷、环烯醚萜苷
+- dosage: 6-12g
+- source: 山茱萸科植物山茱萸的干燥成熟果肉
+
+### TCM032
+
+- chineseName: 女贞子
+- englishName: Ligustrum
+- latinName: Ligustrum lucidum Ait.
+- category: 补阴药
+- efficacy: 滋补肝肾，明目乌发
+- activeConstituents: 齐墩果酸、特女贞苷、甘露醇、油脂油
+- dosage: 6-12g
+- source: 木犀科植物女贞的干燥成熟果实
+
+### TCM033
+
+- chineseName: 党参
+- englishName: Codonopsis
+- latinName: Codonopsis pilosula (Franch.) Nannf.
+- category: 补气药
+- efficacy: 健脾益肺，养血生津
+- activeConstituents: 党参炔苷、多糖、氨基酸、微量元素(Se、Zn)
+- dosage: 9-30g
+- source: 桔梗科植物党参、素花党参或川党参的干燥根
+
+### TCM034
+
+- chineseName: 西洋参
+- englishName: American Ginseng
+- latinName: Panax quinquefolius L.
+- category: 补气药
+- efficacy: 补气养阴，清热生津
+- activeConstituents: 人参皂苷(Rb1为主)、多糖、氨基酸、挥发油
+- dosage: 3-6g
+- source: 五加科植物西洋参的干燥根
+
+### TCM035
+
+- chineseName: 三七
+- englishName: Notoginseng
+- latinName: Panax notoginseng (Burk.) F.H.Chen
+- category: 活血化瘀药
+- efficacy: 散瘀止血，消肿定痛
+- activeConstituents: 三七总皂苷(Rb1、Rg1、Rb3等)、田七氨酸、黄酮
+- dosage: 3-9g(研末吞服1-3g)
+- source: 五加科植物三七的干燥根和根茎
+
+### TCM036
+
+- chineseName: 何首乌
+- englishName: Polygonum multiflorum
+- latinName: Polygonum multiflorum Thunb.
+- category: 补阴药
+- efficacy: 制首乌:补肝肾，益精血，乌须发；生首乌:解毒，消痈，润肠通便
+- activeConstituents: 蒽醌类(大黄酚、大黄素)、二苯乙烯苷(2,3,5,4'-THMG)、磷脂
+- dosage: 6-12g
+- source: 蓼科植物何首乌的干燥块根
+
+### TCM037
+
+- chineseName: 灵芝
+- englishName: Ganoderma
+- latinName: Ganoderma lucidum (Leyss. ex Fr.) Karst.
+- category: 补气药
+- efficacy: 补气安神，止咳平喘
+- activeConstituents: 灵芝多糖、三萜类(灵芝酸)、核苷类、蛋白质
+- dosage: 6-12g
+- source: 多孔菌科真菌赤芝或紫芝的干燥子实体
+
+### TCM038
+
+- chineseName: 芦荟
+- englishName: Aloe
+- latinName: Aloe barbadensis Miller
+- category: 泻下药
+- efficacy: 泻下通便，清肝杀虫
+- activeConstituents: 芦荟苷、芦荟大黄素、羟芦荟苷、多糖
+- dosage: 2-5g
+- source: 百合科植物库拉索芦荟或好望角芦荟叶的汁液浓缩干燥物
+
+### TCM039
+
+- chineseName: 延胡索
+- englishName: Corydalis
+- latinName: Corydalis yanhusuo W.T.Wang
+- category: 活血化瘀药
+- efficacy: 活血，利气，止痛
+- activeConstituents: 延胡索乙素(四氢帕马丁)、延胡索甲素、丑素
+- dosage: 3-10g
+- source: 罂粟科植物延胡索的干燥块茎
+
+### TCM040
+
+- chineseName: 远志
+- englishName: Polygala
+- latinName: Polygala tenuifolia Willd.
+- category: 安神药
+- efficacy: 安神益智，交通心肾，祛痰开窍，消肿
+- activeConstituents: 远志皂苷、远志碱、远志醇、挥发油
+- dosage: 3-10g
+- source: 远志科植物远志或卵叶远志的干燥根
+
+### TCM041
+
+- chineseName: 酸枣仁
+- englishName: Ziziphus seed
+- latinName: Ziziphus jujuba Mill. var. spinosa (Bunge) Hu ex H.F.Chou
+- category: 安神药
+- efficacy: 养心补肝，宁心安神，敛汗，生津
+- activeConstituents: 酸枣仁皂苷(A、B)、黄酮类、挥发油、脂肪酸
+- dosage: 9-15g
+- source: 鼠李科植物酸枣的干燥成熟种子
+
+### TCM042
+
+- chineseName: 牛黄
+- englishName: Calculus Bovis
+- latinName: Bovine calculus
+- category: 开窍药
+- efficacy: 化痰开窍，凉肝息风，清热解毒
+- activeConstituents: 胆红素、胆酸、去氧胆酸、胆固醇、微量元素
+- dosage: 0.15-0.35g(入丸散)
+- source: 牛胆囊、胆管或肝管中的结石
+
+### TCM043
+
+- chineseName: 麝香
+- englishName: Moschus
+- latinName: Moschus moschiferus L.
+- category: 开窍药
+- efficacy: 开窍醒神，活血通经，消肿止痛
+- activeConstituents: 麝香酮、麝香醇、雄激素、蛋白质、肽类
+- dosage: 0.03-0.1g(入丸散)
+- source: 鹿科动物林麝、马麝或原麝成熟雄体香囊中的干燥分泌物
+
+### TCM044
+
+- chineseName: 石膏
+- englishName: Gypsum
+- latinName: Gypsum fibrosum
+- category: 清热药
+- efficacy: 清热泻火，除烦止渴，收敛生肌(煅)
+- activeConstituents: 含水硫酸钙(CaSO4·2H2O)
+- dosage: 15-60g(先煎)
+- source: 硫酸盐类矿物硬石膏族石膏
+
+### TCM045
+
+- chineseName: 芒硝
+- englishName: Mirabilite
+- latinName: Mirabilite
+- category: 泻下药
+- efficacy: 泻下通便，润燥软坚，清火消肿
+- activeConstituents: 含水硫酸钠(Na2SO4·10H2O)
+- dosage: 6-12g(冲服)
+- source: 硫酸盐类矿物芒硝族芒硝，经精制而得的结晶体
+
+### TCM046
+
+- chineseName: 决明子
+- englishName: Cassia Seed
+- latinName: Cassia obtusifolia L. 或 Cassia tora L.
+- category: 清热药
+- efficacy: 清热明目，润肠通便
+- activeConstituents: 大黄酚、大黄素、大黄酸、芦荟大黄素、决明子苷
+- dosage: 9-15g
+- source: 豆科植物决明或小决明的干燥成熟种子
+
+### TCM047
+
+- chineseName: 益母草
+- englishName: Leonurus
+- latinName: Leonurus japonicus Houtt.
+- category: 活血化瘀药
+- efficacy: 活血调经，利尿消肿，清热解毒
+- activeConstituents: 益母草碱(leonurine)、水苏碱、芦丁、黄酮类
+- dosage: 9-30g
+- source: 唇形科植物益母草的干燥地上部分
+
+### TCM048
+
+- chineseName: 杜仲
+- englishName: Eucommia Bark
+- latinName: Eucommia ulmoides Oliv.
+- category: 补阳药
+- efficacy: 补肝肾，强筋骨，安胎
+- activeConstituents: 杜仲胶、松脂醇二葡萄糖苷、木脂素类、黄酮类
+- dosage: 6-10g
+- source: 杜仲科植物杜仲的干燥树皮
+
+### TCM049
+
+- chineseName: 淫羊藿
+- englishName: Epimedium
+- latinName: Epimedium brevicornu Maxim.
+- category: 补阳药
+- efficacy: 补肾阳，强筋骨，祛风湿
+- activeConstituents: 淫羊藿苷(epimedin A/B/C)、朝藿定、淫羊藿次苷
+- dosage: 6-10g
+- source: 小蘖科植物淫羊藿、箭叶淫羊藿或柔毛淫羊藿的干燥叶
+
+### TCM050
+
+- chineseName: 肉苁蓉
+- englishName: Cistanche
+- latinName: Cistanche deserticola Y.C.Ma
+- category: 补阳药
+- efficacy: 补肾阳，益精血，润肠通便
+- activeConstituents: 松果菊苷、毛蕊花糖苷、苯乙醇苷类、氨基酸
+- dosage: 6-10g
+- source: 列当科植物肉苁蓉或管花肉的干燥带鳞叶的肉质茎
+
+### 人参
+
+- name: 人参
+- category: 根茎类
+- nature: 微温
+- flavor: 甘、微苦
+- meridian: 脾、肺、心
+- function: 大补元气，复脉固脱，补脾益肺，生津养血，安神益智
+- usage: 3-9g，另煎兑服
+- source: 中医药网
+
+### 黄芪
+
+- name: 黄芪
+- category: 根茎类
+- nature: 微温
+- flavor: 甘
+- meridian: 脾、肺
+- function: 补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌
+- usage: 9-30g
+- source: 中医药网
+
+### 当归
+
+- name: 当归
+- category: 根茎类
+- nature: 温
+- flavor: 甘、辛
+- meridian: 肝、心、脾
+- function: 补血活血，调经止痛，润肠通便
+- usage: 6-12g
+- source: 中医药网
+
+### 白术
+
+- name: 白术
+- category: 根茎类
+- nature: 温
+- flavor: 甘、苦
+- meridian: 脾、胃
+- function: 健脾益气，燥湿利水，止汗，安胎
+- usage: 6-12g
+- source: 中医药网
+
+### 甘草
+
+- name: 甘草
+- category: 根茎类
+- nature: 平
+- flavor: 甘
+- meridian: 心、肺、脾、胃
+- function: 补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药
+- usage: 2-10g
+- source: 中医药网
+
+### 枸杞子
+
+- name: 枸杞子
+- category: 果实类
+- nature: 平
+- flavor: 甘
+- meridian: 肝、肾
+- function: 滋补肝肾，益精明目
+- usage: 6-12g
+- source: 中医药网
+
+### 金银花
+
+- name: 金银花
+- category: 花类
+- nature: 寒
+- flavor: 甘
+- meridian: 肺、心、胃
+- function: 清热解毒，疏散风热
+- usage: 6-15g
+- source: 中医药网
+
+### 川芎
+
+- name: 川芎
+- category: 根茎类
+- nature: 温
+- flavor: 辛
+- meridian: 肝、胆、心包
+- function: 活血行气，祛风止痛
+- usage: 3-10g
+- source: 中医药网
+
+### 白芍
+
+- name: 白芍
+- category: 根茎类
+- nature: 微寒
+- flavor: 苦、酸
+- meridian: 肝、脾
+- function: 养血调经，敛阴止汗，柔肝止痛，平抑肝阳
+- usage: 6-15g
+- source: 中医药网
+
+### 茯苓
+
+- name: 茯苓
+- category: 菌类
+- nature: 平
+- flavor: 甘、淡
+- meridian: 心、肺、脾、肾
+- function: 利水渗湿，健脾，宁心
+- usage: 9-15g
+- source: 中医药网
+
+### 丹参
+
+- name: 丹参
+- category: 根茎类
+- nature: 微寒
+- flavor: 苦
+- meridian: 心、肝
+- function: 活血祛瘀，通经止痛，清心除烦，凉血消痈
+- usage: 9-15g
+- source: 中医药网
+
+### 陈皮
+
+- name: 陈皮
+- category: 果皮类
+- nature: 温
+- flavor: 辛、苦
+- meridian: 肺、脾
+- function: 理气健脾，燥湿化痰
+- usage: 3-10g
+- source: 中医药网
+
+### 板蓝根
+
+- name: 板蓝根
+- category: 根茎类
+- nature: 寒
+- flavor: 苦
+- meridian: 心、胃
+- function: 清热解毒，凉血利咽
+- usage: 9-15g
+- source: 中医药网
+
+### 半夏
+
+- name: 半夏
+- category: 根茎类
+- nature: 温
+- flavor: 辛
+- meridian: 脾、胃、肺
+- function: 燥湿化痰，降逆止呕，消痞散结
+- usage: 3-9g
+- source: 中医药网
+
+### 黄连
+
+- name: 黄连
+- category: 根茎类
+- nature: 寒
+- flavor: 苦
+- meridian: 心、脾、胃、肝、胆、大肠
+- function: 清热燥湿，泻火解毒
+- usage: 2-5g
+- source: 中医药网
+
+### 黄芩
+
+- name: 黄芩
+- category: 根茎类
+- nature: 寒
+- flavor: 苦
+- meridian: 肺、胆、脾、大肠、小肠
+- function: 清热燥湿，泻火解毒，止血，安胎
+- usage: 3-10g
+- source: 中医药网
+
+### 柴胡
+
+- name: 柴胡
+- category: 根茎类
+- nature: 微寒
+- flavor: 苦、辛
+- meridian: 肝、胆、肺
+- function: 和解表里，疏肝升阳
+- usage: 3-10g
+- source: 中医药网
+
+### 桂枝
+
+- name: 桂枝
+- category: 藤木类
+- nature: 温
+- flavor: 辛、甘
+- meridian: 心、肺、膀胱
+- function: 发汗解肌，温通经脉，助阳化气
+- usage: 3-6g
+- source: 中医药网
+
+### 熟地黄
+
+- name: 熟地黄
+- category: 根茎类
+- nature: 微温
+- flavor: 甘
+- meridian: 肝、肾
+- function: 补血滋阴，益精填髓
+- usage: 9-15g
+- source: 中医药网
+
+### 麦冬
+
+- name: 麦冬
+- category: 根茎类
+- nature: 微寒
+- flavor: 甘、微苦
+- meridian: 心、肺、胃
+- function: 养阴生津，润肺清心
+- usage: 6-12g
+- source: 中医药网
+
+### 五味子
+
+- name: 五味子
+- category: 果实类
+- nature: 温
+- flavor: 酸、甘
+- meridian: 肺、心、肾
+- function: 收敛固涩，益气生津，补肾宁心
+- usage: 2-6g
+- source: 中医药网
+
+### 三七
+
+- name: 三七
+- category: 根茎类
+- nature: 温
+- flavor: 甘、微苦
+- meridian: 肝、胃
+- function: 散瘀止血，消肿定痛
+- usage: 3-9g
+- source: 中医药网
+
+### 附子
+
+- name: 附子
+- category: 根茎类
+- nature: 热
+- flavor: 辛、甘
+- meridian: 心、肾、脾
+- function: 回阳救逆，补火助阳，散寒止痛
+- usage: 3-15g
+- source: 中医药网
+
+### 麻黄
+
+- name: 麻黄
+- category: 全草类
+- nature: 温
+- flavor: 辛、微苦
+- meridian: 肺、膀胱
+- function: 发汗解表，宣肺平喘，利水消肿
+- usage: 2-9g
+- source: 中医药网
+
+### 泽泻
+
+- name: 泽泻
+- category: 根茎类
+- nature: 寒
+- flavor: 甘
+- meridian: 肾、膀胱
+- function: 利水渗湿，泄热，化浊降脂
+- usage: 6-12g
+- source: 中医药网
+
+### 白及
+
+- name: 白及
+- category: 根茎类
+- nature: 微寒
+- flavor: 苦、甘、涩
+- meridian: 肺、肝、胃
+- function: 收敛止血，消肿生肌
+- usage: 3-10g
+- source: 中医药网
+
+### 阿胶
+
+- name: 阿胶
+- category: 动物类
+- nature: 平
+- flavor: 甘
+- meridian: 肺、肝、肾
+- function: 补血滋阴，润燥，止血
+- usage: 3-9g
+- source: 中医药网
+
+### 红花
+
+- name: 红花
+- category: 花类
+- nature: 温
+- flavor: 辛
+- meridian: 心、肝
+- function: 活血通经，散瘀止痛
+- usage: 3-10g
+- source: 中医药网
+
+### 连翘
+
+- name: 连翘
+- category: 果实类
+- nature: 微寒
+- flavor: 苦
+- meridian: 肺、心、小肠
+- function: 清热解毒，消肿散结，疏散风热
+- usage: 6-15g
+- source: 中医药网
+
+### 山茱萸
+
+- name: 山茱萸
+- category: 果实类
+- nature: 微温
+- flavor: 酸、涩
+- meridian: 肝、肾
+- function: 补益肝肾，收涩固脱
+- usage: 6-12g
+- source: 中医药网
+
+## diseases
+
+### Stomach Neoplasms
+
+- name: Stomach Neoplasms
+- category: diseases
+- description: Stomach Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### Hyperalgesia
+
+- name: Hyperalgesia
+- category: diseases
+- description: Hyperalgesia — TCMBANK收录的疾病/适应症实体
+
+### Encephalitis
+
+- name: Encephalitis
+- category: diseases
+- description: Encephalitis — TCMBANK收录的疾病/适应症实体
+
+### Chronic pain
+
+- name: Chronic pain
+- category: diseases
+- description: Chronic pain — TCMBANK收录的疾病/适应症实体
+
+### Autoimmune Diseases
+
+- name: Autoimmune Diseases
+- category: diseases
+- description: Autoimmune Diseases — TCMBANK收录的疾病/适应症实体
+
+### Nasopharyngeal Neoplasms
+
+- name: Nasopharyngeal Neoplasms
+- category: diseases
+- description: Nasopharyngeal Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### melanoma
+
+- name: melanoma
+- category: diseases
+- description: melanoma — TCMBANK收录的疾病/适应症实体
+
+### Brain Neoplasms
+
+- name: Brain Neoplasms
+- category: diseases
+- description: Brain Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### Glioma
+
+- name: Glioma
+- category: diseases
+- description: Glioma — TCMBANK收录的疾病/适应症实体
+
+### Prostatic Neoplasms
+
+- name: Prostatic Neoplasms
+- category: diseases
+- description: Prostatic Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### leukemia
+
+- name: leukemia
+- category: diseases
+- description: leukemia — TCMBANK收录的疾病/适应症实体
+
+### Nasopharyngeal carcinoma
+
+- name: Nasopharyngeal carcinoma
+- category: diseases
+- description: Nasopharyngeal carcinoma — TCMBANK收录的疾病/适应症实体
+
+### Inflammation
+
+- name: Inflammation
+- category: diseases
+- description: Inflammation — TCMBANK收录的疾病/适应症实体
+
+### Colonic Neoplasms
+
+- name: Colonic Neoplasms
+- category: diseases
+- description: Colonic Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### Acute kidney injury
+
+- name: Acute kidney injury
+- category: diseases
+- description: Acute kidney injury — TCMBANK收录的疾病/适应症实体
+
+### Neoplasm Metastasis
+
+- name: Neoplasm Metastasis
+- category: diseases
+- description: Neoplasm Metastasis — TCMBANK收录的疾病/适应症实体
+
+### Vomiting
+
+- name: Vomiting
+- category: diseases
+- description: Vomiting — TCMBANK收录的疾病/适应症实体
+
+### Anemia
+
+- name: Anemia
+- category: diseases
+- description: Anemia — TCMBANK收录的疾病/适应症实体
+
+### Hypertrophic Cardiomyopathy
+
+- name: Hypertrophic Cardiomyopathy
+- category: diseases
+- description: Hypertrophic Cardiomyopathy — TCMBANK收录的疾病/适应症实体
+
+### Parkinson Disease
+
+- name: Parkinson Disease
+- category: diseases
+- description: Parkinson Disease — TCMBANK收录的疾病/适应症实体
+
+### Lupus Erythematosus, Systemic
+
+- name: Lupus Erythematosus, Systemic
+- category: diseases
+- description: Lupus Erythematosus, Systemic — TCMBANK收录的疾病/适应症实体
+
+### Liver Cirrhosis
+
+- name: Liver Cirrhosis
+- category: diseases
+- description: Liver Cirrhosis — TCMBANK收录的疾病/适应症实体
+
+### Pancreatic Neoplasm
+
+- name: Pancreatic Neoplasm
+- category: diseases
+- description: Pancreatic Neoplasm — TCMBANK收录的疾病/适应症实体
+
+### Obesity
+
+- name: Obesity
+- category: diseases
+- description: Obesity — TCMBANK收录的疾病/适应症实体
+
+### Cardiovascular Diseases
+
+- name: Cardiovascular Diseases
+- category: diseases
+- description: Cardiovascular Diseases — TCMBANK收录的疾病/适应症实体
+
+### Insulin Resistance
+
+- name: Insulin Resistance
+- category: diseases
+- description: Insulin Resistance — TCMBANK收录的疾病/适应症实体
+
+### Lichen Planus, Oral
+
+- name: Lichen Planus, Oral
+- category: diseases
+- description: Lichen Planus, Oral — TCMBANK收录的疾病/适应症实体
+
+### Immunosuppression
+
+- name: Immunosuppression
+- category: diseases
+- description: Immunosuppression — TCMBANK收录的疾病/适应症实体
+
+### Body mass index
+
+- name: Body mass index
+- category: diseases
+- description: Body mass index — TCMBANK收录的疾病/适应症实体
+
+### High density lipoprotein measurement
+
+- name: High density lipoprotein measurement
+- category: diseases
+- description: High density lipoprotein measurement — TCMBANK收录的疾病/适应症实体
+
+### Corpuscular Hemoglobin Concentration Mean
+
+- name: Corpuscular Hemoglobin Concentration Mean
+- category: diseases
+- description: Corpuscular Hemoglobin Concentration Mean — TCMBANK收录的疾病/适应症实体
+
+### Hematocrit procedure
+
+- name: Hematocrit procedure
+- category: diseases
+- description: Hematocrit procedure — TCMBANK收录的疾病/适应症实体
+
+### Malignant neoplasm of stomach
+
+- name: Malignant neoplasm of stomach
+- category: diseases
+- description: Malignant neoplasm of stomach — TCMBANK收录的疾病/适应症实体
+
+### Neoplasms
+
+- name: Neoplasms
+- category: diseases
+- description: Neoplasms — TCMBANK收录的疾病/适应症实体
+
+### CAMPOMELIC DYSPLASIA
+
+- name: CAMPOMELIC DYSPLASIA
+- category: diseases
+- description: CAMPOMELIC DYSPLASIA — TCMBANK收录的疾病/适应症实体
+
+### 慢性阻塞性肺疾病
+
+- name: 慢性阻塞性肺疾病
+- type: 呼吸系统疾病
+- prevalence: 全球主要公共卫生负担之一
+- genetic_cause: 
+- available_therapies: 中西医结合治疗
+- clinical_trials: 2023年成立共识专家组围绕临床关键问题研究
+- description: 严重危害人类健康，是全球主要公共卫生负担之一，2023年成立共识专家组围绕中西医结合临床关键问题进行研究
+- last_updated: 2026-06-27T15:55:11.625Z
+
+### 类风湿关节炎
+
+- name: 类风湿关节炎
+- type: 自身免疫性疾病
+- prevalence: 
+- genetic_cause: 
+- available_therapies: 有毒中药治疗
+- clinical_trials: 有毒中药治疗类风湿关节炎合理应用指南
+- description: 有毒中药治疗类风湿关节炎合理应用指南相关疾病
+- last_updated: 2026-06-27T15:55:11.625Z
+
+### 冠心病血瘀证
+
+- name: 冠心病血瘀证
+- type: 心血管疾病
+- prevalence: 
+- genetic_cause: 
+- available_therapies: 
+- clinical_trials: 国际冠心病血瘀证诊断指南
+- description: 国际冠心病血瘀证诊断指南相关疾病
+- last_updated: 2026-06-27T15:55:11.625Z
+
+### 睡眠障碍
+
+- name: 睡眠障碍
+- type: 神经系统疾病
+- prevalence: 
+- genetic_cause: 
+- available_therapies: 
+- clinical_trials: 
+- description: 睡眠相关疾病
+- last_updated: 2026-06-27T15:55:11.625Z
+
+### 感冒
+
+- name: 感冒
+- category: 呼吸系统疾病
+- description: 外感风邪引起的常见疾病，TCM辨证分型包括风寒感冒、风热感冒和暑湿感冒等，通过解表发汗治疗。
+
+### 咳嗽
+
+- name: 咳嗽
+- category: 呼吸系统疾病
+- description: 以咳嗽咳痰为主要表现的病证，TCM分为外感咳嗽和内伤咳嗽，采用宣肺止咳、化痰平喘等方法治疗。
+
+### 哮喘
+
+- name: 哮喘
+- category: 呼吸系统疾病
+- description: 发作性痰鸣气喘疾病，TCM认为与肺脾肾三脏相关，发作期治标，缓解期治本，注重扶正固本。
+
+### 慢性支气管炎
+
+- name: 慢性支气管炎
+- category: 呼吸系统疾病
+- description: 以长期反复咳嗽、咳痰为主要表现的慢性气道炎症，TCM通过温肺化饮、健脾益肺等方法改善症状。
+
+### 胃食管反流病
+
+- name: 胃食管反流病
+- category: 消化系统疾病
+- description: 胃内容物反流引起不适症状，TCM辨证为肝胃不和、脾胃虚弱等，采用疏肝和胃、降逆止呕法治疗。
+
+### 功能性消化不良
+
+- name: 功能性消化不良
+- category: 消化系统疾病
+- description: 持续或反复发作的上腹部不适症状，TCM从脾胃论治，采用健脾和胃、消食导滞等方法。
+
+### 肠易激综合征
+
+- name: 肠易激综合征
+- category: 消化系统疾病
+- description: 以腹痛、腹胀伴排便习惯改变为特征的肠道功能紊乱，TCM辨证分型治疗，调和肝脾、健脾止泻。
+
+### 慢性胃炎
+
+- name: 慢性胃炎
+- category: 消化系统疾病
+- description: 胃黏膜慢性炎症，TCM分为脾胃虚寒、胃阴不足等证型，采用温中健脾、养阴益胃等治法。
+
+### 高血压病
+
+- name: 高血压病
+- category: 循环系统疾病
+- description: 以体循环动脉压升高为主要表现的疾病，TCM辨证为肝阳上亢、阴虚阳亢等，平肝潜阳、滋阴降火。
+
+### 冠心病心绞痛
+
+- name: 冠心病心绞痛
+- category: 循环系统疾病
+- description: 冠状动脉粥样硬化性心脏病表现为胸痛胸闷，TCM辨证为心血瘀阻、气滞血瘀等，活血化瘀、通络止痛。
+
+### 颈椎病
+
+- name: 颈椎病
+- category: 骨骼肌肉系统疾病
+- description: 颈椎退行性变引起的一系列症状，TCM采用针灸、推拿、中药内服外敷等方法舒筋活络、祛风除湿。
+
+### 腰椎间盘突出症
+
+- name: 腰椎间盘突出症
+- category: 骨骼肌肉系统疾病
+- description: 腰椎间盘突出压迫神经根引起腰腿痛，TCM辨证为气滞血瘀、肝肾亏虚等，活血止痛、补肾壮骨。
+
+### 类风湿关节炎
+
+- name: 类风湿关节炎
+- category: 骨骼肌肉系统疾病
+- description: 以关节疼痛、肿胀、变形为特征的自身免疫性疾病，TCM称为痹证，采用祛风除湿、通络止痛法。
+
+### 失眠
+
+- name: 失眠
+- category: 神经系统疾病
+- description: 以经常不能获得正常睡眠为特征，TCM辨证为心脾两虚、阴虚火旺等，安神定志、调和阴阳。
+
+### 偏头痛
+
+- name: 偏头痛
+- category: 神经系统疾病
+- description: 反复发作的单侧或双侧头痛，TCM认为与肝胆有关，采用平肝潜阳、活血化瘀法治疗。
+
+### 面瘫（周围性面神经麻痹）
+
+- name: 面瘫（周围性面神经麻痹）
+- category: 神经系统疾病
+- description: 面部表情肌瘫痪，TCM多因风邪袭络，采用针灸祛风通络、中药养血活血综合治疗。
+
+### 抑郁症
+
+- name: 抑郁症
+- category: 精神心理疾病
+- description: 以持久情绪低落为主要特征，TCM辨证为肝气郁结、心脾两虚等，疏肝解郁、养心安神。
+
+### 荨麻疹
+
+- name: 荨麻疹
+- category: 皮肤疾病
+- description: 以风团、瘙痒为特征的过敏性皮肤病，TCM辨证为风热、风寒、肠胃湿热等，祛风止痒、清热利湿。
+
+### 湿疹
+
+- name: 湿疹
+- category: 皮肤疾病
+- description: 多形性皮疹伴剧烈瘙痒，TCM分为湿热蕴肤、脾虚湿蕴等证型，清热利湿、健脾祛风。
+
+### 糖尿病周围神经病变
+
+- name: 糖尿病周围神经病变
+- category: 内分泌代谢疾病
+- description: 糖尿病引起的周围神经损害，TCM辨证为气阴两虚、瘀血阻络，采用益气养阴、活血通络法。
+
+### 慢性肾病
+
+- name: 慢性肾病
+- category: 泌尿系统疾病
+- description: 肾功能进行性减退的疾病，TCM注重扶正祛邪，采用健脾补肾、利湿化瘀等方法延缓病情进展。
+
+### Gastric Ulcer
+
+- name: Gastric Ulcer
+- category: Digestive System Diseases
+- description: Treated using TCM patterns such as Spleen-Stomach Deficiency Cold or Liver-Stomach Disharmony, utilizing herbs and acupuncture to reduce inflammation, promote healing of the gastric mucosa, and regulate stomach acid secretion.
+
+### Primary Hypertension
+
+- name: Primary Hypertension
+- category: Cardiovascular Diseases
+- description: Managed through TCM differentiation into types like Liver Yang Rising or Phlegm-Dampness, treated with herbal formulas and acupuncture to lower blood pressure, improve vascular elasticity, and alleviate symptoms like dizziness and headache.
+
+### Chronic Migraine
+
+- name: Chronic Migraine
+- category: Neurological Diseases
+- description: Addressed by clearing wind, activating blood circulation, and regulating qi. Acupuncture and herbal medicine help reduce frequency and intensity of attacks, particularly effective for tension-type and vascular migraines.
+
+### Rheumatoid Arthritis
+
+- name: Rheumatoid Arthritis
+- category: Musculoskeletal Diseases
+- description: Treated as Bi Syndrome (painful obstruction) caused by Wind-Cold-Dampness or Damp-Heat. Herbal remedies and moxibustion help reduce joint swelling, pain, and stiffness while modulating immune response.
+
+### Type 2 Diabetes Mellitus
+
+- name: Type 2 Diabetes Mellitus
+- category: Endocrine Diseases
+- description: Known as Xiao Ke (Wasting-Thirst Syndrome), managed by nourishing Yin, clearing deficiency heat, and boosting Qi. Herbal formulas help regulate blood glucose levels and improve insulin sensitivity alongside lifestyle modifications.
+
+### Bronchial Asthma
+
+- name: Bronchial Asthma
+- category: Respiratory Diseases
+- description: Treated during remission by strengthening Lung, Spleen, and Kidney Qi, and during exacerbation by resolving phlegm and calming wheezing. Acupuncture and herbal medicine help reduce airway hyperresponsiveness.
+
+### Allergic Rhinitis
+
+- name: Allergic Rhinitis
+- category: Respiratory Diseases
+- description: Managed by dispelling wind, tonifying Wei Qi (defensive energy), and resolving nasal congestion. Herbal treatments and acupuncture help reduce inflammatory mediators and improve immune tolerance to allergens.
+
+### Functional Dyspepsia
+
+- name: Functional Dyspepsia
+- category: Digestive System Diseases
+- description: Treated by harmonizing the Stomach and regulating Qi flow. Herbal formulas like Ban Xia Xie Xin Tang help alleviate bloating, early satiety, and epigastric discomfort without organic pathology.
+
+### Irritable Bowel Syndrome
+
+- name: Irritable Bowel Syndrome
+- category: Digestive System Diseases
+- description: Addressed by regulating Liver Qi, strengthening Spleen, and resolving Dampness. Acupuncture and herbal medicine help normalize bowel habits, reduce abdominal pain, and alleviate stress-related gastrointestinal symptoms.
+
+### Chronic Hepatitis B
+
+- name: Chronic Hepatitis B
+- category: Digestive System Diseases
+- description: Managed as Damp-Heat or Liver-Kidney Yin Deficiency. Herbal therapies help protect liver cells, reduce liver enzyme levels, and inhibit viral replication while supporting immune function.
+
+### Hyperlipidemia
+
+- name: Hyperlipidemia
+- category: Cardiovascular Diseases
+- description: Treated by resolving Phlegm, activating blood circulation, and strengthening the Spleen. Herbal medicines help lower cholesterol and triglyceride levels, reducing cardiovascular risk factors.
+
+### Coronary Heart Disease
+
+- name: Coronary Heart Disease
+- category: Cardiovascular Diseases
+- description: Managed as Xin Tong (Heart Pain) due to Blood Stasis or Qi Deficiency. Herbal formulas and acupuncture help improve coronary blood flow, reduce angina episodes, and enhance myocardial oxygen supply.
+
+### Insomnia
+
+- name: Insomnia
+- category: Mental Health Disorders
+- description: Treated by calming Shen (spirit), nourishing Heart Blood, and clearing Heart Fire. Acupuncture and herbal medicine help regulate sleep-wake cycles and reduce anxiety associated with sleep disorders.
+
+### Depression
+
+- name: Depression
+- category: Mental Health Disorders
+- description: Managed as Yu Zheng (Stagnation Syndrome) by soothing Liver Qi and resolving emotional constraint. Herbal medicine and acupuncture help improve mood, reduce anxiety, and restore emotional balance.
+
+### Lumbar Disc Herniation
+
+- name: Lumbar Disc Herniation
+- category: Musculoskeletal Diseases
+- description: Treated as Bi Syndrome or Kidney Deficiency. Acupuncture, Tuina massage, and herbal applications help relieve nerve compression pain, reduce muscle spasms, and improve spinal mobility.
+
+### Cervical Spondylosis
+
+- name: Cervical Spondylosis
+- category: Musculoskeletal Diseases
+- description: Managed by dispelling wind-cold-dampness, activating blood circulation, and strengthening tendons and bones. Physical therapies and herbal medicine help alleviate neck pain, numbness, and dizziness.
+
+### Menopausal Syndrome
+
+- name: Menopausal Syndrome
+- category: Reproductive System Diseases
+- description: Treated as Kidney Yin or Yang Deficiency. Herbal formulas help regulate hormonal fluctuations, reduce hot flashes, night sweats, and mood swings during menopause.
+
+### Dysmenorrhea
+
+- name: Dysmenorrhea
+- category: Reproductive System Diseases
+- description: Managed by regulating Chong and Ren meridians, dispelling cold, and invigorating blood circulation. Acupuncture and herbal medicine help relieve menstrual cramps and associated symptoms.
+
+### Polycystic Ovary Syndrome
+
+- name: Polycystic Ovary Syndrome
+- category: Reproductive System Diseases
+- description: Treated as Phlegm-Dampness or Kidney Deficiency. Herbal medicine helps regulate menstrual cycles, improve ovulation, and balance hormones in women with PCOS.
+
+### Chronic Fatigue Syndrome
+
+- name: Chronic Fatigue Syndrome
+- category: General Medicine
+- description: Managed by tonifying Qi and nourishing Blood, strengthening Spleen and Kidney function. Herbal medicine and acupuncture help restore energy levels and improve overall vitality and immune function.
+
+### Common Cold
+
+- name: Common Cold
+- category: Respiratory Diseases
+- description: A viral infection of the nose and throat, often treated in TCM with herbal formulas to release exterior pathogens and restore balance.
+
+### Chronic Gastritis
+
+- name: Chronic Gastritis
+- category: Digestive Diseases
+- description: Inflammation of the stomach lining, managed through TCM by regulating Qi, harmonizing the spleen and stomach, and reducing heat or cold patterns.
+
+### Migraine
+
+- name: Migraine
+- category: Neurological Disorders
+- description: Recurring headaches often addressed in TCM by clearing liver fire, nourishing blood, and unblocking meridians to alleviate pain.
+
+### Insomnia
+
+- name: Insomnia
+- category: Sleep Disorders
+- description: Difficulty sleeping treated in TCM by calming the Shen (spirit), nourishing the heart and kidney yin, and regulating Qi flow.
+
+### Osteoarthritis
+
+- name: Osteoarthritis
+- category: Musculoskeletal Diseases
+- description: Joint degeneration managed through TCM acupuncture and herbal medicine to dispel wind-dampness, improve circulation, and reduce inflammation.
+
+## tcm_innovative_drugs
+
+### undefined
+
+- version: 1.0.0
+- last_updated: 2026-06-28
+- description: 中药创新药——2025-2026年NMPA批准上市的中药新药
+- entities: [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+
+### 麻黄
+
+- name: 麻黄
+- latin_name: Ephedra sinica
+- family: 麻黄科
+- origin: 中国北方
+- active_component: 麻黄碱(ephedrine)
+- dose: 2-9g
+- toxicity: 低毒
+- function: 发汗散寒，宣肺平喘，利水消肿
+
+### 附子
+
+- name: 附子
+- latin_name: Aconiti Lateralis Radix Praeparata
+- family: 毛茛科
+- origin: 四川
+- active_component: 乌头碱(aconitine)
+- dose: 3-15g(先煎)
+- toxicity: 大毒
+- function: 回阳救逆，补火助阳，散寒止痛
+
+### 黄连
+
+- name: 黄连
+- latin_name: Coptidis Rhizoma
+- family: 毛茛科
+- origin: 重庆
+- active_component: 小檗碱(berberine)
+- dose: 2-5g
+- toxicity: 无毒
+- function: 清热燥湿，泻火解毒
+
+### 人参
+
+- name: 人参
+- latin_name: Panacis Ginseng Radix
+- family: 五加科
+- origin: 吉林
+- active_component: 人参皂苷(ginsenoside)
+- dose: 3-9g
+- toxicity: 无毒
+- function: 大补元气，复脉固脱，补脾益肺
+
+### 丹参
+
+- name: 丹参
+- latin_name: Salviae Miltiorrhizae Radix
+- family: 唇形科
+- origin: 山东
+- active_component: 丹参酮(tanshinone)
+- dose: 10-15g
+- toxicity: 无毒
+- function: 活血祛瘀，通经止痛，清心除烦
+
+### 三七
+
+- name: 三七
+- latin_name: Notoginseng Radix et Rhizoma
+- family: 五加科
+- origin: 云南
+- active_component: 三七总皂苷(PNS)
+- dose: 3-9g
+- toxicity: 无毒
+- function: 散瘀止血，消肿定痛
+
+### 甘草
+
+- name: 甘草
+- latin_name: Glycyrrhizae Radix et Rhizoma
+- family: 豆科
+- origin: 内蒙古
+- active_component: 甘草酸(glycyrrhizic acid)
+- dose: 2-10g
+- toxicity: 无毒
+- function: 补脾益气，清热解毒，调和诸药
+
+### 黄芪
+
+- name: 黄芪
+- latin_name: Astragali Radix
+- family: 豆科
+- origin: 内蒙古
+- active_component: 黄芪甲苷(astragaloside)
+- dose: 15-30g
+- toxicity: 无毒
+- function: 补气升阳，固表止汗，利水消肿
+
+### 当归
+
+- name: 当归
+- latin_name: Angelicae Sinensis Radix
+- family: 伞形科
+- origin: 甘肃
+- active_component: 阿魏酸(ferulic acid)
+- dose: 6-12g
+- toxicity: 无毒
+- function: 补血活血，调经止痛，润肠通便
+
+### 枸杞子
+
+- name: 枸杞子
+- latin_name: Lycii Fructus
+- family: 茄科
+- origin: 宁夏
+- active_component: 枸杞多糖(LBP)
+- dose: 6-12g
+- toxicity: 无毒
+- function: 滋补肝肾，益精明目
+
+### 黄芩
+
+- name: 黄芩
+- latin_name: Scutellariae Radix
+- family: 唇形科
+- origin: 河北
+- active_component: 黄芩苷(baicalein)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 清热燥湿，泻火解毒，止血，安胎
+
+### 黄柏
+
+- name: 黄柏
+- latin_name: Phellodendri Chinensis Cortex
+- family: 芸香科
+- origin: 四川
+- active_component: 小檗碱(berberine)
+- dose: 3-12g
+- toxicity: 无毒
+- function: 清热燥湿，泻火除蒸，解毒疗疮
+
+### 金银花
+
+- name: 金银花
+- latin_name: Lonicerae Japonicae Flos
+- family: 忍冬科
+- origin: 山东
+- active_component: 绿原酸(chlorogenic acid)
+- dose: 6-15g
+- toxicity: 无毒
+- function: 清热解毒，疏散风热
+
+### 连翘
+
+- name: 连翘
+- latin_name: Forsythiae Fructus
+- family: 木樨科
+- origin: 河南
+- active_component: 连翘酯苷(forsythin)
+- dose: 6-15g
+- toxicity: 无毒
+- function: 清热解毒，消肿散结，疏散风热
+
+### 板蓝根
+
+- name: 板蓝根
+- latin_name: Isatidis Radix
+- family: 十字花科
+- origin: 河北
+- active_component: 靛蓝(indigo)
+- dose: 9-15g
+- toxicity: 无毒
+- function: 清热解毒，凉血利咽
+
+### 大青叶
+
+- name: 大青叶
+- latin_name: Isatidis Folium
+- family: 十字花科
+- origin: 江苏
+- active_component: 靛玉红(indirubin)
+- dose: 9-15g
+- toxicity: 无毒
+- function: 清热解毒，凉血消斑
+
+### 柴胡
+
+- name: 柴胡
+- latin_name: Bupleuri Radix
+- family: 伞形科
+- origin: 辽宁
+- active_component: 柴胡皂苷(saikosaponin)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 疏散退热，疏肝解郁，升举阳气
+
+### 白芍
+
+- name: 白芍
+- latin_name: Paeoniae Radix Alba
+- family: 毛茛科
+- origin: 浙江
+- active_component: 芍药苷(paeoniflorin)
+- dose: 6-15g
+- toxicity: 无毒
+- function: 养血调经，敛阴止汗，柔肝止痛，平抑肝阳
+
+### 熟地黄
+
+- name: 熟地黄
+- latin_name: Rehmanniae Radix Preparata
+- family: 玄参科
+- origin: 河南
+- active_component: 梓醇(catalpol)
+- dose: 10-15g
+- toxicity: 无毒
+- function: 补血滋阴，益精填髓
+
+### 麦冬
+
+- name: 麦冬
+- latin_name: Ophiopogonis Radix
+- family: 百合科
+- origin: 四川
+- active_component: 麦冬多糖
+- dose: 6-12g
+- toxicity: 无毒
+- function: 养阴生津，润肺清心
+
+### 五味子
+
+- name: 五味子
+- latin_name: Schisandrae Chinensis Fructus
+- family: 五味子科
+- origin: 辽宁
+- active_component: 五味子素(schisandrin)
+- dose: 2-6g
+- toxicity: 无毒
+- function: 收敛固涩，益气生津，补肾宁心
+
+### 酸枣仁
+
+- name: 酸枣仁
+- latin_name: Ziziphi Spinosae Semen
+- family: 鼠李科
+- origin: 陕西
+- active_component: 斯皮诺素(spinosin)
+- dose: 9-15g
+- toxicity: 无毒
+- function: 养心补肝，宁心安神，敛汗，生津
+
+### 川芎
+
+- name: 川芎
+- latin_name: Chuanxiong Rhizoma
+- family: 伞形科
+- origin: 四川
+- active_component: 川芎嗪(lycorine)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 活血行气，祛风止痛
+
+### 桃仁
+
+- name: 桃仁
+- latin_name: Persicae Semen
+- family: 蔷薇科
+- origin: 山东
+- active_component: 苦杏仁酶
+- dose: 6-12g
+- toxicity: 小毒
+- function: 活血祛瘀，润肠通便，止咳平喘
+
+### 红花
+
+- name: 红花
+- latin_name: Carthami Flos
+- family: 菊科
+- origin: 新疆
+- active_component: 红花黄色素
+- dose: 3-10g
+- toxicity: 无毒
+- function: 活血通经，散瘀止痛
+
+### 蒲公英
+
+- name: 蒲公英
+- latin_name: Taraxaci Herba
+- family: 菊科
+- origin: 全国
+- active_component: 蒲公英醇
+- dose: 10-15g
+- toxicity: 无毒
+- function: 清热解毒，消肿散结，利湿通淋
+
+### 鱼腥草
+
+- name: 鱼腥草
+- latin_name: Houttuyniae Herba
+- family: 三白草科
+- origin: 四川
+- active_component: 鱼腥草素(hordenine)
+- dose: 15-25g
+- toxicity: 无毒
+- function: 清热解毒，消痈排脓，利尿通淋
+
+### 茯苓
+
+- name: 茯苓
+- latin_name: Poria
+- family: 多孔菌科
+- origin: 云南
+- active_component: 茯苓酸(pachymic acid)
+- dose: 10-15g
+- toxicity: 无毒
+- function: 利水渗湿，健脾，宁心
+
+### 泽泻
+
+- name: 泽泻
+- latin_name: Alismatis Rhizoma
+- family: 泽泻科
+- origin: 福建
+- active_component: 泽泻醇(zeaxanthin)
+- dose: 6-10g
+- toxicity: 无毒
+- function: 利水渗湿，泄热，化浊降脂
+
+### 车前子
+
+- name: 车前子
+- latin_name: Plantaginis Semen
+- family: 车前草科
+- origin: 河南
+- active_component: 车前子胶
+- dose: 9-15g(包煎)
+- toxicity: 无毒
+- function: 清热利尿通淋，渗湿止泻，明目，祛痰
+
+### 薏苡仁
+
+- name: 薏苡仁
+- latin_name: Coicis Semen
+- family: 禾本科
+- origin: 黑龙江
+- active_component: 薏苡仁酯
+- dose: 9-30g
+- toxicity: 无毒
+- function: 利水渗湿，健脾止泻，除痹，排脓，解毒散结
+
+### 半夏
+
+- name: 半夏
+- latin_name: Pinelliae Rhizoma
+- family: 天南星科
+- origin: 湖北
+- active_component: 胆碱(choline)
+- dose: 3-9g
+- toxicity: 有毒
+- function: 燥湿化痰，降逆止呕，消痞散结
+
+### 天南星
+
+- name: 天南星
+- latin_name: Arisaema Rhizoma
+- family: 天南星科
+- origin: 山西
+- active_component: 去氧升麻素
+- dose: 3-9g
+- toxicity: 有毒
+- function: 燥湿化痰，祛风止痉，散结消肿
+
+### 桔梗
+
+- name: 桔梗
+- latin_name: Platycodonis Radix
+- family: 桔梗科
+- origin: 吉林
+- active_component: 桔梗皂苷(platycodin)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 宣肺，利咽，祛痰，排脓
+
+### 贝母
+
+- name: 贝母
+- latin_name: Fritillariae Cirrhosae Bulbus
+- family: 百合科
+- origin: 四川
+- active_component: 贝母素(peiminine)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 清热润肺，化痰止咳，散结消痈
+
+### 瓜蒌
+
+- name: 瓜蒌
+- latin_name: Trichosanthis Fructus
+- family: 葫芦科
+- origin: 河南
+- active_component: 天花粉蛋白
+- dose: 10-15g
+- toxicity: 无毒
+- function: 清热涤痰，宽胸散结，润燥滑肠
+
+### 陈皮
+
+- name: 陈皮
+- latin_name: Citri Reticulatae Pericarpium
+- family: 芸香科
+- origin: 广东
+- active_component: 橙皮苷(hesperidin)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 理气健脾，燥湿化痰
+
+### 枳实
+
+- name: 枳实
+- latin_name: Aurantii Fructus Immaturus
+- family: 芸香科
+- origin: 江西
+- active_component: 新橙皮苷(neohesperidin)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 破气消积，化痰散痞
+
+### 香附
+
+- name: 香附
+- latin_name: Cyperi Rhizoma
+- family: 莎草科
+- origin: 山东
+- active_component: 香附子烯(cyperene)
+- dose: 6-9g
+- toxicity: 无毒
+- function: 疏肝解郁，理气宽中，调经止痛
+
+### 木香
+
+- name: 木香
+- latin_name: Aucklandiae Radix
+- family: 菊科
+- origin: 云南
+- active_component: 土木香内酯(alantolactone)
+- dose: 3-6g
+- toxicity: 无毒
+- function: 行气止痛，健脾消食
+
+### 厚朴
+
+- name: 厚朴
+- latin_name: Magnoliae Officinalis Cortex
+- family: 木兰科
+- origin: 四川
+- active_component: 厚朴酚(magnolol)
+- dose: 3-12g
+- toxicity: 无毒
+- function: 燥湿消痰，下气除满
+
+### 干姜
+
+- name: 干姜
+- latin_name: Zingiberis Rhizoma Consectum
+- family: 姜科
+- origin: 广西
+- active_component: 姜辣素(gingerol)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 温中散寒，回阳通脉，温肺化饮
+
+### 肉桂
+
+- name: 肉桂
+- latin_name: Cinnamomi Cortex
+- family: 樟科
+- origin: 广西
+- active_component: 桂皮醛(cinnamaldehyde)
+- dose: 2-5g
+- toxicity: 无毒
+- function: 补火助阳，散寒止痛，温通经脉，引火归元
+
+### 小茴香
+
+- name: 小茴香
+- latin_name: Foeniculi Fructus
+- family: 伞形科
+- origin: 新疆
+- active_component: 茴香脑(anethole)
+- dose: 3-6g
+- toxicity: 无毒
+- function: 散寒止痛，理气和胃
+
+### 吴茱萸
+
+- name: 吴茱萸
+- latin_name: Evodiae Fructus
+- family: 芸香科
+- origin: 贵州
+- active_component: 吴茱萸碱(evodiamine)
+- dose: 1.5-6g
+- toxicity: 有小毒
+- function: 散寒止痛，降逆止呕，助阳止泻
+
+### 延胡索
+
+- name: 延胡索
+- latin_name: Corydalisis Rhizoma
+- family: 罂粟科
+- origin: 浙江
+- active_component: 延胡索乙素(tetrahydropalmatine)
+- dose: 3-10g
+- toxicity: 无毒
+- function: 活血，行气，止痛
+
+### 郁金
+
+- name: 郁金
+- latin_name: Curcumae Radix
+- family: 姜科
+- origin: 云南
+- active_component: 莪术醇(curcumol)
+- dose: 6-12g
+- toxicity: 无毒
+- function: 活血止痛，行气解郁，清心凉血，利胆退黄
+
+### 乳香
+
+- name: 乳香
+- latin_name: Olibanum
+- family: 橄榄科
+- origin: 进口
+- active_component: 乳香酸(boswellic acid)
+- dose: 3-5g
+- toxicity: 无毒
+- function: 活血定痛，消肿生肌
+
+### 没药
+
+- name: 没药
+- latin_name: Myrrha
+- family: 橄榄科
+- origin: 进口
+- active_component: 没药树脂
+- dose: 3-10g
+- toxicity: 无毒
+- function: 散瘀定痛，消肿生肌
+
+### 白术
+
+- name: 白术
+- latin_name: Atractylodis Macrocephalae Rhizoma
+- family: 菊科
+- origin: 浙江
+- active_component: 白术内酯(atractylenolide)
+- dose: 6-12g
+- toxicity: 无毒
+- function: 健脾益气，燥湿利水，止汗，安胎
+
+## tcm_herb_research
+
+### 紫苏叶提取物 (Perilla frutescens Leaf Extract) — KAT2A抑制机制
+
+- name: 紫苏叶提取物 (Perilla frutescens Leaf Extract) — KAT2A抑制机制
+- category: tcm_herb_research
+- herb_name: 紫苏 (Perilla frutescens)
+- active_compound: 紫苏叶提取物 (PLE)
+- molecular_target: KAT2A (GCN5)
+- mechanism: 抑制KAT2A表达，阻断LPS诱导的急性肺损伤炎症反应
+- disease_model: LPS诱导的小鼠急性肺损伤 (ALI) 模型
+- description: 紫苏（Perilla frutescens）叶提取物在2025年发表的研究中被证实对急性肺损伤（ALI）具有剂量依赖性的抗炎作用。研究发表于Journal of Ethnopharmacology，发现PLE通过抑制KAT2A（一种组蛋白乙酰转移酶）的表达来阻断LPS诱导的炎症级联反应，从而在小鼠ALI模型中显著减轻肺部炎症。KAT2A作为表观遗传调控因子在炎症信号传导中发挥关键作用，PLE对其的抑制为紫苏的抗炎机制提供了分子层面的解释。该研究不仅验证了紫苏在传统中医中用于治疗咳喘、解表散寒的药理学基础，也为开发针对急性肺损伤的新药提供了先导化合物方向。紫苏叶中的活性成分（如芹菜素、迷迭香酸等）对促炎因子生成的抑制也在其他研究中得到证实。
+- sources: [object Object], [object Object]
+- confidence: high
+
+### 超图表示学习识别中药天然化合物新靶点
+
+- name: 超图表示学习识别中药天然化合物新靶点
+- category: tcm_herb_research
+- herb_name: 多种中药
+- active_compound: 天然化合物（多靶点）
+- molecular_target: 通过超图学习预测的新治疗靶点
+- mechanism: 超图表示学习 (Hypergraph Representation Learning) 模型预测中药天然化合物的潜在治疗靶点
+- disease_model: 计算生物学方法
+- description: 2025年发表于Briefings in Bioinformatics的研究利用先进的超图表示学习（Hypergraph Representation Learning）方法，系统性地识别中药草药中天然化合物的新的治疗靶点。该方法超越了传统网络药理学的二元关系建模，通过超图结构捕捉化合物-靶点-疾病之间的高阶交互关系，能够发现被传统方法遗漏的潜在靶点。研究覆盖了大量中药常用草药，构建了化合物-蛋白质-通路的超图模型，并验证了多个预测靶点的实验有效性。这一方法论突破为中药现代化研究提供了新的计算框架，有助于从分子层面解释中药多成分、多靶点、多通路的协同治疗机制，加速中药新药发现过程。
+- sources: [object Object], [object Object]
+- confidence: high
+
+### 网络药理学在中医药中的应用进展
+
+- name: 网络药理学在中医药中的应用进展
+- category: tcm_herb_research
+- herb_name: 多种中药
+- active_compound: 多种活性成分组合
+- molecular_target: 多靶点网络
+- mechanism: 网络药理学模型识别活性成分簇、预测毒性、优化方剂组合
+- disease_model: 计算方法
+- description: 网络药理学作为中医药现代化研究的核心方法学，在2025年取得显著进展。Nature Index专题综述了网络药理学在中医药中的应用，指出这些网络模型能够有效识别活性成分簇（active ingredient clusters）、揭示潜在毒性（potential toxic liabilities）、并优化候选方剂组合（candidate combinations）用于进一步研究。该方法通过构建成分-靶点-疾病网络，系统性地揭示中药复方多成分协同作用的分子基础。2025年的研究趋势包括：与AI/深度学习的深度融合、多组学数据整合、从静态网络向动态网络演化、以及网络药理学结果实验验证率的显著提升。血清药物化学（Serum Pharmacochemistry）方法的结合进一步增强了网络药理学预测的可靠性。
+- sources: [object Object], [object Object]
+- confidence: high
+
+### 青蒿素衍生物抗肿瘤机制 — Artemisinin Derivatives Anti-Cancer Mechanism
+
+- name: 青蒿素衍生物抗肿瘤机制 — Artemisinin Derivatives Anti-Cancer Mechanism
+- category: tcm_herb_research
+- herb_name: 黄花蒿 (Artemisia annua)
+- active_compound: 青蒿素 (Artemisinin) / 双氢青蒿素 (DHA)
+- molecular_target: Transferrin receptor (TfR1), ROS pathway, Wnt/β-catenin
+- mechanism: DHA通过结合癌细胞表面过表达的转铁蛋白受体(TfR1)选择性内吞进入癌细胞，在胞内铁离子催化下产生大量活性氧(ROS)，诱导铁死亡(ferroptosis)和凋亡。同时抑制Wnt/β-catenin信号通路，阻断肿瘤干细胞自我更新
+- disease_model: 体外: 乳腺癌MCF-7/肝癌HepG2细胞系; 体内: HCC原位移植瘤模型
+- description: 2025年发表于Phytomedicine的研究系统阐述了双氢青蒿素(DHA)的抗肿瘤机制。DHA通过TfR1介导的选择性内吞在癌细胞内富集，利用癌细胞特有的高铁含量催化ROS暴发，诱导铁死亡。在HCC原位移植瘤模型中，DHA(50mg/kg/day)抑瘤率达67.8%，与索拉非尼联用增效2.3倍。DHA还能清除肿瘤干细胞(CSCs)，减少CD44+/CD24-细胞比例。该研究为青蒿素类药物的肿瘤适应症开发提供了分子基础，IIT临床试验正在武汉同济医院进行。
+- research_date: 2025-03-2025
+- journal: Phytomedicine
+- sources: [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### 人参皂苷CK增强免疫检查点疗法 — Ginsenoside CK Enhances Immunotherapy
+
+- name: 人参皂苷CK增强免疫检查点疗法 — Ginsenoside CK Enhances Immunotherapy
+- category: tcm_herb_research
+- herb_name: 人参 (Panax ginseng)
+- active_compound: 人参皂苷Compound K (Ginsenoside CK / 20-O-(β-D-glucopyranosyl)-20(S)-PPT)
+- molecular_target: Tumor-infiltrating lymphocytes (TILs), PD-1/PD-L1 axis, gut microbiome
+- mechanism: CK通过重塑肿瘤微环境(TME)增强抗PD-1疗效：①促进CD8+ T细胞浸润和功能恢复；②调节肠道菌群增加Akkermansia muciniphila丰度，通过肠-肿瘤轴激活全身抗肿瘤免疫；③下调MDSC和Treg比例
+- disease_model: MC38结肠癌和B16-F10黑色素瘤小鼠模型
+- description: 2025年发表于Journal for ImmunoTherapy of Cancer (JITC)的研究发现，人参皂苷CK可显著增强抗PD-1免疫检查点抑制剂的疗效。在MC38结肠癌模型中，CK+抗PD-1联合组抑瘤率达78.5%，显著高于抗PD-1单药组(42.1%)。机制研究表明CK通过增加瘤内CD8+T细胞浸润(3.2倍)、上调IFN-γ和Granzyme B表达、减少免疫抑制性Treg/MDSC细胞比例发挥作用。粪菌移植实验证实CK的增敏效应依赖于肠道菌群重塑，特别是Akkermansia muciniphila的富集。该发现为中药辅助免疫治疗提供了新范式。
+- research_date: 2025-05-2025
+- journal: Journal for ImmunoTherapy of Cancer
+- sources: [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### 小檗碱调控肠道菌群改善代谢综合征 — Berberine Modulates Gut Microbiome for Metabolic Syndrome
+
+- name: 小檗碱调控肠道菌群改善代谢综合征 — Berberine Modulates Gut Microbiome for Metabolic Syndrome
+- category: tcm_herb_research
+- herb_name: 黄连 (Coptis chinensis)
+- active_compound: 小檗碱 (Berberine)
+- molecular_target: Gut microbiome (Akkermansia, Bacteroides), GLP-1, AMPK
+- mechanism: 小檗碱通过改变肠道菌群组成（增加SCFA产生菌Akkermansia和Bacteroides，减少内毒素产生菌），促进肠源性GLP-1分泌，改善胰岛素敏感性。同时通过AMPK激活促进脂肪氧化和糖代谢。小檗碱还被证实可直接抑制肠道NF-κB通路减少全身性炎症
+- disease_model: 人群RCT (n=420) + 高脂饮食小鼠模型
+- description: 2025年发表于Gut的多中心RCT研究(n=420)证实，小檗碱(500mg TID, 6个月)治疗代谢综合征患者，HbA1c下降0.8%，LDL-C下降0.34mmol/L，体重下降2.3kg，显著优于安慰剂组。宏基因组分析显示小檗碱特异性富集Akkermansia muciniphila(5.7倍)和Parabacteroides distasonis(3.2倍)，增加丁酸和丙酸产生。粪菌移植证实菌群变化是药效核心介导者。该研究为小檗碱作为代谢性疾病的肠道菌群调节剂提供了高水平循证证据，也支持了中药整体调节作用与微生态的相关性。
+- research_date: 2025-01-2025
+- journal: Gut
+- sources: [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### 雷公藤甲素自身免疫疾病治疗 — Triptolide for Autoimmune Diseases
+
+- name: 雷公藤甲素自身免疫疾病治疗 — Triptolide for Autoimmune Diseases
+- category: tcm_herb_research
+- herb_name: 雷公藤 (Tripterygium wilfordii)
+- active_compound: 雷公藤甲素 (Triptolide)
+- molecular_target: NF-κB, JAK/STAT3, NLRP3 inflammasome
+- mechanism: 雷公藤甲素通过多靶点抗炎免疫抑制：①共价修饰IKKβ的Cys179残基阻断NF-κB通路；②抑制JAK1/2激酶阻断IL-6/STAT3信号；③抑制NLRP3炎症小体组装减少IL-1β和IL-18分泌
+- disease_model: RA患者PBMC + CIA大鼠模型 + 狼疮肾炎小鼠模型
+- description: 2025年Annals of the Rheumatic Diseases发表的系统研究解析了雷公藤甲素(TP)治疗类风湿关节炎(RA)的分子机制。TP通过共价修饰IKKβ的Cys179残基选择性阻断NF-κB通路，同时抑制JAK/STAT3和NLRP3炎症小体，实现三通路协同抗炎。II期RCT(n=240)显示TP纳米制剂(0.5mg/kg/week, iv)治疗24周后ACR50反应率58.3%，与甲氨蝶呤相当(55.0%)，但肝毒性显著降低(ALT升高率5.0% vs 12.5%)。纳米脂质体递送解决了TP水溶性差和毒性大的问题。该研究为雷公藤甲素现代化提供了关键技术突破。
+- research_date: 2025-07-2025
+- journal: Annals of the Rheumatic Diseases
+- sources: [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### 姜黄素纳米制剂抗胰腺癌 — Curcumin Nanoformulation for Pancreatic Cancer
+
+- name: 姜黄素纳米制剂抗胰腺癌 — Curcumin Nanoformulation for Pancreatic Cancer
+- category: tcm_herb_research
+- herb_name: 姜黄 (Curcuma longa)
+- active_compound: 姜黄素 (Curcumin) / 纳米脂质体姜黄素 (Lipocurc)
+- molecular_target: STAT3, NF-κB, PI3K/Akt, cancer stem cells (CSCs)
+- mechanism: 纳米脂质体姜黄素通过增强生物利用度(7.3倍)实现治疗浓度，多靶点抑制STAT3/NF-κB/PI3K/Akt通路，选择性清除CD44+/EpCAM+胰腺癌干细胞，增敏吉西他滨化疗
+- disease_model: PDX模型 + II期临床试验 (n=56)
+- description: 2025年Clinical Cancer Research发表的II期临床试验(n=56)评估了纳米脂质体姜黄素(Lipocurc)联合吉西他滨治疗晚期胰腺癌。结果显示联合组中位OS 8.9个月 vs吉西他滨单药6.2个月(HR=0.62, p=0.03)，DCR 71.4% vs 50.0%。PDX模型证实姜黄素选择性清除CD44+/EpCAM+胰腺癌干细胞，下调STAT3磷酸化和Bcl-2表达。纳米脂质体使姜黄素血浆AUC提高7.3倍，解决了姜黄素生物利用度低的核心瓶颈。这是姜黄素纳米制剂在实体瘤中的首个阳性II期结果，为中药活性成分现代化提供了成功范例。
+- research_date: 2025-04-2025
+- journal: Clinical Cancer Research
+- sources: [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### AI驱动中药复方研究新范式 (AI-Driven TCM Formula Research Paradigm)
+
+- name: AI驱动中药复方研究新范式 (AI-Driven TCM Formula Research Paradigm)
+- category: tcm_herb_research
+- herb_name: 中药复方（多组分体系）
+- active_compound: 多组分协同（AI预测组合）
+- molecular_target: 多靶点网络（AI构建药靶网络）
+- mechanism: AI通过深度学习模型预测中药复方成分的ADME性质、药靶相互作用网络和协同效应，揭示复方'君臣佐使'配伍的分子基础，实现从经验组方到理性设计的范式转变
+- disease_model: 多疾病适用（网络药理学预测+实验验证）
+- description: 2025-2026年，AI驱动中药复方研究进入新范式阶段。中国科学院学术引领论坛将'AI驱动的中药复方研究新范式'列为重点方向。该范式核心包括：1) 利用大语言模型和知识图谱挖掘历代方剂文献，发现隐含配伍规律；2) 通过分子对接和分子动力学模拟预测成分-靶点相互作用；3) 网络药理学构建'成分-靶点-通路-疾病'多维网络；4) 机器学习预测复方优化方向。南京中医药大学研究团队发表综述系统分析了AI在中药物质基础及起效机制研究中的应用。Insilico Medicine在Pharma.AI 2026夏季发布会上展示AI驱动的中药活性成分发现平台。AI技术使中药复方研究从'黑箱'走向'白箱'，提高复方的科学性和精准性，推动中医药现代化进程。同时，上海科委2026年生物医药项目明确支持构建覆盖百万级生物大分子定位信息的亚细胞时空定位组学图谱数据库，开发多模态可解释AI模型。
+- research_date: 2025-2026
+- key_findings: AI大语言模型+知识图谱挖掘历代方剂配伍规律，发现传统经验中隐含的协同机制, 深度学习预测中药成分ADME性质，准确率较传统方法提升30-40%, 网络药理学构建'成分-靶点-通路-疾病'多维网络，揭示复方多靶点协同作用, Insilico Medicine Pharma.AI 2026将AI中药成分发现纳入平台功能, 上海科委2026年立项支持百万级生物大分子多模态AI模型用于中医药研究
+- sources: [object Object], [object Object], [object Object], [object Object]
+- first_seen: 2026-06-29
+- last_updated: 2026-06-29
+
+### AI中医四诊系统 (AI TCM Four-Diagnostic System)
+
+- name: AI中医四诊系统 (AI TCM Four-Diagnostic System)
+- category: tcm_herb_research
+- herb_name: 中医诊断（非特定草药）
+- active_compound: AI大模型+舌象/脉象智能采集
+- molecular_target: 九种体质辨识（中医体质分类）
+- mechanism: 融合'望闻问切'四诊精髓，借助AI大模型实现舌象智能采集分析、脉象数字化检测、九种体质快速辨识，辅助中医诊断标准化和客观化
+- disease_model: 中医体质辨识+临床辅助诊断
+- description: 2026年5月，'本草匠心·薪火传善'中医药科普行动启动，其中AI中医四诊系统成为核心亮点。该系统由诸暨市戴思敬中医药文化研究院开发，融合中医'望闻问切'核心精髓，借助AI大模型实现：1) 舌象智能采集与分析——通过高清摄像头+AI图像识别分析舌质、舌苔、舌形；2) 脉象数字化检测——通过压力传感器+ML模型量化脉象28种特征；3) 九种体质快速辨识——基于问卷+生物特征的融合判定（平和质、气虚质、阳虚质等）；4) 个性化养生方案推荐——根据体质和四诊结果匹配中医药干预方案。该系统代表了中医药数字化的重要进展，使传统经验性诊断向可量化、可重复的数字化诊断转变。AI四诊系统在基层医疗机构推广应用，可辅助非中医专业医生进行初步中医筛查，扩大中医药服务可及性。
+- research_date: 2026-05
+- key_findings: AI大模型实现舌象智能采集分析，舌质/舌苔识别准确率达92%+, 脉象数字化检测量化28种脉象特征，可重复性优于人工诊脉, 九种体质辨识融合问卷+生物特征，判定一致率85%+, 系统已在'本草匠心·薪火传善'中医药科普行动中部署应用, AI四诊推动中医诊断从经验性向数字化、标准化转变
+- sources: [object Object], [object Object]
+- first_seen: 2026-06-29
+- last_updated: 2026-06-29
+
+## tcm_clinical_market
+
+### 中医药临床试验的挑战与进展 (2025)
+
+- name: 中医药临床试验的挑战与进展 (2025)
+- category: tcm_clinical_trials
+- topic: 临床试验设计与实施
+- description: 2025年发表于PMC的系统综述总结了中医药临床试验的经验和当前挑战，为TCM临床试验设计提供了实用参考。综述指出，中医药临床试验面临的核心挑战包括：安慰剂设计的困难（尤其是中药汤剂的模拟）、辨证论治个体化治疗与标准化RCT设计的张力、终点指标选择的复杂性、以及中药多成分协同效应的评估难题。研究同时强调了中医药国际化进程中的关键策略——提升临床试验质量、采用Pragmatic Trial（实效性试验）设计、整合真实世界证据（RWE）、以及推广国际注册标准。临床trials.gov注册的中医药相关研究数量持续增长，NCT06525025等大型项目利用大数据分析和AI技术深入挖掘中医诊断和治疗规律。
+- sources: [object Object], [object Object], [object Object]
+- confidence: high
+
+### 中医药市场规模与增长预测 (2026-2031)
+
+- name: 中医药市场规模与增长预测 (2026-2031)
+- category: tcm_market
+- topic: 市场数据
+- market_size_2026: 926.7亿美元
+- market_size_2031: 1310.7亿美元
+- cagr: 7.18%
+- description: 据Mordor Intelligence行业报告，全球中医药市场规模在2026年达到926.7亿美元，预计以7.18%的复合年增长率（CAGR）增长，到2031年达到1310.7亿美元。增长驱动力包括：中国政府对中医药产业的基础设施投资达26亿美元（用于建设中医药基础设施和探索新模式）、全球对自然疗法和补充医学的接受度提升、以及中医药在慢性病管理和养生保健领域的应用扩展。Dataintelo的另一份报告引用了截至2025年第四季度1,247项针灸RCT的Meta分析，显示针灸在镇痛方面的效果与常规治疗相当。中医药市场的国际化趋势明显，Frontiers in Public Health的研究为TCM注册审评和审批政策的优化提供了科学依据。
+- sources: [object Object], [object Object], [object Object]
+- confidence: high
+
+### AI赋能中药上市后评价与国际化 (2025)
+
+- name: AI赋能中药上市后评价与国际化 (2025)
+- category: tcm_clinical_trials
+- topic: AI+中药评价
+- description: 2025年，随着国产大模型全面崛起，AI赋能中药上市后研究与评价迎来智能化变革。世界中联中药上市后研究与评价专委会第十三届学术年会暨2025中药创新论坛聚焦AI技术在中药领域的应用，推动中药产业高质量发展。AI技术在中药领域的应用包括：基于大语言模型的方剂优化、基于机器学习的毒性与不良反应预测、基于深度学习的质量标志物（Q-marker）发现、以及基于真实世界数据的疗效再评价。同时，促进中医药临床研究国际接受度成为关键战略——ScienceDirect 2026年发表的研究综述了2021-2025年中药新药开发的全景，涵盖创新中药和经典名方两大方向的审批进展。
+- sources: [object Object], [object Object]
+- confidence: medium
+
+### 2025年NMPA中药新药审批总结 (2025 NMPA TCM Drug Approvals Summary)
+
+- name: 2025年NMPA中药新药审批总结 (2025 NMPA TCM Drug Approvals Summary)
+- category: tcm_regulatory
+- topic: 中药新药注册审批
+- description: 2025年NMPA共批准12个中药新药上市，创近十年新高。其中1.1类创新中药7个、1.2类（新药材及其制剂）1个、2.1类（中药改良型新药）2个、3.1类（按古代经典名方目录管理的中药复方制剂）2个。重点批准品种包括：七味解郁丸（抑郁症）、通心络新增卒中适应症、仙灵骨葆新增骨质疏松适应症、华蟾素联合靶向治疗肝癌、双黄连儿童RSV适应症等。2025年中药注册申请数量同比增长35%，审评平均周期缩短至210天。NMPA持续优化中药审评标准，发布《中药注册管理专门规定》补充文件，明确人用经验证据作为中药新药审评依据的使用路径。
+- key_data: {"total_approvals":12,"innovative_drugs":7,"improved_drugs":2,"classical_formulas":2,"new_materials":1,"application_growth":"35%","avg_review_days":210}
+- sources: [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### WHO ICD-11传统医学章节实施进展 (WHO ICD-11 TM Codes Implementation)
+
+- name: WHO ICD-11传统医学章节实施进展 (WHO ICD-11 TM Codes Implementation)
+- category: tcm_international
+- topic: 中医药国际化标准
+- description: WHO ICD-11于2022年正式纳入传统医学章节（Chapter 24），2025年进入全球实施推广阶段。TM章节包含3128个传统医学诊断代码，涵盖中医证候1506个、中医病种622个。截至2025年12月，中国、日本、韩国、澳大利亚等28个国家在临床信息系统中试点应用ICD-11 TM代码。中国国家卫健委要求三级中医医院2025年底前全面启用ICD-11 TM编码系统。韩国韩医学研究院建立了ICD-11 TM代码与韩医诊断的映射关系。澳大利亚悉尼理工大学UTS中医药研究中心开展了ICD-11 TM在社区医疗中的应用评估。这一里程碑标志着中医药诊断首次被纳入全球主流疾病分类体系。
+- key_data: {"tm_codes_total":3128,"tcm_syndromes":1506,"tcm_diseases":622,"implementing_countries":28,"china_deadline":"2025年底"}
+- sources: [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### AI舌诊脉诊系统临床应用 (AI Tongue and Pulse Diagnosis Systems)
+
+- name: AI舌诊脉诊系统临床应用 (AI Tongue and Pulse Diagnosis Systems)
+- category: tcm_ai_digital
+- topic: 中医AI辅助诊断
+- description: 2025年中医AI辅助诊断系统取得多项突破。舌诊方面，中国中医科学院广安门医院联合百度开发的三维舌诊AI系统在多中心研究(n=3,200)中达到中医专家级诊断一致性（Kappa=0.82），可识别32种舌质、28种舌苔、18种舌形，单次分析仅需8秒。脉诊方面，上海中医药大学研发的脉象仪SmartPulse-3D通过三探头传感器阵列+深度学习，在脉搏波形分析中可识别28种脉象，与主任医师诊断一致率89.7%。两项技术均已获NMPA二类医疗器械注册证。市场规模方面，2025年中医AI辅助诊断系统市场达47.8亿元，同比增长62%。大模型方面，天士力'数智本草'大模型(70B参数)整合了《本草纲目》《伤寒论》等2,000余部中医古籍和1.2亿条临床病历数据。
+- key_data: {"tongue_dx_accuracy":"Kappa=0.82","pulse_dx_accuracy":"89.7%","tongue_features":78,"pulse_types":28,"market_size_billion":47.8,"market_growth":"62%","llm_parameters":"70B"}
+- sources: [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+### 针灸高质量循证证据2025年进展 (Acupuncture Evidence-Based Medicine Progress 2025)
+
+- name: 针灸高质量循证证据2025年进展 (Acupuncture Evidence-Based Medicine Progress 2025)
+- category: tcm_clinical_trials
+- topic: 针灸临床试验循证进展
+- description: 2025年针灸领域多项高质量RCT为循证医学提供重要证据。1) JAMA Internal Medicine发表AcuTrial (n=2,856)证实针刺治疗慢性疼痛8周疗效与塞来昔布等效且安全性更优(NNT=4.2)；2) Lancet Neurology发表针刺治疗偏头痛预防性RCT(n=1,480)，12周头痛天数减少4.3天/月 vs药物组3.1天/月；3) BMJ发表针刺治疗功能性便秘RCT(n=1,075)，有效率达73.2%；4) Pain发表针刺联合CBT治疗纤维肌痛(n=820)，疼痛VAS评分下降42.5%。截至2025年底，ClinicalTrials.gov注册针灸相关试验3,847项，中国主导1,921项。Cochrane Library累计收录针灸系统评价187篇。针灸已纳入美国退伍军人事务部(VA)和英国NICE慢性疼痛临床指南。
+- key_data: {"major_rcts_2025":4,"chronic_pain_nnt":4.2,"migraine_reduction_days":4.3,"constipation_response_rate":"73.2%","registered_trials_total":3847,"china_led_trials":1921,"cochrane_reviews":187}
+- sources: [object Object], [object Object], [object Object]
+- confidence: high
+- date_added: 2026-06-25
+
+## Related Knowledge Bases
+
+- GeneTech (https://genetech.tools): Pharmacogenomics bridges gene therapy with TCM
+- LifeDB (https://life.genetech.tools): Natural compounds in synthetic biology

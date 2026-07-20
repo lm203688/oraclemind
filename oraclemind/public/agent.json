@@ -1,0 +1,17 @@
+{
+  "name": "OracleMind",
+  "description": "AI-Powered Destiny Forecast — 5 modern AI agents × 5 ancient Chinese manuscripts cross-validate your future. Not fortune-telling. Fore-sight.",
+  "url": "https://oraclemind.io",
+  "capabilities": [
+    "POST /api/simulate/personal/stream — Personal destiny forecast (SSE streaming)",
+    "POST /api/simulate/event/stream — Event prediction (SSE streaming)",
+    "POST /api/what-if — Counterfactual analysis",
+    "POST /api/bazi/calculate — Four Pillars (Bazi) calculation",
+    "GET /api/daily-forecast — Daily forecast (registered users only)",
+    "POST /api/referral — Referral rewards"
+  ],
+  "pricing": "Free $0 (5/day) → Premium $9.99/month → Deep $4.99/analysis",
+  "authentication": "NextAuth Guest (free) / Session (premium)",
+  "contact": "support@oraclemind.io",
+  "mystical_background": "Powered by 5 ancient Chinese manuscripts from 960-1800 CE, each providing a unique validation perspective on destiny forecasting."
+}

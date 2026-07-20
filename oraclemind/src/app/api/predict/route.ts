@@ -82,36 +82,50 @@ export async function POST(request: NextRequest): Promise<NextResponse<PredictRe
       category: route.category,
     });
 
-    // Upsert user
+    // Upsert user (safe - won't block prediction if DB fails)
     const uid = userId ?? 'anonymous';
-    await db.user.upsert({
-      where: { id: uid },
-      update: { totalPredictions: { increment: 1 } },
-      create: { id: uid, totalPredictions: 1 },
-    });
+    try {
+      await db.user.upsert({
+        where: { id: uid },
+        update: { totalPredictions: { increment: 1 } },
+        create: { id: uid, totalPredictions: 1 },
+      });
+    } catch (e) {
+      console.error('[predict] db.user.upsert failed, continuing:', e);
+    }
 
-    // Create prediction record with actual token/cost tracking
-    const prediction = await db.prediction.create({
-      data: {
-        userId: uid,
-        question,
-        answer: aiResult.content,
-        category: route.category,
-        tier: route.tier,
-        methods: JSON.stringify(route.methods ?? ['rule_engine']),
-        chartSnapshot: JSON.stringify(chart),
-        status: 'pending',
-        tokensUsed: aiResult.tokensUsed,
-        costUsd: aiResult.costUsd,
-      },
-    });
+    // Create prediction record (safe - won't block if DB fails)
+    let predictionId = `pred_${Date.now()}`;
+    let prediction: any = { id: predictionId };
+    try {
+      prediction = await db.prediction.create({
+        data: {
+          userId: uid,
+          question,
+          answer: aiResult.content,
+          category: route.category,
+          tier: route.tier,
+          methods: JSON.stringify(route.methods ?? ['rule_engine']),
+          chartSnapshot: JSON.stringify(chart),
+          status: 'pending',
+          tokensUsed: aiResult.tokensUsed,
+          costUsd: aiResult.costUsd,
+        },
+      });
+    } catch (dbErr) {
+      console.error('[predict] db.prediction.create failed, continuing:', dbErr);
+    }
 
     return NextResponse.json({
       success: true,
       data: {
         response: aiResult.content,
-        route,
-        predictionId: prediction.id,
+        route: {
+          category: route.category,
+          tier: route.tier,
+          methods: route.methods,
+        },
+        predictionId: prediction?.id || predictionId,
       },
     });
   } catch (err) {

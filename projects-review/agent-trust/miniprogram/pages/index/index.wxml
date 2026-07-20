@@ -1,0 +1,50 @@
+<!-- pages/index/index.wxml -->
+<view class="landing">
+  <!-- 品牌区 -->
+  <view class="hero">
+    <view class="hero__logo">
+      <text class="hero__logo-icon">⚡</text>
+      <text class="hero__logo-text">AgentTrust</text>
+    </view>
+    <text class="hero__tagline">AI Agent 信任与支付协议层</text>
+    <text class="hero__subtitle">让每一个 AI Agent 都能被信任、能收钱</text>
+  </view>
+
+  <!-- 核心价值 -->
+  <view class="features">
+    <view class="feature-card card" wx:for="{{features}}" wx:key="title">
+      <text class="feature-card__icon">{{item.icon}}</text>
+      <text class="feature-card__title">{{item.title}}</text>
+      <text class="feature-card__desc">{{item.desc}}</text>
+    </view>
+  </view>
+
+  <!-- 信任分预览 -->
+  <view class="preview card">
+    <text class="preview__title">信任分预览</text>
+    <view class="preview__score">
+      <text class="preview__score-value">72</text>
+      <text class="preview__score-label">示例 Agent 信任分</text>
+    </view>
+    <view class="preview__dimensions">
+      <view class="preview__dim" wx:for="{{dimensions}}" wx:key="name">
+        <text class="preview__dim-name">{{item.name}}</text>
+        <view class="preview__dim-bar">
+          <view class="preview__dim-fill" style="width: {{item.score}}%"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- CTA -->
+  <view class="cta">
+    <button class="btn btn--primary btn--lg" bindtap="handleLogin">微信一键登录，开始使用</button>
+    <text class="cta__hint">免费使用 · 无需信用卡 · 1 分钟接入</text>
+  </view>
+
+  <!-- 底部说明 -->
+  <view class="footer">
+    <text class="footer__text">开源协议 · MIT License</text>
+    <text class="footer__text">GitHub: lm203688/agent-trust-protocol</text>
+  </view>
+</view>

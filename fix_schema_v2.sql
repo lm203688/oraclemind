@@ -1,0 +1,126 @@
+-- OracleMind 完整补列SQL v2
+-- 在Supabase SQL Editor执行
+
+-- User表
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "gender" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthYear" INTEGER;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthMonth" INTEGER;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthDay" INTEGER;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthHour" INTEGER;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthMinute" INTEGER;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthplace" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "preferredLang" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "subscriptionTier" TEXT DEFAULT 'free';
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "subscriptionStatus" TEXT DEFAULT 'free';
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "subscriptionEndsAt" TIMESTAMP(3);
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "totalSimulations" INTEGER DEFAULT 0;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "lifeEvents" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "graphNodes" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "graphEdges" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "simulations" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "memories" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "feedbacks" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "predictions" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "bonusPredictions" INTEGER DEFAULT 0;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "dailyForecasts" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "referralsMade" TEXT;
+ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "referralsReceived" TEXT;
+
+-- LifeEvent表
+ALTER TABLE "LifeEvent" ADD COLUMN IF NOT EXISTS "emotionalValence" DOUBLE PRECISION DEFAULT 0;
+ALTER TABLE "LifeEvent" ADD COLUMN IF NOT EXISTS "relatedPersons" TEXT;
+
+-- GraphNode表
+ALTER TABLE "GraphNode" ADD COLUMN IF NOT EXISTS "userId" TEXT;
+ALTER TABLE "GraphNode" ADD COLUMN IF NOT EXISTS "simulationId" TEXT;
+ALTER TABLE "GraphNode" ADD COLUMN IF NOT EXISTS "centrality" DOUBLE PRECISION DEFAULT 0;
+ALTER TABLE "GraphNode" ADD COLUMN IF NOT EXISTS "community" INTEGER;
+
+-- GraphEdge表
+ALTER TABLE "GraphEdge" ADD COLUMN IF NOT EXISTS "userId" TEXT;
+ALTER TABLE "GraphEdge" ADD COLUMN IF NOT EXISTS "simulationId" TEXT;
+ALTER TABLE "GraphEdge" ADD COLUMN IF NOT EXISTS "weight" DOUBLE PRECISION DEFAULT 0;
+
+-- Simulation表
+ALTER TABLE "Simulation" ADD COLUMN IF NOT EXISTS "errorMessage" TEXT;
+ALTER TABLE "Simulation" ADD COLUMN IF NOT EXISTS "ipHash" TEXT;
+
+-- AgentTrace表
+ALTER TABLE "AgentTrace" ADD COLUMN IF NOT EXISTS "agentRole" TEXT;
+ALTER TABLE "AgentTrace" ADD COLUMN IF NOT EXISTS "agentCategory" TEXT;
+ALTER TABLE "AgentTrace" ADD COLUMN IF NOT EXISTS "actionType" TEXT;
+ALTER TABLE "AgentTrace" ADD COLUMN IF NOT EXISTS "reasoning" TEXT;
+ALTER TABLE "AgentTrace" ADD COLUMN IF NOT EXISTS "memoryRefs" TEXT;
+ALTER TABLE "AgentTrace" ADD COLUMN IF NOT EXISTS "graphRefs" TEXT;
+
+-- ScenarioOutcome表
+ALTER TABLE "ScenarioOutcome" ADD COLUMN IF NOT EXISTS "scenarioPath" TEXT;
+ALTER TABLE "ScenarioOutcome" ADD COLUMN IF NOT EXISTS "keyTurningPoints" TEXT;
+ALTER TABLE "ScenarioOutcome" ADD COLUMN IF NOT EXISTS "crossValidationResult" TEXT;
+ALTER TABLE "ScenarioOutcome" ADD COLUMN IF NOT EXISTS "modernConsensus" DOUBLE PRECISION;
+ALTER TABLE "ScenarioOutcome" ADD COLUMN IF NOT EXISTS "classicalConsensus" DOUBLE PRECISION;
+ALTER TABLE "ScenarioOutcome" ADD COLUMN IF NOT EXISTS "recommendation" TEXT;
+
+-- WhatIfBranch表
+ALTER TABLE "WhatIfBranch" ADD COLUMN IF NOT EXISTS "parentSimulationId" TEXT;
+ALTER TABLE "WhatIfBranch" ADD COLUMN IF NOT EXISTS "ip" TEXT;
+ALTER TABLE "WhatIfBranch" ADD COLUMN IF NOT EXISTS "injectedVariable" TEXT;
+ALTER TABLE "WhatIfBranch" ADD COLUMN IF NOT EXISTS "newScenarios" TEXT;
+ALTER TABLE "WhatIfBranch" ADD COLUMN IF NOT EXISTS "divergencePoint" TEXT;
+
+-- UserMemory表
+ALTER TABLE "UserMemory" ADD COLUMN IF NOT EXISTS "memoryType" TEXT;
+ALTER TABLE "UserMemory" ADD COLUMN IF NOT EXISTS "summary" TEXT;
+ALTER TABLE "UserMemory" ADD COLUMN IF NOT EXISTS "embedding" TEXT;
+ALTER TABLE "UserMemory" ADD COLUMN IF NOT EXISTS "relevance" DOUBLE PRECISION DEFAULT 0;
+ALTER TABLE "UserMemory" ADD COLUMN IF NOT EXISTS "lastAccessedAt" TIMESTAMP(3);
+
+-- VerificationFeedback表
+ALTER TABLE "VerificationFeedback" ADD COLUMN IF NOT EXISTS "scenarioOutcomeId" TEXT;
+ALTER TABLE "VerificationFeedback" ADD COLUMN IF NOT EXISTS "simulationId" TEXT;
+ALTER TABLE "VerificationFeedback" ADD COLUMN IF NOT EXISTS "userId" TEXT;
+ALTER TABLE "VerificationFeedback" ADD COLUMN IF NOT EXISTS "result" TEXT;
+
+-- PublicAccuracy表
+ALTER TABLE "PublicAccuracy" ADD COLUMN IF NOT EXISTS "category" TEXT;
+ALTER TABLE "PublicAccuracy" ADD COLUMN IF NOT EXISTS "totalSimulations" INTEGER DEFAULT 0;
+ALTER TABLE "PublicAccuracy" ADD COLUMN IF NOT EXISTS "confirmed" INTEGER DEFAULT 0;
+ALTER TABLE "PublicAccuracy" ADD COLUMN IF NOT EXISTS "partial" INTEGER DEFAULT 0;
+ALTER TABLE "PublicAccuracy" ADD COLUMN IF NOT EXISTS "denied" INTEGER DEFAULT 0;
+ALTER TABLE "PublicAccuracy" ADD COLUMN IF NOT EXISTS "accuracy" DOUBLE PRECISION;
+
+-- Prediction表
+ALTER TABLE "Prediction" ADD COLUMN IF NOT EXISTS "ip" TEXT;
+ALTER TABLE "Prediction" ADD COLUMN IF NOT EXISTS "userId" TEXT;
+ALTER TABLE "Prediction" ADD COLUMN IF NOT EXISTS "layer" TEXT;
+ALTER TABLE "Prediction" ADD COLUMN IF NOT EXISTS "simulationId" TEXT;
+
+-- LicenseKey表
+CREATE TABLE IF NOT EXISTS "LicenseKey" (
+    id TEXT PRIMARY KEY,
+    "userId" TEXT NOT NULL,
+    key TEXT UNIQUE NOT NULL,
+    "productId" TEXT NOT NULL,
+    status TEXT DEFAULT 'active',
+    "createdAt" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP
+);
+
+-- DailyForecast表
+CREATE TABLE IF NOT EXISTS "DailyForecast" (
+    id TEXT PRIMARY KEY,
+    "userId" TEXT NOT NULL,
+    date TIMESTAMP(3) NOT NULL,
+    forecast TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP
+);
+CREATE UNIQUE INDEX IF NOT EXISTS "DailyForecast_userId_date_key" ON "DailyForecast"("userId", date);
+
+-- Referral表
+CREATE TABLE IF NOT EXISTS "Referral" (
+    id TEXT PRIMARY KEY,
+    "referrerId" TEXT NOT NULL,
+    "referredId" TEXT NOT NULL,
+    reward TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP
+);
+CREATE UNIQUE INDEX IF NOT EXISTS "Referral_referrerId_referredId_key" ON "Referral"("referrerId", "referredId");

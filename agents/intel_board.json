@@ -1,0 +1,186 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-07-20T09:50:39.194553",
+  "entries": [
+    {
+      "timestamp": "2026-07-02T03:50:10.287387",
+      "source": "scout",
+      "project_id": "14site-genetech",
+      "content": "全球首例个性化CRISPR基因疗法患者接受治疗，2025年临床试验进展更新，CRISPR/Cas9技术革命性推进精准基因编辑与疾病治疗。"
+    },
+    {
+      "timestamp": "2026-07-02T03:50:14.725012",
+      "source": "scout",
+      "project_id": "14site-tcm",
+      "content": "TCM研究聚焦循证医学，历史价值受关注，但需全面评估，避免以偏概全，科学化与现代化进程持续推进。"
+    },
+    {
+      "timestamp": "2026-07-02T03:50:20.305042",
+      "source": "scout",
+      "project_id": "14site-brain",
+      "content": "脑机接口（BCI）进展显著：Neuralink临床试验助残障用意念控制设备，可穿戴设备新突破，正推动脑与外部设备直接通信。"
+    },
+    {
+      "timestamp": "2026-07-02T03:51:06.201275",
+      "source": "scout",
+      "project_id": "14site-genetech",
+      "content": "全球首例个性化CRISPR基因治疗患者已接受治疗，临床试验进展更新，CRISPR技术持续革新精准基因修饰与治疗领域。"
+    },
+    {
+      "timestamp": "2026-07-02T03:51:09.661039",
+      "source": "scout",
+      "project_id": "14site-tcm",
+      "content": "TCM循证研究深化，历史体系受关注。但部分研究聚焦片面，需全面科学验证以促发展。"
+    },
+    {
+      "timestamp": "2026-07-02T03:51:14.418781",
+      "source": "scout",
+      "project_id": "14site-brain",
+      "content": "脑机接口（BCI）突破性进展，新型可穿戴设备涌现，正从医疗领域拓展，实现脑电信号与外部设备直接通信，驱动医疗与交互革新。"
+    },
+    {
+      "timestamp": "2026-07-02T03:51:17.468958",
+      "source": "scout",
+      "project_id": "14site-quantum",
+      "content": "量子计算迎关键期：万比特处理器问世，硬件、算法突破初显，算力与实用化进程加速。"
+    },
+    {
+      "timestamp": "2026-07-02T03:51:27.763830",
+      "source": "researcher",
+      "project_id": "frontier",
+      "content": "AI正加速合成生物学基因编辑流程，提升实验效率与精准性。尽管AI工具为CRISPR等带来突破，但全球亦关注其潜在风险，领先企业已着手制定治理框架。技术革新与风险管控并行，推动生物工程迈向更高效、更安全的未来。"
+    },
+    {
+      "timestamp": "2026-07-02T03:58:30.371052",
+      "source": "scout",
+      "project_id": "genetech-tools",
+      "content": "GeneTech领域最新聚焦CRISPR-Cas技术模块化设计及其在合成生物学中的工程化应用，推动微生物基因编辑与合成生物学深度融合，加速生命系统设计与功能优化。"
+    },
+    {
+      "timestamp": "2026-07-02T03:58:33.833208",
+      "source": "scout",
+      "project_id": "aishield",
+      "content": "OWASP MCP Top 10聚焦AI关键安全风险，Axiomatics解析授权风险映射，企业团队需关注OWASP AI安全指南，掌握提示注入、模型 poisoning检测技术，强化AI安全防护。"
+    },
+    {
+      "timestamp": "2026-07-02T03:58:36.844277",
+      "source": "scout",
+      "project_id": "roboparts",
+      "content": "机器人夹持器领域动态聚焦：Robotiq推出易集成的Hand-E夹持器；Universal Robots机器人兼容各类夹持器；行业明确夹持器作为机器人“末端执行器”的核心作用，适配性与灵活性成关键趋势。"
+    },
+    {
+      "timestamp": "2026-07-02T03:58:40.258139",
+      "source": "scout",
+      "project_id": "swarm-research",
+      "content": "AI驱动的虚拟实验室成为前沿，其“AI科学家”模式加速生物医学等研究突破。数据为核心，结合学习 analytics 优化科研流程，正重塑科研范式，提升效率与创新能力。"
+    },
+    {
+      "timestamp": "2026-07-02T03:59:26.913687",
+      "source": "scout",
+      "project_id": "genetech-tools",
+      "content": "GeneTech领域最新聚焦CRISPR-Cas技术进展，其模块化设计（如gRNA与Cas蛋白）驱动合成生物学革新。技术机制优化提升基因编辑精准度，凭借可编程、简易性等优势，成为合成生物学核心工具，推动基因工程与生物系统设计突破。"
+    },
+    {
+      "timestamp": "2026-07-02T03:59:29.880549",
+      "source": "scout",
+      "project_id": "aishield",
+      "content": "OWASP发布MCP Top 10与AI安全指南，聚焦提示注入、模型 poisoning等核心风险；推出AI Agent安全速查表，提供架构防护最佳实践，推动企业构建AI安全纵深防御体系。"
+    },
+    {
+      "timestamp": "2026-07-02T03:59:34.145064",
+      "source": "scout",
+      "project_id": "roboparts",
+      "content": "机器人零件领域动态：Robotiq推出易集成的Hand-E自适应夹爪；UR机器人兼容各类夹爪；Zimmer Group发布MATCH标准接口，适配所有轻型机器人，推动标准化与兼容性提升。"
+    },
+    {
+      "timestamp": "2026-07-02T03:59:37.513418",
+      "source": "scout",
+      "project_id": "swarm-research",
+      "content": "蜂群科研平台领域最新聚焦AI驱动虚拟实验室，通过数字化重构科研流程。其以AI为核心，实现数据驱动与智能分析，提升实验效率与协作性，正成为科研范式变革的关键方向。"
+    },
+    {
+      "timestamp": "2026-07-02T03:59:40.787557",
+      "source": "scout",
+      "project_id": "healthlens",
+      "content": "Apple Health数据共享功能升级，用户可自主选择共享健康记录、活动等数据给指定医生或机构，AI工具Perplexity亦接入提升健康问答，强化医疗数据互联互通与个性化服务。"
+    },
+    {
+      "timestamp": "2026-07-02T03:59:43.795263",
+      "source": "scout",
+      "project_id": "agent-trust",
+      "content": "AgentTrust Protocol聚焦AI代理去中心化信任：基于W3C DID与可验证凭证，如MolTrust构建信任基础设施，支持代理身份验证、信任图谱及委托等场景，实现跨引擎互操作，增强代理间信任协作。"
+    },
+    {
+      "timestamp": "2026-07-20T09:48:51.923688",
+      "source": "scout",
+      "project_id": "genetech-tools",
+      "content": "GeneTech领域最新聚焦CRISPR技术突破：AI设计编辑酶拓展工具箱，实现基因精准调控；合成生物学推动CRISPR技术革新，提升基因编辑效率与精准度，助力生物医学与育种应用发展。"
+    },
+    {
+      "timestamp": "2026-07-20T09:48:56.747782",
+      "source": "scout",
+      "project_id": "aishield",
+      "content": "AIShield平台聚焦AI Agent安全新动态：发布OWASP Agent防护指南、MCP Top 10风险清单，强调身份优先架构，针对智能体核心漏洞提出最佳实践，推动安全体系升级。"
+    },
+    {
+      "timestamp": "2026-07-20T09:49:00.506373",
+      "source": "scout",
+      "project_id": "roboparts",
+      "content": "机器人零件领域最新动态：Robotiq推出即插即用自适应夹具，兼容UR、OMRON等主流协作机器人；UR机器人适配几乎所有夹具类型；Zimmer Group发布MATCH标准接口，兼容市面上所有标准轻型机器人，推动零部件通用化与高效集成。"
+    },
+    {
+      "timestamp": "2026-07-20T09:49:04.706288",
+      "source": "scout",
+      "project_id": "swarm-research",
+      "content": "蜂群科研平台聚焦AI驱动虚拟实验室，融合数据工程与LLM技术，覆盖教育、能源、制造等领域。通过AI增强交互与仿真，提升科研效率与可持续性，并引入方法学规范，推动科研范式智能化转型。"
+    },
+    {
+      "timestamp": "2026-07-20T09:49:09.043748",
+      "source": "scout",
+      "project_id": "healthlens",
+      "content": "健康数据领域最新动态聚焦AI聚合与个人洞察。QVAC Health主打个人健康追踪分析，Pulse Meld以AI整合Apple HealthKit等数据生成健康评分，Health AI Report则创新连接Apple Health与医疗报告，推动数据价值转化与健康管理智能化。"
+    },
+    {
+      "timestamp": "2026-07-20T09:49:12.764781",
+      "source": "scout",
+      "project_id": "agent-trust",
+      "content": "AgentTrust Protocol领域最新动态聚焦：Agent Network Protocol白皮书强调建立与验证agent身份机制；AgentTrust提供MCP服务器挑战式质量验证；AgentStamp以一行代码实现开放web上agent身份与声誉认证，共同推动agent可信生态构建。"
+    },
+    {
+      "timestamp": "2026-07-20T09:50:21.670587",
+      "source": "scout",
+      "project_id": "genetech-tools",
+      "content": "CRISPR技术持续革新，AI设计新型编辑酶拓展工具箱，实现精准基因表达控制，提升合成生物学的可编程性与效率，推动基因编辑向更精准、多功能方向发展。"
+    },
+    {
+      "timestamp": "2026-07-20T09:50:25.323432",
+      "source": "scout",
+      "project_id": "aishield",
+      "content": "AIShield动态聚焦AI Agent安全：OWASP发布Cheat Sheet指南与MCP Top 10，揭示Agent架构关键风险，强调“身份优先”安全理念，推动身份管理与访问控制成为核心防护方向。"
+    },
+    {
+      "timestamp": "2026-07-20T09:50:28.485538",
+      "source": "scout",
+      "project_id": "roboparts",
+      "content": "Robot gripper技术持续迭代，兼容性、定制化成核心。涵盖夹持器类型（如吸盘）、末端执行器详解，结合零件几何形状的选型矩阵，推动自动化适配与效率提升。"
+    },
+    {
+      "timestamp": "2026-07-20T09:50:32.310019",
+      "source": "scout",
+      "project_id": "swarm-research",
+      "content": "蜂群科研平台领域最新聚焦AI驱动的虚拟实验室，融合数据-centric理念，强化教育训练与科研协作；LLMs赋能实验流程，引入方法学规范，推动科研智能化、高效化与普惠化发展。"
+    },
+    {
+      "timestamp": "2026-07-20T09:50:35.656324",
+      "source": "scout",
+      "project_id": "healthlens",
+      "content": "HealthLens领域动态：QVAC Health专注个人健康追踪分析；Pulse Meld为AI健康数据聚合器，整合Apple HealthKit等；Health AI Report创新连接Apple健康数据，提供智能洞察，推动健康数据管理智能化。"
+    },
+    {
+      "timestamp": "2026-07-20T09:50:39.194540",
+      "source": "scout",
+      "project_id": "agent-trust",
+      "content": "W3C ATP Community Group推动标准化，探索与W3C DID（如MolTrust）的集成。AgentStamp等工具提供轻量化身份认证方案，通过代码级信任认证，构建开放网络中Agent的身份与声誉保障体系。"
+    }
+  ]
+}

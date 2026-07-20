@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Zeolite-13X",
+    "formula": "Na₈₆[(AlO₂)₈₆(SiO₂)₁₀₆]",
+    "surface_area_m2g": 725,
+    "pore_size_nm": 1.0,
+    "capacity_mmol_g": 4.5,
+    "source": "NIST/IZA"
+  },
+  {
+    "name": "Zeolite-5A",
+    "formula": "Ca₄.₉Na₂.₂[(AlO₂)₁₂(SiO₂)₁₂]",
+    "surface_area_m2g": 500,
+    "pore_size_nm": 0.5,
+    "capacity_mmol_g": 3.8,
+    "source": "IZA"
+  },
+  {
+    "name": "MOF-5",
+    "formula": "Zn₄O(BDC)₃",
+    "surface_area_m2g": 2900,
+    "pore_size_nm": 1.2,
+    "capacity_mmol_g": 8.0,
+    "source": "NIST/文献"
+  },
+  {
+    "name": "MOF-177",
+    "formula": "Zn₄O(BTB)₂",
+    "surface_area_m2g": 4500,
+    "pore_size_nm": 1.5,
+    "capacity_mmol_g": 12.0,
+    "source": "文献"
+  },
+  {
+    "name": "HKUST-1",
+    "formula": "Cu₃(BTC)₂",
+    "surface_area_m2g": 1500,
+    "pore_size_nm": 0.9,
+    "capacity_mmol_g": 5.5,
+    "source": "NIST"
+  },
+  {
+    "name": "ZIF-8",
+    "formula": "Zn(mIm)₂",
+    "surface_area_m2g": 1630,
+    "pore_size_nm": 1.16,
+    "capacity_mmol_g": 4.2,
+    "source": "文献"
+  },
+  {
+    "name": "MIL-101",
+    "formula": "Cr₃O(F/OH)(BDC)₃",
+    "surface_area_m2g": 3100,
+    "pore_size_nm": 2.9,
+    "capacity_mmol_g": 9.0,
+    "source": "文献"
+  },
+  {
+    "name": "Activated Carbon",
+    "formula": "C",
+    "surface_area_m2g": 1200,
+    "pore_size_nm": 2.0,
+    "capacity_mmol_g": 6.0,
+    "source": "NIST"
+  },
+  {
+    "name": "Silica Gel",
+    "formula": "SiO₂",
+    "surface_area_m2g": 800,
+    "pore_size_nm": 3.0,
+    "capacity_mmol_g": 3.0,
+    "source": "NIST"
+  },
+  {
+    "name": "MCM-41",
+    "formula": "SiO₂",
+    "surface_area_m2g": 1000,
+    "pore_size_nm": 3.5,
+    "capacity_mmol_g": 2.5,
+    "source": "文献"
+  }
+]

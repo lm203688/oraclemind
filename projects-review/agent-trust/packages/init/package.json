@@ -1,0 +1,46 @@
+{
+  "name": "agent-trust-init",
+  "version": "0.2.0",
+  "description": "One-command setup for AgentTrust Protocol — generate Ed25519 keypair, create DID:key identity, write .agent-trust.json. Zero config.",
+  "type": "module",
+  "bin": {
+    "agent-trust-init": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "agent-trust-core": "^0.2.0"
+  },
+  "keywords": [
+    "ai-agent",
+    "did",
+    "ed25519",
+    "agent-trust",
+    "identity",
+    "cli",
+    "npx-ready",
+    "quick-start",
+    "did-key"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lm203688/agent-trust-protocol.git"
+  },
+  "homepage": "https://github.com/lm203688/agent-trust-protocol#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}

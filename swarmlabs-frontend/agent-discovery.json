@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "name": "Swarmlabs",
+  "description": "Virtual experiment platform with 145 engines and 7550+ real validations",
+  "capabilities": [
+    "virtual_experiment",
+    "parameter_optimization",
+    "paper_decomposition",
+    "citation_verification",
+    "statistical_analysis",
+    "literature_survey",
+    "scientific_writing",
+    "growth_analysis",
+    "seo_monitoring",
+    "content_generation",
+    "competitor_analysis",
+    "launch_planning"
+  ],
+  "api_endpoints": {
+    "run_experiment": "POST /api/v1/run/{engine}",
+    "optimize": "POST /api/v1/optimize/{engine}",
+    "list_engines": "GET /api/v1/engines",
+    "validate": "POST /api/v1/validate/{engine}"
+  },
+  "data_coverage": {
+    "engines": 145,
+    "validations": 7550,
+    "real_paper_pct": 99.6,
+    "physics_categories": 22,
+    "mean_error_pct": 4.6
+  },
+  "ai_plugin": "/.well-known/ai-plugin.json",
+  "openapi": "/openapi.json",
+  "llms_txt": "/llms.txt"
+}

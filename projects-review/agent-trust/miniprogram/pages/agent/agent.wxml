@@ -1,0 +1,119 @@
+<!-- pages/agent/agent.wxml -->
+<view class="agent-page">
+  <!-- 未登录状态 -->
+  <view class="auth-prompt card" wx:if="{{!isLoggedIn}}">
+    <text class="auth-prompt__icon">🔐</text>
+    <text class="auth-prompt__title">登录后管理你的 Agent</text>
+    <text class="auth-prompt__desc">注册后可上传 Agent 信息、查看信任分、接收交易提醒</text>
+    <button class="btn btn--primary" bindtap="handleLogin">微信一键登录</button>
+  </view>
+
+  <!-- 已登录：Agent 列表 -->
+  <view wx:else>
+    <!-- 顶部统计 -->
+    <view class="stats-row">
+      <view class="stat-card card">
+        <text class="stat-card__value">{{agentCount}}</text>
+        <text class="stat-card__label">Agent 数量</text>
+      </view>
+      <view class="stat-card card">
+        <text class="stat-card__value">{{totalTx}}</text>
+        <text class="stat-card__label">总交易数</text>
+      </view>
+      <view class="stat-card card">
+        <text class="stat-card__value">{{avgScore}}</text>
+        <text class="stat-card__label">平均信任分</text>
+      </view>
+    </view>
+
+    <!-- Agent 列表 -->
+    <view class="section">
+      <view class="section-header">
+        <text class="section-title">我的 Agent</text>
+        <text class="section-action" bindtap="showAddModal">+ 添加</text>
+      </view>
+
+      <view class="agent-list">
+        <view class="agent-card card" wx:for="{{agents}}" wx:key="did" bindtap="goToDetail" data-did="{{item.did}}">
+          <view class="agent-card__top">
+            <view class="agent-card__avatar">
+              <text class="agent-card__avatar-text">{{item.name[0]}}</text>
+            </view>
+            <view class="agent-card__info">
+              <text class="agent-card__name">{{item.name}}</text>
+              <text class="agent-card__did">{{item.did}}</text>
+            </view>
+            <view class="agent-card__score">
+              <text class="agent-card__score-value">{{item.score}}</text>
+              <view class="agent-card__score-bar">
+                <view class="agent-card__score-fill" style="width: {{item.score}}%"></view>
+              </view>
+            </view>
+          </view>
+          
+          <view class="agent-card__tags">
+            <view class="badge {{item.status === 'active' ? 'badge--success' : 'badge--accent'}}">
+              {{item.status === 'active' ? '活跃' : '待激活'}}
+            </view>
+            <view class="badge badge--accent" wx:for="{{item.protocols}}" wx:key="*this">{{item}}</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 空状态 -->
+      <view class="empty-state" wx:if="{{agents.length === 0}}">
+        <text class="empty-state__icon">🤖</text>
+        <text class="empty-state__text">还没有添加 Agent</text>
+        <text class="empty-state__hint">点击右上角"+"添加你的第一个 Agent</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 添加 Agent 弹窗 -->
+  <view class="modal-mask" wx:if="{{showModal}}" bindtap="hideAddModal">
+    <view class="modal" catchtap>
+      <text class="modal__title">添加 Agent</text>
+      
+      <view class="form-group">
+        <text class="form-label">Agent 名称 *</text>
+        <input class="form-input" placeholder="例如：MyAssistant" value="{{form.name}}" bindinput="onInputChange" data-field="name"/>
+      </view>
+
+      <view class="form-group">
+        <text class="form-label">DID（去中心化标识）</text>
+        <input class="form-input" placeholder="did:web:example.com（选填，自动生成）" value="{{form.did}}" bindinput="onInputChange" data-field="did"/>
+      </view>
+
+      <view class="form-group">
+        <text class="form-label">描述</text>
+        <textarea class="form-textarea" placeholder="简要描述你的 Agent 功能..." value="{{form.description}}" bindinput="onInputChange" data-field="description" maxlength="200"/>
+      </view>
+
+      <view class="form-group">
+        <text class="form-label">支持的协议</text>
+        <view class="protocol-options">
+          <view class="protocol-option {{form.protocols.indexOf('x402') >= 0 ? 'protocol-option--active' : ''}}" 
+                bindtap="toggleProtocol" data-protocol="x402">
+            <text class="protocol-option__name">x402</text>
+            <text class="protocol-option__desc">HTTP 微支付</text>
+          </view>
+          <view class="protocol-option {{form.protocols.indexOf('mcp') >= 0 ? 'protocol-option--active' : ''}}" 
+                bindtap="toggleProtocol" data-protocol="mcp">
+            <text class="protocol-option__name">MCP</text>
+            <text class="protocol-option__desc">Model Context</text>
+          </view>
+          <view class="protocol-option {{form.protocols.indexOf('a2a') >= 0 ? 'protocol-option--active' : ''}}" 
+                bindtap="toggleProtocol" data-protocol="a2a">
+            <text class="protocol-option__name">A2A</text>
+            <text class="protocol-option__desc">Agent-to-Agent</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="modal__footer">
+        <button class="btn btn--ghost" bindtap="hideAddModal">取消</button>
+        <button class="btn btn--primary" bindtap="submitAgent">添加</button>
+      </view>
+    </view>
+  </view>
+</view>

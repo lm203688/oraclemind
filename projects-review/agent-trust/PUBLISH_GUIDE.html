@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgentTrust Protocol — 发布行动指南</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#0f172a; color:#e2e8f0; line-height:1.7; padding:24px; max-width:900px; margin:auto; }
+  h1 { text-align:center; font-size:1.8em; margin-bottom:4px; background:linear-gradient(135deg,#38bdf8,#818cf8); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .subtitle { text-align:center; color:#64748b; margin-bottom:32px; font-size:0.95em; }
+  .card { background:#1e293b; border-radius:12px; padding:24px; margin-bottom:20px; border:1px solid #334155; }
+  .card h2 { color:#38bdf8; font-size:1.2em; margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+  .card h2 .icon { font-size:1.4em; }
+  .status-badge { display:inline-block; padding:2px 10px; border-radius:12px; font-size:0.75em; font-weight:600; margin-left:auto; }
+  .status-done { background:#065f46; color:#6ee7b7; }
+  .status-wait { background:#854d0e; color:#fde047; }
+  .status-user { background:#7e22ce; color:#c084fc; }
+  .step { background:#0f172a; border-radius:8px; padding:16px; margin:12px 0; border-left:3px solid #38bdf8; }
+  .step-num { background:#38bdf8; color:#0f172a; width:24px; height:24px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:0.8em; font-weight:bold; margin-right:10px; }
+  .copy-box { background:#000; border-radius:8px; padding:16px; margin:10px 0; position:relative; font-family:'Cascadia Code','Fira Code',monospace; font-size:0.88em; overflow-x:auto; border:1px solid #334155; }
+  .copy-box pre { color:#a5f3fc; white-space:pre-wrap; word-break:break-all; }
+  .copy-btn { position:absolute; top:8px; right:8px; background:#334155; color:#94a3b8; border:none; padding:4px 12px; border-radius:6px; cursor:pointer; font-size:0.78em; transition:all .2s; }
+  .copy-btn:hover { background:#475569; color:#fff; }
+  .copy-btn.copied { background:#059669; color:#fff; }
+  .warning { background:#7f1d1d; border:1px solid #991b1b; border-radius:8px; padding:16px; margin:16px 0; color:#fecaca; }
+  .warning strong { color:#fca5a5; }
+  .tip { background:#1e3a5f; border-left:3px solid #38bdf8; border-radius:0 8px 8px 0; padding:12px 16px; margin:12px 0; font-size:0.92em; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:12px 0; }
+  .grid-item { background:#0f172a; border-radius:8px; padding:14px; text-align:center; border:1px solid #334155; }
+  .grid-item .label { color:#64748b; font-size:0.8em; margin-bottom:4px; }
+  .grid-item .value { color:#38bdf8; font-weight:600; font-size:1.05em; }
+  ul { padding-left:20px; }
+  li { margin:4px 0; }
+  a { color:#38bdf8; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .progress-bar { display:flex; height:6px; border-radius:3px; background:#334155; margin:20px 0; overflow:hidden; }
+  .progress-fill { height:100%; background:linear-gradient(90deg,#38bdf8,#818cf8); border-radius:3px; transition:width .5s; }
+  .section-header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+  @media (max-width:600px) { .grid { grid-template-columns:1fr; } body { padding:16px; } }
+</style>
+</head>
+<body>
+
+<h1>🚀 AgentTrust Protocol</h1>
+<p class="subtitle">发布行动计划 · 2026-06-10</p>
+
+<div class="progress-bar"><div class="progress-fill" style="width:45%"></div></div>
+<p style="text-align:center;color:#64748b;font-size:0.85em;margin-top:-12px;">当前进度：代码就绪 45% → 需要你完成注册和发帖操作</p>
+
+<!-- ── Task 1: npm ──────────────────────────────────────── -->
+<div class="card">
+  <div class="section-header">
+    <h2><span class="icon">📦</span> 任务一：npm 包发布</h2>
+    <span class="status-badge status-user">需要你操作</span>
+  </div>
+
+  <div class="step"><span class="step-num">1</span><strong>注册 npm 账号</strong></div>
+  <p>打开 <a href="https://www.npmjs.com/signup" target="_blank">https://www.npmjs.com/signup</a> 注册账号（免费）</p>
+
+  <div class="step"><span class="step-num">2</span><strong>获取 Access Token</strong></div>
+  <ul>
+    <li>登录后点击右上角头像 → <strong>Access Tokens</strong> → <strong>Generate New Token</strong> → 选择 <strong>Classic Token</strong></li>
+    <li>勾选 <code>Automation</code>（自动化发布用，不需要 2FA）</li>
+    <li>复制生成的 Token 给我</li>
+  </ul>
+
+  <div class="warning">
+    ⚠️ <strong>Token 只显示一次！</strong>复制后妥善保存。如果丢了只能重新生成。
+  </div>
+
+  <div class="step"><span class="step-num">3</span><strong>我来发布</strong>（拿到 Token 后告诉我，我帮你执行以下命令）：</div>
+
+  <div class="copy-box">
+<pre># 发布顺序：先 core（被依赖），再 mcp-server，最后 x402-listener
+npm publish --access public ./packages/core
+npm publish --access public ./packages/mcp-server  
+npm publish --access public ./packages/x402-listener</pre>
+    <button class="copy-btn" onclick="copyText(this)">复制</button>
+  </div>
+
+  <div class="tip">
+    💡 <strong>发布成功后</strong>，全球任何用户只需一行配置就能使用：<br>
+    <code>npx -y @agent-trust/mcp-server</code>
+  </div>
+
+  <div class="grid">
+    <div class="grid-item"><div class="label">包名</div><div class="value">@agent-trust/core</div></div>
+    <div class="grid-item"><div class="label">包名</div><div class="value">@agent-trust/mcp-server</div></div>
+    <div class="grid-item"><div class="label">包名</div><div class="value">@agent-trust/x402-listener</div></div>
+    <div class="grid-item"><div class="label">版本</div><div class="value">v0.1.0</div></div>
+  </div>
+</div>
+
+<!-- ── Task 2: HackerNews ────────────────────────────────── -->
+<div class="card">
+  <div class="section-header">
+    <h2><span class="icon">🔶</span> 任务二：HackerNews Show HN 发帖</h2>
+    <span class="status-badge status-user">需要你操作</span>
+  </div>
+
+  <div class="step"><span class="step-num">1</span><strong>注册 HN 账号 + 积累 Karma</strong></div>
+  <ul>
+    <li>打开 <a href="https://news.ycombinator.com/newslogin" target="_blank">https://news.ycombinator.com/newslogin</a> 创建账号</li>
+    <li>新账号需要少量 karma 才能发帖（通常评论 1-2 条即可）</li>
+    <li>去 <a href="https://news.ycombinator.com/newest" target="_blank">最新帖子</a> 下面留几条有意义的评论</li>
+  </ul>
+
+  <div class="step"><span class="step-num">2</span><strong>提交 Show HN 帖子</strong></div>
+  <p>打开 <a href="https://news.ycombinator.com/submit" target="_blank">https://news.ycombinator.com/submit</a> ，按如下方式填写：</p>
+
+  <p style="margin:12px 0;"><strong>标题 — 直接复制：</strong></p>
+  <div class="copy-box" id="hn-title">
+<pre>Show HN: AgentTrust Protocol – Open-source trust &amp; reputation layer for AI Agents</pre>
+    <button class="copy-btn" onclick="copyText(this)">复制</button>
+  </div>
+
+  <p style="margin:12px 0;"><strong>URL — 填入：</strong></p>
+  <div class="copy-box" id="hn-url">
+<pre>https://github.com/lm203688/agent-trust-protocol</pre>
+    <button class="copy-btn" onclick="copyText(this)">复制</button>
+  </div>
+
+  <p style="margin:12px 0;"><strong>正文 (Text) — 复制粘贴：</strong></p>
+  <div class="copy-box" id="hn-body">
+<pre>When Agent A pays Agent B $5 via the x402 protocol to write some code,
+and the code doesn't work — what happens today? Nothing. The money is gone,
+there's no refund mechanism, no reputation system, no way to warn the next person.
+
+We're building AgentTrust Protocol to fix this.
+It's an open-source trust scoring system for the agent economy.
+
+What it does:
+- Assigns every Agent a trust score (0-100) based on real transaction history
+- Exposes the score as an MCP Server tool — any LLM can query it via tool_call
+- Listens to x402 payment events via webhook and builds live scoring data
+- Outputs W3C Verifiable Credentials — standard-compliant, machine-verifiable
+
+The scoring formula is fully open-source and auditable:
+overallScore = completionRate×0.35 + reliabilityScore×0.30
+           + consistencyScore×0.20 + responseTime×0.15
+
+Uses Bayesian smoothing so new agents can't game the system with 1 perfect transaction.
+Disputes weighted 2x because active harm > simple failure.
+
+Why this matters now:
+- x402 processes 500K+ agent payments/week, 87% are reportedly junk services
+- MCP has 1000+ servers but zero trust metadata about any of them
+- Kite ($33M funded) is building a closed identity+payment layer —
+  we think trust infrastructure should be open
+
+Tech stack: TypeScript, MCP SDK, W3C VC (JSON-LD), Apache 2.0
+
+Try it in 30 seconds:
+{
+  "mcpServers": {
+    "agent-trust": {
+      "command": "npx",
+      "args": ["-y", "@agent-trust/mcp-server"]
+    }
+  }
+}
+Then ask your agent:
+"What's the trust score of did:web:alpha-agent.example.com?"
+
+GitHub: https://github.com/lm203688/agent-trust-protocol
+
+Happy to answer questions about the architecture, scoring design choices,
+or where this fits in the broader agent infra landscape.</pre>
+    <button class="copy-btn" onclick="copyText(this)">复制</button>
+  </div>
+
+  <div class="tip">
+    ⏰ <strong>最佳发帖时间（北京时间）：</strong>22:00–01:00（对应美西 6:00–9:00 AM，HN 高峰期）
+  </div>
+</div>
+
+<!-- ── Task 3: MCP 社区推广 ─────────────────────────────── -->
+<div class="card">
+  <div class="section-header">
+    <h2><span class="icon">📢</span> 任务三：MCP 社区推广</h2>
+    <span class="status-badge status-user">需要你操作</span>
+  </div>
+
+  <p>HN 发帖的同时或之后，在以下平台发布公告（内容可复用 ANNOUNCEMENT.md 的精简版）：</p>
+
+  <div class="grid" style="grid-template-columns:1fr;">
+    <div class="grid-item" style="text-align:left;">
+      <strong>🟠 Reddit — r/MCP 或 r/ChatGPT</strong><br>
+      <span style="color:#94a3b8;font-size:0.9em;">发帖到相关 subreddit，标题加 [Open Source] 标签</span>
+    </div>
+    <div class="grid-item" style="text-align:left;">
+      <strong>💬 Discord — MCP Community / Anthropic Discord</strong><br>
+      <span style="color:#94a3b8;font-size:0.9em;">在 #showcase 或 #projects 频道介绍项目</span>
+    </div>
+    <div class="grid-item" style="text-align:left;">
+      <strong>🐙 GitHub Discussions / Issue</strong><br>
+      <span style="color:#94a3b8;font-size:0.9em;">在 modelcontextprotocol/servers 仓库提 Issue 或 Discussion</span>
+    </div>
+    <div class="grid-item" style="text-align:left;">
+      <strong>🐦 Twitter/X</strong><br>
+      <span style="color:#94a3b8;font-size:0.9em;">@AnthropicAI @modelcontextprotocol 标签 #MCP #AIAgents #OpenSource</span>
+    </div>
+  </div>
+
+  <p style="margin:12px 0;"><strong>精简版公告文案（适用于所有社区）：</strong></p>
+  <div class="copy-box" id="community-post">
+<pre>We just open-sourced AgentTrust Protocol — a trust &amp; reputation layer
+for AI Agents built on MCP + W3C VC.
+
+Problem: When Agent A pays Agent B via x402 and gets garbage back,
+nothing happens today. No refund, no reputation hit, no warning.
+
+Solution: Open-source trust scoring (0-100) exposed as an MCP Server tool,
+with x402 webhook listener and W3C Verifiable Credentials output.
+
+Fully auditable algorithm, Apache 2.0, TypeScript.
+
+Repo: https://github.com/lm203688/agent-trust-protocol
+Try it: npx -y @agent-trust/mcp-server</pre>
+    <button class="copy-btn" onclick="copyText(this)">复制</button>
+  </div>
+</div>
+
+<!-- ── Summary ───────────────────────────────────────────── -->
+<div class="card" style="border-color:#38bdf8;">
+  <h2><span class="icon">✅</span> 已完成的工作</h2>
+  <ul>
+    <li>✅ TypeScript monorepo 构建通过（3 个包全部编译成功）</li>
+    <li>✅ package.json 优化（files/keywords/license/repository/engines 字段齐全）</li>
+    <li>✅ TS 编译 bug 修复（scoring.ts 类型推断问题）</li>
+    <li>✅ README.md 完整重写（架构图、Quickstart、API 文档、Roadmap）</li>
+    <li>✅ HN 帖子文案准备完毕（标题+URL+正文）</li>
+    <li>✅ MCP 社区公告文案准备完毕</li>
+    <li>✅ 评分算法规范文档 (<code>docs/scoring-algorithm.md</code>)</li>
+    <li>⏳ GitHub 代码更新待推送（含以上所有改进）</li>
+  </ul>
+
+  <div class="tip" style="margin-top:16px;">
+    📋 <strong>你的操作清单（按优先级排序）：</strong><br>
+    1️⃣ 开启 VPN/代理 → 告诉我端口号 → 我自动完成 npm 发布 + 推送代码<br>
+    2️⃣ 注册 npmjs.com → 获取 Access Token → 给我<br>
+    3️⃣ 注册 HN → 积累 karma → 用上面的文案发帖<br>
+    4️⃣ 在 Reddit/Discord/Twitter 用精简版文案推广
+  </div>
+</div>
+
+<script>
+function copyText(btn) {
+  const pre = btn.parentElement.querySelector('pre');
+  navigator.clipboard.writeText(pre.textContent).then(() => {
+    btn.textContent = '已复制 ✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = '复制';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
+</body>
+</html>

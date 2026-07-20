@@ -1,0 +1,12 @@
+[
+  {"id":"dt_001","target":"EGFR","protein":"表皮生长因子受体","disease":"非小细胞肺癌","drugs":["吉非替尼","厄洛替尼","奥希替尼"],"mechanism":"酪氨酸激酶抑制剂","status":"FDA批准"},
+  {"id":"dt_002","target":"BCR-ABL","protein":"断裂点簇集-艾贝尔森白血病蛋白","disease":"慢性粒细胞白血病","drugs":["伊马替尼","达沙替尼"],"mechanism":"酪氨酸激酶抑制剂","status":"FDA批准"},
+  {"id":"dt_003","target":"PD-1","protein":"程序性死亡受体1","disease":"黑色素瘤/肺癌","drugs":["纳武利尤单抗","帕博利珠单抗"],"mechanism":"免疫检查点抑制剂","status":"FDA批准"},
+  {"id":"dt_004","target":"HER2","protein":"人表皮生长因子受体2","disease":"乳腺癌","drugs":["曲妥珠单抗","T-DXd"],"mechanism":"抗体偶联药物","status":"FDA批准"},
+  {"id":"dt_005","target":"KRAS G12C","protein":"KRAS G12C突变蛋白","disease":"肺癌/胰腺癌","drugs":["索托拉西布","阿达格拉西布"],"mechanism":"共价抑制剂","status":"FDA批准"},
+  {"id":"dt_006","target":"BRCA1/2","protein":"乳腺癌易感基因1/2","disease":"乳腺癌/卵巢癌","drugs":["奥拉帕利","尼拉帕利"],"mechanism":"PARP抑制剂","status":"FDA批准"},
+  {"id":"dt_007","target":"GLP-1R","protein":"胰高血糖素样肽-1受体","disease":"2型糖尿病/肥胖","drugs":["司美格鲁肽","利拉鲁肽"],"mechanism":"GLP-1受体激动剂","status":"FDA批准"},
+  {"id":"dt_008","target":"PCSK9","protein":"前蛋白转化酶枯草溶菌素9","disease":"高胆固醇血症","drugs":["依洛尤单抗","阿利西尤单抗"],"mechanism":"单克隆抗体","status":"FDA批准"},
+  {"id":"dt_009","target":"CFTR","protein":"囊性纤维化跨膜传导调节因子","disease":"囊性纤维化","drugs":["三芳基唑甲酰胺(Trikafta)"],"mechanism":"CFTR调节剂","status":"FDA批准"},
+  {"id":"dt_010","target":"SMA SMN2","protein":"运动神经元存活蛋白2","disease":"脊髓性肌萎缩症","drugs":["诺西那生","Zolgensma"],"mechanism":"反义寡核苷酸/基因治疗","status":"FDA批准"}
+]

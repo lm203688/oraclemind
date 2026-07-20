@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Quantum Computing",
+  "name_for_model": "quantumcomputing",
+  "description_for_human": "Quantum computing knowledge base with 459 entities",
+  "description_for_model": "Access Quantum Computing knowledge base via API. Quantum computing knowledge base with 459 entities.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://quantum.genetech.tools/openapi.json"
+  },
+  "contact_email": "61960005@qq.com",
+  "legal_info_url": "https://quantum.genetech.tools/"
+}
