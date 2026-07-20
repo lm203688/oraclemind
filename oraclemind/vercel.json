@@ -2,10 +2,10 @@
   "framework": "nextjs",
   "functions": {
     "src/app/api/simulate/personal/stream/route.ts": {
-      "maxDuration": 300
+      "maxDuration": 60
     },
     "src/app/api/simulate/event/stream/route.ts": {
-      "maxDuration": 300
+      "maxDuration": 60
     }
   },
   "headers": [
