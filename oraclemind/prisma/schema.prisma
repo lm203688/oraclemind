@@ -1,0 +1,316 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL", "postgresql://placeholder:placeholder@localhost:5432/placeholder")
+  directUrl = env("DIRECT_URL", "postgresql://placeholder:placeholder@localhost:5432/placeholder")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ============================================================================
+// User & Authentication
+// ============================================================================
+
+model User {
+  id                String   @id @default(cuid())
+  email             String?  @unique
+  name              String?
+  gender            String?  // "male" | "female"
+  birthYear         Int?
+  birthMonth        Int?
+  birthDay          Int?
+  birthHour         Int?
+  birthplace        String?
+  preferredLang     String?  @default("en")
+  subscriptionTier  String   @default("free")  // "free" | "premium" | "deep"
+  totalSimulations  Int      @default(0)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  lifeEvents        LifeEvent[]
+  graphNodes        GraphNode[]
+  graphEdges        GraphEdge[]
+  simulations       Simulation[]
+  memories          UserMemory[]
+  feedbacks         VerificationFeedback[]
+  predictions       Prediction[]
+  bonusPredictions  Int      @default(0) // 推荐奖励的额外预测次数
+  dailyForecasts    DailyForecast[]
+  referralsMade     Referral[] @relation("ReferralReferrer")
+  referralsReceived Referral[] @relation("ReferralReferred")
+
+  @@index([email])
+}
+
+// ============================================================================
+// Life Event — 用户生活事件（替代"生辰八字"作为核心输入）
+// ============================================================================
+
+model LifeEvent {
+  id              String   @id @default(cuid())
+  userId          String
+  type            String   // "career" | "relationship" | "health" | "finance" | "decision" | "other"
+  title           String
+  description     String?
+  happenedAt      DateTime?
+  emotionalValence Float   @default(0) // -1 (negative) ~ 1 (positive)
+  relatedPersons  String?  // JSON array of names/roles
+  metadata        String?  // JSON for extra fields
+  createdAt       DateTime @default(now())
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([type])
+  @@index([happenedAt])
+}
+
+// ============================================================================
+// Personal/Event Knowledge Graph — 自托管轻量GraphRAG
+// ============================================================================
+
+model GraphNode {
+  id           String   @id @default(cuid())
+  userId       String?  // null = shared event graph (across users)
+  simulationId String?  // scoped to a specific simulation
+  nodeType     String   // "person" | "goal" | "pressure" | "resource" | "belief" | "event" | "institution" | "force"
+  name         String
+  attributes   String?  // JSON
+  centrality   Float    @default(0) // 0-1, computed via Louvain/PageRank
+  community    Int?     // community id from Louvain detection
+  createdAt    DateTime @default(now())
+
+  user         User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  edgesFrom    GraphEdge[] @relation("EdgeFrom")
+  edgesTo      GraphEdge[] @relation("EdgeTo")
+
+  @@index([userId])
+  @@index([simulationId])
+  @@index([nodeType])
+  @@index([community])
+}
+
+model GraphEdge {
+  id            String   @id @default(cuid())
+  userId        String?
+  simulationId  String?
+  fromNodeId    String
+  toNodeId      String
+  relationType  String   // "influence_of" | "opposes" | "supports" | "employs" | "depends_on" | "conflicts_with" | "allied_with"
+  weight        Float    @default(0.5) // 0-1 confidence
+  createdAt     DateTime @default(now())
+
+  user          User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fromNode      GraphNode @relation("EdgeFrom", fields: [fromNodeId], references: [id], onDelete: Cascade)
+  toNode        GraphNode @relation("EdgeTo", fields: [toNodeId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([simulationId])
+  @@index([fromNodeId])
+  @@index([toNodeId])
+  @@index([relationType])
+}
+
+// ============================================================================
+// Simulation — 一次推演（个人 or 事件）
+// ============================================================================
+
+model Simulation {
+  id             String   @id @default(cuid())
+  userId         String
+  type           String   // "personal" | "event"
+  seedInput      String   // JSON: user's original question + context
+  graphSnapshot  String?  // JSON: graph state at simulation time
+  baziSnapshot   String?  // JSON: bazi chart (if personal + birth data provided)
+  agentCount     Int      @default(10) // 5 modern + 5 classical
+  rounds         Int      @default(8)
+  status         String   @default("running") // "running" | "completed" | "failed"
+  errorMessage   String?
+  createdAt      DateTime @default(now())
+  completedAt    DateTime?
+
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  agentTraces    AgentTrace[]
+  scenarioOutcomes ScenarioOutcome[]
+  whatIfBranches WhatIfBranch[] @relation("ParentSimulation")
+  feedbacks      VerificationFeedback[]
+
+  @@index([userId])
+  @@index([type])
+  @@index([status])
+  @@index([createdAt])
+}
+
+// ============================================================================
+// Agent Trace — Agent交互轨迹（可查询）
+// ============================================================================
+
+model AgentTrace {
+  id             String   @id @default(cuid())
+  simulationId   String
+  agentRole      String   // "strategist" | "risk_auditor" | "optimist" | "data_analyst" | "devil_advocate"
+                          // | "yuanhai" | "ziping" | "sanming" | "ditianzhui" | "qiongtong"
+  agentCategory  String   // "modern" | "classical"
+  round          Int
+  actionType     String   // "observe" | "reason" | "decide" | "interact" | "verify"
+  content        String   // agent's output text
+  reasoning      String?  // structured reasoning (JSON)
+  memoryRefs     String?  // JSON array of memory IDs used
+  graphRefs      String?  // JSON array of graph node IDs referenced
+  createdAt      DateTime @default(now())
+
+  simulation     Simulation @relation(fields: [simulationId], references: [id], onDelete: Cascade)
+
+  @@index([simulationId])
+  @@index([agentRole])
+  @@index([round])
+}
+
+// ============================================================================
+// Scenario Outcome — 情景树节点（推演结果）
+// ============================================================================
+
+model ScenarioOutcome {
+  id                    String   @id @default(cuid())
+  simulationId          String
+  scenarioPath          String   // "optimistic" | "neutral" | "conservative"
+  probability           Float    // 0-1
+  description           String
+  keyTurningPoints      String?  // JSON array
+  crossValidationResult String?  // JSON: 5x5 matrix + quadrant judgment
+  modernConsensus       Float    @default(0) // -1 to 1
+  classicalConsensus    Float    @default(0) // -1 to 1
+  recommendation        String?
+  createdAt             DateTime @default(now())
+
+  simulation            Simulation @relation(fields: [simulationId], references: [id], onDelete: Cascade)
+  feedbacks             VerificationFeedback[]
+
+  @@index([simulationId])
+  @@index([scenarioPath])
+}
+
+// ============================================================================
+// What-If Branch — 反事实推演
+// ============================================================================
+
+model WhatIfBranch {
+  id                  String   @id @default(cuid())
+  parentSimulationId  String
+  ip                  String?
+  injectedVariable    String   // e.g. "if I lose my job next month"
+  newScenarios        String?  // JSON of new scenario outcomes
+  divergencePoint     String?  // description of where it diverges from parent
+  createdAt           DateTime @default(now())
+
+  parentSimulation    Simulation @relation("ParentSimulation", fields: [parentSimulationId], references: [id], onDelete: Cascade)
+
+  @@index([parentSimulationId])
+  @@index([ip])
+}
+
+// ============================================================================
+// User Memory — 长期记忆（Zep模式：episodic + semantic + summary）
+// ============================================================================
+
+model UserMemory {
+  id            String   @id @default(cuid())
+  userId        String
+  memoryType    String   // "episodic" | "semantic" | "summary"
+  content       String
+  summary       String?  // for episodic, a short summary
+  embedding     String?  // base64-encoded float32 array (for semantic search)
+  relevance     Float    @default(1) // decay score
+  lastAccessedAt DateTime @default(now())
+  createdAt     DateTime @default(now())
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([memoryType])
+  @@index([lastAccessedAt])
+}
+
+// ============================================================================
+// Verification Feedback — 保留验证机制（可证伪性）
+// ============================================================================
+
+model VerificationFeedback {
+  id                  String   @id @default(cuid())
+  scenarioOutcomeId   String?
+  simulationId        String
+  userId              String
+  result              String   // "confirmed" | "partial" | "denied"
+  comment             String?
+  createdAt           DateTime @default(now())
+
+  scenarioOutcome     ScenarioOutcome? @relation(fields: [scenarioOutcomeId], references: [id], onDelete: SetNull)
+  simulation          Simulation @relation(fields: [simulationId], references: [id], onDelete: Cascade)
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([scenarioOutcomeId])
+  @@index([simulationId])
+  @@index([userId])
+  @@index([result])
+}
+
+// ============================================================================
+// Public Accuracy — 公开准确率统计（按推演类型）
+// ============================================================================
+
+model PublicAccuracy {
+  id                String   @id @default(cuid())
+  category          String   @unique // "personal_career" | "personal_relationship" | "event_market" etc.
+  totalSimulations  Int      @default(0)
+  confirmed         Int      @default(0)
+  partial           Int      @default(0)
+  denied            Int      @default(0)
+  accuracy          Float    @default(0)
+  updatedAt         DateTime @updatedAt
+}
+
+// ============================================================================
+// Prediction — IP-based usage tracking for rate limiting
+// ============================================================================
+
+model Prediction {
+  id              String   @id @default(cuid())
+  ip              String
+  userId          String
+  layer           String   // "L1" | "L2" | "L3"
+  simulationId    String?
+  createdAt       DateTime @default(now())
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([ip])
+  @@index([userId])
+  @@index([layer])
+  @@index([createdAt])
+}
+
+// DailyForecast — 每日运程（仅注册用户）
+model DailyForecast {
+  id        String   @id @default(cuid())
+  userId    String
+  date      DateTime
+  forecast  String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, date])
+  @@index([userId])
+}
+
+// Referral — 推荐奖励
+model Referral {
+  id          String   @id @default(cuid())
+  referrerId  String
+  referredId  String
+  reward      String
+  createdAt   DateTime @default(now())
+  referrer    User     @relation("ReferralReferrer", fields: [referrerId], references: [id])
+  referred    User     @relation("ReferralReferred", fields: [referredId], references: [id])
+  @@unique([referrerId, referredId])
+  @@index([referrerId])
+}
