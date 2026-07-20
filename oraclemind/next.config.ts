@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
+  // 指定src目录——Vercel构建需要
+  srcDir: "src",
   async headers() {
     return [
       {
