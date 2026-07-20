@@ -142,6 +142,15 @@ export default function RootLayout({
           });
           // 2. 3秒后强制隐藏（hydration失败兜底）
           setTimeout(hideLoader, 3000);
+          
+          // 3. 5秒后强制显示所有内容（hydration失败时framer-motion的opacity:0不会触发）
+          function forceShowContent() {
+            document.querySelectorAll('[style*="opacity:0"]').forEach(function(el) {
+              el.style.opacity = '1';
+              el.style.transform = 'none';
+            });
+          }
+          setTimeout(forceShowContent, 5000);
           // 3. DOMContentLoaded后立即尝试（快速路径）
           if (document.readyState !== 'loading') {
             setTimeout(hideLoader, 100);
