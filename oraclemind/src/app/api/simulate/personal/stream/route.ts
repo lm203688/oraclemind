@@ -154,13 +154,13 @@ export async function POST(request: NextRequest): Promise<Response> {
               consensusScore: classicalResult.consensusScore,
             })));
 
-            // 5b. 现代5Agent串行
+            // 5b. 现代5维度并行推演——加速5倍
             const modernOutputs: Array<{ role: string; content: string; tokensUsed: number }> = [];
             const previousOutputs = round > 1
               ? allRounds[round - 2].modernOutputs.map((o: any) => ({ role: o.role, content: o.content }))
               : undefined;
 
-            for (const agent of MODERN_AGENTS) {
+            const agentPromises = MODERN_AGENTS.map(async (agent) => {
               controller.enqueue(encoder.encode(sendEvent({
                 type: 'agent_start',
                 round,
@@ -182,21 +182,6 @@ export async function POST(request: NextRequest): Promise<Response> {
               });
 
               const output = await callAgentLLMWithRetry(systemPrompt, userMessage, agent.role);
-              modernOutputs.push({ role: agent.role, content: output.content, tokensUsed: output.tokensUsed });
-              totalTokensUsed += output.tokensUsed;
-
-              // 存trace
-              await db.agentTrace.create({
-                data: {
-                  simulationId,
-                  agentRole: agent.role,
-                  agentCategory: 'modern',
-                  round,
-                  actionType: 'reason',
-                  content: output.content,
-                  reasoning: JSON.stringify({ tokensUsed: output.tokensUsed }),
-                },
-              });
 
               controller.enqueue(encoder.encode(sendEvent({
                 type: 'agent_done',
@@ -207,9 +192,15 @@ export async function POST(request: NextRequest): Promise<Response> {
                 tokensUsed: output.tokensUsed,
               })));
 
-              // Agent间延迟避免429
-              await new Promise(r => setTimeout(r, 500));
-            }
+              return { role: agent.role, content: output.content, tokensUsed: output.tokensUsed };
+            });
+
+            const agentResults = await Promise.all(agentPromises);
+            modernOutputs.push(...agentResults);
+            totalTokensUsed += agentResults.reduce((sum, r) => sum + r.tokensUsed, 0);
+
+            // 异步存trace（不阻塞推演）
+            try { await db.agentTrace.createMany({ data: agentResults.map(r => ({ simulationId, agentRole: r.role, agentCategory: 'modern', round, actionType: 'reason', content: r.content, reasoning: JSON.stringify({ tokensUsed: r.tokensUsed }) })) }); } catch {}
 
             allRounds.push({ round, modernOutputs, classicalResult });
             controller.enqueue(encoder.encode(sendEvent({ type: 'round_done', round })));

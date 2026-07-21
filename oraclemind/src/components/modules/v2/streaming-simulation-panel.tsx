@@ -1,50 +1,11 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useSimulationStream, type SSEEvent } from '@/hooks/use-simulation-stream';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ScenarioTree, type Scenario } from '@/components/modules/v2/scenario-tree';
-import { CrossValidationMatrix } from '@/components/modules/v2/cross-validation-matrix';
-import {
-  FlaskConical,
-  Network,
-  Cpu,
-  BookOpen,
-  Loader2,
-  CheckCircle2,
-  ChevronDown,
-  ChevronUp,
-  ArrowRight,
-  Activity,
-  Clock,
-} from 'lucide-react';
-import { cn } from '@/lib/utils';
-
-// ---------------------------------------------------------------------------
-// Agent Role Config
-// ---------------------------------------------------------------------------
-
-const AGENT_CONFIG: Record<string, { name: string; category: 'modern' | 'classical'; color: string; bias: number }> = {
-  // Modern 5 Dimensions
-  strategist:     { name: '◈ Dubhe',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0 },
-  data_analyst:   { name: '◈ Merak',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.1 },
-  risk_auditor:   { name: '◈ Phecda',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.2 },
-  optimist:       { name: '◈ Megrez',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0.2 },
-  devil_advocate: { name: '◈ Alioth',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.15 },
-  // Classical 5 Scrolls
-  yuanhai:    { name: '◇ Scroll I', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  ziping:     { name: '◇ Scroll II', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  sanming:    { name: '◇ Scroll III', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  ditianzhui: { name: '◇ Scroll IV', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  qiongtong:  { name: '◇ Scroll V', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-};
-
-// ---------------------------------------------------------------------------
-// Streaming Simulation Panel
-// ---------------------------------------------------------------------------
+import { Loader2, CheckCircle2, Clock, Sparkles, Zap, Orbit } from 'lucide-react';
+import { useSimulationStream } from '@/hooks/use-simulation-stream';
 
 interface StreamingSimulationPanelProps {
   userId: string;
@@ -52,383 +13,195 @@ interface StreamingSimulationPanelProps {
   context?: string;
   birthInfo?: { year: number; month: number; day: number; hour: number };
   rounds?: number;
-  simulationType?: 'personal' | 'event';
+  simulationType?: 'personal' | 'event' | 'compass';
   onComplete?: (result: any) => void;
   onBack?: () => void;
 }
 
-interface AgentOutput {
-  round: number;
-  agentRole: string;
-  agentName: string;
-  content: string;
-  category: 'modern' | 'classical';
-  directionScore?: number;
-  consensus?: string;
-}
-
 export function StreamingSimulationPanel({
-  userId,
-  question,
-  context,
-  birthInfo,
-  rounds = 8,
-  simulationType = 'personal',
-  onComplete,
-  onBack,
+  userId, question, context, birthInfo, rounds = 3, simulationType = 'personal', onComplete, onBack,
 }: StreamingSimulationPanelProps) {
-  const [outputs, setOutputs] = useState<AgentOutput[]>([]);
-  const [currentRound, setCurrentRound] = useState(0);
-  const [currentAgent, setCurrentAgent] = useState<string | null>(null);
-  const [graphInfo, setGraphInfo] = useState<{ summary: string; nodeCount: number; edgeCount: number; keyNodes: any[] } | null>(null);
-  const [phase, setPhase] = useState<'graph' | 'simulating' | 'synthesizing' | 'complete' | 'error'>('graph');
-  const [elapsed, setElapsed] = useState(0); // seconds
+  const [phase, setPhase] = useState<'summoning' | 'scanning' | 'converging' | 'complete' | 'error'>('summoning');
+  const [progress, setProgress] = useState(0);
+  const [elapsed, setElapsed] = useState(0);
   const [finalResult, setFinalResult] = useState<any>(null);
-  const [expandedAgent, setExpandedAgent] = useState<string | null>(null);
-  const outputEndRef = useRef<HTMLDivElement>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [activeOrbs, setActiveOrbs] = useState(0);
+  const outputRef = useRef<HTMLDivElement>(null);
+  const startTime = useRef(Date.now());
 
-  const streamUrl = simulationType === 'event'
-    ? '/api/simulate/event/stream'
-    : '/api/simulate/personal/stream';
+  const apiUrl = simulationType === 'event'
+    ? `/api/simulate/event/stream`
+    : `/api/simulate/personal/stream`;
 
-  const { start, stop, isStreaming, error } = useSimulationStream(streamUrl, {
-    onEvent: (event: SSEEvent) => {
-      switch (event.type) {
-        case 'start':
-          setPhase('graph');
-          break;
-        case 'graph_built':
-          setGraphInfo({
-            summary: event.graphSummary,
-            nodeCount: event.nodeCount,
-            edgeCount: event.edgeCount,
-            keyNodes: event.keyNodes,
-          });
-          setPhase('simulating');
-          break;
-        case 'classical_done':
-          setCurrentRound(event.round);
-          for (const report of event.reports) {
-            setOutputs(prev => [...prev, {
-              round: event.round,
-              agentRole: report.bookId,
-              agentName: report.bookName,
-              content: report.judgment,
-              category: 'classical',
-              directionScore: report.directionScore,
-              consensus: report.consensus,
-            }]);
-          }
-          break;
-        case 'agent_start':
-          setCurrentAgent(event.agentRole);
-          break;
-        case 'agent_done':
-          setOutputs(prev => [...prev, {
-            round: event.round,
-            agentRole: event.agentRole,
-            agentName: event.agentName,
-            content: event.content,
-            category: 'modern',
-          }]);
-          setCurrentAgent(null);
-          break;
-        case 'round_done':
-          break;
-        case 'synthesizing':
-          setPhase('synthesizing');
-          break;
-        case 'complete':
-          setPhase('complete');
-          setFinalResult(event);
-          onComplete?.(event);
-          break;
-        case 'error':
-          setPhase('error');
-          break;
+  const { start, stop, isStreaming } = useSimulationStream(apiUrl, {
+    onEvent: (event: any) => {
+      if (event.type === 'start') {
+        setPhase('scanning');
+        setProgress(10);
+      } else if (event.type === 'graph_built') {
+        setProgress(25);
+        setActiveOrbs(5);
+      } else if (event.type === 'classical_done') {
+        setProgress(45);
+        setActiveOrbs(10);
+      } else if (event.type === 'agent_start') {
+        setProgress(50 + Math.floor(Math.random() * 30));
+      } else if (event.type === 'agent_done') {
+        setActiveOrbs(prev => Math.min(prev + 1, 15));
+      } else if (event.type === 'round_done') {
+        setProgress(70);
+      } else if (event.type === 'synthesizing') {
+        setPhase('converging');
+        setProgress(85);
+      } else if (event.type === 'complete') {
+        setPhase('complete');
+        setProgress(100);
+        setFinalResult(event);
+        onComplete?.(event);
+      } else if (event.type === 'error') {
+        setError(event.message);
+        setPhase('error');
       }
     },
-    onError: (msg) => {
-      setPhase('error');
-    },
+    onError: (msg: string) => { setError(msg); setPhase('error'); },
+    onComplete: () => {},
   });
 
-  // Auto start
+  // 计时
   useEffect(() => {
-    const body = simulationType === 'event'
-      ? { userId, eventDescription: question, context, rounds }
-      : { userId, question, context, birthInfo, rounds };
-    start(body);
-  }, []);
-
-  // Timer
-  useEffect(() => {
-    if (phase === 'complete' || phase === 'error') return;
     const timer = setInterval(() => {
-      setElapsed(prev => prev + 1);
+      setElapsed(Math.floor((Date.now() - startTime.current) / 1000));
     }, 1000);
     return () => clearInterval(timer);
+  }, []);
+
+  // 自动启动
+  useEffect(() => {
+    const body: any = { userId, question, rounds };
+    if (context) body.context = context;
+    if (birthInfo) body.birthInfo = birthInfo;
+    start(body);
+    // eslint-disable-next-line
+  }, []);
+
+  // 自动滚动
+  useEffect(() => {
+    outputRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [phase]);
 
-  // Auto scroll
-  useEffect(() => {
-    outputEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
-  }, [outputs, currentAgent]);
-
-  // Group by round
-  const outputsByRound = new Map<number, AgentOutput[]>();
-  for (const o of outputs) {
-    if (!outputsByRound.has(o.round)) outputsByRound.set(o.round, []);
-    outputsByRound.get(o.round)!.push(o);
-  }
-
   const phaseLabel = {
-    graph: 'Building Knowledge Graph',
-    simulating: `Multi-Round Simulation (${currentRound}/${rounds})`,
-    synthesizing: 'Synthesizing Scenarios',
+    summoning: 'Initializing Oracle Engine',
+    scanning: 'Scanning Probability Space',
+    converging: 'Converging Multidimensional Signals',
     complete: 'Forecast Complete',
-    error: 'Simulation Error',
+    error: 'Signal Disrupted',
+  }[phase];
+
+  const phaseDesc = {
+    summoning: 'Aligning quantum pathways...',
+    scanning: 'Cross-validating across 10 dimensional vectors...',
+    converging: 'Synthesizing divergent signals into unified forecast...',
+    complete: '',
+    error: '',
   }[phase];
 
   return (
-    <div className="space-y-4">
+    <div className="mx-auto max-w-2xl px-4 py-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          {isStreaming && <Loader2 className="size-4 animate-spin text-[oklch(0.70_0.12_180)]" />}
-          {phase === 'complete' && <CheckCircle2 className="size-4 text-[oklch(0.70_0.14_145)]" />}
-          <span className="text-sm font-semibold text-foreground">{phaseLabel}</span>
-          <Badge variant="outline" className="border-[oklch(0.70_0.12_180/20%)] text-[10px] font-mono text-[oklch(0.70_0.12_180)]">
-            {outputs.length} outputs
-          </Badge>
-          {phase !== 'complete' && phase !== 'error' && (
-            <Badge variant="outline" className="border-[oklch(0.70_0.12_180/15%)] text-[10px] font-mono text-[oklch(0.55_0.015_200)]">
-              <Clock className="mr-1 size-2.5" />
-              {Math.floor(elapsed / 60)}:{String(elapsed % 60).padStart(2, '0')}
-            </Badge>
-          )}
-          {phase === 'complete' && (
-            <Badge variant="outline" className="border-[oklch(0.70_0.14_145/20%)] text-[10px] font-mono text-[oklch(0.70_0.14_145)]">
-              <Clock className="mr-1 size-2.5" />
-              {Math.floor(elapsed / 60)}:{String(elapsed % 60).padStart(2, '0')}
-            </Badge>
-          )}
+      <div className="mb-6 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          {isStreaming && <Orbit className="size-5 animate-spin text-[oklch(0.70_0.12_180)]" style={{ animationDuration: '2s' }} />}
+          {phase === 'complete' && <CheckCircle2 className="size-5 text-[oklch(0.70_0.14_145)]" />}
+          <div>
+            <div className="text-sm font-semibold text-foreground">{phaseLabel}</div>
+            <div className="text-[10px] text-[oklch(0.50_0.015_200)]">{phaseDesc}</div>
+          </div>
         </div>
         <div className="flex items-center gap-2">
-          {isStreaming && phase !== 'complete' && (
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={stop}
-              className="h-7 gap-1 text-[11px] border-[oklch(0.65_0.18_25/25%)] text-[oklch(0.65_0.18_25)] hover:bg-[oklch(0.65_0.18_25/8%)]"
-            >
-              <span className="size-2.5 rounded-sm bg-current" />
+          <Badge variant="outline" className="text-[10px] font-mono">
+            <Clock className="mr-1 size-2.5" />
+            {Math.floor(elapsed / 60)}:{String(elapsed % 60).padStart(2, '0')}
+          </Badge>
+          {isStreaming && (
+            <Button variant="outline" size="sm" onClick={stop} className="h-7 text-[11px]">
               Stop
             </Button>
           )}
           {onBack && (
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={onBack}
-              className="h-7 text-[11px] text-[oklch(0.50_0.015_200)]"
-            >
+            <Button variant="ghost" size="sm" onClick={onBack} className="h-7 text-[11px]">
               ← Back
             </Button>
           )}
         </div>
       </div>
 
-      {/* Round Progress */}
-      {phase !== 'complete' && phase !== 'error' && (
-        <div className="flex items-center gap-1.5">
-          {Array.from({ length: rounds }, (_, i) => i + 1).map(r => (
-            <div
-              key={r}
-              className={cn(
-                'flex-1 h-1.5 rounded-full transition-all duration-300',
-                r < currentRound && 'bg-[oklch(0.70_0.12_180)]',
-                r === currentRound && phase === 'simulating' && 'bg-[oklch(0.70_0.12_180)] lab-pulse',
-                r === currentRound && phase === 'synthesizing' && 'bg-[oklch(0.70_0.12_180)]',
-                r > currentRound && 'bg-[oklch(0.20_0.008_200)]',
-              )}
-            />
-          ))}
-          <span className="ml-2 text-[10px] font-mono text-[oklch(0.50_0.015_200)] shrink-0">
-            {currentRound}/{rounds}
-          </span>
+      {/* Progress bar */}
+      <div className="mb-6">
+        <div className="flex items-center justify-between mb-1">
+          <span className="text-[10px] font-mono text-[oklch(0.50_0.015_200)]">{progress}%</span>
+          <span className="text-[10px] font-mono text-[oklch(0.50_0.015_200)]">{activeOrbs} signals</span>
         </div>
-      )}
+        <div className="h-1.5 overflow-hidden rounded-full bg-[oklch(0.20_0.005_200)]">
+          <motion.div
+            className="h-full rounded-full bg-gradient-to-r from-[oklch(0.70_0.12_180)] via-[oklch(0.70_0.14_145)] to-[oklch(0.70_0.18_50)]"
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.5 }}
+          />
+        </div>
+      </div>
 
-      {/* Graph info */}
-      {graphInfo && (
-        <div className="glass-card rounded-lg p-3">
-          <div className="mb-1 flex items-center gap-2">
-            <Network className="size-3 text-[oklch(0.70_0.12_180)]" />
-            <span className="text-[10px] font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-              Knowledge Graph
-            </span>
-            <span className="text-[10px] font-mono text-[oklch(0.45_0.015_200)]">
-              {graphInfo.nodeCount} nodes · {graphInfo.edgeCount} edges
-            </span>
+      {/* Visual orb display */}
+      {phase !== 'complete' && phase !== 'error' && (
+        <div className="mb-6 flex h-40 items-center justify-center">
+          <div className="relative">
+            {/* Central orb */}
+            <motion.div
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <div className="size-16 rounded-full bg-gradient-to-br from-[oklch(0.70_0.12_180/30%)] to-[oklch(0.70_0.18_50/10%)] backdrop-blur" />
+            </motion.div>
+            
+            {/* Orbiting orbs */}
+            {Array.from({ length: 10 }).map((_, i) => {
+              const angle = (i / 10) * 360;
+              const delay = i * 0.1;
+              const active = i < activeOrbs;
+              return (
+                <motion.div
+                  key={i}
+                  className="absolute left-1/2 top-1/2"
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 8, repeat: Infinity, ease: 'linear', delay }}
+                  style={{ transformOrigin: '0 0' }}
+                >
+                  <div
+                    className={`size-3 rounded-full transition-all duration-500 ${active ? 'bg-[oklch(0.70_0.12_180)] shadow-[0_0_12px_oklch(0.70_0.12_180/50%)]' : 'bg-[oklch(0.30_0.005_200)]'}`}
+                    style={{
+                      transform: `rotate(${angle}deg) translateX(80px)`,
+                    }}
+                  />
+                </motion.div>
+              );
+            })}
           </div>
-          <p className="text-xs leading-relaxed text-[oklch(0.65_0.01_200)]">
-            {graphInfo.summary}
-          </p>
         </div>
       )}
 
       {/* Error */}
       {error && phase === 'error' && (
-        <div className="rounded-lg border border-[oklch(0.65_0.18_25/30%)] bg-[oklch(0.65_0.18_25/5%)] p-3 text-xs text-[oklch(0.65_0.18_25)]">
-          Simulation Error: {error}
+        <div className="rounded-lg border border-[oklch(0.65_0.18_25/30%)] bg-[oklch(0.65_0.18_25/5%)] p-4 text-sm text-[oklch(0.65_0.18_25)]">
+          ⚠ {error}
         </div>
       )}
 
-      {/* Agent outputs by round */}
-      <div className="space-y-3">
-        {Array.from(outputsByRound.entries()).map(([round, roundOutputs]) => (
-          <motion.div
-            key={round}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="space-y-2"
-          >
-            {/* Round header */}
-            <div className="flex items-center gap-2 border-l-2 border-[oklch(0.70_0.12_180/30%)] pl-2">
-              <span className="text-[10px] font-mono uppercase tracking-wider text-[oklch(0.55_0.015_200)]">
-                Round {round}
-              </span>
-              <div className="h-px flex-1 bg-[oklch(0.70_0.12_180/10%)]" />
-            </div>
-
-            {/* Classical outputs */}
-            <div className="rounded border border-[oklch(0.65_0.10_50/15%)] bg-[oklch(0.65_0.10_50/3%)] p-2">
-              <div className="mb-1.5 flex items-center gap-1 text-[10px] font-mono text-[oklch(0.65_0.10_50)]">
-                <BookOpen className="size-2.5" />
-                ◇ Classical Cross-Validation Matrix
-              </div>
-              <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-5">
-                {roundOutputs.filter(o => o.category === 'classical').map((o, i) => (
-                  <ClassicalCard key={i} output={o} />
-                ))}
-              </div>
-            </div>
-
-            {/* Modern outputs */}
-            <div className="rounded border border-[oklch(0.70_0.12_180/15%)] bg-[oklch(0.70_0.12_180/3%)] p-2">
-              <div className="mb-1.5 flex items-center gap-1 text-[10px] font-mono text-[oklch(0.70_0.12_180)]">
-                <Cpu className="size-2.5" />
-                ◈ Multi-Dimensional Simulation Matrix
-              </div>
-              <div className="space-y-1.5">
-                {roundOutputs.filter(o => o.category === 'modern').map((o, i) => (
-                  <ModernAgentCard
-                    key={i}
-                    output={o}
-                    isExpanded={expandedAgent === `${round}-${o.agentRole}`}
-                    onToggle={() => setExpandedAgent(
-                      expandedAgent === `${round}-${o.agentRole}`
-                        ? null
-                        : `${round}-${o.agentRole}`
-                    )}
-                  />
-                ))}
-                {/* Current agent loading indicator */}
-                {currentAgent && round === currentRound && !roundOutputs.find(o => o.agentRole === currentAgent) && (
-                  <div className="flex items-center gap-2 rounded border border-dashed border-[oklch(0.70_0.12_180/20%)] p-2">
-                    <Loader2 className="size-3 animate-spin text-[oklch(0.70_0.12_180)]" />
-                    <span className="text-[11px] text-[oklch(0.55_0.015_200)]">
-                      {AGENT_CONFIG[currentAgent]?.name ?? currentAgent} simulating...
-                    </span>
-                  </div>
-                )}
-              </div>
-            </div>
-          </motion.div>
-        ))}
-
-        {/* Synthesizing indicator */}
-        {phase === 'synthesizing' && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex items-center justify-center gap-2 rounded-lg border border-[oklch(0.70_0.12_180/20%)] bg-[oklch(0.70_0.12_180/5%)] p-4"
-          >
-            <Loader2 className="size-4 animate-spin text-[oklch(0.70_0.12_180)]" />
-            <span className="text-sm text-[oklch(0.70_0.12_180)]">Scenario Tree + 5×5 Cross-Validation Matrix...</span>
-          </motion.div>
-        )}
-
-        <div ref={outputEndRef} />
-      </div>
-
-      {/* Final result */}
+      {/* Final synthesized result */}
+      <div ref={outputRef} />
       {phase === 'complete' && finalResult && (
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="space-y-4"
-        >
-          {/* Final recommendation */}
-          <div className="rounded-lg border border-[oklch(0.70_0.12_180/25%)] bg-[oklch(0.70_0.12_180/8%)] p-4">
-            <div className="mb-1 flex items-center gap-2">
-              <FlaskConical className="size-3.5 text-[oklch(0.70_0.12_180)]" />
-              <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-                Synthesized Forecast
-              </span>
-            </div>
-            <p className="text-sm leading-relaxed text-[oklch(0.85_0.01_200)]">
-              {finalResult.finalRecommendation}
-            </p>
-          </div>
-
-          {/* Cross-validation matrix */}
-          <div className="glass-card rounded-lg p-4">
-            <div className="mb-3 flex items-center gap-2">
-              <Cpu className="size-3.5 text-[oklch(0.70_0.12_180)]" />
-              <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-                5×5 Cross-Validation Matrix
-              </span>
-            </div>
-            <CrossValidationMatrix
-              matrix={finalResult.crossValidation.matrix}
-              modernConsensus={finalResult.crossValidation.modernConsensus}
-              classicalConsensus={finalResult.crossValidation.classicalConsensus}
-              quadrant={finalResult.crossValidation.quadrant}
-              summary={finalResult.crossValidation.summary}
-            />
-          </div>
-
-          {/* Scenarios */}
-          <div className="glass-card rounded-lg p-4">
-            <div className="mb-3 flex items-center gap-2">
-              <Activity className="size-3.5 text-[oklch(0.70_0.12_180)]" />
-              <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-                Scenario Paths
-              </span>
-            </div>
-            <ScenarioTree scenarios={finalResult.scenarios} />
-          </div>
-
-          {/* Key divergences */}
-          {finalResult.keyDivergences.length > 0 && (
-            <div className="rounded-lg border border-[oklch(0.65_0.10_50/20%)] bg-[oklch(0.65_0.10_50/5%)] p-4">
-              <div className="mb-2 flex items-center gap-2">
-                <BookOpen className="size-3.5 text-[oklch(0.65_0.10_50)]" />
-                <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.65_0.10_50)]">
-                  Key Divergences
-                </span>
-              </div>
-              <ul className="space-y-1">
-                {finalResult.keyDivergences.map((d: string, i: number) => (
-                  <li key={i} className="text-xs leading-relaxed text-[oklch(0.65_0.01_200)]">
-                    · {d}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+          <SynthesizedResult result={finalResult} elapsed={elapsed} />
         </motion.div>
       )}
     </div>
@@ -436,94 +209,107 @@ export function StreamingSimulationPanel({
 }
 
 // ---------------------------------------------------------------------------
-// Classical Card
+// 综合结果展示——只给一个结论，不分别展示各agent
 // ---------------------------------------------------------------------------
 
-function ClassicalCard({ output }: { output: AgentOutput }) {
-  const consensusColor = output.consensus === 'positive'
-    ? 'oklch(0.70 0.14 145)'
-    : output.consensus === 'negative'
-    ? 'oklch(0.65 0.18 25)'
-    : 'oklch(0.55 0.015 200)';
+function SynthesizedResult({ result, elapsed }: { result: any; elapsed: number }) {
+  const recommendation = result.finalRecommendation || '';
+  const scenarios = result.scenarios || [];
+  const keyDivergences = result.keyDivergences || [];
+
+  // 提取概率
+  const topScenario = scenarios.reduce((a: any, b: any) => (a.probability > b.probability ? a : b), scenarios[0] || {});
+  const probability = Math.round((topScenario.probability || 0) * 100);
+  const scenarioLabel = topScenario.scenarioPath === 'optimistic' ? 'Favorable' : topScenario.scenarioPath === 'neutral' ? 'Transitional' : 'Challenging';
+
+  // 置信度
+  const quadrant = result.crossValidation?.quadrant || 'insufficient_info';
+  const confidenceLabel = {
+    high_confidence_proceed: 'High Confidence',
+    risk_flagged: 'Cautious Optimism',
+    timing_issue: 'Timing Sensitive',
+    strong_avoid: 'High Risk',
+    insufficient_info: 'Mixed Signals',
+  }[quadrant] || 'Analyzing';
+
+  const confidenceColor = {
+    high_confidence_proceed: 'oklch(0.70 0.14 145)',
+    risk_flagged: 'oklch(0.70 0.18 50)',
+    timing_issue: 'oklch(0.70 0.12 180)',
+    strong_avoid: 'oklch(0.65 0.18 25)',
+    insufficient_info: 'oklch(0.55 0.015 200)',
+  }[quadrant] || 'oklch(0.55 0.015 200)';
 
   return (
-    <div className="rounded border border-[oklch(0.65_0.10_50/20%)] bg-[oklch(0.13_0.005_200/60%)] p-2">
-      <div className="mb-1 flex items-center justify-between">
-        <span className="text-[10px] font-semibold text-[oklch(0.65_0.10_50)]">
-          {output.agentName}
-        </span>
-        <span
-          className="font-mono-tabular text-[10px] font-bold"
-          style={{ color: consensusColor }}
-        >
-          {output.directionScore !== undefined ? output.directionScore.toFixed(2) : ''}
-        </span>
-      </div>
-      <p className="line-clamp-2 text-[10px] leading-relaxed text-[oklch(0.55_0.01_200)]">
-        {output.content}
-      </p>
-    </div>
-  );
-}
+    <div className="space-y-4">
+      {/* 主结论卡片 */}
+      <div className="relative overflow-hidden rounded-2xl border border-[oklch(0.70_0.12_180/20%)] bg-gradient-to-br from-[oklch(0.13_0.005_200/80%)] to-[oklch(0.13_0.02_280/60%)] p-6">
+        {/* 光效 */}
+        <div className="absolute -right-20 -top-20 size-40 rounded-full bg-[oklch(0.70_0.12_180/10%)] blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 size-40 rounded-full bg-[oklch(0.70_0.18_50/10%)] blur-3xl" />
 
-// ---------------------------------------------------------------------------
-// Modern Agent Card (expandable)
-// ---------------------------------------------------------------------------
-
-function ModernAgentCard({
-  output,
-  isExpanded,
-  onToggle,
-}: {
-  output: AgentOutput;
-  isExpanded: boolean;
-  onToggle: () => void;
-}) {
-  return (
-    <div className="rounded border border-[oklch(0.70_0.12_180/20%)] bg-[oklch(0.13_0.005_200/60%)] p-2">
-      <button
-        onClick={onToggle}
-        className="flex w-full items-center justify-between"
-      >
-        <div className="flex items-center gap-2">
-          <span className="size-1.5 rounded-full bg-[oklch(0.70_0.12_180)]" />
-          <span className="text-xs font-semibold text-[oklch(0.70_0.12_180)]">
-            {output.agentName}
-          </span>
-        </div>
-        {isExpanded ? (
-          <ChevronUp className="size-3 text-[oklch(0.45_0.015_200)]" />
-        ) : (
-          <ChevronDown className="size-3 text-[oklch(0.45_0.015_200)]" />
-        )}
-      </button>
-      <div className={cn('mt-1.5 text-[11px] leading-relaxed text-[oklch(0.65_0.01_200)]', !isExpanded && 'line-clamp-2')}>
-        {isExpanded ? (
-          <div className="prose prose-sm prose-invert max-w-none
-            [&_p]:my-1 [&_p]:leading-relaxed
-            [&_h1]:text-sm [&_h1]:font-semibold [&_h1]:text-foreground [&_h1]:mt-2 [&_h1]:mb-1
-            [&_h2]:text-xs [&_h2]:font-semibold [&_h2]:text-foreground [&_h2]:mt-2 [&_h2]:mb-1
-            [&_h3]:text-xs [&_h3]:font-semibold [&_h3]:text-[oklch(0.75_0.01_200)] [&_h3]:mt-1.5 [&_h3]:mb-0.5
-            [&_ul]:my-1 [&_ul]:pl-4 [&_ul]:list-disc [&_ul]:space-y-0.5
-            [&_ol]:my-1 [&_ol]:pl-4 [&_ol]:list-decimal [&_ol]:space-y-0.5
-            [&_li]:text-[11px] [&_li]:leading-relaxed
-            [&_strong]:text-foreground [&_strong]:font-semibold
-            [&_code]:text-[oklch(0.70_0.12_180)] [&_code]:bg-[oklch(0.20_0.008_200)] [&_code]:px-1 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-[10px] [&_code]:font-mono
-            [&_pre]:bg-[oklch(0.11_0.005_200)] [&_pre]:p-2 [&_pre]:rounded [&_pre]:my-1.5 [&_pre]:overflow-x-auto
-            [&_pre_code]:bg-transparent [&_pre_code]:p-0
-            [&_blockquote]:border-l-2 [&_blockquote]:border-[oklch(0.70_0.12_180/40%)] [&_blockquote]:pl-2 [&_blockquote]:text-[oklch(0.55_0.01_200)] [&_blockquote]:italic
-            [&_table]:my-2 [&_table]:w-full [&_table]:border-collapse
-            [&_th]:border [&_th]:border-[oklch(0.70_0.12_180/15%)] [&_th]:px-1.5 [&_th]:py-1 [&_th]:text-left [&_th]:bg-[oklch(0.16_0.008_200)] [&_th]:text-[oklch(0.75_0.01_200)] [&_th]:font-semibold [&_th]:text-[10px]
-            [&_td]:border [&_td]:border-[oklch(0.70_0.12_180/10%)] [&_td]:px-1.5 [&_td]:py-1 [&_td]:text-[10px]
-            [&_hr]:border-[oklch(0.70_0.12_180/15%)] [&_hr]:my-2
-            [&_a]:text-[oklch(0.70_0.12_180)] [&_a]:underline
-          ">
-            <ReactMarkdown>{output.content}</ReactMarkdown>
+        <div className="relative">
+          <div className="mb-4 flex items-center gap-2">
+            <Sparkles className="size-4 text-[oklch(0.70_0.12_180)]" />
+            <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">Oracle Forecast</span>
+            <Badge variant="outline" className="ml-auto text-[10px]" style={{ color: confidenceColor, borderColor: `${confidenceColor.replace('oklch(', 'oklch('}/20%)` }}>
+              {confidenceLabel}
+            </Badge>
           </div>
-        ) : (
-          <span>{output.content.slice(0, 120)}...</span>
-        )}
+
+          {/* 概率 */}
+          <div className="mb-4 flex items-end gap-3">
+            <span className="text-5xl font-bold text-foreground">{probability}%</span>
+            <span className="mb-1 text-sm text-[oklch(0.50_0.015_200)]">{scenarioLabel} outcome</span>
+          </div>
+
+          {/* 综合建议——只给一个结论 */}
+          <p className="text-base leading-relaxed text-foreground">
+            {recommendation}
+          </p>
+
+          {/* 元信息 */}
+          <div className="mt-4 flex items-center gap-3 text-[10px] font-mono text-[oklch(0.40_0.015_200)]">
+            <span><Clock className="mr-1 inline size-2.5" />{elapsed}s</span>
+            <span>·</span>
+            <span>{scenarios.length} scenarios analyzed</span>
+            <span>·</span>
+            <span>10 vectors cross-validated</span>
+          </div>
+        </div>
       </div>
+
+      {/* 三条情景路径——简洁版 */}
+      {scenarios.length > 0 && (
+        <div className="grid grid-cols-3 gap-2">
+          {scenarios.map((s: any, i: number) => {
+            const pct = Math.round(s.probability * 100);
+            const label = s.scenarioPath === 'optimistic' ? 'Favorable' : s.scenarioPath === 'neutral' ? 'Transitional' : 'Challenging';
+            const color = s.scenarioPath === 'optimistic' ? 'oklch(0.70 0.14 145)' : s.scenarioPath === 'neutral' ? 'oklch(0.70 0.12 180)' : 'oklch(0.65 0.18 25)';
+            return (
+              <div key={i} className="rounded-lg border border-[oklch(0.20_0.005_200)] bg-[oklch(0.13_0.005_200/60%)] p-3">
+                <div className="text-[10px] font-mono text-[oklch(0.50_0.015_200)]">{label}</div>
+                <div className="mt-1 text-lg font-bold" style={{ color }}>{pct}%</div>
+                <div className="mt-1 h-1 overflow-hidden rounded-full bg-[oklch(0.20_0.005_200)]">
+                  <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: color }} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* 关键分歧——如果有 */}
+      {keyDivergences.length > 0 && (
+        <div className="rounded-lg border border-[oklch(0.65_0.10_50/15%)] bg-[oklch(0.65_0.10_50/3%)] p-4">
+          <div className="mb-2 text-[10px] font-mono uppercase text-[oklch(0.65_0.10_50)]">Signal Divergences</div>
+          <ul className="space-y-1">
+            {keyDivergences.map((d: string, i: number) => (
+              <li key={i} className="text-xs text-[oklch(0.60_0.01_200)]">· {d}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
