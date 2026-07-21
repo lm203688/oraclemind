@@ -252,7 +252,7 @@ function SynthesizedResult({ result, elapsed }: { result: any; elapsed: number }
           <div className="mb-4 flex items-center gap-2">
             <Sparkles className="size-4 text-[oklch(0.70_0.12_180)]" />
             <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">Oracle Forecast</span>
-            <Badge variant="outline" className="ml-auto text-[10px]" style={{ color: confidenceColor, borderColor: `${confidenceColor.replace('oklch(', 'oklch('}/20%)` }}>
+            <Badge variant="outline" className="ml-auto text-[10px]" style={{ color: confidenceColor, borderColor: 'oklch(0.70_0.12_180/20%)' }}>
               {confidenceLabel}
             </Badge>
           </div>
