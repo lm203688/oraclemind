@@ -106,6 +106,9 @@ export async function getUserMemories(
     take: limit,
   });
 
+  // DB降级时safe prisma返回null——返回空数组避免后续null.length崩溃
+  if (!memories || !Array.isArray(memories)) return [];
+
   // 更新访问时间（异步，不阻塞返回）
   if (memories.length > 0) {
     db.userMemory.updateMany({

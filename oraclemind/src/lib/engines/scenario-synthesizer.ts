@@ -58,10 +58,19 @@ export async function synthesizeScenarios(
   simulationId: string,
   rounds: RoundResult[],
 ): Promise<SynthesisResult> {
+  // 空轮次保护
+  if (!rounds || rounds.length === 0) {
+    return {
+      scenarios: [],
+      crossValidation: { matrix: {}, modernConsensus: 0, classicalConsensus: 0, quadrant: 'insufficient_info', summary: '数据不足' },
+      finalRecommendation: '推演数据不足，无法生成综合建议。',
+      keyDivergences: [],
+    };
+  }
   // 1. 提取所有现代Agent的最终输出（最后一轮）
   const lastRound = rounds[rounds.length - 1];
-  const modernOutputs = lastRound.modernOutputs;
-  const classicalResult = lastRound.classicalResult;
+  const modernOutputs = lastRound.modernOutputs ?? [];
+  const classicalResult = lastRound.classicalResult ?? { reports: [], consensusScore: 0, consensus: 'neutral' };
 
   // 2. 分析每个现代Agent的方向倾向
   const modernDirections: Record<string, number> = {};
@@ -71,7 +80,7 @@ export async function synthesizeScenarios(
 
   // 3. 提取古典5本的方向分
   const classicalDirections: Record<string, number> = {};
-  for (const report of classicalResult.reports) {
+  for (const report of (classicalResult.reports ?? [])) {
     classicalDirections[report.bookId] = report.directionScore;
   }
 

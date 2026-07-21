@@ -69,9 +69,9 @@ export async function POST(request: NextRequest): Promise<Response> {
           controller.enqueue(encoder.encode(sendEvent({
             type: 'graph_built',
             graphSummary: graphResult.graphSummary,
-            nodeCount: graphResult.nodeIds.length,
-            edgeCount: graphResult.edgeIds.length,
-            keyNodes: graphResult.keyStakeholders.slice(0, 6).map(n => ({ name: n.name, nodeType: n.nodeType, centrality: n.centrality ?? 0 })),
+            nodeCount: graphResult?.nodeIds?.length ?? 0,
+            edgeCount: graphResult?.edgeIds?.length ?? 0,
+            keyNodes: (graphResult?.keyStakeholders ?? []).slice(0, 6).map(n => ({ name: n.name, nodeType: n.nodeType, centrality: n.centrality ?? 0 })),
           })));
 
           // 2. 创建 Simulation 记录
@@ -87,7 +87,7 @@ export async function POST(request: NextRequest): Promise<Response> {
             },
           });
 
-          const simulationId = simulation.id;
+          const simulationId = simulation?.id ?? `sim-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
           const allRounds: any[] = [];
           let totalTokensUsed = 0;
 
@@ -102,9 +102,11 @@ export async function POST(request: NextRequest): Promise<Response> {
             };
 
             const classicalResult = await runClassicalVerification(classicalCtx);
+            const classicalReports = classicalResult?.reports ?? [];
+            const classicalConsensusScore = classicalResult?.consensusScore ?? 0;
 
             await Promise.all(
-              classicalResult.reports.map(r => db.agentTrace.create({
+              classicalReports.map(r => db.agentTrace.create({
                 data: {
                   simulationId,
                   agentRole: r.bookId,
@@ -124,14 +126,14 @@ export async function POST(request: NextRequest): Promise<Response> {
             controller.enqueue(encoder.encode(sendEvent({
               type: 'classical_done',
               round,
-              reports: classicalResult.reports.map(r => ({
+              reports: classicalReports.map(r => ({
                 bookId: r.bookId,
                 bookName: r.bookName,
                 judgment: r.judgment,
                 directionScore: r.directionScore,
                 consensus: r.consensus,
               })),
-              consensusScore: classicalResult.consensusScore,
+              consensusScore: classicalConsensusScore,
             })));
 
             // 3b. 现代5Agent串行
@@ -152,7 +154,7 @@ export async function POST(request: NextRequest): Promise<Response> {
                 question: eventDescription,
                 simulationType: 'event' as const,
                 graphSummary: graphResult.graphSummary,
-                keyNodes: graphResult.keyStakeholders,
+                keyNodes: graphResult?.keyStakeholders ?? [],
                 eventContext: context,
                 currentRound: round,
                 totalRounds: rounds,

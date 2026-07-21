@@ -74,7 +74,8 @@ export async function createNode(data: GraphNodeData): Promise<string> {
       community: data.community,
     },
   });
-  return node.id;
+  // DB降级时返回临时ID
+  return node?.id ?? `fallback-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
 export async function getNodes(filter: {
@@ -90,6 +91,9 @@ export async function getNodes(filter: {
     },
     orderBy: { centrality: 'desc' },
   });
+
+  // DB降级时safe prisma返回null
+  if (!nodes || !Array.isArray(nodes)) return [];
 
   return nodes.map(n => ({
     id: n.id,
@@ -122,7 +126,7 @@ export async function createEdge(data: GraphEdgeData): Promise<string> {
       weight: data.weight ?? 0.5,
     },
   });
-  return edge.id;
+  return edge?.id ?? `fallback-edge-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
 export async function getEdges(filter: {
@@ -137,6 +141,8 @@ export async function getEdges(filter: {
       ...(filter.relationType && { relationType: filter.relationType }),
     },
   });
+
+  if (!edges || !Array.isArray(edges)) return [];
 
   return edges.map(e => ({
     id: e.id,

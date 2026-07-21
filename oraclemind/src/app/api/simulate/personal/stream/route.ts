@@ -106,7 +106,7 @@ export async function POST(request: NextRequest): Promise<Response> {
             },
           });
 
-          const simulationId = simulation.id;
+          const simulationId = simulation?.id ?? `sim-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
           const allRounds: any[] = [];
           let totalTokensUsed = 0;
 
@@ -122,9 +122,13 @@ export async function POST(request: NextRequest): Promise<Response> {
 
             const classicalResult = await runClassicalVerification(classicalCtx);
 
+            // DB降级保护
+            const classicalReports = classicalResult?.reports ?? [];
+            const classicalConsensusScore = classicalResult?.consensusScore ?? 0;
+
             // 存古典traces
             await Promise.all(
-              classicalResult.reports.map(r => db.agentTrace.create({
+              classicalReports.map(r => db.agentTrace.create({
                 data: {
                   simulationId,
                   agentRole: r.bookId,
@@ -144,14 +148,14 @@ export async function POST(request: NextRequest): Promise<Response> {
             controller.enqueue(encoder.encode(sendEvent({
               type: 'classical_done',
               round,
-              reports: classicalResult.reports.map(r => ({
+              reports: classicalReports.map(r => ({
                 bookId: r.bookId,
                 bookName: r.bookName,
                 judgment: r.judgment,
                 directionScore: r.directionScore,
                 consensus: r.consensus,
               })),
-              consensusScore: classicalResult.consensusScore,
+              consensusScore: classicalConsensusScore,
             })));
 
             // 5b. 现代5Agent串行
