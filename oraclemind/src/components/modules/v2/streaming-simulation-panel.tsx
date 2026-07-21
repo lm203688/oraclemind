@@ -33,8 +33,6 @@ export function StreamingSimulationPanel({
   const apiUrl = simulationType === 'event'
     ? `/api/simulate/event/stream`
     : `/api/simulate/personal/stream`;
-    ? `/api/simulate/event/stream`
-    : `/api/simulate/personal/stream`;
 
   const { start, stop, isStreaming } = useSimulationStream(apiUrl, {
     onEvent: (event: any) => {
