@@ -34,13 +34,13 @@ const FEATURES = [
   {
     icon: <Cpu className="size-4" />,
     title: '多Agent涌现',
-    desc: '5个现代Agent（策略/数据/风险/乐观/魔鬼）并行推演，从群体交互中涌现结论。',
+    desc: '5维现代推演（策略/数据/风险/乐观/魔鬼）并行推演，从群体交互中涌现结论。',
     accent: 'cyan' as const,
   },
   {
     icon: <BookOpen className="size-4" />,
-    title: '5本古籍交叉验证',
-    desc: '渊海子平、子平真诠、三命通会、滴天髓、穷通宝鉴——5视角并行验证，互不依赖。',
+    title: '◇ 古典交叉验证',
+    desc: '5维古典源流并行验证——从源流、格局、综鉴、旺衰、调候5个独立维度交叉验证，互不依赖。',
     accent: 'bronze' as const,
   },
   {
@@ -155,7 +155,7 @@ export function LandingHeroV2({ onStartPersonal, onStartEvent, onViewHistory, on
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-[oklch(0.60_0.015_200)] sm:text-base"
           >
-            把人生决策放进沙盘，让 <span className="text-[oklch(0.70_0.12_180)] font-semibold">5个现代Agent</span> 与 <span className="text-[oklch(0.65_0.10_50)] font-semibold">5本古籍验证</span> 并行推演，
+            把人生决策放进沙盘，让 <span className="text-[oklch(0.70_0.12_180)] font-semibold">5维现代推演</span> 与 <span className="text-[oklch(0.65_0.10_50)] font-semibold">5维古典验证</span> 并行推演，
             从群体涌现中看见你的下一步。
           </motion.p>
 

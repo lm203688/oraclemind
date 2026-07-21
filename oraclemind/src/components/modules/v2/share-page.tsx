@@ -269,7 +269,7 @@ export function SharePage({ id }: { id: string }) {
           <FlaskConical className="mx-auto mb-2 size-6 text-[oklch(0.70_0.12_180)]" />
           <p className="text-sm font-semibold text-foreground">想推演你自己的问题？</p>
           <p className="mt-1 text-[11px] text-[oklch(0.55_0.015_200)]">
-            5现代Agent + 5本古籍交叉验证 · 不是算命，是概率推演
+            5维现代推演 + 5维古典验证 · 不是算命，是概率推演
           </p>
           <a href="/">
             <Button className="mt-3 h-9 gap-2 bg-[oklch(0.70_0.12_180)] text-[oklch(0.13_0.005_200)] hover:bg-[oklch(0.75_0.14_180)]">

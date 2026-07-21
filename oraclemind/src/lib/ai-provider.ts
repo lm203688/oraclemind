@@ -143,14 +143,24 @@ let cachedZAI: any = null;
 async function getZAI() {
   if (!cachedZAI) {
     const ZAI = (await import('z-ai-web-dev-sdk')).default;
-    // 优先用环境变量创建实例（Vercel生产环境）
-    const apiKey = process.env.ZAI_API_KEY || process.env.GLM_API_KEY;
-    const baseUrl = process.env.OPENAI_BASE_URL || 'https://api.z.ai/api/paas/v4';
-    if (apiKey) {
+    // 优先用环境变量，回退到小乌API（公网可访问）
+    const apiKey = process.env.ZAI_API_KEY || process.env.OPENAI_API_KEY || 'xiaowu-internal-2026';
+    const baseUrl = process.env.OPENAI_BASE_URL || process.env.ZAI_BASE_URL || 'http://150.158.119.19:3003/v1';
+    if (apiKey && apiKey !== 'placeholder') {
       cachedZAI = new ZAI({ apiKey, baseUrl });
     } else {
-      // 开发环境用配置文件
-      cachedZAI = await ZAI.create();
+      cachedZAI = new ZAI({ apiKey: 'xiaowu-internal-2026', baseUrl: 'http://150.158.119.19:3003/v1' });
+    }
+  }
+  return cachedZAI;
+});
+    } else {
+      try {
+        cachedZAI = await ZAI.create();
+      } catch (e) {
+        // 无配置文件——用默认匿名配置
+        cachedZAI = new ZAI({ apiKey: 'anonymous', baseUrl: 'https://api.z.ai/api/paas/v4' });
+      }
     }
   }
   return cachedZAI;

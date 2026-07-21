@@ -28,18 +28,18 @@ import { cn } from '@/lib/utils';
 // ---------------------------------------------------------------------------
 
 const AGENT_CONFIG: Record<string, { name: string; category: 'modern' | 'classical'; color: string; bias: number }> = {
-  // 现代
-  strategist:     { name: '策略师',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0 },
-  data_analyst:   { name: '数据师',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.1 },
-  risk_auditor:   { name: '风险师',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.2 },
-  optimist:       { name: '乐观师',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0.2 },
-  devil_advocate: { name: '魔鬼代言人',   category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.15 },
-  // 古典
-  yuanhai:    { name: '渊海子平', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  ziping:     { name: '子平真诠', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  sanming:    { name: '三命通会', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  ditianzhui: { name: '滴天髓',   category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  qiongtong:  { name: '穷通宝鉴', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  // 现代5维度——神秘代号
+  strategist:     { name: '◈ 天枢维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0 },
+  data_analyst:   { name: '◈ 天璇维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.1 },
+  risk_auditor:   { name: '◈ 天玑维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.2 },
+  optimist:       { name: '◈ 天权维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0.2 },
+  devil_advocate: { name: '◈ 玉衡维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.15 },
+  // 古典5典——神秘代号
+  yuanhai:    { name: '◇ 源流卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  ziping:     { name: '◇ 格局卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  sanming:    { name: '◇ 综鉴卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  ditianzhui: { name: '◇ 旺衰卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  qiongtong:  { name: '◇ 调候卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
 };
 
 // ---------------------------------------------------------------------------
@@ -302,11 +302,11 @@ export function StreamingSimulationPanel({
               <div className="h-px flex-1 bg-[oklch(0.70_0.12_180/10%)]" />
             </div>
 
-            {/* Classical outputs (5 books) */}
+            {/* Classical outputs */}
             <div className="rounded border border-[oklch(0.65_0.10_50/15%)] bg-[oklch(0.65_0.10_50/3%)] p-2">
               <div className="mb-1.5 flex items-center gap-1 text-[10px] font-mono text-[oklch(0.65_0.10_50)]">
                 <BookOpen className="size-2.5" />
-                古典验证层（5本古籍）
+                ◇ 古典交叉验证矩阵
               </div>
               <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-5">
                 {roundOutputs.filter(o => o.category === 'classical').map((o, i) => (
@@ -315,11 +315,11 @@ export function StreamingSimulationPanel({
               </div>
             </div>
 
-            {/* Modern outputs (5 agents) */}
+            {/* Modern outputs */}
             <div className="rounded border border-[oklch(0.70_0.12_180/15%)] bg-[oklch(0.70_0.12_180/3%)] p-2">
               <div className="mb-1.5 flex items-center gap-1 text-[10px] font-mono text-[oklch(0.70_0.12_180)]">
                 <Cpu className="size-2.5" />
-                现代 Agent 层（5个）
+                ◈ 多维推演矩阵
               </div>
               <div className="space-y-1.5">
                 {roundOutputs.filter(o => o.category === 'modern').map((o, i) => (

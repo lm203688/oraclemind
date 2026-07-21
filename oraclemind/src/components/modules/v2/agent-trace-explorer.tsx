@@ -23,17 +23,17 @@ interface AgentTraceExplorerProps {
 
 const ROLE_CONFIG: Record<string, { name: string; category: 'modern' | 'classical'; color: string }> = {
   // 现代5Agent
-  strategist: { name: '策略师', category: 'modern', color: 'oklch(0.70 0.12 180)' },
-  data_analyst: { name: '数据师', category: 'modern', color: 'oklch(0.70 0.12 180)' },
-  risk_auditor: { name: '风险师', category: 'modern', color: 'oklch(0.70 0.12 180)' },
-  optimist: { name: '乐观师', category: 'modern', color: 'oklch(0.70 0.12 180)' },
-  devil_advocate: { name: '魔鬼代言人', category: 'modern', color: 'oklch(0.70 0.12 180)' },
+  strategist: { name: '◈ 天枢维度', category: 'modern', color: 'oklch(0.70 0.12 180)' },
+  data_analyst: { name: '◈ 天璇维度', category: 'modern', color: 'oklch(0.70 0.12 180)' },
+  risk_auditor: { name: '◈ 天玑维度', category: 'modern', color: 'oklch(0.70 0.12 180)' },
+  optimist: { name: '◈ 天权维度', category: 'modern', color: 'oklch(0.70 0.12 180)' },
+  devil_advocate: { name: '◈ 玉衡维度', category: 'modern', color: 'oklch(0.70 0.12 180)' },
   // 古典5Agent
-  yuanhai: { name: '渊海子平', category: 'classical', color: 'oklch(0.65 0.10 50)' },
-  ziping: { name: '子平真诠', category: 'classical', color: 'oklch(0.65 0.10 50)' },
-  sanming: { name: '三命通会', category: 'classical', color: 'oklch(0.65 0.10 50)' },
-  ditianzhui: { name: '滴天髓', category: 'classical', color: 'oklch(0.65 0.10 50)' },
-  qiongtong: { name: '穷通宝鉴', category: 'classical', color: 'oklch(0.65 0.10 50)' },
+  yuanhai: { name: '◇ 源流卷', category: 'classical', color: 'oklch(0.65 0.10 50)' },
+  ziping: { name: '◇ 格局卷', category: 'classical', color: 'oklch(0.65 0.10 50)' },
+  sanming: { name: '◇ 综鉴卷', category: 'classical', color: 'oklch(0.65 0.10 50)' },
+  ditianzhui: { name: '◇ 旺衰卷', category: 'classical', color: 'oklch(0.65 0.10 50)' },
+  qiongtong: { name: '◇ 调候卷', category: 'classical', color: 'oklch(0.65 0.10 50)' },
 };
 
 export function AgentTraceExplorer({ traces, totalRounds }: AgentTraceExplorerProps) {

@@ -13,19 +13,19 @@ interface CrossValidationMatrixProps {
 }
 
 const MODERN_LABELS: Record<string, { name: string; short: string }> = {
-  strategist: { name: '策略师', short: '策略' },
-  data_analyst: { name: '数据师', short: '数据' },
-  risk_auditor: { name: '风险师', short: '风险' },
-  optimist: { name: '乐观师', short: '乐观' },
-  devil_advocate: { name: '魔鬼代言人', short: '魔鬼' },
+  strategist: { name: '◈ 天枢', short: '天枢' },
+  data_analyst: { name: '◈ 天璇', short: '天璇' },
+  risk_auditor: { name: '◈ 天玑', short: '天玑' },
+  optimist: { name: '◈ 天权', short: '天权' },
+  devil_advocate: { name: '◈ 玉衡', short: '玉衡' },
 };
 
 const CLASSICAL_LABELS: Record<string, { name: string; short: string }> = {
-  yuanhai: { name: '渊海子平', short: '渊海' },
-  ziping: { name: '子平真诠', short: '真诠' },
-  sanming: { name: '三命通会', short: '通会' },
-  ditianzhui: { name: '滴天髓', short: '滴天' },
-  qiongtong: { name: '穷通宝鉴', short: '宝鉴' },
+  yuanhai: { name: '◇ 源流', short: '源流' },
+  ziping: { name: '◇ 格局', short: '格局' },
+  sanming: { name: '◇ 综鉴', short: '综鉴' },
+  ditianzhui: { name: '◇ 旺衰', short: '旺衰' },
+  qiongtong: { name: '◇ 调候', short: '调候' },
 };
 
 const QUADRANT_CONFIG: Record<string, { label: string; color: string; bg: string }> = {
