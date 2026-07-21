@@ -72,19 +72,28 @@ export function NotificationProvider({ children }: { children: React.ReactNode }
     }
   }, [dismiss]);
 
-  // 桌面通知（需要权限）
+  // 桌面通知（需要权限）——iOS Safari不支持Notification API
   const sendDesktopNotification = useCallback((title: string, message?: string) => {
     if (typeof window === 'undefined') return;
-    if (Notification.permission === 'granted') {
-      new Notification(title, { body: message });
+    if (typeof Notification === 'undefined') return; // iOS Safari兼容
+    try {
+      if (Notification.permission === 'granted') {
+        new Notification(title, { body: message });
+      }
+    } catch (e) {
+      // 忽略Notification错误
     }
   }, []);
 
   // 请求权限（首次时）
   useEffect(() => {
-    if (typeof window !== 'undefined' && Notification.permission === 'default') {
-      // 不主动请求，用户在设置里开启时再请求
-    }
+    if (typeof window === 'undefined') return;
+    if (typeof Notification === 'undefined') return; // iOS Safari兼容
+    try {
+      if (Notification.permission === 'default') {
+        // 不主动请求，用户在设置里开启时再请求
+      }
+    } catch (e) {}
   }, []);
 
   return (
