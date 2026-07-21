@@ -12,6 +12,24 @@ export async function GET() {
       { url: 'https://oraclemind.io', description: 'Production' },
     ],
     paths: {
+      '/api/mcp': {
+        get: {
+          summary: 'MCP Server — List tools',
+          description: 'Returns available MCP tools for AI agents',
+          tags: ['MCP'],
+          responses: { '200': { description: 'Tool list' } },
+        },
+        post: {
+          summary: 'MCP Server — Call tool',
+          description: 'Call an OracleMind tool (personal_forecast, event_forecast, what_if_analysis, bazi_calculate, daily_forecast)',
+          tags: ['MCP'],
+          requestBody: {
+            required: true,
+            content: { 'application/json': { schema: { type: 'object', properties: { tool: { type: 'string' }, input: { type: 'object' } } } } },
+          },
+          responses: { '200': { description: 'Tool result' } },
+        },
+      },
       '/api/simulate/personal/stream': {
         post: {
           summary: 'Personal Destiny Forecast (SSE)',
