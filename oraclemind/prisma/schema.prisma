@@ -1,7 +1,7 @@
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL", "postgresql://placeholder:placeholder@localhost:5432/placeholder")
-  directUrl = env("DIRECT_URL", "postgresql://placeholder:placeholder@localhost:5432/placeholder")
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 generator client {
