@@ -146,7 +146,7 @@ export async function POST(request: NextRequest): Promise<Response> {
               round,
               reports: classicalResult.reports.map(r => ({
                 bookId: r.bookId,
-                bookName: r.bookName,
+                bookName: ({yuanhai:'◇ Scroll I',ziping:'◇ Scroll II',sanming:'◇ Scroll III',ditianzhui:'◇ Scroll IV',qiongtong:'◇ Scroll V'})[r.bookId] || r.bookId,
                 judgment: r.judgment,
                 directionScore: r.directionScore,
                 consensus: r.consensus,
