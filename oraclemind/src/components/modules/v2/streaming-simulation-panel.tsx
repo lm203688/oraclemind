@@ -49,7 +49,7 @@ export function StreamingSimulationPanel({
         setProgress(50 + Math.floor(Math.random() * 30));
       } else if (event.type === 'agent_done') {
         setActiveOrbs(prev => Math.min(prev + 1, 15));
-        setProgress(prev => Math.min(prev + 5, 80));
+        setProgress(prev => Math.min(prev + 5, 85));
       } else if (event.type === 'round_done') {
         setProgress(70);
       } else if (event.type === 'synthesizing') {
@@ -69,13 +69,19 @@ export function StreamingSimulationPanel({
     onComplete: () => {},
   });
 
-  // 计时
+  // 计时 + 超时检测
   useEffect(() => {
     const timer = setInterval(() => {
-      setElapsed(Math.floor((Date.now() - startTime.current) / 1000));
+      const sec = Math.floor((Date.now() - startTime.current) / 1000);
+      setElapsed(sec);
+      // 超时保护——120秒后如果还在scanning，显示超时提示
+      if (sec > 120 && phase === 'scanning') {
+        setError('Forecast is taking longer than expected. The oracle engine may be under heavy load. Please try again.');
+        setPhase('error');
+      }
     }, 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [phase]);
 
   // 自动启动
   useEffect(() => {
@@ -253,7 +259,7 @@ function SynthesizedResult({ result, elapsed }: { result: any; elapsed: number }
           <div className="mb-4 flex items-center gap-2">
             <Sparkles className="size-4 text-[oklch(0.70_0.12_180)]" />
             <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">Oracle Forecast</span>
-            <Badge variant="outline" className="ml-auto text-[10px]" style={{ color: confidenceColor, borderColor: 'oklch(0.70_0.12_180/20%)' }}>
+            <Badge variant="outline" className="ml-auto text-[10px]" style={{ color: confidenceColor, borderColor: `${confidenceColor.replace('oklch(', 'oklch('}/20%)` }}>
               {confidenceLabel}
             </Badge>
           </div>
