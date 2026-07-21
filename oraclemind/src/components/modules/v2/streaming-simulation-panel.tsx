@@ -33,6 +33,8 @@ export function StreamingSimulationPanel({
   const apiUrl = simulationType === 'event'
     ? `/api/simulate/event/stream`
     : `/api/simulate/personal/stream`;
+    ? `/api/simulate/event/stream`
+    : `/api/simulate/personal/stream`;
 
   const { start, stop, isStreaming } = useSimulationStream(apiUrl, {
     onEvent: (event: any) => {
@@ -49,6 +51,7 @@ export function StreamingSimulationPanel({
         setProgress(50 + Math.floor(Math.random() * 30));
       } else if (event.type === 'agent_done') {
         setActiveOrbs(prev => Math.min(prev + 1, 15));
+        setProgress(prev => Math.min(prev + 5, 80));
       } else if (event.type === 'round_done') {
         setProgress(70);
       } else if (event.type === 'synthesizing') {
@@ -252,7 +255,7 @@ function SynthesizedResult({ result, elapsed }: { result: any; elapsed: number }
           <div className="mb-4 flex items-center gap-2">
             <Sparkles className="size-4 text-[oklch(0.70_0.12_180)]" />
             <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">Oracle Forecast</span>
-            <Badge variant="outline" className="ml-auto text-[10px]" style={{ color: confidenceColor, borderColor: 'oklch(0.70_0.12_180/20%)' }}>
+            <Badge variant="outline" className="ml-auto text-[10px]" style={{ color: confidenceColor, borderColor: `${confidenceColor.replace('oklch(', 'oklch('}/20%)` }}>
               {confidenceLabel}
             </Badge>
           </div>
