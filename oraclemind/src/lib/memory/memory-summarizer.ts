@@ -18,7 +18,13 @@ let cachedZAI: any = null;
 async function getZAI() {
   if (!cachedZAI) {
     const ZAI = (await import('z-ai-web-dev-sdk')).default;
-    cachedZAI = await ZAI.create();
+    const apiKey = process.env.ZAI_API_KEY || process.env.GLM_API_KEY;
+    const baseUrl = process.env.OPENAI_BASE_URL || 'https://api.z.ai/api/paas/v4';
+    if (apiKey) {
+      cachedZAI = new ZAI({ apiKey, baseUrl });
+    } else {
+      cachedZAI = await ZAI.create();
+    }
   }
   return cachedZAI;
 }

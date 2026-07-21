@@ -37,22 +37,22 @@ function buildChartContext(chart: BaziChart): string {
 - **Day Master (日主)**: ${chart.dayMaster} (${chart.dayMasterElement}, ${chart.dayMasterYinYang})
 - **Zodiac (生肖)**: ${chart.zodiac}
 - **Four Pillars**:
-  - Year: ${chart.year.stem}${chart.year.branch} (天干地支)
-  - Month: ${chart.month.stem}${chart.month.branch}
-  - Day: ${chart.day.stem}${chart.day.branch}
-  - Hour: ${chart.hour.stem}${chart.hour.branch}
+  - Year: ${chart.year?.stem || ''}${chart.year?.branch || ''} (天干地支)
+  - Month: ${chart.month?.stem || ''}${chart.month?.branch || ''}
+  - Day: ${chart.day?.stem || ''}${chart.day?.branch || ''}
+  - Hour: ${chart.hour?.stem || ''}${chart.hour?.branch || ''}
 - **Hidden Stems**:
-  - Year: ${chart.year.hiddenStems.join(', ')}
-  - Month: ${chart.month.hiddenStems.join(', ')}
-  - Day: ${chart.day.hiddenStems.join(', ')}
-  - Hour: ${chart.hour.hiddenStems.join(', ')}
+  - Year: ${(chart.year?.hiddenStems || []).join(', ')}
+  - Month: ${(chart.month?.hiddenStems || []).join(', ')}
+  - Day: ${(chart.day?.hiddenStems || []).join(', ')}
+  - Hour: ${(chart.hour?.hiddenStems || []).join(', ')}
 - **Ten Gods (十神)**:
-  - Year Stem: ${chart.tenGods.yearStem}
-  - Month Stem: ${chart.tenGods.monthStem}
-  - Hour Stem: ${chart.tenGods.hourStem}
-- **Five Element Scores**: Wood=${chart.elementScores.wood}, Fire=${chart.elementScores.fire}, Earth=${chart.elementScores.earth}, Metal=${chart.elementScores.metal}, Water=${chart.elementScores.water}
+  - Year Stem: ${chart.tenGods?.yearStem || 'N/A'}
+  - Month Stem: ${chart.tenGods?.monthStem || 'N/A'}
+  - Hour Stem: ${chart.tenGods?.hourStem || 'N/A'}
+- **Five Element Scores**: Wood=${chart.elementScores?.wood ?? 'N/A'}, Fire=${chart.elementScores?.fire ?? 'N/A'}, Earth=${chart.elementScores?.earth ?? 'N/A'}, Metal=${chart.elementScores?.metal ?? 'N/A'}, Water=${chart.elementScores?.water ?? 'N/A'}
 - **Solar Terms**: ${chart.solarTerms}
-- **Luck Pillars**: ${chart.luckPillars.map(lp => `${lp.pillar.stem}${lp.pillar.branch}(${lp.ageRange})`).join(' → ')}
+- **Luck Pillars**: ${(chart.luckPillars || []).map(lp => `${lp.pillar?.stem || ''}${lp.pillar?.branch || ''}(${lp.ageRange || ''})`).join(' → ')}
 `.trim();
 }
 
@@ -143,7 +143,15 @@ let cachedZAI: any = null;
 async function getZAI() {
   if (!cachedZAI) {
     const ZAI = (await import('z-ai-web-dev-sdk')).default;
-    cachedZAI = await ZAI.create();
+    // 优先用环境变量创建实例（Vercel生产环境）
+    const apiKey = process.env.ZAI_API_KEY || process.env.GLM_API_KEY;
+    const baseUrl = process.env.OPENAI_BASE_URL || 'https://api.z.ai/api/paas/v4';
+    if (apiKey) {
+      cachedZAI = new ZAI({ apiKey, baseUrl });
+    } else {
+      // 开发环境用配置文件
+      cachedZAI = await ZAI.create();
+    }
   }
   return cachedZAI;
 }
@@ -250,20 +258,20 @@ Please provide the final synthesized prediction. Structure your response clearly
 
 function generateTemplateResponse(options: AIPredictionOptions): AIPredictionResult {
   const { question, chart, category, tier } = options;
-  const dm = chart.dayMaster;
-  const dmEl = chart.dayMasterElement;
-  const dmYY = chart.dayMasterYinYang;
-  const zodiac = chart.zodiac;
+  const dm = typeof chart.dayMaster === 'object' ? (chart.dayMaster?.stem || 'N/A') : (chart.dayMaster || 'N/A');
+  const dmEl = chart.dayMasterElement || (typeof chart.dayMaster === 'object' ? chart.dayMaster?.element : null) || 'N/A';
+  const dmYY = chart.dayMasterYinYang || 'N/A';
+  const zodiac = chart.zodiac || 'N/A';
 
   const elZh: Record<string, string> = { wood: '木', fire: '火', earth: '土', metal: '金', water: '水' };
   const isUserZh = /[\u4e00-\u9fff]/.test(question);
-  const dmScore = chart.elementScores[dmEl as keyof typeof chart.elementScores];
+  const dmScore = (chart.elementScores && chart.elementScores[dmEl as keyof typeof chart.elementScores]) || 1;
 
   if (category === 'deep_destiny' || tier >= 3) {
     return {
       content: isUserZh
-        ? `### 命盘深度解读 — ${dm}${dmYY === 'yang' ? '阳' : '阴'}${elZh[dmEl]}日主\n\n**四柱**：${chart.year.stem}${chart.year.branch} | ${chart.month.stem}${chart.month.branch} | ${chart.day.stem}${chart.day.branch} | ${chart.hour.stem}${chart.hour.branch}\n**生肖**：${zodiac}  **日主**：${dm}（${elZh[dmEl]}，${dmYY === 'yang' ? '阳' : '阴'}）\n\n---\n\n**性格特质**：日主${dmEl === 'wood' ? '属木，仁慈正直，有向上生长的进取心。' : dmEl === 'fire' ? '属火，热情开朗，善于表达。' : dmEl === 'earth' ? '属土，稳重踏实，信义可靠。' : dmEl === 'metal' ? '属金，果断坚毅，重义气。' : '属水，智慧灵活，善于变通。'}\n\n**五行分析**：${dmEl}${dmScore >= 3 ? '较旺' : dmScore >= 2 ? '中和' : '偏弱'}（${dmScore}分），需关注${dmEl === 'wood' ? '金、火' : dmEl === 'fire' ? '水、土' : dmEl === 'earth' ? '木、金' : dmEl === 'metal' ? '火、水' : '土、木'}的调节。\n\n**大运走向**：当前大运${chart.luckPillars.length > 0 ? `「${chart.luckPillars[0].pillar.stem}${chart.luckPillars[0].pillar.branch}」(${chart.luckPillars[0].ageRange}岁)` : '暂无数据'}，${chart.tenGods.monthStem}当令。\n\n> 此为规则引擎分析，深度推理请升级至高级别预测。`
-        : `### Deep Destiny Reading — ${dm} Day Master (${dmEl}, ${dmYY})\n\n**Four Pillars**: ${chart.year.stem}${chart.year.branch} | ${chart.month.stem}${chart.month.branch} | ${chart.day.stem}${chart.day.branch} | ${chart.hour.stem}${chart.hour.branch}\n**Zodiac**: ${zodiac}  **Day Master**: ${dm} (${dmEl}, ${dmYY})\n\n---\n\n**Personality**: ${dmEl === 'wood' ? 'Wood Day Master — compassionate, upright, driven to grow.' : dmEl === 'fire' ? 'Fire Day Master — passionate, expressive, natural leader.' : dmEl === 'earth' ? 'Earth Day Master — stable, trustworthy, grounded.' : dmEl === 'metal' ? 'Metal Day Master — decisive, loyal, principled.' : 'Water Day Master — intelligent, adaptable, intuitive.'}\n\n**Element Balance**: ${dmEl} is ${dmScore >= 3 ? 'strong' : dmScore >= 2 ? 'balanced' : 'weak'} (${dmScore} pts). ${dmEl === 'wood' ? 'Metal and Fire provide regulation.' : dmEl === 'fire' ? 'Water and Earth provide grounding.' : dmEl === 'earth' ? 'Wood and Metal provide stimulation.' : dmEl === 'metal' ? 'Fire and Water provide balance.' : 'Earth and Wood provide structure.'}\n\n**Luck Pillar Direction**: Current period ${chart.luckPillars.length > 0 ? `${chart.luckPillars[0].pillar.stem}${chart.luckPillars[0].pillar.branch} (ages ${chart.luckPillars[0].ageRange})` : 'data pending'}, with ${chart.tenGods.monthStem} as the dominant influence.\n\n> This is a rule-engine analysis. Upgrade to a higher tier for deep AI reasoning.`,
+        ? `### 命盘深度解读 — ${dm}${dmYY === 'yang' ? '阳' : '阴'}${elZh[dmEl]}日主\n\n**四柱**：${chart.year?.stem || ''}${chart.year?.branch || ''} | ${chart.month?.stem || ''}${chart.month?.branch || ''} | ${chart.day?.stem || ''}${chart.day?.branch || ''} | ${chart.hour?.stem || ''}${chart.hour?.branch || ''}\n**生肖**：${zodiac}  **日主**：${dm}（${elZh[dmEl]}，${dmYY === 'yang' ? '阳' : '阴'}）\n\n---\n\n**性格特质**：日主${dmEl === 'wood' ? '属木，仁慈正直，有向上生长的进取心。' : dmEl === 'fire' ? '属火，热情开朗，善于表达。' : dmEl === 'earth' ? '属土，稳重踏实，信义可靠。' : dmEl === 'metal' ? '属金，果断坚毅，重义气。' : '属水，智慧灵活，善于变通。'}\n\n**五行分析**：${dmEl}${dmScore >= 3 ? '较旺' : dmScore >= 2 ? '中和' : '偏弱'}（${dmScore}分），需关注${dmEl === 'wood' ? '金、火' : dmEl === 'fire' ? '水、土' : dmEl === 'earth' ? '木、金' : dmEl === 'metal' ? '火、水' : '土、木'}的调节。\n\n**大运走向**：当前大运${(chart.luckPillars && chart.luckPillars.length > 0) ? `「${chart.luckPillars[0]?.pillar?.stem || ''}${chart.luckPillars[0]?.pillar?.branch || ''}」(${chart.luckPillars[0]?.ageRange || ''}岁)` : '暂无数据'}，${(chart.tenGods?.monthStem || 'N/A')}当令。\n\n> 此为规则引擎分析，深度推理请升级至高级别预测。`
+        : `### Deep Destiny Reading — ${dm} Day Master (${dmEl}, ${dmYY})\n\n**Four Pillars**: ${chart.year?.stem || ''}${chart.year?.branch || ''} | ${chart.month?.stem || ''}${chart.month?.branch || ''} | ${chart.day?.stem || ''}${chart.day?.branch || ''} | ${chart.hour?.stem || ''}${chart.hour?.branch || ''}\n**Zodiac**: ${zodiac}  **Day Master**: ${dm} (${dmEl}, ${dmYY})\n\n---\n\n**Personality**: ${dmEl === 'wood' ? 'Wood Day Master — compassionate, upright, driven to grow.' : dmEl === 'fire' ? 'Fire Day Master — passionate, expressive, natural leader.' : dmEl === 'earth' ? 'Earth Day Master — stable, trustworthy, grounded.' : dmEl === 'metal' ? 'Metal Day Master — decisive, loyal, principled.' : 'Water Day Master — intelligent, adaptable, intuitive.'}\n\n**Element Balance**: ${dmEl} is ${dmScore >= 3 ? 'strong' : dmScore >= 2 ? 'balanced' : 'weak'} (${dmScore} pts). ${dmEl === 'wood' ? 'Metal and Fire provide regulation.' : dmEl === 'fire' ? 'Water and Earth provide grounding.' : dmEl === 'earth' ? 'Wood and Metal provide stimulation.' : dmEl === 'metal' ? 'Fire and Water provide balance.' : 'Earth and Wood provide structure.'}\n\n**Luck Pillar Direction**: Current period ${(chart.luckPillars && chart.luckPillars.length > 0) ? `${chart.luckPillars[0]?.pillar?.stem || ''}${chart.luckPillars[0]?.pillar?.branch || ''} (ages ${chart.luckPillars[0]?.ageRange || ''})` : 'data pending'}, with ${(chart.tenGods?.monthStem || 'N/A')} as the dominant influence.\n\n> This is a rule-engine analysis. Upgrade to a higher tier for deep AI reasoning.`,
       tokensUsed: 800,
       costUsd: 0,
       model: 'template',
@@ -273,8 +281,8 @@ function generateTemplateResponse(options: AIPredictionOptions): AIPredictionRes
   // Default: personal/objective template
   return {
     content: isUserZh
-      ? `**${dm}日主（${elZh[dmEl]}，${dmYY === 'yang' ? '阳' : '阴'}）命理分析**\n\n关于您的问题"${question.slice(0, 40)}"，从八字角度分析：\n\n- **整体趋势**：${dmYY === 'yang' ? '阳干主导，势头外显' : '阴干主导，变化内敛'}，月令${chart.tenGods.monthStem}当令。\n- **五行提示**：${dmEl}气${dmScore >= 2 ? '较旺' : '偏弱'}，需注意五行调和。\n- **十神动向**：年柱${chart.tenGods.yearStem}，月柱${chart.tenGods.monthStem}，时柱${chart.tenGods.hourStem}。\n\n> 此为规则引擎基础分析，接入AI后将提供更深入的解读。`
-      : `**${dm} Day Master (${dmEl}, ${dmYY}) — Quick Reading**\n\nRegarding "${question.slice(0, 50)}":\n\n- **Trend**: ${dmYY === 'yang' ? 'Yang dominant — energy is outward and visible' : 'Yin dominant — changes are internal and subtle'}, with ${chart.tenGods.monthStem} as the dominant monthly influence.\n- **Element Hint**: ${dmEl} is ${dmScore >= 2 ? 'moderately strong' : 'relatively weak'} (${dmScore} pts). Balance is key.\n- **Ten Gods**: Year ${chart.tenGods.yearStem}, Month ${chart.tenGods.monthStem}, Hour ${chart.tenGods.hourStem}.\n\n> This is a basic rule-engine reading. AI-powered deep analysis coming soon.`,
+      ? `**${dm}日主（${elZh[dmEl]}，${dmYY === 'yang' ? '阳' : '阴'}）命理分析**\n\n关于您的问题"${question.slice(0, 40)}"，从八字角度分析：\n\n- **整体趋势**：${dmYY === 'yang' ? '阳干主导，势头外显' : '阴干主导，变化内敛'}，月令${(chart.tenGods?.monthStem || 'N/A')}当令。\n- **五行提示**：${dmEl}气${dmScore >= 2 ? '较旺' : '偏弱'}，需注意五行调和。\n- **十神动向**：年柱${chart.tenGods?.yearStem || 'N/A'}，月柱${chart.tenGods?.monthStem || 'N/A'}，时柱${chart.tenGods?.hourStem || 'N/A'}。\n\n> 此为规则引擎基础分析，接入AI后将提供更深入的解读。`
+      : `**${dm} Day Master (${dmEl}, ${dmYY}) — Quick Reading**\n\nRegarding "${question.slice(0, 50)}":\n\n- **Trend**: ${dmYY === 'yang' ? 'Yang dominant — energy is outward and visible' : 'Yin dominant — changes are internal and subtle'}, with ${chart.tenGods?.monthStem || 'N/A'} as the dominant monthly influence.\n- **Element Hint**: ${dmEl} is ${dmScore >= 2 ? 'moderately strong' : 'relatively weak'} (${dmScore} pts). Balance is key.\n- **Ten Gods**: Year ${chart.tenGods?.yearStem || 'N/A'}, Month ${chart.tenGods?.monthStem || 'N/A'}, Hour ${chart.tenGods?.hourStem || 'N/A'}.\n\n> This is a basic rule-engine reading. AI-powered deep analysis coming soon.`,
     tokensUsed: 400,
     costUsd: 0,
     model: 'template',
