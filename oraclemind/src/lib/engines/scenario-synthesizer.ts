@@ -354,16 +354,18 @@ function generateFinalRecommendation(
   crossValidation: CrossValidationMatrix,
 ): string {
   const quadrantAdvice: Record<string, string> = {
-    high_confidence_proceed: '现代推演与古籍验证一致看好，可积极推进，但仍需关注关键转折点。',
-    risk_flagged: '现代视角看好但古籍警示，建议谨慎，重点关注古籍警告的具体风险点。',
-    timing_issue: '古籍看好但现代阻力大，时机未到，建议等待1-3个月再决策。',
-    strong_avoid: '现代古籍双看衰，强烈建议避免此路径，考虑替代方案。',
-    insufficient_info: '视角严重分裂，建议补充更多信息后再决策，或寻求第二意见。',
+    high_confidence_proceed: 'Modern simulation and classical validation converge positively. Proceed with confidence, but monitor key inflection points.',
+    risk_flagged: 'Modern outlook is positive but classical scrolls signal caution. Focus on the specific risk factors flagged by the classical layer.',
+    timing_issue: 'Classical indicators are favorable but modern resistance is high. Timing is premature — recommend waiting 1-3 months before deciding.',
+    strong_avoid: 'Both modern and classical layers align negatively. Strongly advise against this path. Consider alternative approaches.',
+    insufficient_info: 'Perspectives are highly divergent. Recommend gathering additional information before deciding, or seeking a second opinion.',
   };
 
-  const topScenario = scenarios.reduce((a, b) => a.probability > b.probability ? a : b);
+  const topScenario = scenarios.reduce((a, b) => a.probability > b.probability ? a : b, scenarios[0] || { scenarioPath: 'neutral', probability: 0, recommendation: '' });
 
-  return `${quadrantAdvice[crossValidation.quadrant]} 最可能情景：${topScenario.scenarioPath === 'optimistic' ? '乐观' : topScenario.scenarioPath === 'neutral' ? '中性' : '保守'}（概率${Math.round(topScenario.probability * 100)}%）。${topScenario.recommendation}`;
+  const scenarioLabel = topScenario.scenarioPath === 'optimistic' ? 'Optimistic' : topScenario.scenarioPath === 'neutral' ? 'Neutral' : 'Conservative';
+
+  return `${quadrantAdvice[crossValidation.quadrant] || quadrantAdvice.insufficient_info} Most likely scenario: ${scenarioLabel} (${Math.round(topScenario.probability * 100)}% probability). ${topScenario.recommendation || ''}`;
 }
 
 // ---------------------------------------------------------------------------

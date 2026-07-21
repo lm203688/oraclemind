@@ -24,26 +24,26 @@ import {
 import { cn } from '@/lib/utils';
 
 // ---------------------------------------------------------------------------
-// Agent 角色配置
+// Agent Role Config
 // ---------------------------------------------------------------------------
 
 const AGENT_CONFIG: Record<string, { name: string; category: 'modern' | 'classical'; color: string; bias: number }> = {
-  // 现代5维度——神秘代号
-  strategist:     { name: '◈ 天枢维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0 },
-  data_analyst:   { name: '◈ 天璇维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.1 },
-  risk_auditor:   { name: '◈ 天玑维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.2 },
-  optimist:       { name: '◈ 天权维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0.2 },
-  devil_advocate: { name: '◈ 玉衡维度',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.15 },
-  // 古典5典——神秘代号
-  yuanhai:    { name: '◇ 源流卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  ziping:     { name: '◇ 格局卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  sanming:    { name: '◇ 综鉴卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  ditianzhui: { name: '◇ 旺衰卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
-  qiongtong:  { name: '◇ 调候卷', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  // Modern 5 Dimensions
+  strategist:     { name: '◈ Dubhe',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0 },
+  data_analyst:   { name: '◈ Merak',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.1 },
+  risk_auditor:   { name: '◈ Phecda',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.2 },
+  optimist:       { name: '◈ Megrez',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: 0.2 },
+  devil_advocate: { name: '◈ Alioth',       category: 'modern', color: 'oklch(0.70 0.12 180)', bias: -0.15 },
+  // Classical 5 Scrolls
+  yuanhai:    { name: '◇ Scroll I', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  ziping:     { name: '◇ Scroll II', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  sanming:    { name: '◇ Scroll III', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  ditianzhui: { name: '◇ Scroll IV', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
+  qiongtong:  { name: '◇ Scroll V', category: 'classical', color: 'oklch(0.65 0.10 50)', bias: 0 },
 };
 
 // ---------------------------------------------------------------------------
-// 流式推演面板
+// Streaming Simulation Panel
 // ---------------------------------------------------------------------------
 
 interface StreamingSimulationPanelProps {
@@ -82,7 +82,7 @@ export function StreamingSimulationPanel({
   const [currentAgent, setCurrentAgent] = useState<string | null>(null);
   const [graphInfo, setGraphInfo] = useState<{ summary: string; nodeCount: number; edgeCount: number; keyNodes: any[] } | null>(null);
   const [phase, setPhase] = useState<'graph' | 'simulating' | 'synthesizing' | 'complete' | 'error'>('graph');
-  const [elapsed, setElapsed] = useState(0); // 秒
+  const [elapsed, setElapsed] = useState(0); // seconds
   const [finalResult, setFinalResult] = useState<any>(null);
   const [expandedAgent, setExpandedAgent] = useState<string | null>(null);
   const outputEndRef = useRef<HTMLDivElement>(null);
@@ -153,7 +153,7 @@ export function StreamingSimulationPanel({
     },
   });
 
-  // 自动开始
+  // Auto start
   useEffect(() => {
     const body = simulationType === 'event'
       ? { userId, eventDescription: question, context, rounds }
@@ -161,7 +161,7 @@ export function StreamingSimulationPanel({
     start(body);
   }, []);
 
-  // 耗时计时器
+  // Timer
   useEffect(() => {
     if (phase === 'complete' || phase === 'error') return;
     const timer = setInterval(() => {
@@ -170,12 +170,12 @@ export function StreamingSimulationPanel({
     return () => clearInterval(timer);
   }, [phase]);
 
-  // 自动滚动到底部
+  // Auto scroll
   useEffect(() => {
     outputEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [outputs, currentAgent]);
 
-  // 按轮次分组
+  // Group by round
   const outputsByRound = new Map<number, AgentOutput[]>();
   for (const o of outputs) {
     if (!outputsByRound.has(o.round)) outputsByRound.set(o.round, []);
@@ -183,11 +183,11 @@ export function StreamingSimulationPanel({
   }
 
   const phaseLabel = {
-    graph: '构建情境图谱',
-    simulating: `多轮推演 (${currentRound}/${rounds})`,
-    synthesizing: '综合情景树',
-    complete: '推演完成',
-    error: '推演出错',
+    graph: 'Building Knowledge Graph',
+    simulating: `Multi-Round Simulation (${currentRound}/${rounds})`,
+    synthesizing: 'Synthesizing Scenarios',
+    complete: 'Forecast Complete',
+    error: 'Simulation Error',
   }[phase];
 
   return (
@@ -210,7 +210,7 @@ export function StreamingSimulationPanel({
           {phase === 'complete' && (
             <Badge variant="outline" className="border-[oklch(0.70_0.14_145/20%)] text-[10px] font-mono text-[oklch(0.70_0.14_145)]">
               <Clock className="mr-1 size-2.5" />
-              用时 {Math.floor(elapsed / 60)}:{String(elapsed % 60).padStart(2, '0')}
+              {Math.floor(elapsed / 60)}:{String(elapsed % 60).padStart(2, '0')}
             </Badge>
           )}
         </div>
@@ -223,7 +223,7 @@ export function StreamingSimulationPanel({
               className="h-7 gap-1 text-[11px] border-[oklch(0.65_0.18_25/25%)] text-[oklch(0.65_0.18_25)] hover:bg-[oklch(0.65_0.18_25/8%)]"
             >
               <span className="size-2.5 rounded-sm bg-current" />
-              停止
+              Stop
             </Button>
           )}
           {onBack && (
@@ -233,13 +233,13 @@ export function StreamingSimulationPanel({
               onClick={onBack}
               className="h-7 text-[11px] text-[oklch(0.50_0.015_200)]"
             >
-              ← 返回
+              ← Back
             </Button>
           )}
         </div>
       </div>
 
-      {/* 轮次进度条 */}
+      {/* Round Progress */}
       {phase !== 'complete' && phase !== 'error' && (
         <div className="flex items-center gap-1.5">
           {Array.from({ length: rounds }, (_, i) => i + 1).map(r => (
@@ -266,10 +266,10 @@ export function StreamingSimulationPanel({
           <div className="mb-1 flex items-center gap-2">
             <Network className="size-3 text-[oklch(0.70_0.12_180)]" />
             <span className="text-[10px] font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-              情境图谱
+              Knowledge Graph
             </span>
             <span className="text-[10px] font-mono text-[oklch(0.45_0.015_200)]">
-              {graphInfo.nodeCount} 节点 · {graphInfo.edgeCount} 边
+              {graphInfo.nodeCount} nodes · {graphInfo.edgeCount} edges
             </span>
           </div>
           <p className="text-xs leading-relaxed text-[oklch(0.65_0.01_200)]">
@@ -281,7 +281,7 @@ export function StreamingSimulationPanel({
       {/* Error */}
       {error && phase === 'error' && (
         <div className="rounded-lg border border-[oklch(0.65_0.18_25/30%)] bg-[oklch(0.65_0.18_25/5%)] p-3 text-xs text-[oklch(0.65_0.18_25)]">
-          推演出错：{error}
+          Simulation Error: {error}
         </div>
       )}
 
@@ -306,7 +306,7 @@ export function StreamingSimulationPanel({
             <div className="rounded border border-[oklch(0.65_0.10_50/15%)] bg-[oklch(0.65_0.10_50/3%)] p-2">
               <div className="mb-1.5 flex items-center gap-1 text-[10px] font-mono text-[oklch(0.65_0.10_50)]">
                 <BookOpen className="size-2.5" />
-                ◇ 古典交叉验证矩阵
+                ◇ Classical Cross-Validation Matrix
               </div>
               <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-5">
                 {roundOutputs.filter(o => o.category === 'classical').map((o, i) => (
@@ -319,7 +319,7 @@ export function StreamingSimulationPanel({
             <div className="rounded border border-[oklch(0.70_0.12_180/15%)] bg-[oklch(0.70_0.12_180/3%)] p-2">
               <div className="mb-1.5 flex items-center gap-1 text-[10px] font-mono text-[oklch(0.70_0.12_180)]">
                 <Cpu className="size-2.5" />
-                ◈ 多维推演矩阵
+                ◈ Multi-Dimensional Simulation Matrix
               </div>
               <div className="space-y-1.5">
                 {roundOutputs.filter(o => o.category === 'modern').map((o, i) => (
@@ -339,7 +339,7 @@ export function StreamingSimulationPanel({
                   <div className="flex items-center gap-2 rounded border border-dashed border-[oklch(0.70_0.12_180/20%)] p-2">
                     <Loader2 className="size-3 animate-spin text-[oklch(0.70_0.12_180)]" />
                     <span className="text-[11px] text-[oklch(0.55_0.015_200)]">
-                      {AGENT_CONFIG[currentAgent]?.name ?? currentAgent} 推演中...
+                      {AGENT_CONFIG[currentAgent]?.name ?? currentAgent} simulating...
                     </span>
                   </div>
                 )}
@@ -356,7 +356,7 @@ export function StreamingSimulationPanel({
             className="flex items-center justify-center gap-2 rounded-lg border border-[oklch(0.70_0.12_180/20%)] bg-[oklch(0.70_0.12_180/5%)] p-4"
           >
             <Loader2 className="size-4 animate-spin text-[oklch(0.70_0.12_180)]" />
-            <span className="text-sm text-[oklch(0.70_0.12_180)]">综合情景树 + 5×5交叉验证矩阵...</span>
+            <span className="text-sm text-[oklch(0.70_0.12_180)]">Scenario Tree + 5×5 Cross-Validation Matrix...</span>
           </motion.div>
         )}
 
@@ -375,7 +375,7 @@ export function StreamingSimulationPanel({
             <div className="mb-1 flex items-center gap-2">
               <FlaskConical className="size-3.5 text-[oklch(0.70_0.12_180)]" />
               <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-                综合建议
+                Synthesized Forecast
               </span>
             </div>
             <p className="text-sm leading-relaxed text-[oklch(0.85_0.01_200)]">
@@ -388,7 +388,7 @@ export function StreamingSimulationPanel({
             <div className="mb-3 flex items-center gap-2">
               <Cpu className="size-3.5 text-[oklch(0.70_0.12_180)]" />
               <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-                5×5 交叉验证矩阵
+                5×5 Cross-Validation Matrix
               </span>
             </div>
             <CrossValidationMatrix
@@ -405,7 +405,7 @@ export function StreamingSimulationPanel({
             <div className="mb-3 flex items-center gap-2">
               <Activity className="size-3.5 text-[oklch(0.70_0.12_180)]" />
               <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.70_0.12_180)]">
-                三情景路径
+                Scenario Paths
               </span>
             </div>
             <ScenarioTree scenarios={finalResult.scenarios} />
@@ -417,7 +417,7 @@ export function StreamingSimulationPanel({
               <div className="mb-2 flex items-center gap-2">
                 <BookOpen className="size-3.5 text-[oklch(0.65_0.10_50)]" />
                 <span className="text-xs font-mono uppercase tracking-wider text-[oklch(0.65_0.10_50)]">
-                  关键分歧点
+                  Key Divergences
                 </span>
               </div>
               <ul className="space-y-1">
@@ -436,7 +436,7 @@ export function StreamingSimulationPanel({
 }
 
 // ---------------------------------------------------------------------------
-// 古典验证卡片
+// Classical Card
 // ---------------------------------------------------------------------------
 
 function ClassicalCard({ output }: { output: AgentOutput }) {
@@ -467,7 +467,7 @@ function ClassicalCard({ output }: { output: AgentOutput }) {
 }
 
 // ---------------------------------------------------------------------------
-// 现代 Agent 卡片（可展开）
+// Modern Agent Card (expandable)
 // ---------------------------------------------------------------------------
 
 function ModernAgentCard({

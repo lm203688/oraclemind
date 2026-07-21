@@ -41,7 +41,7 @@ export async function callAgentLLMWithRetry(
           thinking: { type: 'disabled' },
         }),
         new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error('LLM call timeout (30s)')), 30000),
+          setTimeout(() => reject(new Error('LLM call timeout (50s)')), 50000),
         ),
       ]);
 
